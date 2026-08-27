@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace AppStoreConnect.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class GameCenterActivityImageUpdateRequestDataTypeNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::AppStoreConnect.GameCenterActivityImageUpdateRequestDataType?>
+    {
+        /// <inheritdoc />
+        public override global::AppStoreConnect.GameCenterActivityImageUpdateRequestDataType? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::AppStoreConnect.GameCenterActivityImageUpdateRequestDataTypeExtensions.ToEnum(stringValue);
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::AppStoreConnect.GameCenterActivityImageUpdateRequestDataType)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::AppStoreConnect.GameCenterActivityImageUpdateRequestDataType?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::AppStoreConnect.GameCenterActivityImageUpdateRequestDataType? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::AppStoreConnect.GameCenterActivityImageUpdateRequestDataTypeExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+#nullable enable
+
+namespace AppStoreConnect.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class GameCenterLeaderboardSetLocalizationUpdateRequestDataTypeJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::AppStoreConnect.GameCenterLeaderboardSetLocalizationUpdateRequestDataType>
+    {
+        /// <inheritdoc />
+        public override global::AppStoreConnect.GameCenterLeaderboardSetLocalizationUpdateRequestDataType Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::AppStoreConnect.GameCenterLeaderboardSetLocalizationUpdateRequestDataTypeExtensions.ToEnum(stringValue) ?? default;
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::AppStoreConnect.GameCenterLeaderboardSetLocalizationUpdateRequestDataType)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::AppStoreConnect.GameCenterLeaderboardSetLocalizationUpdateRequestDataType);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::AppStoreConnect.GameCenterLeaderboardSetLocalizationUpdateRequestDataType value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            writer.WriteStringValue(global::AppStoreConnect.GameCenterLeaderboardSetLocalizationUpdateRequestDataTypeExtensions.ToValueString(value));
+        }
+    }
+}

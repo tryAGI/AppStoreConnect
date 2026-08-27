@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace AppStoreConnect.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class AppPriceScheduleManualPricesLinkagesResponseDataItemTypeNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::AppStoreConnect.AppPriceScheduleManualPricesLinkagesResponseDataItemType?>
+    {
+        /// <inheritdoc />
+        public override global::AppStoreConnect.AppPriceScheduleManualPricesLinkagesResponseDataItemType? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::AppStoreConnect.AppPriceScheduleManualPricesLinkagesResponseDataItemTypeExtensions.ToEnum(stringValue);
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::AppStoreConnect.AppPriceScheduleManualPricesLinkagesResponseDataItemType)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::AppStoreConnect.AppPriceScheduleManualPricesLinkagesResponseDataItemType?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::AppStoreConnect.AppPriceScheduleManualPricesLinkagesResponseDataItemType? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::AppStoreConnect.AppPriceScheduleManualPricesLinkagesResponseDataItemTypeExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}

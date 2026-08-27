@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Nuget">
+    <Description>Modern generated .NET SDK for the complete Apple App Store Connect API.</Description>
+    <PackageTags>apple;app-store-connect;testflight;api;client;sdk;dotnet;openapi;generated;autosdk</PackageTags>
+  </PropertyGroup>
+
+</Project>

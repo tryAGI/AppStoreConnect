@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace AppStoreConnect.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class GameCenterLeaderboardReleaseResponseIncludedItemDiscriminatorTypeNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::AppStoreConnect.GameCenterLeaderboardReleaseResponseIncludedItemDiscriminatorType?>
+    {
+        /// <inheritdoc />
+        public override global::AppStoreConnect.GameCenterLeaderboardReleaseResponseIncludedItemDiscriminatorType? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::AppStoreConnect.GameCenterLeaderboardReleaseResponseIncludedItemDiscriminatorTypeExtensions.ToEnum(stringValue);
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::AppStoreConnect.GameCenterLeaderboardReleaseResponseIncludedItemDiscriminatorType)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::AppStoreConnect.GameCenterLeaderboardReleaseResponseIncludedItemDiscriminatorType?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::AppStoreConnect.GameCenterLeaderboardReleaseResponseIncludedItemDiscriminatorType? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::AppStoreConnect.GameCenterLeaderboardReleaseResponseIncludedItemDiscriminatorTypeExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+#nullable enable
+
+namespace AppStoreConnect.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboardSetJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::AppStoreConnect.GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboardSet>
+    {
+        /// <inheritdoc />
+        public override global::AppStoreConnect.GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboardSet Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::AppStoreConnect.GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboardSetExtensions.ToEnum(stringValue) ?? default;
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::AppStoreConnect.GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboardSet)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::AppStoreConnect.GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboardSet);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::AppStoreConnect.GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboardSet value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            writer.WriteStringValue(global::AppStoreConnect.GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboardSetExtensions.ToValueString(value));
+        }
+    }
+}

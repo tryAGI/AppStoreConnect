@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace AppStoreConnect.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class ProfilesCertificatesGetToManyRelatedFieldsCertificateNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::AppStoreConnect.ProfilesCertificatesGetToManyRelatedFieldsCertificate?>
+    {
+        /// <inheritdoc />
+        public override global::AppStoreConnect.ProfilesCertificatesGetToManyRelatedFieldsCertificate? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::AppStoreConnect.ProfilesCertificatesGetToManyRelatedFieldsCertificateExtensions.ToEnum(stringValue);
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::AppStoreConnect.ProfilesCertificatesGetToManyRelatedFieldsCertificate)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::AppStoreConnect.ProfilesCertificatesGetToManyRelatedFieldsCertificate?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::AppStoreConnect.ProfilesCertificatesGetToManyRelatedFieldsCertificate? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::AppStoreConnect.ProfilesCertificatesGetToManyRelatedFieldsCertificateExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}

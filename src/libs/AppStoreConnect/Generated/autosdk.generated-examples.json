@@ -1,0 +1,147 @@
+{
+  "Examples": [
+    {
+      "Order": 1,
+      "Title": "GET /v1/apps/{id}/metrics/betaTesterUsages",
+      "Slug": "apps-betatesterusages-getmetrics",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "http",
+      "Code": "### GET /v1/apps/{id}/metrics/betaTesterUsages\n# @name apps_betaTesterUsages_getMetrics\nGET {{host}}/v1/apps/{{id}}/metrics/betaTesterUsages?period=PT10.5S\u0026groupBy={{groupBy}}\u0026filter[betaTesters]={{filter[betaTesters]}}\u0026limit={{limit}}\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: Metrics data response\n# Content-Type: application/json\n# 400\n# Description: Parameter error(s)\n# Content-Type: application/json\n# 401\n# Description: Unauthorized error(s)\n# Content-Type: application/json\n# 403\n# Description: Forbidden error\n# Content-Type: application/json\n# 404\n# Description: Not found error\n# Content-Type: application/json\n# 429\n# Description: Rate limit exceeded error\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "apps_betaTesterUsages_getMetrics",
+      "Setup": null
+    },
+    {
+      "Order": 2,
+      "Title": "GET /v1/betaGroups/{id}/metrics/betaTesterUsages",
+      "Slug": "betagroups-betatesterusages-getmetrics",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "http",
+      "Code": "### GET /v1/betaGroups/{id}/metrics/betaTesterUsages\n# @name betaGroups_betaTesterUsages_getMetrics\nGET {{host}}/v1/betaGroups/{{id}}/metrics/betaTesterUsages?period=PT10.5S\u0026groupBy={{groupBy}}\u0026filter[betaTesters]={{filter[betaTesters]}}\u0026limit={{limit}}\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: Metrics data response\n# Content-Type: application/json\n# 400\n# Description: Parameter error(s)\n# Content-Type: application/json\n# 401\n# Description: Unauthorized error(s)\n# Content-Type: application/json\n# 403\n# Description: Forbidden error\n# Content-Type: application/json\n# 404\n# Description: Not found error\n# Content-Type: application/json\n# 429\n# Description: Rate limit exceeded error\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "betaGroups_betaTesterUsages_getMetrics",
+      "Setup": null
+    },
+    {
+      "Order": 3,
+      "Title": "GET /v1/betaTesters/{id}/metrics/betaTesterUsages",
+      "Slug": "betatesters-betatesterusages-getmetrics",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "http",
+      "Code": "### GET /v1/betaTesters/{id}/metrics/betaTesterUsages\n# @name betaTesters_betaTesterUsages_getMetrics\nGET {{host}}/v1/betaTesters/{{id}}/metrics/betaTesterUsages?period=PT10.5S\u0026filter[apps]={{filter[apps]}}\u0026limit={{limit}}\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: Metrics data response\n# Content-Type: application/json\n# 400\n# Description: Parameter error(s)\n# Content-Type: application/json\n# 401\n# Description: Unauthorized error(s)\n# Content-Type: application/json\n# 403\n# Description: Forbidden error\n# Content-Type: application/json\n# 404\n# Description: Not found error\n# Content-Type: application/json\n# 429\n# Description: Rate limit exceeded error\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "betaTesters_betaTesterUsages_getMetrics",
+      "Setup": null
+    },
+    {
+      "Order": 4,
+      "Title": "GET /v1/gameCenterDetails/{id}/metrics/classicMatchmakingRequests",
+      "Slug": "gamecenterdetails-classicmatchmakingrequests-getmetrics",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "http",
+      "Code": "### GET /v1/gameCenterDetails/{id}/metrics/classicMatchmakingRequests\n# @name gameCenterDetails_classicMatchmakingRequests_getMetrics\nGET {{host}}/v1/gameCenterDetails/{{id}}/metrics/classicMatchmakingRequests?granularity=PT10.5S\u0026groupBy={{groupBy}}\u0026filter[result]=MATCHED\u0026sort={{sort}}\u0026limit={{limit}}\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: Metrics data response\n# Content-Type: application/json\n# 400\n# Description: Parameter error(s)\n# Content-Type: application/json\n# 401\n# Description: Unauthorized error(s)\n# Content-Type: application/json\n# 403\n# Description: Forbidden error\n# Content-Type: application/json\n# 404\n# Description: Not found error\n# Content-Type: application/json\n# 429\n# Description: Rate limit exceeded error\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "gameCenterDetails_classicMatchmakingRequests_getMetrics",
+      "Setup": null
+    },
+    {
+      "Order": 5,
+      "Title": "GET /v1/gameCenterDetails/{id}/metrics/ruleBasedMatchmakingRequests",
+      "Slug": "gamecenterdetails-rulebasedmatchmakingrequests-getmetrics",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "http",
+      "Code": "### GET /v1/gameCenterDetails/{id}/metrics/ruleBasedMatchmakingRequests\n# @name gameCenterDetails_ruleBasedMatchmakingRequests_getMetrics\nGET {{host}}/v1/gameCenterDetails/{{id}}/metrics/ruleBasedMatchmakingRequests?granularity=PT10.5S\u0026groupBy={{groupBy}}\u0026filter[result]=MATCHED\u0026sort={{sort}}\u0026limit={{limit}}\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: Metrics data response\n# Content-Type: application/json\n# 400\n# Description: Parameter error(s)\n# Content-Type: application/json\n# 401\n# Description: Unauthorized error(s)\n# Content-Type: application/json\n# 403\n# Description: Forbidden error\n# Content-Type: application/json\n# 404\n# Description: Not found error\n# Content-Type: application/json\n# 429\n# Description: Rate limit exceeded error\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "gameCenterDetails_ruleBasedMatchmakingRequests_getMetrics",
+      "Setup": null
+    },
+    {
+      "Order": 6,
+      "Title": "GET /v1/gameCenterMatchmakingQueues/{id}/metrics/experimentMatchmakingQueueSizes",
+      "Slug": "gamecentermatchmakingqueues-experimentmatchmakingqueuesizes-getmetrics",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "http",
+      "Code": "### GET /v1/gameCenterMatchmakingQueues/{id}/metrics/experimentMatchmakingQueueSizes\n# @name gameCenterMatchmakingQueues_experimentMatchmakingQueueSizes_getMetrics\nGET {{host}}/v1/gameCenterMatchmakingQueues/{{id}}/metrics/experimentMatchmakingQueueSizes?granularity=PT10.5S\u0026sort={{sort}}\u0026limit={{limit}}\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: Metrics data response\n# Content-Type: application/json\n# 400\n# Description: Parameter error(s)\n# Content-Type: application/json\n# 401\n# Description: Unauthorized error(s)\n# Content-Type: application/json\n# 403\n# Description: Forbidden error\n# Content-Type: application/json\n# 404\n# Description: Not found error\n# Content-Type: application/json\n# 429\n# Description: Rate limit exceeded error\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "gameCenterMatchmakingQueues_experimentMatchmakingQueueSizes_getMetrics",
+      "Setup": null
+    },
+    {
+      "Order": 7,
+      "Title": "GET /v1/gameCenterMatchmakingQueues/{id}/metrics/experimentMatchmakingRequests",
+      "Slug": "gamecentermatchmakingqueues-experimentmatchmakingrequests-getmetrics",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "http",
+      "Code": "### GET /v1/gameCenterMatchmakingQueues/{id}/metrics/experimentMatchmakingRequests\n# @name gameCenterMatchmakingQueues_experimentMatchmakingRequests_getMetrics\nGET {{host}}/v1/gameCenterMatchmakingQueues/{{id}}/metrics/experimentMatchmakingRequests?granularity=PT10.5S\u0026groupBy={{groupBy}}\u0026filter[result]=MATCHED\u0026filter[gameCenterDetail]={{filter[gameCenterDetail]}}\u0026sort={{sort}}\u0026limit={{limit}}\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: Metrics data response\n# Content-Type: application/json\n# 400\n# Description: Parameter error(s)\n# Content-Type: application/json\n# 401\n# Description: Unauthorized error(s)\n# Content-Type: application/json\n# 403\n# Description: Forbidden error\n# Content-Type: application/json\n# 404\n# Description: Not found error\n# Content-Type: application/json\n# 429\n# Description: Rate limit exceeded error\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "gameCenterMatchmakingQueues_experimentMatchmakingRequests_getMetrics",
+      "Setup": null
+    },
+    {
+      "Order": 8,
+      "Title": "GET /v1/gameCenterMatchmakingQueues/{id}/metrics/matchmakingQueueSizes",
+      "Slug": "gamecentermatchmakingqueues-matchmakingqueuesizes-getmetrics",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "http",
+      "Code": "### GET /v1/gameCenterMatchmakingQueues/{id}/metrics/matchmakingQueueSizes\n# @name gameCenterMatchmakingQueues_matchmakingQueueSizes_getMetrics\nGET {{host}}/v1/gameCenterMatchmakingQueues/{{id}}/metrics/matchmakingQueueSizes?granularity=PT10.5S\u0026sort={{sort}}\u0026limit={{limit}}\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: Metrics data response\n# Content-Type: application/json\n# 400\n# Description: Parameter error(s)\n# Content-Type: application/json\n# 401\n# Description: Unauthorized error(s)\n# Content-Type: application/json\n# 403\n# Description: Forbidden error\n# Content-Type: application/json\n# 404\n# Description: Not found error\n# Content-Type: application/json\n# 429\n# Description: Rate limit exceeded error\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "gameCenterMatchmakingQueues_matchmakingQueueSizes_getMetrics",
+      "Setup": null
+    },
+    {
+      "Order": 9,
+      "Title": "GET /v1/gameCenterMatchmakingQueues/{id}/metrics/matchmakingRequests",
+      "Slug": "gamecentermatchmakingqueues-matchmakingrequests-getmetrics",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "http",
+      "Code": "### GET /v1/gameCenterMatchmakingQueues/{id}/metrics/matchmakingRequests\n# @name gameCenterMatchmakingQueues_matchmakingRequests_getMetrics\nGET {{host}}/v1/gameCenterMatchmakingQueues/{{id}}/metrics/matchmakingRequests?granularity=PT10.5S\u0026groupBy={{groupBy}}\u0026filter[result]=MATCHED\u0026filter[gameCenterDetail]={{filter[gameCenterDetail]}}\u0026sort={{sort}}\u0026limit={{limit}}\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: Metrics data response\n# Content-Type: application/json\n# 400\n# Description: Parameter error(s)\n# Content-Type: application/json\n# 401\n# Description: Unauthorized error(s)\n# Content-Type: application/json\n# 403\n# Description: Forbidden error\n# Content-Type: application/json\n# 404\n# Description: Not found error\n# Content-Type: application/json\n# 429\n# Description: Rate limit exceeded error\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "gameCenterMatchmakingQueues_matchmakingRequests_getMetrics",
+      "Setup": null
+    },
+    {
+      "Order": 10,
+      "Title": "GET /v1/gameCenterMatchmakingQueues/{id}/metrics/matchmakingSessions",
+      "Slug": "gamecentermatchmakingqueues-matchmakingsessions-getmetrics",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "http",
+      "Code": "### GET /v1/gameCenterMatchmakingQueues/{id}/metrics/matchmakingSessions\n# @name gameCenterMatchmakingQueues_matchmakingSessions_getMetrics\nGET {{host}}/v1/gameCenterMatchmakingQueues/{{id}}/metrics/matchmakingSessions?granularity=PT10.5S\u0026sort={{sort}}\u0026limit={{limit}}\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: Metrics data response\n# Content-Type: application/json\n# 400\n# Description: Parameter error(s)\n# Content-Type: application/json\n# 401\n# Description: Unauthorized error(s)\n# Content-Type: application/json\n# 403\n# Description: Forbidden error\n# Content-Type: application/json\n# 404\n# Description: Not found error\n# Content-Type: application/json\n# 429\n# Description: Rate limit exceeded error\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "gameCenterMatchmakingQueues_matchmakingSessions_getMetrics",
+      "Setup": null
+    },
+    {
+      "Order": 11,
+      "Title": "GET /v1/gameCenterMatchmakingRules/{id}/metrics/matchmakingBooleanRuleResults",
+      "Slug": "gamecentermatchmakingrules-matchmakingbooleanruleresults-getmetrics",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "http",
+      "Code": "### GET /v1/gameCenterMatchmakingRules/{id}/metrics/matchmakingBooleanRuleResults\n# @name gameCenterMatchmakingRules_matchmakingBooleanRuleResults_getMetrics\nGET {{host}}/v1/gameCenterMatchmakingRules/{{id}}/metrics/matchmakingBooleanRuleResults?granularity=PT10.5S\u0026groupBy={{groupBy}}\u0026filter[result]={{filter[result]}}\u0026filter[gameCenterMatchmakingQueue]={{filter[gameCenterMatchmakingQueue]}}\u0026sort={{sort}}\u0026limit={{limit}}\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: Metrics data response\n# Content-Type: application/json\n# 400\n# Description: Parameter error(s)\n# Content-Type: application/json\n# 401\n# Description: Unauthorized error(s)\n# Content-Type: application/json\n# 403\n# Description: Forbidden error\n# Content-Type: application/json\n# 404\n# Description: Not found error\n# Content-Type: application/json\n# 429\n# Description: Rate limit exceeded error\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "gameCenterMatchmakingRules_matchmakingBooleanRuleResults_getMetrics",
+      "Setup": null
+    },
+    {
+      "Order": 12,
+      "Title": "GET /v1/gameCenterMatchmakingRules/{id}/metrics/matchmakingNumberRuleResults",
+      "Slug": "gamecentermatchmakingrules-matchmakingnumberruleresults-getmetrics",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "http",
+      "Code": "### GET /v1/gameCenterMatchmakingRules/{id}/metrics/matchmakingNumberRuleResults\n# @name gameCenterMatchmakingRules_matchmakingNumberRuleResults_getMetrics\nGET {{host}}/v1/gameCenterMatchmakingRules/{{id}}/metrics/matchmakingNumberRuleResults?granularity=PT10.5S\u0026groupBy={{groupBy}}\u0026filter[gameCenterMatchmakingQueue]={{filter[gameCenterMatchmakingQueue]}}\u0026sort={{sort}}\u0026limit={{limit}}\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: Metrics data response\n# Content-Type: application/json\n# 400\n# Description: Parameter error(s)\n# Content-Type: application/json\n# 401\n# Description: Unauthorized error(s)\n# Content-Type: application/json\n# 403\n# Description: Forbidden error\n# Content-Type: application/json\n# 404\n# Description: Not found error\n# Content-Type: application/json\n# 429\n# Description: Rate limit exceeded error\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "gameCenterMatchmakingRules_matchmakingNumberRuleResults_getMetrics",
+      "Setup": null
+    },
+    {
+      "Order": 13,
+      "Title": "GET /v1/gameCenterMatchmakingRules/{id}/metrics/matchmakingRuleErrors",
+      "Slug": "gamecentermatchmakingrules-matchmakingruleerrors-getmetrics",
+      "Description": "Generated from OpenAPI examples.",
+      "Language": "http",
+      "Code": "### GET /v1/gameCenterMatchmakingRules/{id}/metrics/matchmakingRuleErrors\n# @name gameCenterMatchmakingRules_matchmakingRuleErrors_getMetrics\nGET {{host}}/v1/gameCenterMatchmakingRules/{{id}}/metrics/matchmakingRuleErrors?granularity=PT10.5S\u0026groupBy={{groupBy}}\u0026filter[gameCenterMatchmakingQueue]={{filter[gameCenterMatchmakingQueue]}}\u0026sort={{sort}}\u0026limit={{limit}}\nAuthorization: Bearer {{token}}\nAccept: application/json\n\n## Responses\n# 200\n# Description: Metrics data response\n# Content-Type: application/json\n# 400\n# Description: Parameter error(s)\n# Content-Type: application/json\n# 401\n# Description: Unauthorized error(s)\n# Content-Type: application/json\n# 403\n# Description: Forbidden error\n# Content-Type: application/json\n# 404\n# Description: Not found error\n# Content-Type: application/json\n# 429\n# Description: Rate limit exceeded error\n# Content-Type: application/json",
+      "Format": "http",
+      "OperationId": "gameCenterMatchmakingRules_matchmakingRuleErrors_getMetrics",
+      "Setup": null
+    }
+  ]
+}

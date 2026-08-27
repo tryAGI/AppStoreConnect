@@ -1,0 +1,43 @@
+#nullable enable
+
+namespace AppStoreConnect
+{
+    public partial interface IAppStoreVersionExperimentsClient
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::AppStoreConnect.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::AppStoreConnect.AppStoreVersionExperimentV2Response> AppStoreVersionExperimentsV2CreateInstanceAsync(
+
+            global::AppStoreConnect.AppStoreVersionExperimentV2CreateRequest request,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::AppStoreConnect.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::AppStoreConnect.AutoSDKHttpResponse<global::AppStoreConnect.AppStoreVersionExperimentV2Response>> AppStoreVersionExperimentsV2CreateInstanceAsResponseAsync(
+
+            global::AppStoreConnect.AppStoreVersionExperimentV2CreateRequest request,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="data"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        global::System.Threading.Tasks.Task<global::AppStoreConnect.AppStoreVersionExperimentV2Response> AppStoreVersionExperimentsV2CreateInstanceAsync(
+            global::AppStoreConnect.AppStoreVersionExperimentV2CreateRequestData data,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}

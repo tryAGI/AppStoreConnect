@@ -1,0 +1,45 @@
+
+#nullable enable
+
+namespace AppStoreConnect
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed partial class GameCenterAchievementVersionV2ResponseIncludedItemDiscriminator
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("type")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.GameCenterAchievementVersionV2ResponseIncludedItemDiscriminatorTypeJsonConverter))]
+        public global::AppStoreConnect.GameCenterAchievementVersionV2ResponseIncludedItemDiscriminatorType? Type { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GameCenterAchievementVersionV2ResponseIncludedItemDiscriminator" /> class.
+        /// </summary>
+        /// <param name="type"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public GameCenterAchievementVersionV2ResponseIncludedItemDiscriminator(
+            global::AppStoreConnect.GameCenterAchievementVersionV2ResponseIncludedItemDiscriminatorType? type)
+        {
+            this.Type = type;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GameCenterAchievementVersionV2ResponseIncludedItemDiscriminator" /> class.
+        /// </summary>
+        public GameCenterAchievementVersionV2ResponseIncludedItemDiscriminator()
+        {
+        }
+
+    }
+}

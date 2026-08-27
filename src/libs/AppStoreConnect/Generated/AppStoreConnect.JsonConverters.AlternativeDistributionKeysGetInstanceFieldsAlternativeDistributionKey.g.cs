@@ -1,0 +1,53 @@
+#nullable enable
+
+namespace AppStoreConnect.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class AlternativeDistributionKeysGetInstanceFieldsAlternativeDistributionKeyJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::AppStoreConnect.AlternativeDistributionKeysGetInstanceFieldsAlternativeDistributionKey>
+    {
+        /// <inheritdoc />
+        public override global::AppStoreConnect.AlternativeDistributionKeysGetInstanceFieldsAlternativeDistributionKey Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::AppStoreConnect.AlternativeDistributionKeysGetInstanceFieldsAlternativeDistributionKeyExtensions.ToEnum(stringValue) ?? default;
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::AppStoreConnect.AlternativeDistributionKeysGetInstanceFieldsAlternativeDistributionKey)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::AppStoreConnect.AlternativeDistributionKeysGetInstanceFieldsAlternativeDistributionKey);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::AppStoreConnect.AlternativeDistributionKeysGetInstanceFieldsAlternativeDistributionKey value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            writer.WriteStringValue(global::AppStoreConnect.AlternativeDistributionKeysGetInstanceFieldsAlternativeDistributionKeyExtensions.ToValueString(value));
+        }
+    }
+}

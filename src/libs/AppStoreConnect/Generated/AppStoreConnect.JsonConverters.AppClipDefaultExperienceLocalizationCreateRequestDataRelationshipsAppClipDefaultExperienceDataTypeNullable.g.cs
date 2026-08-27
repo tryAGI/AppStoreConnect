@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace AppStoreConnect.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataTypeNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataType?>
+    {
+        /// <inheritdoc />
+        public override global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataType? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataTypeExtensions.ToEnum(stringValue);
+                    }
+                    
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataType)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataType?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataType? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataTypeExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}

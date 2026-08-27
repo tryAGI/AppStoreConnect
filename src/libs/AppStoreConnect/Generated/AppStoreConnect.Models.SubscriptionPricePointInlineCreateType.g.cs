@@ -1,0 +1,45 @@
+
+#nullable enable
+
+namespace AppStoreConnect
+{
+    /// <summary>
+    /// 
+    /// </summary>
+    public enum SubscriptionPricePointInlineCreateType
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        SubscriptionPricePoints,
+    }
+
+    /// <summary>
+    /// Enum extensions to do fast conversions without the reflection.
+    /// </summary>
+    public static class SubscriptionPricePointInlineCreateTypeExtensions
+    {
+        /// <summary>
+        /// Converts an enum to a string.
+        /// </summary>
+        public static string ToValueString(this SubscriptionPricePointInlineCreateType value)
+        {
+            return value switch
+            {
+                SubscriptionPricePointInlineCreateType.SubscriptionPricePoints => "subscriptionPricePoints",
+                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
+            };
+        }
+        /// <summary>
+        /// Converts an string to a enum.
+        /// </summary>
+        public static SubscriptionPricePointInlineCreateType? ToEnum(string value)
+        {
+            return value switch
+            {
+                "subscriptionPricePoints" => SubscriptionPricePointInlineCreateType.SubscriptionPricePoints,
+                _ => null,
+            };
+        }
+    }
+}

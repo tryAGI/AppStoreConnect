@@ -1,0 +1,49 @@
+#nullable enable
+
+namespace AppStoreConnect
+{
+    public partial interface IAppStoreVersionLocalizationsClient
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::AppStoreConnect.ApiException"></exception>
+        global::System.Threading.Tasks.Task AppStoreVersionLocalizationsSearchKeywordsCreateToManyRelationshipAsync(
+            string id,
+
+            global::AppStoreConnect.AppStoreVersionLocalizationSearchKeywordsLinkagesRequest request,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="request"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::AppStoreConnect.ApiException"></exception>
+        global::System.Threading.Tasks.Task<global::AppStoreConnect.AutoSDKHttpResponse> AppStoreVersionLocalizationsSearchKeywordsCreateToManyRelationshipAsResponseAsync(
+            string id,
+
+            global::AppStoreConnect.AppStoreVersionLocalizationSearchKeywordsLinkagesRequest request,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="data"></param>
+        /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
+        /// <param name="cancellationToken">The token to cancel the operation with</param>
+        /// <exception cref="global::System.InvalidOperationException"></exception>
+        global::System.Threading.Tasks.Task AppStoreVersionLocalizationsSearchKeywordsCreateToManyRelationshipAsync(
+            string id,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppStoreVersionLocalizationSearchKeywordsLinkagesRequestDataItem> data,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
+            global::System.Threading.CancellationToken cancellationToken = default);
+    }
+}
