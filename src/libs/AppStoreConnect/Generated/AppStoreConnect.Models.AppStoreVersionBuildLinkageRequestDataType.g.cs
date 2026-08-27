@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreVersionBuildLinkageRequestDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Builds,
     }

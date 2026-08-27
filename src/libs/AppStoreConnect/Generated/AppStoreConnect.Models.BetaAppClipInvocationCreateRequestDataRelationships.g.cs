@@ -4,19 +4,19 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BetaAppClipInvocationCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildBundle")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.BetaAppClipInvocationCreateRequestDataRelationshipsBuildBundle BuildBundle { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("betaAppClipInvocationLocalizations")]
         [global::System.Text.Json.Serialization.JsonRequired]

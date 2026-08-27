@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BackgroundAssetUploadFileCreateRequestDataAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("assetType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.BackgroundAssetUploadFileCreateRequestDataAttributesAssetTypeJsonConverter))]
@@ -17,14 +17,14 @@ namespace AppStoreConnect
         public required global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataAttributesAssetType AssetType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fileName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string FileName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fileSize")]
         [global::System.Text.Json.Serialization.JsonRequired]

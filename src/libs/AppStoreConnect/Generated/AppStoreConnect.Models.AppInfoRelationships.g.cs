@@ -4,66 +4,66 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppInfoRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("app")]
         public global::AppStoreConnect.AppInfoRelationshipsApp? App { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ageRatingDeclaration")]
         public global::AppStoreConnect.AppInfoRelationshipsAgeRatingDeclaration? AgeRatingDeclaration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appInfoLocalizations")]
         public global::AppStoreConnect.AppInfoRelationshipsAppInfoLocalizations? AppInfoLocalizations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("primaryCategory")]
         public global::AppStoreConnect.AppInfoRelationshipsPrimaryCategory? PrimaryCategory { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("primarySubcategoryOne")]
         public global::AppStoreConnect.AppInfoRelationshipsPrimarySubcategoryOne? PrimarySubcategoryOne { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("primarySubcategoryTwo")]
         public global::AppStoreConnect.AppInfoRelationshipsPrimarySubcategoryTwo? PrimarySubcategoryTwo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("secondaryCategory")]
         public global::AppStoreConnect.AppInfoRelationshipsSecondaryCategory? SecondaryCategory { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("secondarySubcategoryOne")]
         public global::AppStoreConnect.AppInfoRelationshipsSecondarySubcategoryOne? SecondarySubcategoryOne { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("secondarySubcategoryTwo")]
         public global::AppStoreConnect.AppInfoRelationshipsSecondarySubcategoryTwo? SecondarySubcategoryTwo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("territoryAgeRatings")]
         public global::AppStoreConnect.AppInfoRelationshipsTerritoryAgeRatings? TerritoryAgeRatings { get; set; }

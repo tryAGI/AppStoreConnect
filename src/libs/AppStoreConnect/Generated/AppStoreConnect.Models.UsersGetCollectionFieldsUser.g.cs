@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UsersGetCollectionFieldsUser
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AllAppsVisible,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FirstName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProvisioningAllowed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Roles,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Username,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VisibleApps,
     }

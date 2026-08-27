@@ -4,72 +4,72 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionOfferCodeOneTimeUseCodesGetInstanceFieldsSubscriptionOfferCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Active,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AutoRenewEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomerEligibilities,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Duration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NumberOfPeriods,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OfferEligibility,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OfferMode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OneTimeUseCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prices,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProductionCodeCount,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SandboxCodeCount,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Subscription,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TargetSubscriptionPlanType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TotalNumberOfCodes,
     }

@@ -4,48 +4,48 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchasesV2GetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreReviewScreenshot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Content,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IapPriceSchedule,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Images,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseAvailability,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OfferCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PricePoints,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PromotedPurchase,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Versions,
     }

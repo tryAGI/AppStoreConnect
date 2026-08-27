@@ -4,52 +4,52 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AccessibilityDeclarationsGetInstanceFieldsAccessibilityDeclaration
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeviceFamily,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         State,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SupportsAudioDescriptions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SupportsCaptions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SupportsDarkInterface,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SupportsDifferentiateWithoutColorAlone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SupportsLargerText,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SupportsReducedMotion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SupportsSufficientContrast,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SupportsVoiceControl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SupportsVoiceover,
     }

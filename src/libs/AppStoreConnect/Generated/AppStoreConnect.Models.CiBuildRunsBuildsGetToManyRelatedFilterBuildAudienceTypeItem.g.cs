@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiBuildRunsBuildsGetToManyRelatedFilterBuildAudienceTypeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreEligible,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InternalOnly,
     }

@@ -6,176 +6,176 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AgeRatingDeclarationUpdateRequestDataAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("advertising")]
         public bool? Advertising { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alcoholTobaccoOrDrugUseOrReferences")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesAlcoholTobaccoOrDrugUseOrReferencesJsonConverter))]
         public global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAlcoholTobaccoOrDrugUseOrReferences? AlcoholTobaccoOrDrugUseOrReferences { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("contests")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesContestsJsonConverter))]
         public global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesContests? Contests { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gambling")]
         public bool? Gambling { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gamblingSimulated")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesGamblingSimulatedJsonConverter))]
         public global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesGamblingSimulated? GamblingSimulated { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gunsOrOtherWeapons")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesGunsOrOtherWeaponsJsonConverter))]
         public global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesGunsOrOtherWeapons? GunsOrOtherWeapons { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("healthOrWellnessTopics")]
         public bool? HealthOrWellnessTopics { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kidsAgeBand")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.KidsAgeBandJsonConverter))]
         public global::AppStoreConnect.KidsAgeBand? KidsAgeBand { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lootBox")]
         public bool? LootBox { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("medicalOrTreatmentInformation")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesMedicalOrTreatmentInformationJsonConverter))]
         public global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesMedicalOrTreatmentInformation? MedicalOrTreatmentInformation { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("messagingAndChat")]
         public bool? MessagingAndChat { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("parentalControls")]
         public bool? ParentalControls { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("profanityOrCrudeHumor")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesProfanityOrCrudeHumorJsonConverter))]
         public global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesProfanityOrCrudeHumor? ProfanityOrCrudeHumor { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ageAssurance")]
         public bool? AgeAssurance { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sexualContentGraphicAndNudity")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentGraphicAndNudityJsonConverter))]
         public global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentGraphicAndNudity? SexualContentGraphicAndNudity { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sexualContentOrNudity")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentOrNudityJsonConverter))]
         public global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentOrNudity? SexualContentOrNudity { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("socialMedia")]
         public bool? SocialMedia { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("socialMediaAgeRestricted")]
         public bool? SocialMediaAgeRestricted { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("horrorOrFearThemes")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesHorrorOrFearThemesJsonConverter))]
         public global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesHorrorOrFearThemes? HorrorOrFearThemes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("matureOrSuggestiveThemes")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesMatureOrSuggestiveThemesJsonConverter))]
         public global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesMatureOrSuggestiveThemes? MatureOrSuggestiveThemes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("unrestrictedWebAccess")]
         public bool? UnrestrictedWebAccess { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("userGeneratedContent")]
         public bool? UserGeneratedContent { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("violenceCartoonOrFantasy")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesViolenceCartoonOrFantasyJsonConverter))]
         public global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceCartoonOrFantasy? ViolenceCartoonOrFantasy { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("violenceRealisticProlongedGraphicOrSadistic")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealisticProlongedGraphicOrSadisticJsonConverter))]
         public global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealisticProlongedGraphicOrSadistic? ViolenceRealisticProlongedGraphicOrSadistic { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("violenceRealistic")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealisticJsonConverter))]
         public global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealistic? ViolenceRealistic { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ageRatingOverride")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideJsonConverter))]
@@ -183,21 +183,21 @@ namespace AppStoreConnect
         public global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverride? AgeRatingOverride { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ageRatingOverrideV2")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideV2JsonConverter))]
         public global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideV2? AgeRatingOverrideV2 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("koreaAgeRatingOverride")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverrideJsonConverter))]
         public global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride? KoreaAgeRatingOverride { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("developerAgeRatingInfoUrl")]
         public string? DeveloperAgeRatingInfoUrl { get; set; }

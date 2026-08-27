@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsEndUserLicenseAgreementGetToOneRelatedFieldsEndUserLicenseAgreement
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgreementText,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Territories,
     }

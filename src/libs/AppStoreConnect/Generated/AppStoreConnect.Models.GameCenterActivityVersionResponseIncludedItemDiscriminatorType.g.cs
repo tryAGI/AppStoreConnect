@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterActivityVersionResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterActivities,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterActivityImages,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterActivityLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterActivityVersionReleases,
     }

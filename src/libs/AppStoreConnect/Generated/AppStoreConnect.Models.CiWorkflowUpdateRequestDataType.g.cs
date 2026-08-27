@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiWorkflowUpdateRequestDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CiWorkflows,
     }

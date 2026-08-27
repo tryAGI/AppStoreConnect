@@ -4,42 +4,42 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CiProductRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("app")]
         public global::AppStoreConnect.CiProductRelationshipsApp? App { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bundleId")]
         public global::AppStoreConnect.CiProductRelationshipsBundleId? BundleId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("workflows")]
         public global::AppStoreConnect.CiProductRelationshipsWorkflows? Workflows { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("primaryRepositories")]
         public global::AppStoreConnect.CiProductRelationshipsPrimaryRepositories? PrimaryRepositories { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("additionalRepositories")]
         public global::AppStoreConnect.CiProductRelationshipsAdditionalRepositories? AdditionalRepositories { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildRuns")]
         public global::AppStoreConnect.CiProductRelationshipsBuildRuns? BuildRuns { get; set; }

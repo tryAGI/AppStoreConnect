@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SubscriptionAvailabilityRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("availableTerritories")]
         public global::AppStoreConnect.SubscriptionAvailabilityRelationshipsAvailableTerritories? AvailableTerritories { get; set; }

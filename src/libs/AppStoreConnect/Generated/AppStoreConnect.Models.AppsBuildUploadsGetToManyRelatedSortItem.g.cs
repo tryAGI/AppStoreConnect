@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsBuildUploadsGetToManyRelatedSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinuscfBundleVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinusuploadedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CfBundleVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UploadedDate,
     }

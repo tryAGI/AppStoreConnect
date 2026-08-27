@@ -5,17 +5,17 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IncludedItem137 : global::System.IEquatable<IncludedItem137>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchaseOfferCodeResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode? InAppPurchaseOfferCodeCustomCodes { get; init; }
@@ -24,7 +24,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseOfferCodeCustomCodes))]
@@ -32,7 +32,7 @@ namespace AppStoreConnect
         public bool IsInAppPurchaseOfferCodeCustomCodes => InAppPurchaseOfferCodeCustomCodes != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInAppPurchaseOfferCodeCustomCodes(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode PickInAppPurchaseOfferCodeCustomCodes() => IsInAppPurchaseOfferCodeCustomCodes
             ? InAppPurchaseOfferCodeCustomCodes!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseOfferCodeCustomCodes' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode? InAppPurchaseOfferCodeOneTimeUseCodes { get; init; }
@@ -61,7 +61,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseOfferCodeOneTimeUseCodes))]
@@ -69,7 +69,7 @@ namespace AppStoreConnect
         public bool IsInAppPurchaseOfferCodeOneTimeUseCodes => InAppPurchaseOfferCodeOneTimeUseCodes != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInAppPurchaseOfferCodeOneTimeUseCodes(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode PickInAppPurchaseOfferCodeOneTimeUseCodes() => IsInAppPurchaseOfferCodeOneTimeUseCodes
             ? InAppPurchaseOfferCodeOneTimeUseCodes!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseOfferCodeOneTimeUseCodes' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.InAppPurchaseOfferPrice? InAppPurchaseOfferPrices { get; init; }
@@ -98,7 +98,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseOfferPrices))]
@@ -106,7 +106,7 @@ namespace AppStoreConnect
         public bool IsInAppPurchaseOfferPrices => InAppPurchaseOfferPrices != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInAppPurchaseOfferPrices(
 #if NET6_0_OR_GREATER
@@ -119,23 +119,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchaseOfferPrice PickInAppPurchaseOfferPrices() => IsInAppPurchaseOfferPrices
             ? InAppPurchaseOfferPrices!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseOfferPrices' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem137(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode value) => new IncludedItem137((global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode?(IncludedItem137 @this) => @this.InAppPurchaseOfferCodeCustomCodes;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem137(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode? value)
         {
@@ -143,22 +143,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem137 FromInAppPurchaseOfferCodeCustomCodes(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode? value) => new IncludedItem137(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem137(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode value) => new IncludedItem137((global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode?(IncludedItem137 @this) => @this.InAppPurchaseOfferCodeOneTimeUseCodes;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem137(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode? value)
         {
@@ -166,22 +166,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem137 FromInAppPurchaseOfferCodeOneTimeUseCodes(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode? value) => new IncludedItem137(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem137(global::AppStoreConnect.InAppPurchaseOfferPrice value) => new IncludedItem137((global::AppStoreConnect.InAppPurchaseOfferPrice?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.InAppPurchaseOfferPrice?(IncludedItem137 @this) => @this.InAppPurchaseOfferPrices;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem137(global::AppStoreConnect.InAppPurchaseOfferPrice? value)
         {
@@ -189,12 +189,12 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem137 FromInAppPurchaseOfferPrices(global::AppStoreConnect.InAppPurchaseOfferPrice? value) => new IncludedItem137(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem137(
             global::AppStoreConnect.InAppPurchaseOfferCodeResponseIncludedItemDiscriminatorType? type,
@@ -211,25 +211,25 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             InAppPurchaseOfferPrices as object ??
             InAppPurchaseOfferCodeOneTimeUseCodes as object ??
-            InAppPurchaseOfferCodeCustomCodes as object 
+            InAppPurchaseOfferCodeCustomCodes as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             InAppPurchaseOfferCodeCustomCodes?.ToString() ??
             InAppPurchaseOfferCodeOneTimeUseCodes?.ToString() ??
-            InAppPurchaseOfferPrices?.ToString() 
+            InAppPurchaseOfferPrices?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -237,7 +237,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode, TResult>? inAppPurchaseOfferCodeCustomCodes = null,
@@ -267,7 +267,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode>? inAppPurchaseOfferCodeCustomCodes = null,
@@ -297,7 +297,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode>? inAppPurchaseOfferCodeCustomCodes = null,
@@ -325,7 +325,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -348,19 +348,19 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludedItem137 other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode?>.Default.Equals(InAppPurchaseOfferCodeCustomCodes, other.InAppPurchaseOfferCodeCustomCodes) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode?>.Default.Equals(InAppPurchaseOfferCodeOneTimeUseCodes, other.InAppPurchaseOfferCodeOneTimeUseCodes) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseOfferPrice?>.Default.Equals(InAppPurchaseOfferPrices, other.InAppPurchaseOfferPrices) 
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseOfferPrice?>.Default.Equals(InAppPurchaseOfferPrices, other.InAppPurchaseOfferPrices)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludedItem137 obj1, IncludedItem137 obj2)
         {
@@ -368,7 +368,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludedItem137 obj1, IncludedItem137 obj2)
         {
@@ -376,7 +376,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

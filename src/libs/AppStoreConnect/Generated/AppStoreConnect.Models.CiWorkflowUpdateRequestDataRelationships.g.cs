@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CiWorkflowUpdateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("xcodeVersion")]
         public global::AppStoreConnect.CiWorkflowUpdateRequestDataRelationshipsXcodeVersion? XcodeVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("macOsVersion")]
         public global::AppStoreConnect.CiWorkflowUpdateRequestDataRelationshipsMacOsVersion? MacOsVersion { get; set; }

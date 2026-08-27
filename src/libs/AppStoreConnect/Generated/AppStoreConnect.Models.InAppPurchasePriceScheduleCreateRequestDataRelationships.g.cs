@@ -4,26 +4,26 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class InAppPurchasePriceScheduleCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inAppPurchase")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.InAppPurchasePriceScheduleCreateRequestDataRelationshipsInAppPurchase InAppPurchase { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("baseTerritory")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.InAppPurchasePriceScheduleCreateRequestDataRelationshipsBaseTerritory BaseTerritory { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("manualPrices")]
         [global::System.Text.Json.Serialization.JsonRequired]

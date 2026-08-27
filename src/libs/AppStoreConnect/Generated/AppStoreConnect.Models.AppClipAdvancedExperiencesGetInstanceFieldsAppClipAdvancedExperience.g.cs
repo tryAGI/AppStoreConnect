@@ -4,56 +4,56 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipAdvancedExperiencesGetInstanceFieldsAppClipAdvancedExperience
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Action,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClip,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BusinessCategory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DefaultLanguage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HeaderImage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IsPoweredBy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Link,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Localizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Place,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PlaceStatus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Status,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Version,
     }

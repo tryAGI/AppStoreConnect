@@ -4,40 +4,40 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UserInvitationsGetCollectionFieldsUserInvitation
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AllAppsVisible,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Email,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExpirationDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FirstName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProvisioningAllowed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Roles,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VisibleApps,
     }

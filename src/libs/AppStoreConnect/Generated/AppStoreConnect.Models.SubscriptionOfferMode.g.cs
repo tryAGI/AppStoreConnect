@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionOfferMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FreeTrial,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PayAsYouGo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PayUpFront,
     }

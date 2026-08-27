@@ -4,48 +4,48 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiActionDestination
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnyIosDevice,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnyIosSimulator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnyMac,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnyMacCatalyst,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnyTvosDevice,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnyTvosSimulator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnyVisionosDevice,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnyVisionosSimulator,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnyWatchosDevice,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnyWatchosSimulator,
     }

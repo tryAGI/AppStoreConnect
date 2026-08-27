@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum MerchantIdsCertificatesGetToManyRelatedFieldsPassTypeId
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Certificates,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Identifier,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
     }

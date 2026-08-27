@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BuildUploadRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("build")]
         public global::AppStoreConnect.BuildUploadRelationshipsBuild? Build { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("assetFile")]
         public global::AppStoreConnect.BuildUploadRelationshipsAssetFile? AssetFile { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("assetDescriptionFile")]
         public global::AppStoreConnect.BuildUploadRelationshipsAssetDescriptionFile? AssetDescriptionFile { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("assetSpiFile")]
         public global::AppStoreConnect.BuildUploadRelationshipsAssetSpiFile? AssetSpiFile { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildUploadFiles")]
         public global::AppStoreConnect.BuildUploadRelationshipsBuildUploadFiles? BuildUploadFiles { get; set; }

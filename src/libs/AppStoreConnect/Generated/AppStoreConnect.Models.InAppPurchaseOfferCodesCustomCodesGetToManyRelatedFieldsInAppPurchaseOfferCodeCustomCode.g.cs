@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchaseOfferCodesCustomCodesGetToManyRelatedFieldsInAppPurchaseOfferCodeCustomCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Active,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedByActor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomCode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeactivatedByActor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExpirationDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NumberOfCodes,
     }

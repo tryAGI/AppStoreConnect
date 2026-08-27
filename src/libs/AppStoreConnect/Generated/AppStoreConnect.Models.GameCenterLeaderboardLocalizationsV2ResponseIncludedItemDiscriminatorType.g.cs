@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterLeaderboardLocalizationsV2ResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardImages,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardVersions,
     }

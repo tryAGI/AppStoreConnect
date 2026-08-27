@@ -4,19 +4,19 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class InAppPurchaseAvailabilityCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inAppPurchase")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.InAppPurchaseAvailabilityCreateRequestDataRelationshipsInAppPurchase InAppPurchase { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("availableTerritories")]
         [global::System.Text.Json.Serialization.JsonRequired]

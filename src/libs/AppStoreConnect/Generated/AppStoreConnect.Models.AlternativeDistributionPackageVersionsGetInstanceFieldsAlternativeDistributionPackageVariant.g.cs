@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AlternativeDistributionPackageVersionsGetInstanceFieldsAlternativeDistributionPackageVariant
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlternativeDistributionKeyBlob,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileChecksum,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Url,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UrlExpirationDate,
     }

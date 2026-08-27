@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppUpdateRequestDataAttributesContentRightsDeclaration
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DoesNotUseThirdPartyContent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UsesThirdPartyContent,
     }

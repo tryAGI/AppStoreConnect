@@ -4,84 +4,84 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppInfosAppInfoLocalizationsGetToManyRelatedFieldsAppInfo
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgeRatingDeclaration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppInfoLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreAgeRating,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AustraliaAgeRating,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BrazilAgeRating,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BrazilAgeRatingV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FranceAgeRating,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KidsAgeBand,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KoreaAgeRating,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrimaryCategory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrimarySubcategoryOne,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrimarySubcategoryTwo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecondaryCategory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecondarySubcategoryOne,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecondarySubcategoryTwo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         State,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TerritoryAgeRatings,
     }

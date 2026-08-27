@@ -4,33 +4,33 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CiWorkflowCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("product")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.CiWorkflowCreateRequestDataRelationshipsProduct Product { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("repository")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.CiWorkflowCreateRequestDataRelationshipsRepository Repository { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("xcodeVersion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.CiWorkflowCreateRequestDataRelationshipsXcodeVersion XcodeVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("macOsVersion")]
         [global::System.Text.Json.Serialization.JsonRequired]

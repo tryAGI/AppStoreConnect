@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppEventLocalizationRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appEvent")]
         public global::AppStoreConnect.AppEventLocalizationRelationshipsAppEvent? AppEvent { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appEventScreenshots")]
         public global::AppStoreConnect.AppEventLocalizationRelationshipsAppEventScreenshots? AppEventScreenshots { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appEventVideoClips")]
         public global::AppStoreConnect.AppEventLocalizationRelationshipsAppEventVideoClips? AppEventVideoClips { get; set; }

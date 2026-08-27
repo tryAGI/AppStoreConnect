@@ -4,80 +4,80 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipDomainStatusAttributesDomainErrorCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BadHttpResponse,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BadJsonContent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BadPkcs7Signature,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotReachAasaFile,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CrossSiteRedirectsForbidden,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DnsError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InsecureRedirectsForbidden,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidEntitlementMissingSection,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidEntitlementSyntaxError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidEntitlementUnhandledSection,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidEntitlementUnknownId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NetworkError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NetworkErrorTemporary,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OtherError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Timeout,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TlsError,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TooManyRedirects,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UnexpectedError,
     }

@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ActorAttributesActorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApiKey,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apple,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         User,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         XcodeCloud,
     }

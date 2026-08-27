@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BetaTesterRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("apps")]
         public global::AppStoreConnect.BetaTesterRelationshipsApps? Apps { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("betaGroups")]
         public global::AppStoreConnect.BetaTesterRelationshipsBetaGroups? BetaGroups { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("builds")]
         public global::AppStoreConnect.BetaTesterRelationshipsBuilds? Builds { get; set; }

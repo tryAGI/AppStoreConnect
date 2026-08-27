@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiBuildActionsIssuesGetToManyRelatedFieldsCiIssue
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Category,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileSource,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IssueType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Message,
     }

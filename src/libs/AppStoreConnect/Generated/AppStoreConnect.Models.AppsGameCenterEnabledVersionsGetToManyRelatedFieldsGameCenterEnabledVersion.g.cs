@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsGameCenterEnabledVersionsGetToManyRelatedFieldsGameCenterEnabledVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CompatibleVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IconAsset,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Platform,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VersionString,
     }

@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterMatchmakingRuleSetsGetInstanceFieldsGameCenterMatchmakingQueue
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClassicMatchmakingBundleIds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExperimentRuleSet,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReferenceName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RuleSet,
     }

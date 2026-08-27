@@ -4,48 +4,48 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BundleIdsGetCollectionSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusidentifier,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusname,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusplatform,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinusseedId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Id,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Identifier,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Platform,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SeedId,
     }

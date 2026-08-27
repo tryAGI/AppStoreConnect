@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IGameCenterChallengesClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsGameCenterChallengeVersions"></param>
         /// <param name="fieldsGameCenterChallenges"></param>
@@ -34,7 +34,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsGameCenterChallengeVersions"></param>
         /// <param name="fieldsGameCenterChallenges"></param>

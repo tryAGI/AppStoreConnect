@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class NominationUpdateRequestDataRelationshipsSupportedTerritories
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         public global::System.Collections.Generic.IList<global::AppStoreConnect.NominationUpdateRequestDataRelationshipsSupportedTerritoriesDataItem>? Data { get; set; }

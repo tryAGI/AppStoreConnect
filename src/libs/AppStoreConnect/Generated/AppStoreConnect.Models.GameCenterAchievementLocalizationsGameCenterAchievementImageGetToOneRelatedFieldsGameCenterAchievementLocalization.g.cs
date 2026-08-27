@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterAchievementLocalizationsGameCenterAchievementImageGetToOneRelatedFieldsGameCenterAchievementLocalization
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AfterEarnedDescription,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BeforeEarnedDescription,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAchievement,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAchievementImage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Locale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
     }

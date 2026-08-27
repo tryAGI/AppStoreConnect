@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipAdvancedExperienceAttributesStatus
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppTransferInProgress,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deactivated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Received,
     }

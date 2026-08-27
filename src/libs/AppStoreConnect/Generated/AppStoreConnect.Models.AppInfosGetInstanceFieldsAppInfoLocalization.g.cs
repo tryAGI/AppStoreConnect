@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppInfosGetInstanceFieldsAppInfoLocalization
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppInfo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Locale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrivacyChoicesUrl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrivacyPolicyText,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrivacyPolicyUrl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Subtitle,
     }

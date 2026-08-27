@@ -4,52 +4,52 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiProductsAppGetToOneRelatedFieldsAppStoreVersionExperiment
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionExperimentTreatments,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ControlVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EndDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LatestControlVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Platform,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReviewRequired,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StartDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         State,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TrafficProportion,
     }

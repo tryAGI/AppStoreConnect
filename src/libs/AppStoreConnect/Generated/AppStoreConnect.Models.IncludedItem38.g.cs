@@ -5,17 +5,17 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IncludedItem38 : global::System.IEquatable<IncludedItem38>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppStoreVersionExperimentsV2ResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppStoreVersionExperimentTreatment? AppStoreVersionExperimentTreatments1 { get; init; }
@@ -24,7 +24,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperimentTreatments1))]
@@ -32,7 +32,7 @@ namespace AppStoreConnect
         public bool IsAppStoreVersionExperimentTreatments1 => AppStoreVersionExperimentTreatments1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppStoreVersionExperimentTreatments1(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppStoreVersionExperimentTreatment PickAppStoreVersionExperimentTreatments1() => IsAppStoreVersionExperimentTreatments1
             ? AppStoreVersionExperimentTreatments1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatments1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppStoreVersion? AppStoreVersionExperimentTreatments2 { get; init; }
@@ -61,7 +61,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperimentTreatments2))]
@@ -69,7 +69,7 @@ namespace AppStoreConnect
         public bool IsAppStoreVersionExperimentTreatments2 => AppStoreVersionExperimentTreatments2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppStoreVersionExperimentTreatments2(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppStoreVersion PickAppStoreVersionExperimentTreatments2() => IsAppStoreVersionExperimentTreatments2
             ? AppStoreVersionExperimentTreatments2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatments2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.App? AppStoreVersionExperimentTreatments3 { get; init; }
@@ -98,7 +98,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperimentTreatments3))]
@@ -106,7 +106,7 @@ namespace AppStoreConnect
         public bool IsAppStoreVersionExperimentTreatments3 => AppStoreVersionExperimentTreatments3 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppStoreVersionExperimentTreatments3(
 #if NET6_0_OR_GREATER
@@ -119,23 +119,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.App PickAppStoreVersionExperimentTreatments3() => IsAppStoreVersionExperimentTreatments3
             ? AppStoreVersionExperimentTreatments3!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatments3' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem38(global::AppStoreConnect.AppStoreVersionExperimentTreatment value) => new IncludedItem38((global::AppStoreConnect.AppStoreVersionExperimentTreatment?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppStoreVersionExperimentTreatment?(IncludedItem38 @this) => @this.AppStoreVersionExperimentTreatments1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem38(global::AppStoreConnect.AppStoreVersionExperimentTreatment? value)
         {
@@ -143,22 +143,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem38 FromAppStoreVersionExperimentTreatments1(global::AppStoreConnect.AppStoreVersionExperimentTreatment? value) => new IncludedItem38(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem38(global::AppStoreConnect.AppStoreVersion value) => new IncludedItem38((global::AppStoreConnect.AppStoreVersion?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem38 @this) => @this.AppStoreVersionExperimentTreatments2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem38(global::AppStoreConnect.AppStoreVersion? value)
         {
@@ -166,22 +166,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem38 FromAppStoreVersionExperimentTreatments2(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem38(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem38(global::AppStoreConnect.App value) => new IncludedItem38((global::AppStoreConnect.App?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.App?(IncludedItem38 @this) => @this.AppStoreVersionExperimentTreatments3;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem38(global::AppStoreConnect.App? value)
         {
@@ -189,12 +189,12 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem38 FromAppStoreVersionExperimentTreatments3(global::AppStoreConnect.App? value) => new IncludedItem38(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem38(
             global::AppStoreConnect.AppStoreVersionExperimentsV2ResponseIncludedItemDiscriminatorType? type,
@@ -211,25 +211,25 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             AppStoreVersionExperimentTreatments3 as object ??
             AppStoreVersionExperimentTreatments2 as object ??
-            AppStoreVersionExperimentTreatments1 as object 
+            AppStoreVersionExperimentTreatments1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             AppStoreVersionExperimentTreatments1?.ToString() ??
             AppStoreVersionExperimentTreatments2?.ToString() ??
-            AppStoreVersionExperimentTreatments3?.ToString() 
+            AppStoreVersionExperimentTreatments3?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -237,7 +237,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.AppStoreVersionExperimentTreatment, TResult>? appStoreVersionExperimentTreatments1 = null,
@@ -267,7 +267,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatment>? appStoreVersionExperimentTreatments1 = null,
@@ -297,7 +297,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatment>? appStoreVersionExperimentTreatments1 = null,
@@ -325,7 +325,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -348,19 +348,19 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludedItem38 other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperimentTreatment?>.Default.Equals(AppStoreVersionExperimentTreatments1, other.AppStoreVersionExperimentTreatments1) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersionExperimentTreatments2, other.AppStoreVersionExperimentTreatments2) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(AppStoreVersionExperimentTreatments3, other.AppStoreVersionExperimentTreatments3) 
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(AppStoreVersionExperimentTreatments3, other.AppStoreVersionExperimentTreatments3)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludedItem38 obj1, IncludedItem38 obj2)
         {
@@ -368,7 +368,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludedItem38 obj1, IncludedItem38 obj2)
         {
@@ -376,7 +376,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

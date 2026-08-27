@@ -4,120 +4,120 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CapabilityType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AccessWifiInformation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppleIdAuth,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApplePay,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppGroups,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssociatedDomains,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AutofillCredentialProvider,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Classkit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CoremediaHlsLowLatency,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DataProtection,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenter,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Healthkit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Homekit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HotSpot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Icloud,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InterAppAudio,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchase,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Maps,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Multipath,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NetworkCustomProtocol,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NetworkExtensions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NfcTagReading,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PersonalVpn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PushNotifications,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sirikit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SystemExtensionInstall,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserManagement,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wallet,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WirelessAccessoryConfiguration,
     }

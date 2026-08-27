@@ -4,40 +4,40 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchasesV2OfferCodesGetToManyRelatedFieldsInAppPurchaseOfferCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Active,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomerEligibilities,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OneTimeUseCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prices,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProductionCodeCount,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SandboxCodeCount,
     }

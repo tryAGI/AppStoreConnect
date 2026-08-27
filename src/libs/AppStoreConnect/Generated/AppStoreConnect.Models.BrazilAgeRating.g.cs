@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BrazilAgeRating
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Eighteen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fourteen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         L,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sixteen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ten,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Twelve,
     }

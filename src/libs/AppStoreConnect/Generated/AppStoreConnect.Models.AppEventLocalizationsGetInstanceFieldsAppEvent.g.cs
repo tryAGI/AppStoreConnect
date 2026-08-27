@@ -4,52 +4,52 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppEventLocalizationsGetInstanceFieldsAppEvent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ArchivedTerritorySchedules,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Badge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeepLink,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EventState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Localizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrimaryLocale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Priority,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PurchaseRequirement,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Purpose,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReferenceName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TerritorySchedules,
     }

@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppClipAdvancedExperienceCreateRequestDataAttributesPlaceMainAddress
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("fullAddress")]
         public string? FullAddress { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("structuredAddress")]
         public global::AppStoreConnect.AppClipAdvancedExperienceCreateRequestDataAttributesPlaceMainAddressStructuredAddress? StructuredAddress { get; set; }

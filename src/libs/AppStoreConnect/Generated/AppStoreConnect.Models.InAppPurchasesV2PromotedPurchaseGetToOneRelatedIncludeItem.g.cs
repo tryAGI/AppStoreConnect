@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchasesV2PromotedPurchaseGetToOneRelatedIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Subscription,
     }

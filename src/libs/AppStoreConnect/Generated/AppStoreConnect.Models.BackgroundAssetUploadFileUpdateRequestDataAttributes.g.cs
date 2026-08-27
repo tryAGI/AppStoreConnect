@@ -6,25 +6,25 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BackgroundAssetUploadFileUpdateRequestDataAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sourceFileChecksum")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public string? SourceFileChecksum { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sourceFileChecksums")]
         public global::AppStoreConnect.Checksums? SourceFileChecksums { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("uploaded")]
         public bool? Uploaded { get; set; }

@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DiagnosticInsightDirection
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Down,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Undefined,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Up,
     }

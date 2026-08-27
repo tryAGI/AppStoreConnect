@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsSubscriptionGracePeriodGetToOneRelatedFieldsSubscriptionGracePeriod
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Duration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OptIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RenewalType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SandboxOptIn,
     }

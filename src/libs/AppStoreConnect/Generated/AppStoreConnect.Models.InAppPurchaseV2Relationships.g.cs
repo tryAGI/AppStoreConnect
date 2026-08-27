@@ -4,66 +4,66 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class InAppPurchaseV2Relationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inAppPurchaseLocalizations")]
         public global::AppStoreConnect.InAppPurchaseV2RelationshipsInAppPurchaseLocalizations? InAppPurchaseLocalizations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pricePoints")]
         public global::AppStoreConnect.InAppPurchaseV2RelationshipsPricePoints? PricePoints { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("content")]
         public global::AppStoreConnect.InAppPurchaseV2RelationshipsContent? Content { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreReviewScreenshot")]
         public global::AppStoreConnect.InAppPurchaseV2RelationshipsAppStoreReviewScreenshot? AppStoreReviewScreenshot { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("promotedPurchase")]
         public global::AppStoreConnect.InAppPurchaseV2RelationshipsPromotedPurchase? PromotedPurchase { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("iapPriceSchedule")]
         public global::AppStoreConnect.InAppPurchaseV2RelationshipsIapPriceSchedule? IapPriceSchedule { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inAppPurchaseAvailability")]
         public global::AppStoreConnect.InAppPurchaseV2RelationshipsInAppPurchaseAvailability? InAppPurchaseAvailability { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("images")]
         public global::AppStoreConnect.InAppPurchaseV2RelationshipsImages? Images { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("offerCodes")]
         public global::AppStoreConnect.InAppPurchaseV2RelationshipsOfferCodes? OfferCodes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("versions")]
         public global::AppStoreConnect.InAppPurchaseV2RelationshipsVersions? Versions { get; set; }

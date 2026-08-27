@@ -4,26 +4,26 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppClipAdvancedExperienceCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appClip")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.AppClipAdvancedExperienceCreateRequestDataRelationshipsAppClip AppClip { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("headerImage")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.AppClipAdvancedExperienceCreateRequestDataRelationshipsHeaderImage HeaderImage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("localizations")]
         [global::System.Text.Json.Serialization.JsonRequired]

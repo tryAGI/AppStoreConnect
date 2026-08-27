@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppInfoAttributesAustraliaAgeRating
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Eighteen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fifteen,
     }

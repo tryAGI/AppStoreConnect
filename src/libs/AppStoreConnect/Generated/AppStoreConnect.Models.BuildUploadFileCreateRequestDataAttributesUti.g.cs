@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildUploadFileCreateRequestDataAttributesUti
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ComAppleBinaryPropertyList,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ComAppleIpa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ComApplePkg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ComAppleXmlPropertyList,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ComPkwareZipArchive,
     }

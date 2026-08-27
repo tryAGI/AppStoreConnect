@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DiagnosticInsightType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Trend,
     }

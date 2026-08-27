@@ -4,52 +4,52 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppPreviewSetsGetInstanceFieldsAppStoreVersionLocalization
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppPreviewSets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppScreenshotSets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Description,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Keywords,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Locale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MarketingUrl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PromotionalText,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SearchKeywords,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SupportUrl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WhatsNew,
     }

@@ -5,17 +5,17 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IncludedItem44 : global::System.IEquatable<IncludedItem44>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppStoreVersionsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AlternativeDistributionPackage? AlternativeDistributionPackages { get; init; }
@@ -24,7 +24,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AlternativeDistributionPackages))]
@@ -32,7 +32,7 @@ namespace AppStoreConnect
         public bool IsAlternativeDistributionPackages => AlternativeDistributionPackages != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAlternativeDistributionPackages(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AlternativeDistributionPackage PickAlternativeDistributionPackages() => IsAlternativeDistributionPackages
             ? AlternativeDistributionPackages!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AlternativeDistributionPackages' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppClipDefaultExperience? AppClipDefaultExperiences1 { get; init; }
@@ -61,7 +61,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppClipDefaultExperiences1))]
@@ -69,7 +69,7 @@ namespace AppStoreConnect
         public bool IsAppClipDefaultExperiences1 => AppClipDefaultExperiences1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppClipDefaultExperiences1(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppClipDefaultExperience PickAppClipDefaultExperiences1() => IsAppClipDefaultExperiences1
             ? AppClipDefaultExperiences1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipDefaultExperiences1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppStoreReviewDetail? AppStoreReviewDetails { get; init; }
@@ -98,7 +98,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreReviewDetails))]
@@ -106,7 +106,7 @@ namespace AppStoreConnect
         public bool IsAppStoreReviewDetails => AppStoreReviewDetails != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppStoreReviewDetails(
 #if NET6_0_OR_GREATER
@@ -119,14 +119,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppStoreReviewDetail PickAppStoreReviewDetails() => IsAppStoreReviewDetails
             ? AppStoreReviewDetails!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreReviewDetails' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppStoreVersionExperiment? AppStoreVersionExperiments { get; init; }
@@ -135,7 +135,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperiments))]
@@ -143,7 +143,7 @@ namespace AppStoreConnect
         public bool IsAppStoreVersionExperiments => AppStoreVersionExperiments != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppStoreVersionExperiments(
 #if NET6_0_OR_GREATER
@@ -156,14 +156,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppStoreVersionExperiment PickAppStoreVersionExperiments() => IsAppStoreVersionExperiments
             ? AppStoreVersionExperiments!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperiments' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppStoreVersionLocalization? AppStoreVersionLocalizations { get; init; }
@@ -172,7 +172,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionLocalizations))]
@@ -180,7 +180,7 @@ namespace AppStoreConnect
         public bool IsAppStoreVersionLocalizations => AppStoreVersionLocalizations != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppStoreVersionLocalizations(
 #if NET6_0_OR_GREATER
@@ -193,14 +193,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppStoreVersionLocalization PickAppStoreVersionLocalizations() => IsAppStoreVersionLocalizations
             ? AppStoreVersionLocalizations!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionLocalizations' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppStoreVersionPhasedRelease? AppStoreVersionPhasedReleases { get; init; }
@@ -209,7 +209,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionPhasedReleases))]
@@ -217,7 +217,7 @@ namespace AppStoreConnect
         public bool IsAppStoreVersionPhasedReleases => AppStoreVersionPhasedReleases != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppStoreVersionPhasedReleases(
 #if NET6_0_OR_GREATER
@@ -230,14 +230,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppStoreVersionPhasedRelease PickAppStoreVersionPhasedReleases() => IsAppStoreVersionPhasedReleases
             ? AppStoreVersionPhasedReleases!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionPhasedReleases' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppStoreVersionSubmission? AppStoreVersionSubmissions { get; init; }
@@ -246,7 +246,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionSubmissions))]
@@ -254,7 +254,7 @@ namespace AppStoreConnect
         public bool IsAppStoreVersionSubmissions => AppStoreVersionSubmissions != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppStoreVersionSubmissions(
 #if NET6_0_OR_GREATER
@@ -267,14 +267,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppStoreVersionSubmission PickAppStoreVersionSubmissions() => IsAppStoreVersionSubmissions
             ? AppStoreVersionSubmissions!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionSubmissions' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.App? AppClipDefaultExperiences2 { get; init; }
@@ -283,7 +283,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppClipDefaultExperiences2))]
@@ -291,7 +291,7 @@ namespace AppStoreConnect
         public bool IsAppClipDefaultExperiences2 => AppClipDefaultExperiences2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppClipDefaultExperiences2(
 #if NET6_0_OR_GREATER
@@ -304,14 +304,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.App PickAppClipDefaultExperiences2() => IsAppClipDefaultExperiences2
             ? AppClipDefaultExperiences2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipDefaultExperiences2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.Build? Builds { get; init; }
@@ -320,7 +320,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
@@ -328,7 +328,7 @@ namespace AppStoreConnect
         public bool IsBuilds => Builds != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBuilds(
 #if NET6_0_OR_GREATER
@@ -341,14 +341,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.Build PickBuilds() => IsBuilds
             ? Builds!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.GameCenterAppVersion? GameCenterAppVersions { get; init; }
@@ -357,7 +357,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterAppVersions))]
@@ -365,7 +365,7 @@ namespace AppStoreConnect
         public bool IsGameCenterAppVersions => GameCenterAppVersions != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGameCenterAppVersions(
 #if NET6_0_OR_GREATER
@@ -378,14 +378,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.GameCenterAppVersion PickGameCenterAppVersions() => IsGameCenterAppVersions
             ? GameCenterAppVersions!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAppVersions' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.RoutingAppCoverage? RoutingAppCoverages { get; init; }
@@ -394,7 +394,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RoutingAppCoverages))]
@@ -402,7 +402,7 @@ namespace AppStoreConnect
         public bool IsRoutingAppCoverages => RoutingAppCoverages != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickRoutingAppCoverages(
 #if NET6_0_OR_GREATER
@@ -415,23 +415,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.RoutingAppCoverage PickRoutingAppCoverages() => IsRoutingAppCoverages
             ? RoutingAppCoverages!
             : throw new global::System.InvalidOperationException($"Expected union variant 'RoutingAppCoverages' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem44(global::AppStoreConnect.AlternativeDistributionPackage value) => new IncludedItem44((global::AppStoreConnect.AlternativeDistributionPackage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AlternativeDistributionPackage?(IncludedItem44 @this) => @this.AlternativeDistributionPackages;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem44(global::AppStoreConnect.AlternativeDistributionPackage? value)
         {
@@ -439,22 +439,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem44 FromAlternativeDistributionPackages(global::AppStoreConnect.AlternativeDistributionPackage? value) => new IncludedItem44(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem44(global::AppStoreConnect.AppClipDefaultExperience value) => new IncludedItem44((global::AppStoreConnect.AppClipDefaultExperience?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppClipDefaultExperience?(IncludedItem44 @this) => @this.AppClipDefaultExperiences1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem44(global::AppStoreConnect.AppClipDefaultExperience? value)
         {
@@ -462,22 +462,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem44 FromAppClipDefaultExperiences1(global::AppStoreConnect.AppClipDefaultExperience? value) => new IncludedItem44(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem44(global::AppStoreConnect.AppStoreReviewDetail value) => new IncludedItem44((global::AppStoreConnect.AppStoreReviewDetail?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppStoreReviewDetail?(IncludedItem44 @this) => @this.AppStoreReviewDetails;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem44(global::AppStoreConnect.AppStoreReviewDetail? value)
         {
@@ -485,22 +485,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem44 FromAppStoreReviewDetails(global::AppStoreConnect.AppStoreReviewDetail? value) => new IncludedItem44(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem44(global::AppStoreConnect.AppStoreVersionExperiment value) => new IncludedItem44((global::AppStoreConnect.AppStoreVersionExperiment?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppStoreVersionExperiment?(IncludedItem44 @this) => @this.AppStoreVersionExperiments;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem44(global::AppStoreConnect.AppStoreVersionExperiment? value)
         {
@@ -508,22 +508,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem44 FromAppStoreVersionExperiments(global::AppStoreConnect.AppStoreVersionExperiment? value) => new IncludedItem44(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem44(global::AppStoreConnect.AppStoreVersionLocalization value) => new IncludedItem44((global::AppStoreConnect.AppStoreVersionLocalization?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppStoreVersionLocalization?(IncludedItem44 @this) => @this.AppStoreVersionLocalizations;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem44(global::AppStoreConnect.AppStoreVersionLocalization? value)
         {
@@ -531,22 +531,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem44 FromAppStoreVersionLocalizations(global::AppStoreConnect.AppStoreVersionLocalization? value) => new IncludedItem44(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem44(global::AppStoreConnect.AppStoreVersionPhasedRelease value) => new IncludedItem44((global::AppStoreConnect.AppStoreVersionPhasedRelease?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppStoreVersionPhasedRelease?(IncludedItem44 @this) => @this.AppStoreVersionPhasedReleases;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem44(global::AppStoreConnect.AppStoreVersionPhasedRelease? value)
         {
@@ -554,22 +554,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem44 FromAppStoreVersionPhasedReleases(global::AppStoreConnect.AppStoreVersionPhasedRelease? value) => new IncludedItem44(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem44(global::AppStoreConnect.AppStoreVersionSubmission value) => new IncludedItem44((global::AppStoreConnect.AppStoreVersionSubmission?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppStoreVersionSubmission?(IncludedItem44 @this) => @this.AppStoreVersionSubmissions;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem44(global::AppStoreConnect.AppStoreVersionSubmission? value)
         {
@@ -577,22 +577,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem44 FromAppStoreVersionSubmissions(global::AppStoreConnect.AppStoreVersionSubmission? value) => new IncludedItem44(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem44(global::AppStoreConnect.App value) => new IncludedItem44((global::AppStoreConnect.App?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.App?(IncludedItem44 @this) => @this.AppClipDefaultExperiences2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem44(global::AppStoreConnect.App? value)
         {
@@ -600,22 +600,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem44 FromAppClipDefaultExperiences2(global::AppStoreConnect.App? value) => new IncludedItem44(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem44(global::AppStoreConnect.Build value) => new IncludedItem44((global::AppStoreConnect.Build?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.Build?(IncludedItem44 @this) => @this.Builds;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem44(global::AppStoreConnect.Build? value)
         {
@@ -623,22 +623,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem44 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem44(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem44(global::AppStoreConnect.GameCenterAppVersion value) => new IncludedItem44((global::AppStoreConnect.GameCenterAppVersion?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.GameCenterAppVersion?(IncludedItem44 @this) => @this.GameCenterAppVersions;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem44(global::AppStoreConnect.GameCenterAppVersion? value)
         {
@@ -646,22 +646,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem44 FromGameCenterAppVersions(global::AppStoreConnect.GameCenterAppVersion? value) => new IncludedItem44(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem44(global::AppStoreConnect.RoutingAppCoverage value) => new IncludedItem44((global::AppStoreConnect.RoutingAppCoverage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.RoutingAppCoverage?(IncludedItem44 @this) => @this.RoutingAppCoverages;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem44(global::AppStoreConnect.RoutingAppCoverage? value)
         {
@@ -669,12 +669,12 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem44 FromRoutingAppCoverages(global::AppStoreConnect.RoutingAppCoverage? value) => new IncludedItem44(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem44(
             global::AppStoreConnect.AppStoreVersionsResponseIncludedItemDiscriminatorType? type,
@@ -707,7 +707,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             RoutingAppCoverages as object ??
@@ -720,11 +720,11 @@ namespace AppStoreConnect
             AppStoreVersionExperiments as object ??
             AppStoreReviewDetails as object ??
             AppClipDefaultExperiences1 as object ??
-            AlternativeDistributionPackages as object 
+            AlternativeDistributionPackages as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             AlternativeDistributionPackages?.ToString() ??
@@ -737,11 +737,11 @@ namespace AppStoreConnect
             AppClipDefaultExperiences2?.ToString() ??
             Builds?.ToString() ??
             GameCenterAppVersions?.ToString() ??
-            RoutingAppCoverages?.ToString() 
+            RoutingAppCoverages?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -749,7 +749,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.AlternativeDistributionPackage, TResult>? alternativeDistributionPackages = null,
@@ -819,7 +819,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::AppStoreConnect.AlternativeDistributionPackage>? alternativeDistributionPackages = null,
@@ -897,7 +897,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.AlternativeDistributionPackage>? alternativeDistributionPackages = null,
@@ -965,7 +965,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -1004,7 +1004,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludedItem44 other)
         {
@@ -1019,12 +1019,12 @@ namespace AppStoreConnect
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(AppClipDefaultExperiences2, other.AppClipDefaultExperiences2) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterAppVersion?>.Default.Equals(GameCenterAppVersions, other.GameCenterAppVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RoutingAppCoverage?>.Default.Equals(RoutingAppCoverages, other.RoutingAppCoverages) 
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RoutingAppCoverage?>.Default.Equals(RoutingAppCoverages, other.RoutingAppCoverages)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludedItem44 obj1, IncludedItem44 obj2)
         {
@@ -1032,7 +1032,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludedItem44 obj1, IncludedItem44 obj2)
         {
@@ -1040,7 +1040,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

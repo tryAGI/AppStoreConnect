@@ -4,52 +4,52 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsBuildUploadsGetToManyRelatedFieldsBuildUpload
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetDescriptionFile,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetFile,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetSpiFile,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Build,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildUploadFiles,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CfBundleShortVersionString,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CfBundleVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Platform,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         State,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UploadedDate,
     }

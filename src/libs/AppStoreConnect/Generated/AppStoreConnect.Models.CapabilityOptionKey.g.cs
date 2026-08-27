@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CapabilityOptionKey
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CompleteProtection,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrimaryAppConsent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProtectedUnlessOpen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProtectedUntilFirstUserAuth,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Xcode5,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Xcode6,
     }

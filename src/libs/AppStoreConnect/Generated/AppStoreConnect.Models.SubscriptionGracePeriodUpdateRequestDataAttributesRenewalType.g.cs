@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionGracePeriodUpdateRequestDataAttributesRenewalType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AllRenewals,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PaidToPaidOnly,
     }

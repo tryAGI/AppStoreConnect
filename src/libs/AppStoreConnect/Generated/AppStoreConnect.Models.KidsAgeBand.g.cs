@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum KidsAgeBand
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FiveAndUnder,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NineToEleven,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SixToEight,
     }

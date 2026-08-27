@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BetaTesterCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("betaGroups")]
         public global::AppStoreConnect.BetaTesterCreateRequestDataRelationshipsBetaGroups? BetaGroups { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("builds")]
         public global::AppStoreConnect.BetaTesterCreateRequestDataRelationshipsBuilds? Builds { get; set; }

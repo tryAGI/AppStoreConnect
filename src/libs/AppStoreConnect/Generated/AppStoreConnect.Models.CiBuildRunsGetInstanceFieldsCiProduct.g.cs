@@ -4,44 +4,44 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiBuildRunsGetInstanceFieldsCiProduct
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AdditionalRepositories,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildRuns,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BundleId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrimaryRepositories,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProductType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Workflows,
     }

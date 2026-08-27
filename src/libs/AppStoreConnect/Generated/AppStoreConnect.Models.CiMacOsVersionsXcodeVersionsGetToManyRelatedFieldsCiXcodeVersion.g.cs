@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiMacOsVersionsXcodeVersionsGetToManyRelatedFieldsCiXcodeVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MacOsVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TestDestinations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Version,
     }

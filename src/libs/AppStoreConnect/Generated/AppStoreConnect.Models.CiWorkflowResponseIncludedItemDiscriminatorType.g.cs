@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiWorkflowResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CiMacOsVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CiProducts,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CiXcodeVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScmRepositories,
     }

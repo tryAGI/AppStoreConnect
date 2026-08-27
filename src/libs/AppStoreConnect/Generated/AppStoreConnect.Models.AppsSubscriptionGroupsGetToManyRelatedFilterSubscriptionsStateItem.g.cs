@@ -4,48 +4,48 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsSubscriptionGroupsGetToManyRelatedFilterSubscriptionsStateItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Approved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeveloperActionNeeded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeveloperRemovedFromSale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MissingMetadata,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PendingBinaryApproval,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadyToSubmit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RemovedFromSale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitingForReview,
     }

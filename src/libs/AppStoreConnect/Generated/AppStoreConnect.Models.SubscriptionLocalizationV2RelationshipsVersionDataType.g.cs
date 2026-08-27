@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionLocalizationV2RelationshipsVersionDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionVersions,
     }

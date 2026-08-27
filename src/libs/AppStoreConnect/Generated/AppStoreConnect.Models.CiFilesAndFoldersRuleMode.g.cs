@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiFilesAndFoldersRuleMode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DoNotStartIfAllFilesMatch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StartIfAnyFileMatches,
     }

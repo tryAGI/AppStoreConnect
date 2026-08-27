@@ -4,84 +4,84 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppStoreVersionRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("app")]
         public global::AppStoreConnect.AppStoreVersionRelationshipsApp? App { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersionLocalizations")]
         public global::AppStoreConnect.AppStoreVersionRelationshipsAppStoreVersionLocalizations? AppStoreVersionLocalizations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("build")]
         public global::AppStoreConnect.AppStoreVersionRelationshipsBuild? Build { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersionPhasedRelease")]
         public global::AppStoreConnect.AppStoreVersionRelationshipsAppStoreVersionPhasedRelease? AppStoreVersionPhasedRelease { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterAppVersion")]
         public global::AppStoreConnect.AppStoreVersionRelationshipsGameCenterAppVersion? GameCenterAppVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("routingAppCoverage")]
         public global::AppStoreConnect.AppStoreVersionRelationshipsRoutingAppCoverage? RoutingAppCoverage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreReviewDetail")]
         public global::AppStoreConnect.AppStoreVersionRelationshipsAppStoreReviewDetail? AppStoreReviewDetail { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersionSubmission")]
         public global::AppStoreConnect.AppStoreVersionRelationshipsAppStoreVersionSubmission? AppStoreVersionSubmission { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appClipDefaultExperience")]
         public global::AppStoreConnect.AppStoreVersionRelationshipsAppClipDefaultExperience? AppClipDefaultExperience { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersionExperiments")]
         public global::AppStoreConnect.AppStoreVersionRelationshipsAppStoreVersionExperiments? AppStoreVersionExperiments { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersionExperimentsV2")]
         public global::AppStoreConnect.AppStoreVersionRelationshipsAppStoreVersionExperimentsV2? AppStoreVersionExperimentsV2 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customerReviews")]
         public global::AppStoreConnect.AppStoreVersionRelationshipsCustomerReviews? CustomerReviews { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alternativeDistributionPackage")]
         public global::AppStoreConnect.AppStoreVersionRelationshipsAlternativeDistributionPackage? AlternativeDistributionPackage { get; set; }

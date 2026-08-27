@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppAvailabilitiesV2TerritoryAvailabilitiesGetToManyRelatedFieldsTerritoryAvailabilitie
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Available,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContentStatuses,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreOrderEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreOrderPublishDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReleaseDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Territory,
     }

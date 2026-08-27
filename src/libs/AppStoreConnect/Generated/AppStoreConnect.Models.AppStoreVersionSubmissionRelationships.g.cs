@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppStoreVersionSubmissionRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersion")]
         public global::AppStoreConnect.AppStoreVersionSubmissionRelationshipsAppStoreVersion? AppStoreVersion { get; set; }

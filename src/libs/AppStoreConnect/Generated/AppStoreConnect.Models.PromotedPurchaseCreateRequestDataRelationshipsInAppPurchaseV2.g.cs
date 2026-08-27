@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PromotedPurchaseCreateRequestDataRelationshipsInAppPurchaseV2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         public global::AppStoreConnect.PromotedPurchaseCreateRequestDataRelationshipsInAppPurchaseV2Data? Data { get; set; }

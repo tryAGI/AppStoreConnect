@@ -4,30 +4,30 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppStoreVersionLocalizationRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersion")]
         public global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsAppStoreVersion? AppStoreVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appScreenshotSets")]
         public global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsAppScreenshotSets? AppScreenshotSets { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appPreviewSets")]
         public global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsAppPreviewSets? AppPreviewSets { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("searchKeywords")]
         public global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsSearchKeywords? SearchKeywords { get; set; }

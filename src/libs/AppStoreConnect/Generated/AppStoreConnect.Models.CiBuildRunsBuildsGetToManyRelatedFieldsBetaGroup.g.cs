@@ -4,76 +4,76 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiBuildRunsBuildsGetToManyRelatedFieldsBetaGroup
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaRecruitmentCriteria,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaRecruitmentCriterionCompatibleBuildCheck,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaTesters,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Builds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FeedbackEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HasAccessToAllBuilds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IosBuildsAvailableForAppleSiliconMac,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IosBuildsAvailableForAppleVision,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IsInternalGroup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PublicLink,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PublicLinkEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PublicLinkId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PublicLinkLimit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PublicLinkLimitEnabled,
     }

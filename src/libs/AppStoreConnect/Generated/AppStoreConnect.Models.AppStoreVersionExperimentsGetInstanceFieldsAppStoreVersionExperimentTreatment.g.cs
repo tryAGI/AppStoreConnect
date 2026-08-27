@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreVersionExperimentsGetInstanceFieldsAppStoreVersionExperimentTreatment
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppIcon,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppIconName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionExperiment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionExperimentTreatmentLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionExperimentV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PromotedDate,
     }

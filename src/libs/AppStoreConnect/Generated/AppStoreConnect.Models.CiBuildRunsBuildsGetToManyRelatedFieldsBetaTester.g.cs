@@ -4,44 +4,44 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiBuildRunsBuildsGetToManyRelatedFieldsBetaTester
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppDevices,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apps,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaGroups,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Builds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Email,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FirstName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InviteType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         State,
     }

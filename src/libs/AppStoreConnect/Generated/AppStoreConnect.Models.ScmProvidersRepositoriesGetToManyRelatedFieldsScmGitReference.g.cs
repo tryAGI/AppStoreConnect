@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ScmProvidersRepositoriesGetToManyRelatedFieldsScmGitReference
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CanonicalName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IsDeleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kind,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Repository,
     }

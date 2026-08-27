@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IBetaTestersClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterFirstName"></param>
         /// <param name="filterLastName"></param>
@@ -50,7 +50,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterFirstName"></param>
         /// <param name="filterLastName"></param>

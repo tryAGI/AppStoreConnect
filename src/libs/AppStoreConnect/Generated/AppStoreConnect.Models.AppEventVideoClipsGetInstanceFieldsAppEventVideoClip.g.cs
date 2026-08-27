@@ -4,52 +4,52 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppEventVideoClipsGetInstanceFieldsAppEventVideoClip
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEventAssetType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEventLocalization,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetDeliveryState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileSize,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreviewFrameImage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreviewFrameTimeCode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreviewImage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UploadOperations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VideoDeliveryState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VideoUrl,
     }

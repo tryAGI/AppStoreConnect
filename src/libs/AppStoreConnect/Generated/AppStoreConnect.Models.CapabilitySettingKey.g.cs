@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CapabilitySettingKey
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppleIdAuthAppConsent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DataProtectionPermissionLevel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IcloudVersion,
     }

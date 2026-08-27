@@ -4,40 +4,40 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildUploadsBuildUploadFilesGetToManyRelatedFieldsBuildUploadFile
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetDeliveryState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetToken,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileSize,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SourceFileChecksums,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UploadOperations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Uti,
     }

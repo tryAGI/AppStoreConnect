@@ -4,172 +4,172 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipAdvancedExperienceAttributesPlaceMapAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AirlineBookTravel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AirlineCheckIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AirlineFlightStatus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apply,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Book,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BookActivities,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BookRides,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BookTeetimes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BookTours,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuyTickets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Careers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChargeEv,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Coupons,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Donate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Events,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EventsShows,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EventsSports,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GiftCard,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HotelAmenities,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HotelBookRoom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Join,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ParkingAvailable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ParkingReserveParking,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PayToPark,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RestaurantJoinWaitlist,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RestaurantOrderDelivery,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RestaurantOrderFood,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RestaurantOrderTakeout,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RestaurantPickup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RestaurantReservation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RestaurantViewMenu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RetailServiceQuote,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RetailStoreDelivery,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RetailStorePickup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RetailStoreShop,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScheduleAppointment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Services,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Support,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TheaterNowPlaying,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ViewAvailability,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ViewPricing,
     }

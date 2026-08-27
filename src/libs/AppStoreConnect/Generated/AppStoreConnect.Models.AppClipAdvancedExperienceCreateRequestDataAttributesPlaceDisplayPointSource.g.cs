@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipAdvancedExperienceCreateRequestDataAttributesPlaceDisplayPointSource
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Calculated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ManuallyPlaced,
     }

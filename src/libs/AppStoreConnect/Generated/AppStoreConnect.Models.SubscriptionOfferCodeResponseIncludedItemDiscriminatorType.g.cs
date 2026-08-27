@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionOfferCodeResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionOfferCodeCustomCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionOfferCodeOneTimeUseCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionOfferCodePrices,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Subscriptions,
     }

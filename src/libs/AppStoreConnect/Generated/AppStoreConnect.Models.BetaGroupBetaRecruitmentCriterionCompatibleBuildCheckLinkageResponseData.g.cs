@@ -4,19 +4,19 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BetaGroupBetaRecruitmentCriterionCompatibleBuildCheckLinkageResponseData
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.BetaGroupBetaRecruitmentCriterionCompatibleBuildCheckLinkageResponseDataTypeJsonConverter))]
         public global::AppStoreConnect.BetaGroupBetaRecruitmentCriterionCompatibleBuildCheckLinkageResponseDataType Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         [global::System.Text.Json.Serialization.JsonRequired]

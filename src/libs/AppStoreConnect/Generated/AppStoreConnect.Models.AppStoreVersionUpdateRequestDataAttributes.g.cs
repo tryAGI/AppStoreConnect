@@ -6,51 +6,51 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppStoreVersionUpdateRequestDataAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("versionString")]
         public string? VersionString { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("copyright")]
         public string? Copyright { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("reviewType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AppStoreVersionUpdateRequestDataAttributesReviewTypeJsonConverter))]
         public global::AppStoreConnect.AppStoreVersionUpdateRequestDataAttributesReviewType? ReviewType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("releaseType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AppStoreVersionUpdateRequestDataAttributesReleaseTypeJsonConverter))]
         public global::AppStoreConnect.AppStoreVersionUpdateRequestDataAttributesReleaseType? ReleaseType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("earliestReleaseDate")]
         public global::System.DateTime? EarliestReleaseDate { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("usesIdfa")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public bool? UsesIdfa { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("downloadable")]
         public bool? Downloadable { get; set; }

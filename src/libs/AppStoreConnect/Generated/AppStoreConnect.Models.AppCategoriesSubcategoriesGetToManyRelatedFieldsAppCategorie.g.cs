@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppCategoriesSubcategoriesGetToManyRelatedFieldsAppCategorie
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Parent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Platforms,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Subcategories,
     }

@@ -4,40 +4,40 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterMatchmakingQueuesExperimentMatchmakingRequestsGetMetricsSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinusaverageSecondsInQueue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minuscount,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusp50SecondsInQueue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusp95SecondsInQueue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AverageSecondsInQueue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Count,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         P50SecondsInQueue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         P95SecondsInQueue,
     }

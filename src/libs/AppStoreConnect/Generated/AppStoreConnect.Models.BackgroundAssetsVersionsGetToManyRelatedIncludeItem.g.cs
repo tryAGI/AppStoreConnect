@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BackgroundAssetsVersionsGetToManyRelatedIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreRelease,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetFile,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BackgroundAsset,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExternalBetaRelease,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InternalBetaRelease,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ManifestFile,
     }

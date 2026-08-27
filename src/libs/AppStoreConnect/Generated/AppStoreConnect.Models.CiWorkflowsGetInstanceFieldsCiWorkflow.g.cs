@@ -4,88 +4,88 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiWorkflowsGetInstanceFieldsCiWorkflow
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Actions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BranchStartCondition,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildRuns,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Clean,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContainerFilePath,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Description,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IsEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IsLockedForEditing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastModifiedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MacOsVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ManualBranchStartCondition,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ManualPullRequestStartCondition,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ManualTagStartCondition,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Product,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PullRequestStartCondition,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Repository,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScheduledStartCondition,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TagStartCondition,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         XcodeVersion,
     }

@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IAppPreviewSetsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsAppPreviews"></param>
         /// <param name="fieldsAppPreviewSets"></param>
@@ -24,7 +24,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsAppPreviews"></param>
         /// <param name="fieldsAppPreviewSets"></param>

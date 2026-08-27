@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsAppTagsGetToManyRelatedFieldsAppTag
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Territories,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VisibleInAppStore,
     }

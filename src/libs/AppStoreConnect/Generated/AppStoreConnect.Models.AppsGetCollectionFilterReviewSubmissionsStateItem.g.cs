@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsGetCollectionFilterReviewSubmissionsStateItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Canceling,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Complete,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Completing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadyForReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UnresolvedIssues,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitingForReview,
     }

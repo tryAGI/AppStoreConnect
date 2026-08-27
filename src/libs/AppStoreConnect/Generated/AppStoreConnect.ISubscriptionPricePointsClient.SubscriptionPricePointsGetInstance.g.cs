@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface ISubscriptionPricePointsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsSubscriptionPricePoints"></param>
         /// <param name="fieldsTerritories"></param>
@@ -22,7 +22,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsSubscriptionPricePoints"></param>
         /// <param name="fieldsTerritories"></param>

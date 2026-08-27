@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BetaRecruitmentCriterionAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lastModifiedDate")]
         public global::System.DateTime? LastModifiedDate { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deviceFamilyOsVersionFilters")]
         public global::System.Collections.Generic.IList<global::AppStoreConnect.DeviceFamilyOsVersionFilter>? DeviceFamilyOsVersionFilters { get; set; }

@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface ISubscriptionImagesClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsSubscriptionImages"></param>
         /// <param name="fieldsSubscriptions"></param>
@@ -22,7 +22,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsSubscriptionImages"></param>
         /// <param name="fieldsSubscriptions"></param>

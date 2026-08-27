@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterMatchmakingQueueRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ruleSet")]
         public global::AppStoreConnect.GameCenterMatchmakingQueueRelationshipsRuleSet? RuleSet { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("experimentRuleSet")]
         public global::AppStoreConnect.GameCenterMatchmakingQueueRelationshipsExperimentRuleSet? ExperimentRuleSet { get; set; }

@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiTestResultsGetInstanceFieldsCiTestResult
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ClassName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DestinationTestResults,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileSource,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Message,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Status,
     }

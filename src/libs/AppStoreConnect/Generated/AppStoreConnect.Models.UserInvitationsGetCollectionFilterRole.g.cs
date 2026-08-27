@@ -4,60 +4,60 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UserInvitationsGetCollectionFilterRole
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AccessToReports,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AccountHolder,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Admin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppManager,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CloudManagedAppDistribution,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CloudManagedDeveloperId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreateApps,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomerSupport,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Developer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Finance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GenerateIndividualKeys,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Marketing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sales,
     }

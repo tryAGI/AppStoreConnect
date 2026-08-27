@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IAppClipsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterStatus"></param>
         /// <param name="filterPlaceStatus"></param>
@@ -36,7 +36,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterStatus"></param>
         /// <param name="filterPlaceStatus"></param>

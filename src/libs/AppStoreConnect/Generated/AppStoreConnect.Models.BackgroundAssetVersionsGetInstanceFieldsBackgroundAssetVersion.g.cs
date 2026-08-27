@@ -4,60 +4,60 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BackgroundAssetVersionsGetInstanceFieldsBackgroundAssetVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreRelease,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetFile,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BackgroundAsset,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BackgroundAssetUploadFiles,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExternalBetaRelease,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InternalBetaRelease,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Locale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ManifestFile,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Platforms,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         State,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StateDetails,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Version,
     }

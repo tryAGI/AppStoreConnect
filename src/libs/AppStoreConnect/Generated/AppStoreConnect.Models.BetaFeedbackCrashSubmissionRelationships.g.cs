@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BetaFeedbackCrashSubmissionRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("crashLog")]
         public global::AppStoreConnect.BetaFeedbackCrashSubmissionRelationshipsCrashLog? CrashLog { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("build")]
         public global::AppStoreConnect.BetaFeedbackCrashSubmissionRelationshipsBuild? Build { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tester")]
         public global::AppStoreConnect.BetaFeedbackCrashSubmissionRelationshipsTester? Tester { get; set; }

@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CiMacOsVersionRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("xcodeVersions")]
         public global::AppStoreConnect.CiMacOsVersionRelationshipsXcodeVersions? XcodeVersions { get; set; }

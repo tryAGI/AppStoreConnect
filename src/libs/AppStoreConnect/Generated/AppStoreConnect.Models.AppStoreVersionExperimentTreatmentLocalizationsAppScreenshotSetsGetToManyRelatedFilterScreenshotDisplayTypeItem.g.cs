@@ -4,140 +4,140 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreVersionExperimentTreatmentLocalizationsAppScreenshotSetsGetToManyRelatedFilterScreenshotDisplayTypeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppAppleTv,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppAppleVisionPro,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppDesktop,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppIpad105,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppIpad97,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppIpadPro129,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppIpadPro3gen11,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppIpadPro3gen129,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppIphone35,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppIphone40,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppIphone47,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppIphone55,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppIphone58,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppIphone61,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppIphone65,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppIphone67,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppWatchSeries10,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppWatchSeries3,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppWatchSeries4,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppWatchSeries7,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppWatchUltra,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImessageAppIpad105,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImessageAppIpad97,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImessageAppIpadPro129,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImessageAppIpadPro3gen11,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImessageAppIpadPro3gen129,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImessageAppIphone40,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImessageAppIphone47,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImessageAppIphone55,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImessageAppIphone58,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImessageAppIphone61,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImessageAppIphone65,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImessageAppIphone67,
     }

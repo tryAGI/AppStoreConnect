@@ -4,112 +4,112 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PreReleaseVersionsGetInstanceFieldsBuild
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEncryptionDeclaration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaAppReviewSubmission,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaBuildLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaGroups,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildAudienceType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildBetaDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildBundles,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildUpload,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ComputedMinMacOsVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ComputedMinVisionOsVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DiagnosticSignatures,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExpirationDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Expired,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IconAssetToken,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Icons,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IndividualTesters,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LsMinimumSystemVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinOsVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PerfPowerMetrics,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreReleaseVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProcessingState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UploadedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UsesNonExemptEncryption,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Version,
     }

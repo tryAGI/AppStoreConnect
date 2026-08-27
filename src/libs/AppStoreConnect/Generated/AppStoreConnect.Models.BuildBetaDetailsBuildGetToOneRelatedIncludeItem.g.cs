@@ -4,56 +4,56 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildBetaDetailsBuildGetToOneRelatedIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEncryptionDeclaration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaAppReviewSubmission,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaBuildLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaGroups,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildBetaDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildBundles,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildUpload,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Icons,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IndividualTesters,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreReleaseVersion,
     }

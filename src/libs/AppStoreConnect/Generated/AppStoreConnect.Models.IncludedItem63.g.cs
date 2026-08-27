@@ -5,17 +5,17 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IncludedItem63 : global::System.IEquatable<IncludedItem63>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.BuildResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppEncryptionDeclaration? AppEncryptionDeclarations1 { get; init; }
@@ -24,7 +24,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEncryptionDeclarations1))]
@@ -32,7 +32,7 @@ namespace AppStoreConnect
         public bool IsAppEncryptionDeclarations1 => AppEncryptionDeclarations1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppEncryptionDeclarations1(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppEncryptionDeclaration PickAppEncryptionDeclarations1() => IsAppEncryptionDeclarations1
             ? AppEncryptionDeclarations1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppEncryptionDeclarations1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; init; }
@@ -61,7 +61,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions))]
@@ -69,7 +69,7 @@ namespace AppStoreConnect
         public bool IsAppStoreVersions => AppStoreVersions != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppStoreVersions(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => IsAppStoreVersions
             ? AppStoreVersions!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.App? AppEncryptionDeclarations2 { get; init; }
@@ -98,7 +98,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEncryptionDeclarations2))]
@@ -106,7 +106,7 @@ namespace AppStoreConnect
         public bool IsAppEncryptionDeclarations2 => AppEncryptionDeclarations2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppEncryptionDeclarations2(
 #if NET6_0_OR_GREATER
@@ -119,14 +119,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.App PickAppEncryptionDeclarations2() => IsAppEncryptionDeclarations2
             ? AppEncryptionDeclarations2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppEncryptionDeclarations2' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.BetaAppReviewSubmission? BetaAppReviewSubmissions { get; init; }
@@ -135,7 +135,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaAppReviewSubmissions))]
@@ -143,7 +143,7 @@ namespace AppStoreConnect
         public bool IsBetaAppReviewSubmissions => BetaAppReviewSubmissions != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBetaAppReviewSubmissions(
 #if NET6_0_OR_GREATER
@@ -156,14 +156,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.BetaAppReviewSubmission PickBetaAppReviewSubmissions() => IsBetaAppReviewSubmissions
             ? BetaAppReviewSubmissions!
             : throw new global::System.InvalidOperationException($"Expected union variant 'BetaAppReviewSubmissions' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.BetaBuildLocalization? BetaBuildLocalizations { get; init; }
@@ -172,7 +172,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaBuildLocalizations))]
@@ -180,7 +180,7 @@ namespace AppStoreConnect
         public bool IsBetaBuildLocalizations => BetaBuildLocalizations != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBetaBuildLocalizations(
 #if NET6_0_OR_GREATER
@@ -193,14 +193,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.BetaBuildLocalization PickBetaBuildLocalizations() => IsBetaBuildLocalizations
             ? BetaBuildLocalizations!
             : throw new global::System.InvalidOperationException($"Expected union variant 'BetaBuildLocalizations' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.BetaGroup? BetaGroups { get; init; }
@@ -209,7 +209,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaGroups))]
@@ -217,7 +217,7 @@ namespace AppStoreConnect
         public bool IsBetaGroups => BetaGroups != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBetaGroups(
 #if NET6_0_OR_GREATER
@@ -230,14 +230,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.BetaGroup PickBetaGroups() => IsBetaGroups
             ? BetaGroups!
             : throw new global::System.InvalidOperationException($"Expected union variant 'BetaGroups' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.BetaTester? BetaTesters { get; init; }
@@ -246,7 +246,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaTesters))]
@@ -254,7 +254,7 @@ namespace AppStoreConnect
         public bool IsBetaTesters => BetaTesters != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBetaTesters(
 #if NET6_0_OR_GREATER
@@ -267,14 +267,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.BetaTester PickBetaTesters() => IsBetaTesters
             ? BetaTesters!
             : throw new global::System.InvalidOperationException($"Expected union variant 'BetaTesters' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.BuildBetaDetail? BuildBetaDetails { get; init; }
@@ -283,7 +283,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BuildBetaDetails))]
@@ -291,7 +291,7 @@ namespace AppStoreConnect
         public bool IsBuildBetaDetails => BuildBetaDetails != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBuildBetaDetails(
 #if NET6_0_OR_GREATER
@@ -304,14 +304,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.BuildBetaDetail PickBuildBetaDetails() => IsBuildBetaDetails
             ? BuildBetaDetails!
             : throw new global::System.InvalidOperationException($"Expected union variant 'BuildBetaDetails' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.BuildBundle? BuildBundles { get; init; }
@@ -320,7 +320,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BuildBundles))]
@@ -328,7 +328,7 @@ namespace AppStoreConnect
         public bool IsBuildBundles => BuildBundles != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBuildBundles(
 #if NET6_0_OR_GREATER
@@ -341,14 +341,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.BuildBundle PickBuildBundles() => IsBuildBundles
             ? BuildBundles!
             : throw new global::System.InvalidOperationException($"Expected union variant 'BuildBundles' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.BuildIcon? BuildIcons { get; init; }
@@ -357,7 +357,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BuildIcons))]
@@ -365,7 +365,7 @@ namespace AppStoreConnect
         public bool IsBuildIcons => BuildIcons != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBuildIcons(
 #if NET6_0_OR_GREATER
@@ -378,14 +378,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.BuildIcon PickBuildIcons() => IsBuildIcons
             ? BuildIcons!
             : throw new global::System.InvalidOperationException($"Expected union variant 'BuildIcons' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.BuildUpload? BuildUploads { get; init; }
@@ -394,7 +394,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BuildUploads))]
@@ -402,7 +402,7 @@ namespace AppStoreConnect
         public bool IsBuildUploads => BuildUploads != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBuildUploads(
 #if NET6_0_OR_GREATER
@@ -415,14 +415,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.BuildUpload PickBuildUploads() => IsBuildUploads
             ? BuildUploads!
             : throw new global::System.InvalidOperationException($"Expected union variant 'BuildUploads' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.PrereleaseVersion? PreReleaseVersions { get; init; }
@@ -431,7 +431,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PreReleaseVersions))]
@@ -439,7 +439,7 @@ namespace AppStoreConnect
         public bool IsPreReleaseVersions => PreReleaseVersions != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPreReleaseVersions(
 #if NET6_0_OR_GREATER
@@ -452,23 +452,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.PrereleaseVersion PickPreReleaseVersions() => IsPreReleaseVersions
             ? PreReleaseVersions!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PreReleaseVersions' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem63(global::AppStoreConnect.AppEncryptionDeclaration value) => new IncludedItem63((global::AppStoreConnect.AppEncryptionDeclaration?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppEncryptionDeclaration?(IncludedItem63 @this) => @this.AppEncryptionDeclarations1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem63(global::AppStoreConnect.AppEncryptionDeclaration? value)
         {
@@ -476,22 +476,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem63 FromAppEncryptionDeclarations1(global::AppStoreConnect.AppEncryptionDeclaration? value) => new IncludedItem63(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem63(global::AppStoreConnect.AppStoreVersion value) => new IncludedItem63((global::AppStoreConnect.AppStoreVersion?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem63 @this) => @this.AppStoreVersions;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem63(global::AppStoreConnect.AppStoreVersion? value)
         {
@@ -499,22 +499,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem63 FromAppStoreVersions(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem63(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem63(global::AppStoreConnect.App value) => new IncludedItem63((global::AppStoreConnect.App?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.App?(IncludedItem63 @this) => @this.AppEncryptionDeclarations2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem63(global::AppStoreConnect.App? value)
         {
@@ -522,22 +522,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem63 FromAppEncryptionDeclarations2(global::AppStoreConnect.App? value) => new IncludedItem63(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem63(global::AppStoreConnect.BetaAppReviewSubmission value) => new IncludedItem63((global::AppStoreConnect.BetaAppReviewSubmission?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.BetaAppReviewSubmission?(IncludedItem63 @this) => @this.BetaAppReviewSubmissions;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem63(global::AppStoreConnect.BetaAppReviewSubmission? value)
         {
@@ -545,22 +545,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem63 FromBetaAppReviewSubmissions(global::AppStoreConnect.BetaAppReviewSubmission? value) => new IncludedItem63(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem63(global::AppStoreConnect.BetaBuildLocalization value) => new IncludedItem63((global::AppStoreConnect.BetaBuildLocalization?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.BetaBuildLocalization?(IncludedItem63 @this) => @this.BetaBuildLocalizations;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem63(global::AppStoreConnect.BetaBuildLocalization? value)
         {
@@ -568,22 +568,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem63 FromBetaBuildLocalizations(global::AppStoreConnect.BetaBuildLocalization? value) => new IncludedItem63(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem63(global::AppStoreConnect.BetaGroup value) => new IncludedItem63((global::AppStoreConnect.BetaGroup?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.BetaGroup?(IncludedItem63 @this) => @this.BetaGroups;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem63(global::AppStoreConnect.BetaGroup? value)
         {
@@ -591,22 +591,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem63 FromBetaGroups(global::AppStoreConnect.BetaGroup? value) => new IncludedItem63(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem63(global::AppStoreConnect.BetaTester value) => new IncludedItem63((global::AppStoreConnect.BetaTester?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.BetaTester?(IncludedItem63 @this) => @this.BetaTesters;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem63(global::AppStoreConnect.BetaTester? value)
         {
@@ -614,22 +614,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem63 FromBetaTesters(global::AppStoreConnect.BetaTester? value) => new IncludedItem63(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem63(global::AppStoreConnect.BuildBetaDetail value) => new IncludedItem63((global::AppStoreConnect.BuildBetaDetail?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.BuildBetaDetail?(IncludedItem63 @this) => @this.BuildBetaDetails;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem63(global::AppStoreConnect.BuildBetaDetail? value)
         {
@@ -637,22 +637,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem63 FromBuildBetaDetails(global::AppStoreConnect.BuildBetaDetail? value) => new IncludedItem63(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem63(global::AppStoreConnect.BuildBundle value) => new IncludedItem63((global::AppStoreConnect.BuildBundle?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.BuildBundle?(IncludedItem63 @this) => @this.BuildBundles;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem63(global::AppStoreConnect.BuildBundle? value)
         {
@@ -660,22 +660,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem63 FromBuildBundles(global::AppStoreConnect.BuildBundle? value) => new IncludedItem63(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem63(global::AppStoreConnect.BuildIcon value) => new IncludedItem63((global::AppStoreConnect.BuildIcon?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.BuildIcon?(IncludedItem63 @this) => @this.BuildIcons;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem63(global::AppStoreConnect.BuildIcon? value)
         {
@@ -683,22 +683,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem63 FromBuildIcons(global::AppStoreConnect.BuildIcon? value) => new IncludedItem63(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem63(global::AppStoreConnect.BuildUpload value) => new IncludedItem63((global::AppStoreConnect.BuildUpload?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.BuildUpload?(IncludedItem63 @this) => @this.BuildUploads;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem63(global::AppStoreConnect.BuildUpload? value)
         {
@@ -706,22 +706,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem63 FromBuildUploads(global::AppStoreConnect.BuildUpload? value) => new IncludedItem63(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem63(global::AppStoreConnect.PrereleaseVersion value) => new IncludedItem63((global::AppStoreConnect.PrereleaseVersion?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.PrereleaseVersion?(IncludedItem63 @this) => @this.PreReleaseVersions;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem63(global::AppStoreConnect.PrereleaseVersion? value)
         {
@@ -729,12 +729,12 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem63 FromPreReleaseVersions(global::AppStoreConnect.PrereleaseVersion? value) => new IncludedItem63(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem63(
             global::AppStoreConnect.BuildResponseIncludedItemDiscriminatorType? type,
@@ -769,7 +769,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             PreReleaseVersions as object ??
@@ -783,11 +783,11 @@ namespace AppStoreConnect
             BetaAppReviewSubmissions as object ??
             AppEncryptionDeclarations2 as object ??
             AppStoreVersions as object ??
-            AppEncryptionDeclarations1 as object 
+            AppEncryptionDeclarations1 as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             AppEncryptionDeclarations1?.ToString() ??
@@ -801,11 +801,11 @@ namespace AppStoreConnect
             BuildBundles?.ToString() ??
             BuildIcons?.ToString() ??
             BuildUploads?.ToString() ??
-            PreReleaseVersions?.ToString() 
+            PreReleaseVersions?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -813,7 +813,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.AppEncryptionDeclaration, TResult>? appEncryptionDeclarations1 = null,
@@ -888,7 +888,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::AppStoreConnect.AppEncryptionDeclaration>? appEncryptionDeclarations1 = null,
@@ -972,7 +972,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.AppEncryptionDeclaration>? appEncryptionDeclarations1 = null,
@@ -1045,7 +1045,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -1086,7 +1086,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludedItem63 other)
         {
@@ -1102,12 +1102,12 @@ namespace AppStoreConnect
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BuildBundle?>.Default.Equals(BuildBundles, other.BuildBundles) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BuildIcon?>.Default.Equals(BuildIcons, other.BuildIcons) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BuildUpload?>.Default.Equals(BuildUploads, other.BuildUploads) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.PrereleaseVersion?>.Default.Equals(PreReleaseVersions, other.PreReleaseVersions) 
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.PrereleaseVersion?>.Default.Equals(PreReleaseVersions, other.PreReleaseVersions)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludedItem63 obj1, IncludedItem63 obj2)
         {
@@ -1115,7 +1115,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludedItem63 obj1, IncludedItem63 obj2)
         {
@@ -1123,7 +1123,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

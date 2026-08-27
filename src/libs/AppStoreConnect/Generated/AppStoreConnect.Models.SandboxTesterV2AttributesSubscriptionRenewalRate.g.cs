@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SandboxTesterV2AttributesSubscriptionRenewalRate
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MonthlyRenewalEveryFifteenMinutes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MonthlyRenewalEveryFiveMinutes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MonthlyRenewalEveryOneHour,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MonthlyRenewalEveryThirtyMinutes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MonthlyRenewalEveryThreeMinutes,
     }

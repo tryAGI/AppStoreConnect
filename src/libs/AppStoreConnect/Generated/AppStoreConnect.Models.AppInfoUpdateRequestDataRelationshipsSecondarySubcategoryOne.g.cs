@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppInfoUpdateRequestDataRelationshipsSecondarySubcategoryOne
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         public global::AppStoreConnect.AppInfoUpdateRequestDataRelationshipsSecondarySubcategoryOneData? Data { get; set; }

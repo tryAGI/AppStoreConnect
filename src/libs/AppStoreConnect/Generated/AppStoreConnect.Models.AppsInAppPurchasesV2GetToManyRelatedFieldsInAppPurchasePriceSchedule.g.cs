@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchasePriceSchedule
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AutomaticPrices,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaseTerritory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ManualPrices,
     }

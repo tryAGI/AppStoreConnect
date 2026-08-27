@@ -4,164 +4,164 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterMatchmakingTestRequestInlineCreateAttributesLocale
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ArSa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CaEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CsCz,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DaDk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeDe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ElGr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnAu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnGb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnKy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EnUs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EsEs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EsMx,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FiFi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FrCa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FrFr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HiIn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HrHr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HuHu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IdId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ItIt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IwIl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         JaJp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KoKr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MsMy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NlNl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NoNo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PlPl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PtBr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PtPt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RoRo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RuRu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SkSk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SvSe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ThTh,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TrTr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UkUa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ZhCn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ZhHk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ZhTw,
     }

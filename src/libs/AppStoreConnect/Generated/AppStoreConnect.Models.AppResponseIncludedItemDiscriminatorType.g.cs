@@ -4,104 +4,104 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AndroidToIosAppMappingDetails,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClips,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppCustomProductPages,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEncryptionDeclarations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEvents,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppInfos,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionExperiments,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaAppLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaAppReviewDetails,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaGroups,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaLicenseAgreements,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildIcons,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Builds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CiProducts,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EndUserLicenseAgreements,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterDetails,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterEnabledVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreReleaseVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PromotedPurchases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReviewSubmissions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionGracePeriods,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionGroups,
     }

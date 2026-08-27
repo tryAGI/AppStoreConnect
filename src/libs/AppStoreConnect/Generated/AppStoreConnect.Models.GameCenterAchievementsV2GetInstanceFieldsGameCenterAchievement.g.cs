@@ -4,52 +4,52 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterAchievementsV2GetInstanceFieldsGameCenterAchievement
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Activity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ActivityProperties,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Archived,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterGroup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Points,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReferenceName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Repeatable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ShowBeforeEarned,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VendorIdentifier,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Versions,
     }

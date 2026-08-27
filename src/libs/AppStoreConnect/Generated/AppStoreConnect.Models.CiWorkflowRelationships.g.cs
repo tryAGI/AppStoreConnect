@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CiWorkflowRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("product")]
         public global::AppStoreConnect.CiWorkflowRelationshipsProduct? Product { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("repository")]
         public global::AppStoreConnect.CiWorkflowRelationshipsRepository? Repository { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("xcodeVersion")]
         public global::AppStoreConnect.CiWorkflowRelationshipsXcodeVersion? XcodeVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("macOsVersion")]
         public global::AppStoreConnect.CiWorkflowRelationshipsMacOsVersion? MacOsVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildRuns")]
         public global::AppStoreConnect.CiWorkflowRelationshipsBuildRuns? BuildRuns { get; set; }

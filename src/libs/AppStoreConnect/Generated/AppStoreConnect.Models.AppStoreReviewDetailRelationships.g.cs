@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppStoreReviewDetailRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersion")]
         public global::AppStoreConnect.AppStoreReviewDetailRelationshipsAppStoreVersion? AppStoreVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreReviewAttachments")]
         public global::AppStoreConnect.AppStoreReviewDetailRelationshipsAppStoreReviewAttachments? AppStoreReviewAttachments { get; set; }

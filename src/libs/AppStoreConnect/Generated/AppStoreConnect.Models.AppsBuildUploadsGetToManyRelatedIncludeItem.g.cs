@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsBuildUploadsGetToManyRelatedIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetDescriptionFile,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetFile,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetSpiFile,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Build,
     }

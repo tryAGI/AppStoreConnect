@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppEventAttributesBadge
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Challenge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Competition,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LiveEvent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MajorUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NewSeason,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Premiere,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SpecialEvent,
     }

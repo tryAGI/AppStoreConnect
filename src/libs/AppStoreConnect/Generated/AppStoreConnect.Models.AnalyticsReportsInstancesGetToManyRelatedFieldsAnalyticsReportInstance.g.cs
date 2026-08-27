@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AnalyticsReportsInstancesGetToManyRelatedFieldsAnalyticsReportInstance
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Granularity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProcessingDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Segments,
     }

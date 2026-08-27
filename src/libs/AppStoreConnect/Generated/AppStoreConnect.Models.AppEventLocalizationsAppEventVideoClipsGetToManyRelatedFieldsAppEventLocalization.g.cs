@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppEventLocalizationsAppEventVideoClipsGetToManyRelatedFieldsAppEventLocalization
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEvent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEventScreenshots,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEventVideoClips,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Locale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LongDescription,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ShortDescription,
     }

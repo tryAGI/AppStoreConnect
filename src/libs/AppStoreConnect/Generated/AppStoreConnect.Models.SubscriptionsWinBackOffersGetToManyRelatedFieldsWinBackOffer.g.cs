@@ -4,64 +4,64 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionsWinBackOffersGetToManyRelatedFieldsWinBackOffer
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomerEligibilityPaidSubscriptionDurationInMonths,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomerEligibilityTimeSinceLastSubscribedInMonths,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomerEligibilityWaitBetweenOffersInMonths,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Duration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EndDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OfferId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OfferMode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PeriodCount,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prices,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Priority,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PromotionIntent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReferenceName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StartDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TargetSubscriptionPlanType,
     }

@@ -4,42 +4,42 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class NominationRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("relatedApps")]
         public global::AppStoreConnect.NominationRelationshipsRelatedApps? RelatedApps { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("createdByActor")]
         public global::AppStoreConnect.NominationRelationshipsCreatedByActor? CreatedByActor { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lastModifiedByActor")]
         public global::AppStoreConnect.NominationRelationshipsLastModifiedByActor? LastModifiedByActor { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("submittedByActor")]
         public global::AppStoreConnect.NominationRelationshipsSubmittedByActor? SubmittedByActor { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inAppEvents")]
         public global::AppStoreConnect.NominationRelationshipsInAppEvents? InAppEvents { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("supportedTerritories")]
         public global::AppStoreConnect.NominationRelationshipsSupportedTerritories? SupportedTerritories { get; set; }

@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BetaGroupsBetaRecruitmentCriteriaGetToOneRelatedFieldsBetaRecruitmentCriteriaItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeviceFamilyOsVersionFilters,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastModifiedDate,
     }

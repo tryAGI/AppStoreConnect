@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IBackgroundAssetsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterLocale"></param>
         /// <param name="filterPlatforms"></param>
@@ -48,7 +48,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterLocale"></param>
         /// <param name="filterPlatforms"></param>

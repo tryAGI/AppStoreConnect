@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class UserInvitationCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("visibleApps")]
         public global::AppStoreConnect.UserInvitationCreateRequestDataRelationshipsVisibleApps? VisibleApps { get; set; }

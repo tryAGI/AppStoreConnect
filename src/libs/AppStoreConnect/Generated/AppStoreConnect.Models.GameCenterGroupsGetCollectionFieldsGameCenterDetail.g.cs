@@ -4,100 +4,100 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterGroupsGetCollectionFieldsGameCenterDetail
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AchievementReleases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ActivityReleases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ArcadeEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChallengeEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChallengeReleases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChallengesMinimumPlatformVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DefaultGroupLeaderboard,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DefaultGroupLeaderboardV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DefaultLeaderboard,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DefaultLeaderboardV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAchievements,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAchievementsV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterActivities,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAppVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterChallenges,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterGroup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardSets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardSetsV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboards,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardsV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LeaderboardReleases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LeaderboardSetReleases,
     }

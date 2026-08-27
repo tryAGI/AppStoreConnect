@@ -4,40 +4,40 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CustomerReviewsResponseGetToOneRelatedFieldsCustomerReview
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Body,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rating,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Response,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReviewTerritory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReviewerNickname,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Territory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Title,
     }

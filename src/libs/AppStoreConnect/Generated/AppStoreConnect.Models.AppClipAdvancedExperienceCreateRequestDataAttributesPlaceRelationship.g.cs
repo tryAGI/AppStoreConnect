@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipAdvancedExperienceCreateRequestDataAttributesPlaceRelationship
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Authorized,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Other,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Owner,
     }

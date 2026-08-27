@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BackgroundAssetsVersionsGetToManyRelatedFilterInternalBetaReleaseStateItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadyForTesting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Superseded,
     }

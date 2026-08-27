@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class DiagnosticLogsProductDataItemDiagnosticLogCallStackTreeItemCallStack
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("callStackRootFrames")]
         public global::System.Collections.Generic.IList<global::AppStoreConnect.DiagnosticLogCallStackNode>? CallStackRootFrames { get; set; }

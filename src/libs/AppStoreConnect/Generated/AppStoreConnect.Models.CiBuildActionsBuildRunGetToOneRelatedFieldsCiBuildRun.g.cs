@@ -4,84 +4,84 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiBuildActionsBuildRunGetToOneRelatedFieldsCiBuildRun
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Actions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Builds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CancelReason,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CompletionStatus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DestinationBranch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DestinationCommit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExecutionProgress,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FinishedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IsPullRequestBuild,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IssueCounts,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Number,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Product,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PullRequest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SourceBranchOrTag,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SourceCommit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StartReason,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StartedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Workflow,
     }

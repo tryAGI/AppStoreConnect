@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchaseOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCodeDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseOfferCodes,
     }

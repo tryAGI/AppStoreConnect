@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IGameCenterMatchmakingRuleSetsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsGameCenterMatchmakingRules"></param>
         /// <param name="limit"></param>
@@ -20,7 +20,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsGameCenterMatchmakingRules"></param>
         /// <param name="limit"></param>

@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionVersionsResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionImages,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Subscriptions,
     }

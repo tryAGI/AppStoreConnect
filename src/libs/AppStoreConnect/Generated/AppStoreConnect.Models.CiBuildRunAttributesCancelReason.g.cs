@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiBuildRunAttributesCancelReason
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AutomaticallyByNewerBuild,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ManuallyByUser,
     }

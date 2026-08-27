@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AndroidToIosAppMappingDetailsGetInstanceFieldsAndroidToIosAppMappingDetail
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppSigningKeyPublicCertificateSha256Fingerprints,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PackageName,
     }

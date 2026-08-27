@@ -4,72 +4,72 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreVersionLocalizationsAppPreviewSetsGetToManyRelatedFilterPreviewTypeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppleTv,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppleVisionPro,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Desktop,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ipad105,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ipad97,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IpadPro129,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IpadPro3gen11,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IpadPro3gen129,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Iphone35,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Iphone40,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Iphone47,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Iphone55,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Iphone58,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Iphone61,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Iphone65,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Iphone67,
     }

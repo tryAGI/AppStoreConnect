@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AnalyticsReportRequestsReportsGetToManyRelatedFilterCategoryItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreEngagement,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppUsage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Commerce,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FrameworkUsage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Performance,
     }

@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppEventScreenshotRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appEventLocalization")]
         public global::AppStoreConnect.AppEventScreenshotRelationshipsAppEventLocalization? AppEventLocalization { get; set; }

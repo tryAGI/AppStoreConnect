@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppEventLocalizationsGetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEvent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEventScreenshots,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEventVideoClips,
     }

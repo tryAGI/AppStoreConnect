@@ -4,44 +4,44 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsAppInfosGetToManyRelatedIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgeRatingDeclaration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppInfoLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrimaryCategory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrimarySubcategoryOne,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrimarySubcategoryTwo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecondaryCategory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecondarySubcategoryOne,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SecondarySubcategoryTwo,
     }

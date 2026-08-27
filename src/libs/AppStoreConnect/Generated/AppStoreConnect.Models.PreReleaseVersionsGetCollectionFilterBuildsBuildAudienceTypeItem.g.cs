@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PreReleaseVersionsGetCollectionFilterBuildsBuildAudienceTypeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreEligible,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InternalOnly,
     }

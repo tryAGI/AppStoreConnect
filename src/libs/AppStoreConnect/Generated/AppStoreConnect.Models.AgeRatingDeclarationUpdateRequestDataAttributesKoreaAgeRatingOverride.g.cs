@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FifteenPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NineteenPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
     }

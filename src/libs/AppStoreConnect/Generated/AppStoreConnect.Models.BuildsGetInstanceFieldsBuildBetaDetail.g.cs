@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildsGetInstanceFieldsBuildBetaDetail
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AutoNotifyEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Build,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExternalBuildState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InternalBuildState,
     }

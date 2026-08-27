@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiProductsAppGetToOneRelatedFieldsAndroidToIosAppMappingDetail
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppSigningKeyPublicCertificateSha256Fingerprints,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PackageName,
     }

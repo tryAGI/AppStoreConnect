@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterLeaderboardUpdateRequestDataAttributesVisibility
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HideForAll,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ShowForAll,
     }

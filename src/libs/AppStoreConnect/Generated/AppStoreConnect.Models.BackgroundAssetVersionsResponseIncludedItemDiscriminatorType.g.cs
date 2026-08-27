@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BackgroundAssetVersionsResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BackgroundAssetUploadFiles,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BackgroundAssetVersionAppStoreReleases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BackgroundAssetVersionExternalBetaReleases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BackgroundAssetVersionInternalBetaReleases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BackgroundAssets,
     }

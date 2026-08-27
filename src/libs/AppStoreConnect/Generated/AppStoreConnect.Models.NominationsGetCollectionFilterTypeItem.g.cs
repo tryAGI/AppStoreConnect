@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum NominationsGetCollectionFilterTypeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEnhancements,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppLaunch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NewContent,
     }

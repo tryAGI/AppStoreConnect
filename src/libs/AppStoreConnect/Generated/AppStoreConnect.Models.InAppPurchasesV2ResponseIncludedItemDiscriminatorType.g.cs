@@ -4,48 +4,48 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchasesV2ResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseAppStoreReviewScreenshots,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseAvailabilities,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseContents,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseImages,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseOfferCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchasePricePoints,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchasePriceSchedules,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PromotedPurchases,
     }

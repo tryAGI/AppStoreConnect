@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildBundlesBetaAppClipInvocationsGetToManyRelatedFieldsBetaAppClipInvocation
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaAppClipInvocationLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Url,
     }

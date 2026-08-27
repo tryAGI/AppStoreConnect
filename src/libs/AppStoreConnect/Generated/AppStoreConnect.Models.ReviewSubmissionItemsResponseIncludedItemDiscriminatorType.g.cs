@@ -4,60 +4,60 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ReviewSubmissionItemsResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppCustomProductPageVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEvents,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionExperiments,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BackgroundAssetVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAchievementVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterActivityVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterChallengeVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardSetVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionGroupVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionVersions,
     }

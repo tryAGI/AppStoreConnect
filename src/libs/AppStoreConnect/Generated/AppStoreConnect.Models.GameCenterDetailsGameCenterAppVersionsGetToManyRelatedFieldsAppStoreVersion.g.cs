@@ -4,104 +4,104 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterDetailsGameCenterAppVersionsGetToManyRelatedFieldsAppStoreVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlternativeDistributionPackage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClipDefaultExperience,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreReviewDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionExperiments,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionExperimentsV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionPhasedRelease,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionSubmission,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppVersionState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Build,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Copyright,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomerReviews,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Downloadable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EarliestReleaseDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAppVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Platform,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReleaseType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReviewType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RoutingAppCoverage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UsesIdfa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VersionString,
     }

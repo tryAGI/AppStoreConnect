@@ -4,84 +4,84 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchaseAttributesState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Approved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Created,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deleted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeletionInProgress,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeveloperActionNeeded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeveloperRemovedFromSale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeveloperSignedOff,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MissingMetadata,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PendingDeveloperRelease,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrepareForSubmission,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProcessingContent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadyToSubmit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RemovedFromSale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Replaced,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitingForReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitingForScreenshot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitingForUpload,
     }

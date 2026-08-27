@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DeviceConnectionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MobileData,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unknown,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wifi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wire,
     }

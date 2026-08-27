@@ -4,52 +4,52 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreVersionResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlternativeDistributionPackages,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClipDefaultExperiences,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreReviewDetails,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionExperiments,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionPhasedReleases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionSubmissions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apps,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Builds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAppVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RoutingAppCoverages,
     }

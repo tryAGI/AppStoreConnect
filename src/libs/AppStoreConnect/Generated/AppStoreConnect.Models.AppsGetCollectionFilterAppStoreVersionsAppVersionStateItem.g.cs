@@ -4,68 +4,68 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsGetCollectionFilterAppStoreVersionsAppVersionStateItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Accepted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeveloperRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidBinary,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MetadataRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PendingAppleRelease,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PendingDeveloperRelease,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrepareForSubmission,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProcessingForDistribution,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadyForDistribution,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadyForReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReplacedWithNewVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitingForExportCompliance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitingForReview,
     }

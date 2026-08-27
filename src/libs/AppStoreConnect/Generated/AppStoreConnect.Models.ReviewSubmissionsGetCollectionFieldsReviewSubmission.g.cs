@@ -4,40 +4,40 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ReviewSubmissionsGetCollectionFieldsReviewSubmission
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionForReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Items,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastUpdatedByActor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Platform,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         State,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubmittedByActor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubmittedDate,
     }

@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface ICertificatesClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterDisplayName"></param>
         /// <param name="filterCertificateType"></param>
@@ -32,7 +32,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterDisplayName"></param>
         /// <param name="filterCertificateType"></param>

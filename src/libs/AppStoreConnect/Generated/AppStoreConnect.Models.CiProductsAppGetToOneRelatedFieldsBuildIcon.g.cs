@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiProductsAppGetToOneRelatedFieldsBuildIcon
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IconAsset,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IconType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Masked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
     }

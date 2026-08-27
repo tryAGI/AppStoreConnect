@@ -4,56 +4,56 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiBuildActionsGetInstanceFieldsCiBuildAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ActionType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Artifacts,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildRun,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CompletionStatus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExecutionProgress,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FinishedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IsRequiredToPass,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IssueCounts,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Issues,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StartedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TestResults,
     }

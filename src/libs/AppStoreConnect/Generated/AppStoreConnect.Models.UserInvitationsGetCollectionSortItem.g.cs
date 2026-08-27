@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum UserInvitationsGetCollectionSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusemail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinuslastName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Email,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastName,
     }

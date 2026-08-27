@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class InAppPurchaseOfferCodeRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("oneTimeUseCodes")]
         public global::AppStoreConnect.InAppPurchaseOfferCodeRelationshipsOneTimeUseCodes? OneTimeUseCodes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customCodes")]
         public global::AppStoreConnect.InAppPurchaseOfferCodeRelationshipsCustomCodes? CustomCodes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prices")]
         public global::AppStoreConnect.InAppPurchaseOfferCodeRelationshipsPrices? Prices { get; set; }

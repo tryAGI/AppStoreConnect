@@ -4,30 +4,30 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CiBuildActionRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildRun")]
         public global::AppStoreConnect.CiBuildActionRelationshipsBuildRun? BuildRun { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("artifacts")]
         public global::AppStoreConnect.CiBuildActionRelationshipsArtifacts? Artifacts { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("issues")]
         public global::AppStoreConnect.CiBuildActionRelationshipsIssues? Issues { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("testResults")]
         public global::AppStoreConnect.CiBuildActionRelationshipsTestResults? TestResults { get; set; }

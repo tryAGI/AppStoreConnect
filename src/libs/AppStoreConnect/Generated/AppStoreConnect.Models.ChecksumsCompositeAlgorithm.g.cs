@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ChecksumsCompositeAlgorithm
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Md5,
     }

@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipHeaderImageType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClipHeaderImages,
     }

@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppEventLocalizationsResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEventScreenshots,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEventVideoClips,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEvents,
     }

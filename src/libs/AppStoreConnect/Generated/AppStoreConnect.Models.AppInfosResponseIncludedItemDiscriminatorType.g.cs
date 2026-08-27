@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppInfosResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgeRatingDeclarations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppCategories,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppInfoLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apps,
     }

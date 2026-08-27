@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BetaTesterState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Accepted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Installed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Invited,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotInvited,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Revoked,
     }

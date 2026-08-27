@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BetaAppClipInvocationRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("betaAppClipInvocationLocalizations")]
         public global::AppStoreConnect.BetaAppClipInvocationRelationshipsBetaAppClipInvocationLocalizations? BetaAppClipInvocationLocalizations { get; set; }

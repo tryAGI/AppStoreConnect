@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsGetCollectionFieldsBuildIcon
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IconAsset,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IconType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Masked,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
     }

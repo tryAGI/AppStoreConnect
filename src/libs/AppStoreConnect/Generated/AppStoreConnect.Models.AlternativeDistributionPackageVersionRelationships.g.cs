@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AlternativeDistributionPackageVersionRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("variants")]
         public global::AppStoreConnect.AlternativeDistributionPackageVersionRelationshipsVariants? Variants { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deltas")]
         public global::AppStoreConnect.AlternativeDistributionPackageVersionRelationshipsDeltas? Deltas { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alternativeDistributionPackage")]
         public global::AppStoreConnect.AlternativeDistributionPackageVersionRelationshipsAlternativeDistributionPackage? AlternativeDistributionPackage { get; set; }

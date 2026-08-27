@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppPriceV2InlineCreateRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appPricePoint")]
         public global::AppStoreConnect.AppPriceV2InlineCreateRelationshipsAppPricePoint? AppPricePoint { get; set; }

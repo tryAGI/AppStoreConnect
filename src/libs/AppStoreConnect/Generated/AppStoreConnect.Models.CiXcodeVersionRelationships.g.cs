@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CiXcodeVersionRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("macOsVersions")]
         public global::AppStoreConnect.CiXcodeVersionRelationshipsMacOsVersions? MacOsVersions { get; set; }

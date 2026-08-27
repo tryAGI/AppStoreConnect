@@ -4,30 +4,30 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BuildBundleRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appClipDomainCacheStatus")]
         public global::AppStoreConnect.BuildBundleRelationshipsAppClipDomainCacheStatus? AppClipDomainCacheStatus { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appClipDomainDebugStatus")]
         public global::AppStoreConnect.BuildBundleRelationshipsAppClipDomainDebugStatus? AppClipDomainDebugStatus { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("betaAppClipInvocations")]
         public global::AppStoreConnect.BuildBundleRelationshipsBetaAppClipInvocations? BetaAppClipInvocations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildBundleFileSizes")]
         public global::AppStoreConnect.BuildBundleRelationshipsBuildBundleFileSizes? BuildBundleFileSizes { get; set; }

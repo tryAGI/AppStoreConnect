@@ -4,60 +4,60 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ExternalBetaState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaApproved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Expired,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InBetaReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InBetaTesting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InExportComplianceReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MissingExportCompliance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotApplicable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Processing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProcessingException,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadyForBetaSubmission,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadyForBetaTesting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitingForBetaReview,
     }

@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionGracePeriodDuration
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SixteenDays,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ThreeDays,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TwentyEightDays,
     }

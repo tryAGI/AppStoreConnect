@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterLeaderboardV2CreateRequestDataAttributesSubmissionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BestScore,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MostRecentScore,
     }

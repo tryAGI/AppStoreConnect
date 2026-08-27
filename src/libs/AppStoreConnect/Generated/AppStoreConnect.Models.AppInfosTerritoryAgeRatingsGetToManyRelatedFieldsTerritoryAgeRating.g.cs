@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppInfosTerritoryAgeRatingsGetToManyRelatedFieldsTerritoryAgeRating
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreAgeRating,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Territory,
     }

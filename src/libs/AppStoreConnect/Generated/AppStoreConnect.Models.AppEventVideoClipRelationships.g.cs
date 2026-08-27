@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppEventVideoClipRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appEventLocalization")]
         public global::AppStoreConnect.AppEventVideoClipRelationshipsAppEventLocalization? AppEventLocalization { get; set; }

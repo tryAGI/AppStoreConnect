@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IPreReleaseVersionsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterBuildsBuildAudienceType"></param>
         /// <param name="filterBuildsExpired"></param>
@@ -44,7 +44,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterBuildsBuildAudienceType"></param>
         /// <param name="filterBuildsExpired"></param>

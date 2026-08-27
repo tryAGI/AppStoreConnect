@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsAccessibilityDeclarationsGetToManyRelatedFilterStateItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Draft,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Published,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Replaced,
     }

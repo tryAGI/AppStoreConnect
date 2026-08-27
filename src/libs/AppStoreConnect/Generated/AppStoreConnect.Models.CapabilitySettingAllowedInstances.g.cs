@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CapabilitySettingAllowedInstances
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Entry,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Multiple,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Single,
     }

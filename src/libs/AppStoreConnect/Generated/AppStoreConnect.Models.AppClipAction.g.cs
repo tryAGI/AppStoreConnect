@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipAction
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Open,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Play,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         View,
     }

@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildsGetCollectionFieldsBetaAppReviewSubmission
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaReviewState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Build,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubmittedDate,
     }

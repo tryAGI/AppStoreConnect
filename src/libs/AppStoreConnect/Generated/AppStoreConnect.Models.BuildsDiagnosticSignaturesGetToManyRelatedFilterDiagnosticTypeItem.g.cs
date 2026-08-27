@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildsDiagnosticSignaturesGetToManyRelatedFilterDiagnosticTypeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DiskWrites,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hangs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Launches,
     }

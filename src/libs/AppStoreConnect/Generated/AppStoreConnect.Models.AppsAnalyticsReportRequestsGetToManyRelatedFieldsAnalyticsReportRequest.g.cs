@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsAnalyticsReportRequestsGetToManyRelatedFieldsAnalyticsReportRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AccessType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Reports,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StoppedDueToInactivity,
     }

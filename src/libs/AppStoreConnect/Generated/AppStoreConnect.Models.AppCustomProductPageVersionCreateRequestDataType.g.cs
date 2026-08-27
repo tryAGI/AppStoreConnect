@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppCustomProductPageVersionCreateRequestDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppCustomProductPageVersions,
     }

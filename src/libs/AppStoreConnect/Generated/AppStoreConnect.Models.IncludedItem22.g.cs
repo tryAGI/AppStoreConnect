@@ -5,17 +5,17 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IncludedItem22 : global::System.IEquatable<IncludedItem22>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppInfosResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AgeRatingDeclaration? AgeRatingDeclarations { get; init; }
@@ -24,7 +24,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgeRatingDeclarations))]
@@ -32,7 +32,7 @@ namespace AppStoreConnect
         public bool IsAgeRatingDeclarations => AgeRatingDeclarations != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAgeRatingDeclarations(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AgeRatingDeclaration PickAgeRatingDeclarations() => IsAgeRatingDeclarations
             ? AgeRatingDeclarations!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgeRatingDeclarations' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppCategory? AppCategories1 { get; init; }
@@ -61,7 +61,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCategories1))]
@@ -69,7 +69,7 @@ namespace AppStoreConnect
         public bool IsAppCategories1 => AppCategories1 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppCategories1(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppCategory PickAppCategories1() => IsAppCategories1
             ? AppCategories1!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppCategories1' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppInfoLocalization? AppInfoLocalizations { get; init; }
@@ -98,7 +98,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppInfoLocalizations))]
@@ -106,7 +106,7 @@ namespace AppStoreConnect
         public bool IsAppInfoLocalizations => AppInfoLocalizations != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppInfoLocalizations(
 #if NET6_0_OR_GREATER
@@ -119,14 +119,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppInfoLocalization PickAppInfoLocalizations() => IsAppInfoLocalizations
             ? AppInfoLocalizations!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppInfoLocalizations' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.App? AppCategories2 { get; init; }
@@ -135,7 +135,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCategories2))]
@@ -143,7 +143,7 @@ namespace AppStoreConnect
         public bool IsAppCategories2 => AppCategories2 != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppCategories2(
 #if NET6_0_OR_GREATER
@@ -156,23 +156,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.App PickAppCategories2() => IsAppCategories2
             ? AppCategories2!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppCategories2' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem22(global::AppStoreConnect.AgeRatingDeclaration value) => new IncludedItem22((global::AppStoreConnect.AgeRatingDeclaration?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AgeRatingDeclaration?(IncludedItem22 @this) => @this.AgeRatingDeclarations;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem22(global::AppStoreConnect.AgeRatingDeclaration? value)
         {
@@ -180,22 +180,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem22 FromAgeRatingDeclarations(global::AppStoreConnect.AgeRatingDeclaration? value) => new IncludedItem22(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem22(global::AppStoreConnect.AppCategory value) => new IncludedItem22((global::AppStoreConnect.AppCategory?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppCategory?(IncludedItem22 @this) => @this.AppCategories1;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem22(global::AppStoreConnect.AppCategory? value)
         {
@@ -203,22 +203,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem22 FromAppCategories1(global::AppStoreConnect.AppCategory? value) => new IncludedItem22(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem22(global::AppStoreConnect.AppInfoLocalization value) => new IncludedItem22((global::AppStoreConnect.AppInfoLocalization?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppInfoLocalization?(IncludedItem22 @this) => @this.AppInfoLocalizations;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem22(global::AppStoreConnect.AppInfoLocalization? value)
         {
@@ -226,22 +226,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem22 FromAppInfoLocalizations(global::AppStoreConnect.AppInfoLocalization? value) => new IncludedItem22(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem22(global::AppStoreConnect.App value) => new IncludedItem22((global::AppStoreConnect.App?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.App?(IncludedItem22 @this) => @this.AppCategories2;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem22(global::AppStoreConnect.App? value)
         {
@@ -249,12 +249,12 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem22 FromAppCategories2(global::AppStoreConnect.App? value) => new IncludedItem22(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem22(
             global::AppStoreConnect.AppInfosResponseIncludedItemDiscriminatorType? type,
@@ -273,27 +273,27 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             AppCategories2 as object ??
             AppInfoLocalizations as object ??
             AppCategories1 as object ??
-            AgeRatingDeclarations as object 
+            AgeRatingDeclarations as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             AgeRatingDeclarations?.ToString() ??
             AppCategories1?.ToString() ??
             AppInfoLocalizations?.ToString() ??
-            AppCategories2?.ToString() 
+            AppCategories2?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -301,7 +301,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.AgeRatingDeclaration, TResult>? ageRatingDeclarations = null,
@@ -336,7 +336,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::AppStoreConnect.AgeRatingDeclaration>? ageRatingDeclarations = null,
@@ -372,7 +372,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.AgeRatingDeclaration>? ageRatingDeclarations = null,
@@ -405,7 +405,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -430,7 +430,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludedItem22 other)
         {
@@ -438,12 +438,12 @@ namespace AppStoreConnect
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AgeRatingDeclaration?>.Default.Equals(AgeRatingDeclarations, other.AgeRatingDeclarations) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCategory?>.Default.Equals(AppCategories1, other.AppCategories1) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppInfoLocalization?>.Default.Equals(AppInfoLocalizations, other.AppInfoLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(AppCategories2, other.AppCategories2) 
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(AppCategories2, other.AppCategories2)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludedItem22 obj1, IncludedItem22 obj2)
         {
@@ -451,7 +451,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludedItem22 obj1, IncludedItem22 obj2)
         {
@@ -459,7 +459,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

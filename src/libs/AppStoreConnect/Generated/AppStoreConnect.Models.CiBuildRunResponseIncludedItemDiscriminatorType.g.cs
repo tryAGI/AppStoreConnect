@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiBuildRunResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Builds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CiProducts,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CiWorkflows,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScmGitReferences,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScmPullRequests,
     }

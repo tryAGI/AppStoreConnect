@@ -5,17 +5,17 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IncludedItem142 : global::System.IEquatable<IncludedItem142>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchaseVersionsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.InAppPurchaseImageV2? InAppPurchaseImages { get; init; }
@@ -24,7 +24,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseImages))]
@@ -32,7 +32,7 @@ namespace AppStoreConnect
         public bool IsInAppPurchaseImages => InAppPurchaseImages != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInAppPurchaseImages(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchaseImageV2 PickInAppPurchaseImages() => IsInAppPurchaseImages
             ? InAppPurchaseImages!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseImages' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.InAppPurchaseLocalizationV2? InAppPurchaseLocalizations { get; init; }
@@ -61,7 +61,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseLocalizations))]
@@ -69,7 +69,7 @@ namespace AppStoreConnect
         public bool IsInAppPurchaseLocalizations => InAppPurchaseLocalizations != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInAppPurchaseLocalizations(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchaseLocalizationV2 PickInAppPurchaseLocalizations() => IsInAppPurchaseLocalizations
             ? InAppPurchaseLocalizations!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseLocalizations' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.InAppPurchaseV2? InAppPurchases { get; init; }
@@ -98,7 +98,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchases))]
@@ -106,7 +106,7 @@ namespace AppStoreConnect
         public bool IsInAppPurchases => InAppPurchases != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInAppPurchases(
 #if NET6_0_OR_GREATER
@@ -119,23 +119,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchaseV2 PickInAppPurchases() => IsInAppPurchases
             ? InAppPurchases!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchases' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem142(global::AppStoreConnect.InAppPurchaseImageV2 value) => new IncludedItem142((global::AppStoreConnect.InAppPurchaseImageV2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.InAppPurchaseImageV2?(IncludedItem142 @this) => @this.InAppPurchaseImages;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem142(global::AppStoreConnect.InAppPurchaseImageV2? value)
         {
@@ -143,22 +143,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem142 FromInAppPurchaseImages(global::AppStoreConnect.InAppPurchaseImageV2? value) => new IncludedItem142(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem142(global::AppStoreConnect.InAppPurchaseLocalizationV2 value) => new IncludedItem142((global::AppStoreConnect.InAppPurchaseLocalizationV2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.InAppPurchaseLocalizationV2?(IncludedItem142 @this) => @this.InAppPurchaseLocalizations;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem142(global::AppStoreConnect.InAppPurchaseLocalizationV2? value)
         {
@@ -166,22 +166,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem142 FromInAppPurchaseLocalizations(global::AppStoreConnect.InAppPurchaseLocalizationV2? value) => new IncludedItem142(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem142(global::AppStoreConnect.InAppPurchaseV2 value) => new IncludedItem142((global::AppStoreConnect.InAppPurchaseV2?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.InAppPurchaseV2?(IncludedItem142 @this) => @this.InAppPurchases;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem142(global::AppStoreConnect.InAppPurchaseV2? value)
         {
@@ -189,12 +189,12 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem142 FromInAppPurchases(global::AppStoreConnect.InAppPurchaseV2? value) => new IncludedItem142(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem142(
             global::AppStoreConnect.InAppPurchaseVersionsResponseIncludedItemDiscriminatorType? type,
@@ -211,25 +211,25 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             InAppPurchases as object ??
             InAppPurchaseLocalizations as object ??
-            InAppPurchaseImages as object 
+            InAppPurchaseImages as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             InAppPurchaseImages?.ToString() ??
             InAppPurchaseLocalizations?.ToString() ??
-            InAppPurchases?.ToString() 
+            InAppPurchases?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -237,7 +237,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.InAppPurchaseImageV2, TResult>? inAppPurchaseImages = null,
@@ -267,7 +267,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::AppStoreConnect.InAppPurchaseImageV2>? inAppPurchaseImages = null,
@@ -297,7 +297,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.InAppPurchaseImageV2>? inAppPurchaseImages = null,
@@ -325,7 +325,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -348,19 +348,19 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludedItem142 other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseImageV2?>.Default.Equals(InAppPurchaseImages, other.InAppPurchaseImages) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseLocalizationV2?>.Default.Equals(InAppPurchaseLocalizations, other.InAppPurchaseLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseV2?>.Default.Equals(InAppPurchases, other.InAppPurchases) 
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseV2?>.Default.Equals(InAppPurchases, other.InAppPurchases)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludedItem142 obj1, IncludedItem142 obj2)
         {
@@ -368,7 +368,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludedItem142 obj1, IncludedItem142 obj2)
         {
@@ -376,7 +376,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

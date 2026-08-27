@@ -4,100 +4,100 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsBetaFeedbackCrashSubmissionsGetToManyRelatedFieldsBetaFeedbackCrashSubmission
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppPlatform,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppUptimeInMilliseconds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Architecture,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BatteryPercentage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Build,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildBundleId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Comment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ConnectionType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CrashLog,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeviceFamily,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeviceModel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DevicePlatform,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DiskBytesAvailable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DiskBytesTotal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Email,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Locale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OsVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PairedAppleWatch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScreenHeightInPoints,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScreenWidthInPoints,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tester,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TimeZone,
     }

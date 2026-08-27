@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsSubscriptionGroupsGetToManyRelatedSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinusreferenceName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReferenceName,
     }

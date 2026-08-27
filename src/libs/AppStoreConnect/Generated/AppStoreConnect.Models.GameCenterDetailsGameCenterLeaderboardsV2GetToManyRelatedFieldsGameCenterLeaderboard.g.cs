@@ -4,84 +4,84 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterDetailsGameCenterLeaderboardsV2GetToManyRelatedFieldsGameCenterLeaderboard
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Activity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ActivityProperties,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Archived,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Challenge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DefaultFormatter,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterGroup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardSets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RecurrenceDuration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RecurrenceRule,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RecurrenceStartDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReferenceName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScoreRangeEnd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScoreRangeStart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScoreSortType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubmissionType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VendorIdentifier,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Versions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Visibility,
     }

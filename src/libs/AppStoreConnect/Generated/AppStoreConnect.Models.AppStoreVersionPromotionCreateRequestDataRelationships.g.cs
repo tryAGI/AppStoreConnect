@@ -4,19 +4,19 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppStoreVersionPromotionCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersion")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.AppStoreVersionPromotionCreateRequestDataRelationshipsAppStoreVersion AppStoreVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersionExperimentTreatment")]
         [global::System.Text.Json.Serialization.JsonRequired]

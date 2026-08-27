@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsBetaAppLocalizationsGetToManyRelatedFieldsBetaAppLocalization
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Description,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FeedbackEmail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Locale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MarketingUrl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrivacyPolicyUrl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TvOsPrivacyPolicy,
     }

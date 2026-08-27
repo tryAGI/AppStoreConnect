@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchaseOfferCodeCreateRequestDataAttributesCustomerEligibilitie
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ActiveSpender,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ChurnedSpender,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NonSpender,
     }

@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BackgroundAssetUploadFileAttributesAssetType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asset,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Manifest,
     }

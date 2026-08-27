@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppCustomProductPageVersionsGetInstanceFieldsAppCustomProductPageLocalization
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppCustomProductPageVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppPreviewSets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppScreenshotSets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Locale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PromotionalText,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SearchKeywords,
     }

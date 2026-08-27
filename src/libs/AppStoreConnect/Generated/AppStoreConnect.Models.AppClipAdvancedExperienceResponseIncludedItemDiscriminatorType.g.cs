@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipAdvancedExperienceResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClipAdvancedExperienceImages,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClipAdvancedExperienceLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClips,
     }

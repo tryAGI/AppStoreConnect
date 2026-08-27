@@ -4,68 +4,68 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterGroupsGameCenterActivitiesGetToManyRelatedFieldsGameCenterActivitie
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Achievements,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AchievementsV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Archived,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterGroup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Leaderboards,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LeaderboardsV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MaximumPlayersCount,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinimumPlayersCount,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PlayStyle,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Properties,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReferenceName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SupportsPartyCode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VendorIdentifier,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Versions,
     }

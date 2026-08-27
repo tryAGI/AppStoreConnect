@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchaseOfferCodesGetInstanceFieldsInAppPurchaseOfferPrice
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PricePoint,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Territory,
     }

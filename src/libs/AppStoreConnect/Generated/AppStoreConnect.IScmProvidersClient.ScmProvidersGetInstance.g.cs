@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IScmProvidersClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsScmProviders"></param>
         /// <param name="id"></param>
@@ -18,7 +18,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsScmProviders"></param>
         /// <param name="id"></param>

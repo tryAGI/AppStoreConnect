@@ -4,19 +4,19 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AndroidToIosAppMappingDetailCreateRequestDataAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("packageName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string PackageName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appSigningKeyPublicCertificateSha256Fingerprints")]
         [global::System.Text.Json.Serialization.JsonRequired]

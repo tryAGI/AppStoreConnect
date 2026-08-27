@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CertificateCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("merchantId")]
         public global::AppStoreConnect.CertificateCreateRequestDataRelationshipsMerchantId? MerchantId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("passTypeId")]
         public global::AppStoreConnect.CertificateCreateRequestDataRelationshipsPassTypeId? PassTypeId { get; set; }

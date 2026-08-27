@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class XcodeMetricsProductDataItemMetricCategorieMetricDataset
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("filterCriteria")]
         public global::AppStoreConnect.XcodeMetricsProductDataItemMetricCategorieMetricDatasetFilterCriteria? FilterCriteria { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("points")]
         public global::System.Collections.Generic.IList<global::AppStoreConnect.XcodeMetricsProductDataItemMetricCategorieMetricDatasetPoint>? Points { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("recommendedMetricGoal")]
         public global::AppStoreConnect.XcodeMetricsProductDataItemMetricCategorieMetricDatasetRecommendedMetricGoal? RecommendedMetricGoal { get; set; }

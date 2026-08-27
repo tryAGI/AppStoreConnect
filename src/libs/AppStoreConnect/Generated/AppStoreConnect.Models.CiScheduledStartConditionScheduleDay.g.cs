@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiScheduledStartConditionScheduleDay
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Friday,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Monday,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Saturday,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sunday,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Thursday,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tuesday,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wednesday,
     }

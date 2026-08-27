@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsInAppPurchasesV2GetToManyRelatedFilterInAppPurchaseTypeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Consumable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NonConsumable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NonRenewingSubscription,
     }

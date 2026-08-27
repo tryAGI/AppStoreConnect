@@ -4,48 +4,48 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BetaTestersGetCollectionSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusemail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinusfirstName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinusinviteType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinuslastName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusstate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Email,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FirstName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InviteType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         State,
     }

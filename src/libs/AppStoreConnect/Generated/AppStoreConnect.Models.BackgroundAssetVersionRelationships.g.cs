@@ -4,48 +4,48 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BackgroundAssetVersionRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("backgroundAsset")]
         public global::AppStoreConnect.BackgroundAssetVersionRelationshipsBackgroundAsset? BackgroundAsset { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("internalBetaRelease")]
         public global::AppStoreConnect.BackgroundAssetVersionRelationshipsInternalBetaRelease? InternalBetaRelease { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("externalBetaRelease")]
         public global::AppStoreConnect.BackgroundAssetVersionRelationshipsExternalBetaRelease? ExternalBetaRelease { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreRelease")]
         public global::AppStoreConnect.BackgroundAssetVersionRelationshipsAppStoreRelease? AppStoreRelease { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("assetFile")]
         public global::AppStoreConnect.BackgroundAssetVersionRelationshipsAssetFile? AssetFile { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("manifestFile")]
         public global::AppStoreConnect.BackgroundAssetVersionRelationshipsManifestFile? ManifestFile { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("backgroundAssetUploadFiles")]
         public global::AppStoreConnect.BackgroundAssetVersionRelationshipsBackgroundAssetUploadFiles? BackgroundAssetUploadFiles { get; set; }

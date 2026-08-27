@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterLeaderboardVersionV2InlineCreateRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("leaderboard")]
         public global::AppStoreConnect.GameCenterLeaderboardVersionV2InlineCreateRelationshipsLeaderboard? Leaderboard { get; set; }

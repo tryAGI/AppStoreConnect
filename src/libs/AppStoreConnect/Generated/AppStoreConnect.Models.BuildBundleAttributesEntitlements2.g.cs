@@ -4,7 +4,7 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BuildBundleAttributesEntitlements2
     {
