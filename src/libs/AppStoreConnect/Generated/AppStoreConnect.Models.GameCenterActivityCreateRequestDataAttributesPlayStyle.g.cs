@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterActivityCreateRequestDataAttributesPlayStyle
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asynchronous,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Synchronous,
     }

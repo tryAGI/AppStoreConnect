@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppPriceV2RelationshipsAppPricePointDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppPricePoints,
     }

@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchaseLocalizationsV2GetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Version,
     }

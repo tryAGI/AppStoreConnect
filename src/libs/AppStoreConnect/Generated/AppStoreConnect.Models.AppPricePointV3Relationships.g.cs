@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppPricePointV3Relationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("app")]
         public global::AppStoreConnect.AppPricePointV3RelationshipsApp? App { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("equalizations")]
         public global::AppStoreConnect.AppPricePointV3RelationshipsEqualizations? Equalizations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("territory")]
         public global::AppStoreConnect.AppPricePointV3RelationshipsTerritory? Territory { get; set; }

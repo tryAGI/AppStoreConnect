@@ -4,26 +4,26 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SubscriptionAvailabilityCreateRequestData
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.SubscriptionAvailabilityCreateRequestDataTypeJsonConverter))]
         public global::AppStoreConnect.SubscriptionAvailabilityCreateRequestDataType Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("attributes")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.SubscriptionAvailabilityCreateRequestDataAttributes Attributes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("relationships")]
         [global::System.Text.Json.Serialization.JsonRequired]

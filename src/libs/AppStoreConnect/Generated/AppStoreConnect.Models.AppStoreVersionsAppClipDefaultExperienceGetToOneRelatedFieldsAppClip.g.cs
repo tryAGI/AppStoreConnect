@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreVersionsAppClipDefaultExperienceGetToOneRelatedFieldsAppClip
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClipAdvancedExperiences,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClipDefaultExperiences,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BundleId,
     }

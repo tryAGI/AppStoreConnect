@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PassTypeIdsGetCollectionSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusidentifier,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusname,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Id,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Identifier,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
     }

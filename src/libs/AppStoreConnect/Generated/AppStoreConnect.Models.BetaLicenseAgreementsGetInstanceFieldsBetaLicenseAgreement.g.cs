@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BetaLicenseAgreementsGetInstanceFieldsBetaLicenseAgreement
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgreementText,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
     }

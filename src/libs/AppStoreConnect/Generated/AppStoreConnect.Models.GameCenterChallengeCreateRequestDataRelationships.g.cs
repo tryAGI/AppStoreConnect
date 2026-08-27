@@ -6,37 +6,37 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterChallengeCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterDetail")]
         public global::AppStoreConnect.GameCenterChallengeCreateRequestDataRelationshipsGameCenterDetail? GameCenterDetail { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterGroup")]
         public global::AppStoreConnect.GameCenterChallengeCreateRequestDataRelationshipsGameCenterGroup? GameCenterGroup { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("versions")]
         public global::AppStoreConnect.GameCenterChallengeCreateRequestDataRelationshipsVersions? Versions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("leaderboard")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.GameCenterChallengeCreateRequestDataRelationshipsLeaderboard? Leaderboard { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("leaderboardV2")]
         public global::AppStoreConnect.GameCenterChallengeCreateRequestDataRelationshipsLeaderboardV2? LeaderboardV2 { get; set; }

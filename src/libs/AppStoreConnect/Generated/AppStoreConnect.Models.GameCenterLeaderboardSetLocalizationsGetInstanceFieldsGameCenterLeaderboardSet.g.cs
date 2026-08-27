@@ -4,40 +4,40 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterLeaderboardSetLocalizationsGetInstanceFieldsGameCenterLeaderboardSet
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterGroup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboards,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GroupLeaderboardSet,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Localizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReferenceName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Releases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VendorIdentifier,
     }

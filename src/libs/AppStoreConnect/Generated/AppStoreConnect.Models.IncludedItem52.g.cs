@@ -5,17 +5,17 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IncludedItem52 : global::System.IEquatable<IncludedItem52>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.BetaFeedbackCrashSubmissionsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.BetaTester? BetaTesters { get; init; }
@@ -24,7 +24,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaTesters))]
@@ -32,7 +32,7 @@ namespace AppStoreConnect
         public bool IsBetaTesters => BetaTesters != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBetaTesters(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.BetaTester PickBetaTesters() => IsBetaTesters
             ? BetaTesters!
             : throw new global::System.InvalidOperationException($"Expected union variant 'BetaTesters' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.Build? Builds { get; init; }
@@ -61,7 +61,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
@@ -69,7 +69,7 @@ namespace AppStoreConnect
         public bool IsBuilds => Builds != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBuilds(
 #if NET6_0_OR_GREATER
@@ -82,23 +82,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.Build PickBuilds() => IsBuilds
             ? Builds!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem52(global::AppStoreConnect.BetaTester value) => new IncludedItem52((global::AppStoreConnect.BetaTester?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.BetaTester?(IncludedItem52 @this) => @this.BetaTesters;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem52(global::AppStoreConnect.BetaTester? value)
         {
@@ -106,22 +106,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem52 FromBetaTesters(global::AppStoreConnect.BetaTester? value) => new IncludedItem52(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem52(global::AppStoreConnect.Build value) => new IncludedItem52((global::AppStoreConnect.Build?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.Build?(IncludedItem52 @this) => @this.Builds;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem52(global::AppStoreConnect.Build? value)
         {
@@ -129,12 +129,12 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem52 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem52(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem52(
             global::AppStoreConnect.BetaFeedbackCrashSubmissionsResponseIncludedItemDiscriminatorType? type,
@@ -149,23 +149,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Builds as object ??
-            BetaTesters as object 
+            BetaTesters as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             BetaTesters?.ToString() ??
-            Builds?.ToString() 
+            Builds?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -173,7 +173,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.BetaTester, TResult>? betaTesters = null,
@@ -198,7 +198,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
@@ -222,7 +222,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
@@ -245,7 +245,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -266,18 +266,18 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludedItem52 other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaTester?>.Default.Equals(BetaTesters, other.BetaTesters) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds) 
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludedItem52 obj1, IncludedItem52 obj2)
         {
@@ -285,7 +285,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludedItem52 obj1, IncludedItem52 obj2)
         {
@@ -293,7 +293,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

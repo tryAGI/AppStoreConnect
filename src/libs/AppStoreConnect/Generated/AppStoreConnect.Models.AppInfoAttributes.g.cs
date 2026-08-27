@@ -6,33 +6,33 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppInfoAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreState")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AppStoreVersionStateJsonConverter))]
         public global::AppStoreConnect.AppStoreVersionState? AppStoreState { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("state")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AppInfoAttributesStateJsonConverter))]
         public global::AppStoreConnect.AppInfoAttributesState? State { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreAgeRating")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AppStoreAgeRatingJsonConverter))]
         public global::AppStoreConnect.AppStoreAgeRating? AppStoreAgeRating { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("australiaAgeRating")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AppInfoAttributesAustraliaAgeRatingJsonConverter))]
@@ -40,14 +40,14 @@ namespace AppStoreConnect
         public global::AppStoreConnect.AppInfoAttributesAustraliaAgeRating? AustraliaAgeRating { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("brazilAgeRating")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.BrazilAgeRatingJsonConverter))]
         public global::AppStoreConnect.BrazilAgeRating? BrazilAgeRating { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("brazilAgeRatingV2")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AppInfoAttributesBrazilAgeRatingV2JsonConverter))]
@@ -55,7 +55,7 @@ namespace AppStoreConnect
         public global::AppStoreConnect.AppInfoAttributesBrazilAgeRatingV2? BrazilAgeRatingV2 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("franceAgeRating")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AppInfoAttributesFranceAgeRatingJsonConverter))]
@@ -63,7 +63,7 @@ namespace AppStoreConnect
         public global::AppStoreConnect.AppInfoAttributesFranceAgeRating? FranceAgeRating { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("koreaAgeRating")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AppInfoAttributesKoreaAgeRatingJsonConverter))]
@@ -71,7 +71,7 @@ namespace AppStoreConnect
         public global::AppStoreConnect.AppInfoAttributesKoreaAgeRating? KoreaAgeRating { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("kidsAgeBand")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.KidsAgeBandJsonConverter))]

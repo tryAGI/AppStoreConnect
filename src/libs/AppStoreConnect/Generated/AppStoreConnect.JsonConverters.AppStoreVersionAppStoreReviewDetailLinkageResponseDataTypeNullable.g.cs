@@ -20,7 +20,7 @@ namespace AppStoreConnect.JsonConverters
                     {
                         return global::AppStoreConnect.AppStoreVersionAppStoreReviewDetailLinkageResponseDataTypeExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CustomerReviewResponseV1CreateRequestDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomerReviewResponses,
     }

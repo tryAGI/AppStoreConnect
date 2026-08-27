@@ -4,108 +4,108 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreAgeRating
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         All,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EighteenPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EightPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ElevenPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FifteenPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FivePlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FourteenPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FourPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         L,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NineteenPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NinePlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OnePlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SeventeenPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SevenPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SixteenPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SixPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TenPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ThirteenPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ThreePlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TwelvePlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TwentyOnePlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TwentyPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TwoPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unrated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ZeroZero,
     }

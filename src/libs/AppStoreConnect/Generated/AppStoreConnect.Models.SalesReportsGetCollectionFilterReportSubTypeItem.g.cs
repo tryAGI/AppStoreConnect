@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SalesReportsGetCollectionFilterReportSubTypeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Detailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Summary,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SummaryChannel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SummaryInstallType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SummaryTerritory,
     }

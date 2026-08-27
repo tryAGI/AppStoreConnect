@@ -20,7 +20,7 @@ namespace AppStoreConnect.JsonConverters
                     {
                         return global::AppStoreConnect.SubscriptionLocalizationsV2GetInstanceIncludeItemExtensions.ToEnum(stringValue);
                     }
-                    
+
                     break;
                 }
                 case global::System.Text.Json.JsonTokenType.Number:

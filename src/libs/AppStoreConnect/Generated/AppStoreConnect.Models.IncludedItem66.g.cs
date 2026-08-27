@@ -5,17 +5,17 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IncludedItem66 : global::System.IEquatable<IncludedItem66>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.CiBuildRunsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.Build? Builds { get; init; }
@@ -24,7 +24,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
@@ -32,7 +32,7 @@ namespace AppStoreConnect
         public bool IsBuilds => Builds != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBuilds(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.Build PickBuilds() => IsBuilds
             ? Builds!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.CiProduct? CiProducts { get; init; }
@@ -61,7 +61,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CiProducts))]
@@ -69,7 +69,7 @@ namespace AppStoreConnect
         public bool IsCiProducts => CiProducts != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCiProducts(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.CiProduct PickCiProducts() => IsCiProducts
             ? CiProducts!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CiProducts' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.CiWorkflow? CiWorkflows { get; init; }
@@ -98,7 +98,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CiWorkflows))]
@@ -106,7 +106,7 @@ namespace AppStoreConnect
         public bool IsCiWorkflows => CiWorkflows != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCiWorkflows(
 #if NET6_0_OR_GREATER
@@ -119,14 +119,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.CiWorkflow PickCiWorkflows() => IsCiWorkflows
             ? CiWorkflows!
             : throw new global::System.InvalidOperationException($"Expected union variant 'CiWorkflows' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.ScmGitReference? ScmGitReferences { get; init; }
@@ -135,7 +135,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmGitReferences))]
@@ -143,7 +143,7 @@ namespace AppStoreConnect
         public bool IsScmGitReferences => ScmGitReferences != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickScmGitReferences(
 #if NET6_0_OR_GREATER
@@ -156,14 +156,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.ScmGitReference PickScmGitReferences() => IsScmGitReferences
             ? ScmGitReferences!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScmGitReferences' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.ScmPullRequest? ScmPullRequests { get; init; }
@@ -172,7 +172,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmPullRequests))]
@@ -180,7 +180,7 @@ namespace AppStoreConnect
         public bool IsScmPullRequests => ScmPullRequests != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickScmPullRequests(
 #if NET6_0_OR_GREATER
@@ -193,23 +193,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.ScmPullRequest PickScmPullRequests() => IsScmPullRequests
             ? ScmPullRequests!
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScmPullRequests' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem66(global::AppStoreConnect.Build value) => new IncludedItem66((global::AppStoreConnect.Build?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.Build?(IncludedItem66 @this) => @this.Builds;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem66(global::AppStoreConnect.Build? value)
         {
@@ -217,22 +217,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem66 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem66(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem66(global::AppStoreConnect.CiProduct value) => new IncludedItem66((global::AppStoreConnect.CiProduct?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.CiProduct?(IncludedItem66 @this) => @this.CiProducts;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem66(global::AppStoreConnect.CiProduct? value)
         {
@@ -240,22 +240,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem66 FromCiProducts(global::AppStoreConnect.CiProduct? value) => new IncludedItem66(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem66(global::AppStoreConnect.CiWorkflow value) => new IncludedItem66((global::AppStoreConnect.CiWorkflow?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.CiWorkflow?(IncludedItem66 @this) => @this.CiWorkflows;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem66(global::AppStoreConnect.CiWorkflow? value)
         {
@@ -263,22 +263,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem66 FromCiWorkflows(global::AppStoreConnect.CiWorkflow? value) => new IncludedItem66(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem66(global::AppStoreConnect.ScmGitReference value) => new IncludedItem66((global::AppStoreConnect.ScmGitReference?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.ScmGitReference?(IncludedItem66 @this) => @this.ScmGitReferences;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem66(global::AppStoreConnect.ScmGitReference? value)
         {
@@ -286,22 +286,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem66 FromScmGitReferences(global::AppStoreConnect.ScmGitReference? value) => new IncludedItem66(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem66(global::AppStoreConnect.ScmPullRequest value) => new IncludedItem66((global::AppStoreConnect.ScmPullRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.ScmPullRequest?(IncludedItem66 @this) => @this.ScmPullRequests;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem66(global::AppStoreConnect.ScmPullRequest? value)
         {
@@ -309,12 +309,12 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem66 FromScmPullRequests(global::AppStoreConnect.ScmPullRequest? value) => new IncludedItem66(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem66(
             global::AppStoreConnect.CiBuildRunsResponseIncludedItemDiscriminatorType? type,
@@ -335,29 +335,29 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             ScmPullRequests as object ??
             ScmGitReferences as object ??
             CiWorkflows as object ??
             CiProducts as object ??
-            Builds as object 
+            Builds as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             Builds?.ToString() ??
             CiProducts?.ToString() ??
             CiWorkflows?.ToString() ??
             ScmGitReferences?.ToString() ??
-            ScmPullRequests?.ToString() 
+            ScmPullRequests?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -365,7 +365,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
@@ -405,7 +405,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::AppStoreConnect.Build>? builds = null,
@@ -447,7 +447,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.Build>? builds = null,
@@ -485,7 +485,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -512,7 +512,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludedItem66 other)
         {
@@ -521,12 +521,12 @@ namespace AppStoreConnect
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CiProduct?>.Default.Equals(CiProducts, other.CiProducts) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CiWorkflow?>.Default.Equals(CiWorkflows, other.CiWorkflows) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmGitReference?>.Default.Equals(ScmGitReferences, other.ScmGitReferences) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmPullRequest?>.Default.Equals(ScmPullRequests, other.ScmPullRequests) 
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmPullRequest?>.Default.Equals(ScmPullRequests, other.ScmPullRequests)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludedItem66 obj1, IncludedItem66 obj2)
         {
@@ -534,7 +534,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludedItem66 obj1, IncludedItem66 obj2)
         {
@@ -542,7 +542,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

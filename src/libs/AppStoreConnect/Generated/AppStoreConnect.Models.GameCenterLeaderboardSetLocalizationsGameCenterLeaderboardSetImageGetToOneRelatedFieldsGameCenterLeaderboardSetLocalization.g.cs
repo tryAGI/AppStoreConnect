@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterLeaderboardSetLocalizationsGameCenterLeaderboardSetImageGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardSet,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardSetImage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Locale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
     }

@@ -4,116 +4,116 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipAdvancedExperienceUpdateRequestDataAttributesBusinessCategory
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Automotive,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Beauty,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bikes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Books,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Casino,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Education,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EducationJapan,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Entertainment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EvCharger,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FinancialCny,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FinancialEur,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FinancialGbp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FinancialJpy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FinancialUsd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fitness,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FoodAndDrink,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gas,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Grocery,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HealthAndMedical,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HotelAndTravel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Music,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Parking,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PetServices,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProfessionalServices,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Shopping,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ticketing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Transit,
     }

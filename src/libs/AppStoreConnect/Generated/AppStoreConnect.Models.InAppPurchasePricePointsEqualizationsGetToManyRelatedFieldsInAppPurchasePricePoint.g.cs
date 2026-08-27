@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchasePricePointsEqualizationsGetToManyRelatedFieldsInAppPurchasePricePoint
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomerPrice,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Equalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Proceeds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Territory,
     }

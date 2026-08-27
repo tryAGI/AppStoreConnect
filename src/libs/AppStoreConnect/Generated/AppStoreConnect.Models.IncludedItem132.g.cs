@@ -5,17 +5,17 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IncludedItem132 : global::System.IEquatable<IncludedItem132>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.GameCenterMatchmakingRuleSetTestResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty? GameCenterMatchmakingTestPlayerProperties { get; init; }
@@ -24,7 +24,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterMatchmakingTestPlayerProperties))]
@@ -32,7 +32,7 @@ namespace AppStoreConnect
         public bool IsGameCenterMatchmakingTestPlayerProperties => GameCenterMatchmakingTestPlayerProperties != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGameCenterMatchmakingTestPlayerProperties(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty PickGameCenterMatchmakingTestPlayerProperties() => IsGameCenterMatchmakingTestPlayerProperties
             ? GameCenterMatchmakingTestPlayerProperties!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterMatchmakingTestPlayerProperties' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.GameCenterMatchmakingTestRequest? GameCenterMatchmakingTestRequests { get; init; }
@@ -61,7 +61,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterMatchmakingTestRequests))]
@@ -69,7 +69,7 @@ namespace AppStoreConnect
         public bool IsGameCenterMatchmakingTestRequests => GameCenterMatchmakingTestRequests != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGameCenterMatchmakingTestRequests(
 #if NET6_0_OR_GREATER
@@ -82,23 +82,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.GameCenterMatchmakingTestRequest PickGameCenterMatchmakingTestRequests() => IsGameCenterMatchmakingTestRequests
             ? GameCenterMatchmakingTestRequests!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterMatchmakingTestRequests' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem132(global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty value) => new IncludedItem132((global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty?(IncludedItem132 @this) => @this.GameCenterMatchmakingTestPlayerProperties;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem132(global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty? value)
         {
@@ -106,22 +106,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem132 FromGameCenterMatchmakingTestPlayerProperties(global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty? value) => new IncludedItem132(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem132(global::AppStoreConnect.GameCenterMatchmakingTestRequest value) => new IncludedItem132((global::AppStoreConnect.GameCenterMatchmakingTestRequest?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.GameCenterMatchmakingTestRequest?(IncludedItem132 @this) => @this.GameCenterMatchmakingTestRequests;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem132(global::AppStoreConnect.GameCenterMatchmakingTestRequest? value)
         {
@@ -129,12 +129,12 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem132 FromGameCenterMatchmakingTestRequests(global::AppStoreConnect.GameCenterMatchmakingTestRequest? value) => new IncludedItem132(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem132(
             global::AppStoreConnect.GameCenterMatchmakingRuleSetTestResponseIncludedItemDiscriminatorType? type,
@@ -149,23 +149,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             GameCenterMatchmakingTestRequests as object ??
-            GameCenterMatchmakingTestPlayerProperties as object 
+            GameCenterMatchmakingTestPlayerProperties as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             GameCenterMatchmakingTestPlayerProperties?.ToString() ??
-            GameCenterMatchmakingTestRequests?.ToString() 
+            GameCenterMatchmakingTestRequests?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -173,7 +173,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty, TResult>? gameCenterMatchmakingTestPlayerProperties = null,
@@ -198,7 +198,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty>? gameCenterMatchmakingTestPlayerProperties = null,
@@ -222,7 +222,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty>? gameCenterMatchmakingTestPlayerProperties = null,
@@ -245,7 +245,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -266,18 +266,18 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludedItem132 other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty?>.Default.Equals(GameCenterMatchmakingTestPlayerProperties, other.GameCenterMatchmakingTestPlayerProperties) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterMatchmakingTestRequest?>.Default.Equals(GameCenterMatchmakingTestRequests, other.GameCenterMatchmakingTestRequests) 
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterMatchmakingTestRequest?>.Default.Equals(GameCenterMatchmakingTestRequests, other.GameCenterMatchmakingTestRequests)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludedItem132 obj1, IncludedItem132 obj2)
         {
@@ -285,7 +285,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludedItem132 obj1, IncludedItem132 obj2)
         {
@@ -293,7 +293,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

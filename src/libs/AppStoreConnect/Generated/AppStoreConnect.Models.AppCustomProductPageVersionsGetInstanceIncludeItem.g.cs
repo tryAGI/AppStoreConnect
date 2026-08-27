@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppCustomProductPageVersionsGetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppCustomProductPage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppCustomProductPageLocalizations,
     }

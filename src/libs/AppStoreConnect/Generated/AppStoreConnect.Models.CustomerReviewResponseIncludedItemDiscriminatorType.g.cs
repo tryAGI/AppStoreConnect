@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CustomerReviewResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomerReviewResponses,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Territories,
     }

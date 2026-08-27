@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppCategoryAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("platforms")]
         public global::System.Collections.Generic.IList<global::AppStoreConnect.Platform>? Platforms { get; set; }

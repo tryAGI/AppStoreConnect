@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ReviewSubmissionResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Actors,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apps,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReviewSubmissionItems,
     }

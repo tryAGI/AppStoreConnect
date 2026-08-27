@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class InAppPurchaseOfferPriceRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("territory")]
         public global::AppStoreConnect.InAppPurchaseOfferPriceRelationshipsTerritory? Territory { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pricePoint")]
         public global::AppStoreConnect.InAppPurchaseOfferPriceRelationshipsPricePoint? PricePoint { get; set; }

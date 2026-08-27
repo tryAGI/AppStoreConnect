@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterAppVersionsCompatibilityVersionsGetToManyRelatedIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CompatibilityVersions,
     }

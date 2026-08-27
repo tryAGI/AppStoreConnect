@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ScmRepositoryResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScmGitReferences,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScmProviders,
     }

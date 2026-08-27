@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterMatchmakingQueuesExperimentMatchmakingRequestsGetMetricsGroupByItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Result,
     }

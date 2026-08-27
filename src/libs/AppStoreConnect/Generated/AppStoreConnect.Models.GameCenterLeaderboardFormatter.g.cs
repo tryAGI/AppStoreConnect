@@ -4,80 +4,80 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterLeaderboardFormatter
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DecimalPoint1Place,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DecimalPoint2Place,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DecimalPoint3Place,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ElapsedTimeCentisecond,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ElapsedTimeMinute,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ElapsedTimeSecond,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Integer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MoneyDollar,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MoneyDollarDecimal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MoneyEuro,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MoneyEuroDecimal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MoneyFranc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MoneyFrancDecimal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MoneyKroner,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MoneyKronerDecimal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MoneyPound,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MoneyPoundDecimal,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MoneyYen,
     }

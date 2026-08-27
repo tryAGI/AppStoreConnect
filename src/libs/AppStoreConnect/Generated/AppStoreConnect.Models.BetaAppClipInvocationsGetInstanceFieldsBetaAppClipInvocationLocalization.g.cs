@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BetaAppClipInvocationsGetInstanceFieldsBetaAppClipInvocationLocalization
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Locale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Title,
     }

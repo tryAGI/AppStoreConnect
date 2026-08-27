@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IGameCenterAchievementsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsGameCenterAchievements"></param>
         /// <param name="fieldsGameCenterDetails"></param>
@@ -30,7 +30,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsGameCenterAchievements"></param>
         /// <param name="fieldsGameCenterDetails"></param>

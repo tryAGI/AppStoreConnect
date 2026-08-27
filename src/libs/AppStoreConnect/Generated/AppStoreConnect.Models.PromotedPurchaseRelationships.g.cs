@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PromotedPurchaseRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inAppPurchaseV2")]
         public global::AppStoreConnect.PromotedPurchaseRelationshipsInAppPurchaseV2? InAppPurchaseV2 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subscription")]
         public global::AppStoreConnect.PromotedPurchaseRelationshipsSubscription? Subscription { get; set; }

@@ -6,142 +6,142 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterDetailRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("app")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsApp? App { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterAppVersions")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsGameCenterAppVersions? GameCenterAppVersions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterGroup")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsGameCenterGroup? GameCenterGroup { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterLeaderboards")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsGameCenterLeaderboards? GameCenterLeaderboards { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterLeaderboardsV2")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsGameCenterLeaderboardsV2? GameCenterLeaderboardsV2 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterLeaderboardSets")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsGameCenterLeaderboardSets? GameCenterLeaderboardSets { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterLeaderboardSetsV2")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsGameCenterLeaderboardSetsV2? GameCenterLeaderboardSetsV2 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterAchievements")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsGameCenterAchievements? GameCenterAchievements { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterAchievementsV2")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsGameCenterAchievementsV2? GameCenterAchievementsV2 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterActivities")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsGameCenterActivities? GameCenterActivities { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterChallenges")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsGameCenterChallenges? GameCenterChallenges { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultLeaderboard")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsDefaultLeaderboard? DefaultLeaderboard { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultLeaderboardV2")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsDefaultLeaderboardV2? DefaultLeaderboardV2 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultGroupLeaderboard")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsDefaultGroupLeaderboard? DefaultGroupLeaderboard { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultGroupLeaderboardV2")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsDefaultGroupLeaderboardV2? DefaultGroupLeaderboardV2 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("achievementReleases")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsAchievementReleases? AchievementReleases { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("activityReleases")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsActivityReleases? ActivityReleases { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("challengeReleases")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsChallengeReleases? ChallengeReleases { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("leaderboardReleases")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsLeaderboardReleases? LeaderboardReleases { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("leaderboardSetReleases")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsLeaderboardSetReleases? LeaderboardSetReleases { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("challengesMinimumPlatformVersions")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsChallengesMinimumPlatformVersions? ChallengesMinimumPlatformVersions { get; set; }

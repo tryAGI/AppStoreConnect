@@ -4,19 +4,19 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CiFilesAndFoldersRule
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("mode")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.CiFilesAndFoldersRuleModeJsonConverter))]
         public global::AppStoreConnect.CiFilesAndFoldersRuleMode? Mode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("matchers")]
         public global::System.Collections.Generic.IList<global::AppStoreConnect.CiStartConditionFileMatcher>? Matchers { get; set; }

@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterLeaderboardSetCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterDetail")]
         public global::AppStoreConnect.GameCenterLeaderboardSetCreateRequestDataRelationshipsGameCenterDetail? GameCenterDetail { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterGroup")]
         public global::AppStoreConnect.GameCenterLeaderboardSetCreateRequestDataRelationshipsGameCenterGroup? GameCenterGroup { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterLeaderboards")]
         public global::AppStoreConnect.GameCenterLeaderboardSetCreateRequestDataRelationshipsGameCenterLeaderboards? GameCenterLeaderboards { get; set; }

@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterLeaderboardSetsV2ResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterDetails,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterGroups,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardSetVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboards,
     }

@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterAchievementV2RelationshipsGameCenterGroup
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         public global::AppStoreConnect.GameCenterAchievementV2RelationshipsGameCenterGroupData? Data { get; set; }

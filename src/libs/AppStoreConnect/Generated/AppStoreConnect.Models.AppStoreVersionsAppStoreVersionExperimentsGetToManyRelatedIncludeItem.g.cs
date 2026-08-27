@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreVersionsAppStoreVersionExperimentsGetToManyRelatedIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionExperimentTreatments,
     }

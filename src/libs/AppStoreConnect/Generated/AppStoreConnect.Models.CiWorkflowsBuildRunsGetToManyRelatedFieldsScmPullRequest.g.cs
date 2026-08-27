@@ -4,56 +4,56 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiWorkflowsBuildRunsGetToManyRelatedFieldsScmPullRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DestinationBranchName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DestinationRepositoryName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DestinationRepositoryOwner,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IsClosed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IsCrossRepository,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Number,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Repository,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SourceBranchName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SourceRepositoryName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SourceRepositoryOwner,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Title,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WebUrl,
     }

@@ -5,17 +5,17 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IncludedItem87 : global::System.IEquatable<IncludedItem87>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.GameCenterActivitiesResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.GameCenterAchievement? GameCenterAchievements { get; init; }
@@ -24,7 +24,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterAchievements))]
@@ -32,7 +32,7 @@ namespace AppStoreConnect
         public bool IsGameCenterAchievements => GameCenterAchievements != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGameCenterAchievements(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.GameCenterAchievement PickGameCenterAchievements() => IsGameCenterAchievements
             ? GameCenterAchievements!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAchievements' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.GameCenterActivityVersion? GameCenterActivityVersions { get; init; }
@@ -61,7 +61,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterActivityVersions))]
@@ -69,7 +69,7 @@ namespace AppStoreConnect
         public bool IsGameCenterActivityVersions => GameCenterActivityVersions != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGameCenterActivityVersions(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.GameCenterActivityVersion PickGameCenterActivityVersions() => IsGameCenterActivityVersions
             ? GameCenterActivityVersions!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterActivityVersions' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.GameCenterDetail? GameCenterDetails { get; init; }
@@ -98,7 +98,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterDetails))]
@@ -106,7 +106,7 @@ namespace AppStoreConnect
         public bool IsGameCenterDetails => GameCenterDetails != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGameCenterDetails(
 #if NET6_0_OR_GREATER
@@ -119,14 +119,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.GameCenterDetail PickGameCenterDetails() => IsGameCenterDetails
             ? GameCenterDetails!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterDetails' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.GameCenterGroup? GameCenterGroups { get; init; }
@@ -135,7 +135,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterGroups))]
@@ -143,7 +143,7 @@ namespace AppStoreConnect
         public bool IsGameCenterGroups => GameCenterGroups != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGameCenterGroups(
 #if NET6_0_OR_GREATER
@@ -156,14 +156,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.GameCenterGroup PickGameCenterGroups() => IsGameCenterGroups
             ? GameCenterGroups!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterGroups' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.GameCenterLeaderboard? GameCenterLeaderboards { get; init; }
@@ -172,7 +172,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboards))]
@@ -180,7 +180,7 @@ namespace AppStoreConnect
         public bool IsGameCenterLeaderboards => GameCenterLeaderboards != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGameCenterLeaderboards(
 #if NET6_0_OR_GREATER
@@ -193,23 +193,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.GameCenterLeaderboard PickGameCenterLeaderboards() => IsGameCenterLeaderboards
             ? GameCenterLeaderboards!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboards' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem87(global::AppStoreConnect.GameCenterAchievement value) => new IncludedItem87((global::AppStoreConnect.GameCenterAchievement?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.GameCenterAchievement?(IncludedItem87 @this) => @this.GameCenterAchievements;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem87(global::AppStoreConnect.GameCenterAchievement? value)
         {
@@ -217,22 +217,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem87 FromGameCenterAchievements(global::AppStoreConnect.GameCenterAchievement? value) => new IncludedItem87(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem87(global::AppStoreConnect.GameCenterActivityVersion value) => new IncludedItem87((global::AppStoreConnect.GameCenterActivityVersion?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.GameCenterActivityVersion?(IncludedItem87 @this) => @this.GameCenterActivityVersions;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem87(global::AppStoreConnect.GameCenterActivityVersion? value)
         {
@@ -240,22 +240,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem87 FromGameCenterActivityVersions(global::AppStoreConnect.GameCenterActivityVersion? value) => new IncludedItem87(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem87(global::AppStoreConnect.GameCenterDetail value) => new IncludedItem87((global::AppStoreConnect.GameCenterDetail?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.GameCenterDetail?(IncludedItem87 @this) => @this.GameCenterDetails;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem87(global::AppStoreConnect.GameCenterDetail? value)
         {
@@ -263,22 +263,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem87 FromGameCenterDetails(global::AppStoreConnect.GameCenterDetail? value) => new IncludedItem87(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem87(global::AppStoreConnect.GameCenterGroup value) => new IncludedItem87((global::AppStoreConnect.GameCenterGroup?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.GameCenterGroup?(IncludedItem87 @this) => @this.GameCenterGroups;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem87(global::AppStoreConnect.GameCenterGroup? value)
         {
@@ -286,22 +286,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem87 FromGameCenterGroups(global::AppStoreConnect.GameCenterGroup? value) => new IncludedItem87(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem87(global::AppStoreConnect.GameCenterLeaderboard value) => new IncludedItem87((global::AppStoreConnect.GameCenterLeaderboard?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.GameCenterLeaderboard?(IncludedItem87 @this) => @this.GameCenterLeaderboards;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem87(global::AppStoreConnect.GameCenterLeaderboard? value)
         {
@@ -309,12 +309,12 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem87 FromGameCenterLeaderboards(global::AppStoreConnect.GameCenterLeaderboard? value) => new IncludedItem87(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem87(
             global::AppStoreConnect.GameCenterActivitiesResponseIncludedItemDiscriminatorType? type,
@@ -335,29 +335,29 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             GameCenterLeaderboards as object ??
             GameCenterGroups as object ??
             GameCenterDetails as object ??
             GameCenterActivityVersions as object ??
-            GameCenterAchievements as object 
+            GameCenterAchievements as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             GameCenterAchievements?.ToString() ??
             GameCenterActivityVersions?.ToString() ??
             GameCenterDetails?.ToString() ??
             GameCenterGroups?.ToString() ??
-            GameCenterLeaderboards?.ToString() 
+            GameCenterLeaderboards?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -365,7 +365,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.GameCenterAchievement, TResult>? gameCenterAchievements = null,
@@ -405,7 +405,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::AppStoreConnect.GameCenterAchievement>? gameCenterAchievements = null,
@@ -447,7 +447,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.GameCenterAchievement>? gameCenterAchievements = null,
@@ -485,7 +485,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -512,7 +512,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludedItem87 other)
         {
@@ -521,12 +521,12 @@ namespace AppStoreConnect
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterActivityVersion?>.Default.Equals(GameCenterActivityVersions, other.GameCenterActivityVersions) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterDetail?>.Default.Equals(GameCenterDetails, other.GameCenterDetails) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterGroup?>.Default.Equals(GameCenterGroups, other.GameCenterGroups) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboard?>.Default.Equals(GameCenterLeaderboards, other.GameCenterLeaderboards) 
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboard?>.Default.Equals(GameCenterLeaderboards, other.GameCenterLeaderboards)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludedItem87 obj1, IncludedItem87 obj2)
         {
@@ -534,7 +534,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludedItem87 obj1, IncludedItem87 obj2)
         {
@@ -542,7 +542,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

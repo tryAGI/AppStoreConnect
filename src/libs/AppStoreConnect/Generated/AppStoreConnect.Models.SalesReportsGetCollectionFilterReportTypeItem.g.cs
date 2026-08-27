@@ -4,48 +4,48 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SalesReportsGetCollectionFilterReportTypeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FirstAnnual,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Installs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Newsstand,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreOrder,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sales,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Subscriber,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Subscription,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionEvent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionOfferCodeRedemption,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WinBackEligibility,
     }

@@ -4,26 +4,26 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterMatchmakingRuleCreateRequestDataAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("referenceName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ReferenceName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("description")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Description { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.GameCenterMatchmakingRuleCreateRequestDataAttributesTypeJsonConverter))]
@@ -31,14 +31,14 @@ namespace AppStoreConnect
         public required global::AppStoreConnect.GameCenterMatchmakingRuleCreateRequestDataAttributesType Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expression")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Expression { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("weight")]
         public double? Weight { get; set; }

@@ -4,25 +4,25 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppStoreVersionCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("app")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.AppStoreVersionCreateRequestDataRelationshipsApp App { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersionLocalizations")]
         public global::AppStoreConnect.AppStoreVersionCreateRequestDataRelationshipsAppStoreVersionLocalizations? AppStoreVersionLocalizations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("build")]
         public global::AppStoreConnect.AppStoreVersionCreateRequestDataRelationshipsBuild? Build { get; set; }

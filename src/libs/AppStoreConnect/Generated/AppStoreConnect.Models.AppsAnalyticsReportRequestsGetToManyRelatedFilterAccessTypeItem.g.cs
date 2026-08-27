@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsAnalyticsReportRequestsGetToManyRelatedFilterAccessTypeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OneTimeSnapshot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ongoing,
     }

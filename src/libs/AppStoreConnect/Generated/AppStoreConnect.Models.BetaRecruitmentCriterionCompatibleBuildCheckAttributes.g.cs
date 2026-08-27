@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BetaRecruitmentCriterionCompatibleBuildCheckAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("hasCompatibleBuild")]
         public bool? HasCompatibleBuild { get; set; }

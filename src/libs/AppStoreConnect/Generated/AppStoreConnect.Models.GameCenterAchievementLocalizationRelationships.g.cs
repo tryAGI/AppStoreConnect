@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterAchievementLocalizationRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterAchievement")]
         public global::AppStoreConnect.GameCenterAchievementLocalizationRelationshipsGameCenterAchievement? GameCenterAchievement { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterAchievementImage")]
         public global::AppStoreConnect.GameCenterAchievementLocalizationRelationshipsGameCenterAchievementImage? GameCenterAchievementImage { get; set; }

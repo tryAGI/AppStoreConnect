@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppScreenshotSetsGetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppCustomProductPageLocalization,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppScreenshots,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionExperimentTreatmentLocalization,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionLocalization,
     }

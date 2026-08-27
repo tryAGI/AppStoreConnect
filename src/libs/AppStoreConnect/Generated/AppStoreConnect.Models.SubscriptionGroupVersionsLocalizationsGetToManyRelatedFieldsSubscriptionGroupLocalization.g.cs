@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionGroupVersionsLocalizationsGetToManyRelatedFieldsSubscriptionGroupLocalization
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomAppName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Locale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Version,
     }

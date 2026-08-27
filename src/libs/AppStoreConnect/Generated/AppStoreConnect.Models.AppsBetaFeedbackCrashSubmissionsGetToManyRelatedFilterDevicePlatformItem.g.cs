@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsBetaFeedbackCrashSubmissionsGetToManyRelatedFilterDevicePlatformItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ios,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MacOs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TvOs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VisionOs,
     }

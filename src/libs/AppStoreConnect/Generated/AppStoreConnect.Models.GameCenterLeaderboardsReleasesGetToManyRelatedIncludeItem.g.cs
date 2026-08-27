@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterLeaderboardsReleasesGetToManyRelatedIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboard,
     }

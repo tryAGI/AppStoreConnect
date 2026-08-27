@@ -5,17 +5,17 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IncludedItem113 : global::System.IEquatable<IncludedItem113>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.GameCenterLeaderboardSetLocalizationResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.GameCenterLeaderboardSetImage? GameCenterLeaderboardSetImages { get; init; }
@@ -24,7 +24,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSetImages))]
@@ -32,7 +32,7 @@ namespace AppStoreConnect
         public bool IsGameCenterLeaderboardSetImages => GameCenterLeaderboardSetImages != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGameCenterLeaderboardSetImages(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.GameCenterLeaderboardSetImage PickGameCenterLeaderboardSetImages() => IsGameCenterLeaderboardSetImages
             ? GameCenterLeaderboardSetImages!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSetImages' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.GameCenterLeaderboardSet? GameCenterLeaderboardSets { get; init; }
@@ -61,7 +61,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSets))]
@@ -69,7 +69,7 @@ namespace AppStoreConnect
         public bool IsGameCenterLeaderboardSets => GameCenterLeaderboardSets != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickGameCenterLeaderboardSets(
 #if NET6_0_OR_GREATER
@@ -82,23 +82,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.GameCenterLeaderboardSet PickGameCenterLeaderboardSets() => IsGameCenterLeaderboardSets
             ? GameCenterLeaderboardSets!
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSets' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem113(global::AppStoreConnect.GameCenterLeaderboardSetImage value) => new IncludedItem113((global::AppStoreConnect.GameCenterLeaderboardSetImage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSetImage?(IncludedItem113 @this) => @this.GameCenterLeaderboardSetImages;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem113(global::AppStoreConnect.GameCenterLeaderboardSetImage? value)
         {
@@ -106,22 +106,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem113 FromGameCenterLeaderboardSetImages(global::AppStoreConnect.GameCenterLeaderboardSetImage? value) => new IncludedItem113(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem113(global::AppStoreConnect.GameCenterLeaderboardSet value) => new IncludedItem113((global::AppStoreConnect.GameCenterLeaderboardSet?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSet?(IncludedItem113 @this) => @this.GameCenterLeaderboardSets;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem113(global::AppStoreConnect.GameCenterLeaderboardSet? value)
         {
@@ -129,12 +129,12 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem113 FromGameCenterLeaderboardSets(global::AppStoreConnect.GameCenterLeaderboardSet? value) => new IncludedItem113(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem113(
             global::AppStoreConnect.GameCenterLeaderboardSetLocalizationResponseIncludedItemDiscriminatorType? type,
@@ -149,23 +149,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             GameCenterLeaderboardSets as object ??
-            GameCenterLeaderboardSetImages as object 
+            GameCenterLeaderboardSetImages as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             GameCenterLeaderboardSetImages?.ToString() ??
-            GameCenterLeaderboardSets?.ToString() 
+            GameCenterLeaderboardSets?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -173,7 +173,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSetImage, TResult>? gameCenterLeaderboardSetImages = null,
@@ -198,7 +198,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetImage>? gameCenterLeaderboardSetImages = null,
@@ -222,7 +222,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetImage>? gameCenterLeaderboardSetImages = null,
@@ -245,7 +245,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -266,18 +266,18 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludedItem113 other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSetImage?>.Default.Equals(GameCenterLeaderboardSetImages, other.GameCenterLeaderboardSetImages) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSet?>.Default.Equals(GameCenterLeaderboardSets, other.GameCenterLeaderboardSets) 
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSet?>.Default.Equals(GameCenterLeaderboardSets, other.GameCenterLeaderboardSets)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludedItem113 obj1, IncludedItem113 obj2)
         {
@@ -285,7 +285,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludedItem113 obj1, IncludedItem113 obj2)
         {
@@ -293,7 +293,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

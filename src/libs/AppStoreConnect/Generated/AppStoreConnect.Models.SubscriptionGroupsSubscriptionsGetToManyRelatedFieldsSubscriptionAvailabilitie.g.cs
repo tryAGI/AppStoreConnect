@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionGroupsSubscriptionsGetToManyRelatedFieldsSubscriptionAvailabilitie
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AvailableInNewTerritories,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AvailableTerritories,
     }

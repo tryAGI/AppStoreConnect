@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IAlternativeDistributionPackagesClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterState"></param>
         /// <param name="fieldsAlternativeDistributionPackageVersions"></param>
@@ -34,7 +34,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterState"></param>
         /// <param name="fieldsAlternativeDistributionPackageVersions"></param>

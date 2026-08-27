@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ReviewSubmissionRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("app")]
         public global::AppStoreConnect.ReviewSubmissionRelationshipsApp? App { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("items")]
         public global::AppStoreConnect.ReviewSubmissionRelationshipsItems? Items { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersionForReview")]
         public global::AppStoreConnect.ReviewSubmissionRelationshipsAppStoreVersionForReview? AppStoreVersionForReview { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("submittedByActor")]
         public global::AppStoreConnect.ReviewSubmissionRelationshipsSubmittedByActor? SubmittedByActor { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("lastUpdatedByActor")]
         public global::AppStoreConnect.ReviewSubmissionRelationshipsLastUpdatedByActor? LastUpdatedByActor { get; set; }

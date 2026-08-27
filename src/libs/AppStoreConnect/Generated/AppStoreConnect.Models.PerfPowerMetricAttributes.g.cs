@@ -4,26 +4,26 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PerfPowerMetricAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("platform")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.PerfPowerMetricAttributesPlatformJsonConverter))]
         public global::AppStoreConnect.PerfPowerMetricAttributesPlatform? Platform { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("metricType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.PerfPowerMetricAttributesMetricTypeJsonConverter))]
         public global::AppStoreConnect.PerfPowerMetricAttributesMetricType? MetricType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deviceType")]
         public string? DeviceType { get; set; }

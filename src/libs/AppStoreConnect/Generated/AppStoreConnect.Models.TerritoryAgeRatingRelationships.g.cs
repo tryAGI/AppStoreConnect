@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class TerritoryAgeRatingRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("territory")]
         public global::AppStoreConnect.TerritoryAgeRatingRelationshipsTerritory? Territory { get; set; }

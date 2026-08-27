@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum RoutingAppCoverageType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RoutingAppCoverages,
     }

@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipAdvancedExperiencesGetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClip,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HeaderImage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Localizations,
     }

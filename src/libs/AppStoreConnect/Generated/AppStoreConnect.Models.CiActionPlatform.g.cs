@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiActionPlatform
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ios,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Macos,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tvos,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Visionos,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Watchos,
     }

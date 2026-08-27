@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AlternativeDistributionPackagesGetInstanceFieldsAlternativeDistributionPackage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SourceFileChecksum,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Versions,
     }

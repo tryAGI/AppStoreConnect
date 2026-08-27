@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionAttributesSubscriptionPeriod
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OneMonth,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OneWeek,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OneYear,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SixMonths,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ThreeMonths,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TwoMonths,
     }

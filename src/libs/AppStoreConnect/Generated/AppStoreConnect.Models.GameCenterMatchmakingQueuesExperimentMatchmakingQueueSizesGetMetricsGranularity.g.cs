@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterMatchmakingQueuesExperimentMatchmakingQueueSizesGetMetricsGranularity
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         P1d,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pt15m,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pt1h,
     }

@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipAdvancedExperienceUpdateRequestDataAttributesPlacePhoneNumberType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fax,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Landline,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mobile,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tollfree,
     }

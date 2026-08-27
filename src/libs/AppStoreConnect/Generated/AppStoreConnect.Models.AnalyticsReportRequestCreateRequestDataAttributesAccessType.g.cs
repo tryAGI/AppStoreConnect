@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AnalyticsReportRequestCreateRequestDataAttributesAccessType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OneTimeSnapshot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ongoing,
     }

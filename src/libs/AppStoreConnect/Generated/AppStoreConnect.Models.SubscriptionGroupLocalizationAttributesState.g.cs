@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionGroupLocalizationAttributesState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Approved,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrepareForSubmission,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitingForReview,
     }

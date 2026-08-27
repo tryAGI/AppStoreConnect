@@ -4,25 +4,25 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppClipDefaultExperienceCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appClip")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.AppClipDefaultExperienceCreateRequestDataRelationshipsAppClip AppClip { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("releaseWithAppStoreVersion")]
         public global::AppStoreConnect.AppClipDefaultExperienceCreateRequestDataRelationshipsReleaseWithAppStoreVersion? ReleaseWithAppStoreVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appClipDefaultExperienceTemplate")]
         public global::AppStoreConnect.AppClipDefaultExperienceCreateRequestDataRelationshipsAppClipDefaultExperienceTemplate? AppClipDefaultExperienceTemplate { get; set; }

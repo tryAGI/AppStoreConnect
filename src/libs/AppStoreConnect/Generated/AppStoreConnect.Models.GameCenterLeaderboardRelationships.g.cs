@@ -6,55 +6,55 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterLeaderboardRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterDetail")]
         public global::AppStoreConnect.GameCenterLeaderboardRelationshipsGameCenterDetail? GameCenterDetail { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterGroup")]
         public global::AppStoreConnect.GameCenterLeaderboardRelationshipsGameCenterGroup? GameCenterGroup { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("groupLeaderboard")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.GameCenterLeaderboardRelationshipsGroupLeaderboard? GroupLeaderboard { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterLeaderboardSets")]
         public global::AppStoreConnect.GameCenterLeaderboardRelationshipsGameCenterLeaderboardSets? GameCenterLeaderboardSets { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("localizations")]
         public global::AppStoreConnect.GameCenterLeaderboardRelationshipsLocalizations? Localizations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("releases")]
         public global::AppStoreConnect.GameCenterLeaderboardRelationshipsReleases? Releases { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("activity")]
         public global::AppStoreConnect.GameCenterLeaderboardRelationshipsActivity? Activity { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("challenge")]
         public global::AppStoreConnect.GameCenterLeaderboardRelationshipsChallenge? Challenge { get; set; }

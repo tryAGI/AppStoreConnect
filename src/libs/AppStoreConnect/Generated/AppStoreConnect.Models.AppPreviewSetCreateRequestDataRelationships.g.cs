@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppPreviewSetCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersionLocalization")]
         public global::AppStoreConnect.AppPreviewSetCreateRequestDataRelationshipsAppStoreVersionLocalization? AppStoreVersionLocalization { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appCustomProductPageLocalization")]
         public global::AppStoreConnect.AppPreviewSetCreateRequestDataRelationshipsAppCustomProductPageLocalization? AppCustomProductPageLocalization { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersionExperimentTreatmentLocalization")]
         public global::AppStoreConnect.AppPreviewSetCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentLocalization? AppStoreVersionExperimentTreatmentLocalization { get; set; }

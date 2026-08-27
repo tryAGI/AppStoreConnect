@@ -4,92 +4,92 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionsPromotedPurchaseGetToOneRelatedFieldsSubscription
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreReviewScreenshot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FamilySharable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Group,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GroupLevel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Images,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntroductoryOffers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OfferCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PlanAvailabilities,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PricePoints,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prices,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProductId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PromotedPurchase,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PromotionalOffers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReviewNote,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         State,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionAvailability,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionPeriod,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Versions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WinBackOffers,
     }

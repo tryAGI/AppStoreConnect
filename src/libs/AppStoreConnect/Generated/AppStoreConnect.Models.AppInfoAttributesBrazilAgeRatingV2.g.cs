@@ -4,56 +4,56 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppInfoAttributesBrazilAgeRatingV2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OfficialEighteen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OfficialFourteen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OfficialL,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OfficialSixteen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OfficialTen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OfficialTwelve,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfRatedEighteen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfRatedFourteen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfRatedL,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfRatedSixteen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfRatedTen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SelfRatedTwelve,
     }

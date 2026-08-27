@@ -5,17 +5,17 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IncludedItem139 : global::System.IEquatable<IncludedItem139>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchasePriceScheduleResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.InAppPurchasePrice? InAppPurchasePrices { get; init; }
@@ -24,7 +24,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchasePrices))]
@@ -32,7 +32,7 @@ namespace AppStoreConnect
         public bool IsInAppPurchasePrices => InAppPurchasePrices != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInAppPurchasePrices(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchasePrice PickInAppPurchasePrices() => IsInAppPurchasePrices
             ? InAppPurchasePrices!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchasePrices' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.Territory? Territories { get; init; }
@@ -61,7 +61,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Territories))]
@@ -69,7 +69,7 @@ namespace AppStoreConnect
         public bool IsTerritories => Territories != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickTerritories(
 #if NET6_0_OR_GREATER
@@ -82,23 +82,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.Territory PickTerritories() => IsTerritories
             ? Territories!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Territories' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem139(global::AppStoreConnect.InAppPurchasePrice value) => new IncludedItem139((global::AppStoreConnect.InAppPurchasePrice?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.InAppPurchasePrice?(IncludedItem139 @this) => @this.InAppPurchasePrices;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem139(global::AppStoreConnect.InAppPurchasePrice? value)
         {
@@ -106,22 +106,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem139 FromInAppPurchasePrices(global::AppStoreConnect.InAppPurchasePrice? value) => new IncludedItem139(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem139(global::AppStoreConnect.Territory value) => new IncludedItem139((global::AppStoreConnect.Territory?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.Territory?(IncludedItem139 @this) => @this.Territories;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem139(global::AppStoreConnect.Territory? value)
         {
@@ -129,12 +129,12 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem139 FromTerritories(global::AppStoreConnect.Territory? value) => new IncludedItem139(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem139(
             global::AppStoreConnect.InAppPurchasePriceScheduleResponseIncludedItemDiscriminatorType? type,
@@ -149,23 +149,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Territories as object ??
-            InAppPurchasePrices as object 
+            InAppPurchasePrices as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             InAppPurchasePrices?.ToString() ??
-            Territories?.ToString() 
+            Territories?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -173,7 +173,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.InAppPurchasePrice, TResult>? inAppPurchasePrices = null,
@@ -198,7 +198,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::AppStoreConnect.InAppPurchasePrice>? inAppPurchasePrices = null,
@@ -222,7 +222,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.InAppPurchasePrice>? inAppPurchasePrices = null,
@@ -245,7 +245,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -266,18 +266,18 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludedItem139 other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchasePrice?>.Default.Equals(InAppPurchasePrices, other.InAppPurchasePrices) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Territory?>.Default.Equals(Territories, other.Territories) 
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Territory?>.Default.Equals(Territories, other.Territories)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludedItem139 obj1, IncludedItem139 obj2)
         {
@@ -285,7 +285,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludedItem139 obj1, IncludedItem139 obj2)
         {
@@ -293,7 +293,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

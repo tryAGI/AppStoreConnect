@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterLeaderboardSetsV2GetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterGroup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboards,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Versions,
     }

@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildUploadFileAttributesAssetType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asset,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetDescription,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetSpi,
     }

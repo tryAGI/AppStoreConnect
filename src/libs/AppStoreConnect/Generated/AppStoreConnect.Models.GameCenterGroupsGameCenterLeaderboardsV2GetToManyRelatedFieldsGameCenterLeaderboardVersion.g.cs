@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterGroupsGameCenterLeaderboardsV2GetToManyRelatedFieldsGameCenterLeaderboardVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Leaderboard,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Localizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         State,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Version,
     }

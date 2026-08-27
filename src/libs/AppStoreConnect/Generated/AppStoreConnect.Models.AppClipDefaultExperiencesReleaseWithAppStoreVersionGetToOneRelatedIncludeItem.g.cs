@@ -4,56 +4,56 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlternativeDistributionPackage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClipDefaultExperience,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreReviewDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionExperiments,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionExperimentsV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionPhasedRelease,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionSubmission,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Build,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAppVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RoutingAppCoverage,
     }

@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionVersionsGetInstanceFieldsSubscriptionLocalization
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Description,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Locale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Version,
     }

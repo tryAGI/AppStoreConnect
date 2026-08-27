@@ -4,76 +4,76 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchasesV2GetInstanceFieldsInAppPurchase
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreReviewScreenshot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Content,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContentHosting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FamilySharable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IapPriceSchedule,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Images,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseAvailability,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OfferCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PricePoints,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProductId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PromotedPurchase,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReviewNote,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         State,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Versions,
     }

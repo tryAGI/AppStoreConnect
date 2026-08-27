@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipDefaultExperienceLocalizationsResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClipDefaultExperiences,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClipHeaderImages,
     }

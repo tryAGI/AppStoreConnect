@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IGameCenterGroupsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterGameCenterAppVersionsEnabled"></param>
         /// <param name="fieldsGameCenterDetails"></param>
@@ -82,7 +82,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterGameCenterAppVersionsEnabled"></param>
         /// <param name="fieldsGameCenterDetails"></param>

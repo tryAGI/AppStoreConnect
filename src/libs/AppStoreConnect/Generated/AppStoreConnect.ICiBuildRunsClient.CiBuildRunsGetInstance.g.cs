@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface ICiBuildRunsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsCiBuildRuns"></param>
         /// <param name="fieldsBuilds"></param>
@@ -32,7 +32,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsCiBuildRuns"></param>
         /// <param name="fieldsBuilds"></param>

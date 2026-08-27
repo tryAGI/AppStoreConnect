@@ -4,25 +4,25 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class NominationCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("relatedApps")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.NominationCreateRequestDataRelationshipsRelatedApps RelatedApps { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inAppEvents")]
         public global::AppStoreConnect.NominationCreateRequestDataRelationshipsInAppEvents? InAppEvents { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("supportedTerritories")]
         public global::AppStoreConnect.NominationCreateRequestDataRelationshipsSupportedTerritories? SupportedTerritories { get; set; }

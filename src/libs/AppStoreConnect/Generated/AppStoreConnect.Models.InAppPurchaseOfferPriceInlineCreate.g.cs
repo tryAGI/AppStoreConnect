@@ -4,25 +4,25 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class InAppPurchaseOfferPriceInlineCreate
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.InAppPurchaseOfferPriceInlineCreateTypeJsonConverter))]
         public global::AppStoreConnect.InAppPurchaseOfferPriceInlineCreateType Type { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("id")]
         public string? Id { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("relationships")]
         public global::AppStoreConnect.InAppPurchaseOfferPriceInlineCreateRelationships? Relationships { get; set; }

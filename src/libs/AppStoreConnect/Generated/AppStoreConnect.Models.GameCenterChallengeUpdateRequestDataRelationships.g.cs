@@ -6,19 +6,19 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterChallengeUpdateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("leaderboard")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.GameCenterChallengeUpdateRequestDataRelationshipsLeaderboard? Leaderboard { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("leaderboardV2")]
         public global::AppStoreConnect.GameCenterChallengeUpdateRequestDataRelationshipsLeaderboardV2? LeaderboardV2 { get; set; }

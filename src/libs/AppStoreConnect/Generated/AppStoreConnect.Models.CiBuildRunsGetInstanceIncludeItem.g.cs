@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiBuildRunsGetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Builds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DestinationBranch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Product,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PullRequest,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SourceBranchOrTag,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Workflow,
     }

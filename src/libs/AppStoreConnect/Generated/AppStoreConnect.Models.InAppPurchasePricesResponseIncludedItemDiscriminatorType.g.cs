@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchasePricesResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchasePricePoints,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Territories,
     }

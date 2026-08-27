@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildsAppStoreVersionGetToOneRelatedFieldsAppClipDefaultExperience
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Action,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClip,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClipAppStoreReviewDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClipDefaultExperienceLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReleaseWithAppStoreVersion,
     }

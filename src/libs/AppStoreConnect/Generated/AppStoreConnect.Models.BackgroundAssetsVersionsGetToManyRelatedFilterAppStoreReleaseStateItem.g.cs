@@ -4,44 +4,44 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BackgroundAssetsVersionsGetToManyRelatedFilterAppStoreReleaseStateItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Accepted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrepareForSubmission,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProcessingForDistribution,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadyForDistribution,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadyForReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Superseded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitingForReview,
     }

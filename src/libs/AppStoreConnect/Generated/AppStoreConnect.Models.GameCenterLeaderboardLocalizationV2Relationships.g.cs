@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterLeaderboardLocalizationV2Relationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("version")]
         public global::AppStoreConnect.GameCenterLeaderboardLocalizationV2RelationshipsVersion? Version { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("image")]
         public global::AppStoreConnect.GameCenterLeaderboardLocalizationV2RelationshipsImage? Image { get; set; }

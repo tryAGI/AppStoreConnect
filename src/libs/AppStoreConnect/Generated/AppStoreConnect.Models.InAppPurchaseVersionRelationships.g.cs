@@ -4,30 +4,30 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class InAppPurchaseVersionRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inAppPurchase")]
         public global::AppStoreConnect.InAppPurchaseVersionRelationshipsInAppPurchase? InAppPurchase { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("image")]
         public global::AppStoreConnect.InAppPurchaseVersionRelationshipsImage? Image { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("images")]
         public global::AppStoreConnect.InAppPurchaseVersionRelationshipsImages? Images { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("localizations")]
         public global::AppStoreConnect.InAppPurchaseVersionRelationshipsLocalizations? Localizations { get; set; }

@@ -4,56 +4,56 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum WebhookEventType2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlternativeDistributionPackageAvailableUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlternativeDistributionPackageVersionCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlternativeDistributionTerritoryAvailabilityUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionAppVersionStateUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BackgroundAssetVersionAppStoreReleaseStateUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BackgroundAssetVersionExternalBetaReleaseStateUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BackgroundAssetVersionInternalBetaReleaseCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BackgroundAssetVersionStateUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaFeedbackCrashSubmissionCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaFeedbackScreenshotSubmissionCreated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildBetaDetailExternalBuildStateUpdated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildUploadStateUpdated,
     }

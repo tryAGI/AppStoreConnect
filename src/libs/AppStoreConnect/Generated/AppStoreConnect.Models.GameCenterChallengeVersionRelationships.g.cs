@@ -4,30 +4,30 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterChallengeVersionRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("challenge")]
         public global::AppStoreConnect.GameCenterChallengeVersionRelationshipsChallenge? Challenge { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("localizations")]
         public global::AppStoreConnect.GameCenterChallengeVersionRelationshipsLocalizations? Localizations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("releases")]
         public global::AppStoreConnect.GameCenterChallengeVersionRelationshipsReleases? Releases { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultImage")]
         public global::AppStoreConnect.GameCenterChallengeVersionRelationshipsDefaultImage? DefaultImage { get; set; }

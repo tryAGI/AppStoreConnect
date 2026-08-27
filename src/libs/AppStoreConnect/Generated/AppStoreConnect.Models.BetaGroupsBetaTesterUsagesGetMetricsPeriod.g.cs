@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BetaGroupsBetaTesterUsagesGetMetricsPeriod
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         P30d,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         P365d,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         P7d,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         P90d,
     }

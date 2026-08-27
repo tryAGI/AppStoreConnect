@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IBackgroundAssetVersionsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsBackgroundAssetVersions"></param>
         /// <param name="fieldsBackgroundAssets"></param>
@@ -30,7 +30,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsBackgroundAssetVersions"></param>
         /// <param name="fieldsBackgroundAssets"></param>

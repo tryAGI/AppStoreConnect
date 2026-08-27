@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipDefaultExperienceLocalizationsGetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClipDefaultExperience,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClipHeaderImage,
     }

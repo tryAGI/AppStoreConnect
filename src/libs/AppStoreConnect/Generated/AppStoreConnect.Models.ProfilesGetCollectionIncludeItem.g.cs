@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ProfilesGetCollectionIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BundleId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Certificates,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Devices,
     }

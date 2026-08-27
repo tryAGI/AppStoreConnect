@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionsIntroductoryOffersGetToManyRelatedIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Subscription,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionPricePoint,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Territory,
     }

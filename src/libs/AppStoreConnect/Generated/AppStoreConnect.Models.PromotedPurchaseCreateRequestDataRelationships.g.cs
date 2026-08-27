@@ -4,25 +4,25 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class PromotedPurchaseCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("app")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.PromotedPurchaseCreateRequestDataRelationshipsApp App { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inAppPurchaseV2")]
         public global::AppStoreConnect.PromotedPurchaseCreateRequestDataRelationshipsInAppPurchaseV2? InAppPurchaseV2 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subscription")]
         public global::AppStoreConnect.PromotedPurchaseCreateRequestDataRelationshipsSubscription? Subscription { get; set; }

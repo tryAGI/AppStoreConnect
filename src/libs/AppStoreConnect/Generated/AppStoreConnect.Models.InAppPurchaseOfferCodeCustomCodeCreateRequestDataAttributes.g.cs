@@ -4,26 +4,26 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class InAppPurchaseOfferCodeCustomCodeCreateRequestDataAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customCode")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string CustomCode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("numberOfCodes")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int NumberOfCodes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("expirationDate")]
         public global::System.DateTime? ExpirationDate { get; set; }

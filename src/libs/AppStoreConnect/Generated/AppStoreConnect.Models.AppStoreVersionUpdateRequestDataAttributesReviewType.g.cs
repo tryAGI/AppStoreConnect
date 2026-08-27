@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreVersionUpdateRequestDataAttributesReviewType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStore,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Notarization,
     }

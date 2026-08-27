@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SandboxTestersV2GetCollectionFieldsSandboxTester
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AcAccountName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApplePayCompatible,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FirstName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InterruptPurchases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionRenewalRate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Territory,
     }

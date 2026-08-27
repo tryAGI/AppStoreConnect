@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ReviewSubmissionItemRelationshipsAppEventDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEvents,
     }

@@ -6,91 +6,91 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SubscriptionRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionLocalizations")]
         public global::AppStoreConnect.SubscriptionRelationshipsSubscriptionLocalizations? SubscriptionLocalizations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreReviewScreenshot")]
         public global::AppStoreConnect.SubscriptionRelationshipsAppStoreReviewScreenshot? AppStoreReviewScreenshot { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("group")]
         public global::AppStoreConnect.SubscriptionRelationshipsGroup? Group { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("introductoryOffers")]
         public global::AppStoreConnect.SubscriptionRelationshipsIntroductoryOffers? IntroductoryOffers { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("promotionalOffers")]
         public global::AppStoreConnect.SubscriptionRelationshipsPromotionalOffers? PromotionalOffers { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("offerCodes")]
         public global::AppStoreConnect.SubscriptionRelationshipsOfferCodes? OfferCodes { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prices")]
         public global::AppStoreConnect.SubscriptionRelationshipsPrices? Prices { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pricePoints")]
         public global::AppStoreConnect.SubscriptionRelationshipsPricePoints? PricePoints { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("promotedPurchase")]
         public global::AppStoreConnect.SubscriptionRelationshipsPromotedPurchase? PromotedPurchase { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionAvailability")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.SubscriptionRelationshipsSubscriptionAvailability? SubscriptionAvailability { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("winBackOffers")]
         public global::AppStoreConnect.SubscriptionRelationshipsWinBackOffers? WinBackOffers { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("images")]
         public global::AppStoreConnect.SubscriptionRelationshipsImages? Images { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("planAvailabilities")]
         public global::AppStoreConnect.SubscriptionRelationshipsPlanAvailabilities? PlanAvailabilities { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("versions")]
         public global::AppStoreConnect.SubscriptionRelationshipsVersions? Versions { get; set; }

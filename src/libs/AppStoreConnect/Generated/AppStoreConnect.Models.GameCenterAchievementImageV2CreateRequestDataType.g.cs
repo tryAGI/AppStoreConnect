@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterAchievementImageV2CreateRequestDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAchievementImages,
     }

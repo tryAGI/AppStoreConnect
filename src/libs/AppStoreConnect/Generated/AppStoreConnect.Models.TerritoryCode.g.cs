@@ -4,940 +4,940 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TerritoryCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Abw,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Afg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ago,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aia,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Alb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         And,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ant,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Are,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Arg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Arm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Asm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Atg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aut,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Aze,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bdi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ben,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bfa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bgd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bgr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bhr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bhs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bih,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Blr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Blz,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bmu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bol,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bra,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Brn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Btn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Bwa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Caf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Can,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Che,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Chl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Chn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Civ,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cmr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cod,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cog,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cok,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Col,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Com,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cpv,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cri,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cub,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cuw,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cxr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cym,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cyp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Cze,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dji,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dma,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dnk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dom,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Dza,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ecu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Egy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Eri,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Esp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Est,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Eth,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fji,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Flk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fra,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fro,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fsm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gab,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gbr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Geo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ggy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gha,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gib,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gin,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Glp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gmb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gnb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gnq,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Grc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Grd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Grl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gtm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Guf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gum,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Guy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hkg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hnd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hrv,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hti,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hun,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Idn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Imn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ind,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Irl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Irq,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Isl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Isr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ita,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jam,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jey,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Jpn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kaz,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ken,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kgz,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Khm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kir,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kna,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Kwt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lao,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lbn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lbr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lby,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lca,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lie,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lka,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lso,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ltu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lux,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Lva,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mac,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mar,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mco,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mda,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mdg,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mdv,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mex,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mhl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mkd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mli,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mlt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mmr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mne,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mng,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mnp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Moz,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mrt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Msr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mtq,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mwi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mys,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Myt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nam,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ncl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ner,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nfk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nga,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Niu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nld,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Npl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nru,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nzl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Omn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pak,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pan,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Per,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Phl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Plw,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Png,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pol,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pri,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pry,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pse,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pyf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Qat,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Reu,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rou,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rwa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sau,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sgp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Shn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Slb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sle,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Slv,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Smr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Som,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Spm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Srb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ssd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Stp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sur,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Svk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Svn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Swe,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Swz,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sxm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Syc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tca,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tcd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tgo,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tha,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tjk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tkm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tls,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ton,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tto,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tun,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tur,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tuv,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Twn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tza,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Uga,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ukr,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Umi,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ury,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Usa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Uzb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vat,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vct,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ven,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vgb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vir,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vnm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vut,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wlf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Wsm,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Xks,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Yem,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zaf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zmb,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Zwe,
     }

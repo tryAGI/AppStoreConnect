@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum DeviceFamily
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppleTv,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppleWatch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ipad,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Iphone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Mac,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Vision,
     }

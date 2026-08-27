@@ -4,96 +4,96 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum NominationsGetCollectionFieldsNomination
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedByActor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Description,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeviceFamilies,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HasInAppEvents,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppEvents,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastModifiedByActor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastModifiedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LaunchInSelectMarketsFirst,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Locales,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Notes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreOrderEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PublishEndDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PublishStartDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RelatedApps,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         State,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubmittedByActor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubmittedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SupplementalMaterialsUris,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SupportedTerritories,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Type,
     }

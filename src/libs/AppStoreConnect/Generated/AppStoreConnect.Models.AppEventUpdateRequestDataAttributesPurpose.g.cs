@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppEventUpdateRequestDataAttributesPurpose
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppropriateForAllUsers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AttractNewUsers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BringBackLapsedUsers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KeepActiveUsersInformed,
     }

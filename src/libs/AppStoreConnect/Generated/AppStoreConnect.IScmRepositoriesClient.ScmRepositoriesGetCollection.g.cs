@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IScmRepositoriesClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterId"></param>
         /// <param name="fieldsScmRepositories"></param>
@@ -26,7 +26,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterId"></param>
         /// <param name="fieldsScmRepositories"></param>

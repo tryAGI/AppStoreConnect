@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppCustomProductPagesResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppCustomProductPageLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppCustomProductPageVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apps,
     }

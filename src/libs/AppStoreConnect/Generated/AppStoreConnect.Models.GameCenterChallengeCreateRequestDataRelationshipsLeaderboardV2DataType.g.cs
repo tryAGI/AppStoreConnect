@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterChallengeCreateRequestDataRelationshipsLeaderboardV2DataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboards,
     }

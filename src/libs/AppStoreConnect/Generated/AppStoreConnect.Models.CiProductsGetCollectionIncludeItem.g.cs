@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiProductsGetCollectionIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BundleId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrimaryRepositories,
     }

@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiArtifactAttributesFileType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Archive,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ArchiveExport,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LogBundle,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ResultBundle,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StapledNotarizedArchive,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TestProducts,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         XcodebuildProducts,
     }

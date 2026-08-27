@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterMatchmakingRuleSetRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("teams")]
         public global::AppStoreConnect.GameCenterMatchmakingRuleSetRelationshipsTeams? Teams { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("rules")]
         public global::AppStoreConnect.GameCenterMatchmakingRuleSetRelationshipsRules? Rules { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("matchmakingQueues")]
         public global::AppStoreConnect.GameCenterMatchmakingRuleSetRelationshipsMatchmakingQueues? MatchmakingQueues { get; set; }

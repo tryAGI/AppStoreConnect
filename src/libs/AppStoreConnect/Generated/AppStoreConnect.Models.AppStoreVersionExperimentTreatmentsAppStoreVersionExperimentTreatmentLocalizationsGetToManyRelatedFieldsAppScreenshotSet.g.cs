@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppScreenshotSet
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppCustomProductPageLocalization,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppScreenshots,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionExperimentTreatmentLocalization,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionLocalization,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScreenshotDisplayType,
     }

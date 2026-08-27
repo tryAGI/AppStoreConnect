@@ -4,30 +4,30 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CiBuildRunCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildRun")]
         public global::AppStoreConnect.CiBuildRunCreateRequestDataRelationshipsBuildRun? BuildRun { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("workflow")]
         public global::AppStoreConnect.CiBuildRunCreateRequestDataRelationshipsWorkflow? Workflow { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sourceBranchOrTag")]
         public global::AppStoreConnect.CiBuildRunCreateRequestDataRelationshipsSourceBranchOrTag? SourceBranchOrTag { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pullRequest")]
         public global::AppStoreConnect.CiBuildRunCreateRequestDataRelationshipsPullRequest? PullRequest { get; set; }

@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipAdvancedExperiencesGetInstanceFieldsAppClipAdvancedExperienceImage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetDeliveryState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileSize,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImageAsset,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SourceFileChecksum,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UploadOperations,
     }

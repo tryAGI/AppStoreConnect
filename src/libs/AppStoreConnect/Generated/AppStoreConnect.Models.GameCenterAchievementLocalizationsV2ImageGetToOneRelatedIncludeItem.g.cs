@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterAchievementLocalizationsV2ImageGetToOneRelatedIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Localization,
     }

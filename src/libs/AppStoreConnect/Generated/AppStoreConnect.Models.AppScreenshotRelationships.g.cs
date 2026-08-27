@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppScreenshotRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appScreenshotSet")]
         public global::AppStoreConnect.AppScreenshotRelationshipsAppScreenshotSet? AppScreenshotSet { get; set; }

@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BackgroundAssetVersionExternalBetaReleaseState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProcessingForTesting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadyForBetaSubmission,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadyForTesting,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Superseded,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitingForReview,
     }

@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppEncryptionDeclarationsGetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEncryptionDeclarationDocument,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Builds,
     }

@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PreReleaseVersionsGetCollectionSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusversion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Version,
     }

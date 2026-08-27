@@ -4,19 +4,19 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterLeaderboardSetV2CreateRequest
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.GameCenterLeaderboardSetV2CreateRequestData Data { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("included")]
         public global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterLeaderboardSetVersionV2InlineCreate>? Included { get; set; }

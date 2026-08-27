@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchaseOfferCodesOneTimeUseCodesGetToManyRelatedFieldsActor
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ActorType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApiKeyId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserEmail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserFirstName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserLastName,
     }

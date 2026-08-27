@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreVersionsAppClipDefaultExperienceGetToOneRelatedFieldsAppClipAppStoreReviewDetail
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClipDefaultExperience,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvocationUrls,
     }

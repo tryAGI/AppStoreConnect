@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiGitRefKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Branch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Tag,
     }

@@ -4,40 +4,40 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterLeaderboardResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterActivities,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterChallenges,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterDetails,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterGroups,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardReleases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardSets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboards,
     }

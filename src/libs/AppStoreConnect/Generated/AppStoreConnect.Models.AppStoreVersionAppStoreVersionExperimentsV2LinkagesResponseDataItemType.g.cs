@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreVersionAppStoreVersionExperimentsV2LinkagesResponseDataItemType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionExperiments,
     }

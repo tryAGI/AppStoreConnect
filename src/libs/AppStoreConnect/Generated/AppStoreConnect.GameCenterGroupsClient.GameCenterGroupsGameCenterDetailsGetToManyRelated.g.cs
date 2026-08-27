@@ -108,7 +108,7 @@ namespace AppStoreConnect
             ref string content);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterGameCenterAppVersionsEnabled"></param>
         /// <param name="fieldsGameCenterDetails"></param>
@@ -227,7 +227,7 @@ namespace AppStoreConnect
             return __response.Body;
         }
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterGameCenterAppVersionsEnabled"></param>
         /// <param name="fieldsGameCenterDetails"></param>
@@ -431,7 +431,7 @@ namespace AppStoreConnect
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::AppStoreConnect.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,

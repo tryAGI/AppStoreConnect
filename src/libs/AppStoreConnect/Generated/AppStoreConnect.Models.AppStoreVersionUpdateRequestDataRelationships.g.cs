@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppStoreVersionUpdateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("build")]
         public global::AppStoreConnect.AppStoreVersionUpdateRequestDataRelationshipsBuild? Build { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appClipDefaultExperience")]
         public global::AppStoreConnect.AppStoreVersionUpdateRequestDataRelationshipsAppClipDefaultExperience? AppClipDefaultExperience { get; set; }

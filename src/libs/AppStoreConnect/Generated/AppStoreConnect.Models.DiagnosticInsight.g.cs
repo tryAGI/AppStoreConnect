@@ -4,26 +4,26 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class DiagnosticInsight
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("insightType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.DiagnosticInsightTypeJsonConverter))]
         public global::AppStoreConnect.DiagnosticInsightType? InsightType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("direction")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.DiagnosticInsightDirectionJsonConverter))]
         public global::AppStoreConnect.DiagnosticInsightDirection? Direction { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("referenceVersions")]
         public global::System.Collections.Generic.IList<global::AppStoreConnect.DiagnosticInsightReferenceVersion>? ReferenceVersions { get; set; }

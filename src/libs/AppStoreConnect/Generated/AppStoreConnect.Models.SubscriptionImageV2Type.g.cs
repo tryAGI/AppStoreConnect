@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionImageV2Type
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionImages,
     }

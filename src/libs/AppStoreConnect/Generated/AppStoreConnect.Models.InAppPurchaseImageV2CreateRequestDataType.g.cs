@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchaseImageV2CreateRequestDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseImages,
     }

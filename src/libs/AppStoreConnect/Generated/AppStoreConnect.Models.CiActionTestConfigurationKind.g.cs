@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiActionTestConfigurationKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SpecificTestPlans,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UseSchemeSettings,
     }

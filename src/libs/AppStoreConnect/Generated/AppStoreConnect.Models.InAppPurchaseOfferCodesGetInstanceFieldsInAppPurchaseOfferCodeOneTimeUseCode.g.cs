@@ -4,40 +4,40 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchaseOfferCodesGetInstanceFieldsInAppPurchaseOfferCodeOneTimeUseCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Active,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedByActor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeactivatedByActor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Environment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExpirationDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NumberOfCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Values,
     }

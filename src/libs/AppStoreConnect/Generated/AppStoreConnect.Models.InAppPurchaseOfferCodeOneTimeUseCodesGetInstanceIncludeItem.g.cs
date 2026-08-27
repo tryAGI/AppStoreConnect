@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchaseOfferCodeOneTimeUseCodesGetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedByActor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeactivatedByActor,
     }

@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchaseV2PromotedPurchaseLinkageResponseDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PromotedPurchases,
     }

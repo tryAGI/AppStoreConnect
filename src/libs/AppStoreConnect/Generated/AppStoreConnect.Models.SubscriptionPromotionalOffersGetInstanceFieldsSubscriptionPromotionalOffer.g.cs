@@ -4,40 +4,40 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionPromotionalOffersGetInstanceFieldsSubscriptionPromotionalOffer
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Duration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NumberOfPeriods,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OfferCode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OfferMode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prices,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Subscription,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TargetSubscriptionPlanType,
     }

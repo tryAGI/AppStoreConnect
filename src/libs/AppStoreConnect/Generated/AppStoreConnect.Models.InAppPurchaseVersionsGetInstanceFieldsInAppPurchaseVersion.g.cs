@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchaseVersionsGetInstanceFieldsInAppPurchaseVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Image,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Images,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchase,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Localizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         State,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Version,
     }

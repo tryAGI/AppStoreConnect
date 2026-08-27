@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipsAppClipAdvancedExperiencesGetToManyRelatedFilterPlaceStatu
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Matched,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NoMatch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Pending,
     }

@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterLeaderboardSetImageV2Relationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("localization")]
         public global::AppStoreConnect.GameCenterLeaderboardSetImageV2RelationshipsLocalization? Localization { get; set; }

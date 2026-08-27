@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CiWorkflowUpdateRequestDataRelationshipsXcodeVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         public global::AppStoreConnect.CiWorkflowUpdateRequestDataRelationshipsXcodeVersionData? Data { get; set; }

@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterAchievementImagesGetInstanceFieldsGameCenterAchievementImage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetDeliveryState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileSize,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAchievementLocalization,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImageAsset,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UploadOperations,
     }

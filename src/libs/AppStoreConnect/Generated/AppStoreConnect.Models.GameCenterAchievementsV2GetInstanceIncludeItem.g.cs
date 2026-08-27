@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterAchievementsV2GetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Activity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterGroup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Versions,
     }

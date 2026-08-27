@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterActivityVersionsGetInstanceFieldsGameCenterActivityVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Activity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DefaultImage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FallbackUrl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Localizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Releases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         State,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Version,
     }

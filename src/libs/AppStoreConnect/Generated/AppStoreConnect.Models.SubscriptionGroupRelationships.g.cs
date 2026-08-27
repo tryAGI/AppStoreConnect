@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SubscriptionGroupRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subscriptions")]
         public global::AppStoreConnect.SubscriptionGroupRelationshipsSubscriptions? Subscriptions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionGroupLocalizations")]
         public global::AppStoreConnect.SubscriptionGroupRelationshipsSubscriptionGroupLocalizations? SubscriptionGroupLocalizations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("versions")]
         public global::AppStoreConnect.SubscriptionGroupRelationshipsVersions? Versions { get; set; }

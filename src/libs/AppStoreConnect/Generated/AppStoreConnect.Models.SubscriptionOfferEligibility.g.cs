@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionOfferEligibility
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReplaceIntroOffers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StackWithIntroOffers,
     }

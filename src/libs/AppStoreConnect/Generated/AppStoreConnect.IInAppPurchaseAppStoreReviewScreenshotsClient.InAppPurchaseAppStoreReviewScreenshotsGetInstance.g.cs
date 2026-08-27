@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IInAppPurchaseAppStoreReviewScreenshotsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsInAppPurchaseAppStoreReviewScreenshots"></param>
         /// <param name="fieldsInAppPurchases"></param>
@@ -22,7 +22,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsInAppPurchaseAppStoreReviewScreenshots"></param>
         /// <param name="fieldsInAppPurchases"></param>

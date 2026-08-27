@@ -4,42 +4,42 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppInfoUpdateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("primaryCategory")]
         public global::AppStoreConnect.AppInfoUpdateRequestDataRelationshipsPrimaryCategory? PrimaryCategory { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("primarySubcategoryOne")]
         public global::AppStoreConnect.AppInfoUpdateRequestDataRelationshipsPrimarySubcategoryOne? PrimarySubcategoryOne { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("primarySubcategoryTwo")]
         public global::AppStoreConnect.AppInfoUpdateRequestDataRelationshipsPrimarySubcategoryTwo? PrimarySubcategoryTwo { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("secondaryCategory")]
         public global::AppStoreConnect.AppInfoUpdateRequestDataRelationshipsSecondaryCategory? SecondaryCategory { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("secondarySubcategoryOne")]
         public global::AppStoreConnect.AppInfoUpdateRequestDataRelationshipsSecondarySubcategoryOne? SecondarySubcategoryOne { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("secondarySubcategoryTwo")]
         public global::AppStoreConnect.AppInfoUpdateRequestDataRelationshipsSecondarySubcategoryTwo? SecondarySubcategoryTwo { get; set; }

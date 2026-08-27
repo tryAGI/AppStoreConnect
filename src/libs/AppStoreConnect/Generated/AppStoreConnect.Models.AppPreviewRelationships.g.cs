@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppPreviewRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appPreviewSet")]
         public global::AppStoreConnect.AppPreviewRelationshipsAppPreviewSet? AppPreviewSet { get; set; }

@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildBundlesBuildBundleFileSizesGetToManyRelatedFieldsBuildBundleFileSize
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeviceModel,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DownloadBytes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InstallBytes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OsVersion,
     }

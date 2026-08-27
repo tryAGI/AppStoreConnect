@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsBackgroundAssetsGetToManyRelatedSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinusassetPackIdentifier,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinuscreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetPackIdentifier,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
     }

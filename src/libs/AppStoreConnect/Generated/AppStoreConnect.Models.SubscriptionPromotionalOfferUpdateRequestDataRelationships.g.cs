@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SubscriptionPromotionalOfferUpdateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("prices")]
         public global::AppStoreConnect.SubscriptionPromotionalOfferUpdateRequestDataRelationshipsPrices? Prices { get; set; }

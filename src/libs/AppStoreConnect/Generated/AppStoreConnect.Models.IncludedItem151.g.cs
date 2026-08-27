@@ -5,17 +5,17 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IncludedItem151 : global::System.IEquatable<IncludedItem151>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.ProfileResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.BundleId? BundleIds { get; init; }
@@ -24,7 +24,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BundleIds))]
@@ -32,7 +32,7 @@ namespace AppStoreConnect
         public bool IsBundleIds => BundleIds != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickBundleIds(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.BundleId PickBundleIds() => IsBundleIds
             ? BundleIds!
             : throw new global::System.InvalidOperationException($"Expected union variant 'BundleIds' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.Certificate? Certificates { get; init; }
@@ -61,7 +61,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Certificates))]
@@ -69,7 +69,7 @@ namespace AppStoreConnect
         public bool IsCertificates => Certificates != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickCertificates(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.Certificate PickCertificates() => IsCertificates
             ? Certificates!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Certificates' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.Device? Devices { get; init; }
@@ -98,7 +98,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Devices))]
@@ -106,7 +106,7 @@ namespace AppStoreConnect
         public bool IsDevices => Devices != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickDevices(
 #if NET6_0_OR_GREATER
@@ -119,23 +119,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.Device PickDevices() => IsDevices
             ? Devices!
             : throw new global::System.InvalidOperationException($"Expected union variant 'Devices' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem151(global::AppStoreConnect.BundleId value) => new IncludedItem151((global::AppStoreConnect.BundleId?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.BundleId?(IncludedItem151 @this) => @this.BundleIds;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem151(global::AppStoreConnect.BundleId? value)
         {
@@ -143,22 +143,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem151 FromBundleIds(global::AppStoreConnect.BundleId? value) => new IncludedItem151(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem151(global::AppStoreConnect.Certificate value) => new IncludedItem151((global::AppStoreConnect.Certificate?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.Certificate?(IncludedItem151 @this) => @this.Certificates;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem151(global::AppStoreConnect.Certificate? value)
         {
@@ -166,22 +166,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem151 FromCertificates(global::AppStoreConnect.Certificate? value) => new IncludedItem151(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem151(global::AppStoreConnect.Device value) => new IncludedItem151((global::AppStoreConnect.Device?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.Device?(IncludedItem151 @this) => @this.Devices;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem151(global::AppStoreConnect.Device? value)
         {
@@ -189,12 +189,12 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem151 FromDevices(global::AppStoreConnect.Device? value) => new IncludedItem151(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem151(
             global::AppStoreConnect.ProfileResponseIncludedItemDiscriminatorType? type,
@@ -211,25 +211,25 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             Devices as object ??
             Certificates as object ??
-            BundleIds as object 
+            BundleIds as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             BundleIds?.ToString() ??
             Certificates?.ToString() ??
-            Devices?.ToString() 
+            Devices?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -237,7 +237,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.BundleId, TResult>? bundleIds = null,
@@ -267,7 +267,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::AppStoreConnect.BundleId>? bundleIds = null,
@@ -297,7 +297,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.BundleId>? bundleIds = null,
@@ -325,7 +325,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -348,19 +348,19 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludedItem151 other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BundleId?>.Default.Equals(BundleIds, other.BundleIds) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Certificate?>.Default.Equals(Certificates, other.Certificates) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Device?>.Default.Equals(Devices, other.Devices) 
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Device?>.Default.Equals(Devices, other.Devices)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludedItem151 obj1, IncludedItem151 obj2)
         {
@@ -368,7 +368,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludedItem151 obj1, IncludedItem151 obj2)
         {
@@ -376,7 +376,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

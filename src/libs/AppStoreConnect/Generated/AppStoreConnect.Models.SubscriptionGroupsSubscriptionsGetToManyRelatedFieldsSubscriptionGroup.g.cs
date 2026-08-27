@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionGroupsSubscriptionsGetToManyRelatedFieldsSubscriptionGroup
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReferenceName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionGroupLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Subscriptions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Versions,
     }

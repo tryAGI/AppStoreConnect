@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchaseVersionResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseImages,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchases,
     }

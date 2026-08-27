@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppPricePointsV3GetInstanceFieldsTerritorie
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Currency,
     }

@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildBetaDetailsBuildGetToOneRelatedFieldsBetaBuildLocalization
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Build,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Locale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WhatsNew,
     }

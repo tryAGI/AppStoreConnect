@@ -4,25 +4,25 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ProfileCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bundleId")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.ProfileCreateRequestDataRelationshipsBundleId BundleId { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("devices")]
         public global::AppStoreConnect.ProfileCreateRequestDataRelationshipsDevices? Devices { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("certificates")]
         [global::System.Text.Json.Serialization.JsonRequired]

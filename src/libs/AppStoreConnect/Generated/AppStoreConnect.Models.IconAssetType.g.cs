@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum IconAssetType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlternateExperiment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStore,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MessagesAppStore,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TvOsHomeScreen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TvOsTopShelf,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WatchAppStore,
     }

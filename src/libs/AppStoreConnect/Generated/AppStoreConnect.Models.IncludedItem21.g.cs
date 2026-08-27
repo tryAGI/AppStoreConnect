@@ -5,17 +5,17 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IncludedItem21 : global::System.IEquatable<IncludedItem21>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppEventLocalizationResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppEventScreenshot? AppEventScreenshots { get; init; }
@@ -24,7 +24,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEventScreenshots))]
@@ -32,7 +32,7 @@ namespace AppStoreConnect
         public bool IsAppEventScreenshots => AppEventScreenshots != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppEventScreenshots(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppEventScreenshot PickAppEventScreenshots() => IsAppEventScreenshots
             ? AppEventScreenshots!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppEventScreenshots' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppEventVideoClip? AppEventVideoClips { get; init; }
@@ -61,7 +61,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEventVideoClips))]
@@ -69,7 +69,7 @@ namespace AppStoreConnect
         public bool IsAppEventVideoClips => AppEventVideoClips != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppEventVideoClips(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppEventVideoClip PickAppEventVideoClips() => IsAppEventVideoClips
             ? AppEventVideoClips!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppEventVideoClips' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppEvent? AppEvents { get; init; }
@@ -98,7 +98,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEvents))]
@@ -106,7 +106,7 @@ namespace AppStoreConnect
         public bool IsAppEvents => AppEvents != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppEvents(
 #if NET6_0_OR_GREATER
@@ -119,23 +119,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppEvent PickAppEvents() => IsAppEvents
             ? AppEvents!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppEvents' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem21(global::AppStoreConnect.AppEventScreenshot value) => new IncludedItem21((global::AppStoreConnect.AppEventScreenshot?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppEventScreenshot?(IncludedItem21 @this) => @this.AppEventScreenshots;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem21(global::AppStoreConnect.AppEventScreenshot? value)
         {
@@ -143,22 +143,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem21 FromAppEventScreenshots(global::AppStoreConnect.AppEventScreenshot? value) => new IncludedItem21(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem21(global::AppStoreConnect.AppEventVideoClip value) => new IncludedItem21((global::AppStoreConnect.AppEventVideoClip?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppEventVideoClip?(IncludedItem21 @this) => @this.AppEventVideoClips;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem21(global::AppStoreConnect.AppEventVideoClip? value)
         {
@@ -166,22 +166,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem21 FromAppEventVideoClips(global::AppStoreConnect.AppEventVideoClip? value) => new IncludedItem21(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem21(global::AppStoreConnect.AppEvent value) => new IncludedItem21((global::AppStoreConnect.AppEvent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppEvent?(IncludedItem21 @this) => @this.AppEvents;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem21(global::AppStoreConnect.AppEvent? value)
         {
@@ -189,12 +189,12 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem21 FromAppEvents(global::AppStoreConnect.AppEvent? value) => new IncludedItem21(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem21(
             global::AppStoreConnect.AppEventLocalizationResponseIncludedItemDiscriminatorType? type,
@@ -211,25 +211,25 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             AppEvents as object ??
             AppEventVideoClips as object ??
-            AppEventScreenshots as object 
+            AppEventScreenshots as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             AppEventScreenshots?.ToString() ??
             AppEventVideoClips?.ToString() ??
-            AppEvents?.ToString() 
+            AppEvents?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -237,7 +237,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.AppEventScreenshot, TResult>? appEventScreenshots = null,
@@ -267,7 +267,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::AppStoreConnect.AppEventScreenshot>? appEventScreenshots = null,
@@ -297,7 +297,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.AppEventScreenshot>? appEventScreenshots = null,
@@ -325,7 +325,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -348,19 +348,19 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludedItem21 other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEventScreenshot?>.Default.Equals(AppEventScreenshots, other.AppEventScreenshots) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEventVideoClip?>.Default.Equals(AppEventVideoClips, other.AppEventVideoClips) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEvent?>.Default.Equals(AppEvents, other.AppEvents) 
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEvent?>.Default.Equals(AppEvents, other.AppEvents)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludedItem21 obj1, IncludedItem21 obj2)
         {
@@ -368,7 +368,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludedItem21 obj1, IncludedItem21 obj2)
         {
@@ -376,7 +376,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

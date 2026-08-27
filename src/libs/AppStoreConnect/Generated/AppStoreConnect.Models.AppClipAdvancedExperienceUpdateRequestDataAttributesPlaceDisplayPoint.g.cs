@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppClipAdvancedExperienceUpdateRequestDataAttributesPlaceDisplayPoint
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("coordinates")]
         public global::AppStoreConnect.AppClipAdvancedExperienceUpdateRequestDataAttributesPlaceDisplayPointCoordinates? Coordinates { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("source")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AppClipAdvancedExperienceUpdateRequestDataAttributesPlaceDisplayPointSourceJsonConverter))]

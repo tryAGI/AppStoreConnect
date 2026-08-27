@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterAppVersionsResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAppVersions,
     }

@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AlternativeDistributionPackageVersionResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlternativeDistributionPackageDeltas,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlternativeDistributionPackageVariants,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlternativeDistributionPackages,
     }

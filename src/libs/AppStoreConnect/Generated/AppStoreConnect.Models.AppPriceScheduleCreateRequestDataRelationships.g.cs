@@ -4,26 +4,26 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppPriceScheduleCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("app")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.AppPriceScheduleCreateRequestDataRelationshipsApp App { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("baseTerritory")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.AppPriceScheduleCreateRequestDataRelationshipsBaseTerritory BaseTerritory { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("manualPrices")]
         [global::System.Text.Json.Serialization.JsonRequired]

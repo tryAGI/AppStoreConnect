@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum NominationsGetCollectionIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedByActor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppEvents,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastModifiedByActor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RelatedApps,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubmittedByActor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SupportedTerritories,
     }

@@ -4,40 +4,40 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildsPerfPowerMetricsGetToManyRelatedFilterMetricTypeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Animation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Battery,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Disk,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Hang,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Launch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Memory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Storage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Termination,
     }

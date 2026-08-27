@@ -4,48 +4,48 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CiBuildRunRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("builds")]
         public global::AppStoreConnect.CiBuildRunRelationshipsBuilds? Builds { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("workflow")]
         public global::AppStoreConnect.CiBuildRunRelationshipsWorkflow? Workflow { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("product")]
         public global::AppStoreConnect.CiBuildRunRelationshipsProduct? Product { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("sourceBranchOrTag")]
         public global::AppStoreConnect.CiBuildRunRelationshipsSourceBranchOrTag? SourceBranchOrTag { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("destinationBranch")]
         public global::AppStoreConnect.CiBuildRunRelationshipsDestinationBranch? DestinationBranch { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("actions")]
         public global::AppStoreConnect.CiBuildRunRelationshipsActions? Actions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pullRequest")]
         public global::AppStoreConnect.CiBuildRunRelationshipsPullRequest? PullRequest { get; set; }

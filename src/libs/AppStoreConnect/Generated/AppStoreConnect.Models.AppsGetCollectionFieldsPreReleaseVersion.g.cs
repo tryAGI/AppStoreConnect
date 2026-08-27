@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsGetCollectionFieldsPreReleaseVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Builds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Platform,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Version,
     }

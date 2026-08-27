@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterMatchmakingRuleErrorsV1MetricResponseDataItemDimensions
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterMatchmakingQueue")]
         public global::AppStoreConnect.GameCenterMatchmakingRuleErrorsV1MetricResponseDataItemDimensionsGameCenterMatchmakingQueue? GameCenterMatchmakingQueue { get; set; }

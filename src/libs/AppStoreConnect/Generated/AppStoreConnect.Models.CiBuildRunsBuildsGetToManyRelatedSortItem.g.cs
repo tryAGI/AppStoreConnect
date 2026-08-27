@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiBuildRunsBuildsGetToManyRelatedSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinuspreReleaseVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinusuploadedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusversion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreReleaseVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UploadedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Version,
     }

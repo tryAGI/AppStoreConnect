@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppCustomProductPageVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppPreviewSets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppScreenshotSets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SearchKeywords,
     }

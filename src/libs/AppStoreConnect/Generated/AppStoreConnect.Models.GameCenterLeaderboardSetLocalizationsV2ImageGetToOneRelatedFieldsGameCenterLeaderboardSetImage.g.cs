@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterLeaderboardSetLocalizationsV2ImageGetToOneRelatedFieldsGameCenterLeaderboardSetImage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetDeliveryState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileSize,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImageAsset,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Localization,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UploadOperations,
     }

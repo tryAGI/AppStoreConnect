@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchasesV2IapPriceScheduleGetToOneRelatedFieldsInAppPurchasePrice
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EndDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchasePricePoint,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Manual,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StartDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Territory,
     }

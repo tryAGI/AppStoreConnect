@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionGroupVersionRelationshipsSubscriptionGroupDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionGroups,
     }

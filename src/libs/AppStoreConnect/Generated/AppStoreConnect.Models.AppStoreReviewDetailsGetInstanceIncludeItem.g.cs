@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreReviewDetailsGetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreReviewAttachments,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersion,
     }

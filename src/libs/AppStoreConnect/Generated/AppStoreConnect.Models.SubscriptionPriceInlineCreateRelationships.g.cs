@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SubscriptionPriceInlineCreateRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subscription")]
         public global::AppStoreConnect.SubscriptionPriceInlineCreateRelationshipsSubscription? Subscription { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("territory")]
         public global::AppStoreConnect.SubscriptionPriceInlineCreateRelationshipsTerritory? Territory { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionPricePoint")]
         public global::AppStoreConnect.SubscriptionPriceInlineCreateRelationshipsSubscriptionPricePoint? SubscriptionPricePoint { get; set; }

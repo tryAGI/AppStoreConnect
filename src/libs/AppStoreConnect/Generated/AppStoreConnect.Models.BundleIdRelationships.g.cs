@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BundleIdRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("profiles")]
         public global::AppStoreConnect.BundleIdRelationshipsProfiles? Profiles { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bundleIdCapabilities")]
         public global::AppStoreConnect.BundleIdRelationshipsBundleIdCapabilities? BundleIdCapabilities { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("app")]
         public global::AppStoreConnect.BundleIdRelationshipsApp? App { get; set; }

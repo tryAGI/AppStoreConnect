@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface ICiProductsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterBuilds"></param>
         /// <param name="sort"></param>
@@ -38,7 +38,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterBuilds"></param>
         /// <param name="sort"></param>

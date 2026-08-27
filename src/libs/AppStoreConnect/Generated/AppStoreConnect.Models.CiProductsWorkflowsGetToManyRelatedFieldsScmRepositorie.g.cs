@@ -4,44 +4,44 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiProductsWorkflowsGetToManyRelatedFieldsScmRepositorie
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DefaultBranch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GitReferences,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HttpCloneUrl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastAccessedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OwnerName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PullRequests,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RepositoryName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScmProvider,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SshCloneUrl,
     }

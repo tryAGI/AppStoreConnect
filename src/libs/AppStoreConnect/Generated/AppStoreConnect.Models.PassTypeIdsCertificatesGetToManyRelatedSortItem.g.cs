@@ -4,40 +4,40 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum PassTypeIdsCertificatesGetToManyRelatedSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinuscertificateType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinusdisplayName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinusserialNumber,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CertificateType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DisplayName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Id,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SerialNumber,
     }

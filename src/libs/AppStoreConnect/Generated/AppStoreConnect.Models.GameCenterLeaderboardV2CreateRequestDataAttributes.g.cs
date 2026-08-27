@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterLeaderboardV2CreateRequestDataAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultFormatter")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.GameCenterLeaderboardFormatterJsonConverter))]
@@ -17,21 +17,21 @@ namespace AppStoreConnect
         public required global::AppStoreConnect.GameCenterLeaderboardFormatter DefaultFormatter { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("referenceName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ReferenceName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vendorIdentifier")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string VendorIdentifier { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("submissionType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.GameCenterLeaderboardV2CreateRequestDataAttributesSubmissionTypeJsonConverter))]
@@ -39,7 +39,7 @@ namespace AppStoreConnect
         public required global::AppStoreConnect.GameCenterLeaderboardV2CreateRequestDataAttributesSubmissionType SubmissionType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scoreSortType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.GameCenterLeaderboardV2CreateRequestDataAttributesScoreSortTypeJsonConverter))]
@@ -47,43 +47,43 @@ namespace AppStoreConnect
         public required global::AppStoreConnect.GameCenterLeaderboardV2CreateRequestDataAttributesScoreSortType ScoreSortType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scoreRangeStart")]
         public string? ScoreRangeStart { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scoreRangeEnd")]
         public string? ScoreRangeEnd { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("recurrenceStartDate")]
         public global::System.DateTime? RecurrenceStartDate { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("recurrenceDuration")]
         public string? RecurrenceDuration { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("recurrenceRule")]
         public string? RecurrenceRule { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("activityProperties")]
         public global::System.Collections.Generic.Dictionary<string, string>? ActivityProperties { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("visibility")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.GameCenterLeaderboardV2CreateRequestDataAttributesVisibilityJsonConverter))]

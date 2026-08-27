@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreVersionExperimentTreatmentLocalizationsGetInstanceFieldsAppStoreVersionExperimentTreatmentLocalization
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppPreviewSets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppScreenshotSets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionExperimentTreatment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Locale,
     }

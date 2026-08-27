@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreVersionsRoutingAppCoverageGetToOneRelatedFieldsRoutingAppCoverage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetDeliveryState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileSize,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SourceFileChecksum,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UploadOperations,
     }

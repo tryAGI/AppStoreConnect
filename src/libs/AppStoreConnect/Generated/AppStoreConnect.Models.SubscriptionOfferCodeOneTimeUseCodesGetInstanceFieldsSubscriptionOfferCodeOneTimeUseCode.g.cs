@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionOfferCodeOneTimeUseCodesGetInstanceFieldsSubscriptionOfferCodeOneTimeUseCode
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Active,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Environment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExpirationDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NumberOfCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OfferCode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Values,
     }

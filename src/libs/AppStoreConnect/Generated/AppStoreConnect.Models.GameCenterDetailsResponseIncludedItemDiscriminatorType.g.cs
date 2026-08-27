@@ -4,64 +4,64 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterDetailsResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apps,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAchievementReleases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAchievements,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterActivities,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterActivityVersionReleases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAppVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterChallengeVersionReleases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterChallenges,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterGroups,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardReleases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardSetReleases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardSets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboards,
     }

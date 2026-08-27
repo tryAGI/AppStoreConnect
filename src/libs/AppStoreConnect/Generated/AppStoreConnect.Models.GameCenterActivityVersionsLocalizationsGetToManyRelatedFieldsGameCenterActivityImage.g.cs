@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterActivityVersionsLocalizationsGetToManyRelatedFieldsGameCenterActivityImage
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetDeliveryState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileSize,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ImageAsset,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UploadOperations,
     }

@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsGameCenterEnabledVersionsGetToManyRelatedSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinusversionString,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VersionString,
     }

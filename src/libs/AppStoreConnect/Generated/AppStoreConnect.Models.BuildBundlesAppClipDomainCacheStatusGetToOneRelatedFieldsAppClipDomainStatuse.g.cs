@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildBundlesAppClipDomainCacheStatusGetToOneRelatedFieldsAppClipDomainStatuse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Domains,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastUpdatedDate,
     }

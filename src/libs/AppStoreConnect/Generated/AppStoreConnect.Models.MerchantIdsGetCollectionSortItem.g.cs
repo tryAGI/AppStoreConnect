@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum MerchantIdsGetCollectionSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusidentifier,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusname,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Identifier,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
     }

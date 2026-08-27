@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchaseSubmissionCreateRequestDataRelationshipsInAppPurchaseV2DataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchases,
     }

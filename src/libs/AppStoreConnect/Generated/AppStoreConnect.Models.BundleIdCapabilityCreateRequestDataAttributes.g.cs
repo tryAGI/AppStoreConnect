@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BundleIdCapabilityCreateRequestDataAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("capabilityType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.CapabilityTypeJsonConverter))]
@@ -17,7 +17,7 @@ namespace AppStoreConnect
         public required global::AppStoreConnect.CapabilityType CapabilityType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("settings")]
         public global::System.Collections.Generic.IList<global::AppStoreConnect.CapabilitySetting>? Settings { get; set; }

@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BetaGroupsResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apps,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaRecruitmentCriteria,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaTesters,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Builds,
     }

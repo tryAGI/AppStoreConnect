@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SandboxTesterV2UpdateRequestDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SandboxTesters,
     }

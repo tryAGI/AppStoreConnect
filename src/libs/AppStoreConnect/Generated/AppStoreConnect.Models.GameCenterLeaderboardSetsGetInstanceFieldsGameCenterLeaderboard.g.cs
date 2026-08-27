@@ -4,92 +4,92 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterLeaderboardSetsGetInstanceFieldsGameCenterLeaderboard
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Activity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ActivityProperties,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Archived,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Challenge,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DefaultFormatter,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterGroup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardSets,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GroupLeaderboard,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Localizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RecurrenceDuration,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RecurrenceRule,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RecurrenceStartDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReferenceName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Releases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScoreRangeEnd,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScoreRangeStart,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScoreSortType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubmissionType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VendorIdentifier,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Visibility,
     }

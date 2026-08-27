@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiMacOsVersionsXcodeVersionsGetToManyRelatedFieldsCiMacOsVersion
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Version,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         XcodeVersions,
     }

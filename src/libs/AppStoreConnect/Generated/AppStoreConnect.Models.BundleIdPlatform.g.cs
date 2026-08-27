@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BundleIdPlatform
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ios,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MacOs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Universal,
     }

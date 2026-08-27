@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppCategoriesGetCollectionIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Parent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Subcategories,
     }

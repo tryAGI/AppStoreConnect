@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsCiProductGetToOneRelatedFieldsBundleId
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BundleIdCapabilities,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Identifier,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Platform,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Profiles,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SeedId,
     }

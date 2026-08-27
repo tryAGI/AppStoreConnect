@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ScmProvidersGetInstanceFieldsScmProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Repositories,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScmProviderType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Url,
     }

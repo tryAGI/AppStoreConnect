@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BetaTesterAttributesAppDevicePlatform
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ios,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MacOs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TvOs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VisionOs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WatchOs,
     }

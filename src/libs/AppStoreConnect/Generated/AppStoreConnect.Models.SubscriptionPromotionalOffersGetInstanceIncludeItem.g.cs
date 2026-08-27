@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionPromotionalOffersGetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prices,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Subscription,
     }

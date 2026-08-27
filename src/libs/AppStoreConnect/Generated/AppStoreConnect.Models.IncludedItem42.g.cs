@@ -5,17 +5,17 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IncludedItem42 : global::System.IEquatable<IncludedItem42>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppStoreVersionLocalizationsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppKeyword? AppKeywords { get; init; }
@@ -24,7 +24,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppKeywords))]
@@ -32,7 +32,7 @@ namespace AppStoreConnect
         public bool IsAppKeywords => AppKeywords != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppKeywords(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppKeyword PickAppKeywords() => IsAppKeywords
             ? AppKeywords!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppKeywords' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppPreviewSet? AppPreviewSets { get; init; }
@@ -61,7 +61,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppPreviewSets))]
@@ -69,7 +69,7 @@ namespace AppStoreConnect
         public bool IsAppPreviewSets => AppPreviewSets != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppPreviewSets(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppPreviewSet PickAppPreviewSets() => IsAppPreviewSets
             ? AppPreviewSets!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppPreviewSets' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppScreenshotSet? AppScreenshotSets { get; init; }
@@ -98,7 +98,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppScreenshotSets))]
@@ -106,7 +106,7 @@ namespace AppStoreConnect
         public bool IsAppScreenshotSets => AppScreenshotSets != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppScreenshotSets(
 #if NET6_0_OR_GREATER
@@ -119,14 +119,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppScreenshotSet PickAppScreenshotSets() => IsAppScreenshotSets
             ? AppScreenshotSets!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppScreenshotSets' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; init; }
@@ -135,7 +135,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions))]
@@ -143,7 +143,7 @@ namespace AppStoreConnect
         public bool IsAppStoreVersions => AppStoreVersions != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAppStoreVersions(
 #if NET6_0_OR_GREATER
@@ -156,23 +156,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => IsAppStoreVersions
             ? AppStoreVersions!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem42(global::AppStoreConnect.AppKeyword value) => new IncludedItem42((global::AppStoreConnect.AppKeyword?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppKeyword?(IncludedItem42 @this) => @this.AppKeywords;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem42(global::AppStoreConnect.AppKeyword? value)
         {
@@ -180,22 +180,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem42 FromAppKeywords(global::AppStoreConnect.AppKeyword? value) => new IncludedItem42(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem42(global::AppStoreConnect.AppPreviewSet value) => new IncludedItem42((global::AppStoreConnect.AppPreviewSet?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppPreviewSet?(IncludedItem42 @this) => @this.AppPreviewSets;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem42(global::AppStoreConnect.AppPreviewSet? value)
         {
@@ -203,22 +203,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem42 FromAppPreviewSets(global::AppStoreConnect.AppPreviewSet? value) => new IncludedItem42(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem42(global::AppStoreConnect.AppScreenshotSet value) => new IncludedItem42((global::AppStoreConnect.AppScreenshotSet?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppScreenshotSet?(IncludedItem42 @this) => @this.AppScreenshotSets;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem42(global::AppStoreConnect.AppScreenshotSet? value)
         {
@@ -226,22 +226,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem42 FromAppScreenshotSets(global::AppStoreConnect.AppScreenshotSet? value) => new IncludedItem42(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem42(global::AppStoreConnect.AppStoreVersion value) => new IncludedItem42((global::AppStoreConnect.AppStoreVersion?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem42 @this) => @this.AppStoreVersions;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem42(global::AppStoreConnect.AppStoreVersion? value)
         {
@@ -249,12 +249,12 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem42 FromAppStoreVersions(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem42(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem42(
             global::AppStoreConnect.AppStoreVersionLocalizationsResponseIncludedItemDiscriminatorType? type,
@@ -273,27 +273,27 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             AppStoreVersions as object ??
             AppScreenshotSets as object ??
             AppPreviewSets as object ??
-            AppKeywords as object 
+            AppKeywords as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             AppKeywords?.ToString() ??
             AppPreviewSets?.ToString() ??
             AppScreenshotSets?.ToString() ??
-            AppStoreVersions?.ToString() 
+            AppStoreVersions?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -301,7 +301,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.AppKeyword, TResult>? appKeywords = null,
@@ -336,7 +336,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::AppStoreConnect.AppKeyword>? appKeywords = null,
@@ -372,7 +372,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.AppKeyword>? appKeywords = null,
@@ -405,7 +405,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -430,7 +430,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludedItem42 other)
         {
@@ -438,12 +438,12 @@ namespace AppStoreConnect
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppKeyword?>.Default.Equals(AppKeywords, other.AppKeywords) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppPreviewSet?>.Default.Equals(AppPreviewSets, other.AppPreviewSets) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppScreenshotSet?>.Default.Equals(AppScreenshotSets, other.AppScreenshotSets) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions, other.AppStoreVersions) 
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions, other.AppStoreVersions)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludedItem42 obj1, IncludedItem42 obj2)
         {
@@ -451,7 +451,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludedItem42 obj1, IncludedItem42 obj2)
         {
@@ -459,7 +459,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

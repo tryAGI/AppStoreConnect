@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BundleIdsBundleIdCapabilitiesGetToManyRelatedFieldsBundleIdCapabilitie
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CapabilityType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Settings,
     }

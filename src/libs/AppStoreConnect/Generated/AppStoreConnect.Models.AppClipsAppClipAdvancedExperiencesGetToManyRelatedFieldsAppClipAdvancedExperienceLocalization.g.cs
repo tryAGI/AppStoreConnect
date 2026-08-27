@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppClipsAppClipAdvancedExperiencesGetToManyRelatedFieldsAppClipAdvancedExperienceLocalization
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Language,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Subtitle,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Title,
     }

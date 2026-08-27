@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppClipDefaultExperienceUpdateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("releaseWithAppStoreVersion")]
         public global::AppStoreConnect.AppClipDefaultExperienceUpdateRequestDataRelationshipsReleaseWithAppStoreVersion? ReleaseWithAppStoreVersion { get; set; }

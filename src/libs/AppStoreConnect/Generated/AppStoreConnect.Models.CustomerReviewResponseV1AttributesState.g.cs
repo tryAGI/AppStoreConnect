@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CustomerReviewResponseV1AttributesState
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PendingPublish,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Published,
     }

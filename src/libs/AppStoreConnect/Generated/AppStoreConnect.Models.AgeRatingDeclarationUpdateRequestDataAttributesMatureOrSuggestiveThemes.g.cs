@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AgeRatingDeclarationUpdateRequestDataAttributesMatureOrSuggestiveThemes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Frequent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FrequentOrIntense,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Infrequent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InfrequentOrMild,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
     }

@@ -4,56 +4,56 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreVersionLocalizationsAppPreviewSetsGetToManyRelatedFieldsAppPreview
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppPreviewSet,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetDeliveryState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileSize,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MimeType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreviewFrameImage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreviewFrameTimeCode,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreviewImage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SourceFileChecksum,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UploadOperations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VideoDeliveryState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VideoUrl,
     }

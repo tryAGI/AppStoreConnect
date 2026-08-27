@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiActionType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Analyze,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Archive,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Build,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Test,
     }

@@ -4,13 +4,13 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     [global::System.Obsolete("This model marked as deprecated.")]
     public sealed partial class GameCenterAchievementReleasesLinkagesResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -18,7 +18,7 @@ namespace AppStoreConnect
         public required global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterAchievementReleasesLinkagesResponseDataItem> Data { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("links")]
         [global::System.Text.Json.Serialization.JsonRequired]
@@ -26,7 +26,7 @@ namespace AppStoreConnect
         public required global::AppStoreConnect.PagedDocumentLinks Links { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("meta")]
         [global::System.Obsolete("This property marked as deprecated.")]

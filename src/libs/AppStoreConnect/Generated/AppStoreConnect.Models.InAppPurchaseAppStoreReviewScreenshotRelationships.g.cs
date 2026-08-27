@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class InAppPurchaseAppStoreReviewScreenshotRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inAppPurchaseV2")]
         public global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotRelationshipsInAppPurchaseV2? InAppPurchaseV2 { get; set; }

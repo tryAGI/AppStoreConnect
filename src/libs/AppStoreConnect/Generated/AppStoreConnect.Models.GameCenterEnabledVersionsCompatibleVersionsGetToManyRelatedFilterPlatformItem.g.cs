@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFilterPlatformItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Ios,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MacOs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TvOs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         VisionOs,
     }

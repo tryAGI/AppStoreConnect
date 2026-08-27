@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ScmProviderTypeKind
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BitbucketCloud,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BitbucketServer,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GithubCloud,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GithubEnterprise,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GitlabCloud,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GitlabSelfManaged,
     }

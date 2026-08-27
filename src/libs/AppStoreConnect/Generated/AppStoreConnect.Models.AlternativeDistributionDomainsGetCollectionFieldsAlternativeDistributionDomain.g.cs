@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AlternativeDistributionDomainsGetCollectionFieldsAlternativeDistributionDomain
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Domain,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReferenceName,
     }

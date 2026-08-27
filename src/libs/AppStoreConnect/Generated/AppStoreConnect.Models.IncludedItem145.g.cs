@@ -5,17 +5,17 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IncludedItem145 : global::System.IEquatable<IncludedItem145>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchaseV2ResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot? InAppPurchaseAppStoreReviewScreenshots { get; init; }
@@ -24,7 +24,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseAppStoreReviewScreenshots))]
@@ -32,7 +32,7 @@ namespace AppStoreConnect
         public bool IsInAppPurchaseAppStoreReviewScreenshots => InAppPurchaseAppStoreReviewScreenshots != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInAppPurchaseAppStoreReviewScreenshots(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot PickInAppPurchaseAppStoreReviewScreenshots() => IsInAppPurchaseAppStoreReviewScreenshots
             ? InAppPurchaseAppStoreReviewScreenshots!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseAppStoreReviewScreenshots' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.InAppPurchaseAvailability? InAppPurchaseAvailabilities { get; init; }
@@ -61,7 +61,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseAvailabilities))]
@@ -69,7 +69,7 @@ namespace AppStoreConnect
         public bool IsInAppPurchaseAvailabilities => InAppPurchaseAvailabilities != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInAppPurchaseAvailabilities(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchaseAvailability PickInAppPurchaseAvailabilities() => IsInAppPurchaseAvailabilities
             ? InAppPurchaseAvailabilities!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseAvailabilities' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.InAppPurchaseContent? InAppPurchaseContents { get; init; }
@@ -98,7 +98,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseContents))]
@@ -106,7 +106,7 @@ namespace AppStoreConnect
         public bool IsInAppPurchaseContents => InAppPurchaseContents != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInAppPurchaseContents(
 #if NET6_0_OR_GREATER
@@ -119,14 +119,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchaseContent PickInAppPurchaseContents() => IsInAppPurchaseContents
             ? InAppPurchaseContents!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseContents' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.InAppPurchaseImage? InAppPurchaseImages { get; init; }
@@ -135,7 +135,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseImages))]
@@ -143,7 +143,7 @@ namespace AppStoreConnect
         public bool IsInAppPurchaseImages => InAppPurchaseImages != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInAppPurchaseImages(
 #if NET6_0_OR_GREATER
@@ -156,14 +156,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchaseImage PickInAppPurchaseImages() => IsInAppPurchaseImages
             ? InAppPurchaseImages!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseImages' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.InAppPurchaseLocalization? InAppPurchaseLocalizations { get; init; }
@@ -172,7 +172,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseLocalizations))]
@@ -180,7 +180,7 @@ namespace AppStoreConnect
         public bool IsInAppPurchaseLocalizations => InAppPurchaseLocalizations != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInAppPurchaseLocalizations(
 #if NET6_0_OR_GREATER
@@ -193,14 +193,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchaseLocalization PickInAppPurchaseLocalizations() => IsInAppPurchaseLocalizations
             ? InAppPurchaseLocalizations!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseLocalizations' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.InAppPurchaseOfferCode? InAppPurchaseOfferCodes { get; init; }
@@ -209,7 +209,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseOfferCodes))]
@@ -217,7 +217,7 @@ namespace AppStoreConnect
         public bool IsInAppPurchaseOfferCodes => InAppPurchaseOfferCodes != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInAppPurchaseOfferCodes(
 #if NET6_0_OR_GREATER
@@ -230,14 +230,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchaseOfferCode PickInAppPurchaseOfferCodes() => IsInAppPurchaseOfferCodes
             ? InAppPurchaseOfferCodes!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseOfferCodes' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.InAppPurchasePricePoint? InAppPurchasePricePoints { get; init; }
@@ -246,7 +246,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchasePricePoints))]
@@ -254,7 +254,7 @@ namespace AppStoreConnect
         public bool IsInAppPurchasePricePoints => InAppPurchasePricePoints != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInAppPurchasePricePoints(
 #if NET6_0_OR_GREATER
@@ -267,14 +267,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchasePricePoint PickInAppPurchasePricePoints() => IsInAppPurchasePricePoints
             ? InAppPurchasePricePoints!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchasePricePoints' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.InAppPurchasePriceSchedule? InAppPurchasePriceSchedules { get; init; }
@@ -283,7 +283,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchasePriceSchedules))]
@@ -291,7 +291,7 @@ namespace AppStoreConnect
         public bool IsInAppPurchasePriceSchedules => InAppPurchasePriceSchedules != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInAppPurchasePriceSchedules(
 #if NET6_0_OR_GREATER
@@ -304,14 +304,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchasePriceSchedule PickInAppPurchasePriceSchedules() => IsInAppPurchasePriceSchedules
             ? InAppPurchasePriceSchedules!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchasePriceSchedules' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.InAppPurchaseVersion? InAppPurchaseVersions { get; init; }
@@ -320,7 +320,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseVersions))]
@@ -328,7 +328,7 @@ namespace AppStoreConnect
         public bool IsInAppPurchaseVersions => InAppPurchaseVersions != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickInAppPurchaseVersions(
 #if NET6_0_OR_GREATER
@@ -341,14 +341,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.InAppPurchaseVersion PickInAppPurchaseVersions() => IsInAppPurchaseVersions
             ? InAppPurchaseVersions!
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseVersions' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.PromotedPurchase? PromotedPurchases { get; init; }
@@ -357,7 +357,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PromotedPurchases))]
@@ -365,7 +365,7 @@ namespace AppStoreConnect
         public bool IsPromotedPurchases => PromotedPurchases != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickPromotedPurchases(
 #if NET6_0_OR_GREATER
@@ -378,23 +378,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.PromotedPurchase PickPromotedPurchases() => IsPromotedPurchases
             ? PromotedPurchases!
             : throw new global::System.InvalidOperationException($"Expected union variant 'PromotedPurchases' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem145(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot value) => new IncludedItem145((global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot?(IncludedItem145 @this) => @this.InAppPurchaseAppStoreReviewScreenshots;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem145(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot? value)
         {
@@ -402,22 +402,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem145 FromInAppPurchaseAppStoreReviewScreenshots(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot? value) => new IncludedItem145(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem145(global::AppStoreConnect.InAppPurchaseAvailability value) => new IncludedItem145((global::AppStoreConnect.InAppPurchaseAvailability?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.InAppPurchaseAvailability?(IncludedItem145 @this) => @this.InAppPurchaseAvailabilities;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem145(global::AppStoreConnect.InAppPurchaseAvailability? value)
         {
@@ -425,22 +425,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem145 FromInAppPurchaseAvailabilities(global::AppStoreConnect.InAppPurchaseAvailability? value) => new IncludedItem145(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem145(global::AppStoreConnect.InAppPurchaseContent value) => new IncludedItem145((global::AppStoreConnect.InAppPurchaseContent?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.InAppPurchaseContent?(IncludedItem145 @this) => @this.InAppPurchaseContents;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem145(global::AppStoreConnect.InAppPurchaseContent? value)
         {
@@ -448,22 +448,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem145 FromInAppPurchaseContents(global::AppStoreConnect.InAppPurchaseContent? value) => new IncludedItem145(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem145(global::AppStoreConnect.InAppPurchaseImage value) => new IncludedItem145((global::AppStoreConnect.InAppPurchaseImage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.InAppPurchaseImage?(IncludedItem145 @this) => @this.InAppPurchaseImages;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem145(global::AppStoreConnect.InAppPurchaseImage? value)
         {
@@ -471,22 +471,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem145 FromInAppPurchaseImages(global::AppStoreConnect.InAppPurchaseImage? value) => new IncludedItem145(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem145(global::AppStoreConnect.InAppPurchaseLocalization value) => new IncludedItem145((global::AppStoreConnect.InAppPurchaseLocalization?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.InAppPurchaseLocalization?(IncludedItem145 @this) => @this.InAppPurchaseLocalizations;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem145(global::AppStoreConnect.InAppPurchaseLocalization? value)
         {
@@ -494,22 +494,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem145 FromInAppPurchaseLocalizations(global::AppStoreConnect.InAppPurchaseLocalization? value) => new IncludedItem145(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem145(global::AppStoreConnect.InAppPurchaseOfferCode value) => new IncludedItem145((global::AppStoreConnect.InAppPurchaseOfferCode?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.InAppPurchaseOfferCode?(IncludedItem145 @this) => @this.InAppPurchaseOfferCodes;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem145(global::AppStoreConnect.InAppPurchaseOfferCode? value)
         {
@@ -517,22 +517,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem145 FromInAppPurchaseOfferCodes(global::AppStoreConnect.InAppPurchaseOfferCode? value) => new IncludedItem145(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem145(global::AppStoreConnect.InAppPurchasePricePoint value) => new IncludedItem145((global::AppStoreConnect.InAppPurchasePricePoint?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.InAppPurchasePricePoint?(IncludedItem145 @this) => @this.InAppPurchasePricePoints;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem145(global::AppStoreConnect.InAppPurchasePricePoint? value)
         {
@@ -540,22 +540,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem145 FromInAppPurchasePricePoints(global::AppStoreConnect.InAppPurchasePricePoint? value) => new IncludedItem145(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem145(global::AppStoreConnect.InAppPurchasePriceSchedule value) => new IncludedItem145((global::AppStoreConnect.InAppPurchasePriceSchedule?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.InAppPurchasePriceSchedule?(IncludedItem145 @this) => @this.InAppPurchasePriceSchedules;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem145(global::AppStoreConnect.InAppPurchasePriceSchedule? value)
         {
@@ -563,22 +563,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem145 FromInAppPurchasePriceSchedules(global::AppStoreConnect.InAppPurchasePriceSchedule? value) => new IncludedItem145(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem145(global::AppStoreConnect.InAppPurchaseVersion value) => new IncludedItem145((global::AppStoreConnect.InAppPurchaseVersion?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.InAppPurchaseVersion?(IncludedItem145 @this) => @this.InAppPurchaseVersions;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem145(global::AppStoreConnect.InAppPurchaseVersion? value)
         {
@@ -586,22 +586,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem145 FromInAppPurchaseVersions(global::AppStoreConnect.InAppPurchaseVersion? value) => new IncludedItem145(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem145(global::AppStoreConnect.PromotedPurchase value) => new IncludedItem145((global::AppStoreConnect.PromotedPurchase?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.PromotedPurchase?(IncludedItem145 @this) => @this.PromotedPurchases;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem145(global::AppStoreConnect.PromotedPurchase? value)
         {
@@ -609,12 +609,12 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem145 FromPromotedPurchases(global::AppStoreConnect.PromotedPurchase? value) => new IncludedItem145(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem145(
             global::AppStoreConnect.InAppPurchaseV2ResponseIncludedItemDiscriminatorType? type,
@@ -645,7 +645,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             PromotedPurchases as object ??
@@ -657,11 +657,11 @@ namespace AppStoreConnect
             InAppPurchaseImages as object ??
             InAppPurchaseContents as object ??
             InAppPurchaseAvailabilities as object ??
-            InAppPurchaseAppStoreReviewScreenshots as object 
+            InAppPurchaseAppStoreReviewScreenshots as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             InAppPurchaseAppStoreReviewScreenshots?.ToString() ??
@@ -673,11 +673,11 @@ namespace AppStoreConnect
             InAppPurchasePricePoints?.ToString() ??
             InAppPurchasePriceSchedules?.ToString() ??
             InAppPurchaseVersions?.ToString() ??
-            PromotedPurchases?.ToString() 
+            PromotedPurchases?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -685,7 +685,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot, TResult>? inAppPurchaseAppStoreReviewScreenshots = null,
@@ -750,7 +750,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot>? inAppPurchaseAppStoreReviewScreenshots = null,
@@ -822,7 +822,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot>? inAppPurchaseAppStoreReviewScreenshots = null,
@@ -885,7 +885,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -922,7 +922,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludedItem145 other)
         {
@@ -936,12 +936,12 @@ namespace AppStoreConnect
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchasePricePoint?>.Default.Equals(InAppPurchasePricePoints, other.InAppPurchasePricePoints) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchasePriceSchedule?>.Default.Equals(InAppPurchasePriceSchedules, other.InAppPurchasePriceSchedules) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseVersion?>.Default.Equals(InAppPurchaseVersions, other.InAppPurchaseVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.PromotedPurchase?>.Default.Equals(PromotedPurchases, other.PromotedPurchases) 
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.PromotedPurchase?>.Default.Equals(PromotedPurchases, other.PromotedPurchases)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludedItem145 obj1, IncludedItem145 obj2)
         {
@@ -949,7 +949,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludedItem145 obj1, IncludedItem145 obj2)
         {
@@ -957,7 +957,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

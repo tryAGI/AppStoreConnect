@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiProductsAdditionalRepositoriesGetToManyRelatedIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DefaultBranch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScmProvider,
     }

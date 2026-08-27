@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IAppStoreVersionExperimentTreatmentsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsAppStoreVersionExperimentTreatments"></param>
         /// <param name="fieldsAppStoreVersionExperiments"></param>
@@ -26,7 +26,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsAppStoreVersionExperimentTreatments"></param>
         /// <param name="fieldsAppStoreVersionExperiments"></param>

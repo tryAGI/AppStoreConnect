@@ -4,47 +4,47 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterAchievementV2CreateRequestDataAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("referenceName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ReferenceName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vendorIdentifier")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string VendorIdentifier { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("points")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required int Points { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("showBeforeEarned")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool ShowBeforeEarned { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("repeatable")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Repeatable { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("activityProperties")]
         public global::System.Collections.Generic.Dictionary<string, string>? ActivityProperties { get; set; }

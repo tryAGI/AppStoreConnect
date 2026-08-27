@@ -4,88 +4,88 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsAppStoreVersionsGetToManyRelatedFilterAppStoreStateItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Accepted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeveloperRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeveloperRemovedFromSale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InvalidBinary,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MetadataRejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotApplicable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PendingAppleRelease,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PendingContract,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PendingDeveloperRelease,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreorderReadyForSale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PrepareForSubmission,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProcessingForAppStore,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadyForReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReadyForSale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Rejected,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RemovedFromSale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReplacedWithNewVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitingForExportCompliance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WaitingForReview,
     }

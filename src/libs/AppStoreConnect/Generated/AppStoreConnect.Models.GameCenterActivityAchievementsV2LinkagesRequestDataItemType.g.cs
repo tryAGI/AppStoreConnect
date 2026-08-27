@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterActivityAchievementsV2LinkagesRequestDataItemType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAchievements,
     }

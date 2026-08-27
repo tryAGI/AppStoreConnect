@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IGameCenterAchievementLocalizationsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsGameCenterAchievementLocalizations"></param>
         /// <param name="fieldsGameCenterAchievementVersions"></param>
@@ -24,7 +24,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsGameCenterAchievementLocalizations"></param>
         /// <param name="fieldsGameCenterAchievementVersions"></param>

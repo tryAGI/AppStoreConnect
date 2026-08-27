@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface ISubscriptionGroupsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterProductId"></param>
         /// <param name="filterName"></param>
@@ -74,7 +74,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterProductId"></param>
         /// <param name="filterName"></param>

@@ -4,30 +4,30 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppCustomProductPageLocalizationRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appCustomProductPageVersion")]
         public global::AppStoreConnect.AppCustomProductPageLocalizationRelationshipsAppCustomProductPageVersion? AppCustomProductPageVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appScreenshotSets")]
         public global::AppStoreConnect.AppCustomProductPageLocalizationRelationshipsAppScreenshotSets? AppScreenshotSets { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appPreviewSets")]
         public global::AppStoreConnect.AppCustomProductPageLocalizationRelationshipsAppPreviewSets? AppPreviewSets { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("searchKeywords")]
         public global::AppStoreConnect.AppCustomProductPageLocalizationRelationshipsSearchKeywords? SearchKeywords { get; set; }

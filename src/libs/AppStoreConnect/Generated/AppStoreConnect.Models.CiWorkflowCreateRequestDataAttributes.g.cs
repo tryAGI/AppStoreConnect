@@ -4,95 +4,95 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CiWorkflowCreateRequestDataAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("name")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Name { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("description")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string Description { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("branchStartCondition")]
         public global::AppStoreConnect.CiBranchStartCondition? BranchStartCondition { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("tagStartCondition")]
         public global::AppStoreConnect.CiTagStartCondition? TagStartCondition { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pullRequestStartCondition")]
         public global::AppStoreConnect.CiPullRequestStartCondition? PullRequestStartCondition { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scheduledStartCondition")]
         public global::AppStoreConnect.CiScheduledStartCondition? ScheduledStartCondition { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("manualBranchStartCondition")]
         public global::AppStoreConnect.CiManualBranchStartCondition? ManualBranchStartCondition { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("manualTagStartCondition")]
         public global::AppStoreConnect.CiManualTagStartCondition? ManualTagStartCondition { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("manualPullRequestStartCondition")]
         public global::AppStoreConnect.CiManualPullRequestStartCondition? ManualPullRequestStartCondition { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("actions")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::System.Collections.Generic.IList<global::AppStoreConnect.CiAction> Actions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isEnabled")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool IsEnabled { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("isLockedForEditing")]
         public bool? IsLockedForEditing { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("clean")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool Clean { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("containerFilePath")]
         [global::System.Text.Json.Serialization.JsonRequired]

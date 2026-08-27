@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CustomerReviewResponsesGetInstanceFieldsCustomerReviewResponse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastModifiedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ResponseBody,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Review,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         State,
     }

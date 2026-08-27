@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class CustomerReviewResponseV1Relationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("review")]
         public global::AppStoreConnect.CustomerReviewResponseV1RelationshipsReview? Review { get; set; }

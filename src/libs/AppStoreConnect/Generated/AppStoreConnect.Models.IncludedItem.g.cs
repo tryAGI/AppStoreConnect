@@ -5,17 +5,17 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public readonly partial struct IncludedItem : global::System.IEquatable<IncludedItem>
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AlternativeDistributionPackageVersionsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AlternativeDistributionPackageDelta? AlternativeDistributionPackageDeltas { get; init; }
@@ -24,7 +24,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AlternativeDistributionPackageDeltas))]
@@ -32,7 +32,7 @@ namespace AppStoreConnect
         public bool IsAlternativeDistributionPackageDeltas => AlternativeDistributionPackageDeltas != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAlternativeDistributionPackageDeltas(
 #if NET6_0_OR_GREATER
@@ -45,14 +45,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AlternativeDistributionPackageDelta PickAlternativeDistributionPackageDeltas() => IsAlternativeDistributionPackageDeltas
             ? AlternativeDistributionPackageDeltas!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AlternativeDistributionPackageDeltas' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AlternativeDistributionPackageVariant? AlternativeDistributionPackageVariants { get; init; }
@@ -61,7 +61,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AlternativeDistributionPackageVariants))]
@@ -69,7 +69,7 @@ namespace AppStoreConnect
         public bool IsAlternativeDistributionPackageVariants => AlternativeDistributionPackageVariants != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAlternativeDistributionPackageVariants(
 #if NET6_0_OR_GREATER
@@ -82,14 +82,14 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AlternativeDistributionPackageVariant PickAlternativeDistributionPackageVariants() => IsAlternativeDistributionPackageVariants
             ? AlternativeDistributionPackageVariants!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AlternativeDistributionPackageVariants' but the value was {ToString()}.");
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         public global::AppStoreConnect.AlternativeDistributionPackage? AlternativeDistributionPackages { get; init; }
@@ -98,7 +98,7 @@ namespace AppStoreConnect
 #endif
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
 #if NET6_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AlternativeDistributionPackages))]
@@ -106,7 +106,7 @@ namespace AppStoreConnect
         public bool IsAlternativeDistributionPackages => AlternativeDistributionPackages != null;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool TryPickAlternativeDistributionPackages(
 #if NET6_0_OR_GREATER
@@ -119,23 +119,23 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public global::AppStoreConnect.AlternativeDistributionPackage PickAlternativeDistributionPackages() => IsAlternativeDistributionPackages
             ? AlternativeDistributionPackages!
             : throw new global::System.InvalidOperationException($"Expected union variant 'AlternativeDistributionPackages' but the value was {ToString()}.");
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem(global::AppStoreConnect.AlternativeDistributionPackageDelta value) => new IncludedItem((global::AppStoreConnect.AlternativeDistributionPackageDelta?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AlternativeDistributionPackageDelta?(IncludedItem @this) => @this.AlternativeDistributionPackageDeltas;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem(global::AppStoreConnect.AlternativeDistributionPackageDelta? value)
         {
@@ -143,22 +143,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem FromAlternativeDistributionPackageDeltas(global::AppStoreConnect.AlternativeDistributionPackageDelta? value) => new IncludedItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem(global::AppStoreConnect.AlternativeDistributionPackageVariant value) => new IncludedItem((global::AppStoreConnect.AlternativeDistributionPackageVariant?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AlternativeDistributionPackageVariant?(IncludedItem @this) => @this.AlternativeDistributionPackageVariants;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem(global::AppStoreConnect.AlternativeDistributionPackageVariant? value)
         {
@@ -166,22 +166,22 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem FromAlternativeDistributionPackageVariants(global::AppStoreConnect.AlternativeDistributionPackageVariant? value) => new IncludedItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator IncludedItem(global::AppStoreConnect.AlternativeDistributionPackage value) => new IncludedItem((global::AppStoreConnect.AlternativeDistributionPackage?)value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static implicit operator global::AppStoreConnect.AlternativeDistributionPackage?(IncludedItem @this) => @this.AlternativeDistributionPackages;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem(global::AppStoreConnect.AlternativeDistributionPackage? value)
         {
@@ -189,12 +189,12 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static IncludedItem FromAlternativeDistributionPackages(global::AppStoreConnect.AlternativeDistributionPackage? value) => new IncludedItem(value);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public IncludedItem(
             global::AppStoreConnect.AlternativeDistributionPackageVersionsResponseIncludedItemDiscriminatorType? type,
@@ -211,25 +211,25 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public object? Object =>
             AlternativeDistributionPackages as object ??
             AlternativeDistributionPackageVariants as object ??
-            AlternativeDistributionPackageDeltas as object 
+            AlternativeDistributionPackageDeltas as object
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override string? ToString() =>
             AlternativeDistributionPackageDeltas?.ToString() ??
             AlternativeDistributionPackageVariants?.ToString() ??
-            AlternativeDistributionPackages?.ToString() 
+            AlternativeDistributionPackages?.ToString()
             ;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Validate()
         {
@@ -237,7 +237,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.AlternativeDistributionPackageDelta, TResult>? alternativeDistributionPackageDeltas = null,
@@ -267,7 +267,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Match(
             global::System.Action<global::AppStoreConnect.AlternativeDistributionPackageDelta>? alternativeDistributionPackageDeltas = null,
@@ -297,7 +297,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.AlternativeDistributionPackageDelta>? alternativeDistributionPackageDeltas = null,
@@ -325,7 +325,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override int GetHashCode()
         {
@@ -348,19 +348,19 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public bool Equals(IncludedItem other)
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AlternativeDistributionPackageDelta?>.Default.Equals(AlternativeDistributionPackageDeltas, other.AlternativeDistributionPackageDeltas) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AlternativeDistributionPackageVariant?>.Default.Equals(AlternativeDistributionPackageVariants, other.AlternativeDistributionPackageVariants) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AlternativeDistributionPackage?>.Default.Equals(AlternativeDistributionPackages, other.AlternativeDistributionPackages) 
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AlternativeDistributionPackage?>.Default.Equals(AlternativeDistributionPackages, other.AlternativeDistributionPackages)
                 ;
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator ==(IncludedItem obj1, IncludedItem obj2)
         {
@@ -368,7 +368,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public static bool operator !=(IncludedItem obj1, IncludedItem obj2)
         {
@@ -376,7 +376,7 @@ namespace AppStoreConnect
         }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         public override bool Equals(object? obj)
         {

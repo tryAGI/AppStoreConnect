@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreVersionCreateRequestDataAttributesReleaseType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AfterApproval,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Manual,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Scheduled,
     }

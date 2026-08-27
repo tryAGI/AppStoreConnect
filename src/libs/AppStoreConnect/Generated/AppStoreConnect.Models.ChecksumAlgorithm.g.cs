@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ChecksumAlgorithm
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Md5,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sha256,
     }

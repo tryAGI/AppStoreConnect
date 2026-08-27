@@ -6,26 +6,26 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppEncryptionDeclarationRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("app")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.AppEncryptionDeclarationRelationshipsApp? App { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("builds")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.AppEncryptionDeclarationRelationshipsBuilds? Builds { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appEncryptionDeclarationDocument")]
         public global::AppStoreConnect.AppEncryptionDeclarationRelationshipsAppEncryptionDeclarationDocument? AppEncryptionDeclarationDocument { get; set; }

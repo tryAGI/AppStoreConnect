@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsInAppPurchasesGetToManyRelatedFieldsInAppPurchase
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Apps,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProductId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReferenceName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         State,
     }

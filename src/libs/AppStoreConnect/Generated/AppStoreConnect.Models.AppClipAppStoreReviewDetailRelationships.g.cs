@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppClipAppStoreReviewDetailRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appClipDefaultExperience")]
         public global::AppStoreConnect.AppClipAppStoreReviewDetailRelationshipsAppClipDefaultExperience? AppClipDefaultExperience { get; set; }

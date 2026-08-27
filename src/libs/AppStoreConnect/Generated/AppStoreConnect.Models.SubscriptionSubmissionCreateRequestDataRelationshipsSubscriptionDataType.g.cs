@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionSubmissionCreateRequestDataRelationshipsSubscriptionDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Subscriptions,
     }

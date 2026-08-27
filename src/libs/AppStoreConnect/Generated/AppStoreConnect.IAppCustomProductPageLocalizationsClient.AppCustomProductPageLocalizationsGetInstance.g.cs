@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IAppCustomProductPageLocalizationsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsAppCustomProductPageLocalizations"></param>
         /// <param name="fieldsAppCustomProductPageVersions"></param>
@@ -32,7 +32,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsAppCustomProductPageLocalizations"></param>
         /// <param name="fieldsAppCustomProductPageVersions"></param>

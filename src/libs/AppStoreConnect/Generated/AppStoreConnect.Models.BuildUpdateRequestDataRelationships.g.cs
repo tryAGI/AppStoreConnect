@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BuildUpdateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appEncryptionDeclaration")]
         public global::AppStoreConnect.BuildUpdateRequestDataRelationshipsAppEncryptionDeclaration? AppEncryptionDeclaration { get; set; }

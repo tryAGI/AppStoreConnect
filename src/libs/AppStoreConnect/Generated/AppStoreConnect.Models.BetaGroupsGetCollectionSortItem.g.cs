@@ -4,40 +4,40 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BetaGroupsGetCollectionSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinuscreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusname,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinuspublicLinkEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinuspublicLinkLimit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PublicLinkEnabled,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PublicLinkLimit,
     }

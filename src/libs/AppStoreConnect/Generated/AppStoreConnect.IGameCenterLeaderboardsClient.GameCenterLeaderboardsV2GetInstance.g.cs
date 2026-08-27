@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IGameCenterLeaderboardsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsGameCenterLeaderboards"></param>
         /// <param name="fieldsGameCenterDetails"></param>
@@ -36,7 +36,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsGameCenterLeaderboards"></param>
         /// <param name="fieldsGameCenterDetails"></param>

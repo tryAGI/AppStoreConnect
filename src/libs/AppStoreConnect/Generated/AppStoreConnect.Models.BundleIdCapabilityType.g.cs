@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BundleIdCapabilityType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BundleIdCapabilities,
     }

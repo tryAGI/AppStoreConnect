@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiIssueAttributesIssueType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AnalyzerWarning,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Error,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TestFailure,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Warning,
     }

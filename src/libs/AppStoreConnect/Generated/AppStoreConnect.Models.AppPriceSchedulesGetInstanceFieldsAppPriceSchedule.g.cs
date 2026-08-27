@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppPriceSchedulesGetInstanceFieldsAppPriceSchedule
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AutomaticPrices,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaseTerritory,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ManualPrices,
     }

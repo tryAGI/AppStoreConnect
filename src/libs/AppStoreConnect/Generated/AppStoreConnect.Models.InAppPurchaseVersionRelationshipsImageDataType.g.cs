@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchaseVersionRelationshipsImageDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseImages,
     }

@@ -4,200 +4,200 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum TerritoryAvailabilityAttributesContentStatuse
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Available,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AvailableForPreorder,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AvailableForPreorderOnDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AvailableForSaleUnreleasedApp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BrazilGamblingNotVerified,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BrazilRequiredTaxId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSell,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellAdultOnly,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellCasino,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellCasinoWithoutAgeVerification,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellCasinoWithoutGrac,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellContests,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellFrequent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellFrequentAlcoholTobaccoDrugs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellFrequentGambling,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellFrequentIntense,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellFrequentIntenseAlcoholTobaccoDrugs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellFrequentIntenseGambling,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellFrequentIntenseSexualContentNudity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellFrequentIntenseViolence,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellFrequentIntenseWithoutGrac,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellFrequentSexualContentNudity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellFrequentViolence,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellFrequentWithoutGrac,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellGambling,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellGamblingContests,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellInfrequentAlcoholTobaccoDrugs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellInfrequentMildAlcoholTobaccoDrugs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellInfrequentMildSexualContentNudity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellInfrequentSexualContentNudity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellNineteenPlusWithoutGrac,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellNonIosGames,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellRestrictedRating,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellSeventeenPlusApps,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellSeventeenPlusGames,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CannotSellSexuallyExplicit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IcpNumberInvalid,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IcpNumberMissing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MissingGrn,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MissingRating,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PreorderOnUnreleasedApp,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProcessingToAvailable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProcessingToNotAvailable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProcessingToPreOrder,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TraderStatusNotProvided,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TraderStatusVerificationFailed,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TraderStatusVerificationStatusMissing,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UnverifiedGrn,
     }

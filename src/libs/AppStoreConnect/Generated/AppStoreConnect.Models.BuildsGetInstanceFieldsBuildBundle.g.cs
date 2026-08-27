@@ -4,104 +4,104 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildsGetInstanceFieldsBuildBundle
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClipDomainCacheStatus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppClipDomainDebugStatus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaDownloadAllowance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BaMaxInstallSize,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaAppClipInvocations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BuildBundleFileSizes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BundleId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BundleType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DSYMUrl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeviceProtocols,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Entitlements,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HasOnDemandResources,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HasPrerenderedIcon,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HasSirikit,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IncludesSymbols,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IsIosBuildMacAppStoreCompatible,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Locales,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinimumOsVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PlatformBuild,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RequiredCapabilities,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SdkBuild,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SupportedArchitectures,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UsesLocationServices,
     }

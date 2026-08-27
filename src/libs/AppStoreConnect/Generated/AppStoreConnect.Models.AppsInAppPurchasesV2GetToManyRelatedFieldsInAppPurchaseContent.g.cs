@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseContent
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileSize,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastModifiedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Url,
     }

@@ -4,30 +4,30 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ScmRepositoryRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scmProvider")]
         public global::AppStoreConnect.ScmRepositoryRelationshipsScmProvider? ScmProvider { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("defaultBranch")]
         public global::AppStoreConnect.ScmRepositoryRelationshipsDefaultBranch? DefaultBranch { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gitReferences")]
         public global::AppStoreConnect.ScmRepositoryRelationshipsGitReferences? GitReferences { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("pullRequests")]
         public global::AppStoreConnect.ScmRepositoryRelationshipsPullRequests? PullRequests { get; set; }

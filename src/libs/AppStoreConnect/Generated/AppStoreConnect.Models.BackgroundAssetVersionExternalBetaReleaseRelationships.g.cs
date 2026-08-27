@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BackgroundAssetVersionExternalBetaReleaseRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("backgroundAssetVersion")]
         public global::AppStoreConnect.BackgroundAssetVersionExternalBetaReleaseRelationshipsBackgroundAssetVersion? BackgroundAssetVersion { get; set; }

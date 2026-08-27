@@ -6,12 +6,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppStoreVersionCreateRequestDataAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("platform")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.PlatformJsonConverter))]
@@ -19,40 +19,40 @@ namespace AppStoreConnect
         public required global::AppStoreConnect.Platform Platform { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("versionString")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string VersionString { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("copyright")]
         public string? Copyright { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("reviewType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AppStoreVersionCreateRequestDataAttributesReviewTypeJsonConverter))]
         public global::AppStoreConnect.AppStoreVersionCreateRequestDataAttributesReviewType? ReviewType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("releaseType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AppStoreVersionCreateRequestDataAttributesReleaseTypeJsonConverter))]
         public global::AppStoreConnect.AppStoreVersionCreateRequestDataAttributesReleaseType? ReleaseType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("earliestReleaseDate")]
         public global::System.DateTime? EarliestReleaseDate { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("usesIdfa")]
         [global::System.Obsolete("This property marked as deprecated.")]

@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class SubscriptionOfferCodeOneTimeUseCodeRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("offerCode")]
         public global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCodeRelationshipsOfferCode? OfferCode { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("values")]
         public global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCodeRelationshipsValues? Values { get; set; }

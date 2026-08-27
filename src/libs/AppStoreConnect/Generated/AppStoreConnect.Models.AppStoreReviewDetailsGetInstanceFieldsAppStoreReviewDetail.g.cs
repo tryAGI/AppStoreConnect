@@ -4,48 +4,48 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreReviewDetailsGetInstanceFieldsAppStoreReviewDetail
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreReviewAttachments,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContactEmail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContactFirstName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContactLastName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContactPhone,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DemoAccountName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DemoAccountPassword,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DemoAccountRequired,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Notes,
     }

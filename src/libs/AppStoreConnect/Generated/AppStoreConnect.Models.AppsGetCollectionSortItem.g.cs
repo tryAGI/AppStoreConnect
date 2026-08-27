@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsGetCollectionSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinusbundleId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusname,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minussku,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BundleId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Sku,
     }

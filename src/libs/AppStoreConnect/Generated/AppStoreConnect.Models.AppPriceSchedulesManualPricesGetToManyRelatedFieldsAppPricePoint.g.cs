@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppPriceSchedulesManualPricesGetToManyRelatedFieldsAppPricePoint
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomerPrice,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Equalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Proceeds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Territory,
     }

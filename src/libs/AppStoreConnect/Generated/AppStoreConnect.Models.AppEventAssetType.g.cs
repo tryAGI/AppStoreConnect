@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppEventAssetType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EventCard,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EventDetailsPage,
     }

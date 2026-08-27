@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchasePriceSchedulesAutomaticPricesGetToManyRelatedIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchasePricePoint,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Territory,
     }

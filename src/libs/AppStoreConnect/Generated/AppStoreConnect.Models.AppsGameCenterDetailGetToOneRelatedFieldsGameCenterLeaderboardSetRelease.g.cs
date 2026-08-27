@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsGameCenterDetailGetToOneRelatedFieldsGameCenterLeaderboardSetRelease
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardSet,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Live,
     }

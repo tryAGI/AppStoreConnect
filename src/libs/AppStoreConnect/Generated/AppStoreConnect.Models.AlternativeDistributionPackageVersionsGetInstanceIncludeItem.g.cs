@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AlternativeDistributionPackageVersionsGetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlternativeDistributionPackage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Deltas,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Variants,
     }

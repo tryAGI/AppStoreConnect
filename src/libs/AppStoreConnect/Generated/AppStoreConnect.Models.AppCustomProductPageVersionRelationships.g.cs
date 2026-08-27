@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppCustomProductPageVersionRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appCustomProductPage")]
         public global::AppStoreConnect.AppCustomProductPageVersionRelationshipsAppCustomProductPage? AppCustomProductPage { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appCustomProductPageLocalizations")]
         public global::AppStoreConnect.AppCustomProductPageVersionRelationshipsAppCustomProductPageLocalizations? AppCustomProductPageLocalizations { get; set; }

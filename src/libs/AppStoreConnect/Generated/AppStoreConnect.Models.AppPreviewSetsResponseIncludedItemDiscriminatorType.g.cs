@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppPreviewSetsResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppCustomProductPageLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppPreviews,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionExperimentTreatmentLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionLocalizations,
     }

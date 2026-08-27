@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IAppEventVideoClipsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsAppEventVideoClips"></param>
         /// <param name="fieldsAppEventLocalizations"></param>
@@ -22,7 +22,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsAppEventVideoClips"></param>
         /// <param name="fieldsAppEventLocalizations"></param>

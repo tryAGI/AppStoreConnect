@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterMatchmakingRuleSetsGetCollectionFieldsGameCenterMatchmakingTeam
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MaxPlayers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinPlayers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReferenceName,
     }

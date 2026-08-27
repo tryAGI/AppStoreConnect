@@ -6,43 +6,43 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterLeaderboardSetRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterDetail")]
         public global::AppStoreConnect.GameCenterLeaderboardSetRelationshipsGameCenterDetail? GameCenterDetail { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterGroup")]
         public global::AppStoreConnect.GameCenterLeaderboardSetRelationshipsGameCenterGroup? GameCenterGroup { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("groupLeaderboardSet")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.GameCenterLeaderboardSetRelationshipsGroupLeaderboardSet? GroupLeaderboardSet { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("localizations")]
         public global::AppStoreConnect.GameCenterLeaderboardSetRelationshipsLocalizations? Localizations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterLeaderboards")]
         public global::AppStoreConnect.GameCenterLeaderboardSetRelationshipsGameCenterLeaderboards? GameCenterLeaderboards { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("releases")]
         public global::AppStoreConnect.GameCenterLeaderboardSetRelationshipsReleases? Releases { get; set; }

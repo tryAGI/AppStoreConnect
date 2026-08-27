@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterMatchmakingRuleErrorsV1MetricResponseDataItemDimensionsGameCenterMatchmakingQueue
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("links")]
         public global::AppStoreConnect.GameCenterMatchmakingRuleErrorsV1MetricResponseDataItemDimensionsGameCenterMatchmakingQueueLinks? Links { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         public string? Data { get; set; }

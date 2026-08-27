@@ -4,60 +4,60 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PromotedPurchases,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionAppStoreReviewScreenshots,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionAvailabilities,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionGroups,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionImages,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionIntroductoryOffers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionOfferCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionPlanAvailabilities,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionPrices,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionPromotionalOffers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionVersions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WinBackOffers,
     }

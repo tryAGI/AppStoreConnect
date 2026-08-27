@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppInfoAttributesKoreaAgeRating
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         All,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Fifteen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Nineteen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NotApplicable,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Twelve,
     }

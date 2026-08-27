@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BackgroundAssetRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("app")]
         public global::AppStoreConnect.BackgroundAssetRelationshipsApp? App { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("versions")]
         public global::AppStoreConnect.BackgroundAssetRelationshipsVersions? Versions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersion")]
         public global::AppStoreConnect.BackgroundAssetRelationshipsAppStoreVersion? AppStoreVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("internalBetaVersion")]
         public global::AppStoreConnect.BackgroundAssetRelationshipsInternalBetaVersion? InternalBetaVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("externalBetaVersion")]
         public global::AppStoreConnect.BackgroundAssetRelationshipsExternalBetaVersion? ExternalBetaVersion { get; set; }

@@ -6,265 +6,265 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("accessibilityDeclarations")]
         public global::AppStoreConnect.AppRelationshipsAccessibilityDeclarations? AccessibilityDeclarations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appEncryptionDeclarations")]
         public global::AppStoreConnect.AppRelationshipsAppEncryptionDeclarations? AppEncryptionDeclarations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreIcon")]
         public global::AppStoreConnect.AppRelationshipsAppStoreIcon? AppStoreIcon { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("ciProduct")]
         public global::AppStoreConnect.AppRelationshipsCiProduct? CiProduct { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("betaTesters")]
         public global::AppStoreConnect.AppRelationshipsBetaTesters? BetaTesters { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("betaGroups")]
         public global::AppStoreConnect.AppRelationshipsBetaGroups? BetaGroups { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersions")]
         public global::AppStoreConnect.AppRelationshipsAppStoreVersions? AppStoreVersions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appTags")]
         public global::AppStoreConnect.AppRelationshipsAppTags? AppTags { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("preReleaseVersions")]
         public global::AppStoreConnect.AppRelationshipsPreReleaseVersions? PreReleaseVersions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("betaAppLocalizations")]
         public global::AppStoreConnect.AppRelationshipsBetaAppLocalizations? BetaAppLocalizations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("builds")]
         public global::AppStoreConnect.AppRelationshipsBuilds? Builds { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("betaLicenseAgreement")]
         public global::AppStoreConnect.AppRelationshipsBetaLicenseAgreement? BetaLicenseAgreement { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("betaAppReviewDetail")]
         public global::AppStoreConnect.AppRelationshipsBetaAppReviewDetail? BetaAppReviewDetail { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appInfos")]
         public global::AppStoreConnect.AppRelationshipsAppInfos? AppInfos { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appClips")]
         public global::AppStoreConnect.AppRelationshipsAppClips? AppClips { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appPricePoints")]
         public global::AppStoreConnect.AppRelationshipsAppPricePoints? AppPricePoints { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("endUserLicenseAgreement")]
         public global::AppStoreConnect.AppRelationshipsEndUserLicenseAgreement? EndUserLicenseAgreement { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appPriceSchedule")]
         public global::AppStoreConnect.AppRelationshipsAppPriceSchedule? AppPriceSchedule { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appAvailabilityV2")]
         public global::AppStoreConnect.AppRelationshipsAppAvailabilityV2? AppAvailabilityV2 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inAppPurchases")]
         [global::System.Obsolete("This property marked as deprecated.")]
         public global::AppStoreConnect.AppRelationshipsInAppPurchases? InAppPurchases { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionGroups")]
         public global::AppStoreConnect.AppRelationshipsSubscriptionGroups? SubscriptionGroups { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterEnabledVersions")]
         public global::AppStoreConnect.AppRelationshipsGameCenterEnabledVersions? GameCenterEnabledVersions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("perfPowerMetrics")]
         public global::AppStoreConnect.AppRelationshipsPerfPowerMetrics? PerfPowerMetrics { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appCustomProductPages")]
         public global::AppStoreConnect.AppRelationshipsAppCustomProductPages? AppCustomProductPages { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inAppPurchasesV2")]
         public global::AppStoreConnect.AppRelationshipsInAppPurchasesV2? InAppPurchasesV2 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("promotedPurchases")]
         public global::AppStoreConnect.AppRelationshipsPromotedPurchases? PromotedPurchases { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appEvents")]
         public global::AppStoreConnect.AppRelationshipsAppEvents? AppEvents { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("reviewSubmissions")]
         public global::AppStoreConnect.AppRelationshipsReviewSubmissions? ReviewSubmissions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionGracePeriod")]
         public global::AppStoreConnect.AppRelationshipsSubscriptionGracePeriod? SubscriptionGracePeriod { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customerReviews")]
         public global::AppStoreConnect.AppRelationshipsCustomerReviews? CustomerReviews { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customerReviewSummarizations")]
         public global::AppStoreConnect.AppRelationshipsCustomerReviewSummarizations? CustomerReviewSummarizations { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterDetail")]
         public global::AppStoreConnect.AppRelationshipsGameCenterDetail? GameCenterDetail { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersionExperimentsV2")]
         public global::AppStoreConnect.AppRelationshipsAppStoreVersionExperimentsV2? AppStoreVersionExperimentsV2 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("alternativeDistributionKey")]
         public global::AppStoreConnect.AppRelationshipsAlternativeDistributionKey? AlternativeDistributionKey { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("analyticsReportRequests")]
         public global::AppStoreConnect.AppRelationshipsAnalyticsReportRequests? AnalyticsReportRequests { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("marketplaceSearchDetail")]
         public global::AppStoreConnect.AppRelationshipsMarketplaceSearchDetail? MarketplaceSearchDetail { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("buildUploads")]
         public global::AppStoreConnect.AppRelationshipsBuildUploads? BuildUploads { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("backgroundAssets")]
         public global::AppStoreConnect.AppRelationshipsBackgroundAssets? BackgroundAssets { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("betaFeedbackScreenshotSubmissions")]
         public global::AppStoreConnect.AppRelationshipsBetaFeedbackScreenshotSubmissions? BetaFeedbackScreenshotSubmissions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("betaFeedbackCrashSubmissions")]
         public global::AppStoreConnect.AppRelationshipsBetaFeedbackCrashSubmissions? BetaFeedbackCrashSubmissions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("searchKeywords")]
         public global::AppStoreConnect.AppRelationshipsSearchKeywords? SearchKeywords { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("webhooks")]
         public global::AppStoreConnect.AppRelationshipsWebhooks? Webhooks { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("androidToIosAppMappingDetails")]
         public global::AppStoreConnect.AppRelationshipsAndroidToIosAppMappingDetails? AndroidToIosAppMappingDetails { get; set; }

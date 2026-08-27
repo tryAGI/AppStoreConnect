@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppScreenshotSetCreateRequestDataRelationshipsAppStoreVersionLocalization
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         public global::AppStoreConnect.AppScreenshotSetCreateRequestDataRelationshipsAppStoreVersionLocalizationData? Data { get; set; }

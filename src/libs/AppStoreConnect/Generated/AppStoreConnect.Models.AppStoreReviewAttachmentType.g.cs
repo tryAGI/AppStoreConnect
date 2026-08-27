@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppStoreReviewAttachmentType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreReviewAttachments,
     }

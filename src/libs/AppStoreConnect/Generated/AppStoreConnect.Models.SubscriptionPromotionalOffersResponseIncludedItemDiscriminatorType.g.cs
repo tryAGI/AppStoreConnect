@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionPromotionalOffersResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionPromotionalOfferPrices,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Subscriptions,
     }

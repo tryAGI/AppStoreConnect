@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ReviewSubmissionsGetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersionForReview,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Items,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastUpdatedByActor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubmittedByActor,
     }

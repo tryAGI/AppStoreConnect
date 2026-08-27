@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterMatchmakingRuleAttributesType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Compatible,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Distance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Match,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Team,
     }

@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BetaPublicLinkUsagesV1MetricResponseDataItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dataPoints")]
         public global::System.Collections.Generic.IList<global::AppStoreConnect.BetaPublicLinkUsagesV1MetricResponseDataItemDataPoint>? DataPoints { get; set; }

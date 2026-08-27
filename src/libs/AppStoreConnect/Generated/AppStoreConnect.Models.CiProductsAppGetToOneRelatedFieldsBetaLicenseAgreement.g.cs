@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiProductsAppGetToOneRelatedFieldsBetaLicenseAgreement
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgreementText,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
     }

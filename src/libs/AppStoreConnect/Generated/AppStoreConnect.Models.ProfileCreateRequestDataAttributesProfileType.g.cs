@@ -4,64 +4,64 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ProfileCreateRequestDataAttributesProfileType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IosAppAdhoc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IosAppDevelopment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IosAppInhouse,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IosAppStore,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MacAppDevelopment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MacAppDirect,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MacAppStore,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MacCatalystAppDevelopment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MacCatalystAppDirect,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MacCatalystAppStore,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TvosAppAdhoc,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TvosAppDevelopment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TvosAppInhouse,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TvosAppStore,
     }

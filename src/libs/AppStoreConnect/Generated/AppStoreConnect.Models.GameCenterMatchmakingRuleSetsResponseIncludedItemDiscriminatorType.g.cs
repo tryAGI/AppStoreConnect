@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterMatchmakingRuleSetsResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterMatchmakingQueues,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterMatchmakingRules,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterMatchmakingTeams,
     }

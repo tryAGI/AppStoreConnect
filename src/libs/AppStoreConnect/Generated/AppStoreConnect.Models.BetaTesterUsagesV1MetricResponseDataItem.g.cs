@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BetaTesterUsagesV1MetricResponseDataItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dataPoints")]
         public global::System.Collections.Generic.IList<global::AppStoreConnect.BetaTesterUsagesV1MetricResponseDataItemDataPoint>? DataPoints { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("dimensions")]
         public global::AppStoreConnect.BetaTesterUsagesV1MetricResponseDataItemDimensions? Dimensions { get; set; }

@@ -4,28 +4,28 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildsDiagnosticSignaturesGetToManyRelatedFieldsDiagnosticSignature
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DiagnosticType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Insight,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Logs,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Signature,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Weight,
     }

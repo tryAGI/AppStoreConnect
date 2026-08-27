@@ -4,44 +4,44 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CertificatesPassTypeIdGetToOneRelatedFieldsCertificate
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Activated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CertificateContent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CertificateType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DisplayName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExpirationDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PassTypeId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Platform,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SerialNumber,
     }

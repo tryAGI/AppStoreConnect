@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AlternativeDistributionPackageVersionsDeltasGetToManyRelatedFieldsAlternativeDistributionPackageDelta
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlternativeDistributionKeyBlob,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileChecksum,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Url,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UrlExpirationDate,
     }

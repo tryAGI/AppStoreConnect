@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiBuildActionsArtifactsGetToManyRelatedFieldsCiArtifact
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DownloadUrl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileSize,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FileType,
     }

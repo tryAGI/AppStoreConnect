@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsBetaFeedbackScreenshotSubmissionsGetToManyRelatedSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinuscreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
     }

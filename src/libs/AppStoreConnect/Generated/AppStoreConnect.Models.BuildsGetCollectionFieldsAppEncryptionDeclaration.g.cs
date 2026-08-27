@@ -4,76 +4,76 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BuildsGetCollectionFieldsAppEncryptionDeclaration
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppDescription,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEncryptionDeclarationDocument,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEncryptionDeclarationState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AvailableOnFrenchStore,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Builds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CodeValue,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContainsProprietaryCryptography,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ContainsThirdPartyCryptography,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DocumentName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DocumentType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DocumentUrl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Exempt,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Platform,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UploadedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UsesEncryption,
     }

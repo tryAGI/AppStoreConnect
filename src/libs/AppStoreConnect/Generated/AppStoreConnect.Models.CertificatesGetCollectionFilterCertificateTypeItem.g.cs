@@ -4,80 +4,80 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CertificatesGetCollectionFilterCertificateTypeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApplePay,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApplePayMerchantIdentity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApplePayPspIdentity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ApplePayRsa,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeveloperIdApplication,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeveloperIdApplicationG2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeveloperIdKext,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeveloperIdKextG2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Development,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Distribution,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IdentityAccess,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IosDevelopment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IosDistribution,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MacAppDevelopment,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MacAppDistribution,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MacInstallerDistribution,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PassTypeId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PassTypeIdWithNfc,
     }

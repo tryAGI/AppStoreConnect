@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BetaGroupsGetCollectionIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaRecruitmentCriteria,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaTesters,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Builds,
     }

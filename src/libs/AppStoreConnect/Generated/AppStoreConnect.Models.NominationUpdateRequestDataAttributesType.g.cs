@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum NominationUpdateRequestDataAttributesType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppEnhancements,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppLaunch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NewContent,
     }

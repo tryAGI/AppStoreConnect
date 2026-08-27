@@ -4,31 +4,31 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppCustomProductPageCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("app")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required global::AppStoreConnect.AppCustomProductPageCreateRequestDataRelationshipsApp App { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appCustomProductPageVersions")]
         public global::AppStoreConnect.AppCustomProductPageCreateRequestDataRelationshipsAppCustomProductPageVersions? AppCustomProductPageVersions { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersionTemplate")]
         public global::AppStoreConnect.AppCustomProductPageCreateRequestDataRelationshipsAppStoreVersionTemplate? AppStoreVersionTemplate { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("customProductPageTemplate")]
         public global::AppStoreConnect.AppCustomProductPageCreateRequestDataRelationshipsCustomProductPageTemplate? CustomProductPageTemplate { get; set; }

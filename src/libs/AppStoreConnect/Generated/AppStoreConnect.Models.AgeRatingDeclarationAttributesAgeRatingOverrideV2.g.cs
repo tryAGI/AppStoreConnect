@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AgeRatingDeclarationAttributesAgeRatingOverrideV2
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         EighteenPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         NinePlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         None,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SixteenPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ThirteenPlus,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Unrated,
     }

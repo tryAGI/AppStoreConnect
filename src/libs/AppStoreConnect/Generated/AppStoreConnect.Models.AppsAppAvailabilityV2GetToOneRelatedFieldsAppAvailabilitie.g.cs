@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsAppAvailabilityV2GetToOneRelatedFieldsAppAvailabilitie
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AvailableInNewTerritories,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TerritoryAvailabilities,
     }

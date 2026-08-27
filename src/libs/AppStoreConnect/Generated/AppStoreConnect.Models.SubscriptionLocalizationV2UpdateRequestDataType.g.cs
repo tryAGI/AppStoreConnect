@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionLocalizationV2UpdateRequestDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionLocalizations,
     }

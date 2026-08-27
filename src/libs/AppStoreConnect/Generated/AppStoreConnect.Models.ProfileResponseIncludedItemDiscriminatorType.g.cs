@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ProfileResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BundleIds,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Certificates,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Devices,
     }

@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class XcodeMetricsInsights
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("trendingUp")]
         public global::System.Collections.Generic.IList<global::AppStoreConnect.MetricsInsight>? TrendingUp { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("regressions")]
         public global::System.Collections.Generic.IList<global::AppStoreConnect.MetricsInsight>? Regressions { get; set; }

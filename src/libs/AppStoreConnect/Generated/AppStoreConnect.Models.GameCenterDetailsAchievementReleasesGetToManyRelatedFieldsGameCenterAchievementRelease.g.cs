@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterDetailsAchievementReleasesGetToManyRelatedFieldsGameCenterAchievementRelease
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAchievement,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Live,
     }

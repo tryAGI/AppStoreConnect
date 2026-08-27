@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterAchievementVersionV2CreateRequestDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterAchievementVersions,
     }

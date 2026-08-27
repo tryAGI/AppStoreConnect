@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterMatchmakingQueuesGetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExperimentRuleSet,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         RuleSet,
     }

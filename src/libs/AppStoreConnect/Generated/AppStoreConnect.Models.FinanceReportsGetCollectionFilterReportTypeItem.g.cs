@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum FinanceReportsGetCollectionFilterReportTypeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FinanceDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Financial,
     }

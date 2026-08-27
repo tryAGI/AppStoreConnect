@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterChallengeImageCreateRequestDataRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("localization")]
         public global::AppStoreConnect.GameCenterChallengeImageCreateRequestDataRelationshipsLocalization? Localization { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("version")]
         public global::AppStoreConnect.GameCenterChallengeImageCreateRequestDataRelationshipsVersion? Version { get; set; }

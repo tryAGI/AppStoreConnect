@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsInAppPurchasesGetToManyRelatedSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinusinAppPurchaseType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinusproductId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinusreferenceName,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProductId,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ReferenceName,
     }

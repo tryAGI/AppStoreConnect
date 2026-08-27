@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IAppStoreVersionLocalizationsClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsAppStoreVersionLocalizations"></param>
         /// <param name="fieldsAppStoreVersions"></param>
@@ -32,7 +32,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsAppStoreVersionLocalizations"></param>
         /// <param name="fieldsAppStoreVersions"></param>

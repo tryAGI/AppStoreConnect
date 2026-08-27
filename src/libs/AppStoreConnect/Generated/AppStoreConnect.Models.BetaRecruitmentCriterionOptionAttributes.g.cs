@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BetaRecruitmentCriterionOptionAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("deviceFamilyOsVersions")]
         public global::System.Collections.Generic.IList<global::AppStoreConnect.BetaRecruitmentCriterionOptionAttributesDeviceFamilyOsVersion>? DeviceFamilyOsVersions { get; set; }

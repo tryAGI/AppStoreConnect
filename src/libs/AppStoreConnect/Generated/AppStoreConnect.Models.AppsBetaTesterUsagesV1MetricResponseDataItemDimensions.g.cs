@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppsBetaTesterUsagesV1MetricResponseDataItemDimensions
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("betaTesters")]
         public global::AppStoreConnect.AppsBetaTesterUsagesV1MetricResponseDataItemDimensionsBetaTesters? BetaTesters { get; set; }

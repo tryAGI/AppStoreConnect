@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterLeaderboardLocalizationsGetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboard,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardImage,
     }

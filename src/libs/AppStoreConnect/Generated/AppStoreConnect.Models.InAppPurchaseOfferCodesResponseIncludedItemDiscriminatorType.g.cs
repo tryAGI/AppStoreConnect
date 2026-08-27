@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchaseOfferCodesResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseOfferCodeCustomCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseOfferCodeOneTimeUseCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InAppPurchaseOfferPrices,
     }

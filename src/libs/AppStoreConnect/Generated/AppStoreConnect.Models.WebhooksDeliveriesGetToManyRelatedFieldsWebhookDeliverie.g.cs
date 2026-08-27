@@ -4,40 +4,40 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum WebhooksDeliveriesGetToManyRelatedFieldsWebhookDeliverie
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeliveryState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ErrorMessage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Event,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Redelivery,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Request,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Response,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SentDate,
     }

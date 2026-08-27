@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class BetaTesterCreateRequestDataRelationshipsBuilds
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         public global::System.Collections.Generic.IList<global::AppStoreConnect.BetaTesterCreateRequestDataRelationshipsBuildsDataItem>? Data { get; set; }

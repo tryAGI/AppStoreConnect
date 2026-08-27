@@ -4,40 +4,40 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterLeaderboardsLocalizationsGetToManyRelatedFieldsGameCenterLeaderboardLocalization
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Description,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FormatterOverride,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FormatterSuffix,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         FormatterSuffixSingular,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboard,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterLeaderboardImage,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Locale,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
     }

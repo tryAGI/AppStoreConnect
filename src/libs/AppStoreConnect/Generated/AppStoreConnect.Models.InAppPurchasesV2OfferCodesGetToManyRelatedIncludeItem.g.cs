@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum InAppPurchasesV2OfferCodesGetToManyRelatedIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CustomCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OneTimeUseCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prices,
     }

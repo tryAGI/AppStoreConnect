@@ -4,90 +4,90 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class ReviewSubmissionItemRelationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersion")]
         public global::AppStoreConnect.ReviewSubmissionItemRelationshipsAppStoreVersion? AppStoreVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appCustomProductPageVersion")]
         public global::AppStoreConnect.ReviewSubmissionItemRelationshipsAppCustomProductPageVersion? AppCustomProductPageVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersionExperiment")]
         public global::AppStoreConnect.ReviewSubmissionItemRelationshipsAppStoreVersionExperiment? AppStoreVersionExperiment { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appStoreVersionExperimentV2")]
         public global::AppStoreConnect.ReviewSubmissionItemRelationshipsAppStoreVersionExperimentV2? AppStoreVersionExperimentV2 { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appEvent")]
         public global::AppStoreConnect.ReviewSubmissionItemRelationshipsAppEvent? AppEvent { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("backgroundAssetVersion")]
         public global::AppStoreConnect.ReviewSubmissionItemRelationshipsBackgroundAssetVersion? BackgroundAssetVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterAchievementVersion")]
         public global::AppStoreConnect.ReviewSubmissionItemRelationshipsGameCenterAchievementVersion? GameCenterAchievementVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterActivityVersion")]
         public global::AppStoreConnect.ReviewSubmissionItemRelationshipsGameCenterActivityVersion? GameCenterActivityVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterChallengeVersion")]
         public global::AppStoreConnect.ReviewSubmissionItemRelationshipsGameCenterChallengeVersion? GameCenterChallengeVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterLeaderboardSetVersion")]
         public global::AppStoreConnect.ReviewSubmissionItemRelationshipsGameCenterLeaderboardSetVersion? GameCenterLeaderboardSetVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterLeaderboardVersion")]
         public global::AppStoreConnect.ReviewSubmissionItemRelationshipsGameCenterLeaderboardVersion? GameCenterLeaderboardVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inAppPurchaseVersion")]
         public global::AppStoreConnect.ReviewSubmissionItemRelationshipsInAppPurchaseVersion? InAppPurchaseVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionVersion")]
         public global::AppStoreConnect.ReviewSubmissionItemRelationshipsSubscriptionVersion? SubscriptionVersion { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("subscriptionGroupVersion")]
         public global::AppStoreConnect.ReviewSubmissionItemRelationshipsSubscriptionGroupVersion? SubscriptionGroupVersion { get; set; }

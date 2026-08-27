@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class InAppPurchaseOfferCodeCustomCodeRelationshipsDeactivatedByActor
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("data")]
         public global::AppStoreConnect.InAppPurchaseOfferCodeCustomCodeRelationshipsDeactivatedByActorData? Data { get; set; }

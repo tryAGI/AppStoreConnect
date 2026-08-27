@@ -4,33 +4,33 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterChallengeCreateRequestDataAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("referenceName")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string ReferenceName { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("vendorIdentifier")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string VendorIdentifier { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("challengeType")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.GameCenterChallengeCreateRequestDataAttributesChallengeTypeJsonConverter))]
         public global::AppStoreConnect.GameCenterChallengeCreateRequestDataAttributesChallengeType ChallengeType { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("repeatable")]
         public bool? Repeatable { get; set; }

@@ -4,36 +4,36 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum GameCenterActivitiesGetInstanceIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Achievements,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AchievementsV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterDetail,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GameCenterGroup,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Leaderboards,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LeaderboardsV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Versions,
     }

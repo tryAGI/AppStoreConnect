@@ -48,7 +48,7 @@ namespace AppStoreConnect
             ref byte[] content);
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterVendorNumber"></param>
         /// <param name="filterReportType"></param>
@@ -77,7 +77,7 @@ namespace AppStoreConnect
             return __response.Body;
         }
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterVendorNumber"></param>
         /// <param name="filterReportType"></param>
@@ -162,7 +162,7 @@ namespace AppStoreConnect
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::AppStoreConnect.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,
@@ -557,7 +557,7 @@ namespace AppStoreConnect
             }
         }
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="filterVendorNumber"></param>
         /// <param name="filterReportType"></param>
@@ -642,7 +642,7 @@ namespace AppStoreConnect
                          __authorization.Location == "Header")
                 {
                     __httpRequest.Headers.Add(__authorization.Name, __authorization.Value);
-                } 
+                }
             }
                 global::AppStoreConnect.AutoSDKRequestOptionsSupport.ApplyHeaders(
                     request: __httpRequest,

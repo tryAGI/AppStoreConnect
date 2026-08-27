@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IGameCenterMatchmakingQueuesClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="granularity"></param>
         /// <param name="groupBy"></param>
@@ -28,7 +28,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="granularity"></param>
         /// <param name="groupBy"></param>

@@ -4,24 +4,24 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppsAppStoreVersionsGetToManyRelatedFieldsAppStoreVersionPhasedRelease
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CurrentDayNumber,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PhasedReleaseState,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         StartDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         TotalPauseDuration,
     }

@@ -5,7 +5,7 @@ namespace AppStoreConnect
     public partial interface IAppPriceSchedulesClient
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsAppPriceSchedules"></param>
         /// <param name="fieldsApps"></param>
@@ -30,7 +30,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
-        /// 
+        ///
         /// </summary>
         /// <param name="fieldsAppPriceSchedules"></param>
         /// <param name="fieldsApps"></param>

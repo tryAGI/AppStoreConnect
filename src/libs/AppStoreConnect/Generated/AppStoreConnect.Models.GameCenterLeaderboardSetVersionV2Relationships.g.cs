@@ -4,18 +4,18 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class GameCenterLeaderboardSetVersionV2Relationships
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("leaderboardSet")]
         public global::AppStoreConnect.GameCenterLeaderboardSetVersionV2RelationshipsLeaderboardSet? LeaderboardSet { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("localizations")]
         public global::AppStoreConnect.GameCenterLeaderboardSetVersionV2RelationshipsLocalizations? Localizations { get; set; }

@@ -4,20 +4,20 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiWorkflowsRepositoryGetToOneRelatedFieldsScmProvider
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Repositories,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScmProviderType,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Url,
     }

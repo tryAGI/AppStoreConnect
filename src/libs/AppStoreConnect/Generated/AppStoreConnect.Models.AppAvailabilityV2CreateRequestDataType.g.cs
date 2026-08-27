@@ -4,12 +4,12 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppAvailabilityV2CreateRequestDataType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppAvailabilities,
     }

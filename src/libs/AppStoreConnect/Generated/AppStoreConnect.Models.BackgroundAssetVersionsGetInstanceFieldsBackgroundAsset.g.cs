@@ -4,44 +4,44 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BackgroundAssetVersionsGetInstanceFieldsBackgroundAsset
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         App,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Archived,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AssetPackIdentifier,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         CreatedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ExternalBetaVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         InternalBetaVersion,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UsedBytes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Versions,
     }

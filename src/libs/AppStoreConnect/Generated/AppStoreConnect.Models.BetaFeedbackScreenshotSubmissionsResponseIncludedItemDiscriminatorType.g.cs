@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum BetaFeedbackScreenshotSubmissionsResponseIncludedItemDiscriminatorType
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         BetaTesters,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Builds,
     }

@@ -4,124 +4,124 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Advertising,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgeAssurance,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgeRatingOverride,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AgeRatingOverrideV2,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AlcoholTobaccoOrDrugUseOrReferences,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Contests,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DeveloperAgeRatingInfoUrl,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Gambling,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GamblingSimulated,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GunsOrOtherWeapons,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HealthOrWellnessTopics,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         HorrorOrFearThemes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KidsAgeBand,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         KoreaAgeRatingOverride,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LootBox,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MatureOrSuggestiveThemes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MedicalOrTreatmentInformation,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MessagingAndChat,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ParentalControls,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ProfanityOrCrudeHumor,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SexualContentGraphicAndNudity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SexualContentOrNudity,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SocialMedia,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SocialMediaAgeRestricted,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UnrestrictedWebAccess,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         UserGeneratedContent,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ViolenceCartoonOrFantasy,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ViolenceRealistic,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ViolenceRealisticProlongedGraphicOrSadistic,
     }

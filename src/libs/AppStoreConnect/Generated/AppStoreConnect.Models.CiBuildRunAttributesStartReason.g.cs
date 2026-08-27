@@ -4,32 +4,32 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum CiBuildRunAttributesStartReason
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         GitRefChange,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Manual,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ManualRebuild,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PullRequestOpen,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PullRequestUpdate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Schedule,
     }

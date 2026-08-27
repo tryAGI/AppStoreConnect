@@ -4,16 +4,16 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum ScmRepositoriesGetCollectionIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         DefaultBranch,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         ScmProvider,
     }

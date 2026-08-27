@@ -4,60 +4,60 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         AppStoreReviewScreenshot,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Group,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Images,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         IntroductoryOffers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         OfferCodes,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PlanAvailabilities,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Prices,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PromotedPurchase,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PromotionalOffers,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionAvailability,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         SubscriptionLocalizations,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Versions,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         WinBackOffers,
     }

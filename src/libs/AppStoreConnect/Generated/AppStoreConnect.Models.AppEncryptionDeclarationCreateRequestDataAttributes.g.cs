@@ -4,33 +4,33 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public sealed partial class AppEncryptionDeclarationCreateRequestDataAttributes
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("appDescription")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required string AppDescription { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("containsProprietaryCryptography")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool ContainsProprietaryCryptography { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("containsThirdPartyCryptography")]
         [global::System.Text.Json.Serialization.JsonRequired]
         public required bool ContainsThirdPartyCryptography { get; set; }
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("availableOnFrenchStore")]
         [global::System.Text.Json.Serialization.JsonRequired]

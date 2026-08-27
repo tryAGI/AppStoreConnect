@@ -4,48 +4,48 @@
 namespace AppStoreConnect
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public enum NominationsGetCollectionSortItem
     {
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinuslastModifiedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minusname,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinuspublishEndDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         MinuspublishStartDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Minustype,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         LastModifiedDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Name,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PublishEndDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         PublishStartDate,
         /// <summary>
-        /// 
+        ///
         /// </summary>
         Type,
     }
