@@ -41,10 +41,12 @@ jobs:
 
       - name: Add linker swap for the full Apple schema
         run: |
-          sudo fallocate -l 8G /swapfile
-          sudo chmod 600 /swapfile
-          sudo mkswap /swapfile
-          sudo swapon /swapfile
+          swapon --show
+          df -h /mnt
+          sudo fallocate -l 8G /mnt/autosdk-trim.swap
+          sudo chmod 600 /mnt/autosdk-trim.swap
+          sudo mkswap /mnt/autosdk-trim.swap
+          sudo swapon /mnt/autosdk-trim.swap
           free -h
 
       - name: Install AutoSDK CLI
