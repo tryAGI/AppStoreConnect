@@ -90,6 +90,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AccessibilityDeclaration))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AccessibilityDeclarationType), TypeInfoPropertyName = "AccessibilityDeclarationType2")]
@@ -513,7 +514,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem6>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem6), TypeInfoPropertyName = "IncludedItem62_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminator))]
     internal sealed partial class SourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -600,6 +600,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminatorType), TypeInfoPropertyName = "AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestData))]
@@ -1025,7 +1026,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventCreateRequestDataAttributesTerritorySchedule))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventCreateRequestDataRelationships))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventCreateRequestDataRelationshipsApp))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventCreateRequestDataRelationshipsAppData))]
     internal sealed partial class SourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1112,6 +1112,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventCreateRequestDataRelationshipsAppData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventCreateRequestDataRelationshipsAppDataType), TypeInfoPropertyName = "AppEventCreateRequestDataRelationshipsAppDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventUpdateRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventUpdateRequestData))]
@@ -1537,7 +1538,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentsResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppStoreVersionExperimentTreatment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem36>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem36), TypeInfoPropertyName = "IncludedItem362")]
     internal sealed partial class SourceGenerationContextChunk2 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1624,6 +1624,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem36), TypeInfoPropertyName = "IncludedItem362")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionExperiment))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentsResponseIncludedItemDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentsResponseIncludedItemDiscriminatorType), TypeInfoPropertyName = "AppStoreVersionExperimentTreatmentsResponseIncludedItemDiscriminatorType2")]
@@ -2049,7 +2050,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.PrereleaseVersion))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.PromotedPurchase))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmission))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGracePeriod))]
     internal sealed partial class SourceGenerationContextChunk3 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -2136,6 +2136,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGracePeriod))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGroup))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsResponseIncludedItemDiscriminator))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsResponseIncludedItemDiscriminatorType), TypeInfoPropertyName = "AppsResponseIncludedItemDiscriminatorType2")]
@@ -2561,7 +2562,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaTesterInvitationCreateRequestDataRelationships))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaTesterInvitationCreateRequestDataRelationshipsBetaTester))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaTesterInvitationCreateRequestDataRelationshipsBetaTesterData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaTesterInvitationCreateRequestDataRelationshipsBetaTesterDataType), TypeInfoPropertyName = "BetaTesterInvitationCreateRequestDataRelationshipsBetaTesterDataType2")]
     internal sealed partial class SourceGenerationContextChunk4 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -2648,6 +2648,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaTesterInvitationCreateRequestDataRelationshipsBetaTesterDataType), TypeInfoPropertyName = "BetaTesterInvitationCreateRequestDataRelationshipsBetaTesterDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaTesterInvitationCreateRequestDataRelationshipsApp))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaTesterInvitationCreateRequestDataRelationshipsAppData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaTesterInvitationCreateRequestDataRelationshipsAppDataType), TypeInfoPropertyName = "BetaTesterInvitationCreateRequestDataRelationshipsAppDataType2")]
@@ -3073,7 +3074,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.CiProductRelationships))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.CiProductRelationshipsApp))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.CiProductRelationshipsAppData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.CiProductRelationshipsAppDataType), TypeInfoPropertyName = "CiProductRelationshipsAppDataType2")]
     internal sealed partial class SourceGenerationContextChunk5 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -3160,6 +3160,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.CiProductRelationshipsAppDataType), TypeInfoPropertyName = "CiProductRelationshipsAppDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.CiProductRelationshipsBundleId))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.CiProductRelationshipsBundleIdData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.CiProductRelationshipsBundleIdDataType), TypeInfoPropertyName = "CiProductRelationshipsBundleIdDataType2")]
@@ -3585,7 +3586,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterAchievementV2RelationshipsVersionsDataItemType), TypeInfoPropertyName = "GameCenterAchievementV2RelationshipsVersionsDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterAchievementsV2Response))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterAchievementV2>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem83>))]
     internal sealed partial class SourceGenerationContextChunk6 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -3672,6 +3672,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem83>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem83), TypeInfoPropertyName = "IncludedItem832")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivity))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterGroup))]
@@ -4097,7 +4098,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterChallengeRelationshipsLeaderboard))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterChallengeRelationshipsLeaderboardData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterChallengeRelationshipsLeaderboardDataType), TypeInfoPropertyName = "GameCenterChallengeRelationshipsLeaderboardDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterChallengeRelationshipsLeaderboardV2))]
     internal sealed partial class SourceGenerationContextChunk7 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -4184,6 +4184,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterChallengeRelationshipsLeaderboardV2))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterChallengeRelationshipsLeaderboardV2Data))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterChallengeRelationshipsLeaderboardV2DataType), TypeInfoPropertyName = "GameCenterChallengeRelationshipsLeaderboardV2DataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterChallengesResponse))]
@@ -4609,7 +4610,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardSetImageV2CreateRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardSetImageV2CreateRequestData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardSetImageV2CreateRequestDataType), TypeInfoPropertyName = "GameCenterLeaderboardSetImageV2CreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardSetImageV2CreateRequestDataAttributes))]
     internal sealed partial class SourceGenerationContextChunk8 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -4696,6 +4696,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardSetImageV2CreateRequestDataAttributes))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardSetImageV2CreateRequestDataRelationships))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardSetImageV2CreateRequestDataRelationshipsLocalization))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardSetImageV2CreateRequestDataRelationshipsLocalizationData))]
@@ -5121,7 +5122,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardV2CreateRequestDataAttributes))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardV2CreateRequestDataAttributesSubmissionType), TypeInfoPropertyName = "GameCenterLeaderboardV2CreateRequestDataAttributesSubmissionType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardV2CreateRequestDataAttributesScoreSortType), TypeInfoPropertyName = "GameCenterLeaderboardV2CreateRequestDataAttributesScoreSortType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardV2CreateRequestDataAttributesVisibility), TypeInfoPropertyName = "GameCenterLeaderboardV2CreateRequestDataAttributesVisibility2")]
     internal sealed partial class SourceGenerationContextChunk9 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -5208,6 +5208,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardV2CreateRequestDataAttributesVisibility), TypeInfoPropertyName = "GameCenterLeaderboardV2CreateRequestDataAttributesVisibility2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardV2CreateRequestDataRelationships))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardV2CreateRequestDataRelationshipsGameCenterDetail))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardV2CreateRequestDataRelationshipsGameCenterDetailData))]
@@ -5633,7 +5634,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseOfferPriceInlineCreate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeUpdateRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeUpdateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeUpdateRequestDataType), TypeInfoPropertyName = "InAppPurchaseOfferCodeUpdateRequestDataType2")]
     internal sealed partial class SourceGenerationContextChunk10 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -5720,6 +5720,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeUpdateRequestDataType), TypeInfoPropertyName = "InAppPurchaseOfferCodeUpdateRequestDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeUpdateRequestDataAttributes))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseOfferPriceType), TypeInfoPropertyName = "InAppPurchaseOfferPriceType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseOfferPriceRelationships))]
@@ -6145,7 +6146,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ProfileCreateRequestDataRelationshipsDevicesDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ProfileCreateRequestDataRelationshipsDevicesDataItemType), TypeInfoPropertyName = "ProfileCreateRequestDataRelationshipsDevicesDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ProfileCreateRequestDataRelationshipsCertificates))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.ProfileCreateRequestDataRelationshipsCertificatesDataItem>))]
     internal sealed partial class SourceGenerationContextChunk11 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -6232,6 +6232,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.ProfileCreateRequestDataRelationshipsCertificatesDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ProfileCreateRequestDataRelationshipsCertificatesDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ProfileCreateRequestDataRelationshipsCertificatesDataItemType), TypeInfoPropertyName = "ProfileCreateRequestDataRelationshipsCertificatesDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.PromotedPurchaseType), TypeInfoPropertyName = "PromotedPurchaseType2")]
@@ -6657,7 +6658,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGroupVersionCreateRequestDataType), TypeInfoPropertyName = "SubscriptionGroupVersionCreateRequestDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGroupVersionCreateRequestDataRelationships))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGroupVersionCreateRequestDataRelationshipsSubscriptionGroup))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGroupVersionCreateRequestDataRelationshipsSubscriptionGroupData))]
     internal sealed partial class SourceGenerationContextChunk12 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -6744,6 +6744,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGroupVersionCreateRequestDataRelationshipsSubscriptionGroupData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGroupVersionCreateRequestDataRelationshipsSubscriptionGroupDataType), TypeInfoPropertyName = "SubscriptionGroupVersionCreateRequestDataRelationshipsSubscriptionGroupDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGroupType), TypeInfoPropertyName = "SubscriptionGroupType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGroupAttributes))]
@@ -7169,7 +7170,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionPromotionalOfferPricesResponseIncludedItemDiscriminatorType), TypeInfoPropertyName = "SubscriptionPromotionalOfferPricesResponseIncludedItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionPromotionalOffer))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionPromotionalOfferType), TypeInfoPropertyName = "SubscriptionPromotionalOfferType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionPromotionalOfferAttributes))]
     internal sealed partial class SourceGenerationContextChunk13 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -7256,6 +7256,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionPromotionalOfferAttributes))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionPromotionalOfferRelationships))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionPromotionalOfferRelationshipsSubscription))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionPromotionalOfferRelationshipsSubscriptionData))]
@@ -7681,7 +7682,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceAppClipAppStoreReviewDetailLinkageResponseDataType), TypeInfoPropertyName = "AppClipDefaultExperienceAppClipAppStoreReviewDetailLinkageResponseDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceAppClipDefaultExperienceLocalizationsLinkagesResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppClipDefaultExperienceAppClipDefaultExperienceLocalizationsLinkagesResponseDataItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceAppClipDefaultExperienceLocalizationsLinkagesResponseDataItem))]
     internal sealed partial class SourceGenerationContextChunk14 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -7768,6 +7768,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceAppClipDefaultExperienceLocalizationsLinkagesResponseDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceAppClipDefaultExperienceLocalizationsLinkagesResponseDataItemType), TypeInfoPropertyName = "AppClipDefaultExperienceAppClipDefaultExperienceLocalizationsLinkagesResponseDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceReleaseWithAppStoreVersionLinkageResponseData))]
@@ -8193,7 +8194,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaGroupBuildsLinkagesResponseDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaGroupBuildsLinkagesResponseDataItemType), TypeInfoPropertyName = "BetaGroupBuildsLinkagesResponseDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaGroupBuildsLinkagesRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.BetaGroupBuildsLinkagesRequestDataItem>))]
     internal sealed partial class SourceGenerationContextChunk15 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -8280,6 +8280,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.BetaGroupBuildsLinkagesRequestDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaGroupBuildsLinkagesRequestDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaGroupBuildsLinkagesRequestDataItemType), TypeInfoPropertyName = "BetaGroupBuildsLinkagesRequestDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaLicenseAgreementAppLinkageResponse))]
@@ -8705,7 +8706,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterGroupGameCenterLeaderboardSetsV2LinkagesResponseDataItemType), TypeInfoPropertyName = "GameCenterGroupGameCenterLeaderboardSetsV2LinkagesResponseDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterGroupGameCenterLeaderboardSetsV2LinkagesRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterGroupGameCenterLeaderboardSetsV2LinkagesRequestDataItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterGroupGameCenterLeaderboardSetsV2LinkagesRequestDataItem))]
     internal sealed partial class SourceGenerationContextChunk16 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -8792,6 +8792,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterGroupGameCenterLeaderboardSetsV2LinkagesRequestDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterGroupGameCenterLeaderboardSetsV2LinkagesRequestDataItemType), TypeInfoPropertyName = "GameCenterGroupGameCenterLeaderboardSetsV2LinkagesRequestDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterGroupGameCenterLeaderboardsLinkagesResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterGroupGameCenterLeaderboardsLinkagesResponseDataItem>))]
@@ -9217,7 +9218,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingAppRequestsV1MetricResponseDataItemDimensionsResultData), TypeInfoPropertyName = "GameCenterMatchmakingAppRequestsV1MetricResponseDataItemDimensionsResultData2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingAppRequestsV1MetricResponseDataItemGranularity), TypeInfoPropertyName = "GameCenterMatchmakingAppRequestsV1MetricResponseDataItemGranularity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingQueueSizesV1MetricResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterMatchmakingQueueSizesV1MetricResponseDataItem>))]
     internal sealed partial class SourceGenerationContextChunk17 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -9304,6 +9304,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterMatchmakingQueueSizesV1MetricResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingQueueSizesV1MetricResponseDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterMatchmakingQueueSizesV1MetricResponseDataItemDataPoint>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingQueueSizesV1MetricResponseDataItemDataPoint))]
@@ -9729,7 +9730,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreReviewDetailsGetInstanceFieldsAppStoreReviewDetail), TypeInfoPropertyName = "AppStoreReviewDetailsGetInstanceFieldsAppStoreReviewDetail2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppStoreReviewDetailsGetInstanceFieldsAppStoreVersion>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreReviewDetailsGetInstanceFieldsAppStoreVersion), TypeInfoPropertyName = "AppStoreReviewDetailsGetInstanceFieldsAppStoreVersion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppStoreReviewDetailsGetInstanceFieldsAppStoreReviewAttachment>))]
     internal sealed partial class SourceGenerationContextChunk18 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -9816,6 +9816,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppStoreReviewDetailsGetInstanceFieldsAppStoreReviewAttachment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreReviewDetailsGetInstanceFieldsAppStoreReviewAttachment), TypeInfoPropertyName = "AppStoreReviewDetailsGetInstanceFieldsAppStoreReviewAttachment2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppStoreReviewDetailsGetInstanceIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreReviewDetailsGetInstanceIncludeItem), TypeInfoPropertyName = "AppStoreReviewDetailsGetInstanceIncludeItem2")]
@@ -10241,7 +10242,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildsGetCollectionFieldsAppStoreVersion), TypeInfoPropertyName = "BuildsGetCollectionFieldsAppStoreVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.BuildsGetCollectionFieldsBuildIcon>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildsGetCollectionFieldsBuildIcon), TypeInfoPropertyName = "BuildsGetCollectionFieldsBuildIcon2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.BuildsGetCollectionFieldsBuildBundle>))]
     internal sealed partial class SourceGenerationContextChunk19 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -10328,6 +10328,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.BuildsGetCollectionFieldsBuildBundle>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildsGetCollectionFieldsBuildBundle), TypeInfoPropertyName = "BuildsGetCollectionFieldsBuildBundle2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.BuildsGetCollectionFieldsBuildUpload>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildsGetCollectionFieldsBuildUpload), TypeInfoPropertyName = "BuildsGetCollectionFieldsBuildUpload2")]
@@ -10753,7 +10754,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardImagesV2GetInstanceFieldsGameCenterLeaderboardLocalization), TypeInfoPropertyName = "GameCenterLeaderboardImagesV2GetInstanceFieldsGameCenterLeaderboardLocalization2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterLeaderboardImagesV2GetInstanceIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardImagesV2GetInstanceIncludeItem), TypeInfoPropertyName = "GameCenterLeaderboardImagesV2GetInstanceIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterLeaderboardLocalizationsGetInstanceFieldsGameCenterLeaderboardLocalization>))]
     internal sealed partial class SourceGenerationContextChunk20 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -10840,6 +10840,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterLeaderboardLocalizationsGetInstanceFieldsGameCenterLeaderboardLocalization>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardLocalizationsGetInstanceFieldsGameCenterLeaderboardLocalization), TypeInfoPropertyName = "GameCenterLeaderboardLocalizationsGetInstanceFieldsGameCenterLeaderboardLocalization2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterLeaderboardLocalizationsGetInstanceFieldsGameCenterLeaderboard>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardLocalizationsGetInstanceFieldsGameCenterLeaderboard), TypeInfoPropertyName = "GameCenterLeaderboardLocalizationsGetInstanceFieldsGameCenterLeaderboard2")]
@@ -11265,7 +11266,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem), TypeInfoPropertyName = "ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsGetInstanceFieldsAppStoreVersion>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionsGetInstanceFieldsAppStoreVersion), TypeInfoPropertyName = "ReviewSubmissionsGetInstanceFieldsAppStoreVersion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsGetInstanceFieldsActor>))]
     internal sealed partial class SourceGenerationContextChunk21 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -11352,6 +11352,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsGetInstanceFieldsActor>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionsGetInstanceFieldsActor), TypeInfoPropertyName = "ReviewSubmissionsGetInstanceFieldsActor2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsGetInstanceIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionsGetInstanceIncludeItem), TypeInfoPropertyName = "ReviewSubmissionsGetInstanceIncludeItem2")]
@@ -11777,7 +11778,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppEventVideoClip), TypeInfoPropertyName = "AppEventsLocalizationsGetToManyRelatedFieldsAppEventVideoClip2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedIncludeItem), TypeInfoPropertyName = "AppEventsLocalizationsGetToManyRelatedIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration>))]
     internal sealed partial class SourceGenerationContextChunk22 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -11864,6 +11864,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration), TypeInfoPropertyName = "AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppInfosAppInfoLocalizationsGetToManyRelatedFieldsAppInfoLocalization>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfosAppInfoLocalizationsGetToManyRelatedFieldsAppInfoLocalization), TypeInfoPropertyName = "AppInfosAppInfoLocalizationsGetToManyRelatedFieldsAppInfoLocalization2")]
@@ -12289,7 +12290,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppsBetaFeedbackScreenshotSubmissionsGetToManyRelatedFieldsBetaTester>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsBetaFeedbackScreenshotSubmissionsGetToManyRelatedFieldsBetaTester), TypeInfoPropertyName = "AppsBetaFeedbackScreenshotSubmissionsGetToManyRelatedFieldsBetaTester2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppsBetaFeedbackScreenshotSubmissionsGetToManyRelatedIncludeItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsBetaFeedbackScreenshotSubmissionsGetToManyRelatedIncludeItem), TypeInfoPropertyName = "AppsBetaFeedbackScreenshotSubmissionsGetToManyRelatedIncludeItem2")]
     internal sealed partial class SourceGenerationContextChunk23 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -12376,6 +12376,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsBetaFeedbackScreenshotSubmissionsGetToManyRelatedIncludeItem), TypeInfoPropertyName = "AppsBetaFeedbackScreenshotSubmissionsGetToManyRelatedIncludeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppsBetaGroupsGetToManyRelatedFieldsBetaGroup>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsBetaGroupsGetToManyRelatedFieldsBetaGroup), TypeInfoPropertyName = "AppsBetaGroupsGetToManyRelatedFieldsBetaGroup2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppsBetaLicenseAgreementGetToOneRelatedFieldsBetaLicenseAgreement>))]
@@ -12801,7 +12802,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.CiProductsAdditionalRepositoriesGetToManyRelatedFieldsScmGitReference), TypeInfoPropertyName = "CiProductsAdditionalRepositoriesGetToManyRelatedFieldsScmGitReference2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAdditionalRepositoriesGetToManyRelatedIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.CiProductsAdditionalRepositoriesGetToManyRelatedIncludeItem), TypeInfoPropertyName = "CiProductsAdditionalRepositoriesGetToManyRelatedIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsApp>))]
     internal sealed partial class SourceGenerationContextChunk24 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -12888,6 +12888,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsApp>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsApp), TypeInfoPropertyName = "CiProductsAppGetToOneRelatedFieldsApp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsAppEncryptionDeclaration>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsAppEncryptionDeclaration), TypeInfoPropertyName = "CiProductsAppGetToOneRelatedFieldsAppEncryptionDeclaration2")]
@@ -13313,7 +13314,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterDetailsGameCenterLeaderboardsV2GetToManyRelatedFieldsGameCenterLeaderboardSet), TypeInfoPropertyName = "GameCenterDetailsGameCenterLeaderboardsV2GetToManyRelatedFieldsGameCenterLeaderboardSet2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterDetailsGameCenterLeaderboardsV2GetToManyRelatedFieldsGameCenterActivitie>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterDetailsGameCenterLeaderboardsV2GetToManyRelatedFieldsGameCenterActivitie), TypeInfoPropertyName = "GameCenterDetailsGameCenterLeaderboardsV2GetToManyRelatedFieldsGameCenterActivitie2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterDetailsGameCenterLeaderboardsV2GetToManyRelatedFieldsGameCenterChallenge>))]
     internal sealed partial class SourceGenerationContextChunk25 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -13400,6 +13400,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterDetailsGameCenterLeaderboardsV2GetToManyRelatedFieldsGameCenterChallenge>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterDetailsGameCenterLeaderboardsV2GetToManyRelatedFieldsGameCenterChallenge), TypeInfoPropertyName = "GameCenterDetailsGameCenterLeaderboardsV2GetToManyRelatedFieldsGameCenterChallenge2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterDetailsGameCenterLeaderboardsV2GetToManyRelatedFieldsGameCenterLeaderboardVersion>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterDetailsGameCenterLeaderboardsV2GetToManyRelatedFieldsGameCenterLeaderboardVersion), TypeInfoPropertyName = "GameCenterDetailsGameCenterLeaderboardsV2GetToManyRelatedFieldsGameCenterLeaderboardVersion2")]
@@ -13825,7 +13826,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.InAppPurchasesV2AppStoreReviewScreenshotGetToOneRelatedFieldsInAppPurchase>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchasesV2AppStoreReviewScreenshotGetToOneRelatedFieldsInAppPurchase), TypeInfoPropertyName = "InAppPurchasesV2AppStoreReviewScreenshotGetToOneRelatedFieldsInAppPurchase2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.InAppPurchasesV2AppStoreReviewScreenshotGetToOneRelatedIncludeItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchasesV2AppStoreReviewScreenshotGetToOneRelatedIncludeItem), TypeInfoPropertyName = "InAppPurchasesV2AppStoreReviewScreenshotGetToOneRelatedIncludeItem2")]
     internal sealed partial class SourceGenerationContextChunk26 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -13912,6 +13912,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchasesV2AppStoreReviewScreenshotGetToOneRelatedIncludeItem), TypeInfoPropertyName = "InAppPurchasesV2AppStoreReviewScreenshotGetToOneRelatedIncludeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.InAppPurchasesV2ContentGetToOneRelatedFieldsInAppPurchaseContent>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchasesV2ContentGetToOneRelatedFieldsInAppPurchaseContent), TypeInfoPropertyName = "InAppPurchasesV2ContentGetToOneRelatedFieldsInAppPurchaseContent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.InAppPurchasesV2ContentGetToOneRelatedFieldsInAppPurchase>))]
@@ -14337,7 +14338,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingRulesMatchmakingBooleanRuleResultsGetMetricsGroupByItem), TypeInfoPropertyName = "GameCenterMatchmakingRulesMatchmakingBooleanRuleResultsGetMetricsGroupByItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterMatchmakingRulesMatchmakingBooleanRuleResultsGetMetricsSortItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingRulesMatchmakingBooleanRuleResultsGetMetricsSortItem), TypeInfoPropertyName = "GameCenterMatchmakingRulesMatchmakingBooleanRuleResultsGetMetricsSortItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingRulesMatchmakingNumberRuleResultsGetMetricsGranularity), TypeInfoPropertyName = "GameCenterMatchmakingRulesMatchmakingNumberRuleResultsGetMetricsGranularity2")]
     internal sealed partial class SourceGenerationContextChunk27 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -14424,6 +14424,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingRulesMatchmakingNumberRuleResultsGetMetricsGranularity), TypeInfoPropertyName = "GameCenterMatchmakingRulesMatchmakingNumberRuleResultsGetMetricsGranularity2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterMatchmakingRulesMatchmakingNumberRuleResultsGetMetricsGroupByItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingRulesMatchmakingNumberRuleResultsGetMetricsGroupByItem), TypeInfoPropertyName = "GameCenterMatchmakingRulesMatchmakingNumberRuleResultsGetMetricsGroupByItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterMatchmakingRulesMatchmakingNumberRuleResultsGetMetricsSortItem>))]
@@ -14849,7 +14850,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionExperimentV2ResponseIncludedItemDiscriminatorType?), TypeInfoPropertyName = "NullableAppStoreVersionExperimentV2ResponseIncludedItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionExperimentV2CreateRequestDataType?), TypeInfoPropertyName = "NullableAppStoreVersionExperimentV2CreateRequestDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionExperimentV2CreateRequestDataRelationshipsAppDataType?), TypeInfoPropertyName = "NullableAppStoreVersionExperimentV2CreateRequestDataRelationshipsAppDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionExperimentV2UpdateRequestDataType?), TypeInfoPropertyName = "NullableAppStoreVersionExperimentV2UpdateRequestDataType2")]
     internal sealed partial class SourceGenerationContextChunk28 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -14936,6 +14936,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionExperimentV2UpdateRequestDataType?), TypeInfoPropertyName = "NullableAppStoreVersionExperimentV2UpdateRequestDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionExperimentType?), TypeInfoPropertyName = "NullableAppStoreVersionExperimentType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionExperimentAttributesState?), TypeInfoPropertyName = "NullableAppStoreVersionExperimentAttributesState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionExperimentRelationshipsAppStoreVersionDataType?), TypeInfoPropertyName = "NullableAppStoreVersionExperimentRelationshipsAppStoreVersionDataType2")]
@@ -15361,7 +15362,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterAchievementLocalizationV2RelationshipsVersionDataType?), TypeInfoPropertyName = "NullableGameCenterAchievementLocalizationV2RelationshipsVersionDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterAchievementLocalizationV2RelationshipsImageDataType?), TypeInfoPropertyName = "NullableGameCenterAchievementLocalizationV2RelationshipsImageDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem75?), TypeInfoPropertyName = "NullableIncludedItem752")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterAchievementLocalizationsV2ResponseIncludedItemDiscriminatorType?), TypeInfoPropertyName = "NullableGameCenterAchievementLocalizationsV2ResponseIncludedItemDiscriminatorType2")]
     internal sealed partial class SourceGenerationContextChunk29 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -15448,6 +15448,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterAchievementLocalizationsV2ResponseIncludedItemDiscriminatorType?), TypeInfoPropertyName = "NullableGameCenterAchievementLocalizationsV2ResponseIncludedItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem76?), TypeInfoPropertyName = "NullableIncludedItem762")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterAchievementLocalizationV2ResponseIncludedItemDiscriminatorType?), TypeInfoPropertyName = "NullableGameCenterAchievementLocalizationV2ResponseIncludedItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterAchievementLocalizationV2CreateRequestDataType?), TypeInfoPropertyName = "NullableGameCenterAchievementLocalizationV2CreateRequestDataType2")]
@@ -15873,7 +15874,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardV2RelationshipsVersionsDataItemType?), TypeInfoPropertyName = "NullableGameCenterLeaderboardV2RelationshipsVersionsDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem130?), TypeInfoPropertyName = "NullableIncludedItem1302")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardsV2ResponseIncludedItemDiscriminatorType?), TypeInfoPropertyName = "NullableGameCenterLeaderboardsV2ResponseIncludedItemDiscriminatorType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem131?), TypeInfoPropertyName = "NullableIncludedItem1312")]
     internal sealed partial class SourceGenerationContextChunk30 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -15960,6 +15960,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem131?), TypeInfoPropertyName = "NullableIncludedItem1312")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardV2ResponseIncludedItemDiscriminatorType?), TypeInfoPropertyName = "NullableGameCenterLeaderboardV2ResponseIncludedItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardV2CreateRequestDataType?), TypeInfoPropertyName = "NullableGameCenterLeaderboardV2CreateRequestDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardV2CreateRequestDataAttributesSubmissionType?), TypeInfoPropertyName = "NullableGameCenterLeaderboardV2CreateRequestDataAttributesSubmissionType2")]
@@ -16385,7 +16386,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionLocalizationV2CreateRequestDataRelationshipsVersionDataType?), TypeInfoPropertyName = "NullableSubscriptionLocalizationV2CreateRequestDataRelationshipsVersionDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionLocalizationV2UpdateRequestDataType?), TypeInfoPropertyName = "NullableSubscriptionLocalizationV2UpdateRequestDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionLocalizationType?), TypeInfoPropertyName = "NullableSubscriptionLocalizationType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionLocalizationAttributesState?), TypeInfoPropertyName = "NullableSubscriptionLocalizationAttributesState2")]
     internal sealed partial class SourceGenerationContextChunk31 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -16472,6 +16472,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionLocalizationAttributesState?), TypeInfoPropertyName = "NullableSubscriptionLocalizationAttributesState2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionLocalizationRelationshipsSubscriptionDataType?), TypeInfoPropertyName = "NullableSubscriptionLocalizationRelationshipsSubscriptionDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionLocalizationCreateRequestDataType?), TypeInfoPropertyName = "NullableSubscriptionLocalizationCreateRequestDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionLocalizationCreateRequestDataRelationshipsSubscriptionDataType?), TypeInfoPropertyName = "NullableSubscriptionLocalizationCreateRequestDataRelationshipsSubscriptionDataType2")]
@@ -16897,7 +16898,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterGroupGameCenterLeaderboardsV2LinkagesResponseDataItemType?), TypeInfoPropertyName = "NullableGameCenterGroupGameCenterLeaderboardsV2LinkagesResponseDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterGroupGameCenterLeaderboardsV2LinkagesRequestDataItemType?), TypeInfoPropertyName = "NullableGameCenterGroupGameCenterLeaderboardsV2LinkagesRequestDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardLocalizationGameCenterLeaderboardImageLinkageResponseDataType?), TypeInfoPropertyName = "NullableGameCenterLeaderboardLocalizationGameCenterLeaderboardImageLinkageResponseDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardLocalizationV2ImageLinkageResponseDataType?), TypeInfoPropertyName = "NullableGameCenterLeaderboardLocalizationV2ImageLinkageResponseDataType2")]
     internal sealed partial class SourceGenerationContextChunk32 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -16984,6 +16984,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardLocalizationV2ImageLinkageResponseDataType?), TypeInfoPropertyName = "NullableGameCenterLeaderboardLocalizationV2ImageLinkageResponseDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardSetLocalizationGameCenterLeaderboardSetImageLinkageResponseDataType?), TypeInfoPropertyName = "NullableGameCenterLeaderboardSetLocalizationGameCenterLeaderboardSetImageLinkageResponseDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2ImageLinkageResponseDataType?), TypeInfoPropertyName = "NullableGameCenterLeaderboardSetLocalizationV2ImageLinkageResponseDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationGameCenterLeaderboardLinkageResponseDataType?), TypeInfoPropertyName = "NullableGameCenterLeaderboardSetMemberLocalizationGameCenterLeaderboardLinkageResponseDataType2")]
@@ -17409,7 +17410,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaGroupsGetCollectionFieldsBetaRecruitmentCriteriaItem?), TypeInfoPropertyName = "NullableBetaGroupsGetCollectionFieldsBetaRecruitmentCriteriaItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaGroupsGetCollectionIncludeItem?), TypeInfoPropertyName = "NullableBetaGroupsGetCollectionIncludeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaGroupsGetInstanceFieldsBetaGroup?), TypeInfoPropertyName = "NullableBetaGroupsGetInstanceFieldsBetaGroup2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaGroupsGetInstanceFieldsApp?), TypeInfoPropertyName = "NullableBetaGroupsGetInstanceFieldsApp2")]
     internal sealed partial class SourceGenerationContextChunk33 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -17496,6 +17496,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaGroupsGetInstanceFieldsApp?), TypeInfoPropertyName = "NullableBetaGroupsGetInstanceFieldsApp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaGroupsGetInstanceFieldsBuild?), TypeInfoPropertyName = "NullableBetaGroupsGetInstanceFieldsBuild2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaGroupsGetInstanceFieldsBetaTester?), TypeInfoPropertyName = "NullableBetaGroupsGetInstanceFieldsBetaTester2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaGroupsGetInstanceFieldsBetaRecruitmentCriteriaItem?), TypeInfoPropertyName = "NullableBetaGroupsGetInstanceFieldsBetaRecruitmentCriteriaItem2")]
@@ -17921,7 +17922,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.NominationsGetInstanceFieldsNomination?), TypeInfoPropertyName = "NullableNominationsGetInstanceFieldsNomination2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.NominationsGetInstanceFieldsApp?), TypeInfoPropertyName = "NullableNominationsGetInstanceFieldsApp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.NominationsGetInstanceFieldsActor?), TypeInfoPropertyName = "NullableNominationsGetInstanceFieldsActor2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.NominationsGetInstanceFieldsAppEvent?), TypeInfoPropertyName = "NullableNominationsGetInstanceFieldsAppEvent2")]
     internal sealed partial class SourceGenerationContextChunk34 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -18008,6 +18008,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.NominationsGetInstanceFieldsAppEvent?), TypeInfoPropertyName = "NullableNominationsGetInstanceFieldsAppEvent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.NominationsGetInstanceFieldsTerritorie?), TypeInfoPropertyName = "NullableNominationsGetInstanceFieldsTerritorie2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.NominationsGetInstanceIncludeItem?), TypeInfoPropertyName = "NullableNominationsGetInstanceIncludeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.PassTypeIdsGetCollectionSortItem?), TypeInfoPropertyName = "NullablePassTypeIdsGetCollectionSortItem2")]
@@ -18433,7 +18434,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp?), TypeInfoPropertyName = "NullableAppsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppStoreVersionExperimentsV2GetToManyRelatedFieldsAppStoreVersion?), TypeInfoPropertyName = "NullableAppsAppStoreVersionExperimentsV2GetToManyRelatedFieldsAppStoreVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppStoreVersionExperimentsV2GetToManyRelatedFieldsAppStoreVersionExperimentTreatment?), TypeInfoPropertyName = "NullableAppsAppStoreVersionExperimentsV2GetToManyRelatedFieldsAppStoreVersionExperimentTreatment2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppStoreVersionExperimentsV2GetToManyRelatedIncludeItem?), TypeInfoPropertyName = "NullableAppsAppStoreVersionExperimentsV2GetToManyRelatedIncludeItem2")]
     internal sealed partial class SourceGenerationContextChunk35 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -18520,6 +18520,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppStoreVersionExperimentsV2GetToManyRelatedIncludeItem?), TypeInfoPropertyName = "NullableAppsAppStoreVersionExperimentsV2GetToManyRelatedIncludeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppStoreVersionsGetToManyRelatedFilterPlatformItem?), TypeInfoPropertyName = "NullableAppsAppStoreVersionsGetToManyRelatedFilterPlatformItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppStoreVersionsGetToManyRelatedFilterAppStoreStateItem?), TypeInfoPropertyName = "NullableAppsAppStoreVersionsGetToManyRelatedFilterAppStoreStateItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppStoreVersionsGetToManyRelatedFilterAppVersionStateItem?), TypeInfoPropertyName = "NullableAppsAppStoreVersionsGetToManyRelatedFilterAppVersionStateItem2")]
@@ -18945,7 +18946,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterDetailsGameCenterAppVersionsGetToManyRelatedFieldsGameCenterAppVersion?), TypeInfoPropertyName = "NullableGameCenterDetailsGameCenterAppVersionsGetToManyRelatedFieldsGameCenterAppVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterDetailsGameCenterAppVersionsGetToManyRelatedFieldsAppStoreVersion?), TypeInfoPropertyName = "NullableGameCenterDetailsGameCenterAppVersionsGetToManyRelatedFieldsAppStoreVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterDetailsGameCenterAppVersionsGetToManyRelatedIncludeItem?), TypeInfoPropertyName = "NullableGameCenterDetailsGameCenterAppVersionsGetToManyRelatedIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterDetailsGameCenterChallengesGetToManyRelatedFieldsGameCenterChallenge?), TypeInfoPropertyName = "NullableGameCenterDetailsGameCenterChallengesGetToManyRelatedFieldsGameCenterChallenge2")]
     internal sealed partial class SourceGenerationContextChunk36 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -19032,6 +19032,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterDetailsGameCenterChallengesGetToManyRelatedFieldsGameCenterChallenge?), TypeInfoPropertyName = "NullableGameCenterDetailsGameCenterChallengesGetToManyRelatedFieldsGameCenterChallenge2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterDetailsGameCenterChallengesGetToManyRelatedFieldsGameCenterDetail?), TypeInfoPropertyName = "NullableGameCenterDetailsGameCenterChallengesGetToManyRelatedFieldsGameCenterDetail2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterDetailsGameCenterChallengesGetToManyRelatedFieldsGameCenterGroup?), TypeInfoPropertyName = "NullableGameCenterDetailsGameCenterChallengesGetToManyRelatedFieldsGameCenterGroup2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterDetailsGameCenterChallengesGetToManyRelatedFieldsGameCenterChallengeVersion?), TypeInfoPropertyName = "NullableGameCenterDetailsGameCenterChallengesGetToManyRelatedFieldsGameCenterChallengeVersion2")]
@@ -19457,7 +19458,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionsVersionsGetToManyRelatedFieldsSubscriptionVersion?), TypeInfoPropertyName = "NullableSubscriptionsVersionsGetToManyRelatedFieldsSubscriptionVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionsVersionsGetToManyRelatedFieldsSubscription?), TypeInfoPropertyName = "NullableSubscriptionsVersionsGetToManyRelatedFieldsSubscription2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionsVersionsGetToManyRelatedFieldsSubscriptionImage?), TypeInfoPropertyName = "NullableSubscriptionsVersionsGetToManyRelatedFieldsSubscriptionImage2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionsVersionsGetToManyRelatedFieldsSubscriptionLocalization?), TypeInfoPropertyName = "NullableSubscriptionsVersionsGetToManyRelatedFieldsSubscriptionLocalization2")]
     internal sealed partial class SourceGenerationContextChunk37 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -19544,6 +19544,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionsVersionsGetToManyRelatedFieldsSubscriptionLocalization?), TypeInfoPropertyName = "NullableSubscriptionsVersionsGetToManyRelatedFieldsSubscriptionLocalization2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionsVersionsGetToManyRelatedIncludeItem?), TypeInfoPropertyName = "NullableSubscriptionsVersionsGetToManyRelatedIncludeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionsWinBackOffersGetToManyRelatedFieldsWinBackOffer?), TypeInfoPropertyName = "NullableSubscriptionsWinBackOffersGetToManyRelatedFieldsWinBackOffer2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionsWinBackOffersGetToManyRelatedFieldsWinBackOfferPrice?), TypeInfoPropertyName = "NullableSubscriptionsWinBackOffersGetToManyRelatedFieldsWinBackOfferPrice2")]
@@ -19969,7 +19970,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardRelease>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem110>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem111>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetLocalization>))]
     internal sealed partial class SourceGenerationContextChunk38 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -20056,6 +20056,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetLocalization>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem112>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem113>))]
@@ -20481,7 +20482,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetReleasesLinkagesResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardVersionV2LocalizationsLinkagesResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardLocalizationsLinkagesResponseDataItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardReleasesLinkagesResponseDataItem>))]
     internal sealed partial class SourceGenerationContextChunk39 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -20568,6 +20568,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardReleasesLinkagesResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardV2VersionsLinkagesResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterMatchmakingRuleSetMatchmakingQueuesLinkagesResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterMatchmakingRuleSetRulesLinkagesResponseDataItem>))]
@@ -20993,7 +20994,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BetaTestersGetCollectionIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BetaTestersGetInstanceFieldsBetaTester>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BetaTestersGetInstanceFieldsApp>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BetaTestersGetInstanceFieldsBetaGroup>))]
     internal sealed partial class SourceGenerationContextChunk40 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -21080,6 +21080,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BetaTestersGetInstanceFieldsBetaGroup>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BetaTestersGetInstanceFieldsBuild>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BetaTestersGetInstanceIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BuildBetaDetailsGetCollectionFieldsBuildBetaDetail>))]
@@ -21505,7 +21506,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.PreReleaseVersionsGetInstanceFieldsPreReleaseVersion>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.PreReleaseVersionsGetInstanceFieldsBuild>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.PreReleaseVersionsGetInstanceFieldsApp>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.PreReleaseVersionsGetInstanceIncludeItem>))]
     internal sealed partial class SourceGenerationContextChunk41 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -21592,6 +21592,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.PreReleaseVersionsGetInstanceIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.ProfilesGetCollectionFilterProfileTypeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.ProfilesGetCollectionFilterProfileStateItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.ProfilesGetCollectionSortItem>))]
@@ -22017,7 +22018,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsAppStoreVersionsGetToManyRelatedFieldsAppClipDefaultExperience>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsAppStoreVersionsGetToManyRelatedFieldsAppStoreVersionExperiment>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsAppStoreVersionsGetToManyRelatedFieldsAlternativeDistributionPackage>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsAppStoreVersionsGetToManyRelatedIncludeItem>))]
     internal sealed partial class SourceGenerationContextChunk42 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -22104,6 +22104,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsAppStoreVersionsGetToManyRelatedIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsAppTagsGetToManyRelatedSortItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsAppTagsGetToManyRelatedFieldsAppTag>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsAppTagsGetToManyRelatedFieldsTerritorie>))]
@@ -22529,7 +22530,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterDetailsGameCenterGroupGetToOneRelatedFieldsGameCenterChallenge>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterDetailsGameCenterGroupGetToOneRelatedIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterDetailsGameCenterLeaderboardSetsGetToManyRelatedFieldsGameCenterLeaderboardSet>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterDetailsGameCenterLeaderboardSetsGetToManyRelatedFieldsGameCenterDetail>))]
     internal sealed partial class SourceGenerationContextChunk43 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -22616,6 +22616,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterDetailsGameCenterLeaderboardSetsGetToManyRelatedFieldsGameCenterDetail>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterDetailsGameCenterLeaderboardSetsGetToManyRelatedFieldsGameCenterGroup>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterDetailsGameCenterLeaderboardSetsGetToManyRelatedFieldsGameCenterLeaderboardSetLocalization>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterDetailsGameCenterLeaderboardSetsGetToManyRelatedFieldsGameCenterLeaderboard>))]
@@ -23041,7 +23042,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.WebhooksDeliveriesGetToManyRelatedFieldsWebhookEvent>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.WebhooksDeliveriesGetToManyRelatedIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.WinBackOffersPricesGetToManyRelatedFieldsWinBackOfferPrice>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.WinBackOffersPricesGetToManyRelatedFieldsTerritorie>))]
     internal sealed partial class SourceGenerationContextChunk44 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -23128,6 +23128,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderboardLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardGetToOneRelatedFieldsGameCenterLeaderbo_b98436f535ab49b9")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetLocalization>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_fab54ef8221f49c0")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeaderboardSetRelease>), TypeInfoPropertyName = "GameCenterLeaderboardSetMemberLocalizationsGameCenterLeaderboardSetGetToOneRelatedFieldsGameCenterLeade_735c5fea849f67d2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.WinBackOffersPricesGetToManyRelatedFieldsTerritorie>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.WinBackOffersPricesGetToManyRelatedFieldsSubscriptionPricePoint>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.WinBackOffersPricesGetToManyRelatedIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsBetaTesterUsagesGetMetricsGroupByItem>))]
