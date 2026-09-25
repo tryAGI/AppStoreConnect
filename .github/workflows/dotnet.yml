@@ -17,6 +17,7 @@ jobs:
     with:
       enable-caching: false
       publish: true
+      auto-stable-release: true
       run-tests: true
       additional-test-arguments: '--logger GitHubActions'
     secrets:
