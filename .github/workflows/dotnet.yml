@@ -17,7 +17,6 @@ jobs:
     with:
       enable-caching: false
       publish: true
-      auto-stable-release: true
       run-tests: true
       additional-test-arguments: '--logger GitHubActions'
     secrets:
@@ -55,6 +54,14 @@ jobs:
 
       - name: Run full trimming check
         run: autosdk trim src/libs/AppStoreConnect/AppStoreConnect.csproj
+
+  auto-stable-release:
+    name: Automatic stable release report
+    needs: [publish, trim-check]
+    if: github.ref == 'refs/heads/main'
+    uses: tryAGI/workflows/.github/workflows/auto-stable-release.yml@main
+    secrets:
+      nuget-key: ${{ secrets.NUGET_KEY }}
 
   release:
     name: Release
