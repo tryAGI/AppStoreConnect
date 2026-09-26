@@ -50,5 +50,28 @@ namespace AppStoreConnect
             int? limit = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Wraps GameCenterMatchmakingRulesMatchmakingBooleanRuleResultsGetMetricsAsync as an IAsyncEnumerable&lt;global::AppStoreConnect.GameCenterMatchmakingBooleanRuleResultsV1MetricResponseDataItem&gt; that follows the response's next-page URL.
+        /// </summary>
+        /// <param name="granularity"></param>
+        /// <param name="groupBy"></param>
+        /// <param name="filterResult"></param>
+        /// <param name="filterGameCenterMatchmakingQueue"></param>
+        /// <param name="sort"></param>
+        /// <param name="limit"></param>
+        /// <param name="id"></param>
+        /// <param name="requestOptions">Options forwarded to every page request.</param>
+        /// <param name="cancellationToken"></param>
+        global::System.Collections.Generic.IAsyncEnumerable<global::AppStoreConnect.GameCenterMatchmakingBooleanRuleResultsV1MetricResponseDataItem> GameCenterMatchmakingRulesMatchmakingBooleanRuleResultsGetMetricsAutoPagingAsync(
+            global::AppStoreConnect.GameCenterMatchmakingRulesMatchmakingBooleanRuleResultsGetMetricsGranularity granularity,
+            string id,             global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterMatchmakingRulesMatchmakingBooleanRuleResultsGetMetricsGroupByItem>? groupBy = default,
+            string? filterResult = default,
+            string? filterGameCenterMatchmakingQueue = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterMatchmakingRulesMatchmakingBooleanRuleResultsGetMetricsSortItem>? sort = default,
+            int? limit = default,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = null,
+            global::System.Threading.CancellationToken cancellationToken = default);
+
     }
 }

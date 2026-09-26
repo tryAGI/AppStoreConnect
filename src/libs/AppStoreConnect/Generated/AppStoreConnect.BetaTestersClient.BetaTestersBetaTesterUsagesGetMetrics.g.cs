@@ -135,10 +135,22 @@ namespace AppStoreConnect
                                 .AddOptionalParameter("limit", limit?.ToString())
                                 ;
                             var __path = __pathBuilder.ToString();
+
+                var __pageUrl = global::AppStoreConnect.AutoSDKPager.ResolvePageUrl(
+                    __path,
+                    requestOptions,
+                    global::AppStoreConnect.AutoSDKPager.GetPaginationBaseAddress(HttpClient.BaseAddress, "https://api.appstoreconnect.apple.com/"));
+                if (__pageUrl is not null)
+                {
+                    __path = __pageUrl;
+                }
+                else
+                {
                 __path = global::AppStoreConnect.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
+                }
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                     method: global::System.Net.Http.HttpMethod.Get,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
@@ -637,5 +649,38 @@ namespace AppStoreConnect
                 __httpRequest?.Dispose();
             }
         }
+
+        /// <summary>
+        /// Wraps BetaTestersBetaTesterUsagesGetMetricsAsync as an IAsyncEnumerable&lt;global::AppStoreConnect.BetaTesterUsagesV1MetricResponseDataItem&gt; that follows the response's next-page URL.
+        /// </summary>
+        /// <param name="period"></param>
+        /// <param name="filterApps"></param>
+        /// <param name="limit"></param>
+        /// <param name="id"></param>
+        /// <param name="requestOptions">Options forwarded to every page request.</param>
+        /// <param name="cancellationToken"></param>
+        public global::System.Collections.Generic.IAsyncEnumerable<global::AppStoreConnect.BetaTesterUsagesV1MetricResponseDataItem> BetaTestersBetaTesterUsagesGetMetricsAutoPagingAsync(
+            string filterApps,
+            string id,             global::AppStoreConnect.BetaTestersBetaTesterUsagesGetMetricsPeriod? period = default,
+            int? limit = default,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = null,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            return global::AppStoreConnect.AutoSDKPager.NextUrlAsync<global::AppStoreConnect.BetaTesterUsagesV1MetricResponse, global::AppStoreConnect.BetaTesterUsagesV1MetricResponseDataItem>(
+                fetchPage: (__nextUrl, __ct) => BetaTestersBetaTesterUsagesGetMetricsAsync(
+                    period: period,
+                    filterApps: filterApps,
+                    limit: limit,
+                    id: id,
+                    requestOptions: global::AppStoreConnect.AutoSDKPager.CreatePageRequestOptions(requestOptions, __nextUrl),
+                    cancellationToken: __ct),
+                extractItems: static __response => __response is null
+                    ? null
+                    : (global::System.Collections.Generic.IEnumerable<global::AppStoreConnect.BetaTesterUsagesV1MetricResponseDataItem>?)__response.Data,
+                extractNextUrl: static __response => __response is null ? null : __response.Links?.Next,
+                baseAddress: global::AppStoreConnect.AutoSDKPager.GetPaginationBaseAddress(HttpClient.BaseAddress, "https://api.appstoreconnect.apple.com/"),
+                cancellationToken: cancellationToken);
+        }
+
     }
 }

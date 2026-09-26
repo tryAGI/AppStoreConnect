@@ -43,6 +43,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        GameCenterScoreModerations,
+        /// <summary>
+        ///
+        /// </summary>
         GroupLeaderboard,
         /// <summary>
         ///
@@ -118,6 +122,7 @@ namespace AppStoreConnect
                 GameCenterChallengesGetInstanceFieldsGameCenterLeaderboard.GameCenterDetail => "gameCenterDetail",
                 GameCenterChallengesGetInstanceFieldsGameCenterLeaderboard.GameCenterGroup => "gameCenterGroup",
                 GameCenterChallengesGetInstanceFieldsGameCenterLeaderboard.GameCenterLeaderboardSets => "gameCenterLeaderboardSets",
+                GameCenterChallengesGetInstanceFieldsGameCenterLeaderboard.GameCenterScoreModerations => "gameCenterScoreModerations",
                 GameCenterChallengesGetInstanceFieldsGameCenterLeaderboard.GroupLeaderboard => "groupLeaderboard",
                 GameCenterChallengesGetInstanceFieldsGameCenterLeaderboard.Localizations => "localizations",
                 GameCenterChallengesGetInstanceFieldsGameCenterLeaderboard.RecurrenceDuration => "recurrenceDuration",
@@ -150,6 +155,7 @@ namespace AppStoreConnect
                 "gameCenterDetail" => GameCenterChallengesGetInstanceFieldsGameCenterLeaderboard.GameCenterDetail,
                 "gameCenterGroup" => GameCenterChallengesGetInstanceFieldsGameCenterLeaderboard.GameCenterGroup,
                 "gameCenterLeaderboardSets" => GameCenterChallengesGetInstanceFieldsGameCenterLeaderboard.GameCenterLeaderboardSets,
+                "gameCenterScoreModerations" => GameCenterChallengesGetInstanceFieldsGameCenterLeaderboard.GameCenterScoreModerations,
                 "groupLeaderboard" => GameCenterChallengesGetInstanceFieldsGameCenterLeaderboard.GroupLeaderboard,
                 "localizations" => GameCenterChallengesGetInstanceFieldsGameCenterLeaderboard.Localizations,
                 "recurrenceDuration" => GameCenterChallengesGetInstanceFieldsGameCenterLeaderboard.RecurrenceDuration,

@@ -35,6 +35,14 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        MarketSettings,
+        /// <summary>
+        ///
+        /// </summary>
+        MultiSeatStatus,
+        /// <summary>
+        ///
+        /// </summary>
         Name,
         /// <summary>
         ///
@@ -112,6 +120,8 @@ namespace AppStoreConnect
                 InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.GroupLevel => "groupLevel",
                 InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.Images => "images",
                 InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.IntroductoryOffers => "introductoryOffers",
+                InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.MarketSettings => "marketSettings",
+                InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.MultiSeatStatus => "multiSeatStatus",
                 InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.Name => "name",
                 InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.OfferCodes => "offerCodes",
                 InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.PlanAvailabilities => "planAvailabilities",
@@ -143,6 +153,8 @@ namespace AppStoreConnect
                 "groupLevel" => InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.GroupLevel,
                 "images" => InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.Images,
                 "introductoryOffers" => InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.IntroductoryOffers,
+                "marketSettings" => InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.MarketSettings,
+                "multiSeatStatus" => InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.MultiSeatStatus,
                 "name" => InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.Name,
                 "offerCodes" => InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.OfferCodes,
                 "planAvailabilities" => InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.PlanAvailabilities,

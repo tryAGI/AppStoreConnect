@@ -144,10 +144,22 @@ namespace AppStoreConnect
                                 .AddOptionalParameter("limit", limit?.ToString())
                                 ;
                             var __path = __pathBuilder.ToString();
+
+                var __pageUrl = global::AppStoreConnect.AutoSDKPager.ResolvePageUrl(
+                    __path,
+                    requestOptions,
+                    global::AppStoreConnect.AutoSDKPager.GetPaginationBaseAddress(HttpClient.BaseAddress, "https://api.appstoreconnect.apple.com/"));
+                if (__pageUrl is not null)
+                {
+                    __path = __pageUrl;
+                }
+                else
+                {
                 __path = global::AppStoreConnect.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
+                }
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                     method: global::System.Net.Http.HttpMethod.Get,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
@@ -647,5 +659,41 @@ namespace AppStoreConnect
                 __httpRequest?.Dispose();
             }
         }
+
+        /// <summary>
+        /// Wraps AnalyticsReportsInstancesGetToManyRelatedAsync as an IAsyncEnumerable&lt;global::AppStoreConnect.AnalyticsReportInstance&gt; that follows the response's next-page URL.
+        /// </summary>
+        /// <param name="filterGranularity"></param>
+        /// <param name="filterProcessingDate"></param>
+        /// <param name="fieldsAnalyticsReportInstances"></param>
+        /// <param name="limit"></param>
+        /// <param name="id"></param>
+        /// <param name="requestOptions">Options forwarded to every page request.</param>
+        /// <param name="cancellationToken"></param>
+        public global::System.Collections.Generic.IAsyncEnumerable<global::AppStoreConnect.AnalyticsReportInstance> AnalyticsReportsInstancesGetToManyRelatedAutoPagingAsync(
+            string id,             global::System.Collections.Generic.IList<global::AppStoreConnect.AnalyticsReportsInstancesGetToManyRelatedFilterGranularityItem>? filterGranularity = default,
+            global::System.Collections.Generic.IList<string>? filterProcessingDate = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AnalyticsReportsInstancesGetToManyRelatedFieldsAnalyticsReportInstance>? fieldsAnalyticsReportInstances = default,
+            int? limit = default,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = null,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            return global::AppStoreConnect.AutoSDKPager.NextUrlAsync<global::AppStoreConnect.AnalyticsReportInstancesResponse, global::AppStoreConnect.AnalyticsReportInstance>(
+                fetchPage: (__nextUrl, __ct) => AnalyticsReportsInstancesGetToManyRelatedAsync(
+                    filterGranularity: filterGranularity,
+                    filterProcessingDate: filterProcessingDate,
+                    fieldsAnalyticsReportInstances: fieldsAnalyticsReportInstances,
+                    limit: limit,
+                    id: id,
+                    requestOptions: global::AppStoreConnect.AutoSDKPager.CreatePageRequestOptions(requestOptions, __nextUrl),
+                    cancellationToken: __ct),
+                extractItems: static __response => __response is null
+                    ? null
+                    : (global::System.Collections.Generic.IEnumerable<global::AppStoreConnect.AnalyticsReportInstance>?)__response.Data,
+                extractNextUrl: static __response => __response is null ? null : __response.Links?.Next,
+                baseAddress: global::AppStoreConnect.AutoSDKPager.GetPaginationBaseAddress(HttpClient.BaseAddress, "https://api.appstoreconnect.apple.com/"),
+                cancellationToken: cancellationToken);
+        }
+
     }
 }

@@ -27,6 +27,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        BlockedPlayers,
+        /// <summary>
+        ///
+        /// </summary>
         ChallengeEnabled,
         /// <summary>
         ///
@@ -118,6 +122,7 @@ namespace AppStoreConnect
                 GameCenterAchievementLocalizationsGameCenterAchievementGetToOneRelatedFieldsGameCenterDetail.ActivityReleases => "activityReleases",
                 GameCenterAchievementLocalizationsGameCenterAchievementGetToOneRelatedFieldsGameCenterDetail.App => "app",
                 GameCenterAchievementLocalizationsGameCenterAchievementGetToOneRelatedFieldsGameCenterDetail.ArcadeEnabled => "arcadeEnabled",
+                GameCenterAchievementLocalizationsGameCenterAchievementGetToOneRelatedFieldsGameCenterDetail.BlockedPlayers => "blockedPlayers",
                 GameCenterAchievementLocalizationsGameCenterAchievementGetToOneRelatedFieldsGameCenterDetail.ChallengeEnabled => "challengeEnabled",
                 GameCenterAchievementLocalizationsGameCenterAchievementGetToOneRelatedFieldsGameCenterDetail.ChallengeReleases => "challengeReleases",
                 GameCenterAchievementLocalizationsGameCenterAchievementGetToOneRelatedFieldsGameCenterDetail.ChallengesMinimumPlatformVersions => "challengesMinimumPlatformVersions",
@@ -151,6 +156,7 @@ namespace AppStoreConnect
                 "activityReleases" => GameCenterAchievementLocalizationsGameCenterAchievementGetToOneRelatedFieldsGameCenterDetail.ActivityReleases,
                 "app" => GameCenterAchievementLocalizationsGameCenterAchievementGetToOneRelatedFieldsGameCenterDetail.App,
                 "arcadeEnabled" => GameCenterAchievementLocalizationsGameCenterAchievementGetToOneRelatedFieldsGameCenterDetail.ArcadeEnabled,
+                "blockedPlayers" => GameCenterAchievementLocalizationsGameCenterAchievementGetToOneRelatedFieldsGameCenterDetail.BlockedPlayers,
                 "challengeEnabled" => GameCenterAchievementLocalizationsGameCenterAchievementGetToOneRelatedFieldsGameCenterDetail.ChallengeEnabled,
                 "challengeReleases" => GameCenterAchievementLocalizationsGameCenterAchievementGetToOneRelatedFieldsGameCenterDetail.ChallengeReleases,
                 "challengesMinimumPlatformVersions" => GameCenterAchievementLocalizationsGameCenterAchievementGetToOneRelatedFieldsGameCenterDetail.ChallengesMinimumPlatformVersions,

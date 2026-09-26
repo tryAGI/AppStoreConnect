@@ -20,11 +20,11 @@ namespace AppStoreConnect
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::AppStoreConnect.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::AppStoreConnect.SubscriptionPricePointsResponse> SubscriptionPricePointsAdjustedEqualizationsGetToManyRelatedAsync(
+            global::System.Collections.Generic.IList<string> filterPlanType,
             string id,
             global::System.Collections.Generic.IList<string>? filterTerritory = default,
             global::System.Collections.Generic.IList<string>? filterSubscription = default,
             global::System.Collections.Generic.IList<string>? filterUpfrontPricePointId = default,
-            global::System.Collections.Generic.IList<string>? filterPlanType = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionPricePointsAdjustedEqualizationsGetToManyRelatedFieldsSubscriptionPricePoint>? fieldsSubscriptionPricePoints = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionPricePointsAdjustedEqualizationsGetToManyRelatedFieldsTerritorie>? fieldsTerritories = default,
             int? limit = default,
@@ -47,11 +47,11 @@ namespace AppStoreConnect
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::AppStoreConnect.ApiException"></exception>
         global::System.Threading.Tasks.Task<global::AppStoreConnect.AutoSDKHttpResponse<global::AppStoreConnect.SubscriptionPricePointsResponse>> SubscriptionPricePointsAdjustedEqualizationsGetToManyRelatedAsResponseAsync(
+            global::System.Collections.Generic.IList<string> filterPlanType,
             string id,
             global::System.Collections.Generic.IList<string>? filterTerritory = default,
             global::System.Collections.Generic.IList<string>? filterSubscription = default,
             global::System.Collections.Generic.IList<string>? filterUpfrontPricePointId = default,
-            global::System.Collections.Generic.IList<string>? filterPlanType = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionPricePointsAdjustedEqualizationsGetToManyRelatedFieldsSubscriptionPricePoint>? fieldsSubscriptionPricePoints = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionPricePointsAdjustedEqualizationsGetToManyRelatedFieldsTerritorie>? fieldsTerritories = default,
             int? limit = default,

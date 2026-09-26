@@ -34,5 +34,20 @@ namespace AppStoreConnect
             int? limit = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Wraps AppsPreReleaseVersionsGetToManyRelatedAsync as an IAsyncEnumerable&lt;global::AppStoreConnect.PrereleaseVersion&gt; that follows the response's next-page URL.
+        /// </summary>
+        /// <param name="fieldsPreReleaseVersions"></param>
+        /// <param name="limit"></param>
+        /// <param name="id"></param>
+        /// <param name="requestOptions">Options forwarded to every page request.</param>
+        /// <param name="cancellationToken"></param>
+        global::System.Collections.Generic.IAsyncEnumerable<global::AppStoreConnect.PrereleaseVersion> AppsPreReleaseVersionsGetToManyRelatedAutoPagingAsync(
+            string id,             global::System.Collections.Generic.IList<global::AppStoreConnect.AppsPreReleaseVersionsGetToManyRelatedFieldsPreReleaseVersion>? fieldsPreReleaseVersions = default,
+            int? limit = default,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = null,
+            global::System.Threading.CancellationToken cancellationToken = default);
+
     }
 }

@@ -43,6 +43,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        GameCenterScoreModerations,
+        /// <summary>
+        ///
+        /// </summary>
         RecurrenceDuration,
         /// <summary>
         ///
@@ -106,6 +110,7 @@ namespace AppStoreConnect
                 GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboard.GameCenterDetail => "gameCenterDetail",
                 GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboard.GameCenterGroup => "gameCenterGroup",
                 GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboard.GameCenterLeaderboardSets => "gameCenterLeaderboardSets",
+                GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboard.GameCenterScoreModerations => "gameCenterScoreModerations",
                 GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboard.RecurrenceDuration => "recurrenceDuration",
                 GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboard.RecurrenceRule => "recurrenceRule",
                 GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboard.RecurrenceStartDate => "recurrenceStartDate",
@@ -135,6 +140,7 @@ namespace AppStoreConnect
                 "gameCenterDetail" => GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboard.GameCenterDetail,
                 "gameCenterGroup" => GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboard.GameCenterGroup,
                 "gameCenterLeaderboardSets" => GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboard.GameCenterLeaderboardSets,
+                "gameCenterScoreModerations" => GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboard.GameCenterScoreModerations,
                 "recurrenceDuration" => GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboard.RecurrenceDuration,
                 "recurrenceRule" => GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboard.RecurrenceRule,
                 "recurrenceStartDate" => GameCenterLeaderboardSetsV2GetInstanceFieldsGameCenterLeaderboard.RecurrenceStartDate,

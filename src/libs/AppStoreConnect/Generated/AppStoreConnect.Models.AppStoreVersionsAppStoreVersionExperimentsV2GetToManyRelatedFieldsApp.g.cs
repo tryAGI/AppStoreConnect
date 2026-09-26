@@ -175,6 +175,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        PerformanceOverviews,
+        /// <summary>
+        ///
+        /// </summary>
         PreReleaseVersions,
         /// <summary>
         ///
@@ -283,6 +287,7 @@ namespace AppStoreConnect
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.MarketplaceSearchDetail => "marketplaceSearchDetail",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.Name => "name",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.PerfPowerMetrics => "perfPowerMetrics",
+                AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.PerformanceOverviews => "performanceOverviews",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.PrimaryLocale => "primaryLocale",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.PromotedPurchases => "promotedPurchases",
@@ -348,6 +353,7 @@ namespace AppStoreConnect
                 "marketplaceSearchDetail" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.MarketplaceSearchDetail,
                 "name" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.Name,
                 "perfPowerMetrics" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.PerfPowerMetrics,
+                "performanceOverviews" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.PerformanceOverviews,
                 "preReleaseVersions" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.PreReleaseVersions,
                 "primaryLocale" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.PrimaryLocale,
                 "promotedPurchases" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.PromotedPurchases,

@@ -35,6 +35,14 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        MarketSettings,
+        /// <summary>
+        ///
+        /// </summary>
+        MultiSeatStatus,
+        /// <summary>
+        ///
+        /// </summary>
         Name,
         /// <summary>
         ///
@@ -112,6 +120,8 @@ namespace AppStoreConnect
                 SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.GroupLevel => "groupLevel",
                 SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.Images => "images",
                 SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.IntroductoryOffers => "introductoryOffers",
+                SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.MarketSettings => "marketSettings",
+                SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.MultiSeatStatus => "multiSeatStatus",
                 SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.Name => "name",
                 SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.OfferCodes => "offerCodes",
                 SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.PlanAvailabilities => "planAvailabilities",
@@ -143,6 +153,8 @@ namespace AppStoreConnect
                 "groupLevel" => SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.GroupLevel,
                 "images" => SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.Images,
                 "introductoryOffers" => SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.IntroductoryOffers,
+                "marketSettings" => SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.MarketSettings,
+                "multiSeatStatus" => SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.MultiSeatStatus,
                 "name" => SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.Name,
                 "offerCodes" => SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.OfferCodes,
                 "planAvailabilities" => SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.PlanAvailabilities,

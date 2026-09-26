@@ -47,6 +47,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        GracRatingClassificationNumber,
+        /// <summary>
+        ///
+        /// </summary>
         GunsOrOtherWeapons,
         /// <summary>
         ///
@@ -147,6 +151,7 @@ namespace AppStoreConnect
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.DeveloperAgeRatingInfoUrl => "developerAgeRatingInfoUrl",
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.Gambling => "gambling",
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.GamblingSimulated => "gamblingSimulated",
+                AppInfosGetInstanceFieldsAgeRatingDeclaration.GracRatingClassificationNumber => "gracRatingClassificationNumber",
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.GunsOrOtherWeapons => "gunsOrOtherWeapons",
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.HealthOrWellnessTopics => "healthOrWellnessTopics",
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.HorrorOrFearThemes => "horrorOrFearThemes",
@@ -186,6 +191,7 @@ namespace AppStoreConnect
                 "developerAgeRatingInfoUrl" => AppInfosGetInstanceFieldsAgeRatingDeclaration.DeveloperAgeRatingInfoUrl,
                 "gambling" => AppInfosGetInstanceFieldsAgeRatingDeclaration.Gambling,
                 "gamblingSimulated" => AppInfosGetInstanceFieldsAgeRatingDeclaration.GamblingSimulated,
+                "gracRatingClassificationNumber" => AppInfosGetInstanceFieldsAgeRatingDeclaration.GracRatingClassificationNumber,
                 "gunsOrOtherWeapons" => AppInfosGetInstanceFieldsAgeRatingDeclaration.GunsOrOtherWeapons,
                 "healthOrWellnessTopics" => AppInfosGetInstanceFieldsAgeRatingDeclaration.HealthOrWellnessTopics,
                 "horrorOrFearThemes" => AppInfosGetInstanceFieldsAgeRatingDeclaration.HorrorOrFearThemes,

@@ -71,13 +71,6 @@ namespace AppStoreConnect
         public global::AppStoreConnect.AppInfoAttributesKoreaAgeRating? KoreaAgeRating { get; set; }
 
         /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("kidsAgeBand")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.KidsAgeBandJsonConverter))]
-        public global::AppStoreConnect.KidsAgeBand? KidsAgeBand { get; set; }
-
-        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -90,7 +83,6 @@ namespace AppStoreConnect
         /// <param name="state"></param>
         /// <param name="appStoreAgeRating"></param>
         /// <param name="brazilAgeRating"></param>
-        /// <param name="kidsAgeBand"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -98,14 +90,12 @@ namespace AppStoreConnect
             global::AppStoreConnect.AppStoreVersionState? appStoreState,
             global::AppStoreConnect.AppInfoAttributesState? state,
             global::AppStoreConnect.AppStoreAgeRating? appStoreAgeRating,
-            global::AppStoreConnect.BrazilAgeRating? brazilAgeRating,
-            global::AppStoreConnect.KidsAgeBand? kidsAgeBand)
+            global::AppStoreConnect.BrazilAgeRating? brazilAgeRating)
         {
             this.AppStoreState = appStoreState;
             this.State = state;
             this.AppStoreAgeRating = appStoreAgeRating;
             this.BrazilAgeRating = brazilAgeRating;
-            this.KidsAgeBand = kidsAgeBand;
         }
 
         /// <summary>

@@ -30,5 +30,18 @@ namespace AppStoreConnect
             int? limit = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Wraps AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelationshipAsync as an IAsyncEnumerable&lt;global::AppStoreConnect.AppStoreVersionAppStoreVersionExperimentsV2LinkagesResponseDataItem&gt; that follows the response's next-page URL.
+        /// </summary>
+        /// <param name="limit"></param>
+        /// <param name="id"></param>
+        /// <param name="requestOptions">Options forwarded to every page request.</param>
+        /// <param name="cancellationToken"></param>
+        global::System.Collections.Generic.IAsyncEnumerable<global::AppStoreConnect.AppStoreVersionAppStoreVersionExperimentsV2LinkagesResponseDataItem> AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelationshipAutoPagingAsync(
+            string id,             int? limit = default,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = null,
+            global::System.Threading.CancellationToken cancellationToken = default);
+
     }
 }

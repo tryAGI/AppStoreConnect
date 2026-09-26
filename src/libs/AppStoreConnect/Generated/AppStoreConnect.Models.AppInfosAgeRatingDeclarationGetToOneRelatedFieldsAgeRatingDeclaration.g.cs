@@ -47,6 +47,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        GracRatingClassificationNumber,
+        /// <summary>
+        ///
+        /// </summary>
         GunsOrOtherWeapons,
         /// <summary>
         ///
@@ -147,6 +151,7 @@ namespace AppStoreConnect
                 AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration.DeveloperAgeRatingInfoUrl => "developerAgeRatingInfoUrl",
                 AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration.Gambling => "gambling",
                 AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration.GamblingSimulated => "gamblingSimulated",
+                AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration.GracRatingClassificationNumber => "gracRatingClassificationNumber",
                 AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration.GunsOrOtherWeapons => "gunsOrOtherWeapons",
                 AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration.HealthOrWellnessTopics => "healthOrWellnessTopics",
                 AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration.HorrorOrFearThemes => "horrorOrFearThemes",
@@ -186,6 +191,7 @@ namespace AppStoreConnect
                 "developerAgeRatingInfoUrl" => AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration.DeveloperAgeRatingInfoUrl,
                 "gambling" => AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration.Gambling,
                 "gamblingSimulated" => AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration.GamblingSimulated,
+                "gracRatingClassificationNumber" => AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration.GracRatingClassificationNumber,
                 "gunsOrOtherWeapons" => AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration.GunsOrOtherWeapons,
                 "healthOrWellnessTopics" => AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration.HealthOrWellnessTopics,
                 "horrorOrFearThemes" => AppInfosAgeRatingDeclarationGetToOneRelatedFieldsAgeRatingDeclaration.HorrorOrFearThemes,

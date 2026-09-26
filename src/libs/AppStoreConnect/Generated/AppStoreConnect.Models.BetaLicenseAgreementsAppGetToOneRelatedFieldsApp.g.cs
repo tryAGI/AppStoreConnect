@@ -175,6 +175,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        PerformanceOverviews,
+        /// <summary>
+        ///
+        /// </summary>
         PreReleaseVersions,
         /// <summary>
         ///
@@ -283,6 +287,7 @@ namespace AppStoreConnect
                 BetaLicenseAgreementsAppGetToOneRelatedFieldsApp.MarketplaceSearchDetail => "marketplaceSearchDetail",
                 BetaLicenseAgreementsAppGetToOneRelatedFieldsApp.Name => "name",
                 BetaLicenseAgreementsAppGetToOneRelatedFieldsApp.PerfPowerMetrics => "perfPowerMetrics",
+                BetaLicenseAgreementsAppGetToOneRelatedFieldsApp.PerformanceOverviews => "performanceOverviews",
                 BetaLicenseAgreementsAppGetToOneRelatedFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 BetaLicenseAgreementsAppGetToOneRelatedFieldsApp.PrimaryLocale => "primaryLocale",
                 BetaLicenseAgreementsAppGetToOneRelatedFieldsApp.PromotedPurchases => "promotedPurchases",
@@ -348,6 +353,7 @@ namespace AppStoreConnect
                 "marketplaceSearchDetail" => BetaLicenseAgreementsAppGetToOneRelatedFieldsApp.MarketplaceSearchDetail,
                 "name" => BetaLicenseAgreementsAppGetToOneRelatedFieldsApp.Name,
                 "perfPowerMetrics" => BetaLicenseAgreementsAppGetToOneRelatedFieldsApp.PerfPowerMetrics,
+                "performanceOverviews" => BetaLicenseAgreementsAppGetToOneRelatedFieldsApp.PerformanceOverviews,
                 "preReleaseVersions" => BetaLicenseAgreementsAppGetToOneRelatedFieldsApp.PreReleaseVersions,
                 "primaryLocale" => BetaLicenseAgreementsAppGetToOneRelatedFieldsApp.PrimaryLocale,
                 "promotedPurchases" => BetaLicenseAgreementsAppGetToOneRelatedFieldsApp.PromotedPurchases,
