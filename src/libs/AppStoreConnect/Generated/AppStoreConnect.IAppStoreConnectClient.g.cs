@@ -602,6 +602,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        public GameCenterDetailPlayersClient GameCenterDetailPlayers { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
         public GameCenterDetailsClient GameCenterDetails { get; }
 
         /// <summary>
@@ -688,6 +693,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public GameCenterPlayerAchievementSubmissionsClient GameCenterPlayerAchievementSubmissions { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public GameCenterScoreModerationsClient GameCenterScoreModerations { get; }
 
         /// <summary>
         ///

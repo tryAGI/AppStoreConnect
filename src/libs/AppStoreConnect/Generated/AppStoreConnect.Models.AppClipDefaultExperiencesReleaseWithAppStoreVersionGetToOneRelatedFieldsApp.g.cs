@@ -175,6 +175,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        PerformanceOverviews,
+        /// <summary>
+        ///
+        /// </summary>
         PreReleaseVersions,
         /// <summary>
         ///
@@ -283,6 +287,7 @@ namespace AppStoreConnect
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.MarketplaceSearchDetail => "marketplaceSearchDetail",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.Name => "name",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.PerfPowerMetrics => "perfPowerMetrics",
+                AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.PerformanceOverviews => "performanceOverviews",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.PrimaryLocale => "primaryLocale",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.PromotedPurchases => "promotedPurchases",
@@ -348,6 +353,7 @@ namespace AppStoreConnect
                 "marketplaceSearchDetail" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.MarketplaceSearchDetail,
                 "name" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.Name,
                 "perfPowerMetrics" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.PerfPowerMetrics,
+                "performanceOverviews" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.PerformanceOverviews,
                 "preReleaseVersions" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.PreReleaseVersions,
                 "primaryLocale" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.PrimaryLocale,
                 "promotedPurchases" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.PromotedPurchases,

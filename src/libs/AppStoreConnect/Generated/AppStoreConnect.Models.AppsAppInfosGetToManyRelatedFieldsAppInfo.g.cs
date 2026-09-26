@@ -47,10 +47,6 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        KidsAgeBand,
-        /// <summary>
-        ///
-        /// </summary>
         KoreaAgeRating,
         /// <summary>
         ///
@@ -107,7 +103,6 @@ namespace AppStoreConnect
                 AppsAppInfosGetToManyRelatedFieldsAppInfo.BrazilAgeRating => "brazilAgeRating",
                 AppsAppInfosGetToManyRelatedFieldsAppInfo.BrazilAgeRatingV2 => "brazilAgeRatingV2",
                 AppsAppInfosGetToManyRelatedFieldsAppInfo.FranceAgeRating => "franceAgeRating",
-                AppsAppInfosGetToManyRelatedFieldsAppInfo.KidsAgeBand => "kidsAgeBand",
                 AppsAppInfosGetToManyRelatedFieldsAppInfo.KoreaAgeRating => "koreaAgeRating",
                 AppsAppInfosGetToManyRelatedFieldsAppInfo.PrimaryCategory => "primaryCategory",
                 AppsAppInfosGetToManyRelatedFieldsAppInfo.PrimarySubcategoryOne => "primarySubcategoryOne",
@@ -136,7 +131,6 @@ namespace AppStoreConnect
                 "brazilAgeRating" => AppsAppInfosGetToManyRelatedFieldsAppInfo.BrazilAgeRating,
                 "brazilAgeRatingV2" => AppsAppInfosGetToManyRelatedFieldsAppInfo.BrazilAgeRatingV2,
                 "franceAgeRating" => AppsAppInfosGetToManyRelatedFieldsAppInfo.FranceAgeRating,
-                "kidsAgeBand" => AppsAppInfosGetToManyRelatedFieldsAppInfo.KidsAgeBand,
                 "koreaAgeRating" => AppsAppInfosGetToManyRelatedFieldsAppInfo.KoreaAgeRating,
                 "primaryCategory" => AppsAppInfosGetToManyRelatedFieldsAppInfo.PrimaryCategory,
                 "primarySubcategoryOne" => AppsAppInfosGetToManyRelatedFieldsAppInfo.PrimarySubcategoryOne,

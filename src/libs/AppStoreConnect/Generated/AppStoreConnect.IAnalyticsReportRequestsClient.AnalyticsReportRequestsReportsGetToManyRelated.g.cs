@@ -42,5 +42,24 @@ namespace AppStoreConnect
             int? limit = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Wraps AnalyticsReportRequestsReportsGetToManyRelatedAsync as an IAsyncEnumerable&lt;global::AppStoreConnect.AnalyticsReport&gt; that follows the response's next-page URL.
+        /// </summary>
+        /// <param name="filterName"></param>
+        /// <param name="filterCategory"></param>
+        /// <param name="fieldsAnalyticsReports"></param>
+        /// <param name="limit"></param>
+        /// <param name="id"></param>
+        /// <param name="requestOptions">Options forwarded to every page request.</param>
+        /// <param name="cancellationToken"></param>
+        global::System.Collections.Generic.IAsyncEnumerable<global::AppStoreConnect.AnalyticsReport> AnalyticsReportRequestsReportsGetToManyRelatedAutoPagingAsync(
+            string id,             global::System.Collections.Generic.IList<string>? filterName = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AnalyticsReportRequestsReportsGetToManyRelatedFilterCategoryItem>? filterCategory = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AnalyticsReportRequestsReportsGetToManyRelatedFieldsAnalyticsReport>? fieldsAnalyticsReports = default,
+            int? limit = default,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = null,
+            global::System.Threading.CancellationToken cancellationToken = default);
+
     }
 }

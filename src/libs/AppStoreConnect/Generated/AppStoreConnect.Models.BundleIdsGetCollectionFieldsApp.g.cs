@@ -175,6 +175,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        PerformanceOverviews,
+        /// <summary>
+        ///
+        /// </summary>
         PreReleaseVersions,
         /// <summary>
         ///
@@ -283,6 +287,7 @@ namespace AppStoreConnect
                 BundleIdsGetCollectionFieldsApp.MarketplaceSearchDetail => "marketplaceSearchDetail",
                 BundleIdsGetCollectionFieldsApp.Name => "name",
                 BundleIdsGetCollectionFieldsApp.PerfPowerMetrics => "perfPowerMetrics",
+                BundleIdsGetCollectionFieldsApp.PerformanceOverviews => "performanceOverviews",
                 BundleIdsGetCollectionFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 BundleIdsGetCollectionFieldsApp.PrimaryLocale => "primaryLocale",
                 BundleIdsGetCollectionFieldsApp.PromotedPurchases => "promotedPurchases",
@@ -348,6 +353,7 @@ namespace AppStoreConnect
                 "marketplaceSearchDetail" => BundleIdsGetCollectionFieldsApp.MarketplaceSearchDetail,
                 "name" => BundleIdsGetCollectionFieldsApp.Name,
                 "perfPowerMetrics" => BundleIdsGetCollectionFieldsApp.PerfPowerMetrics,
+                "performanceOverviews" => BundleIdsGetCollectionFieldsApp.PerformanceOverviews,
                 "preReleaseVersions" => BundleIdsGetCollectionFieldsApp.PreReleaseVersions,
                 "primaryLocale" => BundleIdsGetCollectionFieldsApp.PrimaryLocale,
                 "promotedPurchases" => BundleIdsGetCollectionFieldsApp.PromotedPurchases,

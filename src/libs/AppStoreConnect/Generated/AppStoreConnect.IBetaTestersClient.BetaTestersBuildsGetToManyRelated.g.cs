@@ -34,5 +34,20 @@ namespace AppStoreConnect
             int? limit = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Wraps BetaTestersBuildsGetToManyRelatedAsync as an IAsyncEnumerable&lt;global::AppStoreConnect.Build&gt; that follows the response's next-page URL.
+        /// </summary>
+        /// <param name="fieldsBuilds"></param>
+        /// <param name="limit"></param>
+        /// <param name="id"></param>
+        /// <param name="requestOptions">Options forwarded to every page request.</param>
+        /// <param name="cancellationToken"></param>
+        global::System.Collections.Generic.IAsyncEnumerable<global::AppStoreConnect.Build> BetaTestersBuildsGetToManyRelatedAutoPagingAsync(
+            string id,             global::System.Collections.Generic.IList<global::AppStoreConnect.BetaTestersBuildsGetToManyRelatedFieldsBuild>? fieldsBuilds = default,
+            int? limit = default,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = null,
+            global::System.Threading.CancellationToken cancellationToken = default);
+
     }
 }

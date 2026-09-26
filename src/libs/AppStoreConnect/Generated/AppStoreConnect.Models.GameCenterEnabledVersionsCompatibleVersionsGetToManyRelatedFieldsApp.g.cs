@@ -175,6 +175,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        PerformanceOverviews,
+        /// <summary>
+        ///
+        /// </summary>
         PreReleaseVersions,
         /// <summary>
         ///
@@ -283,6 +287,7 @@ namespace AppStoreConnect
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.MarketplaceSearchDetail => "marketplaceSearchDetail",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.Name => "name",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.PerfPowerMetrics => "perfPowerMetrics",
+                GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.PerformanceOverviews => "performanceOverviews",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.PrimaryLocale => "primaryLocale",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.PromotedPurchases => "promotedPurchases",
@@ -348,6 +353,7 @@ namespace AppStoreConnect
                 "marketplaceSearchDetail" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.MarketplaceSearchDetail,
                 "name" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.Name,
                 "perfPowerMetrics" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.PerfPowerMetrics,
+                "performanceOverviews" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.PerformanceOverviews,
                 "preReleaseVersions" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.PreReleaseVersions,
                 "primaryLocale" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.PrimaryLocale,
                 "promotedPurchases" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.PromotedPurchases,

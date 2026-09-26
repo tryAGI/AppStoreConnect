@@ -53,6 +53,19 @@ namespace AppStoreConnect
         public int? GroupLevel { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("multiSeatStatus")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.SubscriptionAttributesMultiSeatStatusJsonConverter))]
+        public global::AppStoreConnect.SubscriptionAttributesMultiSeatStatus? MultiSeatStatus { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("marketSettings")]
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionAttributesMarketSetting>? MarketSettings { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -68,6 +81,8 @@ namespace AppStoreConnect
         /// <param name="subscriptionPeriod"></param>
         /// <param name="reviewNote"></param>
         /// <param name="groupLevel"></param>
+        /// <param name="multiSeatStatus"></param>
+        /// <param name="marketSettings"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -78,7 +93,9 @@ namespace AppStoreConnect
             global::AppStoreConnect.SubscriptionAttributesState? state,
             global::AppStoreConnect.SubscriptionAttributesSubscriptionPeriod? subscriptionPeriod,
             string? reviewNote,
-            int? groupLevel)
+            int? groupLevel,
+            global::AppStoreConnect.SubscriptionAttributesMultiSeatStatus? multiSeatStatus,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionAttributesMarketSetting>? marketSettings)
         {
             this.Name = name;
             this.ProductId = productId;
@@ -87,6 +104,8 @@ namespace AppStoreConnect
             this.SubscriptionPeriod = subscriptionPeriod;
             this.ReviewNote = reviewNote;
             this.GroupLevel = groupLevel;
+            this.MultiSeatStatus = multiSeatStatus;
+            this.MarketSettings = marketSettings;
         }
 
         /// <summary>

@@ -35,6 +35,14 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        MarketSettings,
+        /// <summary>
+        ///
+        /// </summary>
+        MultiSeatStatus,
+        /// <summary>
+        ///
+        /// </summary>
         Name,
         /// <summary>
         ///
@@ -112,6 +120,8 @@ namespace AppStoreConnect
                 SubscriptionsVersionsGetToManyRelatedFieldsSubscription.GroupLevel => "groupLevel",
                 SubscriptionsVersionsGetToManyRelatedFieldsSubscription.Images => "images",
                 SubscriptionsVersionsGetToManyRelatedFieldsSubscription.IntroductoryOffers => "introductoryOffers",
+                SubscriptionsVersionsGetToManyRelatedFieldsSubscription.MarketSettings => "marketSettings",
+                SubscriptionsVersionsGetToManyRelatedFieldsSubscription.MultiSeatStatus => "multiSeatStatus",
                 SubscriptionsVersionsGetToManyRelatedFieldsSubscription.Name => "name",
                 SubscriptionsVersionsGetToManyRelatedFieldsSubscription.OfferCodes => "offerCodes",
                 SubscriptionsVersionsGetToManyRelatedFieldsSubscription.PlanAvailabilities => "planAvailabilities",
@@ -143,6 +153,8 @@ namespace AppStoreConnect
                 "groupLevel" => SubscriptionsVersionsGetToManyRelatedFieldsSubscription.GroupLevel,
                 "images" => SubscriptionsVersionsGetToManyRelatedFieldsSubscription.Images,
                 "introductoryOffers" => SubscriptionsVersionsGetToManyRelatedFieldsSubscription.IntroductoryOffers,
+                "marketSettings" => SubscriptionsVersionsGetToManyRelatedFieldsSubscription.MarketSettings,
+                "multiSeatStatus" => SubscriptionsVersionsGetToManyRelatedFieldsSubscription.MultiSeatStatus,
                 "name" => SubscriptionsVersionsGetToManyRelatedFieldsSubscription.Name,
                 "offerCodes" => SubscriptionsVersionsGetToManyRelatedFieldsSubscription.OfferCodes,
                 "planAvailabilities" => SubscriptionsVersionsGetToManyRelatedFieldsSubscription.PlanAvailabilities,

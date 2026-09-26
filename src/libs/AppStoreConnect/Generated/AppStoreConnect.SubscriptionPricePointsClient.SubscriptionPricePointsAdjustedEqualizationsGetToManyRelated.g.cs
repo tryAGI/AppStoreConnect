@@ -30,7 +30,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<string>? filterTerritory,
             global::System.Collections.Generic.IList<string>? filterSubscription,
             global::System.Collections.Generic.IList<string>? filterUpfrontPricePointId,
-            global::System.Collections.Generic.IList<string>? filterPlanType,
+            global::System.Collections.Generic.IList<string> filterPlanType,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionPricePointsAdjustedEqualizationsGetToManyRelatedFieldsSubscriptionPricePoint>? fieldsSubscriptionPricePoints,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionPricePointsAdjustedEqualizationsGetToManyRelatedFieldsTerritorie>? fieldsTerritories,
             ref int? limit,
@@ -42,7 +42,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<string>? filterTerritory,
             global::System.Collections.Generic.IList<string>? filterSubscription,
             global::System.Collections.Generic.IList<string>? filterUpfrontPricePointId,
-            global::System.Collections.Generic.IList<string>? filterPlanType,
+            global::System.Collections.Generic.IList<string> filterPlanType,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionPricePointsAdjustedEqualizationsGetToManyRelatedFieldsSubscriptionPricePoint>? fieldsSubscriptionPricePoints,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionPricePointsAdjustedEqualizationsGetToManyRelatedFieldsTerritorie>? fieldsTerritories,
             int? limit,
@@ -73,11 +73,11 @@ namespace AppStoreConnect
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::AppStoreConnect.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::AppStoreConnect.SubscriptionPricePointsResponse> SubscriptionPricePointsAdjustedEqualizationsGetToManyRelatedAsync(
+            global::System.Collections.Generic.IList<string> filterPlanType,
             string id,
             global::System.Collections.Generic.IList<string>? filterTerritory = default,
             global::System.Collections.Generic.IList<string>? filterSubscription = default,
             global::System.Collections.Generic.IList<string>? filterUpfrontPricePointId = default,
-            global::System.Collections.Generic.IList<string>? filterPlanType = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionPricePointsAdjustedEqualizationsGetToManyRelatedFieldsSubscriptionPricePoint>? fieldsSubscriptionPricePoints = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionPricePointsAdjustedEqualizationsGetToManyRelatedFieldsTerritorie>? fieldsTerritories = default,
             int? limit = default,
@@ -86,11 +86,11 @@ namespace AppStoreConnect
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var __response = await SubscriptionPricePointsAdjustedEqualizationsGetToManyRelatedAsResponseAsync(
+                filterPlanType: filterPlanType,
                 id: id,
                 filterTerritory: filterTerritory,
                 filterSubscription: filterSubscription,
                 filterUpfrontPricePointId: filterUpfrontPricePointId,
-                filterPlanType: filterPlanType,
                 fieldsSubscriptionPricePoints: fieldsSubscriptionPricePoints,
                 fieldsTerritories: fieldsTerritories,
                 limit: limit,
@@ -117,11 +117,11 @@ namespace AppStoreConnect
         /// <param name="cancellationToken">The token to cancel the operation with</param>
         /// <exception cref="global::AppStoreConnect.ApiException"></exception>
         public async global::System.Threading.Tasks.Task<global::AppStoreConnect.AutoSDKHttpResponse<global::AppStoreConnect.SubscriptionPricePointsResponse>> SubscriptionPricePointsAdjustedEqualizationsGetToManyRelatedAsResponseAsync(
+            global::System.Collections.Generic.IList<string> filterPlanType,
             string id,
             global::System.Collections.Generic.IList<string>? filterTerritory = default,
             global::System.Collections.Generic.IList<string>? filterSubscription = default,
             global::System.Collections.Generic.IList<string>? filterUpfrontPricePointId = default,
-            global::System.Collections.Generic.IList<string>? filterPlanType = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionPricePointsAdjustedEqualizationsGetToManyRelatedFieldsSubscriptionPricePoint>? fieldsSubscriptionPricePoints = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionPricePointsAdjustedEqualizationsGetToManyRelatedFieldsTerritorie>? fieldsTerritories = default,
             int? limit = default,
@@ -173,7 +173,7 @@ namespace AppStoreConnect
                                 .AddOptionalParameter("filter[territory]", filterTerritory, delimiter: ",", explode: false)
                                 .AddOptionalParameter("filter[subscription]", filterSubscription, delimiter: ",", explode: false)
                                 .AddOptionalParameter("filter[upfrontPricePointId]", filterUpfrontPricePointId, delimiter: ",", explode: false)
-                                .AddOptionalParameter("filter[planType]", filterPlanType, delimiter: ",", explode: false)
+                                .AddRequiredParameter("filter[planType]", filterPlanType, delimiter: ",", explode: false)
                                 .AddOptionalParameter("fields[subscriptionPricePoints]", fieldsSubscriptionPricePoints, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("fields[territories]", fieldsTerritories, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("limit", limit?.ToString())
@@ -226,7 +226,7 @@ namespace AppStoreConnect
                     filterTerritory: filterTerritory,
                     filterSubscription: filterSubscription,
                     filterUpfrontPricePointId: filterUpfrontPricePointId,
-                    filterPlanType: filterPlanType,
+                    filterPlanType: filterPlanType!,
                     fieldsSubscriptionPricePoints: fieldsSubscriptionPricePoints,
                     fieldsTerritories: fieldsTerritories,
                     limit: limit,

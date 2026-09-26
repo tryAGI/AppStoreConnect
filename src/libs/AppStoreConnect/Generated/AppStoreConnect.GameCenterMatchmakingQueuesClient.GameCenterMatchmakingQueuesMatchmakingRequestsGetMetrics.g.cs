@@ -162,10 +162,22 @@ namespace AppStoreConnect
                                 .AddOptionalParameter("limit", limit?.ToString())
                                 ;
                             var __path = __pathBuilder.ToString();
+
+                var __pageUrl = global::AppStoreConnect.AutoSDKPager.ResolvePageUrl(
+                    __path,
+                    requestOptions,
+                    global::AppStoreConnect.AutoSDKPager.GetPaginationBaseAddress(HttpClient.BaseAddress, "https://api.appstoreconnect.apple.com/"));
+                if (__pageUrl is not null)
+                {
+                    __path = __pageUrl;
+                }
+                else
+                {
                 __path = global::AppStoreConnect.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
+                }
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                     method: global::System.Net.Http.HttpMethod.Get,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
@@ -667,5 +679,47 @@ namespace AppStoreConnect
                 __httpRequest?.Dispose();
             }
         }
+
+        /// <summary>
+        /// Wraps GameCenterMatchmakingQueuesMatchmakingRequestsGetMetricsAsync as an IAsyncEnumerable&lt;global::AppStoreConnect.GameCenterMatchmakingQueueRequestsV1MetricResponseDataItem&gt; that follows the response's next-page URL.
+        /// </summary>
+        /// <param name="granularity"></param>
+        /// <param name="groupBy"></param>
+        /// <param name="filterResult"></param>
+        /// <param name="filterGameCenterDetail"></param>
+        /// <param name="sort"></param>
+        /// <param name="limit"></param>
+        /// <param name="id"></param>
+        /// <param name="requestOptions">Options forwarded to every page request.</param>
+        /// <param name="cancellationToken"></param>
+        public global::System.Collections.Generic.IAsyncEnumerable<global::AppStoreConnect.GameCenterMatchmakingQueueRequestsV1MetricResponseDataItem> GameCenterMatchmakingQueuesMatchmakingRequestsGetMetricsAutoPagingAsync(
+            global::AppStoreConnect.GameCenterMatchmakingQueuesMatchmakingRequestsGetMetricsGranularity granularity,
+            string id,             global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterMatchmakingQueuesMatchmakingRequestsGetMetricsGroupByItem>? groupBy = default,
+            global::AppStoreConnect.GameCenterMatchmakingQueuesMatchmakingRequestsGetMetricsFilterResult? filterResult = default,
+            string? filterGameCenterDetail = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterMatchmakingQueuesMatchmakingRequestsGetMetricsSortItem>? sort = default,
+            int? limit = default,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = null,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            return global::AppStoreConnect.AutoSDKPager.NextUrlAsync<global::AppStoreConnect.GameCenterMatchmakingQueueRequestsV1MetricResponse, global::AppStoreConnect.GameCenterMatchmakingQueueRequestsV1MetricResponseDataItem>(
+                fetchPage: (__nextUrl, __ct) => GameCenterMatchmakingQueuesMatchmakingRequestsGetMetricsAsync(
+                    granularity: granularity,
+                    groupBy: groupBy,
+                    filterResult: filterResult,
+                    filterGameCenterDetail: filterGameCenterDetail,
+                    sort: sort,
+                    limit: limit,
+                    id: id,
+                    requestOptions: global::AppStoreConnect.AutoSDKPager.CreatePageRequestOptions(requestOptions, __nextUrl),
+                    cancellationToken: __ct),
+                extractItems: static __response => __response is null
+                    ? null
+                    : (global::System.Collections.Generic.IEnumerable<global::AppStoreConnect.GameCenterMatchmakingQueueRequestsV1MetricResponseDataItem>?)__response.Data,
+                extractNextUrl: static __response => __response is null ? null : __response.Links?.Next,
+                baseAddress: global::AppStoreConnect.AutoSDKPager.GetPaginationBaseAddress(HttpClient.BaseAddress, "https://api.appstoreconnect.apple.com/"),
+                cancellationToken: cancellationToken);
+        }
+
     }
 }

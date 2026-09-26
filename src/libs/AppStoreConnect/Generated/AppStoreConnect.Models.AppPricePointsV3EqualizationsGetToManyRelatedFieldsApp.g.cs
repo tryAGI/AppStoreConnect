@@ -175,6 +175,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        PerformanceOverviews,
+        /// <summary>
+        ///
+        /// </summary>
         PreReleaseVersions,
         /// <summary>
         ///
@@ -283,6 +287,7 @@ namespace AppStoreConnect
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.MarketplaceSearchDetail => "marketplaceSearchDetail",
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.Name => "name",
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.PerfPowerMetrics => "perfPowerMetrics",
+                AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.PerformanceOverviews => "performanceOverviews",
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.PrimaryLocale => "primaryLocale",
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.PromotedPurchases => "promotedPurchases",
@@ -348,6 +353,7 @@ namespace AppStoreConnect
                 "marketplaceSearchDetail" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.MarketplaceSearchDetail,
                 "name" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.Name,
                 "perfPowerMetrics" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.PerfPowerMetrics,
+                "performanceOverviews" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.PerformanceOverviews,
                 "preReleaseVersions" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.PreReleaseVersions,
                 "primaryLocale" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.PrimaryLocale,
                 "promotedPurchases" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.PromotedPurchases,

@@ -50,5 +50,28 @@ namespace AppStoreConnect
             int? limit = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Wraps GameCenterMatchmakingQueuesMatchmakingRequestsGetMetricsAsync as an IAsyncEnumerable&lt;global::AppStoreConnect.GameCenterMatchmakingQueueRequestsV1MetricResponseDataItem&gt; that follows the response's next-page URL.
+        /// </summary>
+        /// <param name="granularity"></param>
+        /// <param name="groupBy"></param>
+        /// <param name="filterResult"></param>
+        /// <param name="filterGameCenterDetail"></param>
+        /// <param name="sort"></param>
+        /// <param name="limit"></param>
+        /// <param name="id"></param>
+        /// <param name="requestOptions">Options forwarded to every page request.</param>
+        /// <param name="cancellationToken"></param>
+        global::System.Collections.Generic.IAsyncEnumerable<global::AppStoreConnect.GameCenterMatchmakingQueueRequestsV1MetricResponseDataItem> GameCenterMatchmakingQueuesMatchmakingRequestsGetMetricsAutoPagingAsync(
+            global::AppStoreConnect.GameCenterMatchmakingQueuesMatchmakingRequestsGetMetricsGranularity granularity,
+            string id,             global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterMatchmakingQueuesMatchmakingRequestsGetMetricsGroupByItem>? groupBy = default,
+            global::AppStoreConnect.GameCenterMatchmakingQueuesMatchmakingRequestsGetMetricsFilterResult? filterResult = default,
+            string? filterGameCenterDetail = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterMatchmakingQueuesMatchmakingRequestsGetMetricsSortItem>? sort = default,
+            int? limit = default,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = null,
+            global::System.Threading.CancellationToken cancellationToken = default);
+
     }
 }

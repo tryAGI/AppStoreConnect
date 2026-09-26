@@ -35,6 +35,14 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        MarketSettings,
+        /// <summary>
+        ///
+        /// </summary>
+        MultiSeatStatus,
+        /// <summary>
+        ///
+        /// </summary>
         Name,
         /// <summary>
         ///
@@ -112,6 +120,8 @@ namespace AppStoreConnect
                 SubscriptionPromotionalOffersGetInstanceFieldsSubscription.GroupLevel => "groupLevel",
                 SubscriptionPromotionalOffersGetInstanceFieldsSubscription.Images => "images",
                 SubscriptionPromotionalOffersGetInstanceFieldsSubscription.IntroductoryOffers => "introductoryOffers",
+                SubscriptionPromotionalOffersGetInstanceFieldsSubscription.MarketSettings => "marketSettings",
+                SubscriptionPromotionalOffersGetInstanceFieldsSubscription.MultiSeatStatus => "multiSeatStatus",
                 SubscriptionPromotionalOffersGetInstanceFieldsSubscription.Name => "name",
                 SubscriptionPromotionalOffersGetInstanceFieldsSubscription.OfferCodes => "offerCodes",
                 SubscriptionPromotionalOffersGetInstanceFieldsSubscription.PlanAvailabilities => "planAvailabilities",
@@ -143,6 +153,8 @@ namespace AppStoreConnect
                 "groupLevel" => SubscriptionPromotionalOffersGetInstanceFieldsSubscription.GroupLevel,
                 "images" => SubscriptionPromotionalOffersGetInstanceFieldsSubscription.Images,
                 "introductoryOffers" => SubscriptionPromotionalOffersGetInstanceFieldsSubscription.IntroductoryOffers,
+                "marketSettings" => SubscriptionPromotionalOffersGetInstanceFieldsSubscription.MarketSettings,
+                "multiSeatStatus" => SubscriptionPromotionalOffersGetInstanceFieldsSubscription.MultiSeatStatus,
                 "name" => SubscriptionPromotionalOffersGetInstanceFieldsSubscription.Name,
                 "offerCodes" => SubscriptionPromotionalOffersGetInstanceFieldsSubscription.OfferCodes,
                 "planAvailabilities" => SubscriptionPromotionalOffersGetInstanceFieldsSubscription.PlanAvailabilities,

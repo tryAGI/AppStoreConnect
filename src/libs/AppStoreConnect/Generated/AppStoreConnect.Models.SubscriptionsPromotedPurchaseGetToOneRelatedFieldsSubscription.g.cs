@@ -35,6 +35,14 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        MarketSettings,
+        /// <summary>
+        ///
+        /// </summary>
+        MultiSeatStatus,
+        /// <summary>
+        ///
+        /// </summary>
         Name,
         /// <summary>
         ///
@@ -112,6 +120,8 @@ namespace AppStoreConnect
                 SubscriptionsPromotedPurchaseGetToOneRelatedFieldsSubscription.GroupLevel => "groupLevel",
                 SubscriptionsPromotedPurchaseGetToOneRelatedFieldsSubscription.Images => "images",
                 SubscriptionsPromotedPurchaseGetToOneRelatedFieldsSubscription.IntroductoryOffers => "introductoryOffers",
+                SubscriptionsPromotedPurchaseGetToOneRelatedFieldsSubscription.MarketSettings => "marketSettings",
+                SubscriptionsPromotedPurchaseGetToOneRelatedFieldsSubscription.MultiSeatStatus => "multiSeatStatus",
                 SubscriptionsPromotedPurchaseGetToOneRelatedFieldsSubscription.Name => "name",
                 SubscriptionsPromotedPurchaseGetToOneRelatedFieldsSubscription.OfferCodes => "offerCodes",
                 SubscriptionsPromotedPurchaseGetToOneRelatedFieldsSubscription.PlanAvailabilities => "planAvailabilities",
@@ -143,6 +153,8 @@ namespace AppStoreConnect
                 "groupLevel" => SubscriptionsPromotedPurchaseGetToOneRelatedFieldsSubscription.GroupLevel,
                 "images" => SubscriptionsPromotedPurchaseGetToOneRelatedFieldsSubscription.Images,
                 "introductoryOffers" => SubscriptionsPromotedPurchaseGetToOneRelatedFieldsSubscription.IntroductoryOffers,
+                "marketSettings" => SubscriptionsPromotedPurchaseGetToOneRelatedFieldsSubscription.MarketSettings,
+                "multiSeatStatus" => SubscriptionsPromotedPurchaseGetToOneRelatedFieldsSubscription.MultiSeatStatus,
                 "name" => SubscriptionsPromotedPurchaseGetToOneRelatedFieldsSubscription.Name,
                 "offerCodes" => SubscriptionsPromotedPurchaseGetToOneRelatedFieldsSubscription.OfferCodes,
                 "planAvailabilities" => SubscriptionsPromotedPurchaseGetToOneRelatedFieldsSubscription.PlanAvailabilities,
