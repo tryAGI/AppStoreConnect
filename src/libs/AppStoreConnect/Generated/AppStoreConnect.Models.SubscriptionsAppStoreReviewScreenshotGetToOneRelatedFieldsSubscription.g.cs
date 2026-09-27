@@ -35,6 +35,14 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        MarketSettings,
+        /// <summary>
+        ///
+        /// </summary>
+        MultiSeatStatus,
+        /// <summary>
+        ///
+        /// </summary>
         Name,
         /// <summary>
         ///
@@ -112,6 +120,8 @@ namespace AppStoreConnect
                 SubscriptionsAppStoreReviewScreenshotGetToOneRelatedFieldsSubscription.GroupLevel => "groupLevel",
                 SubscriptionsAppStoreReviewScreenshotGetToOneRelatedFieldsSubscription.Images => "images",
                 SubscriptionsAppStoreReviewScreenshotGetToOneRelatedFieldsSubscription.IntroductoryOffers => "introductoryOffers",
+                SubscriptionsAppStoreReviewScreenshotGetToOneRelatedFieldsSubscription.MarketSettings => "marketSettings",
+                SubscriptionsAppStoreReviewScreenshotGetToOneRelatedFieldsSubscription.MultiSeatStatus => "multiSeatStatus",
                 SubscriptionsAppStoreReviewScreenshotGetToOneRelatedFieldsSubscription.Name => "name",
                 SubscriptionsAppStoreReviewScreenshotGetToOneRelatedFieldsSubscription.OfferCodes => "offerCodes",
                 SubscriptionsAppStoreReviewScreenshotGetToOneRelatedFieldsSubscription.PlanAvailabilities => "planAvailabilities",
@@ -143,6 +153,8 @@ namespace AppStoreConnect
                 "groupLevel" => SubscriptionsAppStoreReviewScreenshotGetToOneRelatedFieldsSubscription.GroupLevel,
                 "images" => SubscriptionsAppStoreReviewScreenshotGetToOneRelatedFieldsSubscription.Images,
                 "introductoryOffers" => SubscriptionsAppStoreReviewScreenshotGetToOneRelatedFieldsSubscription.IntroductoryOffers,
+                "marketSettings" => SubscriptionsAppStoreReviewScreenshotGetToOneRelatedFieldsSubscription.MarketSettings,
+                "multiSeatStatus" => SubscriptionsAppStoreReviewScreenshotGetToOneRelatedFieldsSubscription.MultiSeatStatus,
                 "name" => SubscriptionsAppStoreReviewScreenshotGetToOneRelatedFieldsSubscription.Name,
                 "offerCodes" => SubscriptionsAppStoreReviewScreenshotGetToOneRelatedFieldsSubscription.OfferCodes,
                 "planAvailabilities" => SubscriptionsAppStoreReviewScreenshotGetToOneRelatedFieldsSubscription.PlanAvailabilities,

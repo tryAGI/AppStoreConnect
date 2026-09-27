@@ -43,6 +43,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        GameCenterScoreModerations,
+        /// <summary>
+        ///
+        /// </summary>
         GroupLeaderboard,
         /// <summary>
         ///
@@ -118,6 +122,7 @@ namespace AppStoreConnect
                 GameCenterGroupsGameCenterActivitiesGetToManyRelatedFieldsGameCenterLeaderboard.GameCenterDetail => "gameCenterDetail",
                 GameCenterGroupsGameCenterActivitiesGetToManyRelatedFieldsGameCenterLeaderboard.GameCenterGroup => "gameCenterGroup",
                 GameCenterGroupsGameCenterActivitiesGetToManyRelatedFieldsGameCenterLeaderboard.GameCenterLeaderboardSets => "gameCenterLeaderboardSets",
+                GameCenterGroupsGameCenterActivitiesGetToManyRelatedFieldsGameCenterLeaderboard.GameCenterScoreModerations => "gameCenterScoreModerations",
                 GameCenterGroupsGameCenterActivitiesGetToManyRelatedFieldsGameCenterLeaderboard.GroupLeaderboard => "groupLeaderboard",
                 GameCenterGroupsGameCenterActivitiesGetToManyRelatedFieldsGameCenterLeaderboard.Localizations => "localizations",
                 GameCenterGroupsGameCenterActivitiesGetToManyRelatedFieldsGameCenterLeaderboard.RecurrenceDuration => "recurrenceDuration",
@@ -150,6 +155,7 @@ namespace AppStoreConnect
                 "gameCenterDetail" => GameCenterGroupsGameCenterActivitiesGetToManyRelatedFieldsGameCenterLeaderboard.GameCenterDetail,
                 "gameCenterGroup" => GameCenterGroupsGameCenterActivitiesGetToManyRelatedFieldsGameCenterLeaderboard.GameCenterGroup,
                 "gameCenterLeaderboardSets" => GameCenterGroupsGameCenterActivitiesGetToManyRelatedFieldsGameCenterLeaderboard.GameCenterLeaderboardSets,
+                "gameCenterScoreModerations" => GameCenterGroupsGameCenterActivitiesGetToManyRelatedFieldsGameCenterLeaderboard.GameCenterScoreModerations,
                 "groupLeaderboard" => GameCenterGroupsGameCenterActivitiesGetToManyRelatedFieldsGameCenterLeaderboard.GroupLeaderboard,
                 "localizations" => GameCenterGroupsGameCenterActivitiesGetToManyRelatedFieldsGameCenterLeaderboard.Localizations,
                 "recurrenceDuration" => GameCenterGroupsGameCenterActivitiesGetToManyRelatedFieldsGameCenterLeaderboard.RecurrenceDuration,

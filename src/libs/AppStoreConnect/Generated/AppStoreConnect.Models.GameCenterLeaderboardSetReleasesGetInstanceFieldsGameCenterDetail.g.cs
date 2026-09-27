@@ -27,6 +27,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        BlockedPlayers,
+        /// <summary>
+        ///
+        /// </summary>
         ChallengeEnabled,
         /// <summary>
         ///
@@ -118,6 +122,7 @@ namespace AppStoreConnect
                 GameCenterLeaderboardSetReleasesGetInstanceFieldsGameCenterDetail.ActivityReleases => "activityReleases",
                 GameCenterLeaderboardSetReleasesGetInstanceFieldsGameCenterDetail.App => "app",
                 GameCenterLeaderboardSetReleasesGetInstanceFieldsGameCenterDetail.ArcadeEnabled => "arcadeEnabled",
+                GameCenterLeaderboardSetReleasesGetInstanceFieldsGameCenterDetail.BlockedPlayers => "blockedPlayers",
                 GameCenterLeaderboardSetReleasesGetInstanceFieldsGameCenterDetail.ChallengeEnabled => "challengeEnabled",
                 GameCenterLeaderboardSetReleasesGetInstanceFieldsGameCenterDetail.ChallengeReleases => "challengeReleases",
                 GameCenterLeaderboardSetReleasesGetInstanceFieldsGameCenterDetail.ChallengesMinimumPlatformVersions => "challengesMinimumPlatformVersions",
@@ -151,6 +156,7 @@ namespace AppStoreConnect
                 "activityReleases" => GameCenterLeaderboardSetReleasesGetInstanceFieldsGameCenterDetail.ActivityReleases,
                 "app" => GameCenterLeaderboardSetReleasesGetInstanceFieldsGameCenterDetail.App,
                 "arcadeEnabled" => GameCenterLeaderboardSetReleasesGetInstanceFieldsGameCenterDetail.ArcadeEnabled,
+                "blockedPlayers" => GameCenterLeaderboardSetReleasesGetInstanceFieldsGameCenterDetail.BlockedPlayers,
                 "challengeEnabled" => GameCenterLeaderboardSetReleasesGetInstanceFieldsGameCenterDetail.ChallengeEnabled,
                 "challengeReleases" => GameCenterLeaderboardSetReleasesGetInstanceFieldsGameCenterDetail.ChallengeReleases,
                 "challengesMinimumPlatformVersions" => GameCenterLeaderboardSetReleasesGetInstanceFieldsGameCenterDetail.ChallengesMinimumPlatformVersions,

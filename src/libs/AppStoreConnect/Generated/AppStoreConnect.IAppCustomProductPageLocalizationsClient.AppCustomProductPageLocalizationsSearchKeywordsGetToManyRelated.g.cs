@@ -42,5 +42,24 @@ namespace AppStoreConnect
             int? limit = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Wraps AppCustomProductPageLocalizationsSearchKeywordsGetToManyRelatedAsync as an IAsyncEnumerable&lt;global::AppStoreConnect.AppKeyword&gt; that follows the response's next-page URL.
+        /// </summary>
+        /// <param name="filterPlatform"></param>
+        /// <param name="filterLocale"></param>
+        /// <param name="fieldsAppKeywords"></param>
+        /// <param name="limit"></param>
+        /// <param name="id"></param>
+        /// <param name="requestOptions">Options forwarded to every page request.</param>
+        /// <param name="cancellationToken"></param>
+        global::System.Collections.Generic.IAsyncEnumerable<global::AppStoreConnect.AppKeyword> AppCustomProductPageLocalizationsSearchKeywordsGetToManyRelatedAutoPagingAsync(
+            string id,             global::System.Collections.Generic.IList<string>? filterPlatform = default,
+            global::System.Collections.Generic.IList<string>? filterLocale = default,
+            global::System.Collections.Generic.IList<string>? fieldsAppKeywords = default,
+            int? limit = default,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = null,
+            global::System.Threading.CancellationToken cancellationToken = default);
+
     }
 }

@@ -54,5 +54,31 @@ namespace AppStoreConnect
             int? limit = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Wraps DevicesGetCollectionAsync as an IAsyncEnumerable&lt;global::AppStoreConnect.Device&gt; that follows the response's next-page URL.
+        /// </summary>
+        /// <param name="filterName"></param>
+        /// <param name="filterPlatform"></param>
+        /// <param name="filterUdid"></param>
+        /// <param name="filterStatus"></param>
+        /// <param name="filterId"></param>
+        /// <param name="sort"></param>
+        /// <param name="fieldsDevices"></param>
+        /// <param name="limit"></param>
+        /// <param name="requestOptions">Options forwarded to every page request.</param>
+        /// <param name="cancellationToken"></param>
+        global::System.Collections.Generic.IAsyncEnumerable<global::AppStoreConnect.Device> DevicesGetCollectionAutoPagingAsync(
+              global::System.Collections.Generic.IList<string>? filterName = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.DevicesGetCollectionFilterPlatformItem>? filterPlatform = default,
+            global::System.Collections.Generic.IList<string>? filterUdid = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.DevicesGetCollectionFilterStatu>? filterStatus = default,
+            global::System.Collections.Generic.IList<string>? filterId = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.DevicesGetCollectionSortItem>? sort = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.DevicesGetCollectionFieldsDevice>? fieldsDevices = default,
+            int? limit = default,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = null,
+            global::System.Threading.CancellationToken cancellationToken = default);
+
     }
 }

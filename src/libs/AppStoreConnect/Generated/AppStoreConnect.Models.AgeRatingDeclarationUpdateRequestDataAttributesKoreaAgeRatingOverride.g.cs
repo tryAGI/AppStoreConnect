@@ -11,6 +11,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        All,
+        /// <summary>
+        ///
+        /// </summary>
         FifteenPlus,
         /// <summary>
         ///
@@ -20,6 +24,10 @@ namespace AppStoreConnect
         ///
         /// </summary>
         None,
+        /// <summary>
+        ///
+        /// </summary>
+        TwelvePlus,
     }
 
     /// <summary>
@@ -34,9 +42,11 @@ namespace AppStoreConnect
         {
             return value switch
             {
+                AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride.All => "ALL",
                 AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride.FifteenPlus => "FIFTEEN_PLUS",
                 AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride.NineteenPlus => "NINETEEN_PLUS",
                 AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride.None => "NONE",
+                AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride.TwelvePlus => "TWELVE_PLUS",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -47,9 +57,11 @@ namespace AppStoreConnect
         {
             return value switch
             {
+                "ALL" => AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride.All,
                 "FIFTEEN_PLUS" => AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride.FifteenPlus,
                 "NINETEEN_PLUS" => AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride.NineteenPlus,
                 "NONE" => AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride.None,
+                "TWELVE_PLUS" => AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride.TwelvePlus,
                 _ => null,
             };
         }

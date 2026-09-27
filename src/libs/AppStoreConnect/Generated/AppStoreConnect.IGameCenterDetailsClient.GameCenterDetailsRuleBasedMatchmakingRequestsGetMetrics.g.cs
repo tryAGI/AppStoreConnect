@@ -46,5 +46,26 @@ namespace AppStoreConnect
             int? limit = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Wraps GameCenterDetailsRuleBasedMatchmakingRequestsGetMetricsAsync as an IAsyncEnumerable&lt;global::AppStoreConnect.GameCenterMatchmakingAppRequestsV1MetricResponseDataItem&gt; that follows the response's next-page URL.
+        /// </summary>
+        /// <param name="granularity"></param>
+        /// <param name="groupBy"></param>
+        /// <param name="filterResult"></param>
+        /// <param name="sort"></param>
+        /// <param name="limit"></param>
+        /// <param name="id"></param>
+        /// <param name="requestOptions">Options forwarded to every page request.</param>
+        /// <param name="cancellationToken"></param>
+        global::System.Collections.Generic.IAsyncEnumerable<global::AppStoreConnect.GameCenterMatchmakingAppRequestsV1MetricResponseDataItem> GameCenterDetailsRuleBasedMatchmakingRequestsGetMetricsAutoPagingAsync(
+            global::AppStoreConnect.GameCenterDetailsRuleBasedMatchmakingRequestsGetMetricsGranularity granularity,
+            string id,             global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterDetailsRuleBasedMatchmakingRequestsGetMetricsGroupByItem>? groupBy = default,
+            global::AppStoreConnect.GameCenterDetailsRuleBasedMatchmakingRequestsGetMetricsFilterResult? filterResult = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterDetailsRuleBasedMatchmakingRequestsGetMetricsSortItem>? sort = default,
+            int? limit = default,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = null,
+            global::System.Threading.CancellationToken cancellationToken = default);
+
     }
 }

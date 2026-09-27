@@ -1048,6 +1048,15 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        public GameCenterDetailPlayersClient GameCenterDetailPlayers => new GameCenterDetailPlayersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
+        ///
+        /// </summary>
         public GameCenterDetailsClient GameCenterDetails => new GameCenterDetailsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
@@ -1202,6 +1211,15 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public GameCenterPlayerAchievementSubmissionsClient GameCenterPlayerAchievementSubmissions => new GameCenterPlayerAchievementSubmissionsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
+        ///
+        /// </summary>
+        public GameCenterScoreModerationsClient GameCenterScoreModerations => new GameCenterScoreModerationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContextProvider = JsonSerializerContextProvider,

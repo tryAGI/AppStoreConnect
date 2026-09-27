@@ -42,5 +42,24 @@ namespace AppStoreConnect
             int? limit = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Wraps AppsAccessibilityDeclarationsGetToManyRelatedAsync as an IAsyncEnumerable&lt;global::AppStoreConnect.AccessibilityDeclaration&gt; that follows the response's next-page URL.
+        /// </summary>
+        /// <param name="filterDeviceFamily"></param>
+        /// <param name="filterState"></param>
+        /// <param name="fieldsAccessibilityDeclarations"></param>
+        /// <param name="limit"></param>
+        /// <param name="id"></param>
+        /// <param name="requestOptions">Options forwarded to every page request.</param>
+        /// <param name="cancellationToken"></param>
+        global::System.Collections.Generic.IAsyncEnumerable<global::AppStoreConnect.AccessibilityDeclaration> AppsAccessibilityDeclarationsGetToManyRelatedAutoPagingAsync(
+            string id,             global::System.Collections.Generic.IList<global::AppStoreConnect.AppsAccessibilityDeclarationsGetToManyRelatedFilterDeviceFamilyItem>? filterDeviceFamily = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppsAccessibilityDeclarationsGetToManyRelatedFilterStateItem>? filterState = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppsAccessibilityDeclarationsGetToManyRelatedFieldsAccessibilityDeclaration>? fieldsAccessibilityDeclarations = default,
+            int? limit = default,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = null,
+            global::System.Threading.CancellationToken cancellationToken = default);
+
     }
 }

@@ -199,6 +199,12 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gracRatingClassificationNumber")]
+        public string? GracRatingClassificationNumber { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("developerAgeRatingInfoUrl")]
         public string? DeveloperAgeRatingInfoUrl { get; set; }
 
@@ -238,6 +244,7 @@ namespace AppStoreConnect
         /// <param name="violenceRealistic"></param>
         /// <param name="ageRatingOverrideV2"></param>
         /// <param name="koreaAgeRatingOverride"></param>
+        /// <param name="gracRatingClassificationNumber"></param>
         /// <param name="developerAgeRatingInfoUrl"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -270,6 +277,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealistic? violenceRealistic,
             global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideV2? ageRatingOverrideV2,
             global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride? koreaAgeRatingOverride,
+            string? gracRatingClassificationNumber,
             string? developerAgeRatingInfoUrl)
         {
             this.Advertising = advertising;
@@ -299,6 +307,7 @@ namespace AppStoreConnect
             this.ViolenceRealistic = violenceRealistic;
             this.AgeRatingOverrideV2 = ageRatingOverrideV2;
             this.KoreaAgeRatingOverride = koreaAgeRatingOverride;
+            this.GracRatingClassificationNumber = gracRatingClassificationNumber;
             this.DeveloperAgeRatingInfoUrl = developerAgeRatingInfoUrl;
         }
 

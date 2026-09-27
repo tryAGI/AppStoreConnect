@@ -35,6 +35,14 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        MarketSettings,
+        /// <summary>
+        ///
+        /// </summary>
+        MultiSeatStatus,
+        /// <summary>
+        ///
+        /// </summary>
         Name,
         /// <summary>
         ///
@@ -112,6 +120,8 @@ namespace AppStoreConnect
                 SubscriptionLocalizationsGetInstanceFieldsSubscription.GroupLevel => "groupLevel",
                 SubscriptionLocalizationsGetInstanceFieldsSubscription.Images => "images",
                 SubscriptionLocalizationsGetInstanceFieldsSubscription.IntroductoryOffers => "introductoryOffers",
+                SubscriptionLocalizationsGetInstanceFieldsSubscription.MarketSettings => "marketSettings",
+                SubscriptionLocalizationsGetInstanceFieldsSubscription.MultiSeatStatus => "multiSeatStatus",
                 SubscriptionLocalizationsGetInstanceFieldsSubscription.Name => "name",
                 SubscriptionLocalizationsGetInstanceFieldsSubscription.OfferCodes => "offerCodes",
                 SubscriptionLocalizationsGetInstanceFieldsSubscription.PlanAvailabilities => "planAvailabilities",
@@ -143,6 +153,8 @@ namespace AppStoreConnect
                 "groupLevel" => SubscriptionLocalizationsGetInstanceFieldsSubscription.GroupLevel,
                 "images" => SubscriptionLocalizationsGetInstanceFieldsSubscription.Images,
                 "introductoryOffers" => SubscriptionLocalizationsGetInstanceFieldsSubscription.IntroductoryOffers,
+                "marketSettings" => SubscriptionLocalizationsGetInstanceFieldsSubscription.MarketSettings,
+                "multiSeatStatus" => SubscriptionLocalizationsGetInstanceFieldsSubscription.MultiSeatStatus,
                 "name" => SubscriptionLocalizationsGetInstanceFieldsSubscription.Name,
                 "offerCodes" => SubscriptionLocalizationsGetInstanceFieldsSubscription.OfferCodes,
                 "planAvailabilities" => SubscriptionLocalizationsGetInstanceFieldsSubscription.PlanAvailabilities,
