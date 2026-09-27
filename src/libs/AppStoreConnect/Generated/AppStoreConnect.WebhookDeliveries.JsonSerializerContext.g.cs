@@ -5,82 +5,15 @@
 #pragma warning disable CS3016 // Arrays as attribute arguments is not CLS-compliant
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        Converters = new global::System.Type[]
-        {
-        })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(string))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ResourceLinks))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DocumentLinks))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(int))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDelivery))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryType), TypeInfoPropertyName = "WebhookDeliveryType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryAttributesDeliveryState), TypeInfoPropertyName = "WebhookDeliveryAttributesDeliveryState2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryAttributesRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryAttributesResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryRelationships))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryRelationshipsEvent))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryRelationshipsEventData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryRelationshipsEventDataType), TypeInfoPropertyName = "WebhookDeliveryRelationshipsEventDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.WebhookEvent>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookEvent))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryCreateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryCreateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryCreateRequestDataType), TypeInfoPropertyName = "WebhookDeliveryCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryCreateRequestDataRelationships))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryCreateRequestDataRelationshipsTemplate))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryCreateRequestDataRelationshipsTemplateData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryCreateRequestDataRelationshipsTemplateDataType), TypeInfoPropertyName = "WebhookDeliveryCreateRequestDataRelationshipsTemplateDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookEventType), TypeInfoPropertyName = "WebhookEventType2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookEventAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookEventType2), TypeInfoPropertyName = "WebhookEventType22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ErrorResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.ErrorResponseError>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ErrorResponseError))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.OneOf<global::AppStoreConnect.ErrorSourcePointer, global::AppStoreConnect.ErrorSourceParameter>), TypeInfoPropertyName = "OneOfErrorSourcePointerErrorSourceParameter2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ErrorSourcePointer))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ErrorSourceParameter))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ErrorLinks))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(object))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.OneOf<string, global::AppStoreConnect.ErrorLinksAssociated>), TypeInfoPropertyName = "OneOfStringErrorLinksAssociated2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ErrorLinksAssociated))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ErrorLinksAssociatedMeta))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(bool?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.DateTime?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryType?), TypeInfoPropertyName = "NullableWebhookDeliveryType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryAttributesDeliveryState?), TypeInfoPropertyName = "NullableWebhookDeliveryAttributesDeliveryState2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryRelationshipsEventDataType?), TypeInfoPropertyName = "NullableWebhookDeliveryRelationshipsEventDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryCreateRequestDataType?), TypeInfoPropertyName = "NullableWebhookDeliveryCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookDeliveryCreateRequestDataRelationshipsTemplateDataType?), TypeInfoPropertyName = "NullableWebhookDeliveryCreateRequestDataRelationshipsTemplateDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookEventType?), TypeInfoPropertyName = "NullableWebhookEventType2_3")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.WebhookEventType2?), TypeInfoPropertyName = "NullableWebhookEventType22")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.OneOf<global::AppStoreConnect.ErrorSourcePointer, global::AppStoreConnect.ErrorSourceParameter>?), TypeInfoPropertyName = "NullableOneOfErrorSourcePointerErrorSourceParameter2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.OneOf<string, global::AppStoreConnect.ErrorLinksAssociated>?), TypeInfoPropertyName = "NullableOneOfStringErrorLinksAssociated2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.WebhookEvent>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.ErrorResponseError>))]
-    internal sealed partial class WebhookDeliveriesSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class WebhookDeliveriesSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
         private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = new LazyChunkResolver();
+
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        internal static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver TypeInfoResolver => Resolver;
 
 
         private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
@@ -116,10 +49,7 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            options.Converters.Add(new global::AppStoreConnect.JsonConverters.OneOfJsonConverter<global::AppStoreConnect.ErrorSourcePointer, global::AppStoreConnect.ErrorSourceParameter>());
-            options.Converters.Add(new global::AppStoreConnect.JsonConverters.OneOfJsonConverter<string, global::AppStoreConnect.ErrorLinksAssociated>());
-            options.Converters.Add(new global::AppStoreConnect.JsonConverters.UnixTimestampJsonConverter());
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContext.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -132,118 +62,6 @@ namespace AppStoreConnect
             AddConverters(options);
 
             return options;
-        }
-
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryAttributesDeliveryState)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryAttributesDeliveryState?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryRelationshipsEventDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryRelationshipsEventDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryCreateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryCreateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryCreateRequestDataRelationshipsTemplateDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryCreateRequestDataRelationshipsTemplateDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.WebhookEventType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.WebhookEventType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.WebhookEventType2)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.WebhookEventType2?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.WebhookDeliveryTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.WebhookDeliveryTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryAttributesDeliveryState))
-                {
-                    return new global::AppStoreConnect.JsonConverters.WebhookDeliveryAttributesDeliveryStateJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryAttributesDeliveryState?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.WebhookDeliveryAttributesDeliveryStateNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryRelationshipsEventDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.WebhookDeliveryRelationshipsEventDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryRelationshipsEventDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.WebhookDeliveryRelationshipsEventDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryCreateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.WebhookDeliveryCreateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryCreateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.WebhookDeliveryCreateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryCreateRequestDataRelationshipsTemplateDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.WebhookDeliveryCreateRequestDataRelationshipsTemplateDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.WebhookDeliveryCreateRequestDataRelationshipsTemplateDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.WebhookDeliveryCreateRequestDataRelationshipsTemplateDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.WebhookEventType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.WebhookEventTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.WebhookEventType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.WebhookEventTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.WebhookEventType2))
-                {
-                    return new global::AppStoreConnect.JsonConverters.WebhookEventType2JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.WebhookEventType2?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.WebhookEventType2NullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
         }
 
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
@@ -285,7 +103,7 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new WebhookDeliveriesSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }
