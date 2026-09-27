@@ -126,10 +126,22 @@ namespace AppStoreConnect
                                 .AddOptionalParameter("limit", limit?.ToString())
                                 ;
                             var __path = __pathBuilder.ToString();
+
+                var __pageUrl = global::AppStoreConnect.AutoSDKPager.ResolvePageUrl(
+                    __path,
+                    requestOptions,
+                    global::AppStoreConnect.AutoSDKPager.GetPaginationBaseAddress(HttpClient.BaseAddress, "https://api.appstoreconnect.apple.com/"));
+                if (__pageUrl is not null)
+                {
+                    __path = __pageUrl;
+                }
+                else
+                {
                 __path = global::AppStoreConnect.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
+                }
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                     method: global::System.Net.Http.HttpMethod.Get,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
@@ -627,5 +639,35 @@ namespace AppStoreConnect
                 __httpRequest?.Dispose();
             }
         }
+
+        /// <summary>
+        /// Wraps BundleIdsProfilesGetToManyRelatedAsync as an IAsyncEnumerable&lt;global::AppStoreConnect.Profile&gt; that follows the response's next-page URL.
+        /// </summary>
+        /// <param name="fieldsProfiles"></param>
+        /// <param name="limit"></param>
+        /// <param name="id"></param>
+        /// <param name="requestOptions">Options forwarded to every page request.</param>
+        /// <param name="cancellationToken"></param>
+        public global::System.Collections.Generic.IAsyncEnumerable<global::AppStoreConnect.Profile> BundleIdsProfilesGetToManyRelatedAutoPagingAsync(
+            string id,             global::System.Collections.Generic.IList<global::AppStoreConnect.BundleIdsProfilesGetToManyRelatedFieldsProfile>? fieldsProfiles = default,
+            int? limit = default,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = null,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            return global::AppStoreConnect.AutoSDKPager.NextUrlAsync<global::AppStoreConnect.ProfilesWithoutIncludesResponse, global::AppStoreConnect.Profile>(
+                fetchPage: (__nextUrl, __ct) => BundleIdsProfilesGetToManyRelatedAsync(
+                    fieldsProfiles: fieldsProfiles,
+                    limit: limit,
+                    id: id,
+                    requestOptions: global::AppStoreConnect.AutoSDKPager.CreatePageRequestOptions(requestOptions, __nextUrl),
+                    cancellationToken: __ct),
+                extractItems: static __response => __response is null
+                    ? null
+                    : (global::System.Collections.Generic.IEnumerable<global::AppStoreConnect.Profile>?)__response.Data,
+                extractNextUrl: static __response => __response is null ? null : __response.Links?.Next,
+                baseAddress: global::AppStoreConnect.AutoSDKPager.GetPaginationBaseAddress(HttpClient.BaseAddress, "https://api.appstoreconnect.apple.com/"),
+                cancellationToken: cancellationToken);
+        }
+
     }
 }

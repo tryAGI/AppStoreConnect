@@ -24,7 +24,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DocumentLinks))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.Actor))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclaration))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.KidsAgeBand), TypeInfoPropertyName = "KidsAgeBand2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AlternativeDistributionPackageDelta))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AlternativeDistributionPackageVariant))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.RelationshipLinks))]
@@ -420,7 +419,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfo), TypeInfoPropertyName = "AppInfoLocalizationsGetInstanceFieldsAppInfo2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppInfoLocalizationsGetInstanceIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceIncludeItem), TypeInfoPropertyName = "AppInfoLocalizationsGetInstanceIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.KidsAgeBand?), TypeInfoPropertyName = "NullableKidsAgeBand2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem?), TypeInfoPropertyName = "NullableIncludedItem2_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem2?), TypeInfoPropertyName = "NullableIncludedItem22_3")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(int?))]
@@ -514,6 +512,8 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem71?), TypeInfoPropertyName = "NullableIncludedItem712")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem72?), TypeInfoPropertyName = "NullableIncludedItem722")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem73?), TypeInfoPropertyName = "NullableIncludedItem732")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem74?), TypeInfoPropertyName = "NullableIncludedItem742")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem75?), TypeInfoPropertyName = "NullableIncludedItem752")]
     internal sealed partial class AppInfoLocalizationsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -526,8 +526,6 @@ namespace AppStoreConnect
         Converters = new global::System.Type[]
         {
         })]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem74?), TypeInfoPropertyName = "NullableIncludedItem742")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem75?), TypeInfoPropertyName = "NullableIncludedItem752")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem76?), TypeInfoPropertyName = "NullableIncludedItem762")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem77?), TypeInfoPropertyName = "NullableIncludedItem772")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.IncludedItem78?), TypeInfoPropertyName = "NullableIncludedItem782")]
@@ -958,10 +956,6 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.BrazilAgeRating?)
 
-                    || typeToConvert == typeof(global::AppStoreConnect.KidsAgeBand)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.KidsAgeBand?)
-
                     || typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfoLocalization)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfoLocalization?)
@@ -1207,16 +1201,6 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.BrazilAgeRating?))
                 {
                     return new global::AppStoreConnect.JsonConverters.BrazilAgeRatingNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.KidsAgeBand))
-                {
-                    return new global::AppStoreConnect.JsonConverters.KidsAgeBandJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.KidsAgeBand?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.KidsAgeBandNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfoLocalization))

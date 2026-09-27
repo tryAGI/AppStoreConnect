@@ -35,6 +35,14 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        MarketSettings,
+        /// <summary>
+        ///
+        /// </summary>
+        MultiSeatStatus,
+        /// <summary>
+        ///
+        /// </summary>
         Name,
         /// <summary>
         ///
@@ -112,6 +120,8 @@ namespace AppStoreConnect
                 SubscriptionsImagesGetToManyRelatedFieldsSubscription.GroupLevel => "groupLevel",
                 SubscriptionsImagesGetToManyRelatedFieldsSubscription.Images => "images",
                 SubscriptionsImagesGetToManyRelatedFieldsSubscription.IntroductoryOffers => "introductoryOffers",
+                SubscriptionsImagesGetToManyRelatedFieldsSubscription.MarketSettings => "marketSettings",
+                SubscriptionsImagesGetToManyRelatedFieldsSubscription.MultiSeatStatus => "multiSeatStatus",
                 SubscriptionsImagesGetToManyRelatedFieldsSubscription.Name => "name",
                 SubscriptionsImagesGetToManyRelatedFieldsSubscription.OfferCodes => "offerCodes",
                 SubscriptionsImagesGetToManyRelatedFieldsSubscription.PlanAvailabilities => "planAvailabilities",
@@ -143,6 +153,8 @@ namespace AppStoreConnect
                 "groupLevel" => SubscriptionsImagesGetToManyRelatedFieldsSubscription.GroupLevel,
                 "images" => SubscriptionsImagesGetToManyRelatedFieldsSubscription.Images,
                 "introductoryOffers" => SubscriptionsImagesGetToManyRelatedFieldsSubscription.IntroductoryOffers,
+                "marketSettings" => SubscriptionsImagesGetToManyRelatedFieldsSubscription.MarketSettings,
+                "multiSeatStatus" => SubscriptionsImagesGetToManyRelatedFieldsSubscription.MultiSeatStatus,
                 "name" => SubscriptionsImagesGetToManyRelatedFieldsSubscription.Name,
                 "offerCodes" => SubscriptionsImagesGetToManyRelatedFieldsSubscription.OfferCodes,
                 "planAvailabilities" => SubscriptionsImagesGetToManyRelatedFieldsSubscription.PlanAvailabilities,

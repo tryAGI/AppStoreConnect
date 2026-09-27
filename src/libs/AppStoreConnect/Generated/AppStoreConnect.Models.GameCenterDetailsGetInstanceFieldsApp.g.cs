@@ -175,6 +175,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        PerformanceOverviews,
+        /// <summary>
+        ///
+        /// </summary>
         PreReleaseVersions,
         /// <summary>
         ///
@@ -283,6 +287,7 @@ namespace AppStoreConnect
                 GameCenterDetailsGetInstanceFieldsApp.MarketplaceSearchDetail => "marketplaceSearchDetail",
                 GameCenterDetailsGetInstanceFieldsApp.Name => "name",
                 GameCenterDetailsGetInstanceFieldsApp.PerfPowerMetrics => "perfPowerMetrics",
+                GameCenterDetailsGetInstanceFieldsApp.PerformanceOverviews => "performanceOverviews",
                 GameCenterDetailsGetInstanceFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 GameCenterDetailsGetInstanceFieldsApp.PrimaryLocale => "primaryLocale",
                 GameCenterDetailsGetInstanceFieldsApp.PromotedPurchases => "promotedPurchases",
@@ -348,6 +353,7 @@ namespace AppStoreConnect
                 "marketplaceSearchDetail" => GameCenterDetailsGetInstanceFieldsApp.MarketplaceSearchDetail,
                 "name" => GameCenterDetailsGetInstanceFieldsApp.Name,
                 "perfPowerMetrics" => GameCenterDetailsGetInstanceFieldsApp.PerfPowerMetrics,
+                "performanceOverviews" => GameCenterDetailsGetInstanceFieldsApp.PerformanceOverviews,
                 "preReleaseVersions" => GameCenterDetailsGetInstanceFieldsApp.PreReleaseVersions,
                 "primaryLocale" => GameCenterDetailsGetInstanceFieldsApp.PrimaryLocale,
                 "promotedPurchases" => GameCenterDetailsGetInstanceFieldsApp.PromotedPurchases,

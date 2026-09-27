@@ -175,6 +175,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        PerformanceOverviews,
+        /// <summary>
+        ///
+        /// </summary>
         PreReleaseVersions,
         /// <summary>
         ///
@@ -283,6 +287,7 @@ namespace AppStoreConnect
                 AppEncryptionDeclarationsAppGetToOneRelatedFieldsApp.MarketplaceSearchDetail => "marketplaceSearchDetail",
                 AppEncryptionDeclarationsAppGetToOneRelatedFieldsApp.Name => "name",
                 AppEncryptionDeclarationsAppGetToOneRelatedFieldsApp.PerfPowerMetrics => "perfPowerMetrics",
+                AppEncryptionDeclarationsAppGetToOneRelatedFieldsApp.PerformanceOverviews => "performanceOverviews",
                 AppEncryptionDeclarationsAppGetToOneRelatedFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 AppEncryptionDeclarationsAppGetToOneRelatedFieldsApp.PrimaryLocale => "primaryLocale",
                 AppEncryptionDeclarationsAppGetToOneRelatedFieldsApp.PromotedPurchases => "promotedPurchases",
@@ -348,6 +353,7 @@ namespace AppStoreConnect
                 "marketplaceSearchDetail" => AppEncryptionDeclarationsAppGetToOneRelatedFieldsApp.MarketplaceSearchDetail,
                 "name" => AppEncryptionDeclarationsAppGetToOneRelatedFieldsApp.Name,
                 "perfPowerMetrics" => AppEncryptionDeclarationsAppGetToOneRelatedFieldsApp.PerfPowerMetrics,
+                "performanceOverviews" => AppEncryptionDeclarationsAppGetToOneRelatedFieldsApp.PerformanceOverviews,
                 "preReleaseVersions" => AppEncryptionDeclarationsAppGetToOneRelatedFieldsApp.PreReleaseVersions,
                 "primaryLocale" => AppEncryptionDeclarationsAppGetToOneRelatedFieldsApp.PrimaryLocale,
                 "promotedPurchases" => AppEncryptionDeclarationsAppGetToOneRelatedFieldsApp.PromotedPurchases,

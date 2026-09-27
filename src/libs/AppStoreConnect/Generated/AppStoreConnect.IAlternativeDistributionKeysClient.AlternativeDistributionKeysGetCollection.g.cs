@@ -34,5 +34,21 @@ namespace AppStoreConnect
             int? limit = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Wraps AlternativeDistributionKeysGetCollectionAsync as an IAsyncEnumerable&lt;global::AppStoreConnect.AlternativeDistributionKey&gt; that follows the response's next-page URL.
+        /// </summary>
+        /// <param name="existsApp"></param>
+        /// <param name="fieldsAlternativeDistributionKeys"></param>
+        /// <param name="limit"></param>
+        /// <param name="requestOptions">Options forwarded to every page request.</param>
+        /// <param name="cancellationToken"></param>
+        global::System.Collections.Generic.IAsyncEnumerable<global::AppStoreConnect.AlternativeDistributionKey> AlternativeDistributionKeysGetCollectionAutoPagingAsync(
+              bool? existsApp = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AlternativeDistributionKeysGetCollectionFieldsAlternativeDistributionKey>? fieldsAlternativeDistributionKeys = default,
+            int? limit = default,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = null,
+            global::System.Threading.CancellationToken cancellationToken = default);
+
     }
 }

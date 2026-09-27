@@ -43,6 +43,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        GameCenterScoreModerations,
+        /// <summary>
+        ///
+        /// </summary>
         GroupLeaderboard,
         /// <summary>
         ///
@@ -118,6 +122,7 @@ namespace AppStoreConnect
                 GameCenterGroupsGetCollectionFieldsGameCenterLeaderboard.GameCenterDetail => "gameCenterDetail",
                 GameCenterGroupsGetCollectionFieldsGameCenterLeaderboard.GameCenterGroup => "gameCenterGroup",
                 GameCenterGroupsGetCollectionFieldsGameCenterLeaderboard.GameCenterLeaderboardSets => "gameCenterLeaderboardSets",
+                GameCenterGroupsGetCollectionFieldsGameCenterLeaderboard.GameCenterScoreModerations => "gameCenterScoreModerations",
                 GameCenterGroupsGetCollectionFieldsGameCenterLeaderboard.GroupLeaderboard => "groupLeaderboard",
                 GameCenterGroupsGetCollectionFieldsGameCenterLeaderboard.Localizations => "localizations",
                 GameCenterGroupsGetCollectionFieldsGameCenterLeaderboard.RecurrenceDuration => "recurrenceDuration",
@@ -150,6 +155,7 @@ namespace AppStoreConnect
                 "gameCenterDetail" => GameCenterGroupsGetCollectionFieldsGameCenterLeaderboard.GameCenterDetail,
                 "gameCenterGroup" => GameCenterGroupsGetCollectionFieldsGameCenterLeaderboard.GameCenterGroup,
                 "gameCenterLeaderboardSets" => GameCenterGroupsGetCollectionFieldsGameCenterLeaderboard.GameCenterLeaderboardSets,
+                "gameCenterScoreModerations" => GameCenterGroupsGetCollectionFieldsGameCenterLeaderboard.GameCenterScoreModerations,
                 "groupLeaderboard" => GameCenterGroupsGetCollectionFieldsGameCenterLeaderboard.GroupLeaderboard,
                 "localizations" => GameCenterGroupsGetCollectionFieldsGameCenterLeaderboard.Localizations,
                 "recurrenceDuration" => GameCenterGroupsGetCollectionFieldsGameCenterLeaderboard.RecurrenceDuration,

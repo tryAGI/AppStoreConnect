@@ -118,10 +118,22 @@ namespace AppStoreConnect
                                 .AddOptionalParameter("limit", limit?.ToString())
                                 ;
                             var __path = __pathBuilder.ToString();
+
+                var __pageUrl = global::AppStoreConnect.AutoSDKPager.ResolvePageUrl(
+                    __path,
+                    requestOptions,
+                    global::AppStoreConnect.AutoSDKPager.GetPaginationBaseAddress(HttpClient.BaseAddress, "https://api.appstoreconnect.apple.com/"));
+                if (__pageUrl is not null)
+                {
+                    __path = __pageUrl;
+                }
+                else
+                {
                 __path = global::AppStoreConnect.AutoSDKRequestOptionsSupport.AppendQueryParameters(
                     path: __path,
                     clientParameters: Options.QueryParameters,
                     requestParameters: requestOptions?.QueryParameters);
+                }
                 var __httpRequest = new global::System.Net.Http.HttpRequestMessage(
                     method: global::System.Net.Http.HttpMethod.Get,
                     requestUri: new global::System.Uri(__path, global::System.UriKind.RelativeOrAbsolute));
@@ -581,5 +593,33 @@ namespace AppStoreConnect
                 __httpRequest?.Dispose();
             }
         }
+
+        /// <summary>
+        /// Wraps BetaRecruitmentCriterionOptionsGetCollectionAsync as an IAsyncEnumerable&lt;global::AppStoreConnect.BetaRecruitmentCriterionOption&gt; that follows the response's next-page URL.
+        /// </summary>
+        /// <param name="fieldsBetaRecruitmentCriterionOptions"></param>
+        /// <param name="limit"></param>
+        /// <param name="requestOptions">Options forwarded to every page request.</param>
+        /// <param name="cancellationToken"></param>
+        public global::System.Collections.Generic.IAsyncEnumerable<global::AppStoreConnect.BetaRecruitmentCriterionOption> BetaRecruitmentCriterionOptionsGetCollectionAutoPagingAsync(
+              global::System.Collections.Generic.IList<global::AppStoreConnect.BetaRecruitmentCriterionOptionsGetCollectionFieldsBetaRecruitmentCriterionOption>? fieldsBetaRecruitmentCriterionOptions = default,
+            int? limit = default,
+            global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = null,
+            global::System.Threading.CancellationToken cancellationToken = default)
+        {
+            return global::AppStoreConnect.AutoSDKPager.NextUrlAsync<global::AppStoreConnect.BetaRecruitmentCriterionOptionsResponse, global::AppStoreConnect.BetaRecruitmentCriterionOption>(
+                fetchPage: (__nextUrl, __ct) => BetaRecruitmentCriterionOptionsGetCollectionAsync(
+                    fieldsBetaRecruitmentCriterionOptions: fieldsBetaRecruitmentCriterionOptions,
+                    limit: limit,
+                    requestOptions: global::AppStoreConnect.AutoSDKPager.CreatePageRequestOptions(requestOptions, __nextUrl),
+                    cancellationToken: __ct),
+                extractItems: static __response => __response is null
+                    ? null
+                    : (global::System.Collections.Generic.IEnumerable<global::AppStoreConnect.BetaRecruitmentCriterionOption>?)__response.Data,
+                extractNextUrl: static __response => __response is null ? null : __response.Links?.Next,
+                baseAddress: global::AppStoreConnect.AutoSDKPager.GetPaginationBaseAddress(HttpClient.BaseAddress, "https://api.appstoreconnect.apple.com/"),
+                cancellationToken: cancellationToken);
+        }
+
     }
 }

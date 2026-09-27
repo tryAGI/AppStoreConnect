@@ -143,6 +143,12 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("blockedPlayers")]
+        public global::AppStoreConnect.GameCenterDetailRelationshipsBlockedPlayers? BlockedPlayers { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("challengesMinimumPlatformVersions")]
         public global::AppStoreConnect.GameCenterDetailRelationshipsChallengesMinimumPlatformVersions? ChallengesMinimumPlatformVersions { get; set; }
 
@@ -165,6 +171,7 @@ namespace AppStoreConnect
         /// <param name="gameCenterChallenges"></param>
         /// <param name="defaultLeaderboardV2"></param>
         /// <param name="defaultGroupLeaderboardV2"></param>
+        /// <param name="blockedPlayers"></param>
         /// <param name="challengesMinimumPlatformVersions"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
@@ -180,6 +187,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.GameCenterDetailRelationshipsGameCenterChallenges? gameCenterChallenges,
             global::AppStoreConnect.GameCenterDetailRelationshipsDefaultLeaderboardV2? defaultLeaderboardV2,
             global::AppStoreConnect.GameCenterDetailRelationshipsDefaultGroupLeaderboardV2? defaultGroupLeaderboardV2,
+            global::AppStoreConnect.GameCenterDetailRelationshipsBlockedPlayers? blockedPlayers,
             global::AppStoreConnect.GameCenterDetailRelationshipsChallengesMinimumPlatformVersions? challengesMinimumPlatformVersions)
         {
             this.App = app;
@@ -192,6 +200,7 @@ namespace AppStoreConnect
             this.GameCenterChallenges = gameCenterChallenges;
             this.DefaultLeaderboardV2 = defaultLeaderboardV2;
             this.DefaultGroupLeaderboardV2 = defaultGroupLeaderboardV2;
+            this.BlockedPlayers = blockedPlayers;
             this.ChallengesMinimumPlatformVersions = challengesMinimumPlatformVersions;
         }
 

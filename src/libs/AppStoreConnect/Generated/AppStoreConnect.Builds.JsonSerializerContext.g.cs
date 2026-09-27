@@ -330,6 +330,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppRelationshipsGameCenterEnabledVersionsDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppRelationshipsGameCenterEnabledVersionsDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppRelationshipsGameCenterEnabledVersionsDataItemType), TypeInfoPropertyName = "AppRelationshipsGameCenterEnabledVersionsDataItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppRelationshipsPerformanceOverviews))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppRelationshipsPerfPowerMetrics))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppRelationshipsAppCustomProductPages))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppRelationshipsAppCustomProductPagesDataItem>))]
@@ -513,7 +514,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadRelationshipsAssetFileDataType), TypeInfoPropertyName = "BuildUploadRelationshipsAssetFileDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadRelationshipsAssetDescriptionFile))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadRelationshipsAssetDescriptionFileData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadRelationshipsAssetDescriptionFileDataType), TypeInfoPropertyName = "BuildUploadRelationshipsAssetDescriptionFileDataType2")]
     internal sealed partial class BuildsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -526,6 +526,7 @@ namespace AppStoreConnect
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadRelationshipsAssetDescriptionFileDataType), TypeInfoPropertyName = "BuildUploadRelationshipsAssetDescriptionFileDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadRelationshipsAssetSpiFile))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadRelationshipsAssetSpiFileData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadRelationshipsAssetSpiFileDataType), TypeInfoPropertyName = "BuildUploadRelationshipsAssetSpiFileDataType2")]
@@ -1025,7 +1026,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildsAppStoreVersionGetToOneRelatedIncludeItem), TypeInfoPropertyName = "BuildsAppStoreVersionGetToOneRelatedIncludeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.BuildsBetaAppReviewSubmissionGetToOneRelatedFieldsBetaAppReviewSubmission>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildsBetaAppReviewSubmissionGetToOneRelatedFieldsBetaAppReviewSubmission), TypeInfoPropertyName = "BuildsBetaAppReviewSubmissionGetToOneRelatedFieldsBetaAppReviewSubmission2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.BuildsBetaBuildLocalizationsGetToManyRelatedFieldsBetaBuildLocalization>))]
     internal sealed partial class BuildsSourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1038,6 +1038,7 @@ namespace AppStoreConnect
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.BuildsBetaBuildLocalizationsGetToManyRelatedFieldsBetaBuildLocalization>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildsBetaBuildLocalizationsGetToManyRelatedFieldsBetaBuildLocalization), TypeInfoPropertyName = "BuildsBetaBuildLocalizationsGetToManyRelatedFieldsBetaBuildLocalization2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.BuildsBuildBetaDetailGetToOneRelatedFieldsBuildBetaDetail>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildsBuildBetaDetailGetToOneRelatedFieldsBuildBetaDetail), TypeInfoPropertyName = "BuildsBuildBetaDetailGetToOneRelatedFieldsBuildBetaDetail2")]
@@ -1537,7 +1538,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BuildsGetCollectionFieldsAppEncryptionDeclaration>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BuildsGetCollectionFieldsBetaAppReviewSubmission>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BuildsGetCollectionFieldsApp>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BuildsGetCollectionFieldsBuildBetaDetail>))]
     internal sealed partial class BuildsSourceGenerationContextChunk2 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1550,6 +1550,7 @@ namespace AppStoreConnect
         Converters = new global::System.Type[]
         {
         })]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BuildsGetCollectionFieldsBuildBetaDetail>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BuildsGetCollectionFieldsAppStoreVersion>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BuildsGetCollectionFieldsBuildIcon>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BuildsGetCollectionFieldsBuildBundle>))]

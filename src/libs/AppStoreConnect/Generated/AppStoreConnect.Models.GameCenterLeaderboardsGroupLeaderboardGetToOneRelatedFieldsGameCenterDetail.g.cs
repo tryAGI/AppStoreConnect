@@ -27,6 +27,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        BlockedPlayers,
+        /// <summary>
+        ///
+        /// </summary>
         ChallengeEnabled,
         /// <summary>
         ///
@@ -118,6 +122,7 @@ namespace AppStoreConnect
                 GameCenterLeaderboardsGroupLeaderboardGetToOneRelatedFieldsGameCenterDetail.ActivityReleases => "activityReleases",
                 GameCenterLeaderboardsGroupLeaderboardGetToOneRelatedFieldsGameCenterDetail.App => "app",
                 GameCenterLeaderboardsGroupLeaderboardGetToOneRelatedFieldsGameCenterDetail.ArcadeEnabled => "arcadeEnabled",
+                GameCenterLeaderboardsGroupLeaderboardGetToOneRelatedFieldsGameCenterDetail.BlockedPlayers => "blockedPlayers",
                 GameCenterLeaderboardsGroupLeaderboardGetToOneRelatedFieldsGameCenterDetail.ChallengeEnabled => "challengeEnabled",
                 GameCenterLeaderboardsGroupLeaderboardGetToOneRelatedFieldsGameCenterDetail.ChallengeReleases => "challengeReleases",
                 GameCenterLeaderboardsGroupLeaderboardGetToOneRelatedFieldsGameCenterDetail.ChallengesMinimumPlatformVersions => "challengesMinimumPlatformVersions",
@@ -151,6 +156,7 @@ namespace AppStoreConnect
                 "activityReleases" => GameCenterLeaderboardsGroupLeaderboardGetToOneRelatedFieldsGameCenterDetail.ActivityReleases,
                 "app" => GameCenterLeaderboardsGroupLeaderboardGetToOneRelatedFieldsGameCenterDetail.App,
                 "arcadeEnabled" => GameCenterLeaderboardsGroupLeaderboardGetToOneRelatedFieldsGameCenterDetail.ArcadeEnabled,
+                "blockedPlayers" => GameCenterLeaderboardsGroupLeaderboardGetToOneRelatedFieldsGameCenterDetail.BlockedPlayers,
                 "challengeEnabled" => GameCenterLeaderboardsGroupLeaderboardGetToOneRelatedFieldsGameCenterDetail.ChallengeEnabled,
                 "challengeReleases" => GameCenterLeaderboardsGroupLeaderboardGetToOneRelatedFieldsGameCenterDetail.ChallengeReleases,
                 "challengesMinimumPlatformVersions" => GameCenterLeaderboardsGroupLeaderboardGetToOneRelatedFieldsGameCenterDetail.ChallengesMinimumPlatformVersions,

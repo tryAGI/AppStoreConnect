@@ -43,6 +43,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        GameCenterScoreModerations,
+        /// <summary>
+        ///
+        /// </summary>
         RecurrenceDuration,
         /// <summary>
         ///
@@ -106,6 +110,7 @@ namespace AppStoreConnect
                 GameCenterDetailsGameCenterLeaderboardSetsV2GetToManyRelatedFieldsGameCenterLeaderboard.GameCenterDetail => "gameCenterDetail",
                 GameCenterDetailsGameCenterLeaderboardSetsV2GetToManyRelatedFieldsGameCenterLeaderboard.GameCenterGroup => "gameCenterGroup",
                 GameCenterDetailsGameCenterLeaderboardSetsV2GetToManyRelatedFieldsGameCenterLeaderboard.GameCenterLeaderboardSets => "gameCenterLeaderboardSets",
+                GameCenterDetailsGameCenterLeaderboardSetsV2GetToManyRelatedFieldsGameCenterLeaderboard.GameCenterScoreModerations => "gameCenterScoreModerations",
                 GameCenterDetailsGameCenterLeaderboardSetsV2GetToManyRelatedFieldsGameCenterLeaderboard.RecurrenceDuration => "recurrenceDuration",
                 GameCenterDetailsGameCenterLeaderboardSetsV2GetToManyRelatedFieldsGameCenterLeaderboard.RecurrenceRule => "recurrenceRule",
                 GameCenterDetailsGameCenterLeaderboardSetsV2GetToManyRelatedFieldsGameCenterLeaderboard.RecurrenceStartDate => "recurrenceStartDate",
@@ -135,6 +140,7 @@ namespace AppStoreConnect
                 "gameCenterDetail" => GameCenterDetailsGameCenterLeaderboardSetsV2GetToManyRelatedFieldsGameCenterLeaderboard.GameCenterDetail,
                 "gameCenterGroup" => GameCenterDetailsGameCenterLeaderboardSetsV2GetToManyRelatedFieldsGameCenterLeaderboard.GameCenterGroup,
                 "gameCenterLeaderboardSets" => GameCenterDetailsGameCenterLeaderboardSetsV2GetToManyRelatedFieldsGameCenterLeaderboard.GameCenterLeaderboardSets,
+                "gameCenterScoreModerations" => GameCenterDetailsGameCenterLeaderboardSetsV2GetToManyRelatedFieldsGameCenterLeaderboard.GameCenterScoreModerations,
                 "recurrenceDuration" => GameCenterDetailsGameCenterLeaderboardSetsV2GetToManyRelatedFieldsGameCenterLeaderboard.RecurrenceDuration,
                 "recurrenceRule" => GameCenterDetailsGameCenterLeaderboardSetsV2GetToManyRelatedFieldsGameCenterLeaderboard.RecurrenceRule,
                 "recurrenceStartDate" => GameCenterDetailsGameCenterLeaderboardSetsV2GetToManyRelatedFieldsGameCenterLeaderboard.RecurrenceStartDate,

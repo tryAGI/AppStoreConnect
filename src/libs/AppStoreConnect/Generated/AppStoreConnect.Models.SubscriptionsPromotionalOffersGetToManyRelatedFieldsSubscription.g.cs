@@ -35,6 +35,14 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        MarketSettings,
+        /// <summary>
+        ///
+        /// </summary>
+        MultiSeatStatus,
+        /// <summary>
+        ///
+        /// </summary>
         Name,
         /// <summary>
         ///
@@ -112,6 +120,8 @@ namespace AppStoreConnect
                 SubscriptionsPromotionalOffersGetToManyRelatedFieldsSubscription.GroupLevel => "groupLevel",
                 SubscriptionsPromotionalOffersGetToManyRelatedFieldsSubscription.Images => "images",
                 SubscriptionsPromotionalOffersGetToManyRelatedFieldsSubscription.IntroductoryOffers => "introductoryOffers",
+                SubscriptionsPromotionalOffersGetToManyRelatedFieldsSubscription.MarketSettings => "marketSettings",
+                SubscriptionsPromotionalOffersGetToManyRelatedFieldsSubscription.MultiSeatStatus => "multiSeatStatus",
                 SubscriptionsPromotionalOffersGetToManyRelatedFieldsSubscription.Name => "name",
                 SubscriptionsPromotionalOffersGetToManyRelatedFieldsSubscription.OfferCodes => "offerCodes",
                 SubscriptionsPromotionalOffersGetToManyRelatedFieldsSubscription.PlanAvailabilities => "planAvailabilities",
@@ -143,6 +153,8 @@ namespace AppStoreConnect
                 "groupLevel" => SubscriptionsPromotionalOffersGetToManyRelatedFieldsSubscription.GroupLevel,
                 "images" => SubscriptionsPromotionalOffersGetToManyRelatedFieldsSubscription.Images,
                 "introductoryOffers" => SubscriptionsPromotionalOffersGetToManyRelatedFieldsSubscription.IntroductoryOffers,
+                "marketSettings" => SubscriptionsPromotionalOffersGetToManyRelatedFieldsSubscription.MarketSettings,
+                "multiSeatStatus" => SubscriptionsPromotionalOffersGetToManyRelatedFieldsSubscription.MultiSeatStatus,
                 "name" => SubscriptionsPromotionalOffersGetToManyRelatedFieldsSubscription.Name,
                 "offerCodes" => SubscriptionsPromotionalOffersGetToManyRelatedFieldsSubscription.OfferCodes,
                 "planAvailabilities" => SubscriptionsPromotionalOffersGetToManyRelatedFieldsSubscription.PlanAvailabilities,

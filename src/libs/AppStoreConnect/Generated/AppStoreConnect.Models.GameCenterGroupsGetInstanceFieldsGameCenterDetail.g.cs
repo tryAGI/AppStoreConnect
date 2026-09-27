@@ -27,6 +27,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        BlockedPlayers,
+        /// <summary>
+        ///
+        /// </summary>
         ChallengeEnabled,
         /// <summary>
         ///
@@ -118,6 +122,7 @@ namespace AppStoreConnect
                 GameCenterGroupsGetInstanceFieldsGameCenterDetail.ActivityReleases => "activityReleases",
                 GameCenterGroupsGetInstanceFieldsGameCenterDetail.App => "app",
                 GameCenterGroupsGetInstanceFieldsGameCenterDetail.ArcadeEnabled => "arcadeEnabled",
+                GameCenterGroupsGetInstanceFieldsGameCenterDetail.BlockedPlayers => "blockedPlayers",
                 GameCenterGroupsGetInstanceFieldsGameCenterDetail.ChallengeEnabled => "challengeEnabled",
                 GameCenterGroupsGetInstanceFieldsGameCenterDetail.ChallengeReleases => "challengeReleases",
                 GameCenterGroupsGetInstanceFieldsGameCenterDetail.ChallengesMinimumPlatformVersions => "challengesMinimumPlatformVersions",
@@ -151,6 +156,7 @@ namespace AppStoreConnect
                 "activityReleases" => GameCenterGroupsGetInstanceFieldsGameCenterDetail.ActivityReleases,
                 "app" => GameCenterGroupsGetInstanceFieldsGameCenterDetail.App,
                 "arcadeEnabled" => GameCenterGroupsGetInstanceFieldsGameCenterDetail.ArcadeEnabled,
+                "blockedPlayers" => GameCenterGroupsGetInstanceFieldsGameCenterDetail.BlockedPlayers,
                 "challengeEnabled" => GameCenterGroupsGetInstanceFieldsGameCenterDetail.ChallengeEnabled,
                 "challengeReleases" => GameCenterGroupsGetInstanceFieldsGameCenterDetail.ChallengeReleases,
                 "challengesMinimumPlatformVersions" => GameCenterGroupsGetInstanceFieldsGameCenterDetail.ChallengesMinimumPlatformVersions,

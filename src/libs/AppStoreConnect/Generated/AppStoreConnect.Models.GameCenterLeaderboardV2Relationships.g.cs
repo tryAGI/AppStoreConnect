@@ -29,6 +29,12 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterScoreModerations")]
+        public global::AppStoreConnect.GameCenterLeaderboardV2RelationshipsGameCenterScoreModerations? GameCenterScoreModerations { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("activity")]
         public global::AppStoreConnect.GameCenterLeaderboardV2RelationshipsActivity? Activity { get; set; }
 
@@ -56,6 +62,7 @@ namespace AppStoreConnect
         /// <param name="gameCenterDetail"></param>
         /// <param name="gameCenterGroup"></param>
         /// <param name="gameCenterLeaderboardSets"></param>
+        /// <param name="gameCenterScoreModerations"></param>
         /// <param name="activity"></param>
         /// <param name="challenge"></param>
         /// <param name="versions"></param>
@@ -66,6 +73,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.GameCenterLeaderboardV2RelationshipsGameCenterDetail? gameCenterDetail,
             global::AppStoreConnect.GameCenterLeaderboardV2RelationshipsGameCenterGroup? gameCenterGroup,
             global::AppStoreConnect.GameCenterLeaderboardV2RelationshipsGameCenterLeaderboardSets? gameCenterLeaderboardSets,
+            global::AppStoreConnect.GameCenterLeaderboardV2RelationshipsGameCenterScoreModerations? gameCenterScoreModerations,
             global::AppStoreConnect.GameCenterLeaderboardV2RelationshipsActivity? activity,
             global::AppStoreConnect.GameCenterLeaderboardV2RelationshipsChallenge? challenge,
             global::AppStoreConnect.GameCenterLeaderboardV2RelationshipsVersions? versions)
@@ -73,6 +81,7 @@ namespace AppStoreConnect
             this.GameCenterDetail = gameCenterDetail;
             this.GameCenterGroup = gameCenterGroup;
             this.GameCenterLeaderboardSets = gameCenterLeaderboardSets;
+            this.GameCenterScoreModerations = gameCenterScoreModerations;
             this.Activity = activity;
             this.Challenge = challenge;
             this.Versions = versions;

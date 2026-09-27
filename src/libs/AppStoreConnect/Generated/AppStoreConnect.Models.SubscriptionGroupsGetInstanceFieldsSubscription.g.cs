@@ -35,6 +35,14 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        MarketSettings,
+        /// <summary>
+        ///
+        /// </summary>
+        MultiSeatStatus,
+        /// <summary>
+        ///
+        /// </summary>
         Name,
         /// <summary>
         ///
@@ -112,6 +120,8 @@ namespace AppStoreConnect
                 SubscriptionGroupsGetInstanceFieldsSubscription.GroupLevel => "groupLevel",
                 SubscriptionGroupsGetInstanceFieldsSubscription.Images => "images",
                 SubscriptionGroupsGetInstanceFieldsSubscription.IntroductoryOffers => "introductoryOffers",
+                SubscriptionGroupsGetInstanceFieldsSubscription.MarketSettings => "marketSettings",
+                SubscriptionGroupsGetInstanceFieldsSubscription.MultiSeatStatus => "multiSeatStatus",
                 SubscriptionGroupsGetInstanceFieldsSubscription.Name => "name",
                 SubscriptionGroupsGetInstanceFieldsSubscription.OfferCodes => "offerCodes",
                 SubscriptionGroupsGetInstanceFieldsSubscription.PlanAvailabilities => "planAvailabilities",
@@ -143,6 +153,8 @@ namespace AppStoreConnect
                 "groupLevel" => SubscriptionGroupsGetInstanceFieldsSubscription.GroupLevel,
                 "images" => SubscriptionGroupsGetInstanceFieldsSubscription.Images,
                 "introductoryOffers" => SubscriptionGroupsGetInstanceFieldsSubscription.IntroductoryOffers,
+                "marketSettings" => SubscriptionGroupsGetInstanceFieldsSubscription.MarketSettings,
+                "multiSeatStatus" => SubscriptionGroupsGetInstanceFieldsSubscription.MultiSeatStatus,
                 "name" => SubscriptionGroupsGetInstanceFieldsSubscription.Name,
                 "offerCodes" => SubscriptionGroupsGetInstanceFieldsSubscription.OfferCodes,
                 "planAvailabilities" => SubscriptionGroupsGetInstanceFieldsSubscription.PlanAvailabilities,

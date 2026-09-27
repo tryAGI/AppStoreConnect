@@ -47,10 +47,6 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        KidsAgeBand,
-        /// <summary>
-        ///
-        /// </summary>
         KoreaAgeRating,
         /// <summary>
         ///
@@ -107,7 +103,6 @@ namespace AppStoreConnect
                 AppInfosGetInstanceFieldsAppInfo.BrazilAgeRating => "brazilAgeRating",
                 AppInfosGetInstanceFieldsAppInfo.BrazilAgeRatingV2 => "brazilAgeRatingV2",
                 AppInfosGetInstanceFieldsAppInfo.FranceAgeRating => "franceAgeRating",
-                AppInfosGetInstanceFieldsAppInfo.KidsAgeBand => "kidsAgeBand",
                 AppInfosGetInstanceFieldsAppInfo.KoreaAgeRating => "koreaAgeRating",
                 AppInfosGetInstanceFieldsAppInfo.PrimaryCategory => "primaryCategory",
                 AppInfosGetInstanceFieldsAppInfo.PrimarySubcategoryOne => "primarySubcategoryOne",
@@ -136,7 +131,6 @@ namespace AppStoreConnect
                 "brazilAgeRating" => AppInfosGetInstanceFieldsAppInfo.BrazilAgeRating,
                 "brazilAgeRatingV2" => AppInfosGetInstanceFieldsAppInfo.BrazilAgeRatingV2,
                 "franceAgeRating" => AppInfosGetInstanceFieldsAppInfo.FranceAgeRating,
-                "kidsAgeBand" => AppInfosGetInstanceFieldsAppInfo.KidsAgeBand,
                 "koreaAgeRating" => AppInfosGetInstanceFieldsAppInfo.KoreaAgeRating,
                 "primaryCategory" => AppInfosGetInstanceFieldsAppInfo.PrimaryCategory,
                 "primarySubcategoryOne" => AppInfosGetInstanceFieldsAppInfo.PrimarySubcategoryOne,

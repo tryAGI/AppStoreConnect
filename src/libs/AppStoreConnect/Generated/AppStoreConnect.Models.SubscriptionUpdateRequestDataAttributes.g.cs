@@ -40,6 +40,19 @@ namespace AppStoreConnect
         public int? GroupLevel { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("multiSeatStatus")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.SubscriptionUpdateRequestDataAttributesMultiSeatStatusJsonConverter))]
+        public global::AppStoreConnect.SubscriptionUpdateRequestDataAttributesMultiSeatStatus? MultiSeatStatus { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("marketSettings")]
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionUpdateRequestDataAttributesMarketSetting>? MarketSettings { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -53,6 +66,8 @@ namespace AppStoreConnect
         /// <param name="subscriptionPeriod"></param>
         /// <param name="reviewNote"></param>
         /// <param name="groupLevel"></param>
+        /// <param name="multiSeatStatus"></param>
+        /// <param name="marketSettings"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -61,13 +76,17 @@ namespace AppStoreConnect
             bool? familySharable,
             global::AppStoreConnect.SubscriptionUpdateRequestDataAttributesSubscriptionPeriod? subscriptionPeriod,
             string? reviewNote,
-            int? groupLevel)
+            int? groupLevel,
+            global::AppStoreConnect.SubscriptionUpdateRequestDataAttributesMultiSeatStatus? multiSeatStatus,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionUpdateRequestDataAttributesMarketSetting>? marketSettings)
         {
             this.Name = name;
             this.FamilySharable = familySharable;
             this.SubscriptionPeriod = subscriptionPeriod;
             this.ReviewNote = reviewNote;
             this.GroupLevel = groupLevel;
+            this.MultiSeatStatus = multiSeatStatus;
+            this.MarketSettings = marketSettings;
         }
 
         /// <summary>
