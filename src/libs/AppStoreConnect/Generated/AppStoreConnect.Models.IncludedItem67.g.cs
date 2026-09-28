@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Build PickBuilds() => IsBuilds
-            ? Builds!
+        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CiProduct PickCiProducts() => IsCiProducts
-            ? CiProducts!
+        public global::AppStoreConnect.CiProduct PickCiProducts() => CiProducts is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CiProducts' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CiWorkflow PickCiWorkflows() => IsCiWorkflows
-            ? CiWorkflows!
+        public global::AppStoreConnect.CiWorkflow PickCiWorkflows() => CiWorkflows is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CiWorkflows' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmGitReference PickScmGitReferences() => IsScmGitReferences
-            ? ScmGitReferences!
+        public global::AppStoreConnect.ScmGitReference PickScmGitReferences() => ScmGitReferences is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScmGitReferences' but the value was {ToString()}.");
 
         /// <summary>
@@ -195,8 +195,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmPullRequest PickScmPullRequests() => IsScmPullRequests
-            ? ScmPullRequests!
+        public global::AppStoreConnect.ScmPullRequest PickScmPullRequests() => ScmPullRequests is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScmPullRequests' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -380,25 +380,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsBuilds && builds != null)
+            if (Builds is { } __value0 && builds != null)
             {
-                return builds(Builds!);
+                return builds(__value0);
             }
-            else if (IsCiProducts && ciProducts != null)
+            else if (CiProducts is { } __value1 && ciProducts != null)
             {
-                return ciProducts(CiProducts!);
+                return ciProducts(__value1);
             }
-            else if (IsCiWorkflows && ciWorkflows != null)
+            else if (CiWorkflows is { } __value2 && ciWorkflows != null)
             {
-                return ciWorkflows(CiWorkflows!);
+                return ciWorkflows(__value2);
             }
-            else if (IsScmGitReferences && scmGitReferences != null)
+            else if (ScmGitReferences is { } __value3 && scmGitReferences != null)
             {
-                return scmGitReferences(ScmGitReferences!);
+                return scmGitReferences(__value3);
             }
-            else if (IsScmPullRequests && scmPullRequests != null)
+            else if (ScmPullRequests is { } __value4 && scmPullRequests != null)
             {
-                return scmPullRequests(ScmPullRequests!);
+                return scmPullRequests(__value4);
             }
 
             return default(TResult);
@@ -424,25 +424,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsBuilds)
+            if (Builds is { } __value0)
             {
-                builds?.Invoke(Builds!);
+                builds?.Invoke(__value0);
             }
-            else if (IsCiProducts)
+            else if (CiProducts is { } __value1)
             {
-                ciProducts?.Invoke(CiProducts!);
+                ciProducts?.Invoke(__value1);
             }
-            else if (IsCiWorkflows)
+            else if (CiWorkflows is { } __value2)
             {
-                ciWorkflows?.Invoke(CiWorkflows!);
+                ciWorkflows?.Invoke(__value2);
             }
-            else if (IsScmGitReferences)
+            else if (ScmGitReferences is { } __value3)
             {
-                scmGitReferences?.Invoke(ScmGitReferences!);
+                scmGitReferences?.Invoke(__value3);
             }
-            else if (IsScmPullRequests)
+            else if (ScmPullRequests is { } __value4)
             {
-                scmPullRequests?.Invoke(ScmPullRequests!);
+                scmPullRequests?.Invoke(__value4);
             }
         }
 
@@ -462,25 +462,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsBuilds)
+            if (Builds is { } __value0)
             {
-                builds?.Invoke(Builds!);
+                builds?.Invoke(__value0);
             }
-            else if (IsCiProducts)
+            else if (CiProducts is { } __value1)
             {
-                ciProducts?.Invoke(CiProducts!);
+                ciProducts?.Invoke(__value1);
             }
-            else if (IsCiWorkflows)
+            else if (CiWorkflows is { } __value2)
             {
-                ciWorkflows?.Invoke(CiWorkflows!);
+                ciWorkflows?.Invoke(__value2);
             }
-            else if (IsScmGitReferences)
+            else if (ScmGitReferences is { } __value3)
             {
-                scmGitReferences?.Invoke(ScmGitReferences!);
+                scmGitReferences?.Invoke(__value3);
             }
-            else if (IsScmPullRequests)
+            else if (ScmPullRequests is { } __value4)
             {
-                scmPullRequests?.Invoke(ScmPullRequests!);
+                scmPullRequests?.Invoke(__value4);
             }
         }
 

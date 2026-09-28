@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppClipAppStoreReviewDetail PickAppClipAppStoreReviewDetails() => IsAppClipAppStoreReviewDetails
-            ? AppClipAppStoreReviewDetails!
+        public global::AppStoreConnect.AppClipAppStoreReviewDetail PickAppClipAppStoreReviewDetails() => AppClipAppStoreReviewDetails is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipAppStoreReviewDetails' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppClipDefaultExperienceLocalization PickAppClipDefaultExperienceLocalizations1() => IsAppClipDefaultExperienceLocalizations1
-            ? AppClipDefaultExperienceLocalizations1!
+        public global::AppStoreConnect.AppClipDefaultExperienceLocalization PickAppClipDefaultExperienceLocalizations1() => AppClipDefaultExperienceLocalizations1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipDefaultExperienceLocalizations1' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppClip PickAppClipDefaultExperienceLocalizations2() => IsAppClipDefaultExperienceLocalizations2
-            ? AppClipDefaultExperienceLocalizations2!
+        public global::AppStoreConnect.AppClip PickAppClipDefaultExperienceLocalizations2() => AppClipDefaultExperienceLocalizations2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipDefaultExperienceLocalizations2' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => IsAppStoreVersions
-            ? AppStoreVersions!
+        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => AppStoreVersions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -315,21 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppClipAppStoreReviewDetails && appClipAppStoreReviewDetails != null)
+            if (AppClipAppStoreReviewDetails is { } __value0 && appClipAppStoreReviewDetails != null)
             {
-                return appClipAppStoreReviewDetails(AppClipAppStoreReviewDetails!);
+                return appClipAppStoreReviewDetails(__value0);
             }
-            else if (IsAppClipDefaultExperienceLocalizations1 && appClipDefaultExperienceLocalizations1 != null)
+            else if (AppClipDefaultExperienceLocalizations1 is { } __value1 && appClipDefaultExperienceLocalizations1 != null)
             {
-                return appClipDefaultExperienceLocalizations1(AppClipDefaultExperienceLocalizations1!);
+                return appClipDefaultExperienceLocalizations1(__value1);
             }
-            else if (IsAppClipDefaultExperienceLocalizations2 && appClipDefaultExperienceLocalizations2 != null)
+            else if (AppClipDefaultExperienceLocalizations2 is { } __value2 && appClipDefaultExperienceLocalizations2 != null)
             {
-                return appClipDefaultExperienceLocalizations2(AppClipDefaultExperienceLocalizations2!);
+                return appClipDefaultExperienceLocalizations2(__value2);
             }
-            else if (IsAppStoreVersions && appStoreVersions != null)
+            else if (AppStoreVersions is { } __value3 && appStoreVersions != null)
             {
-                return appStoreVersions(AppStoreVersions!);
+                return appStoreVersions(__value3);
             }
 
             return default(TResult);
@@ -353,21 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppClipAppStoreReviewDetails)
+            if (AppClipAppStoreReviewDetails is { } __value0)
             {
-                appClipAppStoreReviewDetails?.Invoke(AppClipAppStoreReviewDetails!);
+                appClipAppStoreReviewDetails?.Invoke(__value0);
             }
-            else if (IsAppClipDefaultExperienceLocalizations1)
+            else if (AppClipDefaultExperienceLocalizations1 is { } __value1)
             {
-                appClipDefaultExperienceLocalizations1?.Invoke(AppClipDefaultExperienceLocalizations1!);
+                appClipDefaultExperienceLocalizations1?.Invoke(__value1);
             }
-            else if (IsAppClipDefaultExperienceLocalizations2)
+            else if (AppClipDefaultExperienceLocalizations2 is { } __value2)
             {
-                appClipDefaultExperienceLocalizations2?.Invoke(AppClipDefaultExperienceLocalizations2!);
+                appClipDefaultExperienceLocalizations2?.Invoke(__value2);
             }
-            else if (IsAppStoreVersions)
+            else if (AppStoreVersions is { } __value3)
             {
-                appStoreVersions?.Invoke(AppStoreVersions!);
+                appStoreVersions?.Invoke(__value3);
             }
         }
 
@@ -386,21 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppClipAppStoreReviewDetails)
+            if (AppClipAppStoreReviewDetails is { } __value0)
             {
-                appClipAppStoreReviewDetails?.Invoke(AppClipAppStoreReviewDetails!);
+                appClipAppStoreReviewDetails?.Invoke(__value0);
             }
-            else if (IsAppClipDefaultExperienceLocalizations1)
+            else if (AppClipDefaultExperienceLocalizations1 is { } __value1)
             {
-                appClipDefaultExperienceLocalizations1?.Invoke(AppClipDefaultExperienceLocalizations1!);
+                appClipDefaultExperienceLocalizations1?.Invoke(__value1);
             }
-            else if (IsAppClipDefaultExperienceLocalizations2)
+            else if (AppClipDefaultExperienceLocalizations2 is { } __value2)
             {
-                appClipDefaultExperienceLocalizations2?.Invoke(AppClipDefaultExperienceLocalizations2!);
+                appClipDefaultExperienceLocalizations2?.Invoke(__value2);
             }
-            else if (IsAppStoreVersions)
+            else if (AppStoreVersions is { } __value3)
             {
-                appStoreVersions?.Invoke(AppStoreVersions!);
+                appStoreVersions?.Invoke(__value3);
             }
         }
 

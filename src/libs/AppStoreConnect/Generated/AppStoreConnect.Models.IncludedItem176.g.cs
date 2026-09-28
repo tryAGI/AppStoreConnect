@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.PromotedPurchase PickPromotedPurchases() => IsPromotedPurchases
-            ? PromotedPurchases!
+        public global::AppStoreConnect.PromotedPurchase PickPromotedPurchases() => PromotedPurchases is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PromotedPurchases' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot PickSubscriptionAppStoreReviewScreenshots() => IsSubscriptionAppStoreReviewScreenshots
-            ? SubscriptionAppStoreReviewScreenshots!
+        public global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot PickSubscriptionAppStoreReviewScreenshots() => SubscriptionAppStoreReviewScreenshots is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionAppStoreReviewScreenshots' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionAvailability PickSubscriptionAvailabilities() => IsSubscriptionAvailabilities
-            ? SubscriptionAvailabilities!
+        public global::AppStoreConnect.SubscriptionAvailability PickSubscriptionAvailabilities() => SubscriptionAvailabilities is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionAvailabilities' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionGroup PickSubscriptionGroups() => IsSubscriptionGroups
-            ? SubscriptionGroups!
+        public global::AppStoreConnect.SubscriptionGroup PickSubscriptionGroups() => SubscriptionGroups is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionGroups' but the value was {ToString()}.");
 
         /// <summary>
@@ -195,8 +195,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionImage PickSubscriptionImages() => IsSubscriptionImages
-            ? SubscriptionImages!
+        public global::AppStoreConnect.SubscriptionImage PickSubscriptionImages() => SubscriptionImages is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionImages' but the value was {ToString()}.");
 
         /// <summary>
@@ -232,8 +232,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionIntroductoryOffer PickSubscriptionIntroductoryOffers() => IsSubscriptionIntroductoryOffers
-            ? SubscriptionIntroductoryOffers!
+        public global::AppStoreConnect.SubscriptionIntroductoryOffer PickSubscriptionIntroductoryOffers() => SubscriptionIntroductoryOffers is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionIntroductoryOffers' but the value was {ToString()}.");
 
         /// <summary>
@@ -269,8 +269,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionLocalization PickSubscriptionLocalizations() => IsSubscriptionLocalizations
-            ? SubscriptionLocalizations!
+        public global::AppStoreConnect.SubscriptionLocalization PickSubscriptionLocalizations() => SubscriptionLocalizations is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionLocalizations' but the value was {ToString()}.");
 
         /// <summary>
@@ -306,8 +306,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionOfferCode PickSubscriptionOfferCodes() => IsSubscriptionOfferCodes
-            ? SubscriptionOfferCodes!
+        public global::AppStoreConnect.SubscriptionOfferCode PickSubscriptionOfferCodes() => SubscriptionOfferCodes is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionOfferCodes' but the value was {ToString()}.");
 
         /// <summary>
@@ -343,8 +343,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionPlanAvailability PickSubscriptionPlanAvailabilities() => IsSubscriptionPlanAvailabilities
-            ? SubscriptionPlanAvailabilities!
+        public global::AppStoreConnect.SubscriptionPlanAvailability PickSubscriptionPlanAvailabilities() => SubscriptionPlanAvailabilities is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPlanAvailabilities' but the value was {ToString()}.");
 
         /// <summary>
@@ -380,8 +380,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionPrice PickSubscriptionPrices() => IsSubscriptionPrices
-            ? SubscriptionPrices!
+        public global::AppStoreConnect.SubscriptionPrice PickSubscriptionPrices() => SubscriptionPrices is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPrices' but the value was {ToString()}.");
 
         /// <summary>
@@ -417,8 +417,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionPromotionalOffer PickSubscriptionPromotionalOffers() => IsSubscriptionPromotionalOffers
-            ? SubscriptionPromotionalOffers!
+        public global::AppStoreConnect.SubscriptionPromotionalOffer PickSubscriptionPromotionalOffers() => SubscriptionPromotionalOffers is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPromotionalOffers' but the value was {ToString()}.");
 
         /// <summary>
@@ -454,8 +454,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionVersion PickSubscriptionVersions() => IsSubscriptionVersions
-            ? SubscriptionVersions!
+        public global::AppStoreConnect.SubscriptionVersion PickSubscriptionVersions() => SubscriptionVersions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionVersions' but the value was {ToString()}.");
 
         /// <summary>
@@ -491,8 +491,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.WinBackOffer PickWinBackOffers() => IsWinBackOffers
-            ? WinBackOffers!
+        public global::AppStoreConnect.WinBackOffer PickWinBackOffers() => WinBackOffers is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'WinBackOffers' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -900,57 +900,57 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsPromotedPurchases && promotedPurchases != null)
+            if (PromotedPurchases is { } __value0 && promotedPurchases != null)
             {
-                return promotedPurchases(PromotedPurchases!);
+                return promotedPurchases(__value0);
             }
-            else if (IsSubscriptionAppStoreReviewScreenshots && subscriptionAppStoreReviewScreenshots != null)
+            else if (SubscriptionAppStoreReviewScreenshots is { } __value1 && subscriptionAppStoreReviewScreenshots != null)
             {
-                return subscriptionAppStoreReviewScreenshots(SubscriptionAppStoreReviewScreenshots!);
+                return subscriptionAppStoreReviewScreenshots(__value1);
             }
-            else if (IsSubscriptionAvailabilities && subscriptionAvailabilities != null)
+            else if (SubscriptionAvailabilities is { } __value2 && subscriptionAvailabilities != null)
             {
-                return subscriptionAvailabilities(SubscriptionAvailabilities!);
+                return subscriptionAvailabilities(__value2);
             }
-            else if (IsSubscriptionGroups && subscriptionGroups != null)
+            else if (SubscriptionGroups is { } __value3 && subscriptionGroups != null)
             {
-                return subscriptionGroups(SubscriptionGroups!);
+                return subscriptionGroups(__value3);
             }
-            else if (IsSubscriptionImages && subscriptionImages != null)
+            else if (SubscriptionImages is { } __value4 && subscriptionImages != null)
             {
-                return subscriptionImages(SubscriptionImages!);
+                return subscriptionImages(__value4);
             }
-            else if (IsSubscriptionIntroductoryOffers && subscriptionIntroductoryOffers != null)
+            else if (SubscriptionIntroductoryOffers is { } __value5 && subscriptionIntroductoryOffers != null)
             {
-                return subscriptionIntroductoryOffers(SubscriptionIntroductoryOffers!);
+                return subscriptionIntroductoryOffers(__value5);
             }
-            else if (IsSubscriptionLocalizations && subscriptionLocalizations != null)
+            else if (SubscriptionLocalizations is { } __value6 && subscriptionLocalizations != null)
             {
-                return subscriptionLocalizations(SubscriptionLocalizations!);
+                return subscriptionLocalizations(__value6);
             }
-            else if (IsSubscriptionOfferCodes && subscriptionOfferCodes != null)
+            else if (SubscriptionOfferCodes is { } __value7 && subscriptionOfferCodes != null)
             {
-                return subscriptionOfferCodes(SubscriptionOfferCodes!);
+                return subscriptionOfferCodes(__value7);
             }
-            else if (IsSubscriptionPlanAvailabilities && subscriptionPlanAvailabilities != null)
+            else if (SubscriptionPlanAvailabilities is { } __value8 && subscriptionPlanAvailabilities != null)
             {
-                return subscriptionPlanAvailabilities(SubscriptionPlanAvailabilities!);
+                return subscriptionPlanAvailabilities(__value8);
             }
-            else if (IsSubscriptionPrices && subscriptionPrices != null)
+            else if (SubscriptionPrices is { } __value9 && subscriptionPrices != null)
             {
-                return subscriptionPrices(SubscriptionPrices!);
+                return subscriptionPrices(__value9);
             }
-            else if (IsSubscriptionPromotionalOffers && subscriptionPromotionalOffers != null)
+            else if (SubscriptionPromotionalOffers is { } __value10 && subscriptionPromotionalOffers != null)
             {
-                return subscriptionPromotionalOffers(SubscriptionPromotionalOffers!);
+                return subscriptionPromotionalOffers(__value10);
             }
-            else if (IsSubscriptionVersions && subscriptionVersions != null)
+            else if (SubscriptionVersions is { } __value11 && subscriptionVersions != null)
             {
-                return subscriptionVersions(SubscriptionVersions!);
+                return subscriptionVersions(__value11);
             }
-            else if (IsWinBackOffers && winBackOffers != null)
+            else if (WinBackOffers is { } __value12 && winBackOffers != null)
             {
-                return winBackOffers(WinBackOffers!);
+                return winBackOffers(__value12);
             }
 
             return default(TResult);
@@ -992,57 +992,57 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsPromotedPurchases)
+            if (PromotedPurchases is { } __value0)
             {
-                promotedPurchases?.Invoke(PromotedPurchases!);
+                promotedPurchases?.Invoke(__value0);
             }
-            else if (IsSubscriptionAppStoreReviewScreenshots)
+            else if (SubscriptionAppStoreReviewScreenshots is { } __value1)
             {
-                subscriptionAppStoreReviewScreenshots?.Invoke(SubscriptionAppStoreReviewScreenshots!);
+                subscriptionAppStoreReviewScreenshots?.Invoke(__value1);
             }
-            else if (IsSubscriptionAvailabilities)
+            else if (SubscriptionAvailabilities is { } __value2)
             {
-                subscriptionAvailabilities?.Invoke(SubscriptionAvailabilities!);
+                subscriptionAvailabilities?.Invoke(__value2);
             }
-            else if (IsSubscriptionGroups)
+            else if (SubscriptionGroups is { } __value3)
             {
-                subscriptionGroups?.Invoke(SubscriptionGroups!);
+                subscriptionGroups?.Invoke(__value3);
             }
-            else if (IsSubscriptionImages)
+            else if (SubscriptionImages is { } __value4)
             {
-                subscriptionImages?.Invoke(SubscriptionImages!);
+                subscriptionImages?.Invoke(__value4);
             }
-            else if (IsSubscriptionIntroductoryOffers)
+            else if (SubscriptionIntroductoryOffers is { } __value5)
             {
-                subscriptionIntroductoryOffers?.Invoke(SubscriptionIntroductoryOffers!);
+                subscriptionIntroductoryOffers?.Invoke(__value5);
             }
-            else if (IsSubscriptionLocalizations)
+            else if (SubscriptionLocalizations is { } __value6)
             {
-                subscriptionLocalizations?.Invoke(SubscriptionLocalizations!);
+                subscriptionLocalizations?.Invoke(__value6);
             }
-            else if (IsSubscriptionOfferCodes)
+            else if (SubscriptionOfferCodes is { } __value7)
             {
-                subscriptionOfferCodes?.Invoke(SubscriptionOfferCodes!);
+                subscriptionOfferCodes?.Invoke(__value7);
             }
-            else if (IsSubscriptionPlanAvailabilities)
+            else if (SubscriptionPlanAvailabilities is { } __value8)
             {
-                subscriptionPlanAvailabilities?.Invoke(SubscriptionPlanAvailabilities!);
+                subscriptionPlanAvailabilities?.Invoke(__value8);
             }
-            else if (IsSubscriptionPrices)
+            else if (SubscriptionPrices is { } __value9)
             {
-                subscriptionPrices?.Invoke(SubscriptionPrices!);
+                subscriptionPrices?.Invoke(__value9);
             }
-            else if (IsSubscriptionPromotionalOffers)
+            else if (SubscriptionPromotionalOffers is { } __value10)
             {
-                subscriptionPromotionalOffers?.Invoke(SubscriptionPromotionalOffers!);
+                subscriptionPromotionalOffers?.Invoke(__value10);
             }
-            else if (IsSubscriptionVersions)
+            else if (SubscriptionVersions is { } __value11)
             {
-                subscriptionVersions?.Invoke(SubscriptionVersions!);
+                subscriptionVersions?.Invoke(__value11);
             }
-            else if (IsWinBackOffers)
+            else if (WinBackOffers is { } __value12)
             {
-                winBackOffers?.Invoke(WinBackOffers!);
+                winBackOffers?.Invoke(__value12);
             }
         }
 
@@ -1070,57 +1070,57 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsPromotedPurchases)
+            if (PromotedPurchases is { } __value0)
             {
-                promotedPurchases?.Invoke(PromotedPurchases!);
+                promotedPurchases?.Invoke(__value0);
             }
-            else if (IsSubscriptionAppStoreReviewScreenshots)
+            else if (SubscriptionAppStoreReviewScreenshots is { } __value1)
             {
-                subscriptionAppStoreReviewScreenshots?.Invoke(SubscriptionAppStoreReviewScreenshots!);
+                subscriptionAppStoreReviewScreenshots?.Invoke(__value1);
             }
-            else if (IsSubscriptionAvailabilities)
+            else if (SubscriptionAvailabilities is { } __value2)
             {
-                subscriptionAvailabilities?.Invoke(SubscriptionAvailabilities!);
+                subscriptionAvailabilities?.Invoke(__value2);
             }
-            else if (IsSubscriptionGroups)
+            else if (SubscriptionGroups is { } __value3)
             {
-                subscriptionGroups?.Invoke(SubscriptionGroups!);
+                subscriptionGroups?.Invoke(__value3);
             }
-            else if (IsSubscriptionImages)
+            else if (SubscriptionImages is { } __value4)
             {
-                subscriptionImages?.Invoke(SubscriptionImages!);
+                subscriptionImages?.Invoke(__value4);
             }
-            else if (IsSubscriptionIntroductoryOffers)
+            else if (SubscriptionIntroductoryOffers is { } __value5)
             {
-                subscriptionIntroductoryOffers?.Invoke(SubscriptionIntroductoryOffers!);
+                subscriptionIntroductoryOffers?.Invoke(__value5);
             }
-            else if (IsSubscriptionLocalizations)
+            else if (SubscriptionLocalizations is { } __value6)
             {
-                subscriptionLocalizations?.Invoke(SubscriptionLocalizations!);
+                subscriptionLocalizations?.Invoke(__value6);
             }
-            else if (IsSubscriptionOfferCodes)
+            else if (SubscriptionOfferCodes is { } __value7)
             {
-                subscriptionOfferCodes?.Invoke(SubscriptionOfferCodes!);
+                subscriptionOfferCodes?.Invoke(__value7);
             }
-            else if (IsSubscriptionPlanAvailabilities)
+            else if (SubscriptionPlanAvailabilities is { } __value8)
             {
-                subscriptionPlanAvailabilities?.Invoke(SubscriptionPlanAvailabilities!);
+                subscriptionPlanAvailabilities?.Invoke(__value8);
             }
-            else if (IsSubscriptionPrices)
+            else if (SubscriptionPrices is { } __value9)
             {
-                subscriptionPrices?.Invoke(SubscriptionPrices!);
+                subscriptionPrices?.Invoke(__value9);
             }
-            else if (IsSubscriptionPromotionalOffers)
+            else if (SubscriptionPromotionalOffers is { } __value10)
             {
-                subscriptionPromotionalOffers?.Invoke(SubscriptionPromotionalOffers!);
+                subscriptionPromotionalOffers?.Invoke(__value10);
             }
-            else if (IsSubscriptionVersions)
+            else if (SubscriptionVersions is { } __value11)
             {
-                subscriptionVersions?.Invoke(SubscriptionVersions!);
+                subscriptionVersions?.Invoke(__value11);
             }
-            else if (IsWinBackOffers)
+            else if (WinBackOffers is { } __value12)
             {
-                winBackOffers?.Invoke(WinBackOffers!);
+                winBackOffers?.Invoke(__value12);
             }
         }
 

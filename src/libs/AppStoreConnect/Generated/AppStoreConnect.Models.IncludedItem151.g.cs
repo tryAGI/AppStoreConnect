@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BundleId PickBundleIds() => IsBundleIds
-            ? BundleIds!
+        public global::AppStoreConnect.BundleId PickBundleIds() => BundleIds is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BundleIds' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Certificate PickCertificates() => IsCertificates
-            ? Certificates!
+        public global::AppStoreConnect.Certificate PickCertificates() => Certificates is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Certificates' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Device PickDevices() => IsDevices
-            ? Devices!
+        public global::AppStoreConnect.Device PickDevices() => Devices is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Devices' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsBundleIds && bundleIds != null)
+            if (BundleIds is { } __value0 && bundleIds != null)
             {
-                return bundleIds(BundleIds!);
+                return bundleIds(__value0);
             }
-            else if (IsCertificates && certificates != null)
+            else if (Certificates is { } __value1 && certificates != null)
             {
-                return certificates(Certificates!);
+                return certificates(__value1);
             }
-            else if (IsDevices && devices != null)
+            else if (Devices is { } __value2 && devices != null)
             {
-                return devices(Devices!);
+                return devices(__value2);
             }
 
             return default(TResult);
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsBundleIds)
+            if (BundleIds is { } __value0)
             {
-                bundleIds?.Invoke(BundleIds!);
+                bundleIds?.Invoke(__value0);
             }
-            else if (IsCertificates)
+            else if (Certificates is { } __value1)
             {
-                certificates?.Invoke(Certificates!);
+                certificates?.Invoke(__value1);
             }
-            else if (IsDevices)
+            else if (Devices is { } __value2)
             {
-                devices?.Invoke(Devices!);
+                devices?.Invoke(__value2);
             }
         }
 
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsBundleIds)
+            if (BundleIds is { } __value0)
             {
-                bundleIds?.Invoke(BundleIds!);
+                bundleIds?.Invoke(__value0);
             }
-            else if (IsCertificates)
+            else if (Certificates is { } __value1)
             {
-                certificates?.Invoke(Certificates!);
+                certificates?.Invoke(__value1);
             }
-            else if (IsDevices)
+            else if (Devices is { } __value2)
             {
-                devices?.Invoke(Devices!);
+                devices?.Invoke(__value2);
             }
         }
 

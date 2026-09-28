@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppPriceV2 PickAppPrices1() => IsAppPrices1
-            ? AppPrices1!
+        public global::AppStoreConnect.AppPriceV2 PickAppPrices1() => AppPrices1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppPrices1' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickAppPrices2() => IsAppPrices2
-            ? AppPrices2!
+        public global::AppStoreConnect.App PickAppPrices2() => AppPrices2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppPrices2' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Territory PickTerritories() => IsTerritories
-            ? Territories!
+        public global::AppStoreConnect.Territory PickTerritories() => Territories is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Territories' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppPrices1 && appPrices1 != null)
+            if (AppPrices1 is { } __value0 && appPrices1 != null)
             {
-                return appPrices1(AppPrices1!);
+                return appPrices1(__value0);
             }
-            else if (IsAppPrices2 && appPrices2 != null)
+            else if (AppPrices2 is { } __value1 && appPrices2 != null)
             {
-                return appPrices2(AppPrices2!);
+                return appPrices2(__value1);
             }
-            else if (IsTerritories && territories != null)
+            else if (Territories is { } __value2 && territories != null)
             {
-                return territories(Territories!);
+                return territories(__value2);
             }
 
             return default(TResult);
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppPrices1)
+            if (AppPrices1 is { } __value0)
             {
-                appPrices1?.Invoke(AppPrices1!);
+                appPrices1?.Invoke(__value0);
             }
-            else if (IsAppPrices2)
+            else if (AppPrices2 is { } __value1)
             {
-                appPrices2?.Invoke(AppPrices2!);
+                appPrices2?.Invoke(__value1);
             }
-            else if (IsTerritories)
+            else if (Territories is { } __value2)
             {
-                territories?.Invoke(Territories!);
+                territories?.Invoke(__value2);
             }
         }
 
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppPrices1)
+            if (AppPrices1 is { } __value0)
             {
-                appPrices1?.Invoke(AppPrices1!);
+                appPrices1?.Invoke(__value0);
             }
-            else if (IsAppPrices2)
+            else if (AppPrices2 is { } __value1)
             {
-                appPrices2?.Invoke(AppPrices2!);
+                appPrices2?.Invoke(__value1);
             }
-            else if (IsTerritories)
+            else if (Territories is { } __value2)
             {
-                territories?.Invoke(Territories!);
+                territories?.Invoke(__value2);
             }
         }
 

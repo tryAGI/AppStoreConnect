@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseImageV2 PickInAppPurchaseImages() => IsInAppPurchaseImages
-            ? InAppPurchaseImages!
+        public global::AppStoreConnect.InAppPurchaseImageV2 PickInAppPurchaseImages() => InAppPurchaseImages is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseImages' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseLocalizationV2 PickInAppPurchaseLocalizations() => IsInAppPurchaseLocalizations
-            ? InAppPurchaseLocalizations!
+        public global::AppStoreConnect.InAppPurchaseLocalizationV2 PickInAppPurchaseLocalizations() => InAppPurchaseLocalizations is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseLocalizations' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseV2 PickInAppPurchases() => IsInAppPurchases
-            ? InAppPurchases!
+        public global::AppStoreConnect.InAppPurchaseV2 PickInAppPurchases() => InAppPurchases is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchases' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsInAppPurchaseImages && inAppPurchaseImages != null)
+            if (InAppPurchaseImages is { } __value0 && inAppPurchaseImages != null)
             {
-                return inAppPurchaseImages(InAppPurchaseImages!);
+                return inAppPurchaseImages(__value0);
             }
-            else if (IsInAppPurchaseLocalizations && inAppPurchaseLocalizations != null)
+            else if (InAppPurchaseLocalizations is { } __value1 && inAppPurchaseLocalizations != null)
             {
-                return inAppPurchaseLocalizations(InAppPurchaseLocalizations!);
+                return inAppPurchaseLocalizations(__value1);
             }
-            else if (IsInAppPurchases && inAppPurchases != null)
+            else if (InAppPurchases is { } __value2 && inAppPurchases != null)
             {
-                return inAppPurchases(InAppPurchases!);
+                return inAppPurchases(__value2);
             }
 
             return default(TResult);
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsInAppPurchaseImages)
+            if (InAppPurchaseImages is { } __value0)
             {
-                inAppPurchaseImages?.Invoke(InAppPurchaseImages!);
+                inAppPurchaseImages?.Invoke(__value0);
             }
-            else if (IsInAppPurchaseLocalizations)
+            else if (InAppPurchaseLocalizations is { } __value1)
             {
-                inAppPurchaseLocalizations?.Invoke(InAppPurchaseLocalizations!);
+                inAppPurchaseLocalizations?.Invoke(__value1);
             }
-            else if (IsInAppPurchases)
+            else if (InAppPurchases is { } __value2)
             {
-                inAppPurchases?.Invoke(InAppPurchases!);
+                inAppPurchases?.Invoke(__value2);
             }
         }
 
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsInAppPurchaseImages)
+            if (InAppPurchaseImages is { } __value0)
             {
-                inAppPurchaseImages?.Invoke(InAppPurchaseImages!);
+                inAppPurchaseImages?.Invoke(__value0);
             }
-            else if (IsInAppPurchaseLocalizations)
+            else if (InAppPurchaseLocalizations is { } __value1)
             {
-                inAppPurchaseLocalizations?.Invoke(InAppPurchaseLocalizations!);
+                inAppPurchaseLocalizations?.Invoke(__value1);
             }
-            else if (IsInAppPurchases)
+            else if (InAppPurchases is { } __value2)
             {
-                inAppPurchases?.Invoke(InAppPurchases!);
+                inAppPurchases?.Invoke(__value2);
             }
         }
 

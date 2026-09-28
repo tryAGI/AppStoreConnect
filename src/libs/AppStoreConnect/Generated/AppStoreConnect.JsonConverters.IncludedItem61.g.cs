@@ -59,13 +59,13 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BuildUploadFile), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BuildUploadFile?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BuildUploadFile).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BuildUploadFiles1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuildUploadFiles1(), typeInfo);
             }
             else if (value.IsBuildUploadFiles2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Build), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Build?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Build).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BuildUploadFiles2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuildUploadFiles2(), typeInfo);
             }
         }
     }

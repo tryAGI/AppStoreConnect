@@ -59,13 +59,13 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterAchievementImageV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterAchievementImageV2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterAchievementImageV2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GameCenterAchievementImages!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterAchievementImages(), typeInfo);
             }
             else if (value.IsGameCenterAchievementVersions)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterAchievementVersionV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterAchievementVersionV2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterAchievementVersionV2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GameCenterAchievementVersions!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterAchievementVersions(), typeInfo);
             }
         }
     }

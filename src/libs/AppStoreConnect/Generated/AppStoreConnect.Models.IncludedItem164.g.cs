@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionPricePoint PickSubscriptionPricePoints() => IsSubscriptionPricePoints
-            ? SubscriptionPricePoints!
+        public global::AppStoreConnect.SubscriptionPricePoint PickSubscriptionPricePoints() => SubscriptionPricePoints is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPricePoints' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Subscription PickSubscriptions() => IsSubscriptions
-            ? Subscriptions!
+        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Territory PickTerritories() => IsTerritories
-            ? Territories!
+        public global::AppStoreConnect.Territory PickTerritories() => Territories is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Territories' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsSubscriptionPricePoints && subscriptionPricePoints != null)
+            if (SubscriptionPricePoints is { } __value0 && subscriptionPricePoints != null)
             {
-                return subscriptionPricePoints(SubscriptionPricePoints!);
+                return subscriptionPricePoints(__value0);
             }
-            else if (IsSubscriptions && subscriptions != null)
+            else if (Subscriptions is { } __value1 && subscriptions != null)
             {
-                return subscriptions(Subscriptions!);
+                return subscriptions(__value1);
             }
-            else if (IsTerritories && territories != null)
+            else if (Territories is { } __value2 && territories != null)
             {
-                return territories(Territories!);
+                return territories(__value2);
             }
 
             return default(TResult);
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsSubscriptionPricePoints)
+            if (SubscriptionPricePoints is { } __value0)
             {
-                subscriptionPricePoints?.Invoke(SubscriptionPricePoints!);
+                subscriptionPricePoints?.Invoke(__value0);
             }
-            else if (IsSubscriptions)
+            else if (Subscriptions is { } __value1)
             {
-                subscriptions?.Invoke(Subscriptions!);
+                subscriptions?.Invoke(__value1);
             }
-            else if (IsTerritories)
+            else if (Territories is { } __value2)
             {
-                territories?.Invoke(Territories!);
+                territories?.Invoke(__value2);
             }
         }
 
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsSubscriptionPricePoints)
+            if (SubscriptionPricePoints is { } __value0)
             {
-                subscriptionPricePoints?.Invoke(SubscriptionPricePoints!);
+                subscriptionPricePoints?.Invoke(__value0);
             }
-            else if (IsSubscriptions)
+            else if (Subscriptions is { } __value1)
             {
-                subscriptions?.Invoke(Subscriptions!);
+                subscriptions?.Invoke(__value1);
             }
-            else if (IsTerritories)
+            else if (Territories is { } __value2)
             {
-                territories?.Invoke(Territories!);
+                territories?.Invoke(__value2);
             }
         }
 

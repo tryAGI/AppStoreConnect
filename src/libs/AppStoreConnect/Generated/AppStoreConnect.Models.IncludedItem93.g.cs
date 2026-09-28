@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => IsAppStoreVersions
-            ? AppStoreVersions!
+        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => AppStoreVersions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAppVersion PickGameCenterAppVersions() => IsGameCenterAppVersions
-            ? GameCenterAppVersions!
+        public global::AppStoreConnect.GameCenterAppVersion PickGameCenterAppVersions() => GameCenterAppVersions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAppVersions' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppStoreVersions && appStoreVersions != null)
+            if (AppStoreVersions is { } __value0 && appStoreVersions != null)
             {
-                return appStoreVersions(AppStoreVersions!);
+                return appStoreVersions(__value0);
             }
-            else if (IsGameCenterAppVersions && gameCenterAppVersions != null)
+            else if (GameCenterAppVersions is { } __value1 && gameCenterAppVersions != null)
             {
-                return gameCenterAppVersions(GameCenterAppVersions!);
+                return gameCenterAppVersions(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppStoreVersions)
+            if (AppStoreVersions is { } __value0)
             {
-                appStoreVersions?.Invoke(AppStoreVersions!);
+                appStoreVersions?.Invoke(__value0);
             }
-            else if (IsGameCenterAppVersions)
+            else if (GameCenterAppVersions is { } __value1)
             {
-                gameCenterAppVersions?.Invoke(GameCenterAppVersions!);
+                gameCenterAppVersions?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppStoreVersions)
+            if (AppStoreVersions is { } __value0)
             {
-                appStoreVersions?.Invoke(AppStoreVersions!);
+                appStoreVersions?.Invoke(__value0);
             }
-            else if (IsGameCenterAppVersions)
+            else if (GameCenterAppVersions is { } __value1)
             {
-                gameCenterAppVersions?.Invoke(GameCenterAppVersions!);
+                gameCenterAppVersions?.Invoke(__value1);
             }
         }
 

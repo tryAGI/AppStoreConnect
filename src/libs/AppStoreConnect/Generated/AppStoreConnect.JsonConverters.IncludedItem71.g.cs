@@ -77,25 +77,25 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.CiMacOsVersion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.CiMacOsVersion?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.CiMacOsVersion).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CiMacOsVersions!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCiMacOsVersions(), typeInfo);
             }
             else if (value.IsCiProducts)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.CiProduct), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.CiProduct?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.CiProduct).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CiProducts!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCiProducts(), typeInfo);
             }
             else if (value.IsCiXcodeVersions)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.CiXcodeVersion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.CiXcodeVersion?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.CiXcodeVersion).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CiXcodeVersions!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCiXcodeVersions(), typeInfo);
             }
             else if (value.IsScmRepositories)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.ScmRepository), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.ScmRepository?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.ScmRepository).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ScmRepositories!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickScmRepositories(), typeInfo);
             }
         }
     }

@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot PickInAppPurchaseAppStoreReviewScreenshots() => IsInAppPurchaseAppStoreReviewScreenshots
-            ? InAppPurchaseAppStoreReviewScreenshots!
+        public global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot PickInAppPurchaseAppStoreReviewScreenshots() => InAppPurchaseAppStoreReviewScreenshots is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseAppStoreReviewScreenshots' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseAvailability PickInAppPurchaseAvailabilities() => IsInAppPurchaseAvailabilities
-            ? InAppPurchaseAvailabilities!
+        public global::AppStoreConnect.InAppPurchaseAvailability PickInAppPurchaseAvailabilities() => InAppPurchaseAvailabilities is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseAvailabilities' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseContent PickInAppPurchaseContents() => IsInAppPurchaseContents
-            ? InAppPurchaseContents!
+        public global::AppStoreConnect.InAppPurchaseContent PickInAppPurchaseContents() => InAppPurchaseContents is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseContents' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseImage PickInAppPurchaseImages() => IsInAppPurchaseImages
-            ? InAppPurchaseImages!
+        public global::AppStoreConnect.InAppPurchaseImage PickInAppPurchaseImages() => InAppPurchaseImages is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseImages' but the value was {ToString()}.");
 
         /// <summary>
@@ -195,8 +195,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseLocalization PickInAppPurchaseLocalizations() => IsInAppPurchaseLocalizations
-            ? InAppPurchaseLocalizations!
+        public global::AppStoreConnect.InAppPurchaseLocalization PickInAppPurchaseLocalizations() => InAppPurchaseLocalizations is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseLocalizations' but the value was {ToString()}.");
 
         /// <summary>
@@ -232,8 +232,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseOfferCode PickInAppPurchaseOfferCodes() => IsInAppPurchaseOfferCodes
-            ? InAppPurchaseOfferCodes!
+        public global::AppStoreConnect.InAppPurchaseOfferCode PickInAppPurchaseOfferCodes() => InAppPurchaseOfferCodes is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseOfferCodes' but the value was {ToString()}.");
 
         /// <summary>
@@ -269,8 +269,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchasePricePoint PickInAppPurchasePricePoints() => IsInAppPurchasePricePoints
-            ? InAppPurchasePricePoints!
+        public global::AppStoreConnect.InAppPurchasePricePoint PickInAppPurchasePricePoints() => InAppPurchasePricePoints is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchasePricePoints' but the value was {ToString()}.");
 
         /// <summary>
@@ -306,8 +306,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchasePriceSchedule PickInAppPurchasePriceSchedules() => IsInAppPurchasePriceSchedules
-            ? InAppPurchasePriceSchedules!
+        public global::AppStoreConnect.InAppPurchasePriceSchedule PickInAppPurchasePriceSchedules() => InAppPurchasePriceSchedules is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchasePriceSchedules' but the value was {ToString()}.");
 
         /// <summary>
@@ -343,8 +343,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseVersion PickInAppPurchaseVersions() => IsInAppPurchaseVersions
-            ? InAppPurchaseVersions!
+        public global::AppStoreConnect.InAppPurchaseVersion PickInAppPurchaseVersions() => InAppPurchaseVersions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseVersions' but the value was {ToString()}.");
 
         /// <summary>
@@ -380,8 +380,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.PromotedPurchase PickPromotedPurchases() => IsPromotedPurchases
-            ? PromotedPurchases!
+        public global::AppStoreConnect.PromotedPurchase PickPromotedPurchases() => PromotedPurchases is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PromotedPurchases' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -705,45 +705,45 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsInAppPurchaseAppStoreReviewScreenshots && inAppPurchaseAppStoreReviewScreenshots != null)
+            if (InAppPurchaseAppStoreReviewScreenshots is { } __value0 && inAppPurchaseAppStoreReviewScreenshots != null)
             {
-                return inAppPurchaseAppStoreReviewScreenshots(InAppPurchaseAppStoreReviewScreenshots!);
+                return inAppPurchaseAppStoreReviewScreenshots(__value0);
             }
-            else if (IsInAppPurchaseAvailabilities && inAppPurchaseAvailabilities != null)
+            else if (InAppPurchaseAvailabilities is { } __value1 && inAppPurchaseAvailabilities != null)
             {
-                return inAppPurchaseAvailabilities(InAppPurchaseAvailabilities!);
+                return inAppPurchaseAvailabilities(__value1);
             }
-            else if (IsInAppPurchaseContents && inAppPurchaseContents != null)
+            else if (InAppPurchaseContents is { } __value2 && inAppPurchaseContents != null)
             {
-                return inAppPurchaseContents(InAppPurchaseContents!);
+                return inAppPurchaseContents(__value2);
             }
-            else if (IsInAppPurchaseImages && inAppPurchaseImages != null)
+            else if (InAppPurchaseImages is { } __value3 && inAppPurchaseImages != null)
             {
-                return inAppPurchaseImages(InAppPurchaseImages!);
+                return inAppPurchaseImages(__value3);
             }
-            else if (IsInAppPurchaseLocalizations && inAppPurchaseLocalizations != null)
+            else if (InAppPurchaseLocalizations is { } __value4 && inAppPurchaseLocalizations != null)
             {
-                return inAppPurchaseLocalizations(InAppPurchaseLocalizations!);
+                return inAppPurchaseLocalizations(__value4);
             }
-            else if (IsInAppPurchaseOfferCodes && inAppPurchaseOfferCodes != null)
+            else if (InAppPurchaseOfferCodes is { } __value5 && inAppPurchaseOfferCodes != null)
             {
-                return inAppPurchaseOfferCodes(InAppPurchaseOfferCodes!);
+                return inAppPurchaseOfferCodes(__value5);
             }
-            else if (IsInAppPurchasePricePoints && inAppPurchasePricePoints != null)
+            else if (InAppPurchasePricePoints is { } __value6 && inAppPurchasePricePoints != null)
             {
-                return inAppPurchasePricePoints(InAppPurchasePricePoints!);
+                return inAppPurchasePricePoints(__value6);
             }
-            else if (IsInAppPurchasePriceSchedules && inAppPurchasePriceSchedules != null)
+            else if (InAppPurchasePriceSchedules is { } __value7 && inAppPurchasePriceSchedules != null)
             {
-                return inAppPurchasePriceSchedules(InAppPurchasePriceSchedules!);
+                return inAppPurchasePriceSchedules(__value7);
             }
-            else if (IsInAppPurchaseVersions && inAppPurchaseVersions != null)
+            else if (InAppPurchaseVersions is { } __value8 && inAppPurchaseVersions != null)
             {
-                return inAppPurchaseVersions(InAppPurchaseVersions!);
+                return inAppPurchaseVersions(__value8);
             }
-            else if (IsPromotedPurchases && promotedPurchases != null)
+            else if (PromotedPurchases is { } __value9 && promotedPurchases != null)
             {
-                return promotedPurchases(PromotedPurchases!);
+                return promotedPurchases(__value9);
             }
 
             return default(TResult);
@@ -779,45 +779,45 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsInAppPurchaseAppStoreReviewScreenshots)
+            if (InAppPurchaseAppStoreReviewScreenshots is { } __value0)
             {
-                inAppPurchaseAppStoreReviewScreenshots?.Invoke(InAppPurchaseAppStoreReviewScreenshots!);
+                inAppPurchaseAppStoreReviewScreenshots?.Invoke(__value0);
             }
-            else if (IsInAppPurchaseAvailabilities)
+            else if (InAppPurchaseAvailabilities is { } __value1)
             {
-                inAppPurchaseAvailabilities?.Invoke(InAppPurchaseAvailabilities!);
+                inAppPurchaseAvailabilities?.Invoke(__value1);
             }
-            else if (IsInAppPurchaseContents)
+            else if (InAppPurchaseContents is { } __value2)
             {
-                inAppPurchaseContents?.Invoke(InAppPurchaseContents!);
+                inAppPurchaseContents?.Invoke(__value2);
             }
-            else if (IsInAppPurchaseImages)
+            else if (InAppPurchaseImages is { } __value3)
             {
-                inAppPurchaseImages?.Invoke(InAppPurchaseImages!);
+                inAppPurchaseImages?.Invoke(__value3);
             }
-            else if (IsInAppPurchaseLocalizations)
+            else if (InAppPurchaseLocalizations is { } __value4)
             {
-                inAppPurchaseLocalizations?.Invoke(InAppPurchaseLocalizations!);
+                inAppPurchaseLocalizations?.Invoke(__value4);
             }
-            else if (IsInAppPurchaseOfferCodes)
+            else if (InAppPurchaseOfferCodes is { } __value5)
             {
-                inAppPurchaseOfferCodes?.Invoke(InAppPurchaseOfferCodes!);
+                inAppPurchaseOfferCodes?.Invoke(__value5);
             }
-            else if (IsInAppPurchasePricePoints)
+            else if (InAppPurchasePricePoints is { } __value6)
             {
-                inAppPurchasePricePoints?.Invoke(InAppPurchasePricePoints!);
+                inAppPurchasePricePoints?.Invoke(__value6);
             }
-            else if (IsInAppPurchasePriceSchedules)
+            else if (InAppPurchasePriceSchedules is { } __value7)
             {
-                inAppPurchasePriceSchedules?.Invoke(InAppPurchasePriceSchedules!);
+                inAppPurchasePriceSchedules?.Invoke(__value7);
             }
-            else if (IsInAppPurchaseVersions)
+            else if (InAppPurchaseVersions is { } __value8)
             {
-                inAppPurchaseVersions?.Invoke(InAppPurchaseVersions!);
+                inAppPurchaseVersions?.Invoke(__value8);
             }
-            else if (IsPromotedPurchases)
+            else if (PromotedPurchases is { } __value9)
             {
-                promotedPurchases?.Invoke(PromotedPurchases!);
+                promotedPurchases?.Invoke(__value9);
             }
         }
 
@@ -842,45 +842,45 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsInAppPurchaseAppStoreReviewScreenshots)
+            if (InAppPurchaseAppStoreReviewScreenshots is { } __value0)
             {
-                inAppPurchaseAppStoreReviewScreenshots?.Invoke(InAppPurchaseAppStoreReviewScreenshots!);
+                inAppPurchaseAppStoreReviewScreenshots?.Invoke(__value0);
             }
-            else if (IsInAppPurchaseAvailabilities)
+            else if (InAppPurchaseAvailabilities is { } __value1)
             {
-                inAppPurchaseAvailabilities?.Invoke(InAppPurchaseAvailabilities!);
+                inAppPurchaseAvailabilities?.Invoke(__value1);
             }
-            else if (IsInAppPurchaseContents)
+            else if (InAppPurchaseContents is { } __value2)
             {
-                inAppPurchaseContents?.Invoke(InAppPurchaseContents!);
+                inAppPurchaseContents?.Invoke(__value2);
             }
-            else if (IsInAppPurchaseImages)
+            else if (InAppPurchaseImages is { } __value3)
             {
-                inAppPurchaseImages?.Invoke(InAppPurchaseImages!);
+                inAppPurchaseImages?.Invoke(__value3);
             }
-            else if (IsInAppPurchaseLocalizations)
+            else if (InAppPurchaseLocalizations is { } __value4)
             {
-                inAppPurchaseLocalizations?.Invoke(InAppPurchaseLocalizations!);
+                inAppPurchaseLocalizations?.Invoke(__value4);
             }
-            else if (IsInAppPurchaseOfferCodes)
+            else if (InAppPurchaseOfferCodes is { } __value5)
             {
-                inAppPurchaseOfferCodes?.Invoke(InAppPurchaseOfferCodes!);
+                inAppPurchaseOfferCodes?.Invoke(__value5);
             }
-            else if (IsInAppPurchasePricePoints)
+            else if (InAppPurchasePricePoints is { } __value6)
             {
-                inAppPurchasePricePoints?.Invoke(InAppPurchasePricePoints!);
+                inAppPurchasePricePoints?.Invoke(__value6);
             }
-            else if (IsInAppPurchasePriceSchedules)
+            else if (InAppPurchasePriceSchedules is { } __value7)
             {
-                inAppPurchasePriceSchedules?.Invoke(InAppPurchasePriceSchedules!);
+                inAppPurchasePriceSchedules?.Invoke(__value7);
             }
-            else if (IsInAppPurchaseVersions)
+            else if (InAppPurchaseVersions is { } __value8)
             {
-                inAppPurchaseVersions?.Invoke(InAppPurchaseVersions!);
+                inAppPurchaseVersions?.Invoke(__value8);
             }
-            else if (IsPromotedPurchases)
+            else if (PromotedPurchases is { } __value9)
             {
-                promotedPurchases?.Invoke(PromotedPurchases!);
+                promotedPurchases?.Invoke(__value9);
             }
         }
 

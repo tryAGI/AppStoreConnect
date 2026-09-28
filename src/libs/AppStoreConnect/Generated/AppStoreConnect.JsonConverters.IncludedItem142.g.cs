@@ -68,19 +68,19 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseImageV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseImageV2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseImageV2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.InAppPurchaseImages!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseImages(), typeInfo);
             }
             else if (value.IsInAppPurchaseLocalizations)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseLocalizationV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseLocalizationV2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseLocalizationV2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.InAppPurchaseLocalizations!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseLocalizations(), typeInfo);
             }
             else if (value.IsInAppPurchases)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseV2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseV2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.InAppPurchases!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchases(), typeInfo);
             }
         }
     }

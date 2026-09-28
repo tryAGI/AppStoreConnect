@@ -357,7 +357,7 @@ namespace AppStoreConnect
                     limitImages: limitImages,
                     limitOfferCodes: limitOfferCodes,
                     limitVersions: limitVersions,
-                    id: id!);
+                    id: id);
 
                 return __httpRequest;
             }
@@ -379,7 +379,7 @@ namespace AppStoreConnect
                                 pathTemplate: "$\"/v1/apps/{id}/inAppPurchasesV2\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: null,
                                 clientOptions: Options,
@@ -413,7 +413,7 @@ namespace AppStoreConnect
                                 pathTemplate: "$\"/v1/apps/{id}/inAppPurchasesV2\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: null,
                                 exception: __exception,
                                 clientOptions: Options,
@@ -454,7 +454,7 @@ namespace AppStoreConnect
                                 pathTemplate: "$\"/v1/apps/{id}/inAppPurchasesV2\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -502,7 +502,7 @@ namespace AppStoreConnect
                                 pathTemplate: "$\"/v1/apps/{id}/inAppPurchasesV2\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,
@@ -524,7 +524,7 @@ namespace AppStoreConnect
                                 pathTemplate: "$\"/v1/apps/{id}/inAppPurchasesV2\"",
                                 httpMethod: "GET",
                                 baseUri: BaseUri,
-                                request: __httpRequest!,
+                                request: __httpRequest ?? throw new global::System.InvalidOperationException("The HTTP request was not created before invoking a request hook."),
                                 response: __response,
                                 exception: null,
                                 clientOptions: Options,

@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEventScreenshot PickAppEventScreenshots() => IsAppEventScreenshots
-            ? AppEventScreenshots!
+        public global::AppStoreConnect.AppEventScreenshot PickAppEventScreenshots() => AppEventScreenshots is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppEventScreenshots' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEventVideoClip PickAppEventVideoClips() => IsAppEventVideoClips
-            ? AppEventVideoClips!
+        public global::AppStoreConnect.AppEventVideoClip PickAppEventVideoClips() => AppEventVideoClips is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppEventVideoClips' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEvent PickAppEvents() => IsAppEvents
-            ? AppEvents!
+        public global::AppStoreConnect.AppEvent PickAppEvents() => AppEvents is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppEvents' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppEventScreenshots && appEventScreenshots != null)
+            if (AppEventScreenshots is { } __value0 && appEventScreenshots != null)
             {
-                return appEventScreenshots(AppEventScreenshots!);
+                return appEventScreenshots(__value0);
             }
-            else if (IsAppEventVideoClips && appEventVideoClips != null)
+            else if (AppEventVideoClips is { } __value1 && appEventVideoClips != null)
             {
-                return appEventVideoClips(AppEventVideoClips!);
+                return appEventVideoClips(__value1);
             }
-            else if (IsAppEvents && appEvents != null)
+            else if (AppEvents is { } __value2 && appEvents != null)
             {
-                return appEvents(AppEvents!);
+                return appEvents(__value2);
             }
 
             return default(TResult);
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppEventScreenshots)
+            if (AppEventScreenshots is { } __value0)
             {
-                appEventScreenshots?.Invoke(AppEventScreenshots!);
+                appEventScreenshots?.Invoke(__value0);
             }
-            else if (IsAppEventVideoClips)
+            else if (AppEventVideoClips is { } __value1)
             {
-                appEventVideoClips?.Invoke(AppEventVideoClips!);
+                appEventVideoClips?.Invoke(__value1);
             }
-            else if (IsAppEvents)
+            else if (AppEvents is { } __value2)
             {
-                appEvents?.Invoke(AppEvents!);
+                appEvents?.Invoke(__value2);
             }
         }
 
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppEventScreenshots)
+            if (AppEventScreenshots is { } __value0)
             {
-                appEventScreenshots?.Invoke(AppEventScreenshots!);
+                appEventScreenshots?.Invoke(__value0);
             }
-            else if (IsAppEventVideoClips)
+            else if (AppEventVideoClips is { } __value1)
             {
-                appEventVideoClips?.Invoke(AppEventVideoClips!);
+                appEventVideoClips?.Invoke(__value1);
             }
-            else if (IsAppEvents)
+            else if (AppEvents is { } __value2)
             {
-                appEvents?.Invoke(AppEvents!);
+                appEvents?.Invoke(__value2);
             }
         }
 

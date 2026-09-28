@@ -59,13 +59,13 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppClipDefaultExperience), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppClipDefaultExperience?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppClipDefaultExperience).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppClipDefaultExperiences1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppClipDefaultExperiences1(), typeInfo);
             }
             else if (value.IsAppClipDefaultExperiences2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.App).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppClipDefaultExperiences2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppClipDefaultExperiences2(), typeInfo);
             }
         }
     }

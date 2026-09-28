@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BuildUploadFile PickBuildUploadFiles1() => IsBuildUploadFiles1
-            ? BuildUploadFiles1!
+        public global::AppStoreConnect.BuildUploadFile PickBuildUploadFiles1() => BuildUploadFiles1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BuildUploadFiles1' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Build PickBuildUploadFiles2() => IsBuildUploadFiles2
-            ? BuildUploadFiles2!
+        public global::AppStoreConnect.Build PickBuildUploadFiles2() => BuildUploadFiles2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BuildUploadFiles2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsBuildUploadFiles1 && buildUploadFiles1 != null)
+            if (BuildUploadFiles1 is { } __value0 && buildUploadFiles1 != null)
             {
-                return buildUploadFiles1(BuildUploadFiles1!);
+                return buildUploadFiles1(__value0);
             }
-            else if (IsBuildUploadFiles2 && buildUploadFiles2 != null)
+            else if (BuildUploadFiles2 is { } __value1 && buildUploadFiles2 != null)
             {
-                return buildUploadFiles2(BuildUploadFiles2!);
+                return buildUploadFiles2(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsBuildUploadFiles1)
+            if (BuildUploadFiles1 is { } __value0)
             {
-                buildUploadFiles1?.Invoke(BuildUploadFiles1!);
+                buildUploadFiles1?.Invoke(__value0);
             }
-            else if (IsBuildUploadFiles2)
+            else if (BuildUploadFiles2 is { } __value1)
             {
-                buildUploadFiles2?.Invoke(BuildUploadFiles2!);
+                buildUploadFiles2?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsBuildUploadFiles1)
+            if (BuildUploadFiles1 is { } __value0)
             {
-                buildUploadFiles1?.Invoke(BuildUploadFiles1!);
+                buildUploadFiles1?.Invoke(__value0);
             }
-            else if (IsBuildUploadFiles2)
+            else if (BuildUploadFiles2 is { } __value1)
             {
-                buildUploadFiles2?.Invoke(BuildUploadFiles2!);
+                buildUploadFiles2?.Invoke(__value1);
             }
         }
 

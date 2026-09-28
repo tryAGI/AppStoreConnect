@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionExperimentTreatment PickAppStoreVersionExperimentTreatments1() => IsAppStoreVersionExperimentTreatments1
-            ? AppStoreVersionExperimentTreatments1!
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatment PickAppStoreVersionExperimentTreatments1() => AppStoreVersionExperimentTreatments1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatments1' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersionExperimentTreatments2() => IsAppStoreVersionExperimentTreatments2
-            ? AppStoreVersionExperimentTreatments2!
+        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersionExperimentTreatments2() => AppStoreVersionExperimentTreatments2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatments2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppStoreVersionExperimentTreatments1 && appStoreVersionExperimentTreatments1 != null)
+            if (AppStoreVersionExperimentTreatments1 is { } __value0 && appStoreVersionExperimentTreatments1 != null)
             {
-                return appStoreVersionExperimentTreatments1(AppStoreVersionExperimentTreatments1!);
+                return appStoreVersionExperimentTreatments1(__value0);
             }
-            else if (IsAppStoreVersionExperimentTreatments2 && appStoreVersionExperimentTreatments2 != null)
+            else if (AppStoreVersionExperimentTreatments2 is { } __value1 && appStoreVersionExperimentTreatments2 != null)
             {
-                return appStoreVersionExperimentTreatments2(AppStoreVersionExperimentTreatments2!);
+                return appStoreVersionExperimentTreatments2(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppStoreVersionExperimentTreatments1)
+            if (AppStoreVersionExperimentTreatments1 is { } __value0)
             {
-                appStoreVersionExperimentTreatments1?.Invoke(AppStoreVersionExperimentTreatments1!);
+                appStoreVersionExperimentTreatments1?.Invoke(__value0);
             }
-            else if (IsAppStoreVersionExperimentTreatments2)
+            else if (AppStoreVersionExperimentTreatments2 is { } __value1)
             {
-                appStoreVersionExperimentTreatments2?.Invoke(AppStoreVersionExperimentTreatments2!);
+                appStoreVersionExperimentTreatments2?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppStoreVersionExperimentTreatments1)
+            if (AppStoreVersionExperimentTreatments1 is { } __value0)
             {
-                appStoreVersionExperimentTreatments1?.Invoke(AppStoreVersionExperimentTreatments1!);
+                appStoreVersionExperimentTreatments1?.Invoke(__value0);
             }
-            else if (IsAppStoreVersionExperimentTreatments2)
+            else if (AppStoreVersionExperimentTreatments2 is { } __value1)
             {
-                appStoreVersionExperimentTreatments2?.Invoke(AppStoreVersionExperimentTreatments2!);
+                appStoreVersionExperimentTreatments2?.Invoke(__value1);
             }
         }
 

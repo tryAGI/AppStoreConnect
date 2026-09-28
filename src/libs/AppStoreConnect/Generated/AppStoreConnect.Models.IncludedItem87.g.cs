@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAchievement PickGameCenterAchievements() => IsGameCenterAchievements
-            ? GameCenterAchievements!
+        public global::AppStoreConnect.GameCenterAchievement PickGameCenterAchievements() => GameCenterAchievements is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAchievements' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterActivityVersion PickGameCenterActivityVersions() => IsGameCenterActivityVersions
-            ? GameCenterActivityVersions!
+        public global::AppStoreConnect.GameCenterActivityVersion PickGameCenterActivityVersions() => GameCenterActivityVersions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterActivityVersions' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterDetail PickGameCenterDetails() => IsGameCenterDetails
-            ? GameCenterDetails!
+        public global::AppStoreConnect.GameCenterDetail PickGameCenterDetails() => GameCenterDetails is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterDetails' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterGroup PickGameCenterGroups() => IsGameCenterGroups
-            ? GameCenterGroups!
+        public global::AppStoreConnect.GameCenterGroup PickGameCenterGroups() => GameCenterGroups is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterGroups' but the value was {ToString()}.");
 
         /// <summary>
@@ -195,8 +195,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboard PickGameCenterLeaderboards() => IsGameCenterLeaderboards
-            ? GameCenterLeaderboards!
+        public global::AppStoreConnect.GameCenterLeaderboard PickGameCenterLeaderboards() => GameCenterLeaderboards is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboards' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -380,25 +380,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterAchievements && gameCenterAchievements != null)
+            if (GameCenterAchievements is { } __value0 && gameCenterAchievements != null)
             {
-                return gameCenterAchievements(GameCenterAchievements!);
+                return gameCenterAchievements(__value0);
             }
-            else if (IsGameCenterActivityVersions && gameCenterActivityVersions != null)
+            else if (GameCenterActivityVersions is { } __value1 && gameCenterActivityVersions != null)
             {
-                return gameCenterActivityVersions(GameCenterActivityVersions!);
+                return gameCenterActivityVersions(__value1);
             }
-            else if (IsGameCenterDetails && gameCenterDetails != null)
+            else if (GameCenterDetails is { } __value2 && gameCenterDetails != null)
             {
-                return gameCenterDetails(GameCenterDetails!);
+                return gameCenterDetails(__value2);
             }
-            else if (IsGameCenterGroups && gameCenterGroups != null)
+            else if (GameCenterGroups is { } __value3 && gameCenterGroups != null)
             {
-                return gameCenterGroups(GameCenterGroups!);
+                return gameCenterGroups(__value3);
             }
-            else if (IsGameCenterLeaderboards && gameCenterLeaderboards != null)
+            else if (GameCenterLeaderboards is { } __value4 && gameCenterLeaderboards != null)
             {
-                return gameCenterLeaderboards(GameCenterLeaderboards!);
+                return gameCenterLeaderboards(__value4);
             }
 
             return default(TResult);
@@ -424,25 +424,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterAchievements)
+            if (GameCenterAchievements is { } __value0)
             {
-                gameCenterAchievements?.Invoke(GameCenterAchievements!);
+                gameCenterAchievements?.Invoke(__value0);
             }
-            else if (IsGameCenterActivityVersions)
+            else if (GameCenterActivityVersions is { } __value1)
             {
-                gameCenterActivityVersions?.Invoke(GameCenterActivityVersions!);
+                gameCenterActivityVersions?.Invoke(__value1);
             }
-            else if (IsGameCenterDetails)
+            else if (GameCenterDetails is { } __value2)
             {
-                gameCenterDetails?.Invoke(GameCenterDetails!);
+                gameCenterDetails?.Invoke(__value2);
             }
-            else if (IsGameCenterGroups)
+            else if (GameCenterGroups is { } __value3)
             {
-                gameCenterGroups?.Invoke(GameCenterGroups!);
+                gameCenterGroups?.Invoke(__value3);
             }
-            else if (IsGameCenterLeaderboards)
+            else if (GameCenterLeaderboards is { } __value4)
             {
-                gameCenterLeaderboards?.Invoke(GameCenterLeaderboards!);
+                gameCenterLeaderboards?.Invoke(__value4);
             }
         }
 
@@ -462,25 +462,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterAchievements)
+            if (GameCenterAchievements is { } __value0)
             {
-                gameCenterAchievements?.Invoke(GameCenterAchievements!);
+                gameCenterAchievements?.Invoke(__value0);
             }
-            else if (IsGameCenterActivityVersions)
+            else if (GameCenterActivityVersions is { } __value1)
             {
-                gameCenterActivityVersions?.Invoke(GameCenterActivityVersions!);
+                gameCenterActivityVersions?.Invoke(__value1);
             }
-            else if (IsGameCenterDetails)
+            else if (GameCenterDetails is { } __value2)
             {
-                gameCenterDetails?.Invoke(GameCenterDetails!);
+                gameCenterDetails?.Invoke(__value2);
             }
-            else if (IsGameCenterGroups)
+            else if (GameCenterGroups is { } __value3)
             {
-                gameCenterGroups?.Invoke(GameCenterGroups!);
+                gameCenterGroups?.Invoke(__value3);
             }
-            else if (IsGameCenterLeaderboards)
+            else if (GameCenterLeaderboards is { } __value4)
             {
-                gameCenterLeaderboards?.Invoke(GameCenterLeaderboards!);
+                gameCenterLeaderboards?.Invoke(__value4);
             }
         }
 

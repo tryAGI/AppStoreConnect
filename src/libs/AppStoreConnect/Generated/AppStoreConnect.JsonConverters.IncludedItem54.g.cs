@@ -59,13 +59,13 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BetaTester), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BetaTester?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BetaTester).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BetaTesters!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBetaTesters(), typeInfo);
             }
             else if (value.IsBuilds)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Build), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Build?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Build).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Builds!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuilds(), typeInfo);
             }
         }
     }

@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty PickGameCenterMatchmakingTestPlayerProperties() => IsGameCenterMatchmakingTestPlayerProperties
-            ? GameCenterMatchmakingTestPlayerProperties!
+        public global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty PickGameCenterMatchmakingTestPlayerProperties() => GameCenterMatchmakingTestPlayerProperties is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterMatchmakingTestPlayerProperties' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterMatchmakingTestRequest PickGameCenterMatchmakingTestRequests() => IsGameCenterMatchmakingTestRequests
-            ? GameCenterMatchmakingTestRequests!
+        public global::AppStoreConnect.GameCenterMatchmakingTestRequest PickGameCenterMatchmakingTestRequests() => GameCenterMatchmakingTestRequests is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterMatchmakingTestRequests' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterMatchmakingTestPlayerProperties && gameCenterMatchmakingTestPlayerProperties != null)
+            if (GameCenterMatchmakingTestPlayerProperties is { } __value0 && gameCenterMatchmakingTestPlayerProperties != null)
             {
-                return gameCenterMatchmakingTestPlayerProperties(GameCenterMatchmakingTestPlayerProperties!);
+                return gameCenterMatchmakingTestPlayerProperties(__value0);
             }
-            else if (IsGameCenterMatchmakingTestRequests && gameCenterMatchmakingTestRequests != null)
+            else if (GameCenterMatchmakingTestRequests is { } __value1 && gameCenterMatchmakingTestRequests != null)
             {
-                return gameCenterMatchmakingTestRequests(GameCenterMatchmakingTestRequests!);
+                return gameCenterMatchmakingTestRequests(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterMatchmakingTestPlayerProperties)
+            if (GameCenterMatchmakingTestPlayerProperties is { } __value0)
             {
-                gameCenterMatchmakingTestPlayerProperties?.Invoke(GameCenterMatchmakingTestPlayerProperties!);
+                gameCenterMatchmakingTestPlayerProperties?.Invoke(__value0);
             }
-            else if (IsGameCenterMatchmakingTestRequests)
+            else if (GameCenterMatchmakingTestRequests is { } __value1)
             {
-                gameCenterMatchmakingTestRequests?.Invoke(GameCenterMatchmakingTestRequests!);
+                gameCenterMatchmakingTestRequests?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterMatchmakingTestPlayerProperties)
+            if (GameCenterMatchmakingTestPlayerProperties is { } __value0)
             {
-                gameCenterMatchmakingTestPlayerProperties?.Invoke(GameCenterMatchmakingTestPlayerProperties!);
+                gameCenterMatchmakingTestPlayerProperties?.Invoke(__value0);
             }
-            else if (IsGameCenterMatchmakingTestRequests)
+            else if (GameCenterMatchmakingTestRequests is { } __value1)
             {
-                gameCenterMatchmakingTestRequests?.Invoke(GameCenterMatchmakingTestRequests!);
+                gameCenterMatchmakingTestRequests?.Invoke(__value1);
             }
         }
 

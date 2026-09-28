@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterMatchmakingQueue PickGameCenterMatchmakingQueues() => IsGameCenterMatchmakingQueues
-            ? GameCenterMatchmakingQueues!
+        public global::AppStoreConnect.GameCenterMatchmakingQueue PickGameCenterMatchmakingQueues() => GameCenterMatchmakingQueues is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterMatchmakingQueues' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterMatchmakingRule PickGameCenterMatchmakingRules() => IsGameCenterMatchmakingRules
-            ? GameCenterMatchmakingRules!
+        public global::AppStoreConnect.GameCenterMatchmakingRule PickGameCenterMatchmakingRules() => GameCenterMatchmakingRules is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterMatchmakingRules' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterMatchmakingTeam PickGameCenterMatchmakingTeams() => IsGameCenterMatchmakingTeams
-            ? GameCenterMatchmakingTeams!
+        public global::AppStoreConnect.GameCenterMatchmakingTeam PickGameCenterMatchmakingTeams() => GameCenterMatchmakingTeams is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterMatchmakingTeams' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterMatchmakingQueues && gameCenterMatchmakingQueues != null)
+            if (GameCenterMatchmakingQueues is { } __value0 && gameCenterMatchmakingQueues != null)
             {
-                return gameCenterMatchmakingQueues(GameCenterMatchmakingQueues!);
+                return gameCenterMatchmakingQueues(__value0);
             }
-            else if (IsGameCenterMatchmakingRules && gameCenterMatchmakingRules != null)
+            else if (GameCenterMatchmakingRules is { } __value1 && gameCenterMatchmakingRules != null)
             {
-                return gameCenterMatchmakingRules(GameCenterMatchmakingRules!);
+                return gameCenterMatchmakingRules(__value1);
             }
-            else if (IsGameCenterMatchmakingTeams && gameCenterMatchmakingTeams != null)
+            else if (GameCenterMatchmakingTeams is { } __value2 && gameCenterMatchmakingTeams != null)
             {
-                return gameCenterMatchmakingTeams(GameCenterMatchmakingTeams!);
+                return gameCenterMatchmakingTeams(__value2);
             }
 
             return default(TResult);
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterMatchmakingQueues)
+            if (GameCenterMatchmakingQueues is { } __value0)
             {
-                gameCenterMatchmakingQueues?.Invoke(GameCenterMatchmakingQueues!);
+                gameCenterMatchmakingQueues?.Invoke(__value0);
             }
-            else if (IsGameCenterMatchmakingRules)
+            else if (GameCenterMatchmakingRules is { } __value1)
             {
-                gameCenterMatchmakingRules?.Invoke(GameCenterMatchmakingRules!);
+                gameCenterMatchmakingRules?.Invoke(__value1);
             }
-            else if (IsGameCenterMatchmakingTeams)
+            else if (GameCenterMatchmakingTeams is { } __value2)
             {
-                gameCenterMatchmakingTeams?.Invoke(GameCenterMatchmakingTeams!);
+                gameCenterMatchmakingTeams?.Invoke(__value2);
             }
         }
 
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterMatchmakingQueues)
+            if (GameCenterMatchmakingQueues is { } __value0)
             {
-                gameCenterMatchmakingQueues?.Invoke(GameCenterMatchmakingQueues!);
+                gameCenterMatchmakingQueues?.Invoke(__value0);
             }
-            else if (IsGameCenterMatchmakingRules)
+            else if (GameCenterMatchmakingRules is { } __value1)
             {
-                gameCenterMatchmakingRules?.Invoke(GameCenterMatchmakingRules!);
+                gameCenterMatchmakingRules?.Invoke(__value1);
             }
-            else if (IsGameCenterMatchmakingTeams)
+            else if (GameCenterMatchmakingTeams is { } __value2)
             {
-                gameCenterMatchmakingTeams?.Invoke(GameCenterMatchmakingTeams!);
+                gameCenterMatchmakingTeams?.Invoke(__value2);
             }
         }
 

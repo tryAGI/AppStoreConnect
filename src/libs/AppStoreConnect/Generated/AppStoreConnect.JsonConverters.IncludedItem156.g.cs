@@ -77,25 +77,25 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Actor), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Actor?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Actor).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Actors!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickActors(), typeInfo);
             }
             else if (value.IsAppStoreVersions1)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppStoreVersion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppStoreVersion?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppStoreVersion).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppStoreVersions1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppStoreVersions1(), typeInfo);
             }
             else if (value.IsAppStoreVersions2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.App).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppStoreVersions2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppStoreVersions2(), typeInfo);
             }
             else if (value.IsReviewSubmissionItems)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.ReviewSubmissionItem), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.ReviewSubmissionItem?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.ReviewSubmissionItem).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ReviewSubmissionItems!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickReviewSubmissionItems(), typeInfo);
             }
         }
     }

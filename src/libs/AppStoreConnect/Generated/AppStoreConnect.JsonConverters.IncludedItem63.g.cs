@@ -149,73 +149,73 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppEncryptionDeclaration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppEncryptionDeclaration?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppEncryptionDeclaration).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppEncryptionDeclarations1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEncryptionDeclarations1(), typeInfo);
             }
             else if (value.IsAppStoreVersions)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppStoreVersion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppStoreVersion?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppStoreVersion).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppStoreVersions!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppStoreVersions(), typeInfo);
             }
             else if (value.IsAppEncryptionDeclarations2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.App).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppEncryptionDeclarations2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEncryptionDeclarations2(), typeInfo);
             }
             else if (value.IsBetaAppReviewSubmissions)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BetaAppReviewSubmission), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BetaAppReviewSubmission?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BetaAppReviewSubmission).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BetaAppReviewSubmissions!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBetaAppReviewSubmissions(), typeInfo);
             }
             else if (value.IsBetaBuildLocalizations)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BetaBuildLocalization), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BetaBuildLocalization?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BetaBuildLocalization).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BetaBuildLocalizations!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBetaBuildLocalizations(), typeInfo);
             }
             else if (value.IsBetaGroups)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BetaGroup), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BetaGroup?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BetaGroup).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BetaGroups!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBetaGroups(), typeInfo);
             }
             else if (value.IsBetaTesters)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BetaTester), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BetaTester?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BetaTester).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BetaTesters!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBetaTesters(), typeInfo);
             }
             else if (value.IsBuildBetaDetails)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BuildBetaDetail), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BuildBetaDetail?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BuildBetaDetail).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BuildBetaDetails!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuildBetaDetails(), typeInfo);
             }
             else if (value.IsBuildBundles)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BuildBundle), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BuildBundle?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BuildBundle).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BuildBundles!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuildBundles(), typeInfo);
             }
             else if (value.IsBuildIcons)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BuildIcon), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BuildIcon?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BuildIcon).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BuildIcons!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuildIcons(), typeInfo);
             }
             else if (value.IsBuildUploads)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BuildUpload), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BuildUpload?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BuildUpload).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BuildUploads!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuildUploads(), typeInfo);
             }
             else if (value.IsPreReleaseVersions)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.PrereleaseVersion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.PrereleaseVersion?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.PrereleaseVersion).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PreReleaseVersions!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickPreReleaseVersions(), typeInfo);
             }
         }
     }

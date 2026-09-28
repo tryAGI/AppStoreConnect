@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AlternativeDistributionPackageDelta PickAlternativeDistributionPackageDeltas() => IsAlternativeDistributionPackageDeltas
-            ? AlternativeDistributionPackageDeltas!
+        public global::AppStoreConnect.AlternativeDistributionPackageDelta PickAlternativeDistributionPackageDeltas() => AlternativeDistributionPackageDeltas is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AlternativeDistributionPackageDeltas' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AlternativeDistributionPackageVariant PickAlternativeDistributionPackageVariants() => IsAlternativeDistributionPackageVariants
-            ? AlternativeDistributionPackageVariants!
+        public global::AppStoreConnect.AlternativeDistributionPackageVariant PickAlternativeDistributionPackageVariants() => AlternativeDistributionPackageVariants is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AlternativeDistributionPackageVariants' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AlternativeDistributionPackage PickAlternativeDistributionPackages() => IsAlternativeDistributionPackages
-            ? AlternativeDistributionPackages!
+        public global::AppStoreConnect.AlternativeDistributionPackage PickAlternativeDistributionPackages() => AlternativeDistributionPackages is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AlternativeDistributionPackages' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAlternativeDistributionPackageDeltas && alternativeDistributionPackageDeltas != null)
+            if (AlternativeDistributionPackageDeltas is { } __value0 && alternativeDistributionPackageDeltas != null)
             {
-                return alternativeDistributionPackageDeltas(AlternativeDistributionPackageDeltas!);
+                return alternativeDistributionPackageDeltas(__value0);
             }
-            else if (IsAlternativeDistributionPackageVariants && alternativeDistributionPackageVariants != null)
+            else if (AlternativeDistributionPackageVariants is { } __value1 && alternativeDistributionPackageVariants != null)
             {
-                return alternativeDistributionPackageVariants(AlternativeDistributionPackageVariants!);
+                return alternativeDistributionPackageVariants(__value1);
             }
-            else if (IsAlternativeDistributionPackages && alternativeDistributionPackages != null)
+            else if (AlternativeDistributionPackages is { } __value2 && alternativeDistributionPackages != null)
             {
-                return alternativeDistributionPackages(AlternativeDistributionPackages!);
+                return alternativeDistributionPackages(__value2);
             }
 
             return default(TResult);
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAlternativeDistributionPackageDeltas)
+            if (AlternativeDistributionPackageDeltas is { } __value0)
             {
-                alternativeDistributionPackageDeltas?.Invoke(AlternativeDistributionPackageDeltas!);
+                alternativeDistributionPackageDeltas?.Invoke(__value0);
             }
-            else if (IsAlternativeDistributionPackageVariants)
+            else if (AlternativeDistributionPackageVariants is { } __value1)
             {
-                alternativeDistributionPackageVariants?.Invoke(AlternativeDistributionPackageVariants!);
+                alternativeDistributionPackageVariants?.Invoke(__value1);
             }
-            else if (IsAlternativeDistributionPackages)
+            else if (AlternativeDistributionPackages is { } __value2)
             {
-                alternativeDistributionPackages?.Invoke(AlternativeDistributionPackages!);
+                alternativeDistributionPackages?.Invoke(__value2);
             }
         }
 
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAlternativeDistributionPackageDeltas)
+            if (AlternativeDistributionPackageDeltas is { } __value0)
             {
-                alternativeDistributionPackageDeltas?.Invoke(AlternativeDistributionPackageDeltas!);
+                alternativeDistributionPackageDeltas?.Invoke(__value0);
             }
-            else if (IsAlternativeDistributionPackageVariants)
+            else if (AlternativeDistributionPackageVariants is { } __value1)
             {
-                alternativeDistributionPackageVariants?.Invoke(AlternativeDistributionPackageVariants!);
+                alternativeDistributionPackageVariants?.Invoke(__value1);
             }
-            else if (IsAlternativeDistributionPackages)
+            else if (AlternativeDistributionPackages is { } __value2)
             {
-                alternativeDistributionPackages?.Invoke(AlternativeDistributionPackages!);
+                alternativeDistributionPackages?.Invoke(__value2);
             }
         }
 

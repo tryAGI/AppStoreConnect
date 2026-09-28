@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Actor PickActors() => IsActors
-            ? Actors!
+        public global::AppStoreConnect.Actor PickActors() => Actors is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Actors' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions1() => IsAppStoreVersions1
-            ? AppStoreVersions1!
+        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions1() => AppStoreVersions1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions1' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickAppStoreVersions2() => IsAppStoreVersions2
-            ? AppStoreVersions2!
+        public global::AppStoreConnect.App PickAppStoreVersions2() => AppStoreVersions2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions2' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ReviewSubmissionItem PickReviewSubmissionItems() => IsReviewSubmissionItems
-            ? ReviewSubmissionItems!
+        public global::AppStoreConnect.ReviewSubmissionItem PickReviewSubmissionItems() => ReviewSubmissionItems is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ReviewSubmissionItems' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -315,21 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsActors && actors != null)
+            if (Actors is { } __value0 && actors != null)
             {
-                return actors(Actors!);
+                return actors(__value0);
             }
-            else if (IsAppStoreVersions1 && appStoreVersions1 != null)
+            else if (AppStoreVersions1 is { } __value1 && appStoreVersions1 != null)
             {
-                return appStoreVersions1(AppStoreVersions1!);
+                return appStoreVersions1(__value1);
             }
-            else if (IsAppStoreVersions2 && appStoreVersions2 != null)
+            else if (AppStoreVersions2 is { } __value2 && appStoreVersions2 != null)
             {
-                return appStoreVersions2(AppStoreVersions2!);
+                return appStoreVersions2(__value2);
             }
-            else if (IsReviewSubmissionItems && reviewSubmissionItems != null)
+            else if (ReviewSubmissionItems is { } __value3 && reviewSubmissionItems != null)
             {
-                return reviewSubmissionItems(ReviewSubmissionItems!);
+                return reviewSubmissionItems(__value3);
             }
 
             return default(TResult);
@@ -353,21 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsActors)
+            if (Actors is { } __value0)
             {
-                actors?.Invoke(Actors!);
+                actors?.Invoke(__value0);
             }
-            else if (IsAppStoreVersions1)
+            else if (AppStoreVersions1 is { } __value1)
             {
-                appStoreVersions1?.Invoke(AppStoreVersions1!);
+                appStoreVersions1?.Invoke(__value1);
             }
-            else if (IsAppStoreVersions2)
+            else if (AppStoreVersions2 is { } __value2)
             {
-                appStoreVersions2?.Invoke(AppStoreVersions2!);
+                appStoreVersions2?.Invoke(__value2);
             }
-            else if (IsReviewSubmissionItems)
+            else if (ReviewSubmissionItems is { } __value3)
             {
-                reviewSubmissionItems?.Invoke(ReviewSubmissionItems!);
+                reviewSubmissionItems?.Invoke(__value3);
             }
         }
 
@@ -386,21 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsActors)
+            if (Actors is { } __value0)
             {
-                actors?.Invoke(Actors!);
+                actors?.Invoke(__value0);
             }
-            else if (IsAppStoreVersions1)
+            else if (AppStoreVersions1 is { } __value1)
             {
-                appStoreVersions1?.Invoke(AppStoreVersions1!);
+                appStoreVersions1?.Invoke(__value1);
             }
-            else if (IsAppStoreVersions2)
+            else if (AppStoreVersions2 is { } __value2)
             {
-                appStoreVersions2?.Invoke(AppStoreVersions2!);
+                appStoreVersions2?.Invoke(__value2);
             }
-            else if (IsReviewSubmissionItems)
+            else if (ReviewSubmissionItems is { } __value3)
             {
-                reviewSubmissionItems?.Invoke(ReviewSubmissionItems!);
+                reviewSubmissionItems?.Invoke(__value3);
             }
         }
 

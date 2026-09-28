@@ -140,67 +140,67 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AlternativeDistributionPackage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AlternativeDistributionPackage?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AlternativeDistributionPackage).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AlternativeDistributionPackages!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAlternativeDistributionPackages(), typeInfo);
             }
             else if (value.IsAppClipDefaultExperiences1)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppClipDefaultExperience), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppClipDefaultExperience?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppClipDefaultExperience).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppClipDefaultExperiences1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppClipDefaultExperiences1(), typeInfo);
             }
             else if (value.IsAppStoreReviewDetails)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppStoreReviewDetail), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppStoreReviewDetail?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppStoreReviewDetail).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppStoreReviewDetails!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppStoreReviewDetails(), typeInfo);
             }
             else if (value.IsAppStoreVersionExperiments)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppStoreVersionExperiment), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppStoreVersionExperiment?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppStoreVersionExperiment).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppStoreVersionExperiments!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppStoreVersionExperiments(), typeInfo);
             }
             else if (value.IsAppStoreVersionLocalizations)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppStoreVersionLocalization), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppStoreVersionLocalization?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppStoreVersionLocalization).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppStoreVersionLocalizations!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppStoreVersionLocalizations(), typeInfo);
             }
             else if (value.IsAppStoreVersionPhasedReleases)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppStoreVersionPhasedRelease), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppStoreVersionPhasedRelease?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppStoreVersionPhasedRelease).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppStoreVersionPhasedReleases!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppStoreVersionPhasedReleases(), typeInfo);
             }
             else if (value.IsAppStoreVersionSubmissions)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppStoreVersionSubmission), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppStoreVersionSubmission?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppStoreVersionSubmission).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppStoreVersionSubmissions!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppStoreVersionSubmissions(), typeInfo);
             }
             else if (value.IsAppClipDefaultExperiences2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.App).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppClipDefaultExperiences2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppClipDefaultExperiences2(), typeInfo);
             }
             else if (value.IsBuilds)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Build), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Build?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Build).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Builds!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuilds(), typeInfo);
             }
             else if (value.IsGameCenterAppVersions)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterAppVersion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterAppVersion?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterAppVersion).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GameCenterAppVersions!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterAppVersions(), typeInfo);
             }
             else if (value.IsRoutingAppCoverages)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.RoutingAppCoverage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.RoutingAppCoverage?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.RoutingAppCoverage).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.RoutingAppCoverages!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickRoutingAppCoverages(), typeInfo);
             }
         }
     }

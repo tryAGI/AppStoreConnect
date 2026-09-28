@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseV2 PickInAppPurchases() => IsInAppPurchases
-            ? InAppPurchases!
+        public global::AppStoreConnect.InAppPurchaseV2 PickInAppPurchases() => InAppPurchases is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchases' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Subscription PickSubscriptions() => IsSubscriptions
-            ? Subscriptions!
+        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsInAppPurchases && inAppPurchases != null)
+            if (InAppPurchases is { } __value0 && inAppPurchases != null)
             {
-                return inAppPurchases(InAppPurchases!);
+                return inAppPurchases(__value0);
             }
-            else if (IsSubscriptions && subscriptions != null)
+            else if (Subscriptions is { } __value1 && subscriptions != null)
             {
-                return subscriptions(Subscriptions!);
+                return subscriptions(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsInAppPurchases)
+            if (InAppPurchases is { } __value0)
             {
-                inAppPurchases?.Invoke(InAppPurchases!);
+                inAppPurchases?.Invoke(__value0);
             }
-            else if (IsSubscriptions)
+            else if (Subscriptions is { } __value1)
             {
-                subscriptions?.Invoke(Subscriptions!);
+                subscriptions?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsInAppPurchases)
+            if (InAppPurchases is { } __value0)
             {
-                inAppPurchases?.Invoke(InAppPurchases!);
+                inAppPurchases?.Invoke(__value0);
             }
-            else if (IsSubscriptions)
+            else if (Subscriptions is { } __value1)
             {
-                subscriptions?.Invoke(Subscriptions!);
+                subscriptions?.Invoke(__value1);
             }
         }
 

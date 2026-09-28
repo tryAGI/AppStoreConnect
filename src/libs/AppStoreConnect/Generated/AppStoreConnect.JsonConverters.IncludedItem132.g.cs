@@ -59,13 +59,13 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GameCenterMatchmakingTestPlayerProperties!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterMatchmakingTestPlayerProperties(), typeInfo);
             }
             else if (value.IsGameCenterMatchmakingTestRequests)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterMatchmakingTestRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterMatchmakingTestRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterMatchmakingTestRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.GameCenterMatchmakingTestRequests!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterMatchmakingTestRequests(), typeInfo);
             }
         }
     }

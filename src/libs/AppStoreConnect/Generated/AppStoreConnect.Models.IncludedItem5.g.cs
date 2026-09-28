@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppClipDefaultExperience PickAppClipDefaultExperiences() => IsAppClipDefaultExperiences
-            ? AppClipDefaultExperiences!
+        public global::AppStoreConnect.AppClipDefaultExperience PickAppClipDefaultExperiences() => AppClipDefaultExperiences is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipDefaultExperiences' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppClipHeaderImage PickAppClipHeaderImages() => IsAppClipHeaderImages
-            ? AppClipHeaderImages!
+        public global::AppStoreConnect.AppClipHeaderImage PickAppClipHeaderImages() => AppClipHeaderImages is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipHeaderImages' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppClipDefaultExperiences && appClipDefaultExperiences != null)
+            if (AppClipDefaultExperiences is { } __value0 && appClipDefaultExperiences != null)
             {
-                return appClipDefaultExperiences(AppClipDefaultExperiences!);
+                return appClipDefaultExperiences(__value0);
             }
-            else if (IsAppClipHeaderImages && appClipHeaderImages != null)
+            else if (AppClipHeaderImages is { } __value1 && appClipHeaderImages != null)
             {
-                return appClipHeaderImages(AppClipHeaderImages!);
+                return appClipHeaderImages(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppClipDefaultExperiences)
+            if (AppClipDefaultExperiences is { } __value0)
             {
-                appClipDefaultExperiences?.Invoke(AppClipDefaultExperiences!);
+                appClipDefaultExperiences?.Invoke(__value0);
             }
-            else if (IsAppClipHeaderImages)
+            else if (AppClipHeaderImages is { } __value1)
             {
-                appClipHeaderImages?.Invoke(AppClipHeaderImages!);
+                appClipHeaderImages?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppClipDefaultExperiences)
+            if (AppClipDefaultExperiences is { } __value0)
             {
-                appClipDefaultExperiences?.Invoke(AppClipDefaultExperiences!);
+                appClipDefaultExperiences?.Invoke(__value0);
             }
-            else if (IsAppClipHeaderImages)
+            else if (AppClipHeaderImages is { } __value1)
             {
-                appClipHeaderImages?.Invoke(AppClipHeaderImages!);
+                appClipHeaderImages?.Invoke(__value1);
             }
         }
 

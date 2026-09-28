@@ -68,19 +68,19 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppClipAdvancedExperienceImage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppClipAdvancedExperienceImage?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppClipAdvancedExperienceImage).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppClipAdvancedExperienceImages!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppClipAdvancedExperienceImages(), typeInfo);
             }
             else if (value.IsAppClipAdvancedExperienceLocalizations1)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppClipAdvancedExperienceLocalization), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppClipAdvancedExperienceLocalization?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppClipAdvancedExperienceLocalization).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppClipAdvancedExperienceLocalizations1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppClipAdvancedExperienceLocalizations1(), typeInfo);
             }
             else if (value.IsAppClipAdvancedExperienceLocalizations2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppClip), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppClip?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppClip).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppClipAdvancedExperienceLocalizations2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppClipAdvancedExperienceLocalizations2(), typeInfo);
             }
         }
     }

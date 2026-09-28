@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AlternativeDistributionPackage PickAlternativeDistributionPackages() => IsAlternativeDistributionPackages
-            ? AlternativeDistributionPackages!
+        public global::AppStoreConnect.AlternativeDistributionPackage PickAlternativeDistributionPackages() => AlternativeDistributionPackages is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AlternativeDistributionPackages' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppClipDefaultExperience PickAppClipDefaultExperiences1() => IsAppClipDefaultExperiences1
-            ? AppClipDefaultExperiences1!
+        public global::AppStoreConnect.AppClipDefaultExperience PickAppClipDefaultExperiences1() => AppClipDefaultExperiences1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipDefaultExperiences1' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreReviewDetail PickAppStoreReviewDetails() => IsAppStoreReviewDetails
-            ? AppStoreReviewDetails!
+        public global::AppStoreConnect.AppStoreReviewDetail PickAppStoreReviewDetails() => AppStoreReviewDetails is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreReviewDetails' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionExperiment PickAppStoreVersionExperiments() => IsAppStoreVersionExperiments
-            ? AppStoreVersionExperiments!
+        public global::AppStoreConnect.AppStoreVersionExperiment PickAppStoreVersionExperiments() => AppStoreVersionExperiments is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperiments' but the value was {ToString()}.");
 
         /// <summary>
@@ -195,8 +195,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionLocalization PickAppStoreVersionLocalizations() => IsAppStoreVersionLocalizations
-            ? AppStoreVersionLocalizations!
+        public global::AppStoreConnect.AppStoreVersionLocalization PickAppStoreVersionLocalizations() => AppStoreVersionLocalizations is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionLocalizations' but the value was {ToString()}.");
 
         /// <summary>
@@ -232,8 +232,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionPhasedRelease PickAppStoreVersionPhasedReleases() => IsAppStoreVersionPhasedReleases
-            ? AppStoreVersionPhasedReleases!
+        public global::AppStoreConnect.AppStoreVersionPhasedRelease PickAppStoreVersionPhasedReleases() => AppStoreVersionPhasedReleases is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionPhasedReleases' but the value was {ToString()}.");
 
         /// <summary>
@@ -269,8 +269,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionSubmission PickAppStoreVersionSubmissions() => IsAppStoreVersionSubmissions
-            ? AppStoreVersionSubmissions!
+        public global::AppStoreConnect.AppStoreVersionSubmission PickAppStoreVersionSubmissions() => AppStoreVersionSubmissions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionSubmissions' but the value was {ToString()}.");
 
         /// <summary>
@@ -306,8 +306,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickAppClipDefaultExperiences2() => IsAppClipDefaultExperiences2
-            ? AppClipDefaultExperiences2!
+        public global::AppStoreConnect.App PickAppClipDefaultExperiences2() => AppClipDefaultExperiences2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipDefaultExperiences2' but the value was {ToString()}.");
 
         /// <summary>
@@ -343,8 +343,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Build PickBuilds() => IsBuilds
-            ? Builds!
+        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
 
         /// <summary>
@@ -380,8 +380,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAppVersion PickGameCenterAppVersions() => IsGameCenterAppVersions
-            ? GameCenterAppVersions!
+        public global::AppStoreConnect.GameCenterAppVersion PickGameCenterAppVersions() => GameCenterAppVersions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAppVersions' but the value was {ToString()}.");
 
         /// <summary>
@@ -417,8 +417,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.RoutingAppCoverage PickRoutingAppCoverages() => IsRoutingAppCoverages
-            ? RoutingAppCoverages!
+        public global::AppStoreConnect.RoutingAppCoverage PickRoutingAppCoverages() => RoutingAppCoverages is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'RoutingAppCoverages' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -770,49 +770,49 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAlternativeDistributionPackages && alternativeDistributionPackages != null)
+            if (AlternativeDistributionPackages is { } __value0 && alternativeDistributionPackages != null)
             {
-                return alternativeDistributionPackages(AlternativeDistributionPackages!);
+                return alternativeDistributionPackages(__value0);
             }
-            else if (IsAppClipDefaultExperiences1 && appClipDefaultExperiences1 != null)
+            else if (AppClipDefaultExperiences1 is { } __value1 && appClipDefaultExperiences1 != null)
             {
-                return appClipDefaultExperiences1(AppClipDefaultExperiences1!);
+                return appClipDefaultExperiences1(__value1);
             }
-            else if (IsAppStoreReviewDetails && appStoreReviewDetails != null)
+            else if (AppStoreReviewDetails is { } __value2 && appStoreReviewDetails != null)
             {
-                return appStoreReviewDetails(AppStoreReviewDetails!);
+                return appStoreReviewDetails(__value2);
             }
-            else if (IsAppStoreVersionExperiments && appStoreVersionExperiments != null)
+            else if (AppStoreVersionExperiments is { } __value3 && appStoreVersionExperiments != null)
             {
-                return appStoreVersionExperiments(AppStoreVersionExperiments!);
+                return appStoreVersionExperiments(__value3);
             }
-            else if (IsAppStoreVersionLocalizations && appStoreVersionLocalizations != null)
+            else if (AppStoreVersionLocalizations is { } __value4 && appStoreVersionLocalizations != null)
             {
-                return appStoreVersionLocalizations(AppStoreVersionLocalizations!);
+                return appStoreVersionLocalizations(__value4);
             }
-            else if (IsAppStoreVersionPhasedReleases && appStoreVersionPhasedReleases != null)
+            else if (AppStoreVersionPhasedReleases is { } __value5 && appStoreVersionPhasedReleases != null)
             {
-                return appStoreVersionPhasedReleases(AppStoreVersionPhasedReleases!);
+                return appStoreVersionPhasedReleases(__value5);
             }
-            else if (IsAppStoreVersionSubmissions && appStoreVersionSubmissions != null)
+            else if (AppStoreVersionSubmissions is { } __value6 && appStoreVersionSubmissions != null)
             {
-                return appStoreVersionSubmissions(AppStoreVersionSubmissions!);
+                return appStoreVersionSubmissions(__value6);
             }
-            else if (IsAppClipDefaultExperiences2 && appClipDefaultExperiences2 != null)
+            else if (AppClipDefaultExperiences2 is { } __value7 && appClipDefaultExperiences2 != null)
             {
-                return appClipDefaultExperiences2(AppClipDefaultExperiences2!);
+                return appClipDefaultExperiences2(__value7);
             }
-            else if (IsBuilds && builds != null)
+            else if (Builds is { } __value8 && builds != null)
             {
-                return builds(Builds!);
+                return builds(__value8);
             }
-            else if (IsGameCenterAppVersions && gameCenterAppVersions != null)
+            else if (GameCenterAppVersions is { } __value9 && gameCenterAppVersions != null)
             {
-                return gameCenterAppVersions(GameCenterAppVersions!);
+                return gameCenterAppVersions(__value9);
             }
-            else if (IsRoutingAppCoverages && routingAppCoverages != null)
+            else if (RoutingAppCoverages is { } __value10 && routingAppCoverages != null)
             {
-                return routingAppCoverages(RoutingAppCoverages!);
+                return routingAppCoverages(__value10);
             }
 
             return default(TResult);
@@ -850,49 +850,49 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAlternativeDistributionPackages)
+            if (AlternativeDistributionPackages is { } __value0)
             {
-                alternativeDistributionPackages?.Invoke(AlternativeDistributionPackages!);
+                alternativeDistributionPackages?.Invoke(__value0);
             }
-            else if (IsAppClipDefaultExperiences1)
+            else if (AppClipDefaultExperiences1 is { } __value1)
             {
-                appClipDefaultExperiences1?.Invoke(AppClipDefaultExperiences1!);
+                appClipDefaultExperiences1?.Invoke(__value1);
             }
-            else if (IsAppStoreReviewDetails)
+            else if (AppStoreReviewDetails is { } __value2)
             {
-                appStoreReviewDetails?.Invoke(AppStoreReviewDetails!);
+                appStoreReviewDetails?.Invoke(__value2);
             }
-            else if (IsAppStoreVersionExperiments)
+            else if (AppStoreVersionExperiments is { } __value3)
             {
-                appStoreVersionExperiments?.Invoke(AppStoreVersionExperiments!);
+                appStoreVersionExperiments?.Invoke(__value3);
             }
-            else if (IsAppStoreVersionLocalizations)
+            else if (AppStoreVersionLocalizations is { } __value4)
             {
-                appStoreVersionLocalizations?.Invoke(AppStoreVersionLocalizations!);
+                appStoreVersionLocalizations?.Invoke(__value4);
             }
-            else if (IsAppStoreVersionPhasedReleases)
+            else if (AppStoreVersionPhasedReleases is { } __value5)
             {
-                appStoreVersionPhasedReleases?.Invoke(AppStoreVersionPhasedReleases!);
+                appStoreVersionPhasedReleases?.Invoke(__value5);
             }
-            else if (IsAppStoreVersionSubmissions)
+            else if (AppStoreVersionSubmissions is { } __value6)
             {
-                appStoreVersionSubmissions?.Invoke(AppStoreVersionSubmissions!);
+                appStoreVersionSubmissions?.Invoke(__value6);
             }
-            else if (IsAppClipDefaultExperiences2)
+            else if (AppClipDefaultExperiences2 is { } __value7)
             {
-                appClipDefaultExperiences2?.Invoke(AppClipDefaultExperiences2!);
+                appClipDefaultExperiences2?.Invoke(__value7);
             }
-            else if (IsBuilds)
+            else if (Builds is { } __value8)
             {
-                builds?.Invoke(Builds!);
+                builds?.Invoke(__value8);
             }
-            else if (IsGameCenterAppVersions)
+            else if (GameCenterAppVersions is { } __value9)
             {
-                gameCenterAppVersions?.Invoke(GameCenterAppVersions!);
+                gameCenterAppVersions?.Invoke(__value9);
             }
-            else if (IsRoutingAppCoverages)
+            else if (RoutingAppCoverages is { } __value10)
             {
-                routingAppCoverages?.Invoke(RoutingAppCoverages!);
+                routingAppCoverages?.Invoke(__value10);
             }
         }
 
@@ -918,49 +918,49 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAlternativeDistributionPackages)
+            if (AlternativeDistributionPackages is { } __value0)
             {
-                alternativeDistributionPackages?.Invoke(AlternativeDistributionPackages!);
+                alternativeDistributionPackages?.Invoke(__value0);
             }
-            else if (IsAppClipDefaultExperiences1)
+            else if (AppClipDefaultExperiences1 is { } __value1)
             {
-                appClipDefaultExperiences1?.Invoke(AppClipDefaultExperiences1!);
+                appClipDefaultExperiences1?.Invoke(__value1);
             }
-            else if (IsAppStoreReviewDetails)
+            else if (AppStoreReviewDetails is { } __value2)
             {
-                appStoreReviewDetails?.Invoke(AppStoreReviewDetails!);
+                appStoreReviewDetails?.Invoke(__value2);
             }
-            else if (IsAppStoreVersionExperiments)
+            else if (AppStoreVersionExperiments is { } __value3)
             {
-                appStoreVersionExperiments?.Invoke(AppStoreVersionExperiments!);
+                appStoreVersionExperiments?.Invoke(__value3);
             }
-            else if (IsAppStoreVersionLocalizations)
+            else if (AppStoreVersionLocalizations is { } __value4)
             {
-                appStoreVersionLocalizations?.Invoke(AppStoreVersionLocalizations!);
+                appStoreVersionLocalizations?.Invoke(__value4);
             }
-            else if (IsAppStoreVersionPhasedReleases)
+            else if (AppStoreVersionPhasedReleases is { } __value5)
             {
-                appStoreVersionPhasedReleases?.Invoke(AppStoreVersionPhasedReleases!);
+                appStoreVersionPhasedReleases?.Invoke(__value5);
             }
-            else if (IsAppStoreVersionSubmissions)
+            else if (AppStoreVersionSubmissions is { } __value6)
             {
-                appStoreVersionSubmissions?.Invoke(AppStoreVersionSubmissions!);
+                appStoreVersionSubmissions?.Invoke(__value6);
             }
-            else if (IsAppClipDefaultExperiences2)
+            else if (AppClipDefaultExperiences2 is { } __value7)
             {
-                appClipDefaultExperiences2?.Invoke(AppClipDefaultExperiences2!);
+                appClipDefaultExperiences2?.Invoke(__value7);
             }
-            else if (IsBuilds)
+            else if (Builds is { } __value8)
             {
-                builds?.Invoke(Builds!);
+                builds?.Invoke(__value8);
             }
-            else if (IsGameCenterAppVersions)
+            else if (GameCenterAppVersions is { } __value9)
             {
-                gameCenterAppVersions?.Invoke(GameCenterAppVersions!);
+                gameCenterAppVersions?.Invoke(__value9);
             }
-            else if (IsRoutingAppCoverages)
+            else if (RoutingAppCoverages is { } __value10)
             {
-                routingAppCoverages?.Invoke(RoutingAppCoverages!);
+                routingAppCoverages?.Invoke(__value10);
             }
         }
 

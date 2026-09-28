@@ -68,19 +68,19 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppEventScreenshot), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppEventScreenshot?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppEventScreenshot).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppEventScreenshots!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEventScreenshots(), typeInfo);
             }
             else if (value.IsAppEventVideoClips)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppEventVideoClip), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppEventVideoClip?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppEventVideoClip).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppEventVideoClips!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEventVideoClips(), typeInfo);
             }
             else if (value.IsAppEvents)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppEvents!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEvents(), typeInfo);
             }
         }
     }

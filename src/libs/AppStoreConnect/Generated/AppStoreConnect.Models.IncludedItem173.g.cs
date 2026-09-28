@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionPromotionalOfferPrice PickSubscriptionPromotionalOfferPrices() => IsSubscriptionPromotionalOfferPrices
-            ? SubscriptionPromotionalOfferPrices!
+        public global::AppStoreConnect.SubscriptionPromotionalOfferPrice PickSubscriptionPromotionalOfferPrices() => SubscriptionPromotionalOfferPrices is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPromotionalOfferPrices' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Subscription PickSubscriptions() => IsSubscriptions
-            ? Subscriptions!
+        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsSubscriptionPromotionalOfferPrices && subscriptionPromotionalOfferPrices != null)
+            if (SubscriptionPromotionalOfferPrices is { } __value0 && subscriptionPromotionalOfferPrices != null)
             {
-                return subscriptionPromotionalOfferPrices(SubscriptionPromotionalOfferPrices!);
+                return subscriptionPromotionalOfferPrices(__value0);
             }
-            else if (IsSubscriptions && subscriptions != null)
+            else if (Subscriptions is { } __value1 && subscriptions != null)
             {
-                return subscriptions(Subscriptions!);
+                return subscriptions(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsSubscriptionPromotionalOfferPrices)
+            if (SubscriptionPromotionalOfferPrices is { } __value0)
             {
-                subscriptionPromotionalOfferPrices?.Invoke(SubscriptionPromotionalOfferPrices!);
+                subscriptionPromotionalOfferPrices?.Invoke(__value0);
             }
-            else if (IsSubscriptions)
+            else if (Subscriptions is { } __value1)
             {
-                subscriptions?.Invoke(Subscriptions!);
+                subscriptions?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsSubscriptionPromotionalOfferPrices)
+            if (SubscriptionPromotionalOfferPrices is { } __value0)
             {
-                subscriptionPromotionalOfferPrices?.Invoke(SubscriptionPromotionalOfferPrices!);
+                subscriptionPromotionalOfferPrices?.Invoke(__value0);
             }
-            else if (IsSubscriptions)
+            else if (Subscriptions is { } __value1)
             {
-                subscriptions?.Invoke(Subscriptions!);
+                subscriptions?.Invoke(__value1);
             }
         }
 

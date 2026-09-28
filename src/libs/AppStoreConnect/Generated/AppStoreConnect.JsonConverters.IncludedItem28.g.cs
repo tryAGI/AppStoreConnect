@@ -68,19 +68,19 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppPriceV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppPriceV2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppPriceV2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppPrices1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppPrices1(), typeInfo);
             }
             else if (value.IsAppPrices2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.App).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppPrices2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppPrices2(), typeInfo);
             }
             else if (value.IsTerritories)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Territory), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Territory?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Territory).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Territories!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTerritories(), typeInfo);
             }
         }
     }

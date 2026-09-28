@@ -86,31 +86,31 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Build), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Build?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Build).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Builds!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuilds(), typeInfo);
             }
             else if (value.IsCiProducts)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.CiProduct), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.CiProduct?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.CiProduct).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CiProducts!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCiProducts(), typeInfo);
             }
             else if (value.IsCiWorkflows)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.CiWorkflow), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.CiWorkflow?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.CiWorkflow).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.CiWorkflows!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCiWorkflows(), typeInfo);
             }
             else if (value.IsScmGitReferences)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.ScmGitReference), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.ScmGitReference?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.ScmGitReference).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ScmGitReferences!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickScmGitReferences(), typeInfo);
             }
             else if (value.IsScmPullRequests)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.ScmPullRequest), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.ScmPullRequest?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.ScmPullRequest).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.ScmPullRequests!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickScmPullRequests(), typeInfo);
             }
         }
     }

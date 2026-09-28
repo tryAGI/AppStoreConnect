@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionGroupLocalizationV2 PickSubscriptionGroupLocalizations() => IsSubscriptionGroupLocalizations
-            ? SubscriptionGroupLocalizations!
+        public global::AppStoreConnect.SubscriptionGroupLocalizationV2 PickSubscriptionGroupLocalizations() => SubscriptionGroupLocalizations is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionGroupLocalizations' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionGroup PickSubscriptionGroups() => IsSubscriptionGroups
-            ? SubscriptionGroups!
+        public global::AppStoreConnect.SubscriptionGroup PickSubscriptionGroups() => SubscriptionGroups is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionGroups' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsSubscriptionGroupLocalizations && subscriptionGroupLocalizations != null)
+            if (SubscriptionGroupLocalizations is { } __value0 && subscriptionGroupLocalizations != null)
             {
-                return subscriptionGroupLocalizations(SubscriptionGroupLocalizations!);
+                return subscriptionGroupLocalizations(__value0);
             }
-            else if (IsSubscriptionGroups && subscriptionGroups != null)
+            else if (SubscriptionGroups is { } __value1 && subscriptionGroups != null)
             {
-                return subscriptionGroups(SubscriptionGroups!);
+                return subscriptionGroups(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsSubscriptionGroupLocalizations)
+            if (SubscriptionGroupLocalizations is { } __value0)
             {
-                subscriptionGroupLocalizations?.Invoke(SubscriptionGroupLocalizations!);
+                subscriptionGroupLocalizations?.Invoke(__value0);
             }
-            else if (IsSubscriptionGroups)
+            else if (SubscriptionGroups is { } __value1)
             {
-                subscriptionGroups?.Invoke(SubscriptionGroups!);
+                subscriptionGroups?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsSubscriptionGroupLocalizations)
+            if (SubscriptionGroupLocalizations is { } __value0)
             {
-                subscriptionGroupLocalizations?.Invoke(SubscriptionGroupLocalizations!);
+                subscriptionGroupLocalizations?.Invoke(__value0);
             }
-            else if (IsSubscriptionGroups)
+            else if (SubscriptionGroups is { } __value1)
             {
-                subscriptionGroups?.Invoke(SubscriptionGroups!);
+                subscriptionGroups?.Invoke(__value1);
             }
         }
 

@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickApps() => IsApps
-            ? Apps!
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BundleId PickBundleIds() => IsBundleIds
-            ? BundleIds!
+        public global::AppStoreConnect.BundleId PickBundleIds() => BundleIds is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BundleIds' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmRepository PickScmRepositories() => IsScmRepositories
-            ? ScmRepositories!
+        public global::AppStoreConnect.ScmRepository PickScmRepositories() => ScmRepositories is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScmRepositories' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsApps && apps != null)
+            if (Apps is { } __value0 && apps != null)
             {
-                return apps(Apps!);
+                return apps(__value0);
             }
-            else if (IsBundleIds && bundleIds != null)
+            else if (BundleIds is { } __value1 && bundleIds != null)
             {
-                return bundleIds(BundleIds!);
+                return bundleIds(__value1);
             }
-            else if (IsScmRepositories && scmRepositories != null)
+            else if (ScmRepositories is { } __value2 && scmRepositories != null)
             {
-                return scmRepositories(ScmRepositories!);
+                return scmRepositories(__value2);
             }
 
             return default(TResult);
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsApps)
+            if (Apps is { } __value0)
             {
-                apps?.Invoke(Apps!);
+                apps?.Invoke(__value0);
             }
-            else if (IsBundleIds)
+            else if (BundleIds is { } __value1)
             {
-                bundleIds?.Invoke(BundleIds!);
+                bundleIds?.Invoke(__value1);
             }
-            else if (IsScmRepositories)
+            else if (ScmRepositories is { } __value2)
             {
-                scmRepositories?.Invoke(ScmRepositories!);
+                scmRepositories?.Invoke(__value2);
             }
         }
 
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsApps)
+            if (Apps is { } __value0)
             {
-                apps?.Invoke(Apps!);
+                apps?.Invoke(__value0);
             }
-            else if (IsBundleIds)
+            else if (BundleIds is { } __value1)
             {
-                bundleIds?.Invoke(BundleIds!);
+                bundleIds?.Invoke(__value1);
             }
-            else if (IsScmRepositories)
+            else if (ScmRepositories is { } __value2)
             {
-                scmRepositories?.Invoke(ScmRepositories!);
+                scmRepositories?.Invoke(__value2);
             }
         }
 

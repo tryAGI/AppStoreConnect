@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickApps() => IsApps
-            ? Apps!
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Territory PickTerritories() => IsTerritories
-            ? Territories!
+        public global::AppStoreConnect.Territory PickTerritories() => Territories is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Territories' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsApps && apps != null)
+            if (Apps is { } __value0 && apps != null)
             {
-                return apps(Apps!);
+                return apps(__value0);
             }
-            else if (IsTerritories && territories != null)
+            else if (Territories is { } __value1 && territories != null)
             {
-                return territories(Territories!);
+                return territories(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsApps)
+            if (Apps is { } __value0)
             {
-                apps?.Invoke(Apps!);
+                apps?.Invoke(__value0);
             }
-            else if (IsTerritories)
+            else if (Territories is { } __value1)
             {
-                territories?.Invoke(Territories!);
+                territories?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsApps)
+            if (Apps is { } __value0)
             {
-                apps?.Invoke(Apps!);
+                apps?.Invoke(__value0);
             }
-            else if (IsTerritories)
+            else if (Territories is { } __value1)
             {
-                territories?.Invoke(Territories!);
+                territories?.Invoke(__value1);
             }
         }
 
