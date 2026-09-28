@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionOfferCodeCustomCode PickSubscriptionOfferCodeCustomCodes() => IsSubscriptionOfferCodeCustomCodes
-            ? SubscriptionOfferCodeCustomCodes!
+        public global::AppStoreConnect.SubscriptionOfferCodeCustomCode PickSubscriptionOfferCodeCustomCodes() => SubscriptionOfferCodeCustomCodes is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionOfferCodeCustomCodes' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode PickSubscriptionOfferCodeOneTimeUseCodes() => IsSubscriptionOfferCodeOneTimeUseCodes
-            ? SubscriptionOfferCodeOneTimeUseCodes!
+        public global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode PickSubscriptionOfferCodeOneTimeUseCodes() => SubscriptionOfferCodeOneTimeUseCodes is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionOfferCodeOneTimeUseCodes' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionOfferCodePrice PickSubscriptionOfferCodePrices1() => IsSubscriptionOfferCodePrices1
-            ? SubscriptionOfferCodePrices1!
+        public global::AppStoreConnect.SubscriptionOfferCodePrice PickSubscriptionOfferCodePrices1() => SubscriptionOfferCodePrices1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionOfferCodePrices1' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Subscription PickSubscriptionOfferCodePrices2() => IsSubscriptionOfferCodePrices2
-            ? SubscriptionOfferCodePrices2!
+        public global::AppStoreConnect.Subscription PickSubscriptionOfferCodePrices2() => SubscriptionOfferCodePrices2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionOfferCodePrices2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -315,21 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsSubscriptionOfferCodeCustomCodes && subscriptionOfferCodeCustomCodes != null)
+            if (SubscriptionOfferCodeCustomCodes is { } __value0 && subscriptionOfferCodeCustomCodes != null)
             {
-                return subscriptionOfferCodeCustomCodes(SubscriptionOfferCodeCustomCodes!);
+                return subscriptionOfferCodeCustomCodes(__value0);
             }
-            else if (IsSubscriptionOfferCodeOneTimeUseCodes && subscriptionOfferCodeOneTimeUseCodes != null)
+            else if (SubscriptionOfferCodeOneTimeUseCodes is { } __value1 && subscriptionOfferCodeOneTimeUseCodes != null)
             {
-                return subscriptionOfferCodeOneTimeUseCodes(SubscriptionOfferCodeOneTimeUseCodes!);
+                return subscriptionOfferCodeOneTimeUseCodes(__value1);
             }
-            else if (IsSubscriptionOfferCodePrices1 && subscriptionOfferCodePrices1 != null)
+            else if (SubscriptionOfferCodePrices1 is { } __value2 && subscriptionOfferCodePrices1 != null)
             {
-                return subscriptionOfferCodePrices1(SubscriptionOfferCodePrices1!);
+                return subscriptionOfferCodePrices1(__value2);
             }
-            else if (IsSubscriptionOfferCodePrices2 && subscriptionOfferCodePrices2 != null)
+            else if (SubscriptionOfferCodePrices2 is { } __value3 && subscriptionOfferCodePrices2 != null)
             {
-                return subscriptionOfferCodePrices2(SubscriptionOfferCodePrices2!);
+                return subscriptionOfferCodePrices2(__value3);
             }
 
             return default(TResult);
@@ -353,21 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsSubscriptionOfferCodeCustomCodes)
+            if (SubscriptionOfferCodeCustomCodes is { } __value0)
             {
-                subscriptionOfferCodeCustomCodes?.Invoke(SubscriptionOfferCodeCustomCodes!);
+                subscriptionOfferCodeCustomCodes?.Invoke(__value0);
             }
-            else if (IsSubscriptionOfferCodeOneTimeUseCodes)
+            else if (SubscriptionOfferCodeOneTimeUseCodes is { } __value1)
             {
-                subscriptionOfferCodeOneTimeUseCodes?.Invoke(SubscriptionOfferCodeOneTimeUseCodes!);
+                subscriptionOfferCodeOneTimeUseCodes?.Invoke(__value1);
             }
-            else if (IsSubscriptionOfferCodePrices1)
+            else if (SubscriptionOfferCodePrices1 is { } __value2)
             {
-                subscriptionOfferCodePrices1?.Invoke(SubscriptionOfferCodePrices1!);
+                subscriptionOfferCodePrices1?.Invoke(__value2);
             }
-            else if (IsSubscriptionOfferCodePrices2)
+            else if (SubscriptionOfferCodePrices2 is { } __value3)
             {
-                subscriptionOfferCodePrices2?.Invoke(SubscriptionOfferCodePrices2!);
+                subscriptionOfferCodePrices2?.Invoke(__value3);
             }
         }
 
@@ -386,21 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsSubscriptionOfferCodeCustomCodes)
+            if (SubscriptionOfferCodeCustomCodes is { } __value0)
             {
-                subscriptionOfferCodeCustomCodes?.Invoke(SubscriptionOfferCodeCustomCodes!);
+                subscriptionOfferCodeCustomCodes?.Invoke(__value0);
             }
-            else if (IsSubscriptionOfferCodeOneTimeUseCodes)
+            else if (SubscriptionOfferCodeOneTimeUseCodes is { } __value1)
             {
-                subscriptionOfferCodeOneTimeUseCodes?.Invoke(SubscriptionOfferCodeOneTimeUseCodes!);
+                subscriptionOfferCodeOneTimeUseCodes?.Invoke(__value1);
             }
-            else if (IsSubscriptionOfferCodePrices1)
+            else if (SubscriptionOfferCodePrices1 is { } __value2)
             {
-                subscriptionOfferCodePrices1?.Invoke(SubscriptionOfferCodePrices1!);
+                subscriptionOfferCodePrices1?.Invoke(__value2);
             }
-            else if (IsSubscriptionOfferCodePrices2)
+            else if (SubscriptionOfferCodePrices2 is { } __value3)
             {
-                subscriptionOfferCodePrices2?.Invoke(SubscriptionOfferCodePrices2!);
+                subscriptionOfferCodePrices2?.Invoke(__value3);
             }
         }
 

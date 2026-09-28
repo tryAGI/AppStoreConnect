@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCustomProductPageLocalization PickAppCustomProductPageLocalizations() => IsAppCustomProductPageLocalizations
-            ? AppCustomProductPageLocalizations!
+        public global::AppStoreConnect.AppCustomProductPageLocalization PickAppCustomProductPageLocalizations() => AppCustomProductPageLocalizations is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageLocalizations' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppScreenshot PickAppScreenshots() => IsAppScreenshots
-            ? AppScreenshots!
+        public global::AppStoreConnect.AppScreenshot PickAppScreenshots() => AppScreenshots is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppScreenshots' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization PickAppStoreVersionExperimentTreatmentLocalizations() => IsAppStoreVersionExperimentTreatmentLocalizations
-            ? AppStoreVersionExperimentTreatmentLocalizations!
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization PickAppStoreVersionExperimentTreatmentLocalizations() => AppStoreVersionExperimentTreatmentLocalizations is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatmentLocalizations' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionLocalization PickAppStoreVersionLocalizations() => IsAppStoreVersionLocalizations
-            ? AppStoreVersionLocalizations!
+        public global::AppStoreConnect.AppStoreVersionLocalization PickAppStoreVersionLocalizations() => AppStoreVersionLocalizations is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionLocalizations' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -315,21 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppCustomProductPageLocalizations && appCustomProductPageLocalizations != null)
+            if (AppCustomProductPageLocalizations is { } __value0 && appCustomProductPageLocalizations != null)
             {
-                return appCustomProductPageLocalizations(AppCustomProductPageLocalizations!);
+                return appCustomProductPageLocalizations(__value0);
             }
-            else if (IsAppScreenshots && appScreenshots != null)
+            else if (AppScreenshots is { } __value1 && appScreenshots != null)
             {
-                return appScreenshots(AppScreenshots!);
+                return appScreenshots(__value1);
             }
-            else if (IsAppStoreVersionExperimentTreatmentLocalizations && appStoreVersionExperimentTreatmentLocalizations != null)
+            else if (AppStoreVersionExperimentTreatmentLocalizations is { } __value2 && appStoreVersionExperimentTreatmentLocalizations != null)
             {
-                return appStoreVersionExperimentTreatmentLocalizations(AppStoreVersionExperimentTreatmentLocalizations!);
+                return appStoreVersionExperimentTreatmentLocalizations(__value2);
             }
-            else if (IsAppStoreVersionLocalizations && appStoreVersionLocalizations != null)
+            else if (AppStoreVersionLocalizations is { } __value3 && appStoreVersionLocalizations != null)
             {
-                return appStoreVersionLocalizations(AppStoreVersionLocalizations!);
+                return appStoreVersionLocalizations(__value3);
             }
 
             return default(TResult);
@@ -353,21 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppCustomProductPageLocalizations)
+            if (AppCustomProductPageLocalizations is { } __value0)
             {
-                appCustomProductPageLocalizations?.Invoke(AppCustomProductPageLocalizations!);
+                appCustomProductPageLocalizations?.Invoke(__value0);
             }
-            else if (IsAppScreenshots)
+            else if (AppScreenshots is { } __value1)
             {
-                appScreenshots?.Invoke(AppScreenshots!);
+                appScreenshots?.Invoke(__value1);
             }
-            else if (IsAppStoreVersionExperimentTreatmentLocalizations)
+            else if (AppStoreVersionExperimentTreatmentLocalizations is { } __value2)
             {
-                appStoreVersionExperimentTreatmentLocalizations?.Invoke(AppStoreVersionExperimentTreatmentLocalizations!);
+                appStoreVersionExperimentTreatmentLocalizations?.Invoke(__value2);
             }
-            else if (IsAppStoreVersionLocalizations)
+            else if (AppStoreVersionLocalizations is { } __value3)
             {
-                appStoreVersionLocalizations?.Invoke(AppStoreVersionLocalizations!);
+                appStoreVersionLocalizations?.Invoke(__value3);
             }
         }
 
@@ -386,21 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppCustomProductPageLocalizations)
+            if (AppCustomProductPageLocalizations is { } __value0)
             {
-                appCustomProductPageLocalizations?.Invoke(AppCustomProductPageLocalizations!);
+                appCustomProductPageLocalizations?.Invoke(__value0);
             }
-            else if (IsAppScreenshots)
+            else if (AppScreenshots is { } __value1)
             {
-                appScreenshots?.Invoke(AppScreenshots!);
+                appScreenshots?.Invoke(__value1);
             }
-            else if (IsAppStoreVersionExperimentTreatmentLocalizations)
+            else if (AppStoreVersionExperimentTreatmentLocalizations is { } __value2)
             {
-                appStoreVersionExperimentTreatmentLocalizations?.Invoke(AppStoreVersionExperimentTreatmentLocalizations!);
+                appStoreVersionExperimentTreatmentLocalizations?.Invoke(__value2);
             }
-            else if (IsAppStoreVersionLocalizations)
+            else if (AppStoreVersionLocalizations is { } __value3)
             {
-                appStoreVersionLocalizations?.Invoke(AppStoreVersionLocalizations!);
+                appStoreVersionLocalizations?.Invoke(__value3);
             }
         }
 

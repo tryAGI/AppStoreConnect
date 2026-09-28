@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreReviewAttachment PickAppStoreReviewAttachments() => IsAppStoreReviewAttachments
-            ? AppStoreReviewAttachments!
+        public global::AppStoreConnect.AppStoreReviewAttachment PickAppStoreReviewAttachments() => AppStoreReviewAttachments is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreReviewAttachments' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => IsAppStoreVersions
-            ? AppStoreVersions!
+        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => AppStoreVersions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppStoreReviewAttachments && appStoreReviewAttachments != null)
+            if (AppStoreReviewAttachments is { } __value0 && appStoreReviewAttachments != null)
             {
-                return appStoreReviewAttachments(AppStoreReviewAttachments!);
+                return appStoreReviewAttachments(__value0);
             }
-            else if (IsAppStoreVersions && appStoreVersions != null)
+            else if (AppStoreVersions is { } __value1 && appStoreVersions != null)
             {
-                return appStoreVersions(AppStoreVersions!);
+                return appStoreVersions(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppStoreReviewAttachments)
+            if (AppStoreReviewAttachments is { } __value0)
             {
-                appStoreReviewAttachments?.Invoke(AppStoreReviewAttachments!);
+                appStoreReviewAttachments?.Invoke(__value0);
             }
-            else if (IsAppStoreVersions)
+            else if (AppStoreVersions is { } __value1)
             {
-                appStoreVersions?.Invoke(AppStoreVersions!);
+                appStoreVersions?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppStoreReviewAttachments)
+            if (AppStoreReviewAttachments is { } __value0)
             {
-                appStoreReviewAttachments?.Invoke(AppStoreReviewAttachments!);
+                appStoreReviewAttachments?.Invoke(__value0);
             }
-            else if (IsAppStoreVersions)
+            else if (AppStoreVersions is { } __value1)
             {
-                appStoreVersions?.Invoke(AppStoreVersions!);
+                appStoreVersions?.Invoke(__value1);
             }
         }
 

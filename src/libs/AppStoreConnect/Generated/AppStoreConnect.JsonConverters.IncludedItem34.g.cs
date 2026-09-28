@@ -68,19 +68,19 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppPreviewSet), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppPreviewSet?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppPreviewSet).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppPreviewSets!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppPreviewSets(), typeInfo);
             }
             else if (value.IsAppScreenshotSets)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppScreenshotSet), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppScreenshotSet?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppScreenshotSet).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppScreenshotSets!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppScreenshotSets(), typeInfo);
             }
             else if (value.IsAppStoreVersionExperimentTreatments)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatment), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppStoreVersionExperimentTreatment?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatment).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppStoreVersionExperimentTreatments!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppStoreVersionExperimentTreatments(), typeInfo);
             }
         }
     }

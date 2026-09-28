@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickApps() => IsApps
-            ? Apps!
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BundleIdCapability PickBundleIdCapabilities() => IsBundleIdCapabilities
-            ? BundleIdCapabilities!
+        public global::AppStoreConnect.BundleIdCapability PickBundleIdCapabilities() => BundleIdCapabilities is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BundleIdCapabilities' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Profile PickProfiles() => IsProfiles
-            ? Profiles!
+        public global::AppStoreConnect.Profile PickProfiles() => Profiles is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Profiles' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsApps && apps != null)
+            if (Apps is { } __value0 && apps != null)
             {
-                return apps(Apps!);
+                return apps(__value0);
             }
-            else if (IsBundleIdCapabilities && bundleIdCapabilities != null)
+            else if (BundleIdCapabilities is { } __value1 && bundleIdCapabilities != null)
             {
-                return bundleIdCapabilities(BundleIdCapabilities!);
+                return bundleIdCapabilities(__value1);
             }
-            else if (IsProfiles && profiles != null)
+            else if (Profiles is { } __value2 && profiles != null)
             {
-                return profiles(Profiles!);
+                return profiles(__value2);
             }
 
             return default(TResult);
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsApps)
+            if (Apps is { } __value0)
             {
-                apps?.Invoke(Apps!);
+                apps?.Invoke(__value0);
             }
-            else if (IsBundleIdCapabilities)
+            else if (BundleIdCapabilities is { } __value1)
             {
-                bundleIdCapabilities?.Invoke(BundleIdCapabilities!);
+                bundleIdCapabilities?.Invoke(__value1);
             }
-            else if (IsProfiles)
+            else if (Profiles is { } __value2)
             {
-                profiles?.Invoke(Profiles!);
+                profiles?.Invoke(__value2);
             }
         }
 
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsApps)
+            if (Apps is { } __value0)
             {
-                apps?.Invoke(Apps!);
+                apps?.Invoke(__value0);
             }
-            else if (IsBundleIdCapabilities)
+            else if (BundleIdCapabilities is { } __value1)
             {
-                bundleIdCapabilities?.Invoke(BundleIdCapabilities!);
+                bundleIdCapabilities?.Invoke(__value1);
             }
-            else if (IsProfiles)
+            else if (Profiles is { } __value2)
             {
-                profiles?.Invoke(Profiles!);
+                profiles?.Invoke(__value2);
             }
         }
 

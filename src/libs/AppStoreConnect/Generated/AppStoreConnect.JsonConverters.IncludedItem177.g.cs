@@ -158,79 +158,79 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.PromotedPurchase), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.PromotedPurchase?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.PromotedPurchase).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PromotedPurchases!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickPromotedPurchases(), typeInfo);
             }
             else if (value.IsSubscriptionAppStoreReviewScreenshots)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SubscriptionAppStoreReviewScreenshots!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSubscriptionAppStoreReviewScreenshots(), typeInfo);
             }
             else if (value.IsSubscriptionAvailabilities)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionAvailability), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.SubscriptionAvailability?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.SubscriptionAvailability).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SubscriptionAvailabilities!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSubscriptionAvailabilities(), typeInfo);
             }
             else if (value.IsSubscriptionGroups)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionGroup), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.SubscriptionGroup?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.SubscriptionGroup).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SubscriptionGroups!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSubscriptionGroups(), typeInfo);
             }
             else if (value.IsSubscriptionImages)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionImage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.SubscriptionImage?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.SubscriptionImage).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SubscriptionImages!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSubscriptionImages(), typeInfo);
             }
             else if (value.IsSubscriptionIntroductoryOffers)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionIntroductoryOffer), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.SubscriptionIntroductoryOffer?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.SubscriptionIntroductoryOffer).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SubscriptionIntroductoryOffers!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSubscriptionIntroductoryOffers(), typeInfo);
             }
             else if (value.IsSubscriptionLocalizations)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionLocalization), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.SubscriptionLocalization?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.SubscriptionLocalization).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SubscriptionLocalizations!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSubscriptionLocalizations(), typeInfo);
             }
             else if (value.IsSubscriptionOfferCodes)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionOfferCode), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.SubscriptionOfferCode?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.SubscriptionOfferCode).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SubscriptionOfferCodes!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSubscriptionOfferCodes(), typeInfo);
             }
             else if (value.IsSubscriptionPlanAvailabilities)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionPlanAvailability), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.SubscriptionPlanAvailability?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.SubscriptionPlanAvailability).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SubscriptionPlanAvailabilities!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSubscriptionPlanAvailabilities(), typeInfo);
             }
             else if (value.IsSubscriptionPrices)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionPrice), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.SubscriptionPrice?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.SubscriptionPrice).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SubscriptionPrices!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSubscriptionPrices(), typeInfo);
             }
             else if (value.IsSubscriptionPromotionalOffers)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionPromotionalOffer), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.SubscriptionPromotionalOffer?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.SubscriptionPromotionalOffer).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SubscriptionPromotionalOffers!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSubscriptionPromotionalOffers(), typeInfo);
             }
             else if (value.IsSubscriptionVersions)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionVersion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.SubscriptionVersion?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.SubscriptionVersion).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.SubscriptionVersions!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSubscriptionVersions(), typeInfo);
             }
             else if (value.IsWinBackOffers)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.WinBackOffer), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.WinBackOffer?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.WinBackOffer).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.WinBackOffers!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickWinBackOffers(), typeInfo);
             }
         }
     }

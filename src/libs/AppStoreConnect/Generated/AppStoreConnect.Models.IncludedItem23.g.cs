@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AgeRatingDeclaration PickAgeRatingDeclarations() => IsAgeRatingDeclarations
-            ? AgeRatingDeclarations!
+        public global::AppStoreConnect.AgeRatingDeclaration PickAgeRatingDeclarations() => AgeRatingDeclarations is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AgeRatingDeclarations' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCategory PickAppCategories1() => IsAppCategories1
-            ? AppCategories1!
+        public global::AppStoreConnect.AppCategory PickAppCategories1() => AppCategories1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppCategories1' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppInfoLocalization PickAppInfoLocalizations() => IsAppInfoLocalizations
-            ? AppInfoLocalizations!
+        public global::AppStoreConnect.AppInfoLocalization PickAppInfoLocalizations() => AppInfoLocalizations is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppInfoLocalizations' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickAppCategories2() => IsAppCategories2
-            ? AppCategories2!
+        public global::AppStoreConnect.App PickAppCategories2() => AppCategories2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppCategories2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -315,21 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAgeRatingDeclarations && ageRatingDeclarations != null)
+            if (AgeRatingDeclarations is { } __value0 && ageRatingDeclarations != null)
             {
-                return ageRatingDeclarations(AgeRatingDeclarations!);
+                return ageRatingDeclarations(__value0);
             }
-            else if (IsAppCategories1 && appCategories1 != null)
+            else if (AppCategories1 is { } __value1 && appCategories1 != null)
             {
-                return appCategories1(AppCategories1!);
+                return appCategories1(__value1);
             }
-            else if (IsAppInfoLocalizations && appInfoLocalizations != null)
+            else if (AppInfoLocalizations is { } __value2 && appInfoLocalizations != null)
             {
-                return appInfoLocalizations(AppInfoLocalizations!);
+                return appInfoLocalizations(__value2);
             }
-            else if (IsAppCategories2 && appCategories2 != null)
+            else if (AppCategories2 is { } __value3 && appCategories2 != null)
             {
-                return appCategories2(AppCategories2!);
+                return appCategories2(__value3);
             }
 
             return default(TResult);
@@ -353,21 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAgeRatingDeclarations)
+            if (AgeRatingDeclarations is { } __value0)
             {
-                ageRatingDeclarations?.Invoke(AgeRatingDeclarations!);
+                ageRatingDeclarations?.Invoke(__value0);
             }
-            else if (IsAppCategories1)
+            else if (AppCategories1 is { } __value1)
             {
-                appCategories1?.Invoke(AppCategories1!);
+                appCategories1?.Invoke(__value1);
             }
-            else if (IsAppInfoLocalizations)
+            else if (AppInfoLocalizations is { } __value2)
             {
-                appInfoLocalizations?.Invoke(AppInfoLocalizations!);
+                appInfoLocalizations?.Invoke(__value2);
             }
-            else if (IsAppCategories2)
+            else if (AppCategories2 is { } __value3)
             {
-                appCategories2?.Invoke(AppCategories2!);
+                appCategories2?.Invoke(__value3);
             }
         }
 
@@ -386,21 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAgeRatingDeclarations)
+            if (AgeRatingDeclarations is { } __value0)
             {
-                ageRatingDeclarations?.Invoke(AgeRatingDeclarations!);
+                ageRatingDeclarations?.Invoke(__value0);
             }
-            else if (IsAppCategories1)
+            else if (AppCategories1 is { } __value1)
             {
-                appCategories1?.Invoke(AppCategories1!);
+                appCategories1?.Invoke(__value1);
             }
-            else if (IsAppInfoLocalizations)
+            else if (AppInfoLocalizations is { } __value2)
             {
-                appInfoLocalizations?.Invoke(AppInfoLocalizations!);
+                appInfoLocalizations?.Invoke(__value2);
             }
-            else if (IsAppCategories2)
+            else if (AppCategories2 is { } __value3)
             {
-                appCategories2?.Invoke(AppCategories2!);
+                appCategories2?.Invoke(__value3);
             }
         }
 

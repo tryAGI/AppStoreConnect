@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCustomProductPageVersion PickAppCustomProductPageVersions() => IsAppCustomProductPageVersions
-            ? AppCustomProductPageVersions!
+        public global::AppStoreConnect.AppCustomProductPageVersion PickAppCustomProductPageVersions() => AppCustomProductPageVersions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageVersions' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppKeyword PickAppKeywords() => IsAppKeywords
-            ? AppKeywords!
+        public global::AppStoreConnect.AppKeyword PickAppKeywords() => AppKeywords is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppKeywords' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppPreviewSet PickAppPreviewSets() => IsAppPreviewSets
-            ? AppPreviewSets!
+        public global::AppStoreConnect.AppPreviewSet PickAppPreviewSets() => AppPreviewSets is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppPreviewSets' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppScreenshotSet PickAppScreenshotSets() => IsAppScreenshotSets
-            ? AppScreenshotSets!
+        public global::AppStoreConnect.AppScreenshotSet PickAppScreenshotSets() => AppScreenshotSets is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppScreenshotSets' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -315,21 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppCustomProductPageVersions && appCustomProductPageVersions != null)
+            if (AppCustomProductPageVersions is { } __value0 && appCustomProductPageVersions != null)
             {
-                return appCustomProductPageVersions(AppCustomProductPageVersions!);
+                return appCustomProductPageVersions(__value0);
             }
-            else if (IsAppKeywords && appKeywords != null)
+            else if (AppKeywords is { } __value1 && appKeywords != null)
             {
-                return appKeywords(AppKeywords!);
+                return appKeywords(__value1);
             }
-            else if (IsAppPreviewSets && appPreviewSets != null)
+            else if (AppPreviewSets is { } __value2 && appPreviewSets != null)
             {
-                return appPreviewSets(AppPreviewSets!);
+                return appPreviewSets(__value2);
             }
-            else if (IsAppScreenshotSets && appScreenshotSets != null)
+            else if (AppScreenshotSets is { } __value3 && appScreenshotSets != null)
             {
-                return appScreenshotSets(AppScreenshotSets!);
+                return appScreenshotSets(__value3);
             }
 
             return default(TResult);
@@ -353,21 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppCustomProductPageVersions)
+            if (AppCustomProductPageVersions is { } __value0)
             {
-                appCustomProductPageVersions?.Invoke(AppCustomProductPageVersions!);
+                appCustomProductPageVersions?.Invoke(__value0);
             }
-            else if (IsAppKeywords)
+            else if (AppKeywords is { } __value1)
             {
-                appKeywords?.Invoke(AppKeywords!);
+                appKeywords?.Invoke(__value1);
             }
-            else if (IsAppPreviewSets)
+            else if (AppPreviewSets is { } __value2)
             {
-                appPreviewSets?.Invoke(AppPreviewSets!);
+                appPreviewSets?.Invoke(__value2);
             }
-            else if (IsAppScreenshotSets)
+            else if (AppScreenshotSets is { } __value3)
             {
-                appScreenshotSets?.Invoke(AppScreenshotSets!);
+                appScreenshotSets?.Invoke(__value3);
             }
         }
 
@@ -386,21 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppCustomProductPageVersions)
+            if (AppCustomProductPageVersions is { } __value0)
             {
-                appCustomProductPageVersions?.Invoke(AppCustomProductPageVersions!);
+                appCustomProductPageVersions?.Invoke(__value0);
             }
-            else if (IsAppKeywords)
+            else if (AppKeywords is { } __value1)
             {
-                appKeywords?.Invoke(AppKeywords!);
+                appKeywords?.Invoke(__value1);
             }
-            else if (IsAppPreviewSets)
+            else if (AppPreviewSets is { } __value2)
             {
-                appPreviewSets?.Invoke(AppPreviewSets!);
+                appPreviewSets?.Invoke(__value2);
             }
-            else if (IsAppScreenshotSets)
+            else if (AppScreenshotSets is { } __value3)
             {
-                appScreenshotSets?.Invoke(AppScreenshotSets!);
+                appScreenshotSets?.Invoke(__value3);
             }
         }
 

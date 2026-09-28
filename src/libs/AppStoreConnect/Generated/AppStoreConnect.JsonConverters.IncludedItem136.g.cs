@@ -68,19 +68,19 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.InAppPurchaseOfferCodeCustomCodes!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseOfferCodeCustomCodes(), typeInfo);
             }
             else if (value.IsInAppPurchaseOfferCodeOneTimeUseCodes)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.InAppPurchaseOfferCodeOneTimeUseCodes!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseOfferCodeOneTimeUseCodes(), typeInfo);
             }
             else if (value.IsInAppPurchaseOfferPrices)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferPrice), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferPrice?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseOfferPrice).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.InAppPurchaseOfferPrices!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseOfferPrices(), typeInfo);
             }
         }
     }

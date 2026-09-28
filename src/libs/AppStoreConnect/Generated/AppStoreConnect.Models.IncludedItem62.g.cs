@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEncryptionDeclaration PickAppEncryptionDeclarations1() => IsAppEncryptionDeclarations1
-            ? AppEncryptionDeclarations1!
+        public global::AppStoreConnect.AppEncryptionDeclaration PickAppEncryptionDeclarations1() => AppEncryptionDeclarations1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppEncryptionDeclarations1' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => IsAppStoreVersions
-            ? AppStoreVersions!
+        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => AppStoreVersions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickAppEncryptionDeclarations2() => IsAppEncryptionDeclarations2
-            ? AppEncryptionDeclarations2!
+        public global::AppStoreConnect.App PickAppEncryptionDeclarations2() => AppEncryptionDeclarations2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppEncryptionDeclarations2' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaAppReviewSubmission PickBetaAppReviewSubmissions() => IsBetaAppReviewSubmissions
-            ? BetaAppReviewSubmissions!
+        public global::AppStoreConnect.BetaAppReviewSubmission PickBetaAppReviewSubmissions() => BetaAppReviewSubmissions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BetaAppReviewSubmissions' but the value was {ToString()}.");
 
         /// <summary>
@@ -195,8 +195,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaBuildLocalization PickBetaBuildLocalizations() => IsBetaBuildLocalizations
-            ? BetaBuildLocalizations!
+        public global::AppStoreConnect.BetaBuildLocalization PickBetaBuildLocalizations() => BetaBuildLocalizations is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BetaBuildLocalizations' but the value was {ToString()}.");
 
         /// <summary>
@@ -232,8 +232,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaGroup PickBetaGroups() => IsBetaGroups
-            ? BetaGroups!
+        public global::AppStoreConnect.BetaGroup PickBetaGroups() => BetaGroups is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BetaGroups' but the value was {ToString()}.");
 
         /// <summary>
@@ -269,8 +269,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaTester PickBetaTesters() => IsBetaTesters
-            ? BetaTesters!
+        public global::AppStoreConnect.BetaTester PickBetaTesters() => BetaTesters is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BetaTesters' but the value was {ToString()}.");
 
         /// <summary>
@@ -306,8 +306,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BuildBetaDetail PickBuildBetaDetails() => IsBuildBetaDetails
-            ? BuildBetaDetails!
+        public global::AppStoreConnect.BuildBetaDetail PickBuildBetaDetails() => BuildBetaDetails is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BuildBetaDetails' but the value was {ToString()}.");
 
         /// <summary>
@@ -343,8 +343,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BuildBundle PickBuildBundles() => IsBuildBundles
-            ? BuildBundles!
+        public global::AppStoreConnect.BuildBundle PickBuildBundles() => BuildBundles is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BuildBundles' but the value was {ToString()}.");
 
         /// <summary>
@@ -380,8 +380,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BuildIcon PickBuildIcons() => IsBuildIcons
-            ? BuildIcons!
+        public global::AppStoreConnect.BuildIcon PickBuildIcons() => BuildIcons is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BuildIcons' but the value was {ToString()}.");
 
         /// <summary>
@@ -417,8 +417,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BuildUpload PickBuildUploads() => IsBuildUploads
-            ? BuildUploads!
+        public global::AppStoreConnect.BuildUpload PickBuildUploads() => BuildUploads is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BuildUploads' but the value was {ToString()}.");
 
         /// <summary>
@@ -454,8 +454,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.PrereleaseVersion PickPreReleaseVersions() => IsPreReleaseVersions
-            ? PreReleaseVersions!
+        public global::AppStoreConnect.PrereleaseVersion PickPreReleaseVersions() => PreReleaseVersions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'PreReleaseVersions' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -835,53 +835,53 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppEncryptionDeclarations1 && appEncryptionDeclarations1 != null)
+            if (AppEncryptionDeclarations1 is { } __value0 && appEncryptionDeclarations1 != null)
             {
-                return appEncryptionDeclarations1(AppEncryptionDeclarations1!);
+                return appEncryptionDeclarations1(__value0);
             }
-            else if (IsAppStoreVersions && appStoreVersions != null)
+            else if (AppStoreVersions is { } __value1 && appStoreVersions != null)
             {
-                return appStoreVersions(AppStoreVersions!);
+                return appStoreVersions(__value1);
             }
-            else if (IsAppEncryptionDeclarations2 && appEncryptionDeclarations2 != null)
+            else if (AppEncryptionDeclarations2 is { } __value2 && appEncryptionDeclarations2 != null)
             {
-                return appEncryptionDeclarations2(AppEncryptionDeclarations2!);
+                return appEncryptionDeclarations2(__value2);
             }
-            else if (IsBetaAppReviewSubmissions && betaAppReviewSubmissions != null)
+            else if (BetaAppReviewSubmissions is { } __value3 && betaAppReviewSubmissions != null)
             {
-                return betaAppReviewSubmissions(BetaAppReviewSubmissions!);
+                return betaAppReviewSubmissions(__value3);
             }
-            else if (IsBetaBuildLocalizations && betaBuildLocalizations != null)
+            else if (BetaBuildLocalizations is { } __value4 && betaBuildLocalizations != null)
             {
-                return betaBuildLocalizations(BetaBuildLocalizations!);
+                return betaBuildLocalizations(__value4);
             }
-            else if (IsBetaGroups && betaGroups != null)
+            else if (BetaGroups is { } __value5 && betaGroups != null)
             {
-                return betaGroups(BetaGroups!);
+                return betaGroups(__value5);
             }
-            else if (IsBetaTesters && betaTesters != null)
+            else if (BetaTesters is { } __value6 && betaTesters != null)
             {
-                return betaTesters(BetaTesters!);
+                return betaTesters(__value6);
             }
-            else if (IsBuildBetaDetails && buildBetaDetails != null)
+            else if (BuildBetaDetails is { } __value7 && buildBetaDetails != null)
             {
-                return buildBetaDetails(BuildBetaDetails!);
+                return buildBetaDetails(__value7);
             }
-            else if (IsBuildBundles && buildBundles != null)
+            else if (BuildBundles is { } __value8 && buildBundles != null)
             {
-                return buildBundles(BuildBundles!);
+                return buildBundles(__value8);
             }
-            else if (IsBuildIcons && buildIcons != null)
+            else if (BuildIcons is { } __value9 && buildIcons != null)
             {
-                return buildIcons(BuildIcons!);
+                return buildIcons(__value9);
             }
-            else if (IsBuildUploads && buildUploads != null)
+            else if (BuildUploads is { } __value10 && buildUploads != null)
             {
-                return buildUploads(BuildUploads!);
+                return buildUploads(__value10);
             }
-            else if (IsPreReleaseVersions && preReleaseVersions != null)
+            else if (PreReleaseVersions is { } __value11 && preReleaseVersions != null)
             {
-                return preReleaseVersions(PreReleaseVersions!);
+                return preReleaseVersions(__value11);
             }
 
             return default(TResult);
@@ -921,53 +921,53 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppEncryptionDeclarations1)
+            if (AppEncryptionDeclarations1 is { } __value0)
             {
-                appEncryptionDeclarations1?.Invoke(AppEncryptionDeclarations1!);
+                appEncryptionDeclarations1?.Invoke(__value0);
             }
-            else if (IsAppStoreVersions)
+            else if (AppStoreVersions is { } __value1)
             {
-                appStoreVersions?.Invoke(AppStoreVersions!);
+                appStoreVersions?.Invoke(__value1);
             }
-            else if (IsAppEncryptionDeclarations2)
+            else if (AppEncryptionDeclarations2 is { } __value2)
             {
-                appEncryptionDeclarations2?.Invoke(AppEncryptionDeclarations2!);
+                appEncryptionDeclarations2?.Invoke(__value2);
             }
-            else if (IsBetaAppReviewSubmissions)
+            else if (BetaAppReviewSubmissions is { } __value3)
             {
-                betaAppReviewSubmissions?.Invoke(BetaAppReviewSubmissions!);
+                betaAppReviewSubmissions?.Invoke(__value3);
             }
-            else if (IsBetaBuildLocalizations)
+            else if (BetaBuildLocalizations is { } __value4)
             {
-                betaBuildLocalizations?.Invoke(BetaBuildLocalizations!);
+                betaBuildLocalizations?.Invoke(__value4);
             }
-            else if (IsBetaGroups)
+            else if (BetaGroups is { } __value5)
             {
-                betaGroups?.Invoke(BetaGroups!);
+                betaGroups?.Invoke(__value5);
             }
-            else if (IsBetaTesters)
+            else if (BetaTesters is { } __value6)
             {
-                betaTesters?.Invoke(BetaTesters!);
+                betaTesters?.Invoke(__value6);
             }
-            else if (IsBuildBetaDetails)
+            else if (BuildBetaDetails is { } __value7)
             {
-                buildBetaDetails?.Invoke(BuildBetaDetails!);
+                buildBetaDetails?.Invoke(__value7);
             }
-            else if (IsBuildBundles)
+            else if (BuildBundles is { } __value8)
             {
-                buildBundles?.Invoke(BuildBundles!);
+                buildBundles?.Invoke(__value8);
             }
-            else if (IsBuildIcons)
+            else if (BuildIcons is { } __value9)
             {
-                buildIcons?.Invoke(BuildIcons!);
+                buildIcons?.Invoke(__value9);
             }
-            else if (IsBuildUploads)
+            else if (BuildUploads is { } __value10)
             {
-                buildUploads?.Invoke(BuildUploads!);
+                buildUploads?.Invoke(__value10);
             }
-            else if (IsPreReleaseVersions)
+            else if (PreReleaseVersions is { } __value11)
             {
-                preReleaseVersions?.Invoke(PreReleaseVersions!);
+                preReleaseVersions?.Invoke(__value11);
             }
         }
 
@@ -994,53 +994,53 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppEncryptionDeclarations1)
+            if (AppEncryptionDeclarations1 is { } __value0)
             {
-                appEncryptionDeclarations1?.Invoke(AppEncryptionDeclarations1!);
+                appEncryptionDeclarations1?.Invoke(__value0);
             }
-            else if (IsAppStoreVersions)
+            else if (AppStoreVersions is { } __value1)
             {
-                appStoreVersions?.Invoke(AppStoreVersions!);
+                appStoreVersions?.Invoke(__value1);
             }
-            else if (IsAppEncryptionDeclarations2)
+            else if (AppEncryptionDeclarations2 is { } __value2)
             {
-                appEncryptionDeclarations2?.Invoke(AppEncryptionDeclarations2!);
+                appEncryptionDeclarations2?.Invoke(__value2);
             }
-            else if (IsBetaAppReviewSubmissions)
+            else if (BetaAppReviewSubmissions is { } __value3)
             {
-                betaAppReviewSubmissions?.Invoke(BetaAppReviewSubmissions!);
+                betaAppReviewSubmissions?.Invoke(__value3);
             }
-            else if (IsBetaBuildLocalizations)
+            else if (BetaBuildLocalizations is { } __value4)
             {
-                betaBuildLocalizations?.Invoke(BetaBuildLocalizations!);
+                betaBuildLocalizations?.Invoke(__value4);
             }
-            else if (IsBetaGroups)
+            else if (BetaGroups is { } __value5)
             {
-                betaGroups?.Invoke(BetaGroups!);
+                betaGroups?.Invoke(__value5);
             }
-            else if (IsBetaTesters)
+            else if (BetaTesters is { } __value6)
             {
-                betaTesters?.Invoke(BetaTesters!);
+                betaTesters?.Invoke(__value6);
             }
-            else if (IsBuildBetaDetails)
+            else if (BuildBetaDetails is { } __value7)
             {
-                buildBetaDetails?.Invoke(BuildBetaDetails!);
+                buildBetaDetails?.Invoke(__value7);
             }
-            else if (IsBuildBundles)
+            else if (BuildBundles is { } __value8)
             {
-                buildBundles?.Invoke(BuildBundles!);
+                buildBundles?.Invoke(__value8);
             }
-            else if (IsBuildIcons)
+            else if (BuildIcons is { } __value9)
             {
-                buildIcons?.Invoke(BuildIcons!);
+                buildIcons?.Invoke(__value9);
             }
-            else if (IsBuildUploads)
+            else if (BuildUploads is { } __value10)
             {
-                buildUploads?.Invoke(BuildUploads!);
+                buildUploads?.Invoke(__value10);
             }
-            else if (IsPreReleaseVersions)
+            else if (PreReleaseVersions is { } __value11)
             {
-                preReleaseVersions?.Invoke(PreReleaseVersions!);
+                preReleaseVersions?.Invoke(__value11);
             }
         }
 

@@ -68,19 +68,19 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AlternativeDistributionPackageDelta), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AlternativeDistributionPackageDelta?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AlternativeDistributionPackageDelta).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AlternativeDistributionPackageDeltas!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAlternativeDistributionPackageDeltas(), typeInfo);
             }
             else if (value.IsAlternativeDistributionPackageVariants)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AlternativeDistributionPackageVariant), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AlternativeDistributionPackageVariant?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AlternativeDistributionPackageVariant).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AlternativeDistributionPackageVariants!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAlternativeDistributionPackageVariants(), typeInfo);
             }
             else if (value.IsAlternativeDistributionPackages)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AlternativeDistributionPackage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AlternativeDistributionPackage?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AlternativeDistributionPackage).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AlternativeDistributionPackages!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAlternativeDistributionPackages(), typeInfo);
             }
         }
     }

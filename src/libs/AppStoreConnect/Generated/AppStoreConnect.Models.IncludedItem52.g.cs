@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaTester PickBetaTesters() => IsBetaTesters
-            ? BetaTesters!
+        public global::AppStoreConnect.BetaTester PickBetaTesters() => BetaTesters is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BetaTesters' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Build PickBuilds() => IsBuilds
-            ? Builds!
+        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsBetaTesters && betaTesters != null)
+            if (BetaTesters is { } __value0 && betaTesters != null)
             {
-                return betaTesters(BetaTesters!);
+                return betaTesters(__value0);
             }
-            else if (IsBuilds && builds != null)
+            else if (Builds is { } __value1 && builds != null)
             {
-                return builds(Builds!);
+                return builds(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsBetaTesters)
+            if (BetaTesters is { } __value0)
             {
-                betaTesters?.Invoke(BetaTesters!);
+                betaTesters?.Invoke(__value0);
             }
-            else if (IsBuilds)
+            else if (Builds is { } __value1)
             {
-                builds?.Invoke(Builds!);
+                builds?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsBetaTesters)
+            if (BetaTesters is { } __value0)
             {
-                betaTesters?.Invoke(BetaTesters!);
+                betaTesters?.Invoke(__value0);
             }
-            else if (IsBuilds)
+            else if (Builds is { } __value1)
             {
-                builds?.Invoke(Builds!);
+                builds?.Invoke(__value1);
             }
         }
 

@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BackgroundAssetUploadFile PickBackgroundAssetUploadFiles() => IsBackgroundAssetUploadFiles
-            ? BackgroundAssetUploadFiles!
+        public global::AppStoreConnect.BackgroundAssetUploadFile PickBackgroundAssetUploadFiles() => BackgroundAssetUploadFiles is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetUploadFiles' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease PickBackgroundAssetVersionAppStoreReleases1() => IsBackgroundAssetVersionAppStoreReleases1
-            ? BackgroundAssetVersionAppStoreReleases1!
+        public global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease PickBackgroundAssetVersionAppStoreReleases1() => BackgroundAssetVersionAppStoreReleases1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetVersionAppStoreReleases1' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease PickBackgroundAssetVersionExternalBetaReleases() => IsBackgroundAssetVersionExternalBetaReleases
-            ? BackgroundAssetVersionExternalBetaReleases!
+        public global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease PickBackgroundAssetVersionExternalBetaReleases() => BackgroundAssetVersionExternalBetaReleases is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetVersionExternalBetaReleases' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease PickBackgroundAssetVersionInternalBetaReleases() => IsBackgroundAssetVersionInternalBetaReleases
-            ? BackgroundAssetVersionInternalBetaReleases!
+        public global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease PickBackgroundAssetVersionInternalBetaReleases() => BackgroundAssetVersionInternalBetaReleases is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetVersionInternalBetaReleases' but the value was {ToString()}.");
 
         /// <summary>
@@ -195,8 +195,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BackgroundAsset PickBackgroundAssetVersionAppStoreReleases2() => IsBackgroundAssetVersionAppStoreReleases2
-            ? BackgroundAssetVersionAppStoreReleases2!
+        public global::AppStoreConnect.BackgroundAsset PickBackgroundAssetVersionAppStoreReleases2() => BackgroundAssetVersionAppStoreReleases2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetVersionAppStoreReleases2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -380,25 +380,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsBackgroundAssetUploadFiles && backgroundAssetUploadFiles != null)
+            if (BackgroundAssetUploadFiles is { } __value0 && backgroundAssetUploadFiles != null)
             {
-                return backgroundAssetUploadFiles(BackgroundAssetUploadFiles!);
+                return backgroundAssetUploadFiles(__value0);
             }
-            else if (IsBackgroundAssetVersionAppStoreReleases1 && backgroundAssetVersionAppStoreReleases1 != null)
+            else if (BackgroundAssetVersionAppStoreReleases1 is { } __value1 && backgroundAssetVersionAppStoreReleases1 != null)
             {
-                return backgroundAssetVersionAppStoreReleases1(BackgroundAssetVersionAppStoreReleases1!);
+                return backgroundAssetVersionAppStoreReleases1(__value1);
             }
-            else if (IsBackgroundAssetVersionExternalBetaReleases && backgroundAssetVersionExternalBetaReleases != null)
+            else if (BackgroundAssetVersionExternalBetaReleases is { } __value2 && backgroundAssetVersionExternalBetaReleases != null)
             {
-                return backgroundAssetVersionExternalBetaReleases(BackgroundAssetVersionExternalBetaReleases!);
+                return backgroundAssetVersionExternalBetaReleases(__value2);
             }
-            else if (IsBackgroundAssetVersionInternalBetaReleases && backgroundAssetVersionInternalBetaReleases != null)
+            else if (BackgroundAssetVersionInternalBetaReleases is { } __value3 && backgroundAssetVersionInternalBetaReleases != null)
             {
-                return backgroundAssetVersionInternalBetaReleases(BackgroundAssetVersionInternalBetaReleases!);
+                return backgroundAssetVersionInternalBetaReleases(__value3);
             }
-            else if (IsBackgroundAssetVersionAppStoreReleases2 && backgroundAssetVersionAppStoreReleases2 != null)
+            else if (BackgroundAssetVersionAppStoreReleases2 is { } __value4 && backgroundAssetVersionAppStoreReleases2 != null)
             {
-                return backgroundAssetVersionAppStoreReleases2(BackgroundAssetVersionAppStoreReleases2!);
+                return backgroundAssetVersionAppStoreReleases2(__value4);
             }
 
             return default(TResult);
@@ -424,25 +424,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsBackgroundAssetUploadFiles)
+            if (BackgroundAssetUploadFiles is { } __value0)
             {
-                backgroundAssetUploadFiles?.Invoke(BackgroundAssetUploadFiles!);
+                backgroundAssetUploadFiles?.Invoke(__value0);
             }
-            else if (IsBackgroundAssetVersionAppStoreReleases1)
+            else if (BackgroundAssetVersionAppStoreReleases1 is { } __value1)
             {
-                backgroundAssetVersionAppStoreReleases1?.Invoke(BackgroundAssetVersionAppStoreReleases1!);
+                backgroundAssetVersionAppStoreReleases1?.Invoke(__value1);
             }
-            else if (IsBackgroundAssetVersionExternalBetaReleases)
+            else if (BackgroundAssetVersionExternalBetaReleases is { } __value2)
             {
-                backgroundAssetVersionExternalBetaReleases?.Invoke(BackgroundAssetVersionExternalBetaReleases!);
+                backgroundAssetVersionExternalBetaReleases?.Invoke(__value2);
             }
-            else if (IsBackgroundAssetVersionInternalBetaReleases)
+            else if (BackgroundAssetVersionInternalBetaReleases is { } __value3)
             {
-                backgroundAssetVersionInternalBetaReleases?.Invoke(BackgroundAssetVersionInternalBetaReleases!);
+                backgroundAssetVersionInternalBetaReleases?.Invoke(__value3);
             }
-            else if (IsBackgroundAssetVersionAppStoreReleases2)
+            else if (BackgroundAssetVersionAppStoreReleases2 is { } __value4)
             {
-                backgroundAssetVersionAppStoreReleases2?.Invoke(BackgroundAssetVersionAppStoreReleases2!);
+                backgroundAssetVersionAppStoreReleases2?.Invoke(__value4);
             }
         }
 
@@ -462,25 +462,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsBackgroundAssetUploadFiles)
+            if (BackgroundAssetUploadFiles is { } __value0)
             {
-                backgroundAssetUploadFiles?.Invoke(BackgroundAssetUploadFiles!);
+                backgroundAssetUploadFiles?.Invoke(__value0);
             }
-            else if (IsBackgroundAssetVersionAppStoreReleases1)
+            else if (BackgroundAssetVersionAppStoreReleases1 is { } __value1)
             {
-                backgroundAssetVersionAppStoreReleases1?.Invoke(BackgroundAssetVersionAppStoreReleases1!);
+                backgroundAssetVersionAppStoreReleases1?.Invoke(__value1);
             }
-            else if (IsBackgroundAssetVersionExternalBetaReleases)
+            else if (BackgroundAssetVersionExternalBetaReleases is { } __value2)
             {
-                backgroundAssetVersionExternalBetaReleases?.Invoke(BackgroundAssetVersionExternalBetaReleases!);
+                backgroundAssetVersionExternalBetaReleases?.Invoke(__value2);
             }
-            else if (IsBackgroundAssetVersionInternalBetaReleases)
+            else if (BackgroundAssetVersionInternalBetaReleases is { } __value3)
             {
-                backgroundAssetVersionInternalBetaReleases?.Invoke(BackgroundAssetVersionInternalBetaReleases!);
+                backgroundAssetVersionInternalBetaReleases?.Invoke(__value3);
             }
-            else if (IsBackgroundAssetVersionAppStoreReleases2)
+            else if (BackgroundAssetVersionAppStoreReleases2 is { } __value4)
             {
-                backgroundAssetVersionAppStoreReleases2?.Invoke(BackgroundAssetVersionAppStoreReleases2!);
+                backgroundAssetVersionAppStoreReleases2?.Invoke(__value4);
             }
         }
 

@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCustomProductPageLocalization PickAppCustomProductPageLocalizations1() => IsAppCustomProductPageLocalizations1
-            ? AppCustomProductPageLocalizations1!
+        public global::AppStoreConnect.AppCustomProductPageLocalization PickAppCustomProductPageLocalizations1() => AppCustomProductPageLocalizations1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageLocalizations1' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCustomProductPage PickAppCustomProductPageLocalizations2() => IsAppCustomProductPageLocalizations2
-            ? AppCustomProductPageLocalizations2!
+        public global::AppStoreConnect.AppCustomProductPage PickAppCustomProductPageLocalizations2() => AppCustomProductPageLocalizations2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageLocalizations2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppCustomProductPageLocalizations1 && appCustomProductPageLocalizations1 != null)
+            if (AppCustomProductPageLocalizations1 is { } __value0 && appCustomProductPageLocalizations1 != null)
             {
-                return appCustomProductPageLocalizations1(AppCustomProductPageLocalizations1!);
+                return appCustomProductPageLocalizations1(__value0);
             }
-            else if (IsAppCustomProductPageLocalizations2 && appCustomProductPageLocalizations2 != null)
+            else if (AppCustomProductPageLocalizations2 is { } __value1 && appCustomProductPageLocalizations2 != null)
             {
-                return appCustomProductPageLocalizations2(AppCustomProductPageLocalizations2!);
+                return appCustomProductPageLocalizations2(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppCustomProductPageLocalizations1)
+            if (AppCustomProductPageLocalizations1 is { } __value0)
             {
-                appCustomProductPageLocalizations1?.Invoke(AppCustomProductPageLocalizations1!);
+                appCustomProductPageLocalizations1?.Invoke(__value0);
             }
-            else if (IsAppCustomProductPageLocalizations2)
+            else if (AppCustomProductPageLocalizations2 is { } __value1)
             {
-                appCustomProductPageLocalizations2?.Invoke(AppCustomProductPageLocalizations2!);
+                appCustomProductPageLocalizations2?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppCustomProductPageLocalizations1)
+            if (AppCustomProductPageLocalizations1 is { } __value0)
             {
-                appCustomProductPageLocalizations1?.Invoke(AppCustomProductPageLocalizations1!);
+                appCustomProductPageLocalizations1?.Invoke(__value0);
             }
-            else if (IsAppCustomProductPageLocalizations2)
+            else if (AppCustomProductPageLocalizations2 is { } __value1)
             {
-                appCustomProductPageLocalizations2?.Invoke(AppCustomProductPageLocalizations2!);
+                appCustomProductPageLocalizations2?.Invoke(__value1);
             }
         }
 

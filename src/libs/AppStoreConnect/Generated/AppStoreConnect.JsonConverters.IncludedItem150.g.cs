@@ -68,19 +68,19 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BundleId), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BundleId?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BundleId).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BundleIds!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBundleIds(), typeInfo);
             }
             else if (value.IsCertificates)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Certificate), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Certificate?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Certificate).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Certificates!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCertificates(), typeInfo);
             }
             else if (value.IsDevices)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Device), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Device?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Device).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Devices!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickDevices(), typeInfo);
             }
         }
     }

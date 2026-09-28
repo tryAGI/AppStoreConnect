@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode PickInAppPurchaseOfferCodeCustomCodes() => IsInAppPurchaseOfferCodeCustomCodes
-            ? InAppPurchaseOfferCodeCustomCodes!
+        public global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode PickInAppPurchaseOfferCodeCustomCodes() => InAppPurchaseOfferCodeCustomCodes is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseOfferCodeCustomCodes' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode PickInAppPurchaseOfferCodeOneTimeUseCodes() => IsInAppPurchaseOfferCodeOneTimeUseCodes
-            ? InAppPurchaseOfferCodeOneTimeUseCodes!
+        public global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode PickInAppPurchaseOfferCodeOneTimeUseCodes() => InAppPurchaseOfferCodeOneTimeUseCodes is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseOfferCodeOneTimeUseCodes' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseOfferPrice PickInAppPurchaseOfferPrices() => IsInAppPurchaseOfferPrices
-            ? InAppPurchaseOfferPrices!
+        public global::AppStoreConnect.InAppPurchaseOfferPrice PickInAppPurchaseOfferPrices() => InAppPurchaseOfferPrices is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseOfferPrices' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsInAppPurchaseOfferCodeCustomCodes && inAppPurchaseOfferCodeCustomCodes != null)
+            if (InAppPurchaseOfferCodeCustomCodes is { } __value0 && inAppPurchaseOfferCodeCustomCodes != null)
             {
-                return inAppPurchaseOfferCodeCustomCodes(InAppPurchaseOfferCodeCustomCodes!);
+                return inAppPurchaseOfferCodeCustomCodes(__value0);
             }
-            else if (IsInAppPurchaseOfferCodeOneTimeUseCodes && inAppPurchaseOfferCodeOneTimeUseCodes != null)
+            else if (InAppPurchaseOfferCodeOneTimeUseCodes is { } __value1 && inAppPurchaseOfferCodeOneTimeUseCodes != null)
             {
-                return inAppPurchaseOfferCodeOneTimeUseCodes(InAppPurchaseOfferCodeOneTimeUseCodes!);
+                return inAppPurchaseOfferCodeOneTimeUseCodes(__value1);
             }
-            else if (IsInAppPurchaseOfferPrices && inAppPurchaseOfferPrices != null)
+            else if (InAppPurchaseOfferPrices is { } __value2 && inAppPurchaseOfferPrices != null)
             {
-                return inAppPurchaseOfferPrices(InAppPurchaseOfferPrices!);
+                return inAppPurchaseOfferPrices(__value2);
             }
 
             return default(TResult);
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsInAppPurchaseOfferCodeCustomCodes)
+            if (InAppPurchaseOfferCodeCustomCodes is { } __value0)
             {
-                inAppPurchaseOfferCodeCustomCodes?.Invoke(InAppPurchaseOfferCodeCustomCodes!);
+                inAppPurchaseOfferCodeCustomCodes?.Invoke(__value0);
             }
-            else if (IsInAppPurchaseOfferCodeOneTimeUseCodes)
+            else if (InAppPurchaseOfferCodeOneTimeUseCodes is { } __value1)
             {
-                inAppPurchaseOfferCodeOneTimeUseCodes?.Invoke(InAppPurchaseOfferCodeOneTimeUseCodes!);
+                inAppPurchaseOfferCodeOneTimeUseCodes?.Invoke(__value1);
             }
-            else if (IsInAppPurchaseOfferPrices)
+            else if (InAppPurchaseOfferPrices is { } __value2)
             {
-                inAppPurchaseOfferPrices?.Invoke(InAppPurchaseOfferPrices!);
+                inAppPurchaseOfferPrices?.Invoke(__value2);
             }
         }
 
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsInAppPurchaseOfferCodeCustomCodes)
+            if (InAppPurchaseOfferCodeCustomCodes is { } __value0)
             {
-                inAppPurchaseOfferCodeCustomCodes?.Invoke(InAppPurchaseOfferCodeCustomCodes!);
+                inAppPurchaseOfferCodeCustomCodes?.Invoke(__value0);
             }
-            else if (IsInAppPurchaseOfferCodeOneTimeUseCodes)
+            else if (InAppPurchaseOfferCodeOneTimeUseCodes is { } __value1)
             {
-                inAppPurchaseOfferCodeOneTimeUseCodes?.Invoke(InAppPurchaseOfferCodeOneTimeUseCodes!);
+                inAppPurchaseOfferCodeOneTimeUseCodes?.Invoke(__value1);
             }
-            else if (IsInAppPurchaseOfferPrices)
+            else if (InAppPurchaseOfferPrices is { } __value2)
             {
-                inAppPurchaseOfferPrices?.Invoke(InAppPurchaseOfferPrices!);
+                inAppPurchaseOfferPrices?.Invoke(__value2);
             }
         }
 

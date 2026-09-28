@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Actor PickActors() => IsActors
-            ? Actors!
+        public global::AppStoreConnect.Actor PickActors() => Actors is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Actors' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEvent PickAppEvents1() => IsAppEvents1
-            ? AppEvents1!
+        public global::AppStoreConnect.AppEvent PickAppEvents1() => AppEvents1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppEvents1' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickAppEvents2() => IsAppEvents2
-            ? AppEvents2!
+        public global::AppStoreConnect.App PickAppEvents2() => AppEvents2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppEvents2' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Territory PickTerritories() => IsTerritories
-            ? Territories!
+        public global::AppStoreConnect.Territory PickTerritories() => Territories is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Territories' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -315,21 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsActors && actors != null)
+            if (Actors is { } __value0 && actors != null)
             {
-                return actors(Actors!);
+                return actors(__value0);
             }
-            else if (IsAppEvents1 && appEvents1 != null)
+            else if (AppEvents1 is { } __value1 && appEvents1 != null)
             {
-                return appEvents1(AppEvents1!);
+                return appEvents1(__value1);
             }
-            else if (IsAppEvents2 && appEvents2 != null)
+            else if (AppEvents2 is { } __value2 && appEvents2 != null)
             {
-                return appEvents2(AppEvents2!);
+                return appEvents2(__value2);
             }
-            else if (IsTerritories && territories != null)
+            else if (Territories is { } __value3 && territories != null)
             {
-                return territories(Territories!);
+                return territories(__value3);
             }
 
             return default(TResult);
@@ -353,21 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsActors)
+            if (Actors is { } __value0)
             {
-                actors?.Invoke(Actors!);
+                actors?.Invoke(__value0);
             }
-            else if (IsAppEvents1)
+            else if (AppEvents1 is { } __value1)
             {
-                appEvents1?.Invoke(AppEvents1!);
+                appEvents1?.Invoke(__value1);
             }
-            else if (IsAppEvents2)
+            else if (AppEvents2 is { } __value2)
             {
-                appEvents2?.Invoke(AppEvents2!);
+                appEvents2?.Invoke(__value2);
             }
-            else if (IsTerritories)
+            else if (Territories is { } __value3)
             {
-                territories?.Invoke(Territories!);
+                territories?.Invoke(__value3);
             }
         }
 
@@ -386,21 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsActors)
+            if (Actors is { } __value0)
             {
-                actors?.Invoke(Actors!);
+                actors?.Invoke(__value0);
             }
-            else if (IsAppEvents1)
+            else if (AppEvents1 is { } __value1)
             {
-                appEvents1?.Invoke(AppEvents1!);
+                appEvents1?.Invoke(__value1);
             }
-            else if (IsAppEvents2)
+            else if (AppEvents2 is { } __value2)
             {
-                appEvents2?.Invoke(AppEvents2!);
+                appEvents2?.Invoke(__value2);
             }
-            else if (IsTerritories)
+            else if (Territories is { } __value3)
             {
-                territories?.Invoke(Territories!);
+                territories?.Invoke(__value3);
             }
         }
 

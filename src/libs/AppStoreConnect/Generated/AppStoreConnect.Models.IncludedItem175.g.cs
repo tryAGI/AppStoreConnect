@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionImageV2 PickSubscriptionImages() => IsSubscriptionImages
-            ? SubscriptionImages!
+        public global::AppStoreConnect.SubscriptionImageV2 PickSubscriptionImages() => SubscriptionImages is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionImages' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionLocalizationV2 PickSubscriptionLocalizations() => IsSubscriptionLocalizations
-            ? SubscriptionLocalizations!
+        public global::AppStoreConnect.SubscriptionLocalizationV2 PickSubscriptionLocalizations() => SubscriptionLocalizations is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionLocalizations' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Subscription PickSubscriptions() => IsSubscriptions
-            ? Subscriptions!
+        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsSubscriptionImages && subscriptionImages != null)
+            if (SubscriptionImages is { } __value0 && subscriptionImages != null)
             {
-                return subscriptionImages(SubscriptionImages!);
+                return subscriptionImages(__value0);
             }
-            else if (IsSubscriptionLocalizations && subscriptionLocalizations != null)
+            else if (SubscriptionLocalizations is { } __value1 && subscriptionLocalizations != null)
             {
-                return subscriptionLocalizations(SubscriptionLocalizations!);
+                return subscriptionLocalizations(__value1);
             }
-            else if (IsSubscriptions && subscriptions != null)
+            else if (Subscriptions is { } __value2 && subscriptions != null)
             {
-                return subscriptions(Subscriptions!);
+                return subscriptions(__value2);
             }
 
             return default(TResult);
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsSubscriptionImages)
+            if (SubscriptionImages is { } __value0)
             {
-                subscriptionImages?.Invoke(SubscriptionImages!);
+                subscriptionImages?.Invoke(__value0);
             }
-            else if (IsSubscriptionLocalizations)
+            else if (SubscriptionLocalizations is { } __value1)
             {
-                subscriptionLocalizations?.Invoke(SubscriptionLocalizations!);
+                subscriptionLocalizations?.Invoke(__value1);
             }
-            else if (IsSubscriptions)
+            else if (Subscriptions is { } __value2)
             {
-                subscriptions?.Invoke(Subscriptions!);
+                subscriptions?.Invoke(__value2);
             }
         }
 
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsSubscriptionImages)
+            if (SubscriptionImages is { } __value0)
             {
-                subscriptionImages?.Invoke(SubscriptionImages!);
+                subscriptionImages?.Invoke(__value0);
             }
-            else if (IsSubscriptionLocalizations)
+            else if (SubscriptionLocalizations is { } __value1)
             {
-                subscriptionLocalizations?.Invoke(SubscriptionLocalizations!);
+                subscriptionLocalizations?.Invoke(__value1);
             }
-            else if (IsSubscriptions)
+            else if (Subscriptions is { } __value2)
             {
-                subscriptions?.Invoke(Subscriptions!);
+                subscriptions?.Invoke(__value2);
             }
         }
 

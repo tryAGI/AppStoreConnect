@@ -86,31 +86,31 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAssetUploadFile), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BackgroundAssetUploadFile?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BackgroundAssetUploadFile).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BackgroundAssetUploadFiles!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBackgroundAssetUploadFiles(), typeInfo);
             }
             else if (value.IsBackgroundAssetVersionAppStoreReleases1)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BackgroundAssetVersionAppStoreReleases1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBackgroundAssetVersionAppStoreReleases1(), typeInfo);
             }
             else if (value.IsBackgroundAssetVersionExternalBetaReleases)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BackgroundAssetVersionExternalBetaReleases!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBackgroundAssetVersionExternalBetaReleases(), typeInfo);
             }
             else if (value.IsBackgroundAssetVersionInternalBetaReleases)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BackgroundAssetVersionInternalBetaReleases!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBackgroundAssetVersionInternalBetaReleases(), typeInfo);
             }
             else if (value.IsBackgroundAssetVersionAppStoreReleases2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAsset), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BackgroundAsset?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BackgroundAsset).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BackgroundAssetVersionAppStoreReleases2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBackgroundAssetVersionAppStoreReleases2(), typeInfo);
             }
         }
     }

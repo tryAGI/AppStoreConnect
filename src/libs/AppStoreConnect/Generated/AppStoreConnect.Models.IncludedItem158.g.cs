@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmGitReference PickScmGitReferences() => IsScmGitReferences
-            ? ScmGitReferences!
+        public global::AppStoreConnect.ScmGitReference PickScmGitReferences() => ScmGitReferences is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScmGitReferences' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmProvider PickScmProviders() => IsScmProviders
-            ? ScmProviders!
+        public global::AppStoreConnect.ScmProvider PickScmProviders() => ScmProviders is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScmProviders' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsScmGitReferences && scmGitReferences != null)
+            if (ScmGitReferences is { } __value0 && scmGitReferences != null)
             {
-                return scmGitReferences(ScmGitReferences!);
+                return scmGitReferences(__value0);
             }
-            else if (IsScmProviders && scmProviders != null)
+            else if (ScmProviders is { } __value1 && scmProviders != null)
             {
-                return scmProviders(ScmProviders!);
+                return scmProviders(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsScmGitReferences)
+            if (ScmGitReferences is { } __value0)
             {
-                scmGitReferences?.Invoke(ScmGitReferences!);
+                scmGitReferences?.Invoke(__value0);
             }
-            else if (IsScmProviders)
+            else if (ScmProviders is { } __value1)
             {
-                scmProviders?.Invoke(ScmProviders!);
+                scmProviders?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsScmGitReferences)
+            if (ScmGitReferences is { } __value0)
             {
-                scmGitReferences?.Invoke(ScmGitReferences!);
+                scmGitReferences?.Invoke(__value0);
             }
-            else if (IsScmProviders)
+            else if (ScmProviders is { } __value1)
             {
-                scmProviders?.Invoke(ScmProviders!);
+                scmProviders?.Invoke(__value1);
             }
         }
 

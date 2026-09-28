@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboardImage PickGameCenterLeaderboardImages1() => IsGameCenterLeaderboardImages1
-            ? GameCenterLeaderboardImages1!
+        public global::AppStoreConnect.GameCenterLeaderboardImage PickGameCenterLeaderboardImages1() => GameCenterLeaderboardImages1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardImages1' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboard PickGameCenterLeaderboardImages2() => IsGameCenterLeaderboardImages2
-            ? GameCenterLeaderboardImages2!
+        public global::AppStoreConnect.GameCenterLeaderboard PickGameCenterLeaderboardImages2() => GameCenterLeaderboardImages2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardImages2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterLeaderboardImages1 && gameCenterLeaderboardImages1 != null)
+            if (GameCenterLeaderboardImages1 is { } __value0 && gameCenterLeaderboardImages1 != null)
             {
-                return gameCenterLeaderboardImages1(GameCenterLeaderboardImages1!);
+                return gameCenterLeaderboardImages1(__value0);
             }
-            else if (IsGameCenterLeaderboardImages2 && gameCenterLeaderboardImages2 != null)
+            else if (GameCenterLeaderboardImages2 is { } __value1 && gameCenterLeaderboardImages2 != null)
             {
-                return gameCenterLeaderboardImages2(GameCenterLeaderboardImages2!);
+                return gameCenterLeaderboardImages2(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterLeaderboardImages1)
+            if (GameCenterLeaderboardImages1 is { } __value0)
             {
-                gameCenterLeaderboardImages1?.Invoke(GameCenterLeaderboardImages1!);
+                gameCenterLeaderboardImages1?.Invoke(__value0);
             }
-            else if (IsGameCenterLeaderboardImages2)
+            else if (GameCenterLeaderboardImages2 is { } __value1)
             {
-                gameCenterLeaderboardImages2?.Invoke(GameCenterLeaderboardImages2!);
+                gameCenterLeaderboardImages2?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterLeaderboardImages1)
+            if (GameCenterLeaderboardImages1 is { } __value0)
             {
-                gameCenterLeaderboardImages1?.Invoke(GameCenterLeaderboardImages1!);
+                gameCenterLeaderboardImages1?.Invoke(__value0);
             }
-            else if (IsGameCenterLeaderboardImages2)
+            else if (GameCenterLeaderboardImages2 is { } __value1)
             {
-                gameCenterLeaderboardImages2?.Invoke(GameCenterLeaderboardImages2!);
+                gameCenterLeaderboardImages2?.Invoke(__value1);
             }
         }
 

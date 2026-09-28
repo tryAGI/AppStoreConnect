@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterChallengeImage PickGameCenterChallengeImages() => IsGameCenterChallengeImages
-            ? GameCenterChallengeImages!
+        public global::AppStoreConnect.GameCenterChallengeImage PickGameCenterChallengeImages() => GameCenterChallengeImages is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterChallengeImages' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterChallengeLocalization PickGameCenterChallengeLocalizations1() => IsGameCenterChallengeLocalizations1
-            ? GameCenterChallengeLocalizations1!
+        public global::AppStoreConnect.GameCenterChallengeLocalization PickGameCenterChallengeLocalizations1() => GameCenterChallengeLocalizations1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterChallengeLocalizations1' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterChallengeVersionRelease PickGameCenterChallengeVersionReleases() => IsGameCenterChallengeVersionReleases
-            ? GameCenterChallengeVersionReleases!
+        public global::AppStoreConnect.GameCenterChallengeVersionRelease PickGameCenterChallengeVersionReleases() => GameCenterChallengeVersionReleases is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterChallengeVersionReleases' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterChallenge PickGameCenterChallengeLocalizations2() => IsGameCenterChallengeLocalizations2
-            ? GameCenterChallengeLocalizations2!
+        public global::AppStoreConnect.GameCenterChallenge PickGameCenterChallengeLocalizations2() => GameCenterChallengeLocalizations2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterChallengeLocalizations2' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -315,21 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterChallengeImages && gameCenterChallengeImages != null)
+            if (GameCenterChallengeImages is { } __value0 && gameCenterChallengeImages != null)
             {
-                return gameCenterChallengeImages(GameCenterChallengeImages!);
+                return gameCenterChallengeImages(__value0);
             }
-            else if (IsGameCenterChallengeLocalizations1 && gameCenterChallengeLocalizations1 != null)
+            else if (GameCenterChallengeLocalizations1 is { } __value1 && gameCenterChallengeLocalizations1 != null)
             {
-                return gameCenterChallengeLocalizations1(GameCenterChallengeLocalizations1!);
+                return gameCenterChallengeLocalizations1(__value1);
             }
-            else if (IsGameCenterChallengeVersionReleases && gameCenterChallengeVersionReleases != null)
+            else if (GameCenterChallengeVersionReleases is { } __value2 && gameCenterChallengeVersionReleases != null)
             {
-                return gameCenterChallengeVersionReleases(GameCenterChallengeVersionReleases!);
+                return gameCenterChallengeVersionReleases(__value2);
             }
-            else if (IsGameCenterChallengeLocalizations2 && gameCenterChallengeLocalizations2 != null)
+            else if (GameCenterChallengeLocalizations2 is { } __value3 && gameCenterChallengeLocalizations2 != null)
             {
-                return gameCenterChallengeLocalizations2(GameCenterChallengeLocalizations2!);
+                return gameCenterChallengeLocalizations2(__value3);
             }
 
             return default(TResult);
@@ -353,21 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterChallengeImages)
+            if (GameCenterChallengeImages is { } __value0)
             {
-                gameCenterChallengeImages?.Invoke(GameCenterChallengeImages!);
+                gameCenterChallengeImages?.Invoke(__value0);
             }
-            else if (IsGameCenterChallengeLocalizations1)
+            else if (GameCenterChallengeLocalizations1 is { } __value1)
             {
-                gameCenterChallengeLocalizations1?.Invoke(GameCenterChallengeLocalizations1!);
+                gameCenterChallengeLocalizations1?.Invoke(__value1);
             }
-            else if (IsGameCenterChallengeVersionReleases)
+            else if (GameCenterChallengeVersionReleases is { } __value2)
             {
-                gameCenterChallengeVersionReleases?.Invoke(GameCenterChallengeVersionReleases!);
+                gameCenterChallengeVersionReleases?.Invoke(__value2);
             }
-            else if (IsGameCenterChallengeLocalizations2)
+            else if (GameCenterChallengeLocalizations2 is { } __value3)
             {
-                gameCenterChallengeLocalizations2?.Invoke(GameCenterChallengeLocalizations2!);
+                gameCenterChallengeLocalizations2?.Invoke(__value3);
             }
         }
 
@@ -386,21 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterChallengeImages)
+            if (GameCenterChallengeImages is { } __value0)
             {
-                gameCenterChallengeImages?.Invoke(GameCenterChallengeImages!);
+                gameCenterChallengeImages?.Invoke(__value0);
             }
-            else if (IsGameCenterChallengeLocalizations1)
+            else if (GameCenterChallengeLocalizations1 is { } __value1)
             {
-                gameCenterChallengeLocalizations1?.Invoke(GameCenterChallengeLocalizations1!);
+                gameCenterChallengeLocalizations1?.Invoke(__value1);
             }
-            else if (IsGameCenterChallengeVersionReleases)
+            else if (GameCenterChallengeVersionReleases is { } __value2)
             {
-                gameCenterChallengeVersionReleases?.Invoke(GameCenterChallengeVersionReleases!);
+                gameCenterChallengeVersionReleases?.Invoke(__value2);
             }
-            else if (IsGameCenterChallengeLocalizations2)
+            else if (GameCenterChallengeLocalizations2 is { } __value3)
             {
-                gameCenterChallengeLocalizations2?.Invoke(GameCenterChallengeLocalizations2!);
+                gameCenterChallengeLocalizations2?.Invoke(__value3);
             }
         }
 

@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboardLocalizationV2 PickGameCenterLeaderboardLocalizations() => IsGameCenterLeaderboardLocalizations
-            ? GameCenterLeaderboardLocalizations!
+        public global::AppStoreConnect.GameCenterLeaderboardLocalizationV2 PickGameCenterLeaderboardLocalizations() => GameCenterLeaderboardLocalizations is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardLocalizations' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboardV2 PickGameCenterLeaderboards() => IsGameCenterLeaderboards
-            ? GameCenterLeaderboards!
+        public global::AppStoreConnect.GameCenterLeaderboardV2 PickGameCenterLeaderboards() => GameCenterLeaderboards is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboards' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterLeaderboardLocalizations && gameCenterLeaderboardLocalizations != null)
+            if (GameCenterLeaderboardLocalizations is { } __value0 && gameCenterLeaderboardLocalizations != null)
             {
-                return gameCenterLeaderboardLocalizations(GameCenterLeaderboardLocalizations!);
+                return gameCenterLeaderboardLocalizations(__value0);
             }
-            else if (IsGameCenterLeaderboards && gameCenterLeaderboards != null)
+            else if (GameCenterLeaderboards is { } __value1 && gameCenterLeaderboards != null)
             {
-                return gameCenterLeaderboards(GameCenterLeaderboards!);
+                return gameCenterLeaderboards(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterLeaderboardLocalizations)
+            if (GameCenterLeaderboardLocalizations is { } __value0)
             {
-                gameCenterLeaderboardLocalizations?.Invoke(GameCenterLeaderboardLocalizations!);
+                gameCenterLeaderboardLocalizations?.Invoke(__value0);
             }
-            else if (IsGameCenterLeaderboards)
+            else if (GameCenterLeaderboards is { } __value1)
             {
-                gameCenterLeaderboards?.Invoke(GameCenterLeaderboards!);
+                gameCenterLeaderboards?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterLeaderboardLocalizations)
+            if (GameCenterLeaderboardLocalizations is { } __value0)
             {
-                gameCenterLeaderboardLocalizations?.Invoke(GameCenterLeaderboardLocalizations!);
+                gameCenterLeaderboardLocalizations?.Invoke(__value0);
             }
-            else if (IsGameCenterLeaderboards)
+            else if (GameCenterLeaderboards is { } __value1)
             {
-                gameCenterLeaderboards?.Invoke(GameCenterLeaderboards!);
+                gameCenterLeaderboards?.Invoke(__value1);
             }
         }
 

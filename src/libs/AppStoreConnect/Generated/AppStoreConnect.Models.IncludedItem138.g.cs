@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchasePricePoint PickInAppPurchasePricePoints() => IsInAppPurchasePricePoints
-            ? InAppPurchasePricePoints!
+        public global::AppStoreConnect.InAppPurchasePricePoint PickInAppPurchasePricePoints() => InAppPurchasePricePoints is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchasePricePoints' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Territory PickTerritories() => IsTerritories
-            ? Territories!
+        public global::AppStoreConnect.Territory PickTerritories() => Territories is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Territories' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsInAppPurchasePricePoints && inAppPurchasePricePoints != null)
+            if (InAppPurchasePricePoints is { } __value0 && inAppPurchasePricePoints != null)
             {
-                return inAppPurchasePricePoints(InAppPurchasePricePoints!);
+                return inAppPurchasePricePoints(__value0);
             }
-            else if (IsTerritories && territories != null)
+            else if (Territories is { } __value1 && territories != null)
             {
-                return territories(Territories!);
+                return territories(__value1);
             }
 
             return default(TResult);
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsInAppPurchasePricePoints)
+            if (InAppPurchasePricePoints is { } __value0)
             {
-                inAppPurchasePricePoints?.Invoke(InAppPurchasePricePoints!);
+                inAppPurchasePricePoints?.Invoke(__value0);
             }
-            else if (IsTerritories)
+            else if (Territories is { } __value1)
             {
-                territories?.Invoke(Territories!);
+                territories?.Invoke(__value1);
             }
         }
 
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsInAppPurchasePricePoints)
+            if (InAppPurchasePricePoints is { } __value0)
             {
-                inAppPurchasePricePoints?.Invoke(InAppPurchasePricePoints!);
+                inAppPurchasePricePoints?.Invoke(__value0);
             }
-            else if (IsTerritories)
+            else if (Territories is { } __value1)
             {
-                territories?.Invoke(Territories!);
+                territories?.Invoke(__value1);
             }
         }
 

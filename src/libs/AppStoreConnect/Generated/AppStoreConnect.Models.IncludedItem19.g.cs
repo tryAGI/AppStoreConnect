@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEncryptionDeclarationDocument PickAppEncryptionDeclarationDocuments1() => IsAppEncryptionDeclarationDocuments1
-            ? AppEncryptionDeclarationDocuments1!
+        public global::AppStoreConnect.AppEncryptionDeclarationDocument PickAppEncryptionDeclarationDocuments1() => AppEncryptionDeclarationDocuments1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppEncryptionDeclarationDocuments1' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickAppEncryptionDeclarationDocuments2() => IsAppEncryptionDeclarationDocuments2
-            ? AppEncryptionDeclarationDocuments2!
+        public global::AppStoreConnect.App PickAppEncryptionDeclarationDocuments2() => AppEncryptionDeclarationDocuments2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppEncryptionDeclarationDocuments2' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Build PickBuilds() => IsBuilds
-            ? Builds!
+        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppEncryptionDeclarationDocuments1 && appEncryptionDeclarationDocuments1 != null)
+            if (AppEncryptionDeclarationDocuments1 is { } __value0 && appEncryptionDeclarationDocuments1 != null)
             {
-                return appEncryptionDeclarationDocuments1(AppEncryptionDeclarationDocuments1!);
+                return appEncryptionDeclarationDocuments1(__value0);
             }
-            else if (IsAppEncryptionDeclarationDocuments2 && appEncryptionDeclarationDocuments2 != null)
+            else if (AppEncryptionDeclarationDocuments2 is { } __value1 && appEncryptionDeclarationDocuments2 != null)
             {
-                return appEncryptionDeclarationDocuments2(AppEncryptionDeclarationDocuments2!);
+                return appEncryptionDeclarationDocuments2(__value1);
             }
-            else if (IsBuilds && builds != null)
+            else if (Builds is { } __value2 && builds != null)
             {
-                return builds(Builds!);
+                return builds(__value2);
             }
 
             return default(TResult);
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppEncryptionDeclarationDocuments1)
+            if (AppEncryptionDeclarationDocuments1 is { } __value0)
             {
-                appEncryptionDeclarationDocuments1?.Invoke(AppEncryptionDeclarationDocuments1!);
+                appEncryptionDeclarationDocuments1?.Invoke(__value0);
             }
-            else if (IsAppEncryptionDeclarationDocuments2)
+            else if (AppEncryptionDeclarationDocuments2 is { } __value1)
             {
-                appEncryptionDeclarationDocuments2?.Invoke(AppEncryptionDeclarationDocuments2!);
+                appEncryptionDeclarationDocuments2?.Invoke(__value1);
             }
-            else if (IsBuilds)
+            else if (Builds is { } __value2)
             {
-                builds?.Invoke(Builds!);
+                builds?.Invoke(__value2);
             }
         }
 
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsAppEncryptionDeclarationDocuments1)
+            if (AppEncryptionDeclarationDocuments1 is { } __value0)
             {
-                appEncryptionDeclarationDocuments1?.Invoke(AppEncryptionDeclarationDocuments1!);
+                appEncryptionDeclarationDocuments1?.Invoke(__value0);
             }
-            else if (IsAppEncryptionDeclarationDocuments2)
+            else if (AppEncryptionDeclarationDocuments2 is { } __value1)
             {
-                appEncryptionDeclarationDocuments2?.Invoke(AppEncryptionDeclarationDocuments2!);
+                appEncryptionDeclarationDocuments2?.Invoke(__value1);
             }
-            else if (IsBuilds)
+            else if (Builds is { } __value2)
             {
-                builds?.Invoke(Builds!);
+                builds?.Invoke(__value2);
             }
         }
 

@@ -77,25 +77,25 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AgeRatingDeclaration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AgeRatingDeclaration?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AgeRatingDeclaration).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AgeRatingDeclarations!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAgeRatingDeclarations(), typeInfo);
             }
             else if (value.IsAppCategories1)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppCategory), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppCategory?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppCategory).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppCategories1!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppCategories1(), typeInfo);
             }
             else if (value.IsAppInfoLocalizations)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppInfoLocalization), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppInfoLocalization?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppInfoLocalization).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppInfoLocalizations!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppInfoLocalizations(), typeInfo);
             }
             else if (value.IsAppCategories2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.App).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.AppCategories2!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppCategories2(), typeInfo);
             }
         }
     }

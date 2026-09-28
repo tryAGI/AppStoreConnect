@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAchievementLocalization PickGameCenterAchievementLocalizations1() => IsGameCenterAchievementLocalizations1
-            ? GameCenterAchievementLocalizations1!
+        public global::AppStoreConnect.GameCenterAchievementLocalization PickGameCenterAchievementLocalizations1() => GameCenterAchievementLocalizations1 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAchievementLocalizations1' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAchievementRelease PickGameCenterAchievementReleases() => IsGameCenterAchievementReleases
-            ? GameCenterAchievementReleases!
+        public global::AppStoreConnect.GameCenterAchievementRelease PickGameCenterAchievementReleases() => GameCenterAchievementReleases is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAchievementReleases' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAchievement PickGameCenterAchievementLocalizations2() => IsGameCenterAchievementLocalizations2
-            ? GameCenterAchievementLocalizations2!
+        public global::AppStoreConnect.GameCenterAchievement PickGameCenterAchievementLocalizations2() => GameCenterAchievementLocalizations2 is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAchievementLocalizations2' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterActivity PickGameCenterActivities() => IsGameCenterActivities
-            ? GameCenterActivities!
+        public global::AppStoreConnect.GameCenterActivity PickGameCenterActivities() => GameCenterActivities is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterActivities' but the value was {ToString()}.");
 
         /// <summary>
@@ -195,8 +195,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterDetail PickGameCenterDetails() => IsGameCenterDetails
-            ? GameCenterDetails!
+        public global::AppStoreConnect.GameCenterDetail PickGameCenterDetails() => GameCenterDetails is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterDetails' but the value was {ToString()}.");
 
         /// <summary>
@@ -232,8 +232,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterGroup PickGameCenterGroups() => IsGameCenterGroups
-            ? GameCenterGroups!
+        public global::AppStoreConnect.GameCenterGroup PickGameCenterGroups() => GameCenterGroups is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterGroups' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -445,29 +445,29 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterAchievementLocalizations1 && gameCenterAchievementLocalizations1 != null)
+            if (GameCenterAchievementLocalizations1 is { } __value0 && gameCenterAchievementLocalizations1 != null)
             {
-                return gameCenterAchievementLocalizations1(GameCenterAchievementLocalizations1!);
+                return gameCenterAchievementLocalizations1(__value0);
             }
-            else if (IsGameCenterAchievementReleases && gameCenterAchievementReleases != null)
+            else if (GameCenterAchievementReleases is { } __value1 && gameCenterAchievementReleases != null)
             {
-                return gameCenterAchievementReleases(GameCenterAchievementReleases!);
+                return gameCenterAchievementReleases(__value1);
             }
-            else if (IsGameCenterAchievementLocalizations2 && gameCenterAchievementLocalizations2 != null)
+            else if (GameCenterAchievementLocalizations2 is { } __value2 && gameCenterAchievementLocalizations2 != null)
             {
-                return gameCenterAchievementLocalizations2(GameCenterAchievementLocalizations2!);
+                return gameCenterAchievementLocalizations2(__value2);
             }
-            else if (IsGameCenterActivities && gameCenterActivities != null)
+            else if (GameCenterActivities is { } __value3 && gameCenterActivities != null)
             {
-                return gameCenterActivities(GameCenterActivities!);
+                return gameCenterActivities(__value3);
             }
-            else if (IsGameCenterDetails && gameCenterDetails != null)
+            else if (GameCenterDetails is { } __value4 && gameCenterDetails != null)
             {
-                return gameCenterDetails(GameCenterDetails!);
+                return gameCenterDetails(__value4);
             }
-            else if (IsGameCenterGroups && gameCenterGroups != null)
+            else if (GameCenterGroups is { } __value5 && gameCenterGroups != null)
             {
-                return gameCenterGroups(GameCenterGroups!);
+                return gameCenterGroups(__value5);
             }
 
             return default(TResult);
@@ -495,29 +495,29 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterAchievementLocalizations1)
+            if (GameCenterAchievementLocalizations1 is { } __value0)
             {
-                gameCenterAchievementLocalizations1?.Invoke(GameCenterAchievementLocalizations1!);
+                gameCenterAchievementLocalizations1?.Invoke(__value0);
             }
-            else if (IsGameCenterAchievementReleases)
+            else if (GameCenterAchievementReleases is { } __value1)
             {
-                gameCenterAchievementReleases?.Invoke(GameCenterAchievementReleases!);
+                gameCenterAchievementReleases?.Invoke(__value1);
             }
-            else if (IsGameCenterAchievementLocalizations2)
+            else if (GameCenterAchievementLocalizations2 is { } __value2)
             {
-                gameCenterAchievementLocalizations2?.Invoke(GameCenterAchievementLocalizations2!);
+                gameCenterAchievementLocalizations2?.Invoke(__value2);
             }
-            else if (IsGameCenterActivities)
+            else if (GameCenterActivities is { } __value3)
             {
-                gameCenterActivities?.Invoke(GameCenterActivities!);
+                gameCenterActivities?.Invoke(__value3);
             }
-            else if (IsGameCenterDetails)
+            else if (GameCenterDetails is { } __value4)
             {
-                gameCenterDetails?.Invoke(GameCenterDetails!);
+                gameCenterDetails?.Invoke(__value4);
             }
-            else if (IsGameCenterGroups)
+            else if (GameCenterGroups is { } __value5)
             {
-                gameCenterGroups?.Invoke(GameCenterGroups!);
+                gameCenterGroups?.Invoke(__value5);
             }
         }
 
@@ -538,29 +538,29 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsGameCenterAchievementLocalizations1)
+            if (GameCenterAchievementLocalizations1 is { } __value0)
             {
-                gameCenterAchievementLocalizations1?.Invoke(GameCenterAchievementLocalizations1!);
+                gameCenterAchievementLocalizations1?.Invoke(__value0);
             }
-            else if (IsGameCenterAchievementReleases)
+            else if (GameCenterAchievementReleases is { } __value1)
             {
-                gameCenterAchievementReleases?.Invoke(GameCenterAchievementReleases!);
+                gameCenterAchievementReleases?.Invoke(__value1);
             }
-            else if (IsGameCenterAchievementLocalizations2)
+            else if (GameCenterAchievementLocalizations2 is { } __value2)
             {
-                gameCenterAchievementLocalizations2?.Invoke(GameCenterAchievementLocalizations2!);
+                gameCenterAchievementLocalizations2?.Invoke(__value2);
             }
-            else if (IsGameCenterActivities)
+            else if (GameCenterActivities is { } __value3)
             {
-                gameCenterActivities?.Invoke(GameCenterActivities!);
+                gameCenterActivities?.Invoke(__value3);
             }
-            else if (IsGameCenterDetails)
+            else if (GameCenterDetails is { } __value4)
             {
-                gameCenterDetails?.Invoke(GameCenterDetails!);
+                gameCenterDetails?.Invoke(__value4);
             }
-            else if (IsGameCenterGroups)
+            else if (GameCenterGroups is { } __value5)
             {
-                gameCenterGroups?.Invoke(GameCenterGroups!);
+                gameCenterGroups?.Invoke(__value5);
             }
         }
 

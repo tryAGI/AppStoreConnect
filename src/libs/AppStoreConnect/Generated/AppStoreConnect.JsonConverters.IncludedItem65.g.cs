@@ -68,19 +68,19 @@ namespace AppStoreConnect.JsonConverters
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.App).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Apps!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickApps(), typeInfo);
             }
             else if (value.IsBundleIdCapabilities)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BundleIdCapability), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BundleIdCapability?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BundleIdCapability).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.BundleIdCapabilities!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBundleIdCapabilities(), typeInfo);
             }
             else if (value.IsProfiles)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Profile), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Profile?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Profile).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.Profiles!, typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickProfiles(), typeInfo);
             }
         }
     }

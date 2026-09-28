@@ -47,8 +47,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CiMacOsVersion PickCiMacOsVersions() => IsCiMacOsVersions
-            ? CiMacOsVersions!
+        public global::AppStoreConnect.CiMacOsVersion PickCiMacOsVersions() => CiMacOsVersions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CiMacOsVersions' but the value was {ToString()}.");
 
         /// <summary>
@@ -84,8 +84,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CiProduct PickCiProducts() => IsCiProducts
-            ? CiProducts!
+        public global::AppStoreConnect.CiProduct PickCiProducts() => CiProducts is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CiProducts' but the value was {ToString()}.");
 
         /// <summary>
@@ -121,8 +121,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CiXcodeVersion PickCiXcodeVersions() => IsCiXcodeVersions
-            ? CiXcodeVersions!
+        public global::AppStoreConnect.CiXcodeVersion PickCiXcodeVersions() => CiXcodeVersions is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'CiXcodeVersions' but the value was {ToString()}.");
 
         /// <summary>
@@ -158,8 +158,8 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmRepository PickScmRepositories() => IsScmRepositories
-            ? ScmRepositories!
+        public global::AppStoreConnect.ScmRepository PickScmRepositories() => ScmRepositories is { } value
+            ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'ScmRepositories' but the value was {ToString()}.");
         /// <summary>
         ///
@@ -315,21 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsCiMacOsVersions && ciMacOsVersions != null)
+            if (CiMacOsVersions is { } __value0 && ciMacOsVersions != null)
             {
-                return ciMacOsVersions(CiMacOsVersions!);
+                return ciMacOsVersions(__value0);
             }
-            else if (IsCiProducts && ciProducts != null)
+            else if (CiProducts is { } __value1 && ciProducts != null)
             {
-                return ciProducts(CiProducts!);
+                return ciProducts(__value1);
             }
-            else if (IsCiXcodeVersions && ciXcodeVersions != null)
+            else if (CiXcodeVersions is { } __value2 && ciXcodeVersions != null)
             {
-                return ciXcodeVersions(CiXcodeVersions!);
+                return ciXcodeVersions(__value2);
             }
-            else if (IsScmRepositories && scmRepositories != null)
+            else if (ScmRepositories is { } __value3 && scmRepositories != null)
             {
-                return scmRepositories(ScmRepositories!);
+                return scmRepositories(__value3);
             }
 
             return default(TResult);
@@ -353,21 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsCiMacOsVersions)
+            if (CiMacOsVersions is { } __value0)
             {
-                ciMacOsVersions?.Invoke(CiMacOsVersions!);
+                ciMacOsVersions?.Invoke(__value0);
             }
-            else if (IsCiProducts)
+            else if (CiProducts is { } __value1)
             {
-                ciProducts?.Invoke(CiProducts!);
+                ciProducts?.Invoke(__value1);
             }
-            else if (IsCiXcodeVersions)
+            else if (CiXcodeVersions is { } __value2)
             {
-                ciXcodeVersions?.Invoke(CiXcodeVersions!);
+                ciXcodeVersions?.Invoke(__value2);
             }
-            else if (IsScmRepositories)
+            else if (ScmRepositories is { } __value3)
             {
-                scmRepositories?.Invoke(ScmRepositories!);
+                scmRepositories?.Invoke(__value3);
             }
         }
 
@@ -386,21 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (IsCiMacOsVersions)
+            if (CiMacOsVersions is { } __value0)
             {
-                ciMacOsVersions?.Invoke(CiMacOsVersions!);
+                ciMacOsVersions?.Invoke(__value0);
             }
-            else if (IsCiProducts)
+            else if (CiProducts is { } __value1)
             {
-                ciProducts?.Invoke(CiProducts!);
+                ciProducts?.Invoke(__value1);
             }
-            else if (IsCiXcodeVersions)
+            else if (CiXcodeVersions is { } __value2)
             {
-                ciXcodeVersions?.Invoke(CiXcodeVersions!);
+                ciXcodeVersions?.Invoke(__value2);
             }
-            else if (IsScmRepositories)
+            else if (ScmRepositories is { } __value3)
             {
-                scmRepositories?.Invoke(ScmRepositories!);
+                scmRepositories?.Invoke(__value3);
             }
         }
 
