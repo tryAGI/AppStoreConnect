@@ -2,7 +2,42 @@
 #nullable enable
 
 namespace AppStoreConnect
-{    /// <summary>
+{
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SandboxTesterV2))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SandboxTesterV2Type), TypeInfoPropertyName = "SandboxTesterV2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SandboxTesterV2Attributes))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SandboxTesterV2AttributesSubscriptionRenewalRate), TypeInfoPropertyName = "SandboxTesterV2AttributesSubscriptionRenewalRate2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SandboxTestersV2Response))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.SandboxTesterV2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SandboxTesterV2Response))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SandboxTesterV2UpdateRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SandboxTesterV2UpdateRequestData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SandboxTesterV2UpdateRequestDataType), TypeInfoPropertyName = "SandboxTesterV2UpdateRequestDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SandboxTesterV2UpdateRequestDataAttributes))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SandboxTesterV2UpdateRequestDataAttributesSubscriptionRenewalRate), TypeInfoPropertyName = "SandboxTesterV2UpdateRequestDataAttributesSubscriptionRenewalRate2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.SandboxTestersV2GetCollectionFieldsSandboxTester>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SandboxTestersV2GetCollectionFieldsSandboxTester), TypeInfoPropertyName = "SandboxTestersV2GetCollectionFieldsSandboxTester2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SandboxTesterV2Type?), TypeInfoPropertyName = "NullableSandboxTesterV2Type2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SandboxTesterV2AttributesSubscriptionRenewalRate?), TypeInfoPropertyName = "NullableSandboxTesterV2AttributesSubscriptionRenewalRate2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SandboxTesterV2UpdateRequestDataType?), TypeInfoPropertyName = "NullableSandboxTesterV2UpdateRequestDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SandboxTesterV2UpdateRequestDataAttributesSubscriptionRenewalRate?), TypeInfoPropertyName = "NullableSandboxTesterV2UpdateRequestDataAttributesSubscriptionRenewalRate2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SandboxTestersV2GetCollectionFieldsSandboxTester?), TypeInfoPropertyName = "NullableSandboxTestersV2GetCollectionFieldsSandboxTester2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.SandboxTesterV2>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.SandboxTestersV2GetCollectionFieldsSandboxTester>))]
+    internal sealed partial class SandboxTestersSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
     ///
     /// </summary>
     public sealed partial class SandboxTestersSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -46,7 +81,8 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.SourceGenerationContext.AddConverters(options);
+            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -61,10 +97,94 @@ namespace AppStoreConnect
             return options;
         }
 
+
+        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
+        {
+            public override bool CanConvert(global::System.Type typeToConvert)
+            {
+                return
+                    typeToConvert == typeof(global::AppStoreConnect.SandboxTesterV2Type)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.SandboxTesterV2Type?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.SandboxTesterV2AttributesSubscriptionRenewalRate)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.SandboxTesterV2AttributesSubscriptionRenewalRate?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.SandboxTesterV2UpdateRequestDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.SandboxTesterV2UpdateRequestDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.SandboxTesterV2UpdateRequestDataAttributesSubscriptionRenewalRate)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.SandboxTesterV2UpdateRequestDataAttributesSubscriptionRenewalRate?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.SandboxTestersV2GetCollectionFieldsSandboxTester)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.SandboxTestersV2GetCollectionFieldsSandboxTester?);
+            }
+
+            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
+                global::System.Type typeToConvert,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                if (typeToConvert == typeof(global::AppStoreConnect.SandboxTesterV2Type))
+                {
+                    return new global::AppStoreConnect.JsonConverters.SandboxTesterV2TypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.SandboxTesterV2Type?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.SandboxTesterV2TypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.SandboxTesterV2AttributesSubscriptionRenewalRate))
+                {
+                    return new global::AppStoreConnect.JsonConverters.SandboxTesterV2AttributesSubscriptionRenewalRateJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.SandboxTesterV2AttributesSubscriptionRenewalRate?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.SandboxTesterV2AttributesSubscriptionRenewalRateNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.SandboxTesterV2UpdateRequestDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.SandboxTesterV2UpdateRequestDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.SandboxTesterV2UpdateRequestDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.SandboxTesterV2UpdateRequestDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.SandboxTesterV2UpdateRequestDataAttributesSubscriptionRenewalRate))
+                {
+                    return new global::AppStoreConnect.JsonConverters.SandboxTesterV2UpdateRequestDataAttributesSubscriptionRenewalRateJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.SandboxTesterV2UpdateRequestDataAttributesSubscriptionRenewalRate?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.SandboxTesterV2UpdateRequestDataAttributesSubscriptionRenewalRateNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.SandboxTestersV2GetCollectionFieldsSandboxTester))
+                {
+                    return new global::AppStoreConnect.JsonConverters.SandboxTestersV2GetCollectionFieldsSandboxTesterJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.SandboxTestersV2GetCollectionFieldsSandboxTester?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.SandboxTestersV2GetCollectionFieldsSandboxTesterNullableJsonConverter();
+                }
+                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
+            }
+        }
+
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[1];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -100,7 +220,9 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => global::AppStoreConnect.SourceGenerationContext.TypeInfoResolver,
+                    0 => new SandboxTestersSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

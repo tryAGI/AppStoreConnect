@@ -2,7 +2,41 @@
 #nullable enable
 
 namespace AppStoreConnect
-{    /// <summary>
+{
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DiagnosticLogCallStackNode))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.DiagnosticLogCallStackNode>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DiagnosticLogs))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.DiagnosticLogsProductDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DiagnosticLogsProductDataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.DiagnosticLogsProductDataItemDiagnosticInsight>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DiagnosticLogsProductDataItemDiagnosticInsight))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.DiagnosticLogsProductDataItemDiagnosticLog>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DiagnosticLogsProductDataItemDiagnosticLog))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.DiagnosticLogsProductDataItemDiagnosticLogCallStackTreeItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DiagnosticLogsProductDataItemDiagnosticLogCallStackTreeItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.DiagnosticLogsProductDataItemDiagnosticLogCallStackTreeItemCallStack>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DiagnosticLogsProductDataItemDiagnosticLogCallStackTreeItemCallStack))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DiagnosticLogsProductDataItemDiagnosticLogDiagnosticMetaData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.DiagnosticLogCallStackNode>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.DiagnosticLogsProductDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.DiagnosticLogsProductDataItemDiagnosticInsight>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.DiagnosticLogsProductDataItemDiagnosticLog>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.DiagnosticLogsProductDataItemDiagnosticLogCallStackTreeItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.DiagnosticLogsProductDataItemDiagnosticLogCallStackTreeItemCallStack>))]
+    internal sealed partial class DiagnosticSignaturesSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
     ///
     /// </summary>
     public sealed partial class DiagnosticSignaturesSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -46,7 +80,7 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.SourceGenerationContext.AddConverters(options);
+            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -64,7 +98,7 @@ namespace AppStoreConnect
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[1];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -100,7 +134,9 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => global::AppStoreConnect.SourceGenerationContext.TypeInfoResolver,
+                    0 => new DiagnosticSignaturesSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

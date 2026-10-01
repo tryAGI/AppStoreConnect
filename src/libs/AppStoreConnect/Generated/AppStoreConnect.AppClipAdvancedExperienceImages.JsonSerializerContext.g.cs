@@ -2,7 +2,36 @@
 #nullable enable
 
 namespace AppStoreConnect
-{    /// <summary>
+{
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageCreateRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageCreateRequestData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageCreateRequestDataType), TypeInfoPropertyName = "AppClipAdvancedExperienceImageCreateRequestDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageCreateRequestDataAttributes))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageUpdateRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageUpdateRequestData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageUpdateRequestDataType), TypeInfoPropertyName = "AppClipAdvancedExperienceImageUpdateRequestDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageUpdateRequestDataAttributes))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppClipAdvancedExperienceImagesGetInstanceFieldsAppClipAdvancedExperienceImage>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipAdvancedExperienceImagesGetInstanceFieldsAppClipAdvancedExperienceImage), TypeInfoPropertyName = "AppClipAdvancedExperienceImagesGetInstanceFieldsAppClipAdvancedExperienceImage2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageCreateRequestDataType?), TypeInfoPropertyName = "NullableAppClipAdvancedExperienceImageCreateRequestDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageUpdateRequestDataType?), TypeInfoPropertyName = "NullableAppClipAdvancedExperienceImageUpdateRequestDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipAdvancedExperienceImagesGetInstanceFieldsAppClipAdvancedExperienceImage?), TypeInfoPropertyName = "NullableAppClipAdvancedExperienceImagesGetInstanceFieldsAppClipAdvancedExperienceImage2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppClipAdvancedExperienceImagesGetInstanceFieldsAppClipAdvancedExperienceImage>))]
+    internal sealed partial class AppClipAdvancedExperienceImagesSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
     ///
     /// </summary>
     public sealed partial class AppClipAdvancedExperienceImagesSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -46,7 +75,8 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.SourceGenerationContext.AddConverters(options);
+            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -61,10 +91,66 @@ namespace AppStoreConnect
             return options;
         }
 
+
+        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
+        {
+            public override bool CanConvert(global::System.Type typeToConvert)
+            {
+                return
+                    typeToConvert == typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageCreateRequestDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageCreateRequestDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageUpdateRequestDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageUpdateRequestDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppClipAdvancedExperienceImagesGetInstanceFieldsAppClipAdvancedExperienceImage)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppClipAdvancedExperienceImagesGetInstanceFieldsAppClipAdvancedExperienceImage?);
+            }
+
+            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
+                global::System.Type typeToConvert,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                if (typeToConvert == typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageCreateRequestDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppClipAdvancedExperienceImageCreateRequestDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageCreateRequestDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppClipAdvancedExperienceImageCreateRequestDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageUpdateRequestDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppClipAdvancedExperienceImageUpdateRequestDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppClipAdvancedExperienceImageUpdateRequestDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppClipAdvancedExperienceImageUpdateRequestDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppClipAdvancedExperienceImagesGetInstanceFieldsAppClipAdvancedExperienceImage))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppClipAdvancedExperienceImagesGetInstanceFieldsAppClipAdvancedExperienceImageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppClipAdvancedExperienceImagesGetInstanceFieldsAppClipAdvancedExperienceImage?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppClipAdvancedExperienceImagesGetInstanceFieldsAppClipAdvancedExperienceImageNullableJsonConverter();
+                }
+                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
+            }
+        }
+
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[1];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -100,7 +186,9 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => global::AppStoreConnect.SourceGenerationContext.TypeInfoResolver,
+                    0 => new AppClipAdvancedExperienceImagesSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }
