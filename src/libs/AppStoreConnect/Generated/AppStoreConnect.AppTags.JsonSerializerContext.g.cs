@@ -2,7 +2,37 @@
 #nullable enable
 
 namespace AppStoreConnect
-{    /// <summary>
+{
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppTagResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppTagUpdateRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppTagUpdateRequestData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppTagUpdateRequestDataType), TypeInfoPropertyName = "AppTagUpdateRequestDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppTagUpdateRequestDataAttributes))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppTagTerritoriesLinkagesResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppTagTerritoriesLinkagesResponseDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppTagTerritoriesLinkagesResponseDataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppTagTerritoriesLinkagesResponseDataItemType), TypeInfoPropertyName = "AppTagTerritoriesLinkagesResponseDataItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppTagsTerritoriesGetToManyRelatedFieldsTerritorie>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppTagsTerritoriesGetToManyRelatedFieldsTerritorie), TypeInfoPropertyName = "AppTagsTerritoriesGetToManyRelatedFieldsTerritorie2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppTagUpdateRequestDataType?), TypeInfoPropertyName = "NullableAppTagUpdateRequestDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppTagTerritoriesLinkagesResponseDataItemType?), TypeInfoPropertyName = "NullableAppTagTerritoriesLinkagesResponseDataItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppTagsTerritoriesGetToManyRelatedFieldsTerritorie?), TypeInfoPropertyName = "NullableAppTagsTerritoriesGetToManyRelatedFieldsTerritorie2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppTagTerritoriesLinkagesResponseDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppTagsTerritoriesGetToManyRelatedFieldsTerritorie>))]
+    internal sealed partial class AppTagsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
     ///
     /// </summary>
     public sealed partial class AppTagsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -46,7 +76,8 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.SourceGenerationContext.AddConverters(options);
+            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -61,10 +92,66 @@ namespace AppStoreConnect
             return options;
         }
 
+
+        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
+        {
+            public override bool CanConvert(global::System.Type typeToConvert)
+            {
+                return
+                    typeToConvert == typeof(global::AppStoreConnect.AppTagUpdateRequestDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppTagUpdateRequestDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppTagTerritoriesLinkagesResponseDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppTagTerritoriesLinkagesResponseDataItemType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppTagsTerritoriesGetToManyRelatedFieldsTerritorie)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppTagsTerritoriesGetToManyRelatedFieldsTerritorie?);
+            }
+
+            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
+                global::System.Type typeToConvert,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                if (typeToConvert == typeof(global::AppStoreConnect.AppTagUpdateRequestDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppTagUpdateRequestDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppTagUpdateRequestDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppTagUpdateRequestDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppTagTerritoriesLinkagesResponseDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppTagTerritoriesLinkagesResponseDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppTagTerritoriesLinkagesResponseDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppTagTerritoriesLinkagesResponseDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppTagsTerritoriesGetToManyRelatedFieldsTerritorie))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppTagsTerritoriesGetToManyRelatedFieldsTerritorieJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppTagsTerritoriesGetToManyRelatedFieldsTerritorie?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppTagsTerritoriesGetToManyRelatedFieldsTerritorieNullableJsonConverter();
+                }
+                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
+            }
+        }
+
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[1];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -100,7 +187,9 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => global::AppStoreConnect.SourceGenerationContext.TypeInfoResolver,
+                    0 => new AppTagsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

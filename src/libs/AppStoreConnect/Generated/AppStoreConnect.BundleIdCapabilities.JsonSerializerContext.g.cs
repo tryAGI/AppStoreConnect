@@ -2,7 +2,37 @@
 #nullable enable
 
 namespace AppStoreConnect
-{    /// <summary>
+{
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BundleIdCapabilityResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequestData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequestDataType), TypeInfoPropertyName = "BundleIdCapabilityCreateRequestDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequestDataAttributes))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequestDataRelationships))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequestDataRelationshipsBundleId))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequestDataRelationshipsBundleIdData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequestDataRelationshipsBundleIdDataType), TypeInfoPropertyName = "BundleIdCapabilityCreateRequestDataRelationshipsBundleIdDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BundleIdCapabilityUpdateRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BundleIdCapabilityUpdateRequestData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BundleIdCapabilityUpdateRequestDataType), TypeInfoPropertyName = "BundleIdCapabilityUpdateRequestDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BundleIdCapabilityUpdateRequestDataAttributes))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequestDataType?), TypeInfoPropertyName = "NullableBundleIdCapabilityCreateRequestDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequestDataRelationshipsBundleIdDataType?), TypeInfoPropertyName = "NullableBundleIdCapabilityCreateRequestDataRelationshipsBundleIdDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BundleIdCapabilityUpdateRequestDataType?), TypeInfoPropertyName = "NullableBundleIdCapabilityUpdateRequestDataType2")]
+    internal sealed partial class BundleIdCapabilitiesSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
     ///
     /// </summary>
     public sealed partial class BundleIdCapabilitiesSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -46,7 +76,8 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.SourceGenerationContext.AddConverters(options);
+            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -61,10 +92,66 @@ namespace AppStoreConnect
             return options;
         }
 
+
+        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
+        {
+            public override bool CanConvert(global::System.Type typeToConvert)
+            {
+                return
+                    typeToConvert == typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequestDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequestDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequestDataRelationshipsBundleIdDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequestDataRelationshipsBundleIdDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.BundleIdCapabilityUpdateRequestDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.BundleIdCapabilityUpdateRequestDataType?);
+            }
+
+            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
+                global::System.Type typeToConvert,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                if (typeToConvert == typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequestDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.BundleIdCapabilityCreateRequestDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequestDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.BundleIdCapabilityCreateRequestDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequestDataRelationshipsBundleIdDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.BundleIdCapabilityCreateRequestDataRelationshipsBundleIdDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.BundleIdCapabilityCreateRequestDataRelationshipsBundleIdDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.BundleIdCapabilityCreateRequestDataRelationshipsBundleIdDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.BundleIdCapabilityUpdateRequestDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.BundleIdCapabilityUpdateRequestDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.BundleIdCapabilityUpdateRequestDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.BundleIdCapabilityUpdateRequestDataTypeNullableJsonConverter();
+                }
+                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
+            }
+        }
+
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[1];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -100,7 +187,9 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => global::AppStoreConnect.SourceGenerationContext.TypeInfoResolver,
+                    0 => new BundleIdCapabilitiesSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

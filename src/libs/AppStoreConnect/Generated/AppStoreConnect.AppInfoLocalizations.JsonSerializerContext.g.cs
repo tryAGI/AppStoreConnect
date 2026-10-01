@@ -2,7 +2,49 @@
 #nullable enable
 
 namespace AppStoreConnect
-{    /// <summary>
+{
+    /// <summary>
+    ///
+    /// </summary>
+    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+    )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequestData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequestDataType), TypeInfoPropertyName = "AppInfoLocalizationCreateRequestDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequestDataAttributes))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequestDataRelationships))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequestDataRelationshipsAppInfo))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequestDataRelationshipsAppInfoData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequestDataRelationshipsAppInfoDataType), TypeInfoPropertyName = "AppInfoLocalizationCreateRequestDataRelationshipsAppInfoDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationUpdateRequest))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationUpdateRequestData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationUpdateRequestDataType), TypeInfoPropertyName = "AppInfoLocalizationUpdateRequestDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationUpdateRequestDataAttributes))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfoLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfoLocalization), TypeInfoPropertyName = "AppInfoLocalizationsGetInstanceFieldsAppInfoLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfo>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfo), TypeInfoPropertyName = "AppInfoLocalizationsGetInstanceFieldsAppInfo2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppInfoLocalizationsGetInstanceIncludeItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceIncludeItem), TypeInfoPropertyName = "AppInfoLocalizationsGetInstanceIncludeItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequestDataType?), TypeInfoPropertyName = "NullableAppInfoLocalizationCreateRequestDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequestDataRelationshipsAppInfoDataType?), TypeInfoPropertyName = "NullableAppInfoLocalizationCreateRequestDataRelationshipsAppInfoDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationUpdateRequestDataType?), TypeInfoPropertyName = "NullableAppInfoLocalizationUpdateRequestDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfoLocalization?), TypeInfoPropertyName = "NullableAppInfoLocalizationsGetInstanceFieldsAppInfoLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfo?), TypeInfoPropertyName = "NullableAppInfoLocalizationsGetInstanceFieldsAppInfo2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceIncludeItem?), TypeInfoPropertyName = "NullableAppInfoLocalizationsGetInstanceIncludeItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfoLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfo>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppInfoLocalizationsGetInstanceIncludeItem>))]
+    internal sealed partial class AppInfoLocalizationsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
+    {
+    }
+    /// <summary>
     ///
     /// </summary>
     public sealed partial class AppInfoLocalizationsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -46,7 +88,8 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.SourceGenerationContext.AddConverters(options);
+            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
+            options.Converters.Add(new LazyEnumJsonConverterFactory());
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -61,10 +104,108 @@ namespace AppStoreConnect
             return options;
         }
 
+
+        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
+        {
+            public override bool CanConvert(global::System.Type typeToConvert)
+            {
+                return
+                    typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequestDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequestDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequestDataRelationshipsAppInfoDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequestDataRelationshipsAppInfoDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationUpdateRequestDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationUpdateRequestDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfoLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfoLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfo)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfo?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceIncludeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceIncludeItem?);
+            }
+
+            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
+                global::System.Type typeToConvert,
+                global::System.Text.Json.JsonSerializerOptions options)
+            {
+                if (typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequestDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppInfoLocalizationCreateRequestDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequestDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppInfoLocalizationCreateRequestDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequestDataRelationshipsAppInfoDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppInfoLocalizationCreateRequestDataRelationshipsAppInfoDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationCreateRequestDataRelationshipsAppInfoDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppInfoLocalizationCreateRequestDataRelationshipsAppInfoDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationUpdateRequestDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppInfoLocalizationUpdateRequestDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationUpdateRequestDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppInfoLocalizationUpdateRequestDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfoLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppInfoLocalizationsGetInstanceFieldsAppInfoLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfoLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppInfoLocalizationsGetInstanceFieldsAppInfoLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfo))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppInfoLocalizationsGetInstanceFieldsAppInfoJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceFieldsAppInfo?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppInfoLocalizationsGetInstanceFieldsAppInfoNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceIncludeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppInfoLocalizationsGetInstanceIncludeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppInfoLocalizationsGetInstanceIncludeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppInfoLocalizationsGetInstanceIncludeItemNullableJsonConverter();
+                }
+                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
+            }
+        }
+
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[1];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -100,7 +241,9 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => global::AppStoreConnect.SourceGenerationContext.TypeInfoResolver,
+                    0 => new AppInfoLocalizationsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+
+                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }
