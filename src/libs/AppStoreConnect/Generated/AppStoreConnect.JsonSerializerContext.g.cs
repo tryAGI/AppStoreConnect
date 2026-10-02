@@ -58516,7 +58516,7 @@ namespace AppStoreConnect
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[189];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[197];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -58848,87 +58848,103 @@ namespace AppStoreConnect
 
                     147 => global::AppStoreConnect.NominationsSourceGenerationContext.TypeInfoResolver,
 
-                    148 => global::AppStoreConnect.PassTypeIdsSourceGenerationContext.TypeInfoResolver,
+                    148 => global::AppStoreConnect.PartitionOrphan0SourceGenerationContext.TypeInfoResolver,
 
-                    149 => global::AppStoreConnect.PreReleaseVersionsSourceGenerationContext.TypeInfoResolver,
+                    149 => global::AppStoreConnect.PartitionOrphan1SourceGenerationContext.TypeInfoResolver,
 
-                    150 => global::AppStoreConnect.ProfilesSourceGenerationContext.TypeInfoResolver,
+                    150 => global::AppStoreConnect.PartitionOrphan2SourceGenerationContext.TypeInfoResolver,
 
-                    151 => global::AppStoreConnect.PromotedPurchasesSourceGenerationContext.TypeInfoResolver,
+                    151 => global::AppStoreConnect.PartitionOrphan3SourceGenerationContext.TypeInfoResolver,
 
-                    152 => global::AppStoreConnect.ReviewSubmissionItemsSourceGenerationContext.TypeInfoResolver,
+                    152 => global::AppStoreConnect.PartitionOrphan4SourceGenerationContext.TypeInfoResolver,
 
-                    153 => global::AppStoreConnect.ReviewSubmissionsSourceGenerationContext.TypeInfoResolver,
+                    153 => global::AppStoreConnect.PartitionOrphan5SourceGenerationContext.TypeInfoResolver,
 
-                    154 => global::AppStoreConnect.RoutingAppCoveragesSourceGenerationContext.TypeInfoResolver,
+                    154 => global::AppStoreConnect.PartitionOrphan6SourceGenerationContext.TypeInfoResolver,
 
-                    155 => global::AppStoreConnect.SalesReportsSourceGenerationContext.TypeInfoResolver,
+                    155 => global::AppStoreConnect.PartitionOrphan7SourceGenerationContext.TypeInfoResolver,
 
-                    156 => global::AppStoreConnect.SandboxTestersSourceGenerationContext.TypeInfoResolver,
+                    156 => global::AppStoreConnect.PassTypeIdsSourceGenerationContext.TypeInfoResolver,
 
-                    157 => global::AppStoreConnect.SandboxTestersClearPurchaseHistoryRequestSourceGenerationContext.TypeInfoResolver,
+                    157 => global::AppStoreConnect.PreReleaseVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    158 => global::AppStoreConnect.ScmGitReferencesSourceGenerationContext.TypeInfoResolver,
+                    158 => global::AppStoreConnect.ProfilesSourceGenerationContext.TypeInfoResolver,
 
-                    159 => global::AppStoreConnect.ScmProvidersSourceGenerationContext.TypeInfoResolver,
+                    159 => global::AppStoreConnect.PromotedPurchasesSourceGenerationContext.TypeInfoResolver,
 
-                    160 => global::AppStoreConnect.ScmPullRequestsSourceGenerationContext.TypeInfoResolver,
+                    160 => global::AppStoreConnect.ReviewSubmissionItemsSourceGenerationContext.TypeInfoResolver,
 
-                    161 => global::AppStoreConnect.ScmRepositoriesSourceGenerationContext.TypeInfoResolver,
+                    161 => global::AppStoreConnect.ReviewSubmissionsSourceGenerationContext.TypeInfoResolver,
 
-                    162 => global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsSourceGenerationContext.TypeInfoResolver,
+                    162 => global::AppStoreConnect.RoutingAppCoveragesSourceGenerationContext.TypeInfoResolver,
 
-                    163 => global::AppStoreConnect.SubscriptionGracePeriodsSourceGenerationContext.TypeInfoResolver,
+                    163 => global::AppStoreConnect.SalesReportsSourceGenerationContext.TypeInfoResolver,
 
-                    164 => global::AppStoreConnect.SubscriptionGroupLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    164 => global::AppStoreConnect.SandboxTestersSourceGenerationContext.TypeInfoResolver,
 
-                    165 => global::AppStoreConnect.SubscriptionGroupSubmissionsSourceGenerationContext.TypeInfoResolver,
+                    165 => global::AppStoreConnect.SandboxTestersClearPurchaseHistoryRequestSourceGenerationContext.TypeInfoResolver,
 
-                    166 => global::AppStoreConnect.SubscriptionGroupVersionsSourceGenerationContext.TypeInfoResolver,
+                    166 => global::AppStoreConnect.ScmGitReferencesSourceGenerationContext.TypeInfoResolver,
 
-                    167 => global::AppStoreConnect.SubscriptionGroupsSourceGenerationContext.TypeInfoResolver,
+                    167 => global::AppStoreConnect.ScmProvidersSourceGenerationContext.TypeInfoResolver,
 
-                    168 => global::AppStoreConnect.SubscriptionImagesSourceGenerationContext.TypeInfoResolver,
+                    168 => global::AppStoreConnect.ScmPullRequestsSourceGenerationContext.TypeInfoResolver,
 
-                    169 => global::AppStoreConnect.SubscriptionIntroductoryOffersSourceGenerationContext.TypeInfoResolver,
+                    169 => global::AppStoreConnect.ScmRepositoriesSourceGenerationContext.TypeInfoResolver,
 
-                    170 => global::AppStoreConnect.SubscriptionLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    170 => global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsSourceGenerationContext.TypeInfoResolver,
 
-                    171 => global::AppStoreConnect.SubscriptionOfferCodeCustomCodesSourceGenerationContext.TypeInfoResolver,
+                    171 => global::AppStoreConnect.SubscriptionGracePeriodsSourceGenerationContext.TypeInfoResolver,
 
-                    172 => global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCodesSourceGenerationContext.TypeInfoResolver,
+                    172 => global::AppStoreConnect.SubscriptionGroupLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    173 => global::AppStoreConnect.SubscriptionOfferCodesSourceGenerationContext.TypeInfoResolver,
+                    173 => global::AppStoreConnect.SubscriptionGroupSubmissionsSourceGenerationContext.TypeInfoResolver,
 
-                    174 => global::AppStoreConnect.SubscriptionPlanAvailabilitiesSourceGenerationContext.TypeInfoResolver,
+                    174 => global::AppStoreConnect.SubscriptionGroupVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    175 => global::AppStoreConnect.SubscriptionPricePointsSourceGenerationContext.TypeInfoResolver,
+                    175 => global::AppStoreConnect.SubscriptionGroupsSourceGenerationContext.TypeInfoResolver,
 
-                    176 => global::AppStoreConnect.SubscriptionPricesSourceGenerationContext.TypeInfoResolver,
+                    176 => global::AppStoreConnect.SubscriptionImagesSourceGenerationContext.TypeInfoResolver,
 
-                    177 => global::AppStoreConnect.SubscriptionPromotionalOffersSourceGenerationContext.TypeInfoResolver,
+                    177 => global::AppStoreConnect.SubscriptionIntroductoryOffersSourceGenerationContext.TypeInfoResolver,
 
-                    178 => global::AppStoreConnect.SubscriptionSubmissionsSourceGenerationContext.TypeInfoResolver,
+                    178 => global::AppStoreConnect.SubscriptionLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    179 => global::AppStoreConnect.SubscriptionVersionsSourceGenerationContext.TypeInfoResolver,
+                    179 => global::AppStoreConnect.SubscriptionOfferCodeCustomCodesSourceGenerationContext.TypeInfoResolver,
 
-                    180 => global::AppStoreConnect.SubscriptionsSourceGenerationContext.TypeInfoResolver,
+                    180 => global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCodesSourceGenerationContext.TypeInfoResolver,
 
-                    181 => global::AppStoreConnect.TerritoriesSourceGenerationContext.TypeInfoResolver,
+                    181 => global::AppStoreConnect.SubscriptionOfferCodesSourceGenerationContext.TypeInfoResolver,
 
-                    182 => global::AppStoreConnect.TerritoryAvailabilitiesSourceGenerationContext.TypeInfoResolver,
+                    182 => global::AppStoreConnect.SubscriptionPlanAvailabilitiesSourceGenerationContext.TypeInfoResolver,
 
-                    183 => global::AppStoreConnect.UserInvitationsSourceGenerationContext.TypeInfoResolver,
+                    183 => global::AppStoreConnect.SubscriptionPricePointsSourceGenerationContext.TypeInfoResolver,
 
-                    184 => global::AppStoreConnect.UsersSourceGenerationContext.TypeInfoResolver,
+                    184 => global::AppStoreConnect.SubscriptionPricesSourceGenerationContext.TypeInfoResolver,
 
-                    185 => global::AppStoreConnect.WebhookDeliveriesSourceGenerationContext.TypeInfoResolver,
+                    185 => global::AppStoreConnect.SubscriptionPromotionalOffersSourceGenerationContext.TypeInfoResolver,
 
-                    186 => global::AppStoreConnect.WebhookPingsSourceGenerationContext.TypeInfoResolver,
+                    186 => global::AppStoreConnect.SubscriptionSubmissionsSourceGenerationContext.TypeInfoResolver,
 
-                    187 => global::AppStoreConnect.WebhooksSourceGenerationContext.TypeInfoResolver,
+                    187 => global::AppStoreConnect.SubscriptionVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    188 => global::AppStoreConnect.WinBackOffersSourceGenerationContext.TypeInfoResolver,
+                    188 => global::AppStoreConnect.SubscriptionsSourceGenerationContext.TypeInfoResolver,
+
+                    189 => global::AppStoreConnect.TerritoriesSourceGenerationContext.TypeInfoResolver,
+
+                    190 => global::AppStoreConnect.TerritoryAvailabilitiesSourceGenerationContext.TypeInfoResolver,
+
+                    191 => global::AppStoreConnect.UserInvitationsSourceGenerationContext.TypeInfoResolver,
+
+                    192 => global::AppStoreConnect.UsersSourceGenerationContext.TypeInfoResolver,
+
+                    193 => global::AppStoreConnect.WebhookDeliveriesSourceGenerationContext.TypeInfoResolver,
+
+                    194 => global::AppStoreConnect.WebhookPingsSourceGenerationContext.TypeInfoResolver,
+
+                    195 => global::AppStoreConnect.WebhooksSourceGenerationContext.TypeInfoResolver,
+
+                    196 => global::AppStoreConnect.WinBackOffersSourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }
