@@ -12,156 +12,284 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppClipsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppClipDefaultExperiencesResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppClipDefaultExperience? AppClipDefaultExperiences1 { get; init; }
+        public global::AppStoreConnect.AppClipAppStoreReviewDetail? AppClipAppStoreReviewDetails { get; init; }
 #else
-        public global::AppStoreConnect.AppClipDefaultExperience? AppClipDefaultExperiences1 { get; }
+        public global::AppStoreConnect.AppClipAppStoreReviewDetail? AppClipAppStoreReviewDetails { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppClipDefaultExperiences1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppClipAppStoreReviewDetails))]
 #endif
-        public bool IsAppClipDefaultExperiences1 => AppClipDefaultExperiences1 != null;
+        public bool IsAppClipAppStoreReviewDetails => AppClipAppStoreReviewDetails != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppClipDefaultExperiences1(
+        public bool TryPickAppClipAppStoreReviewDetails(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppClipDefaultExperience? value)
+            out global::AppStoreConnect.AppClipAppStoreReviewDetail? value)
         {
-            value = AppClipDefaultExperiences1;
-            return IsAppClipDefaultExperiences1;
+            value = AppClipAppStoreReviewDetails;
+            return IsAppClipAppStoreReviewDetails;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppClipDefaultExperience PickAppClipDefaultExperiences1() => AppClipDefaultExperiences1 is { } value
+        public global::AppStoreConnect.AppClipAppStoreReviewDetail PickAppClipAppStoreReviewDetails() => AppClipAppStoreReviewDetails is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipDefaultExperiences1' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipAppStoreReviewDetails' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.App? AppClipDefaultExperiences2 { get; init; }
+        public global::AppStoreConnect.AppClipDefaultExperienceLocalization? AppClipDefaultExperienceLocalizations1 { get; init; }
 #else
-        public global::AppStoreConnect.App? AppClipDefaultExperiences2 { get; }
+        public global::AppStoreConnect.AppClipDefaultExperienceLocalization? AppClipDefaultExperienceLocalizations1 { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppClipDefaultExperiences2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppClipDefaultExperienceLocalizations1))]
 #endif
-        public bool IsAppClipDefaultExperiences2 => AppClipDefaultExperiences2 != null;
+        public bool IsAppClipDefaultExperienceLocalizations1 => AppClipDefaultExperienceLocalizations1 != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppClipDefaultExperiences2(
+        public bool TryPickAppClipDefaultExperienceLocalizations1(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.App? value)
+            out global::AppStoreConnect.AppClipDefaultExperienceLocalization? value)
         {
-            value = AppClipDefaultExperiences2;
-            return IsAppClipDefaultExperiences2;
+            value = AppClipDefaultExperienceLocalizations1;
+            return IsAppClipDefaultExperienceLocalizations1;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickAppClipDefaultExperiences2() => AppClipDefaultExperiences2 is { } value
+        public global::AppStoreConnect.AppClipDefaultExperienceLocalization PickAppClipDefaultExperienceLocalizations1() => AppClipDefaultExperienceLocalizations1 is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipDefaultExperiences2' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem9(global::AppStoreConnect.AppClipDefaultExperience value) => new IncludedItem9((global::AppStoreConnect.AppClipDefaultExperience?)value);
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipDefaultExperienceLocalizations1' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppClipDefaultExperience?(IncludedItem9 @this) => @this.AppClipDefaultExperiences1;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AppClip? AppClipDefaultExperienceLocalizations2 { get; init; }
+#else
+        public global::AppStoreConnect.AppClip? AppClipDefaultExperienceLocalizations2 { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem9(global::AppStoreConnect.AppClipDefaultExperience? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppClipDefaultExperienceLocalizations2))]
+#endif
+        public bool IsAppClipDefaultExperienceLocalizations2 => AppClipDefaultExperienceLocalizations2 != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAppClipDefaultExperienceLocalizations2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppClip? value)
         {
-            AppClipDefaultExperiences1 = value;
+            value = AppClipDefaultExperienceLocalizations2;
+            return IsAppClipDefaultExperienceLocalizations2;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem9 FromAppClipDefaultExperiences1(global::AppStoreConnect.AppClipDefaultExperience? value) => new IncludedItem9(value);
+        public global::AppStoreConnect.AppClip PickAppClipDefaultExperienceLocalizations2() => AppClipDefaultExperienceLocalizations2 is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipDefaultExperienceLocalizations2' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem9(global::AppStoreConnect.App value) => new IncludedItem9((global::AppStoreConnect.App?)value);
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; init; }
+#else
+        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.App?(IncludedItem9 @this) => @this.AppClipDefaultExperiences2;
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions))]
+#endif
+        public bool IsAppStoreVersions => AppStoreVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem9(global::AppStoreConnect.App? value)
+        public bool TryPickAppStoreVersions(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppStoreVersion? value)
         {
-            AppClipDefaultExperiences2 = value;
+            value = AppStoreVersions;
+            return IsAppStoreVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem9 FromAppClipDefaultExperiences2(global::AppStoreConnect.App? value) => new IncludedItem9(value);
+        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => AppStoreVersions is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem9(global::AppStoreConnect.AppClipAppStoreReviewDetail value) => new IncludedItem9((global::AppStoreConnect.AppClipAppStoreReviewDetail?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppClipAppStoreReviewDetail?(IncludedItem9 @this) => @this.AppClipAppStoreReviewDetails;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem9(global::AppStoreConnect.AppClipAppStoreReviewDetail? value)
+        {
+            AppClipAppStoreReviewDetails = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem9 FromAppClipAppStoreReviewDetails(global::AppStoreConnect.AppClipAppStoreReviewDetail? value) => new IncludedItem9(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem9(global::AppStoreConnect.AppClipDefaultExperienceLocalization value) => new IncludedItem9((global::AppStoreConnect.AppClipDefaultExperienceLocalization?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppClipDefaultExperienceLocalization?(IncludedItem9 @this) => @this.AppClipDefaultExperienceLocalizations1;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem9(global::AppStoreConnect.AppClipDefaultExperienceLocalization? value)
+        {
+            AppClipDefaultExperienceLocalizations1 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem9 FromAppClipDefaultExperienceLocalizations1(global::AppStoreConnect.AppClipDefaultExperienceLocalization? value) => new IncludedItem9(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem9(global::AppStoreConnect.AppClip value) => new IncludedItem9((global::AppStoreConnect.AppClip?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppClip?(IncludedItem9 @this) => @this.AppClipDefaultExperienceLocalizations2;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem9(global::AppStoreConnect.AppClip? value)
+        {
+            AppClipDefaultExperienceLocalizations2 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem9 FromAppClipDefaultExperienceLocalizations2(global::AppStoreConnect.AppClip? value) => new IncludedItem9(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem9(global::AppStoreConnect.AppStoreVersion value) => new IncludedItem9((global::AppStoreConnect.AppStoreVersion?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem9 @this) => @this.AppStoreVersions;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem9(global::AppStoreConnect.AppStoreVersion? value)
+        {
+            AppStoreVersions = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem9 FromAppStoreVersions(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem9(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem9(
-            global::AppStoreConnect.AppClipsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppClipDefaultExperience? appClipDefaultExperiences1,
-            global::AppStoreConnect.App? appClipDefaultExperiences2
+            global::AppStoreConnect.AppClipDefaultExperiencesResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppClipAppStoreReviewDetail? appClipAppStoreReviewDetails,
+            global::AppStoreConnect.AppClipDefaultExperienceLocalization? appClipDefaultExperienceLocalizations1,
+            global::AppStoreConnect.AppClip? appClipDefaultExperienceLocalizations2,
+            global::AppStoreConnect.AppStoreVersion? appStoreVersions
             )
         {
             Type = type;
 
-            AppClipDefaultExperiences1 = appClipDefaultExperiences1;
-            AppClipDefaultExperiences2 = appClipDefaultExperiences2;
+            AppClipAppStoreReviewDetails = appClipAppStoreReviewDetails;
+            AppClipDefaultExperienceLocalizations1 = appClipDefaultExperienceLocalizations1;
+            AppClipDefaultExperienceLocalizations2 = appClipDefaultExperienceLocalizations2;
+            AppStoreVersions = appStoreVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            AppClipDefaultExperiences2 as object ??
-            AppClipDefaultExperiences1 as object
+            AppStoreVersions as object ??
+            AppClipDefaultExperienceLocalizations2 as object ??
+            AppClipDefaultExperienceLocalizations1 as object ??
+            AppClipAppStoreReviewDetails as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppClipDefaultExperiences1?.ToString() ??
-            AppClipDefaultExperiences2?.ToString()
+            AppClipAppStoreReviewDetails?.ToString() ??
+            AppClipDefaultExperienceLocalizations1?.ToString() ??
+            AppClipDefaultExperienceLocalizations2?.ToString() ??
+            AppStoreVersions?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +297,17 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppClipDefaultExperiences1 && !IsAppClipDefaultExperiences2 || !IsAppClipDefaultExperiences1 && IsAppClipDefaultExperiences2;
+            return IsAppClipAppStoreReviewDetails && !IsAppClipDefaultExperienceLocalizations1 && !IsAppClipDefaultExperienceLocalizations2 && !IsAppStoreVersions || !IsAppClipAppStoreReviewDetails && IsAppClipDefaultExperienceLocalizations1 && !IsAppClipDefaultExperienceLocalizations2 && !IsAppStoreVersions || !IsAppClipAppStoreReviewDetails && !IsAppClipDefaultExperienceLocalizations1 && IsAppClipDefaultExperienceLocalizations2 && !IsAppStoreVersions || !IsAppClipAppStoreReviewDetails && !IsAppClipDefaultExperienceLocalizations1 && !IsAppClipDefaultExperienceLocalizations2 && IsAppStoreVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppClipDefaultExperience, TResult>? appClipDefaultExperiences1 = null,
-            global::System.Func<global::AppStoreConnect.App, TResult>? appClipDefaultExperiences2 = null,
+            global::System.Func<global::AppStoreConnect.AppClipAppStoreReviewDetail, TResult>? appClipAppStoreReviewDetails = null,
+            global::System.Func<global::AppStoreConnect.AppClipDefaultExperienceLocalization, TResult>? appClipDefaultExperienceLocalizations1 = null,
+            global::System.Func<global::AppStoreConnect.AppClip, TResult>? appClipDefaultExperienceLocalizations2 = null,
+            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppClipDefaultExperiences1 is { } __value0 && appClipDefaultExperiences1 != null)
+            if (AppClipAppStoreReviewDetails is { } __value0 && appClipAppStoreReviewDetails != null)
             {
-                return appClipDefaultExperiences1(__value0);
+                return appClipAppStoreReviewDetails(__value0);
             }
-            else if (AppClipDefaultExperiences2 is { } __value1 && appClipDefaultExperiences2 != null)
+            else if (AppClipDefaultExperienceLocalizations1 is { } __value1 && appClipDefaultExperienceLocalizations1 != null)
             {
-                return appClipDefaultExperiences2(__value1);
+                return appClipDefaultExperienceLocalizations1(__value1);
+            }
+            else if (AppClipDefaultExperienceLocalizations2 is { } __value2 && appClipDefaultExperienceLocalizations2 != null)
+            {
+                return appClipDefaultExperienceLocalizations2(__value2);
+            }
+            else if (AppStoreVersions is { } __value3 && appStoreVersions != null)
+            {
+                return appStoreVersions(__value3);
             }
 
             return default(TResult);
@@ -201,9 +339,13 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppClipDefaultExperience>? appClipDefaultExperiences1 = null,
+            global::System.Action<global::AppStoreConnect.AppClipAppStoreReviewDetail>? appClipAppStoreReviewDetails = null,
 
-            global::System.Action<global::AppStoreConnect.App>? appClipDefaultExperiences2 = null,
+            global::System.Action<global::AppStoreConnect.AppClipDefaultExperienceLocalization>? appClipDefaultExperienceLocalizations1 = null,
+
+            global::System.Action<global::AppStoreConnect.AppClip>? appClipDefaultExperienceLocalizations2 = null,
+
+            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppClipDefaultExperiences1 is { } __value0)
+            if (AppClipAppStoreReviewDetails is { } __value0)
             {
-                appClipDefaultExperiences1?.Invoke(__value0);
+                appClipAppStoreReviewDetails?.Invoke(__value0);
             }
-            else if (AppClipDefaultExperiences2 is { } __value1)
+            else if (AppClipDefaultExperienceLocalizations1 is { } __value1)
             {
-                appClipDefaultExperiences2?.Invoke(__value1);
+                appClipDefaultExperienceLocalizations1?.Invoke(__value1);
+            }
+            else if (AppClipDefaultExperienceLocalizations2 is { } __value2)
+            {
+                appClipDefaultExperienceLocalizations2?.Invoke(__value2);
+            }
+            else if (AppStoreVersions is { } __value3)
+            {
+                appStoreVersions?.Invoke(__value3);
             }
         }
 
@@ -225,8 +375,10 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppClipDefaultExperience>? appClipDefaultExperiences1 = null,
-            global::System.Action<global::AppStoreConnect.App>? appClipDefaultExperiences2 = null,
+            global::System.Action<global::AppStoreConnect.AppClipAppStoreReviewDetail>? appClipAppStoreReviewDetails = null,
+            global::System.Action<global::AppStoreConnect.AppClipDefaultExperienceLocalization>? appClipDefaultExperienceLocalizations1 = null,
+            global::System.Action<global::AppStoreConnect.AppClip>? appClipDefaultExperienceLocalizations2 = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppClipDefaultExperiences1 is { } __value0)
+            if (AppClipAppStoreReviewDetails is { } __value0)
             {
-                appClipDefaultExperiences1?.Invoke(__value0);
+                appClipAppStoreReviewDetails?.Invoke(__value0);
             }
-            else if (AppClipDefaultExperiences2 is { } __value1)
+            else if (AppClipDefaultExperienceLocalizations1 is { } __value1)
             {
-                appClipDefaultExperiences2?.Invoke(__value1);
+                appClipDefaultExperienceLocalizations1?.Invoke(__value1);
+            }
+            else if (AppClipDefaultExperienceLocalizations2 is { } __value2)
+            {
+                appClipDefaultExperienceLocalizations2?.Invoke(__value2);
+            }
+            else if (AppStoreVersions is { } __value3)
+            {
+                appStoreVersions?.Invoke(__value3);
             }
         }
 
@@ -251,10 +411,14 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppClipDefaultExperiences1,
-                typeof(global::AppStoreConnect.AppClipDefaultExperience),
-                AppClipDefaultExperiences2,
-                typeof(global::AppStoreConnect.App),
+                AppClipAppStoreReviewDetails,
+                typeof(global::AppStoreConnect.AppClipAppStoreReviewDetail),
+                AppClipDefaultExperienceLocalizations1,
+                typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalization),
+                AppClipDefaultExperienceLocalizations2,
+                typeof(global::AppStoreConnect.AppClip),
+                AppStoreVersions,
+                typeof(global::AppStoreConnect.AppStoreVersion),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +435,10 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem9 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppClipDefaultExperience?>.Default.Equals(AppClipDefaultExperiences1, other.AppClipDefaultExperiences1) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(AppClipDefaultExperiences2, other.AppClipDefaultExperiences2)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppClipAppStoreReviewDetail?>.Default.Equals(AppClipAppStoreReviewDetails, other.AppClipAppStoreReviewDetails) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppClipDefaultExperienceLocalization?>.Default.Equals(AppClipDefaultExperienceLocalizations1, other.AppClipDefaultExperienceLocalizations1) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppClip?>.Default.Equals(AppClipDefaultExperienceLocalizations2, other.AppClipDefaultExperienceLocalizations2) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions, other.AppStoreVersions)
                 ;
         }
 

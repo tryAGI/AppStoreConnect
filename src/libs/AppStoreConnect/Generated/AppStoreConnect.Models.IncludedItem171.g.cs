@@ -12,7 +12,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionPromotionalOfferPricesResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.SubscriptionPricesResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
@@ -137,7 +137,7 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public IncludedItem171(
-            global::AppStoreConnect.SubscriptionPromotionalOfferPricesResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.SubscriptionPricesResponseIncludedItemDiscriminatorType? type,
             global::AppStoreConnect.SubscriptionPricePoint? subscriptionPricePoints,
             global::AppStoreConnect.Territory? territories
             )

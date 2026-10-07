@@ -20,6 +20,10 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsAppCustomProductPageVersion))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsAppCustomProductPageVersionData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsAppCustomProductPageVersionDataType), TypeInfoPropertyName = "AppCustomProductPageLocalizationInlineCreateRelationshipsAppCustomProductPageVersionDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacements))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItemType), TypeInfoPropertyName = "AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageVersionInlineCreate))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageVersionInlineCreateType), TypeInfoPropertyName = "AppCustomProductPageVersionInlineCreateType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageVersionInlineCreateAttributes))]
@@ -85,6 +89,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPagesAppCustomProductPageVersionsGetToManyRelatedIncludeItem), TypeInfoPropertyName = "AppCustomProductPagesAppCustomProductPageVersionsGetToManyRelatedIncludeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateType?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationInlineCreateType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsAppCustomProductPageVersionDataType?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationInlineCreateRelationshipsAppCustomProductPageVersionDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItemType?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageVersionInlineCreateType?), TypeInfoPropertyName = "NullableAppCustomProductPageVersionInlineCreateType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageVersionInlineCreateRelationshipsAppCustomProductPageDataType?), TypeInfoPropertyName = "NullableAppCustomProductPageVersionInlineCreateRelationshipsAppCustomProductPageDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageVersionInlineCreateRelationshipsAppCustomProductPageLocalizationsDataItemType?), TypeInfoPropertyName = "NullableAppCustomProductPageVersionInlineCreateRelationshipsAppCustomProductPageLocalizationsDataItemType2")]
@@ -107,6 +112,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPagesAppCustomProductPageVersionsGetToManyRelatedFieldsAppCustomProductPage?), TypeInfoPropertyName = "NullableAppCustomProductPagesAppCustomProductPageVersionsGetToManyRelatedFieldsAppCustomProductPage2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPagesAppCustomProductPageVersionsGetToManyRelatedFieldsAppCustomProductPageLocalization?), TypeInfoPropertyName = "NullableAppCustomProductPagesAppCustomProductPageVersionsGetToManyRelatedFieldsAppCustomProductPageLocalization2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPagesAppCustomProductPageVersionsGetToManyRelatedIncludeItem?), TypeInfoPropertyName = "NullableAppCustomProductPagesAppCustomProductPageVersionsGetToManyRelatedIncludeItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageVersionInlineCreateRelationshipsAppCustomProductPageLocalizationsDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageCreateRequestDataRelationshipsAppCustomProductPageVersionsDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.OneOf<global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreate, global::AppStoreConnect.AppCustomProductPageVersionInlineCreate>>))]
@@ -197,6 +203,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsAppCustomProductPageVersionDataType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsAppCustomProductPageVersionDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItemType?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageVersionInlineCreateType)
 
@@ -305,6 +315,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsAppCustomProductPageVersionDataType?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationInlineCreateRelationshipsAppCustomProductPageVersionDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItemTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageVersionInlineCreateType))

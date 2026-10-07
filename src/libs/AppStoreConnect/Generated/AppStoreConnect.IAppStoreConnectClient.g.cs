@@ -117,6 +117,36 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        public AppAssetLibrariesClient AppAssetLibraries { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public AppAssetLibraryImagesClient AppAssetLibraryImages { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public AppAssetLibraryPlacementOrderingRequestsClient AppAssetLibraryPlacementOrderingRequests { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public AppAssetLibraryPlacementsClient AppAssetLibraryPlacements { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public AppAssetLibraryRefDataClient AppAssetLibraryRefData { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public AppAssetLibraryVideosClient AppAssetLibraryVideos { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
         public AppAvailabilitiesClient AppAvailabilities { get; }
 
         /// <summary>

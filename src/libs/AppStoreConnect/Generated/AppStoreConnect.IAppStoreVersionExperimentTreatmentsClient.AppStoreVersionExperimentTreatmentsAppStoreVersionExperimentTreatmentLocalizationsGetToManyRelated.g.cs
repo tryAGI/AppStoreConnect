@@ -12,10 +12,12 @@ namespace AppStoreConnect
         /// <param name="fieldsAppStoreVersionExperimentTreatments"></param>
         /// <param name="fieldsAppScreenshotSets"></param>
         /// <param name="fieldsAppPreviewSets"></param>
+        /// <param name="fieldsAppAssetLibraryPlacements"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
         /// <param name="limitAppScreenshotSets"></param>
         /// <param name="limitAppPreviewSets"></param>
+        /// <param name="limitPlacements"></param>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -27,10 +29,12 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppStoreVersionExperimentTreatment>? fieldsAppStoreVersionExperimentTreatments = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppScreenshotSet>? fieldsAppScreenshotSets = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppPreviewSet>? fieldsAppPreviewSets = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement>? fieldsAppAssetLibraryPlacements = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedIncludeItem>? include = default,
             int? limitAppScreenshotSets = default,
             int? limitAppPreviewSets = default,
+            int? limitPlacements = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -41,10 +45,12 @@ namespace AppStoreConnect
         /// <param name="fieldsAppStoreVersionExperimentTreatments"></param>
         /// <param name="fieldsAppScreenshotSets"></param>
         /// <param name="fieldsAppPreviewSets"></param>
+        /// <param name="fieldsAppAssetLibraryPlacements"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
         /// <param name="limitAppScreenshotSets"></param>
         /// <param name="limitAppPreviewSets"></param>
+        /// <param name="limitPlacements"></param>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -56,10 +62,12 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppStoreVersionExperimentTreatment>? fieldsAppStoreVersionExperimentTreatments = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppScreenshotSet>? fieldsAppScreenshotSets = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppPreviewSet>? fieldsAppPreviewSets = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement>? fieldsAppAssetLibraryPlacements = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedIncludeItem>? include = default,
             int? limitAppScreenshotSets = default,
             int? limitAppPreviewSets = default,
+            int? limitPlacements = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

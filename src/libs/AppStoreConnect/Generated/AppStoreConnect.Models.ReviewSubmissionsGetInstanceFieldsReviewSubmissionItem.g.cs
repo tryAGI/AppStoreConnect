@@ -11,6 +11,14 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        AppAssetLibraryImage,
+        /// <summary>
+        ///
+        /// </summary>
+        AppAssetLibraryVideo,
+        /// <summary>
+        ///
+        /// </summary>
         AppCustomProductPageVersion,
         /// <summary>
         ///
@@ -82,6 +90,8 @@ namespace AppStoreConnect
         {
             return value switch
             {
+                ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.AppAssetLibraryImage => "appAssetLibraryImage",
+                ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.AppAssetLibraryVideo => "appAssetLibraryVideo",
                 ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.AppCustomProductPageVersion => "appCustomProductPageVersion",
                 ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.AppEvent => "appEvent",
                 ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.AppStoreVersion => "appStoreVersion",
@@ -107,6 +117,8 @@ namespace AppStoreConnect
         {
             return value switch
             {
+                "appAssetLibraryImage" => ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.AppAssetLibraryImage,
+                "appAssetLibraryVideo" => ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.AppAssetLibraryVideo,
                 "appCustomProductPageVersion" => ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.AppCustomProductPageVersion,
                 "appEvent" => ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.AppEvent,
                 "appStoreVersion" => ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.AppStoreVersion,

@@ -12,7 +12,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaFeedbackScreenshotSubmissionResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.BetaFeedbackCrashSubmissionResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
@@ -137,7 +137,7 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public IncludedItem55(
-            global::AppStoreConnect.BetaFeedbackScreenshotSubmissionResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.BetaFeedbackCrashSubmissionResponseIncludedItemDiscriminatorType? type,
             global::AppStoreConnect.BetaTester? betaTesters,
             global::AppStoreConnect.Build? builds
             )

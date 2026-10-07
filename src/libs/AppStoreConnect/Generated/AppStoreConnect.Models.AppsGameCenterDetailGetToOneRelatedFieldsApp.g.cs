@@ -79,6 +79,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        AssetLibrary,
+        /// <summary>
+        ///
+        /// </summary>
         BackgroundAssets,
         /// <summary>
         ///
@@ -263,6 +267,7 @@ namespace AppStoreConnect
                 AppsGameCenterDetailGetToOneRelatedFieldsApp.AppStoreVersionExperimentsV2 => "appStoreVersionExperimentsV2",
                 AppsGameCenterDetailGetToOneRelatedFieldsApp.AppStoreVersions => "appStoreVersions",
                 AppsGameCenterDetailGetToOneRelatedFieldsApp.AppTags => "appTags",
+                AppsGameCenterDetailGetToOneRelatedFieldsApp.AssetLibrary => "assetLibrary",
                 AppsGameCenterDetailGetToOneRelatedFieldsApp.BackgroundAssets => "backgroundAssets",
                 AppsGameCenterDetailGetToOneRelatedFieldsApp.BetaAppLocalizations => "betaAppLocalizations",
                 AppsGameCenterDetailGetToOneRelatedFieldsApp.BetaAppReviewDetail => "betaAppReviewDetail",
@@ -329,6 +334,7 @@ namespace AppStoreConnect
                 "appStoreVersionExperimentsV2" => AppsGameCenterDetailGetToOneRelatedFieldsApp.AppStoreVersionExperimentsV2,
                 "appStoreVersions" => AppsGameCenterDetailGetToOneRelatedFieldsApp.AppStoreVersions,
                 "appTags" => AppsGameCenterDetailGetToOneRelatedFieldsApp.AppTags,
+                "assetLibrary" => AppsGameCenterDetailGetToOneRelatedFieldsApp.AssetLibrary,
                 "backgroundAssets" => AppsGameCenterDetailGetToOneRelatedFieldsApp.BackgroundAssets,
                 "betaAppLocalizations" => AppsGameCenterDetailGetToOneRelatedFieldsApp.BetaAppLocalizations,
                 "betaAppReviewDetail" => AppsGameCenterDetailGetToOneRelatedFieldsApp.BetaAppReviewDetail,

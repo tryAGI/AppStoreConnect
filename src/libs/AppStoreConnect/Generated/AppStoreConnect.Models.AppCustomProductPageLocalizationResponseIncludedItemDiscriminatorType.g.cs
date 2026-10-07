@@ -11,6 +11,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        AppAssetLibraryPlacements,
+        /// <summary>
+        ///
+        /// </summary>
         AppCustomProductPageVersions,
         /// <summary>
         ///
@@ -38,6 +42,7 @@ namespace AppStoreConnect
         {
             return value switch
             {
+                AppCustomProductPageLocalizationResponseIncludedItemDiscriminatorType.AppAssetLibraryPlacements => "appAssetLibraryPlacements",
                 AppCustomProductPageLocalizationResponseIncludedItemDiscriminatorType.AppCustomProductPageVersions => "appCustomProductPageVersions",
                 AppCustomProductPageLocalizationResponseIncludedItemDiscriminatorType.AppKeywords => "appKeywords",
                 AppCustomProductPageLocalizationResponseIncludedItemDiscriminatorType.AppPreviewSets => "appPreviewSets",
@@ -52,6 +57,7 @@ namespace AppStoreConnect
         {
             return value switch
             {
+                "appAssetLibraryPlacements" => AppCustomProductPageLocalizationResponseIncludedItemDiscriminatorType.AppAssetLibraryPlacements,
                 "appCustomProductPageVersions" => AppCustomProductPageLocalizationResponseIncludedItemDiscriminatorType.AppCustomProductPageVersions,
                 "appKeywords" => AppCustomProductPageLocalizationResponseIncludedItemDiscriminatorType.AppKeywords,
                 "appPreviewSets" => AppCustomProductPageLocalizationResponseIncludedItemDiscriminatorType.AppPreviewSets,

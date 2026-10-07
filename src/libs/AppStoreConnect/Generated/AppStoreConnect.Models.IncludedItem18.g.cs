@@ -12,140 +12,163 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEncryptionDeclarationsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppCustomProductPageResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppEncryptionDeclarationDocument? AppEncryptionDeclarationDocuments1 { get; init; }
+        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations1 { get; init; }
 #else
-        public global::AppStoreConnect.AppEncryptionDeclarationDocument? AppEncryptionDeclarationDocuments1 { get; }
+        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations1 { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEncryptionDeclarationDocuments1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageLocalizations1))]
 #endif
-        public bool IsAppEncryptionDeclarationDocuments1 => AppEncryptionDeclarationDocuments1 != null;
+        public bool IsAppCustomProductPageLocalizations1 => AppCustomProductPageLocalizations1 != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppEncryptionDeclarationDocuments1(
+        public bool TryPickAppCustomProductPageLocalizations1(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppEncryptionDeclarationDocument? value)
+            out global::AppStoreConnect.AppCustomProductPageLocalization? value)
         {
-            value = AppEncryptionDeclarationDocuments1;
-            return IsAppEncryptionDeclarationDocuments1;
+            value = AppCustomProductPageLocalizations1;
+            return IsAppCustomProductPageLocalizations1;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEncryptionDeclarationDocument PickAppEncryptionDeclarationDocuments1() => AppEncryptionDeclarationDocuments1 is { } value
+        public global::AppStoreConnect.AppCustomProductPageLocalization PickAppCustomProductPageLocalizations1() => AppCustomProductPageLocalizations1 is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEncryptionDeclarationDocuments1' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageLocalizations1' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.App? AppEncryptionDeclarationDocuments2 { get; init; }
+        public global::AppStoreConnect.AppCustomProductPageVersion? AppCustomProductPageVersions { get; init; }
 #else
-        public global::AppStoreConnect.App? AppEncryptionDeclarationDocuments2 { get; }
+        public global::AppStoreConnect.AppCustomProductPageVersion? AppCustomProductPageVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEncryptionDeclarationDocuments2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageVersions))]
 #endif
-        public bool IsAppEncryptionDeclarationDocuments2 => AppEncryptionDeclarationDocuments2 != null;
+        public bool IsAppCustomProductPageVersions => AppCustomProductPageVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppEncryptionDeclarationDocuments2(
+        public bool TryPickAppCustomProductPageVersions(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppCustomProductPageVersion? value)
+        {
+            value = AppCustomProductPageVersions;
+            return IsAppCustomProductPageVersions;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::AppStoreConnect.AppCustomProductPageVersion PickAppCustomProductPageVersions() => AppCustomProductPageVersions is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageVersions' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.App? AppCustomProductPageLocalizations2 { get; init; }
+#else
+        public global::AppStoreConnect.App? AppCustomProductPageLocalizations2 { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageLocalizations2))]
+#endif
+        public bool IsAppCustomProductPageLocalizations2 => AppCustomProductPageLocalizations2 != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAppCustomProductPageLocalizations2(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.App? value)
         {
-            value = AppEncryptionDeclarationDocuments2;
-            return IsAppEncryptionDeclarationDocuments2;
+            value = AppCustomProductPageLocalizations2;
+            return IsAppCustomProductPageLocalizations2;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickAppEncryptionDeclarationDocuments2() => AppEncryptionDeclarationDocuments2 is { } value
+        public global::AppStoreConnect.App PickAppCustomProductPageLocalizations2() => AppCustomProductPageLocalizations2 is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEncryptionDeclarationDocuments2' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageLocalizations2' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem18(global::AppStoreConnect.AppCustomProductPageLocalization value) => new IncludedItem18((global::AppStoreConnect.AppCustomProductPageLocalization?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Build? Builds { get; init; }
-#else
-        public global::AppStoreConnect.Build? Builds { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.AppCustomProductPageLocalization?(IncludedItem18 @this) => @this.AppCustomProductPageLocalizations1;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
-#endif
-        public bool IsBuilds => Builds != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickBuilds(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.Build? value)
+        public IncludedItem18(global::AppStoreConnect.AppCustomProductPageLocalization? value)
         {
-            value = Builds;
-            return IsBuilds;
+            AppCustomProductPageLocalizations1 = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem18(global::AppStoreConnect.AppEncryptionDeclarationDocument value) => new IncludedItem18((global::AppStoreConnect.AppEncryptionDeclarationDocument?)value);
+        public static IncludedItem18 FromAppCustomProductPageLocalizations1(global::AppStoreConnect.AppCustomProductPageLocalization? value) => new IncludedItem18(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppEncryptionDeclarationDocument?(IncludedItem18 @this) => @this.AppEncryptionDeclarationDocuments1;
+        public static implicit operator IncludedItem18(global::AppStoreConnect.AppCustomProductPageVersion value) => new IncludedItem18((global::AppStoreConnect.AppCustomProductPageVersion?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem18(global::AppStoreConnect.AppEncryptionDeclarationDocument? value)
+        public static implicit operator global::AppStoreConnect.AppCustomProductPageVersion?(IncludedItem18 @this) => @this.AppCustomProductPageVersions;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem18(global::AppStoreConnect.AppCustomProductPageVersion? value)
         {
-            AppEncryptionDeclarationDocuments1 = value;
+            AppCustomProductPageVersions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem18 FromAppEncryptionDeclarationDocuments1(global::AppStoreConnect.AppEncryptionDeclarationDocument? value) => new IncludedItem18(value);
+        public static IncludedItem18 FromAppCustomProductPageVersions(global::AppStoreConnect.AppCustomProductPageVersion? value) => new IncludedItem18(value);
 
         /// <summary>
         ///
@@ -155,77 +178,54 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.App?(IncludedItem18 @this) => @this.AppEncryptionDeclarationDocuments2;
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem18 @this) => @this.AppCustomProductPageLocalizations2;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem18(global::AppStoreConnect.App? value)
         {
-            AppEncryptionDeclarationDocuments2 = value;
+            AppCustomProductPageLocalizations2 = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem18 FromAppEncryptionDeclarationDocuments2(global::AppStoreConnect.App? value) => new IncludedItem18(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem18(global::AppStoreConnect.Build value) => new IncludedItem18((global::AppStoreConnect.Build?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.Build?(IncludedItem18 @this) => @this.Builds;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem18(global::AppStoreConnect.Build? value)
-        {
-            Builds = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem18 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem18(value);
+        public static IncludedItem18 FromAppCustomProductPageLocalizations2(global::AppStoreConnect.App? value) => new IncludedItem18(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem18(
-            global::AppStoreConnect.AppEncryptionDeclarationsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppEncryptionDeclarationDocument? appEncryptionDeclarationDocuments1,
-            global::AppStoreConnect.App? appEncryptionDeclarationDocuments2,
-            global::AppStoreConnect.Build? builds
+            global::AppStoreConnect.AppCustomProductPageResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppCustomProductPageLocalization? appCustomProductPageLocalizations1,
+            global::AppStoreConnect.AppCustomProductPageVersion? appCustomProductPageVersions,
+            global::AppStoreConnect.App? appCustomProductPageLocalizations2
             )
         {
             Type = type;
 
-            AppEncryptionDeclarationDocuments1 = appEncryptionDeclarationDocuments1;
-            AppEncryptionDeclarationDocuments2 = appEncryptionDeclarationDocuments2;
-            Builds = builds;
+            AppCustomProductPageLocalizations1 = appCustomProductPageLocalizations1;
+            AppCustomProductPageVersions = appCustomProductPageVersions;
+            AppCustomProductPageLocalizations2 = appCustomProductPageLocalizations2;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Builds as object ??
-            AppEncryptionDeclarationDocuments2 as object ??
-            AppEncryptionDeclarationDocuments1 as object
+            AppCustomProductPageLocalizations2 as object ??
+            AppCustomProductPageVersions as object ??
+            AppCustomProductPageLocalizations1 as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppEncryptionDeclarationDocuments1?.ToString() ??
-            AppEncryptionDeclarationDocuments2?.ToString() ??
-            Builds?.ToString()
+            AppCustomProductPageLocalizations1?.ToString() ??
+            AppCustomProductPageVersions?.ToString() ??
+            AppCustomProductPageLocalizations2?.ToString()
             ;
 
         /// <summary>
@@ -233,16 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppEncryptionDeclarationDocuments1 && !IsAppEncryptionDeclarationDocuments2 && !IsBuilds || !IsAppEncryptionDeclarationDocuments1 && IsAppEncryptionDeclarationDocuments2 && !IsBuilds || !IsAppEncryptionDeclarationDocuments1 && !IsAppEncryptionDeclarationDocuments2 && IsBuilds;
+            return IsAppCustomProductPageLocalizations1 && !IsAppCustomProductPageVersions && !IsAppCustomProductPageLocalizations2 || !IsAppCustomProductPageLocalizations1 && IsAppCustomProductPageVersions && !IsAppCustomProductPageLocalizations2 || !IsAppCustomProductPageLocalizations1 && !IsAppCustomProductPageVersions && IsAppCustomProductPageLocalizations2;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppEncryptionDeclarationDocument, TResult>? appEncryptionDeclarationDocuments1 = null,
-            global::System.Func<global::AppStoreConnect.App, TResult>? appEncryptionDeclarationDocuments2 = null,
-            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
+            global::System.Func<global::AppStoreConnect.AppCustomProductPageLocalization, TResult>? appCustomProductPageLocalizations1 = null,
+            global::System.Func<global::AppStoreConnect.AppCustomProductPageVersion, TResult>? appCustomProductPageVersions = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? appCustomProductPageLocalizations2 = null,
             bool validate = true)
         {
             if (validate)
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppEncryptionDeclarationDocuments1 is { } __value0 && appEncryptionDeclarationDocuments1 != null)
+            if (AppCustomProductPageLocalizations1 is { } __value0 && appCustomProductPageLocalizations1 != null)
             {
-                return appEncryptionDeclarationDocuments1(__value0);
+                return appCustomProductPageLocalizations1(__value0);
             }
-            else if (AppEncryptionDeclarationDocuments2 is { } __value1 && appEncryptionDeclarationDocuments2 != null)
+            else if (AppCustomProductPageVersions is { } __value1 && appCustomProductPageVersions != null)
             {
-                return appEncryptionDeclarationDocuments2(__value1);
+                return appCustomProductPageVersions(__value1);
             }
-            else if (Builds is { } __value2 && builds != null)
+            else if (AppCustomProductPageLocalizations2 is { } __value2 && appCustomProductPageLocalizations2 != null)
             {
-                return builds(__value2);
+                return appCustomProductPageLocalizations2(__value2);
             }
 
             return default(TResult);
@@ -270,11 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppEncryptionDeclarationDocument>? appEncryptionDeclarationDocuments1 = null,
+            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations1 = null,
 
-            global::System.Action<global::AppStoreConnect.App>? appEncryptionDeclarationDocuments2 = null,
+            global::System.Action<global::AppStoreConnect.AppCustomProductPageVersion>? appCustomProductPageVersions = null,
 
-            global::System.Action<global::AppStoreConnect.Build>? builds = null,
+            global::System.Action<global::AppStoreConnect.App>? appCustomProductPageLocalizations2 = null,
             bool validate = true)
         {
             if (validate)
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppEncryptionDeclarationDocuments1 is { } __value0)
+            if (AppCustomProductPageLocalizations1 is { } __value0)
             {
-                appEncryptionDeclarationDocuments1?.Invoke(__value0);
+                appCustomProductPageLocalizations1?.Invoke(__value0);
             }
-            else if (AppEncryptionDeclarationDocuments2 is { } __value1)
+            else if (AppCustomProductPageVersions is { } __value1)
             {
-                appEncryptionDeclarationDocuments2?.Invoke(__value1);
+                appCustomProductPageVersions?.Invoke(__value1);
             }
-            else if (Builds is { } __value2)
+            else if (AppCustomProductPageLocalizations2 is { } __value2)
             {
-                builds?.Invoke(__value2);
+                appCustomProductPageLocalizations2?.Invoke(__value2);
             }
         }
 
@@ -300,9 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppEncryptionDeclarationDocument>? appEncryptionDeclarationDocuments1 = null,
-            global::System.Action<global::AppStoreConnect.App>? appEncryptionDeclarationDocuments2 = null,
-            global::System.Action<global::AppStoreConnect.Build>? builds = null,
+            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations1 = null,
+            global::System.Action<global::AppStoreConnect.AppCustomProductPageVersion>? appCustomProductPageVersions = null,
+            global::System.Action<global::AppStoreConnect.App>? appCustomProductPageLocalizations2 = null,
             bool validate = true)
         {
             if (validate)
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppEncryptionDeclarationDocuments1 is { } __value0)
+            if (AppCustomProductPageLocalizations1 is { } __value0)
             {
-                appEncryptionDeclarationDocuments1?.Invoke(__value0);
+                appCustomProductPageLocalizations1?.Invoke(__value0);
             }
-            else if (AppEncryptionDeclarationDocuments2 is { } __value1)
+            else if (AppCustomProductPageVersions is { } __value1)
             {
-                appEncryptionDeclarationDocuments2?.Invoke(__value1);
+                appCustomProductPageVersions?.Invoke(__value1);
             }
-            else if (Builds is { } __value2)
+            else if (AppCustomProductPageLocalizations2 is { } __value2)
             {
-                builds?.Invoke(__value2);
+                appCustomProductPageLocalizations2?.Invoke(__value2);
             }
         }
 
@@ -331,12 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppEncryptionDeclarationDocuments1,
-                typeof(global::AppStoreConnect.AppEncryptionDeclarationDocument),
-                AppEncryptionDeclarationDocuments2,
+                AppCustomProductPageLocalizations1,
+                typeof(global::AppStoreConnect.AppCustomProductPageLocalization),
+                AppCustomProductPageVersions,
+                typeof(global::AppStoreConnect.AppCustomProductPageVersion),
+                AppCustomProductPageLocalizations2,
                 typeof(global::AppStoreConnect.App),
-                Builds,
-                typeof(global::AppStoreConnect.Build),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -353,9 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem18 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEncryptionDeclarationDocument?>.Default.Equals(AppEncryptionDeclarationDocuments1, other.AppEncryptionDeclarationDocuments1) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(AppEncryptionDeclarationDocuments2, other.AppEncryptionDeclarationDocuments2) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageLocalization?>.Default.Equals(AppCustomProductPageLocalizations1, other.AppCustomProductPageLocalizations1) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageVersion?>.Default.Equals(AppCustomProductPageVersions, other.AppCustomProductPageVersions) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(AppCustomProductPageLocalizations2, other.AppCustomProductPageLocalizations2)
                 ;
         }
 

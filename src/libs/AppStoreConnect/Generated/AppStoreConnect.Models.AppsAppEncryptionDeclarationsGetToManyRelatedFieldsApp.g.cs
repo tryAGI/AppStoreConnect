@@ -79,6 +79,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        AssetLibrary,
+        /// <summary>
+        ///
+        /// </summary>
         BackgroundAssets,
         /// <summary>
         ///
@@ -263,6 +267,7 @@ namespace AppStoreConnect
                 AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.AppStoreVersionExperimentsV2 => "appStoreVersionExperimentsV2",
                 AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.AppStoreVersions => "appStoreVersions",
                 AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.AppTags => "appTags",
+                AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.AssetLibrary => "assetLibrary",
                 AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.BackgroundAssets => "backgroundAssets",
                 AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.BetaAppLocalizations => "betaAppLocalizations",
                 AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.BetaAppReviewDetail => "betaAppReviewDetail",
@@ -329,6 +334,7 @@ namespace AppStoreConnect
                 "appStoreVersionExperimentsV2" => AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.AppStoreVersionExperimentsV2,
                 "appStoreVersions" => AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.AppStoreVersions,
                 "appTags" => AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.AppTags,
+                "assetLibrary" => AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.AssetLibrary,
                 "backgroundAssets" => AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.BackgroundAssets,
                 "betaAppLocalizations" => AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.BetaAppLocalizations,
                 "betaAppReviewDetail" => AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.BetaAppReviewDetail,

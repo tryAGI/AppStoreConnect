@@ -13,11 +13,13 @@ namespace AppStoreConnect
         /// <param name="fieldsAppScreenshotSets"></param>
         /// <param name="fieldsAppPreviewSets"></param>
         /// <param name="fieldsAppKeywords"></param>
+        /// <param name="fieldsAppAssetLibraryPlacements"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
         /// <param name="limitAppScreenshotSets"></param>
         /// <param name="limitAppPreviewSets"></param>
         /// <param name="limitSearchKeywords"></param>
+        /// <param name="limitPlacements"></param>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -30,11 +32,13 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppScreenshotSet>? fieldsAppScreenshotSets = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppPreviewSet>? fieldsAppPreviewSets = default,
             global::System.Collections.Generic.IList<string>? fieldsAppKeywords = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement>? fieldsAppAssetLibraryPlacements = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedIncludeItem>? include = default,
             int? limitAppScreenshotSets = default,
             int? limitAppPreviewSets = default,
             int? limitSearchKeywords = default,
+            int? limitPlacements = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -46,11 +50,13 @@ namespace AppStoreConnect
         /// <param name="fieldsAppScreenshotSets"></param>
         /// <param name="fieldsAppPreviewSets"></param>
         /// <param name="fieldsAppKeywords"></param>
+        /// <param name="fieldsAppAssetLibraryPlacements"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
         /// <param name="limitAppScreenshotSets"></param>
         /// <param name="limitAppPreviewSets"></param>
         /// <param name="limitSearchKeywords"></param>
+        /// <param name="limitPlacements"></param>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -63,11 +69,13 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppScreenshotSet>? fieldsAppScreenshotSets = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppPreviewSet>? fieldsAppPreviewSets = default,
             global::System.Collections.Generic.IList<string>? fieldsAppKeywords = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement>? fieldsAppAssetLibraryPlacements = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedIncludeItem>? include = default,
             int? limitAppScreenshotSets = default,
             int? limitAppPreviewSets = default,
             int? limitSearchKeywords = default,
+            int? limitPlacements = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

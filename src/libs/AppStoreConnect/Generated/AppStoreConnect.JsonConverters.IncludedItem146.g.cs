@@ -17,48 +17,102 @@ namespace AppStoreConnect.JsonConverters
 
 
             var readerCopy = reader;
-            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.NominationsResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.NominationsResponseIncludedItemDiscriminator> ??
-                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.NominationsResponseIncludedItemDiscriminator)}");
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchasesV2ResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchasesV2ResponseIncludedItemDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchasesV2ResponseIncludedItemDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::AppStoreConnect.Actor? actors = default;
-            if (discriminator?.Type == global::AppStoreConnect.NominationsResponseIncludedItemDiscriminatorType.Actors)
+            global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot? inAppPurchaseAppStoreReviewScreenshots = default;
+            if (discriminator?.Type == global::AppStoreConnect.InAppPurchasesV2ResponseIncludedItemDiscriminatorType.InAppPurchaseAppStoreReviewScreenshots)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Actor), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Actor> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.Actor)}");
-                actors = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot)}");
+                inAppPurchaseAppStoreReviewScreenshots = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.AppEvent? appEvents1 = default;
-            if (discriminator?.Type == global::AppStoreConnect.NominationsResponseIncludedItemDiscriminatorType.AppEvents)
+            global::AppStoreConnect.InAppPurchaseAvailability? inAppPurchaseAvailabilities = default;
+            if (discriminator?.Type == global::AppStoreConnect.InAppPurchasesV2ResponseIncludedItemDiscriminatorType.InAppPurchaseAvailabilities)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppEvent> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppEvent)}");
-                appEvents1 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseAvailability), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseAvailability> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchaseAvailability)}");
+                inAppPurchaseAvailabilities = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.App? appEvents2 = default;
-            if (discriminator?.Type == global::AppStoreConnect.NominationsResponseIncludedItemDiscriminatorType.AppEvents)
+            global::AppStoreConnect.InAppPurchaseContent? inAppPurchaseContents = default;
+            if (discriminator?.Type == global::AppStoreConnect.InAppPurchasesV2ResponseIncludedItemDiscriminatorType.InAppPurchaseContents)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.App)}");
-                appEvents2 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseContent> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchaseContent)}");
+                inAppPurchaseContents = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.Territory? territories = default;
-            if (discriminator?.Type == global::AppStoreConnect.NominationsResponseIncludedItemDiscriminatorType.Territories)
+            global::AppStoreConnect.InAppPurchaseImage? inAppPurchaseImages = default;
+            if (discriminator?.Type == global::AppStoreConnect.InAppPurchasesV2ResponseIncludedItemDiscriminatorType.InAppPurchaseImages)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Territory), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Territory> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.Territory)}");
-                territories = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseImage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseImage> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchaseImage)}");
+                inAppPurchaseImages = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
+            global::AppStoreConnect.InAppPurchaseLocalization? inAppPurchaseLocalizations = default;
+            if (discriminator?.Type == global::AppStoreConnect.InAppPurchasesV2ResponseIncludedItemDiscriminatorType.InAppPurchaseLocalizations)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseLocalization), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseLocalization> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchaseLocalization)}");
+                inAppPurchaseLocalizations = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
+            global::AppStoreConnect.InAppPurchaseOfferCode? inAppPurchaseOfferCodes = default;
+            if (discriminator?.Type == global::AppStoreConnect.InAppPurchasesV2ResponseIncludedItemDiscriminatorType.InAppPurchaseOfferCodes)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferCode), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferCode> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchaseOfferCode)}");
+                inAppPurchaseOfferCodes = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
+            global::AppStoreConnect.InAppPurchasePricePoint? inAppPurchasePricePoints = default;
+            if (discriminator?.Type == global::AppStoreConnect.InAppPurchasesV2ResponseIncludedItemDiscriminatorType.InAppPurchasePricePoints)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchasePricePoint), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchasePricePoint> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchasePricePoint)}");
+                inAppPurchasePricePoints = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
+            global::AppStoreConnect.InAppPurchasePriceSchedule? inAppPurchasePriceSchedules = default;
+            if (discriminator?.Type == global::AppStoreConnect.InAppPurchasesV2ResponseIncludedItemDiscriminatorType.InAppPurchasePriceSchedules)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchasePriceSchedule), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchasePriceSchedule> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchasePriceSchedule)}");
+                inAppPurchasePriceSchedules = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
+            global::AppStoreConnect.InAppPurchaseVersion? inAppPurchaseVersions = default;
+            if (discriminator?.Type == global::AppStoreConnect.InAppPurchasesV2ResponseIncludedItemDiscriminatorType.InAppPurchaseVersions)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseVersion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseVersion> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchaseVersion)}");
+                inAppPurchaseVersions = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
+            global::AppStoreConnect.PromotedPurchase? promotedPurchases = default;
+            if (discriminator?.Type == global::AppStoreConnect.InAppPurchasesV2ResponseIncludedItemDiscriminatorType.PromotedPurchases)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.PromotedPurchase), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.PromotedPurchase> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.PromotedPurchase)}");
+                promotedPurchases = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::AppStoreConnect.IncludedItem146(
                 discriminator?.Type,
-                actors,
+                inAppPurchaseAppStoreReviewScreenshots,
 
-                appEvents1,
+                inAppPurchaseAvailabilities,
 
-                appEvents2,
+                inAppPurchaseContents,
 
-                territories
+                inAppPurchaseImages,
+
+                inAppPurchaseLocalizations,
+
+                inAppPurchaseOfferCodes,
+
+                inAppPurchasePricePoints,
+
+                inAppPurchasePriceSchedules,
+
+                inAppPurchaseVersions,
+
+                promotedPurchases
                 );
 
             return __value;
@@ -73,29 +127,65 @@ namespace AppStoreConnect.JsonConverters
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
-            if (value.IsActors)
+            if (value.IsInAppPurchaseAppStoreReviewScreenshots)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Actor), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Actor?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Actor).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickActors(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseAppStoreReviewScreenshots(), typeInfo);
             }
-            else if (value.IsAppEvents1)
+            else if (value.IsInAppPurchaseAvailabilities)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppEvent?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEvents1(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseAvailability), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseAvailability?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseAvailability).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseAvailabilities(), typeInfo);
             }
-            else if (value.IsAppEvents2)
+            else if (value.IsInAppPurchaseContents)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.App).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEvents2(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseContent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseContent?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseContent).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseContents(), typeInfo);
             }
-            else if (value.IsTerritories)
+            else if (value.IsInAppPurchaseImages)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Territory), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Territory?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Territory).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTerritories(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseImage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseImage?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseImage).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseImages(), typeInfo);
+            }
+            else if (value.IsInAppPurchaseLocalizations)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseLocalization), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseLocalization?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseLocalization).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseLocalizations(), typeInfo);
+            }
+            else if (value.IsInAppPurchaseOfferCodes)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferCode), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferCode?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseOfferCode).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseOfferCodes(), typeInfo);
+            }
+            else if (value.IsInAppPurchasePricePoints)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchasePricePoint), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchasePricePoint?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchasePricePoint).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchasePricePoints(), typeInfo);
+            }
+            else if (value.IsInAppPurchasePriceSchedules)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchasePriceSchedule), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchasePriceSchedule?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchasePriceSchedule).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchasePriceSchedules(), typeInfo);
+            }
+            else if (value.IsInAppPurchaseVersions)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseVersion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseVersion?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseVersion).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseVersions(), typeInfo);
+            }
+            else if (value.IsPromotedPurchases)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.PromotedPurchase), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.PromotedPurchase?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.PromotedPurchase).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickPromotedPurchases(), typeInfo);
             }
         }
     }

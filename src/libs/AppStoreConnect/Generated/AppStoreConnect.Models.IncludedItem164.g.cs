@@ -12,44 +12,81 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionIntroductoryOffersResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.SubscriptionGroupsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionPricePoint? SubscriptionPricePoints { get; init; }
+        public global::AppStoreConnect.SubscriptionGroupLocalization? SubscriptionGroupLocalizations { get; init; }
 #else
-        public global::AppStoreConnect.SubscriptionPricePoint? SubscriptionPricePoints { get; }
+        public global::AppStoreConnect.SubscriptionGroupLocalization? SubscriptionGroupLocalizations { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionPricePoints))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionGroupLocalizations))]
 #endif
-        public bool IsSubscriptionPricePoints => SubscriptionPricePoints != null;
+        public bool IsSubscriptionGroupLocalizations => SubscriptionGroupLocalizations != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptionPricePoints(
+        public bool TryPickSubscriptionGroupLocalizations(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.SubscriptionPricePoint? value)
+            out global::AppStoreConnect.SubscriptionGroupLocalization? value)
         {
-            value = SubscriptionPricePoints;
-            return IsSubscriptionPricePoints;
+            value = SubscriptionGroupLocalizations;
+            return IsSubscriptionGroupLocalizations;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionPricePoint PickSubscriptionPricePoints() => SubscriptionPricePoints is { } value
+        public global::AppStoreConnect.SubscriptionGroupLocalization PickSubscriptionGroupLocalizations() => SubscriptionGroupLocalizations is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPricePoints' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionGroupLocalizations' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.SubscriptionGroupVersion? SubscriptionGroupVersions { get; init; }
+#else
+        public global::AppStoreConnect.SubscriptionGroupVersion? SubscriptionGroupVersions { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionGroupVersions))]
+#endif
+        public bool IsSubscriptionGroupVersions => SubscriptionGroupVersions != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickSubscriptionGroupVersions(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.SubscriptionGroupVersion? value)
+        {
+            value = SubscriptionGroupVersions;
+            return IsSubscriptionGroupVersions;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::AppStoreConnect.SubscriptionGroupVersion PickSubscriptionGroupVersions() => SubscriptionGroupVersions is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionGroupVersions' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -87,65 +124,51 @@ namespace AppStoreConnect
         public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem164(global::AppStoreConnect.SubscriptionGroupLocalization value) => new IncludedItem164((global::AppStoreConnect.SubscriptionGroupLocalization?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Territory? Territories { get; init; }
-#else
-        public global::AppStoreConnect.Territory? Territories { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.SubscriptionGroupLocalization?(IncludedItem164 @this) => @this.SubscriptionGroupLocalizations;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Territories))]
-#endif
-        public bool IsTerritories => Territories != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickTerritories(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.Territory? value)
+        public IncludedItem164(global::AppStoreConnect.SubscriptionGroupLocalization? value)
         {
-            value = Territories;
-            return IsTerritories;
+            SubscriptionGroupLocalizations = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Territory PickTerritories() => Territories is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Territories' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem164(global::AppStoreConnect.SubscriptionPricePoint value) => new IncludedItem164((global::AppStoreConnect.SubscriptionPricePoint?)value);
+        public static IncludedItem164 FromSubscriptionGroupLocalizations(global::AppStoreConnect.SubscriptionGroupLocalization? value) => new IncludedItem164(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionPricePoint?(IncludedItem164 @this) => @this.SubscriptionPricePoints;
+        public static implicit operator IncludedItem164(global::AppStoreConnect.SubscriptionGroupVersion value) => new IncludedItem164((global::AppStoreConnect.SubscriptionGroupVersion?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem164(global::AppStoreConnect.SubscriptionPricePoint? value)
+        public static implicit operator global::AppStoreConnect.SubscriptionGroupVersion?(IncludedItem164 @this) => @this.SubscriptionGroupVersions;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem164(global::AppStoreConnect.SubscriptionGroupVersion? value)
         {
-            SubscriptionPricePoints = value;
+            SubscriptionGroupVersions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem164 FromSubscriptionPricePoints(global::AppStoreConnect.SubscriptionPricePoint? value) => new IncludedItem164(value);
+        public static IncludedItem164 FromSubscriptionGroupVersions(global::AppStoreConnect.SubscriptionGroupVersion? value) => new IncludedItem164(value);
 
         /// <summary>
         ///
@@ -173,59 +196,36 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem164(global::AppStoreConnect.Territory value) => new IncludedItem164((global::AppStoreConnect.Territory?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.Territory?(IncludedItem164 @this) => @this.Territories;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem164(global::AppStoreConnect.Territory? value)
-        {
-            Territories = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem164 FromTerritories(global::AppStoreConnect.Territory? value) => new IncludedItem164(value);
-
-        /// <summary>
-        ///
-        /// </summary>
         public IncludedItem164(
-            global::AppStoreConnect.SubscriptionIntroductoryOffersResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.SubscriptionPricePoint? subscriptionPricePoints,
-            global::AppStoreConnect.Subscription? subscriptions,
-            global::AppStoreConnect.Territory? territories
+            global::AppStoreConnect.SubscriptionGroupsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.SubscriptionGroupLocalization? subscriptionGroupLocalizations,
+            global::AppStoreConnect.SubscriptionGroupVersion? subscriptionGroupVersions,
+            global::AppStoreConnect.Subscription? subscriptions
             )
         {
             Type = type;
 
-            SubscriptionPricePoints = subscriptionPricePoints;
+            SubscriptionGroupLocalizations = subscriptionGroupLocalizations;
+            SubscriptionGroupVersions = subscriptionGroupVersions;
             Subscriptions = subscriptions;
-            Territories = territories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Territories as object ??
             Subscriptions as object ??
-            SubscriptionPricePoints as object
+            SubscriptionGroupVersions as object ??
+            SubscriptionGroupLocalizations as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            SubscriptionPricePoints?.ToString() ??
-            Subscriptions?.ToString() ??
-            Territories?.ToString()
+            SubscriptionGroupLocalizations?.ToString() ??
+            SubscriptionGroupVersions?.ToString() ??
+            Subscriptions?.ToString()
             ;
 
         /// <summary>
@@ -233,16 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsSubscriptionPricePoints && !IsSubscriptions && !IsTerritories || !IsSubscriptionPricePoints && IsSubscriptions && !IsTerritories || !IsSubscriptionPricePoints && !IsSubscriptions && IsTerritories;
+            return IsSubscriptionGroupLocalizations && !IsSubscriptionGroupVersions && !IsSubscriptions || !IsSubscriptionGroupLocalizations && IsSubscriptionGroupVersions && !IsSubscriptions || !IsSubscriptionGroupLocalizations && !IsSubscriptionGroupVersions && IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.SubscriptionPricePoint, TResult>? subscriptionPricePoints = null,
+            global::System.Func<global::AppStoreConnect.SubscriptionGroupLocalization, TResult>? subscriptionGroupLocalizations = null,
+            global::System.Func<global::AppStoreConnect.SubscriptionGroupVersion, TResult>? subscriptionGroupVersions = null,
             global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
-            global::System.Func<global::AppStoreConnect.Territory, TResult>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPricePoints is { } __value0 && subscriptionPricePoints != null)
+            if (SubscriptionGroupLocalizations is { } __value0 && subscriptionGroupLocalizations != null)
             {
-                return subscriptionPricePoints(__value0);
+                return subscriptionGroupLocalizations(__value0);
             }
-            else if (Subscriptions is { } __value1 && subscriptions != null)
+            else if (SubscriptionGroupVersions is { } __value1 && subscriptionGroupVersions != null)
             {
-                return subscriptions(__value1);
+                return subscriptionGroupVersions(__value1);
             }
-            else if (Territories is { } __value2 && territories != null)
+            else if (Subscriptions is { } __value2 && subscriptions != null)
             {
-                return territories(__value2);
+                return subscriptions(__value2);
             }
 
             return default(TResult);
@@ -270,11 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.SubscriptionPricePoint>? subscriptionPricePoints = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionGroupLocalization>? subscriptionGroupLocalizations = null,
+
+            global::System.Action<global::AppStoreConnect.SubscriptionGroupVersion>? subscriptionGroupVersions = null,
 
             global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
-
-            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPricePoints is { } __value0)
+            if (SubscriptionGroupLocalizations is { } __value0)
             {
-                subscriptionPricePoints?.Invoke(__value0);
+                subscriptionGroupLocalizations?.Invoke(__value0);
             }
-            else if (Subscriptions is { } __value1)
+            else if (SubscriptionGroupVersions is { } __value1)
             {
-                subscriptions?.Invoke(__value1);
+                subscriptionGroupVersions?.Invoke(__value1);
             }
-            else if (Territories is { } __value2)
+            else if (Subscriptions is { } __value2)
             {
-                territories?.Invoke(__value2);
+                subscriptions?.Invoke(__value2);
             }
         }
 
@@ -300,9 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.SubscriptionPricePoint>? subscriptionPricePoints = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionGroupLocalization>? subscriptionGroupLocalizations = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionGroupVersion>? subscriptionGroupVersions = null,
             global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
-            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPricePoints is { } __value0)
+            if (SubscriptionGroupLocalizations is { } __value0)
             {
-                subscriptionPricePoints?.Invoke(__value0);
+                subscriptionGroupLocalizations?.Invoke(__value0);
             }
-            else if (Subscriptions is { } __value1)
+            else if (SubscriptionGroupVersions is { } __value1)
             {
-                subscriptions?.Invoke(__value1);
+                subscriptionGroupVersions?.Invoke(__value1);
             }
-            else if (Territories is { } __value2)
+            else if (Subscriptions is { } __value2)
             {
-                territories?.Invoke(__value2);
+                subscriptions?.Invoke(__value2);
             }
         }
 
@@ -331,12 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                SubscriptionPricePoints,
-                typeof(global::AppStoreConnect.SubscriptionPricePoint),
+                SubscriptionGroupLocalizations,
+                typeof(global::AppStoreConnect.SubscriptionGroupLocalization),
+                SubscriptionGroupVersions,
+                typeof(global::AppStoreConnect.SubscriptionGroupVersion),
                 Subscriptions,
                 typeof(global::AppStoreConnect.Subscription),
-                Territories,
-                typeof(global::AppStoreConnect.Territory),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -353,9 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem164 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionPricePoint?>.Default.Equals(SubscriptionPricePoints, other.SubscriptionPricePoints) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Territory?>.Default.Equals(Territories, other.Territories)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionGroupLocalization?>.Default.Equals(SubscriptionGroupLocalizations, other.SubscriptionGroupLocalizations) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionGroupVersion?>.Default.Equals(SubscriptionGroupVersions, other.SubscriptionGroupVersions) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions)
                 ;
         }
 

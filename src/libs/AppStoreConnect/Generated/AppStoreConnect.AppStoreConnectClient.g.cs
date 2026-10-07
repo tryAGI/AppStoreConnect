@@ -175,6 +175,60 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        public AppAssetLibrariesClient AppAssetLibraries => new AppAssetLibrariesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
+        ///
+        /// </summary>
+        public AppAssetLibraryImagesClient AppAssetLibraryImages => new AppAssetLibraryImagesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
+        ///
+        /// </summary>
+        public AppAssetLibraryPlacementOrderingRequestsClient AppAssetLibraryPlacementOrderingRequests => new AppAssetLibraryPlacementOrderingRequestsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
+        ///
+        /// </summary>
+        public AppAssetLibraryPlacementsClient AppAssetLibraryPlacements => new AppAssetLibraryPlacementsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
+        ///
+        /// </summary>
+        public AppAssetLibraryRefDataClient AppAssetLibraryRefData => new AppAssetLibraryRefDataClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
+        ///
+        /// </summary>
+        public AppAssetLibraryVideosClient AppAssetLibraryVideos => new AppAssetLibraryVideosClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
+        ///
+        /// </summary>
         public AppAvailabilitiesClient AppAvailabilities => new AppAvailabilitiesClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,

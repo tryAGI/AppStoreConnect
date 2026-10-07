@@ -12,223 +12,103 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionLocalizationResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppStoreVersionExperimentResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppKeyword? AppKeywords { get; init; }
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatment? AppStoreVersionExperimentTreatments1 { get; init; }
 #else
-        public global::AppStoreConnect.AppKeyword? AppKeywords { get; }
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatment? AppStoreVersionExperimentTreatments1 { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppKeywords))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperimentTreatments1))]
 #endif
-        public bool IsAppKeywords => AppKeywords != null;
+        public bool IsAppStoreVersionExperimentTreatments1 => AppStoreVersionExperimentTreatments1 != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppKeywords(
+        public bool TryPickAppStoreVersionExperimentTreatments1(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppKeyword? value)
+            out global::AppStoreConnect.AppStoreVersionExperimentTreatment? value)
         {
-            value = AppKeywords;
-            return IsAppKeywords;
+            value = AppStoreVersionExperimentTreatments1;
+            return IsAppStoreVersionExperimentTreatments1;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppKeyword PickAppKeywords() => AppKeywords is { } value
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatment PickAppStoreVersionExperimentTreatments1() => AppStoreVersionExperimentTreatments1 is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppKeywords' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatments1' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppPreviewSet? AppPreviewSets { get; init; }
+        public global::AppStoreConnect.AppStoreVersion? AppStoreVersionExperimentTreatments2 { get; init; }
 #else
-        public global::AppStoreConnect.AppPreviewSet? AppPreviewSets { get; }
+        public global::AppStoreConnect.AppStoreVersion? AppStoreVersionExperimentTreatments2 { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppPreviewSets))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperimentTreatments2))]
 #endif
-        public bool IsAppPreviewSets => AppPreviewSets != null;
+        public bool IsAppStoreVersionExperimentTreatments2 => AppStoreVersionExperimentTreatments2 != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppPreviewSets(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppPreviewSet? value)
-        {
-            value = AppPreviewSets;
-            return IsAppPreviewSets;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.AppPreviewSet PickAppPreviewSets() => AppPreviewSets is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppPreviewSets' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppScreenshotSet? AppScreenshotSets { get; init; }
-#else
-        public global::AppStoreConnect.AppScreenshotSet? AppScreenshotSets { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppScreenshotSets))]
-#endif
-        public bool IsAppScreenshotSets => AppScreenshotSets != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppScreenshotSets(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppScreenshotSet? value)
-        {
-            value = AppScreenshotSets;
-            return IsAppScreenshotSets;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.AppScreenshotSet PickAppScreenshotSets() => AppScreenshotSets is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppScreenshotSets' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; init; }
-#else
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions))]
-#endif
-        public bool IsAppStoreVersions => AppStoreVersions != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppStoreVersions(
+        public bool TryPickAppStoreVersionExperimentTreatments2(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.AppStoreVersion? value)
         {
-            value = AppStoreVersions;
-            return IsAppStoreVersions;
+            value = AppStoreVersionExperimentTreatments2;
+            return IsAppStoreVersionExperimentTreatments2;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => AppStoreVersions is { } value
+        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersionExperimentTreatments2() => AppStoreVersionExperimentTreatments2 is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatments2' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem43(global::AppStoreConnect.AppKeyword value) => new IncludedItem43((global::AppStoreConnect.AppKeyword?)value);
+        public static implicit operator IncludedItem43(global::AppStoreConnect.AppStoreVersionExperimentTreatment value) => new IncludedItem43((global::AppStoreConnect.AppStoreVersionExperimentTreatment?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppKeyword?(IncludedItem43 @this) => @this.AppKeywords;
+        public static implicit operator global::AppStoreConnect.AppStoreVersionExperimentTreatment?(IncludedItem43 @this) => @this.AppStoreVersionExperimentTreatments1;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem43(global::AppStoreConnect.AppKeyword? value)
+        public IncludedItem43(global::AppStoreConnect.AppStoreVersionExperimentTreatment? value)
         {
-            AppKeywords = value;
+            AppStoreVersionExperimentTreatments1 = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem43 FromAppKeywords(global::AppStoreConnect.AppKeyword? value) => new IncludedItem43(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem43(global::AppStoreConnect.AppPreviewSet value) => new IncludedItem43((global::AppStoreConnect.AppPreviewSet?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppPreviewSet?(IncludedItem43 @this) => @this.AppPreviewSets;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem43(global::AppStoreConnect.AppPreviewSet? value)
-        {
-            AppPreviewSets = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem43 FromAppPreviewSets(global::AppStoreConnect.AppPreviewSet? value) => new IncludedItem43(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem43(global::AppStoreConnect.AppScreenshotSet value) => new IncludedItem43((global::AppStoreConnect.AppScreenshotSet?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppScreenshotSet?(IncludedItem43 @this) => @this.AppScreenshotSets;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem43(global::AppStoreConnect.AppScreenshotSet? value)
-        {
-            AppScreenshotSets = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem43 FromAppScreenshotSets(global::AppStoreConnect.AppScreenshotSet? value) => new IncludedItem43(value);
+        public static IncludedItem43 FromAppStoreVersionExperimentTreatments1(global::AppStoreConnect.AppStoreVersionExperimentTreatment? value) => new IncludedItem43(value);
 
         /// <summary>
         ///
@@ -238,58 +118,50 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem43 @this) => @this.AppStoreVersions;
+        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem43 @this) => @this.AppStoreVersionExperimentTreatments2;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem43(global::AppStoreConnect.AppStoreVersion? value)
         {
-            AppStoreVersions = value;
+            AppStoreVersionExperimentTreatments2 = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem43 FromAppStoreVersions(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem43(value);
+        public static IncludedItem43 FromAppStoreVersionExperimentTreatments2(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem43(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem43(
-            global::AppStoreConnect.AppStoreVersionLocalizationResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppKeyword? appKeywords,
-            global::AppStoreConnect.AppPreviewSet? appPreviewSets,
-            global::AppStoreConnect.AppScreenshotSet? appScreenshotSets,
-            global::AppStoreConnect.AppStoreVersion? appStoreVersions
+            global::AppStoreConnect.AppStoreVersionExperimentResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppStoreVersionExperimentTreatment? appStoreVersionExperimentTreatments1,
+            global::AppStoreConnect.AppStoreVersion? appStoreVersionExperimentTreatments2
             )
         {
             Type = type;
 
-            AppKeywords = appKeywords;
-            AppPreviewSets = appPreviewSets;
-            AppScreenshotSets = appScreenshotSets;
-            AppStoreVersions = appStoreVersions;
+            AppStoreVersionExperimentTreatments1 = appStoreVersionExperimentTreatments1;
+            AppStoreVersionExperimentTreatments2 = appStoreVersionExperimentTreatments2;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            AppStoreVersions as object ??
-            AppScreenshotSets as object ??
-            AppPreviewSets as object ??
-            AppKeywords as object
+            AppStoreVersionExperimentTreatments2 as object ??
+            AppStoreVersionExperimentTreatments1 as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppKeywords?.ToString() ??
-            AppPreviewSets?.ToString() ??
-            AppScreenshotSets?.ToString() ??
-            AppStoreVersions?.ToString()
+            AppStoreVersionExperimentTreatments1?.ToString() ??
+            AppStoreVersionExperimentTreatments2?.ToString()
             ;
 
         /// <summary>
@@ -297,17 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppKeywords && !IsAppPreviewSets && !IsAppScreenshotSets && !IsAppStoreVersions || !IsAppKeywords && IsAppPreviewSets && !IsAppScreenshotSets && !IsAppStoreVersions || !IsAppKeywords && !IsAppPreviewSets && IsAppScreenshotSets && !IsAppStoreVersions || !IsAppKeywords && !IsAppPreviewSets && !IsAppScreenshotSets && IsAppStoreVersions;
+            return IsAppStoreVersionExperimentTreatments1 && !IsAppStoreVersionExperimentTreatments2 || !IsAppStoreVersionExperimentTreatments1 && IsAppStoreVersionExperimentTreatments2;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppKeyword, TResult>? appKeywords = null,
-            global::System.Func<global::AppStoreConnect.AppPreviewSet, TResult>? appPreviewSets = null,
-            global::System.Func<global::AppStoreConnect.AppScreenshotSet, TResult>? appScreenshotSets = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersions = null,
+            global::System.Func<global::AppStoreConnect.AppStoreVersionExperimentTreatment, TResult>? appStoreVersionExperimentTreatments1 = null,
+            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersionExperimentTreatments2 = null,
             bool validate = true)
         {
             if (validate)
@@ -315,21 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppKeywords is { } __value0 && appKeywords != null)
+            if (AppStoreVersionExperimentTreatments1 is { } __value0 && appStoreVersionExperimentTreatments1 != null)
             {
-                return appKeywords(__value0);
+                return appStoreVersionExperimentTreatments1(__value0);
             }
-            else if (AppPreviewSets is { } __value1 && appPreviewSets != null)
+            else if (AppStoreVersionExperimentTreatments2 is { } __value1 && appStoreVersionExperimentTreatments2 != null)
             {
-                return appPreviewSets(__value1);
-            }
-            else if (AppScreenshotSets is { } __value2 && appScreenshotSets != null)
-            {
-                return appScreenshotSets(__value2);
-            }
-            else if (AppStoreVersions is { } __value3 && appStoreVersions != null)
-            {
-                return appStoreVersions(__value3);
+                return appStoreVersionExperimentTreatments2(__value1);
             }
 
             return default(TResult);
@@ -339,13 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppKeyword>? appKeywords = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatment>? appStoreVersionExperimentTreatments1 = null,
 
-            global::System.Action<global::AppStoreConnect.AppPreviewSet>? appPreviewSets = null,
-
-            global::System.Action<global::AppStoreConnect.AppScreenshotSet>? appScreenshotSets = null,
-
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersionExperimentTreatments2 = null,
             bool validate = true)
         {
             if (validate)
@@ -353,21 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppKeywords is { } __value0)
+            if (AppStoreVersionExperimentTreatments1 is { } __value0)
             {
-                appKeywords?.Invoke(__value0);
+                appStoreVersionExperimentTreatments1?.Invoke(__value0);
             }
-            else if (AppPreviewSets is { } __value1)
+            else if (AppStoreVersionExperimentTreatments2 is { } __value1)
             {
-                appPreviewSets?.Invoke(__value1);
-            }
-            else if (AppScreenshotSets is { } __value2)
-            {
-                appScreenshotSets?.Invoke(__value2);
-            }
-            else if (AppStoreVersions is { } __value3)
-            {
-                appStoreVersions?.Invoke(__value3);
+                appStoreVersionExperimentTreatments2?.Invoke(__value1);
             }
         }
 
@@ -375,10 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppKeyword>? appKeywords = null,
-            global::System.Action<global::AppStoreConnect.AppPreviewSet>? appPreviewSets = null,
-            global::System.Action<global::AppStoreConnect.AppScreenshotSet>? appScreenshotSets = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatment>? appStoreVersionExperimentTreatments1 = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersionExperimentTreatments2 = null,
             bool validate = true)
         {
             if (validate)
@@ -386,21 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppKeywords is { } __value0)
+            if (AppStoreVersionExperimentTreatments1 is { } __value0)
             {
-                appKeywords?.Invoke(__value0);
+                appStoreVersionExperimentTreatments1?.Invoke(__value0);
             }
-            else if (AppPreviewSets is { } __value1)
+            else if (AppStoreVersionExperimentTreatments2 is { } __value1)
             {
-                appPreviewSets?.Invoke(__value1);
-            }
-            else if (AppScreenshotSets is { } __value2)
-            {
-                appScreenshotSets?.Invoke(__value2);
-            }
-            else if (AppStoreVersions is { } __value3)
-            {
-                appStoreVersions?.Invoke(__value3);
+                appStoreVersionExperimentTreatments2?.Invoke(__value1);
             }
         }
 
@@ -411,13 +251,9 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppKeywords,
-                typeof(global::AppStoreConnect.AppKeyword),
-                AppPreviewSets,
-                typeof(global::AppStoreConnect.AppPreviewSet),
-                AppScreenshotSets,
-                typeof(global::AppStoreConnect.AppScreenshotSet),
-                AppStoreVersions,
+                AppStoreVersionExperimentTreatments1,
+                typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatment),
+                AppStoreVersionExperimentTreatments2,
                 typeof(global::AppStoreConnect.AppStoreVersion),
             };
             const int offset = unchecked((int)2166136261);
@@ -435,10 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem43 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppKeyword?>.Default.Equals(AppKeywords, other.AppKeywords) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppPreviewSet?>.Default.Equals(AppPreviewSets, other.AppPreviewSets) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppScreenshotSet?>.Default.Equals(AppScreenshotSets, other.AppScreenshotSets) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions, other.AppStoreVersions)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperimentTreatment?>.Default.Equals(AppStoreVersionExperimentTreatments1, other.AppStoreVersionExperimentTreatments1) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersionExperimentTreatments2, other.AppStoreVersionExperimentTreatments2)
                 ;
         }
 

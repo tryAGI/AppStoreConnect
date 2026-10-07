@@ -12,220 +12,220 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseOfferCodesResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.GameCenterMatchmakingRuleSetsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode? InAppPurchaseOfferCodeCustomCodes { get; init; }
+        public global::AppStoreConnect.GameCenterMatchmakingQueue? GameCenterMatchmakingQueues { get; init; }
 #else
-        public global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode? InAppPurchaseOfferCodeCustomCodes { get; }
+        public global::AppStoreConnect.GameCenterMatchmakingQueue? GameCenterMatchmakingQueues { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseOfferCodeCustomCodes))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterMatchmakingQueues))]
 #endif
-        public bool IsInAppPurchaseOfferCodeCustomCodes => InAppPurchaseOfferCodeCustomCodes != null;
+        public bool IsGameCenterMatchmakingQueues => GameCenterMatchmakingQueues != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickInAppPurchaseOfferCodeCustomCodes(
+        public bool TryPickGameCenterMatchmakingQueues(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode? value)
+            out global::AppStoreConnect.GameCenterMatchmakingQueue? value)
         {
-            value = InAppPurchaseOfferCodeCustomCodes;
-            return IsInAppPurchaseOfferCodeCustomCodes;
+            value = GameCenterMatchmakingQueues;
+            return IsGameCenterMatchmakingQueues;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode PickInAppPurchaseOfferCodeCustomCodes() => InAppPurchaseOfferCodeCustomCodes is { } value
+        public global::AppStoreConnect.GameCenterMatchmakingQueue PickGameCenterMatchmakingQueues() => GameCenterMatchmakingQueues is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseOfferCodeCustomCodes' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterMatchmakingQueues' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode? InAppPurchaseOfferCodeOneTimeUseCodes { get; init; }
+        public global::AppStoreConnect.GameCenterMatchmakingRule? GameCenterMatchmakingRules { get; init; }
 #else
-        public global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode? InAppPurchaseOfferCodeOneTimeUseCodes { get; }
+        public global::AppStoreConnect.GameCenterMatchmakingRule? GameCenterMatchmakingRules { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseOfferCodeOneTimeUseCodes))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterMatchmakingRules))]
 #endif
-        public bool IsInAppPurchaseOfferCodeOneTimeUseCodes => InAppPurchaseOfferCodeOneTimeUseCodes != null;
+        public bool IsGameCenterMatchmakingRules => GameCenterMatchmakingRules != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickInAppPurchaseOfferCodeOneTimeUseCodes(
+        public bool TryPickGameCenterMatchmakingRules(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode? value)
+            out global::AppStoreConnect.GameCenterMatchmakingRule? value)
         {
-            value = InAppPurchaseOfferCodeOneTimeUseCodes;
-            return IsInAppPurchaseOfferCodeOneTimeUseCodes;
+            value = GameCenterMatchmakingRules;
+            return IsGameCenterMatchmakingRules;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode PickInAppPurchaseOfferCodeOneTimeUseCodes() => InAppPurchaseOfferCodeOneTimeUseCodes is { } value
+        public global::AppStoreConnect.GameCenterMatchmakingRule PickGameCenterMatchmakingRules() => GameCenterMatchmakingRules is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseOfferCodeOneTimeUseCodes' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterMatchmakingRules' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.InAppPurchaseOfferPrice? InAppPurchaseOfferPrices { get; init; }
+        public global::AppStoreConnect.GameCenterMatchmakingTeam? GameCenterMatchmakingTeams { get; init; }
 #else
-        public global::AppStoreConnect.InAppPurchaseOfferPrice? InAppPurchaseOfferPrices { get; }
+        public global::AppStoreConnect.GameCenterMatchmakingTeam? GameCenterMatchmakingTeams { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseOfferPrices))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterMatchmakingTeams))]
 #endif
-        public bool IsInAppPurchaseOfferPrices => InAppPurchaseOfferPrices != null;
+        public bool IsGameCenterMatchmakingTeams => GameCenterMatchmakingTeams != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickInAppPurchaseOfferPrices(
+        public bool TryPickGameCenterMatchmakingTeams(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.InAppPurchaseOfferPrice? value)
+            out global::AppStoreConnect.GameCenterMatchmakingTeam? value)
         {
-            value = InAppPurchaseOfferPrices;
-            return IsInAppPurchaseOfferPrices;
+            value = GameCenterMatchmakingTeams;
+            return IsGameCenterMatchmakingTeams;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseOfferPrice PickInAppPurchaseOfferPrices() => InAppPurchaseOfferPrices is { } value
+        public global::AppStoreConnect.GameCenterMatchmakingTeam PickGameCenterMatchmakingTeams() => GameCenterMatchmakingTeams is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseOfferPrices' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterMatchmakingTeams' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem136(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode value) => new IncludedItem136((global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode?)value);
+        public static implicit operator IncludedItem136(global::AppStoreConnect.GameCenterMatchmakingQueue value) => new IncludedItem136((global::AppStoreConnect.GameCenterMatchmakingQueue?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode?(IncludedItem136 @this) => @this.InAppPurchaseOfferCodeCustomCodes;
+        public static implicit operator global::AppStoreConnect.GameCenterMatchmakingQueue?(IncludedItem136 @this) => @this.GameCenterMatchmakingQueues;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem136(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode? value)
+        public IncludedItem136(global::AppStoreConnect.GameCenterMatchmakingQueue? value)
         {
-            InAppPurchaseOfferCodeCustomCodes = value;
+            GameCenterMatchmakingQueues = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem136 FromInAppPurchaseOfferCodeCustomCodes(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode? value) => new IncludedItem136(value);
+        public static IncludedItem136 FromGameCenterMatchmakingQueues(global::AppStoreConnect.GameCenterMatchmakingQueue? value) => new IncludedItem136(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem136(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode value) => new IncludedItem136((global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode?)value);
+        public static implicit operator IncludedItem136(global::AppStoreConnect.GameCenterMatchmakingRule value) => new IncludedItem136((global::AppStoreConnect.GameCenterMatchmakingRule?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode?(IncludedItem136 @this) => @this.InAppPurchaseOfferCodeOneTimeUseCodes;
+        public static implicit operator global::AppStoreConnect.GameCenterMatchmakingRule?(IncludedItem136 @this) => @this.GameCenterMatchmakingRules;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem136(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode? value)
+        public IncludedItem136(global::AppStoreConnect.GameCenterMatchmakingRule? value)
         {
-            InAppPurchaseOfferCodeOneTimeUseCodes = value;
+            GameCenterMatchmakingRules = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem136 FromInAppPurchaseOfferCodeOneTimeUseCodes(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode? value) => new IncludedItem136(value);
+        public static IncludedItem136 FromGameCenterMatchmakingRules(global::AppStoreConnect.GameCenterMatchmakingRule? value) => new IncludedItem136(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem136(global::AppStoreConnect.InAppPurchaseOfferPrice value) => new IncludedItem136((global::AppStoreConnect.InAppPurchaseOfferPrice?)value);
+        public static implicit operator IncludedItem136(global::AppStoreConnect.GameCenterMatchmakingTeam value) => new IncludedItem136((global::AppStoreConnect.GameCenterMatchmakingTeam?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.InAppPurchaseOfferPrice?(IncludedItem136 @this) => @this.InAppPurchaseOfferPrices;
+        public static implicit operator global::AppStoreConnect.GameCenterMatchmakingTeam?(IncludedItem136 @this) => @this.GameCenterMatchmakingTeams;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem136(global::AppStoreConnect.InAppPurchaseOfferPrice? value)
+        public IncludedItem136(global::AppStoreConnect.GameCenterMatchmakingTeam? value)
         {
-            InAppPurchaseOfferPrices = value;
+            GameCenterMatchmakingTeams = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem136 FromInAppPurchaseOfferPrices(global::AppStoreConnect.InAppPurchaseOfferPrice? value) => new IncludedItem136(value);
+        public static IncludedItem136 FromGameCenterMatchmakingTeams(global::AppStoreConnect.GameCenterMatchmakingTeam? value) => new IncludedItem136(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem136(
-            global::AppStoreConnect.InAppPurchaseOfferCodesResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode? inAppPurchaseOfferCodeCustomCodes,
-            global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode? inAppPurchaseOfferCodeOneTimeUseCodes,
-            global::AppStoreConnect.InAppPurchaseOfferPrice? inAppPurchaseOfferPrices
+            global::AppStoreConnect.GameCenterMatchmakingRuleSetsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.GameCenterMatchmakingQueue? gameCenterMatchmakingQueues,
+            global::AppStoreConnect.GameCenterMatchmakingRule? gameCenterMatchmakingRules,
+            global::AppStoreConnect.GameCenterMatchmakingTeam? gameCenterMatchmakingTeams
             )
         {
             Type = type;
 
-            InAppPurchaseOfferCodeCustomCodes = inAppPurchaseOfferCodeCustomCodes;
-            InAppPurchaseOfferCodeOneTimeUseCodes = inAppPurchaseOfferCodeOneTimeUseCodes;
-            InAppPurchaseOfferPrices = inAppPurchaseOfferPrices;
+            GameCenterMatchmakingQueues = gameCenterMatchmakingQueues;
+            GameCenterMatchmakingRules = gameCenterMatchmakingRules;
+            GameCenterMatchmakingTeams = gameCenterMatchmakingTeams;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            InAppPurchaseOfferPrices as object ??
-            InAppPurchaseOfferCodeOneTimeUseCodes as object ??
-            InAppPurchaseOfferCodeCustomCodes as object
+            GameCenterMatchmakingTeams as object ??
+            GameCenterMatchmakingRules as object ??
+            GameCenterMatchmakingQueues as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            InAppPurchaseOfferCodeCustomCodes?.ToString() ??
-            InAppPurchaseOfferCodeOneTimeUseCodes?.ToString() ??
-            InAppPurchaseOfferPrices?.ToString()
+            GameCenterMatchmakingQueues?.ToString() ??
+            GameCenterMatchmakingRules?.ToString() ??
+            GameCenterMatchmakingTeams?.ToString()
             ;
 
         /// <summary>
@@ -233,16 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsInAppPurchaseOfferCodeCustomCodes && !IsInAppPurchaseOfferCodeOneTimeUseCodes && !IsInAppPurchaseOfferPrices || !IsInAppPurchaseOfferCodeCustomCodes && IsInAppPurchaseOfferCodeOneTimeUseCodes && !IsInAppPurchaseOfferPrices || !IsInAppPurchaseOfferCodeCustomCodes && !IsInAppPurchaseOfferCodeOneTimeUseCodes && IsInAppPurchaseOfferPrices;
+            return IsGameCenterMatchmakingQueues && !IsGameCenterMatchmakingRules && !IsGameCenterMatchmakingTeams || !IsGameCenterMatchmakingQueues && IsGameCenterMatchmakingRules && !IsGameCenterMatchmakingTeams || !IsGameCenterMatchmakingQueues && !IsGameCenterMatchmakingRules && IsGameCenterMatchmakingTeams;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode, TResult>? inAppPurchaseOfferCodeCustomCodes = null,
-            global::System.Func<global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode, TResult>? inAppPurchaseOfferCodeOneTimeUseCodes = null,
-            global::System.Func<global::AppStoreConnect.InAppPurchaseOfferPrice, TResult>? inAppPurchaseOfferPrices = null,
+            global::System.Func<global::AppStoreConnect.GameCenterMatchmakingQueue, TResult>? gameCenterMatchmakingQueues = null,
+            global::System.Func<global::AppStoreConnect.GameCenterMatchmakingRule, TResult>? gameCenterMatchmakingRules = null,
+            global::System.Func<global::AppStoreConnect.GameCenterMatchmakingTeam, TResult>? gameCenterMatchmakingTeams = null,
             bool validate = true)
         {
             if (validate)
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (InAppPurchaseOfferCodeCustomCodes is { } __value0 && inAppPurchaseOfferCodeCustomCodes != null)
+            if (GameCenterMatchmakingQueues is { } __value0 && gameCenterMatchmakingQueues != null)
             {
-                return inAppPurchaseOfferCodeCustomCodes(__value0);
+                return gameCenterMatchmakingQueues(__value0);
             }
-            else if (InAppPurchaseOfferCodeOneTimeUseCodes is { } __value1 && inAppPurchaseOfferCodeOneTimeUseCodes != null)
+            else if (GameCenterMatchmakingRules is { } __value1 && gameCenterMatchmakingRules != null)
             {
-                return inAppPurchaseOfferCodeOneTimeUseCodes(__value1);
+                return gameCenterMatchmakingRules(__value1);
             }
-            else if (InAppPurchaseOfferPrices is { } __value2 && inAppPurchaseOfferPrices != null)
+            else if (GameCenterMatchmakingTeams is { } __value2 && gameCenterMatchmakingTeams != null)
             {
-                return inAppPurchaseOfferPrices(__value2);
+                return gameCenterMatchmakingTeams(__value2);
             }
 
             return default(TResult);
@@ -270,11 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode>? inAppPurchaseOfferCodeCustomCodes = null,
+            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingQueue>? gameCenterMatchmakingQueues = null,
 
-            global::System.Action<global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode>? inAppPurchaseOfferCodeOneTimeUseCodes = null,
+            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingRule>? gameCenterMatchmakingRules = null,
 
-            global::System.Action<global::AppStoreConnect.InAppPurchaseOfferPrice>? inAppPurchaseOfferPrices = null,
+            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingTeam>? gameCenterMatchmakingTeams = null,
             bool validate = true)
         {
             if (validate)
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (InAppPurchaseOfferCodeCustomCodes is { } __value0)
+            if (GameCenterMatchmakingQueues is { } __value0)
             {
-                inAppPurchaseOfferCodeCustomCodes?.Invoke(__value0);
+                gameCenterMatchmakingQueues?.Invoke(__value0);
             }
-            else if (InAppPurchaseOfferCodeOneTimeUseCodes is { } __value1)
+            else if (GameCenterMatchmakingRules is { } __value1)
             {
-                inAppPurchaseOfferCodeOneTimeUseCodes?.Invoke(__value1);
+                gameCenterMatchmakingRules?.Invoke(__value1);
             }
-            else if (InAppPurchaseOfferPrices is { } __value2)
+            else if (GameCenterMatchmakingTeams is { } __value2)
             {
-                inAppPurchaseOfferPrices?.Invoke(__value2);
+                gameCenterMatchmakingTeams?.Invoke(__value2);
             }
         }
 
@@ -300,9 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode>? inAppPurchaseOfferCodeCustomCodes = null,
-            global::System.Action<global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode>? inAppPurchaseOfferCodeOneTimeUseCodes = null,
-            global::System.Action<global::AppStoreConnect.InAppPurchaseOfferPrice>? inAppPurchaseOfferPrices = null,
+            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingQueue>? gameCenterMatchmakingQueues = null,
+            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingRule>? gameCenterMatchmakingRules = null,
+            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingTeam>? gameCenterMatchmakingTeams = null,
             bool validate = true)
         {
             if (validate)
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (InAppPurchaseOfferCodeCustomCodes is { } __value0)
+            if (GameCenterMatchmakingQueues is { } __value0)
             {
-                inAppPurchaseOfferCodeCustomCodes?.Invoke(__value0);
+                gameCenterMatchmakingQueues?.Invoke(__value0);
             }
-            else if (InAppPurchaseOfferCodeOneTimeUseCodes is { } __value1)
+            else if (GameCenterMatchmakingRules is { } __value1)
             {
-                inAppPurchaseOfferCodeOneTimeUseCodes?.Invoke(__value1);
+                gameCenterMatchmakingRules?.Invoke(__value1);
             }
-            else if (InAppPurchaseOfferPrices is { } __value2)
+            else if (GameCenterMatchmakingTeams is { } __value2)
             {
-                inAppPurchaseOfferPrices?.Invoke(__value2);
+                gameCenterMatchmakingTeams?.Invoke(__value2);
             }
         }
 
@@ -331,12 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                InAppPurchaseOfferCodeCustomCodes,
-                typeof(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode),
-                InAppPurchaseOfferCodeOneTimeUseCodes,
-                typeof(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode),
-                InAppPurchaseOfferPrices,
-                typeof(global::AppStoreConnect.InAppPurchaseOfferPrice),
+                GameCenterMatchmakingQueues,
+                typeof(global::AppStoreConnect.GameCenterMatchmakingQueue),
+                GameCenterMatchmakingRules,
+                typeof(global::AppStoreConnect.GameCenterMatchmakingRule),
+                GameCenterMatchmakingTeams,
+                typeof(global::AppStoreConnect.GameCenterMatchmakingTeam),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -353,9 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem136 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode?>.Default.Equals(InAppPurchaseOfferCodeCustomCodes, other.InAppPurchaseOfferCodeCustomCodes) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode?>.Default.Equals(InAppPurchaseOfferCodeOneTimeUseCodes, other.InAppPurchaseOfferCodeOneTimeUseCodes) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseOfferPrice?>.Default.Equals(InAppPurchaseOfferPrices, other.InAppPurchaseOfferPrices)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterMatchmakingQueue?>.Default.Equals(GameCenterMatchmakingQueues, other.GameCenterMatchmakingQueues) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterMatchmakingRule?>.Default.Equals(GameCenterMatchmakingRules, other.GameCenterMatchmakingRules) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterMatchmakingTeam?>.Default.Equals(GameCenterMatchmakingTeams, other.GameCenterMatchmakingTeams)
                 ;
         }
 

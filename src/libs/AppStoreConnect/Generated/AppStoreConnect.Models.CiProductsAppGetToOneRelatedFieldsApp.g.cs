@@ -79,6 +79,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        AssetLibrary,
+        /// <summary>
+        ///
+        /// </summary>
         BackgroundAssets,
         /// <summary>
         ///
@@ -263,6 +267,7 @@ namespace AppStoreConnect
                 CiProductsAppGetToOneRelatedFieldsApp.AppStoreVersionExperimentsV2 => "appStoreVersionExperimentsV2",
                 CiProductsAppGetToOneRelatedFieldsApp.AppStoreVersions => "appStoreVersions",
                 CiProductsAppGetToOneRelatedFieldsApp.AppTags => "appTags",
+                CiProductsAppGetToOneRelatedFieldsApp.AssetLibrary => "assetLibrary",
                 CiProductsAppGetToOneRelatedFieldsApp.BackgroundAssets => "backgroundAssets",
                 CiProductsAppGetToOneRelatedFieldsApp.BetaAppLocalizations => "betaAppLocalizations",
                 CiProductsAppGetToOneRelatedFieldsApp.BetaAppReviewDetail => "betaAppReviewDetail",
@@ -329,6 +334,7 @@ namespace AppStoreConnect
                 "appStoreVersionExperimentsV2" => CiProductsAppGetToOneRelatedFieldsApp.AppStoreVersionExperimentsV2,
                 "appStoreVersions" => CiProductsAppGetToOneRelatedFieldsApp.AppStoreVersions,
                 "appTags" => CiProductsAppGetToOneRelatedFieldsApp.AppTags,
+                "assetLibrary" => CiProductsAppGetToOneRelatedFieldsApp.AssetLibrary,
                 "backgroundAssets" => CiProductsAppGetToOneRelatedFieldsApp.BackgroundAssets,
                 "betaAppLocalizations" => CiProductsAppGetToOneRelatedFieldsApp.BetaAppLocalizations,
                 "betaAppReviewDetail" => CiProductsAppGetToOneRelatedFieldsApp.BetaAppReviewDetail,

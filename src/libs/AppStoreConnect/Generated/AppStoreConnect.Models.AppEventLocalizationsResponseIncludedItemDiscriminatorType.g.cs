@@ -11,6 +11,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        AppAssetLibraryPlacements,
+        /// <summary>
+        ///
+        /// </summary>
         AppEventScreenshots,
         /// <summary>
         ///
@@ -34,6 +38,7 @@ namespace AppStoreConnect
         {
             return value switch
             {
+                AppEventLocalizationsResponseIncludedItemDiscriminatorType.AppAssetLibraryPlacements => "appAssetLibraryPlacements",
                 AppEventLocalizationsResponseIncludedItemDiscriminatorType.AppEventScreenshots => "appEventScreenshots",
                 AppEventLocalizationsResponseIncludedItemDiscriminatorType.AppEventVideoClips => "appEventVideoClips",
                 AppEventLocalizationsResponseIncludedItemDiscriminatorType.AppEvents => "appEvents",
@@ -47,6 +52,7 @@ namespace AppStoreConnect
         {
             return value switch
             {
+                "appAssetLibraryPlacements" => AppEventLocalizationsResponseIncludedItemDiscriminatorType.AppAssetLibraryPlacements,
                 "appEventScreenshots" => AppEventLocalizationsResponseIncludedItemDiscriminatorType.AppEventScreenshots,
                 "appEventVideoClips" => AppEventLocalizationsResponseIncludedItemDiscriminatorType.AppEventVideoClips,
                 "appEvents" => AppEventLocalizationsResponseIncludedItemDiscriminatorType.AppEvents,

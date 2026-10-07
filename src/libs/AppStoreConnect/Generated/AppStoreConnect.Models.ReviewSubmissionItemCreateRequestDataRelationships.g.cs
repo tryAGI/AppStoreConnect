@@ -48,6 +48,18 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("appAssetLibraryImage")]
+        public global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImage? AppAssetLibraryImage { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("appAssetLibraryVideo")]
+        public global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideo? AppAssetLibraryVideo { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("backgroundAssetVersion")]
         public global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsBackgroundAssetVersion? BackgroundAssetVersion { get; set; }
 
@@ -114,6 +126,8 @@ namespace AppStoreConnect
         /// <param name="appStoreVersionExperiment"></param>
         /// <param name="appStoreVersionExperimentV2"></param>
         /// <param name="appEvent"></param>
+        /// <param name="appAssetLibraryImage"></param>
+        /// <param name="appAssetLibraryVideo"></param>
         /// <param name="backgroundAssetVersion"></param>
         /// <param name="gameCenterAchievementVersion"></param>
         /// <param name="gameCenterActivityVersion"></param>
@@ -133,6 +147,8 @@ namespace AppStoreConnect
             global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppStoreVersionExperiment? appStoreVersionExperiment,
             global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppStoreVersionExperimentV2? appStoreVersionExperimentV2,
             global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppEvent? appEvent,
+            global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImage? appAssetLibraryImage,
+            global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideo? appAssetLibraryVideo,
             global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsBackgroundAssetVersion? backgroundAssetVersion,
             global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsGameCenterAchievementVersion? gameCenterAchievementVersion,
             global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsGameCenterActivityVersion? gameCenterActivityVersion,
@@ -149,6 +165,8 @@ namespace AppStoreConnect
             this.AppStoreVersionExperiment = appStoreVersionExperiment;
             this.AppStoreVersionExperimentV2 = appStoreVersionExperimentV2;
             this.AppEvent = appEvent;
+            this.AppAssetLibraryImage = appAssetLibraryImage;
+            this.AppAssetLibraryVideo = appAssetLibraryVideo;
             this.BackgroundAssetVersion = backgroundAssetVersion;
             this.GameCenterAchievementVersion = gameCenterAchievementVersion;
             this.GameCenterActivityVersion = gameCenterActivityVersion;

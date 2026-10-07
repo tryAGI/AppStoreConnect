@@ -23,6 +23,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        Placements,
+        /// <summary>
+        ///
+        /// </summary>
         SearchKeywords,
     }
 
@@ -41,6 +45,7 @@ namespace AppStoreConnect
                 AppStoreVersionLocalizationsGetInstanceIncludeItem.AppPreviewSets => "appPreviewSets",
                 AppStoreVersionLocalizationsGetInstanceIncludeItem.AppScreenshotSets => "appScreenshotSets",
                 AppStoreVersionLocalizationsGetInstanceIncludeItem.AppStoreVersion => "appStoreVersion",
+                AppStoreVersionLocalizationsGetInstanceIncludeItem.Placements => "placements",
                 AppStoreVersionLocalizationsGetInstanceIncludeItem.SearchKeywords => "searchKeywords",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -55,6 +60,7 @@ namespace AppStoreConnect
                 "appPreviewSets" => AppStoreVersionLocalizationsGetInstanceIncludeItem.AppPreviewSets,
                 "appScreenshotSets" => AppStoreVersionLocalizationsGetInstanceIncludeItem.AppScreenshotSets,
                 "appStoreVersion" => AppStoreVersionLocalizationsGetInstanceIncludeItem.AppStoreVersion,
+                "placements" => AppStoreVersionLocalizationsGetInstanceIncludeItem.Placements,
                 "searchKeywords" => AppStoreVersionLocalizationsGetInstanceIncludeItem.SearchKeywords,
                 _ => null,
             };

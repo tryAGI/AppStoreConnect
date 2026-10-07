@@ -33,11 +33,13 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppScreenshotSet>? fieldsAppScreenshotSets,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppPreviewSet>? fieldsAppPreviewSets,
             global::System.Collections.Generic.IList<string>? fieldsAppKeywords,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement>? fieldsAppAssetLibraryPlacements,
             ref int? limit,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedIncludeItem>? include,
             ref int? limitAppScreenshotSets,
             ref int? limitAppPreviewSets,
             ref int? limitSearchKeywords,
+            ref int? limitPlacements,
             ref string id);
         partial void PrepareAppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedRequest(
             global::System.Net.Http.HttpClient httpClient,
@@ -48,11 +50,13 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppScreenshotSet>? fieldsAppScreenshotSets,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppPreviewSet>? fieldsAppPreviewSets,
             global::System.Collections.Generic.IList<string>? fieldsAppKeywords,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement>? fieldsAppAssetLibraryPlacements,
             int? limit,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedIncludeItem>? include,
             int? limitAppScreenshotSets,
             int? limitAppPreviewSets,
             int? limitSearchKeywords,
+            int? limitPlacements,
             string id);
         partial void ProcessAppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -72,11 +76,13 @@ namespace AppStoreConnect
         /// <param name="fieldsAppScreenshotSets"></param>
         /// <param name="fieldsAppPreviewSets"></param>
         /// <param name="fieldsAppKeywords"></param>
+        /// <param name="fieldsAppAssetLibraryPlacements"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
         /// <param name="limitAppScreenshotSets"></param>
         /// <param name="limitAppPreviewSets"></param>
         /// <param name="limitSearchKeywords"></param>
+        /// <param name="limitPlacements"></param>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -89,11 +95,13 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppScreenshotSet>? fieldsAppScreenshotSets = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppPreviewSet>? fieldsAppPreviewSets = default,
             global::System.Collections.Generic.IList<string>? fieldsAppKeywords = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement>? fieldsAppAssetLibraryPlacements = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedIncludeItem>? include = default,
             int? limitAppScreenshotSets = default,
             int? limitAppPreviewSets = default,
             int? limitSearchKeywords = default,
+            int? limitPlacements = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -105,11 +113,13 @@ namespace AppStoreConnect
                 fieldsAppScreenshotSets: fieldsAppScreenshotSets,
                 fieldsAppPreviewSets: fieldsAppPreviewSets,
                 fieldsAppKeywords: fieldsAppKeywords,
+                fieldsAppAssetLibraryPlacements: fieldsAppAssetLibraryPlacements,
                 limit: limit,
                 include: include,
                 limitAppScreenshotSets: limitAppScreenshotSets,
                 limitAppPreviewSets: limitAppPreviewSets,
                 limitSearchKeywords: limitSearchKeywords,
+                limitPlacements: limitPlacements,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -125,11 +135,13 @@ namespace AppStoreConnect
         /// <param name="fieldsAppScreenshotSets"></param>
         /// <param name="fieldsAppPreviewSets"></param>
         /// <param name="fieldsAppKeywords"></param>
+        /// <param name="fieldsAppAssetLibraryPlacements"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
         /// <param name="limitAppScreenshotSets"></param>
         /// <param name="limitAppPreviewSets"></param>
         /// <param name="limitSearchKeywords"></param>
+        /// <param name="limitPlacements"></param>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -142,11 +154,13 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppScreenshotSet>? fieldsAppScreenshotSets = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppPreviewSet>? fieldsAppPreviewSets = default,
             global::System.Collections.Generic.IList<string>? fieldsAppKeywords = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement>? fieldsAppAssetLibraryPlacements = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedIncludeItem>? include = default,
             int? limitAppScreenshotSets = default,
             int? limitAppPreviewSets = default,
             int? limitSearchKeywords = default,
+            int? limitPlacements = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -160,11 +174,13 @@ namespace AppStoreConnect
                 fieldsAppScreenshotSets: fieldsAppScreenshotSets,
                 fieldsAppPreviewSets: fieldsAppPreviewSets,
                 fieldsAppKeywords: fieldsAppKeywords,
+                fieldsAppAssetLibraryPlacements: fieldsAppAssetLibraryPlacements,
                 limit: ref limit,
                 include: include,
                 limitAppScreenshotSets: ref limitAppScreenshotSets,
                 limitAppPreviewSets: ref limitAppPreviewSets,
                 limitSearchKeywords: ref limitSearchKeywords,
+                limitPlacements: ref limitPlacements,
                 id: ref id);
 
 
@@ -200,11 +216,13 @@ namespace AppStoreConnect
                                 .AddOptionalParameter("fields[appScreenshotSets]", fieldsAppScreenshotSets, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("fields[appPreviewSets]", fieldsAppPreviewSets, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("fields[appKeywords]", fieldsAppKeywords, delimiter: ",", explode: false)
+                                .AddOptionalParameter("fields[appAssetLibraryPlacements]", fieldsAppAssetLibraryPlacements, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("limit", limit?.ToString())
                                 .AddOptionalParameter("include", include, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("limit[appScreenshotSets]", limitAppScreenshotSets?.ToString())
                                 .AddOptionalParameter("limit[appPreviewSets]", limitAppPreviewSets?.ToString())
                                 .AddOptionalParameter("limit[searchKeywords]", limitSearchKeywords?.ToString())
+                                .AddOptionalParameter("limit[placements]", limitPlacements?.ToString())
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::AppStoreConnect.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -252,11 +270,13 @@ namespace AppStoreConnect
                     fieldsAppScreenshotSets: fieldsAppScreenshotSets,
                     fieldsAppPreviewSets: fieldsAppPreviewSets,
                     fieldsAppKeywords: fieldsAppKeywords,
+                    fieldsAppAssetLibraryPlacements: fieldsAppAssetLibraryPlacements,
                     limit: limit,
                     include: include,
                     limitAppScreenshotSets: limitAppScreenshotSets,
                     limitAppPreviewSets: limitAppPreviewSets,
                     limitSearchKeywords: limitSearchKeywords,
+                    limitPlacements: limitPlacements,
                     id: id);
 
                 return __httpRequest;

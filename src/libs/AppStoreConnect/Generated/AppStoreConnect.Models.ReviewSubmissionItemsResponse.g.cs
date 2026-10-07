@@ -21,7 +21,7 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("included")]
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem154>? Included { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem156>? Included { get; set; }
 
         /// <summary>
         ///
@@ -55,7 +55,7 @@ namespace AppStoreConnect
         public ReviewSubmissionItemsResponse(
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionItem> data,
             global::AppStoreConnect.PagedDocumentLinks links,
-            global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem154>? included,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem156>? included,
             global::AppStoreConnect.PagingInformation? meta)
         {
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));

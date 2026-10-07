@@ -79,6 +79,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        AssetLibrary,
+        /// <summary>
+        ///
+        /// </summary>
         BackgroundAssets,
         /// <summary>
         ///
@@ -263,6 +267,7 @@ namespace AppStoreConnect
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.AppStoreVersionExperimentsV2 => "appStoreVersionExperimentsV2",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.AppStoreVersions => "appStoreVersions",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.AppTags => "appTags",
+                GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.AssetLibrary => "assetLibrary",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.BackgroundAssets => "backgroundAssets",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.BetaAppLocalizations => "betaAppLocalizations",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.BetaAppReviewDetail => "betaAppReviewDetail",
@@ -329,6 +334,7 @@ namespace AppStoreConnect
                 "appStoreVersionExperimentsV2" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.AppStoreVersionExperimentsV2,
                 "appStoreVersions" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.AppStoreVersions,
                 "appTags" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.AppTags,
+                "assetLibrary" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.AssetLibrary,
                 "backgroundAssets" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.BackgroundAssets,
                 "betaAppLocalizations" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.BetaAppLocalizations,
                 "betaAppReviewDetail" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.BetaAppReviewDetail,

@@ -24,7 +24,7 @@ namespace AppStoreConnect
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("included")]
         [global::System.Obsolete("This property marked as deprecated.")]
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem40>? Included { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem42>? Included { get; set; }
 
         /// <summary>
         ///
@@ -60,7 +60,7 @@ namespace AppStoreConnect
         public AppStoreVersionExperimentsResponse(
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppStoreVersionExperiment> data,
             global::AppStoreConnect.PagedDocumentLinks links,
-            global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem40>? included,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem42>? included,
             global::AppStoreConnect.PagingInformation? meta)
         {
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));

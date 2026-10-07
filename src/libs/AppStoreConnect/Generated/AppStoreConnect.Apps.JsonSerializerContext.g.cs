@@ -135,6 +135,9 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppAppTagsLinkagesResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAppTagsLinkagesResponseDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAppTagsLinkagesResponseDataItemType), TypeInfoPropertyName = "AppAppTagsLinkagesResponseDataItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibraryLinkageResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibraryLinkageResponseData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibraryLinkageResponseDataType), TypeInfoPropertyName = "AppAssetLibraryLinkageResponseDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppBackgroundAssetsLinkagesResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppBackgroundAssetsLinkagesResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppBackgroundAssetsLinkagesResponseDataItem))]
@@ -530,9 +533,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppTagsGetToManyRelatedFieldsAppTag), TypeInfoPropertyName = "AppsAppTagsGetToManyRelatedFieldsAppTag2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppsAppTagsGetToManyRelatedFieldsTerritorie>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppTagsGetToManyRelatedFieldsTerritorie), TypeInfoPropertyName = "AppsAppTagsGetToManyRelatedFieldsTerritorie2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppsAppTagsGetToManyRelatedIncludeItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppTagsGetToManyRelatedIncludeItem), TypeInfoPropertyName = "AppsAppTagsGetToManyRelatedIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppsBackgroundAssetsGetToManyRelatedFilterVersionsPlatform>))]
     internal sealed partial class AppsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -543,6 +543,11 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppsAppTagsGetToManyRelatedIncludeItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppTagsGetToManyRelatedIncludeItem), TypeInfoPropertyName = "AppsAppTagsGetToManyRelatedIncludeItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarie>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarie), TypeInfoPropertyName = "AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarie2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppsBackgroundAssetsGetToManyRelatedFilterVersionsPlatform>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsBackgroundAssetsGetToManyRelatedFilterVersionsPlatform), TypeInfoPropertyName = "AppsBackgroundAssetsGetToManyRelatedFilterVersionsPlatform2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppsBackgroundAssetsGetToManyRelatedSortItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsBackgroundAssetsGetToManyRelatedSortItem), TypeInfoPropertyName = "AppsBackgroundAssetsGetToManyRelatedSortItem2")]
@@ -803,6 +808,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAppStoreVersionExperimentsV2LinkagesResponseDataItemType?), TypeInfoPropertyName = "NullableAppAppStoreVersionExperimentsV2LinkagesResponseDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAppStoreVersionsLinkagesResponseDataItemType?), TypeInfoPropertyName = "NullableAppAppStoreVersionsLinkagesResponseDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAppTagsLinkagesResponseDataItemType?), TypeInfoPropertyName = "NullableAppAppTagsLinkagesResponseDataItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibraryLinkageResponseDataType?), TypeInfoPropertyName = "NullableAppAssetLibraryLinkageResponseDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppBackgroundAssetsLinkagesResponseDataItemType?), TypeInfoPropertyName = "NullableAppBackgroundAssetsLinkagesResponseDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppBetaAppLocalizationsLinkagesResponseDataItemType?), TypeInfoPropertyName = "NullableAppBetaAppLocalizationsLinkagesResponseDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppBetaAppReviewDetailLinkageResponseDataType?), TypeInfoPropertyName = "NullableAppBetaAppReviewDetailLinkageResponseDataType2")]
@@ -962,6 +968,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppTagsGetToManyRelatedFieldsAppTag?), TypeInfoPropertyName = "NullableAppsAppTagsGetToManyRelatedFieldsAppTag2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppTagsGetToManyRelatedFieldsTerritorie?), TypeInfoPropertyName = "NullableAppsAppTagsGetToManyRelatedFieldsTerritorie2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppTagsGetToManyRelatedIncludeItem?), TypeInfoPropertyName = "NullableAppsAppTagsGetToManyRelatedIncludeItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarie?), TypeInfoPropertyName = "NullableAppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarie2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsBackgroundAssetsGetToManyRelatedFilterVersionsPlatform?), TypeInfoPropertyName = "NullableAppsBackgroundAssetsGetToManyRelatedFilterVersionsPlatform2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsBackgroundAssetsGetToManyRelatedSortItem?), TypeInfoPropertyName = "NullableAppsBackgroundAssetsGetToManyRelatedSortItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsBackgroundAssetsGetToManyRelatedFieldsBackgroundAsset?), TypeInfoPropertyName = "NullableAppsBackgroundAssetsGetToManyRelatedFieldsBackgroundAsset2")]
@@ -1042,13 +1049,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseLocalization?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseLocalization2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseContent?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseContent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseAppStoreReviewScreenshot?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseAppStoreReviewScreenshot2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsPromotedPurchase?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsPromotedPurchase2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchasePriceSchedule?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchasePriceSchedule2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseAvailabilitie?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseAvailabilitie2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseImage?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseImage2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseOfferCode?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseOfferCode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseVersion?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseVersion2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedIncludeItem?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedIncludeItem2")]
     internal sealed partial class AppsSourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -1059,6 +1059,13 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
         DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
     )]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsPromotedPurchase?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsPromotedPurchase2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchasePriceSchedule?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchasePriceSchedule2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseAvailabilitie?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseAvailabilitie2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseImage?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseImage2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseOfferCode?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseOfferCode2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseVersion?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseVersion2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedIncludeItem?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedIncludeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsMarketplaceSearchDetailGetToOneRelatedFieldsMarketplaceSearchDetail?), TypeInfoPropertyName = "NullableAppsMarketplaceSearchDetailGetToOneRelatedFieldsMarketplaceSearchDetail2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsPerfPowerMetricsGetToManyRelatedFilterPlatformItem?), TypeInfoPropertyName = "NullableAppsPerfPowerMetricsGetToManyRelatedFilterPlatformItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsPerfPowerMetricsGetToManyRelatedFilterMetricTypeItem?), TypeInfoPropertyName = "NullableAppsPerfPowerMetricsGetToManyRelatedFilterMetricTypeItem2")]
@@ -1257,6 +1264,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsAppTagsGetToManyRelatedFieldsAppTag>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsAppTagsGetToManyRelatedFieldsTerritorie>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsAppTagsGetToManyRelatedIncludeItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarie>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsBackgroundAssetsGetToManyRelatedFilterVersionsPlatform>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsBackgroundAssetsGetToManyRelatedSortItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsBackgroundAssetsGetToManyRelatedFieldsBackgroundAsset>))]
@@ -1563,6 +1571,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppAppTagsLinkagesResponseDataItemType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppAppTagsLinkagesResponseDataItemType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryLinkageResponseDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryLinkageResponseDataType?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppBackgroundAssetsLinkagesResponseDataItemType)
 
@@ -2183,6 +2195,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppsAppTagsGetToManyRelatedIncludeItem)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppsAppTagsGetToManyRelatedIncludeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarie)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarie?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppsBackgroundAssetsGetToManyRelatedFilterVersionsPlatform)
 
@@ -2953,6 +2969,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppAppTagsLinkagesResponseDataItemType?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppAppTagsLinkagesResponseDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryLinkageResponseDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryLinkageResponseDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryLinkageResponseDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryLinkageResponseDataTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppBackgroundAssetsLinkagesResponseDataItemType))
@@ -4503,6 +4529,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppsAppTagsGetToManyRelatedIncludeItem?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppsAppTagsGetToManyRelatedIncludeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarie))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarieJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarie?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarieNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppsBackgroundAssetsGetToManyRelatedFilterVersionsPlatform))

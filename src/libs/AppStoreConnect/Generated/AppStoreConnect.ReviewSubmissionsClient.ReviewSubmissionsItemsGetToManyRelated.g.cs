@@ -32,6 +32,8 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppCustomProductPageVersion>? fieldsAppCustomProductPageVersions,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppStoreVersionExperiment>? fieldsAppStoreVersionExperiments,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppEvent>? fieldsAppEvents,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryImage>? fieldsAppAssetLibraryImages,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryVideo>? fieldsAppAssetLibraryVideos,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsBackgroundAssetVersion>? fieldsBackgroundAssetVersions,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsGameCenterAchievementVersion>? fieldsGameCenterAchievementVersions,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsGameCenterActivityVersion>? fieldsGameCenterActivityVersions,
@@ -52,6 +54,8 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppCustomProductPageVersion>? fieldsAppCustomProductPageVersions,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppStoreVersionExperiment>? fieldsAppStoreVersionExperiments,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppEvent>? fieldsAppEvents,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryImage>? fieldsAppAssetLibraryImages,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryVideo>? fieldsAppAssetLibraryVideos,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsBackgroundAssetVersion>? fieldsBackgroundAssetVersions,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsGameCenterAchievementVersion>? fieldsGameCenterAchievementVersions,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsGameCenterActivityVersion>? fieldsGameCenterActivityVersions,
@@ -81,6 +85,8 @@ namespace AppStoreConnect
         /// <param name="fieldsAppCustomProductPageVersions"></param>
         /// <param name="fieldsAppStoreVersionExperiments"></param>
         /// <param name="fieldsAppEvents"></param>
+        /// <param name="fieldsAppAssetLibraryImages"></param>
+        /// <param name="fieldsAppAssetLibraryVideos"></param>
         /// <param name="fieldsBackgroundAssetVersions"></param>
         /// <param name="fieldsGameCenterAchievementVersions"></param>
         /// <param name="fieldsGameCenterActivityVersions"></param>
@@ -103,6 +109,8 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppCustomProductPageVersion>? fieldsAppCustomProductPageVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppStoreVersionExperiment>? fieldsAppStoreVersionExperiments = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppEvent>? fieldsAppEvents = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryImage>? fieldsAppAssetLibraryImages = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryVideo>? fieldsAppAssetLibraryVideos = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsBackgroundAssetVersion>? fieldsBackgroundAssetVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsGameCenterAchievementVersion>? fieldsGameCenterAchievementVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsGameCenterActivityVersion>? fieldsGameCenterActivityVersions = default,
@@ -124,6 +132,8 @@ namespace AppStoreConnect
                 fieldsAppCustomProductPageVersions: fieldsAppCustomProductPageVersions,
                 fieldsAppStoreVersionExperiments: fieldsAppStoreVersionExperiments,
                 fieldsAppEvents: fieldsAppEvents,
+                fieldsAppAssetLibraryImages: fieldsAppAssetLibraryImages,
+                fieldsAppAssetLibraryVideos: fieldsAppAssetLibraryVideos,
                 fieldsBackgroundAssetVersions: fieldsBackgroundAssetVersions,
                 fieldsGameCenterAchievementVersions: fieldsGameCenterAchievementVersions,
                 fieldsGameCenterActivityVersions: fieldsGameCenterActivityVersions,
@@ -149,6 +159,8 @@ namespace AppStoreConnect
         /// <param name="fieldsAppCustomProductPageVersions"></param>
         /// <param name="fieldsAppStoreVersionExperiments"></param>
         /// <param name="fieldsAppEvents"></param>
+        /// <param name="fieldsAppAssetLibraryImages"></param>
+        /// <param name="fieldsAppAssetLibraryVideos"></param>
         /// <param name="fieldsBackgroundAssetVersions"></param>
         /// <param name="fieldsGameCenterAchievementVersions"></param>
         /// <param name="fieldsGameCenterActivityVersions"></param>
@@ -171,6 +183,8 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppCustomProductPageVersion>? fieldsAppCustomProductPageVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppStoreVersionExperiment>? fieldsAppStoreVersionExperiments = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppEvent>? fieldsAppEvents = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryImage>? fieldsAppAssetLibraryImages = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryVideo>? fieldsAppAssetLibraryVideos = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsBackgroundAssetVersion>? fieldsBackgroundAssetVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsGameCenterAchievementVersion>? fieldsGameCenterAchievementVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsGameCenterActivityVersion>? fieldsGameCenterActivityVersions = default,
@@ -194,6 +208,8 @@ namespace AppStoreConnect
                 fieldsAppCustomProductPageVersions: fieldsAppCustomProductPageVersions,
                 fieldsAppStoreVersionExperiments: fieldsAppStoreVersionExperiments,
                 fieldsAppEvents: fieldsAppEvents,
+                fieldsAppAssetLibraryImages: fieldsAppAssetLibraryImages,
+                fieldsAppAssetLibraryVideos: fieldsAppAssetLibraryVideos,
                 fieldsBackgroundAssetVersions: fieldsBackgroundAssetVersions,
                 fieldsGameCenterAchievementVersions: fieldsGameCenterAchievementVersions,
                 fieldsGameCenterActivityVersions: fieldsGameCenterActivityVersions,
@@ -239,6 +255,8 @@ namespace AppStoreConnect
                                 .AddOptionalParameter("fields[appCustomProductPageVersions]", fieldsAppCustomProductPageVersions, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("fields[appStoreVersionExperiments]", fieldsAppStoreVersionExperiments, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("fields[appEvents]", fieldsAppEvents, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
+                                .AddOptionalParameter("fields[appAssetLibraryImages]", fieldsAppAssetLibraryImages, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
+                                .AddOptionalParameter("fields[appAssetLibraryVideos]", fieldsAppAssetLibraryVideos, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("fields[backgroundAssetVersions]", fieldsBackgroundAssetVersions, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("fields[gameCenterAchievementVersions]", fieldsGameCenterAchievementVersions, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("fields[gameCenterActivityVersions]", fieldsGameCenterActivityVersions, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
@@ -296,6 +314,8 @@ namespace AppStoreConnect
                     fieldsAppCustomProductPageVersions: fieldsAppCustomProductPageVersions,
                     fieldsAppStoreVersionExperiments: fieldsAppStoreVersionExperiments,
                     fieldsAppEvents: fieldsAppEvents,
+                    fieldsAppAssetLibraryImages: fieldsAppAssetLibraryImages,
+                    fieldsAppAssetLibraryVideos: fieldsAppAssetLibraryVideos,
                     fieldsBackgroundAssetVersions: fieldsBackgroundAssetVersions,
                     fieldsGameCenterAchievementVersions: fieldsGameCenterAchievementVersions,
                     fieldsGameCenterActivityVersions: fieldsGameCenterActivityVersions,

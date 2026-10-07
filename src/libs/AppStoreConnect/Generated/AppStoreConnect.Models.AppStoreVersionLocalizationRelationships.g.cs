@@ -33,6 +33,12 @@ namespace AppStoreConnect
         public global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsSearchKeywords? SearchKeywords { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("placements")]
+        public global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsPlacements? Placements { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -45,6 +51,7 @@ namespace AppStoreConnect
         /// <param name="appScreenshotSets"></param>
         /// <param name="appPreviewSets"></param>
         /// <param name="searchKeywords"></param>
+        /// <param name="placements"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -52,12 +59,14 @@ namespace AppStoreConnect
             global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsAppStoreVersion? appStoreVersion,
             global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsAppScreenshotSets? appScreenshotSets,
             global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsAppPreviewSets? appPreviewSets,
-            global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsSearchKeywords? searchKeywords)
+            global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsSearchKeywords? searchKeywords,
+            global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsPlacements? placements)
         {
             this.AppStoreVersion = appStoreVersion;
             this.AppScreenshotSets = appScreenshotSets;
             this.AppPreviewSets = appPreviewSets;
             this.SearchKeywords = searchKeywords;
+            this.Placements = placements;
         }
 
         /// <summary>

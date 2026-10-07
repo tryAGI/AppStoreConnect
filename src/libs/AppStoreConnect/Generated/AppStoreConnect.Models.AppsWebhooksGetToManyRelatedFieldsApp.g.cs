@@ -79,6 +79,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        AssetLibrary,
+        /// <summary>
+        ///
+        /// </summary>
         BackgroundAssets,
         /// <summary>
         ///
@@ -263,6 +267,7 @@ namespace AppStoreConnect
                 AppsWebhooksGetToManyRelatedFieldsApp.AppStoreVersionExperimentsV2 => "appStoreVersionExperimentsV2",
                 AppsWebhooksGetToManyRelatedFieldsApp.AppStoreVersions => "appStoreVersions",
                 AppsWebhooksGetToManyRelatedFieldsApp.AppTags => "appTags",
+                AppsWebhooksGetToManyRelatedFieldsApp.AssetLibrary => "assetLibrary",
                 AppsWebhooksGetToManyRelatedFieldsApp.BackgroundAssets => "backgroundAssets",
                 AppsWebhooksGetToManyRelatedFieldsApp.BetaAppLocalizations => "betaAppLocalizations",
                 AppsWebhooksGetToManyRelatedFieldsApp.BetaAppReviewDetail => "betaAppReviewDetail",
@@ -329,6 +334,7 @@ namespace AppStoreConnect
                 "appStoreVersionExperimentsV2" => AppsWebhooksGetToManyRelatedFieldsApp.AppStoreVersionExperimentsV2,
                 "appStoreVersions" => AppsWebhooksGetToManyRelatedFieldsApp.AppStoreVersions,
                 "appTags" => AppsWebhooksGetToManyRelatedFieldsApp.AppTags,
+                "assetLibrary" => AppsWebhooksGetToManyRelatedFieldsApp.AssetLibrary,
                 "backgroundAssets" => AppsWebhooksGetToManyRelatedFieldsApp.BackgroundAssets,
                 "betaAppLocalizations" => AppsWebhooksGetToManyRelatedFieldsApp.BetaAppLocalizations,
                 "betaAppReviewDetail" => AppsWebhooksGetToManyRelatedFieldsApp.BetaAppReviewDetail,

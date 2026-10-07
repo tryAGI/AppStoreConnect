@@ -12,81 +12,44 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppPriceScheduleResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppPricePointsV3ResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppPriceV2? AppPrices1 { get; init; }
+        public global::AppStoreConnect.App? Apps { get; init; }
 #else
-        public global::AppStoreConnect.AppPriceV2? AppPrices1 { get; }
+        public global::AppStoreConnect.App? Apps { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppPrices1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
 #endif
-        public bool IsAppPrices1 => AppPrices1 != null;
+        public bool IsApps => Apps != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppPrices1(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppPriceV2? value)
-        {
-            value = AppPrices1;
-            return IsAppPrices1;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.AppPriceV2 PickAppPrices1() => AppPrices1 is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppPrices1' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.App? AppPrices2 { get; init; }
-#else
-        public global::AppStoreConnect.App? AppPrices2 { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppPrices2))]
-#endif
-        public bool IsAppPrices2 => AppPrices2 != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppPrices2(
+        public bool TryPickApps(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.App? value)
         {
-            value = AppPrices2;
-            return IsAppPrices2;
+            value = Apps;
+            return IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickAppPrices2() => AppPrices2 is { } value
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppPrices2' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -127,48 +90,25 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem28(global::AppStoreConnect.AppPriceV2 value) => new IncludedItem28((global::AppStoreConnect.AppPriceV2?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppPriceV2?(IncludedItem28 @this) => @this.AppPrices1;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem28(global::AppStoreConnect.AppPriceV2? value)
-        {
-            AppPrices1 = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem28 FromAppPrices1(global::AppStoreConnect.AppPriceV2? value) => new IncludedItem28(value);
-
-        /// <summary>
-        ///
-        /// </summary>
         public static implicit operator IncludedItem28(global::AppStoreConnect.App value) => new IncludedItem28((global::AppStoreConnect.App?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.App?(IncludedItem28 @this) => @this.AppPrices2;
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem28 @this) => @this.Apps;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem28(global::AppStoreConnect.App? value)
         {
-            AppPrices2 = value;
+            Apps = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem28 FromAppPrices2(global::AppStoreConnect.App? value) => new IncludedItem28(value);
+        public static IncludedItem28 FromApps(global::AppStoreConnect.App? value) => new IncludedItem28(value);
 
         /// <summary>
         ///
@@ -197,16 +137,14 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public IncludedItem28(
-            global::AppStoreConnect.AppPriceScheduleResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppPriceV2? appPrices1,
-            global::AppStoreConnect.App? appPrices2,
+            global::AppStoreConnect.AppPricePointsV3ResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.App? apps,
             global::AppStoreConnect.Territory? territories
             )
         {
             Type = type;
 
-            AppPrices1 = appPrices1;
-            AppPrices2 = appPrices2;
+            Apps = apps;
             Territories = territories;
         }
 
@@ -215,16 +153,14 @@ namespace AppStoreConnect
         /// </summary>
         public object? Object =>
             Territories as object ??
-            AppPrices2 as object ??
-            AppPrices1 as object
+            Apps as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppPrices1?.ToString() ??
-            AppPrices2?.ToString() ??
+            Apps?.ToString() ??
             Territories?.ToString()
             ;
 
@@ -233,15 +169,14 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppPrices1 && !IsAppPrices2 && !IsTerritories || !IsAppPrices1 && IsAppPrices2 && !IsTerritories || !IsAppPrices1 && !IsAppPrices2 && IsTerritories;
+            return IsApps && !IsTerritories || !IsApps && IsTerritories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppPriceV2, TResult>? appPrices1 = null,
-            global::System.Func<global::AppStoreConnect.App, TResult>? appPrices2 = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
             global::System.Func<global::AppStoreConnect.Territory, TResult>? territories = null,
             bool validate = true)
         {
@@ -250,17 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppPrices1 is { } __value0 && appPrices1 != null)
+            if (Apps is { } __value0 && apps != null)
             {
-                return appPrices1(__value0);
+                return apps(__value0);
             }
-            else if (AppPrices2 is { } __value1 && appPrices2 != null)
+            else if (Territories is { } __value1 && territories != null)
             {
-                return appPrices2(__value1);
-            }
-            else if (Territories is { } __value2 && territories != null)
-            {
-                return territories(__value2);
+                return territories(__value1);
             }
 
             return default(TResult);
@@ -270,9 +201,7 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppPriceV2>? appPrices1 = null,
-
-            global::System.Action<global::AppStoreConnect.App>? appPrices2 = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
 
             global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
@@ -282,17 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppPrices1 is { } __value0)
+            if (Apps is { } __value0)
             {
-                appPrices1?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (AppPrices2 is { } __value1)
+            else if (Territories is { } __value1)
             {
-                appPrices2?.Invoke(__value1);
-            }
-            else if (Territories is { } __value2)
-            {
-                territories?.Invoke(__value2);
+                territories?.Invoke(__value1);
             }
         }
 
@@ -300,8 +225,7 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppPriceV2>? appPrices1 = null,
-            global::System.Action<global::AppStoreConnect.App>? appPrices2 = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
             global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
         {
@@ -310,17 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppPrices1 is { } __value0)
+            if (Apps is { } __value0)
             {
-                appPrices1?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (AppPrices2 is { } __value1)
+            else if (Territories is { } __value1)
             {
-                appPrices2?.Invoke(__value1);
-            }
-            else if (Territories is { } __value2)
-            {
-                territories?.Invoke(__value2);
+                territories?.Invoke(__value1);
             }
         }
 
@@ -331,9 +251,7 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppPrices1,
-                typeof(global::AppStoreConnect.AppPriceV2),
-                AppPrices2,
+                Apps,
                 typeof(global::AppStoreConnect.App),
                 Territories,
                 typeof(global::AppStoreConnect.Territory),
@@ -353,8 +271,7 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem28 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppPriceV2?>.Default.Equals(AppPrices1, other.AppPrices1) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(AppPrices2, other.AppPrices2) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Territory?>.Default.Equals(Territories, other.Territories)
                 ;
         }

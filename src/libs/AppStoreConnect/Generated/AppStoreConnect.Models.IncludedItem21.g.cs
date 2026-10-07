@@ -12,220 +12,220 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEventLocalizationResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppEncryptionDeclarationResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppEventScreenshot? AppEventScreenshots { get; init; }
+        public global::AppStoreConnect.AppEncryptionDeclarationDocument? AppEncryptionDeclarationDocuments1 { get; init; }
 #else
-        public global::AppStoreConnect.AppEventScreenshot? AppEventScreenshots { get; }
+        public global::AppStoreConnect.AppEncryptionDeclarationDocument? AppEncryptionDeclarationDocuments1 { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEventScreenshots))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEncryptionDeclarationDocuments1))]
 #endif
-        public bool IsAppEventScreenshots => AppEventScreenshots != null;
+        public bool IsAppEncryptionDeclarationDocuments1 => AppEncryptionDeclarationDocuments1 != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppEventScreenshots(
+        public bool TryPickAppEncryptionDeclarationDocuments1(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppEventScreenshot? value)
+            out global::AppStoreConnect.AppEncryptionDeclarationDocument? value)
         {
-            value = AppEventScreenshots;
-            return IsAppEventScreenshots;
+            value = AppEncryptionDeclarationDocuments1;
+            return IsAppEncryptionDeclarationDocuments1;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEventScreenshot PickAppEventScreenshots() => AppEventScreenshots is { } value
+        public global::AppStoreConnect.AppEncryptionDeclarationDocument PickAppEncryptionDeclarationDocuments1() => AppEncryptionDeclarationDocuments1 is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEventScreenshots' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEncryptionDeclarationDocuments1' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppEventVideoClip? AppEventVideoClips { get; init; }
+        public global::AppStoreConnect.App? AppEncryptionDeclarationDocuments2 { get; init; }
 #else
-        public global::AppStoreConnect.AppEventVideoClip? AppEventVideoClips { get; }
+        public global::AppStoreConnect.App? AppEncryptionDeclarationDocuments2 { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEventVideoClips))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEncryptionDeclarationDocuments2))]
 #endif
-        public bool IsAppEventVideoClips => AppEventVideoClips != null;
+        public bool IsAppEncryptionDeclarationDocuments2 => AppEncryptionDeclarationDocuments2 != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppEventVideoClips(
+        public bool TryPickAppEncryptionDeclarationDocuments2(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppEventVideoClip? value)
+            out global::AppStoreConnect.App? value)
         {
-            value = AppEventVideoClips;
-            return IsAppEventVideoClips;
+            value = AppEncryptionDeclarationDocuments2;
+            return IsAppEncryptionDeclarationDocuments2;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEventVideoClip PickAppEventVideoClips() => AppEventVideoClips is { } value
+        public global::AppStoreConnect.App PickAppEncryptionDeclarationDocuments2() => AppEncryptionDeclarationDocuments2 is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEventVideoClips' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEncryptionDeclarationDocuments2' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppEvent? AppEvents { get; init; }
+        public global::AppStoreConnect.Build? Builds { get; init; }
 #else
-        public global::AppStoreConnect.AppEvent? AppEvents { get; }
+        public global::AppStoreConnect.Build? Builds { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEvents))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
 #endif
-        public bool IsAppEvents => AppEvents != null;
+        public bool IsBuilds => Builds != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppEvents(
+        public bool TryPickBuilds(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppEvent? value)
+            out global::AppStoreConnect.Build? value)
         {
-            value = AppEvents;
-            return IsAppEvents;
+            value = Builds;
+            return IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEvent PickAppEvents() => AppEvents is { } value
+        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEvents' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem21(global::AppStoreConnect.AppEventScreenshot value) => new IncludedItem21((global::AppStoreConnect.AppEventScreenshot?)value);
+        public static implicit operator IncludedItem21(global::AppStoreConnect.AppEncryptionDeclarationDocument value) => new IncludedItem21((global::AppStoreConnect.AppEncryptionDeclarationDocument?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppEventScreenshot?(IncludedItem21 @this) => @this.AppEventScreenshots;
+        public static implicit operator global::AppStoreConnect.AppEncryptionDeclarationDocument?(IncludedItem21 @this) => @this.AppEncryptionDeclarationDocuments1;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem21(global::AppStoreConnect.AppEventScreenshot? value)
+        public IncludedItem21(global::AppStoreConnect.AppEncryptionDeclarationDocument? value)
         {
-            AppEventScreenshots = value;
+            AppEncryptionDeclarationDocuments1 = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem21 FromAppEventScreenshots(global::AppStoreConnect.AppEventScreenshot? value) => new IncludedItem21(value);
+        public static IncludedItem21 FromAppEncryptionDeclarationDocuments1(global::AppStoreConnect.AppEncryptionDeclarationDocument? value) => new IncludedItem21(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem21(global::AppStoreConnect.AppEventVideoClip value) => new IncludedItem21((global::AppStoreConnect.AppEventVideoClip?)value);
+        public static implicit operator IncludedItem21(global::AppStoreConnect.App value) => new IncludedItem21((global::AppStoreConnect.App?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppEventVideoClip?(IncludedItem21 @this) => @this.AppEventVideoClips;
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem21 @this) => @this.AppEncryptionDeclarationDocuments2;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem21(global::AppStoreConnect.AppEventVideoClip? value)
+        public IncludedItem21(global::AppStoreConnect.App? value)
         {
-            AppEventVideoClips = value;
+            AppEncryptionDeclarationDocuments2 = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem21 FromAppEventVideoClips(global::AppStoreConnect.AppEventVideoClip? value) => new IncludedItem21(value);
+        public static IncludedItem21 FromAppEncryptionDeclarationDocuments2(global::AppStoreConnect.App? value) => new IncludedItem21(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem21(global::AppStoreConnect.AppEvent value) => new IncludedItem21((global::AppStoreConnect.AppEvent?)value);
+        public static implicit operator IncludedItem21(global::AppStoreConnect.Build value) => new IncludedItem21((global::AppStoreConnect.Build?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppEvent?(IncludedItem21 @this) => @this.AppEvents;
+        public static implicit operator global::AppStoreConnect.Build?(IncludedItem21 @this) => @this.Builds;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem21(global::AppStoreConnect.AppEvent? value)
+        public IncludedItem21(global::AppStoreConnect.Build? value)
         {
-            AppEvents = value;
+            Builds = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem21 FromAppEvents(global::AppStoreConnect.AppEvent? value) => new IncludedItem21(value);
+        public static IncludedItem21 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem21(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem21(
-            global::AppStoreConnect.AppEventLocalizationResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppEventScreenshot? appEventScreenshots,
-            global::AppStoreConnect.AppEventVideoClip? appEventVideoClips,
-            global::AppStoreConnect.AppEvent? appEvents
+            global::AppStoreConnect.AppEncryptionDeclarationResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppEncryptionDeclarationDocument? appEncryptionDeclarationDocuments1,
+            global::AppStoreConnect.App? appEncryptionDeclarationDocuments2,
+            global::AppStoreConnect.Build? builds
             )
         {
             Type = type;
 
-            AppEventScreenshots = appEventScreenshots;
-            AppEventVideoClips = appEventVideoClips;
-            AppEvents = appEvents;
+            AppEncryptionDeclarationDocuments1 = appEncryptionDeclarationDocuments1;
+            AppEncryptionDeclarationDocuments2 = appEncryptionDeclarationDocuments2;
+            Builds = builds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            AppEvents as object ??
-            AppEventVideoClips as object ??
-            AppEventScreenshots as object
+            Builds as object ??
+            AppEncryptionDeclarationDocuments2 as object ??
+            AppEncryptionDeclarationDocuments1 as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppEventScreenshots?.ToString() ??
-            AppEventVideoClips?.ToString() ??
-            AppEvents?.ToString()
+            AppEncryptionDeclarationDocuments1?.ToString() ??
+            AppEncryptionDeclarationDocuments2?.ToString() ??
+            Builds?.ToString()
             ;
 
         /// <summary>
@@ -233,16 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppEventScreenshots && !IsAppEventVideoClips && !IsAppEvents || !IsAppEventScreenshots && IsAppEventVideoClips && !IsAppEvents || !IsAppEventScreenshots && !IsAppEventVideoClips && IsAppEvents;
+            return IsAppEncryptionDeclarationDocuments1 && !IsAppEncryptionDeclarationDocuments2 && !IsBuilds || !IsAppEncryptionDeclarationDocuments1 && IsAppEncryptionDeclarationDocuments2 && !IsBuilds || !IsAppEncryptionDeclarationDocuments1 && !IsAppEncryptionDeclarationDocuments2 && IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppEventScreenshot, TResult>? appEventScreenshots = null,
-            global::System.Func<global::AppStoreConnect.AppEventVideoClip, TResult>? appEventVideoClips = null,
-            global::System.Func<global::AppStoreConnect.AppEvent, TResult>? appEvents = null,
+            global::System.Func<global::AppStoreConnect.AppEncryptionDeclarationDocument, TResult>? appEncryptionDeclarationDocuments1 = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? appEncryptionDeclarationDocuments2 = null,
+            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppEventScreenshots is { } __value0 && appEventScreenshots != null)
+            if (AppEncryptionDeclarationDocuments1 is { } __value0 && appEncryptionDeclarationDocuments1 != null)
             {
-                return appEventScreenshots(__value0);
+                return appEncryptionDeclarationDocuments1(__value0);
             }
-            else if (AppEventVideoClips is { } __value1 && appEventVideoClips != null)
+            else if (AppEncryptionDeclarationDocuments2 is { } __value1 && appEncryptionDeclarationDocuments2 != null)
             {
-                return appEventVideoClips(__value1);
+                return appEncryptionDeclarationDocuments2(__value1);
             }
-            else if (AppEvents is { } __value2 && appEvents != null)
+            else if (Builds is { } __value2 && builds != null)
             {
-                return appEvents(__value2);
+                return builds(__value2);
             }
 
             return default(TResult);
@@ -270,11 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppEventScreenshot>? appEventScreenshots = null,
+            global::System.Action<global::AppStoreConnect.AppEncryptionDeclarationDocument>? appEncryptionDeclarationDocuments1 = null,
 
-            global::System.Action<global::AppStoreConnect.AppEventVideoClip>? appEventVideoClips = null,
+            global::System.Action<global::AppStoreConnect.App>? appEncryptionDeclarationDocuments2 = null,
 
-            global::System.Action<global::AppStoreConnect.AppEvent>? appEvents = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppEventScreenshots is { } __value0)
+            if (AppEncryptionDeclarationDocuments1 is { } __value0)
             {
-                appEventScreenshots?.Invoke(__value0);
+                appEncryptionDeclarationDocuments1?.Invoke(__value0);
             }
-            else if (AppEventVideoClips is { } __value1)
+            else if (AppEncryptionDeclarationDocuments2 is { } __value1)
             {
-                appEventVideoClips?.Invoke(__value1);
+                appEncryptionDeclarationDocuments2?.Invoke(__value1);
             }
-            else if (AppEvents is { } __value2)
+            else if (Builds is { } __value2)
             {
-                appEvents?.Invoke(__value2);
+                builds?.Invoke(__value2);
             }
         }
 
@@ -300,9 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppEventScreenshot>? appEventScreenshots = null,
-            global::System.Action<global::AppStoreConnect.AppEventVideoClip>? appEventVideoClips = null,
-            global::System.Action<global::AppStoreConnect.AppEvent>? appEvents = null,
+            global::System.Action<global::AppStoreConnect.AppEncryptionDeclarationDocument>? appEncryptionDeclarationDocuments1 = null,
+            global::System.Action<global::AppStoreConnect.App>? appEncryptionDeclarationDocuments2 = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppEventScreenshots is { } __value0)
+            if (AppEncryptionDeclarationDocuments1 is { } __value0)
             {
-                appEventScreenshots?.Invoke(__value0);
+                appEncryptionDeclarationDocuments1?.Invoke(__value0);
             }
-            else if (AppEventVideoClips is { } __value1)
+            else if (AppEncryptionDeclarationDocuments2 is { } __value1)
             {
-                appEventVideoClips?.Invoke(__value1);
+                appEncryptionDeclarationDocuments2?.Invoke(__value1);
             }
-            else if (AppEvents is { } __value2)
+            else if (Builds is { } __value2)
             {
-                appEvents?.Invoke(__value2);
+                builds?.Invoke(__value2);
             }
         }
 
@@ -331,12 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppEventScreenshots,
-                typeof(global::AppStoreConnect.AppEventScreenshot),
-                AppEventVideoClips,
-                typeof(global::AppStoreConnect.AppEventVideoClip),
-                AppEvents,
-                typeof(global::AppStoreConnect.AppEvent),
+                AppEncryptionDeclarationDocuments1,
+                typeof(global::AppStoreConnect.AppEncryptionDeclarationDocument),
+                AppEncryptionDeclarationDocuments2,
+                typeof(global::AppStoreConnect.App),
+                Builds,
+                typeof(global::AppStoreConnect.Build),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -353,9 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem21 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEventScreenshot?>.Default.Equals(AppEventScreenshots, other.AppEventScreenshots) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEventVideoClip?>.Default.Equals(AppEventVideoClips, other.AppEventVideoClips) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEvent?>.Default.Equals(AppEvents, other.AppEvents)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEncryptionDeclarationDocument?>.Default.Equals(AppEncryptionDeclarationDocuments1, other.AppEncryptionDeclarationDocuments1) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(AppEncryptionDeclarationDocuments2, other.AppEncryptionDeclarationDocuments2) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
                 ;
         }
 

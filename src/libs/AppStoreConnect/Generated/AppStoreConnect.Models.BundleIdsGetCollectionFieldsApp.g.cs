@@ -79,6 +79,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        AssetLibrary,
+        /// <summary>
+        ///
+        /// </summary>
         BackgroundAssets,
         /// <summary>
         ///
@@ -263,6 +267,7 @@ namespace AppStoreConnect
                 BundleIdsGetCollectionFieldsApp.AppStoreVersionExperimentsV2 => "appStoreVersionExperimentsV2",
                 BundleIdsGetCollectionFieldsApp.AppStoreVersions => "appStoreVersions",
                 BundleIdsGetCollectionFieldsApp.AppTags => "appTags",
+                BundleIdsGetCollectionFieldsApp.AssetLibrary => "assetLibrary",
                 BundleIdsGetCollectionFieldsApp.BackgroundAssets => "backgroundAssets",
                 BundleIdsGetCollectionFieldsApp.BetaAppLocalizations => "betaAppLocalizations",
                 BundleIdsGetCollectionFieldsApp.BetaAppReviewDetail => "betaAppReviewDetail",
@@ -329,6 +334,7 @@ namespace AppStoreConnect
                 "appStoreVersionExperimentsV2" => BundleIdsGetCollectionFieldsApp.AppStoreVersionExperimentsV2,
                 "appStoreVersions" => BundleIdsGetCollectionFieldsApp.AppStoreVersions,
                 "appTags" => BundleIdsGetCollectionFieldsApp.AppTags,
+                "assetLibrary" => BundleIdsGetCollectionFieldsApp.AssetLibrary,
                 "backgroundAssets" => BundleIdsGetCollectionFieldsApp.BackgroundAssets,
                 "betaAppLocalizations" => BundleIdsGetCollectionFieldsApp.BetaAppLocalizations,
                 "betaAppReviewDetail" => BundleIdsGetCollectionFieldsApp.BetaAppReviewDetail,

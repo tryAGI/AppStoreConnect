@@ -248,6 +248,12 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("assetLibrary")]
+        public global::AppStoreConnect.AppRelationshipsAssetLibrary? AssetLibrary { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("betaFeedbackScreenshotSubmissions")]
         public global::AppStoreConnect.AppRelationshipsBetaFeedbackScreenshotSubmissions? BetaFeedbackScreenshotSubmissions { get; set; }
 
@@ -322,6 +328,7 @@ namespace AppStoreConnect
         /// <param name="marketplaceSearchDetail"></param>
         /// <param name="buildUploads"></param>
         /// <param name="backgroundAssets"></param>
+        /// <param name="assetLibrary"></param>
         /// <param name="betaFeedbackScreenshotSubmissions"></param>
         /// <param name="betaFeedbackCrashSubmissions"></param>
         /// <param name="searchKeywords"></param>
@@ -369,6 +376,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AppRelationshipsMarketplaceSearchDetail? marketplaceSearchDetail,
             global::AppStoreConnect.AppRelationshipsBuildUploads? buildUploads,
             global::AppStoreConnect.AppRelationshipsBackgroundAssets? backgroundAssets,
+            global::AppStoreConnect.AppRelationshipsAssetLibrary? assetLibrary,
             global::AppStoreConnect.AppRelationshipsBetaFeedbackScreenshotSubmissions? betaFeedbackScreenshotSubmissions,
             global::AppStoreConnect.AppRelationshipsBetaFeedbackCrashSubmissions? betaFeedbackCrashSubmissions,
             global::AppStoreConnect.AppRelationshipsSearchKeywords? searchKeywords,
@@ -413,6 +421,7 @@ namespace AppStoreConnect
             this.MarketplaceSearchDetail = marketplaceSearchDetail;
             this.BuildUploads = buildUploads;
             this.BackgroundAssets = backgroundAssets;
+            this.AssetLibrary = assetLibrary;
             this.BetaFeedbackScreenshotSubmissions = betaFeedbackScreenshotSubmissions;
             this.BetaFeedbackCrashSubmissions = betaFeedbackCrashSubmissions;
             this.SearchKeywords = searchKeywords;

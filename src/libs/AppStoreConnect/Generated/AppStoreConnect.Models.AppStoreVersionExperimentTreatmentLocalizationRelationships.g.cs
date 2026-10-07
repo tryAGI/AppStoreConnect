@@ -27,6 +27,12 @@ namespace AppStoreConnect
         public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationRelationshipsAppPreviewSets? AppPreviewSets { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("placements")]
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationRelationshipsPlacements? Placements { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -38,17 +44,20 @@ namespace AppStoreConnect
         /// <param name="appStoreVersionExperimentTreatment"></param>
         /// <param name="appScreenshotSets"></param>
         /// <param name="appPreviewSets"></param>
+        /// <param name="placements"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AppStoreVersionExperimentTreatmentLocalizationRelationships(
             global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationRelationshipsAppStoreVersionExperimentTreatment? appStoreVersionExperimentTreatment,
             global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationRelationshipsAppScreenshotSets? appScreenshotSets,
-            global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationRelationshipsAppPreviewSets? appPreviewSets)
+            global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationRelationshipsAppPreviewSets? appPreviewSets,
+            global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationRelationshipsPlacements? placements)
         {
             this.AppStoreVersionExperimentTreatment = appStoreVersionExperimentTreatment;
             this.AppScreenshotSets = appScreenshotSets;
             this.AppPreviewSets = appPreviewSets;
+            this.Placements = placements;
         }
 
         /// <summary>

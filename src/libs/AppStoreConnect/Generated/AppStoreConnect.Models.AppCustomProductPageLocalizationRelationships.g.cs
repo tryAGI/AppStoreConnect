@@ -33,6 +33,12 @@ namespace AppStoreConnect
         public global::AppStoreConnect.AppCustomProductPageLocalizationRelationshipsSearchKeywords? SearchKeywords { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("placements")]
+        public global::AppStoreConnect.AppCustomProductPageLocalizationRelationshipsPlacements? Placements { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -45,6 +51,7 @@ namespace AppStoreConnect
         /// <param name="appScreenshotSets"></param>
         /// <param name="appPreviewSets"></param>
         /// <param name="searchKeywords"></param>
+        /// <param name="placements"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -52,12 +59,14 @@ namespace AppStoreConnect
             global::AppStoreConnect.AppCustomProductPageLocalizationRelationshipsAppCustomProductPageVersion? appCustomProductPageVersion,
             global::AppStoreConnect.AppCustomProductPageLocalizationRelationshipsAppScreenshotSets? appScreenshotSets,
             global::AppStoreConnect.AppCustomProductPageLocalizationRelationshipsAppPreviewSets? appPreviewSets,
-            global::AppStoreConnect.AppCustomProductPageLocalizationRelationshipsSearchKeywords? searchKeywords)
+            global::AppStoreConnect.AppCustomProductPageLocalizationRelationshipsSearchKeywords? searchKeywords,
+            global::AppStoreConnect.AppCustomProductPageLocalizationRelationshipsPlacements? placements)
         {
             this.AppCustomProductPageVersion = appCustomProductPageVersion;
             this.AppScreenshotSets = appScreenshotSets;
             this.AppPreviewSets = appPreviewSets;
             this.SearchKeywords = searchKeywords;
+            this.Placements = placements;
         }
 
         /// <summary>

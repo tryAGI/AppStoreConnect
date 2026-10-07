@@ -39,6 +39,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        Placements,
+        /// <summary>
+        ///
+        /// </summary>
         PromotionalText,
         /// <summary>
         ///
@@ -73,6 +77,7 @@ namespace AppStoreConnect
                 AppsAppStoreVersionsGetToManyRelatedFieldsAppStoreVersionLocalization.Keywords => "keywords",
                 AppsAppStoreVersionsGetToManyRelatedFieldsAppStoreVersionLocalization.Locale => "locale",
                 AppsAppStoreVersionsGetToManyRelatedFieldsAppStoreVersionLocalization.MarketingUrl => "marketingUrl",
+                AppsAppStoreVersionsGetToManyRelatedFieldsAppStoreVersionLocalization.Placements => "placements",
                 AppsAppStoreVersionsGetToManyRelatedFieldsAppStoreVersionLocalization.PromotionalText => "promotionalText",
                 AppsAppStoreVersionsGetToManyRelatedFieldsAppStoreVersionLocalization.SearchKeywords => "searchKeywords",
                 AppsAppStoreVersionsGetToManyRelatedFieldsAppStoreVersionLocalization.SupportUrl => "supportUrl",
@@ -94,6 +99,7 @@ namespace AppStoreConnect
                 "keywords" => AppsAppStoreVersionsGetToManyRelatedFieldsAppStoreVersionLocalization.Keywords,
                 "locale" => AppsAppStoreVersionsGetToManyRelatedFieldsAppStoreVersionLocalization.Locale,
                 "marketingUrl" => AppsAppStoreVersionsGetToManyRelatedFieldsAppStoreVersionLocalization.MarketingUrl,
+                "placements" => AppsAppStoreVersionsGetToManyRelatedFieldsAppStoreVersionLocalization.Placements,
                 "promotionalText" => AppsAppStoreVersionsGetToManyRelatedFieldsAppStoreVersionLocalization.PromotionalText,
                 "searchKeywords" => AppsAppStoreVersionsGetToManyRelatedFieldsAppStoreVersionLocalization.SearchKeywords,
                 "supportUrl" => AppsAppStoreVersionsGetToManyRelatedFieldsAppStoreVersionLocalization.SupportUrl,

@@ -79,6 +79,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        AssetLibrary,
+        /// <summary>
+        ///
+        /// </summary>
         BackgroundAssets,
         /// <summary>
         ///
@@ -263,6 +267,7 @@ namespace AppStoreConnect
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.AppStoreVersionExperimentsV2 => "appStoreVersionExperimentsV2",
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.AppStoreVersions => "appStoreVersions",
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.AppTags => "appTags",
+                AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.AssetLibrary => "assetLibrary",
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.BackgroundAssets => "backgroundAssets",
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.BetaAppLocalizations => "betaAppLocalizations",
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.BetaAppReviewDetail => "betaAppReviewDetail",
@@ -329,6 +334,7 @@ namespace AppStoreConnect
                 "appStoreVersionExperimentsV2" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.AppStoreVersionExperimentsV2,
                 "appStoreVersions" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.AppStoreVersions,
                 "appTags" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.AppTags,
+                "assetLibrary" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.AssetLibrary,
                 "backgroundAssets" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.BackgroundAssets,
                 "betaAppLocalizations" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.BetaAppLocalizations,
                 "betaAppReviewDetail" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.BetaAppReviewDetail,

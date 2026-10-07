@@ -24,7 +24,7 @@ namespace AppStoreConnect
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("included")]
         [global::System.Obsolete("This property marked as deprecated.")]
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem107>? Included { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem109>? Included { get; set; }
 
         /// <summary>
         ///
@@ -52,7 +52,7 @@ namespace AppStoreConnect
         public GameCenterLeaderboardLocalizationResponse(
             global::AppStoreConnect.GameCenterLeaderboardLocalization data,
             global::AppStoreConnect.DocumentLinks links,
-            global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem107>? included)
+            global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem109>? included)
         {
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
             this.Included = included;
