@@ -12,44 +12,81 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppPricesV2ResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppPriceScheduleResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppPricePointV3? AppPricePoints { get; init; }
+        public global::AppStoreConnect.AppPriceV2? AppPrices1 { get; init; }
 #else
-        public global::AppStoreConnect.AppPricePointV3? AppPricePoints { get; }
+        public global::AppStoreConnect.AppPriceV2? AppPrices1 { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppPricePoints))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppPrices1))]
 #endif
-        public bool IsAppPricePoints => AppPricePoints != null;
+        public bool IsAppPrices1 => AppPrices1 != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppPricePoints(
+        public bool TryPickAppPrices1(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppPricePointV3? value)
+            out global::AppStoreConnect.AppPriceV2? value)
         {
-            value = AppPricePoints;
-            return IsAppPricePoints;
+            value = AppPrices1;
+            return IsAppPrices1;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppPricePointV3 PickAppPricePoints() => AppPricePoints is { } value
+        public global::AppStoreConnect.AppPriceV2 PickAppPrices1() => AppPrices1 is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppPricePoints' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppPrices1' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.App? AppPrices2 { get; init; }
+#else
+        public global::AppStoreConnect.App? AppPrices2 { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppPrices2))]
+#endif
+        public bool IsAppPrices2 => AppPrices2 != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAppPrices2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.App? value)
+        {
+            value = AppPrices2;
+            return IsAppPrices2;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::AppStoreConnect.App PickAppPrices2() => AppPrices2 is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppPrices2' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -90,25 +127,48 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem30(global::AppStoreConnect.AppPricePointV3 value) => new IncludedItem30((global::AppStoreConnect.AppPricePointV3?)value);
+        public static implicit operator IncludedItem30(global::AppStoreConnect.AppPriceV2 value) => new IncludedItem30((global::AppStoreConnect.AppPriceV2?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppPricePointV3?(IncludedItem30 @this) => @this.AppPricePoints;
+        public static implicit operator global::AppStoreConnect.AppPriceV2?(IncludedItem30 @this) => @this.AppPrices1;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem30(global::AppStoreConnect.AppPricePointV3? value)
+        public IncludedItem30(global::AppStoreConnect.AppPriceV2? value)
         {
-            AppPricePoints = value;
+            AppPrices1 = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem30 FromAppPricePoints(global::AppStoreConnect.AppPricePointV3? value) => new IncludedItem30(value);
+        public static IncludedItem30 FromAppPrices1(global::AppStoreConnect.AppPriceV2? value) => new IncludedItem30(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem30(global::AppStoreConnect.App value) => new IncludedItem30((global::AppStoreConnect.App?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem30 @this) => @this.AppPrices2;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem30(global::AppStoreConnect.App? value)
+        {
+            AppPrices2 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem30 FromAppPrices2(global::AppStoreConnect.App? value) => new IncludedItem30(value);
 
         /// <summary>
         ///
@@ -137,14 +197,16 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public IncludedItem30(
-            global::AppStoreConnect.AppPricesV2ResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppPricePointV3? appPricePoints,
+            global::AppStoreConnect.AppPriceScheduleResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppPriceV2? appPrices1,
+            global::AppStoreConnect.App? appPrices2,
             global::AppStoreConnect.Territory? territories
             )
         {
             Type = type;
 
-            AppPricePoints = appPricePoints;
+            AppPrices1 = appPrices1;
+            AppPrices2 = appPrices2;
             Territories = territories;
         }
 
@@ -153,14 +215,16 @@ namespace AppStoreConnect
         /// </summary>
         public object? Object =>
             Territories as object ??
-            AppPricePoints as object
+            AppPrices2 as object ??
+            AppPrices1 as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppPricePoints?.ToString() ??
+            AppPrices1?.ToString() ??
+            AppPrices2?.ToString() ??
             Territories?.ToString()
             ;
 
@@ -169,14 +233,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppPricePoints && !IsTerritories || !IsAppPricePoints && IsTerritories;
+            return IsAppPrices1 && !IsAppPrices2 && !IsTerritories || !IsAppPrices1 && IsAppPrices2 && !IsTerritories || !IsAppPrices1 && !IsAppPrices2 && IsTerritories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppPricePointV3, TResult>? appPricePoints = null,
+            global::System.Func<global::AppStoreConnect.AppPriceV2, TResult>? appPrices1 = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? appPrices2 = null,
             global::System.Func<global::AppStoreConnect.Territory, TResult>? territories = null,
             bool validate = true)
         {
@@ -185,13 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppPricePoints is { } __value0 && appPricePoints != null)
+            if (AppPrices1 is { } __value0 && appPrices1 != null)
             {
-                return appPricePoints(__value0);
+                return appPrices1(__value0);
             }
-            else if (Territories is { } __value1 && territories != null)
+            else if (AppPrices2 is { } __value1 && appPrices2 != null)
             {
-                return territories(__value1);
+                return appPrices2(__value1);
+            }
+            else if (Territories is { } __value2 && territories != null)
+            {
+                return territories(__value2);
             }
 
             return default(TResult);
@@ -201,7 +270,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppPricePointV3>? appPricePoints = null,
+            global::System.Action<global::AppStoreConnect.AppPriceV2>? appPrices1 = null,
+
+            global::System.Action<global::AppStoreConnect.App>? appPrices2 = null,
 
             global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
@@ -211,13 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppPricePoints is { } __value0)
+            if (AppPrices1 is { } __value0)
             {
-                appPricePoints?.Invoke(__value0);
+                appPrices1?.Invoke(__value0);
             }
-            else if (Territories is { } __value1)
+            else if (AppPrices2 is { } __value1)
             {
-                territories?.Invoke(__value1);
+                appPrices2?.Invoke(__value1);
+            }
+            else if (Territories is { } __value2)
+            {
+                territories?.Invoke(__value2);
             }
         }
 
@@ -225,7 +300,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppPricePointV3>? appPricePoints = null,
+            global::System.Action<global::AppStoreConnect.AppPriceV2>? appPrices1 = null,
+            global::System.Action<global::AppStoreConnect.App>? appPrices2 = null,
             global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
         {
@@ -234,13 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppPricePoints is { } __value0)
+            if (AppPrices1 is { } __value0)
             {
-                appPricePoints?.Invoke(__value0);
+                appPrices1?.Invoke(__value0);
             }
-            else if (Territories is { } __value1)
+            else if (AppPrices2 is { } __value1)
             {
-                territories?.Invoke(__value1);
+                appPrices2?.Invoke(__value1);
+            }
+            else if (Territories is { } __value2)
+            {
+                territories?.Invoke(__value2);
             }
         }
 
@@ -251,8 +331,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppPricePoints,
-                typeof(global::AppStoreConnect.AppPricePointV3),
+                AppPrices1,
+                typeof(global::AppStoreConnect.AppPriceV2),
+                AppPrices2,
+                typeof(global::AppStoreConnect.App),
                 Territories,
                 typeof(global::AppStoreConnect.Territory),
             };
@@ -271,7 +353,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem30 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppPricePointV3?>.Default.Equals(AppPricePoints, other.AppPricePoints) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppPriceV2?>.Default.Equals(AppPrices1, other.AppPrices1) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(AppPrices2, other.AppPrices2) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Territory?>.Default.Equals(Territories, other.Territories)
                 ;
         }

@@ -17,84 +17,30 @@ namespace AppStoreConnect.JsonConverters
 
 
             var readerCopy = reader;
-            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboardResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboardResponseIncludedItemDiscriminator> ??
-                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterLeaderboardResponseIncludedItemDiscriminator)}");
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboardVersionV2ResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboardVersionV2ResponseIncludedItemDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterLeaderboardVersionV2ResponseIncludedItemDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::AppStoreConnect.GameCenterActivity? gameCenterActivities = default;
-            if (discriminator?.Type == global::AppStoreConnect.GameCenterLeaderboardResponseIncludedItemDiscriminatorType.GameCenterActivities)
+            global::AppStoreConnect.GameCenterLeaderboardLocalizationV2? gameCenterLeaderboardLocalizations = default;
+            if (discriminator?.Type == global::AppStoreConnect.GameCenterLeaderboardVersionV2ResponseIncludedItemDiscriminatorType.GameCenterLeaderboardLocalizations)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterActivity), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterActivity> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterActivity)}");
-                gameCenterActivities = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
-            }
-            global::AppStoreConnect.GameCenterChallenge? gameCenterChallenges = default;
-            if (discriminator?.Type == global::AppStoreConnect.GameCenterLeaderboardResponseIncludedItemDiscriminatorType.GameCenterChallenges)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterChallenge), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterChallenge> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterChallenge)}");
-                gameCenterChallenges = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
-            }
-            global::AppStoreConnect.GameCenterDetail? gameCenterDetails = default;
-            if (discriminator?.Type == global::AppStoreConnect.GameCenterLeaderboardResponseIncludedItemDiscriminatorType.GameCenterDetails)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterDetail), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterDetail> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterDetail)}");
-                gameCenterDetails = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
-            }
-            global::AppStoreConnect.GameCenterGroup? gameCenterGroups = default;
-            if (discriminator?.Type == global::AppStoreConnect.GameCenterLeaderboardResponseIncludedItemDiscriminatorType.GameCenterGroups)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterGroup), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterGroup> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterGroup)}");
-                gameCenterGroups = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
-            }
-            global::AppStoreConnect.GameCenterLeaderboardLocalization? gameCenterLeaderboardLocalizations = default;
-            if (discriminator?.Type == global::AppStoreConnect.GameCenterLeaderboardResponseIncludedItemDiscriminatorType.GameCenterLeaderboardLocalizations)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboardLocalization), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboardLocalization> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterLeaderboardLocalization)}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboardLocalizationV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboardLocalizationV2> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterLeaderboardLocalizationV2)}");
                 gameCenterLeaderboardLocalizations = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.GameCenterLeaderboardRelease? gameCenterLeaderboardReleases1 = default;
-            if (discriminator?.Type == global::AppStoreConnect.GameCenterLeaderboardResponseIncludedItemDiscriminatorType.GameCenterLeaderboardReleases)
+            global::AppStoreConnect.GameCenterLeaderboardV2? gameCenterLeaderboards = default;
+            if (discriminator?.Type == global::AppStoreConnect.GameCenterLeaderboardVersionV2ResponseIncludedItemDiscriminatorType.GameCenterLeaderboards)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboardRelease), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboardRelease> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterLeaderboardRelease)}");
-                gameCenterLeaderboardReleases1 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
-            }
-            global::AppStoreConnect.GameCenterLeaderboardSet? gameCenterLeaderboardSets = default;
-            if (discriminator?.Type == global::AppStoreConnect.GameCenterLeaderboardResponseIncludedItemDiscriminatorType.GameCenterLeaderboardSets)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboardSet), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboardSet> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterLeaderboardSet)}");
-                gameCenterLeaderboardSets = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
-            }
-            global::AppStoreConnect.GameCenterLeaderboard? gameCenterLeaderboardReleases2 = default;
-            if (discriminator?.Type == global::AppStoreConnect.GameCenterLeaderboardResponseIncludedItemDiscriminatorType.GameCenterLeaderboardReleases)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboard), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboard> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterLeaderboard)}");
-                gameCenterLeaderboardReleases2 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboardV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboardV2> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterLeaderboardV2)}");
+                gameCenterLeaderboards = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::AppStoreConnect.IncludedItem129(
                 discriminator?.Type,
-                gameCenterActivities,
-
-                gameCenterChallenges,
-
-                gameCenterDetails,
-
-                gameCenterGroups,
-
                 gameCenterLeaderboardLocalizations,
 
-                gameCenterLeaderboardReleases1,
-
-                gameCenterLeaderboardSets,
-
-                gameCenterLeaderboardReleases2
+                gameCenterLeaderboards
                 );
 
             return __value;
@@ -109,53 +55,17 @@ namespace AppStoreConnect.JsonConverters
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
-            if (value.IsGameCenterActivities)
+            if (value.IsGameCenterLeaderboardLocalizations)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterActivity), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterActivity?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterActivity).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterActivities(), typeInfo);
-            }
-            else if (value.IsGameCenterChallenges)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterChallenge), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterChallenge?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterChallenge).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterChallenges(), typeInfo);
-            }
-            else if (value.IsGameCenterDetails)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterDetail), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterDetail?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterDetail).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterDetails(), typeInfo);
-            }
-            else if (value.IsGameCenterGroups)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterGroup), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterGroup?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterGroup).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterGroups(), typeInfo);
-            }
-            else if (value.IsGameCenterLeaderboardLocalizations)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboardLocalization), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboardLocalization?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterLeaderboardLocalization).Name}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboardLocalizationV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboardLocalizationV2?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterLeaderboardLocalizationV2).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterLeaderboardLocalizations(), typeInfo);
             }
-            else if (value.IsGameCenterLeaderboardReleases1)
+            else if (value.IsGameCenterLeaderboards)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboardRelease), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboardRelease?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterLeaderboardRelease).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterLeaderboardReleases1(), typeInfo);
-            }
-            else if (value.IsGameCenterLeaderboardSets)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboardSet), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboardSet?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterLeaderboardSet).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterLeaderboardSets(), typeInfo);
-            }
-            else if (value.IsGameCenterLeaderboardReleases2)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboard), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboard?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterLeaderboard).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterLeaderboardReleases2(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboardV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboardV2?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterLeaderboardV2).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterLeaderboards(), typeInfo);
             }
         }
     }

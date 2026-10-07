@@ -17,30 +17,30 @@ namespace AppStoreConnect.JsonConverters
 
 
             var readerCopy = reader;
-            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterAchievementLocalizationResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterAchievementLocalizationResponseIncludedItemDiscriminator> ??
-                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterAchievementLocalizationResponseIncludedItemDiscriminator)}");
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterAchievementLocalizationV2ResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterAchievementLocalizationV2ResponseIncludedItemDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterAchievementLocalizationV2ResponseIncludedItemDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::AppStoreConnect.GameCenterAchievementImage? gameCenterAchievementImages = default;
-            if (discriminator?.Type == global::AppStoreConnect.GameCenterAchievementLocalizationResponseIncludedItemDiscriminatorType.GameCenterAchievementImages)
+            global::AppStoreConnect.GameCenterAchievementImageV2? gameCenterAchievementImages = default;
+            if (discriminator?.Type == global::AppStoreConnect.GameCenterAchievementLocalizationV2ResponseIncludedItemDiscriminatorType.GameCenterAchievementImages)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterAchievementImage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterAchievementImage> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterAchievementImage)}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterAchievementImageV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterAchievementImageV2> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterAchievementImageV2)}");
                 gameCenterAchievementImages = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.GameCenterAchievement? gameCenterAchievements = default;
-            if (discriminator?.Type == global::AppStoreConnect.GameCenterAchievementLocalizationResponseIncludedItemDiscriminatorType.GameCenterAchievements)
+            global::AppStoreConnect.GameCenterAchievementVersionV2? gameCenterAchievementVersions = default;
+            if (discriminator?.Type == global::AppStoreConnect.GameCenterAchievementLocalizationV2ResponseIncludedItemDiscriminatorType.GameCenterAchievementVersions)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterAchievement), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterAchievement> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterAchievement)}");
-                gameCenterAchievements = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterAchievementVersionV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterAchievementVersionV2> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterAchievementVersionV2)}");
+                gameCenterAchievementVersions = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::AppStoreConnect.IncludedItem78(
                 discriminator?.Type,
                 gameCenterAchievementImages,
 
-                gameCenterAchievements
+                gameCenterAchievementVersions
                 );
 
             return __value;
@@ -57,15 +57,15 @@ namespace AppStoreConnect.JsonConverters
 
             if (value.IsGameCenterAchievementImages)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterAchievementImage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterAchievementImage?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterAchievementImage).Name}");
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterAchievementImageV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterAchievementImageV2?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterAchievementImageV2).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterAchievementImages(), typeInfo);
             }
-            else if (value.IsGameCenterAchievements)
+            else if (value.IsGameCenterAchievementVersions)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterAchievement), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterAchievement?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterAchievement).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterAchievements(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterAchievementVersionV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterAchievementVersionV2?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterAchievementVersionV2).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterAchievementVersions(), typeInfo);
             }
         }
     }

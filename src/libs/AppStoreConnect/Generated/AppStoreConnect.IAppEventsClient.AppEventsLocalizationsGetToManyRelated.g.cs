@@ -11,10 +11,12 @@ namespace AppStoreConnect
         /// <param name="fieldsAppEvents"></param>
         /// <param name="fieldsAppEventScreenshots"></param>
         /// <param name="fieldsAppEventVideoClips"></param>
+        /// <param name="fieldsAppAssetLibraryPlacements"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
         /// <param name="limitAppEventScreenshots"></param>
         /// <param name="limitAppEventVideoClips"></param>
+        /// <param name="limitPlacements"></param>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -25,10 +27,12 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppEvent>? fieldsAppEvents = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppEventScreenshot>? fieldsAppEventScreenshots = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppEventVideoClip>? fieldsAppEventVideoClips = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement>? fieldsAppAssetLibraryPlacements = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedIncludeItem>? include = default,
             int? limitAppEventScreenshots = default,
             int? limitAppEventVideoClips = default,
+            int? limitPlacements = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -38,10 +42,12 @@ namespace AppStoreConnect
         /// <param name="fieldsAppEvents"></param>
         /// <param name="fieldsAppEventScreenshots"></param>
         /// <param name="fieldsAppEventVideoClips"></param>
+        /// <param name="fieldsAppAssetLibraryPlacements"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
         /// <param name="limitAppEventScreenshots"></param>
         /// <param name="limitAppEventVideoClips"></param>
+        /// <param name="limitPlacements"></param>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -52,10 +58,12 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppEvent>? fieldsAppEvents = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppEventScreenshot>? fieldsAppEventScreenshots = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppEventVideoClip>? fieldsAppEventVideoClips = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement>? fieldsAppAssetLibraryPlacements = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedIncludeItem>? include = default,
             int? limitAppEventScreenshots = default,
             int? limitAppEventVideoClips = default,
+            int? limitPlacements = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

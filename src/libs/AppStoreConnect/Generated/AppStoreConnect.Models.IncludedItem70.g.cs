@@ -12,118 +12,81 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CiWorkflowsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.CiProductsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.CiMacOsVersion? CiMacOsVersions { get; init; }
+        public global::AppStoreConnect.App? Apps { get; init; }
 #else
-        public global::AppStoreConnect.CiMacOsVersion? CiMacOsVersions { get; }
+        public global::AppStoreConnect.App? Apps { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CiMacOsVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
 #endif
-        public bool IsCiMacOsVersions => CiMacOsVersions != null;
+        public bool IsApps => Apps != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickCiMacOsVersions(
+        public bool TryPickApps(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.CiMacOsVersion? value)
+            out global::AppStoreConnect.App? value)
         {
-            value = CiMacOsVersions;
-            return IsCiMacOsVersions;
+            value = Apps;
+            return IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CiMacOsVersion PickCiMacOsVersions() => CiMacOsVersions is { } value
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'CiMacOsVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.CiProduct? CiProducts { get; init; }
+        public global::AppStoreConnect.BundleId? BundleIds { get; init; }
 #else
-        public global::AppStoreConnect.CiProduct? CiProducts { get; }
+        public global::AppStoreConnect.BundleId? BundleIds { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CiProducts))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BundleIds))]
 #endif
-        public bool IsCiProducts => CiProducts != null;
+        public bool IsBundleIds => BundleIds != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickCiProducts(
+        public bool TryPickBundleIds(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.CiProduct? value)
+            out global::AppStoreConnect.BundleId? value)
         {
-            value = CiProducts;
-            return IsCiProducts;
+            value = BundleIds;
+            return IsBundleIds;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CiProduct PickCiProducts() => CiProducts is { } value
+        public global::AppStoreConnect.BundleId PickBundleIds() => BundleIds is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'CiProducts' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.CiXcodeVersion? CiXcodeVersions { get; init; }
-#else
-        public global::AppStoreConnect.CiXcodeVersion? CiXcodeVersions { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CiXcodeVersions))]
-#endif
-        public bool IsCiXcodeVersions => CiXcodeVersions != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickCiXcodeVersions(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.CiXcodeVersion? value)
-        {
-            value = CiXcodeVersions;
-            return IsCiXcodeVersions;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.CiXcodeVersion PickCiXcodeVersions() => CiXcodeVersions is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'CiXcodeVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BundleIds' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -164,71 +127,48 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem70(global::AppStoreConnect.CiMacOsVersion value) => new IncludedItem70((global::AppStoreConnect.CiMacOsVersion?)value);
+        public static implicit operator IncludedItem70(global::AppStoreConnect.App value) => new IncludedItem70((global::AppStoreConnect.App?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.CiMacOsVersion?(IncludedItem70 @this) => @this.CiMacOsVersions;
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem70 @this) => @this.Apps;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem70(global::AppStoreConnect.CiMacOsVersion? value)
+        public IncludedItem70(global::AppStoreConnect.App? value)
         {
-            CiMacOsVersions = value;
+            Apps = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem70 FromCiMacOsVersions(global::AppStoreConnect.CiMacOsVersion? value) => new IncludedItem70(value);
+        public static IncludedItem70 FromApps(global::AppStoreConnect.App? value) => new IncludedItem70(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem70(global::AppStoreConnect.CiProduct value) => new IncludedItem70((global::AppStoreConnect.CiProduct?)value);
+        public static implicit operator IncludedItem70(global::AppStoreConnect.BundleId value) => new IncludedItem70((global::AppStoreConnect.BundleId?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.CiProduct?(IncludedItem70 @this) => @this.CiProducts;
+        public static implicit operator global::AppStoreConnect.BundleId?(IncludedItem70 @this) => @this.BundleIds;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem70(global::AppStoreConnect.CiProduct? value)
+        public IncludedItem70(global::AppStoreConnect.BundleId? value)
         {
-            CiProducts = value;
+            BundleIds = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem70 FromCiProducts(global::AppStoreConnect.CiProduct? value) => new IncludedItem70(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem70(global::AppStoreConnect.CiXcodeVersion value) => new IncludedItem70((global::AppStoreConnect.CiXcodeVersion?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.CiXcodeVersion?(IncludedItem70 @this) => @this.CiXcodeVersions;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem70(global::AppStoreConnect.CiXcodeVersion? value)
-        {
-            CiXcodeVersions = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem70 FromCiXcodeVersions(global::AppStoreConnect.CiXcodeVersion? value) => new IncludedItem70(value);
+        public static IncludedItem70 FromBundleIds(global::AppStoreConnect.BundleId? value) => new IncludedItem70(value);
 
         /// <summary>
         ///
@@ -257,18 +197,16 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public IncludedItem70(
-            global::AppStoreConnect.CiWorkflowsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.CiMacOsVersion? ciMacOsVersions,
-            global::AppStoreConnect.CiProduct? ciProducts,
-            global::AppStoreConnect.CiXcodeVersion? ciXcodeVersions,
+            global::AppStoreConnect.CiProductsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.App? apps,
+            global::AppStoreConnect.BundleId? bundleIds,
             global::AppStoreConnect.ScmRepository? scmRepositories
             )
         {
             Type = type;
 
-            CiMacOsVersions = ciMacOsVersions;
-            CiProducts = ciProducts;
-            CiXcodeVersions = ciXcodeVersions;
+            Apps = apps;
+            BundleIds = bundleIds;
             ScmRepositories = scmRepositories;
         }
 
@@ -277,18 +215,16 @@ namespace AppStoreConnect
         /// </summary>
         public object? Object =>
             ScmRepositories as object ??
-            CiXcodeVersions as object ??
-            CiProducts as object ??
-            CiMacOsVersions as object
+            BundleIds as object ??
+            Apps as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            CiMacOsVersions?.ToString() ??
-            CiProducts?.ToString() ??
-            CiXcodeVersions?.ToString() ??
+            Apps?.ToString() ??
+            BundleIds?.ToString() ??
             ScmRepositories?.ToString()
             ;
 
@@ -297,16 +233,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsCiMacOsVersions && !IsCiProducts && !IsCiXcodeVersions && !IsScmRepositories || !IsCiMacOsVersions && IsCiProducts && !IsCiXcodeVersions && !IsScmRepositories || !IsCiMacOsVersions && !IsCiProducts && IsCiXcodeVersions && !IsScmRepositories || !IsCiMacOsVersions && !IsCiProducts && !IsCiXcodeVersions && IsScmRepositories;
+            return IsApps && !IsBundleIds && !IsScmRepositories || !IsApps && IsBundleIds && !IsScmRepositories || !IsApps && !IsBundleIds && IsScmRepositories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.CiMacOsVersion, TResult>? ciMacOsVersions = null,
-            global::System.Func<global::AppStoreConnect.CiProduct, TResult>? ciProducts = null,
-            global::System.Func<global::AppStoreConnect.CiXcodeVersion, TResult>? ciXcodeVersions = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
+            global::System.Func<global::AppStoreConnect.BundleId, TResult>? bundleIds = null,
             global::System.Func<global::AppStoreConnect.ScmRepository, TResult>? scmRepositories = null,
             bool validate = true)
         {
@@ -315,21 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (CiMacOsVersions is { } __value0 && ciMacOsVersions != null)
+            if (Apps is { } __value0 && apps != null)
             {
-                return ciMacOsVersions(__value0);
+                return apps(__value0);
             }
-            else if (CiProducts is { } __value1 && ciProducts != null)
+            else if (BundleIds is { } __value1 && bundleIds != null)
             {
-                return ciProducts(__value1);
+                return bundleIds(__value1);
             }
-            else if (CiXcodeVersions is { } __value2 && ciXcodeVersions != null)
+            else if (ScmRepositories is { } __value2 && scmRepositories != null)
             {
-                return ciXcodeVersions(__value2);
-            }
-            else if (ScmRepositories is { } __value3 && scmRepositories != null)
-            {
-                return scmRepositories(__value3);
+                return scmRepositories(__value2);
             }
 
             return default(TResult);
@@ -339,11 +270,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.CiMacOsVersion>? ciMacOsVersions = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
 
-            global::System.Action<global::AppStoreConnect.CiProduct>? ciProducts = null,
-
-            global::System.Action<global::AppStoreConnect.CiXcodeVersion>? ciXcodeVersions = null,
+            global::System.Action<global::AppStoreConnect.BundleId>? bundleIds = null,
 
             global::System.Action<global::AppStoreConnect.ScmRepository>? scmRepositories = null,
             bool validate = true)
@@ -353,21 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (CiMacOsVersions is { } __value0)
+            if (Apps is { } __value0)
             {
-                ciMacOsVersions?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (CiProducts is { } __value1)
+            else if (BundleIds is { } __value1)
             {
-                ciProducts?.Invoke(__value1);
+                bundleIds?.Invoke(__value1);
             }
-            else if (CiXcodeVersions is { } __value2)
+            else if (ScmRepositories is { } __value2)
             {
-                ciXcodeVersions?.Invoke(__value2);
-            }
-            else if (ScmRepositories is { } __value3)
-            {
-                scmRepositories?.Invoke(__value3);
+                scmRepositories?.Invoke(__value2);
             }
         }
 
@@ -375,9 +300,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.CiMacOsVersion>? ciMacOsVersions = null,
-            global::System.Action<global::AppStoreConnect.CiProduct>? ciProducts = null,
-            global::System.Action<global::AppStoreConnect.CiXcodeVersion>? ciXcodeVersions = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.BundleId>? bundleIds = null,
             global::System.Action<global::AppStoreConnect.ScmRepository>? scmRepositories = null,
             bool validate = true)
         {
@@ -386,21 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (CiMacOsVersions is { } __value0)
+            if (Apps is { } __value0)
             {
-                ciMacOsVersions?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (CiProducts is { } __value1)
+            else if (BundleIds is { } __value1)
             {
-                ciProducts?.Invoke(__value1);
+                bundleIds?.Invoke(__value1);
             }
-            else if (CiXcodeVersions is { } __value2)
+            else if (ScmRepositories is { } __value2)
             {
-                ciXcodeVersions?.Invoke(__value2);
-            }
-            else if (ScmRepositories is { } __value3)
-            {
-                scmRepositories?.Invoke(__value3);
+                scmRepositories?.Invoke(__value2);
             }
         }
 
@@ -411,12 +331,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                CiMacOsVersions,
-                typeof(global::AppStoreConnect.CiMacOsVersion),
-                CiProducts,
-                typeof(global::AppStoreConnect.CiProduct),
-                CiXcodeVersions,
-                typeof(global::AppStoreConnect.CiXcodeVersion),
+                Apps,
+                typeof(global::AppStoreConnect.App),
+                BundleIds,
+                typeof(global::AppStoreConnect.BundleId),
                 ScmRepositories,
                 typeof(global::AppStoreConnect.ScmRepository),
             };
@@ -435,9 +353,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem70 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CiMacOsVersion?>.Default.Equals(CiMacOsVersions, other.CiMacOsVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CiProduct?>.Default.Equals(CiProducts, other.CiProducts) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CiXcodeVersion?>.Default.Equals(CiXcodeVersions, other.CiXcodeVersions) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BundleId?>.Default.Equals(BundleIds, other.BundleIds) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmRepository?>.Default.Equals(ScmRepositories, other.ScmRepositories)
                 ;
         }

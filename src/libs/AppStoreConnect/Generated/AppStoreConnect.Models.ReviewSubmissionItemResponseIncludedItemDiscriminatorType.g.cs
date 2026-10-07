@@ -11,6 +11,14 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        AppAssetLibraryImages,
+        /// <summary>
+        ///
+        /// </summary>
+        AppAssetLibraryVideos,
+        /// <summary>
+        ///
+        /// </summary>
         AppCustomProductPageVersions,
         /// <summary>
         ///
@@ -74,6 +82,8 @@ namespace AppStoreConnect
         {
             return value switch
             {
+                ReviewSubmissionItemResponseIncludedItemDiscriminatorType.AppAssetLibraryImages => "appAssetLibraryImages",
+                ReviewSubmissionItemResponseIncludedItemDiscriminatorType.AppAssetLibraryVideos => "appAssetLibraryVideos",
                 ReviewSubmissionItemResponseIncludedItemDiscriminatorType.AppCustomProductPageVersions => "appCustomProductPageVersions",
                 ReviewSubmissionItemResponseIncludedItemDiscriminatorType.AppEvents => "appEvents",
                 ReviewSubmissionItemResponseIncludedItemDiscriminatorType.AppStoreVersionExperiments => "appStoreVersionExperiments",
@@ -97,6 +107,8 @@ namespace AppStoreConnect
         {
             return value switch
             {
+                "appAssetLibraryImages" => ReviewSubmissionItemResponseIncludedItemDiscriminatorType.AppAssetLibraryImages,
+                "appAssetLibraryVideos" => ReviewSubmissionItemResponseIncludedItemDiscriminatorType.AppAssetLibraryVideos,
                 "appCustomProductPageVersions" => ReviewSubmissionItemResponseIncludedItemDiscriminatorType.AppCustomProductPageVersions,
                 "appEvents" => ReviewSubmissionItemResponseIncludedItemDiscriminatorType.AppEvents,
                 "appStoreVersionExperiments" => ReviewSubmissionItemResponseIncludedItemDiscriminatorType.AppStoreVersionExperiments,

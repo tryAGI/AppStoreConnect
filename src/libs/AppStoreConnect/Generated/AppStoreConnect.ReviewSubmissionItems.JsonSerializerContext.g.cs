@@ -38,6 +38,12 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppEventData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppEventDataType), TypeInfoPropertyName = "ReviewSubmissionItemCreateRequestDataRelationshipsAppEventDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImage))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImageData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImageDataType), TypeInfoPropertyName = "ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImageDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideo))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideoData))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideoDataType), TypeInfoPropertyName = "ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideoDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsBackgroundAssetVersion))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsBackgroundAssetVersionData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsBackgroundAssetVersionDataType), TypeInfoPropertyName = "ReviewSubmissionItemCreateRequestDataRelationshipsBackgroundAssetVersionDataType2")]
@@ -77,6 +83,8 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppStoreVersionExperimentDataType?), TypeInfoPropertyName = "NullableReviewSubmissionItemCreateRequestDataRelationshipsAppStoreVersionExperimentDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppStoreVersionExperimentV2DataType?), TypeInfoPropertyName = "NullableReviewSubmissionItemCreateRequestDataRelationshipsAppStoreVersionExperimentV2DataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppEventDataType?), TypeInfoPropertyName = "NullableReviewSubmissionItemCreateRequestDataRelationshipsAppEventDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImageDataType?), TypeInfoPropertyName = "NullableReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImageDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideoDataType?), TypeInfoPropertyName = "NullableReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideoDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsBackgroundAssetVersionDataType?), TypeInfoPropertyName = "NullableReviewSubmissionItemCreateRequestDataRelationshipsBackgroundAssetVersionDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsGameCenterAchievementVersionDataType?), TypeInfoPropertyName = "NullableReviewSubmissionItemCreateRequestDataRelationshipsGameCenterAchievementVersionDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsGameCenterActivityVersionDataType?), TypeInfoPropertyName = "NullableReviewSubmissionItemCreateRequestDataRelationshipsGameCenterActivityVersionDataType2")]
@@ -187,6 +195,14 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppEventDataType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppEventDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImageDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImageDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideoDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideoDataType?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsBackgroundAssetVersionDataType)
 
@@ -311,6 +327,26 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppEventDataType?))
                 {
                     return new global::AppStoreConnect.JsonConverters.ReviewSubmissionItemCreateRequestDataRelationshipsAppEventDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImageDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImageDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImageDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImageDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideoDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideoDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideoDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideoDataTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsBackgroundAssetVersionDataType))

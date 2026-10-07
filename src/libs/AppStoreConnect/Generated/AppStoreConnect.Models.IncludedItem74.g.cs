@@ -12,44 +12,44 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.EndUserLicenseAgreementResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.CustomerReviewsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.App? Apps { get; init; }
+        public global::AppStoreConnect.CustomerReviewResponseV1? CustomerReviewResponses { get; init; }
 #else
-        public global::AppStoreConnect.App? Apps { get; }
+        public global::AppStoreConnect.CustomerReviewResponseV1? CustomerReviewResponses { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CustomerReviewResponses))]
 #endif
-        public bool IsApps => Apps != null;
+        public bool IsCustomerReviewResponses => CustomerReviewResponses != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickApps(
+        public bool TryPickCustomerReviewResponses(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.App? value)
+            out global::AppStoreConnect.CustomerReviewResponseV1? value)
         {
-            value = Apps;
-            return IsApps;
+            value = CustomerReviewResponses;
+            return IsCustomerReviewResponses;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickApps() => Apps is { } value
+        public global::AppStoreConnect.CustomerReviewResponseV1 PickCustomerReviewResponses() => CustomerReviewResponses is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CustomerReviewResponses' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -90,25 +90,25 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem74(global::AppStoreConnect.App value) => new IncludedItem74((global::AppStoreConnect.App?)value);
+        public static implicit operator IncludedItem74(global::AppStoreConnect.CustomerReviewResponseV1 value) => new IncludedItem74((global::AppStoreConnect.CustomerReviewResponseV1?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.App?(IncludedItem74 @this) => @this.Apps;
+        public static implicit operator global::AppStoreConnect.CustomerReviewResponseV1?(IncludedItem74 @this) => @this.CustomerReviewResponses;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem74(global::AppStoreConnect.App? value)
+        public IncludedItem74(global::AppStoreConnect.CustomerReviewResponseV1? value)
         {
-            Apps = value;
+            CustomerReviewResponses = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem74 FromApps(global::AppStoreConnect.App? value) => new IncludedItem74(value);
+        public static IncludedItem74 FromCustomerReviewResponses(global::AppStoreConnect.CustomerReviewResponseV1? value) => new IncludedItem74(value);
 
         /// <summary>
         ///
@@ -137,14 +137,14 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public IncludedItem74(
-            global::AppStoreConnect.EndUserLicenseAgreementResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.App? apps,
+            global::AppStoreConnect.CustomerReviewsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.CustomerReviewResponseV1? customerReviewResponses,
             global::AppStoreConnect.Territory? territories
             )
         {
             Type = type;
 
-            Apps = apps;
+            CustomerReviewResponses = customerReviewResponses;
             Territories = territories;
         }
 
@@ -153,14 +153,14 @@ namespace AppStoreConnect
         /// </summary>
         public object? Object =>
             Territories as object ??
-            Apps as object
+            CustomerReviewResponses as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            Apps?.ToString() ??
+            CustomerReviewResponses?.ToString() ??
             Territories?.ToString()
             ;
 
@@ -169,14 +169,14 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsApps && !IsTerritories || !IsApps && IsTerritories;
+            return IsCustomerReviewResponses && !IsTerritories || !IsCustomerReviewResponses && IsTerritories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
+            global::System.Func<global::AppStoreConnect.CustomerReviewResponseV1, TResult>? customerReviewResponses = null,
             global::System.Func<global::AppStoreConnect.Territory, TResult>? territories = null,
             bool validate = true)
         {
@@ -185,9 +185,9 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0 && apps != null)
+            if (CustomerReviewResponses is { } __value0 && customerReviewResponses != null)
             {
-                return apps(__value0);
+                return customerReviewResponses(__value0);
             }
             else if (Territories is { } __value1 && territories != null)
             {
@@ -201,7 +201,7 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.CustomerReviewResponseV1>? customerReviewResponses = null,
 
             global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
@@ -211,9 +211,9 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0)
+            if (CustomerReviewResponses is { } __value0)
             {
-                apps?.Invoke(__value0);
+                customerReviewResponses?.Invoke(__value0);
             }
             else if (Territories is { } __value1)
             {
@@ -225,7 +225,7 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.CustomerReviewResponseV1>? customerReviewResponses = null,
             global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
         {
@@ -234,9 +234,9 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0)
+            if (CustomerReviewResponses is { } __value0)
             {
-                apps?.Invoke(__value0);
+                customerReviewResponses?.Invoke(__value0);
             }
             else if (Territories is { } __value1)
             {
@@ -251,8 +251,8 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                Apps,
-                typeof(global::AppStoreConnect.App),
+                CustomerReviewResponses,
+                typeof(global::AppStoreConnect.CustomerReviewResponseV1),
                 Territories,
                 typeof(global::AppStoreConnect.Territory),
             };
@@ -271,7 +271,7 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem74 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CustomerReviewResponseV1?>.Default.Equals(CustomerReviewResponses, other.CustomerReviewResponses) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Territory?>.Default.Equals(Territories, other.Territories)
                 ;
         }

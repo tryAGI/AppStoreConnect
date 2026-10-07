@@ -24,6 +24,10 @@ namespace AppStoreConnect
         ///
         /// </summary>
         Locale,
+        /// <summary>
+        ///
+        /// </summary>
+        Placements,
     }
 
     /// <summary>
@@ -42,6 +46,7 @@ namespace AppStoreConnect
                 AppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization.AppScreenshotSets => "appScreenshotSets",
                 AppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization.AppStoreVersionExperimentTreatment => "appStoreVersionExperimentTreatment",
                 AppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization.Locale => "locale",
+                AppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization.Placements => "placements",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -56,6 +61,7 @@ namespace AppStoreConnect
                 "appScreenshotSets" => AppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization.AppScreenshotSets,
                 "appStoreVersionExperimentTreatment" => AppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization.AppStoreVersionExperimentTreatment,
                 "locale" => AppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization.Locale,
+                "placements" => AppStoreVersionExperimentsAppStoreVersionExperimentTreatmentsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization.Placements,
                 _ => null,
             };
         }

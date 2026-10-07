@@ -24,6 +24,10 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsAppEvent))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsAppEventData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsAppEventDataType), TypeInfoPropertyName = "AppEventLocalizationCreateRequestDataRelationshipsAppEventDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsPlacements))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItemType), TypeInfoPropertyName = "AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationUpdateRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationUpdateRequestData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationUpdateRequestDataType), TypeInfoPropertyName = "AppEventLocalizationUpdateRequestDataType2")]
@@ -38,6 +42,10 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationAppEventVideoClipsLinkagesResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationAppEventVideoClipsLinkagesResponseDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationAppEventVideoClipsLinkagesResponseDataItemType), TypeInfoPropertyName = "AppEventLocalizationAppEventVideoClipsLinkagesResponseDataItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationPlacementsLinkagesResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationPlacementsLinkagesResponseDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationPlacementsLinkagesResponseDataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationPlacementsLinkagesResponseDataItemType), TypeInfoPropertyName = "AppEventLocalizationPlacementsLinkagesResponseDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventLocalization>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventLocalization), TypeInfoPropertyName = "AppEventLocalizationsGetInstanceFieldsAppEventLocalization2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEvent>))]
@@ -46,6 +54,8 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventScreenshot), TypeInfoPropertyName = "AppEventLocalizationsGetInstanceFieldsAppEventScreenshot2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventVideoClip>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventVideoClip), TypeInfoPropertyName = "AppEventLocalizationsGetInstanceFieldsAppEventVideoClip2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement), TypeInfoPropertyName = "AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceIncludeItem), TypeInfoPropertyName = "AppEventLocalizationsGetInstanceIncludeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsAppEventScreenshotsGetToManyRelatedFieldsAppEventScreenshot>))]
@@ -60,16 +70,41 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsAppEventVideoClipsGetToManyRelatedFieldsAppEventLocalization), TypeInfoPropertyName = "AppEventLocalizationsAppEventVideoClipsGetToManyRelatedFieldsAppEventLocalization2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsAppEventVideoClipsGetToManyRelatedIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsAppEventVideoClipsGetToManyRelatedIncludeItem), TypeInfoPropertyName = "AppEventLocalizationsAppEventVideoClipsGetToManyRelatedIncludeItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem), TypeInfoPropertyName = "AppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterStateItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterStateItem), TypeInfoPropertyName = "AppEventLocalizationsPlacementsGetToManyRelatedFilterStateItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedSortItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedSortItem), TypeInfoPropertyName = "AppEventLocalizationsPlacementsGetToManyRelatedSortItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement), TypeInfoPropertyName = "AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage), TypeInfoPropertyName = "AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo), TypeInfoPropertyName = "AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization), TypeInfoPropertyName = "AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization), TypeInfoPropertyName = "AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization), TypeInfoPropertyName = "AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization), TypeInfoPropertyName = "AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedIncludeItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedIncludeItem), TypeInfoPropertyName = "AppEventLocalizationsPlacementsGetToManyRelatedIncludeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationResponseIncludedItemDiscriminatorType?), TypeInfoPropertyName = "NullableAppEventLocalizationResponseIncludedItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataType?), TypeInfoPropertyName = "NullableAppEventLocalizationCreateRequestDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsAppEventDataType?), TypeInfoPropertyName = "NullableAppEventLocalizationCreateRequestDataRelationshipsAppEventDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItemType?), TypeInfoPropertyName = "NullableAppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationUpdateRequestDataType?), TypeInfoPropertyName = "NullableAppEventLocalizationUpdateRequestDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationAppEventScreenshotsLinkagesResponseDataItemType?), TypeInfoPropertyName = "NullableAppEventLocalizationAppEventScreenshotsLinkagesResponseDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationAppEventVideoClipsLinkagesResponseDataItemType?), TypeInfoPropertyName = "NullableAppEventLocalizationAppEventVideoClipsLinkagesResponseDataItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationPlacementsLinkagesResponseDataItemType?), TypeInfoPropertyName = "NullableAppEventLocalizationPlacementsLinkagesResponseDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventLocalization?), TypeInfoPropertyName = "NullableAppEventLocalizationsGetInstanceFieldsAppEventLocalization2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEvent?), TypeInfoPropertyName = "NullableAppEventLocalizationsGetInstanceFieldsAppEvent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventScreenshot?), TypeInfoPropertyName = "NullableAppEventLocalizationsGetInstanceFieldsAppEventScreenshot2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventVideoClip?), TypeInfoPropertyName = "NullableAppEventLocalizationsGetInstanceFieldsAppEventVideoClip2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement?), TypeInfoPropertyName = "NullableAppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceIncludeItem?), TypeInfoPropertyName = "NullableAppEventLocalizationsGetInstanceIncludeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsAppEventScreenshotsGetToManyRelatedFieldsAppEventScreenshot?), TypeInfoPropertyName = "NullableAppEventLocalizationsAppEventScreenshotsGetToManyRelatedFieldsAppEventScreenshot2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsAppEventScreenshotsGetToManyRelatedFieldsAppEventLocalization?), TypeInfoPropertyName = "NullableAppEventLocalizationsAppEventScreenshotsGetToManyRelatedFieldsAppEventLocalization2")]
@@ -77,12 +112,26 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsAppEventVideoClipsGetToManyRelatedFieldsAppEventVideoClip?), TypeInfoPropertyName = "NullableAppEventLocalizationsAppEventVideoClipsGetToManyRelatedFieldsAppEventVideoClip2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsAppEventVideoClipsGetToManyRelatedFieldsAppEventLocalization?), TypeInfoPropertyName = "NullableAppEventLocalizationsAppEventVideoClipsGetToManyRelatedFieldsAppEventLocalization2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsAppEventVideoClipsGetToManyRelatedIncludeItem?), TypeInfoPropertyName = "NullableAppEventLocalizationsAppEventVideoClipsGetToManyRelatedIncludeItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem?), TypeInfoPropertyName = "NullableAppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterStateItem?), TypeInfoPropertyName = "NullableAppEventLocalizationsPlacementsGetToManyRelatedFilterStateItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedSortItem?), TypeInfoPropertyName = "NullableAppEventLocalizationsPlacementsGetToManyRelatedSortItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?), TypeInfoPropertyName = "NullableAppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?), TypeInfoPropertyName = "NullableAppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?), TypeInfoPropertyName = "NullableAppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization?), TypeInfoPropertyName = "NullableAppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?), TypeInfoPropertyName = "NullableAppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?), TypeInfoPropertyName = "NullableAppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?), TypeInfoPropertyName = "NullableAppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedIncludeItem?), TypeInfoPropertyName = "NullableAppEventLocalizationsPlacementsGetToManyRelatedIncludeItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationAppEventScreenshotsLinkagesResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationAppEventVideoClipsLinkagesResponseDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationPlacementsLinkagesResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventLocalization>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEvent>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventScreenshot>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventVideoClip>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsGetInstanceIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsAppEventScreenshotsGetToManyRelatedFieldsAppEventScreenshot>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsAppEventScreenshotsGetToManyRelatedFieldsAppEventLocalization>))]
@@ -90,6 +139,17 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsAppEventVideoClipsGetToManyRelatedFieldsAppEventVideoClip>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsAppEventVideoClipsGetToManyRelatedFieldsAppEventLocalization>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsAppEventVideoClipsGetToManyRelatedIncludeItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterStateItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedSortItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedIncludeItem>))]
     internal sealed partial class AppEventLocalizationsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -171,6 +231,10 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsAppEventDataType?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItemType?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationUpdateRequestDataType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationUpdateRequestDataType?)
@@ -182,6 +246,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationAppEventVideoClipsLinkagesResponseDataItemType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationAppEventVideoClipsLinkagesResponseDataItemType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationPlacementsLinkagesResponseDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationPlacementsLinkagesResponseDataItemType?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventLocalization)
 
@@ -198,6 +266,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventVideoClip)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventVideoClip?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceIncludeItem)
 
@@ -225,7 +297,51 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsAppEventVideoClipsGetToManyRelatedIncludeItem)
 
-                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsAppEventVideoClipsGetToManyRelatedIncludeItem?);
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsAppEventVideoClipsGetToManyRelatedIncludeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterStateItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterStateItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedSortItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedSortItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedIncludeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedIncludeItem?);
             }
 
             public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
@@ -262,6 +378,16 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.AppEventLocalizationCreateRequestDataRelationshipsAppEventDataTypeNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItemTypeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationUpdateRequestDataType))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppEventLocalizationUpdateRequestDataTypeJsonConverter();
@@ -290,6 +416,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationAppEventVideoClipsLinkagesResponseDataItemType?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppEventLocalizationAppEventVideoClipsLinkagesResponseDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationPlacementsLinkagesResponseDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationPlacementsLinkagesResponseDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationPlacementsLinkagesResponseDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationPlacementsLinkagesResponseDataItemTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventLocalization))
@@ -330,6 +466,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventVideoClip?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsGetInstanceFieldsAppEventVideoClipNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacementNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceIncludeItem))
@@ -400,6 +546,116 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsAppEventVideoClipsGetToManyRelatedIncludeItem?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsAppEventVideoClipsGetToManyRelatedIncludeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterStateItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFilterStateItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterStateItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFilterStateItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedSortItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedSortItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedSortItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedSortItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideoJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideoNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedIncludeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedIncludeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedIncludeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedIncludeItemNullableJsonConverter();
                 }
                 throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
             }

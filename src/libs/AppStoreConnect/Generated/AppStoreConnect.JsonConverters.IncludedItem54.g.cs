@@ -17,19 +17,19 @@ namespace AppStoreConnect.JsonConverters
 
 
             var readerCopy = reader;
-            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BetaFeedbackScreenshotSubmissionsResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BetaFeedbackScreenshotSubmissionsResponseIncludedItemDiscriminator> ??
-                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BetaFeedbackScreenshotSubmissionsResponseIncludedItemDiscriminator)}");
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BetaFeedbackCrashSubmissionsResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BetaFeedbackCrashSubmissionsResponseIncludedItemDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BetaFeedbackCrashSubmissionsResponseIncludedItemDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
             global::AppStoreConnect.BetaTester? betaTesters = default;
-            if (discriminator?.Type == global::AppStoreConnect.BetaFeedbackScreenshotSubmissionsResponseIncludedItemDiscriminatorType.BetaTesters)
+            if (discriminator?.Type == global::AppStoreConnect.BetaFeedbackCrashSubmissionsResponseIncludedItemDiscriminatorType.BetaTesters)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BetaTester), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BetaTester> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BetaTester)}");
                 betaTesters = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::AppStoreConnect.Build? builds = default;
-            if (discriminator?.Type == global::AppStoreConnect.BetaFeedbackScreenshotSubmissionsResponseIncludedItemDiscriminatorType.Builds)
+            if (discriminator?.Type == global::AppStoreConnect.BetaFeedbackCrashSubmissionsResponseIncludedItemDiscriminatorType.Builds)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Build), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Build> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.Build)}");

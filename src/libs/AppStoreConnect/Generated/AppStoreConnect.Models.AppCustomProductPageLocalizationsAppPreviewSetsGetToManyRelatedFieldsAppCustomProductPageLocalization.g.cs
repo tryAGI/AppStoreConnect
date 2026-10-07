@@ -27,6 +27,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        Placements,
+        /// <summary>
+        ///
+        /// </summary>
         PromotionalText,
         /// <summary>
         ///
@@ -50,6 +54,7 @@ namespace AppStoreConnect
                 AppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFieldsAppCustomProductPageLocalization.AppPreviewSets => "appPreviewSets",
                 AppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFieldsAppCustomProductPageLocalization.AppScreenshotSets => "appScreenshotSets",
                 AppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFieldsAppCustomProductPageLocalization.Locale => "locale",
+                AppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFieldsAppCustomProductPageLocalization.Placements => "placements",
                 AppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFieldsAppCustomProductPageLocalization.PromotionalText => "promotionalText",
                 AppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFieldsAppCustomProductPageLocalization.SearchKeywords => "searchKeywords",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -66,6 +71,7 @@ namespace AppStoreConnect
                 "appPreviewSets" => AppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFieldsAppCustomProductPageLocalization.AppPreviewSets,
                 "appScreenshotSets" => AppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFieldsAppCustomProductPageLocalization.AppScreenshotSets,
                 "locale" => AppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFieldsAppCustomProductPageLocalization.Locale,
+                "placements" => AppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFieldsAppCustomProductPageLocalization.Placements,
                 "promotionalText" => AppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFieldsAppCustomProductPageLocalization.PromotionalText,
                 "searchKeywords" => AppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFieldsAppCustomProductPageLocalization.SearchKeywords,
                 _ => null,

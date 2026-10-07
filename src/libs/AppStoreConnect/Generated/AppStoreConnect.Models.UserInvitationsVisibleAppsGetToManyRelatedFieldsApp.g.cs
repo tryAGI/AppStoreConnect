@@ -79,6 +79,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        AssetLibrary,
+        /// <summary>
+        ///
+        /// </summary>
         BackgroundAssets,
         /// <summary>
         ///
@@ -263,6 +267,7 @@ namespace AppStoreConnect
                 UserInvitationsVisibleAppsGetToManyRelatedFieldsApp.AppStoreVersionExperimentsV2 => "appStoreVersionExperimentsV2",
                 UserInvitationsVisibleAppsGetToManyRelatedFieldsApp.AppStoreVersions => "appStoreVersions",
                 UserInvitationsVisibleAppsGetToManyRelatedFieldsApp.AppTags => "appTags",
+                UserInvitationsVisibleAppsGetToManyRelatedFieldsApp.AssetLibrary => "assetLibrary",
                 UserInvitationsVisibleAppsGetToManyRelatedFieldsApp.BackgroundAssets => "backgroundAssets",
                 UserInvitationsVisibleAppsGetToManyRelatedFieldsApp.BetaAppLocalizations => "betaAppLocalizations",
                 UserInvitationsVisibleAppsGetToManyRelatedFieldsApp.BetaAppReviewDetail => "betaAppReviewDetail",
@@ -329,6 +334,7 @@ namespace AppStoreConnect
                 "appStoreVersionExperimentsV2" => UserInvitationsVisibleAppsGetToManyRelatedFieldsApp.AppStoreVersionExperimentsV2,
                 "appStoreVersions" => UserInvitationsVisibleAppsGetToManyRelatedFieldsApp.AppStoreVersions,
                 "appTags" => UserInvitationsVisibleAppsGetToManyRelatedFieldsApp.AppTags,
+                "assetLibrary" => UserInvitationsVisibleAppsGetToManyRelatedFieldsApp.AssetLibrary,
                 "backgroundAssets" => UserInvitationsVisibleAppsGetToManyRelatedFieldsApp.BackgroundAssets,
                 "betaAppLocalizations" => UserInvitationsVisibleAppsGetToManyRelatedFieldsApp.BetaAppLocalizations,
                 "betaAppReviewDetail" => UserInvitationsVisibleAppsGetToManyRelatedFieldsApp.BetaAppReviewDetail,

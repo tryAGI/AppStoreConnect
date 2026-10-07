@@ -27,6 +27,12 @@ namespace AppStoreConnect
         public global::AppStoreConnect.AppEventLocalizationRelationshipsAppEventVideoClips? AppEventVideoClips { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("placements")]
+        public global::AppStoreConnect.AppEventLocalizationRelationshipsPlacements? Placements { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -38,17 +44,20 @@ namespace AppStoreConnect
         /// <param name="appEvent"></param>
         /// <param name="appEventScreenshots"></param>
         /// <param name="appEventVideoClips"></param>
+        /// <param name="placements"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AppEventLocalizationRelationships(
             global::AppStoreConnect.AppEventLocalizationRelationshipsAppEvent? appEvent,
             global::AppStoreConnect.AppEventLocalizationRelationshipsAppEventScreenshots? appEventScreenshots,
-            global::AppStoreConnect.AppEventLocalizationRelationshipsAppEventVideoClips? appEventVideoClips)
+            global::AppStoreConnect.AppEventLocalizationRelationshipsAppEventVideoClips? appEventVideoClips,
+            global::AppStoreConnect.AppEventLocalizationRelationshipsPlacements? placements)
         {
             this.AppEvent = appEvent;
             this.AppEventScreenshots = appEventScreenshots;
             this.AppEventVideoClips = appEventVideoClips;
+            this.Placements = placements;
         }
 
         /// <summary>

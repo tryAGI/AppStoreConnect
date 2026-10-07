@@ -48,8 +48,34 @@ namespace AppStoreConnect
         {
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItemJsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem2JsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageAcceptedAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageApprovedAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageArchivedAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageAwaitingUploadAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageFailedAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageInReviewAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageReadyForReviewAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageRejectedAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageUploadCompleteAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageWaitingForReviewAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.RelationshipsJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementVideoAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementImageRelationshipsJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementVideoRelationshipsJsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem3JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem4JsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.Attributes2JsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoAcceptedAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoApprovedAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoArchivedAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoAwaitingUploadAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoFailedAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoInReviewAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoReadyForReviewAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoRejectedAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoUploadCompleteAttributesJsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoWaitingForReviewAttributesJsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem5JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem6JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem7JsonConverter());
@@ -62,8 +88,8 @@ namespace AppStoreConnect
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem14JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem15JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem16JsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem17JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem18JsonConverter());
-            options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem19JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem20JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem21JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem22JsonConverter());
@@ -73,8 +99,8 @@ namespace AppStoreConnect
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem26JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem27JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem28JsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem29JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem30JsonConverter());
-            options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem31JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem32JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem33JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem34JsonConverter());
@@ -176,14 +202,14 @@ namespace AppStoreConnect
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem130JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem131JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem132JsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem133JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem134JsonConverter());
-            options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem135JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem136JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem137JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem138JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem139JsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem140JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem141JsonConverter());
-            options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem142JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem143JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem144JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem145JsonConverter());
@@ -219,7 +245,9 @@ namespace AppStoreConnect
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem175JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem176JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem177JsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem178JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem179JsonConverter());
+            options.Converters.Add(new global::AppStoreConnect.JsonConverters.IncludedItem181JsonConverter());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.OneOfJsonConverter<global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreate, global::AppStoreConnect.AppCustomProductPageVersionInlineCreate>());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.OneOfJsonConverter<global::AppStoreConnect.AppPriceV2InlineCreate, global::AppStoreConnect.TerritoryInlineCreate>());
             options.Converters.Add(new global::AppStoreConnect.JsonConverters.OneOfJsonConverter<global::AppStoreConnect.GameCenterMatchmakingTestPlayerPropertyInlineCreate, global::AppStoreConnect.GameCenterMatchmakingTestRequestInlineCreate>());
@@ -546,6 +574,166 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AndroidToIosAppMappingDetailUpdateRequestDataType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AndroidToIosAppMappingDetailUpdateRequestDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageAttributesDiscriminatorState)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageAttributesDiscriminatorState?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageRelationshipsPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageRelationshipsPlacementsDataItemType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageCreateRequestDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageCreateRequestDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageCreateRequestDataRelationshipsAssetLibraryDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageCreateRequestDataRelationshipsAssetLibraryDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageCreateRequestDataRelationshipsPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageCreateRequestDataRelationshipsPlacementsDataItemType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageUpdateRequestDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageUpdateRequestDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestRelationshipsOrderedPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestRelationshipsOrderedPlacementsDataItemType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsOrderedPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsOrderedPlacementsDataItemType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppStoreVersionLocalizationDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppStoreVersionLocalizationDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppCustomProductPageLocalizationDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppCustomProductPageLocalizationDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementRelationshipsDiscriminatorMediaType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementRelationshipsDiscriminatorMediaType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppEventLocalizationDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppEventLocalizationDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppStoreVersionLocalizationDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppStoreVersionLocalizationDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppCustomProductPageLocalizationDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppCustomProductPageLocalizationDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementImageRelationshipsVariant2ImageDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementImageRelationshipsVariant2ImageDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementVideoRelationshipsVariant2VideoDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementVideoRelationshipsVariant2VideoDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsResponseIncludedItemDiscriminatorType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsResponseIncludedItemDiscriminatorType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementResponseIncludedItemDiscriminatorType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementResponseIncludedItemDiscriminatorType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsImageDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsImageDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsVideoDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsVideoDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppEventLocalizationDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppEventLocalizationDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppStoreVersionLocalizationDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppStoreVersionLocalizationDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppCustomProductPageLocalizationDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppCustomProductPageLocalizationDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryRefDatumType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryRefDatumType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoAttributesDiscriminatorState)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoAttributesDiscriminatorState?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoRelationshipsPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoRelationshipsPlacementsDataItemType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoCreateRequestDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoCreateRequestDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoCreateRequestDataRelationshipsAssetLibraryDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoCreateRequestDataRelationshipsAssetLibraryDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoCreateRequestDataRelationshipsPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoCreateRequestDataRelationshipsPlacementsDataItemType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoUpdateRequestDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoUpdateRequestDataType?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppAvailabilityV2Type)
 
@@ -895,6 +1083,10 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationRelationshipsSearchKeywordsDataItemType?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationRelationshipsPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationRelationshipsPlacementsDataItemType?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateType?)
@@ -902,6 +1094,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsAppCustomProductPageVersionDataType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsAppCustomProductPageVersionDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItemType?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsResponseIncludedItemDiscriminatorType)
 
@@ -918,6 +1114,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsAppCustomProductPageVersionDataType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsAppCustomProductPageVersionDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItemType?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationUpdateRequestDataType)
 
@@ -1083,6 +1283,10 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationRelationshipsAppEventVideoClipsDataItemType?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationRelationshipsPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationRelationshipsPlacementsDataItemType?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsResponseIncludedItemDiscriminatorType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsResponseIncludedItemDiscriminatorType?)
@@ -1098,6 +1302,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsAppEventDataType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsAppEventDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItemType?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationUpdateRequestDataType)
 
@@ -1599,6 +1807,10 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationRelationshipsAppPreviewSetsDataItemType?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationRelationshipsPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationRelationshipsPlacementsDataItemType?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsResponseIncludedItemDiscriminatorType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsResponseIncludedItemDiscriminatorType?)
@@ -1614,6 +1826,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentDataType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationCreateRequestDataRelationshipsPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationCreateRequestDataRelationshipsPlacementsDataItemType?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentType)
 
@@ -1755,6 +1971,10 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsSearchKeywordsDataItemType?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsPlacementsDataItemType?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsResponseIncludedItemDiscriminatorType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsResponseIncludedItemDiscriminatorType?)
@@ -1770,6 +1990,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationCreateRequestDataRelationshipsAppStoreVersionDataType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationCreateRequestDataRelationshipsAppStoreVersionDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationCreateRequestDataRelationshipsPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationCreateRequestDataRelationshipsPlacementsDataItemType?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationUpdateRequestDataType)
 
@@ -5635,6 +5859,14 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemRelationshipsAppEventDataType?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemRelationshipsAppAssetLibraryImageDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemRelationshipsAppAssetLibraryImageDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemRelationshipsAppAssetLibraryVideoDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemRelationshipsAppAssetLibraryVideoDataType?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemRelationshipsBackgroundAssetVersionDataType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemRelationshipsBackgroundAssetVersionDataType?)
@@ -5706,6 +5938,14 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppEventDataType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppEventDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImageDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImageDataType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideoDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideoDataType?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsBackgroundAssetVersionDataType)
 
@@ -6891,6 +7131,22 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AnalyticsReportInstancesLinkagesResponseDataItemType?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesLinkagesResponseDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesLinkagesResponseDataItemType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosLinkagesResponseDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosLinkagesResponseDataItemType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagePlacementsLinkagesResponseDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagePlacementsLinkagesResponseDataItemType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoPlacementsLinkagesResponseDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoPlacementsLinkagesResponseDataItemType?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.AppAvailabilityV2TerritoryAvailabilitiesLinkagesResponseDataItemType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppAvailabilityV2TerritoryAvailabilitiesLinkagesResponseDataItemType?)
@@ -6939,6 +7195,10 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponseDataItemType?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItemType?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationSearchKeywordsLinkagesResponseDataItemType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationSearchKeywordsLinkagesResponseDataItemType?)
@@ -6974,6 +7234,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationAppEventVideoClipsLinkagesResponseDataItemType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationAppEventVideoClipsLinkagesResponseDataItemType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationPlacementsLinkagesResponseDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationPlacementsLinkagesResponseDataItemType?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsLinkagesResponseDataItemType)
 
@@ -7059,6 +7323,10 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationAppScreenshotSetsLinkagesResponseDataItemType?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationPlacementsLinkagesResponseDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationPlacementsLinkagesResponseDataItemType?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentAppStoreVersionExperimentTreatmentLocalizationsLinkagesResponseDataItemType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentAppStoreVersionExperimentTreatmentLocalizationsLinkagesResponseDataItemType?)
@@ -7078,6 +7346,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationAppScreenshotSetsLinkagesResponseDataItemType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationAppScreenshotSetsLinkagesResponseDataItemType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationPlacementsLinkagesResponseDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationPlacementsLinkagesResponseDataItemType?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationSearchKeywordsLinkagesResponseDataItemType)
 
@@ -7206,6 +7478,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppAppTagsLinkagesResponseDataItemType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppAppTagsLinkagesResponseDataItemType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryLinkageResponseDataType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryLinkageResponseDataType?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppBackgroundAssetsLinkagesResponseDataItemType)
 
@@ -8275,6 +8551,38 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.GameCenterMatchmakingRuleErrorsV1MetricResponseDataItemGranularity?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryAssetCategory)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryAssetCategory?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryAssetState)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryAssetState?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryDisplayClass)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryDisplayClass?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryFeature)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryFeature?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryMediaType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryMediaType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementPlatform)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementPlatform?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementState)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementState?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementType2)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementType2?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.AppClipAction)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppClipAction?)
@@ -8647,6 +8955,86 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AndroidToIosAppMappingDetailsGetInstanceFieldsAndroidToIosAppMappingDetail?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesGetInstanceFieldsAppAssetLibrarie)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesGetInstanceFieldsAppAssetLibrarie?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesGetInstanceFieldsAppAssetLibraryImage)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesGetInstanceFieldsAppAssetLibraryImage?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesGetInstanceFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesGetInstanceFieldsAppAssetLibraryPlacement?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesGetInstanceIncludeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesGetInstanceIncludeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestsCreateInstanceFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestsCreateInstanceFieldsAppAssetLibraryPlacement?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestsCreateInstanceIncludeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestsCreateInstanceIncludeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestsCreateInstanceFieldsAppAssetLibraryPlacementOrderingRequest)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestsCreateInstanceFieldsAppAssetLibraryPlacementOrderingRequest?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryPlacement?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryImage)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryImage?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryVideo)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryVideo?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppEventLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppEventLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppCustomProductPageLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppCustomProductPageLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionExperimentTreatmentLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionExperimentTreatmentLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceIncludeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceIncludeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryRefDataGetCollectionFieldsAppAssetLibraryRefDataItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryRefDataGetCollectionFieldsAppAssetLibraryRefDataItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryRefDataGetInstanceFieldsAppAssetLibraryRefDataItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryRefDataGetInstanceFieldsAppAssetLibraryRefDataItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryVideo)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryVideo?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosGetInstanceIncludeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosGetInstanceIncludeItem?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.AppAvailabilitiesV2GetInstanceFieldsAppAvailabilitie)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppAvailabilitiesV2GetInstanceFieldsAppAvailabilitie?)
@@ -8799,6 +9187,10 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppPreviewSet?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceIncludeItem)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceIncludeItem?)
@@ -8898,6 +9290,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventVideoClip)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventVideoClip?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceIncludeItem)
 
@@ -9127,6 +9523,10 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsGetInstanceFieldsAppPreviewSet?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsGetInstanceFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsGetInstanceFieldsAppAssetLibraryPlacement?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsGetInstanceIncludeItem)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsGetInstanceIncludeItem?)
@@ -9198,6 +9598,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsGetInstanceFieldsAppPreviewSet)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsGetInstanceFieldsAppPreviewSet?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsGetInstanceIncludeItem)
 
@@ -12199,6 +12603,142 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AnalyticsReportsInstancesGetToManyRelatedFieldsAnalyticsReportInstance?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterCategoryItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterCategoryItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterStateItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterStateItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedSortItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedSortItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImage)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImage?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacement?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedIncludeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedIncludeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterCategoryItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterCategoryItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterStateItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterStateItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedSortItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedSortItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideo)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideo?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacement?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedIncludeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedIncludeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFilterPlacementTypeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFilterPlacementTypeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFilterStateItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFilterStateItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedSortItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedSortItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryImage)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppEventLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppEventLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedIncludeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedIncludeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFilterPlacementTypeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFilterPlacementTypeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFilterStateItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFilterStateItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedSortItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedSortItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryImage)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppEventLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppEventLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedIncludeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedIncludeItem?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.AppAvailabilitiesV2TerritoryAvailabilitiesGetToManyRelatedFieldsTerritoryAvailabilitie)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppAvailabilitiesV2TerritoryAvailabilitiesGetToManyRelatedFieldsTerritoryAvailabilitie?)
@@ -12423,6 +12963,50 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItem?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppCustomProductPageLocalization)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppCustomProductPageLocalization?)
@@ -12438,6 +13022,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppPreviewSet)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppPreviewSet?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedIncludeItem)
 
@@ -12495,6 +13083,50 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsAppEventVideoClipsGetToManyRelatedIncludeItem?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterStateItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterStateItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedSortItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedSortItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedIncludeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedIncludeItem?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppEventLocalization)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppEventLocalization?)
@@ -12510,6 +13142,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppEventVideoClip)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppEventVideoClip?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedIncludeItem)
 
@@ -12735,6 +13371,50 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItem?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFilterStateItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFilterStateItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedSortItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedSortItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedIncludeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedIncludeItem?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?)
@@ -12750,6 +13430,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppPreviewSet)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppPreviewSet?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedIncludeItem)
 
@@ -12842,6 +13526,50 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItem)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFilterStateItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFilterStateItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedSortItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedSortItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedIncludeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedIncludeItem?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionsAlternativeDistributionPackageGetToOneRelatedFieldsAlternativeDistributionPackage)
 
@@ -12954,6 +13682,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppPreviewSet)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppPreviewSet?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedIncludeItem)
 
@@ -13314,6 +14046,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppsAppTagsGetToManyRelatedIncludeItem)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppsAppTagsGetToManyRelatedIncludeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarie)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarie?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppsBackgroundAssetsGetToManyRelatedFilterVersionsPlatform)
 
@@ -16207,6 +16943,14 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppEvent?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryImage)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryImage?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryVideo)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryVideo?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsBackgroundAssetVersion)
 
                     || typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsBackgroundAssetVersion?)
@@ -17640,6 +18384,406 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.AndroidToIosAppMappingDetailUpdateRequestDataTypeNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageAttributesDiscriminatorState))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageAttributesDiscriminatorStateJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageAttributesDiscriminatorState?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageAttributesDiscriminatorStateNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageRelationshipsPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageRelationshipsPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageRelationshipsPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageRelationshipsPlacementsDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageCreateRequestDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageCreateRequestDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageCreateRequestDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageCreateRequestDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageCreateRequestDataRelationshipsAssetLibraryDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageCreateRequestDataRelationshipsAssetLibraryDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageCreateRequestDataRelationshipsAssetLibraryDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageCreateRequestDataRelationshipsAssetLibraryDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageCreateRequestDataRelationshipsPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageCreateRequestDataRelationshipsPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageCreateRequestDataRelationshipsPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageCreateRequestDataRelationshipsPlacementsDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageUpdateRequestDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageUpdateRequestDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImageUpdateRequestDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImageUpdateRequestDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestRelationshipsOrderedPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestRelationshipsOrderedPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestRelationshipsOrderedPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestRelationshipsOrderedPlacementsDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestCreateRequestDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestCreateRequestDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsOrderedPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsOrderedPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsOrderedPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsOrderedPlacementsDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppStoreVersionLocalizationDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppStoreVersionLocalizationDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppStoreVersionLocalizationDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppStoreVersionLocalizationDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppCustomProductPageLocalizationDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppCustomProductPageLocalizationDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppCustomProductPageLocalizationDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppCustomProductPageLocalizationDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementRelationshipsDiscriminatorMediaType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementRelationshipsDiscriminatorMediaTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementRelationshipsDiscriminatorMediaType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementRelationshipsDiscriminatorMediaTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppEventLocalizationDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCommonRelationshipsAppEventLocalizationDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppEventLocalizationDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCommonRelationshipsAppEventLocalizationDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppStoreVersionLocalizationDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCommonRelationshipsAppStoreVersionLocalizationDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppStoreVersionLocalizationDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCommonRelationshipsAppStoreVersionLocalizationDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppCustomProductPageLocalizationDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCommonRelationshipsAppCustomProductPageLocalizationDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppCustomProductPageLocalizationDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCommonRelationshipsAppCustomProductPageLocalizationDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCommonRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCommonRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementImageRelationshipsVariant2ImageDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementImageRelationshipsVariant2ImageDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementImageRelationshipsVariant2ImageDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementImageRelationshipsVariant2ImageDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementVideoRelationshipsVariant2VideoDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementVideoRelationshipsVariant2VideoDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementVideoRelationshipsVariant2VideoDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementVideoRelationshipsVariant2VideoDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsResponseIncludedItemDiscriminatorType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsResponseIncludedItemDiscriminatorTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsResponseIncludedItemDiscriminatorType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsResponseIncludedItemDiscriminatorTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementResponseIncludedItemDiscriminatorType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementResponseIncludedItemDiscriminatorTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementResponseIncludedItemDiscriminatorType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementResponseIncludedItemDiscriminatorTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCreateRequestDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCreateRequestDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsImageDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCreateRequestDataRelationshipsImageDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsImageDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCreateRequestDataRelationshipsImageDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsVideoDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCreateRequestDataRelationshipsVideoDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsVideoDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCreateRequestDataRelationshipsVideoDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppEventLocalizationDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppEventLocalizationDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppEventLocalizationDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppEventLocalizationDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppStoreVersionLocalizationDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppStoreVersionLocalizationDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppStoreVersionLocalizationDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppStoreVersionLocalizationDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppCustomProductPageLocalizationDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppCustomProductPageLocalizationDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppCustomProductPageLocalizationDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppCustomProductPageLocalizationDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentLocalizationDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryRefDatumType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryRefDatumTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryRefDatumType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryRefDatumTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoAttributesDiscriminatorState))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoAttributesDiscriminatorStateJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoAttributesDiscriminatorState?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoAttributesDiscriminatorStateNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoRelationshipsPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoRelationshipsPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoRelationshipsPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoRelationshipsPlacementsDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoCreateRequestDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoCreateRequestDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoCreateRequestDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoCreateRequestDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoCreateRequestDataRelationshipsAssetLibraryDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoCreateRequestDataRelationshipsAssetLibraryDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoCreateRequestDataRelationshipsAssetLibraryDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoCreateRequestDataRelationshipsAssetLibraryDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoCreateRequestDataRelationshipsPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoCreateRequestDataRelationshipsPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoCreateRequestDataRelationshipsPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoCreateRequestDataRelationshipsPlacementsDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoUpdateRequestDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoUpdateRequestDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoUpdateRequestDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoUpdateRequestDataTypeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppAvailabilityV2Type))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppAvailabilityV2TypeJsonConverter();
@@ -18510,6 +19654,16 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationRelationshipsSearchKeywordsDataItemTypeNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationRelationshipsPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationRelationshipsPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationRelationshipsPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationRelationshipsPlacementsDataItemTypeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateType))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationInlineCreateTypeJsonConverter();
@@ -18528,6 +19682,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsAppCustomProductPageVersionDataType?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationInlineCreateRelationshipsAppCustomProductPageVersionDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationInlineCreateRelationshipsPlacementsDataItemTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsResponseIncludedItemDiscriminatorType))
@@ -18568,6 +19732,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsAppCustomProductPageVersionDataType?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationCreateRequestDataRelationshipsAppCustomProductPageVersionDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItemTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationUpdateRequestDataType))
@@ -18980,6 +20154,16 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.AppEventLocalizationRelationshipsAppEventVideoClipsDataItemTypeNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationRelationshipsPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationRelationshipsPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationRelationshipsPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationRelationshipsPlacementsDataItemTypeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsResponseIncludedItemDiscriminatorType))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsResponseIncludedItemDiscriminatorTypeJsonConverter();
@@ -19018,6 +20202,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsAppEventDataType?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppEventLocalizationCreateRequestDataRelationshipsAppEventDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationCreateRequestDataRelationshipsPlacementsDataItemTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationUpdateRequestDataType))
@@ -20270,6 +21464,16 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationRelationshipsAppPreviewSetsDataItemTypeNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationRelationshipsPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationRelationshipsPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationRelationshipsPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationRelationshipsPlacementsDataItemTypeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsResponseIncludedItemDiscriminatorType))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsResponseIncludedItemDiscriminatorTypeJsonConverter();
@@ -20308,6 +21512,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentDataType?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationCreateRequestDataRelationshipsPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationCreateRequestDataRelationshipsPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationCreateRequestDataRelationshipsPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationCreateRequestDataRelationshipsPlacementsDataItemTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentType))
@@ -20660,6 +21874,16 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationRelationshipsSearchKeywordsDataItemTypeNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationRelationshipsPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationRelationshipsPlacementsDataItemTypeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsResponseIncludedItemDiscriminatorType))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsResponseIncludedItemDiscriminatorTypeJsonConverter();
@@ -20698,6 +21922,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationCreateRequestDataRelationshipsAppStoreVersionDataType?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationCreateRequestDataRelationshipsAppStoreVersionDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationCreateRequestDataRelationshipsPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationCreateRequestDataRelationshipsPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationCreateRequestDataRelationshipsPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationCreateRequestDataRelationshipsPlacementsDataItemTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationUpdateRequestDataType))
@@ -30360,6 +31594,26 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.ReviewSubmissionItemRelationshipsAppEventDataTypeNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemRelationshipsAppAssetLibraryImageDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.ReviewSubmissionItemRelationshipsAppAssetLibraryImageDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemRelationshipsAppAssetLibraryImageDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.ReviewSubmissionItemRelationshipsAppAssetLibraryImageDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemRelationshipsAppAssetLibraryVideoDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.ReviewSubmissionItemRelationshipsAppAssetLibraryVideoDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemRelationshipsAppAssetLibraryVideoDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.ReviewSubmissionItemRelationshipsAppAssetLibraryVideoDataTypeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemRelationshipsBackgroundAssetVersionDataType))
                 {
                     return new global::AppStoreConnect.JsonConverters.ReviewSubmissionItemRelationshipsBackgroundAssetVersionDataTypeJsonConverter();
@@ -30538,6 +31792,26 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppEventDataType?))
                 {
                     return new global::AppStoreConnect.JsonConverters.ReviewSubmissionItemCreateRequestDataRelationshipsAppEventDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImageDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImageDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImageDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImageDataTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideoDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideoDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideoDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryVideoDataTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsBackgroundAssetVersionDataType))
@@ -33500,6 +34774,46 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.AnalyticsReportInstancesLinkagesResponseDataItemTypeNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesLinkagesResponseDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesLinkagesResponseDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesLinkagesResponseDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesLinkagesResponseDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosLinkagesResponseDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosLinkagesResponseDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosLinkagesResponseDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosLinkagesResponseDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagePlacementsLinkagesResponseDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagePlacementsLinkagesResponseDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagePlacementsLinkagesResponseDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagePlacementsLinkagesResponseDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoPlacementsLinkagesResponseDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoPlacementsLinkagesResponseDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideoPlacementsLinkagesResponseDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideoPlacementsLinkagesResponseDataItemTypeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppAvailabilityV2TerritoryAvailabilitiesLinkagesResponseDataItemType))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppAvailabilityV2TerritoryAvailabilitiesLinkagesResponseDataItemTypeJsonConverter();
@@ -33620,6 +34934,16 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponseDataItemTypeNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItemTypeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationSearchKeywordsLinkagesResponseDataItemType))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationSearchKeywordsLinkagesResponseDataItemTypeJsonConverter();
@@ -33708,6 +35032,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationAppEventVideoClipsLinkagesResponseDataItemType?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppEventLocalizationAppEventVideoClipsLinkagesResponseDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationPlacementsLinkagesResponseDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationPlacementsLinkagesResponseDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationPlacementsLinkagesResponseDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationPlacementsLinkagesResponseDataItemTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsLinkagesResponseDataItemType))
@@ -33920,6 +35254,16 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationAppScreenshotSetsLinkagesResponseDataItemTypeNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationPlacementsLinkagesResponseDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationPlacementsLinkagesResponseDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationPlacementsLinkagesResponseDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationPlacementsLinkagesResponseDataItemTypeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentAppStoreVersionExperimentTreatmentLocalizationsLinkagesResponseDataItemType))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentAppStoreVersionExperimentTreatmentLocalizationsLinkagesResponseDataItemTypeJsonConverter();
@@ -33968,6 +35312,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationAppScreenshotSetsLinkagesResponseDataItemType?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationAppScreenshotSetsLinkagesResponseDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationPlacementsLinkagesResponseDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationPlacementsLinkagesResponseDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationPlacementsLinkagesResponseDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationPlacementsLinkagesResponseDataItemTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationSearchKeywordsLinkagesResponseDataItemType))
@@ -34288,6 +35642,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppAppTagsLinkagesResponseDataItemType?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppAppTagsLinkagesResponseDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryLinkageResponseDataType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryLinkageResponseDataTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryLinkageResponseDataType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryLinkageResponseDataTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppBackgroundAssetsLinkagesResponseDataItemType))
@@ -36960,6 +38324,86 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.GameCenterMatchmakingRuleErrorsV1MetricResponseDataItemGranularityNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryAssetCategory))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryAssetCategoryJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryAssetCategory?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryAssetCategoryNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryAssetState))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryAssetStateJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryAssetState?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryAssetStateNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryDisplayClass))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryDisplayClassJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryDisplayClass?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryDisplayClassNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryFeature))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryFeatureJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryFeature?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryFeatureNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryMediaType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryMediaTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryMediaType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryMediaTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementPlatform))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementPlatformJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementPlatform?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementPlatformNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementState))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementStateJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementState?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementStateNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementType2))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementType2JsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementType2?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementType2NullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppClipAction))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppClipActionJsonConverter();
@@ -37890,6 +39334,206 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.AndroidToIosAppMappingDetailsGetInstanceFieldsAndroidToIosAppMappingDetailNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesGetInstanceFieldsAppAssetLibrarie))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesGetInstanceFieldsAppAssetLibrarieJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesGetInstanceFieldsAppAssetLibrarie?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesGetInstanceFieldsAppAssetLibrarieNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesGetInstanceFieldsAppAssetLibraryImage))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesGetInstanceFieldsAppAssetLibraryImageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesGetInstanceFieldsAppAssetLibraryImage?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesGetInstanceFieldsAppAssetLibraryImageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesGetInstanceFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesGetInstanceFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesGetInstanceFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesGetInstanceFieldsAppAssetLibraryPlacementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesGetInstanceIncludeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesGetInstanceIncludeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesGetInstanceIncludeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesGetInstanceIncludeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestsCreateInstanceFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestsCreateInstanceFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestsCreateInstanceFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestsCreateInstanceFieldsAppAssetLibraryPlacementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestsCreateInstanceIncludeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestsCreateInstanceIncludeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestsCreateInstanceIncludeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestsCreateInstanceIncludeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestsCreateInstanceFieldsAppAssetLibraryPlacementOrderingRequest))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestsCreateInstanceFieldsAppAssetLibraryPlacementOrderingRequestJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestsCreateInstanceFieldsAppAssetLibraryPlacementOrderingRequest?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementOrderingRequestsCreateInstanceFieldsAppAssetLibraryPlacementOrderingRequestNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryPlacementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryImage))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryImageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryImage?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryImageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryVideo))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryVideoJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryVideo?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsGetInstanceFieldsAppAssetLibraryVideoNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppEventLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsGetInstanceFieldsAppEventLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppEventLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsGetInstanceFieldsAppEventLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppCustomProductPageLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsGetInstanceFieldsAppCustomProductPageLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppCustomProductPageLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsGetInstanceFieldsAppCustomProductPageLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionExperimentTreatmentLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionExperimentTreatmentLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionExperimentTreatmentLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionExperimentTreatmentLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceIncludeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsGetInstanceIncludeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceIncludeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementsGetInstanceIncludeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryRefDataGetCollectionFieldsAppAssetLibraryRefDataItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryRefDataGetCollectionFieldsAppAssetLibraryRefDataItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryRefDataGetCollectionFieldsAppAssetLibraryRefDataItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryRefDataGetCollectionFieldsAppAssetLibraryRefDataItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryRefDataGetInstanceFieldsAppAssetLibraryRefDataItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryRefDataGetInstanceFieldsAppAssetLibraryRefDataItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryRefDataGetInstanceFieldsAppAssetLibraryRefDataItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryRefDataGetInstanceFieldsAppAssetLibraryRefDataItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryVideo))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryVideoJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryVideo?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryVideoNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosGetInstanceIncludeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosGetInstanceIncludeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosGetInstanceIncludeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosGetInstanceIncludeItemNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppAvailabilitiesV2GetInstanceFieldsAppAvailabilitie))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppAvailabilitiesV2GetInstanceFieldsAppAvailabilitieJsonConverter();
@@ -38270,6 +39914,16 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsGetInstanceFieldsAppPreviewSetNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacementNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceIncludeItem))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsGetInstanceIncludeItemJsonConverter();
@@ -38518,6 +40172,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventVideoClip?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsGetInstanceFieldsAppEventVideoClipNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacementNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsGetInstanceIncludeItem))
@@ -39090,6 +40754,16 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsGetInstanceFieldsAppPreviewSetNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsGetInstanceFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsGetInstanceFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsGetInstanceFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsGetInstanceFieldsAppAssetLibraryPlacementNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsGetInstanceIncludeItem))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsGetInstanceIncludeItemJsonConverter();
@@ -39268,6 +40942,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsGetInstanceFieldsAppPreviewSet?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsGetInstanceFieldsAppPreviewSetNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacementNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsGetInstanceIncludeItem))
@@ -46770,6 +48454,346 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.AnalyticsReportsInstancesGetToManyRelatedFieldsAnalyticsReportInstanceNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterCategoryItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedFilterCategoryItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterCategoryItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedFilterCategoryItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterStateItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedFilterStateItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterStateItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedFilterStateItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedSortItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedSortItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedSortItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedSortItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImage))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImage?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedIncludeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedIncludeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedIncludeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedIncludeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterCategoryItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedFilterCategoryItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterCategoryItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedFilterCategoryItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterStateItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedFilterStateItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterStateItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedFilterStateItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedSortItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedSortItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedSortItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedSortItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideo))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideoJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideo?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideoNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedIncludeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedIncludeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedIncludeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedIncludeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFilterPlacementTypeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFilterPlacementTypeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFilterPlacementTypeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFilterPlacementTypeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFilterStateItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFilterStateItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFilterStateItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFilterStateItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedSortItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedSortItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedSortItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedSortItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryImage))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryImageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryImageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryVideoJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryVideoNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppEventLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppEventLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppEventLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppEventLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedIncludeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedIncludeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedIncludeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesPlacementsGetToManyRelatedIncludeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFilterPlacementTypeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFilterPlacementTypeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFilterPlacementTypeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFilterPlacementTypeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFilterStateItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFilterStateItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFilterStateItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFilterStateItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedSortItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedSortItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedSortItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedSortItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryImage))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryImageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryImageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryVideoJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppAssetLibraryVideoNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppEventLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppEventLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppEventLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppEventLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppStoreVersionLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppStoreVersionLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedIncludeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedIncludeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosPlacementsGetToManyRelatedIncludeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosPlacementsGetToManyRelatedIncludeItemNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppAvailabilitiesV2TerritoryAvailabilitiesGetToManyRelatedFieldsTerritoryAvailabilitie))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppAvailabilitiesV2TerritoryAvailabilitiesGetToManyRelatedFieldsTerritoryAvailabilitieJsonConverter();
@@ -47330,6 +49354,116 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItemNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideoJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideoNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItemNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppCustomProductPageLocalization))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppCustomProductPageLocalizationJsonConverter();
@@ -47368,6 +49502,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppPreviewSet?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppPreviewSetNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacementNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageVersionsAppCustomProductPageLocalizationsGetToManyRelatedIncludeItem))
@@ -47510,6 +49654,116 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsAppEventVideoClipsGetToManyRelatedIncludeItemNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterStateItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFilterStateItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFilterStateItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFilterStateItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedSortItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedSortItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedSortItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedSortItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideoJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideoNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedIncludeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedIncludeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventLocalizationsPlacementsGetToManyRelatedIncludeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventLocalizationsPlacementsGetToManyRelatedIncludeItemNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppEventLocalization))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppEventsLocalizationsGetToManyRelatedFieldsAppEventLocalizationJsonConverter();
@@ -47548,6 +49802,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppEventVideoClip?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppEventsLocalizationsGetToManyRelatedFieldsAppEventVideoClipNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventsLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppEventsLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacementNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppEventsLocalizationsGetToManyRelatedIncludeItem))
@@ -48110,6 +50374,116 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItemNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFilterStateItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFilterStateItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFilterStateItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFilterStateItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedSortItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedSortItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedSortItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedSortItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideoJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideoNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedIncludeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedIncludeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedIncludeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedIncludeItemNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalizationJsonConverter();
@@ -48148,6 +50522,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppPreviewSet?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppPreviewSetNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacementNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentsAppStoreVersionExperimentTreatmentLocalizationsGetToManyRelatedIncludeItem))
@@ -48378,6 +50762,116 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItem?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFilterStateItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFilterStateItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFilterStateItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFilterStateItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedSortItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedSortItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedSortItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedSortItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideoJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideoNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedIncludeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedIncludeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionLocalizationsPlacementsGetToManyRelatedIncludeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionLocalizationsPlacementsGetToManyRelatedIncludeItemNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionsAlternativeDistributionPackageGetToOneRelatedFieldsAlternativeDistributionPackage))
@@ -48658,6 +51152,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppPreviewSet?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppPreviewSetNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacementNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedIncludeItem))
@@ -49558,6 +52062,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppsAppTagsGetToManyRelatedIncludeItem?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppsAppTagsGetToManyRelatedIncludeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarie))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarieJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarie?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarieNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppsBackgroundAssetsGetToManyRelatedFilterVersionsPlatform))
@@ -56790,6 +59304,26 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.ReviewSubmissionsItemsGetToManyRelatedFieldsAppEventNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryImage))
+                {
+                    return new global::AppStoreConnect.JsonConverters.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryImageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryImage?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryImageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryVideo))
+                {
+                    return new global::AppStoreConnect.JsonConverters.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryVideoJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryVideo?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryVideoNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsBackgroundAssetVersion))
                 {
                     return new global::AppStoreConnect.JsonConverters.ReviewSubmissionsItemsGetToManyRelatedFieldsBackgroundAssetVersionJsonConverter();
@@ -58516,7 +61050,7 @@ namespace AppStoreConnect
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[197];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[203];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -58582,369 +61116,381 @@ namespace AppStoreConnect
 
                     14 => global::AppStoreConnect.AndroidToIosAppMappingDetailsSourceGenerationContext.TypeInfoResolver,
 
-                    15 => global::AppStoreConnect.AppAvailabilitiesSourceGenerationContext.TypeInfoResolver,
+                    15 => global::AppStoreConnect.AppAssetLibrariesSourceGenerationContext.TypeInfoResolver,
 
-                    16 => global::AppStoreConnect.AppCategoriesSourceGenerationContext.TypeInfoResolver,
+                    16 => global::AppStoreConnect.AppAssetLibraryImagesSourceGenerationContext.TypeInfoResolver,
 
-                    17 => global::AppStoreConnect.AppClipAdvancedExperienceImagesSourceGenerationContext.TypeInfoResolver,
+                    17 => global::AppStoreConnect.AppAssetLibraryPlacementOrderingRequestsSourceGenerationContext.TypeInfoResolver,
 
-                    18 => global::AppStoreConnect.AppClipAdvancedExperiencesSourceGenerationContext.TypeInfoResolver,
+                    18 => global::AppStoreConnect.AppAssetLibraryPlacementsSourceGenerationContext.TypeInfoResolver,
 
-                    19 => global::AppStoreConnect.AppClipAppStoreReviewDetailsSourceGenerationContext.TypeInfoResolver,
+                    19 => global::AppStoreConnect.AppAssetLibraryRefDataSourceGenerationContext.TypeInfoResolver,
 
-                    20 => global::AppStoreConnect.AppClipDefaultExperienceLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    20 => global::AppStoreConnect.AppAssetLibraryVideosSourceGenerationContext.TypeInfoResolver,
 
-                    21 => global::AppStoreConnect.AppClipDefaultExperiencesSourceGenerationContext.TypeInfoResolver,
+                    21 => global::AppStoreConnect.AppAvailabilitiesSourceGenerationContext.TypeInfoResolver,
 
-                    22 => global::AppStoreConnect.AppClipHeaderImagesSourceGenerationContext.TypeInfoResolver,
+                    22 => global::AppStoreConnect.AppCategoriesSourceGenerationContext.TypeInfoResolver,
 
-                    23 => global::AppStoreConnect.AppClipsSourceGenerationContext.TypeInfoResolver,
+                    23 => global::AppStoreConnect.AppClipAdvancedExperienceImagesSourceGenerationContext.TypeInfoResolver,
 
-                    24 => global::AppStoreConnect.AppCustomProductPageLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    24 => global::AppStoreConnect.AppClipAdvancedExperiencesSourceGenerationContext.TypeInfoResolver,
 
-                    25 => global::AppStoreConnect.AppCustomProductPageVersionsSourceGenerationContext.TypeInfoResolver,
+                    25 => global::AppStoreConnect.AppClipAppStoreReviewDetailsSourceGenerationContext.TypeInfoResolver,
 
-                    26 => global::AppStoreConnect.AppCustomProductPagesSourceGenerationContext.TypeInfoResolver,
+                    26 => global::AppStoreConnect.AppClipDefaultExperienceLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    27 => global::AppStoreConnect.AppEncryptionDeclarationDocumentsSourceGenerationContext.TypeInfoResolver,
+                    27 => global::AppStoreConnect.AppClipDefaultExperiencesSourceGenerationContext.TypeInfoResolver,
 
-                    28 => global::AppStoreConnect.AppEncryptionDeclarationsSourceGenerationContext.TypeInfoResolver,
+                    28 => global::AppStoreConnect.AppClipHeaderImagesSourceGenerationContext.TypeInfoResolver,
 
-                    29 => global::AppStoreConnect.AppEventLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    29 => global::AppStoreConnect.AppClipsSourceGenerationContext.TypeInfoResolver,
 
-                    30 => global::AppStoreConnect.AppEventScreenshotsSourceGenerationContext.TypeInfoResolver,
+                    30 => global::AppStoreConnect.AppCustomProductPageLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    31 => global::AppStoreConnect.AppEventVideoClipsSourceGenerationContext.TypeInfoResolver,
+                    31 => global::AppStoreConnect.AppCustomProductPageVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    32 => global::AppStoreConnect.AppEventsSourceGenerationContext.TypeInfoResolver,
+                    32 => global::AppStoreConnect.AppCustomProductPagesSourceGenerationContext.TypeInfoResolver,
 
-                    33 => global::AppStoreConnect.AppInfoLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    33 => global::AppStoreConnect.AppEncryptionDeclarationDocumentsSourceGenerationContext.TypeInfoResolver,
 
-                    34 => global::AppStoreConnect.AppInfosSourceGenerationContext.TypeInfoResolver,
+                    34 => global::AppStoreConnect.AppEncryptionDeclarationsSourceGenerationContext.TypeInfoResolver,
 
-                    35 => global::AppStoreConnect.AppPreviewSetsSourceGenerationContext.TypeInfoResolver,
+                    35 => global::AppStoreConnect.AppEventLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    36 => global::AppStoreConnect.AppPreviewsSourceGenerationContext.TypeInfoResolver,
+                    36 => global::AppStoreConnect.AppEventScreenshotsSourceGenerationContext.TypeInfoResolver,
 
-                    37 => global::AppStoreConnect.AppPricePointsSourceGenerationContext.TypeInfoResolver,
+                    37 => global::AppStoreConnect.AppEventVideoClipsSourceGenerationContext.TypeInfoResolver,
 
-                    38 => global::AppStoreConnect.AppPriceSchedulesSourceGenerationContext.TypeInfoResolver,
+                    38 => global::AppStoreConnect.AppEventsSourceGenerationContext.TypeInfoResolver,
 
-                    39 => global::AppStoreConnect.AppScreenshotSetsSourceGenerationContext.TypeInfoResolver,
+                    39 => global::AppStoreConnect.AppInfoLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    40 => global::AppStoreConnect.AppScreenshotsSourceGenerationContext.TypeInfoResolver,
+                    40 => global::AppStoreConnect.AppInfosSourceGenerationContext.TypeInfoResolver,
 
-                    41 => global::AppStoreConnect.AppStoreReviewAttachmentsSourceGenerationContext.TypeInfoResolver,
+                    41 => global::AppStoreConnect.AppPreviewSetsSourceGenerationContext.TypeInfoResolver,
 
-                    42 => global::AppStoreConnect.AppStoreReviewDetailsSourceGenerationContext.TypeInfoResolver,
+                    42 => global::AppStoreConnect.AppPreviewsSourceGenerationContext.TypeInfoResolver,
 
-                    43 => global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    43 => global::AppStoreConnect.AppPricePointsSourceGenerationContext.TypeInfoResolver,
 
-                    44 => global::AppStoreConnect.AppStoreVersionExperimentTreatmentsSourceGenerationContext.TypeInfoResolver,
+                    44 => global::AppStoreConnect.AppPriceSchedulesSourceGenerationContext.TypeInfoResolver,
 
-                    45 => global::AppStoreConnect.AppStoreVersionExperimentsSourceGenerationContext.TypeInfoResolver,
+                    45 => global::AppStoreConnect.AppScreenshotSetsSourceGenerationContext.TypeInfoResolver,
 
-                    46 => global::AppStoreConnect.AppStoreVersionLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    46 => global::AppStoreConnect.AppScreenshotsSourceGenerationContext.TypeInfoResolver,
 
-                    47 => global::AppStoreConnect.AppStoreVersionPhasedReleasesSourceGenerationContext.TypeInfoResolver,
+                    47 => global::AppStoreConnect.AppStoreReviewAttachmentsSourceGenerationContext.TypeInfoResolver,
 
-                    48 => global::AppStoreConnect.AppStoreVersionPromotionsSourceGenerationContext.TypeInfoResolver,
+                    48 => global::AppStoreConnect.AppStoreReviewDetailsSourceGenerationContext.TypeInfoResolver,
 
-                    49 => global::AppStoreConnect.AppStoreVersionReleaseRequestsSourceGenerationContext.TypeInfoResolver,
+                    49 => global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    50 => global::AppStoreConnect.AppStoreVersionsSourceGenerationContext.TypeInfoResolver,
+                    50 => global::AppStoreConnect.AppStoreVersionExperimentTreatmentsSourceGenerationContext.TypeInfoResolver,
 
-                    51 => global::AppStoreConnect.AppTagsSourceGenerationContext.TypeInfoResolver,
+                    51 => global::AppStoreConnect.AppStoreVersionExperimentsSourceGenerationContext.TypeInfoResolver,
 
-                    52 => global::AppStoreConnect.AppsSourceGenerationContext.TypeInfoResolver,
+                    52 => global::AppStoreConnect.AppStoreVersionLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    53 => global::AppStoreConnect.BackgroundAssetUploadFilesSourceGenerationContext.TypeInfoResolver,
+                    53 => global::AppStoreConnect.AppStoreVersionPhasedReleasesSourceGenerationContext.TypeInfoResolver,
 
-                    54 => global::AppStoreConnect.BackgroundAssetVersionAppStoreReleasesSourceGenerationContext.TypeInfoResolver,
+                    54 => global::AppStoreConnect.AppStoreVersionPromotionsSourceGenerationContext.TypeInfoResolver,
 
-                    55 => global::AppStoreConnect.BackgroundAssetVersionExternalBetaReleasesSourceGenerationContext.TypeInfoResolver,
+                    55 => global::AppStoreConnect.AppStoreVersionReleaseRequestsSourceGenerationContext.TypeInfoResolver,
 
-                    56 => global::AppStoreConnect.BackgroundAssetVersionInternalBetaReleasesSourceGenerationContext.TypeInfoResolver,
+                    56 => global::AppStoreConnect.AppStoreVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    57 => global::AppStoreConnect.BackgroundAssetVersionsSourceGenerationContext.TypeInfoResolver,
+                    57 => global::AppStoreConnect.AppTagsSourceGenerationContext.TypeInfoResolver,
 
-                    58 => global::AppStoreConnect.BackgroundAssetsSourceGenerationContext.TypeInfoResolver,
+                    58 => global::AppStoreConnect.AppsSourceGenerationContext.TypeInfoResolver,
 
-                    59 => global::AppStoreConnect.BetaAppClipInvocationLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    59 => global::AppStoreConnect.BackgroundAssetUploadFilesSourceGenerationContext.TypeInfoResolver,
 
-                    60 => global::AppStoreConnect.BetaAppClipInvocationsSourceGenerationContext.TypeInfoResolver,
+                    60 => global::AppStoreConnect.BackgroundAssetVersionAppStoreReleasesSourceGenerationContext.TypeInfoResolver,
 
-                    61 => global::AppStoreConnect.BetaAppLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    61 => global::AppStoreConnect.BackgroundAssetVersionExternalBetaReleasesSourceGenerationContext.TypeInfoResolver,
 
-                    62 => global::AppStoreConnect.BetaAppReviewDetailsSourceGenerationContext.TypeInfoResolver,
+                    62 => global::AppStoreConnect.BackgroundAssetVersionInternalBetaReleasesSourceGenerationContext.TypeInfoResolver,
 
-                    63 => global::AppStoreConnect.BetaAppReviewSubmissionsSourceGenerationContext.TypeInfoResolver,
+                    63 => global::AppStoreConnect.BackgroundAssetVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    64 => global::AppStoreConnect.BetaBuildLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    64 => global::AppStoreConnect.BackgroundAssetsSourceGenerationContext.TypeInfoResolver,
 
-                    65 => global::AppStoreConnect.BetaCrashLogsSourceGenerationContext.TypeInfoResolver,
+                    65 => global::AppStoreConnect.BetaAppClipInvocationLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    66 => global::AppStoreConnect.BetaFeedbackCrashSubmissionsSourceGenerationContext.TypeInfoResolver,
+                    66 => global::AppStoreConnect.BetaAppClipInvocationsSourceGenerationContext.TypeInfoResolver,
 
-                    67 => global::AppStoreConnect.BetaFeedbackScreenshotSubmissionsSourceGenerationContext.TypeInfoResolver,
+                    67 => global::AppStoreConnect.BetaAppLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    68 => global::AppStoreConnect.BetaGroupsSourceGenerationContext.TypeInfoResolver,
+                    68 => global::AppStoreConnect.BetaAppReviewDetailsSourceGenerationContext.TypeInfoResolver,
 
-                    69 => global::AppStoreConnect.BetaLicenseAgreementsSourceGenerationContext.TypeInfoResolver,
+                    69 => global::AppStoreConnect.BetaAppReviewSubmissionsSourceGenerationContext.TypeInfoResolver,
 
-                    70 => global::AppStoreConnect.BetaRecruitmentCriteriaSourceGenerationContext.TypeInfoResolver,
+                    70 => global::AppStoreConnect.BetaBuildLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    71 => global::AppStoreConnect.BetaRecruitmentCriterionOptionsSourceGenerationContext.TypeInfoResolver,
+                    71 => global::AppStoreConnect.BetaCrashLogsSourceGenerationContext.TypeInfoResolver,
 
-                    72 => global::AppStoreConnect.BetaTesterInvitationsSourceGenerationContext.TypeInfoResolver,
+                    72 => global::AppStoreConnect.BetaFeedbackCrashSubmissionsSourceGenerationContext.TypeInfoResolver,
 
-                    73 => global::AppStoreConnect.BetaTestersSourceGenerationContext.TypeInfoResolver,
+                    73 => global::AppStoreConnect.BetaFeedbackScreenshotSubmissionsSourceGenerationContext.TypeInfoResolver,
 
-                    74 => global::AppStoreConnect.BuildBetaDetailsSourceGenerationContext.TypeInfoResolver,
+                    74 => global::AppStoreConnect.BetaGroupsSourceGenerationContext.TypeInfoResolver,
 
-                    75 => global::AppStoreConnect.BuildBetaNotificationsSourceGenerationContext.TypeInfoResolver,
+                    75 => global::AppStoreConnect.BetaLicenseAgreementsSourceGenerationContext.TypeInfoResolver,
 
-                    76 => global::AppStoreConnect.BuildBundlesSourceGenerationContext.TypeInfoResolver,
+                    76 => global::AppStoreConnect.BetaRecruitmentCriteriaSourceGenerationContext.TypeInfoResolver,
 
-                    77 => global::AppStoreConnect.BuildUploadFilesSourceGenerationContext.TypeInfoResolver,
+                    77 => global::AppStoreConnect.BetaRecruitmentCriterionOptionsSourceGenerationContext.TypeInfoResolver,
 
-                    78 => global::AppStoreConnect.BuildUploadsSourceGenerationContext.TypeInfoResolver,
+                    78 => global::AppStoreConnect.BetaTesterInvitationsSourceGenerationContext.TypeInfoResolver,
 
-                    79 => global::AppStoreConnect.BuildsSourceGenerationContext.TypeInfoResolver,
+                    79 => global::AppStoreConnect.BetaTestersSourceGenerationContext.TypeInfoResolver,
 
-                    80 => global::AppStoreConnect.BundleIdCapabilitiesSourceGenerationContext.TypeInfoResolver,
+                    80 => global::AppStoreConnect.BuildBetaDetailsSourceGenerationContext.TypeInfoResolver,
 
-                    81 => global::AppStoreConnect.BundleIdsSourceGenerationContext.TypeInfoResolver,
+                    81 => global::AppStoreConnect.BuildBetaNotificationsSourceGenerationContext.TypeInfoResolver,
 
-                    82 => global::AppStoreConnect.CertificatesSourceGenerationContext.TypeInfoResolver,
+                    82 => global::AppStoreConnect.BuildBundlesSourceGenerationContext.TypeInfoResolver,
 
-                    83 => global::AppStoreConnect.CiArtifactsSourceGenerationContext.TypeInfoResolver,
+                    83 => global::AppStoreConnect.BuildUploadFilesSourceGenerationContext.TypeInfoResolver,
 
-                    84 => global::AppStoreConnect.CiBuildActionsSourceGenerationContext.TypeInfoResolver,
+                    84 => global::AppStoreConnect.BuildUploadsSourceGenerationContext.TypeInfoResolver,
 
-                    85 => global::AppStoreConnect.CiBuildRunsSourceGenerationContext.TypeInfoResolver,
+                    85 => global::AppStoreConnect.BuildsSourceGenerationContext.TypeInfoResolver,
 
-                    86 => global::AppStoreConnect.CiIssuesSourceGenerationContext.TypeInfoResolver,
+                    86 => global::AppStoreConnect.BundleIdCapabilitiesSourceGenerationContext.TypeInfoResolver,
 
-                    87 => global::AppStoreConnect.CiMacOsVersionsSourceGenerationContext.TypeInfoResolver,
+                    87 => global::AppStoreConnect.BundleIdsSourceGenerationContext.TypeInfoResolver,
 
-                    88 => global::AppStoreConnect.CiProductsSourceGenerationContext.TypeInfoResolver,
+                    88 => global::AppStoreConnect.CertificatesSourceGenerationContext.TypeInfoResolver,
 
-                    89 => global::AppStoreConnect.CiTestResultsSourceGenerationContext.TypeInfoResolver,
+                    89 => global::AppStoreConnect.CiArtifactsSourceGenerationContext.TypeInfoResolver,
 
-                    90 => global::AppStoreConnect.CiWorkflowsSourceGenerationContext.TypeInfoResolver,
+                    90 => global::AppStoreConnect.CiBuildActionsSourceGenerationContext.TypeInfoResolver,
 
-                    91 => global::AppStoreConnect.CiXcodeVersionsSourceGenerationContext.TypeInfoResolver,
+                    91 => global::AppStoreConnect.CiBuildRunsSourceGenerationContext.TypeInfoResolver,
 
-                    92 => global::AppStoreConnect.CustomerReviewResponsesSourceGenerationContext.TypeInfoResolver,
+                    92 => global::AppStoreConnect.CiIssuesSourceGenerationContext.TypeInfoResolver,
 
-                    93 => global::AppStoreConnect.CustomerReviewsSourceGenerationContext.TypeInfoResolver,
+                    93 => global::AppStoreConnect.CiMacOsVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    94 => global::AppStoreConnect.DevicesSourceGenerationContext.TypeInfoResolver,
+                    94 => global::AppStoreConnect.CiProductsSourceGenerationContext.TypeInfoResolver,
 
-                    95 => global::AppStoreConnect.DiagnosticSignaturesSourceGenerationContext.TypeInfoResolver,
+                    95 => global::AppStoreConnect.CiTestResultsSourceGenerationContext.TypeInfoResolver,
 
-                    96 => global::AppStoreConnect.EndAppAvailabilityPreOrdersSourceGenerationContext.TypeInfoResolver,
+                    96 => global::AppStoreConnect.CiWorkflowsSourceGenerationContext.TypeInfoResolver,
 
-                    97 => global::AppStoreConnect.EndUserLicenseAgreementsSourceGenerationContext.TypeInfoResolver,
+                    97 => global::AppStoreConnect.CiXcodeVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    98 => global::AppStoreConnect.FinanceReportsSourceGenerationContext.TypeInfoResolver,
+                    98 => global::AppStoreConnect.CustomerReviewResponsesSourceGenerationContext.TypeInfoResolver,
 
-                    99 => global::AppStoreConnect.GameCenterAchievementImagesSourceGenerationContext.TypeInfoResolver,
+                    99 => global::AppStoreConnect.CustomerReviewsSourceGenerationContext.TypeInfoResolver,
 
-                    100 => global::AppStoreConnect.GameCenterAchievementLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    100 => global::AppStoreConnect.DevicesSourceGenerationContext.TypeInfoResolver,
 
-                    101 => global::AppStoreConnect.GameCenterAchievementVersionsSourceGenerationContext.TypeInfoResolver,
+                    101 => global::AppStoreConnect.DiagnosticSignaturesSourceGenerationContext.TypeInfoResolver,
 
-                    102 => global::AppStoreConnect.GameCenterAchievementsSourceGenerationContext.TypeInfoResolver,
+                    102 => global::AppStoreConnect.EndAppAvailabilityPreOrdersSourceGenerationContext.TypeInfoResolver,
 
-                    103 => global::AppStoreConnect.GameCenterActivitiesSourceGenerationContext.TypeInfoResolver,
+                    103 => global::AppStoreConnect.EndUserLicenseAgreementsSourceGenerationContext.TypeInfoResolver,
 
-                    104 => global::AppStoreConnect.GameCenterActivityImagesSourceGenerationContext.TypeInfoResolver,
+                    104 => global::AppStoreConnect.FinanceReportsSourceGenerationContext.TypeInfoResolver,
 
-                    105 => global::AppStoreConnect.GameCenterActivityLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    105 => global::AppStoreConnect.GameCenterAchievementImagesSourceGenerationContext.TypeInfoResolver,
 
-                    106 => global::AppStoreConnect.GameCenterActivityVersionsSourceGenerationContext.TypeInfoResolver,
+                    106 => global::AppStoreConnect.GameCenterAchievementLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    107 => global::AppStoreConnect.GameCenterAppVersionsSourceGenerationContext.TypeInfoResolver,
+                    107 => global::AppStoreConnect.GameCenterAchievementVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    108 => global::AppStoreConnect.GameCenterChallengeImagesSourceGenerationContext.TypeInfoResolver,
+                    108 => global::AppStoreConnect.GameCenterAchievementsSourceGenerationContext.TypeInfoResolver,
 
-                    109 => global::AppStoreConnect.GameCenterChallengeLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    109 => global::AppStoreConnect.GameCenterActivitiesSourceGenerationContext.TypeInfoResolver,
 
-                    110 => global::AppStoreConnect.GameCenterChallengeVersionsSourceGenerationContext.TypeInfoResolver,
+                    110 => global::AppStoreConnect.GameCenterActivityImagesSourceGenerationContext.TypeInfoResolver,
 
-                    111 => global::AppStoreConnect.GameCenterChallengesSourceGenerationContext.TypeInfoResolver,
+                    111 => global::AppStoreConnect.GameCenterActivityLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    112 => global::AppStoreConnect.GameCenterDetailPlayersSourceGenerationContext.TypeInfoResolver,
+                    112 => global::AppStoreConnect.GameCenterActivityVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    113 => global::AppStoreConnect.GameCenterDetailsSourceGenerationContext.TypeInfoResolver,
+                    113 => global::AppStoreConnect.GameCenterAppVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    114 => global::AppStoreConnect.GameCenterGroupsSourceGenerationContext.TypeInfoResolver,
+                    114 => global::AppStoreConnect.GameCenterChallengeImagesSourceGenerationContext.TypeInfoResolver,
 
-                    115 => global::AppStoreConnect.GameCenterLeaderboardEntrySubmissionsSourceGenerationContext.TypeInfoResolver,
+                    115 => global::AppStoreConnect.GameCenterChallengeLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    116 => global::AppStoreConnect.GameCenterLeaderboardImagesSourceGenerationContext.TypeInfoResolver,
+                    116 => global::AppStoreConnect.GameCenterChallengeVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    117 => global::AppStoreConnect.GameCenterLeaderboardLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    117 => global::AppStoreConnect.GameCenterChallengesSourceGenerationContext.TypeInfoResolver,
 
-                    118 => global::AppStoreConnect.GameCenterLeaderboardSetImagesSourceGenerationContext.TypeInfoResolver,
+                    118 => global::AppStoreConnect.GameCenterDetailPlayersSourceGenerationContext.TypeInfoResolver,
 
-                    119 => global::AppStoreConnect.GameCenterLeaderboardSetLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    119 => global::AppStoreConnect.GameCenterDetailsSourceGenerationContext.TypeInfoResolver,
 
-                    120 => global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    120 => global::AppStoreConnect.GameCenterGroupsSourceGenerationContext.TypeInfoResolver,
 
-                    121 => global::AppStoreConnect.GameCenterLeaderboardSetVersionsSourceGenerationContext.TypeInfoResolver,
+                    121 => global::AppStoreConnect.GameCenterLeaderboardEntrySubmissionsSourceGenerationContext.TypeInfoResolver,
 
-                    122 => global::AppStoreConnect.GameCenterLeaderboardSetsSourceGenerationContext.TypeInfoResolver,
+                    122 => global::AppStoreConnect.GameCenterLeaderboardImagesSourceGenerationContext.TypeInfoResolver,
 
-                    123 => global::AppStoreConnect.GameCenterLeaderboardVersionsSourceGenerationContext.TypeInfoResolver,
+                    123 => global::AppStoreConnect.GameCenterLeaderboardLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    124 => global::AppStoreConnect.GameCenterLeaderboardsSourceGenerationContext.TypeInfoResolver,
+                    124 => global::AppStoreConnect.GameCenterLeaderboardSetImagesSourceGenerationContext.TypeInfoResolver,
 
-                    125 => global::AppStoreConnect.GameCenterMatchmakingQueuesSourceGenerationContext.TypeInfoResolver,
+                    125 => global::AppStoreConnect.GameCenterLeaderboardSetLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    126 => global::AppStoreConnect.GameCenterMatchmakingRuleSetTestsSourceGenerationContext.TypeInfoResolver,
+                    126 => global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    127 => global::AppStoreConnect.GameCenterMatchmakingRuleSetsSourceGenerationContext.TypeInfoResolver,
+                    127 => global::AppStoreConnect.GameCenterLeaderboardSetVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    128 => global::AppStoreConnect.GameCenterMatchmakingRulesSourceGenerationContext.TypeInfoResolver,
+                    128 => global::AppStoreConnect.GameCenterLeaderboardSetsSourceGenerationContext.TypeInfoResolver,
 
-                    129 => global::AppStoreConnect.GameCenterMatchmakingTeamsSourceGenerationContext.TypeInfoResolver,
+                    129 => global::AppStoreConnect.GameCenterLeaderboardVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    130 => global::AppStoreConnect.GameCenterPlayerAchievementSubmissionsSourceGenerationContext.TypeInfoResolver,
+                    130 => global::AppStoreConnect.GameCenterLeaderboardsSourceGenerationContext.TypeInfoResolver,
 
-                    131 => global::AppStoreConnect.GameCenterScoreModerationsSourceGenerationContext.TypeInfoResolver,
+                    131 => global::AppStoreConnect.GameCenterMatchmakingQueuesSourceGenerationContext.TypeInfoResolver,
 
-                    132 => global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsSourceGenerationContext.TypeInfoResolver,
+                    132 => global::AppStoreConnect.GameCenterMatchmakingRuleSetTestsSourceGenerationContext.TypeInfoResolver,
 
-                    133 => global::AppStoreConnect.InAppPurchaseAvailabilitiesSourceGenerationContext.TypeInfoResolver,
+                    133 => global::AppStoreConnect.GameCenterMatchmakingRuleSetsSourceGenerationContext.TypeInfoResolver,
 
-                    134 => global::AppStoreConnect.InAppPurchaseContentsSourceGenerationContext.TypeInfoResolver,
+                    134 => global::AppStoreConnect.GameCenterMatchmakingRulesSourceGenerationContext.TypeInfoResolver,
 
-                    135 => global::AppStoreConnect.InAppPurchaseImagesSourceGenerationContext.TypeInfoResolver,
+                    135 => global::AppStoreConnect.GameCenterMatchmakingTeamsSourceGenerationContext.TypeInfoResolver,
 
-                    136 => global::AppStoreConnect.InAppPurchaseLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    136 => global::AppStoreConnect.GameCenterPlayerAchievementSubmissionsSourceGenerationContext.TypeInfoResolver,
 
-                    137 => global::AppStoreConnect.InAppPurchaseOfferCodeCustomCodesSourceGenerationContext.TypeInfoResolver,
+                    137 => global::AppStoreConnect.GameCenterScoreModerationsSourceGenerationContext.TypeInfoResolver,
 
-                    138 => global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCodesSourceGenerationContext.TypeInfoResolver,
+                    138 => global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsSourceGenerationContext.TypeInfoResolver,
 
-                    139 => global::AppStoreConnect.InAppPurchaseOfferCodesSourceGenerationContext.TypeInfoResolver,
+                    139 => global::AppStoreConnect.InAppPurchaseAvailabilitiesSourceGenerationContext.TypeInfoResolver,
 
-                    140 => global::AppStoreConnect.InAppPurchasePricePointsSourceGenerationContext.TypeInfoResolver,
+                    140 => global::AppStoreConnect.InAppPurchaseContentsSourceGenerationContext.TypeInfoResolver,
 
-                    141 => global::AppStoreConnect.InAppPurchasePriceSchedulesSourceGenerationContext.TypeInfoResolver,
+                    141 => global::AppStoreConnect.InAppPurchaseImagesSourceGenerationContext.TypeInfoResolver,
 
-                    142 => global::AppStoreConnect.InAppPurchaseSubmissionsSourceGenerationContext.TypeInfoResolver,
+                    142 => global::AppStoreConnect.InAppPurchaseLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    143 => global::AppStoreConnect.InAppPurchaseVersionsSourceGenerationContext.TypeInfoResolver,
+                    143 => global::AppStoreConnect.InAppPurchaseOfferCodeCustomCodesSourceGenerationContext.TypeInfoResolver,
 
-                    144 => global::AppStoreConnect.InAppPurchasesSourceGenerationContext.TypeInfoResolver,
+                    144 => global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCodesSourceGenerationContext.TypeInfoResolver,
 
-                    145 => global::AppStoreConnect.MarketplaceSearchDetailsSourceGenerationContext.TypeInfoResolver,
+                    145 => global::AppStoreConnect.InAppPurchaseOfferCodesSourceGenerationContext.TypeInfoResolver,
 
-                    146 => global::AppStoreConnect.MerchantIdsSourceGenerationContext.TypeInfoResolver,
+                    146 => global::AppStoreConnect.InAppPurchasePricePointsSourceGenerationContext.TypeInfoResolver,
 
-                    147 => global::AppStoreConnect.NominationsSourceGenerationContext.TypeInfoResolver,
+                    147 => global::AppStoreConnect.InAppPurchasePriceSchedulesSourceGenerationContext.TypeInfoResolver,
 
-                    148 => global::AppStoreConnect.PartitionOrphan0SourceGenerationContext.TypeInfoResolver,
+                    148 => global::AppStoreConnect.InAppPurchaseSubmissionsSourceGenerationContext.TypeInfoResolver,
 
-                    149 => global::AppStoreConnect.PartitionOrphan1SourceGenerationContext.TypeInfoResolver,
+                    149 => global::AppStoreConnect.InAppPurchaseVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    150 => global::AppStoreConnect.PartitionOrphan2SourceGenerationContext.TypeInfoResolver,
+                    150 => global::AppStoreConnect.InAppPurchasesSourceGenerationContext.TypeInfoResolver,
 
-                    151 => global::AppStoreConnect.PartitionOrphan3SourceGenerationContext.TypeInfoResolver,
+                    151 => global::AppStoreConnect.MarketplaceSearchDetailsSourceGenerationContext.TypeInfoResolver,
 
-                    152 => global::AppStoreConnect.PartitionOrphan4SourceGenerationContext.TypeInfoResolver,
+                    152 => global::AppStoreConnect.MerchantIdsSourceGenerationContext.TypeInfoResolver,
 
-                    153 => global::AppStoreConnect.PartitionOrphan5SourceGenerationContext.TypeInfoResolver,
+                    153 => global::AppStoreConnect.NominationsSourceGenerationContext.TypeInfoResolver,
 
-                    154 => global::AppStoreConnect.PartitionOrphan6SourceGenerationContext.TypeInfoResolver,
+                    154 => global::AppStoreConnect.PartitionOrphan0SourceGenerationContext.TypeInfoResolver,
 
-                    155 => global::AppStoreConnect.PartitionOrphan7SourceGenerationContext.TypeInfoResolver,
+                    155 => global::AppStoreConnect.PartitionOrphan1SourceGenerationContext.TypeInfoResolver,
 
-                    156 => global::AppStoreConnect.PassTypeIdsSourceGenerationContext.TypeInfoResolver,
+                    156 => global::AppStoreConnect.PartitionOrphan2SourceGenerationContext.TypeInfoResolver,
 
-                    157 => global::AppStoreConnect.PreReleaseVersionsSourceGenerationContext.TypeInfoResolver,
+                    157 => global::AppStoreConnect.PartitionOrphan3SourceGenerationContext.TypeInfoResolver,
 
-                    158 => global::AppStoreConnect.ProfilesSourceGenerationContext.TypeInfoResolver,
+                    158 => global::AppStoreConnect.PartitionOrphan4SourceGenerationContext.TypeInfoResolver,
 
-                    159 => global::AppStoreConnect.PromotedPurchasesSourceGenerationContext.TypeInfoResolver,
+                    159 => global::AppStoreConnect.PartitionOrphan5SourceGenerationContext.TypeInfoResolver,
 
-                    160 => global::AppStoreConnect.ReviewSubmissionItemsSourceGenerationContext.TypeInfoResolver,
+                    160 => global::AppStoreConnect.PartitionOrphan6SourceGenerationContext.TypeInfoResolver,
 
-                    161 => global::AppStoreConnect.ReviewSubmissionsSourceGenerationContext.TypeInfoResolver,
+                    161 => global::AppStoreConnect.PartitionOrphan7SourceGenerationContext.TypeInfoResolver,
 
-                    162 => global::AppStoreConnect.RoutingAppCoveragesSourceGenerationContext.TypeInfoResolver,
+                    162 => global::AppStoreConnect.PassTypeIdsSourceGenerationContext.TypeInfoResolver,
 
-                    163 => global::AppStoreConnect.SalesReportsSourceGenerationContext.TypeInfoResolver,
+                    163 => global::AppStoreConnect.PreReleaseVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    164 => global::AppStoreConnect.SandboxTestersSourceGenerationContext.TypeInfoResolver,
+                    164 => global::AppStoreConnect.ProfilesSourceGenerationContext.TypeInfoResolver,
 
-                    165 => global::AppStoreConnect.SandboxTestersClearPurchaseHistoryRequestSourceGenerationContext.TypeInfoResolver,
+                    165 => global::AppStoreConnect.PromotedPurchasesSourceGenerationContext.TypeInfoResolver,
 
-                    166 => global::AppStoreConnect.ScmGitReferencesSourceGenerationContext.TypeInfoResolver,
+                    166 => global::AppStoreConnect.ReviewSubmissionItemsSourceGenerationContext.TypeInfoResolver,
 
-                    167 => global::AppStoreConnect.ScmProvidersSourceGenerationContext.TypeInfoResolver,
+                    167 => global::AppStoreConnect.ReviewSubmissionsSourceGenerationContext.TypeInfoResolver,
 
-                    168 => global::AppStoreConnect.ScmPullRequestsSourceGenerationContext.TypeInfoResolver,
+                    168 => global::AppStoreConnect.RoutingAppCoveragesSourceGenerationContext.TypeInfoResolver,
 
-                    169 => global::AppStoreConnect.ScmRepositoriesSourceGenerationContext.TypeInfoResolver,
+                    169 => global::AppStoreConnect.SalesReportsSourceGenerationContext.TypeInfoResolver,
 
-                    170 => global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsSourceGenerationContext.TypeInfoResolver,
+                    170 => global::AppStoreConnect.SandboxTestersSourceGenerationContext.TypeInfoResolver,
 
-                    171 => global::AppStoreConnect.SubscriptionGracePeriodsSourceGenerationContext.TypeInfoResolver,
+                    171 => global::AppStoreConnect.SandboxTestersClearPurchaseHistoryRequestSourceGenerationContext.TypeInfoResolver,
 
-                    172 => global::AppStoreConnect.SubscriptionGroupLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    172 => global::AppStoreConnect.ScmGitReferencesSourceGenerationContext.TypeInfoResolver,
 
-                    173 => global::AppStoreConnect.SubscriptionGroupSubmissionsSourceGenerationContext.TypeInfoResolver,
+                    173 => global::AppStoreConnect.ScmProvidersSourceGenerationContext.TypeInfoResolver,
 
-                    174 => global::AppStoreConnect.SubscriptionGroupVersionsSourceGenerationContext.TypeInfoResolver,
+                    174 => global::AppStoreConnect.ScmPullRequestsSourceGenerationContext.TypeInfoResolver,
 
-                    175 => global::AppStoreConnect.SubscriptionGroupsSourceGenerationContext.TypeInfoResolver,
+                    175 => global::AppStoreConnect.ScmRepositoriesSourceGenerationContext.TypeInfoResolver,
 
-                    176 => global::AppStoreConnect.SubscriptionImagesSourceGenerationContext.TypeInfoResolver,
+                    176 => global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsSourceGenerationContext.TypeInfoResolver,
 
-                    177 => global::AppStoreConnect.SubscriptionIntroductoryOffersSourceGenerationContext.TypeInfoResolver,
+                    177 => global::AppStoreConnect.SubscriptionGracePeriodsSourceGenerationContext.TypeInfoResolver,
 
-                    178 => global::AppStoreConnect.SubscriptionLocalizationsSourceGenerationContext.TypeInfoResolver,
+                    178 => global::AppStoreConnect.SubscriptionGroupLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    179 => global::AppStoreConnect.SubscriptionOfferCodeCustomCodesSourceGenerationContext.TypeInfoResolver,
+                    179 => global::AppStoreConnect.SubscriptionGroupSubmissionsSourceGenerationContext.TypeInfoResolver,
 
-                    180 => global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCodesSourceGenerationContext.TypeInfoResolver,
+                    180 => global::AppStoreConnect.SubscriptionGroupVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    181 => global::AppStoreConnect.SubscriptionOfferCodesSourceGenerationContext.TypeInfoResolver,
+                    181 => global::AppStoreConnect.SubscriptionGroupsSourceGenerationContext.TypeInfoResolver,
 
-                    182 => global::AppStoreConnect.SubscriptionPlanAvailabilitiesSourceGenerationContext.TypeInfoResolver,
+                    182 => global::AppStoreConnect.SubscriptionImagesSourceGenerationContext.TypeInfoResolver,
 
-                    183 => global::AppStoreConnect.SubscriptionPricePointsSourceGenerationContext.TypeInfoResolver,
+                    183 => global::AppStoreConnect.SubscriptionIntroductoryOffersSourceGenerationContext.TypeInfoResolver,
 
-                    184 => global::AppStoreConnect.SubscriptionPricesSourceGenerationContext.TypeInfoResolver,
+                    184 => global::AppStoreConnect.SubscriptionLocalizationsSourceGenerationContext.TypeInfoResolver,
 
-                    185 => global::AppStoreConnect.SubscriptionPromotionalOffersSourceGenerationContext.TypeInfoResolver,
+                    185 => global::AppStoreConnect.SubscriptionOfferCodeCustomCodesSourceGenerationContext.TypeInfoResolver,
 
-                    186 => global::AppStoreConnect.SubscriptionSubmissionsSourceGenerationContext.TypeInfoResolver,
+                    186 => global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCodesSourceGenerationContext.TypeInfoResolver,
 
-                    187 => global::AppStoreConnect.SubscriptionVersionsSourceGenerationContext.TypeInfoResolver,
+                    187 => global::AppStoreConnect.SubscriptionOfferCodesSourceGenerationContext.TypeInfoResolver,
 
-                    188 => global::AppStoreConnect.SubscriptionsSourceGenerationContext.TypeInfoResolver,
+                    188 => global::AppStoreConnect.SubscriptionPlanAvailabilitiesSourceGenerationContext.TypeInfoResolver,
 
-                    189 => global::AppStoreConnect.TerritoriesSourceGenerationContext.TypeInfoResolver,
+                    189 => global::AppStoreConnect.SubscriptionPricePointsSourceGenerationContext.TypeInfoResolver,
 
-                    190 => global::AppStoreConnect.TerritoryAvailabilitiesSourceGenerationContext.TypeInfoResolver,
+                    190 => global::AppStoreConnect.SubscriptionPricesSourceGenerationContext.TypeInfoResolver,
 
-                    191 => global::AppStoreConnect.UserInvitationsSourceGenerationContext.TypeInfoResolver,
+                    191 => global::AppStoreConnect.SubscriptionPromotionalOffersSourceGenerationContext.TypeInfoResolver,
 
-                    192 => global::AppStoreConnect.UsersSourceGenerationContext.TypeInfoResolver,
+                    192 => global::AppStoreConnect.SubscriptionSubmissionsSourceGenerationContext.TypeInfoResolver,
 
-                    193 => global::AppStoreConnect.WebhookDeliveriesSourceGenerationContext.TypeInfoResolver,
+                    193 => global::AppStoreConnect.SubscriptionVersionsSourceGenerationContext.TypeInfoResolver,
 
-                    194 => global::AppStoreConnect.WebhookPingsSourceGenerationContext.TypeInfoResolver,
+                    194 => global::AppStoreConnect.SubscriptionsSourceGenerationContext.TypeInfoResolver,
 
-                    195 => global::AppStoreConnect.WebhooksSourceGenerationContext.TypeInfoResolver,
+                    195 => global::AppStoreConnect.TerritoriesSourceGenerationContext.TypeInfoResolver,
 
-                    196 => global::AppStoreConnect.WinBackOffersSourceGenerationContext.TypeInfoResolver,
+                    196 => global::AppStoreConnect.TerritoryAvailabilitiesSourceGenerationContext.TypeInfoResolver,
+
+                    197 => global::AppStoreConnect.UserInvitationsSourceGenerationContext.TypeInfoResolver,
+
+                    198 => global::AppStoreConnect.UsersSourceGenerationContext.TypeInfoResolver,
+
+                    199 => global::AppStoreConnect.WebhookDeliveriesSourceGenerationContext.TypeInfoResolver,
+
+                    200 => global::AppStoreConnect.WebhookPingsSourceGenerationContext.TypeInfoResolver,
+
+                    201 => global::AppStoreConnect.WebhooksSourceGenerationContext.TypeInfoResolver,
+
+                    202 => global::AppStoreConnect.WinBackOffersSourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

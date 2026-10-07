@@ -17,30 +17,39 @@ namespace AppStoreConnect.JsonConverters
 
 
             var readerCopy = reader;
-            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferPricesResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferPricesResponseIncludedItemDiscriminator> ??
-                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchaseOfferPricesResponseIncludedItemDiscriminator)}");
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferCodesResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferCodesResponseIncludedItemDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchaseOfferCodesResponseIncludedItemDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::AppStoreConnect.InAppPurchasePricePoint? inAppPurchasePricePoints = default;
-            if (discriminator?.Type == global::AppStoreConnect.InAppPurchaseOfferPricesResponseIncludedItemDiscriminatorType.InAppPurchasePricePoints)
+            global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode? inAppPurchaseOfferCodeCustomCodes = default;
+            if (discriminator?.Type == global::AppStoreConnect.InAppPurchaseOfferCodesResponseIncludedItemDiscriminatorType.InAppPurchaseOfferCodeCustomCodes)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchasePricePoint), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchasePricePoint> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchasePricePoint)}");
-                inAppPurchasePricePoints = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode)}");
+                inAppPurchaseOfferCodeCustomCodes = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.Territory? territories = default;
-            if (discriminator?.Type == global::AppStoreConnect.InAppPurchaseOfferPricesResponseIncludedItemDiscriminatorType.Territories)
+            global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode? inAppPurchaseOfferCodeOneTimeUseCodes = default;
+            if (discriminator?.Type == global::AppStoreConnect.InAppPurchaseOfferCodesResponseIncludedItemDiscriminatorType.InAppPurchaseOfferCodeOneTimeUseCodes)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Territory), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Territory> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.Territory)}");
-                territories = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode)}");
+                inAppPurchaseOfferCodeOneTimeUseCodes = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
+            global::AppStoreConnect.InAppPurchaseOfferPrice? inAppPurchaseOfferPrices = default;
+            if (discriminator?.Type == global::AppStoreConnect.InAppPurchaseOfferCodesResponseIncludedItemDiscriminatorType.InAppPurchaseOfferPrices)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferPrice), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferPrice> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchaseOfferPrice)}");
+                inAppPurchaseOfferPrices = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::AppStoreConnect.IncludedItem138(
                 discriminator?.Type,
-                inAppPurchasePricePoints,
+                inAppPurchaseOfferCodeCustomCodes,
 
-                territories
+                inAppPurchaseOfferCodeOneTimeUseCodes,
+
+                inAppPurchaseOfferPrices
                 );
 
             return __value;
@@ -55,17 +64,23 @@ namespace AppStoreConnect.JsonConverters
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
-            if (value.IsInAppPurchasePricePoints)
+            if (value.IsInAppPurchaseOfferCodeCustomCodes)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchasePricePoint), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchasePricePoint?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchasePricePoint).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchasePricePoints(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseOfferCodeCustomCodes(), typeInfo);
             }
-            else if (value.IsTerritories)
+            else if (value.IsInAppPurchaseOfferCodeOneTimeUseCodes)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Territory), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Territory?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Territory).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickTerritories(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseOfferCodeOneTimeUseCodes(), typeInfo);
+            }
+            else if (value.IsInAppPurchaseOfferPrices)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferPrice), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferPrice?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseOfferPrice).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseOfferPrices(), typeInfo);
             }
         }
     }

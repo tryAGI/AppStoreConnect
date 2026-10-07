@@ -12,156 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaFeedbackCrashSubmissionResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.BackgroundAssetResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BetaTester? BetaTesters { get; init; }
+        public global::AppStoreConnect.App? Apps { get; init; }
 #else
-        public global::AppStoreConnect.BetaTester? BetaTesters { get; }
+        public global::AppStoreConnect.App? Apps { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaTesters))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
 #endif
-        public bool IsBetaTesters => BetaTesters != null;
+        public bool IsApps => Apps != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBetaTesters(
+        public bool TryPickApps(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BetaTester? value)
+            out global::AppStoreConnect.App? value)
         {
-            value = BetaTesters;
-            return IsBetaTesters;
+            value = Apps;
+            return IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaTester PickBetaTesters() => BetaTesters is { } value
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaTesters' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Build? Builds { get; init; }
+        public global::AppStoreConnect.BackgroundAssetVersion? BackgroundAssetVersions { get; init; }
 #else
-        public global::AppStoreConnect.Build? Builds { get; }
+        public global::AppStoreConnect.BackgroundAssetVersion? BackgroundAssetVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BackgroundAssetVersions))]
 #endif
-        public bool IsBuilds => Builds != null;
+        public bool IsBackgroundAssetVersions => BackgroundAssetVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBuilds(
+        public bool TryPickBackgroundAssetVersions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.Build? value)
+            out global::AppStoreConnect.BackgroundAssetVersion? value)
         {
-            value = Builds;
-            return IsBuilds;
+            value = BackgroundAssetVersions;
+            return IsBackgroundAssetVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
+        public global::AppStoreConnect.BackgroundAssetVersion PickBackgroundAssetVersions() => BackgroundAssetVersions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetVersions' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem53(global::AppStoreConnect.BetaTester value) => new IncludedItem53((global::AppStoreConnect.BetaTester?)value);
+        public static implicit operator IncludedItem53(global::AppStoreConnect.App value) => new IncludedItem53((global::AppStoreConnect.App?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BetaTester?(IncludedItem53 @this) => @this.BetaTesters;
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem53 @this) => @this.Apps;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem53(global::AppStoreConnect.BetaTester? value)
+        public IncludedItem53(global::AppStoreConnect.App? value)
         {
-            BetaTesters = value;
+            Apps = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem53 FromBetaTesters(global::AppStoreConnect.BetaTester? value) => new IncludedItem53(value);
+        public static IncludedItem53 FromApps(global::AppStoreConnect.App? value) => new IncludedItem53(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem53(global::AppStoreConnect.Build value) => new IncludedItem53((global::AppStoreConnect.Build?)value);
+        public static implicit operator IncludedItem53(global::AppStoreConnect.BackgroundAssetVersion value) => new IncludedItem53((global::AppStoreConnect.BackgroundAssetVersion?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.Build?(IncludedItem53 @this) => @this.Builds;
+        public static implicit operator global::AppStoreConnect.BackgroundAssetVersion?(IncludedItem53 @this) => @this.BackgroundAssetVersions;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem53(global::AppStoreConnect.Build? value)
+        public IncludedItem53(global::AppStoreConnect.BackgroundAssetVersion? value)
         {
-            Builds = value;
+            BackgroundAssetVersions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem53 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem53(value);
+        public static IncludedItem53 FromBackgroundAssetVersions(global::AppStoreConnect.BackgroundAssetVersion? value) => new IncludedItem53(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem53(
-            global::AppStoreConnect.BetaFeedbackCrashSubmissionResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.BetaTester? betaTesters,
-            global::AppStoreConnect.Build? builds
+            global::AppStoreConnect.BackgroundAssetResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.App? apps,
+            global::AppStoreConnect.BackgroundAssetVersion? backgroundAssetVersions
             )
         {
             Type = type;
 
-            BetaTesters = betaTesters;
-            Builds = builds;
+            Apps = apps;
+            BackgroundAssetVersions = backgroundAssetVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Builds as object ??
-            BetaTesters as object
+            BackgroundAssetVersions as object ??
+            Apps as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            BetaTesters?.ToString() ??
-            Builds?.ToString()
+            Apps?.ToString() ??
+            BackgroundAssetVersions?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsBetaTesters && !IsBuilds || !IsBetaTesters && IsBuilds;
+            return IsApps && !IsBackgroundAssetVersions || !IsApps && IsBackgroundAssetVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.BetaTester, TResult>? betaTesters = null,
-            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
+            global::System.Func<global::AppStoreConnect.BackgroundAssetVersion, TResult>? backgroundAssetVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (BetaTesters is { } __value0 && betaTesters != null)
+            if (Apps is { } __value0 && apps != null)
             {
-                return betaTesters(__value0);
+                return apps(__value0);
             }
-            else if (Builds is { } __value1 && builds != null)
+            else if (BackgroundAssetVersions is { } __value1 && backgroundAssetVersions != null)
             {
-                return builds(__value1);
+                return backgroundAssetVersions(__value1);
             }
 
             return default(TResult);
@@ -201,9 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
 
-            global::System.Action<global::AppStoreConnect.Build>? builds = null,
+            global::System.Action<global::AppStoreConnect.BackgroundAssetVersion>? backgroundAssetVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (BetaTesters is { } __value0)
+            if (Apps is { } __value0)
             {
-                betaTesters?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (Builds is { } __value1)
+            else if (BackgroundAssetVersions is { } __value1)
             {
-                builds?.Invoke(__value1);
+                backgroundAssetVersions?.Invoke(__value1);
             }
         }
 
@@ -225,8 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
-            global::System.Action<global::AppStoreConnect.Build>? builds = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.BackgroundAssetVersion>? backgroundAssetVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (BetaTesters is { } __value0)
+            if (Apps is { } __value0)
             {
-                betaTesters?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (Builds is { } __value1)
+            else if (BackgroundAssetVersions is { } __value1)
             {
-                builds?.Invoke(__value1);
+                backgroundAssetVersions?.Invoke(__value1);
             }
         }
 
@@ -251,10 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                BetaTesters,
-                typeof(global::AppStoreConnect.BetaTester),
-                Builds,
-                typeof(global::AppStoreConnect.Build),
+                Apps,
+                typeof(global::AppStoreConnect.App),
+                BackgroundAssetVersions,
+                typeof(global::AppStoreConnect.BackgroundAssetVersion),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem53 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaTester?>.Default.Equals(BetaTesters, other.BetaTesters) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAssetVersion?>.Default.Equals(BackgroundAssetVersions, other.BackgroundAssetVersions)
                 ;
         }
 

@@ -19,7 +19,7 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("included")]
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem126>? Included { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem128>? Included { get; set; }
 
         /// <summary>
         ///
@@ -53,7 +53,7 @@ namespace AppStoreConnect
         public GameCenterLeaderboardVersionsV2Response(
             global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterLeaderboardVersionV2> data,
             global::AppStoreConnect.PagedDocumentLinks links,
-            global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem126>? included,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem128>? included,
             global::AppStoreConnect.PagingInformation? meta)
         {
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));

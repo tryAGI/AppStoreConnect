@@ -12,156 +12,284 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAppVersionsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.GameCenterActivityVersionsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; init; }
+        public global::AppStoreConnect.GameCenterActivity? GameCenterActivityImages1 { get; init; }
 #else
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; }
+        public global::AppStoreConnect.GameCenterActivity? GameCenterActivityImages1 { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterActivityImages1))]
 #endif
-        public bool IsAppStoreVersions => AppStoreVersions != null;
+        public bool IsGameCenterActivityImages1 => GameCenterActivityImages1 != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreVersions(
+        public bool TryPickGameCenterActivityImages1(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppStoreVersion? value)
+            out global::AppStoreConnect.GameCenterActivity? value)
         {
-            value = AppStoreVersions;
-            return IsAppStoreVersions;
+            value = GameCenterActivityImages1;
+            return IsGameCenterActivityImages1;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => AppStoreVersions is { } value
+        public global::AppStoreConnect.GameCenterActivity PickGameCenterActivityImages1() => GameCenterActivityImages1 is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterActivityImages1' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterAppVersion? GameCenterAppVersions { get; init; }
+        public global::AppStoreConnect.GameCenterActivityImage? GameCenterActivityImages2 { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterAppVersion? GameCenterAppVersions { get; }
+        public global::AppStoreConnect.GameCenterActivityImage? GameCenterActivityImages2 { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterAppVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterActivityImages2))]
 #endif
-        public bool IsGameCenterAppVersions => GameCenterAppVersions != null;
+        public bool IsGameCenterActivityImages2 => GameCenterActivityImages2 != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterAppVersions(
+        public bool TryPickGameCenterActivityImages2(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterAppVersion? value)
+            out global::AppStoreConnect.GameCenterActivityImage? value)
         {
-            value = GameCenterAppVersions;
-            return IsGameCenterAppVersions;
+            value = GameCenterActivityImages2;
+            return IsGameCenterActivityImages2;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAppVersion PickGameCenterAppVersions() => GameCenterAppVersions is { } value
+        public global::AppStoreConnect.GameCenterActivityImage PickGameCenterActivityImages2() => GameCenterActivityImages2 is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAppVersions' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem93(global::AppStoreConnect.AppStoreVersion value) => new IncludedItem93((global::AppStoreConnect.AppStoreVersion?)value);
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterActivityImages2' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem93 @this) => @this.AppStoreVersions;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.GameCenterActivityLocalization? GameCenterActivityLocalizations { get; init; }
+#else
+        public global::AppStoreConnect.GameCenterActivityLocalization? GameCenterActivityLocalizations { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem93(global::AppStoreConnect.AppStoreVersion? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterActivityLocalizations))]
+#endif
+        public bool IsGameCenterActivityLocalizations => GameCenterActivityLocalizations != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickGameCenterActivityLocalizations(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.GameCenterActivityLocalization? value)
         {
-            AppStoreVersions = value;
+            value = GameCenterActivityLocalizations;
+            return IsGameCenterActivityLocalizations;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem93 FromAppStoreVersions(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem93(value);
+        public global::AppStoreConnect.GameCenterActivityLocalization PickGameCenterActivityLocalizations() => GameCenterActivityLocalizations is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterActivityLocalizations' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem93(global::AppStoreConnect.GameCenterAppVersion value) => new IncludedItem93((global::AppStoreConnect.GameCenterAppVersion?)value);
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.GameCenterActivityVersionRelease? GameCenterActivityVersionReleases { get; init; }
+#else
+        public global::AppStoreConnect.GameCenterActivityVersionRelease? GameCenterActivityVersionReleases { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterAppVersion?(IncludedItem93 @this) => @this.GameCenterAppVersions;
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterActivityVersionReleases))]
+#endif
+        public bool IsGameCenterActivityVersionReleases => GameCenterActivityVersionReleases != null;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem93(global::AppStoreConnect.GameCenterAppVersion? value)
+        public bool TryPickGameCenterActivityVersionReleases(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.GameCenterActivityVersionRelease? value)
         {
-            GameCenterAppVersions = value;
+            value = GameCenterActivityVersionReleases;
+            return IsGameCenterActivityVersionReleases;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem93 FromGameCenterAppVersions(global::AppStoreConnect.GameCenterAppVersion? value) => new IncludedItem93(value);
+        public global::AppStoreConnect.GameCenterActivityVersionRelease PickGameCenterActivityVersionReleases() => GameCenterActivityVersionReleases is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterActivityVersionReleases' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem93(global::AppStoreConnect.GameCenterActivity value) => new IncludedItem93((global::AppStoreConnect.GameCenterActivity?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.GameCenterActivity?(IncludedItem93 @this) => @this.GameCenterActivityImages1;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem93(global::AppStoreConnect.GameCenterActivity? value)
+        {
+            GameCenterActivityImages1 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem93 FromGameCenterActivityImages1(global::AppStoreConnect.GameCenterActivity? value) => new IncludedItem93(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem93(global::AppStoreConnect.GameCenterActivityImage value) => new IncludedItem93((global::AppStoreConnect.GameCenterActivityImage?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.GameCenterActivityImage?(IncludedItem93 @this) => @this.GameCenterActivityImages2;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem93(global::AppStoreConnect.GameCenterActivityImage? value)
+        {
+            GameCenterActivityImages2 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem93 FromGameCenterActivityImages2(global::AppStoreConnect.GameCenterActivityImage? value) => new IncludedItem93(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem93(global::AppStoreConnect.GameCenterActivityLocalization value) => new IncludedItem93((global::AppStoreConnect.GameCenterActivityLocalization?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.GameCenterActivityLocalization?(IncludedItem93 @this) => @this.GameCenterActivityLocalizations;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem93(global::AppStoreConnect.GameCenterActivityLocalization? value)
+        {
+            GameCenterActivityLocalizations = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem93 FromGameCenterActivityLocalizations(global::AppStoreConnect.GameCenterActivityLocalization? value) => new IncludedItem93(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem93(global::AppStoreConnect.GameCenterActivityVersionRelease value) => new IncludedItem93((global::AppStoreConnect.GameCenterActivityVersionRelease?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.GameCenterActivityVersionRelease?(IncludedItem93 @this) => @this.GameCenterActivityVersionReleases;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem93(global::AppStoreConnect.GameCenterActivityVersionRelease? value)
+        {
+            GameCenterActivityVersionReleases = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem93 FromGameCenterActivityVersionReleases(global::AppStoreConnect.GameCenterActivityVersionRelease? value) => new IncludedItem93(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem93(
-            global::AppStoreConnect.GameCenterAppVersionsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppStoreVersion? appStoreVersions,
-            global::AppStoreConnect.GameCenterAppVersion? gameCenterAppVersions
+            global::AppStoreConnect.GameCenterActivityVersionsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.GameCenterActivity? gameCenterActivityImages1,
+            global::AppStoreConnect.GameCenterActivityImage? gameCenterActivityImages2,
+            global::AppStoreConnect.GameCenterActivityLocalization? gameCenterActivityLocalizations,
+            global::AppStoreConnect.GameCenterActivityVersionRelease? gameCenterActivityVersionReleases
             )
         {
             Type = type;
 
-            AppStoreVersions = appStoreVersions;
-            GameCenterAppVersions = gameCenterAppVersions;
+            GameCenterActivityImages1 = gameCenterActivityImages1;
+            GameCenterActivityImages2 = gameCenterActivityImages2;
+            GameCenterActivityLocalizations = gameCenterActivityLocalizations;
+            GameCenterActivityVersionReleases = gameCenterActivityVersionReleases;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            GameCenterAppVersions as object ??
-            AppStoreVersions as object
+            GameCenterActivityVersionReleases as object ??
+            GameCenterActivityLocalizations as object ??
+            GameCenterActivityImages2 as object ??
+            GameCenterActivityImages1 as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppStoreVersions?.ToString() ??
-            GameCenterAppVersions?.ToString()
+            GameCenterActivityImages1?.ToString() ??
+            GameCenterActivityImages2?.ToString() ??
+            GameCenterActivityLocalizations?.ToString() ??
+            GameCenterActivityVersionReleases?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +297,17 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppStoreVersions && !IsGameCenterAppVersions || !IsAppStoreVersions && IsGameCenterAppVersions;
+            return IsGameCenterActivityImages1 && !IsGameCenterActivityImages2 && !IsGameCenterActivityLocalizations && !IsGameCenterActivityVersionReleases || !IsGameCenterActivityImages1 && IsGameCenterActivityImages2 && !IsGameCenterActivityLocalizations && !IsGameCenterActivityVersionReleases || !IsGameCenterActivityImages1 && !IsGameCenterActivityImages2 && IsGameCenterActivityLocalizations && !IsGameCenterActivityVersionReleases || !IsGameCenterActivityImages1 && !IsGameCenterActivityImages2 && !IsGameCenterActivityLocalizations && IsGameCenterActivityVersionReleases;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersions = null,
-            global::System.Func<global::AppStoreConnect.GameCenterAppVersion, TResult>? gameCenterAppVersions = null,
+            global::System.Func<global::AppStoreConnect.GameCenterActivity, TResult>? gameCenterActivityImages1 = null,
+            global::System.Func<global::AppStoreConnect.GameCenterActivityImage, TResult>? gameCenterActivityImages2 = null,
+            global::System.Func<global::AppStoreConnect.GameCenterActivityLocalization, TResult>? gameCenterActivityLocalizations = null,
+            global::System.Func<global::AppStoreConnect.GameCenterActivityVersionRelease, TResult>? gameCenterActivityVersionReleases = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppStoreVersions is { } __value0 && appStoreVersions != null)
+            if (GameCenterActivityImages1 is { } __value0 && gameCenterActivityImages1 != null)
             {
-                return appStoreVersions(__value0);
+                return gameCenterActivityImages1(__value0);
             }
-            else if (GameCenterAppVersions is { } __value1 && gameCenterAppVersions != null)
+            else if (GameCenterActivityImages2 is { } __value1 && gameCenterActivityImages2 != null)
             {
-                return gameCenterAppVersions(__value1);
+                return gameCenterActivityImages2(__value1);
+            }
+            else if (GameCenterActivityLocalizations is { } __value2 && gameCenterActivityLocalizations != null)
+            {
+                return gameCenterActivityLocalizations(__value2);
+            }
+            else if (GameCenterActivityVersionReleases is { } __value3 && gameCenterActivityVersionReleases != null)
+            {
+                return gameCenterActivityVersionReleases(__value3);
             }
 
             return default(TResult);
@@ -201,9 +339,13 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterActivity>? gameCenterActivityImages1 = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterAppVersion>? gameCenterAppVersions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterActivityImage>? gameCenterActivityImages2 = null,
+
+            global::System.Action<global::AppStoreConnect.GameCenterActivityLocalization>? gameCenterActivityLocalizations = null,
+
+            global::System.Action<global::AppStoreConnect.GameCenterActivityVersionRelease>? gameCenterActivityVersionReleases = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppStoreVersions is { } __value0)
+            if (GameCenterActivityImages1 is { } __value0)
             {
-                appStoreVersions?.Invoke(__value0);
+                gameCenterActivityImages1?.Invoke(__value0);
             }
-            else if (GameCenterAppVersions is { } __value1)
+            else if (GameCenterActivityImages2 is { } __value1)
             {
-                gameCenterAppVersions?.Invoke(__value1);
+                gameCenterActivityImages2?.Invoke(__value1);
+            }
+            else if (GameCenterActivityLocalizations is { } __value2)
+            {
+                gameCenterActivityLocalizations?.Invoke(__value2);
+            }
+            else if (GameCenterActivityVersionReleases is { } __value3)
+            {
+                gameCenterActivityVersionReleases?.Invoke(__value3);
             }
         }
 
@@ -225,8 +375,10 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
-            global::System.Action<global::AppStoreConnect.GameCenterAppVersion>? gameCenterAppVersions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterActivity>? gameCenterActivityImages1 = null,
+            global::System.Action<global::AppStoreConnect.GameCenterActivityImage>? gameCenterActivityImages2 = null,
+            global::System.Action<global::AppStoreConnect.GameCenterActivityLocalization>? gameCenterActivityLocalizations = null,
+            global::System.Action<global::AppStoreConnect.GameCenterActivityVersionRelease>? gameCenterActivityVersionReleases = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppStoreVersions is { } __value0)
+            if (GameCenterActivityImages1 is { } __value0)
             {
-                appStoreVersions?.Invoke(__value0);
+                gameCenterActivityImages1?.Invoke(__value0);
             }
-            else if (GameCenterAppVersions is { } __value1)
+            else if (GameCenterActivityImages2 is { } __value1)
             {
-                gameCenterAppVersions?.Invoke(__value1);
+                gameCenterActivityImages2?.Invoke(__value1);
+            }
+            else if (GameCenterActivityLocalizations is { } __value2)
+            {
+                gameCenterActivityLocalizations?.Invoke(__value2);
+            }
+            else if (GameCenterActivityVersionReleases is { } __value3)
+            {
+                gameCenterActivityVersionReleases?.Invoke(__value3);
             }
         }
 
@@ -251,10 +411,14 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppStoreVersions,
-                typeof(global::AppStoreConnect.AppStoreVersion),
-                GameCenterAppVersions,
-                typeof(global::AppStoreConnect.GameCenterAppVersion),
+                GameCenterActivityImages1,
+                typeof(global::AppStoreConnect.GameCenterActivity),
+                GameCenterActivityImages2,
+                typeof(global::AppStoreConnect.GameCenterActivityImage),
+                GameCenterActivityLocalizations,
+                typeof(global::AppStoreConnect.GameCenterActivityLocalization),
+                GameCenterActivityVersionReleases,
+                typeof(global::AppStoreConnect.GameCenterActivityVersionRelease),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +435,10 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem93 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions, other.AppStoreVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterAppVersion?>.Default.Equals(GameCenterAppVersions, other.GameCenterAppVersions)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterActivity?>.Default.Equals(GameCenterActivityImages1, other.GameCenterActivityImages1) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterActivityImage?>.Default.Equals(GameCenterActivityImages2, other.GameCenterActivityImages2) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterActivityLocalization?>.Default.Equals(GameCenterActivityLocalizations, other.GameCenterActivityLocalizations) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterActivityVersionRelease?>.Default.Equals(GameCenterActivityVersionReleases, other.GameCenterActivityVersionReleases)
                 ;
         }
 

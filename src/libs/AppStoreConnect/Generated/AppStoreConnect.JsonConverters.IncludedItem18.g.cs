@@ -17,39 +17,39 @@ namespace AppStoreConnect.JsonConverters
 
 
             var readerCopy = reader;
-            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppEncryptionDeclarationsResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppEncryptionDeclarationsResponseIncludedItemDiscriminator> ??
-                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppEncryptionDeclarationsResponseIncludedItemDiscriminator)}");
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppCustomProductPageResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppCustomProductPageResponseIncludedItemDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppCustomProductPageResponseIncludedItemDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::AppStoreConnect.AppEncryptionDeclarationDocument? appEncryptionDeclarationDocuments1 = default;
-            if (discriminator?.Type == global::AppStoreConnect.AppEncryptionDeclarationsResponseIncludedItemDiscriminatorType.AppEncryptionDeclarationDocuments)
+            global::AppStoreConnect.AppCustomProductPageLocalization? appCustomProductPageLocalizations1 = default;
+            if (discriminator?.Type == global::AppStoreConnect.AppCustomProductPageResponseIncludedItemDiscriminatorType.AppCustomProductPageLocalizations)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocument), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppEncryptionDeclarationDocument> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppEncryptionDeclarationDocument)}");
-                appEncryptionDeclarationDocuments1 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppCustomProductPageLocalization), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppCustomProductPageLocalization> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppCustomProductPageLocalization)}");
+                appCustomProductPageLocalizations1 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.App? appEncryptionDeclarationDocuments2 = default;
-            if (discriminator?.Type == global::AppStoreConnect.AppEncryptionDeclarationsResponseIncludedItemDiscriminatorType.AppEncryptionDeclarationDocuments)
+            global::AppStoreConnect.AppCustomProductPageVersion? appCustomProductPageVersions = default;
+            if (discriminator?.Type == global::AppStoreConnect.AppCustomProductPageResponseIncludedItemDiscriminatorType.AppCustomProductPageVersions)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppCustomProductPageVersion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppCustomProductPageVersion> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppCustomProductPageVersion)}");
+                appCustomProductPageVersions = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
+            global::AppStoreConnect.App? appCustomProductPageLocalizations2 = default;
+            if (discriminator?.Type == global::AppStoreConnect.AppCustomProductPageResponseIncludedItemDiscriminatorType.AppCustomProductPageLocalizations)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.App)}");
-                appEncryptionDeclarationDocuments2 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
-            }
-            global::AppStoreConnect.Build? builds = default;
-            if (discriminator?.Type == global::AppStoreConnect.AppEncryptionDeclarationsResponseIncludedItemDiscriminatorType.Builds)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Build), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Build> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.Build)}");
-                builds = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                appCustomProductPageLocalizations2 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::AppStoreConnect.IncludedItem18(
                 discriminator?.Type,
-                appEncryptionDeclarationDocuments1,
+                appCustomProductPageLocalizations1,
 
-                appEncryptionDeclarationDocuments2,
+                appCustomProductPageVersions,
 
-                builds
+                appCustomProductPageLocalizations2
                 );
 
             return __value;
@@ -64,23 +64,23 @@ namespace AppStoreConnect.JsonConverters
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
-            if (value.IsAppEncryptionDeclarationDocuments1)
+            if (value.IsAppCustomProductPageLocalizations1)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocument), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppEncryptionDeclarationDocument?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppEncryptionDeclarationDocument).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEncryptionDeclarationDocuments1(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppCustomProductPageLocalization), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppCustomProductPageLocalization?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppCustomProductPageLocalization).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppCustomProductPageLocalizations1(), typeInfo);
             }
-            else if (value.IsAppEncryptionDeclarationDocuments2)
+            else if (value.IsAppCustomProductPageVersions)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppCustomProductPageVersion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppCustomProductPageVersion?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppCustomProductPageVersion).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppCustomProductPageVersions(), typeInfo);
+            }
+            else if (value.IsAppCustomProductPageLocalizations2)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.App).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEncryptionDeclarationDocuments2(), typeInfo);
-            }
-            else if (value.IsBuilds)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Build), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Build?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Build).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuilds(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppCustomProductPageLocalizations2(), typeInfo);
             }
         }
     }

@@ -12,156 +12,284 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmRepositoriesResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.ReviewSubmissionsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.ScmGitReference? ScmGitReferences { get; init; }
+        public global::AppStoreConnect.Actor? Actors { get; init; }
 #else
-        public global::AppStoreConnect.ScmGitReference? ScmGitReferences { get; }
+        public global::AppStoreConnect.Actor? Actors { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmGitReferences))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Actors))]
 #endif
-        public bool IsScmGitReferences => ScmGitReferences != null;
+        public bool IsActors => Actors != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickScmGitReferences(
+        public bool TryPickActors(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.ScmGitReference? value)
+            out global::AppStoreConnect.Actor? value)
         {
-            value = ScmGitReferences;
-            return IsScmGitReferences;
+            value = Actors;
+            return IsActors;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmGitReference PickScmGitReferences() => ScmGitReferences is { } value
+        public global::AppStoreConnect.Actor PickActors() => Actors is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'ScmGitReferences' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Actors' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.ScmProvider? ScmProviders { get; init; }
+        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions1 { get; init; }
 #else
-        public global::AppStoreConnect.ScmProvider? ScmProviders { get; }
+        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions1 { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmProviders))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions1))]
 #endif
-        public bool IsScmProviders => ScmProviders != null;
+        public bool IsAppStoreVersions1 => AppStoreVersions1 != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickScmProviders(
+        public bool TryPickAppStoreVersions1(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.ScmProvider? value)
+            out global::AppStoreConnect.AppStoreVersion? value)
         {
-            value = ScmProviders;
-            return IsScmProviders;
+            value = AppStoreVersions1;
+            return IsAppStoreVersions1;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmProvider PickScmProviders() => ScmProviders is { } value
+        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions1() => AppStoreVersions1 is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'ScmProviders' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem158(global::AppStoreConnect.ScmGitReference value) => new IncludedItem158((global::AppStoreConnect.ScmGitReference?)value);
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions1' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.ScmGitReference?(IncludedItem158 @this) => @this.ScmGitReferences;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.App? AppStoreVersions2 { get; init; }
+#else
+        public global::AppStoreConnect.App? AppStoreVersions2 { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem158(global::AppStoreConnect.ScmGitReference? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions2))]
+#endif
+        public bool IsAppStoreVersions2 => AppStoreVersions2 != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAppStoreVersions2(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.App? value)
         {
-            ScmGitReferences = value;
+            value = AppStoreVersions2;
+            return IsAppStoreVersions2;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem158 FromScmGitReferences(global::AppStoreConnect.ScmGitReference? value) => new IncludedItem158(value);
+        public global::AppStoreConnect.App PickAppStoreVersions2() => AppStoreVersions2 is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions2' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem158(global::AppStoreConnect.ScmProvider value) => new IncludedItem158((global::AppStoreConnect.ScmProvider?)value);
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.ReviewSubmissionItem? ReviewSubmissionItems { get; init; }
+#else
+        public global::AppStoreConnect.ReviewSubmissionItem? ReviewSubmissionItems { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.ScmProvider?(IncludedItem158 @this) => @this.ScmProviders;
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ReviewSubmissionItems))]
+#endif
+        public bool IsReviewSubmissionItems => ReviewSubmissionItems != null;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem158(global::AppStoreConnect.ScmProvider? value)
+        public bool TryPickReviewSubmissionItems(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.ReviewSubmissionItem? value)
         {
-            ScmProviders = value;
+            value = ReviewSubmissionItems;
+            return IsReviewSubmissionItems;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem158 FromScmProviders(global::AppStoreConnect.ScmProvider? value) => new IncludedItem158(value);
+        public global::AppStoreConnect.ReviewSubmissionItem PickReviewSubmissionItems() => ReviewSubmissionItems is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ReviewSubmissionItems' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem158(global::AppStoreConnect.Actor value) => new IncludedItem158((global::AppStoreConnect.Actor?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.Actor?(IncludedItem158 @this) => @this.Actors;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem158(global::AppStoreConnect.Actor? value)
+        {
+            Actors = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem158 FromActors(global::AppStoreConnect.Actor? value) => new IncludedItem158(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem158(global::AppStoreConnect.AppStoreVersion value) => new IncludedItem158((global::AppStoreConnect.AppStoreVersion?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem158 @this) => @this.AppStoreVersions1;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem158(global::AppStoreConnect.AppStoreVersion? value)
+        {
+            AppStoreVersions1 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem158 FromAppStoreVersions1(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem158(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem158(global::AppStoreConnect.App value) => new IncludedItem158((global::AppStoreConnect.App?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem158 @this) => @this.AppStoreVersions2;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem158(global::AppStoreConnect.App? value)
+        {
+            AppStoreVersions2 = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem158 FromAppStoreVersions2(global::AppStoreConnect.App? value) => new IncludedItem158(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem158(global::AppStoreConnect.ReviewSubmissionItem value) => new IncludedItem158((global::AppStoreConnect.ReviewSubmissionItem?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.ReviewSubmissionItem?(IncludedItem158 @this) => @this.ReviewSubmissionItems;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem158(global::AppStoreConnect.ReviewSubmissionItem? value)
+        {
+            ReviewSubmissionItems = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem158 FromReviewSubmissionItems(global::AppStoreConnect.ReviewSubmissionItem? value) => new IncludedItem158(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem158(
-            global::AppStoreConnect.ScmRepositoriesResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.ScmGitReference? scmGitReferences,
-            global::AppStoreConnect.ScmProvider? scmProviders
+            global::AppStoreConnect.ReviewSubmissionsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.Actor? actors,
+            global::AppStoreConnect.AppStoreVersion? appStoreVersions1,
+            global::AppStoreConnect.App? appStoreVersions2,
+            global::AppStoreConnect.ReviewSubmissionItem? reviewSubmissionItems
             )
         {
             Type = type;
 
-            ScmGitReferences = scmGitReferences;
-            ScmProviders = scmProviders;
+            Actors = actors;
+            AppStoreVersions1 = appStoreVersions1;
+            AppStoreVersions2 = appStoreVersions2;
+            ReviewSubmissionItems = reviewSubmissionItems;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            ScmProviders as object ??
-            ScmGitReferences as object
+            ReviewSubmissionItems as object ??
+            AppStoreVersions2 as object ??
+            AppStoreVersions1 as object ??
+            Actors as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            ScmGitReferences?.ToString() ??
-            ScmProviders?.ToString()
+            Actors?.ToString() ??
+            AppStoreVersions1?.ToString() ??
+            AppStoreVersions2?.ToString() ??
+            ReviewSubmissionItems?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +297,17 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsScmGitReferences && !IsScmProviders || !IsScmGitReferences && IsScmProviders;
+            return IsActors && !IsAppStoreVersions1 && !IsAppStoreVersions2 && !IsReviewSubmissionItems || !IsActors && IsAppStoreVersions1 && !IsAppStoreVersions2 && !IsReviewSubmissionItems || !IsActors && !IsAppStoreVersions1 && IsAppStoreVersions2 && !IsReviewSubmissionItems || !IsActors && !IsAppStoreVersions1 && !IsAppStoreVersions2 && IsReviewSubmissionItems;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.ScmGitReference, TResult>? scmGitReferences = null,
-            global::System.Func<global::AppStoreConnect.ScmProvider, TResult>? scmProviders = null,
+            global::System.Func<global::AppStoreConnect.Actor, TResult>? actors = null,
+            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersions1 = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? appStoreVersions2 = null,
+            global::System.Func<global::AppStoreConnect.ReviewSubmissionItem, TResult>? reviewSubmissionItems = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (ScmGitReferences is { } __value0 && scmGitReferences != null)
+            if (Actors is { } __value0 && actors != null)
             {
-                return scmGitReferences(__value0);
+                return actors(__value0);
             }
-            else if (ScmProviders is { } __value1 && scmProviders != null)
+            else if (AppStoreVersions1 is { } __value1 && appStoreVersions1 != null)
             {
-                return scmProviders(__value1);
+                return appStoreVersions1(__value1);
+            }
+            else if (AppStoreVersions2 is { } __value2 && appStoreVersions2 != null)
+            {
+                return appStoreVersions2(__value2);
+            }
+            else if (ReviewSubmissionItems is { } __value3 && reviewSubmissionItems != null)
+            {
+                return reviewSubmissionItems(__value3);
             }
 
             return default(TResult);
@@ -201,9 +339,13 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.ScmGitReference>? scmGitReferences = null,
+            global::System.Action<global::AppStoreConnect.Actor>? actors = null,
 
-            global::System.Action<global::AppStoreConnect.ScmProvider>? scmProviders = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions1 = null,
+
+            global::System.Action<global::AppStoreConnect.App>? appStoreVersions2 = null,
+
+            global::System.Action<global::AppStoreConnect.ReviewSubmissionItem>? reviewSubmissionItems = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (ScmGitReferences is { } __value0)
+            if (Actors is { } __value0)
             {
-                scmGitReferences?.Invoke(__value0);
+                actors?.Invoke(__value0);
             }
-            else if (ScmProviders is { } __value1)
+            else if (AppStoreVersions1 is { } __value1)
             {
-                scmProviders?.Invoke(__value1);
+                appStoreVersions1?.Invoke(__value1);
+            }
+            else if (AppStoreVersions2 is { } __value2)
+            {
+                appStoreVersions2?.Invoke(__value2);
+            }
+            else if (ReviewSubmissionItems is { } __value3)
+            {
+                reviewSubmissionItems?.Invoke(__value3);
             }
         }
 
@@ -225,8 +375,10 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.ScmGitReference>? scmGitReferences = null,
-            global::System.Action<global::AppStoreConnect.ScmProvider>? scmProviders = null,
+            global::System.Action<global::AppStoreConnect.Actor>? actors = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions1 = null,
+            global::System.Action<global::AppStoreConnect.App>? appStoreVersions2 = null,
+            global::System.Action<global::AppStoreConnect.ReviewSubmissionItem>? reviewSubmissionItems = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (ScmGitReferences is { } __value0)
+            if (Actors is { } __value0)
             {
-                scmGitReferences?.Invoke(__value0);
+                actors?.Invoke(__value0);
             }
-            else if (ScmProviders is { } __value1)
+            else if (AppStoreVersions1 is { } __value1)
             {
-                scmProviders?.Invoke(__value1);
+                appStoreVersions1?.Invoke(__value1);
+            }
+            else if (AppStoreVersions2 is { } __value2)
+            {
+                appStoreVersions2?.Invoke(__value2);
+            }
+            else if (ReviewSubmissionItems is { } __value3)
+            {
+                reviewSubmissionItems?.Invoke(__value3);
             }
         }
 
@@ -251,10 +411,14 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                ScmGitReferences,
-                typeof(global::AppStoreConnect.ScmGitReference),
-                ScmProviders,
-                typeof(global::AppStoreConnect.ScmProvider),
+                Actors,
+                typeof(global::AppStoreConnect.Actor),
+                AppStoreVersions1,
+                typeof(global::AppStoreConnect.AppStoreVersion),
+                AppStoreVersions2,
+                typeof(global::AppStoreConnect.App),
+                ReviewSubmissionItems,
+                typeof(global::AppStoreConnect.ReviewSubmissionItem),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +435,10 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem158 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmGitReference?>.Default.Equals(ScmGitReferences, other.ScmGitReferences) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmProvider?>.Default.Equals(ScmProviders, other.ScmProviders)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Actor?>.Default.Equals(Actors, other.Actors) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions1, other.AppStoreVersions1) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(AppStoreVersions2, other.AppStoreVersions2) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ReviewSubmissionItem?>.Default.Equals(ReviewSubmissionItems, other.ReviewSubmissionItems)
                 ;
         }
 

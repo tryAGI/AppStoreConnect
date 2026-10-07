@@ -19,7 +19,7 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("included")]
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem153>? Included { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem155>? Included { get; set; }
 
         /// <summary>
         ///
@@ -46,7 +46,7 @@ namespace AppStoreConnect
         public PromotedPurchaseResponse(
             global::AppStoreConnect.PromotedPurchase data,
             global::AppStoreConnect.DocumentLinks links,
-            global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem153>? included)
+            global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem155>? included)
         {
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
             this.Included = included;

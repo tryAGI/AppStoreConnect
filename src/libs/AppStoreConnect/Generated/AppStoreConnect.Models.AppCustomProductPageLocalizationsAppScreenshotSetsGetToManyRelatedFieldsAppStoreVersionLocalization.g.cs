@@ -39,6 +39,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        Placements,
+        /// <summary>
+        ///
+        /// </summary>
         PromotionalText,
         /// <summary>
         ///
@@ -73,6 +77,7 @@ namespace AppStoreConnect
                 AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppStoreVersionLocalization.Keywords => "keywords",
                 AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppStoreVersionLocalization.Locale => "locale",
                 AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppStoreVersionLocalization.MarketingUrl => "marketingUrl",
+                AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppStoreVersionLocalization.Placements => "placements",
                 AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppStoreVersionLocalization.PromotionalText => "promotionalText",
                 AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppStoreVersionLocalization.SearchKeywords => "searchKeywords",
                 AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppStoreVersionLocalization.SupportUrl => "supportUrl",
@@ -94,6 +99,7 @@ namespace AppStoreConnect
                 "keywords" => AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppStoreVersionLocalization.Keywords,
                 "locale" => AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppStoreVersionLocalization.Locale,
                 "marketingUrl" => AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppStoreVersionLocalization.MarketingUrl,
+                "placements" => AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppStoreVersionLocalization.Placements,
                 "promotionalText" => AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppStoreVersionLocalization.PromotionalText,
                 "searchKeywords" => AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppStoreVersionLocalization.SearchKeywords,
                 "supportUrl" => AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppStoreVersionLocalization.SupportUrl,

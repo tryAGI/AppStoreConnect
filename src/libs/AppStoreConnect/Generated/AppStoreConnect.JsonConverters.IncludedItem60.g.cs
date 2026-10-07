@@ -17,30 +17,39 @@ namespace AppStoreConnect.JsonConverters
 
 
             var readerCopy = reader;
-            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BuildUploadsResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BuildUploadsResponseIncludedItemDiscriminator> ??
-                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BuildUploadsResponseIncludedItemDiscriminator)}");
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BetaTestersResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BetaTestersResponseIncludedItemDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BetaTestersResponseIncludedItemDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::AppStoreConnect.BuildUploadFile? buildUploadFiles1 = default;
-            if (discriminator?.Type == global::AppStoreConnect.BuildUploadsResponseIncludedItemDiscriminatorType.BuildUploadFiles)
+            global::AppStoreConnect.App? apps = default;
+            if (discriminator?.Type == global::AppStoreConnect.BetaTestersResponseIncludedItemDiscriminatorType.Apps)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BuildUploadFile), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BuildUploadFile> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BuildUploadFile)}");
-                buildUploadFiles1 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.App)}");
+                apps = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.Build? buildUploadFiles2 = default;
-            if (discriminator?.Type == global::AppStoreConnect.BuildUploadsResponseIncludedItemDiscriminatorType.BuildUploadFiles)
+            global::AppStoreConnect.BetaGroup? betaGroups = default;
+            if (discriminator?.Type == global::AppStoreConnect.BetaTestersResponseIncludedItemDiscriminatorType.BetaGroups)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BetaGroup), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BetaGroup> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BetaGroup)}");
+                betaGroups = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
+            global::AppStoreConnect.Build? builds = default;
+            if (discriminator?.Type == global::AppStoreConnect.BetaTestersResponseIncludedItemDiscriminatorType.Builds)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Build), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Build> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.Build)}");
-                buildUploadFiles2 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                builds = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::AppStoreConnect.IncludedItem60(
                 discriminator?.Type,
-                buildUploadFiles1,
+                apps,
 
-                buildUploadFiles2
+                betaGroups,
+
+                builds
                 );
 
             return __value;
@@ -55,17 +64,23 @@ namespace AppStoreConnect.JsonConverters
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
-            if (value.IsBuildUploadFiles1)
+            if (value.IsApps)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BuildUploadFile), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BuildUploadFile?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BuildUploadFile).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuildUploadFiles1(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.App).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickApps(), typeInfo);
             }
-            else if (value.IsBuildUploadFiles2)
+            else if (value.IsBetaGroups)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BetaGroup), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BetaGroup?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BetaGroup).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBetaGroups(), typeInfo);
+            }
+            else if (value.IsBuilds)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Build), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Build?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Build).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuildUploadFiles2(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuilds(), typeInfo);
             }
         }
     }

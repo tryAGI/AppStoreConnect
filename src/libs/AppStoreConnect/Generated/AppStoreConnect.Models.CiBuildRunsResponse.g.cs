@@ -19,7 +19,7 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("included")]
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem66>? Included { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem68>? Included { get; set; }
 
         /// <summary>
         ///
@@ -53,7 +53,7 @@ namespace AppStoreConnect
         public CiBuildRunsResponse(
             global::System.Collections.Generic.IList<global::AppStoreConnect.CiBuildRun> data,
             global::AppStoreConnect.PagedDocumentLinks links,
-            global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem66>? included,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem68>? included,
             global::AppStoreConnect.PagingInformation? meta)
         {
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));

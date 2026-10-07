@@ -27,6 +27,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        Placements,
+        /// <summary>
+        ///
+        /// </summary>
         PromotionalText,
         /// <summary>
         ///
@@ -50,6 +54,7 @@ namespace AppStoreConnect
                 AppScreenshotSetsGetInstanceFieldsAppCustomProductPageLocalization.AppPreviewSets => "appPreviewSets",
                 AppScreenshotSetsGetInstanceFieldsAppCustomProductPageLocalization.AppScreenshotSets => "appScreenshotSets",
                 AppScreenshotSetsGetInstanceFieldsAppCustomProductPageLocalization.Locale => "locale",
+                AppScreenshotSetsGetInstanceFieldsAppCustomProductPageLocalization.Placements => "placements",
                 AppScreenshotSetsGetInstanceFieldsAppCustomProductPageLocalization.PromotionalText => "promotionalText",
                 AppScreenshotSetsGetInstanceFieldsAppCustomProductPageLocalization.SearchKeywords => "searchKeywords",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -66,6 +71,7 @@ namespace AppStoreConnect
                 "appPreviewSets" => AppScreenshotSetsGetInstanceFieldsAppCustomProductPageLocalization.AppPreviewSets,
                 "appScreenshotSets" => AppScreenshotSetsGetInstanceFieldsAppCustomProductPageLocalization.AppScreenshotSets,
                 "locale" => AppScreenshotSetsGetInstanceFieldsAppCustomProductPageLocalization.Locale,
+                "placements" => AppScreenshotSetsGetInstanceFieldsAppCustomProductPageLocalization.Placements,
                 "promotionalText" => AppScreenshotSetsGetInstanceFieldsAppCustomProductPageLocalization.PromotionalText,
                 "searchKeywords" => AppScreenshotSetsGetInstanceFieldsAppCustomProductPageLocalization.SearchKeywords,
                 _ => null,

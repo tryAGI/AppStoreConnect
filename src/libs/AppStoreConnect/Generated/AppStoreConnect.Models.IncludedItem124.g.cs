@@ -12,7 +12,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboardSetsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetsV2ResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
@@ -92,149 +92,75 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterLeaderboardSetLocalization? GameCenterLeaderboardSetLocalizations { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetVersionV2? GameCenterLeaderboardSetVersions { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterLeaderboardSetLocalization? GameCenterLeaderboardSetLocalizations { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetVersionV2? GameCenterLeaderboardSetVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSetLocalizations))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSetVersions))]
 #endif
-        public bool IsGameCenterLeaderboardSetLocalizations => GameCenterLeaderboardSetLocalizations != null;
+        public bool IsGameCenterLeaderboardSetVersions => GameCenterLeaderboardSetVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterLeaderboardSetLocalizations(
+        public bool TryPickGameCenterLeaderboardSetVersions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterLeaderboardSetLocalization? value)
+            out global::AppStoreConnect.GameCenterLeaderboardSetVersionV2? value)
         {
-            value = GameCenterLeaderboardSetLocalizations;
-            return IsGameCenterLeaderboardSetLocalizations;
+            value = GameCenterLeaderboardSetVersions;
+            return IsGameCenterLeaderboardSetVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboardSetLocalization PickGameCenterLeaderboardSetLocalizations() => GameCenterLeaderboardSetLocalizations is { } value
+        public global::AppStoreConnect.GameCenterLeaderboardSetVersionV2 PickGameCenterLeaderboardSetVersions() => GameCenterLeaderboardSetVersions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSetLocalizations' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSetVersions' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterLeaderboardSetRelease? GameCenterLeaderboardSetReleases { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboardV2? GameCenterLeaderboards { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterLeaderboardSetRelease? GameCenterLeaderboardSetReleases { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardV2? GameCenterLeaderboards { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSetReleases))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboards))]
 #endif
-        public bool IsGameCenterLeaderboardSetReleases => GameCenterLeaderboardSetReleases != null;
+        public bool IsGameCenterLeaderboards => GameCenterLeaderboards != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterLeaderboardSetReleases(
+        public bool TryPickGameCenterLeaderboards(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterLeaderboardSetRelease? value)
+            out global::AppStoreConnect.GameCenterLeaderboardV2? value)
         {
-            value = GameCenterLeaderboardSetReleases;
-            return IsGameCenterLeaderboardSetReleases;
+            value = GameCenterLeaderboards;
+            return IsGameCenterLeaderboards;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboardSetRelease PickGameCenterLeaderboardSetReleases() => GameCenterLeaderboardSetReleases is { } value
+        public global::AppStoreConnect.GameCenterLeaderboardV2 PickGameCenterLeaderboards() => GameCenterLeaderboards is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSetReleases' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterLeaderboardSet? GameCenterLeaderboardSets1 { get; init; }
-#else
-        public global::AppStoreConnect.GameCenterLeaderboardSet? GameCenterLeaderboardSets1 { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSets1))]
-#endif
-        public bool IsGameCenterLeaderboardSets1 => GameCenterLeaderboardSets1 != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickGameCenterLeaderboardSets1(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.GameCenterLeaderboardSet? value)
-        {
-            value = GameCenterLeaderboardSets1;
-            return IsGameCenterLeaderboardSets1;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboardSet PickGameCenterLeaderboardSets1() => GameCenterLeaderboardSets1 is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSets1' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterLeaderboard? GameCenterLeaderboardSets2 { get; init; }
-#else
-        public global::AppStoreConnect.GameCenterLeaderboard? GameCenterLeaderboardSets2 { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSets2))]
-#endif
-        public bool IsGameCenterLeaderboardSets2 => GameCenterLeaderboardSets2 != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickGameCenterLeaderboardSets2(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.GameCenterLeaderboard? value)
-        {
-            value = GameCenterLeaderboardSets2;
-            return IsGameCenterLeaderboardSets2;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboard PickGameCenterLeaderboardSets2() => GameCenterLeaderboardSets2 is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSets2' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboards' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -284,126 +210,74 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem124(global::AppStoreConnect.GameCenterLeaderboardSetLocalization value) => new IncludedItem124((global::AppStoreConnect.GameCenterLeaderboardSetLocalization?)value);
+        public static implicit operator IncludedItem124(global::AppStoreConnect.GameCenterLeaderboardSetVersionV2 value) => new IncludedItem124((global::AppStoreConnect.GameCenterLeaderboardSetVersionV2?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSetLocalization?(IncludedItem124 @this) => @this.GameCenterLeaderboardSetLocalizations;
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSetVersionV2?(IncludedItem124 @this) => @this.GameCenterLeaderboardSetVersions;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem124(global::AppStoreConnect.GameCenterLeaderboardSetLocalization? value)
+        public IncludedItem124(global::AppStoreConnect.GameCenterLeaderboardSetVersionV2? value)
         {
-            GameCenterLeaderboardSetLocalizations = value;
+            GameCenterLeaderboardSetVersions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem124 FromGameCenterLeaderboardSetLocalizations(global::AppStoreConnect.GameCenterLeaderboardSetLocalization? value) => new IncludedItem124(value);
+        public static IncludedItem124 FromGameCenterLeaderboardSetVersions(global::AppStoreConnect.GameCenterLeaderboardSetVersionV2? value) => new IncludedItem124(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem124(global::AppStoreConnect.GameCenterLeaderboardSetRelease value) => new IncludedItem124((global::AppStoreConnect.GameCenterLeaderboardSetRelease?)value);
+        public static implicit operator IncludedItem124(global::AppStoreConnect.GameCenterLeaderboardV2 value) => new IncludedItem124((global::AppStoreConnect.GameCenterLeaderboardV2?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSetRelease?(IncludedItem124 @this) => @this.GameCenterLeaderboardSetReleases;
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardV2?(IncludedItem124 @this) => @this.GameCenterLeaderboards;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem124(global::AppStoreConnect.GameCenterLeaderboardSetRelease? value)
+        public IncludedItem124(global::AppStoreConnect.GameCenterLeaderboardV2? value)
         {
-            GameCenterLeaderboardSetReleases = value;
+            GameCenterLeaderboards = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem124 FromGameCenterLeaderboardSetReleases(global::AppStoreConnect.GameCenterLeaderboardSetRelease? value) => new IncludedItem124(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem124(global::AppStoreConnect.GameCenterLeaderboardSet value) => new IncludedItem124((global::AppStoreConnect.GameCenterLeaderboardSet?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSet?(IncludedItem124 @this) => @this.GameCenterLeaderboardSets1;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem124(global::AppStoreConnect.GameCenterLeaderboardSet? value)
-        {
-            GameCenterLeaderboardSets1 = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem124 FromGameCenterLeaderboardSets1(global::AppStoreConnect.GameCenterLeaderboardSet? value) => new IncludedItem124(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem124(global::AppStoreConnect.GameCenterLeaderboard value) => new IncludedItem124((global::AppStoreConnect.GameCenterLeaderboard?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterLeaderboard?(IncludedItem124 @this) => @this.GameCenterLeaderboardSets2;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem124(global::AppStoreConnect.GameCenterLeaderboard? value)
-        {
-            GameCenterLeaderboardSets2 = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem124 FromGameCenterLeaderboardSets2(global::AppStoreConnect.GameCenterLeaderboard? value) => new IncludedItem124(value);
+        public static IncludedItem124 FromGameCenterLeaderboards(global::AppStoreConnect.GameCenterLeaderboardV2? value) => new IncludedItem124(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem124(
-            global::AppStoreConnect.GameCenterLeaderboardSetsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.GameCenterLeaderboardSetsV2ResponseIncludedItemDiscriminatorType? type,
             global::AppStoreConnect.GameCenterDetail? gameCenterDetails,
             global::AppStoreConnect.GameCenterGroup? gameCenterGroups,
-            global::AppStoreConnect.GameCenterLeaderboardSetLocalization? gameCenterLeaderboardSetLocalizations,
-            global::AppStoreConnect.GameCenterLeaderboardSetRelease? gameCenterLeaderboardSetReleases,
-            global::AppStoreConnect.GameCenterLeaderboardSet? gameCenterLeaderboardSets1,
-            global::AppStoreConnect.GameCenterLeaderboard? gameCenterLeaderboardSets2
+            global::AppStoreConnect.GameCenterLeaderboardSetVersionV2? gameCenterLeaderboardSetVersions,
+            global::AppStoreConnect.GameCenterLeaderboardV2? gameCenterLeaderboards
             )
         {
             Type = type;
 
             GameCenterDetails = gameCenterDetails;
             GameCenterGroups = gameCenterGroups;
-            GameCenterLeaderboardSetLocalizations = gameCenterLeaderboardSetLocalizations;
-            GameCenterLeaderboardSetReleases = gameCenterLeaderboardSetReleases;
-            GameCenterLeaderboardSets1 = gameCenterLeaderboardSets1;
-            GameCenterLeaderboardSets2 = gameCenterLeaderboardSets2;
+            GameCenterLeaderboardSetVersions = gameCenterLeaderboardSetVersions;
+            GameCenterLeaderboards = gameCenterLeaderboards;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            GameCenterLeaderboardSets2 as object ??
-            GameCenterLeaderboardSets1 as object ??
-            GameCenterLeaderboardSetReleases as object ??
-            GameCenterLeaderboardSetLocalizations as object ??
+            GameCenterLeaderboards as object ??
+            GameCenterLeaderboardSetVersions as object ??
             GameCenterGroups as object ??
             GameCenterDetails as object
             ;
@@ -414,10 +288,8 @@ namespace AppStoreConnect
         public override string? ToString() =>
             GameCenterDetails?.ToString() ??
             GameCenterGroups?.ToString() ??
-            GameCenterLeaderboardSetLocalizations?.ToString() ??
-            GameCenterLeaderboardSetReleases?.ToString() ??
-            GameCenterLeaderboardSets1?.ToString() ??
-            GameCenterLeaderboardSets2?.ToString()
+            GameCenterLeaderboardSetVersions?.ToString() ??
+            GameCenterLeaderboards?.ToString()
             ;
 
         /// <summary>
@@ -425,7 +297,7 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsGameCenterDetails && !IsGameCenterGroups && !IsGameCenterLeaderboardSetLocalizations && !IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets1 && !IsGameCenterLeaderboardSets2 || !IsGameCenterDetails && IsGameCenterGroups && !IsGameCenterLeaderboardSetLocalizations && !IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets1 && !IsGameCenterLeaderboardSets2 || !IsGameCenterDetails && !IsGameCenterGroups && IsGameCenterLeaderboardSetLocalizations && !IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets1 && !IsGameCenterLeaderboardSets2 || !IsGameCenterDetails && !IsGameCenterGroups && !IsGameCenterLeaderboardSetLocalizations && IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets1 && !IsGameCenterLeaderboardSets2 || !IsGameCenterDetails && !IsGameCenterGroups && !IsGameCenterLeaderboardSetLocalizations && !IsGameCenterLeaderboardSetReleases && IsGameCenterLeaderboardSets1 && !IsGameCenterLeaderboardSets2 || !IsGameCenterDetails && !IsGameCenterGroups && !IsGameCenterLeaderboardSetLocalizations && !IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets1 && IsGameCenterLeaderboardSets2;
+            return IsGameCenterDetails && !IsGameCenterGroups && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboards || !IsGameCenterDetails && IsGameCenterGroups && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboards || !IsGameCenterDetails && !IsGameCenterGroups && IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboards || !IsGameCenterDetails && !IsGameCenterGroups && !IsGameCenterLeaderboardSetVersions && IsGameCenterLeaderboards;
         }
 
         /// <summary>
@@ -434,10 +306,8 @@ namespace AppStoreConnect
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.GameCenterDetail, TResult>? gameCenterDetails = null,
             global::System.Func<global::AppStoreConnect.GameCenterGroup, TResult>? gameCenterGroups = null,
-            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSetLocalization, TResult>? gameCenterLeaderboardSetLocalizations = null,
-            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSetRelease, TResult>? gameCenterLeaderboardSetReleases = null,
-            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSet, TResult>? gameCenterLeaderboardSets1 = null,
-            global::System.Func<global::AppStoreConnect.GameCenterLeaderboard, TResult>? gameCenterLeaderboardSets2 = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSetVersionV2, TResult>? gameCenterLeaderboardSetVersions = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardV2, TResult>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -453,21 +323,13 @@ namespace AppStoreConnect
             {
                 return gameCenterGroups(__value1);
             }
-            else if (GameCenterLeaderboardSetLocalizations is { } __value2 && gameCenterLeaderboardSetLocalizations != null)
+            else if (GameCenterLeaderboardSetVersions is { } __value2 && gameCenterLeaderboardSetVersions != null)
             {
-                return gameCenterLeaderboardSetLocalizations(__value2);
+                return gameCenterLeaderboardSetVersions(__value2);
             }
-            else if (GameCenterLeaderboardSetReleases is { } __value3 && gameCenterLeaderboardSetReleases != null)
+            else if (GameCenterLeaderboards is { } __value3 && gameCenterLeaderboards != null)
             {
-                return gameCenterLeaderboardSetReleases(__value3);
-            }
-            else if (GameCenterLeaderboardSets1 is { } __value4 && gameCenterLeaderboardSets1 != null)
-            {
-                return gameCenterLeaderboardSets1(__value4);
-            }
-            else if (GameCenterLeaderboardSets2 is { } __value5 && gameCenterLeaderboardSets2 != null)
-            {
-                return gameCenterLeaderboardSets2(__value5);
+                return gameCenterLeaderboards(__value3);
             }
 
             return default(TResult);
@@ -481,13 +343,9 @@ namespace AppStoreConnect
 
             global::System.Action<global::AppStoreConnect.GameCenterGroup>? gameCenterGroups = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetLocalization>? gameCenterLeaderboardSetLocalizations = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetVersionV2>? gameCenterLeaderboardSetVersions = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetRelease>? gameCenterLeaderboardSetReleases = null,
-
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSet>? gameCenterLeaderboardSets1 = null,
-
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboard>? gameCenterLeaderboardSets2 = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardV2>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -503,21 +361,13 @@ namespace AppStoreConnect
             {
                 gameCenterGroups?.Invoke(__value1);
             }
-            else if (GameCenterLeaderboardSetLocalizations is { } __value2)
+            else if (GameCenterLeaderboardSetVersions is { } __value2)
             {
-                gameCenterLeaderboardSetLocalizations?.Invoke(__value2);
+                gameCenterLeaderboardSetVersions?.Invoke(__value2);
             }
-            else if (GameCenterLeaderboardSetReleases is { } __value3)
+            else if (GameCenterLeaderboards is { } __value3)
             {
-                gameCenterLeaderboardSetReleases?.Invoke(__value3);
-            }
-            else if (GameCenterLeaderboardSets1 is { } __value4)
-            {
-                gameCenterLeaderboardSets1?.Invoke(__value4);
-            }
-            else if (GameCenterLeaderboardSets2 is { } __value5)
-            {
-                gameCenterLeaderboardSets2?.Invoke(__value5);
+                gameCenterLeaderboards?.Invoke(__value3);
             }
         }
 
@@ -527,10 +377,8 @@ namespace AppStoreConnect
         public void Switch(
             global::System.Action<global::AppStoreConnect.GameCenterDetail>? gameCenterDetails = null,
             global::System.Action<global::AppStoreConnect.GameCenterGroup>? gameCenterGroups = null,
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetLocalization>? gameCenterLeaderboardSetLocalizations = null,
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetRelease>? gameCenterLeaderboardSetReleases = null,
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSet>? gameCenterLeaderboardSets1 = null,
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboard>? gameCenterLeaderboardSets2 = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetVersionV2>? gameCenterLeaderboardSetVersions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardV2>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -546,21 +394,13 @@ namespace AppStoreConnect
             {
                 gameCenterGroups?.Invoke(__value1);
             }
-            else if (GameCenterLeaderboardSetLocalizations is { } __value2)
+            else if (GameCenterLeaderboardSetVersions is { } __value2)
             {
-                gameCenterLeaderboardSetLocalizations?.Invoke(__value2);
+                gameCenterLeaderboardSetVersions?.Invoke(__value2);
             }
-            else if (GameCenterLeaderboardSetReleases is { } __value3)
+            else if (GameCenterLeaderboards is { } __value3)
             {
-                gameCenterLeaderboardSetReleases?.Invoke(__value3);
-            }
-            else if (GameCenterLeaderboardSets1 is { } __value4)
-            {
-                gameCenterLeaderboardSets1?.Invoke(__value4);
-            }
-            else if (GameCenterLeaderboardSets2 is { } __value5)
-            {
-                gameCenterLeaderboardSets2?.Invoke(__value5);
+                gameCenterLeaderboards?.Invoke(__value3);
             }
         }
 
@@ -575,14 +415,10 @@ namespace AppStoreConnect
                 typeof(global::AppStoreConnect.GameCenterDetail),
                 GameCenterGroups,
                 typeof(global::AppStoreConnect.GameCenterGroup),
-                GameCenterLeaderboardSetLocalizations,
-                typeof(global::AppStoreConnect.GameCenterLeaderboardSetLocalization),
-                GameCenterLeaderboardSetReleases,
-                typeof(global::AppStoreConnect.GameCenterLeaderboardSetRelease),
-                GameCenterLeaderboardSets1,
-                typeof(global::AppStoreConnect.GameCenterLeaderboardSet),
-                GameCenterLeaderboardSets2,
-                typeof(global::AppStoreConnect.GameCenterLeaderboard),
+                GameCenterLeaderboardSetVersions,
+                typeof(global::AppStoreConnect.GameCenterLeaderboardSetVersionV2),
+                GameCenterLeaderboards,
+                typeof(global::AppStoreConnect.GameCenterLeaderboardV2),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -601,10 +437,8 @@ namespace AppStoreConnect
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterDetail?>.Default.Equals(GameCenterDetails, other.GameCenterDetails) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterGroup?>.Default.Equals(GameCenterGroups, other.GameCenterGroups) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSetLocalization?>.Default.Equals(GameCenterLeaderboardSetLocalizations, other.GameCenterLeaderboardSetLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSetRelease?>.Default.Equals(GameCenterLeaderboardSetReleases, other.GameCenterLeaderboardSetReleases) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSet?>.Default.Equals(GameCenterLeaderboardSets1, other.GameCenterLeaderboardSets1) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboard?>.Default.Equals(GameCenterLeaderboardSets2, other.GameCenterLeaderboardSets2)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSetVersionV2?>.Default.Equals(GameCenterLeaderboardSetVersions, other.GameCenterLeaderboardSetVersions) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardV2?>.Default.Equals(GameCenterLeaderboards, other.GameCenterLeaderboards)
                 ;
         }
 

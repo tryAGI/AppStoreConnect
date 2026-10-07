@@ -20,6 +20,10 @@ namespace AppStoreConnect
         ///
         /// </summary>
         AppEventVideoClips,
+        /// <summary>
+        ///
+        /// </summary>
+        Placements,
     }
 
     /// <summary>
@@ -37,6 +41,7 @@ namespace AppStoreConnect
                 AppEventsLocalizationsGetToManyRelatedIncludeItem.AppEvent => "appEvent",
                 AppEventsLocalizationsGetToManyRelatedIncludeItem.AppEventScreenshots => "appEventScreenshots",
                 AppEventsLocalizationsGetToManyRelatedIncludeItem.AppEventVideoClips => "appEventVideoClips",
+                AppEventsLocalizationsGetToManyRelatedIncludeItem.Placements => "placements",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -50,6 +55,7 @@ namespace AppStoreConnect
                 "appEvent" => AppEventsLocalizationsGetToManyRelatedIncludeItem.AppEvent,
                 "appEventScreenshots" => AppEventsLocalizationsGetToManyRelatedIncludeItem.AppEventScreenshots,
                 "appEventVideoClips" => AppEventsLocalizationsGetToManyRelatedIncludeItem.AppEventVideoClips,
+                "placements" => AppEventsLocalizationsGetToManyRelatedIncludeItem.Placements,
                 _ => null,
             };
         }

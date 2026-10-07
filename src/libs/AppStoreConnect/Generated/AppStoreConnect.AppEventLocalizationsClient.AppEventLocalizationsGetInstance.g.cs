@@ -31,9 +31,11 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEvent>? fieldsAppEvents,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventScreenshot>? fieldsAppEventScreenshots,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventVideoClip>? fieldsAppEventVideoClips,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement>? fieldsAppAssetLibraryPlacements,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceIncludeItem>? include,
             ref int? limitAppEventScreenshots,
             ref int? limitAppEventVideoClips,
+            ref int? limitPlacements,
             ref string id);
         partial void PrepareAppEventLocalizationsGetInstanceRequest(
             global::System.Net.Http.HttpClient httpClient,
@@ -42,9 +44,11 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEvent>? fieldsAppEvents,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventScreenshot>? fieldsAppEventScreenshots,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventVideoClip>? fieldsAppEventVideoClips,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement>? fieldsAppAssetLibraryPlacements,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceIncludeItem>? include,
             int? limitAppEventScreenshots,
             int? limitAppEventVideoClips,
+            int? limitPlacements,
             string id);
         partial void ProcessAppEventLocalizationsGetInstanceResponse(
             global::System.Net.Http.HttpClient httpClient,
@@ -62,9 +66,11 @@ namespace AppStoreConnect
         /// <param name="fieldsAppEvents"></param>
         /// <param name="fieldsAppEventScreenshots"></param>
         /// <param name="fieldsAppEventVideoClips"></param>
+        /// <param name="fieldsAppAssetLibraryPlacements"></param>
         /// <param name="include"></param>
         /// <param name="limitAppEventScreenshots"></param>
         /// <param name="limitAppEventVideoClips"></param>
+        /// <param name="limitPlacements"></param>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -75,9 +81,11 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEvent>? fieldsAppEvents = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventScreenshot>? fieldsAppEventScreenshots = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventVideoClip>? fieldsAppEventVideoClips = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement>? fieldsAppAssetLibraryPlacements = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceIncludeItem>? include = default,
             int? limitAppEventScreenshots = default,
             int? limitAppEventVideoClips = default,
+            int? limitPlacements = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -87,9 +95,11 @@ namespace AppStoreConnect
                 fieldsAppEvents: fieldsAppEvents,
                 fieldsAppEventScreenshots: fieldsAppEventScreenshots,
                 fieldsAppEventVideoClips: fieldsAppEventVideoClips,
+                fieldsAppAssetLibraryPlacements: fieldsAppAssetLibraryPlacements,
                 include: include,
                 limitAppEventScreenshots: limitAppEventScreenshots,
                 limitAppEventVideoClips: limitAppEventVideoClips,
+                limitPlacements: limitPlacements,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
             ).ConfigureAwait(false);
@@ -103,9 +113,11 @@ namespace AppStoreConnect
         /// <param name="fieldsAppEvents"></param>
         /// <param name="fieldsAppEventScreenshots"></param>
         /// <param name="fieldsAppEventVideoClips"></param>
+        /// <param name="fieldsAppAssetLibraryPlacements"></param>
         /// <param name="include"></param>
         /// <param name="limitAppEventScreenshots"></param>
         /// <param name="limitAppEventVideoClips"></param>
+        /// <param name="limitPlacements"></param>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -116,9 +128,11 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEvent>? fieldsAppEvents = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventScreenshot>? fieldsAppEventScreenshots = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppEventVideoClip>? fieldsAppEventVideoClips = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceFieldsAppAssetLibraryPlacement>? fieldsAppAssetLibraryPlacements = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppEventLocalizationsGetInstanceIncludeItem>? include = default,
             int? limitAppEventScreenshots = default,
             int? limitAppEventVideoClips = default,
+            int? limitPlacements = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
@@ -130,9 +144,11 @@ namespace AppStoreConnect
                 fieldsAppEvents: fieldsAppEvents,
                 fieldsAppEventScreenshots: fieldsAppEventScreenshots,
                 fieldsAppEventVideoClips: fieldsAppEventVideoClips,
+                fieldsAppAssetLibraryPlacements: fieldsAppAssetLibraryPlacements,
                 include: include,
                 limitAppEventScreenshots: ref limitAppEventScreenshots,
                 limitAppEventVideoClips: ref limitAppEventVideoClips,
+                limitPlacements: ref limitPlacements,
                 id: ref id);
 
 
@@ -166,9 +182,11 @@ namespace AppStoreConnect
                                 .AddOptionalParameter("fields[appEvents]", fieldsAppEvents, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("fields[appEventScreenshots]", fieldsAppEventScreenshots, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("fields[appEventVideoClips]", fieldsAppEventVideoClips, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
+                                .AddOptionalParameter("fields[appAssetLibraryPlacements]", fieldsAppAssetLibraryPlacements, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("include", include, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("limit[appEventScreenshots]", limitAppEventScreenshots?.ToString())
                                 .AddOptionalParameter("limit[appEventVideoClips]", limitAppEventVideoClips?.ToString())
+                                .AddOptionalParameter("limit[placements]", limitPlacements?.ToString())
                                 ;
                             var __path = __pathBuilder.ToString();
                 __path = global::AppStoreConnect.AutoSDKRequestOptionsSupport.AppendQueryParameters(
@@ -214,9 +232,11 @@ namespace AppStoreConnect
                     fieldsAppEvents: fieldsAppEvents,
                     fieldsAppEventScreenshots: fieldsAppEventScreenshots,
                     fieldsAppEventVideoClips: fieldsAppEventVideoClips,
+                    fieldsAppAssetLibraryPlacements: fieldsAppAssetLibraryPlacements,
                     include: include,
                     limitAppEventScreenshots: limitAppEventScreenshots,
                     limitAppEventVideoClips: limitAppEventVideoClips,
+                    limitPlacements: limitPlacements,
                     id: id);
 
                 return __httpRequest;

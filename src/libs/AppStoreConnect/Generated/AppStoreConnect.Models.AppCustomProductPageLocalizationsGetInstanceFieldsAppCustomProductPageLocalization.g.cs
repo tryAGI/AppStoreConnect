@@ -27,6 +27,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        Placements,
+        /// <summary>
+        ///
+        /// </summary>
         PromotionalText,
         /// <summary>
         ///
@@ -50,6 +54,7 @@ namespace AppStoreConnect
                 AppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageLocalization.AppPreviewSets => "appPreviewSets",
                 AppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageLocalization.AppScreenshotSets => "appScreenshotSets",
                 AppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageLocalization.Locale => "locale",
+                AppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageLocalization.Placements => "placements",
                 AppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageLocalization.PromotionalText => "promotionalText",
                 AppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageLocalization.SearchKeywords => "searchKeywords",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -66,6 +71,7 @@ namespace AppStoreConnect
                 "appPreviewSets" => AppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageLocalization.AppPreviewSets,
                 "appScreenshotSets" => AppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageLocalization.AppScreenshotSets,
                 "locale" => AppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageLocalization.Locale,
+                "placements" => AppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageLocalization.Placements,
                 "promotionalText" => AppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageLocalization.PromotionalText,
                 "searchKeywords" => AppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageLocalization.SearchKeywords,
                 _ => null,

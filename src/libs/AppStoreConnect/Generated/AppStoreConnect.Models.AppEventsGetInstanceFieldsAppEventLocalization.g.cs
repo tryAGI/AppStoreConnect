@@ -35,6 +35,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        Placements,
+        /// <summary>
+        ///
+        /// </summary>
         ShortDescription,
     }
 
@@ -56,6 +60,7 @@ namespace AppStoreConnect
                 AppEventsGetInstanceFieldsAppEventLocalization.Locale => "locale",
                 AppEventsGetInstanceFieldsAppEventLocalization.LongDescription => "longDescription",
                 AppEventsGetInstanceFieldsAppEventLocalization.Name => "name",
+                AppEventsGetInstanceFieldsAppEventLocalization.Placements => "placements",
                 AppEventsGetInstanceFieldsAppEventLocalization.ShortDescription => "shortDescription",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -73,6 +78,7 @@ namespace AppStoreConnect
                 "locale" => AppEventsGetInstanceFieldsAppEventLocalization.Locale,
                 "longDescription" => AppEventsGetInstanceFieldsAppEventLocalization.LongDescription,
                 "name" => AppEventsGetInstanceFieldsAppEventLocalization.Name,
+                "placements" => AppEventsGetInstanceFieldsAppEventLocalization.Placements,
                 "shortDescription" => AppEventsGetInstanceFieldsAppEventLocalization.ShortDescription,
                 _ => null,
             };

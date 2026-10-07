@@ -17,19 +17,19 @@ namespace AppStoreConnect.JsonConverters
 
 
             var readerCopy = reader;
-            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.EndUserLicenseAgreementResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.EndUserLicenseAgreementResponseIncludedItemDiscriminator> ??
-                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.EndUserLicenseAgreementResponseIncludedItemDiscriminator)}");
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.CustomerReviewsResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.CustomerReviewsResponseIncludedItemDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.CustomerReviewsResponseIncludedItemDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::AppStoreConnect.App? apps = default;
-            if (discriminator?.Type == global::AppStoreConnect.EndUserLicenseAgreementResponseIncludedItemDiscriminatorType.Apps)
+            global::AppStoreConnect.CustomerReviewResponseV1? customerReviewResponses = default;
+            if (discriminator?.Type == global::AppStoreConnect.CustomerReviewsResponseIncludedItemDiscriminatorType.CustomerReviewResponses)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.App)}");
-                apps = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.CustomerReviewResponseV1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.CustomerReviewResponseV1> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.CustomerReviewResponseV1)}");
+                customerReviewResponses = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::AppStoreConnect.Territory? territories = default;
-            if (discriminator?.Type == global::AppStoreConnect.EndUserLicenseAgreementResponseIncludedItemDiscriminatorType.Territories)
+            if (discriminator?.Type == global::AppStoreConnect.CustomerReviewsResponseIncludedItemDiscriminatorType.Territories)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Territory), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Territory> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.Territory)}");
@@ -38,7 +38,7 @@ namespace AppStoreConnect.JsonConverters
 
             var __value = new global::AppStoreConnect.IncludedItem74(
                 discriminator?.Type,
-                apps,
+                customerReviewResponses,
 
                 territories
                 );
@@ -55,11 +55,11 @@ namespace AppStoreConnect.JsonConverters
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
-            if (value.IsApps)
+            if (value.IsCustomerReviewResponses)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.App).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickApps(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.CustomerReviewResponseV1), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.CustomerReviewResponseV1?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.CustomerReviewResponseV1).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickCustomerReviewResponses(), typeInfo);
             }
             else if (value.IsTerritories)
             {

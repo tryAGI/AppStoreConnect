@@ -79,6 +79,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        AssetLibrary,
+        /// <summary>
+        ///
+        /// </summary>
         BackgroundAssets,
         /// <summary>
         ///
@@ -263,6 +267,7 @@ namespace AppStoreConnect
                 AppEncryptionDeclarationsGetCollectionFieldsApp.AppStoreVersionExperimentsV2 => "appStoreVersionExperimentsV2",
                 AppEncryptionDeclarationsGetCollectionFieldsApp.AppStoreVersions => "appStoreVersions",
                 AppEncryptionDeclarationsGetCollectionFieldsApp.AppTags => "appTags",
+                AppEncryptionDeclarationsGetCollectionFieldsApp.AssetLibrary => "assetLibrary",
                 AppEncryptionDeclarationsGetCollectionFieldsApp.BackgroundAssets => "backgroundAssets",
                 AppEncryptionDeclarationsGetCollectionFieldsApp.BetaAppLocalizations => "betaAppLocalizations",
                 AppEncryptionDeclarationsGetCollectionFieldsApp.BetaAppReviewDetail => "betaAppReviewDetail",
@@ -329,6 +334,7 @@ namespace AppStoreConnect
                 "appStoreVersionExperimentsV2" => AppEncryptionDeclarationsGetCollectionFieldsApp.AppStoreVersionExperimentsV2,
                 "appStoreVersions" => AppEncryptionDeclarationsGetCollectionFieldsApp.AppStoreVersions,
                 "appTags" => AppEncryptionDeclarationsGetCollectionFieldsApp.AppTags,
+                "assetLibrary" => AppEncryptionDeclarationsGetCollectionFieldsApp.AssetLibrary,
                 "backgroundAssets" => AppEncryptionDeclarationsGetCollectionFieldsApp.BackgroundAssets,
                 "betaAppLocalizations" => AppEncryptionDeclarationsGetCollectionFieldsApp.BetaAppLocalizations,
                 "betaAppReviewDetail" => AppEncryptionDeclarationsGetCollectionFieldsApp.BetaAppReviewDetail,

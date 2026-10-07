@@ -79,6 +79,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        AssetLibrary,
+        /// <summary>
+        ///
+        /// </summary>
         BackgroundAssets,
         /// <summary>
         ///
@@ -263,6 +267,7 @@ namespace AppStoreConnect
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.AppStoreVersionExperimentsV2 => "appStoreVersionExperimentsV2",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.AppStoreVersions => "appStoreVersions",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.AppTags => "appTags",
+                AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.AssetLibrary => "assetLibrary",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.BackgroundAssets => "backgroundAssets",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.BetaAppLocalizations => "betaAppLocalizations",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.BetaAppReviewDetail => "betaAppReviewDetail",
@@ -329,6 +334,7 @@ namespace AppStoreConnect
                 "appStoreVersionExperimentsV2" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.AppStoreVersionExperimentsV2,
                 "appStoreVersions" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.AppStoreVersions,
                 "appTags" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.AppTags,
+                "assetLibrary" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.AssetLibrary,
                 "backgroundAssets" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.BackgroundAssets,
                 "betaAppLocalizations" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.BetaAppLocalizations,
                 "betaAppReviewDetail" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.BetaAppReviewDetail,

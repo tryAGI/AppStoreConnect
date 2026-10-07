@@ -28,6 +28,10 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsAppCustomProductPageVersion))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsAppCustomProductPageVersionData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsAppCustomProductPageVersionDataType), TypeInfoPropertyName = "AppCustomProductPageLocalizationCreateRequestDataRelationshipsAppCustomProductPageVersionDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacements))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItemType), TypeInfoPropertyName = "AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationUpdateRequest))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationUpdateRequestData))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationUpdateRequestDataType), TypeInfoPropertyName = "AppCustomProductPageLocalizationUpdateRequestDataType2")]
@@ -40,6 +44,10 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponseDataItem))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponseDataItemType), TypeInfoPropertyName = "AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponseDataItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationPlacementsLinkagesResponse))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItem))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItemType), TypeInfoPropertyName = "AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationSearchKeywordsLinkagesResponse))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationSearchKeywordsLinkagesResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationSearchKeywordsLinkagesResponseDataItem))]
@@ -56,6 +64,8 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppScreenshotSet), TypeInfoPropertyName = "AppCustomProductPageLocalizationsGetInstanceFieldsAppScreenshotSet2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppPreviewSet>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppPreviewSet), TypeInfoPropertyName = "AppCustomProductPageLocalizationsGetInstanceFieldsAppPreviewSet2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement), TypeInfoPropertyName = "AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceIncludeItem), TypeInfoPropertyName = "AppCustomProductPageLocalizationsGetInstanceIncludeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFilterPreviewTypeItem>))]
@@ -85,18 +95,43 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppScreenshot), TypeInfoPropertyName = "AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppScreenshot2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItem), TypeInfoPropertyName = "AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem), TypeInfoPropertyName = "AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItem), TypeInfoPropertyName = "AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItem), TypeInfoPropertyName = "AppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement), TypeInfoPropertyName = "AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage), TypeInfoPropertyName = "AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo), TypeInfoPropertyName = "AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization), TypeInfoPropertyName = "AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization), TypeInfoPropertyName = "AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization), TypeInfoPropertyName = "AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization), TypeInfoPropertyName = "AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem), TypeInfoPropertyName = "AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationResponseIncludedItemDiscriminatorType?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationResponseIncludedItemDiscriminatorType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataType?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationCreateRequestDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsAppCustomProductPageVersionDataType?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationCreateRequestDataRelationshipsAppCustomProductPageVersionDataType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItemType?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationUpdateRequestDataType?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationUpdateRequestDataType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationAppPreviewSetsLinkagesResponseDataItemType?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationAppPreviewSetsLinkagesResponseDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponseDataItemType?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponseDataItemType2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItemType?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationPlacementsLinkagesResponseDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationSearchKeywordsLinkagesResponseDataItemType?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationSearchKeywordsLinkagesResponseDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationSearchKeywordsLinkagesRequestDataItemType?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationSearchKeywordsLinkagesRequestDataItemType2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageLocalization?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageLocalization2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageVersion?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageVersion2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppScreenshotSet?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsGetInstanceFieldsAppScreenshotSet2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppPreviewSet?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsGetInstanceFieldsAppPreviewSet2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceIncludeItem?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsGetInstanceIncludeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFilterPreviewTypeItem?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFilterPreviewTypeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFieldsAppPreviewSet?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFieldsAppPreviewSet2")]
@@ -110,14 +145,28 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppCustomProductPageLocalization?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppCustomProductPageLocalization2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppScreenshot?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppScreenshot2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItem?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItem?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItem?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem?), TypeInfoPropertyName = "NullableAppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem2")]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationAppPreviewSetsLinkagesResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponseDataItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationSearchKeywordsLinkagesResponseDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationSearchKeywordsLinkagesRequestDataItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageLocalization>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppCustomProductPageVersion>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppScreenshotSet>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppPreviewSet>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFilterPreviewTypeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsAppPreviewSetsGetToManyRelatedFieldsAppPreviewSet>))]
@@ -132,6 +181,17 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppCustomProductPageLocalization>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedFieldsAppScreenshot>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItem>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization>))]
+    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem>))]
     internal sealed partial class AppCustomProductPageLocalizationsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
@@ -213,6 +273,10 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsAppCustomProductPageVersionDataType?)
 
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItemType?)
+
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationUpdateRequestDataType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationUpdateRequestDataType?)
@@ -224,6 +288,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponseDataItemType)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponseDataItemType?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItemType)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItemType?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationSearchKeywordsLinkagesResponseDataItemType)
 
@@ -248,6 +316,10 @@ namespace AppStoreConnect
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppPreviewSet)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppPreviewSet?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement?)
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceIncludeItem)
 
@@ -307,7 +379,51 @@ namespace AppStoreConnect
 
                     || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItem)
 
-                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItem?);
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItem?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem)
+
+                    || typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem?);
             }
 
             public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
@@ -344,6 +460,16 @@ namespace AppStoreConnect
                     return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationCreateRequestDataRelationshipsAppCustomProductPageVersionDataTypeNullableJsonConverter();
                 }
 
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationCreateRequestDataRelationshipsPlacementsDataItemTypeNullableJsonConverter();
+                }
+
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationUpdateRequestDataType))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationUpdateRequestDataTypeJsonConverter();
@@ -372,6 +498,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponseDataItemType?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponseDataItemTypeNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItemType))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItemTypeJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItemType?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationPlacementsLinkagesResponseDataItemTypeNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationSearchKeywordsLinkagesResponseDataItemType))
@@ -432,6 +568,16 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppPreviewSet?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsGetInstanceFieldsAppPreviewSetNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacementNullableJsonConverter();
                 }
 
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceIncludeItem))
@@ -582,6 +728,116 @@ namespace AppStoreConnect
                 if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItem?))
                 {
                     return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsAppScreenshotSetsGetToManyRelatedIncludeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterPlacementTypeItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFilterStateItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedSortItemNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacementJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacementNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImageJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImage?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryImageNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideoJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideo?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppAssetLibraryVideoNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppEventLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalizationJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalizationNullableJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItemJsonConverter();
+                }
+
+                if (typeToConvert == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem?))
+                {
+                    return new global::AppStoreConnect.JsonConverters.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItemNullableJsonConverter();
                 }
                 throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
             }

@@ -16,6 +16,12 @@ namespace AppStoreConnect
         public required global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsAppEvent AppEvent { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("placements")]
+        public global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsPlacements? Placements { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -25,13 +31,16 @@ namespace AppStoreConnect
         /// Initializes a new instance of the <see cref="AppEventLocalizationCreateRequestDataRelationships" /> class.
         /// </summary>
         /// <param name="appEvent"></param>
+        /// <param name="placements"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public AppEventLocalizationCreateRequestDataRelationships(
-            global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsAppEvent appEvent)
+            global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsAppEvent appEvent,
+            global::AppStoreConnect.AppEventLocalizationCreateRequestDataRelationshipsPlacements? placements)
         {
             this.AppEvent = appEvent ?? throw new global::System.ArgumentNullException(nameof(appEvent));
+            this.Placements = placements;
         }
 
         /// <summary>

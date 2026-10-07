@@ -12,7 +12,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaTestersResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.BetaGroupsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
@@ -55,38 +55,75 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BetaGroup? BetaGroups { get; init; }
+        public global::AppStoreConnect.BetaRecruitmentCriterion? BetaRecruitmentCriteria { get; init; }
 #else
-        public global::AppStoreConnect.BetaGroup? BetaGroups { get; }
+        public global::AppStoreConnect.BetaRecruitmentCriterion? BetaRecruitmentCriteria { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaGroups))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaRecruitmentCriteria))]
 #endif
-        public bool IsBetaGroups => BetaGroups != null;
+        public bool IsBetaRecruitmentCriteria => BetaRecruitmentCriteria != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBetaGroups(
+        public bool TryPickBetaRecruitmentCriteria(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BetaGroup? value)
+            out global::AppStoreConnect.BetaRecruitmentCriterion? value)
         {
-            value = BetaGroups;
-            return IsBetaGroups;
+            value = BetaRecruitmentCriteria;
+            return IsBetaRecruitmentCriteria;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaGroup PickBetaGroups() => BetaGroups is { } value
+        public global::AppStoreConnect.BetaRecruitmentCriterion PickBetaRecruitmentCriteria() => BetaRecruitmentCriteria is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaGroups' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaRecruitmentCriteria' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.BetaTester? BetaTesters { get; init; }
+#else
+        public global::AppStoreConnect.BetaTester? BetaTesters { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaTesters))]
+#endif
+        public bool IsBetaTesters => BetaTesters != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickBetaTesters(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.BetaTester? value)
+        {
+            value = BetaTesters;
+            return IsBetaTesters;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::AppStoreConnect.BetaTester PickBetaTesters() => BetaTesters is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaTesters' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -150,25 +187,48 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem58(global::AppStoreConnect.BetaGroup value) => new IncludedItem58((global::AppStoreConnect.BetaGroup?)value);
+        public static implicit operator IncludedItem58(global::AppStoreConnect.BetaRecruitmentCriterion value) => new IncludedItem58((global::AppStoreConnect.BetaRecruitmentCriterion?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BetaGroup?(IncludedItem58 @this) => @this.BetaGroups;
+        public static implicit operator global::AppStoreConnect.BetaRecruitmentCriterion?(IncludedItem58 @this) => @this.BetaRecruitmentCriteria;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem58(global::AppStoreConnect.BetaGroup? value)
+        public IncludedItem58(global::AppStoreConnect.BetaRecruitmentCriterion? value)
         {
-            BetaGroups = value;
+            BetaRecruitmentCriteria = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem58 FromBetaGroups(global::AppStoreConnect.BetaGroup? value) => new IncludedItem58(value);
+        public static IncludedItem58 FromBetaRecruitmentCriteria(global::AppStoreConnect.BetaRecruitmentCriterion? value) => new IncludedItem58(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem58(global::AppStoreConnect.BetaTester value) => new IncludedItem58((global::AppStoreConnect.BetaTester?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.BetaTester?(IncludedItem58 @this) => @this.BetaTesters;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem58(global::AppStoreConnect.BetaTester? value)
+        {
+            BetaTesters = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem58 FromBetaTesters(global::AppStoreConnect.BetaTester? value) => new IncludedItem58(value);
 
         /// <summary>
         ///
@@ -197,16 +257,18 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public IncludedItem58(
-            global::AppStoreConnect.BetaTestersResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.BetaGroupsResponseIncludedItemDiscriminatorType? type,
             global::AppStoreConnect.App? apps,
-            global::AppStoreConnect.BetaGroup? betaGroups,
+            global::AppStoreConnect.BetaRecruitmentCriterion? betaRecruitmentCriteria,
+            global::AppStoreConnect.BetaTester? betaTesters,
             global::AppStoreConnect.Build? builds
             )
         {
             Type = type;
 
             Apps = apps;
-            BetaGroups = betaGroups;
+            BetaRecruitmentCriteria = betaRecruitmentCriteria;
+            BetaTesters = betaTesters;
             Builds = builds;
         }
 
@@ -215,7 +277,8 @@ namespace AppStoreConnect
         /// </summary>
         public object? Object =>
             Builds as object ??
-            BetaGroups as object ??
+            BetaTesters as object ??
+            BetaRecruitmentCriteria as object ??
             Apps as object
             ;
 
@@ -224,7 +287,8 @@ namespace AppStoreConnect
         /// </summary>
         public override string? ToString() =>
             Apps?.ToString() ??
-            BetaGroups?.ToString() ??
+            BetaRecruitmentCriteria?.ToString() ??
+            BetaTesters?.ToString() ??
             Builds?.ToString()
             ;
 
@@ -233,7 +297,7 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsApps && !IsBetaGroups && !IsBuilds || !IsApps && IsBetaGroups && !IsBuilds || !IsApps && !IsBetaGroups && IsBuilds;
+            return IsApps && !IsBetaRecruitmentCriteria && !IsBetaTesters && !IsBuilds || !IsApps && IsBetaRecruitmentCriteria && !IsBetaTesters && !IsBuilds || !IsApps && !IsBetaRecruitmentCriteria && IsBetaTesters && !IsBuilds || !IsApps && !IsBetaRecruitmentCriteria && !IsBetaTesters && IsBuilds;
         }
 
         /// <summary>
@@ -241,7 +305,8 @@ namespace AppStoreConnect
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
-            global::System.Func<global::AppStoreConnect.BetaGroup, TResult>? betaGroups = null,
+            global::System.Func<global::AppStoreConnect.BetaRecruitmentCriterion, TResult>? betaRecruitmentCriteria = null,
+            global::System.Func<global::AppStoreConnect.BetaTester, TResult>? betaTesters = null,
             global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
             bool validate = true)
         {
@@ -254,13 +319,17 @@ namespace AppStoreConnect
             {
                 return apps(__value0);
             }
-            else if (BetaGroups is { } __value1 && betaGroups != null)
+            else if (BetaRecruitmentCriteria is { } __value1 && betaRecruitmentCriteria != null)
             {
-                return betaGroups(__value1);
+                return betaRecruitmentCriteria(__value1);
             }
-            else if (Builds is { } __value2 && builds != null)
+            else if (BetaTesters is { } __value2 && betaTesters != null)
             {
-                return builds(__value2);
+                return betaTesters(__value2);
+            }
+            else if (Builds is { } __value3 && builds != null)
+            {
+                return builds(__value3);
             }
 
             return default(TResult);
@@ -272,7 +341,9 @@ namespace AppStoreConnect
         public void Match(
             global::System.Action<global::AppStoreConnect.App>? apps = null,
 
-            global::System.Action<global::AppStoreConnect.BetaGroup>? betaGroups = null,
+            global::System.Action<global::AppStoreConnect.BetaRecruitmentCriterion>? betaRecruitmentCriteria = null,
+
+            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
 
             global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
@@ -286,13 +357,17 @@ namespace AppStoreConnect
             {
                 apps?.Invoke(__value0);
             }
-            else if (BetaGroups is { } __value1)
+            else if (BetaRecruitmentCriteria is { } __value1)
             {
-                betaGroups?.Invoke(__value1);
+                betaRecruitmentCriteria?.Invoke(__value1);
             }
-            else if (Builds is { } __value2)
+            else if (BetaTesters is { } __value2)
             {
-                builds?.Invoke(__value2);
+                betaTesters?.Invoke(__value2);
+            }
+            else if (Builds is { } __value3)
+            {
+                builds?.Invoke(__value3);
             }
         }
 
@@ -301,7 +376,8 @@ namespace AppStoreConnect
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.App>? apps = null,
-            global::System.Action<global::AppStoreConnect.BetaGroup>? betaGroups = null,
+            global::System.Action<global::AppStoreConnect.BetaRecruitmentCriterion>? betaRecruitmentCriteria = null,
+            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
             global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
@@ -314,13 +390,17 @@ namespace AppStoreConnect
             {
                 apps?.Invoke(__value0);
             }
-            else if (BetaGroups is { } __value1)
+            else if (BetaRecruitmentCriteria is { } __value1)
             {
-                betaGroups?.Invoke(__value1);
+                betaRecruitmentCriteria?.Invoke(__value1);
             }
-            else if (Builds is { } __value2)
+            else if (BetaTesters is { } __value2)
             {
-                builds?.Invoke(__value2);
+                betaTesters?.Invoke(__value2);
+            }
+            else if (Builds is { } __value3)
+            {
+                builds?.Invoke(__value3);
             }
         }
 
@@ -333,8 +413,10 @@ namespace AppStoreConnect
             {
                 Apps,
                 typeof(global::AppStoreConnect.App),
-                BetaGroups,
-                typeof(global::AppStoreConnect.BetaGroup),
+                BetaRecruitmentCriteria,
+                typeof(global::AppStoreConnect.BetaRecruitmentCriterion),
+                BetaTesters,
+                typeof(global::AppStoreConnect.BetaTester),
                 Builds,
                 typeof(global::AppStoreConnect.Build),
             };
@@ -354,7 +436,8 @@ namespace AppStoreConnect
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaGroup?>.Default.Equals(BetaGroups, other.BetaGroups) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaRecruitmentCriterion?>.Default.Equals(BetaRecruitmentCriteria, other.BetaRecruitmentCriteria) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaTester?>.Default.Equals(BetaTesters, other.BetaTesters) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
                 ;
         }

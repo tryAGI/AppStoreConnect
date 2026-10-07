@@ -12,6 +12,8 @@ namespace AppStoreConnect
         /// <param name="fieldsAppCustomProductPageVersions"></param>
         /// <param name="fieldsAppStoreVersionExperiments"></param>
         /// <param name="fieldsAppEvents"></param>
+        /// <param name="fieldsAppAssetLibraryImages"></param>
+        /// <param name="fieldsAppAssetLibraryVideos"></param>
         /// <param name="fieldsBackgroundAssetVersions"></param>
         /// <param name="fieldsGameCenterAchievementVersions"></param>
         /// <param name="fieldsGameCenterActivityVersions"></param>
@@ -34,6 +36,8 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppCustomProductPageVersion>? fieldsAppCustomProductPageVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppStoreVersionExperiment>? fieldsAppStoreVersionExperiments = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppEvent>? fieldsAppEvents = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryImage>? fieldsAppAssetLibraryImages = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryVideo>? fieldsAppAssetLibraryVideos = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsBackgroundAssetVersion>? fieldsBackgroundAssetVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsGameCenterAchievementVersion>? fieldsGameCenterAchievementVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsGameCenterActivityVersion>? fieldsGameCenterActivityVersions = default,
@@ -55,6 +59,8 @@ namespace AppStoreConnect
         /// <param name="fieldsAppCustomProductPageVersions"></param>
         /// <param name="fieldsAppStoreVersionExperiments"></param>
         /// <param name="fieldsAppEvents"></param>
+        /// <param name="fieldsAppAssetLibraryImages"></param>
+        /// <param name="fieldsAppAssetLibraryVideos"></param>
         /// <param name="fieldsBackgroundAssetVersions"></param>
         /// <param name="fieldsGameCenterAchievementVersions"></param>
         /// <param name="fieldsGameCenterActivityVersions"></param>
@@ -77,6 +83,8 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppCustomProductPageVersion>? fieldsAppCustomProductPageVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppStoreVersionExperiment>? fieldsAppStoreVersionExperiments = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppEvent>? fieldsAppEvents = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryImage>? fieldsAppAssetLibraryImages = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsAppAssetLibraryVideo>? fieldsAppAssetLibraryVideos = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsBackgroundAssetVersion>? fieldsBackgroundAssetVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsGameCenterAchievementVersion>? fieldsGameCenterAchievementVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsGameCenterActivityVersion>? fieldsGameCenterActivityVersions = default,

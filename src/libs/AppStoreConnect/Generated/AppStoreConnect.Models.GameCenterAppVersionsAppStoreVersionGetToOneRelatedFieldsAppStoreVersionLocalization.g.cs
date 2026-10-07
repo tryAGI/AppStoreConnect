@@ -39,6 +39,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        Placements,
+        /// <summary>
+        ///
+        /// </summary>
         PromotionalText,
         /// <summary>
         ///
@@ -73,6 +77,7 @@ namespace AppStoreConnect
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsAppStoreVersionLocalization.Keywords => "keywords",
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsAppStoreVersionLocalization.Locale => "locale",
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsAppStoreVersionLocalization.MarketingUrl => "marketingUrl",
+                GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsAppStoreVersionLocalization.Placements => "placements",
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsAppStoreVersionLocalization.PromotionalText => "promotionalText",
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsAppStoreVersionLocalization.SearchKeywords => "searchKeywords",
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsAppStoreVersionLocalization.SupportUrl => "supportUrl",
@@ -94,6 +99,7 @@ namespace AppStoreConnect
                 "keywords" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsAppStoreVersionLocalization.Keywords,
                 "locale" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsAppStoreVersionLocalization.Locale,
                 "marketingUrl" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsAppStoreVersionLocalization.MarketingUrl,
+                "placements" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsAppStoreVersionLocalization.Placements,
                 "promotionalText" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsAppStoreVersionLocalization.PromotionalText,
                 "searchKeywords" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsAppStoreVersionLocalization.SearchKeywords,
                 "supportUrl" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsAppStoreVersionLocalization.SupportUrl,

@@ -11,6 +11,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        AppAssetLibraryPlacements,
+        /// <summary>
+        ///
+        /// </summary>
         AppPreviewSets,
         /// <summary>
         ///
@@ -34,6 +38,7 @@ namespace AppStoreConnect
         {
             return value switch
             {
+                AppStoreVersionExperimentTreatmentLocalizationsResponseIncludedItemDiscriminatorType.AppAssetLibraryPlacements => "appAssetLibraryPlacements",
                 AppStoreVersionExperimentTreatmentLocalizationsResponseIncludedItemDiscriminatorType.AppPreviewSets => "appPreviewSets",
                 AppStoreVersionExperimentTreatmentLocalizationsResponseIncludedItemDiscriminatorType.AppScreenshotSets => "appScreenshotSets",
                 AppStoreVersionExperimentTreatmentLocalizationsResponseIncludedItemDiscriminatorType.AppStoreVersionExperimentTreatments => "appStoreVersionExperimentTreatments",
@@ -47,6 +52,7 @@ namespace AppStoreConnect
         {
             return value switch
             {
+                "appAssetLibraryPlacements" => AppStoreVersionExperimentTreatmentLocalizationsResponseIncludedItemDiscriminatorType.AppAssetLibraryPlacements,
                 "appPreviewSets" => AppStoreVersionExperimentTreatmentLocalizationsResponseIncludedItemDiscriminatorType.AppPreviewSets,
                 "appScreenshotSets" => AppStoreVersionExperimentTreatmentLocalizationsResponseIncludedItemDiscriminatorType.AppScreenshotSets,
                 "appStoreVersionExperimentTreatments" => AppStoreVersionExperimentTreatmentLocalizationsResponseIncludedItemDiscriminatorType.AppStoreVersionExperimentTreatments,

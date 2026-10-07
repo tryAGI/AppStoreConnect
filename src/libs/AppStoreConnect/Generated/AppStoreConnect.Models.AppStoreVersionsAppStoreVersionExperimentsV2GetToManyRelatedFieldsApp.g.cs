@@ -79,6 +79,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        AssetLibrary,
+        /// <summary>
+        ///
+        /// </summary>
         BackgroundAssets,
         /// <summary>
         ///
@@ -263,6 +267,7 @@ namespace AppStoreConnect
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.AppStoreVersionExperimentsV2 => "appStoreVersionExperimentsV2",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.AppStoreVersions => "appStoreVersions",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.AppTags => "appTags",
+                AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.AssetLibrary => "assetLibrary",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.BackgroundAssets => "backgroundAssets",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.BetaAppLocalizations => "betaAppLocalizations",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.BetaAppReviewDetail => "betaAppReviewDetail",
@@ -329,6 +334,7 @@ namespace AppStoreConnect
                 "appStoreVersionExperimentsV2" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.AppStoreVersionExperimentsV2,
                 "appStoreVersions" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.AppStoreVersions,
                 "appTags" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.AppTags,
+                "assetLibrary" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.AssetLibrary,
                 "backgroundAssets" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.BackgroundAssets,
                 "betaAppLocalizations" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.BetaAppLocalizations,
                 "betaAppReviewDetail" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.BetaAppReviewDetail,

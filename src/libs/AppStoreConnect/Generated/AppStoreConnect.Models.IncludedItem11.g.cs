@@ -12,284 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCustomProductPageLocalizationsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppClipsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppCustomProductPageVersion? AppCustomProductPageVersions { get; init; }
+        public global::AppStoreConnect.AppClipDefaultExperience? AppClipDefaultExperiences1 { get; init; }
 #else
-        public global::AppStoreConnect.AppCustomProductPageVersion? AppCustomProductPageVersions { get; }
+        public global::AppStoreConnect.AppClipDefaultExperience? AppClipDefaultExperiences1 { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppClipDefaultExperiences1))]
 #endif
-        public bool IsAppCustomProductPageVersions => AppCustomProductPageVersions != null;
+        public bool IsAppClipDefaultExperiences1 => AppClipDefaultExperiences1 != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppCustomProductPageVersions(
+        public bool TryPickAppClipDefaultExperiences1(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppCustomProductPageVersion? value)
+            out global::AppStoreConnect.AppClipDefaultExperience? value)
         {
-            value = AppCustomProductPageVersions;
-            return IsAppCustomProductPageVersions;
+            value = AppClipDefaultExperiences1;
+            return IsAppClipDefaultExperiences1;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCustomProductPageVersion PickAppCustomProductPageVersions() => AppCustomProductPageVersions is { } value
+        public global::AppStoreConnect.AppClipDefaultExperience PickAppClipDefaultExperiences1() => AppClipDefaultExperiences1 is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipDefaultExperiences1' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppKeyword? AppKeywords { get; init; }
+        public global::AppStoreConnect.App? AppClipDefaultExperiences2 { get; init; }
 #else
-        public global::AppStoreConnect.AppKeyword? AppKeywords { get; }
+        public global::AppStoreConnect.App? AppClipDefaultExperiences2 { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppKeywords))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppClipDefaultExperiences2))]
 #endif
-        public bool IsAppKeywords => AppKeywords != null;
+        public bool IsAppClipDefaultExperiences2 => AppClipDefaultExperiences2 != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppKeywords(
+        public bool TryPickAppClipDefaultExperiences2(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppKeyword? value)
+            out global::AppStoreConnect.App? value)
         {
-            value = AppKeywords;
-            return IsAppKeywords;
+            value = AppClipDefaultExperiences2;
+            return IsAppClipDefaultExperiences2;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppKeyword PickAppKeywords() => AppKeywords is { } value
+        public global::AppStoreConnect.App PickAppClipDefaultExperiences2() => AppClipDefaultExperiences2 is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppKeywords' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipDefaultExperiences2' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem11(global::AppStoreConnect.AppClipDefaultExperience value) => new IncludedItem11((global::AppStoreConnect.AppClipDefaultExperience?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppPreviewSet? AppPreviewSets { get; init; }
-#else
-        public global::AppStoreConnect.AppPreviewSet? AppPreviewSets { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.AppClipDefaultExperience?(IncludedItem11 @this) => @this.AppClipDefaultExperiences1;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppPreviewSets))]
-#endif
-        public bool IsAppPreviewSets => AppPreviewSets != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppPreviewSets(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppPreviewSet? value)
+        public IncludedItem11(global::AppStoreConnect.AppClipDefaultExperience? value)
         {
-            value = AppPreviewSets;
-            return IsAppPreviewSets;
+            AppClipDefaultExperiences1 = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppPreviewSet PickAppPreviewSets() => AppPreviewSets is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppPreviewSets' but the value was {ToString()}.");
+        public static IncludedItem11 FromAppClipDefaultExperiences1(global::AppStoreConnect.AppClipDefaultExperience? value) => new IncludedItem11(value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppScreenshotSet? AppScreenshotSets { get; init; }
-#else
-        public global::AppStoreConnect.AppScreenshotSet? AppScreenshotSets { get; }
-#endif
+        public static implicit operator IncludedItem11(global::AppStoreConnect.App value) => new IncludedItem11((global::AppStoreConnect.App?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppScreenshotSets))]
-#endif
-        public bool IsAppScreenshotSets => AppScreenshotSets != null;
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem11 @this) => @this.AppClipDefaultExperiences2;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppScreenshotSets(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppScreenshotSet? value)
+        public IncludedItem11(global::AppStoreConnect.App? value)
         {
-            value = AppScreenshotSets;
-            return IsAppScreenshotSets;
+            AppClipDefaultExperiences2 = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppScreenshotSet PickAppScreenshotSets() => AppScreenshotSets is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppScreenshotSets' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem11(global::AppStoreConnect.AppCustomProductPageVersion value) => new IncludedItem11((global::AppStoreConnect.AppCustomProductPageVersion?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppCustomProductPageVersion?(IncludedItem11 @this) => @this.AppCustomProductPageVersions;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem11(global::AppStoreConnect.AppCustomProductPageVersion? value)
-        {
-            AppCustomProductPageVersions = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem11 FromAppCustomProductPageVersions(global::AppStoreConnect.AppCustomProductPageVersion? value) => new IncludedItem11(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem11(global::AppStoreConnect.AppKeyword value) => new IncludedItem11((global::AppStoreConnect.AppKeyword?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppKeyword?(IncludedItem11 @this) => @this.AppKeywords;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem11(global::AppStoreConnect.AppKeyword? value)
-        {
-            AppKeywords = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem11 FromAppKeywords(global::AppStoreConnect.AppKeyword? value) => new IncludedItem11(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem11(global::AppStoreConnect.AppPreviewSet value) => new IncludedItem11((global::AppStoreConnect.AppPreviewSet?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppPreviewSet?(IncludedItem11 @this) => @this.AppPreviewSets;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem11(global::AppStoreConnect.AppPreviewSet? value)
-        {
-            AppPreviewSets = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem11 FromAppPreviewSets(global::AppStoreConnect.AppPreviewSet? value) => new IncludedItem11(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem11(global::AppStoreConnect.AppScreenshotSet value) => new IncludedItem11((global::AppStoreConnect.AppScreenshotSet?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppScreenshotSet?(IncludedItem11 @this) => @this.AppScreenshotSets;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem11(global::AppStoreConnect.AppScreenshotSet? value)
-        {
-            AppScreenshotSets = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem11 FromAppScreenshotSets(global::AppStoreConnect.AppScreenshotSet? value) => new IncludedItem11(value);
+        public static IncludedItem11 FromAppClipDefaultExperiences2(global::AppStoreConnect.App? value) => new IncludedItem11(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem11(
-            global::AppStoreConnect.AppCustomProductPageLocalizationsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppCustomProductPageVersion? appCustomProductPageVersions,
-            global::AppStoreConnect.AppKeyword? appKeywords,
-            global::AppStoreConnect.AppPreviewSet? appPreviewSets,
-            global::AppStoreConnect.AppScreenshotSet? appScreenshotSets
+            global::AppStoreConnect.AppClipsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppClipDefaultExperience? appClipDefaultExperiences1,
+            global::AppStoreConnect.App? appClipDefaultExperiences2
             )
         {
             Type = type;
 
-            AppCustomProductPageVersions = appCustomProductPageVersions;
-            AppKeywords = appKeywords;
-            AppPreviewSets = appPreviewSets;
-            AppScreenshotSets = appScreenshotSets;
+            AppClipDefaultExperiences1 = appClipDefaultExperiences1;
+            AppClipDefaultExperiences2 = appClipDefaultExperiences2;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            AppScreenshotSets as object ??
-            AppPreviewSets as object ??
-            AppKeywords as object ??
-            AppCustomProductPageVersions as object
+            AppClipDefaultExperiences2 as object ??
+            AppClipDefaultExperiences1 as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppCustomProductPageVersions?.ToString() ??
-            AppKeywords?.ToString() ??
-            AppPreviewSets?.ToString() ??
-            AppScreenshotSets?.ToString()
+            AppClipDefaultExperiences1?.ToString() ??
+            AppClipDefaultExperiences2?.ToString()
             ;
 
         /// <summary>
@@ -297,17 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppCustomProductPageVersions && !IsAppKeywords && !IsAppPreviewSets && !IsAppScreenshotSets || !IsAppCustomProductPageVersions && IsAppKeywords && !IsAppPreviewSets && !IsAppScreenshotSets || !IsAppCustomProductPageVersions && !IsAppKeywords && IsAppPreviewSets && !IsAppScreenshotSets || !IsAppCustomProductPageVersions && !IsAppKeywords && !IsAppPreviewSets && IsAppScreenshotSets;
+            return IsAppClipDefaultExperiences1 && !IsAppClipDefaultExperiences2 || !IsAppClipDefaultExperiences1 && IsAppClipDefaultExperiences2;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppCustomProductPageVersion, TResult>? appCustomProductPageVersions = null,
-            global::System.Func<global::AppStoreConnect.AppKeyword, TResult>? appKeywords = null,
-            global::System.Func<global::AppStoreConnect.AppPreviewSet, TResult>? appPreviewSets = null,
-            global::System.Func<global::AppStoreConnect.AppScreenshotSet, TResult>? appScreenshotSets = null,
+            global::System.Func<global::AppStoreConnect.AppClipDefaultExperience, TResult>? appClipDefaultExperiences1 = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? appClipDefaultExperiences2 = null,
             bool validate = true)
         {
             if (validate)
@@ -315,21 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageVersions is { } __value0 && appCustomProductPageVersions != null)
+            if (AppClipDefaultExperiences1 is { } __value0 && appClipDefaultExperiences1 != null)
             {
-                return appCustomProductPageVersions(__value0);
+                return appClipDefaultExperiences1(__value0);
             }
-            else if (AppKeywords is { } __value1 && appKeywords != null)
+            else if (AppClipDefaultExperiences2 is { } __value1 && appClipDefaultExperiences2 != null)
             {
-                return appKeywords(__value1);
-            }
-            else if (AppPreviewSets is { } __value2 && appPreviewSets != null)
-            {
-                return appPreviewSets(__value2);
-            }
-            else if (AppScreenshotSets is { } __value3 && appScreenshotSets != null)
-            {
-                return appScreenshotSets(__value3);
+                return appClipDefaultExperiences2(__value1);
             }
 
             return default(TResult);
@@ -339,13 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageVersion>? appCustomProductPageVersions = null,
+            global::System.Action<global::AppStoreConnect.AppClipDefaultExperience>? appClipDefaultExperiences1 = null,
 
-            global::System.Action<global::AppStoreConnect.AppKeyword>? appKeywords = null,
-
-            global::System.Action<global::AppStoreConnect.AppPreviewSet>? appPreviewSets = null,
-
-            global::System.Action<global::AppStoreConnect.AppScreenshotSet>? appScreenshotSets = null,
+            global::System.Action<global::AppStoreConnect.App>? appClipDefaultExperiences2 = null,
             bool validate = true)
         {
             if (validate)
@@ -353,21 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageVersions is { } __value0)
+            if (AppClipDefaultExperiences1 is { } __value0)
             {
-                appCustomProductPageVersions?.Invoke(__value0);
+                appClipDefaultExperiences1?.Invoke(__value0);
             }
-            else if (AppKeywords is { } __value1)
+            else if (AppClipDefaultExperiences2 is { } __value1)
             {
-                appKeywords?.Invoke(__value1);
-            }
-            else if (AppPreviewSets is { } __value2)
-            {
-                appPreviewSets?.Invoke(__value2);
-            }
-            else if (AppScreenshotSets is { } __value3)
-            {
-                appScreenshotSets?.Invoke(__value3);
+                appClipDefaultExperiences2?.Invoke(__value1);
             }
         }
 
@@ -375,10 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageVersion>? appCustomProductPageVersions = null,
-            global::System.Action<global::AppStoreConnect.AppKeyword>? appKeywords = null,
-            global::System.Action<global::AppStoreConnect.AppPreviewSet>? appPreviewSets = null,
-            global::System.Action<global::AppStoreConnect.AppScreenshotSet>? appScreenshotSets = null,
+            global::System.Action<global::AppStoreConnect.AppClipDefaultExperience>? appClipDefaultExperiences1 = null,
+            global::System.Action<global::AppStoreConnect.App>? appClipDefaultExperiences2 = null,
             bool validate = true)
         {
             if (validate)
@@ -386,21 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageVersions is { } __value0)
+            if (AppClipDefaultExperiences1 is { } __value0)
             {
-                appCustomProductPageVersions?.Invoke(__value0);
+                appClipDefaultExperiences1?.Invoke(__value0);
             }
-            else if (AppKeywords is { } __value1)
+            else if (AppClipDefaultExperiences2 is { } __value1)
             {
-                appKeywords?.Invoke(__value1);
-            }
-            else if (AppPreviewSets is { } __value2)
-            {
-                appPreviewSets?.Invoke(__value2);
-            }
-            else if (AppScreenshotSets is { } __value3)
-            {
-                appScreenshotSets?.Invoke(__value3);
+                appClipDefaultExperiences2?.Invoke(__value1);
             }
         }
 
@@ -411,14 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppCustomProductPageVersions,
-                typeof(global::AppStoreConnect.AppCustomProductPageVersion),
-                AppKeywords,
-                typeof(global::AppStoreConnect.AppKeyword),
-                AppPreviewSets,
-                typeof(global::AppStoreConnect.AppPreviewSet),
-                AppScreenshotSets,
-                typeof(global::AppStoreConnect.AppScreenshotSet),
+                AppClipDefaultExperiences1,
+                typeof(global::AppStoreConnect.AppClipDefaultExperience),
+                AppClipDefaultExperiences2,
+                typeof(global::AppStoreConnect.App),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -435,10 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem11 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageVersion?>.Default.Equals(AppCustomProductPageVersions, other.AppCustomProductPageVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppKeyword?>.Default.Equals(AppKeywords, other.AppKeywords) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppPreviewSet?>.Default.Equals(AppPreviewSets, other.AppPreviewSets) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppScreenshotSet?>.Default.Equals(AppScreenshotSets, other.AppScreenshotSets)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppClipDefaultExperience?>.Default.Equals(AppClipDefaultExperiences1, other.AppClipDefaultExperiences1) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(AppClipDefaultExperiences2, other.AppClipDefaultExperiences2)
                 ;
         }
 

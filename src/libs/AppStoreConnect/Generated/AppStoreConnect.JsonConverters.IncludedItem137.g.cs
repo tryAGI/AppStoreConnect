@@ -17,39 +17,39 @@ namespace AppStoreConnect.JsonConverters
 
 
             var readerCopy = reader;
-            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferCodeResponseIncludedItemDiscriminator> ??
-                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchaseOfferCodeResponseIncludedItemDiscriminator)}");
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterMatchmakingRuleSetResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterMatchmakingRuleSetResponseIncludedItemDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterMatchmakingRuleSetResponseIncludedItemDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode? inAppPurchaseOfferCodeCustomCodes = default;
-            if (discriminator?.Type == global::AppStoreConnect.InAppPurchaseOfferCodeResponseIncludedItemDiscriminatorType.InAppPurchaseOfferCodeCustomCodes)
+            global::AppStoreConnect.GameCenterMatchmakingQueue? gameCenterMatchmakingQueues = default;
+            if (discriminator?.Type == global::AppStoreConnect.GameCenterMatchmakingRuleSetResponseIncludedItemDiscriminatorType.GameCenterMatchmakingQueues)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode)}");
-                inAppPurchaseOfferCodeCustomCodes = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterMatchmakingQueue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterMatchmakingQueue> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterMatchmakingQueue)}");
+                gameCenterMatchmakingQueues = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode? inAppPurchaseOfferCodeOneTimeUseCodes = default;
-            if (discriminator?.Type == global::AppStoreConnect.InAppPurchaseOfferCodeResponseIncludedItemDiscriminatorType.InAppPurchaseOfferCodeOneTimeUseCodes)
+            global::AppStoreConnect.GameCenterMatchmakingRule? gameCenterMatchmakingRules = default;
+            if (discriminator?.Type == global::AppStoreConnect.GameCenterMatchmakingRuleSetResponseIncludedItemDiscriminatorType.GameCenterMatchmakingRules)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode)}");
-                inAppPurchaseOfferCodeOneTimeUseCodes = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterMatchmakingRule), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterMatchmakingRule> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterMatchmakingRule)}");
+                gameCenterMatchmakingRules = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.InAppPurchaseOfferPrice? inAppPurchaseOfferPrices = default;
-            if (discriminator?.Type == global::AppStoreConnect.InAppPurchaseOfferCodeResponseIncludedItemDiscriminatorType.InAppPurchaseOfferPrices)
+            global::AppStoreConnect.GameCenterMatchmakingTeam? gameCenterMatchmakingTeams = default;
+            if (discriminator?.Type == global::AppStoreConnect.GameCenterMatchmakingRuleSetResponseIncludedItemDiscriminatorType.GameCenterMatchmakingTeams)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferPrice), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferPrice> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchaseOfferPrice)}");
-                inAppPurchaseOfferPrices = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterMatchmakingTeam), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterMatchmakingTeam> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterMatchmakingTeam)}");
+                gameCenterMatchmakingTeams = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::AppStoreConnect.IncludedItem137(
                 discriminator?.Type,
-                inAppPurchaseOfferCodeCustomCodes,
+                gameCenterMatchmakingQueues,
 
-                inAppPurchaseOfferCodeOneTimeUseCodes,
+                gameCenterMatchmakingRules,
 
-                inAppPurchaseOfferPrices
+                gameCenterMatchmakingTeams
                 );
 
             return __value;
@@ -64,23 +64,23 @@ namespace AppStoreConnect.JsonConverters
             options = options ?? throw new global::System.ArgumentNullException(nameof(options));
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
 
-            if (value.IsInAppPurchaseOfferCodeCustomCodes)
+            if (value.IsGameCenterMatchmakingQueues)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseOfferCodeCustomCodes(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterMatchmakingQueue), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterMatchmakingQueue?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterMatchmakingQueue).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterMatchmakingQueues(), typeInfo);
             }
-            else if (value.IsInAppPurchaseOfferCodeOneTimeUseCodes)
+            else if (value.IsGameCenterMatchmakingRules)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseOfferCodeOneTimeUseCodes(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterMatchmakingRule), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterMatchmakingRule?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterMatchmakingRule).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterMatchmakingRules(), typeInfo);
             }
-            else if (value.IsInAppPurchaseOfferPrices)
+            else if (value.IsGameCenterMatchmakingTeams)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferPrice), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseOfferPrice?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseOfferPrice).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchaseOfferPrices(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterMatchmakingTeam), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterMatchmakingTeam?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterMatchmakingTeam).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterMatchmakingTeams(), typeInfo);
             }
         }
     }
