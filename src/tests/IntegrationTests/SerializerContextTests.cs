@@ -6,6 +6,25 @@ namespace AppStoreConnect.IntegrationTests;
 public sealed class SerializerContextTests
 {
     [TestMethod]
+    public void AllGeneratedClrTypesLoad()
+    {
+        typeof(AppStoreConnectClient).Assembly.GetTypes().Length.Should().BeGreaterThan(1000);
+    }
+
+    [TestMethod]
+    public void ResponseMetadataRoundTripPreservesEnumsAndDynamicFields()
+    {
+        var response = BetaTesterInvitationResponse.FromJson(
+            """{"data":{"type":"betaTesterInvitations","id":"offline-invitation","future_flag":false},"links":{"self":"https://example.test/invitation"}}""")
+            ?? throw new InvalidOperationException("Response did not deserialize.");
+        using var document = JsonDocument.Parse(response.ToJson());
+        var data = document.RootElement.GetProperty("data");
+        data.GetProperty("type").GetString().Should().Be("betaTesterInvitations");
+        data.GetProperty("id").GetString().Should().Be("offline-invitation");
+        data.GetProperty("future_flag").GetBoolean().Should().BeFalse();
+    }
+
+    [TestMethod]
     public void DirectTagContext_ResolvesTypesFromAggregateContext()
     {
         var context = BetaTesterInvitationsSourceGenerationContext.Default;

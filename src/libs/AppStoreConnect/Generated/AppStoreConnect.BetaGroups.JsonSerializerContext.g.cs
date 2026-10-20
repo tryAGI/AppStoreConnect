@@ -7,7 +7,8 @@ namespace AppStoreConnect
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
     )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.BetaGroupsBetaRecruitmentCriterionCompatibleBuildCheckGetToOneRelatedFieldsBetaRecruitmentCriterionCompatibleBuildCheck>), TypeInfoPropertyName = "BetaGroupsBetaRecruitmentCriterionCompatibleBuildCheckGetToOneRelatedFieldsBetaRecruitmentCriterionComp_df0408c4824b3ad4")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaGroupsBetaRecruitmentCriterionCompatibleBuildCheckGetToOneRelatedFieldsBetaRecruitmentCriterionCompatibleBuildCheck?), TypeInfoPropertyName = "BetaGroupsBetaRecruitmentCriterionCompatibleBuildCheckGetToOneRelatedFieldsBetaRecruitmentCriterionComp_f946cd43412a3269")]

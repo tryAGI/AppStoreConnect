@@ -7,7 +7,8 @@ namespace AppStoreConnect
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
     )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
@@ -533,16 +534,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppTagsGetToManyRelatedFieldsAppTag), TypeInfoPropertyName = "AppsAppTagsGetToManyRelatedFieldsAppTag2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppsAppTagsGetToManyRelatedFieldsTerritorie>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppTagsGetToManyRelatedFieldsTerritorie), TypeInfoPropertyName = "AppsAppTagsGetToManyRelatedFieldsTerritorie2")]
-    internal sealed partial class AppsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
-    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppsAppTagsGetToManyRelatedIncludeItem>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsAppTagsGetToManyRelatedIncludeItem), TypeInfoPropertyName = "AppsAppTagsGetToManyRelatedIncludeItem2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppsAssetLibraryGetToOneRelatedFieldsAppAssetLibrarie>))]
@@ -1049,16 +1040,6 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseLocalization?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseLocalization2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseContent?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseContent2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseAppStoreReviewScreenshot?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseAppStoreReviewScreenshot2")]
-    internal sealed partial class AppsSourceGenerationContextChunk1 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
-    )]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsPromotedPurchase?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsPromotedPurchase2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchasePriceSchedule?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchasePriceSchedule2")]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseAvailabilitie?), TypeInfoPropertyName = "NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseAvailabilitie2")]
@@ -1379,7 +1360,7 @@ namespace AppStoreConnect
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsWebhooksGetToManyRelatedFieldsWebhook>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsWebhooksGetToManyRelatedFieldsApp>))]
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsWebhooksGetToManyRelatedIncludeItem>))]
-    internal sealed partial class AppsSourceGenerationContextChunk2 : global::System.Text.Json.Serialization.JsonSerializerContext
+    internal sealed partial class AppsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
     {
     }
     /// <summary>
@@ -5687,7 +5668,7 @@ namespace AppStoreConnect
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[4];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -5725,11 +5706,7 @@ namespace AppStoreConnect
                 {
                     0 => new AppsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
 
-                    1 => new AppsSourceGenerationContextChunk1(new global::System.Text.Json.JsonSerializerOptions()),
-
-                    2 => new AppsSourceGenerationContextChunk2(new global::System.Text.Json.JsonSerializerOptions()),
-
-                    3 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

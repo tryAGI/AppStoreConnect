@@ -29,4 +29,6 @@ autosdk generate openapi.json \
   --generate-retry-handler \
   --generate-pageable-helpers \
   --auto-detect-status-polling \
-  --security-scheme Http:Header:Bearer
+  --security-scheme Http:Header:Bearer \
+  --direction-aware-json-generation-mode \
+  --json-serializer-context-chunk-size 2000
