@@ -5,11 +5,12 @@
   </PropertyGroup>
 
   <PropertyGroup Label="CompilerMemory">
-    <!-- The full Apple graph exceeds the default 75% container GC heap cap.
-         Keep compiler GC tuning process-local and serialize compiler analysis;
-         all analyzers remain enabled. Verified within 16 GiB, without swap.
-         GC environment numbers are hexadecimal: 5A means 90 percent. -->
-    <CscEnvironment>$(CscEnvironment);DOTNET_GCConserveMemory=9;DOTNET_GCHeapHardLimitPercent=5A</CscEnvironment>
+    <!-- Keep the compiler process isolated and retain every analyzer.
+         Linux VM-reported memory varies, so use an explicit 15-GiB GC heap cap
+         rather than a percentage. The complete x64 build and offline contracts
+         passed in a 16-GiB container without swap. GC environment values are hex. -->
+    <CscEnvironment Condition="$([MSBuild]::IsOSPlatform('Linux'))">$(CscEnvironment);DOTNET_GCConserveMemory=9;DOTNET_GCHeapHardLimit=3C0000000</CscEnvironment>
+    <CscEnvironment Condition="!$([MSBuild]::IsOSPlatform('Linux'))">$(CscEnvironment);DOTNET_GCConserveMemory=9;DOTNET_GCHeapHardLimitPercent=5A</CscEnvironment>
     <UseSharedCompilation>false</UseSharedCompilation>
     <CompilerResponseFile>$(MSBuildProjectDirectory)/compiler.rsp</CompilerResponseFile>
   </PropertyGroup>
