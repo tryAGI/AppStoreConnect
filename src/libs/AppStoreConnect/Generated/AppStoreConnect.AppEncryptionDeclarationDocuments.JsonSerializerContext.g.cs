@@ -2,41 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequestDataType), TypeInfoPropertyName = "AppEncryptionDeclarationDocumentCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequestDataRelationships))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequestDataRelationshipsAppEncryptionDeclaration))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequestDataRelationshipsAppEncryptionDeclarationData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequestDataRelationshipsAppEncryptionDeclarationDataType), TypeInfoPropertyName = "AppEncryptionDeclarationDocumentCreateRequestDataRelationshipsAppEncryptionDeclarationDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentUpdateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentUpdateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentUpdateRequestDataType), TypeInfoPropertyName = "AppEncryptionDeclarationDocumentUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentUpdateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppEncryptionDeclarationDocumentsGetInstanceFieldsAppEncryptionDeclarationDocument>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentsGetInstanceFieldsAppEncryptionDeclarationDocument), TypeInfoPropertyName = "AppEncryptionDeclarationDocumentsGetInstanceFieldsAppEncryptionDeclarationDocument2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequestDataType?), TypeInfoPropertyName = "NullableAppEncryptionDeclarationDocumentCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequestDataRelationshipsAppEncryptionDeclarationDataType?), TypeInfoPropertyName = "NullableAppEncryptionDeclarationDocumentCreateRequestDataRelationshipsAppEncryptionDeclarationDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentUpdateRequestDataType?), TypeInfoPropertyName = "NullableAppEncryptionDeclarationDocumentUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentsGetInstanceFieldsAppEncryptionDeclarationDocument?), TypeInfoPropertyName = "NullableAppEncryptionDeclarationDocumentsGetInstanceFieldsAppEncryptionDeclarationDocument2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppEncryptionDeclarationDocumentsGetInstanceFieldsAppEncryptionDeclarationDocument>))]
-    internal sealed partial class AppEncryptionDeclarationDocumentsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class AppEncryptionDeclarationDocumentsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -80,8 +46,11 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_E240BDC07FFEF67C.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_633F132D574F946B.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_3D4F9CF1ED5BCEAF.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_F42876D45ABE4E61.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -96,80 +65,10 @@ namespace AppStoreConnect
             return options;
         }
 
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequestDataRelationshipsAppEncryptionDeclarationDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequestDataRelationshipsAppEncryptionDeclarationDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentUpdateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentUpdateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentsGetInstanceFieldsAppEncryptionDeclarationDocument)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentsGetInstanceFieldsAppEncryptionDeclarationDocument?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppEncryptionDeclarationDocumentCreateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppEncryptionDeclarationDocumentCreateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequestDataRelationshipsAppEncryptionDeclarationDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppEncryptionDeclarationDocumentCreateRequestDataRelationshipsAppEncryptionDeclarationDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentCreateRequestDataRelationshipsAppEncryptionDeclarationDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppEncryptionDeclarationDocumentCreateRequestDataRelationshipsAppEncryptionDeclarationDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentUpdateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppEncryptionDeclarationDocumentUpdateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentUpdateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppEncryptionDeclarationDocumentUpdateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentsGetInstanceFieldsAppEncryptionDeclarationDocument))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppEncryptionDeclarationDocumentsGetInstanceFieldsAppEncryptionDeclarationDocumentJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppEncryptionDeclarationDocumentsGetInstanceFieldsAppEncryptionDeclarationDocument?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppEncryptionDeclarationDocumentsGetInstanceFieldsAppEncryptionDeclarationDocumentNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
-        }
-
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[5];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -205,9 +104,15 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new AppEncryptionDeclarationDocumentsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_E240BDC07FFEF67C.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_633F132D574F946B.TypeInfoResolver,
+
+                    2 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
+
+                    3 => global::AppStoreConnect.SourceGenerationContextGraph_3D4F9CF1ED5BCEAF.TypeInfoResolver,
+
+                    4 => global::AppStoreConnect.SourceGenerationContextGraph_F42876D45ABE4E61.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

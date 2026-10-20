@@ -2,49 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequestDataType), TypeInfoPropertyName = "SubscriptionAppStoreReviewScreenshotCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequestDataRelationships))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequestDataRelationshipsSubscription))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequestDataRelationshipsSubscriptionData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequestDataRelationshipsSubscriptionDataType), TypeInfoPropertyName = "SubscriptionAppStoreReviewScreenshotCreateRequestDataRelationshipsSubscriptionDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotUpdateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotUpdateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotUpdateRequestDataType), TypeInfoPropertyName = "SubscriptionAppStoreReviewScreenshotUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotUpdateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscriptionAppStoreReviewScreenshot>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscriptionAppStoreReviewScreenshot), TypeInfoPropertyName = "SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscriptionAppStoreReviewScreenshot2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription), TypeInfoPropertyName = "SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceIncludeItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceIncludeItem), TypeInfoPropertyName = "SubscriptionAppStoreReviewScreenshotsGetInstanceIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequestDataType?), TypeInfoPropertyName = "NullableSubscriptionAppStoreReviewScreenshotCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequestDataRelationshipsSubscriptionDataType?), TypeInfoPropertyName = "NullableSubscriptionAppStoreReviewScreenshotCreateRequestDataRelationshipsSubscriptionDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotUpdateRequestDataType?), TypeInfoPropertyName = "NullableSubscriptionAppStoreReviewScreenshotUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscriptionAppStoreReviewScreenshot?), TypeInfoPropertyName = "NullableSubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscriptionAppStoreReviewScreenshot2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription?), TypeInfoPropertyName = "NullableSubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceIncludeItem?), TypeInfoPropertyName = "NullableSubscriptionAppStoreReviewScreenshotsGetInstanceIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscriptionAppStoreReviewScreenshot>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceIncludeItem>))]
-    internal sealed partial class SubscriptionAppStoreReviewScreenshotsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class SubscriptionAppStoreReviewScreenshotsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -88,8 +46,11 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_C57AF040BC87688C.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_99BD2162DFC2212D.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_D7004CBC34C9C5CF.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_EAEDAEE39D68E02C.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -104,108 +65,10 @@ namespace AppStoreConnect
             return options;
         }
 
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequestDataRelationshipsSubscriptionDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequestDataRelationshipsSubscriptionDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotUpdateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotUpdateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscriptionAppStoreReviewScreenshot)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscriptionAppStoreReviewScreenshot?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceIncludeItem)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceIncludeItem?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionAppStoreReviewScreenshotCreateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionAppStoreReviewScreenshotCreateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequestDataRelationshipsSubscriptionDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionAppStoreReviewScreenshotCreateRequestDataRelationshipsSubscriptionDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotCreateRequestDataRelationshipsSubscriptionDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionAppStoreReviewScreenshotCreateRequestDataRelationshipsSubscriptionDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotUpdateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionAppStoreReviewScreenshotUpdateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotUpdateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionAppStoreReviewScreenshotUpdateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscriptionAppStoreReviewScreenshot))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscriptionAppStoreReviewScreenshotJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscriptionAppStoreReviewScreenshot?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscriptionAppStoreReviewScreenshotNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscriptionJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscriptionNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceIncludeItem))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionAppStoreReviewScreenshotsGetInstanceIncludeItemJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotsGetInstanceIncludeItem?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionAppStoreReviewScreenshotsGetInstanceIncludeItemNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
-        }
-
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[5];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -241,9 +104,15 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new SubscriptionAppStoreReviewScreenshotsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_C57AF040BC87688C.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_99BD2162DFC2212D.TypeInfoResolver,
+
+                    2 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
+
+                    3 => global::AppStoreConnect.SourceGenerationContextGraph_D7004CBC34C9C5CF.TypeInfoResolver,
+
+                    4 => global::AppStoreConnect.SourceGenerationContextGraph_EAEDAEE39D68E02C.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

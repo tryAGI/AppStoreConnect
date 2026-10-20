@@ -2,38 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingTeamResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequestDataType), TypeInfoPropertyName = "GameCenterMatchmakingTeamCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequestDataRelationships))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequestDataRelationshipsRuleSet))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequestDataRelationshipsRuleSetData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequestDataRelationshipsRuleSetDataType), TypeInfoPropertyName = "GameCenterMatchmakingTeamCreateRequestDataRelationshipsRuleSetDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingTeamUpdateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingTeamUpdateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingTeamUpdateRequestDataType), TypeInfoPropertyName = "GameCenterMatchmakingTeamUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingTeamUpdateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequestDataType?), TypeInfoPropertyName = "NullableGameCenterMatchmakingTeamCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequestDataRelationshipsRuleSetDataType?), TypeInfoPropertyName = "NullableGameCenterMatchmakingTeamCreateRequestDataRelationshipsRuleSetDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterMatchmakingTeamUpdateRequestDataType?), TypeInfoPropertyName = "NullableGameCenterMatchmakingTeamUpdateRequestDataType2")]
-    internal sealed partial class GameCenterMatchmakingTeamsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class GameCenterMatchmakingTeamsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -77,8 +46,10 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_12E2127E5CF42764.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_C1D48B16C8220E92.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_FBA70DBE3CC4C44D.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -93,66 +64,10 @@ namespace AppStoreConnect
             return options;
         }
 
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequestDataRelationshipsRuleSetDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequestDataRelationshipsRuleSetDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.GameCenterMatchmakingTeamUpdateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.GameCenterMatchmakingTeamUpdateRequestDataType?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterMatchmakingTeamCreateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterMatchmakingTeamCreateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequestDataRelationshipsRuleSetDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterMatchmakingTeamCreateRequestDataRelationshipsRuleSetDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterMatchmakingTeamCreateRequestDataRelationshipsRuleSetDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterMatchmakingTeamCreateRequestDataRelationshipsRuleSetDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterMatchmakingTeamUpdateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterMatchmakingTeamUpdateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterMatchmakingTeamUpdateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterMatchmakingTeamUpdateRequestDataTypeNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
-        }
-
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[4];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -188,9 +103,13 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new GameCenterMatchmakingTeamsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_12E2127E5CF42764.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_C1D48B16C8220E92.TypeInfoResolver,
+
+                    2 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
+
+                    3 => global::AppStoreConnect.SourceGenerationContextGraph_FBA70DBE3CC4C44D.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

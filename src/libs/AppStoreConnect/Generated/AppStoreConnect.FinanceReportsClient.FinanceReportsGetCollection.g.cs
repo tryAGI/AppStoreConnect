@@ -94,6 +94,8 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var JsonSerializerContext = JsonSerializerContextProvider?.Value ??
+                global::AppStoreConnect.SourceGenerationContextOperation_C5BF6EE3093A45F8.Default;
             PrepareArguments(
                 client: HttpClient);
             PrepareFinanceReportsGetCollectionArguments(
@@ -574,6 +576,8 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var JsonSerializerContext = JsonSerializerContextProvider?.Value ??
+                global::AppStoreConnect.SourceGenerationContextOperation_C5BF6EE3093A45F8.Default;
             PrepareArguments(
                 client: HttpClient);
             PrepareFinanceReportsGetCollectionArguments(

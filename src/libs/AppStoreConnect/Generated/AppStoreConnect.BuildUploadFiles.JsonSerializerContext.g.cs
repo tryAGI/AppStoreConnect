@@ -2,46 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileCreateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileCreateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataType), TypeInfoPropertyName = "BuildUploadFileCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataAttributesAssetType), TypeInfoPropertyName = "BuildUploadFileCreateRequestDataAttributesAssetType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataAttributesUti), TypeInfoPropertyName = "BuildUploadFileCreateRequestDataAttributesUti2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataRelationships))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataRelationshipsBuildUpload))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataRelationshipsBuildUploadData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataRelationshipsBuildUploadDataType), TypeInfoPropertyName = "BuildUploadFileCreateRequestDataRelationshipsBuildUploadDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileUpdateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileUpdateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileUpdateRequestDataType), TypeInfoPropertyName = "BuildUploadFileUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileUpdateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.BuildUploadFilesGetInstanceFieldsBuildUploadFile>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFilesGetInstanceFieldsBuildUploadFile), TypeInfoPropertyName = "BuildUploadFilesGetInstanceFieldsBuildUploadFile2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataType?), TypeInfoPropertyName = "NullableBuildUploadFileCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataAttributesAssetType?), TypeInfoPropertyName = "NullableBuildUploadFileCreateRequestDataAttributesAssetType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataAttributesUti?), TypeInfoPropertyName = "NullableBuildUploadFileCreateRequestDataAttributesUti2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataRelationshipsBuildUploadDataType?), TypeInfoPropertyName = "NullableBuildUploadFileCreateRequestDataRelationshipsBuildUploadDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFileUpdateRequestDataType?), TypeInfoPropertyName = "NullableBuildUploadFileUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BuildUploadFilesGetInstanceFieldsBuildUploadFile?), TypeInfoPropertyName = "NullableBuildUploadFilesGetInstanceFieldsBuildUploadFile2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BuildUploadFilesGetInstanceFieldsBuildUploadFile>))]
-    internal sealed partial class BuildUploadFilesSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class BuildUploadFilesSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -85,8 +46,11 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_A8D06D3A65134EC3.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_813CC4D50D51FC80.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_682B8893C3A26C3B.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_2D388C5434480C4E.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -101,108 +65,10 @@ namespace AppStoreConnect
             return options;
         }
 
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataAttributesAssetType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataAttributesAssetType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataAttributesUti)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataAttributesUti?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataRelationshipsBuildUploadDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataRelationshipsBuildUploadDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileUpdateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileUpdateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BuildUploadFilesGetInstanceFieldsBuildUploadFile)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BuildUploadFilesGetInstanceFieldsBuildUploadFile?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BuildUploadFileCreateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BuildUploadFileCreateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataAttributesAssetType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BuildUploadFileCreateRequestDataAttributesAssetTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataAttributesAssetType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BuildUploadFileCreateRequestDataAttributesAssetTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataAttributesUti))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BuildUploadFileCreateRequestDataAttributesUtiJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataAttributesUti?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BuildUploadFileCreateRequestDataAttributesUtiNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataRelationshipsBuildUploadDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BuildUploadFileCreateRequestDataRelationshipsBuildUploadDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileCreateRequestDataRelationshipsBuildUploadDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BuildUploadFileCreateRequestDataRelationshipsBuildUploadDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileUpdateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BuildUploadFileUpdateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BuildUploadFileUpdateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BuildUploadFileUpdateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BuildUploadFilesGetInstanceFieldsBuildUploadFile))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BuildUploadFilesGetInstanceFieldsBuildUploadFileJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BuildUploadFilesGetInstanceFieldsBuildUploadFile?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BuildUploadFilesGetInstanceFieldsBuildUploadFileNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
-        }
-
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[5];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -238,9 +104,15 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new BuildUploadFilesSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_A8D06D3A65134EC3.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_813CC4D50D51FC80.TypeInfoResolver,
+
+                    2 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
+
+                    3 => global::AppStoreConnect.SourceGenerationContextGraph_682B8893C3A26C3B.TypeInfoResolver,
+
+                    4 => global::AppStoreConnect.SourceGenerationContextGraph_2D388C5434480C4E.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

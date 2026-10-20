@@ -2,56 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DevicesResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DeviceResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DeviceCreateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DeviceCreateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DeviceCreateRequestDataType), TypeInfoPropertyName = "DeviceCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DeviceCreateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DeviceUpdateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DeviceUpdateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DeviceUpdateRequestDataType), TypeInfoPropertyName = "DeviceUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DeviceUpdateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DeviceUpdateRequestDataAttributesStatus), TypeInfoPropertyName = "DeviceUpdateRequestDataAttributesStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.DevicesGetCollectionFilterPlatformItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DevicesGetCollectionFilterPlatformItem), TypeInfoPropertyName = "DevicesGetCollectionFilterPlatformItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.DevicesGetCollectionFilterStatu>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DevicesGetCollectionFilterStatu), TypeInfoPropertyName = "DevicesGetCollectionFilterStatu2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.DevicesGetCollectionSortItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DevicesGetCollectionSortItem), TypeInfoPropertyName = "DevicesGetCollectionSortItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.DevicesGetCollectionFieldsDevice>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DevicesGetCollectionFieldsDevice), TypeInfoPropertyName = "DevicesGetCollectionFieldsDevice2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.DevicesGetInstanceFieldsDevice>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DevicesGetInstanceFieldsDevice), TypeInfoPropertyName = "DevicesGetInstanceFieldsDevice2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DeviceCreateRequestDataType?), TypeInfoPropertyName = "NullableDeviceCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DeviceUpdateRequestDataType?), TypeInfoPropertyName = "NullableDeviceUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DeviceUpdateRequestDataAttributesStatus?), TypeInfoPropertyName = "NullableDeviceUpdateRequestDataAttributesStatus2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DevicesGetCollectionFilterPlatformItem?), TypeInfoPropertyName = "NullableDevicesGetCollectionFilterPlatformItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DevicesGetCollectionFilterStatu?), TypeInfoPropertyName = "NullableDevicesGetCollectionFilterStatu2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DevicesGetCollectionSortItem?), TypeInfoPropertyName = "NullableDevicesGetCollectionSortItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DevicesGetCollectionFieldsDevice?), TypeInfoPropertyName = "NullableDevicesGetCollectionFieldsDevice2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.DevicesGetInstanceFieldsDevice?), TypeInfoPropertyName = "NullableDevicesGetInstanceFieldsDevice2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.DevicesGetCollectionFilterPlatformItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.DevicesGetCollectionFilterStatu>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.DevicesGetCollectionSortItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.DevicesGetCollectionFieldsDevice>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.DevicesGetInstanceFieldsDevice>))]
-    internal sealed partial class DevicesSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class DevicesSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -95,8 +46,14 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_3138988235A6C4A9.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_339F4F33822218C8.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_6C1C4F1A72597490.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_01286B345C7FB528.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_6DA88C34BA124C41.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_293A29A99D54160B.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_99DD7733FED6507A.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -111,136 +68,10 @@ namespace AppStoreConnect
             return options;
         }
 
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.DeviceCreateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.DeviceCreateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.DeviceUpdateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.DeviceUpdateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.DeviceUpdateRequestDataAttributesStatus)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.DeviceUpdateRequestDataAttributesStatus?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.DevicesGetCollectionFilterPlatformItem)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.DevicesGetCollectionFilterPlatformItem?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.DevicesGetCollectionFilterStatu)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.DevicesGetCollectionFilterStatu?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.DevicesGetCollectionSortItem)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.DevicesGetCollectionSortItem?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.DevicesGetCollectionFieldsDevice)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.DevicesGetCollectionFieldsDevice?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.DevicesGetInstanceFieldsDevice)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.DevicesGetInstanceFieldsDevice?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.DeviceCreateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.DeviceCreateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.DeviceCreateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.DeviceCreateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.DeviceUpdateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.DeviceUpdateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.DeviceUpdateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.DeviceUpdateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.DeviceUpdateRequestDataAttributesStatus))
-                {
-                    return new global::AppStoreConnect.JsonConverters.DeviceUpdateRequestDataAttributesStatusJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.DeviceUpdateRequestDataAttributesStatus?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.DeviceUpdateRequestDataAttributesStatusNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.DevicesGetCollectionFilterPlatformItem))
-                {
-                    return new global::AppStoreConnect.JsonConverters.DevicesGetCollectionFilterPlatformItemJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.DevicesGetCollectionFilterPlatformItem?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.DevicesGetCollectionFilterPlatformItemNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.DevicesGetCollectionFilterStatu))
-                {
-                    return new global::AppStoreConnect.JsonConverters.DevicesGetCollectionFilterStatuJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.DevicesGetCollectionFilterStatu?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.DevicesGetCollectionFilterStatuNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.DevicesGetCollectionSortItem))
-                {
-                    return new global::AppStoreConnect.JsonConverters.DevicesGetCollectionSortItemJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.DevicesGetCollectionSortItem?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.DevicesGetCollectionSortItemNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.DevicesGetCollectionFieldsDevice))
-                {
-                    return new global::AppStoreConnect.JsonConverters.DevicesGetCollectionFieldsDeviceJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.DevicesGetCollectionFieldsDevice?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.DevicesGetCollectionFieldsDeviceNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.DevicesGetInstanceFieldsDevice))
-                {
-                    return new global::AppStoreConnect.JsonConverters.DevicesGetInstanceFieldsDeviceJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.DevicesGetInstanceFieldsDevice?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.DevicesGetInstanceFieldsDeviceNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
-        }
-
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[8];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -276,9 +107,21 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new DevicesSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_3138988235A6C4A9.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_339F4F33822218C8.TypeInfoResolver,
+
+                    2 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
+
+                    3 => global::AppStoreConnect.SourceGenerationContextGraph_6C1C4F1A72597490.TypeInfoResolver,
+
+                    4 => global::AppStoreConnect.SourceGenerationContextGraph_01286B345C7FB528.TypeInfoResolver,
+
+                    5 => global::AppStoreConnect.SourceGenerationContextGraph_6DA88C34BA124C41.TypeInfoResolver,
+
+                    6 => global::AppStoreConnect.SourceGenerationContextGraph_293A29A99D54160B.TypeInfoResolver,
+
+                    7 => global::AppStoreConnect.SourceGenerationContextGraph_99DD7733FED6507A.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

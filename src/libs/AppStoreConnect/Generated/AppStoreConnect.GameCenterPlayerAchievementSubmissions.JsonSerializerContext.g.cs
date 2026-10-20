@@ -2,32 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmission))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmissionType), TypeInfoPropertyName = "GameCenterPlayerAchievementSubmissionType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmissionAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmissionResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmissionCreateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmissionCreateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmissionCreateRequestDataType), TypeInfoPropertyName = "GameCenterPlayerAchievementSubmissionCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmissionCreateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmissionType?), TypeInfoPropertyName = "NullableGameCenterPlayerAchievementSubmissionType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmissionCreateRequestDataType?), TypeInfoPropertyName = "NullableGameCenterPlayerAchievementSubmissionCreateRequestDataType2")]
-    internal sealed partial class GameCenterPlayerAchievementSubmissionsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class GameCenterPlayerAchievementSubmissionsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -71,8 +46,8 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_3F40FB3480EADDAE.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -85,48 +60,6 @@ namespace AppStoreConnect
             AddConverters(options);
 
             return options;
-        }
-
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmissionType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmissionType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmissionCreateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmissionCreateRequestDataType?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmissionType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterPlayerAchievementSubmissionTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmissionType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterPlayerAchievementSubmissionTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmissionCreateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterPlayerAchievementSubmissionCreateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmissionCreateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterPlayerAchievementSubmissionCreateRequestDataTypeNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
         }
 
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
@@ -168,9 +101,9 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new GameCenterPlayerAchievementSubmissionsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_3F40FB3480EADDAE.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

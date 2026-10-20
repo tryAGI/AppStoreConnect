@@ -2,32 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ActorsResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ActorResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.ActorsGetCollectionFieldsActor>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ActorsGetCollectionFieldsActor), TypeInfoPropertyName = "ActorsGetCollectionFieldsActor2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.ActorsGetInstanceFieldsActor>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ActorsGetInstanceFieldsActor), TypeInfoPropertyName = "ActorsGetInstanceFieldsActor2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ActorsGetCollectionFieldsActor?), TypeInfoPropertyName = "NullableActorsGetCollectionFieldsActor2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ActorsGetInstanceFieldsActor?), TypeInfoPropertyName = "NullableActorsGetInstanceFieldsActor2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.ActorsGetCollectionFieldsActor>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.ActorsGetInstanceFieldsActor>))]
-    internal sealed partial class ActorsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class ActorsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -71,8 +46,11 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_CA444E0F3DFA7F4D.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_01286B345C7FB528.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_6DA88C34BA124C41.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_E8F6F097E783D3D3.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -87,52 +65,10 @@ namespace AppStoreConnect
             return options;
         }
 
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.ActorsGetCollectionFieldsActor)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.ActorsGetCollectionFieldsActor?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.ActorsGetInstanceFieldsActor)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.ActorsGetInstanceFieldsActor?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.ActorsGetCollectionFieldsActor))
-                {
-                    return new global::AppStoreConnect.JsonConverters.ActorsGetCollectionFieldsActorJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.ActorsGetCollectionFieldsActor?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.ActorsGetCollectionFieldsActorNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.ActorsGetInstanceFieldsActor))
-                {
-                    return new global::AppStoreConnect.JsonConverters.ActorsGetInstanceFieldsActorJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.ActorsGetInstanceFieldsActor?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.ActorsGetInstanceFieldsActorNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
-        }
-
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[5];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -168,9 +104,15 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new ActorsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_CA444E0F3DFA7F4D.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
+
+                    2 => global::AppStoreConnect.SourceGenerationContextGraph_01286B345C7FB528.TypeInfoResolver,
+
+                    3 => global::AppStoreConnect.SourceGenerationContextGraph_6DA88C34BA124C41.TypeInfoResolver,
+
+                    4 => global::AppStoreConnect.SourceGenerationContextGraph_E8F6F097E783D3D3.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

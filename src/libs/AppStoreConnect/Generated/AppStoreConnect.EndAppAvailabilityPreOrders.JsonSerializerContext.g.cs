@@ -2,37 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.EndAppAvailabilityPreOrder))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderType), TypeInfoPropertyName = "EndAppAvailabilityPreOrderType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestDataType), TypeInfoPropertyName = "EndAppAvailabilityPreOrderCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestDataRelationships))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestDataRelationshipsTerritoryAvailabilities))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestDataRelationshipsTerritoryAvailabilitiesDataItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestDataRelationshipsTerritoryAvailabilitiesDataItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestDataRelationshipsTerritoryAvailabilitiesDataItemType), TypeInfoPropertyName = "EndAppAvailabilityPreOrderCreateRequestDataRelationshipsTerritoryAvailabilitiesDataItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderType?), TypeInfoPropertyName = "NullableEndAppAvailabilityPreOrderType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestDataType?), TypeInfoPropertyName = "NullableEndAppAvailabilityPreOrderCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestDataRelationshipsTerritoryAvailabilitiesDataItemType?), TypeInfoPropertyName = "NullableEndAppAvailabilityPreOrderCreateRequestDataRelationshipsTerritoryAvailabilitiesDataItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestDataRelationshipsTerritoryAvailabilitiesDataItem>))]
-    internal sealed partial class EndAppAvailabilityPreOrdersSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class EndAppAvailabilityPreOrdersSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -76,8 +46,8 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_97AF77F63E1BFF48.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -90,62 +60,6 @@ namespace AppStoreConnect
             AddConverters(options);
 
             return options;
-        }
-
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestDataRelationshipsTerritoryAvailabilitiesDataItemType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestDataRelationshipsTerritoryAvailabilitiesDataItemType?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.EndAppAvailabilityPreOrderTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.EndAppAvailabilityPreOrderTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.EndAppAvailabilityPreOrderCreateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.EndAppAvailabilityPreOrderCreateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestDataRelationshipsTerritoryAvailabilitiesDataItemType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.EndAppAvailabilityPreOrderCreateRequestDataRelationshipsTerritoryAvailabilitiesDataItemTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.EndAppAvailabilityPreOrderCreateRequestDataRelationshipsTerritoryAvailabilitiesDataItemType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.EndAppAvailabilityPreOrderCreateRequestDataRelationshipsTerritoryAvailabilitiesDataItemTypeNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
         }
 
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
@@ -187,9 +101,9 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new EndAppAvailabilityPreOrdersSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_97AF77F63E1BFF48.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

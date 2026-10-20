@@ -25,11 +25,12 @@ public sealed class SerializerContextTests
     }
 
     [TestMethod]
-    public void DirectTagContext_ResolvesTypesFromAggregateContext()
+    public void DirectTagContext_ResolvesReachableTypesWithoutAnAggregateFallback()
     {
         var context = BetaTesterInvitationsSourceGenerationContext.Default;
 
         context.GetTypeInfo(typeof(BetaTesterInvitationResponse)).Should().NotBeNull();
+        context.GetTypeInfo(typeof(AccessibilityDeclaration)).Should().BeNull();
 
         var values = JsonSerializer.Deserialize(
             """{"id":"invitation-id"}""",

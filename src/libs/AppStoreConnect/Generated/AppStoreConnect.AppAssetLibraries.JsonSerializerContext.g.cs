@@ -2,88 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibraryImagesResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibraryVideosResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibraryImagesLinkagesResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesLinkagesResponseDataItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibraryImagesLinkagesResponseDataItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibraryImagesLinkagesResponseDataItemType), TypeInfoPropertyName = "AppAssetLibraryImagesLinkagesResponseDataItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibraryVideosLinkagesResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryVideosLinkagesResponseDataItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibraryVideosLinkagesResponseDataItem))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibraryVideosLinkagesResponseDataItemType), TypeInfoPropertyName = "AppAssetLibraryVideosLinkagesResponseDataItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibrariesGetInstanceFieldsAppAssetLibrarie>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesGetInstanceFieldsAppAssetLibrarie), TypeInfoPropertyName = "AppAssetLibrariesGetInstanceFieldsAppAssetLibrarie2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterCategoryItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterCategoryItem), TypeInfoPropertyName = "AppAssetLibrariesImagesGetToManyRelatedFilterCategoryItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterStateItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterStateItem), TypeInfoPropertyName = "AppAssetLibrariesImagesGetToManyRelatedFilterStateItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedSortItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedSortItem), TypeInfoPropertyName = "AppAssetLibrariesImagesGetToManyRelatedSortItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImage>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImage), TypeInfoPropertyName = "AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImage2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacement>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacement), TypeInfoPropertyName = "AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacement2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedIncludeItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedIncludeItem), TypeInfoPropertyName = "AppAssetLibrariesImagesGetToManyRelatedIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterCategoryItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterCategoryItem), TypeInfoPropertyName = "AppAssetLibrariesVideosGetToManyRelatedFilterCategoryItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterStateItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterStateItem), TypeInfoPropertyName = "AppAssetLibrariesVideosGetToManyRelatedFilterStateItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedSortItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedSortItem), TypeInfoPropertyName = "AppAssetLibrariesVideosGetToManyRelatedSortItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideo>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideo), TypeInfoPropertyName = "AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideo2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacement>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacement), TypeInfoPropertyName = "AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacement2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedIncludeItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedIncludeItem), TypeInfoPropertyName = "AppAssetLibrariesVideosGetToManyRelatedIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibraryImagesLinkagesResponseDataItemType?), TypeInfoPropertyName = "NullableAppAssetLibraryImagesLinkagesResponseDataItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibraryVideosLinkagesResponseDataItemType?), TypeInfoPropertyName = "NullableAppAssetLibraryVideosLinkagesResponseDataItemType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesGetInstanceFieldsAppAssetLibrarie?), TypeInfoPropertyName = "NullableAppAssetLibrariesGetInstanceFieldsAppAssetLibrarie2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterCategoryItem?), TypeInfoPropertyName = "NullableAppAssetLibrariesImagesGetToManyRelatedFilterCategoryItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterStateItem?), TypeInfoPropertyName = "NullableAppAssetLibrariesImagesGetToManyRelatedFilterStateItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedSortItem?), TypeInfoPropertyName = "NullableAppAssetLibrariesImagesGetToManyRelatedSortItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImage?), TypeInfoPropertyName = "NullableAppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImage2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacement?), TypeInfoPropertyName = "NullableAppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacement2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedIncludeItem?), TypeInfoPropertyName = "NullableAppAssetLibrariesImagesGetToManyRelatedIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterCategoryItem?), TypeInfoPropertyName = "NullableAppAssetLibrariesVideosGetToManyRelatedFilterCategoryItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterStateItem?), TypeInfoPropertyName = "NullableAppAssetLibrariesVideosGetToManyRelatedFilterStateItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedSortItem?), TypeInfoPropertyName = "NullableAppAssetLibrariesVideosGetToManyRelatedSortItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideo?), TypeInfoPropertyName = "NullableAppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideo2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacement?), TypeInfoPropertyName = "NullableAppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacement2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedIncludeItem?), TypeInfoPropertyName = "NullableAppAssetLibrariesVideosGetToManyRelatedIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibraryImagesLinkagesResponseDataItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibraryVideosLinkagesResponseDataItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibrariesGetInstanceFieldsAppAssetLibrarie>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterCategoryItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterStateItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedSortItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImage>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacement>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedIncludeItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterCategoryItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterStateItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedSortItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideo>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacement>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedIncludeItem>))]
-    internal sealed partial class AppAssetLibrariesSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class AppAssetLibrariesSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -127,8 +46,15 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_9AAF82A638794348.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_646E3E2104F6A756.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_3A898D6D3462766D.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_01286B345C7FB528.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_6DA88C34BA124C41.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_4BF123C4CD79ED7F.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_C5BB27A5061A3E62.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_D7D422C0C2AC5FBE.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -143,234 +69,10 @@ namespace AppStoreConnect
             return options;
         }
 
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesLinkagesResponseDataItemType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesLinkagesResponseDataItemType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosLinkagesResponseDataItemType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosLinkagesResponseDataItemType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesGetInstanceFieldsAppAssetLibrarie)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesGetInstanceFieldsAppAssetLibrarie?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterCategoryItem)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterCategoryItem?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterStateItem)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterStateItem?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedSortItem)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedSortItem?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImage)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImage?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacement)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacement?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedIncludeItem)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedIncludeItem?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterCategoryItem)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterCategoryItem?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterStateItem)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterStateItem?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedSortItem)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedSortItem?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideo)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideo?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacement)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacement?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedIncludeItem)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedIncludeItem?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesLinkagesResponseDataItemType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesLinkagesResponseDataItemTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryImagesLinkagesResponseDataItemType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryImagesLinkagesResponseDataItemTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosLinkagesResponseDataItemType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosLinkagesResponseDataItemTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibraryVideosLinkagesResponseDataItemType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibraryVideosLinkagesResponseDataItemTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesGetInstanceFieldsAppAssetLibrarie))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesGetInstanceFieldsAppAssetLibrarieJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesGetInstanceFieldsAppAssetLibrarie?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesGetInstanceFieldsAppAssetLibrarieNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterCategoryItem))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedFilterCategoryItemJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterCategoryItem?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedFilterCategoryItemNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterStateItem))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedFilterStateItemJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFilterStateItem?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedFilterStateItemNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedSortItem))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedSortItemJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedSortItem?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedSortItemNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImage))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImageJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImage?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryImageNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacement))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacementJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacement?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacementNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedIncludeItem))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedIncludeItemJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedIncludeItem?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesImagesGetToManyRelatedIncludeItemNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterCategoryItem))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedFilterCategoryItemJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterCategoryItem?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedFilterCategoryItemNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterStateItem))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedFilterStateItemJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFilterStateItem?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedFilterStateItemNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedSortItem))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedSortItemJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedSortItem?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedSortItemNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideo))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideoJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideo?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryVideoNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacement))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacementJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacement?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedFieldsAppAssetLibraryPlacementNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedIncludeItem))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedIncludeItemJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppAssetLibrariesVideosGetToManyRelatedIncludeItem?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppAssetLibrariesVideosGetToManyRelatedIncludeItemNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
-        }
-
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[9];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -406,9 +108,23 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new AppAssetLibrariesSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_9AAF82A638794348.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
+
+                    2 => global::AppStoreConnect.SourceGenerationContextGraph_646E3E2104F6A756.TypeInfoResolver,
+
+                    3 => global::AppStoreConnect.SourceGenerationContextGraph_3A898D6D3462766D.TypeInfoResolver,
+
+                    4 => global::AppStoreConnect.SourceGenerationContextGraph_01286B345C7FB528.TypeInfoResolver,
+
+                    5 => global::AppStoreConnect.SourceGenerationContextGraph_6DA88C34BA124C41.TypeInfoResolver,
+
+                    6 => global::AppStoreConnect.SourceGenerationContextGraph_4BF123C4CD79ED7F.TypeInfoResolver,
+
+                    7 => global::AppStoreConnect.SourceGenerationContextGraph_C5BB27A5061A3E62.TypeInfoResolver,
+
+                    8 => global::AppStoreConnect.SourceGenerationContextGraph_D7D422C0C2AC5FBE.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

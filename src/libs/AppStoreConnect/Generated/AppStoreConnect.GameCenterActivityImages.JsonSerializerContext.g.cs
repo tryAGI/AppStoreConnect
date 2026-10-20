@@ -2,45 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataType), TypeInfoPropertyName = "GameCenterActivityImageCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationships))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsLocalization))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsLocalizationData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataType), TypeInfoPropertyName = "GameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsVersion))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsVersionData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsVersionDataType), TypeInfoPropertyName = "GameCenterActivityImageCreateRequestDataRelationshipsVersionDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageUpdateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageUpdateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageUpdateRequestDataType), TypeInfoPropertyName = "GameCenterActivityImageUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageUpdateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterActivityImagesGetInstanceFieldsGameCenterActivityImage>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImagesGetInstanceFieldsGameCenterActivityImage), TypeInfoPropertyName = "GameCenterActivityImagesGetInstanceFieldsGameCenterActivityImage2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataType?), TypeInfoPropertyName = "NullableGameCenterActivityImageCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataType?), TypeInfoPropertyName = "NullableGameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsVersionDataType?), TypeInfoPropertyName = "NullableGameCenterActivityImageCreateRequestDataRelationshipsVersionDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImageUpdateRequestDataType?), TypeInfoPropertyName = "NullableGameCenterActivityImageUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterActivityImagesGetInstanceFieldsGameCenterActivityImage?), TypeInfoPropertyName = "NullableGameCenterActivityImagesGetInstanceFieldsGameCenterActivityImage2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterActivityImagesGetInstanceFieldsGameCenterActivityImage>))]
-    internal sealed partial class GameCenterActivityImagesSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class GameCenterActivityImagesSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -84,8 +46,11 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_6B63450FDAC37CD3.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B3A5F0B1BC386728.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_EAAEE2A81E09F366.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B4A6F4D573CC5AAA.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -100,94 +65,10 @@ namespace AppStoreConnect
             return options;
         }
 
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsVersionDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsVersionDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImageUpdateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImageUpdateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImagesGetInstanceFieldsGameCenterActivityImage)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImagesGetInstanceFieldsGameCenterActivityImage?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterActivityImageCreateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterActivityImageCreateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsVersionDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterActivityImageCreateRequestDataRelationshipsVersionDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsVersionDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterActivityImageCreateRequestDataRelationshipsVersionDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImageUpdateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterActivityImageUpdateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImageUpdateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterActivityImageUpdateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImagesGetInstanceFieldsGameCenterActivityImage))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterActivityImagesGetInstanceFieldsGameCenterActivityImageJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.GameCenterActivityImagesGetInstanceFieldsGameCenterActivityImage?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.GameCenterActivityImagesGetInstanceFieldsGameCenterActivityImageNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
-        }
-
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[5];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -223,9 +104,15 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new GameCenterActivityImagesSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_6B63450FDAC37CD3.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_B3A5F0B1BC386728.TypeInfoResolver,
+
+                    2 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
+
+                    3 => global::AppStoreConnect.SourceGenerationContextGraph_EAAEE2A81E09F366.TypeInfoResolver,
+
+                    4 => global::AppStoreConnect.SourceGenerationContextGraph_B4A6F4D573CC5AAA.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

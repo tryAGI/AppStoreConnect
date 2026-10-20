@@ -2,44 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataType), TypeInfoPropertyName = "BackgroundAssetUploadFileCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataAttributesAssetType), TypeInfoPropertyName = "BackgroundAssetUploadFileCreateRequestDataAttributesAssetType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataRelationships))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataRelationshipsBackgroundAssetVersion))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataRelationshipsBackgroundAssetVersionData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataRelationshipsBackgroundAssetVersionDataType), TypeInfoPropertyName = "BackgroundAssetUploadFileCreateRequestDataRelationshipsBackgroundAssetVersionDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileUpdateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileUpdateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileUpdateRequestDataType), TypeInfoPropertyName = "BackgroundAssetUploadFileUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileUpdateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.BackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile), TypeInfoPropertyName = "BackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataType?), TypeInfoPropertyName = "NullableBackgroundAssetUploadFileCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataAttributesAssetType?), TypeInfoPropertyName = "NullableBackgroundAssetUploadFileCreateRequestDataAttributesAssetType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataRelationshipsBackgroundAssetVersionDataType?), TypeInfoPropertyName = "NullableBackgroundAssetUploadFileCreateRequestDataRelationshipsBackgroundAssetVersionDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFileUpdateRequestDataType?), TypeInfoPropertyName = "NullableBackgroundAssetUploadFileUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile?), TypeInfoPropertyName = "NullableBackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.BackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile>))]
-    internal sealed partial class BackgroundAssetUploadFilesSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class BackgroundAssetUploadFilesSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -83,8 +46,11 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_2CF0F62E92F52A66.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_F00B666F481111D0.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_E4788765FAA30C01.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_20DD444205937BF5.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -99,94 +65,10 @@ namespace AppStoreConnect
             return options;
         }
 
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataAttributesAssetType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataAttributesAssetType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataRelationshipsBackgroundAssetVersionDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataRelationshipsBackgroundAssetVersionDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFileUpdateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFileUpdateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BackgroundAssetUploadFileCreateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BackgroundAssetUploadFileCreateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataAttributesAssetType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BackgroundAssetUploadFileCreateRequestDataAttributesAssetTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataAttributesAssetType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BackgroundAssetUploadFileCreateRequestDataAttributesAssetTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataRelationshipsBackgroundAssetVersionDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BackgroundAssetUploadFileCreateRequestDataRelationshipsBackgroundAssetVersionDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFileCreateRequestDataRelationshipsBackgroundAssetVersionDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BackgroundAssetUploadFileCreateRequestDataRelationshipsBackgroundAssetVersionDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFileUpdateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BackgroundAssetUploadFileUpdateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFileUpdateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BackgroundAssetUploadFileUpdateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFileJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFileNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
-        }
-
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[5];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -222,9 +104,15 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new BackgroundAssetUploadFilesSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_2CF0F62E92F52A66.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_F00B666F481111D0.TypeInfoResolver,
+
+                    2 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
+
+                    3 => global::AppStoreConnect.SourceGenerationContextGraph_E4788765FAA30C01.TypeInfoResolver,
+
+                    4 => global::AppStoreConnect.SourceGenerationContextGraph_20DD444205937BF5.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

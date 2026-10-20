@@ -2,40 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmission))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmissionType), TypeInfoPropertyName = "SubscriptionSubmissionType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmissionRelationships))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmissionRelationshipsSubscription))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmissionRelationshipsSubscriptionData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmissionRelationshipsSubscriptionDataType), TypeInfoPropertyName = "SubscriptionSubmissionRelationshipsSubscriptionDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmissionResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmissionCreateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmissionCreateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmissionCreateRequestDataType), TypeInfoPropertyName = "SubscriptionSubmissionCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmissionCreateRequestDataRelationships))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmissionCreateRequestDataRelationshipsSubscription))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmissionCreateRequestDataRelationshipsSubscriptionData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmissionCreateRequestDataRelationshipsSubscriptionDataType), TypeInfoPropertyName = "SubscriptionSubmissionCreateRequestDataRelationshipsSubscriptionDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmissionType?), TypeInfoPropertyName = "NullableSubscriptionSubmissionType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmissionRelationshipsSubscriptionDataType?), TypeInfoPropertyName = "NullableSubscriptionSubmissionRelationshipsSubscriptionDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmissionCreateRequestDataType?), TypeInfoPropertyName = "NullableSubscriptionSubmissionCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionSubmissionCreateRequestDataRelationshipsSubscriptionDataType?), TypeInfoPropertyName = "NullableSubscriptionSubmissionCreateRequestDataRelationshipsSubscriptionDataType2")]
-    internal sealed partial class SubscriptionSubmissionsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class SubscriptionSubmissionsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -79,8 +46,8 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_A00B4121AE557805.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -93,76 +60,6 @@ namespace AppStoreConnect
             AddConverters(options);
 
             return options;
-        }
-
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.SubscriptionSubmissionType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionSubmissionType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionSubmissionRelationshipsSubscriptionDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionSubmissionRelationshipsSubscriptionDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionSubmissionCreateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionSubmissionCreateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionSubmissionCreateRequestDataRelationshipsSubscriptionDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionSubmissionCreateRequestDataRelationshipsSubscriptionDataType?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionSubmissionType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionSubmissionTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionSubmissionType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionSubmissionTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionSubmissionRelationshipsSubscriptionDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionSubmissionRelationshipsSubscriptionDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionSubmissionRelationshipsSubscriptionDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionSubmissionRelationshipsSubscriptionDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionSubmissionCreateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionSubmissionCreateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionSubmissionCreateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionSubmissionCreateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionSubmissionCreateRequestDataRelationshipsSubscriptionDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionSubmissionCreateRequestDataRelationshipsSubscriptionDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionSubmissionCreateRequestDataRelationshipsSubscriptionDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionSubmissionCreateRequestDataRelationshipsSubscriptionDataTypeNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
         }
 
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
@@ -204,9 +101,9 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new SubscriptionSubmissionsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_A00B4121AE557805.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

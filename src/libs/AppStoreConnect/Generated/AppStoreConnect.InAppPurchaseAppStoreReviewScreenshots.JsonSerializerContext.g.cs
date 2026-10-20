@@ -2,103 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequest))]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequestData))]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataType), TypeInfoPropertyName = "InAppPurchaseAppStoreReviewScreenshotCreateRequestDataType2")]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataAttributes))]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataRelationships))]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataRelationshipsInAppPurchaseV2))]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataRelationshipsInAppPurchaseV2Data))]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataRelationshipsInAppPurchaseV2DataType), TypeInfoPropertyName = "InAppPurchaseAppStoreReviewScreenshotCreateRequestDataRelationshipsInAppPurchaseV2DataType2")]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotUpdateRequest))]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotUpdateRequestData))]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotUpdateRequestDataType), TypeInfoPropertyName = "InAppPurchaseAppStoreReviewScreenshotUpdateRequestDataType2")]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotUpdateRequestDataAttributes))]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchaseAppStoreReviewScreenshot>))]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchaseAppStoreReviewScreenshot), TypeInfoPropertyName = "InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchaseAppStoreReviewScreenshot2")]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchase>))]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchase), TypeInfoPropertyName = "InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchase2")]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceIncludeItem>))]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceIncludeItem), TypeInfoPropertyName = "InAppPurchaseAppStoreReviewScreenshotsGetInstanceIncludeItem2")]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataType?), TypeInfoPropertyName = "NullableInAppPurchaseAppStoreReviewScreenshotCreateRequestDataType2")]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataRelationshipsInAppPurchaseV2DataType?), TypeInfoPropertyName = "NullableInAppPurchaseAppStoreReviewScreenshotCreateRequestDataRelationshipsInAppPurchaseV2DataType2")]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotUpdateRequestDataType?), TypeInfoPropertyName = "NullableInAppPurchaseAppStoreReviewScreenshotUpdateRequestDataType2")]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchaseAppStoreReviewScreenshot?), TypeInfoPropertyName = "NullableInAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchaseAppStoreReviewScreenshot2")]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchase?), TypeInfoPropertyName = "NullableInAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchase2")]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceIncludeItem?), TypeInfoPropertyName = "NullableInAppPurchaseAppStoreReviewScreenshotsGetInstanceIncludeItem2")]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchaseAppStoreReviewScreenshot>))]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchase>))]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceIncludeItem>))]
-    #pragma warning restore CS0618
-    internal sealed partial class InAppPurchaseAppStoreReviewScreenshotsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class InAppPurchaseAppStoreReviewScreenshotsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -142,8 +46,11 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_D662EF31A73221E3.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_19CDE409796DDA30.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_C51E69A7E97848D6.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_D5F72F78DE4745BC.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -158,108 +65,10 @@ namespace AppStoreConnect
             return options;
         }
 
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataRelationshipsInAppPurchaseV2DataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataRelationshipsInAppPurchaseV2DataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotUpdateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotUpdateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchaseAppStoreReviewScreenshot)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchaseAppStoreReviewScreenshot?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchase)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchase?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceIncludeItem)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceIncludeItem?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataRelationshipsInAppPurchaseV2DataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataRelationshipsInAppPurchaseV2DataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataRelationshipsInAppPurchaseV2DataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.InAppPurchaseAppStoreReviewScreenshotCreateRequestDataRelationshipsInAppPurchaseV2DataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotUpdateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.InAppPurchaseAppStoreReviewScreenshotUpdateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotUpdateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.InAppPurchaseAppStoreReviewScreenshotUpdateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchaseAppStoreReviewScreenshot))
-                {
-                    return new global::AppStoreConnect.JsonConverters.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchaseAppStoreReviewScreenshotJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchaseAppStoreReviewScreenshot?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchaseAppStoreReviewScreenshotNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchase))
-                {
-                    return new global::AppStoreConnect.JsonConverters.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchaseJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchase?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.InAppPurchaseAppStoreReviewScreenshotsGetInstanceFieldsInAppPurchaseNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceIncludeItem))
-                {
-                    return new global::AppStoreConnect.JsonConverters.InAppPurchaseAppStoreReviewScreenshotsGetInstanceIncludeItemJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotsGetInstanceIncludeItem?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.InAppPurchaseAppStoreReviewScreenshotsGetInstanceIncludeItemNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
-        }
-
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[5];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -295,9 +104,15 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new InAppPurchaseAppStoreReviewScreenshotsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_D662EF31A73221E3.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_19CDE409796DDA30.TypeInfoResolver,
+
+                    2 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
+
+                    3 => global::AppStoreConnect.SourceGenerationContextGraph_C51E69A7E97848D6.TypeInfoResolver,
+
+                    4 => global::AppStoreConnect.SourceGenerationContextGraph_D5F72F78DE4745BC.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

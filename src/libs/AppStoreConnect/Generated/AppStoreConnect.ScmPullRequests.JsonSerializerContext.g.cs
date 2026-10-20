@@ -2,35 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ScmPullRequestResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.ScmPullRequestsGetInstanceFieldsScmPullRequest>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceFieldsScmPullRequest), TypeInfoPropertyName = "ScmPullRequestsGetInstanceFieldsScmPullRequest2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.ScmPullRequestsGetInstanceFieldsScmRepositorie>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceFieldsScmRepositorie), TypeInfoPropertyName = "ScmPullRequestsGetInstanceFieldsScmRepositorie2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.ScmPullRequestsGetInstanceIncludeItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceIncludeItem), TypeInfoPropertyName = "ScmPullRequestsGetInstanceIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceFieldsScmPullRequest?), TypeInfoPropertyName = "NullableScmPullRequestsGetInstanceFieldsScmPullRequest2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceFieldsScmRepositorie?), TypeInfoPropertyName = "NullableScmPullRequestsGetInstanceFieldsScmRepositorie2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceIncludeItem?), TypeInfoPropertyName = "NullableScmPullRequestsGetInstanceIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.ScmPullRequestsGetInstanceFieldsScmPullRequest>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.ScmPullRequestsGetInstanceFieldsScmRepositorie>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.ScmPullRequestsGetInstanceIncludeItem>))]
-    internal sealed partial class ScmPullRequestsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class ScmPullRequestsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -74,8 +46,8 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_272A1E1C757D08F6.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -88,62 +60,6 @@ namespace AppStoreConnect
             AddConverters(options);
 
             return options;
-        }
-
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceFieldsScmPullRequest)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceFieldsScmPullRequest?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceFieldsScmRepositorie)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceFieldsScmRepositorie?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceIncludeItem)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceIncludeItem?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceFieldsScmPullRequest))
-                {
-                    return new global::AppStoreConnect.JsonConverters.ScmPullRequestsGetInstanceFieldsScmPullRequestJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceFieldsScmPullRequest?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.ScmPullRequestsGetInstanceFieldsScmPullRequestNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceFieldsScmRepositorie))
-                {
-                    return new global::AppStoreConnect.JsonConverters.ScmPullRequestsGetInstanceFieldsScmRepositorieJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceFieldsScmRepositorie?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.ScmPullRequestsGetInstanceFieldsScmRepositorieNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceIncludeItem))
-                {
-                    return new global::AppStoreConnect.JsonConverters.ScmPullRequestsGetInstanceIncludeItemJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.ScmPullRequestsGetInstanceIncludeItem?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.ScmPullRequestsGetInstanceIncludeItemNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
         }
 
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
@@ -185,9 +101,9 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new ScmPullRequestsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_272A1E1C757D08F6.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

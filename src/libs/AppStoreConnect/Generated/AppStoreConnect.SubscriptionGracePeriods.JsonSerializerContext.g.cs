@@ -2,33 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGracePeriodUpdateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGracePeriodUpdateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGracePeriodUpdateRequestDataType), TypeInfoPropertyName = "SubscriptionGracePeriodUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGracePeriodUpdateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGracePeriodUpdateRequestDataAttributesRenewalType), TypeInfoPropertyName = "SubscriptionGracePeriodUpdateRequestDataAttributesRenewalType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionGracePeriodsGetInstanceFieldsSubscriptionGracePeriod>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGracePeriodsGetInstanceFieldsSubscriptionGracePeriod), TypeInfoPropertyName = "SubscriptionGracePeriodsGetInstanceFieldsSubscriptionGracePeriod2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGracePeriodUpdateRequestDataType?), TypeInfoPropertyName = "NullableSubscriptionGracePeriodUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGracePeriodUpdateRequestDataAttributesRenewalType?), TypeInfoPropertyName = "NullableSubscriptionGracePeriodUpdateRequestDataAttributesRenewalType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionGracePeriodsGetInstanceFieldsSubscriptionGracePeriod?), TypeInfoPropertyName = "NullableSubscriptionGracePeriodsGetInstanceFieldsSubscriptionGracePeriod2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.SubscriptionGracePeriodsGetInstanceFieldsSubscriptionGracePeriod>))]
-    internal sealed partial class SubscriptionGracePeriodsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class SubscriptionGracePeriodsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -72,8 +46,10 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_75CECA2EC079C0BB.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_2CD8FC75DEA63CA8.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_C0D1023AB00013FD.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -88,66 +64,10 @@ namespace AppStoreConnect
             return options;
         }
 
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.SubscriptionGracePeriodUpdateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionGracePeriodUpdateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionGracePeriodUpdateRequestDataAttributesRenewalType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionGracePeriodUpdateRequestDataAttributesRenewalType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionGracePeriodsGetInstanceFieldsSubscriptionGracePeriod)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionGracePeriodsGetInstanceFieldsSubscriptionGracePeriod?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionGracePeriodUpdateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionGracePeriodUpdateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionGracePeriodUpdateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionGracePeriodUpdateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionGracePeriodUpdateRequestDataAttributesRenewalType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionGracePeriodUpdateRequestDataAttributesRenewalTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionGracePeriodUpdateRequestDataAttributesRenewalType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionGracePeriodUpdateRequestDataAttributesRenewalTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionGracePeriodsGetInstanceFieldsSubscriptionGracePeriod))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionGracePeriodsGetInstanceFieldsSubscriptionGracePeriodJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionGracePeriodsGetInstanceFieldsSubscriptionGracePeriod?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionGracePeriodsGetInstanceFieldsSubscriptionGracePeriodNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
-        }
-
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[4];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -183,9 +103,13 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new SubscriptionGracePeriodsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_75CECA2EC079C0BB.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
+
+                    2 => global::AppStoreConnect.SourceGenerationContextGraph_2CD8FC75DEA63CA8.TypeInfoResolver,
+
+                    3 => global::AppStoreConnect.SourceGenerationContextGraph_C0D1023AB00013FD.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

@@ -2,35 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionReleaseRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestType), TypeInfoPropertyName = "AppStoreVersionReleaseRequestType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestCreateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestCreateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestCreateRequestDataType), TypeInfoPropertyName = "AppStoreVersionReleaseRequestCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestCreateRequestDataRelationships))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestCreateRequestDataRelationshipsAppStoreVersion))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestCreateRequestDataRelationshipsAppStoreVersionData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestCreateRequestDataRelationshipsAppStoreVersionDataType), TypeInfoPropertyName = "AppStoreVersionReleaseRequestCreateRequestDataRelationshipsAppStoreVersionDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestType?), TypeInfoPropertyName = "NullableAppStoreVersionReleaseRequestType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestCreateRequestDataType?), TypeInfoPropertyName = "NullableAppStoreVersionReleaseRequestCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestCreateRequestDataRelationshipsAppStoreVersionDataType?), TypeInfoPropertyName = "NullableAppStoreVersionReleaseRequestCreateRequestDataRelationshipsAppStoreVersionDataType2")]
-    internal sealed partial class AppStoreVersionReleaseRequestsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class AppStoreVersionReleaseRequestsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -74,8 +46,8 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_0C2A06D7D41E4532.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -88,62 +60,6 @@ namespace AppStoreConnect
             AddConverters(options);
 
             return options;
-        }
-
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestCreateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestCreateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestCreateRequestDataRelationshipsAppStoreVersionDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestCreateRequestDataRelationshipsAppStoreVersionDataType?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionReleaseRequestTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionReleaseRequestTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestCreateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionReleaseRequestCreateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestCreateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionReleaseRequestCreateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestCreateRequestDataRelationshipsAppStoreVersionDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionReleaseRequestCreateRequestDataRelationshipsAppStoreVersionDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestCreateRequestDataRelationshipsAppStoreVersionDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppStoreVersionReleaseRequestCreateRequestDataRelationshipsAppStoreVersionDataTypeNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
         }
 
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
@@ -185,9 +101,9 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new AppStoreVersionReleaseRequestsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_0C2A06D7D41E4532.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

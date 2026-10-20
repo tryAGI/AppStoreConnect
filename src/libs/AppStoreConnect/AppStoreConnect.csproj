@@ -4,6 +4,10 @@
     <TargetFramework>net10.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoSDK.JsonMetadata" Version="0.35.0-preview.2.98" PrivateAssets="all" />
+  </ItemGroup>
+
   <PropertyGroup Label="CompilerMemory">
     <!-- Keep the compiler process isolated and retain every analyzer.
          Linux VM-reported memory varies, so use an explicit 15-GiB GC heap cap

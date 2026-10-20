@@ -192,6 +192,8 @@ namespace AppStoreConnect
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
         {
+            var JsonSerializerContext = JsonSerializerContextProvider?.Value ??
+                global::AppStoreConnect.SourceGenerationContextOperation_8139B8373F9BD81A.Default;
             PrepareArguments(
                 client: HttpClient);
             PrepareInAppPurchasesV2GetInstanceArguments(

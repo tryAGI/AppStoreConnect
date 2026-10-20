@@ -2,67 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataType), TypeInfoPropertyName = "AgeRatingDeclarationUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAlcoholTobaccoOrDrugUseOrReferences), TypeInfoPropertyName = "AgeRatingDeclarationUpdateRequestDataAttributesAlcoholTobaccoOrDrugUseOrReferences2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesContests), TypeInfoPropertyName = "AgeRatingDeclarationUpdateRequestDataAttributesContests2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesGamblingSimulated), TypeInfoPropertyName = "AgeRatingDeclarationUpdateRequestDataAttributesGamblingSimulated2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesGunsOrOtherWeapons), TypeInfoPropertyName = "AgeRatingDeclarationUpdateRequestDataAttributesGunsOrOtherWeapons2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesMedicalOrTreatmentInformation), TypeInfoPropertyName = "AgeRatingDeclarationUpdateRequestDataAttributesMedicalOrTreatmentInformation2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesProfanityOrCrudeHumor), TypeInfoPropertyName = "AgeRatingDeclarationUpdateRequestDataAttributesProfanityOrCrudeHumor2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentGraphicAndNudity), TypeInfoPropertyName = "AgeRatingDeclarationUpdateRequestDataAttributesSexualContentGraphicAndNudity2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentOrNudity), TypeInfoPropertyName = "AgeRatingDeclarationUpdateRequestDataAttributesSexualContentOrNudity2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesHorrorOrFearThemes), TypeInfoPropertyName = "AgeRatingDeclarationUpdateRequestDataAttributesHorrorOrFearThemes2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesMatureOrSuggestiveThemes), TypeInfoPropertyName = "AgeRatingDeclarationUpdateRequestDataAttributesMatureOrSuggestiveThemes2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceCartoonOrFantasy), TypeInfoPropertyName = "AgeRatingDeclarationUpdateRequestDataAttributesViolenceCartoonOrFantasy2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealisticProlongedGraphicOrSadistic), TypeInfoPropertyName = "AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealisticProlongedGraphicOrSadistic2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealistic), TypeInfoPropertyName = "AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealistic2")]
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverride), TypeInfoPropertyName = "AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverride2")]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideV2), TypeInfoPropertyName = "AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideV22")]
-    #pragma warning restore CS0618
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride), TypeInfoPropertyName = "AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataType?), TypeInfoPropertyName = "NullableAgeRatingDeclarationUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAlcoholTobaccoOrDrugUseOrReferences?), TypeInfoPropertyName = "NullableAgeRatingDeclarationUpdateRequestDataAttributesAlcoholTobaccoOrDrugUseOrReferences2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesContests?), TypeInfoPropertyName = "NullableAgeRatingDeclarationUpdateRequestDataAttributesContests2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesGamblingSimulated?), TypeInfoPropertyName = "NullableAgeRatingDeclarationUpdateRequestDataAttributesGamblingSimulated2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesGunsOrOtherWeapons?), TypeInfoPropertyName = "NullableAgeRatingDeclarationUpdateRequestDataAttributesGunsOrOtherWeapons2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesMedicalOrTreatmentInformation?), TypeInfoPropertyName = "NullableAgeRatingDeclarationUpdateRequestDataAttributesMedicalOrTreatmentInformation2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesProfanityOrCrudeHumor?), TypeInfoPropertyName = "NullableAgeRatingDeclarationUpdateRequestDataAttributesProfanityOrCrudeHumor2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentGraphicAndNudity?), TypeInfoPropertyName = "NullableAgeRatingDeclarationUpdateRequestDataAttributesSexualContentGraphicAndNudity2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentOrNudity?), TypeInfoPropertyName = "NullableAgeRatingDeclarationUpdateRequestDataAttributesSexualContentOrNudity2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesHorrorOrFearThemes?), TypeInfoPropertyName = "NullableAgeRatingDeclarationUpdateRequestDataAttributesHorrorOrFearThemes2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesMatureOrSuggestiveThemes?), TypeInfoPropertyName = "NullableAgeRatingDeclarationUpdateRequestDataAttributesMatureOrSuggestiveThemes2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceCartoonOrFantasy?), TypeInfoPropertyName = "NullableAgeRatingDeclarationUpdateRequestDataAttributesViolenceCartoonOrFantasy2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealisticProlongedGraphicOrSadistic?), TypeInfoPropertyName = "NullableAgeRatingDeclarationUpdateRequestDataAttributesViolenceRealisticProlongedGraphicOrSadistic2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealistic?), TypeInfoPropertyName = "NullableAgeRatingDeclarationUpdateRequestDataAttributesViolenceRealistic2")]
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverride?), TypeInfoPropertyName = "NullableAgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverride2")]
-    #pragma warning restore CS0618
-    #pragma warning disable CS0618 // This registration names a deprecated API model.
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideV2?), TypeInfoPropertyName = "NullableAgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideV22")]
-    #pragma warning restore CS0618
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride?), TypeInfoPropertyName = "NullableAgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride2")]
-    internal sealed partial class AgeRatingDeclarationsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class AgeRatingDeclarationsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -106,8 +46,9 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_1EB84DA1CFDF998F.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_058C3A9E552D5212.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -122,262 +63,10 @@ namespace AppStoreConnect
             return options;
         }
 
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAlcoholTobaccoOrDrugUseOrReferences)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAlcoholTobaccoOrDrugUseOrReferences?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesContests)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesContests?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesGamblingSimulated)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesGamblingSimulated?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesGunsOrOtherWeapons)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesGunsOrOtherWeapons?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesMedicalOrTreatmentInformation)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesMedicalOrTreatmentInformation?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesProfanityOrCrudeHumor)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesProfanityOrCrudeHumor?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentGraphicAndNudity)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentGraphicAndNudity?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentOrNudity)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentOrNudity?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesHorrorOrFearThemes)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesHorrorOrFearThemes?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesMatureOrSuggestiveThemes)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesMatureOrSuggestiveThemes?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceCartoonOrFantasy)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceCartoonOrFantasy?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealisticProlongedGraphicOrSadistic)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealisticProlongedGraphicOrSadistic?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealistic)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealistic?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverride)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverride?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideV2)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideV2?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAlcoholTobaccoOrDrugUseOrReferences))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesAlcoholTobaccoOrDrugUseOrReferencesJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAlcoholTobaccoOrDrugUseOrReferences?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesAlcoholTobaccoOrDrugUseOrReferencesNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesContests))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesContestsJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesContests?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesContestsNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesGamblingSimulated))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesGamblingSimulatedJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesGamblingSimulated?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesGamblingSimulatedNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesGunsOrOtherWeapons))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesGunsOrOtherWeaponsJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesGunsOrOtherWeapons?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesGunsOrOtherWeaponsNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesMedicalOrTreatmentInformation))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesMedicalOrTreatmentInformationJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesMedicalOrTreatmentInformation?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesMedicalOrTreatmentInformationNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesProfanityOrCrudeHumor))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesProfanityOrCrudeHumorJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesProfanityOrCrudeHumor?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesProfanityOrCrudeHumorNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentGraphicAndNudity))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentGraphicAndNudityJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentGraphicAndNudity?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentGraphicAndNudityNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentOrNudity))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentOrNudityJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentOrNudity?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentOrNudityNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesHorrorOrFearThemes))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesHorrorOrFearThemesJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesHorrorOrFearThemes?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesHorrorOrFearThemesNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesMatureOrSuggestiveThemes))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesMatureOrSuggestiveThemesJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesMatureOrSuggestiveThemes?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesMatureOrSuggestiveThemesNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceCartoonOrFantasy))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesViolenceCartoonOrFantasyJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceCartoonOrFantasy?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesViolenceCartoonOrFantasyNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealisticProlongedGraphicOrSadistic))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealisticProlongedGraphicOrSadisticJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealisticProlongedGraphicOrSadistic?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealisticProlongedGraphicOrSadisticNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealistic))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealisticJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealistic?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesViolenceRealisticNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverride))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverride?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideV2))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideV2JsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideV2?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideV2NullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverrideJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverride?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesKoreaAgeRatingOverrideNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
-        }
-
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[3];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -413,9 +102,11 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new AgeRatingDeclarationsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_1EB84DA1CFDF998F.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_058C3A9E552D5212.TypeInfoResolver,
+
+                    2 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

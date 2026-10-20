@@ -2,37 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequestDataType), TypeInfoPropertyName = "BetaRecruitmentCriterionCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequestDataRelationships))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequestDataRelationshipsBetaGroup))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequestDataRelationshipsBetaGroupData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequestDataRelationshipsBetaGroupDataType), TypeInfoPropertyName = "BetaRecruitmentCriterionCreateRequestDataRelationshipsBetaGroupDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaRecruitmentCriterionUpdateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaRecruitmentCriterionUpdateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaRecruitmentCriterionUpdateRequestDataType), TypeInfoPropertyName = "BetaRecruitmentCriterionUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaRecruitmentCriterionUpdateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequestDataType?), TypeInfoPropertyName = "NullableBetaRecruitmentCriterionCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequestDataRelationshipsBetaGroupDataType?), TypeInfoPropertyName = "NullableBetaRecruitmentCriterionCreateRequestDataRelationshipsBetaGroupDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.BetaRecruitmentCriterionUpdateRequestDataType?), TypeInfoPropertyName = "NullableBetaRecruitmentCriterionUpdateRequestDataType2")]
-    internal sealed partial class BetaRecruitmentCriteriaSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class BetaRecruitmentCriteriaSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -76,8 +46,10 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_B309A74C654C6F40.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_FE1A0051D60AC9F1.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_A9CF9DC52DAA8D8B.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -92,66 +64,10 @@ namespace AppStoreConnect
             return options;
         }
 
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequestDataRelationshipsBetaGroupDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequestDataRelationshipsBetaGroupDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BetaRecruitmentCriterionUpdateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.BetaRecruitmentCriterionUpdateRequestDataType?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BetaRecruitmentCriterionCreateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BetaRecruitmentCriterionCreateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequestDataRelationshipsBetaGroupDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BetaRecruitmentCriterionCreateRequestDataRelationshipsBetaGroupDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BetaRecruitmentCriterionCreateRequestDataRelationshipsBetaGroupDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BetaRecruitmentCriterionCreateRequestDataRelationshipsBetaGroupDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BetaRecruitmentCriterionUpdateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BetaRecruitmentCriterionUpdateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.BetaRecruitmentCriterionUpdateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.BetaRecruitmentCriterionUpdateRequestDataTypeNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
-        }
-
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[4];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -187,9 +103,13 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new BetaRecruitmentCriteriaSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_B309A74C654C6F40.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_FE1A0051D60AC9F1.TypeInfoResolver,
+
+                    2 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
+
+                    3 => global::AppStoreConnect.SourceGenerationContextGraph_A9CF9DC52DAA8D8B.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

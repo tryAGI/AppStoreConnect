@@ -2,50 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequestDataType), TypeInfoPropertyName = "SubscriptionOfferCodeCustomCodeCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequestDataRelationships))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCode))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCodeData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCodeDataType), TypeInfoPropertyName = "SubscriptionOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCodeDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeUpdateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeUpdateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeUpdateRequestDataType), TypeInfoPropertyName = "SubscriptionOfferCodeCustomCodeUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeUpdateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCodeCustomCode>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCodeCustomCode), TypeInfoPropertyName = "SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCodeCustomCode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCode>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCode), TypeInfoPropertyName = "SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceIncludeItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceIncludeItem), TypeInfoPropertyName = "SubscriptionOfferCodeCustomCodesGetInstanceIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequestDataType?), TypeInfoPropertyName = "NullableSubscriptionOfferCodeCustomCodeCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCodeDataType?), TypeInfoPropertyName = "NullableSubscriptionOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCodeDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeUpdateRequestDataType?), TypeInfoPropertyName = "NullableSubscriptionOfferCodeCustomCodeUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCodeCustomCode?), TypeInfoPropertyName = "NullableSubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCodeCustomCode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCode?), TypeInfoPropertyName = "NullableSubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCode2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceIncludeItem?), TypeInfoPropertyName = "NullableSubscriptionOfferCodeCustomCodesGetInstanceIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCodeCustomCode>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCode>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceIncludeItem>))]
-    internal sealed partial class SubscriptionOfferCodeCustomCodesSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class SubscriptionOfferCodeCustomCodesSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -89,8 +46,11 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_4A62B132BC4EC334.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_C03A0C3782FF4A12.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_904AE5E6B1E52347.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_5ACFB29FD325BDD9.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -105,108 +65,10 @@ namespace AppStoreConnect
             return options;
         }
 
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCodeDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCodeDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeUpdateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeUpdateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCodeCustomCode)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCodeCustomCode?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCode)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCode?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceIncludeItem)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceIncludeItem?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionOfferCodeCustomCodeCreateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionOfferCodeCustomCodeCreateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCodeDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCodeDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCodeDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCodeDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeUpdateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionOfferCodeCustomCodeUpdateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodeUpdateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionOfferCodeCustomCodeUpdateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCodeCustomCode))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCodeCustomCodeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCodeCustomCode?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCodeCustomCodeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCode))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCodeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCode?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionOfferCodeCustomCodesGetInstanceFieldsSubscriptionOfferCodeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceIncludeItem))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionOfferCodeCustomCodesGetInstanceIncludeItemJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCodesGetInstanceIncludeItem?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.SubscriptionOfferCodeCustomCodesGetInstanceIncludeItemNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
-        }
-
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[5];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -242,9 +104,15 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new SubscriptionOfferCodeCustomCodesSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_4A62B132BC4EC334.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_C03A0C3782FF4A12.TypeInfoResolver,
+
+                    2 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
+
+                    3 => global::AppStoreConnect.SourceGenerationContextGraph_904AE5E6B1E52347.TypeInfoResolver,
+
+                    4 => global::AppStoreConnect.SourceGenerationContextGraph_5ACFB29FD325BDD9.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }

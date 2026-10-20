@@ -2,73 +2,7 @@
 #nullable enable
 
 namespace AppStoreConnect
-{
-    /// <summary>
-    ///
-    /// </summary>
-    [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
-    )]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, string>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.Dictionary<string, object>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<object>), TypeInfoPropertyName = "SystemCollectionsGeneric_ObjectList")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Text.Json.JsonElement?))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminator))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminatorType), TypeInfoPropertyName = "AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminatorType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataType), TypeInfoPropertyName = "AppClipDefaultExperienceLocalizationCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataRelationships))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperience))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataType), TypeInfoPropertyName = "AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationUpdateRequest))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationUpdateRequestData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationUpdateRequestDataType), TypeInfoPropertyName = "AppClipDefaultExperienceLocalizationUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationUpdateRequestDataAttributes))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponse))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponseData))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponseDataType), TypeInfoPropertyName = "AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponseDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperienceLocalization>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperienceLocalization), TypeInfoPropertyName = "AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperienceLocalization2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperience>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperience), TypeInfoPropertyName = "AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperience2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipHeaderImage>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipHeaderImage), TypeInfoPropertyName = "AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipHeaderImage2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceIncludeItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceIncludeItem), TypeInfoPropertyName = "AppClipDefaultExperienceLocalizationsGetInstanceIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipHeaderImage>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipHeaderImage), TypeInfoPropertyName = "AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipHeaderImage2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipDefaultExperienceLocalization>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipDefaultExperienceLocalization), TypeInfoPropertyName = "AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipDefaultExperienceLocalization2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedIncludeItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedIncludeItem), TypeInfoPropertyName = "AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminatorType?), TypeInfoPropertyName = "NullableAppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminatorType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataType?), TypeInfoPropertyName = "NullableAppClipDefaultExperienceLocalizationCreateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataType?), TypeInfoPropertyName = "NullableAppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationUpdateRequestDataType?), TypeInfoPropertyName = "NullableAppClipDefaultExperienceLocalizationUpdateRequestDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponseDataType?), TypeInfoPropertyName = "NullableAppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponseDataType2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperienceLocalization?), TypeInfoPropertyName = "NullableAppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperienceLocalization2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperience?), TypeInfoPropertyName = "NullableAppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperience2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipHeaderImage?), TypeInfoPropertyName = "NullableAppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipHeaderImage2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceIncludeItem?), TypeInfoPropertyName = "NullableAppClipDefaultExperienceLocalizationsGetInstanceIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipHeaderImage?), TypeInfoPropertyName = "NullableAppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipHeaderImage2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipDefaultExperienceLocalization?), TypeInfoPropertyName = "AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipDefaultExperienceLoc_1ec9874b681342b8")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedIncludeItem?), TypeInfoPropertyName = "NullableAppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedIncludeItem2")]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperienceLocalization>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperience>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipHeaderImage>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceIncludeItem>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipHeaderImage>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipDefaultExperienceLocalization>))]
-    [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedIncludeItem>))]
-    internal sealed partial class AppClipDefaultExperienceLocalizationsSourceGenerationContextChunk0 : global::System.Text.Json.Serialization.JsonSerializerContext
-    {
-    }
-    /// <summary>
+{    /// <summary>
     ///
     /// </summary>
     public sealed partial class AppClipDefaultExperienceLocalizationsSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
@@ -112,8 +46,14 @@ namespace AppStoreConnect
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
         {
-            global::AppStoreConnect.PartitionCoreSourceGenerationContext.AddConverters(options);
-            options.Converters.Add(new LazyEnumJsonConverterFactory());
+            global::AppStoreConnect.SourceGenerationContextGraph_6C62D3929DB88E50.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_B9A2304FE0A43215.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_092199D3B9176BBB.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_E6E2C7B36E8890A1.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_220A1CF5EA357AAC.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_10B0D73839032A6F.AddConverters(options);
+            global::AppStoreConnect.SourceGenerationContextGraph_A09E4D32CAC63276.AddConverters(options);
         }
 
         private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
@@ -128,192 +68,10 @@ namespace AppStoreConnect
             return options;
         }
 
-
-        private sealed class LazyEnumJsonConverterFactory : global::System.Text.Json.Serialization.JsonConverterFactory
-        {
-            public override bool CanConvert(global::System.Type typeToConvert)
-            {
-                return
-                    typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminatorType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminatorType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationUpdateRequestDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationUpdateRequestDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponseDataType)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponseDataType?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperienceLocalization)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperienceLocalization?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperience)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperience?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipHeaderImage)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipHeaderImage?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceIncludeItem)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceIncludeItem?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipHeaderImage)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipHeaderImage?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipDefaultExperienceLocalization)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipDefaultExperienceLocalization?)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedIncludeItem)
-
-                    || typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedIncludeItem?);
-            }
-
-            public override global::System.Text.Json.Serialization.JsonConverter CreateConverter(
-                global::System.Type typeToConvert,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminatorType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminatorTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminatorType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminatorTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationCreateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationCreateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationUpdateRequestDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationUpdateRequestDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationUpdateRequestDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationUpdateRequestDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponseDataType))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponseDataTypeJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponseDataType?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponseDataTypeNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperienceLocalization))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperienceLocalizationJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperienceLocalization?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperienceLocalizationNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperience))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperienceJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperience?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipDefaultExperienceNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipHeaderImage))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipHeaderImageJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipHeaderImage?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationsGetInstanceFieldsAppClipHeaderImageNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceIncludeItem))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationsGetInstanceIncludeItemJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsGetInstanceIncludeItem?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationsGetInstanceIncludeItemNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipHeaderImage))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipHeaderImageJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipHeaderImage?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipHeaderImageNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipDefaultExperienceLocalization))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipDefaultExperienceLocalizationJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipDefaultExperienceLocalization?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedFieldsAppClipDefaultExperienceLocalizationNullableJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedIncludeItem))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedIncludeItemJsonConverter();
-                }
-
-                if (typeToConvert == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedIncludeItem?))
-                {
-                    return new global::AppStoreConnect.JsonConverters.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedIncludeItemNullableJsonConverter();
-                }
-                throw new global::System.NotSupportedException($"No generated enum converter is registered for '{typeToConvert}'.");
-            }
-        }
-
         private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
         {
             private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[2];
+            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[8];
 
             public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
                 global::System.Type type,
@@ -349,9 +107,21 @@ namespace AppStoreConnect
             {
                 return index switch
                 {
-                    0 => new AppClipDefaultExperienceLocalizationsSourceGenerationContextChunk0(new global::System.Text.Json.JsonSerializerOptions()),
+                    0 => global::AppStoreConnect.SourceGenerationContextGraph_6C62D3929DB88E50.TypeInfoResolver,
 
-                    1 => global::AppStoreConnect.PartitionCoreSourceGenerationContext.TypeInfoResolver,
+                    1 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
+
+                    2 => global::AppStoreConnect.SourceGenerationContextGraph_B9A2304FE0A43215.TypeInfoResolver,
+
+                    3 => global::AppStoreConnect.SourceGenerationContextGraph_092199D3B9176BBB.TypeInfoResolver,
+
+                    4 => global::AppStoreConnect.SourceGenerationContextGraph_E6E2C7B36E8890A1.TypeInfoResolver,
+
+                    5 => global::AppStoreConnect.SourceGenerationContextGraph_220A1CF5EA357AAC.TypeInfoResolver,
+
+                    6 => global::AppStoreConnect.SourceGenerationContextGraph_10B0D73839032A6F.TypeInfoResolver,
+
+                    7 => global::AppStoreConnect.SourceGenerationContextGraph_A09E4D32CAC63276.TypeInfoResolver,
                     _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
                 };
             }
