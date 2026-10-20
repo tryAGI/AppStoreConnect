@@ -7,7 +7,8 @@ namespace AppStoreConnect
     ///
     /// </summary>
     [global::System.Text.Json.Serialization.JsonSourceGenerationOptions(
-        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull
+        DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
+        GenerationMode = global::System.Text.Json.Serialization.JsonSourceGenerationMode.Metadata
     )]
     #pragma warning disable CS0618 // This registration names a deprecated API model.
     [global::System.Text.Json.Serialization.JsonSerializable(typeof(global::AppStoreConnect.GameCenterAchievementLocalizationsGameCenterAchievementImageGetToOneRelatedFieldsGameCenterAchievementLocalization?), TypeInfoPropertyName = "GameCenterAchievementLocalizationsGameCenterAchievementImageGetToOneRelatedFieldsGameCenterAchievementL_c73986511804d25e")]
