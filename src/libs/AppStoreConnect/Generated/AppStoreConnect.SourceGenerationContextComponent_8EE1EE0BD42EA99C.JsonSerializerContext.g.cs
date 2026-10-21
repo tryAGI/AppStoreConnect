@@ -3,31 +3,16 @@
 namespace AppStoreConnect
 {
     /// <summary>Source-generated JSON metadata for this scope.</summary>
-    internal sealed partial class SourceGenerationContextComponent_8EE1EE0BD42EA99C : global::System.Text.Json.Serialization.JsonSerializerContext
+    internal static partial class SourceGenerationContextComponent_8EE1EE0BD42EA99C
     {
-        internal static global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope => ScopeHolder.Value;
-        internal static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver TypeInfoResolver => MetadataScope;
-        private static class ScopeHolder
-        {
-            internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope Value = new(
+
+        internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::AppStoreConnect.SourceGenerationContextMetadataScope>[] {
                     static () => global::AppStoreConnect.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_79A5F54982E107E6.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_B760F44FA5965C24.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_D10DC2AF6F45F6FD.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_D694AB5FB367ECE7.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_E5DEECA9076C6D82.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_FAA5F4BD8D071CC9.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_FC0ACBA26C044EC8.MetadataScope,
                 }, ContributeConverters);
-        }
-        private static class DefaultHolder
-        {
-            internal static readonly global::System.Text.Json.JsonSerializerOptions Options = MetadataScope.CreateOptions();
-            internal static readonly SourceGenerationContextComponent_8EE1EE0BD42EA99C Instance = new(Options);
-        }
-        /// <summary>The default context for this scope.</summary>
-        public static SourceGenerationContextComponent_8EE1EE0BD42EA99C Default => DefaultHolder.Instance;
-        private SourceGenerationContextComponent_8EE1EE0BD42EA99C(global::System.Text.Json.JsonSerializerOptions options) : base(options) { }
-        /// <inheritdoc />
-        protected override global::System.Text.Json.JsonSerializerOptions? GeneratedSerializerOptions => DefaultHolder.Options;
-        /// <inheritdoc />
-        public override global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(global::System.Type type) =>
-            MetadataScope.GetTypeInfo(type, Options);
+        internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
+
         /// <summary>Adds converters required by this scope.</summary>
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options) => MetadataScope.AddConverters(options);

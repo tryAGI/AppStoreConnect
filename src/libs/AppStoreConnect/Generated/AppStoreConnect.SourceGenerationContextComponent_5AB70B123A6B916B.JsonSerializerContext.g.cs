@@ -3,31 +3,16 @@
 namespace AppStoreConnect
 {
     /// <summary>Source-generated JSON metadata for this scope.</summary>
-    internal sealed partial class SourceGenerationContextComponent_5AB70B123A6B916B : global::System.Text.Json.Serialization.JsonSerializerContext
+    internal static partial class SourceGenerationContextComponent_5AB70B123A6B916B
     {
-        internal static global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope => ScopeHolder.Value;
-        internal static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver TypeInfoResolver => MetadataScope;
-        private static class ScopeHolder
-        {
-            internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope Value = new(
+
+        internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::AppStoreConnect.SourceGenerationContextMetadataScope>[] {
                     static () => global::AppStoreConnect.SourceGenerationContextComponent_0832B63110AFFE3B.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_1D74E8FA113C90FC.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_86D00E537BEA9778.MetadataScope,
                 }, ContributeConverters);
-        }
-        private static class DefaultHolder
-        {
-            internal static readonly global::System.Text.Json.JsonSerializerOptions Options = MetadataScope.CreateOptions();
-            internal static readonly SourceGenerationContextComponent_5AB70B123A6B916B Instance = new(Options);
-        }
-        /// <summary>The default context for this scope.</summary>
-        public static SourceGenerationContextComponent_5AB70B123A6B916B Default => DefaultHolder.Instance;
-        private SourceGenerationContextComponent_5AB70B123A6B916B(global::System.Text.Json.JsonSerializerOptions options) : base(options) { }
-        /// <inheritdoc />
-        protected override global::System.Text.Json.JsonSerializerOptions? GeneratedSerializerOptions => DefaultHolder.Options;
-        /// <inheritdoc />
-        public override global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(global::System.Type type) =>
-            MetadataScope.GetTypeInfo(type, Options);
+        internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
+
         /// <summary>Adds converters required by this scope.</summary>
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
         public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options) => MetadataScope.AddConverters(options);
