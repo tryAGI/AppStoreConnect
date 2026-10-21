@@ -21,7 +21,7 @@ namespace AppStoreConnect
         /// </summary>
         public string ToJson()
         {
-            return ToJson(global::AppStoreConnect.SourceGenerationContextGraph_BBCE1E5136343A00.Default);
+            return ToJson(global::AppStoreConnect.SourceGenerationContextComponent_43BEA75C9395026A.Default);
         }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace AppStoreConnect
         {
             if (jsonSerializerOptions is null)
             {
-                return ToJson(global::AppStoreConnect.SourceGenerationContextGraph_BBCE1E5136343A00.Default);
+                return ToJson(global::AppStoreConnect.SourceGenerationContextComponent_43BEA75C9395026A.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Serialize(
@@ -65,7 +65,7 @@ namespace AppStoreConnect
         {
             return FromJson(
                 json,
-                global::AppStoreConnect.SourceGenerationContextGraph_BBCE1E5136343A00.Default);
+                global::AppStoreConnect.SourceGenerationContextComponent_43BEA75C9395026A.Default);
         }
 
         /// <summary>
@@ -83,7 +83,7 @@ namespace AppStoreConnect
             {
                 return FromJson(
                     json,
-                    global::AppStoreConnect.SourceGenerationContextGraph_BBCE1E5136343A00.Default);
+                    global::AppStoreConnect.SourceGenerationContextComponent_43BEA75C9395026A.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Deserialize<global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImage>(
@@ -112,7 +112,7 @@ namespace AppStoreConnect
         {
             return FromJsonStreamAsync(
                 jsonStream,
-                global::AppStoreConnect.SourceGenerationContextGraph_BBCE1E5136343A00.Default);
+                global::AppStoreConnect.SourceGenerationContextComponent_43BEA75C9395026A.Default);
         }
 
         /// <summary>
@@ -130,7 +130,7 @@ namespace AppStoreConnect
             {
                 return FromJsonStreamAsync(
                     jsonStream,
-                    global::AppStoreConnect.SourceGenerationContextGraph_BBCE1E5136343A00.Default);
+                    global::AppStoreConnect.SourceGenerationContextComponent_43BEA75C9395026A.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsAppAssetLibraryImage?>(

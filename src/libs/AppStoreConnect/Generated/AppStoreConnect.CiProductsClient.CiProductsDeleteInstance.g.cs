@@ -67,7 +67,7 @@ namespace AppStoreConnect
             global::System.Threading.CancellationToken cancellationToken = default)
         {
             var JsonSerializerContext = JsonSerializerContextProvider?.Value ??
-                global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.Default;
+                global::AppStoreConnect.SourceGenerationContextOperation_9BF5544FD9824065.Default;
             PrepareArguments(
                 client: HttpClient);
             PrepareCiProductsDeleteInstanceArguments(

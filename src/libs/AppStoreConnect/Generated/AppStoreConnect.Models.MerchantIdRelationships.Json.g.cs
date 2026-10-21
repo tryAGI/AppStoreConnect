@@ -21,7 +21,7 @@ namespace AppStoreConnect
         /// </summary>
         public string ToJson()
         {
-            return ToJson(global::AppStoreConnect.SourceGenerationContextGraph_0B84207D74CA7CC6.Default);
+            return ToJson(global::AppStoreConnect.SourceGenerationContextComponent_9B39C44EB345D2AD.Default);
         }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace AppStoreConnect
         {
             if (jsonSerializerOptions is null)
             {
-                return ToJson(global::AppStoreConnect.SourceGenerationContextGraph_0B84207D74CA7CC6.Default);
+                return ToJson(global::AppStoreConnect.SourceGenerationContextComponent_9B39C44EB345D2AD.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Serialize(
@@ -65,7 +65,7 @@ namespace AppStoreConnect
         {
             return FromJson(
                 json,
-                global::AppStoreConnect.SourceGenerationContextGraph_0B84207D74CA7CC6.Default);
+                global::AppStoreConnect.SourceGenerationContextComponent_9B39C44EB345D2AD.Default);
         }
 
         /// <summary>
@@ -83,7 +83,7 @@ namespace AppStoreConnect
             {
                 return FromJson(
                     json,
-                    global::AppStoreConnect.SourceGenerationContextGraph_0B84207D74CA7CC6.Default);
+                    global::AppStoreConnect.SourceGenerationContextComponent_9B39C44EB345D2AD.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Deserialize<global::AppStoreConnect.MerchantIdRelationships>(
@@ -112,7 +112,7 @@ namespace AppStoreConnect
         {
             return FromJsonStreamAsync(
                 jsonStream,
-                global::AppStoreConnect.SourceGenerationContextGraph_0B84207D74CA7CC6.Default);
+                global::AppStoreConnect.SourceGenerationContextComponent_9B39C44EB345D2AD.Default);
         }
 
         /// <summary>
@@ -130,7 +130,7 @@ namespace AppStoreConnect
             {
                 return FromJsonStreamAsync(
                     jsonStream,
-                    global::AppStoreConnect.SourceGenerationContextGraph_0B84207D74CA7CC6.Default);
+                    global::AppStoreConnect.SourceGenerationContextComponent_9B39C44EB345D2AD.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::AppStoreConnect.MerchantIdRelationships?>(

@@ -1,166 +1,36 @@
 
 #nullable enable
-
 namespace AppStoreConnect
-{    /// <summary>
-    ///
-    /// </summary>
+{
+    /// <summary>Source-generated JSON metadata for this scope.</summary>
     public sealed partial class BetaTestersSourceGenerationContext : global::System.Text.Json.Serialization.JsonSerializerContext
     {
-        private static readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver Resolver = new LazyChunkResolver();
-
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        internal static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver TypeInfoResolver => Resolver;
-
-
-        private static readonly global::System.Text.Json.JsonSerializerOptions DefaultOptions = CreateDefaultOptions();
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static BetaTestersSourceGenerationContext Default { get; } = new(DefaultOptions);
-
-        private BetaTestersSourceGenerationContext(global::System.Text.Json.JsonSerializerOptions options)
-            : base(options)
+        internal static global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope => ScopeHolder.Value;
+        internal static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver TypeInfoResolver => MetadataScope;
+        private static class ScopeHolder
         {
+            internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope Value = new(
+                null,
+                new global::System.Func<global::AppStoreConnect.SourceGenerationContextMetadataScope>[] {
+                    static () => global::AppStoreConnect.SourceGenerationContextComponent_57BE895C93D51A0F.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_A9FD73A68E8D704F.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_B4DB352D83D88517.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_2107250EEAC8C9ED.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_2E2A2BB580C52B6F.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_6DA88C34BA124C41.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_CAA29E7A882B7E4A.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_8EC8EC25B177F646.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_9C8C15AF75D0685F.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_B7BE871F99DE5C91.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_AD0806BD8FF86C18.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_6F2097A7FD7800E8.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_5C5EEBE9AE5990A3.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_100F5CDFFA646D33.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_D9F8667443194D64.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_AF075F0112219822.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_488A5D737E196788.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_FAAF18B177E6DB8D.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_86FB332364BD06D1.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_D6F8B8275E607810.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_CBAF32AB448A7A38.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_B8153711591CA788.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_70CF3E9F15D57FE3.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_05BF36C073875770.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_AA03D23AF79EAE56.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_5D1342F7501B2708.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_E9AEDDCED3657A17.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_98B22D18ED61532C.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_23D63F76B56403A0.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_8BD2DC2BFDE70838.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_BB660BDE676C8547.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_9346D42387BA7634.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_57B4BCF87A17C047.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_C2787439847BD1F4.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_A77A5C67E6109EC7.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_6965630EAC37BAAE.MetadataScope,
+                }, null);
         }
-
+        private static class DefaultHolder
+        {
+            internal static readonly global::System.Text.Json.JsonSerializerOptions Options = MetadataScope.CreateOptions();
+            internal static readonly BetaTestersSourceGenerationContext Instance = new(Options);
+        }
+        /// <summary>The default context for this scope.</summary>
+        public static BetaTestersSourceGenerationContext Default => DefaultHolder.Instance;
+        private BetaTestersSourceGenerationContext(global::System.Text.Json.JsonSerializerOptions options) : base(options) { }
         /// <inheritdoc />
-        protected override global::System.Text.Json.JsonSerializerOptions? GeneratedSerializerOptions => DefaultOptions;
-
+        protected override global::System.Text.Json.JsonSerializerOptions? GeneratedSerializerOptions => DefaultHolder.Options;
         /// <inheritdoc />
-        public override global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(global::System.Type type)
-        {
-            return Resolver.GetTypeInfo(type, Options);
-        }
-
-        /// <summary>
-        /// Adds this package's converters to <paramref name="options"/>.
-        /// </summary>
-        /// <remarks>
-        /// A converter has to be on the options a chained resolver builds its JsonTypeInfo against,
-        /// and a context resolves types from every package below it. Each package contributes only
-        /// what it owns and calls down the chain for the rest, so the family's converter table is
-        /// written once rather than copied into all of them.
-        /// </remarks>
+        public override global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(global::System.Type type) =>
+            MetadataScope.GetTypeInfo(type, Options);
+        /// <summary>Adds converters required by this scope.</summary>
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options)
-        {
-            global::AppStoreConnect.SourceGenerationContextGraph_7CDCCFBD80768689.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_5125101B710CC327.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_02D08603E811C86C.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_6DA88C34BA124C41.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_78C592E52CB5A9FA.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_DBCC304773024619.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_BCE3D72CB56B2D5F.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_761F0EC3C737A0D7.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_FCD7A1526E656A08.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_FE3F96C4056A0248.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_80FDD0A2047F427E.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_726561F71F2CA118.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_CC5986EB0BC6D6A7.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_8D8227DE2F5CA601.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_EB380ECC1572233D.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_B333D997D5FC421F.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_E6D7594A7C5CADC0.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_01286B345C7FB528.AddConverters(options);
-            global::AppStoreConnect.SourceGenerationContextGraph_03F88E496C839963.AddConverters(options);
-        }
+        public static void AddConverters(global::System.Text.Json.JsonSerializerOptions options) => MetadataScope.AddConverters(options);
 
-        private static global::System.Text.Json.JsonSerializerOptions CreateDefaultOptions()
-        {
-            var options = new global::System.Text.Json.JsonSerializerOptions
-            {
-                DefaultIgnoreCondition = global::System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull,
-                TypeInfoResolver = Resolver,
-            };
-            AddConverters(options);
-
-            return options;
-        }
-
-        private sealed class LazyChunkResolver : global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver
-        {
-            private readonly object _gate = new();
-            private readonly global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[] _resolvers = new global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver?[20];
-
-            public global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? GetTypeInfo(
-                global::System.Type type,
-                global::System.Text.Json.JsonSerializerOptions options)
-            {
-                for (var index = 0; index < _resolvers.Length; index++)
-                {
-                    var typeInfo = GetResolver(index).GetTypeInfo(type, options);
-                    if (typeInfo is not null)
-                    {
-                        return typeInfo;
-                    }
-                }
-
-                return null;
-            }
-
-            private global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver GetResolver(int index)
-            {
-                var resolver = global::System.Threading.Volatile.Read(ref _resolvers[index]);
-                if (resolver is not null)
-                {
-                    return resolver;
-                }
-
-                lock (_gate)
-                {
-                    return _resolvers[index] ??= CreateResolver(index);
-                }
-            }
-
-            private static global::System.Text.Json.Serialization.Metadata.IJsonTypeInfoResolver CreateResolver(int index)
-            {
-                return index switch
-                {
-                    0 => global::AppStoreConnect.SourceGenerationContextGraph_7CDCCFBD80768689.TypeInfoResolver,
-
-                    1 => global::AppStoreConnect.SourceGenerationContextGraph_B13FE678A1B36769.TypeInfoResolver,
-
-                    2 => global::AppStoreConnect.SourceGenerationContextGraph_5125101B710CC327.TypeInfoResolver,
-
-                    3 => global::AppStoreConnect.SourceGenerationContextGraph_02D08603E811C86C.TypeInfoResolver,
-
-                    4 => global::AppStoreConnect.SourceGenerationContextGraph_6DA88C34BA124C41.TypeInfoResolver,
-
-                    5 => global::AppStoreConnect.SourceGenerationContextGraph_78C592E52CB5A9FA.TypeInfoResolver,
-
-                    6 => global::AppStoreConnect.SourceGenerationContextGraph_DBCC304773024619.TypeInfoResolver,
-
-                    7 => global::AppStoreConnect.SourceGenerationContextGraph_BCE3D72CB56B2D5F.TypeInfoResolver,
-
-                    8 => global::AppStoreConnect.SourceGenerationContextGraph_761F0EC3C737A0D7.TypeInfoResolver,
-
-                    9 => global::AppStoreConnect.SourceGenerationContextGraph_FCD7A1526E656A08.TypeInfoResolver,
-
-                    10 => global::AppStoreConnect.SourceGenerationContextGraph_FE3F96C4056A0248.TypeInfoResolver,
-
-                    11 => global::AppStoreConnect.SourceGenerationContextGraph_80FDD0A2047F427E.TypeInfoResolver,
-
-                    12 => global::AppStoreConnect.SourceGenerationContextGraph_726561F71F2CA118.TypeInfoResolver,
-
-                    13 => global::AppStoreConnect.SourceGenerationContextGraph_CC5986EB0BC6D6A7.TypeInfoResolver,
-
-                    14 => global::AppStoreConnect.SourceGenerationContextGraph_8D8227DE2F5CA601.TypeInfoResolver,
-
-                    15 => global::AppStoreConnect.SourceGenerationContextGraph_EB380ECC1572233D.TypeInfoResolver,
-
-                    16 => global::AppStoreConnect.SourceGenerationContextGraph_B333D997D5FC421F.TypeInfoResolver,
-
-                    17 => global::AppStoreConnect.SourceGenerationContextGraph_E6D7594A7C5CADC0.TypeInfoResolver,
-
-                    18 => global::AppStoreConnect.SourceGenerationContextGraph_01286B345C7FB528.TypeInfoResolver,
-
-                    19 => global::AppStoreConnect.SourceGenerationContextGraph_03F88E496C839963.TypeInfoResolver,
-                    _ => throw new global::System.ArgumentOutOfRangeException(nameof(index)),
-                };
-            }
-        }
     }
 }

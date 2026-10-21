@@ -21,7 +21,7 @@ namespace AppStoreConnect
         /// </summary>
         public string ToJson()
         {
-            return ToJson(global::AppStoreConnect.SourceGenerationContextGraph_B3A5F0B1BC386728.Default);
+            return ToJson(global::AppStoreConnect.SourceGenerationContextComponent_EA3CB9B9516DFBC6.Default);
         }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace AppStoreConnect
         {
             if (jsonSerializerOptions is null)
             {
-                return ToJson(global::AppStoreConnect.SourceGenerationContextGraph_B3A5F0B1BC386728.Default);
+                return ToJson(global::AppStoreConnect.SourceGenerationContextComponent_EA3CB9B9516DFBC6.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Serialize(
@@ -65,7 +65,7 @@ namespace AppStoreConnect
         {
             return FromJson(
                 json,
-                global::AppStoreConnect.SourceGenerationContextGraph_B3A5F0B1BC386728.Default);
+                global::AppStoreConnect.SourceGenerationContextComponent_EA3CB9B9516DFBC6.Default);
         }
 
         /// <summary>
@@ -83,7 +83,7 @@ namespace AppStoreConnect
             {
                 return FromJson(
                     json,
-                    global::AppStoreConnect.SourceGenerationContextGraph_B3A5F0B1BC386728.Default);
+                    global::AppStoreConnect.SourceGenerationContextComponent_EA3CB9B9516DFBC6.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Deserialize<global::AppStoreConnect.GameCenterActivityImageResponse>(
@@ -112,7 +112,7 @@ namespace AppStoreConnect
         {
             return FromJsonStreamAsync(
                 jsonStream,
-                global::AppStoreConnect.SourceGenerationContextGraph_B3A5F0B1BC386728.Default);
+                global::AppStoreConnect.SourceGenerationContextComponent_EA3CB9B9516DFBC6.Default);
         }
 
         /// <summary>
@@ -130,7 +130,7 @@ namespace AppStoreConnect
             {
                 return FromJsonStreamAsync(
                     jsonStream,
-                    global::AppStoreConnect.SourceGenerationContextGraph_B3A5F0B1BC386728.Default);
+                    global::AppStoreConnect.SourceGenerationContextComponent_EA3CB9B9516DFBC6.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::AppStoreConnect.GameCenterActivityImageResponse?>(

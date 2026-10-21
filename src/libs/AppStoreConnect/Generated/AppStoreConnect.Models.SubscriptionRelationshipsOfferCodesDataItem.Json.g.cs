@@ -21,7 +21,7 @@ namespace AppStoreConnect
         /// </summary>
         public string ToJson()
         {
-            return ToJson(global::AppStoreConnect.SourceGenerationContextGraph_C0C45F24A76FDA5B.Default);
+            return ToJson(global::AppStoreConnect.SourceGenerationContextComponent_227FEBE6406DBB03.Default);
         }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace AppStoreConnect
         {
             if (jsonSerializerOptions is null)
             {
-                return ToJson(global::AppStoreConnect.SourceGenerationContextGraph_C0C45F24A76FDA5B.Default);
+                return ToJson(global::AppStoreConnect.SourceGenerationContextComponent_227FEBE6406DBB03.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Serialize(
@@ -65,7 +65,7 @@ namespace AppStoreConnect
         {
             return FromJson(
                 json,
-                global::AppStoreConnect.SourceGenerationContextGraph_C0C45F24A76FDA5B.Default);
+                global::AppStoreConnect.SourceGenerationContextComponent_227FEBE6406DBB03.Default);
         }
 
         /// <summary>
@@ -83,7 +83,7 @@ namespace AppStoreConnect
             {
                 return FromJson(
                     json,
-                    global::AppStoreConnect.SourceGenerationContextGraph_C0C45F24A76FDA5B.Default);
+                    global::AppStoreConnect.SourceGenerationContextComponent_227FEBE6406DBB03.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Deserialize<global::AppStoreConnect.SubscriptionRelationshipsOfferCodesDataItem>(
@@ -112,7 +112,7 @@ namespace AppStoreConnect
         {
             return FromJsonStreamAsync(
                 jsonStream,
-                global::AppStoreConnect.SourceGenerationContextGraph_C0C45F24A76FDA5B.Default);
+                global::AppStoreConnect.SourceGenerationContextComponent_227FEBE6406DBB03.Default);
         }
 
         /// <summary>
@@ -130,7 +130,7 @@ namespace AppStoreConnect
             {
                 return FromJsonStreamAsync(
                     jsonStream,
-                    global::AppStoreConnect.SourceGenerationContextGraph_C0C45F24A76FDA5B.Default);
+                    global::AppStoreConnect.SourceGenerationContextComponent_227FEBE6406DBB03.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::AppStoreConnect.SubscriptionRelationshipsOfferCodesDataItem?>(

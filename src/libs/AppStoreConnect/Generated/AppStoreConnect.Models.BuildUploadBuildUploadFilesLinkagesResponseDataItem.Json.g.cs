@@ -21,7 +21,7 @@ namespace AppStoreConnect
         /// </summary>
         public string ToJson()
         {
-            return ToJson(global::AppStoreConnect.SourceGenerationContextGraph_D7E3B64A95BA1304.Default);
+            return ToJson(global::AppStoreConnect.SourceGenerationContextComponent_1DD1F4C94F4B5A3B.Default);
         }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace AppStoreConnect
         {
             if (jsonSerializerOptions is null)
             {
-                return ToJson(global::AppStoreConnect.SourceGenerationContextGraph_D7E3B64A95BA1304.Default);
+                return ToJson(global::AppStoreConnect.SourceGenerationContextComponent_1DD1F4C94F4B5A3B.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Serialize(
@@ -65,7 +65,7 @@ namespace AppStoreConnect
         {
             return FromJson(
                 json,
-                global::AppStoreConnect.SourceGenerationContextGraph_D7E3B64A95BA1304.Default);
+                global::AppStoreConnect.SourceGenerationContextComponent_1DD1F4C94F4B5A3B.Default);
         }
 
         /// <summary>
@@ -83,7 +83,7 @@ namespace AppStoreConnect
             {
                 return FromJson(
                     json,
-                    global::AppStoreConnect.SourceGenerationContextGraph_D7E3B64A95BA1304.Default);
+                    global::AppStoreConnect.SourceGenerationContextComponent_1DD1F4C94F4B5A3B.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Deserialize<global::AppStoreConnect.BuildUploadBuildUploadFilesLinkagesResponseDataItem>(
@@ -112,7 +112,7 @@ namespace AppStoreConnect
         {
             return FromJsonStreamAsync(
                 jsonStream,
-                global::AppStoreConnect.SourceGenerationContextGraph_D7E3B64A95BA1304.Default);
+                global::AppStoreConnect.SourceGenerationContextComponent_1DD1F4C94F4B5A3B.Default);
         }
 
         /// <summary>
@@ -130,7 +130,7 @@ namespace AppStoreConnect
             {
                 return FromJsonStreamAsync(
                     jsonStream,
-                    global::AppStoreConnect.SourceGenerationContextGraph_D7E3B64A95BA1304.Default);
+                    global::AppStoreConnect.SourceGenerationContextComponent_1DD1F4C94F4B5A3B.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::AppStoreConnect.BuildUploadBuildUploadFilesLinkagesResponseDataItem?>(

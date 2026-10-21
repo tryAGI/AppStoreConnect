@@ -21,7 +21,7 @@ namespace AppStoreConnect
         /// </summary>
         public string ToJson()
         {
-            return ToJson(global::AppStoreConnect.SourceGenerationContextGraph_158A519512CC306A.Default);
+            return ToJson(global::AppStoreConnect.SourceGenerationContextComponent_05A3B9FEA71FE3BC.Default);
         }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace AppStoreConnect
         {
             if (jsonSerializerOptions is null)
             {
-                return ToJson(global::AppStoreConnect.SourceGenerationContextGraph_158A519512CC306A.Default);
+                return ToJson(global::AppStoreConnect.SourceGenerationContextComponent_05A3B9FEA71FE3BC.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Serialize(
@@ -65,7 +65,7 @@ namespace AppStoreConnect
         {
             return FromJson(
                 json,
-                global::AppStoreConnect.SourceGenerationContextGraph_158A519512CC306A.Default);
+                global::AppStoreConnect.SourceGenerationContextComponent_05A3B9FEA71FE3BC.Default);
         }
 
         /// <summary>
@@ -83,7 +83,7 @@ namespace AppStoreConnect
             {
                 return FromJson(
                     json,
-                    global::AppStoreConnect.SourceGenerationContextGraph_158A519512CC306A.Default);
+                    global::AppStoreConnect.SourceGenerationContextComponent_05A3B9FEA71FE3BC.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.Deserialize<global::AppStoreConnect.AppStoreReviewDetail>(
@@ -112,7 +112,7 @@ namespace AppStoreConnect
         {
             return FromJsonStreamAsync(
                 jsonStream,
-                global::AppStoreConnect.SourceGenerationContextGraph_158A519512CC306A.Default);
+                global::AppStoreConnect.SourceGenerationContextComponent_05A3B9FEA71FE3BC.Default);
         }
 
         /// <summary>
@@ -130,7 +130,7 @@ namespace AppStoreConnect
             {
                 return FromJsonStreamAsync(
                     jsonStream,
-                    global::AppStoreConnect.SourceGenerationContextGraph_158A519512CC306A.Default);
+                    global::AppStoreConnect.SourceGenerationContextComponent_05A3B9FEA71FE3BC.Default);
             }
 
             return global::System.Text.Json.JsonSerializer.DeserializeAsync<global::AppStoreConnect.AppStoreReviewDetail?>(
