@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.AndroidToIosAppMappingDetailUpdateRequest),
-                jsonSerializerContext) as global::AppStoreConnect.AndroidToIosAppMappingDetailUpdateRequest;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.AndroidToIosAppMappingDetailUpdateRequest))) as global::AppStoreConnect.AndroidToIosAppMappingDetailUpdateRequest;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.AndroidToIosAppMappingDetailUpdateRequest),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.AndroidToIosAppMappingDetailUpdateRequest;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.AndroidToIosAppMappingDetailUpdateRequest))).ConfigureAwait(false)) as global::AppStoreConnect.AndroidToIosAppMappingDetailUpdateRequest;
         }
 
         /// <summary>

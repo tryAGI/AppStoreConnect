@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.AppsBetaTesterUsagesV1MetricResponseDataItemDataPointValues),
-                jsonSerializerContext) as global::AppStoreConnect.AppsBetaTesterUsagesV1MetricResponseDataItemDataPointValues;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.AppsBetaTesterUsagesV1MetricResponseDataItemDataPointValues))) as global::AppStoreConnect.AppsBetaTesterUsagesV1MetricResponseDataItemDataPointValues;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.AppsBetaTesterUsagesV1MetricResponseDataItemDataPointValues),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.AppsBetaTesterUsagesV1MetricResponseDataItemDataPointValues;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.AppsBetaTesterUsagesV1MetricResponseDataItemDataPointValues))).ConfigureAwait(false)) as global::AppStoreConnect.AppsBetaTesterUsagesV1MetricResponseDataItemDataPointValues;
         }
 
         /// <summary>

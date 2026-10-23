@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.ScmPullRequestRelationshipsRepository),
-                jsonSerializerContext) as global::AppStoreConnect.ScmPullRequestRelationshipsRepository;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.ScmPullRequestRelationshipsRepository))) as global::AppStoreConnect.ScmPullRequestRelationshipsRepository;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.ScmPullRequestRelationshipsRepository),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.ScmPullRequestRelationshipsRepository;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.ScmPullRequestRelationshipsRepository))).ConfigureAwait(false)) as global::AppStoreConnect.ScmPullRequestRelationshipsRepository;
         }
 
         /// <summary>

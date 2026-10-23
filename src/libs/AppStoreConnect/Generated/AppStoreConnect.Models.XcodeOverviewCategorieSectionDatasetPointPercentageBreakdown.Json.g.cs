@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.XcodeOverviewCategorieSectionDatasetPointPercentageBreakdown),
-                jsonSerializerContext) as global::AppStoreConnect.XcodeOverviewCategorieSectionDatasetPointPercentageBreakdown;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.XcodeOverviewCategorieSectionDatasetPointPercentageBreakdown))) as global::AppStoreConnect.XcodeOverviewCategorieSectionDatasetPointPercentageBreakdown;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.XcodeOverviewCategorieSectionDatasetPointPercentageBreakdown),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.XcodeOverviewCategorieSectionDatasetPointPercentageBreakdown;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.XcodeOverviewCategorieSectionDatasetPointPercentageBreakdown))).ConfigureAwait(false)) as global::AppStoreConnect.XcodeOverviewCategorieSectionDatasetPointPercentageBreakdown;
         }
 
         /// <summary>
