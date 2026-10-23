@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.PagedDocumentLinks))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_PagedDocumentLinks.Create_PagedDocumentLinks(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0769.Create_PagedDocumentLinks(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

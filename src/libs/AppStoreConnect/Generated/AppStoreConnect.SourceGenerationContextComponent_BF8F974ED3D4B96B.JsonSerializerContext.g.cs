@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.GameCenterActivityCreateRequestDataRelationshipsVersions))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_GameCenterActivityCreateRequestDataRelationshipsVersions.Create_GameCenterActivityCreateRequestDataRelationshipsVersions(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0304.Create_GameCenterActivityCreateRequestDataRelationshipsVersions(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.GameCenterChallengeLocalizationAttributes))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_GameCenterChallengeLocalizationAttributes.Create_GameCenterChallengeLocalizationAttributes(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0322.Create_GameCenterChallengeLocalizationAttributes(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

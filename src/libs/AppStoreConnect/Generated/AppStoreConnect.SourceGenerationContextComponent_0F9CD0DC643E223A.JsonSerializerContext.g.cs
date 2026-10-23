@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppInfoAgeRatingDeclarationLinkageResponse))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppInfoAgeRatingDeclarationLinkageResponse.Create_AppInfoAgeRatingDeclarationLinkageResponse(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0091.Create_AppInfoAgeRatingDeclarationLinkageResponse(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

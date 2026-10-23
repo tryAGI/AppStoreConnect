@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppClipHeaderImageRelationships))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppClipHeaderImageRelationships.Create_AppClipHeaderImageRelationships(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0060.Create_AppClipHeaderImageRelationships(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

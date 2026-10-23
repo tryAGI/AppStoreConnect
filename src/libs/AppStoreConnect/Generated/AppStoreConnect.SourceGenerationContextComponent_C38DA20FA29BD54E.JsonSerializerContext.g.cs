@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.GameCenterChallengeLocalizationImageLinkageResponse))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_GameCenterChallengeLocalizationImageLinkageResponse.Create_GameCenterChallengeLocalizationImageLinkageResponse(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0322.Create_GameCenterChallengeLocalizationImageLinkageResponse(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

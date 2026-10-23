@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.PromotedPurchaseUpdateRequest))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_PromotedPurchaseUpdateRequest.Create_PromotedPurchaseUpdateRequest(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0780.Create_PromotedPurchaseUpdateRequest(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

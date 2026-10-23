@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BuildBundleFileSizesResponse))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_BuildBundleFileSizesResponse.Create_BuildBundleFileSizesResponse(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0224.Create_BuildBundleFileSizesResponse(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

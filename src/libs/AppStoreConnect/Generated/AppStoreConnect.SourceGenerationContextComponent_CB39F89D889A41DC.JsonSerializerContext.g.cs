@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BackgroundAssetUploadFile))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_BackgroundAssetUploadFile.Create_BackgroundAssetUploadFile(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0182.Create_BackgroundAssetUploadFile(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BuildRelationshipsAppStoreVersionData))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_BuildRelationshipsAppStoreVersionData.Create_BuildRelationshipsAppStoreVersionData(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0227.Create_BuildRelationshipsAppStoreVersionData(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

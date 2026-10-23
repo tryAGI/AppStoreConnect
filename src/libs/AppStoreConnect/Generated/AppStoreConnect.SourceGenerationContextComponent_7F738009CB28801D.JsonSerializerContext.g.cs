@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.RoutingAppCoverageRelationshipsAppStoreVersionDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_RoutingAppCoverageRelationshipsAppStoreVersionDataType2.Create_RoutingAppCoverageRelationshipsAppStoreVersionDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0794.Create_RoutingAppCoverageRelationshipsAppStoreVersionDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.RoutingAppCoverageRelationshipsAppStoreVersionDataType?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableRoutingAppCoverageRelationshipsAppStoreVersionDataType2.Create_NullableRoutingAppCoverageRelationshipsAppStoreVersionDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0734.Create_NullableRoutingAppCoverageRelationshipsAppStoreVersionDataType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

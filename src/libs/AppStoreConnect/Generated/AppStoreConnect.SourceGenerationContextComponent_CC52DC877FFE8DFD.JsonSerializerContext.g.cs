@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppPriceScheduleManualPricesLinkagesResponse))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppPriceScheduleManualPricesLinkagesResponse.Create_AppPriceScheduleManualPricesLinkagesResponse(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0109.Create_AppPriceScheduleManualPricesLinkagesResponse(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

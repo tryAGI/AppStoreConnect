@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BuildWithoutIncludesResponse))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_BuildWithoutIncludesResponse.Create_BuildWithoutIncludesResponse(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0234.Create_BuildWithoutIncludesResponse(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

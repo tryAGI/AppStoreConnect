@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CiScheduledStartConditionScheduleFrequency))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_CiScheduledStartConditionScheduleFrequency2.Create_CiScheduledStartConditionScheduleFrequency2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0263.Create_CiScheduledStartConditionScheduleFrequency2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.CiScheduledStartConditionScheduleFrequency?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableCiScheduledStartConditionScheduleFrequency2.Create_NullableCiScheduledStartConditionScheduleFrequency2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0614.Create_NullableCiScheduledStartConditionScheduleFrequency2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

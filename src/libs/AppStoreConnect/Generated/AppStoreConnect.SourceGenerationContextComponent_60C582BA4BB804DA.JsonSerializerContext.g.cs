@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppPriceScheduleType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppPriceScheduleType2.Create_AppPriceScheduleType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0110.Create_AppPriceScheduleType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppPriceScheduleType?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableAppPriceScheduleType2.Create_NullableAppPriceScheduleType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0536.Create_NullableAppPriceScheduleType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

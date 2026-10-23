@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppClipAdvancedExperienceCreateRequestDataAttributesPlaceMainAddressStructuredAddress))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppClipAdvancedExperienceCreateRequestDataAttributesPlaceMainAddressStructuredAddress.Create_AppClipAdvancedExperienceCreateRequestDataAttributesPlaceMainAddressStructuredAddress(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0044.Create_AppClipAdvancedExperienceCreateRequestDataAttributesPlaceMainAddressStructuredAddress(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

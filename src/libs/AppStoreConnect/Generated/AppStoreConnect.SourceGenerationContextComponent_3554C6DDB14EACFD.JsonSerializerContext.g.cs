@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CiXcodeVersionRelationshipsMacOsVersions))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_CiXcodeVersionRelationshipsMacOsVersions.Create_CiXcodeVersionRelationshipsMacOsVersions(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0269.Create_CiXcodeVersionRelationshipsMacOsVersions(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

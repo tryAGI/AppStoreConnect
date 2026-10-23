@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AlternativeDistributionDomainType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AlternativeDistributionDomainType2.Create_AlternativeDistributionDomainType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0004.Create_AlternativeDistributionDomainType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AlternativeDistributionDomainType?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableAlternativeDistributionDomainType2.Create_NullableAlternativeDistributionDomainType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0490.Create_NullableAlternativeDistributionDomainType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.EndUserLicenseAgreementType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_EndUserLicenseAgreementType2.Create_EndUserLicenseAgreementType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0279.Create_EndUserLicenseAgreementType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.EndUserLicenseAgreementType?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableEndUserLicenseAgreementType2.Create_NullableEndUserLicenseAgreementType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0621.Create_NullableEndUserLicenseAgreementType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

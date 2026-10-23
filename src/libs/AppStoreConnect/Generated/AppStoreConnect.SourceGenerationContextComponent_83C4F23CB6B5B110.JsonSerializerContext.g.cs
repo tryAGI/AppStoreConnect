@@ -33,13 +33,13 @@ namespace AppStoreConnect
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::AppStoreConnect.InAppPurchasePricePointsEqualizationsGetToManyRelatedFieldsInAppPurchasePricePoint))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_InAppPurchasePricePointsEqualizationsGetToManyRelatedFieldsInAppPurchasePricePoint2.Create_InAppPurchasePricePointsEqualizationsGetToManyRelatedFieldsInAppPurchasePricePoint2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0450.Create_InAppPurchasePricePointsEqualizationsGetToManyRelatedFieldsInAppPurchasePricePoint2(options);
                 }
                 #pragma warning restore CS0618
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::AppStoreConnect.InAppPurchasePricePointsEqualizationsGetToManyRelatedFieldsInAppPurchasePricePoint?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableInAppPurchasePricePointsEqualizationsGetToManyRelatedFieldsInAppPurchasePricePoint2.Create_NullableInAppPurchasePricePointsEqualizationsGetToManyRelatedFieldsInAppPurchasePricePoint2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0699.Create_NullableInAppPurchasePricePointsEqualizationsGetToManyRelatedFieldsInAppPurchasePricePoint2(options);
                 }
                 #pragma warning restore CS0618
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;

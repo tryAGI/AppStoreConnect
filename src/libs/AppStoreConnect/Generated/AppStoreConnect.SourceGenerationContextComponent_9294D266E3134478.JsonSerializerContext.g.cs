@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.DiagnosticInsight))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_DiagnosticInsight.Create_DiagnosticInsight(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0275.Create_DiagnosticInsight(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

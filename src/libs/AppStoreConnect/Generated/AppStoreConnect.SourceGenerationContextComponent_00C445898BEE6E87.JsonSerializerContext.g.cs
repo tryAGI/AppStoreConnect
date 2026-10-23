@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ScmGitReferenceRelationshipsRepositoryData))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_ScmGitReferenceRelationshipsRepositoryData.Create_ScmGitReferenceRelationshipsRepositoryData(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0796.Create_ScmGitReferenceRelationshipsRepositoryData(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BetaLicenseAgreementRelationships))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_BetaLicenseAgreementRelationships.Create_BetaLicenseAgreementRelationships(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0209.Create_BetaLicenseAgreementRelationships(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

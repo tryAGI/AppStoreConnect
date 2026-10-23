@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppRelationshipsBetaFeedbackCrashSubmissions))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppRelationshipsBetaFeedbackCrashSubmissions.Create_AppRelationshipsBetaFeedbackCrashSubmissions(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0116.Create_AppRelationshipsBetaFeedbackCrashSubmissions(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

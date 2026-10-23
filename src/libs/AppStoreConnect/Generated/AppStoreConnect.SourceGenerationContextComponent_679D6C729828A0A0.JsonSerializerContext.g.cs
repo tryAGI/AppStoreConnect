@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppPricePointV3RelationshipsEqualizations))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppPricePointV3RelationshipsEqualizations.Create_AppPricePointV3RelationshipsEqualizations(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0107.Create_AppPricePointV3RelationshipsEqualizations(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BetaPublicLinkUsagesV1MetricResponseDataItemDataPoint))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_BetaPublicLinkUsagesV1MetricResponseDataItemDataPoint.Create_BetaPublicLinkUsagesV1MetricResponseDataItemDataPoint(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0211.Create_BetaPublicLinkUsagesV1MetricResponseDataItemDataPoint(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

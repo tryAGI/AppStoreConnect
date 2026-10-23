@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BuildUploadRelationshipsAssetSpiFileData))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_BuildUploadRelationshipsAssetSpiFileData.Create_BuildUploadRelationshipsAssetSpiFileData(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0233.Create_BuildUploadRelationshipsAssetSpiFileData(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

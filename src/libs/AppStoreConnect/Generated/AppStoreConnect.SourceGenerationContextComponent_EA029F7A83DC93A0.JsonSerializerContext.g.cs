@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CiManualTagStartCondition))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_CiManualTagStartCondition.Create_CiManualTagStartCondition(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0256.Create_CiManualTagStartCondition(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

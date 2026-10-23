@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.MerchantIdRelationshipsCertificates))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_MerchantIdRelationshipsCertificates.Create_MerchantIdRelationshipsCertificates(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0481.Create_MerchantIdRelationshipsCertificates(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

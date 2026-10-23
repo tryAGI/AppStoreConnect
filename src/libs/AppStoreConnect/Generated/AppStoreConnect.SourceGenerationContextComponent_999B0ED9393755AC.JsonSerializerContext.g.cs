@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BuildBundleRelationshipsAppClipDomainDebugStatus))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_BuildBundleRelationshipsAppClipDomainDebugStatus.Create_BuildBundleRelationshipsAppClipDomainDebugStatus(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0224.Create_BuildBundleRelationshipsAppClipDomainDebugStatus(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

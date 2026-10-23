@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SandboxTestersV2Response))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_SandboxTestersV2Response.Create_SandboxTestersV2Response(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0796.Create_SandboxTestersV2Response(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

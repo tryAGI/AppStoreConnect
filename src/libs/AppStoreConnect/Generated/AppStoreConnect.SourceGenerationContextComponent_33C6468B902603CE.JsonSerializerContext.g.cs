@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SubscriptionGroupSubmissionResponse))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_SubscriptionGroupSubmissionResponse.Create_SubscriptionGroupSubmissionResponse(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1205.Create_SubscriptionGroupSubmissionResponse(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

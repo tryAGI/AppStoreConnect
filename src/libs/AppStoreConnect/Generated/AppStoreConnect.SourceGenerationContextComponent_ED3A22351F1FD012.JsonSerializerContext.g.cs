@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AlternativeDistributionDomain))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AlternativeDistributionDomain.Create_AlternativeDistributionDomain(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0004.Create_AlternativeDistributionDomain(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BuildIcon))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_BuildIcon.Create_BuildIcon(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0225.Create_BuildIcon(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

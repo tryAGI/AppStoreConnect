@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.GameCenterMatchmakingQueueUpdateRequestDataRelationshipsRuleSet))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_GameCenterMatchmakingQueueUpdateRequestDataRelationshipsRuleSet.Create_GameCenterMatchmakingQueueUpdateRequestDataRelationshipsRuleSet(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0418.Create_GameCenterMatchmakingQueueUpdateRequestDataRelationshipsRuleSet(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

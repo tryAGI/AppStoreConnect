@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.FileLocation))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_FileLocation.Create_FileLocation(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0280.Create_FileLocation(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

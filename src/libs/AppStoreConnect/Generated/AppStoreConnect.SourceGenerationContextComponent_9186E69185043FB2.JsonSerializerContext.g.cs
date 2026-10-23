@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppEventLocalizationsAppEventScreenshotsGetToManyRelatedFieldsAppEventScreenshot))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppEventLocalizationsAppEventScreenshotsGetToManyRelatedFieldsAppEventScreenshot2.Create_AppEventLocalizationsAppEventScreenshotsGetToManyRelatedFieldsAppEventScreenshot2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0084.Create_AppEventLocalizationsAppEventScreenshotsGetToManyRelatedFieldsAppEventScreenshot2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppEventLocalizationsAppEventScreenshotsGetToManyRelatedFieldsAppEventScreenshot?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableAppEventLocalizationsAppEventScreenshotsGetToManyRelatedFieldsAppEventScreenshot2.Create_NullableAppEventLocalizationsAppEventScreenshotsGetToManyRelatedFieldsAppEventScreenshot2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0524.Create_NullableAppEventLocalizationsAppEventScreenshotsGetToManyRelatedFieldsAppEventScreenshot2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.DiagnosticLogsProductDataItemDiagnosticLogCallStackTreeItemCallStack))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_DiagnosticLogsProductDataItemDiagnosticLogCallStackTreeItemCallStack.Create_DiagnosticLogsProductDataItemDiagnosticLogCallStackTreeItemCallStack(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0276.Create_DiagnosticLogsProductDataItemDiagnosticLogCallStackTreeItemCallStack(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

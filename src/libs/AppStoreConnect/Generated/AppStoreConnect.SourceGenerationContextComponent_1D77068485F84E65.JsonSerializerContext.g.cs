@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ErrorLinks))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_ErrorLinks.Create_ErrorLinks(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0280.Create_ErrorLinks(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

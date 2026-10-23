@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppAssetLibraryImageCreateRequestDataRelationshipsAssetLibraryData))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppAssetLibraryImageCreateRequestDataRelationshipsAssetLibraryData.Create_AppAssetLibraryImageCreateRequestDataRelationshipsAssetLibraryData(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0020.Create_AppAssetLibraryImageCreateRequestDataRelationshipsAssetLibraryData(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

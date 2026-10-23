@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppRelationshipsSubscriptionGracePeriod))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppRelationshipsSubscriptionGracePeriod.Create_AppRelationshipsSubscriptionGracePeriod(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0118.Create_AppRelationshipsSubscriptionGracePeriod(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

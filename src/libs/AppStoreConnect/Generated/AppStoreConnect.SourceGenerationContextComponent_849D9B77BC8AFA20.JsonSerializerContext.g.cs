@@ -31,11 +31,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryRefDatumAttributesFeaturePlacementPolicieGroupLimit>))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_SourceGenerationContextMetadataType_849D9B77BC8AFA20.Create_SourceGenerationContextMetadataType_849D9B77BC8AFA20(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0998.Create_SourceGenerationContextMetadataType_849D9B77BC8AFA20(options);
                 }
                 if (type == typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibraryRefDatumAttributesFeaturePlacementPolicieGroupLimit>))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_SourceGenerationContextMetadataType_7C612BE37A94C940.Create_SourceGenerationContextMetadataType_7C612BE37A94C940(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0987.Create_SourceGenerationContextMetadataType_7C612BE37A94C940(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

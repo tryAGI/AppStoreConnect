@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppEventAttributesArchivedTerritorySchedule))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppEventAttributesArchivedTerritorySchedule.Create_AppEventAttributesArchivedTerritorySchedule(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0080.Create_AppEventAttributesArchivedTerritorySchedule(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

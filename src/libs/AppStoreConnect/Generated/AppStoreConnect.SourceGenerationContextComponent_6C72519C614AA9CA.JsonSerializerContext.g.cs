@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppStoreVersionLocalizationRelationshipsSearchKeywords))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppStoreVersionLocalizationRelationshipsSearchKeywords.Create_AppStoreVersionLocalizationRelationshipsSearchKeywords(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0148.Create_AppStoreVersionLocalizationRelationshipsSearchKeywords(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppPreviewSetCreateRequestDataRelationshipsAppCustomProductPageLocalizationData))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppPreviewSetCreateRequestDataRelationshipsAppCustomProductPageLocalizationData.Create_AppPreviewSetCreateRequestDataRelationshipsAppCustomProductPageLocalizationData(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0103.Create_AppPreviewSetCreateRequestDataRelationshipsAppCustomProductPageLocalizationData(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

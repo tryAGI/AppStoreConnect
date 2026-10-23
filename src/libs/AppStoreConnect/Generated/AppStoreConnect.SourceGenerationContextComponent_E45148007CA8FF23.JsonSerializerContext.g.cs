@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BackgroundAssetVersionState))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_BackgroundAssetVersionState2.Create_BackgroundAssetVersionState2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0188.Create_BackgroundAssetVersionState2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.BackgroundAssetVersionState?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableBackgroundAssetVersionState2.Create_NullableBackgroundAssetVersionState2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0577.Create_NullableBackgroundAssetVersionState2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SubscriptionImageV2Attributes))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_SubscriptionImageV2Attributes.Create_SubscriptionImageV2Attributes(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1211.Create_SubscriptionImageV2Attributes(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

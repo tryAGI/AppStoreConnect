@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CiProductResponse))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_CiProductResponse.Create_CiProductResponse(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0258.Create_CiProductResponse(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

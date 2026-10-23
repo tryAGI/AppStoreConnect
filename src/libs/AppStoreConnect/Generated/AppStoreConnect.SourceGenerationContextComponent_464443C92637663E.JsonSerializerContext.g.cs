@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SubscriptionImageV2Type))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_SubscriptionImageV2Type2.Create_SubscriptionImageV2Type2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1212.Create_SubscriptionImageV2Type2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.SubscriptionImageV2Type?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableSubscriptionImageV2Type2.Create_NullableSubscriptionImageV2Type2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0745.Create_NullableSubscriptionImageV2Type2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

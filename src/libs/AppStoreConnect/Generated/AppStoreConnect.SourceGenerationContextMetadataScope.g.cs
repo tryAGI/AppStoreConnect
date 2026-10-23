@@ -13,63 +13,63 @@ namespace AppStoreConnect
             {
                 if (type == typeof(string))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_String.Create_String(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1195.Create_String(options);
                 }
                 if (type == typeof(object))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_Object.Create_Object(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0769.Create_Object(options);
                 }
                 if (type == typeof(bool))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_Boolean.Create_Boolean(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0218.Create_Boolean(options);
                 }
                 if (type == typeof(byte))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_Byte.Create_Byte(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0242.Create_Byte(options);
                 }
                 if (type == typeof(int))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_Int32.Create_Int32(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0478.Create_Int32(options);
                 }
                 if (type == typeof(long))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_Int64.Create_Int64(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0478.Create_Int64(options);
                 }
                 if (type == typeof(double))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_Double.Create_Double(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0277.Create_Double(options);
                 }
                 if (type == typeof(byte[]))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_ByteArray.Create_ByteArray(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0242.Create_ByteArray(options);
                 }
                 if (type == typeof(global::System.DateTime))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_DateTime.Create_DateTime(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0273.Create_DateTime(options);
                 }
                 if (type == typeof(global::System.Text.Json.JsonElement))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_JsonElement.Create_JsonElement(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0478.Create_JsonElement(options);
                 }
                 if (type == typeof(global::System.Text.Json.JsonElement?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableJsonElement.Create_NullableJsonElement(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0719.Create_NullableJsonElement(options);
                 }
                 if (type == typeof(global::System.Collections.Generic.Dictionary<string, string>))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_SourceGenerationContextMetadataType_FC0ACBA26C044EC8.Create_SourceGenerationContextMetadataType_FC0ACBA26C044EC8(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1189.Create_SourceGenerationContextMetadataType_FC0ACBA26C044EC8(options);
                 }
                 if (type == typeof(global::System.Collections.Generic.Dictionary<string, object>))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_SourceGenerationContextMetadataType_8219E7AD6AEFA4B4.Create_SourceGenerationContextMetadataType_8219E7AD6AEFA4B4(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0995.Create_SourceGenerationContextMetadataType_8219E7AD6AEFA4B4(options);
                 }
                 if (type == typeof(global::System.Collections.Generic.IDictionary<string, object>))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_SourceGenerationContextMetadataType_7024F6984ED20EB8.Create_SourceGenerationContextMetadataType_7024F6984ED20EB8(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0966.Create_SourceGenerationContextMetadataType_7024F6984ED20EB8(options);
                 }
                 if (type == typeof(global::System.Collections.Generic.List<object>))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_SourceGenerationContextMetadataType_92E1ACA86984772C.Create_SourceGenerationContextMetadataType_92E1ACA86984772C(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1021.Create_SourceGenerationContextMetadataType_92E1ACA86984772C(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

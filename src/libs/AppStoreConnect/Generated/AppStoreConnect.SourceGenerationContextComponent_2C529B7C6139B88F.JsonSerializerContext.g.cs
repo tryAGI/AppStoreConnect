@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AccessibilityDeclarationAttributes))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AccessibilityDeclarationAttributes.Create_AccessibilityDeclarationAttributes(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0000.Create_AccessibilityDeclarationAttributes(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

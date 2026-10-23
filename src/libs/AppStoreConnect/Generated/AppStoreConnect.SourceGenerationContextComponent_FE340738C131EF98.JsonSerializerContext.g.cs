@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppAssetLibraryRefDatumAttributesFeaturePlacementPolicieGroupLimit))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppAssetLibraryRefDatumAttributesFeaturePlacementPolicieGroupLimit.Create_AppAssetLibraryRefDatumAttributesFeaturePlacementPolicieGroupLimit(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0032.Create_AppAssetLibraryRefDatumAttributesFeaturePlacementPolicieGroupLimit(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

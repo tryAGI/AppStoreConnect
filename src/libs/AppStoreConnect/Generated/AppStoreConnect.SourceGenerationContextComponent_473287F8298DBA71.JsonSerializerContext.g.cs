@@ -30,7 +30,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(string))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_String.Create_String(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1195.Create_String(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

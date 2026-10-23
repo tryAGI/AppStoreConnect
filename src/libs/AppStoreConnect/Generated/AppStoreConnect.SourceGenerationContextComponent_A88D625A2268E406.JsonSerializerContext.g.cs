@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataEnum5))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppAssetLibraryPlacementCreateRequestDataEnum5.Create_AppAssetLibraryPlacementCreateRequestDataEnum5(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0025.Create_AppAssetLibraryPlacementCreateRequestDataEnum5(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AlternativeDistributionPackageVersionRelationshipsDeltas))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AlternativeDistributionPackageVersionRelationshipsDeltas.Create_AlternativeDistributionPackageVersionRelationshipsDeltas(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0008.Create_AlternativeDistributionPackageVersionRelationshipsDeltas(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

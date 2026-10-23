@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppAssetLibraryRefDatumAttributesVideoSpecDuration))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppAssetLibraryRefDatumAttributesVideoSpecDuration.Create_AppAssetLibraryRefDatumAttributesVideoSpecDuration(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0032.Create_AppAssetLibraryRefDatumAttributesVideoSpecDuration(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

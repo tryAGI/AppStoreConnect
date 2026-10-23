@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.MarketplaceSearchDetailResponse))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_MarketplaceSearchDetailResponse.Create_MarketplaceSearchDetailResponse(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0479.Create_MarketplaceSearchDetailResponse(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

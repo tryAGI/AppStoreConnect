@@ -32,7 +32,7 @@ namespace AppStoreConnect
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshotResponse))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_InAppPurchaseAppStoreReviewScreenshotResponse.Create_InAppPurchaseAppStoreReviewScreenshotResponse(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0431.Create_InAppPurchaseAppStoreReviewScreenshotResponse(options);
                 }
                 #pragma warning restore CS0618
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;

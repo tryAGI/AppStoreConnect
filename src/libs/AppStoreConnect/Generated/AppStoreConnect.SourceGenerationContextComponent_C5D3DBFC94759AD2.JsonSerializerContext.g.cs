@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(byte[]))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_ByteArray.Create_ByteArray(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0242.Create_ByteArray(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_GameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataType2.Create_GameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0305.Create_GameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.GameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataType?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableGameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataType2.Create_NullableGameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0632.Create_NullableGameCenterActivityImageCreateRequestDataRelationshipsLocalizationDataType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

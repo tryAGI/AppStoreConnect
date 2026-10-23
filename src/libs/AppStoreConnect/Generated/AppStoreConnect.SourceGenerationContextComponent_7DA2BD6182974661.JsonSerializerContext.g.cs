@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppEndUserLicenseAgreementLinkageResponseDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppEndUserLicenseAgreementLinkageResponseDataType2.Create_AppEndUserLicenseAgreementLinkageResponseDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0080.Create_AppEndUserLicenseAgreementLinkageResponseDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppEndUserLicenseAgreementLinkageResponseDataType?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableAppEndUserLicenseAgreementLinkageResponseDataType2.Create_NullableAppEndUserLicenseAgreementLinkageResponseDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0522.Create_NullableAppEndUserLicenseAgreementLinkageResponseDataType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

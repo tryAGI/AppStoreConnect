@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.EndUserLicenseAgreementCreateRequestDataRelationshipsTerritoriesDataItem))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_EndUserLicenseAgreementCreateRequestDataRelationshipsTerritoriesDataItem.Create_EndUserLicenseAgreementCreateRequestDataRelationshipsTerritoriesDataItem(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0278.Create_EndUserLicenseAgreementCreateRequestDataRelationshipsTerritoriesDataItem(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

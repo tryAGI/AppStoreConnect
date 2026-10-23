@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SandboxTestersClearPurchaseHistoryRequestV2CreateRequestDataRelationshipsSandboxTesters))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_SandboxTestersClearPurchaseHistoryRequestV2CreateRequestDataRelationshipsSandboxTesters.Create_SandboxTestersClearPurchaseHistoryRequestV2CreateRequestDataRelationshipsSandboxTesters(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0796.Create_SandboxTestersClearPurchaseHistoryRequestV2CreateRequestDataRelationshipsSandboxTesters(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

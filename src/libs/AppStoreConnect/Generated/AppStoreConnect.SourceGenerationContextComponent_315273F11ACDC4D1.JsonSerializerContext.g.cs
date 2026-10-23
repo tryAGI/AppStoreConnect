@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BundleIdCapabilitiesWithoutIncludesResponse))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_BundleIdCapabilitiesWithoutIncludesResponse.Create_BundleIdCapabilitiesWithoutIncludesResponse(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0238.Create_BundleIdCapabilitiesWithoutIncludesResponse(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

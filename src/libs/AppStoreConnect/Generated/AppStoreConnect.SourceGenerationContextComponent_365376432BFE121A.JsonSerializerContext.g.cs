@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.XcodeOverviewCategorieSection))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_XcodeOverviewCategorieSection.Create_XcodeOverviewCategorieSection(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1269.Create_XcodeOverviewCategorieSection(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

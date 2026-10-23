@@ -33,13 +33,13 @@ namespace AppStoreConnect
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::AppStoreConnect.MarketplaceWebhooksGetCollectionFieldsMarketplaceWebhook))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_MarketplaceWebhooksGetCollectionFieldsMarketplaceWebhook2.Create_MarketplaceWebhooksGetCollectionFieldsMarketplaceWebhook2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0480.Create_MarketplaceWebhooksGetCollectionFieldsMarketplaceWebhook2(options);
                 }
                 #pragma warning restore CS0618
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::AppStoreConnect.MarketplaceWebhooksGetCollectionFieldsMarketplaceWebhook?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableMarketplaceWebhooksGetCollectionFieldsMarketplaceWebhook2.Create_NullableMarketplaceWebhooksGetCollectionFieldsMarketplaceWebhook2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0719.Create_NullableMarketplaceWebhooksGetCollectionFieldsMarketplaceWebhook2(options);
                 }
                 #pragma warning restore CS0618
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;

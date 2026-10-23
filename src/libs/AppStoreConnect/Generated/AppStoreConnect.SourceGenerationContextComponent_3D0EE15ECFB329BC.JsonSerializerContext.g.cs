@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AgeRatingDeclarationAttributesAlcoholTobaccoOrDrugUseOrReferences))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AgeRatingDeclarationAttributesAlcoholTobaccoOrDrugUseOrReferences2.Create_AgeRatingDeclarationAttributesAlcoholTobaccoOrDrugUseOrReferences2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0001.Create_AgeRatingDeclarationAttributesAlcoholTobaccoOrDrugUseOrReferences2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AgeRatingDeclarationAttributesAlcoholTobaccoOrDrugUseOrReferences?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableAgeRatingDeclarationAttributesAlcoholTobaccoOrDrugUseOrReferences2.Create_NullableAgeRatingDeclarationAttributesAlcoholTobaccoOrDrugUseOrReferences2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0488.Create_NullableAgeRatingDeclarationAttributesAlcoholTobaccoOrDrugUseOrReferences2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

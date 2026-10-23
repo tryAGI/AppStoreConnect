@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CiIssueCounts))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_CiIssueCounts.Create_CiIssueCounts(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0255.Create_CiIssueCounts(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

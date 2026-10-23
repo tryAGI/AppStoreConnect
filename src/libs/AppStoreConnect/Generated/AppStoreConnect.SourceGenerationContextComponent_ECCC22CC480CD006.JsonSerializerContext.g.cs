@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.GameCenterPlayerAchievementSubmission))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_GameCenterPlayerAchievementSubmission.Create_GameCenterPlayerAchievementSubmission(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0428.Create_GameCenterPlayerAchievementSubmission(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

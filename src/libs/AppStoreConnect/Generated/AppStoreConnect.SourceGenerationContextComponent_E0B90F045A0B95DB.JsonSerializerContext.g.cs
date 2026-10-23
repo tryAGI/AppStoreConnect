@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BetaTesterUsagesV1MetricResponseDataItemDimensionsAppsLinks))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_BetaTesterUsagesV1MetricResponseDataItemDimensionsAppsLinks.Create_BetaTesterUsagesV1MetricResponseDataItemDimensionsAppsLinks(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0217.Create_BetaTesterUsagesV1MetricResponseDataItemDimensionsAppsLinks(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

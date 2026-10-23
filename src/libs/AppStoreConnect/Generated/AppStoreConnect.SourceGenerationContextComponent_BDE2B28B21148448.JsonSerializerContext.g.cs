@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ChecksumsFile))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_ChecksumsFile.Create_ChecksumsFile(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0245.Create_ChecksumsFile(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.IconAssetType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_IconAssetType2.Create_IconAssetType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0430.Create_IconAssetType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.IconAssetType?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableIconAssetType2.Create_NullableIconAssetType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0691.Create_NullableIconAssetType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

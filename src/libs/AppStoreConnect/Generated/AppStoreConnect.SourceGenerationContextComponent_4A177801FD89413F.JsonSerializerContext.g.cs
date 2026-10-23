@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppsAppInfosGetToManyRelatedFieldsAppInfo))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppsAppInfosGetToManyRelatedFieldsAppInfo2.Create_AppsAppInfosGetToManyRelatedFieldsAppInfo2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0166.Create_AppsAppInfosGetToManyRelatedFieldsAppInfo2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppsAppInfosGetToManyRelatedFieldsAppInfo?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableAppsAppInfosGetToManyRelatedFieldsAppInfo2.Create_NullableAppsAppInfosGetToManyRelatedFieldsAppInfo2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0561.Create_NullableAppsAppInfosGetToManyRelatedFieldsAppInfo2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

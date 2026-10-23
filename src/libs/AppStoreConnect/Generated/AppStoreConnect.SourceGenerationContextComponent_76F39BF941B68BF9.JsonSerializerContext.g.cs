@@ -33,13 +33,13 @@ namespace AppStoreConnect
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2RelationshipsImageDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_GameCenterLeaderboardSetLocalizationV2RelationshipsImageDataType2.Create_GameCenterLeaderboardSetLocalizationV2RelationshipsImageDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0384.Create_GameCenterLeaderboardSetLocalizationV2RelationshipsImageDataType2(options);
                 }
                 #pragma warning restore CS0618
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2RelationshipsImageDataType?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableGameCenterLeaderboardSetLocalizationV2RelationshipsImageDataType2.Create_NullableGameCenterLeaderboardSetLocalizationV2RelationshipsImageDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0670.Create_NullableGameCenterLeaderboardSetLocalizationV2RelationshipsImageDataType2(options);
                 }
                 #pragma warning restore CS0618
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;

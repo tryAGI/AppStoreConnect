@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.PerformanceSignatureMetricsSummaryReferenceVersion))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_PerformanceSignatureMetricsSummaryReferenceVersion.Create_PerformanceSignatureMetricsSummaryReferenceVersion(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0772.Create_PerformanceSignatureMetricsSummaryReferenceVersion(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

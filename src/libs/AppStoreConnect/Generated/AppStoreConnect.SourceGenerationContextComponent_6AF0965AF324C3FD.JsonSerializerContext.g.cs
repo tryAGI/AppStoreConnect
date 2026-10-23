@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CiStartConditionFileMatcher))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_CiStartConditionFileMatcher.Create_CiStartConditionFileMatcher(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0263.Create_CiStartConditionFileMatcher(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

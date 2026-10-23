@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.EndAppAvailabilityPreOrder))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_EndAppAvailabilityPreOrder.Create_EndAppAvailabilityPreOrder(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0277.Create_EndAppAvailabilityPreOrder(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

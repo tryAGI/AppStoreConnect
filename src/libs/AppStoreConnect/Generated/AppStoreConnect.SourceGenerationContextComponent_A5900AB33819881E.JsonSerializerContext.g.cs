@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ChecksumAlgorithm))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_ChecksumAlgorithm2.Create_ChecksumAlgorithm2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0245.Create_ChecksumAlgorithm2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.ChecksumAlgorithm?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableChecksumAlgorithm2.Create_NullableChecksumAlgorithm2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0604.Create_NullableChecksumAlgorithm2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

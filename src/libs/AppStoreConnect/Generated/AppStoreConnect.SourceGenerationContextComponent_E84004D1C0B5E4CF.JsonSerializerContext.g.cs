@@ -33,13 +33,13 @@ namespace AppStoreConnect
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::AppStoreConnect.InAppPurchasesV2GetInstanceFieldsInAppPurchasePriceSchedule))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_InAppPurchasesV2GetInstanceFieldsInAppPurchasePriceSchedule2.Create_InAppPurchasesV2GetInstanceFieldsInAppPurchasePriceSchedule2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0464.Create_InAppPurchasesV2GetInstanceFieldsInAppPurchasePriceSchedule2(options);
                 }
                 #pragma warning restore CS0618
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::AppStoreConnect.InAppPurchasesV2GetInstanceFieldsInAppPurchasePriceSchedule?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableInAppPurchasesV2GetInstanceFieldsInAppPurchasePriceSchedule2.Create_NullableInAppPurchasesV2GetInstanceFieldsInAppPurchasePriceSchedule2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0705.Create_NullableInAppPurchasesV2GetInstanceFieldsInAppPurchasePriceSchedule2(options);
                 }
                 #pragma warning restore CS0618
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;

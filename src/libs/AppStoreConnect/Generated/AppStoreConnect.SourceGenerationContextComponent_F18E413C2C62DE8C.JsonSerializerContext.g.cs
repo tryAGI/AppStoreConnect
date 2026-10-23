@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.XcodeMetricsProductDataItemMetricCategorieMetricDataset))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_XcodeMetricsProductDataItemMetricCategorieMetricDataset.Create_XcodeMetricsProductDataItemMetricCategorieMetricDataset(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1268.Create_XcodeMetricsProductDataItemMetricCategorieMetricDataset(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.HttpHeader))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_HttpHeader.Create_HttpHeader(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0430.Create_HttpHeader(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

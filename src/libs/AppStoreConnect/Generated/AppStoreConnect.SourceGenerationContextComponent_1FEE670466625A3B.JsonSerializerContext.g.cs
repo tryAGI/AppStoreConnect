@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppRelationshipsCustomerReviews))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppRelationshipsCustomerReviews.Create_AppRelationshipsCustomerReviews(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0117.Create_AppRelationshipsCustomerReviews(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

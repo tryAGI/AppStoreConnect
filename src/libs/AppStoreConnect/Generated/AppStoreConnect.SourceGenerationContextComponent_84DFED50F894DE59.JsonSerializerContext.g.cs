@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppClipDomainStatusAttributesDomain))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_AppClipDomainStatusAttributesDomain.Create_AppClipDomainStatusAttributesDomain(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0059.Create_AppClipDomainStatusAttributesDomain(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

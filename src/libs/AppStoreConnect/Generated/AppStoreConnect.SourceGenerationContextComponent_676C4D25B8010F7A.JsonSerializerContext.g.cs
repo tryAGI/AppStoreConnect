@@ -33,13 +33,13 @@ namespace AppStoreConnect
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::AppStoreConnect.GameCenterLeaderboardSetLocalizationsGameCenterLeaderboardSetImageGetToOneRelatedIncludeItem))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_GameCenterLeaderboardSetLocalizationsGameCenterLeaderboardSetImageGetToOneRelatedIncludeItem2.Create_GameCenterLeaderboardSetLocalizationsGameCenterLeaderboardSetImageGetToOneRelatedIncludeItem2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0385.Create_GameCenterLeaderboardSetLocalizationsGameCenterLeaderboardSetImageGetToOneRelatedIncludeItem2(options);
                 }
                 #pragma warning restore CS0618
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::AppStoreConnect.GameCenterLeaderboardSetLocalizationsGameCenterLeaderboardSetImageGetToOneRelatedIncludeItem?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableGameCenterLeaderboardSetLocalizationsGameCenterLeaderboardSetImageGetToOneRelatedIncludeItem2.Create_NullableGameCenterLeaderboardSetLocalizationsGameCenterLeaderboardSetImageGetToOneRelatedIncludeItem2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0670.Create_NullableGameCenterLeaderboardSetLocalizationsGameCenterLeaderboardSetImageGetToOneRelatedIncludeItem2(options);
                 }
                 #pragma warning restore CS0618
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;

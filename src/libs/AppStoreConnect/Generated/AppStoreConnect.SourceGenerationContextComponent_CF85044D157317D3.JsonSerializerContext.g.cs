@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CiTagPatternsPattern))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_CiTagPatternsPattern.Create_CiTagPatternsPattern(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0263.Create_CiTagPatternsPattern(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

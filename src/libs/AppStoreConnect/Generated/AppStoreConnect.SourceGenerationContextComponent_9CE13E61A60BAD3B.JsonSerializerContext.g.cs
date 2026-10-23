@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CiFilesAndFoldersRule))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_CiFilesAndFoldersRule.Create_CiFilesAndFoldersRule(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0254.Create_CiFilesAndFoldersRule(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

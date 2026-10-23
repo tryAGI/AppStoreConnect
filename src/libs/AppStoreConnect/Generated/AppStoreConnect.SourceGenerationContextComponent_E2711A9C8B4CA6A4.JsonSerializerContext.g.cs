@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.DeviceAttributesStatus))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_DeviceAttributesStatus2.Create_DeviceAttributesStatus2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0274.Create_DeviceAttributesStatus2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.DeviceAttributesStatus?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableDeviceAttributesStatus2.Create_NullableDeviceAttributesStatus2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0619.Create_NullableDeviceAttributesStatus2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

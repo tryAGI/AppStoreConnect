@@ -33,13 +33,13 @@ namespace AppStoreConnect
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::AppStoreConnect.InAppPurchaseVersionCreateRequestDataRelationshipsInAppPurchaseDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_InAppPurchaseVersionCreateRequestDataRelationshipsInAppPurchaseDataType2.Create_InAppPurchaseVersionCreateRequestDataRelationshipsInAppPurchaseDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0461.Create_InAppPurchaseVersionCreateRequestDataRelationshipsInAppPurchaseDataType2(options);
                 }
                 #pragma warning restore CS0618
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::AppStoreConnect.InAppPurchaseVersionCreateRequestDataRelationshipsInAppPurchaseDataType?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableInAppPurchaseVersionCreateRequestDataRelationshipsInAppPurchaseDataType2.Create_NullableInAppPurchaseVersionCreateRequestDataRelationshipsInAppPurchaseDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0703.Create_NullableInAppPurchaseVersionCreateRequestDataRelationshipsInAppPurchaseDataType2(options);
                 }
                 #pragma warning restore CS0618
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;

@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CiScheduledStartConditionSchedule))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_CiScheduledStartConditionSchedule.Create_CiScheduledStartConditionSchedule(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0263.Create_CiScheduledStartConditionSchedule(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

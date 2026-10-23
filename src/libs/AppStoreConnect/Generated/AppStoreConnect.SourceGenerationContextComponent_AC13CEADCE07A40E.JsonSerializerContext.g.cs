@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_BackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile2.Create_BackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0183.Create_BackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.BackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableBackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile2.Create_NullableBackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0575.Create_NullableBackgroundAssetUploadFilesGetInstanceFieldsBackgroundAssetUploadFile2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

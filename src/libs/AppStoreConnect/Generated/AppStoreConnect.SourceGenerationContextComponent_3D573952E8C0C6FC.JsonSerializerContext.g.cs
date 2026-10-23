@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CertificateRelationshipsPassTypeIdData))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_CertificateRelationshipsPassTypeIdData.Create_CertificateRelationshipsPassTypeIdData(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0244.Create_CertificateRelationshipsPassTypeIdData(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

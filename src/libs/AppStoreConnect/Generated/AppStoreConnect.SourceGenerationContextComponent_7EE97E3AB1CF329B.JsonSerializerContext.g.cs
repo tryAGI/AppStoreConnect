@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.WinBackOfferUpdateRequestDataAttributesPromotionIntent))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_WinBackOfferUpdateRequestDataAttributesPromotionIntent2.Create_WinBackOfferUpdateRequestDataAttributesPromotionIntent2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1267.Create_WinBackOfferUpdateRequestDataAttributesPromotionIntent2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.WinBackOfferUpdateRequestDataAttributesPromotionIntent?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0Factory_NullableWinBackOfferUpdateRequestDataAttributesPromotionIntent2.Create_NullableWinBackOfferUpdateRequestDataAttributesPromotionIntent2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0769.Create_NullableWinBackOfferUpdateRequestDataAttributesPromotionIntent2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);
