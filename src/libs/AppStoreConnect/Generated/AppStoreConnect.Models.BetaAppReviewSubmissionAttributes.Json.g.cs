@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.BetaAppReviewSubmissionAttributes),
-                jsonSerializerContext) as global::AppStoreConnect.BetaAppReviewSubmissionAttributes;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.BetaAppReviewSubmissionAttributes))) as global::AppStoreConnect.BetaAppReviewSubmissionAttributes;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.BetaAppReviewSubmissionAttributes),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.BetaAppReviewSubmissionAttributes;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.BetaAppReviewSubmissionAttributes))).ConfigureAwait(false)) as global::AppStoreConnect.BetaAppReviewSubmissionAttributes;
         }
 
         /// <summary>

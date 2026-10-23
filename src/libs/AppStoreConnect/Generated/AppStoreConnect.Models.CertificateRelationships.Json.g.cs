@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.CertificateRelationships),
-                jsonSerializerContext) as global::AppStoreConnect.CertificateRelationships;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.CertificateRelationships))) as global::AppStoreConnect.CertificateRelationships;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.CertificateRelationships),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.CertificateRelationships;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.CertificateRelationships))).ConfigureAwait(false)) as global::AppStoreConnect.CertificateRelationships;
         }
 
         /// <summary>

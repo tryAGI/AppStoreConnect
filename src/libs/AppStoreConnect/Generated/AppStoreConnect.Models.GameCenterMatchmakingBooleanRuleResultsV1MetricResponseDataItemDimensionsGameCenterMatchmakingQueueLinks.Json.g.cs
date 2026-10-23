@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.GameCenterMatchmakingBooleanRuleResultsV1MetricResponseDataItemDimensionsGameCenterMatchmakingQueueLinks),
-                jsonSerializerContext) as global::AppStoreConnect.GameCenterMatchmakingBooleanRuleResultsV1MetricResponseDataItemDimensionsGameCenterMatchmakingQueueLinks;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterMatchmakingBooleanRuleResultsV1MetricResponseDataItemDimensionsGameCenterMatchmakingQueueLinks))) as global::AppStoreConnect.GameCenterMatchmakingBooleanRuleResultsV1MetricResponseDataItemDimensionsGameCenterMatchmakingQueueLinks;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.GameCenterMatchmakingBooleanRuleResultsV1MetricResponseDataItemDimensionsGameCenterMatchmakingQueueLinks),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.GameCenterMatchmakingBooleanRuleResultsV1MetricResponseDataItemDimensionsGameCenterMatchmakingQueueLinks;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterMatchmakingBooleanRuleResultsV1MetricResponseDataItemDimensionsGameCenterMatchmakingQueueLinks))).ConfigureAwait(false)) as global::AppStoreConnect.GameCenterMatchmakingBooleanRuleResultsV1MetricResponseDataItemDimensionsGameCenterMatchmakingQueueLinks;
         }
 
         /// <summary>

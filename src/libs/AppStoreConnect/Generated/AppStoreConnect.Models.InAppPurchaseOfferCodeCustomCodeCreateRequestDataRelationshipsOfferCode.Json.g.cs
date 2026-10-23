@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCode),
-                jsonSerializerContext) as global::AppStoreConnect.InAppPurchaseOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCode;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCode))) as global::AppStoreConnect.InAppPurchaseOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCode;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCode),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.InAppPurchaseOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCode;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCode))).ConfigureAwait(false)) as global::AppStoreConnect.InAppPurchaseOfferCodeCustomCodeCreateRequestDataRelationshipsOfferCode;
         }
 
         /// <summary>

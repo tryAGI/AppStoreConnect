@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.WinBackOfferPricesResponseIncludedItemDiscriminator),
-                jsonSerializerContext) as global::AppStoreConnect.WinBackOfferPricesResponseIncludedItemDiscriminator;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.WinBackOfferPricesResponseIncludedItemDiscriminator))) as global::AppStoreConnect.WinBackOfferPricesResponseIncludedItemDiscriminator;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.WinBackOfferPricesResponseIncludedItemDiscriminator),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.WinBackOfferPricesResponseIncludedItemDiscriminator;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.WinBackOfferPricesResponseIncludedItemDiscriminator))).ConfigureAwait(false)) as global::AppStoreConnect.WinBackOfferPricesResponseIncludedItemDiscriminator;
         }
 
         /// <summary>

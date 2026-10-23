@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.BetaFeedbackScreenshotSubmissionResponseIncludedItemDiscriminator),
-                jsonSerializerContext) as global::AppStoreConnect.BetaFeedbackScreenshotSubmissionResponseIncludedItemDiscriminator;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.BetaFeedbackScreenshotSubmissionResponseIncludedItemDiscriminator))) as global::AppStoreConnect.BetaFeedbackScreenshotSubmissionResponseIncludedItemDiscriminator;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.BetaFeedbackScreenshotSubmissionResponseIncludedItemDiscriminator),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.BetaFeedbackScreenshotSubmissionResponseIncludedItemDiscriminator;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.BetaFeedbackScreenshotSubmissionResponseIncludedItemDiscriminator))).ConfigureAwait(false)) as global::AppStoreConnect.BetaFeedbackScreenshotSubmissionResponseIncludedItemDiscriminator;
         }
 
         /// <summary>

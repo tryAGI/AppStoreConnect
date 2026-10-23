@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCodeUpdateRequest),
-                jsonSerializerContext) as global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCodeUpdateRequest;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCodeUpdateRequest))) as global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCodeUpdateRequest;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCodeUpdateRequest),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCodeUpdateRequest;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCodeUpdateRequest))).ConfigureAwait(false)) as global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCodeUpdateRequest;
         }
 
         /// <summary>

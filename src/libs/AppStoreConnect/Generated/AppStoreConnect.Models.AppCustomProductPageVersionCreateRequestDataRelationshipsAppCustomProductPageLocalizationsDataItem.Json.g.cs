@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.AppCustomProductPageVersionCreateRequestDataRelationshipsAppCustomProductPageLocalizationsDataItem),
-                jsonSerializerContext) as global::AppStoreConnect.AppCustomProductPageVersionCreateRequestDataRelationshipsAppCustomProductPageLocalizationsDataItem;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.AppCustomProductPageVersionCreateRequestDataRelationshipsAppCustomProductPageLocalizationsDataItem))) as global::AppStoreConnect.AppCustomProductPageVersionCreateRequestDataRelationshipsAppCustomProductPageLocalizationsDataItem;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.AppCustomProductPageVersionCreateRequestDataRelationshipsAppCustomProductPageLocalizationsDataItem),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.AppCustomProductPageVersionCreateRequestDataRelationshipsAppCustomProductPageLocalizationsDataItem;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.AppCustomProductPageVersionCreateRequestDataRelationshipsAppCustomProductPageLocalizationsDataItem))).ConfigureAwait(false)) as global::AppStoreConnect.AppCustomProductPageVersionCreateRequestDataRelationshipsAppCustomProductPageLocalizationsDataItem;
         }
 
         /// <summary>

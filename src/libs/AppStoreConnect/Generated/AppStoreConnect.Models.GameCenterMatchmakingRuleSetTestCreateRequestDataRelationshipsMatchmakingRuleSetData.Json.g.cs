@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.GameCenterMatchmakingRuleSetTestCreateRequestDataRelationshipsMatchmakingRuleSetData),
-                jsonSerializerContext) as global::AppStoreConnect.GameCenterMatchmakingRuleSetTestCreateRequestDataRelationshipsMatchmakingRuleSetData;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterMatchmakingRuleSetTestCreateRequestDataRelationshipsMatchmakingRuleSetData))) as global::AppStoreConnect.GameCenterMatchmakingRuleSetTestCreateRequestDataRelationshipsMatchmakingRuleSetData;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.GameCenterMatchmakingRuleSetTestCreateRequestDataRelationshipsMatchmakingRuleSetData),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.GameCenterMatchmakingRuleSetTestCreateRequestDataRelationshipsMatchmakingRuleSetData;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterMatchmakingRuleSetTestCreateRequestDataRelationshipsMatchmakingRuleSetData))).ConfigureAwait(false)) as global::AppStoreConnect.GameCenterMatchmakingRuleSetTestCreateRequestDataRelationshipsMatchmakingRuleSetData;
         }
 
         /// <summary>

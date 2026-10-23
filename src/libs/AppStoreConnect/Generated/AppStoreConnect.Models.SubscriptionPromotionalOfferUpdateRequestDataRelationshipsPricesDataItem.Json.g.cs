@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.SubscriptionPromotionalOfferUpdateRequestDataRelationshipsPricesDataItem),
-                jsonSerializerContext) as global::AppStoreConnect.SubscriptionPromotionalOfferUpdateRequestDataRelationshipsPricesDataItem;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionPromotionalOfferUpdateRequestDataRelationshipsPricesDataItem))) as global::AppStoreConnect.SubscriptionPromotionalOfferUpdateRequestDataRelationshipsPricesDataItem;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.SubscriptionPromotionalOfferUpdateRequestDataRelationshipsPricesDataItem),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.SubscriptionPromotionalOfferUpdateRequestDataRelationshipsPricesDataItem;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionPromotionalOfferUpdateRequestDataRelationshipsPricesDataItem))).ConfigureAwait(false)) as global::AppStoreConnect.SubscriptionPromotionalOfferUpdateRequestDataRelationshipsPricesDataItem;
         }
 
         /// <summary>

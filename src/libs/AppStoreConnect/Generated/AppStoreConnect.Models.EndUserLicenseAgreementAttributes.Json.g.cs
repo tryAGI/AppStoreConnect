@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.EndUserLicenseAgreementAttributes),
-                jsonSerializerContext) as global::AppStoreConnect.EndUserLicenseAgreementAttributes;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.EndUserLicenseAgreementAttributes))) as global::AppStoreConnect.EndUserLicenseAgreementAttributes;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.EndUserLicenseAgreementAttributes),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.EndUserLicenseAgreementAttributes;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.EndUserLicenseAgreementAttributes))).ConfigureAwait(false)) as global::AppStoreConnect.EndUserLicenseAgreementAttributes;
         }
 
         /// <summary>

@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.TerritoryAgeRating),
-                jsonSerializerContext) as global::AppStoreConnect.TerritoryAgeRating;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.TerritoryAgeRating))) as global::AppStoreConnect.TerritoryAgeRating;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.TerritoryAgeRating),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.TerritoryAgeRating;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.TerritoryAgeRating))).ConfigureAwait(false)) as global::AppStoreConnect.TerritoryAgeRating;
         }
 
         /// <summary>

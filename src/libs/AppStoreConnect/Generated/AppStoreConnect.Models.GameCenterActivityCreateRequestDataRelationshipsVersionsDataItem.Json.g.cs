@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.GameCenterActivityCreateRequestDataRelationshipsVersionsDataItem),
-                jsonSerializerContext) as global::AppStoreConnect.GameCenterActivityCreateRequestDataRelationshipsVersionsDataItem;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterActivityCreateRequestDataRelationshipsVersionsDataItem))) as global::AppStoreConnect.GameCenterActivityCreateRequestDataRelationshipsVersionsDataItem;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.GameCenterActivityCreateRequestDataRelationshipsVersionsDataItem),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.GameCenterActivityCreateRequestDataRelationshipsVersionsDataItem;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterActivityCreateRequestDataRelationshipsVersionsDataItem))).ConfigureAwait(false)) as global::AppStoreConnect.GameCenterActivityCreateRequestDataRelationshipsVersionsDataItem;
         }
 
         /// <summary>

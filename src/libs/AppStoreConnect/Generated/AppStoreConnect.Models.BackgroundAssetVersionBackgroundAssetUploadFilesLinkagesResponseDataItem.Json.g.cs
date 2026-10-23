@@ -12,8 +12,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Serialize(
                 this,
-                this.GetType(),
-                jsonSerializerContext);
+                jsonSerializerContext.Options.GetTypeInfo(this.GetType()));
         }
 
         /// <summary>
@@ -53,8 +52,7 @@ namespace AppStoreConnect
         {
             return global::System.Text.Json.JsonSerializer.Deserialize(
                 json,
-                typeof(global::AppStoreConnect.BackgroundAssetVersionBackgroundAssetUploadFilesLinkagesResponseDataItem),
-                jsonSerializerContext) as global::AppStoreConnect.BackgroundAssetVersionBackgroundAssetUploadFilesLinkagesResponseDataItem;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAssetVersionBackgroundAssetUploadFilesLinkagesResponseDataItem))) as global::AppStoreConnect.BackgroundAssetVersionBackgroundAssetUploadFilesLinkagesResponseDataItem;
         }
 
         /// <summary>
@@ -100,8 +98,7 @@ namespace AppStoreConnect
         {
             return (await global::System.Text.Json.JsonSerializer.DeserializeAsync(
                 jsonStream,
-                typeof(global::AppStoreConnect.BackgroundAssetVersionBackgroundAssetUploadFilesLinkagesResponseDataItem),
-                jsonSerializerContext).ConfigureAwait(false)) as global::AppStoreConnect.BackgroundAssetVersionBackgroundAssetUploadFilesLinkagesResponseDataItem;
+                jsonSerializerContext.Options.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAssetVersionBackgroundAssetUploadFilesLinkagesResponseDataItem))).ConfigureAwait(false)) as global::AppStoreConnect.BackgroundAssetVersionBackgroundAssetUploadFilesLinkagesResponseDataItem;
         }
 
         /// <summary>
