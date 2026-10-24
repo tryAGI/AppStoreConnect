@@ -90,6 +90,6 @@ internal static class UploaderSelfTest
             var state = request.Method == HttpMethod.Post ? "AWAITING_UPLOAD" : "COMPLETE";
             return Json("{\"data\":{\"id\":\"file\",\"type\":\"buildUploadFiles\",\"attributes\":{\"assetDeliveryState\":{\"state\":\"" + state + "\"},\"uploadOperations\":[{\"offset\":0,\"length\":2,\"method\":\"PUT\",\"url\":\"https://delivery.apple.com/1\"},{\"offset\":2,\"length\":2,\"method\":\"PUT\",\"url\":\"https://delivery.apple.com/2\"}]}}}");
         }
-        private static HttpResponseMessage Json(string value) => new(HttpStatusCode.OK) { Content = new StringContent(value, Encoding.UTF8, "application/json") };
+        private static HttpResponseMessage Json(string value) => new(HttpStatusCode.OK) { Content = new StringContent(value[..^1] + ",\"links\":{\"self\":\"https://api.appstoreconnect.apple.com/v1/fixture\"}}", Encoding.UTF8, "application/json") };
     }
 }
