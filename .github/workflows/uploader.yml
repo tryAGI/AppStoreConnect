@@ -1,0 +1,69 @@
+name: Publish native uploader
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - src/tools/AppStoreConnect.Uploader/**
+      - src/libs/AppStoreConnect/**
+      - src/Directory.Build.props
+      - src/libs/Directory.Build.props
+      - .github/workflows/uploader.yml
+permissions:
+  contents: write
+concurrency:
+  group: native-uploader-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  linux-x64:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      DOTNET_NOLOGO: true
+      DOTNET_CLI_TELEMETRY_OPTOUT: true
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
+      - name: Reserve linker swap
+        run: |
+          sudo fallocate -l 8G /mnt/uploader.swap
+          sudo chmod 600 /mnt/uploader.swap
+          sudo mkswap /mnt/uploader.swap
+          sudo swapon /mnt/uploader.swap
+      - name: Publish trimmed native executable
+        run: >-
+          dotnet publish src/tools/AppStoreConnect.Uploader/AppStoreConnect.Uploader.csproj
+          -c Release -r linux-x64 -o artifacts/native
+          -p:GeneratePackageOnBuild=false -p:ContinuousIntegrationBuild=true
+      - name: Exercise final native executable without network
+        run: |
+          artifacts/native/appstoreconnect-upload --help
+          artifacts/native/appstoreconnect-upload self-test
+      - name: Package and record exact identity
+        run: |
+          mkdir -p artifacts/release
+          gzip -9 -n -c artifacts/native/appstoreconnect-upload > artifacts/release/appstoreconnect-upload-linux-x64.gz
+          python3 - <<'PYCODE'
+          import hashlib,json,os,subprocess
+          from pathlib import Path
+          binary=Path('artifacts/native/appstoreconnect-upload')
+          archive=Path('artifacts/release/appstoreconnect-upload-linux-x64.gz')
+          digest=lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
+          manifest=dict(schemaVersion=1,repository=os.environ['GITHUB_REPOSITORY'],sourceCommit=os.environ['GITHUB_SHA'],
+              workflowRun=os.environ['GITHUB_RUN_ID'],rid='linux-x64',nativeAot=True,
+              dotnetSdk=subprocess.check_output(['dotnet','--version'],text=True).strip(),
+              compressedBytes=archive.stat().st_size,sha256=digest(archive),binaryBytes=binary.stat().st_size,binarySha256=digest(binary))
+          Path('artifacts/release/uploader-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+          print(json.dumps(manifest))
+          PYCODE
+      - name: Publish commit-bound binary
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="uploader-$GITHUB_SHA"
+          gh release create "$tag" artifacts/release/* --target "$GITHUB_SHA" \
+            --title "Native App Store Connect uploader ${GITHUB_SHA:0:12}" \
+            --notes 'Linux x64 Native AOT uploader. Source-commit and SHA-256 are recorded in uploader-manifest.json. The final executable passed the offline SDK/journal self-test. No Apple credentials were used.'
