@@ -29,12 +29,12 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AgeRatingDeclaration)}");
                 ageRatingDeclarations = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.AppCategory? appCategories1 = default;
+            global::AppStoreConnect.AppCategory? appCategories = default;
             if (discriminator?.Type == global::AppStoreConnect.AppInfosResponseIncludedItemDiscriminatorType.AppCategories)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppCategory), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppCategory> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppCategory)}");
-                appCategories1 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                appCategories = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::AppStoreConnect.AppInfoLocalization? appInfoLocalizations = default;
             if (discriminator?.Type == global::AppStoreConnect.AppInfosResponseIncludedItemDiscriminatorType.AppInfoLocalizations)
@@ -43,23 +43,23 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppInfoLocalization)}");
                 appInfoLocalizations = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.App? appCategories2 = default;
-            if (discriminator?.Type == global::AppStoreConnect.AppInfosResponseIncludedItemDiscriminatorType.AppCategories)
+            global::AppStoreConnect.App? apps = default;
+            if (discriminator?.Type == global::AppStoreConnect.AppInfosResponseIncludedItemDiscriminatorType.Apps)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.App)}");
-                appCategories2 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                apps = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::AppStoreConnect.IncludedItem24(
                 discriminator?.Type,
                 ageRatingDeclarations,
 
-                appCategories1,
+                appCategories,
 
                 appInfoLocalizations,
 
-                appCategories2
+                apps
                 );
 
             return __value;
@@ -81,11 +81,11 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AgeRatingDeclaration).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAgeRatingDeclarations(), typeInfo);
             }
-            else if (value.IsAppCategories1)
+            else if (value.IsAppCategories)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppCategory), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppCategory?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppCategory).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppCategories1(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppCategories(), typeInfo);
             }
             else if (value.IsAppInfoLocalizations)
             {
@@ -93,11 +93,11 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppInfoLocalization).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppInfoLocalizations(), typeInfo);
             }
-            else if (value.IsAppCategories2)
+            else if (value.IsApps)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.App).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppCategories2(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickApps(), typeInfo);
             }
         }
     }

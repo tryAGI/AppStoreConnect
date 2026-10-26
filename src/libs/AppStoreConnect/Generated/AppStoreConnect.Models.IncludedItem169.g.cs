@@ -92,75 +92,75 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionOfferCodePrice? SubscriptionOfferCodePrices1 { get; init; }
+        public global::AppStoreConnect.SubscriptionOfferCodePrice? SubscriptionOfferCodePrices { get; init; }
 #else
-        public global::AppStoreConnect.SubscriptionOfferCodePrice? SubscriptionOfferCodePrices1 { get; }
+        public global::AppStoreConnect.SubscriptionOfferCodePrice? SubscriptionOfferCodePrices { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionOfferCodePrices1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionOfferCodePrices))]
 #endif
-        public bool IsSubscriptionOfferCodePrices1 => SubscriptionOfferCodePrices1 != null;
+        public bool IsSubscriptionOfferCodePrices => SubscriptionOfferCodePrices != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptionOfferCodePrices1(
+        public bool TryPickSubscriptionOfferCodePrices(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.SubscriptionOfferCodePrice? value)
         {
-            value = SubscriptionOfferCodePrices1;
-            return IsSubscriptionOfferCodePrices1;
+            value = SubscriptionOfferCodePrices;
+            return IsSubscriptionOfferCodePrices;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionOfferCodePrice PickSubscriptionOfferCodePrices1() => SubscriptionOfferCodePrices1 is { } value
+        public global::AppStoreConnect.SubscriptionOfferCodePrice PickSubscriptionOfferCodePrices() => SubscriptionOfferCodePrices is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionOfferCodePrices1' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionOfferCodePrices' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Subscription? SubscriptionOfferCodePrices2 { get; init; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
 #else
-        public global::AppStoreConnect.Subscription? SubscriptionOfferCodePrices2 { get; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionOfferCodePrices2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
 #endif
-        public bool IsSubscriptionOfferCodePrices2 => SubscriptionOfferCodePrices2 != null;
+        public bool IsSubscriptions => Subscriptions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptionOfferCodePrices2(
+        public bool TryPickSubscriptions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.Subscription? value)
         {
-            value = SubscriptionOfferCodePrices2;
-            return IsSubscriptionOfferCodePrices2;
+            value = Subscriptions;
+            return IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Subscription PickSubscriptionOfferCodePrices2() => SubscriptionOfferCodePrices2 is { } value
+        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionOfferCodePrices2' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -215,20 +215,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionOfferCodePrice?(IncludedItem169 @this) => @this.SubscriptionOfferCodePrices1;
+        public static implicit operator global::AppStoreConnect.SubscriptionOfferCodePrice?(IncludedItem169 @this) => @this.SubscriptionOfferCodePrices;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem169(global::AppStoreConnect.SubscriptionOfferCodePrice? value)
         {
-            SubscriptionOfferCodePrices1 = value;
+            SubscriptionOfferCodePrices = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem169 FromSubscriptionOfferCodePrices1(global::AppStoreConnect.SubscriptionOfferCodePrice? value) => new IncludedItem169(value);
+        public static IncludedItem169 FromSubscriptionOfferCodePrices(global::AppStoreConnect.SubscriptionOfferCodePrice? value) => new IncludedItem169(value);
 
         /// <summary>
         ///
@@ -238,20 +238,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem169 @this) => @this.SubscriptionOfferCodePrices2;
+        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem169 @this) => @this.Subscriptions;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem169(global::AppStoreConnect.Subscription? value)
         {
-            SubscriptionOfferCodePrices2 = value;
+            Subscriptions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem169 FromSubscriptionOfferCodePrices2(global::AppStoreConnect.Subscription? value) => new IncludedItem169(value);
+        public static IncludedItem169 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem169(value);
 
         /// <summary>
         ///
@@ -260,24 +260,24 @@ namespace AppStoreConnect
             global::AppStoreConnect.SubscriptionOfferCodesResponseIncludedItemDiscriminatorType? type,
             global::AppStoreConnect.SubscriptionOfferCodeCustomCode? subscriptionOfferCodeCustomCodes,
             global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode? subscriptionOfferCodeOneTimeUseCodes,
-            global::AppStoreConnect.SubscriptionOfferCodePrice? subscriptionOfferCodePrices1,
-            global::AppStoreConnect.Subscription? subscriptionOfferCodePrices2
+            global::AppStoreConnect.SubscriptionOfferCodePrice? subscriptionOfferCodePrices,
+            global::AppStoreConnect.Subscription? subscriptions
             )
         {
             Type = type;
 
             SubscriptionOfferCodeCustomCodes = subscriptionOfferCodeCustomCodes;
             SubscriptionOfferCodeOneTimeUseCodes = subscriptionOfferCodeOneTimeUseCodes;
-            SubscriptionOfferCodePrices1 = subscriptionOfferCodePrices1;
-            SubscriptionOfferCodePrices2 = subscriptionOfferCodePrices2;
+            SubscriptionOfferCodePrices = subscriptionOfferCodePrices;
+            Subscriptions = subscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            SubscriptionOfferCodePrices2 as object ??
-            SubscriptionOfferCodePrices1 as object ??
+            Subscriptions as object ??
+            SubscriptionOfferCodePrices as object ??
             SubscriptionOfferCodeOneTimeUseCodes as object ??
             SubscriptionOfferCodeCustomCodes as object
             ;
@@ -288,8 +288,8 @@ namespace AppStoreConnect
         public override string? ToString() =>
             SubscriptionOfferCodeCustomCodes?.ToString() ??
             SubscriptionOfferCodeOneTimeUseCodes?.ToString() ??
-            SubscriptionOfferCodePrices1?.ToString() ??
-            SubscriptionOfferCodePrices2?.ToString()
+            SubscriptionOfferCodePrices?.ToString() ??
+            Subscriptions?.ToString()
             ;
 
         /// <summary>
@@ -297,7 +297,7 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsSubscriptionOfferCodeCustomCodes && !IsSubscriptionOfferCodeOneTimeUseCodes && !IsSubscriptionOfferCodePrices1 && !IsSubscriptionOfferCodePrices2 || !IsSubscriptionOfferCodeCustomCodes && IsSubscriptionOfferCodeOneTimeUseCodes && !IsSubscriptionOfferCodePrices1 && !IsSubscriptionOfferCodePrices2 || !IsSubscriptionOfferCodeCustomCodes && !IsSubscriptionOfferCodeOneTimeUseCodes && IsSubscriptionOfferCodePrices1 && !IsSubscriptionOfferCodePrices2 || !IsSubscriptionOfferCodeCustomCodes && !IsSubscriptionOfferCodeOneTimeUseCodes && !IsSubscriptionOfferCodePrices1 && IsSubscriptionOfferCodePrices2;
+            return IsSubscriptionOfferCodeCustomCodes && !IsSubscriptionOfferCodeOneTimeUseCodes && !IsSubscriptionOfferCodePrices && !IsSubscriptions || !IsSubscriptionOfferCodeCustomCodes && IsSubscriptionOfferCodeOneTimeUseCodes && !IsSubscriptionOfferCodePrices && !IsSubscriptions || !IsSubscriptionOfferCodeCustomCodes && !IsSubscriptionOfferCodeOneTimeUseCodes && IsSubscriptionOfferCodePrices && !IsSubscriptions || !IsSubscriptionOfferCodeCustomCodes && !IsSubscriptionOfferCodeOneTimeUseCodes && !IsSubscriptionOfferCodePrices && IsSubscriptions;
         }
 
         /// <summary>
@@ -306,8 +306,8 @@ namespace AppStoreConnect
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.SubscriptionOfferCodeCustomCode, TResult>? subscriptionOfferCodeCustomCodes = null,
             global::System.Func<global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode, TResult>? subscriptionOfferCodeOneTimeUseCodes = null,
-            global::System.Func<global::AppStoreConnect.SubscriptionOfferCodePrice, TResult>? subscriptionOfferCodePrices1 = null,
-            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptionOfferCodePrices2 = null,
+            global::System.Func<global::AppStoreConnect.SubscriptionOfferCodePrice, TResult>? subscriptionOfferCodePrices = null,
+            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -323,13 +323,13 @@ namespace AppStoreConnect
             {
                 return subscriptionOfferCodeOneTimeUseCodes(__value1);
             }
-            else if (SubscriptionOfferCodePrices1 is { } __value2 && subscriptionOfferCodePrices1 != null)
+            else if (SubscriptionOfferCodePrices is { } __value2 && subscriptionOfferCodePrices != null)
             {
-                return subscriptionOfferCodePrices1(__value2);
+                return subscriptionOfferCodePrices(__value2);
             }
-            else if (SubscriptionOfferCodePrices2 is { } __value3 && subscriptionOfferCodePrices2 != null)
+            else if (Subscriptions is { } __value3 && subscriptions != null)
             {
-                return subscriptionOfferCodePrices2(__value3);
+                return subscriptions(__value3);
             }
 
             return default(TResult);
@@ -343,9 +343,9 @@ namespace AppStoreConnect
 
             global::System.Action<global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode>? subscriptionOfferCodeOneTimeUseCodes = null,
 
-            global::System.Action<global::AppStoreConnect.SubscriptionOfferCodePrice>? subscriptionOfferCodePrices1 = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionOfferCodePrice>? subscriptionOfferCodePrices = null,
 
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptionOfferCodePrices2 = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -361,13 +361,13 @@ namespace AppStoreConnect
             {
                 subscriptionOfferCodeOneTimeUseCodes?.Invoke(__value1);
             }
-            else if (SubscriptionOfferCodePrices1 is { } __value2)
+            else if (SubscriptionOfferCodePrices is { } __value2)
             {
-                subscriptionOfferCodePrices1?.Invoke(__value2);
+                subscriptionOfferCodePrices?.Invoke(__value2);
             }
-            else if (SubscriptionOfferCodePrices2 is { } __value3)
+            else if (Subscriptions is { } __value3)
             {
-                subscriptionOfferCodePrices2?.Invoke(__value3);
+                subscriptions?.Invoke(__value3);
             }
         }
 
@@ -377,8 +377,8 @@ namespace AppStoreConnect
         public void Switch(
             global::System.Action<global::AppStoreConnect.SubscriptionOfferCodeCustomCode>? subscriptionOfferCodeCustomCodes = null,
             global::System.Action<global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode>? subscriptionOfferCodeOneTimeUseCodes = null,
-            global::System.Action<global::AppStoreConnect.SubscriptionOfferCodePrice>? subscriptionOfferCodePrices1 = null,
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptionOfferCodePrices2 = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionOfferCodePrice>? subscriptionOfferCodePrices = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -394,13 +394,13 @@ namespace AppStoreConnect
             {
                 subscriptionOfferCodeOneTimeUseCodes?.Invoke(__value1);
             }
-            else if (SubscriptionOfferCodePrices1 is { } __value2)
+            else if (SubscriptionOfferCodePrices is { } __value2)
             {
-                subscriptionOfferCodePrices1?.Invoke(__value2);
+                subscriptionOfferCodePrices?.Invoke(__value2);
             }
-            else if (SubscriptionOfferCodePrices2 is { } __value3)
+            else if (Subscriptions is { } __value3)
             {
-                subscriptionOfferCodePrices2?.Invoke(__value3);
+                subscriptions?.Invoke(__value3);
             }
         }
 
@@ -415,9 +415,9 @@ namespace AppStoreConnect
                 typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCode),
                 SubscriptionOfferCodeOneTimeUseCodes,
                 typeof(global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode),
-                SubscriptionOfferCodePrices1,
+                SubscriptionOfferCodePrices,
                 typeof(global::AppStoreConnect.SubscriptionOfferCodePrice),
-                SubscriptionOfferCodePrices2,
+                Subscriptions,
                 typeof(global::AppStoreConnect.Subscription),
             };
             const int offset = unchecked((int)2166136261);
@@ -437,8 +437,8 @@ namespace AppStoreConnect
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionOfferCodeCustomCode?>.Default.Equals(SubscriptionOfferCodeCustomCodes, other.SubscriptionOfferCodeCustomCodes) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode?>.Default.Equals(SubscriptionOfferCodeOneTimeUseCodes, other.SubscriptionOfferCodeOneTimeUseCodes) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionOfferCodePrice?>.Default.Equals(SubscriptionOfferCodePrices1, other.SubscriptionOfferCodePrices1) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(SubscriptionOfferCodePrices2, other.SubscriptionOfferCodePrices2)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionOfferCodePrice?>.Default.Equals(SubscriptionOfferCodePrices, other.SubscriptionOfferCodePrices) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions)
                 ;
         }
 

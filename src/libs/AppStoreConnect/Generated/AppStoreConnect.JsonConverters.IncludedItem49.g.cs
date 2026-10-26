@@ -64,19 +64,19 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppInfo)}");
                 appInfos = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.AppStoreVersionExperimentV2? appStoreVersionExperiments1 = default;
+            global::AppStoreConnect.AppStoreVersionExperimentV2? appStoreVersionExperiments = default;
             if (discriminator?.Type == global::AppStoreConnect.AppResponseIncludedItemDiscriminatorType.AppStoreVersionExperiments)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppStoreVersionExperimentV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppStoreVersionExperimentV2> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppStoreVersionExperimentV2)}");
-                appStoreVersionExperiments1 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                appStoreVersionExperiments = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.AppStoreVersion? appStoreVersionExperiments2 = default;
-            if (discriminator?.Type == global::AppStoreConnect.AppResponseIncludedItemDiscriminatorType.AppStoreVersionExperiments)
+            global::AppStoreConnect.AppStoreVersion? appStoreVersions = default;
+            if (discriminator?.Type == global::AppStoreConnect.AppResponseIncludedItemDiscriminatorType.AppStoreVersions)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppStoreVersion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppStoreVersion> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppStoreVersion)}");
-                appStoreVersionExperiments2 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                appStoreVersions = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::AppStoreConnect.BetaAppLocalization? betaAppLocalizations = default;
             if (discriminator?.Type == global::AppStoreConnect.AppResponseIncludedItemDiscriminatorType.BetaAppLocalizations)
@@ -106,19 +106,19 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BetaLicenseAgreement)}");
                 betaLicenseAgreements = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.BuildIcon? buildIcons1 = default;
+            global::AppStoreConnect.BuildIcon? buildIcons = default;
             if (discriminator?.Type == global::AppStoreConnect.AppResponseIncludedItemDiscriminatorType.BuildIcons)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BuildIcon), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BuildIcon> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BuildIcon)}");
-                buildIcons1 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                buildIcons = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.Build? buildIcons2 = default;
-            if (discriminator?.Type == global::AppStoreConnect.AppResponseIncludedItemDiscriminatorType.BuildIcons)
+            global::AppStoreConnect.Build? builds = default;
+            if (discriminator?.Type == global::AppStoreConnect.AppResponseIncludedItemDiscriminatorType.Builds)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Build), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Build> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.Build)}");
-                buildIcons2 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                builds = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::AppStoreConnect.CiProduct? ciProducts = default;
             if (discriminator?.Type == global::AppStoreConnect.AppResponseIncludedItemDiscriminatorType.CiProducts)
@@ -205,9 +205,9 @@ namespace AppStoreConnect.JsonConverters
 
                 appInfos,
 
-                appStoreVersionExperiments1,
+                appStoreVersionExperiments,
 
-                appStoreVersionExperiments2,
+                appStoreVersions,
 
                 betaAppLocalizations,
 
@@ -217,9 +217,9 @@ namespace AppStoreConnect.JsonConverters
 
                 betaLicenseAgreements,
 
-                buildIcons1,
+                buildIcons,
 
-                buildIcons2,
+                builds,
 
                 ciProducts,
 
@@ -291,17 +291,17 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppInfo).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppInfos(), typeInfo);
             }
-            else if (value.IsAppStoreVersionExperiments1)
+            else if (value.IsAppStoreVersionExperiments)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppStoreVersionExperimentV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppStoreVersionExperimentV2?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppStoreVersionExperimentV2).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppStoreVersionExperiments1(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppStoreVersionExperiments(), typeInfo);
             }
-            else if (value.IsAppStoreVersionExperiments2)
+            else if (value.IsAppStoreVersions)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppStoreVersion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppStoreVersion?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppStoreVersion).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppStoreVersionExperiments2(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppStoreVersions(), typeInfo);
             }
             else if (value.IsBetaAppLocalizations)
             {
@@ -327,17 +327,17 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BetaLicenseAgreement).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBetaLicenseAgreements(), typeInfo);
             }
-            else if (value.IsBuildIcons1)
+            else if (value.IsBuildIcons)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BuildIcon), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BuildIcon?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BuildIcon).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuildIcons1(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuildIcons(), typeInfo);
             }
-            else if (value.IsBuildIcons2)
+            else if (value.IsBuilds)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Build), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Build?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Build).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuildIcons2(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuilds(), typeInfo);
             }
             else if (value.IsCiProducts)
             {

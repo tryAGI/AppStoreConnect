@@ -55,38 +55,38 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? BackgroundAssetVersionAppStoreReleases1 { get; init; }
+        public global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? BackgroundAssetVersionAppStoreReleases { get; init; }
 #else
-        public global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? BackgroundAssetVersionAppStoreReleases1 { get; }
+        public global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? BackgroundAssetVersionAppStoreReleases { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BackgroundAssetVersionAppStoreReleases1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BackgroundAssetVersionAppStoreReleases))]
 #endif
-        public bool IsBackgroundAssetVersionAppStoreReleases1 => BackgroundAssetVersionAppStoreReleases1 != null;
+        public bool IsBackgroundAssetVersionAppStoreReleases => BackgroundAssetVersionAppStoreReleases != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBackgroundAssetVersionAppStoreReleases1(
+        public bool TryPickBackgroundAssetVersionAppStoreReleases(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? value)
         {
-            value = BackgroundAssetVersionAppStoreReleases1;
-            return IsBackgroundAssetVersionAppStoreReleases1;
+            value = BackgroundAssetVersionAppStoreReleases;
+            return IsBackgroundAssetVersionAppStoreReleases;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease PickBackgroundAssetVersionAppStoreReleases1() => BackgroundAssetVersionAppStoreReleases1 is { } value
+        public global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease PickBackgroundAssetVersionAppStoreReleases() => BackgroundAssetVersionAppStoreReleases is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetVersionAppStoreReleases1' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetVersionAppStoreReleases' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -166,38 +166,38 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BackgroundAsset? BackgroundAssetVersionAppStoreReleases2 { get; init; }
+        public global::AppStoreConnect.BackgroundAsset? BackgroundAssets { get; init; }
 #else
-        public global::AppStoreConnect.BackgroundAsset? BackgroundAssetVersionAppStoreReleases2 { get; }
+        public global::AppStoreConnect.BackgroundAsset? BackgroundAssets { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BackgroundAssetVersionAppStoreReleases2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BackgroundAssets))]
 #endif
-        public bool IsBackgroundAssetVersionAppStoreReleases2 => BackgroundAssetVersionAppStoreReleases2 != null;
+        public bool IsBackgroundAssets => BackgroundAssets != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBackgroundAssetVersionAppStoreReleases2(
+        public bool TryPickBackgroundAssets(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.BackgroundAsset? value)
         {
-            value = BackgroundAssetVersionAppStoreReleases2;
-            return IsBackgroundAssetVersionAppStoreReleases2;
+            value = BackgroundAssets;
+            return IsBackgroundAssets;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BackgroundAsset PickBackgroundAssetVersionAppStoreReleases2() => BackgroundAssetVersionAppStoreReleases2 is { } value
+        public global::AppStoreConnect.BackgroundAsset PickBackgroundAssets() => BackgroundAssets is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetVersionAppStoreReleases2' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssets' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -229,20 +229,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease?(IncludedItem50 @this) => @this.BackgroundAssetVersionAppStoreReleases1;
+        public static implicit operator global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease?(IncludedItem50 @this) => @this.BackgroundAssetVersionAppStoreReleases;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem50(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? value)
         {
-            BackgroundAssetVersionAppStoreReleases1 = value;
+            BackgroundAssetVersionAppStoreReleases = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem50 FromBackgroundAssetVersionAppStoreReleases1(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? value) => new IncludedItem50(value);
+        public static IncludedItem50 FromBackgroundAssetVersionAppStoreReleases(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? value) => new IncludedItem50(value);
 
         /// <summary>
         ///
@@ -298,20 +298,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BackgroundAsset?(IncludedItem50 @this) => @this.BackgroundAssetVersionAppStoreReleases2;
+        public static implicit operator global::AppStoreConnect.BackgroundAsset?(IncludedItem50 @this) => @this.BackgroundAssets;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem50(global::AppStoreConnect.BackgroundAsset? value)
         {
-            BackgroundAssetVersionAppStoreReleases2 = value;
+            BackgroundAssets = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem50 FromBackgroundAssetVersionAppStoreReleases2(global::AppStoreConnect.BackgroundAsset? value) => new IncludedItem50(value);
+        public static IncludedItem50 FromBackgroundAssets(global::AppStoreConnect.BackgroundAsset? value) => new IncludedItem50(value);
 
         /// <summary>
         ///
@@ -319,29 +319,29 @@ namespace AppStoreConnect
         public IncludedItem50(
             global::AppStoreConnect.BackgroundAssetVersionsResponseIncludedItemDiscriminatorType? type,
             global::AppStoreConnect.BackgroundAssetUploadFile? backgroundAssetUploadFiles,
-            global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? backgroundAssetVersionAppStoreReleases1,
+            global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? backgroundAssetVersionAppStoreReleases,
             global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease? backgroundAssetVersionExternalBetaReleases,
             global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease? backgroundAssetVersionInternalBetaReleases,
-            global::AppStoreConnect.BackgroundAsset? backgroundAssetVersionAppStoreReleases2
+            global::AppStoreConnect.BackgroundAsset? backgroundAssets
             )
         {
             Type = type;
 
             BackgroundAssetUploadFiles = backgroundAssetUploadFiles;
-            BackgroundAssetVersionAppStoreReleases1 = backgroundAssetVersionAppStoreReleases1;
+            BackgroundAssetVersionAppStoreReleases = backgroundAssetVersionAppStoreReleases;
             BackgroundAssetVersionExternalBetaReleases = backgroundAssetVersionExternalBetaReleases;
             BackgroundAssetVersionInternalBetaReleases = backgroundAssetVersionInternalBetaReleases;
-            BackgroundAssetVersionAppStoreReleases2 = backgroundAssetVersionAppStoreReleases2;
+            BackgroundAssets = backgroundAssets;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            BackgroundAssetVersionAppStoreReleases2 as object ??
+            BackgroundAssets as object ??
             BackgroundAssetVersionInternalBetaReleases as object ??
             BackgroundAssetVersionExternalBetaReleases as object ??
-            BackgroundAssetVersionAppStoreReleases1 as object ??
+            BackgroundAssetVersionAppStoreReleases as object ??
             BackgroundAssetUploadFiles as object
             ;
 
@@ -350,10 +350,10 @@ namespace AppStoreConnect
         /// </summary>
         public override string? ToString() =>
             BackgroundAssetUploadFiles?.ToString() ??
-            BackgroundAssetVersionAppStoreReleases1?.ToString() ??
+            BackgroundAssetVersionAppStoreReleases?.ToString() ??
             BackgroundAssetVersionExternalBetaReleases?.ToString() ??
             BackgroundAssetVersionInternalBetaReleases?.ToString() ??
-            BackgroundAssetVersionAppStoreReleases2?.ToString()
+            BackgroundAssets?.ToString()
             ;
 
         /// <summary>
@@ -361,7 +361,7 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsBackgroundAssetUploadFiles && !IsBackgroundAssetVersionAppStoreReleases1 && !IsBackgroundAssetVersionExternalBetaReleases && !IsBackgroundAssetVersionInternalBetaReleases && !IsBackgroundAssetVersionAppStoreReleases2 || !IsBackgroundAssetUploadFiles && IsBackgroundAssetVersionAppStoreReleases1 && !IsBackgroundAssetVersionExternalBetaReleases && !IsBackgroundAssetVersionInternalBetaReleases && !IsBackgroundAssetVersionAppStoreReleases2 || !IsBackgroundAssetUploadFiles && !IsBackgroundAssetVersionAppStoreReleases1 && IsBackgroundAssetVersionExternalBetaReleases && !IsBackgroundAssetVersionInternalBetaReleases && !IsBackgroundAssetVersionAppStoreReleases2 || !IsBackgroundAssetUploadFiles && !IsBackgroundAssetVersionAppStoreReleases1 && !IsBackgroundAssetVersionExternalBetaReleases && IsBackgroundAssetVersionInternalBetaReleases && !IsBackgroundAssetVersionAppStoreReleases2 || !IsBackgroundAssetUploadFiles && !IsBackgroundAssetVersionAppStoreReleases1 && !IsBackgroundAssetVersionExternalBetaReleases && !IsBackgroundAssetVersionInternalBetaReleases && IsBackgroundAssetVersionAppStoreReleases2;
+            return IsBackgroundAssetUploadFiles && !IsBackgroundAssetVersionAppStoreReleases && !IsBackgroundAssetVersionExternalBetaReleases && !IsBackgroundAssetVersionInternalBetaReleases && !IsBackgroundAssets || !IsBackgroundAssetUploadFiles && IsBackgroundAssetVersionAppStoreReleases && !IsBackgroundAssetVersionExternalBetaReleases && !IsBackgroundAssetVersionInternalBetaReleases && !IsBackgroundAssets || !IsBackgroundAssetUploadFiles && !IsBackgroundAssetVersionAppStoreReleases && IsBackgroundAssetVersionExternalBetaReleases && !IsBackgroundAssetVersionInternalBetaReleases && !IsBackgroundAssets || !IsBackgroundAssetUploadFiles && !IsBackgroundAssetVersionAppStoreReleases && !IsBackgroundAssetVersionExternalBetaReleases && IsBackgroundAssetVersionInternalBetaReleases && !IsBackgroundAssets || !IsBackgroundAssetUploadFiles && !IsBackgroundAssetVersionAppStoreReleases && !IsBackgroundAssetVersionExternalBetaReleases && !IsBackgroundAssetVersionInternalBetaReleases && IsBackgroundAssets;
         }
 
         /// <summary>
@@ -369,10 +369,10 @@ namespace AppStoreConnect
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.BackgroundAssetUploadFile, TResult>? backgroundAssetUploadFiles = null,
-            global::System.Func<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease, TResult>? backgroundAssetVersionAppStoreReleases1 = null,
+            global::System.Func<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease, TResult>? backgroundAssetVersionAppStoreReleases = null,
             global::System.Func<global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease, TResult>? backgroundAssetVersionExternalBetaReleases = null,
             global::System.Func<global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease, TResult>? backgroundAssetVersionInternalBetaReleases = null,
-            global::System.Func<global::AppStoreConnect.BackgroundAsset, TResult>? backgroundAssetVersionAppStoreReleases2 = null,
+            global::System.Func<global::AppStoreConnect.BackgroundAsset, TResult>? backgroundAssets = null,
             bool validate = true)
         {
             if (validate)
@@ -384,9 +384,9 @@ namespace AppStoreConnect
             {
                 return backgroundAssetUploadFiles(__value0);
             }
-            else if (BackgroundAssetVersionAppStoreReleases1 is { } __value1 && backgroundAssetVersionAppStoreReleases1 != null)
+            else if (BackgroundAssetVersionAppStoreReleases is { } __value1 && backgroundAssetVersionAppStoreReleases != null)
             {
-                return backgroundAssetVersionAppStoreReleases1(__value1);
+                return backgroundAssetVersionAppStoreReleases(__value1);
             }
             else if (BackgroundAssetVersionExternalBetaReleases is { } __value2 && backgroundAssetVersionExternalBetaReleases != null)
             {
@@ -396,9 +396,9 @@ namespace AppStoreConnect
             {
                 return backgroundAssetVersionInternalBetaReleases(__value3);
             }
-            else if (BackgroundAssetVersionAppStoreReleases2 is { } __value4 && backgroundAssetVersionAppStoreReleases2 != null)
+            else if (BackgroundAssets is { } __value4 && backgroundAssets != null)
             {
-                return backgroundAssetVersionAppStoreReleases2(__value4);
+                return backgroundAssets(__value4);
             }
 
             return default(TResult);
@@ -410,13 +410,13 @@ namespace AppStoreConnect
         public void Match(
             global::System.Action<global::AppStoreConnect.BackgroundAssetUploadFile>? backgroundAssetUploadFiles = null,
 
-            global::System.Action<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease>? backgroundAssetVersionAppStoreReleases1 = null,
+            global::System.Action<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease>? backgroundAssetVersionAppStoreReleases = null,
 
             global::System.Action<global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease>? backgroundAssetVersionExternalBetaReleases = null,
 
             global::System.Action<global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease>? backgroundAssetVersionInternalBetaReleases = null,
 
-            global::System.Action<global::AppStoreConnect.BackgroundAsset>? backgroundAssetVersionAppStoreReleases2 = null,
+            global::System.Action<global::AppStoreConnect.BackgroundAsset>? backgroundAssets = null,
             bool validate = true)
         {
             if (validate)
@@ -428,9 +428,9 @@ namespace AppStoreConnect
             {
                 backgroundAssetUploadFiles?.Invoke(__value0);
             }
-            else if (BackgroundAssetVersionAppStoreReleases1 is { } __value1)
+            else if (BackgroundAssetVersionAppStoreReleases is { } __value1)
             {
-                backgroundAssetVersionAppStoreReleases1?.Invoke(__value1);
+                backgroundAssetVersionAppStoreReleases?.Invoke(__value1);
             }
             else if (BackgroundAssetVersionExternalBetaReleases is { } __value2)
             {
@@ -440,9 +440,9 @@ namespace AppStoreConnect
             {
                 backgroundAssetVersionInternalBetaReleases?.Invoke(__value3);
             }
-            else if (BackgroundAssetVersionAppStoreReleases2 is { } __value4)
+            else if (BackgroundAssets is { } __value4)
             {
-                backgroundAssetVersionAppStoreReleases2?.Invoke(__value4);
+                backgroundAssets?.Invoke(__value4);
             }
         }
 
@@ -451,10 +451,10 @@ namespace AppStoreConnect
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.BackgroundAssetUploadFile>? backgroundAssetUploadFiles = null,
-            global::System.Action<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease>? backgroundAssetVersionAppStoreReleases1 = null,
+            global::System.Action<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease>? backgroundAssetVersionAppStoreReleases = null,
             global::System.Action<global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease>? backgroundAssetVersionExternalBetaReleases = null,
             global::System.Action<global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease>? backgroundAssetVersionInternalBetaReleases = null,
-            global::System.Action<global::AppStoreConnect.BackgroundAsset>? backgroundAssetVersionAppStoreReleases2 = null,
+            global::System.Action<global::AppStoreConnect.BackgroundAsset>? backgroundAssets = null,
             bool validate = true)
         {
             if (validate)
@@ -466,9 +466,9 @@ namespace AppStoreConnect
             {
                 backgroundAssetUploadFiles?.Invoke(__value0);
             }
-            else if (BackgroundAssetVersionAppStoreReleases1 is { } __value1)
+            else if (BackgroundAssetVersionAppStoreReleases is { } __value1)
             {
-                backgroundAssetVersionAppStoreReleases1?.Invoke(__value1);
+                backgroundAssetVersionAppStoreReleases?.Invoke(__value1);
             }
             else if (BackgroundAssetVersionExternalBetaReleases is { } __value2)
             {
@@ -478,9 +478,9 @@ namespace AppStoreConnect
             {
                 backgroundAssetVersionInternalBetaReleases?.Invoke(__value3);
             }
-            else if (BackgroundAssetVersionAppStoreReleases2 is { } __value4)
+            else if (BackgroundAssets is { } __value4)
             {
-                backgroundAssetVersionAppStoreReleases2?.Invoke(__value4);
+                backgroundAssets?.Invoke(__value4);
             }
         }
 
@@ -493,13 +493,13 @@ namespace AppStoreConnect
             {
                 BackgroundAssetUploadFiles,
                 typeof(global::AppStoreConnect.BackgroundAssetUploadFile),
-                BackgroundAssetVersionAppStoreReleases1,
+                BackgroundAssetVersionAppStoreReleases,
                 typeof(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease),
                 BackgroundAssetVersionExternalBetaReleases,
                 typeof(global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease),
                 BackgroundAssetVersionInternalBetaReleases,
                 typeof(global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease),
-                BackgroundAssetVersionAppStoreReleases2,
+                BackgroundAssets,
                 typeof(global::AppStoreConnect.BackgroundAsset),
             };
             const int offset = unchecked((int)2166136261);
@@ -518,10 +518,10 @@ namespace AppStoreConnect
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAssetUploadFile?>.Default.Equals(BackgroundAssetUploadFiles, other.BackgroundAssetUploadFiles) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease?>.Default.Equals(BackgroundAssetVersionAppStoreReleases1, other.BackgroundAssetVersionAppStoreReleases1) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease?>.Default.Equals(BackgroundAssetVersionAppStoreReleases, other.BackgroundAssetVersionAppStoreReleases) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease?>.Default.Equals(BackgroundAssetVersionExternalBetaReleases, other.BackgroundAssetVersionExternalBetaReleases) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease?>.Default.Equals(BackgroundAssetVersionInternalBetaReleases, other.BackgroundAssetVersionInternalBetaReleases) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAsset?>.Default.Equals(BackgroundAssetVersionAppStoreReleases2, other.BackgroundAssetVersionAppStoreReleases2)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAsset?>.Default.Equals(BackgroundAssets, other.BackgroundAssets)
                 ;
         }
 
