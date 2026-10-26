@@ -22,19 +22,19 @@ namespace AppStoreConnect.JsonConverters
                             throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppEncryptionDeclarationsResponseIncludedItemDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::AppStoreConnect.AppEncryptionDeclarationDocument? appEncryptionDeclarationDocuments1 = default;
+            global::AppStoreConnect.AppEncryptionDeclarationDocument? appEncryptionDeclarationDocuments = default;
             if (discriminator?.Type == global::AppStoreConnect.AppEncryptionDeclarationsResponseIncludedItemDiscriminatorType.AppEncryptionDeclarationDocuments)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocument), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppEncryptionDeclarationDocument> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppEncryptionDeclarationDocument)}");
-                appEncryptionDeclarationDocuments1 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                appEncryptionDeclarationDocuments = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.App? appEncryptionDeclarationDocuments2 = default;
-            if (discriminator?.Type == global::AppStoreConnect.AppEncryptionDeclarationsResponseIncludedItemDiscriminatorType.AppEncryptionDeclarationDocuments)
+            global::AppStoreConnect.App? apps = default;
+            if (discriminator?.Type == global::AppStoreConnect.AppEncryptionDeclarationsResponseIncludedItemDiscriminatorType.Apps)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.App)}");
-                appEncryptionDeclarationDocuments2 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                apps = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::AppStoreConnect.Build? builds = default;
             if (discriminator?.Type == global::AppStoreConnect.AppEncryptionDeclarationsResponseIncludedItemDiscriminatorType.Builds)
@@ -46,9 +46,9 @@ namespace AppStoreConnect.JsonConverters
 
             var __value = new global::AppStoreConnect.IncludedItem20(
                 discriminator?.Type,
-                appEncryptionDeclarationDocuments1,
+                appEncryptionDeclarationDocuments,
 
-                appEncryptionDeclarationDocuments2,
+                apps,
 
                 builds
                 );
@@ -66,17 +66,17 @@ namespace AppStoreConnect.JsonConverters
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
             typeInfoResolver = global::AppStoreConnect.AutoSDKJsonMetadataCachedResolver.Instance;
 
-            if (value.IsAppEncryptionDeclarationDocuments1)
+            if (value.IsAppEncryptionDeclarationDocuments)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppEncryptionDeclarationDocument), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppEncryptionDeclarationDocument?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppEncryptionDeclarationDocument).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEncryptionDeclarationDocuments1(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEncryptionDeclarationDocuments(), typeInfo);
             }
-            else if (value.IsAppEncryptionDeclarationDocuments2)
+            else if (value.IsApps)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.App).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEncryptionDeclarationDocuments2(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickApps(), typeInfo);
             }
             else if (value.IsBuilds)
             {

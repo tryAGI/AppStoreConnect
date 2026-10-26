@@ -240,75 +240,75 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersionExperimentV2? AppStoreVersionExperiments1 { get; init; }
+        public global::AppStoreConnect.AppStoreVersionExperimentV2? AppStoreVersionExperiments { get; init; }
 #else
-        public global::AppStoreConnect.AppStoreVersionExperimentV2? AppStoreVersionExperiments1 { get; }
+        public global::AppStoreConnect.AppStoreVersionExperimentV2? AppStoreVersionExperiments { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperiments1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperiments))]
 #endif
-        public bool IsAppStoreVersionExperiments1 => AppStoreVersionExperiments1 != null;
+        public bool IsAppStoreVersionExperiments => AppStoreVersionExperiments != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreVersionExperiments1(
+        public bool TryPickAppStoreVersionExperiments(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.AppStoreVersionExperimentV2? value)
         {
-            value = AppStoreVersionExperiments1;
-            return IsAppStoreVersionExperiments1;
+            value = AppStoreVersionExperiments;
+            return IsAppStoreVersionExperiments;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionExperimentV2 PickAppStoreVersionExperiments1() => AppStoreVersionExperiments1 is { } value
+        public global::AppStoreConnect.AppStoreVersionExperimentV2 PickAppStoreVersionExperiments() => AppStoreVersionExperiments is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperiments1' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperiments' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersionExperiments2 { get; init; }
+        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; init; }
 #else
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersionExperiments2 { get; }
+        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperiments2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions))]
 #endif
-        public bool IsAppStoreVersionExperiments2 => AppStoreVersionExperiments2 != null;
+        public bool IsAppStoreVersions => AppStoreVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreVersionExperiments2(
+        public bool TryPickAppStoreVersions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.AppStoreVersion? value)
         {
-            value = AppStoreVersionExperiments2;
-            return IsAppStoreVersionExperiments2;
+            value = AppStoreVersions;
+            return IsAppStoreVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersionExperiments2() => AppStoreVersionExperiments2 is { } value
+        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => AppStoreVersions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperiments2' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -462,75 +462,75 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BuildIcon? BuildIcons1 { get; init; }
+        public global::AppStoreConnect.BuildIcon? BuildIcons { get; init; }
 #else
-        public global::AppStoreConnect.BuildIcon? BuildIcons1 { get; }
+        public global::AppStoreConnect.BuildIcon? BuildIcons { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BuildIcons1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BuildIcons))]
 #endif
-        public bool IsBuildIcons1 => BuildIcons1 != null;
+        public bool IsBuildIcons => BuildIcons != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBuildIcons1(
+        public bool TryPickBuildIcons(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.BuildIcon? value)
         {
-            value = BuildIcons1;
-            return IsBuildIcons1;
+            value = BuildIcons;
+            return IsBuildIcons;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BuildIcon PickBuildIcons1() => BuildIcons1 is { } value
+        public global::AppStoreConnect.BuildIcon PickBuildIcons() => BuildIcons is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BuildIcons1' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BuildIcons' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Build? BuildIcons2 { get; init; }
+        public global::AppStoreConnect.Build? Builds { get; init; }
 #else
-        public global::AppStoreConnect.Build? BuildIcons2 { get; }
+        public global::AppStoreConnect.Build? Builds { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BuildIcons2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
 #endif
-        public bool IsBuildIcons2 => BuildIcons2 != null;
+        public bool IsBuilds => Builds != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBuildIcons2(
+        public bool TryPickBuilds(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.Build? value)
         {
-            value = BuildIcons2;
-            return IsBuildIcons2;
+            value = Builds;
+            return IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Build PickBuildIcons2() => BuildIcons2 is { } value
+        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BuildIcons2' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -1047,20 +1047,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersionExperimentV2?(IncludedItem49 @this) => @this.AppStoreVersionExperiments1;
+        public static implicit operator global::AppStoreConnect.AppStoreVersionExperimentV2?(IncludedItem49 @this) => @this.AppStoreVersionExperiments;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem49(global::AppStoreConnect.AppStoreVersionExperimentV2? value)
         {
-            AppStoreVersionExperiments1 = value;
+            AppStoreVersionExperiments = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem49 FromAppStoreVersionExperiments1(global::AppStoreConnect.AppStoreVersionExperimentV2? value) => new IncludedItem49(value);
+        public static IncludedItem49 FromAppStoreVersionExperiments(global::AppStoreConnect.AppStoreVersionExperimentV2? value) => new IncludedItem49(value);
 
         /// <summary>
         ///
@@ -1070,20 +1070,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem49 @this) => @this.AppStoreVersionExperiments2;
+        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem49 @this) => @this.AppStoreVersions;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem49(global::AppStoreConnect.AppStoreVersion? value)
         {
-            AppStoreVersionExperiments2 = value;
+            AppStoreVersions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem49 FromAppStoreVersionExperiments2(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem49(value);
+        public static IncludedItem49 FromAppStoreVersions(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem49(value);
 
         /// <summary>
         ///
@@ -1185,20 +1185,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BuildIcon?(IncludedItem49 @this) => @this.BuildIcons1;
+        public static implicit operator global::AppStoreConnect.BuildIcon?(IncludedItem49 @this) => @this.BuildIcons;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem49(global::AppStoreConnect.BuildIcon? value)
         {
-            BuildIcons1 = value;
+            BuildIcons = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem49 FromBuildIcons1(global::AppStoreConnect.BuildIcon? value) => new IncludedItem49(value);
+        public static IncludedItem49 FromBuildIcons(global::AppStoreConnect.BuildIcon? value) => new IncludedItem49(value);
 
         /// <summary>
         ///
@@ -1208,20 +1208,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.Build?(IncludedItem49 @this) => @this.BuildIcons2;
+        public static implicit operator global::AppStoreConnect.Build?(IncludedItem49 @this) => @this.Builds;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem49(global::AppStoreConnect.Build? value)
         {
-            BuildIcons2 = value;
+            Builds = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem49 FromBuildIcons2(global::AppStoreConnect.Build? value) => new IncludedItem49(value);
+        public static IncludedItem49 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem49(value);
 
         /// <summary>
         ///
@@ -1464,14 +1464,14 @@ namespace AppStoreConnect
             global::AppStoreConnect.AppEncryptionDeclaration? appEncryptionDeclarations,
             global::AppStoreConnect.AppEvent? appEvents,
             global::AppStoreConnect.AppInfo? appInfos,
-            global::AppStoreConnect.AppStoreVersionExperimentV2? appStoreVersionExperiments1,
-            global::AppStoreConnect.AppStoreVersion? appStoreVersionExperiments2,
+            global::AppStoreConnect.AppStoreVersionExperimentV2? appStoreVersionExperiments,
+            global::AppStoreConnect.AppStoreVersion? appStoreVersions,
             global::AppStoreConnect.BetaAppLocalization? betaAppLocalizations,
             global::AppStoreConnect.BetaAppReviewDetail? betaAppReviewDetails,
             global::AppStoreConnect.BetaGroup? betaGroups,
             global::AppStoreConnect.BetaLicenseAgreement? betaLicenseAgreements,
-            global::AppStoreConnect.BuildIcon? buildIcons1,
-            global::AppStoreConnect.Build? buildIcons2,
+            global::AppStoreConnect.BuildIcon? buildIcons,
+            global::AppStoreConnect.Build? builds,
             global::AppStoreConnect.CiProduct? ciProducts,
             global::AppStoreConnect.EndUserLicenseAgreement? endUserLicenseAgreements,
             global::AppStoreConnect.GameCenterDetail? gameCenterDetails,
@@ -1492,14 +1492,14 @@ namespace AppStoreConnect
             AppEncryptionDeclarations = appEncryptionDeclarations;
             AppEvents = appEvents;
             AppInfos = appInfos;
-            AppStoreVersionExperiments1 = appStoreVersionExperiments1;
-            AppStoreVersionExperiments2 = appStoreVersionExperiments2;
+            AppStoreVersionExperiments = appStoreVersionExperiments;
+            AppStoreVersions = appStoreVersions;
             BetaAppLocalizations = betaAppLocalizations;
             BetaAppReviewDetails = betaAppReviewDetails;
             BetaGroups = betaGroups;
             BetaLicenseAgreements = betaLicenseAgreements;
-            BuildIcons1 = buildIcons1;
-            BuildIcons2 = buildIcons2;
+            BuildIcons = buildIcons;
+            Builds = builds;
             CiProducts = ciProducts;
             EndUserLicenseAgreements = endUserLicenseAgreements;
             GameCenterDetails = gameCenterDetails;
@@ -1526,14 +1526,14 @@ namespace AppStoreConnect
             GameCenterDetails as object ??
             EndUserLicenseAgreements as object ??
             CiProducts as object ??
-            BuildIcons2 as object ??
-            BuildIcons1 as object ??
+            Builds as object ??
+            BuildIcons as object ??
             BetaLicenseAgreements as object ??
             BetaGroups as object ??
             BetaAppReviewDetails as object ??
             BetaAppLocalizations as object ??
-            AppStoreVersionExperiments2 as object ??
-            AppStoreVersionExperiments1 as object ??
+            AppStoreVersions as object ??
+            AppStoreVersionExperiments as object ??
             AppInfos as object ??
             AppEvents as object ??
             AppEncryptionDeclarations as object ??
@@ -1552,14 +1552,14 @@ namespace AppStoreConnect
             AppEncryptionDeclarations?.ToString() ??
             AppEvents?.ToString() ??
             AppInfos?.ToString() ??
-            AppStoreVersionExperiments1?.ToString() ??
-            AppStoreVersionExperiments2?.ToString() ??
+            AppStoreVersionExperiments?.ToString() ??
+            AppStoreVersions?.ToString() ??
             BetaAppLocalizations?.ToString() ??
             BetaAppReviewDetails?.ToString() ??
             BetaGroups?.ToString() ??
             BetaLicenseAgreements?.ToString() ??
-            BuildIcons1?.ToString() ??
-            BuildIcons2?.ToString() ??
+            BuildIcons?.ToString() ??
+            Builds?.ToString() ??
             CiProducts?.ToString() ??
             EndUserLicenseAgreements?.ToString() ??
             GameCenterDetails?.ToString() ??
@@ -1577,7 +1577,7 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons1 && !IsBuildIcons2 && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && IsSubscriptionGroups;
+            return IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsReviewSubmissions && !IsSubscriptionGracePeriods && IsSubscriptionGroups;
         }
 
         /// <summary>
@@ -1590,14 +1590,14 @@ namespace AppStoreConnect
             global::System.Func<global::AppStoreConnect.AppEncryptionDeclaration, TResult>? appEncryptionDeclarations = null,
             global::System.Func<global::AppStoreConnect.AppEvent, TResult>? appEvents = null,
             global::System.Func<global::AppStoreConnect.AppInfo, TResult>? appInfos = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersionExperimentV2, TResult>? appStoreVersionExperiments1 = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersionExperiments2 = null,
+            global::System.Func<global::AppStoreConnect.AppStoreVersionExperimentV2, TResult>? appStoreVersionExperiments = null,
+            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersions = null,
             global::System.Func<global::AppStoreConnect.BetaAppLocalization, TResult>? betaAppLocalizations = null,
             global::System.Func<global::AppStoreConnect.BetaAppReviewDetail, TResult>? betaAppReviewDetails = null,
             global::System.Func<global::AppStoreConnect.BetaGroup, TResult>? betaGroups = null,
             global::System.Func<global::AppStoreConnect.BetaLicenseAgreement, TResult>? betaLicenseAgreements = null,
-            global::System.Func<global::AppStoreConnect.BuildIcon, TResult>? buildIcons1 = null,
-            global::System.Func<global::AppStoreConnect.Build, TResult>? buildIcons2 = null,
+            global::System.Func<global::AppStoreConnect.BuildIcon, TResult>? buildIcons = null,
+            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
             global::System.Func<global::AppStoreConnect.CiProduct, TResult>? ciProducts = null,
             global::System.Func<global::AppStoreConnect.EndUserLicenseAgreement, TResult>? endUserLicenseAgreements = null,
             global::System.Func<global::AppStoreConnect.GameCenterDetail, TResult>? gameCenterDetails = null,
@@ -1639,13 +1639,13 @@ namespace AppStoreConnect
             {
                 return appInfos(__value5);
             }
-            else if (AppStoreVersionExperiments1 is { } __value6 && appStoreVersionExperiments1 != null)
+            else if (AppStoreVersionExperiments is { } __value6 && appStoreVersionExperiments != null)
             {
-                return appStoreVersionExperiments1(__value6);
+                return appStoreVersionExperiments(__value6);
             }
-            else if (AppStoreVersionExperiments2 is { } __value7 && appStoreVersionExperiments2 != null)
+            else if (AppStoreVersions is { } __value7 && appStoreVersions != null)
             {
-                return appStoreVersionExperiments2(__value7);
+                return appStoreVersions(__value7);
             }
             else if (BetaAppLocalizations is { } __value8 && betaAppLocalizations != null)
             {
@@ -1663,13 +1663,13 @@ namespace AppStoreConnect
             {
                 return betaLicenseAgreements(__value11);
             }
-            else if (BuildIcons1 is { } __value12 && buildIcons1 != null)
+            else if (BuildIcons is { } __value12 && buildIcons != null)
             {
-                return buildIcons1(__value12);
+                return buildIcons(__value12);
             }
-            else if (BuildIcons2 is { } __value13 && buildIcons2 != null)
+            else if (Builds is { } __value13 && builds != null)
             {
-                return buildIcons2(__value13);
+                return builds(__value13);
             }
             else if (CiProducts is { } __value14 && ciProducts != null)
             {
@@ -1731,9 +1731,9 @@ namespace AppStoreConnect
 
             global::System.Action<global::AppStoreConnect.AppInfo>? appInfos = null,
 
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentV2>? appStoreVersionExperiments1 = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentV2>? appStoreVersionExperiments = null,
 
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersionExperiments2 = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
 
             global::System.Action<global::AppStoreConnect.BetaAppLocalization>? betaAppLocalizations = null,
 
@@ -1743,9 +1743,9 @@ namespace AppStoreConnect
 
             global::System.Action<global::AppStoreConnect.BetaLicenseAgreement>? betaLicenseAgreements = null,
 
-            global::System.Action<global::AppStoreConnect.BuildIcon>? buildIcons1 = null,
+            global::System.Action<global::AppStoreConnect.BuildIcon>? buildIcons = null,
 
-            global::System.Action<global::AppStoreConnect.Build>? buildIcons2 = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
 
             global::System.Action<global::AppStoreConnect.CiProduct>? ciProducts = null,
 
@@ -1797,13 +1797,13 @@ namespace AppStoreConnect
             {
                 appInfos?.Invoke(__value5);
             }
-            else if (AppStoreVersionExperiments1 is { } __value6)
+            else if (AppStoreVersionExperiments is { } __value6)
             {
-                appStoreVersionExperiments1?.Invoke(__value6);
+                appStoreVersionExperiments?.Invoke(__value6);
             }
-            else if (AppStoreVersionExperiments2 is { } __value7)
+            else if (AppStoreVersions is { } __value7)
             {
-                appStoreVersionExperiments2?.Invoke(__value7);
+                appStoreVersions?.Invoke(__value7);
             }
             else if (BetaAppLocalizations is { } __value8)
             {
@@ -1821,13 +1821,13 @@ namespace AppStoreConnect
             {
                 betaLicenseAgreements?.Invoke(__value11);
             }
-            else if (BuildIcons1 is { } __value12)
+            else if (BuildIcons is { } __value12)
             {
-                buildIcons1?.Invoke(__value12);
+                buildIcons?.Invoke(__value12);
             }
-            else if (BuildIcons2 is { } __value13)
+            else if (Builds is { } __value13)
             {
-                buildIcons2?.Invoke(__value13);
+                builds?.Invoke(__value13);
             }
             else if (CiProducts is { } __value14)
             {
@@ -1881,14 +1881,14 @@ namespace AppStoreConnect
             global::System.Action<global::AppStoreConnect.AppEncryptionDeclaration>? appEncryptionDeclarations = null,
             global::System.Action<global::AppStoreConnect.AppEvent>? appEvents = null,
             global::System.Action<global::AppStoreConnect.AppInfo>? appInfos = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentV2>? appStoreVersionExperiments1 = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersionExperiments2 = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentV2>? appStoreVersionExperiments = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
             global::System.Action<global::AppStoreConnect.BetaAppLocalization>? betaAppLocalizations = null,
             global::System.Action<global::AppStoreConnect.BetaAppReviewDetail>? betaAppReviewDetails = null,
             global::System.Action<global::AppStoreConnect.BetaGroup>? betaGroups = null,
             global::System.Action<global::AppStoreConnect.BetaLicenseAgreement>? betaLicenseAgreements = null,
-            global::System.Action<global::AppStoreConnect.BuildIcon>? buildIcons1 = null,
-            global::System.Action<global::AppStoreConnect.Build>? buildIcons2 = null,
+            global::System.Action<global::AppStoreConnect.BuildIcon>? buildIcons = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             global::System.Action<global::AppStoreConnect.CiProduct>? ciProducts = null,
             global::System.Action<global::AppStoreConnect.EndUserLicenseAgreement>? endUserLicenseAgreements = null,
             global::System.Action<global::AppStoreConnect.GameCenterDetail>? gameCenterDetails = null,
@@ -1930,13 +1930,13 @@ namespace AppStoreConnect
             {
                 appInfos?.Invoke(__value5);
             }
-            else if (AppStoreVersionExperiments1 is { } __value6)
+            else if (AppStoreVersionExperiments is { } __value6)
             {
-                appStoreVersionExperiments1?.Invoke(__value6);
+                appStoreVersionExperiments?.Invoke(__value6);
             }
-            else if (AppStoreVersionExperiments2 is { } __value7)
+            else if (AppStoreVersions is { } __value7)
             {
-                appStoreVersionExperiments2?.Invoke(__value7);
+                appStoreVersions?.Invoke(__value7);
             }
             else if (BetaAppLocalizations is { } __value8)
             {
@@ -1954,13 +1954,13 @@ namespace AppStoreConnect
             {
                 betaLicenseAgreements?.Invoke(__value11);
             }
-            else if (BuildIcons1 is { } __value12)
+            else if (BuildIcons is { } __value12)
             {
-                buildIcons1?.Invoke(__value12);
+                buildIcons?.Invoke(__value12);
             }
-            else if (BuildIcons2 is { } __value13)
+            else if (Builds is { } __value13)
             {
-                buildIcons2?.Invoke(__value13);
+                builds?.Invoke(__value13);
             }
             else if (CiProducts is { } __value14)
             {
@@ -2023,9 +2023,9 @@ namespace AppStoreConnect
                 typeof(global::AppStoreConnect.AppEvent),
                 AppInfos,
                 typeof(global::AppStoreConnect.AppInfo),
-                AppStoreVersionExperiments1,
+                AppStoreVersionExperiments,
                 typeof(global::AppStoreConnect.AppStoreVersionExperimentV2),
-                AppStoreVersionExperiments2,
+                AppStoreVersions,
                 typeof(global::AppStoreConnect.AppStoreVersion),
                 BetaAppLocalizations,
                 typeof(global::AppStoreConnect.BetaAppLocalization),
@@ -2035,9 +2035,9 @@ namespace AppStoreConnect
                 typeof(global::AppStoreConnect.BetaGroup),
                 BetaLicenseAgreements,
                 typeof(global::AppStoreConnect.BetaLicenseAgreement),
-                BuildIcons1,
+                BuildIcons,
                 typeof(global::AppStoreConnect.BuildIcon),
-                BuildIcons2,
+                Builds,
                 typeof(global::AppStoreConnect.Build),
                 CiProducts,
                 typeof(global::AppStoreConnect.CiProduct),
@@ -2081,14 +2081,14 @@ namespace AppStoreConnect
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEncryptionDeclaration?>.Default.Equals(AppEncryptionDeclarations, other.AppEncryptionDeclarations) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEvent?>.Default.Equals(AppEvents, other.AppEvents) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppInfo?>.Default.Equals(AppInfos, other.AppInfos) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperimentV2?>.Default.Equals(AppStoreVersionExperiments1, other.AppStoreVersionExperiments1) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersionExperiments2, other.AppStoreVersionExperiments2) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperimentV2?>.Default.Equals(AppStoreVersionExperiments, other.AppStoreVersionExperiments) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions, other.AppStoreVersions) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaAppLocalization?>.Default.Equals(BetaAppLocalizations, other.BetaAppLocalizations) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaAppReviewDetail?>.Default.Equals(BetaAppReviewDetails, other.BetaAppReviewDetails) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaGroup?>.Default.Equals(BetaGroups, other.BetaGroups) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaLicenseAgreement?>.Default.Equals(BetaLicenseAgreements, other.BetaLicenseAgreements) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BuildIcon?>.Default.Equals(BuildIcons1, other.BuildIcons1) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(BuildIcons2, other.BuildIcons2) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BuildIcon?>.Default.Equals(BuildIcons, other.BuildIcons) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CiProduct?>.Default.Equals(CiProducts, other.CiProducts) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.EndUserLicenseAgreement?>.Default.Equals(EndUserLicenseAgreements, other.EndUserLicenseAgreements) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterDetail?>.Default.Equals(GameCenterDetails, other.GameCenterDetails) &&

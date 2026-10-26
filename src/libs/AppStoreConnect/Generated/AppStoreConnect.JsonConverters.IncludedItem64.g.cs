@@ -22,12 +22,12 @@ namespace AppStoreConnect.JsonConverters
                             throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BuildsResponseIncludedItemDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::AppStoreConnect.AppEncryptionDeclaration? appEncryptionDeclarations1 = default;
+            global::AppStoreConnect.AppEncryptionDeclaration? appEncryptionDeclarations = default;
             if (discriminator?.Type == global::AppStoreConnect.BuildsResponseIncludedItemDiscriminatorType.AppEncryptionDeclarations)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppEncryptionDeclaration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppEncryptionDeclaration> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppEncryptionDeclaration)}");
-                appEncryptionDeclarations1 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                appEncryptionDeclarations = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::AppStoreConnect.AppStoreVersion? appStoreVersions = default;
             if (discriminator?.Type == global::AppStoreConnect.BuildsResponseIncludedItemDiscriminatorType.AppStoreVersions)
@@ -36,12 +36,12 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppStoreVersion)}");
                 appStoreVersions = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.App? appEncryptionDeclarations2 = default;
-            if (discriminator?.Type == global::AppStoreConnect.BuildsResponseIncludedItemDiscriminatorType.AppEncryptionDeclarations)
+            global::AppStoreConnect.App? apps = default;
+            if (discriminator?.Type == global::AppStoreConnect.BuildsResponseIncludedItemDiscriminatorType.Apps)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.App)}");
-                appEncryptionDeclarations2 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                apps = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::AppStoreConnect.BetaAppReviewSubmission? betaAppReviewSubmissions = default;
             if (discriminator?.Type == global::AppStoreConnect.BuildsResponseIncludedItemDiscriminatorType.BetaAppReviewSubmissions)
@@ -109,11 +109,11 @@ namespace AppStoreConnect.JsonConverters
 
             var __value = new global::AppStoreConnect.IncludedItem64(
                 discriminator?.Type,
-                appEncryptionDeclarations1,
+                appEncryptionDeclarations,
 
                 appStoreVersions,
 
-                appEncryptionDeclarations2,
+                apps,
 
                 betaAppReviewSubmissions,
 
@@ -147,11 +147,11 @@ namespace AppStoreConnect.JsonConverters
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
             typeInfoResolver = global::AppStoreConnect.AutoSDKJsonMetadataCachedResolver.Instance;
 
-            if (value.IsAppEncryptionDeclarations1)
+            if (value.IsAppEncryptionDeclarations)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppEncryptionDeclaration), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppEncryptionDeclaration?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppEncryptionDeclaration).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEncryptionDeclarations1(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEncryptionDeclarations(), typeInfo);
             }
             else if (value.IsAppStoreVersions)
             {
@@ -159,11 +159,11 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppStoreVersion).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppStoreVersions(), typeInfo);
             }
-            else if (value.IsAppEncryptionDeclarations2)
+            else if (value.IsApps)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.App).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEncryptionDeclarations2(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickApps(), typeInfo);
             }
             else if (value.IsBetaAppReviewSubmissions)
             {

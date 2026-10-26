@@ -55,38 +55,38 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterChallengeLocalization? GameCenterChallengeLocalizations1 { get; init; }
+        public global::AppStoreConnect.GameCenterChallengeLocalization? GameCenterChallengeLocalizations { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterChallengeLocalization? GameCenterChallengeLocalizations1 { get; }
+        public global::AppStoreConnect.GameCenterChallengeLocalization? GameCenterChallengeLocalizations { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterChallengeLocalizations1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterChallengeLocalizations))]
 #endif
-        public bool IsGameCenterChallengeLocalizations1 => GameCenterChallengeLocalizations1 != null;
+        public bool IsGameCenterChallengeLocalizations => GameCenterChallengeLocalizations != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterChallengeLocalizations1(
+        public bool TryPickGameCenterChallengeLocalizations(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.GameCenterChallengeLocalization? value)
         {
-            value = GameCenterChallengeLocalizations1;
-            return IsGameCenterChallengeLocalizations1;
+            value = GameCenterChallengeLocalizations;
+            return IsGameCenterChallengeLocalizations;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterChallengeLocalization PickGameCenterChallengeLocalizations1() => GameCenterChallengeLocalizations1 is { } value
+        public global::AppStoreConnect.GameCenterChallengeLocalization PickGameCenterChallengeLocalizations() => GameCenterChallengeLocalizations is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterChallengeLocalizations1' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterChallengeLocalizations' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -129,38 +129,38 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterChallenge? GameCenterChallengeLocalizations2 { get; init; }
+        public global::AppStoreConnect.GameCenterChallenge? GameCenterChallenges { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterChallenge? GameCenterChallengeLocalizations2 { get; }
+        public global::AppStoreConnect.GameCenterChallenge? GameCenterChallenges { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterChallengeLocalizations2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterChallenges))]
 #endif
-        public bool IsGameCenterChallengeLocalizations2 => GameCenterChallengeLocalizations2 != null;
+        public bool IsGameCenterChallenges => GameCenterChallenges != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterChallengeLocalizations2(
+        public bool TryPickGameCenterChallenges(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.GameCenterChallenge? value)
         {
-            value = GameCenterChallengeLocalizations2;
-            return IsGameCenterChallengeLocalizations2;
+            value = GameCenterChallenges;
+            return IsGameCenterChallenges;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterChallenge PickGameCenterChallengeLocalizations2() => GameCenterChallengeLocalizations2 is { } value
+        public global::AppStoreConnect.GameCenterChallenge PickGameCenterChallenges() => GameCenterChallenges is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterChallengeLocalizations2' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterChallenges' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -192,20 +192,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterChallengeLocalization?(IncludedItem99 @this) => @this.GameCenterChallengeLocalizations1;
+        public static implicit operator global::AppStoreConnect.GameCenterChallengeLocalization?(IncludedItem99 @this) => @this.GameCenterChallengeLocalizations;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem99(global::AppStoreConnect.GameCenterChallengeLocalization? value)
         {
-            GameCenterChallengeLocalizations1 = value;
+            GameCenterChallengeLocalizations = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem99 FromGameCenterChallengeLocalizations1(global::AppStoreConnect.GameCenterChallengeLocalization? value) => new IncludedItem99(value);
+        public static IncludedItem99 FromGameCenterChallengeLocalizations(global::AppStoreConnect.GameCenterChallengeLocalization? value) => new IncludedItem99(value);
 
         /// <summary>
         ///
@@ -238,20 +238,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterChallenge?(IncludedItem99 @this) => @this.GameCenterChallengeLocalizations2;
+        public static implicit operator global::AppStoreConnect.GameCenterChallenge?(IncludedItem99 @this) => @this.GameCenterChallenges;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem99(global::AppStoreConnect.GameCenterChallenge? value)
         {
-            GameCenterChallengeLocalizations2 = value;
+            GameCenterChallenges = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem99 FromGameCenterChallengeLocalizations2(global::AppStoreConnect.GameCenterChallenge? value) => new IncludedItem99(value);
+        public static IncludedItem99 FromGameCenterChallenges(global::AppStoreConnect.GameCenterChallenge? value) => new IncludedItem99(value);
 
         /// <summary>
         ///
@@ -259,26 +259,26 @@ namespace AppStoreConnect
         public IncludedItem99(
             global::AppStoreConnect.GameCenterChallengeVersionsResponseIncludedItemDiscriminatorType? type,
             global::AppStoreConnect.GameCenterChallengeImage? gameCenterChallengeImages,
-            global::AppStoreConnect.GameCenterChallengeLocalization? gameCenterChallengeLocalizations1,
+            global::AppStoreConnect.GameCenterChallengeLocalization? gameCenterChallengeLocalizations,
             global::AppStoreConnect.GameCenterChallengeVersionRelease? gameCenterChallengeVersionReleases,
-            global::AppStoreConnect.GameCenterChallenge? gameCenterChallengeLocalizations2
+            global::AppStoreConnect.GameCenterChallenge? gameCenterChallenges
             )
         {
             Type = type;
 
             GameCenterChallengeImages = gameCenterChallengeImages;
-            GameCenterChallengeLocalizations1 = gameCenterChallengeLocalizations1;
+            GameCenterChallengeLocalizations = gameCenterChallengeLocalizations;
             GameCenterChallengeVersionReleases = gameCenterChallengeVersionReleases;
-            GameCenterChallengeLocalizations2 = gameCenterChallengeLocalizations2;
+            GameCenterChallenges = gameCenterChallenges;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            GameCenterChallengeLocalizations2 as object ??
+            GameCenterChallenges as object ??
             GameCenterChallengeVersionReleases as object ??
-            GameCenterChallengeLocalizations1 as object ??
+            GameCenterChallengeLocalizations as object ??
             GameCenterChallengeImages as object
             ;
 
@@ -287,9 +287,9 @@ namespace AppStoreConnect
         /// </summary>
         public override string? ToString() =>
             GameCenterChallengeImages?.ToString() ??
-            GameCenterChallengeLocalizations1?.ToString() ??
+            GameCenterChallengeLocalizations?.ToString() ??
             GameCenterChallengeVersionReleases?.ToString() ??
-            GameCenterChallengeLocalizations2?.ToString()
+            GameCenterChallenges?.ToString()
             ;
 
         /// <summary>
@@ -297,7 +297,7 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsGameCenterChallengeImages && !IsGameCenterChallengeLocalizations1 && !IsGameCenterChallengeVersionReleases && !IsGameCenterChallengeLocalizations2 || !IsGameCenterChallengeImages && IsGameCenterChallengeLocalizations1 && !IsGameCenterChallengeVersionReleases && !IsGameCenterChallengeLocalizations2 || !IsGameCenterChallengeImages && !IsGameCenterChallengeLocalizations1 && IsGameCenterChallengeVersionReleases && !IsGameCenterChallengeLocalizations2 || !IsGameCenterChallengeImages && !IsGameCenterChallengeLocalizations1 && !IsGameCenterChallengeVersionReleases && IsGameCenterChallengeLocalizations2;
+            return IsGameCenterChallengeImages && !IsGameCenterChallengeLocalizations && !IsGameCenterChallengeVersionReleases && !IsGameCenterChallenges || !IsGameCenterChallengeImages && IsGameCenterChallengeLocalizations && !IsGameCenterChallengeVersionReleases && !IsGameCenterChallenges || !IsGameCenterChallengeImages && !IsGameCenterChallengeLocalizations && IsGameCenterChallengeVersionReleases && !IsGameCenterChallenges || !IsGameCenterChallengeImages && !IsGameCenterChallengeLocalizations && !IsGameCenterChallengeVersionReleases && IsGameCenterChallenges;
         }
 
         /// <summary>
@@ -305,9 +305,9 @@ namespace AppStoreConnect
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.GameCenterChallengeImage, TResult>? gameCenterChallengeImages = null,
-            global::System.Func<global::AppStoreConnect.GameCenterChallengeLocalization, TResult>? gameCenterChallengeLocalizations1 = null,
+            global::System.Func<global::AppStoreConnect.GameCenterChallengeLocalization, TResult>? gameCenterChallengeLocalizations = null,
             global::System.Func<global::AppStoreConnect.GameCenterChallengeVersionRelease, TResult>? gameCenterChallengeVersionReleases = null,
-            global::System.Func<global::AppStoreConnect.GameCenterChallenge, TResult>? gameCenterChallengeLocalizations2 = null,
+            global::System.Func<global::AppStoreConnect.GameCenterChallenge, TResult>? gameCenterChallenges = null,
             bool validate = true)
         {
             if (validate)
@@ -319,17 +319,17 @@ namespace AppStoreConnect
             {
                 return gameCenterChallengeImages(__value0);
             }
-            else if (GameCenterChallengeLocalizations1 is { } __value1 && gameCenterChallengeLocalizations1 != null)
+            else if (GameCenterChallengeLocalizations is { } __value1 && gameCenterChallengeLocalizations != null)
             {
-                return gameCenterChallengeLocalizations1(__value1);
+                return gameCenterChallengeLocalizations(__value1);
             }
             else if (GameCenterChallengeVersionReleases is { } __value2 && gameCenterChallengeVersionReleases != null)
             {
                 return gameCenterChallengeVersionReleases(__value2);
             }
-            else if (GameCenterChallengeLocalizations2 is { } __value3 && gameCenterChallengeLocalizations2 != null)
+            else if (GameCenterChallenges is { } __value3 && gameCenterChallenges != null)
             {
-                return gameCenterChallengeLocalizations2(__value3);
+                return gameCenterChallenges(__value3);
             }
 
             return default(TResult);
@@ -341,11 +341,11 @@ namespace AppStoreConnect
         public void Match(
             global::System.Action<global::AppStoreConnect.GameCenterChallengeImage>? gameCenterChallengeImages = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterChallengeLocalization>? gameCenterChallengeLocalizations1 = null,
+            global::System.Action<global::AppStoreConnect.GameCenterChallengeLocalization>? gameCenterChallengeLocalizations = null,
 
             global::System.Action<global::AppStoreConnect.GameCenterChallengeVersionRelease>? gameCenterChallengeVersionReleases = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterChallenge>? gameCenterChallengeLocalizations2 = null,
+            global::System.Action<global::AppStoreConnect.GameCenterChallenge>? gameCenterChallenges = null,
             bool validate = true)
         {
             if (validate)
@@ -357,17 +357,17 @@ namespace AppStoreConnect
             {
                 gameCenterChallengeImages?.Invoke(__value0);
             }
-            else if (GameCenterChallengeLocalizations1 is { } __value1)
+            else if (GameCenterChallengeLocalizations is { } __value1)
             {
-                gameCenterChallengeLocalizations1?.Invoke(__value1);
+                gameCenterChallengeLocalizations?.Invoke(__value1);
             }
             else if (GameCenterChallengeVersionReleases is { } __value2)
             {
                 gameCenterChallengeVersionReleases?.Invoke(__value2);
             }
-            else if (GameCenterChallengeLocalizations2 is { } __value3)
+            else if (GameCenterChallenges is { } __value3)
             {
-                gameCenterChallengeLocalizations2?.Invoke(__value3);
+                gameCenterChallenges?.Invoke(__value3);
             }
         }
 
@@ -376,9 +376,9 @@ namespace AppStoreConnect
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.GameCenterChallengeImage>? gameCenterChallengeImages = null,
-            global::System.Action<global::AppStoreConnect.GameCenterChallengeLocalization>? gameCenterChallengeLocalizations1 = null,
+            global::System.Action<global::AppStoreConnect.GameCenterChallengeLocalization>? gameCenterChallengeLocalizations = null,
             global::System.Action<global::AppStoreConnect.GameCenterChallengeVersionRelease>? gameCenterChallengeVersionReleases = null,
-            global::System.Action<global::AppStoreConnect.GameCenterChallenge>? gameCenterChallengeLocalizations2 = null,
+            global::System.Action<global::AppStoreConnect.GameCenterChallenge>? gameCenterChallenges = null,
             bool validate = true)
         {
             if (validate)
@@ -390,17 +390,17 @@ namespace AppStoreConnect
             {
                 gameCenterChallengeImages?.Invoke(__value0);
             }
-            else if (GameCenterChallengeLocalizations1 is { } __value1)
+            else if (GameCenterChallengeLocalizations is { } __value1)
             {
-                gameCenterChallengeLocalizations1?.Invoke(__value1);
+                gameCenterChallengeLocalizations?.Invoke(__value1);
             }
             else if (GameCenterChallengeVersionReleases is { } __value2)
             {
                 gameCenterChallengeVersionReleases?.Invoke(__value2);
             }
-            else if (GameCenterChallengeLocalizations2 is { } __value3)
+            else if (GameCenterChallenges is { } __value3)
             {
-                gameCenterChallengeLocalizations2?.Invoke(__value3);
+                gameCenterChallenges?.Invoke(__value3);
             }
         }
 
@@ -413,11 +413,11 @@ namespace AppStoreConnect
             {
                 GameCenterChallengeImages,
                 typeof(global::AppStoreConnect.GameCenterChallengeImage),
-                GameCenterChallengeLocalizations1,
+                GameCenterChallengeLocalizations,
                 typeof(global::AppStoreConnect.GameCenterChallengeLocalization),
                 GameCenterChallengeVersionReleases,
                 typeof(global::AppStoreConnect.GameCenterChallengeVersionRelease),
-                GameCenterChallengeLocalizations2,
+                GameCenterChallenges,
                 typeof(global::AppStoreConnect.GameCenterChallenge),
             };
             const int offset = unchecked((int)2166136261);
@@ -436,9 +436,9 @@ namespace AppStoreConnect
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterChallengeImage?>.Default.Equals(GameCenterChallengeImages, other.GameCenterChallengeImages) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterChallengeLocalization?>.Default.Equals(GameCenterChallengeLocalizations1, other.GameCenterChallengeLocalizations1) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterChallengeLocalization?>.Default.Equals(GameCenterChallengeLocalizations, other.GameCenterChallengeLocalizations) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterChallengeVersionRelease?>.Default.Equals(GameCenterChallengeVersionReleases, other.GameCenterChallengeVersionReleases) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterChallenge?>.Default.Equals(GameCenterChallengeLocalizations2, other.GameCenterChallengeLocalizations2)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterChallenge?>.Default.Equals(GameCenterChallenges, other.GameCenterChallenges)
                 ;
         }
 

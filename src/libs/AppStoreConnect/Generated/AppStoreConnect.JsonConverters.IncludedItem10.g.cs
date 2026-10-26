@@ -29,19 +29,19 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppClipAppStoreReviewDetail)}");
                 appClipAppStoreReviewDetails = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.AppClipDefaultExperienceLocalization? appClipDefaultExperienceLocalizations1 = default;
+            global::AppStoreConnect.AppClipDefaultExperienceLocalization? appClipDefaultExperienceLocalizations = default;
             if (discriminator?.Type == global::AppStoreConnect.AppClipDefaultExperienceResponseIncludedItemDiscriminatorType.AppClipDefaultExperienceLocalizations)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalization), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppClipDefaultExperienceLocalization> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppClipDefaultExperienceLocalization)}");
-                appClipDefaultExperienceLocalizations1 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                appClipDefaultExperienceLocalizations = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.AppClip? appClipDefaultExperienceLocalizations2 = default;
-            if (discriminator?.Type == global::AppStoreConnect.AppClipDefaultExperienceResponseIncludedItemDiscriminatorType.AppClipDefaultExperienceLocalizations)
+            global::AppStoreConnect.AppClip? appClips = default;
+            if (discriminator?.Type == global::AppStoreConnect.AppClipDefaultExperienceResponseIncludedItemDiscriminatorType.AppClips)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppClip), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppClip> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppClip)}");
-                appClipDefaultExperienceLocalizations2 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                appClips = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::AppStoreConnect.AppStoreVersion? appStoreVersions = default;
             if (discriminator?.Type == global::AppStoreConnect.AppClipDefaultExperienceResponseIncludedItemDiscriminatorType.AppStoreVersions)
@@ -55,9 +55,9 @@ namespace AppStoreConnect.JsonConverters
                 discriminator?.Type,
                 appClipAppStoreReviewDetails,
 
-                appClipDefaultExperienceLocalizations1,
+                appClipDefaultExperienceLocalizations,
 
-                appClipDefaultExperienceLocalizations2,
+                appClips,
 
                 appStoreVersions
                 );
@@ -81,17 +81,17 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppClipAppStoreReviewDetail).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppClipAppStoreReviewDetails(), typeInfo);
             }
-            else if (value.IsAppClipDefaultExperienceLocalizations1)
+            else if (value.IsAppClipDefaultExperienceLocalizations)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalization), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppClipDefaultExperienceLocalization?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalization).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppClipDefaultExperienceLocalizations1(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppClipDefaultExperienceLocalizations(), typeInfo);
             }
-            else if (value.IsAppClipDefaultExperienceLocalizations2)
+            else if (value.IsAppClips)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppClip), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppClip?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppClip).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppClipDefaultExperienceLocalizations2(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppClips(), typeInfo);
             }
             else if (value.IsAppStoreVersions)
             {

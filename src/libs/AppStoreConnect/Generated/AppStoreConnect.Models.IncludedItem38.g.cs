@@ -18,75 +18,75 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? AppStoreVersionExperimentTreatmentLocalizations1 { get; init; }
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? AppStoreVersionExperimentTreatmentLocalizations { get; init; }
 #else
-        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? AppStoreVersionExperimentTreatmentLocalizations1 { get; }
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? AppStoreVersionExperimentTreatmentLocalizations { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperimentTreatmentLocalizations1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperimentTreatmentLocalizations))]
 #endif
-        public bool IsAppStoreVersionExperimentTreatmentLocalizations1 => AppStoreVersionExperimentTreatmentLocalizations1 != null;
+        public bool IsAppStoreVersionExperimentTreatmentLocalizations => AppStoreVersionExperimentTreatmentLocalizations != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreVersionExperimentTreatmentLocalizations1(
+        public bool TryPickAppStoreVersionExperimentTreatmentLocalizations(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? value)
         {
-            value = AppStoreVersionExperimentTreatmentLocalizations1;
-            return IsAppStoreVersionExperimentTreatmentLocalizations1;
+            value = AppStoreVersionExperimentTreatmentLocalizations;
+            return IsAppStoreVersionExperimentTreatmentLocalizations;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization PickAppStoreVersionExperimentTreatmentLocalizations1() => AppStoreVersionExperimentTreatmentLocalizations1 is { } value
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization PickAppStoreVersionExperimentTreatmentLocalizations() => AppStoreVersionExperimentTreatmentLocalizations is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatmentLocalizations1' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatmentLocalizations' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersionExperiment? AppStoreVersionExperimentTreatmentLocalizations2 { get; init; }
+        public global::AppStoreConnect.AppStoreVersionExperiment? AppStoreVersionExperiments { get; init; }
 #else
-        public global::AppStoreConnect.AppStoreVersionExperiment? AppStoreVersionExperimentTreatmentLocalizations2 { get; }
+        public global::AppStoreConnect.AppStoreVersionExperiment? AppStoreVersionExperiments { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperimentTreatmentLocalizations2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperiments))]
 #endif
-        public bool IsAppStoreVersionExperimentTreatmentLocalizations2 => AppStoreVersionExperimentTreatmentLocalizations2 != null;
+        public bool IsAppStoreVersionExperiments => AppStoreVersionExperiments != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreVersionExperimentTreatmentLocalizations2(
+        public bool TryPickAppStoreVersionExperiments(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.AppStoreVersionExperiment? value)
         {
-            value = AppStoreVersionExperimentTreatmentLocalizations2;
-            return IsAppStoreVersionExperimentTreatmentLocalizations2;
+            value = AppStoreVersionExperiments;
+            return IsAppStoreVersionExperiments;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionExperiment PickAppStoreVersionExperimentTreatmentLocalizations2() => AppStoreVersionExperimentTreatmentLocalizations2 is { } value
+        public global::AppStoreConnect.AppStoreVersionExperiment PickAppStoreVersionExperiments() => AppStoreVersionExperiments is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatmentLocalizations2' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperiments' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -95,20 +95,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization?(IncludedItem38 @this) => @this.AppStoreVersionExperimentTreatmentLocalizations1;
+        public static implicit operator global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization?(IncludedItem38 @this) => @this.AppStoreVersionExperimentTreatmentLocalizations;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem38(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? value)
         {
-            AppStoreVersionExperimentTreatmentLocalizations1 = value;
+            AppStoreVersionExperimentTreatmentLocalizations = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem38 FromAppStoreVersionExperimentTreatmentLocalizations1(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? value) => new IncludedItem38(value);
+        public static IncludedItem38 FromAppStoreVersionExperimentTreatmentLocalizations(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? value) => new IncludedItem38(value);
 
         /// <summary>
         ///
@@ -118,50 +118,50 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersionExperiment?(IncludedItem38 @this) => @this.AppStoreVersionExperimentTreatmentLocalizations2;
+        public static implicit operator global::AppStoreConnect.AppStoreVersionExperiment?(IncludedItem38 @this) => @this.AppStoreVersionExperiments;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem38(global::AppStoreConnect.AppStoreVersionExperiment? value)
         {
-            AppStoreVersionExperimentTreatmentLocalizations2 = value;
+            AppStoreVersionExperiments = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem38 FromAppStoreVersionExperimentTreatmentLocalizations2(global::AppStoreConnect.AppStoreVersionExperiment? value) => new IncludedItem38(value);
+        public static IncludedItem38 FromAppStoreVersionExperiments(global::AppStoreConnect.AppStoreVersionExperiment? value) => new IncludedItem38(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem38(
             global::AppStoreConnect.AppStoreVersionExperimentTreatmentsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? appStoreVersionExperimentTreatmentLocalizations1,
-            global::AppStoreConnect.AppStoreVersionExperiment? appStoreVersionExperimentTreatmentLocalizations2
+            global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? appStoreVersionExperimentTreatmentLocalizations,
+            global::AppStoreConnect.AppStoreVersionExperiment? appStoreVersionExperiments
             )
         {
             Type = type;
 
-            AppStoreVersionExperimentTreatmentLocalizations1 = appStoreVersionExperimentTreatmentLocalizations1;
-            AppStoreVersionExperimentTreatmentLocalizations2 = appStoreVersionExperimentTreatmentLocalizations2;
+            AppStoreVersionExperimentTreatmentLocalizations = appStoreVersionExperimentTreatmentLocalizations;
+            AppStoreVersionExperiments = appStoreVersionExperiments;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            AppStoreVersionExperimentTreatmentLocalizations2 as object ??
-            AppStoreVersionExperimentTreatmentLocalizations1 as object
+            AppStoreVersionExperiments as object ??
+            AppStoreVersionExperimentTreatmentLocalizations as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppStoreVersionExperimentTreatmentLocalizations1?.ToString() ??
-            AppStoreVersionExperimentTreatmentLocalizations2?.ToString()
+            AppStoreVersionExperimentTreatmentLocalizations?.ToString() ??
+            AppStoreVersionExperiments?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppStoreVersionExperimentTreatmentLocalizations1 && !IsAppStoreVersionExperimentTreatmentLocalizations2 || !IsAppStoreVersionExperimentTreatmentLocalizations1 && IsAppStoreVersionExperimentTreatmentLocalizations2;
+            return IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionExperiments || !IsAppStoreVersionExperimentTreatmentLocalizations && IsAppStoreVersionExperiments;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization, TResult>? appStoreVersionExperimentTreatmentLocalizations1 = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersionExperiment, TResult>? appStoreVersionExperimentTreatmentLocalizations2 = null,
+            global::System.Func<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization, TResult>? appStoreVersionExperimentTreatmentLocalizations = null,
+            global::System.Func<global::AppStoreConnect.AppStoreVersionExperiment, TResult>? appStoreVersionExperiments = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppStoreVersionExperimentTreatmentLocalizations1 is { } __value0 && appStoreVersionExperimentTreatmentLocalizations1 != null)
+            if (AppStoreVersionExperimentTreatmentLocalizations is { } __value0 && appStoreVersionExperimentTreatmentLocalizations != null)
             {
-                return appStoreVersionExperimentTreatmentLocalizations1(__value0);
+                return appStoreVersionExperimentTreatmentLocalizations(__value0);
             }
-            else if (AppStoreVersionExperimentTreatmentLocalizations2 is { } __value1 && appStoreVersionExperimentTreatmentLocalizations2 != null)
+            else if (AppStoreVersionExperiments is { } __value1 && appStoreVersionExperiments != null)
             {
-                return appStoreVersionExperimentTreatmentLocalizations2(__value1);
+                return appStoreVersionExperiments(__value1);
             }
 
             return default(TResult);
@@ -201,9 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization>? appStoreVersionExperimentTreatmentLocalizations1 = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization>? appStoreVersionExperimentTreatmentLocalizations = null,
 
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperiment>? appStoreVersionExperimentTreatmentLocalizations2 = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersionExperiment>? appStoreVersionExperiments = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppStoreVersionExperimentTreatmentLocalizations1 is { } __value0)
+            if (AppStoreVersionExperimentTreatmentLocalizations is { } __value0)
             {
-                appStoreVersionExperimentTreatmentLocalizations1?.Invoke(__value0);
+                appStoreVersionExperimentTreatmentLocalizations?.Invoke(__value0);
             }
-            else if (AppStoreVersionExperimentTreatmentLocalizations2 is { } __value1)
+            else if (AppStoreVersionExperiments is { } __value1)
             {
-                appStoreVersionExperimentTreatmentLocalizations2?.Invoke(__value1);
+                appStoreVersionExperiments?.Invoke(__value1);
             }
         }
 
@@ -225,8 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization>? appStoreVersionExperimentTreatmentLocalizations1 = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperiment>? appStoreVersionExperimentTreatmentLocalizations2 = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization>? appStoreVersionExperimentTreatmentLocalizations = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersionExperiment>? appStoreVersionExperiments = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppStoreVersionExperimentTreatmentLocalizations1 is { } __value0)
+            if (AppStoreVersionExperimentTreatmentLocalizations is { } __value0)
             {
-                appStoreVersionExperimentTreatmentLocalizations1?.Invoke(__value0);
+                appStoreVersionExperimentTreatmentLocalizations?.Invoke(__value0);
             }
-            else if (AppStoreVersionExperimentTreatmentLocalizations2 is { } __value1)
+            else if (AppStoreVersionExperiments is { } __value1)
             {
-                appStoreVersionExperimentTreatmentLocalizations2?.Invoke(__value1);
+                appStoreVersionExperiments?.Invoke(__value1);
             }
         }
 
@@ -251,9 +251,9 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppStoreVersionExperimentTreatmentLocalizations1,
+                AppStoreVersionExperimentTreatmentLocalizations,
                 typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization),
-                AppStoreVersionExperimentTreatmentLocalizations2,
+                AppStoreVersionExperiments,
                 typeof(global::AppStoreConnect.AppStoreVersionExperiment),
             };
             const int offset = unchecked((int)2166136261);
@@ -271,8 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem38 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization?>.Default.Equals(AppStoreVersionExperimentTreatmentLocalizations1, other.AppStoreVersionExperimentTreatmentLocalizations1) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperiment?>.Default.Equals(AppStoreVersionExperimentTreatmentLocalizations2, other.AppStoreVersionExperimentTreatmentLocalizations2)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization?>.Default.Equals(AppStoreVersionExperimentTreatmentLocalizations, other.AppStoreVersionExperimentTreatmentLocalizations) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperiment?>.Default.Equals(AppStoreVersionExperiments, other.AppStoreVersionExperiments)
                 ;
         }
 

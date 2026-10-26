@@ -18,75 +18,75 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppEncryptionDeclarationDocument? AppEncryptionDeclarationDocuments1 { get; init; }
+        public global::AppStoreConnect.AppEncryptionDeclarationDocument? AppEncryptionDeclarationDocuments { get; init; }
 #else
-        public global::AppStoreConnect.AppEncryptionDeclarationDocument? AppEncryptionDeclarationDocuments1 { get; }
+        public global::AppStoreConnect.AppEncryptionDeclarationDocument? AppEncryptionDeclarationDocuments { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEncryptionDeclarationDocuments1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEncryptionDeclarationDocuments))]
 #endif
-        public bool IsAppEncryptionDeclarationDocuments1 => AppEncryptionDeclarationDocuments1 != null;
+        public bool IsAppEncryptionDeclarationDocuments => AppEncryptionDeclarationDocuments != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppEncryptionDeclarationDocuments1(
+        public bool TryPickAppEncryptionDeclarationDocuments(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.AppEncryptionDeclarationDocument? value)
         {
-            value = AppEncryptionDeclarationDocuments1;
-            return IsAppEncryptionDeclarationDocuments1;
+            value = AppEncryptionDeclarationDocuments;
+            return IsAppEncryptionDeclarationDocuments;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEncryptionDeclarationDocument PickAppEncryptionDeclarationDocuments1() => AppEncryptionDeclarationDocuments1 is { } value
+        public global::AppStoreConnect.AppEncryptionDeclarationDocument PickAppEncryptionDeclarationDocuments() => AppEncryptionDeclarationDocuments is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEncryptionDeclarationDocuments1' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEncryptionDeclarationDocuments' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.App? AppEncryptionDeclarationDocuments2 { get; init; }
+        public global::AppStoreConnect.App? Apps { get; init; }
 #else
-        public global::AppStoreConnect.App? AppEncryptionDeclarationDocuments2 { get; }
+        public global::AppStoreConnect.App? Apps { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEncryptionDeclarationDocuments2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
 #endif
-        public bool IsAppEncryptionDeclarationDocuments2 => AppEncryptionDeclarationDocuments2 != null;
+        public bool IsApps => Apps != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppEncryptionDeclarationDocuments2(
+        public bool TryPickApps(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.App? value)
         {
-            value = AppEncryptionDeclarationDocuments2;
-            return IsAppEncryptionDeclarationDocuments2;
+            value = Apps;
+            return IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickAppEncryptionDeclarationDocuments2() => AppEncryptionDeclarationDocuments2 is { } value
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEncryptionDeclarationDocuments2' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -132,20 +132,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppEncryptionDeclarationDocument?(IncludedItem21 @this) => @this.AppEncryptionDeclarationDocuments1;
+        public static implicit operator global::AppStoreConnect.AppEncryptionDeclarationDocument?(IncludedItem21 @this) => @this.AppEncryptionDeclarationDocuments;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem21(global::AppStoreConnect.AppEncryptionDeclarationDocument? value)
         {
-            AppEncryptionDeclarationDocuments1 = value;
+            AppEncryptionDeclarationDocuments = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem21 FromAppEncryptionDeclarationDocuments1(global::AppStoreConnect.AppEncryptionDeclarationDocument? value) => new IncludedItem21(value);
+        public static IncludedItem21 FromAppEncryptionDeclarationDocuments(global::AppStoreConnect.AppEncryptionDeclarationDocument? value) => new IncludedItem21(value);
 
         /// <summary>
         ///
@@ -155,20 +155,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.App?(IncludedItem21 @this) => @this.AppEncryptionDeclarationDocuments2;
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem21 @this) => @this.Apps;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem21(global::AppStoreConnect.App? value)
         {
-            AppEncryptionDeclarationDocuments2 = value;
+            Apps = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem21 FromAppEncryptionDeclarationDocuments2(global::AppStoreConnect.App? value) => new IncludedItem21(value);
+        public static IncludedItem21 FromApps(global::AppStoreConnect.App? value) => new IncludedItem21(value);
 
         /// <summary>
         ///
@@ -198,15 +198,15 @@ namespace AppStoreConnect
         /// </summary>
         public IncludedItem21(
             global::AppStoreConnect.AppEncryptionDeclarationResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppEncryptionDeclarationDocument? appEncryptionDeclarationDocuments1,
-            global::AppStoreConnect.App? appEncryptionDeclarationDocuments2,
+            global::AppStoreConnect.AppEncryptionDeclarationDocument? appEncryptionDeclarationDocuments,
+            global::AppStoreConnect.App? apps,
             global::AppStoreConnect.Build? builds
             )
         {
             Type = type;
 
-            AppEncryptionDeclarationDocuments1 = appEncryptionDeclarationDocuments1;
-            AppEncryptionDeclarationDocuments2 = appEncryptionDeclarationDocuments2;
+            AppEncryptionDeclarationDocuments = appEncryptionDeclarationDocuments;
+            Apps = apps;
             Builds = builds;
         }
 
@@ -215,16 +215,16 @@ namespace AppStoreConnect
         /// </summary>
         public object? Object =>
             Builds as object ??
-            AppEncryptionDeclarationDocuments2 as object ??
-            AppEncryptionDeclarationDocuments1 as object
+            Apps as object ??
+            AppEncryptionDeclarationDocuments as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppEncryptionDeclarationDocuments1?.ToString() ??
-            AppEncryptionDeclarationDocuments2?.ToString() ??
+            AppEncryptionDeclarationDocuments?.ToString() ??
+            Apps?.ToString() ??
             Builds?.ToString()
             ;
 
@@ -233,15 +233,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppEncryptionDeclarationDocuments1 && !IsAppEncryptionDeclarationDocuments2 && !IsBuilds || !IsAppEncryptionDeclarationDocuments1 && IsAppEncryptionDeclarationDocuments2 && !IsBuilds || !IsAppEncryptionDeclarationDocuments1 && !IsAppEncryptionDeclarationDocuments2 && IsBuilds;
+            return IsAppEncryptionDeclarationDocuments && !IsApps && !IsBuilds || !IsAppEncryptionDeclarationDocuments && IsApps && !IsBuilds || !IsAppEncryptionDeclarationDocuments && !IsApps && IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppEncryptionDeclarationDocument, TResult>? appEncryptionDeclarationDocuments1 = null,
-            global::System.Func<global::AppStoreConnect.App, TResult>? appEncryptionDeclarationDocuments2 = null,
+            global::System.Func<global::AppStoreConnect.AppEncryptionDeclarationDocument, TResult>? appEncryptionDeclarationDocuments = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
             global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
             bool validate = true)
         {
@@ -250,13 +250,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppEncryptionDeclarationDocuments1 is { } __value0 && appEncryptionDeclarationDocuments1 != null)
+            if (AppEncryptionDeclarationDocuments is { } __value0 && appEncryptionDeclarationDocuments != null)
             {
-                return appEncryptionDeclarationDocuments1(__value0);
+                return appEncryptionDeclarationDocuments(__value0);
             }
-            else if (AppEncryptionDeclarationDocuments2 is { } __value1 && appEncryptionDeclarationDocuments2 != null)
+            else if (Apps is { } __value1 && apps != null)
             {
-                return appEncryptionDeclarationDocuments2(__value1);
+                return apps(__value1);
             }
             else if (Builds is { } __value2 && builds != null)
             {
@@ -270,9 +270,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppEncryptionDeclarationDocument>? appEncryptionDeclarationDocuments1 = null,
+            global::System.Action<global::AppStoreConnect.AppEncryptionDeclarationDocument>? appEncryptionDeclarationDocuments = null,
 
-            global::System.Action<global::AppStoreConnect.App>? appEncryptionDeclarationDocuments2 = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
 
             global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
@@ -282,13 +282,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppEncryptionDeclarationDocuments1 is { } __value0)
+            if (AppEncryptionDeclarationDocuments is { } __value0)
             {
-                appEncryptionDeclarationDocuments1?.Invoke(__value0);
+                appEncryptionDeclarationDocuments?.Invoke(__value0);
             }
-            else if (AppEncryptionDeclarationDocuments2 is { } __value1)
+            else if (Apps is { } __value1)
             {
-                appEncryptionDeclarationDocuments2?.Invoke(__value1);
+                apps?.Invoke(__value1);
             }
             else if (Builds is { } __value2)
             {
@@ -300,8 +300,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppEncryptionDeclarationDocument>? appEncryptionDeclarationDocuments1 = null,
-            global::System.Action<global::AppStoreConnect.App>? appEncryptionDeclarationDocuments2 = null,
+            global::System.Action<global::AppStoreConnect.AppEncryptionDeclarationDocument>? appEncryptionDeclarationDocuments = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
             global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
@@ -310,13 +310,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppEncryptionDeclarationDocuments1 is { } __value0)
+            if (AppEncryptionDeclarationDocuments is { } __value0)
             {
-                appEncryptionDeclarationDocuments1?.Invoke(__value0);
+                appEncryptionDeclarationDocuments?.Invoke(__value0);
             }
-            else if (AppEncryptionDeclarationDocuments2 is { } __value1)
+            else if (Apps is { } __value1)
             {
-                appEncryptionDeclarationDocuments2?.Invoke(__value1);
+                apps?.Invoke(__value1);
             }
             else if (Builds is { } __value2)
             {
@@ -331,9 +331,9 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppEncryptionDeclarationDocuments1,
+                AppEncryptionDeclarationDocuments,
                 typeof(global::AppStoreConnect.AppEncryptionDeclarationDocument),
-                AppEncryptionDeclarationDocuments2,
+                Apps,
                 typeof(global::AppStoreConnect.App),
                 Builds,
                 typeof(global::AppStoreConnect.Build),
@@ -353,8 +353,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem21 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEncryptionDeclarationDocument?>.Default.Equals(AppEncryptionDeclarationDocuments1, other.AppEncryptionDeclarationDocuments1) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(AppEncryptionDeclarationDocuments2, other.AppEncryptionDeclarationDocuments2) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEncryptionDeclarationDocument?>.Default.Equals(AppEncryptionDeclarationDocuments, other.AppEncryptionDeclarationDocuments) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
                 ;
         }

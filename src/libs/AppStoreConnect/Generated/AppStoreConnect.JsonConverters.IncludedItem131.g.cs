@@ -57,12 +57,12 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterLeaderboardLocalization)}");
                 gameCenterLeaderboardLocalizations = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.GameCenterLeaderboardRelease? gameCenterLeaderboardReleases1 = default;
+            global::AppStoreConnect.GameCenterLeaderboardRelease? gameCenterLeaderboardReleases = default;
             if (discriminator?.Type == global::AppStoreConnect.GameCenterLeaderboardResponseIncludedItemDiscriminatorType.GameCenterLeaderboardReleases)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboardRelease), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboardRelease> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterLeaderboardRelease)}");
-                gameCenterLeaderboardReleases1 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                gameCenterLeaderboardReleases = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::AppStoreConnect.GameCenterLeaderboardSet? gameCenterLeaderboardSets = default;
             if (discriminator?.Type == global::AppStoreConnect.GameCenterLeaderboardResponseIncludedItemDiscriminatorType.GameCenterLeaderboardSets)
@@ -71,12 +71,12 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterLeaderboardSet)}");
                 gameCenterLeaderboardSets = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.GameCenterLeaderboard? gameCenterLeaderboardReleases2 = default;
-            if (discriminator?.Type == global::AppStoreConnect.GameCenterLeaderboardResponseIncludedItemDiscriminatorType.GameCenterLeaderboardReleases)
+            global::AppStoreConnect.GameCenterLeaderboard? gameCenterLeaderboards = default;
+            if (discriminator?.Type == global::AppStoreConnect.GameCenterLeaderboardResponseIncludedItemDiscriminatorType.GameCenterLeaderboards)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboard), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboard> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterLeaderboard)}");
-                gameCenterLeaderboardReleases2 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                gameCenterLeaderboards = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::AppStoreConnect.IncludedItem131(
@@ -91,11 +91,11 @@ namespace AppStoreConnect.JsonConverters
 
                 gameCenterLeaderboardLocalizations,
 
-                gameCenterLeaderboardReleases1,
+                gameCenterLeaderboardReleases,
 
                 gameCenterLeaderboardSets,
 
-                gameCenterLeaderboardReleases2
+                gameCenterLeaderboards
                 );
 
             return __value;
@@ -141,11 +141,11 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterLeaderboardLocalization).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterLeaderboardLocalizations(), typeInfo);
             }
-            else if (value.IsGameCenterLeaderboardReleases1)
+            else if (value.IsGameCenterLeaderboardReleases)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboardRelease), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboardRelease?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterLeaderboardRelease).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterLeaderboardReleases1(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterLeaderboardReleases(), typeInfo);
             }
             else if (value.IsGameCenterLeaderboardSets)
             {
@@ -153,11 +153,11 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterLeaderboardSet).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterLeaderboardSets(), typeInfo);
             }
-            else if (value.IsGameCenterLeaderboardReleases2)
+            else if (value.IsGameCenterLeaderboards)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterLeaderboard), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterLeaderboard?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterLeaderboard).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterLeaderboardReleases2(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterLeaderboards(), typeInfo);
             }
         }
     }

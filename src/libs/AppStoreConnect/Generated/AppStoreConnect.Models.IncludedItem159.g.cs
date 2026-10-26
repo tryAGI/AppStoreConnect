@@ -55,75 +55,75 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions1 { get; init; }
+        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; init; }
 #else
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions1 { get; }
+        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions))]
 #endif
-        public bool IsAppStoreVersions1 => AppStoreVersions1 != null;
+        public bool IsAppStoreVersions => AppStoreVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreVersions1(
+        public bool TryPickAppStoreVersions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.AppStoreVersion? value)
         {
-            value = AppStoreVersions1;
-            return IsAppStoreVersions1;
+            value = AppStoreVersions;
+            return IsAppStoreVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions1() => AppStoreVersions1 is { } value
+        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => AppStoreVersions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions1' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.App? AppStoreVersions2 { get; init; }
+        public global::AppStoreConnect.App? Apps { get; init; }
 #else
-        public global::AppStoreConnect.App? AppStoreVersions2 { get; }
+        public global::AppStoreConnect.App? Apps { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
 #endif
-        public bool IsAppStoreVersions2 => AppStoreVersions2 != null;
+        public bool IsApps => Apps != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreVersions2(
+        public bool TryPickApps(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.App? value)
         {
-            value = AppStoreVersions2;
-            return IsAppStoreVersions2;
+            value = Apps;
+            return IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickAppStoreVersions2() => AppStoreVersions2 is { } value
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions2' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -192,20 +192,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem159 @this) => @this.AppStoreVersions1;
+        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem159 @this) => @this.AppStoreVersions;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem159(global::AppStoreConnect.AppStoreVersion? value)
         {
-            AppStoreVersions1 = value;
+            AppStoreVersions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem159 FromAppStoreVersions1(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem159(value);
+        public static IncludedItem159 FromAppStoreVersions(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem159(value);
 
         /// <summary>
         ///
@@ -215,20 +215,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.App?(IncludedItem159 @this) => @this.AppStoreVersions2;
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem159 @this) => @this.Apps;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem159(global::AppStoreConnect.App? value)
         {
-            AppStoreVersions2 = value;
+            Apps = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem159 FromAppStoreVersions2(global::AppStoreConnect.App? value) => new IncludedItem159(value);
+        public static IncludedItem159 FromApps(global::AppStoreConnect.App? value) => new IncludedItem159(value);
 
         /// <summary>
         ///
@@ -259,16 +259,16 @@ namespace AppStoreConnect
         public IncludedItem159(
             global::AppStoreConnect.ReviewSubmissionResponseIncludedItemDiscriminatorType? type,
             global::AppStoreConnect.Actor? actors,
-            global::AppStoreConnect.AppStoreVersion? appStoreVersions1,
-            global::AppStoreConnect.App? appStoreVersions2,
+            global::AppStoreConnect.AppStoreVersion? appStoreVersions,
+            global::AppStoreConnect.App? apps,
             global::AppStoreConnect.ReviewSubmissionItem? reviewSubmissionItems
             )
         {
             Type = type;
 
             Actors = actors;
-            AppStoreVersions1 = appStoreVersions1;
-            AppStoreVersions2 = appStoreVersions2;
+            AppStoreVersions = appStoreVersions;
+            Apps = apps;
             ReviewSubmissionItems = reviewSubmissionItems;
         }
 
@@ -277,8 +277,8 @@ namespace AppStoreConnect
         /// </summary>
         public object? Object =>
             ReviewSubmissionItems as object ??
-            AppStoreVersions2 as object ??
-            AppStoreVersions1 as object ??
+            Apps as object ??
+            AppStoreVersions as object ??
             Actors as object
             ;
 
@@ -287,8 +287,8 @@ namespace AppStoreConnect
         /// </summary>
         public override string? ToString() =>
             Actors?.ToString() ??
-            AppStoreVersions1?.ToString() ??
-            AppStoreVersions2?.ToString() ??
+            AppStoreVersions?.ToString() ??
+            Apps?.ToString() ??
             ReviewSubmissionItems?.ToString()
             ;
 
@@ -297,7 +297,7 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsActors && !IsAppStoreVersions1 && !IsAppStoreVersions2 && !IsReviewSubmissionItems || !IsActors && IsAppStoreVersions1 && !IsAppStoreVersions2 && !IsReviewSubmissionItems || !IsActors && !IsAppStoreVersions1 && IsAppStoreVersions2 && !IsReviewSubmissionItems || !IsActors && !IsAppStoreVersions1 && !IsAppStoreVersions2 && IsReviewSubmissionItems;
+            return IsActors && !IsAppStoreVersions && !IsApps && !IsReviewSubmissionItems || !IsActors && IsAppStoreVersions && !IsApps && !IsReviewSubmissionItems || !IsActors && !IsAppStoreVersions && IsApps && !IsReviewSubmissionItems || !IsActors && !IsAppStoreVersions && !IsApps && IsReviewSubmissionItems;
         }
 
         /// <summary>
@@ -305,8 +305,8 @@ namespace AppStoreConnect
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.Actor, TResult>? actors = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersions1 = null,
-            global::System.Func<global::AppStoreConnect.App, TResult>? appStoreVersions2 = null,
+            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersions = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
             global::System.Func<global::AppStoreConnect.ReviewSubmissionItem, TResult>? reviewSubmissionItems = null,
             bool validate = true)
         {
@@ -319,13 +319,13 @@ namespace AppStoreConnect
             {
                 return actors(__value0);
             }
-            else if (AppStoreVersions1 is { } __value1 && appStoreVersions1 != null)
+            else if (AppStoreVersions is { } __value1 && appStoreVersions != null)
             {
-                return appStoreVersions1(__value1);
+                return appStoreVersions(__value1);
             }
-            else if (AppStoreVersions2 is { } __value2 && appStoreVersions2 != null)
+            else if (Apps is { } __value2 && apps != null)
             {
-                return appStoreVersions2(__value2);
+                return apps(__value2);
             }
             else if (ReviewSubmissionItems is { } __value3 && reviewSubmissionItems != null)
             {
@@ -341,9 +341,9 @@ namespace AppStoreConnect
         public void Match(
             global::System.Action<global::AppStoreConnect.Actor>? actors = null,
 
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions1 = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
 
-            global::System.Action<global::AppStoreConnect.App>? appStoreVersions2 = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
 
             global::System.Action<global::AppStoreConnect.ReviewSubmissionItem>? reviewSubmissionItems = null,
             bool validate = true)
@@ -357,13 +357,13 @@ namespace AppStoreConnect
             {
                 actors?.Invoke(__value0);
             }
-            else if (AppStoreVersions1 is { } __value1)
+            else if (AppStoreVersions is { } __value1)
             {
-                appStoreVersions1?.Invoke(__value1);
+                appStoreVersions?.Invoke(__value1);
             }
-            else if (AppStoreVersions2 is { } __value2)
+            else if (Apps is { } __value2)
             {
-                appStoreVersions2?.Invoke(__value2);
+                apps?.Invoke(__value2);
             }
             else if (ReviewSubmissionItems is { } __value3)
             {
@@ -376,8 +376,8 @@ namespace AppStoreConnect
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.Actor>? actors = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions1 = null,
-            global::System.Action<global::AppStoreConnect.App>? appStoreVersions2 = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
             global::System.Action<global::AppStoreConnect.ReviewSubmissionItem>? reviewSubmissionItems = null,
             bool validate = true)
         {
@@ -390,13 +390,13 @@ namespace AppStoreConnect
             {
                 actors?.Invoke(__value0);
             }
-            else if (AppStoreVersions1 is { } __value1)
+            else if (AppStoreVersions is { } __value1)
             {
-                appStoreVersions1?.Invoke(__value1);
+                appStoreVersions?.Invoke(__value1);
             }
-            else if (AppStoreVersions2 is { } __value2)
+            else if (Apps is { } __value2)
             {
-                appStoreVersions2?.Invoke(__value2);
+                apps?.Invoke(__value2);
             }
             else if (ReviewSubmissionItems is { } __value3)
             {
@@ -413,9 +413,9 @@ namespace AppStoreConnect
             {
                 Actors,
                 typeof(global::AppStoreConnect.Actor),
-                AppStoreVersions1,
+                AppStoreVersions,
                 typeof(global::AppStoreConnect.AppStoreVersion),
-                AppStoreVersions2,
+                Apps,
                 typeof(global::AppStoreConnect.App),
                 ReviewSubmissionItems,
                 typeof(global::AppStoreConnect.ReviewSubmissionItem),
@@ -436,8 +436,8 @@ namespace AppStoreConnect
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Actor?>.Default.Equals(Actors, other.Actors) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions1, other.AppStoreVersions1) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(AppStoreVersions2, other.AppStoreVersions2) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions, other.AppStoreVersions) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ReviewSubmissionItem?>.Default.Equals(ReviewSubmissionItems, other.ReviewSubmissionItems)
                 ;
         }

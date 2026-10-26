@@ -29,19 +29,19 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.Actor)}");
                 actors = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.AppEvent? appEvents1 = default;
+            global::AppStoreConnect.AppEvent? appEvents = default;
             if (discriminator?.Type == global::AppStoreConnect.NominationResponseIncludedItemDiscriminatorType.AppEvents)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppEvent> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppEvent)}");
-                appEvents1 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                appEvents = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.App? appEvents2 = default;
-            if (discriminator?.Type == global::AppStoreConnect.NominationResponseIncludedItemDiscriminatorType.AppEvents)
+            global::AppStoreConnect.App? apps = default;
+            if (discriminator?.Type == global::AppStoreConnect.NominationResponseIncludedItemDiscriminatorType.Apps)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.App)}");
-                appEvents2 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                apps = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::AppStoreConnect.Territory? territories = default;
             if (discriminator?.Type == global::AppStoreConnect.NominationResponseIncludedItemDiscriminatorType.Territories)
@@ -55,9 +55,9 @@ namespace AppStoreConnect.JsonConverters
                 discriminator?.Type,
                 actors,
 
-                appEvents1,
+                appEvents,
 
-                appEvents2,
+                apps,
 
                 territories
                 );
@@ -81,17 +81,17 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Actor).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickActors(), typeInfo);
             }
-            else if (value.IsAppEvents1)
+            else if (value.IsAppEvents)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppEvent), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppEvent?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppEvent).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEvents1(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEvents(), typeInfo);
             }
-            else if (value.IsAppEvents2)
+            else if (value.IsApps)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.App), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.App?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.App).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppEvents2(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickApps(), typeInfo);
             }
             else if (value.IsTerritories)
             {

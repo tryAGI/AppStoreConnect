@@ -166,75 +166,75 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersionExperiment? AppStoreVersionExperiments1 { get; init; }
+        public global::AppStoreConnect.AppStoreVersionExperiment? AppStoreVersionExperiments { get; init; }
 #else
-        public global::AppStoreConnect.AppStoreVersionExperiment? AppStoreVersionExperiments1 { get; }
+        public global::AppStoreConnect.AppStoreVersionExperiment? AppStoreVersionExperiments { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperiments1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperiments))]
 #endif
-        public bool IsAppStoreVersionExperiments1 => AppStoreVersionExperiments1 != null;
+        public bool IsAppStoreVersionExperiments => AppStoreVersionExperiments != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreVersionExperiments1(
+        public bool TryPickAppStoreVersionExperiments(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.AppStoreVersionExperiment? value)
         {
-            value = AppStoreVersionExperiments1;
-            return IsAppStoreVersionExperiments1;
+            value = AppStoreVersionExperiments;
+            return IsAppStoreVersionExperiments;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionExperiment PickAppStoreVersionExperiments1() => AppStoreVersionExperiments1 is { } value
+        public global::AppStoreConnect.AppStoreVersionExperiment PickAppStoreVersionExperiments() => AppStoreVersionExperiments is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperiments1' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperiments' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersionExperiments2 { get; init; }
+        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; init; }
 #else
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersionExperiments2 { get; }
+        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperiments2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions))]
 #endif
-        public bool IsAppStoreVersionExperiments2 => AppStoreVersionExperiments2 != null;
+        public bool IsAppStoreVersions => AppStoreVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreVersionExperiments2(
+        public bool TryPickAppStoreVersions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.AppStoreVersion? value)
         {
-            value = AppStoreVersionExperiments2;
-            return IsAppStoreVersionExperiments2;
+            value = AppStoreVersions;
+            return IsAppStoreVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersionExperiments2() => AppStoreVersionExperiments2 is { } value
+        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => AppStoreVersions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperiments2' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -668,20 +668,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersionExperiment?(IncludedItem156 @this) => @this.AppStoreVersionExperiments1;
+        public static implicit operator global::AppStoreConnect.AppStoreVersionExperiment?(IncludedItem156 @this) => @this.AppStoreVersionExperiments;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem156(global::AppStoreConnect.AppStoreVersionExperiment? value)
         {
-            AppStoreVersionExperiments1 = value;
+            AppStoreVersionExperiments = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem156 FromAppStoreVersionExperiments1(global::AppStoreConnect.AppStoreVersionExperiment? value) => new IncludedItem156(value);
+        public static IncludedItem156 FromAppStoreVersionExperiments(global::AppStoreConnect.AppStoreVersionExperiment? value) => new IncludedItem156(value);
 
         /// <summary>
         ///
@@ -691,20 +691,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem156 @this) => @this.AppStoreVersionExperiments2;
+        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem156 @this) => @this.AppStoreVersions;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem156(global::AppStoreConnect.AppStoreVersion? value)
         {
-            AppStoreVersionExperiments2 = value;
+            AppStoreVersions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem156 FromAppStoreVersionExperiments2(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem156(value);
+        public static IncludedItem156 FromAppStoreVersions(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem156(value);
 
         /// <summary>
         ///
@@ -922,8 +922,8 @@ namespace AppStoreConnect
             global::AppStoreConnect.AppAssetLibraryVideo? appAssetLibraryVideos,
             global::AppStoreConnect.AppCustomProductPageVersion? appCustomProductPageVersions,
             global::AppStoreConnect.AppEvent? appEvents,
-            global::AppStoreConnect.AppStoreVersionExperiment? appStoreVersionExperiments1,
-            global::AppStoreConnect.AppStoreVersion? appStoreVersionExperiments2,
+            global::AppStoreConnect.AppStoreVersionExperiment? appStoreVersionExperiments,
+            global::AppStoreConnect.AppStoreVersion? appStoreVersions,
             global::AppStoreConnect.BackgroundAssetVersion? backgroundAssetVersions,
             global::AppStoreConnect.GameCenterAchievementVersionV2? gameCenterAchievementVersions,
             global::AppStoreConnect.GameCenterActivityVersion? gameCenterActivityVersions,
@@ -941,8 +941,8 @@ namespace AppStoreConnect
             AppAssetLibraryVideos = appAssetLibraryVideos;
             AppCustomProductPageVersions = appCustomProductPageVersions;
             AppEvents = appEvents;
-            AppStoreVersionExperiments1 = appStoreVersionExperiments1;
-            AppStoreVersionExperiments2 = appStoreVersionExperiments2;
+            AppStoreVersionExperiments = appStoreVersionExperiments;
+            AppStoreVersions = appStoreVersions;
             BackgroundAssetVersions = backgroundAssetVersions;
             GameCenterAchievementVersions = gameCenterAchievementVersions;
             GameCenterActivityVersions = gameCenterActivityVersions;
@@ -967,8 +967,8 @@ namespace AppStoreConnect
             GameCenterActivityVersions as object ??
             GameCenterAchievementVersions as object ??
             BackgroundAssetVersions as object ??
-            AppStoreVersionExperiments2 as object ??
-            AppStoreVersionExperiments1 as object ??
+            AppStoreVersions as object ??
+            AppStoreVersionExperiments as object ??
             AppEvents as object ??
             AppCustomProductPageVersions as object ??
             AppAssetLibraryVideos as object ??
@@ -983,8 +983,8 @@ namespace AppStoreConnect
             AppAssetLibraryVideos?.ToString() ??
             AppCustomProductPageVersions?.ToString() ??
             AppEvents?.ToString() ??
-            AppStoreVersionExperiments1?.ToString() ??
-            AppStoreVersionExperiments2?.ToString() ??
+            AppStoreVersionExperiments?.ToString() ??
+            AppStoreVersions?.ToString() ??
             BackgroundAssetVersions?.ToString() ??
             GameCenterAchievementVersions?.ToString() ??
             GameCenterActivityVersions?.ToString() ??
@@ -1001,7 +1001,7 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && IsAppEvents && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments1 && IsAppStoreVersionExperiments2 && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBackgroundAssetVersions && IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments1 && !IsAppStoreVersionExperiments2 && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && IsSubscriptionVersions;
+            return IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && IsAppEvents && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments && IsAppStoreVersions && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments && !IsAppStoreVersions && IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBackgroundAssetVersions && IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && IsSubscriptionGroupVersions && !IsSubscriptionVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageVersions && !IsAppEvents && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBackgroundAssetVersions && !IsGameCenterAchievementVersions && !IsGameCenterActivityVersions && !IsGameCenterChallengeVersions && !IsGameCenterLeaderboardSetVersions && !IsGameCenterLeaderboardVersions && !IsInAppPurchaseVersions && !IsSubscriptionGroupVersions && IsSubscriptionVersions;
         }
 
         /// <summary>
@@ -1012,8 +1012,8 @@ namespace AppStoreConnect
             global::System.Func<global::AppStoreConnect.AppAssetLibraryVideo, TResult>? appAssetLibraryVideos = null,
             global::System.Func<global::AppStoreConnect.AppCustomProductPageVersion, TResult>? appCustomProductPageVersions = null,
             global::System.Func<global::AppStoreConnect.AppEvent, TResult>? appEvents = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersionExperiment, TResult>? appStoreVersionExperiments1 = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersionExperiments2 = null,
+            global::System.Func<global::AppStoreConnect.AppStoreVersionExperiment, TResult>? appStoreVersionExperiments = null,
+            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersions = null,
             global::System.Func<global::AppStoreConnect.BackgroundAssetVersion, TResult>? backgroundAssetVersions = null,
             global::System.Func<global::AppStoreConnect.GameCenterAchievementVersionV2, TResult>? gameCenterAchievementVersions = null,
             global::System.Func<global::AppStoreConnect.GameCenterActivityVersion, TResult>? gameCenterActivityVersions = null,
@@ -1046,13 +1046,13 @@ namespace AppStoreConnect
             {
                 return appEvents(__value3);
             }
-            else if (AppStoreVersionExperiments1 is { } __value4 && appStoreVersionExperiments1 != null)
+            else if (AppStoreVersionExperiments is { } __value4 && appStoreVersionExperiments != null)
             {
-                return appStoreVersionExperiments1(__value4);
+                return appStoreVersionExperiments(__value4);
             }
-            else if (AppStoreVersionExperiments2 is { } __value5 && appStoreVersionExperiments2 != null)
+            else if (AppStoreVersions is { } __value5 && appStoreVersions != null)
             {
-                return appStoreVersionExperiments2(__value5);
+                return appStoreVersions(__value5);
             }
             else if (BackgroundAssetVersions is { } __value6 && backgroundAssetVersions != null)
             {
@@ -1106,9 +1106,9 @@ namespace AppStoreConnect
 
             global::System.Action<global::AppStoreConnect.AppEvent>? appEvents = null,
 
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperiment>? appStoreVersionExperiments1 = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersionExperiment>? appStoreVersionExperiments = null,
 
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersionExperiments2 = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
 
             global::System.Action<global::AppStoreConnect.BackgroundAssetVersion>? backgroundAssetVersions = null,
 
@@ -1150,13 +1150,13 @@ namespace AppStoreConnect
             {
                 appEvents?.Invoke(__value3);
             }
-            else if (AppStoreVersionExperiments1 is { } __value4)
+            else if (AppStoreVersionExperiments is { } __value4)
             {
-                appStoreVersionExperiments1?.Invoke(__value4);
+                appStoreVersionExperiments?.Invoke(__value4);
             }
-            else if (AppStoreVersionExperiments2 is { } __value5)
+            else if (AppStoreVersions is { } __value5)
             {
-                appStoreVersionExperiments2?.Invoke(__value5);
+                appStoreVersions?.Invoke(__value5);
             }
             else if (BackgroundAssetVersions is { } __value6)
             {
@@ -1204,8 +1204,8 @@ namespace AppStoreConnect
             global::System.Action<global::AppStoreConnect.AppAssetLibraryVideo>? appAssetLibraryVideos = null,
             global::System.Action<global::AppStoreConnect.AppCustomProductPageVersion>? appCustomProductPageVersions = null,
             global::System.Action<global::AppStoreConnect.AppEvent>? appEvents = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperiment>? appStoreVersionExperiments1 = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersionExperiments2 = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersionExperiment>? appStoreVersionExperiments = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
             global::System.Action<global::AppStoreConnect.BackgroundAssetVersion>? backgroundAssetVersions = null,
             global::System.Action<global::AppStoreConnect.GameCenterAchievementVersionV2>? gameCenterAchievementVersions = null,
             global::System.Action<global::AppStoreConnect.GameCenterActivityVersion>? gameCenterActivityVersions = null,
@@ -1238,13 +1238,13 @@ namespace AppStoreConnect
             {
                 appEvents?.Invoke(__value3);
             }
-            else if (AppStoreVersionExperiments1 is { } __value4)
+            else if (AppStoreVersionExperiments is { } __value4)
             {
-                appStoreVersionExperiments1?.Invoke(__value4);
+                appStoreVersionExperiments?.Invoke(__value4);
             }
-            else if (AppStoreVersionExperiments2 is { } __value5)
+            else if (AppStoreVersions is { } __value5)
             {
-                appStoreVersionExperiments2?.Invoke(__value5);
+                appStoreVersions?.Invoke(__value5);
             }
             else if (BackgroundAssetVersions is { } __value6)
             {
@@ -1299,9 +1299,9 @@ namespace AppStoreConnect
                 typeof(global::AppStoreConnect.AppCustomProductPageVersion),
                 AppEvents,
                 typeof(global::AppStoreConnect.AppEvent),
-                AppStoreVersionExperiments1,
+                AppStoreVersionExperiments,
                 typeof(global::AppStoreConnect.AppStoreVersionExperiment),
-                AppStoreVersionExperiments2,
+                AppStoreVersions,
                 typeof(global::AppStoreConnect.AppStoreVersion),
                 BackgroundAssetVersions,
                 typeof(global::AppStoreConnect.BackgroundAssetVersion),
@@ -1341,8 +1341,8 @@ namespace AppStoreConnect
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppAssetLibraryVideo?>.Default.Equals(AppAssetLibraryVideos, other.AppAssetLibraryVideos) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageVersion?>.Default.Equals(AppCustomProductPageVersions, other.AppCustomProductPageVersions) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEvent?>.Default.Equals(AppEvents, other.AppEvents) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperiment?>.Default.Equals(AppStoreVersionExperiments1, other.AppStoreVersionExperiments1) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersionExperiments2, other.AppStoreVersionExperiments2) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperiment?>.Default.Equals(AppStoreVersionExperiments, other.AppStoreVersionExperiments) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions, other.AppStoreVersions) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAssetVersion?>.Default.Equals(BackgroundAssetVersions, other.BackgroundAssetVersions) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterAchievementVersionV2?>.Default.Equals(GameCenterAchievementVersions, other.GameCenterAchievementVersions) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterActivityVersion?>.Default.Equals(GameCenterActivityVersions, other.GameCenterActivityVersions) &&

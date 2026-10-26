@@ -22,26 +22,26 @@ namespace AppStoreConnect.JsonConverters
                             throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BuildUploadResponseIncludedItemDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::AppStoreConnect.BuildUploadFile? buildUploadFiles1 = default;
+            global::AppStoreConnect.BuildUploadFile? buildUploadFiles = default;
             if (discriminator?.Type == global::AppStoreConnect.BuildUploadResponseIncludedItemDiscriminatorType.BuildUploadFiles)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BuildUploadFile), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BuildUploadFile> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BuildUploadFile)}");
-                buildUploadFiles1 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                buildUploadFiles = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.Build? buildUploadFiles2 = default;
-            if (discriminator?.Type == global::AppStoreConnect.BuildUploadResponseIncludedItemDiscriminatorType.BuildUploadFiles)
+            global::AppStoreConnect.Build? builds = default;
+            if (discriminator?.Type == global::AppStoreConnect.BuildUploadResponseIncludedItemDiscriminatorType.Builds)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Build), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Build> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.Build)}");
-                buildUploadFiles2 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                builds = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::AppStoreConnect.IncludedItem63(
                 discriminator?.Type,
-                buildUploadFiles1,
+                buildUploadFiles,
 
-                buildUploadFiles2
+                builds
                 );
 
             return __value;
@@ -57,17 +57,17 @@ namespace AppStoreConnect.JsonConverters
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
             typeInfoResolver = global::AppStoreConnect.AutoSDKJsonMetadataCachedResolver.Instance;
 
-            if (value.IsBuildUploadFiles1)
+            if (value.IsBuildUploadFiles)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BuildUploadFile), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BuildUploadFile?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BuildUploadFile).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuildUploadFiles1(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuildUploadFiles(), typeInfo);
             }
-            else if (value.IsBuildUploadFiles2)
+            else if (value.IsBuilds)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Build), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Build?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Build).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuildUploadFiles2(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBuilds(), typeInfo);
             }
         }
     }

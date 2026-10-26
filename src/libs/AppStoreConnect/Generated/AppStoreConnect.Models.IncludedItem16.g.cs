@@ -18,75 +18,75 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations1 { get; init; }
+        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations { get; init; }
 #else
-        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations1 { get; }
+        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageLocalizations1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageLocalizations))]
 #endif
-        public bool IsAppCustomProductPageLocalizations1 => AppCustomProductPageLocalizations1 != null;
+        public bool IsAppCustomProductPageLocalizations => AppCustomProductPageLocalizations != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppCustomProductPageLocalizations1(
+        public bool TryPickAppCustomProductPageLocalizations(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.AppCustomProductPageLocalization? value)
         {
-            value = AppCustomProductPageLocalizations1;
-            return IsAppCustomProductPageLocalizations1;
+            value = AppCustomProductPageLocalizations;
+            return IsAppCustomProductPageLocalizations;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCustomProductPageLocalization PickAppCustomProductPageLocalizations1() => AppCustomProductPageLocalizations1 is { } value
+        public global::AppStoreConnect.AppCustomProductPageLocalization PickAppCustomProductPageLocalizations() => AppCustomProductPageLocalizations is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageLocalizations1' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageLocalizations' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppCustomProductPage? AppCustomProductPageLocalizations2 { get; init; }
+        public global::AppStoreConnect.AppCustomProductPage? AppCustomProductPages { get; init; }
 #else
-        public global::AppStoreConnect.AppCustomProductPage? AppCustomProductPageLocalizations2 { get; }
+        public global::AppStoreConnect.AppCustomProductPage? AppCustomProductPages { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageLocalizations2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPages))]
 #endif
-        public bool IsAppCustomProductPageLocalizations2 => AppCustomProductPageLocalizations2 != null;
+        public bool IsAppCustomProductPages => AppCustomProductPages != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppCustomProductPageLocalizations2(
+        public bool TryPickAppCustomProductPages(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.AppCustomProductPage? value)
         {
-            value = AppCustomProductPageLocalizations2;
-            return IsAppCustomProductPageLocalizations2;
+            value = AppCustomProductPages;
+            return IsAppCustomProductPages;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCustomProductPage PickAppCustomProductPageLocalizations2() => AppCustomProductPageLocalizations2 is { } value
+        public global::AppStoreConnect.AppCustomProductPage PickAppCustomProductPages() => AppCustomProductPages is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageLocalizations2' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPages' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -95,20 +95,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppCustomProductPageLocalization?(IncludedItem16 @this) => @this.AppCustomProductPageLocalizations1;
+        public static implicit operator global::AppStoreConnect.AppCustomProductPageLocalization?(IncludedItem16 @this) => @this.AppCustomProductPageLocalizations;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem16(global::AppStoreConnect.AppCustomProductPageLocalization? value)
         {
-            AppCustomProductPageLocalizations1 = value;
+            AppCustomProductPageLocalizations = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem16 FromAppCustomProductPageLocalizations1(global::AppStoreConnect.AppCustomProductPageLocalization? value) => new IncludedItem16(value);
+        public static IncludedItem16 FromAppCustomProductPageLocalizations(global::AppStoreConnect.AppCustomProductPageLocalization? value) => new IncludedItem16(value);
 
         /// <summary>
         ///
@@ -118,50 +118,50 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppCustomProductPage?(IncludedItem16 @this) => @this.AppCustomProductPageLocalizations2;
+        public static implicit operator global::AppStoreConnect.AppCustomProductPage?(IncludedItem16 @this) => @this.AppCustomProductPages;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem16(global::AppStoreConnect.AppCustomProductPage? value)
         {
-            AppCustomProductPageLocalizations2 = value;
+            AppCustomProductPages = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem16 FromAppCustomProductPageLocalizations2(global::AppStoreConnect.AppCustomProductPage? value) => new IncludedItem16(value);
+        public static IncludedItem16 FromAppCustomProductPages(global::AppStoreConnect.AppCustomProductPage? value) => new IncludedItem16(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem16(
             global::AppStoreConnect.AppCustomProductPageVersionResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppCustomProductPageLocalization? appCustomProductPageLocalizations1,
-            global::AppStoreConnect.AppCustomProductPage? appCustomProductPageLocalizations2
+            global::AppStoreConnect.AppCustomProductPageLocalization? appCustomProductPageLocalizations,
+            global::AppStoreConnect.AppCustomProductPage? appCustomProductPages
             )
         {
             Type = type;
 
-            AppCustomProductPageLocalizations1 = appCustomProductPageLocalizations1;
-            AppCustomProductPageLocalizations2 = appCustomProductPageLocalizations2;
+            AppCustomProductPageLocalizations = appCustomProductPageLocalizations;
+            AppCustomProductPages = appCustomProductPages;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            AppCustomProductPageLocalizations2 as object ??
-            AppCustomProductPageLocalizations1 as object
+            AppCustomProductPages as object ??
+            AppCustomProductPageLocalizations as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppCustomProductPageLocalizations1?.ToString() ??
-            AppCustomProductPageLocalizations2?.ToString()
+            AppCustomProductPageLocalizations?.ToString() ??
+            AppCustomProductPages?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppCustomProductPageLocalizations1 && !IsAppCustomProductPageLocalizations2 || !IsAppCustomProductPageLocalizations1 && IsAppCustomProductPageLocalizations2;
+            return IsAppCustomProductPageLocalizations && !IsAppCustomProductPages || !IsAppCustomProductPageLocalizations && IsAppCustomProductPages;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppCustomProductPageLocalization, TResult>? appCustomProductPageLocalizations1 = null,
-            global::System.Func<global::AppStoreConnect.AppCustomProductPage, TResult>? appCustomProductPageLocalizations2 = null,
+            global::System.Func<global::AppStoreConnect.AppCustomProductPageLocalization, TResult>? appCustomProductPageLocalizations = null,
+            global::System.Func<global::AppStoreConnect.AppCustomProductPage, TResult>? appCustomProductPages = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations1 is { } __value0 && appCustomProductPageLocalizations1 != null)
+            if (AppCustomProductPageLocalizations is { } __value0 && appCustomProductPageLocalizations != null)
             {
-                return appCustomProductPageLocalizations1(__value0);
+                return appCustomProductPageLocalizations(__value0);
             }
-            else if (AppCustomProductPageLocalizations2 is { } __value1 && appCustomProductPageLocalizations2 != null)
+            else if (AppCustomProductPages is { } __value1 && appCustomProductPages != null)
             {
-                return appCustomProductPageLocalizations2(__value1);
+                return appCustomProductPages(__value1);
             }
 
             return default(TResult);
@@ -201,9 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations1 = null,
+            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations = null,
 
-            global::System.Action<global::AppStoreConnect.AppCustomProductPage>? appCustomProductPageLocalizations2 = null,
+            global::System.Action<global::AppStoreConnect.AppCustomProductPage>? appCustomProductPages = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations1 is { } __value0)
+            if (AppCustomProductPageLocalizations is { } __value0)
             {
-                appCustomProductPageLocalizations1?.Invoke(__value0);
+                appCustomProductPageLocalizations?.Invoke(__value0);
             }
-            else if (AppCustomProductPageLocalizations2 is { } __value1)
+            else if (AppCustomProductPages is { } __value1)
             {
-                appCustomProductPageLocalizations2?.Invoke(__value1);
+                appCustomProductPages?.Invoke(__value1);
             }
         }
 
@@ -225,8 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations1 = null,
-            global::System.Action<global::AppStoreConnect.AppCustomProductPage>? appCustomProductPageLocalizations2 = null,
+            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations = null,
+            global::System.Action<global::AppStoreConnect.AppCustomProductPage>? appCustomProductPages = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations1 is { } __value0)
+            if (AppCustomProductPageLocalizations is { } __value0)
             {
-                appCustomProductPageLocalizations1?.Invoke(__value0);
+                appCustomProductPageLocalizations?.Invoke(__value0);
             }
-            else if (AppCustomProductPageLocalizations2 is { } __value1)
+            else if (AppCustomProductPages is { } __value1)
             {
-                appCustomProductPageLocalizations2?.Invoke(__value1);
+                appCustomProductPages?.Invoke(__value1);
             }
         }
 
@@ -251,9 +251,9 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppCustomProductPageLocalizations1,
+                AppCustomProductPageLocalizations,
                 typeof(global::AppStoreConnect.AppCustomProductPageLocalization),
-                AppCustomProductPageLocalizations2,
+                AppCustomProductPages,
                 typeof(global::AppStoreConnect.AppCustomProductPage),
             };
             const int offset = unchecked((int)2166136261);
@@ -271,8 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem16 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageLocalization?>.Default.Equals(AppCustomProductPageLocalizations1, other.AppCustomProductPageLocalizations1) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPage?>.Default.Equals(AppCustomProductPageLocalizations2, other.AppCustomProductPageLocalizations2)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageLocalization?>.Default.Equals(AppCustomProductPageLocalizations, other.AppCustomProductPageLocalizations) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPage?>.Default.Equals(AppCustomProductPages, other.AppCustomProductPages)
                 ;
         }
 

@@ -22,19 +22,19 @@ namespace AppStoreConnect.JsonConverters
                             throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterActivityVersionResponseIncludedItemDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::AppStoreConnect.GameCenterActivity? gameCenterActivityImages1 = default;
-            if (discriminator?.Type == global::AppStoreConnect.GameCenterActivityVersionResponseIncludedItemDiscriminatorType.GameCenterActivityImages)
+            global::AppStoreConnect.GameCenterActivity? gameCenterActivities = default;
+            if (discriminator?.Type == global::AppStoreConnect.GameCenterActivityVersionResponseIncludedItemDiscriminatorType.GameCenterActivities)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterActivity), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterActivity> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterActivity)}");
-                gameCenterActivityImages1 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                gameCenterActivities = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.GameCenterActivityImage? gameCenterActivityImages2 = default;
+            global::AppStoreConnect.GameCenterActivityImage? gameCenterActivityImages = default;
             if (discriminator?.Type == global::AppStoreConnect.GameCenterActivityVersionResponseIncludedItemDiscriminatorType.GameCenterActivityImages)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterActivityImage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterActivityImage> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.GameCenterActivityImage)}");
-                gameCenterActivityImages2 = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                gameCenterActivityImages = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
             global::AppStoreConnect.GameCenterActivityLocalization? gameCenterActivityLocalizations = default;
             if (discriminator?.Type == global::AppStoreConnect.GameCenterActivityVersionResponseIncludedItemDiscriminatorType.GameCenterActivityLocalizations)
@@ -53,9 +53,9 @@ namespace AppStoreConnect.JsonConverters
 
             var __value = new global::AppStoreConnect.IncludedItem94(
                 discriminator?.Type,
-                gameCenterActivityImages1,
+                gameCenterActivities,
 
-                gameCenterActivityImages2,
+                gameCenterActivityImages,
 
                 gameCenterActivityLocalizations,
 
@@ -75,17 +75,17 @@ namespace AppStoreConnect.JsonConverters
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
             typeInfoResolver = global::AppStoreConnect.AutoSDKJsonMetadataCachedResolver.Instance;
 
-            if (value.IsGameCenterActivityImages1)
+            if (value.IsGameCenterActivities)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterActivity), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterActivity?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterActivity).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterActivityImages1(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterActivities(), typeInfo);
             }
-            else if (value.IsGameCenterActivityImages2)
+            else if (value.IsGameCenterActivityImages)
             {
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.GameCenterActivityImage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.GameCenterActivityImage?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.GameCenterActivityImage).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterActivityImages2(), typeInfo);
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickGameCenterActivityImages(), typeInfo);
             }
             else if (value.IsGameCenterActivityLocalizations)
             {

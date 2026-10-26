@@ -18,75 +18,75 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BuildUploadFile? BuildUploadFiles1 { get; init; }
+        public global::AppStoreConnect.BuildUploadFile? BuildUploadFiles { get; init; }
 #else
-        public global::AppStoreConnect.BuildUploadFile? BuildUploadFiles1 { get; }
+        public global::AppStoreConnect.BuildUploadFile? BuildUploadFiles { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BuildUploadFiles1))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BuildUploadFiles))]
 #endif
-        public bool IsBuildUploadFiles1 => BuildUploadFiles1 != null;
+        public bool IsBuildUploadFiles => BuildUploadFiles != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBuildUploadFiles1(
+        public bool TryPickBuildUploadFiles(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.BuildUploadFile? value)
         {
-            value = BuildUploadFiles1;
-            return IsBuildUploadFiles1;
+            value = BuildUploadFiles;
+            return IsBuildUploadFiles;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BuildUploadFile PickBuildUploadFiles1() => BuildUploadFiles1 is { } value
+        public global::AppStoreConnect.BuildUploadFile PickBuildUploadFiles() => BuildUploadFiles is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BuildUploadFiles1' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BuildUploadFiles' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Build? BuildUploadFiles2 { get; init; }
+        public global::AppStoreConnect.Build? Builds { get; init; }
 #else
-        public global::AppStoreConnect.Build? BuildUploadFiles2 { get; }
+        public global::AppStoreConnect.Build? Builds { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BuildUploadFiles2))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
 #endif
-        public bool IsBuildUploadFiles2 => BuildUploadFiles2 != null;
+        public bool IsBuilds => Builds != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBuildUploadFiles2(
+        public bool TryPickBuilds(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
             out global::AppStoreConnect.Build? value)
         {
-            value = BuildUploadFiles2;
-            return IsBuildUploadFiles2;
+            value = Builds;
+            return IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Build PickBuildUploadFiles2() => BuildUploadFiles2 is { } value
+        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BuildUploadFiles2' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -95,20 +95,20 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BuildUploadFile?(IncludedItem62 @this) => @this.BuildUploadFiles1;
+        public static implicit operator global::AppStoreConnect.BuildUploadFile?(IncludedItem62 @this) => @this.BuildUploadFiles;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem62(global::AppStoreConnect.BuildUploadFile? value)
         {
-            BuildUploadFiles1 = value;
+            BuildUploadFiles = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem62 FromBuildUploadFiles1(global::AppStoreConnect.BuildUploadFile? value) => new IncludedItem62(value);
+        public static IncludedItem62 FromBuildUploadFiles(global::AppStoreConnect.BuildUploadFile? value) => new IncludedItem62(value);
 
         /// <summary>
         ///
@@ -118,50 +118,50 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.Build?(IncludedItem62 @this) => @this.BuildUploadFiles2;
+        public static implicit operator global::AppStoreConnect.Build?(IncludedItem62 @this) => @this.Builds;
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem62(global::AppStoreConnect.Build? value)
         {
-            BuildUploadFiles2 = value;
+            Builds = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem62 FromBuildUploadFiles2(global::AppStoreConnect.Build? value) => new IncludedItem62(value);
+        public static IncludedItem62 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem62(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem62(
             global::AppStoreConnect.BuildUploadsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.BuildUploadFile? buildUploadFiles1,
-            global::AppStoreConnect.Build? buildUploadFiles2
+            global::AppStoreConnect.BuildUploadFile? buildUploadFiles,
+            global::AppStoreConnect.Build? builds
             )
         {
             Type = type;
 
-            BuildUploadFiles1 = buildUploadFiles1;
-            BuildUploadFiles2 = buildUploadFiles2;
+            BuildUploadFiles = buildUploadFiles;
+            Builds = builds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            BuildUploadFiles2 as object ??
-            BuildUploadFiles1 as object
+            Builds as object ??
+            BuildUploadFiles as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            BuildUploadFiles1?.ToString() ??
-            BuildUploadFiles2?.ToString()
+            BuildUploadFiles?.ToString() ??
+            Builds?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsBuildUploadFiles1 && !IsBuildUploadFiles2 || !IsBuildUploadFiles1 && IsBuildUploadFiles2;
+            return IsBuildUploadFiles && !IsBuilds || !IsBuildUploadFiles && IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.BuildUploadFile, TResult>? buildUploadFiles1 = null,
-            global::System.Func<global::AppStoreConnect.Build, TResult>? buildUploadFiles2 = null,
+            global::System.Func<global::AppStoreConnect.BuildUploadFile, TResult>? buildUploadFiles = null,
+            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (BuildUploadFiles1 is { } __value0 && buildUploadFiles1 != null)
+            if (BuildUploadFiles is { } __value0 && buildUploadFiles != null)
             {
-                return buildUploadFiles1(__value0);
+                return buildUploadFiles(__value0);
             }
-            else if (BuildUploadFiles2 is { } __value1 && buildUploadFiles2 != null)
+            else if (Builds is { } __value1 && builds != null)
             {
-                return buildUploadFiles2(__value1);
+                return builds(__value1);
             }
 
             return default(TResult);
@@ -201,9 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.BuildUploadFile>? buildUploadFiles1 = null,
+            global::System.Action<global::AppStoreConnect.BuildUploadFile>? buildUploadFiles = null,
 
-            global::System.Action<global::AppStoreConnect.Build>? buildUploadFiles2 = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (BuildUploadFiles1 is { } __value0)
+            if (BuildUploadFiles is { } __value0)
             {
-                buildUploadFiles1?.Invoke(__value0);
+                buildUploadFiles?.Invoke(__value0);
             }
-            else if (BuildUploadFiles2 is { } __value1)
+            else if (Builds is { } __value1)
             {
-                buildUploadFiles2?.Invoke(__value1);
+                builds?.Invoke(__value1);
             }
         }
 
@@ -225,8 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.BuildUploadFile>? buildUploadFiles1 = null,
-            global::System.Action<global::AppStoreConnect.Build>? buildUploadFiles2 = null,
+            global::System.Action<global::AppStoreConnect.BuildUploadFile>? buildUploadFiles = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (BuildUploadFiles1 is { } __value0)
+            if (BuildUploadFiles is { } __value0)
             {
-                buildUploadFiles1?.Invoke(__value0);
+                buildUploadFiles?.Invoke(__value0);
             }
-            else if (BuildUploadFiles2 is { } __value1)
+            else if (Builds is { } __value1)
             {
-                buildUploadFiles2?.Invoke(__value1);
+                builds?.Invoke(__value1);
             }
         }
 
@@ -251,9 +251,9 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                BuildUploadFiles1,
+                BuildUploadFiles,
                 typeof(global::AppStoreConnect.BuildUploadFile),
-                BuildUploadFiles2,
+                Builds,
                 typeof(global::AppStoreConnect.Build),
             };
             const int offset = unchecked((int)2166136261);
@@ -271,8 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem62 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BuildUploadFile?>.Default.Equals(BuildUploadFiles1, other.BuildUploadFiles1) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(BuildUploadFiles2, other.BuildUploadFiles2)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BuildUploadFile?>.Default.Equals(BuildUploadFiles, other.BuildUploadFiles) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
                 ;
         }
 
