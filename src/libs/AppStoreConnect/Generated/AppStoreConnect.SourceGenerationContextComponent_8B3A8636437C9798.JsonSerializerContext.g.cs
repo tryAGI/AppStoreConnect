@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCodeCreateRequestDataRelationshipsOfferCodeDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1222.Create_SubscriptionOfferCodeOneTimeUseCodeCreateRequestDataRelationshipsOfferCodeDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1223.Create_SubscriptionOfferCodeOneTimeUseCodeCreateRequestDataRelationshipsOfferCodeDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCodeCreateRequestDataRelationshipsOfferCodeDataType?))
                 {
