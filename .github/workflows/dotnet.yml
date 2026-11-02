@@ -19,8 +19,6 @@ jobs:
       publish: true
       run-tests: true
       additional-test-arguments: '--logger GitHubActions'
-    secrets:
-      nuget-key: ${{ secrets.NUGET_KEY }}
 
   trim-check:
     name: Trimming Check
@@ -60,8 +58,6 @@ jobs:
     needs: [publish, trim-check]
     if: github.ref == 'refs/heads/main'
     uses: tryAGI/workflows/.github/workflows/auto-stable-release.yml@main
-    secrets:
-      nuget-key: ${{ secrets.NUGET_KEY }}
 
   release:
     name: Release
@@ -80,3 +76,17 @@ jobs:
           --generate-notes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  nuget-trusted-publish:
+    name: NuGet trusted publishing
+    needs: publish
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: tryAGI/workflows/.github/actions/nuget-publish@main
+        with:
+          user: havendv
+          artifact-pattern: nuget-packages-Linux
