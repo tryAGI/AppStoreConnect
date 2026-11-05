@@ -12,156 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionOfferCodePricesResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.ScmRepositoryResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionPricePoint? SubscriptionPricePoints { get; init; }
+        public global::AppStoreConnect.ScmGitReference? ScmGitReferences { get; init; }
 #else
-        public global::AppStoreConnect.SubscriptionPricePoint? SubscriptionPricePoints { get; }
+        public global::AppStoreConnect.ScmGitReference? ScmGitReferences { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionPricePoints))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmGitReferences))]
 #endif
-        public bool IsSubscriptionPricePoints => SubscriptionPricePoints != null;
+        public bool IsScmGitReferences => ScmGitReferences != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptionPricePoints(
+        public bool TryPickScmGitReferences(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.SubscriptionPricePoint? value)
+            out global::AppStoreConnect.ScmGitReference? value)
         {
-            value = SubscriptionPricePoints;
-            return IsSubscriptionPricePoints;
+            value = ScmGitReferences;
+            return IsScmGitReferences;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionPricePoint PickSubscriptionPricePoints() => SubscriptionPricePoints is { } value
+        public global::AppStoreConnect.ScmGitReference PickScmGitReferences() => ScmGitReferences is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPricePoints' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScmGitReferences' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Territory? Territories { get; init; }
+        public global::AppStoreConnect.ScmProvider? ScmProviders { get; init; }
 #else
-        public global::AppStoreConnect.Territory? Territories { get; }
+        public global::AppStoreConnect.ScmProvider? ScmProviders { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Territories))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmProviders))]
 #endif
-        public bool IsTerritories => Territories != null;
+        public bool IsScmProviders => ScmProviders != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickTerritories(
+        public bool TryPickScmProviders(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.Territory? value)
+            out global::AppStoreConnect.ScmProvider? value)
         {
-            value = Territories;
-            return IsTerritories;
+            value = ScmProviders;
+            return IsScmProviders;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Territory PickTerritories() => Territories is { } value
+        public global::AppStoreConnect.ScmProvider PickScmProviders() => ScmProviders is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Territories' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScmProviders' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem168(global::AppStoreConnect.SubscriptionPricePoint value) => new IncludedItem168((global::AppStoreConnect.SubscriptionPricePoint?)value);
+        public static implicit operator IncludedItem168(global::AppStoreConnect.ScmGitReference value) => new IncludedItem168((global::AppStoreConnect.ScmGitReference?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionPricePoint?(IncludedItem168 @this) => @this.SubscriptionPricePoints;
+        public static implicit operator global::AppStoreConnect.ScmGitReference?(IncludedItem168 @this) => @this.ScmGitReferences;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem168(global::AppStoreConnect.SubscriptionPricePoint? value)
+        public IncludedItem168(global::AppStoreConnect.ScmGitReference? value)
         {
-            SubscriptionPricePoints = value;
+            ScmGitReferences = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem168 FromSubscriptionPricePoints(global::AppStoreConnect.SubscriptionPricePoint? value) => new IncludedItem168(value);
+        public static IncludedItem168 FromScmGitReferences(global::AppStoreConnect.ScmGitReference? value) => new IncludedItem168(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem168(global::AppStoreConnect.Territory value) => new IncludedItem168((global::AppStoreConnect.Territory?)value);
+        public static implicit operator IncludedItem168(global::AppStoreConnect.ScmProvider value) => new IncludedItem168((global::AppStoreConnect.ScmProvider?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.Territory?(IncludedItem168 @this) => @this.Territories;
+        public static implicit operator global::AppStoreConnect.ScmProvider?(IncludedItem168 @this) => @this.ScmProviders;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem168(global::AppStoreConnect.Territory? value)
+        public IncludedItem168(global::AppStoreConnect.ScmProvider? value)
         {
-            Territories = value;
+            ScmProviders = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem168 FromTerritories(global::AppStoreConnect.Territory? value) => new IncludedItem168(value);
+        public static IncludedItem168 FromScmProviders(global::AppStoreConnect.ScmProvider? value) => new IncludedItem168(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem168(
-            global::AppStoreConnect.SubscriptionOfferCodePricesResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.SubscriptionPricePoint? subscriptionPricePoints,
-            global::AppStoreConnect.Territory? territories
+            global::AppStoreConnect.ScmRepositoryResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.ScmGitReference? scmGitReferences,
+            global::AppStoreConnect.ScmProvider? scmProviders
             )
         {
             Type = type;
 
-            SubscriptionPricePoints = subscriptionPricePoints;
-            Territories = territories;
+            ScmGitReferences = scmGitReferences;
+            ScmProviders = scmProviders;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Territories as object ??
-            SubscriptionPricePoints as object
+            ScmProviders as object ??
+            ScmGitReferences as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            SubscriptionPricePoints?.ToString() ??
-            Territories?.ToString()
+            ScmGitReferences?.ToString() ??
+            ScmProviders?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsSubscriptionPricePoints && !IsTerritories || !IsSubscriptionPricePoints && IsTerritories;
+            return IsScmGitReferences && !IsScmProviders || !IsScmGitReferences && IsScmProviders;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.SubscriptionPricePoint, TResult>? subscriptionPricePoints = null,
-            global::System.Func<global::AppStoreConnect.Territory, TResult>? territories = null,
+            global::System.Func<global::AppStoreConnect.ScmGitReference, TResult>? scmGitReferences = null,
+            global::System.Func<global::AppStoreConnect.ScmProvider, TResult>? scmProviders = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPricePoints is { } __value0 && subscriptionPricePoints != null)
+            if (ScmGitReferences is { } __value0 && scmGitReferences != null)
             {
-                return subscriptionPricePoints(__value0);
+                return scmGitReferences(__value0);
             }
-            else if (Territories is { } __value1 && territories != null)
+            else if (ScmProviders is { } __value1 && scmProviders != null)
             {
-                return territories(__value1);
+                return scmProviders(__value1);
             }
 
             return default(TResult);
@@ -201,9 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.SubscriptionPricePoint>? subscriptionPricePoints = null,
+            global::System.Action<global::AppStoreConnect.ScmGitReference>? scmGitReferences = null,
 
-            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
+            global::System.Action<global::AppStoreConnect.ScmProvider>? scmProviders = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPricePoints is { } __value0)
+            if (ScmGitReferences is { } __value0)
             {
-                subscriptionPricePoints?.Invoke(__value0);
+                scmGitReferences?.Invoke(__value0);
             }
-            else if (Territories is { } __value1)
+            else if (ScmProviders is { } __value1)
             {
-                territories?.Invoke(__value1);
+                scmProviders?.Invoke(__value1);
             }
         }
 
@@ -225,8 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.SubscriptionPricePoint>? subscriptionPricePoints = null,
-            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
+            global::System.Action<global::AppStoreConnect.ScmGitReference>? scmGitReferences = null,
+            global::System.Action<global::AppStoreConnect.ScmProvider>? scmProviders = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPricePoints is { } __value0)
+            if (ScmGitReferences is { } __value0)
             {
-                subscriptionPricePoints?.Invoke(__value0);
+                scmGitReferences?.Invoke(__value0);
             }
-            else if (Territories is { } __value1)
+            else if (ScmProviders is { } __value1)
             {
-                territories?.Invoke(__value1);
+                scmProviders?.Invoke(__value1);
             }
         }
 
@@ -251,10 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                SubscriptionPricePoints,
-                typeof(global::AppStoreConnect.SubscriptionPricePoint),
-                Territories,
-                typeof(global::AppStoreConnect.Territory),
+                ScmGitReferences,
+                typeof(global::AppStoreConnect.ScmGitReference),
+                ScmProviders,
+                typeof(global::AppStoreConnect.ScmProvider),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem168 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionPricePoint?>.Default.Equals(SubscriptionPricePoints, other.SubscriptionPricePoints) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Territory?>.Default.Equals(Territories, other.Territories)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmGitReference?>.Default.Equals(ScmGitReferences, other.ScmGitReferences) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmProvider?>.Default.Equals(ScmProviders, other.ScmProviders)
                 ;
         }
 

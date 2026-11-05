@@ -34,6 +34,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionLocalization>? fieldsAppStoreVersionLocalizations,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppCustomProductPageLocalization>? fieldsAppCustomProductPageLocalizations,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionExperimentTreatmentLocalization>? fieldsAppStoreVersionExperimentTreatmentLocalizations,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsRetentionMessageVersion>? fieldsRetentionMessageVersions,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceIncludeItem>? include,
             ref string id);
         partial void PrepareAppAssetLibraryPlacementsGetInstanceRequest(
@@ -46,6 +47,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionLocalization>? fieldsAppStoreVersionLocalizations,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppCustomProductPageLocalization>? fieldsAppCustomProductPageLocalizations,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionExperimentTreatmentLocalization>? fieldsAppStoreVersionExperimentTreatmentLocalizations,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsRetentionMessageVersion>? fieldsRetentionMessageVersions,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceIncludeItem>? include,
             string id);
         partial void ProcessAppAssetLibraryPlacementsGetInstanceResponse(
@@ -67,6 +69,7 @@ namespace AppStoreConnect
         /// <param name="fieldsAppStoreVersionLocalizations"></param>
         /// <param name="fieldsAppCustomProductPageLocalizations"></param>
         /// <param name="fieldsAppStoreVersionExperimentTreatmentLocalizations"></param>
+        /// <param name="fieldsRetentionMessageVersions"></param>
         /// <param name="include"></param>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -81,6 +84,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionLocalization>? fieldsAppStoreVersionLocalizations = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppCustomProductPageLocalization>? fieldsAppCustomProductPageLocalizations = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionExperimentTreatmentLocalization>? fieldsAppStoreVersionExperimentTreatmentLocalizations = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsRetentionMessageVersion>? fieldsRetentionMessageVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceIncludeItem>? include = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -94,6 +98,7 @@ namespace AppStoreConnect
                 fieldsAppStoreVersionLocalizations: fieldsAppStoreVersionLocalizations,
                 fieldsAppCustomProductPageLocalizations: fieldsAppCustomProductPageLocalizations,
                 fieldsAppStoreVersionExperimentTreatmentLocalizations: fieldsAppStoreVersionExperimentTreatmentLocalizations,
+                fieldsRetentionMessageVersions: fieldsRetentionMessageVersions,
                 include: include,
                 requestOptions: requestOptions,
                 cancellationToken: cancellationToken
@@ -111,6 +116,7 @@ namespace AppStoreConnect
         /// <param name="fieldsAppStoreVersionLocalizations"></param>
         /// <param name="fieldsAppCustomProductPageLocalizations"></param>
         /// <param name="fieldsAppStoreVersionExperimentTreatmentLocalizations"></param>
+        /// <param name="fieldsRetentionMessageVersions"></param>
         /// <param name="include"></param>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -125,6 +131,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionLocalization>? fieldsAppStoreVersionLocalizations = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppCustomProductPageLocalization>? fieldsAppCustomProductPageLocalizations = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsAppStoreVersionExperimentTreatmentLocalization>? fieldsAppStoreVersionExperimentTreatmentLocalizations = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceFieldsRetentionMessageVersion>? fieldsRetentionMessageVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementsGetInstanceIncludeItem>? include = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default)
@@ -142,6 +149,7 @@ namespace AppStoreConnect
                 fieldsAppStoreVersionLocalizations: fieldsAppStoreVersionLocalizations,
                 fieldsAppCustomProductPageLocalizations: fieldsAppCustomProductPageLocalizations,
                 fieldsAppStoreVersionExperimentTreatmentLocalizations: fieldsAppStoreVersionExperimentTreatmentLocalizations,
+                fieldsRetentionMessageVersions: fieldsRetentionMessageVersions,
                 include: include,
                 id: ref id);
 
@@ -179,6 +187,7 @@ namespace AppStoreConnect
                                 .AddOptionalParameter("fields[appStoreVersionLocalizations]", fieldsAppStoreVersionLocalizations, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("fields[appCustomProductPageLocalizations]", fieldsAppCustomProductPageLocalizations, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("fields[appStoreVersionExperimentTreatmentLocalizations]", fieldsAppStoreVersionExperimentTreatmentLocalizations, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
+                                .AddOptionalParameter("fields[retentionMessageVersions]", fieldsRetentionMessageVersions, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("include", include, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 ;
                             var __path = __pathBuilder.ToString();
@@ -228,6 +237,7 @@ namespace AppStoreConnect
                     fieldsAppStoreVersionLocalizations: fieldsAppStoreVersionLocalizations,
                     fieldsAppCustomProductPageLocalizations: fieldsAppCustomProductPageLocalizations,
                     fieldsAppStoreVersionExperimentTreatmentLocalizations: fieldsAppStoreVersionExperimentTreatmentLocalizations,
+                    fieldsRetentionMessageVersions: fieldsRetentionMessageVersions,
                     include: include,
                     id: id);
 

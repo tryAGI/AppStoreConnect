@@ -32,6 +32,10 @@ namespace AppStoreConnect
         ///
         /// </summary>
         AppStoreVersionLocalizations,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionMessageVersions,
     }
 
     /// <summary>
@@ -52,6 +56,7 @@ namespace AppStoreConnect
                 AppAssetLibraryPlacementResponseIncludedItemDiscriminatorType.AppEventLocalizations => "appEventLocalizations",
                 AppAssetLibraryPlacementResponseIncludedItemDiscriminatorType.AppStoreVersionExperimentTreatmentLocalizations => "appStoreVersionExperimentTreatmentLocalizations",
                 AppAssetLibraryPlacementResponseIncludedItemDiscriminatorType.AppStoreVersionLocalizations => "appStoreVersionLocalizations",
+                AppAssetLibraryPlacementResponseIncludedItemDiscriminatorType.RetentionMessageVersions => "retentionMessageVersions",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -68,6 +73,7 @@ namespace AppStoreConnect
                 "appEventLocalizations" => AppAssetLibraryPlacementResponseIncludedItemDiscriminatorType.AppEventLocalizations,
                 "appStoreVersionExperimentTreatmentLocalizations" => AppAssetLibraryPlacementResponseIncludedItemDiscriminatorType.AppStoreVersionExperimentTreatmentLocalizations,
                 "appStoreVersionLocalizations" => AppAssetLibraryPlacementResponseIncludedItemDiscriminatorType.AppStoreVersionLocalizations,
+                "retentionMessageVersions" => AppAssetLibraryPlacementResponseIncludedItemDiscriminatorType.RetentionMessageVersions,
                 _ => null,
             };
         }

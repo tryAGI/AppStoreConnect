@@ -832,6 +832,26 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        public RetentionMessageLocalizationsClient RetentionMessageLocalizations { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public RetentionMessageVersionsClient RetentionMessageVersions { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public RetentionMessagesClient RetentionMessages { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public RetentionOffersClient RetentionOffers { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
         public ReviewSubmissionItemsClient ReviewSubmissionItems { get; }
 
         /// <summary>

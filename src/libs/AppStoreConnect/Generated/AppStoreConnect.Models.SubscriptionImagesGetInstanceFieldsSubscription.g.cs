@@ -75,6 +75,18 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessage,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionMessageOffers,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionOffers,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewNote,
         /// <summary>
         ///
@@ -130,6 +142,9 @@ namespace AppStoreConnect
                 SubscriptionImagesGetInstanceFieldsSubscription.ProductId => "productId",
                 SubscriptionImagesGetInstanceFieldsSubscription.PromotedPurchase => "promotedPurchase",
                 SubscriptionImagesGetInstanceFieldsSubscription.PromotionalOffers => "promotionalOffers",
+                SubscriptionImagesGetInstanceFieldsSubscription.RetentionMessage => "retentionMessage",
+                SubscriptionImagesGetInstanceFieldsSubscription.RetentionMessageOffers => "retentionMessageOffers",
+                SubscriptionImagesGetInstanceFieldsSubscription.RetentionOffers => "retentionOffers",
                 SubscriptionImagesGetInstanceFieldsSubscription.ReviewNote => "reviewNote",
                 SubscriptionImagesGetInstanceFieldsSubscription.State => "state",
                 SubscriptionImagesGetInstanceFieldsSubscription.SubscriptionAvailability => "subscriptionAvailability",
@@ -163,6 +178,9 @@ namespace AppStoreConnect
                 "productId" => SubscriptionImagesGetInstanceFieldsSubscription.ProductId,
                 "promotedPurchase" => SubscriptionImagesGetInstanceFieldsSubscription.PromotedPurchase,
                 "promotionalOffers" => SubscriptionImagesGetInstanceFieldsSubscription.PromotionalOffers,
+                "retentionMessage" => SubscriptionImagesGetInstanceFieldsSubscription.RetentionMessage,
+                "retentionMessageOffers" => SubscriptionImagesGetInstanceFieldsSubscription.RetentionMessageOffers,
+                "retentionOffers" => SubscriptionImagesGetInstanceFieldsSubscription.RetentionOffers,
                 "reviewNote" => SubscriptionImagesGetInstanceFieldsSubscription.ReviewNote,
                 "state" => SubscriptionImagesGetInstanceFieldsSubscription.State,
                 "subscriptionAvailability" => SubscriptionImagesGetInstanceFieldsSubscription.SubscriptionAvailability,

@@ -51,6 +51,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessageVersion,
+        /// <summary>
+        ///
+        /// </summary>
         State,
         /// <summary>
         ///
@@ -84,6 +88,7 @@ namespace AppStoreConnect
                 AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.MediaType => "mediaType",
                 AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.PlacementGroup => "placementGroup",
                 AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.PlacementType => "placementType",
+                AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.RetentionMessageVersion => "retentionMessageVersion",
                 AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.State => "state",
                 AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.StateDetails => "stateDetails",
                 AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.Video => "video",
@@ -107,6 +112,7 @@ namespace AppStoreConnect
                 "mediaType" => AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.MediaType,
                 "placementGroup" => AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.PlacementGroup,
                 "placementType" => AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.PlacementType,
+                "retentionMessageVersion" => AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.RetentionMessageVersion,
                 "state" => AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.State,
                 "stateDetails" => AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.StateDetails,
                 "video" => AppStoreVersionLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.Video,

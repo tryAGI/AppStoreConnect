@@ -195,6 +195,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessages,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewSubmissions,
         /// <summary>
         ///
@@ -296,6 +300,7 @@ namespace AppStoreConnect
                 AppsAppClipsGetToManyRelatedFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 AppsAppClipsGetToManyRelatedFieldsApp.PrimaryLocale => "primaryLocale",
                 AppsAppClipsGetToManyRelatedFieldsApp.PromotedPurchases => "promotedPurchases",
+                AppsAppClipsGetToManyRelatedFieldsApp.RetentionMessages => "retentionMessages",
                 AppsAppClipsGetToManyRelatedFieldsApp.ReviewSubmissions => "reviewSubmissions",
                 AppsAppClipsGetToManyRelatedFieldsApp.SearchKeywords => "searchKeywords",
                 AppsAppClipsGetToManyRelatedFieldsApp.Sku => "sku",
@@ -363,6 +368,7 @@ namespace AppStoreConnect
                 "preReleaseVersions" => AppsAppClipsGetToManyRelatedFieldsApp.PreReleaseVersions,
                 "primaryLocale" => AppsAppClipsGetToManyRelatedFieldsApp.PrimaryLocale,
                 "promotedPurchases" => AppsAppClipsGetToManyRelatedFieldsApp.PromotedPurchases,
+                "retentionMessages" => AppsAppClipsGetToManyRelatedFieldsApp.RetentionMessages,
                 "reviewSubmissions" => AppsAppClipsGetToManyRelatedFieldsApp.ReviewSubmissions,
                 "searchKeywords" => AppsAppClipsGetToManyRelatedFieldsApp.SearchKeywords,
                 "sku" => AppsAppClipsGetToManyRelatedFieldsApp.Sku,

@@ -33,6 +33,12 @@ namespace AppStoreConnect
         public global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppStoreVersionExperimentTreatmentLocalization? AppStoreVersionExperimentTreatmentLocalization { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("retentionMessageVersion")]
+        public global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsRetentionMessageVersion? RetentionMessageVersion { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -45,6 +51,7 @@ namespace AppStoreConnect
         /// <param name="appStoreVersionLocalization"></param>
         /// <param name="appCustomProductPageLocalization"></param>
         /// <param name="appStoreVersionExperimentTreatmentLocalization"></param>
+        /// <param name="retentionMessageVersion"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -52,12 +59,14 @@ namespace AppStoreConnect
             global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppEventLocalization? appEventLocalization,
             global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppStoreVersionLocalization? appStoreVersionLocalization,
             global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppCustomProductPageLocalization? appCustomProductPageLocalization,
-            global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppStoreVersionExperimentTreatmentLocalization? appStoreVersionExperimentTreatmentLocalization)
+            global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsAppStoreVersionExperimentTreatmentLocalization? appStoreVersionExperimentTreatmentLocalization,
+            global::AppStoreConnect.AppAssetLibraryPlacementCommonRelationshipsRetentionMessageVersion? retentionMessageVersion)
         {
             this.AppEventLocalization = appEventLocalization;
             this.AppStoreVersionLocalization = appStoreVersionLocalization;
             this.AppCustomProductPageLocalization = appCustomProductPageLocalization;
             this.AppStoreVersionExperimentTreatmentLocalization = appStoreVersionExperimentTreatmentLocalization;
+            this.RetentionMessageVersion = retentionMessageVersion;
         }
 
         /// <summary>

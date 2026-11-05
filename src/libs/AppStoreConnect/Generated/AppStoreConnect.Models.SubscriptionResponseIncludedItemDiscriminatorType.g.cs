@@ -15,6 +15,14 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessages,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionOffers,
+        /// <summary>
+        ///
+        /// </summary>
         SubscriptionAppStoreReviewScreenshots,
         /// <summary>
         ///
@@ -75,6 +83,8 @@ namespace AppStoreConnect
             return value switch
             {
                 SubscriptionResponseIncludedItemDiscriminatorType.PromotedPurchases => "promotedPurchases",
+                SubscriptionResponseIncludedItemDiscriminatorType.RetentionMessages => "retentionMessages",
+                SubscriptionResponseIncludedItemDiscriminatorType.RetentionOffers => "retentionOffers",
                 SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionAppStoreReviewScreenshots => "subscriptionAppStoreReviewScreenshots",
                 SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionAvailabilities => "subscriptionAvailabilities",
                 SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionGroups => "subscriptionGroups",
@@ -98,6 +108,8 @@ namespace AppStoreConnect
             return value switch
             {
                 "promotedPurchases" => SubscriptionResponseIncludedItemDiscriminatorType.PromotedPurchases,
+                "retentionMessages" => SubscriptionResponseIncludedItemDiscriminatorType.RetentionMessages,
+                "retentionOffers" => SubscriptionResponseIncludedItemDiscriminatorType.RetentionOffers,
                 "subscriptionAppStoreReviewScreenshots" => SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionAppStoreReviewScreenshots,
                 "subscriptionAvailabilities" => SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionAvailabilities,
                 "subscriptionGroups" => SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionGroups,

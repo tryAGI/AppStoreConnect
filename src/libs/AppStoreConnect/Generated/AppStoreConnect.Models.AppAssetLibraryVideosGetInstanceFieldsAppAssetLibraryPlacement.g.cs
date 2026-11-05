@@ -51,6 +51,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessageVersion,
+        /// <summary>
+        ///
+        /// </summary>
         State,
         /// <summary>
         ///
@@ -84,6 +88,7 @@ namespace AppStoreConnect
                 AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement.MediaType => "mediaType",
                 AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement.PlacementGroup => "placementGroup",
                 AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement.PlacementType => "placementType",
+                AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement.RetentionMessageVersion => "retentionMessageVersion",
                 AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement.State => "state",
                 AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement.StateDetails => "stateDetails",
                 AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement.Video => "video",
@@ -107,6 +112,7 @@ namespace AppStoreConnect
                 "mediaType" => AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement.MediaType,
                 "placementGroup" => AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement.PlacementGroup,
                 "placementType" => AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement.PlacementType,
+                "retentionMessageVersion" => AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement.RetentionMessageVersion,
                 "state" => AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement.State,
                 "stateDetails" => AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement.StateDetails,
                 "video" => AppAssetLibraryVideosGetInstanceFieldsAppAssetLibraryPlacement.Video,

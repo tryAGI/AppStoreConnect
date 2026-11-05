@@ -47,6 +47,18 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessage,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionMessageOffers,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionOffers,
+        /// <summary>
+        ///
+        /// </summary>
         SubscriptionAvailability,
         /// <summary>
         ///
@@ -83,6 +95,9 @@ namespace AppStoreConnect
                 SubscriptionsGetInstanceIncludeItem.Prices => "prices",
                 SubscriptionsGetInstanceIncludeItem.PromotedPurchase => "promotedPurchase",
                 SubscriptionsGetInstanceIncludeItem.PromotionalOffers => "promotionalOffers",
+                SubscriptionsGetInstanceIncludeItem.RetentionMessage => "retentionMessage",
+                SubscriptionsGetInstanceIncludeItem.RetentionMessageOffers => "retentionMessageOffers",
+                SubscriptionsGetInstanceIncludeItem.RetentionOffers => "retentionOffers",
                 SubscriptionsGetInstanceIncludeItem.SubscriptionAvailability => "subscriptionAvailability",
                 SubscriptionsGetInstanceIncludeItem.SubscriptionLocalizations => "subscriptionLocalizations",
                 SubscriptionsGetInstanceIncludeItem.Versions => "versions",
@@ -106,6 +121,9 @@ namespace AppStoreConnect
                 "prices" => SubscriptionsGetInstanceIncludeItem.Prices,
                 "promotedPurchase" => SubscriptionsGetInstanceIncludeItem.PromotedPurchase,
                 "promotionalOffers" => SubscriptionsGetInstanceIncludeItem.PromotionalOffers,
+                "retentionMessage" => SubscriptionsGetInstanceIncludeItem.RetentionMessage,
+                "retentionMessageOffers" => SubscriptionsGetInstanceIncludeItem.RetentionMessageOffers,
+                "retentionOffers" => SubscriptionsGetInstanceIncludeItem.RetentionOffers,
                 "subscriptionAvailability" => SubscriptionsGetInstanceIncludeItem.SubscriptionAvailability,
                 "subscriptionLocalizations" => SubscriptionsGetInstanceIncludeItem.SubscriptionLocalizations,
                 "versions" => SubscriptionsGetInstanceIncludeItem.Versions,

@@ -235,6 +235,43 @@ namespace AppStoreConnect
         public global::AppStoreConnect.AppStoreVersionLocalization PickAppStoreVersionLocalizations() => AppStoreVersionLocalizations is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionLocalizations' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.RetentionMessageVersion? RetentionMessageVersions { get; init; }
+#else
+        public global::AppStoreConnect.RetentionMessageVersion? RetentionMessageVersions { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RetentionMessageVersions))]
+#endif
+        public bool IsRetentionMessageVersions => RetentionMessageVersions != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickRetentionMessageVersions(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.RetentionMessageVersion? value)
+        {
+            value = RetentionMessageVersions;
+            return IsRetentionMessageVersions;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::AppStoreConnect.RetentionMessageVersion PickRetentionMessageVersions() => RetentionMessageVersions is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RetentionMessageVersions' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -376,6 +413,29 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        public static implicit operator IncludedItem3(global::AppStoreConnect.RetentionMessageVersion value) => new IncludedItem3((global::AppStoreConnect.RetentionMessageVersion?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.RetentionMessageVersion?(IncludedItem3 @this) => @this.RetentionMessageVersions;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem3(global::AppStoreConnect.RetentionMessageVersion? value)
+        {
+            RetentionMessageVersions = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem3 FromRetentionMessageVersions(global::AppStoreConnect.RetentionMessageVersion? value) => new IncludedItem3(value);
+
+        /// <summary>
+        ///
+        /// </summary>
         public IncludedItem3(
             global::AppStoreConnect.AppAssetLibraryPlacementsResponseIncludedItemDiscriminatorType? type,
             global::AppStoreConnect.AppAssetLibraryImage? appAssetLibraryImages,
@@ -383,7 +443,8 @@ namespace AppStoreConnect
             global::AppStoreConnect.AppCustomProductPageLocalization? appCustomProductPageLocalizations,
             global::AppStoreConnect.AppEventLocalization? appEventLocalizations,
             global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? appStoreVersionExperimentTreatmentLocalizations,
-            global::AppStoreConnect.AppStoreVersionLocalization? appStoreVersionLocalizations
+            global::AppStoreConnect.AppStoreVersionLocalization? appStoreVersionLocalizations,
+            global::AppStoreConnect.RetentionMessageVersion? retentionMessageVersions
             )
         {
             Type = type;
@@ -394,12 +455,14 @@ namespace AppStoreConnect
             AppEventLocalizations = appEventLocalizations;
             AppStoreVersionExperimentTreatmentLocalizations = appStoreVersionExperimentTreatmentLocalizations;
             AppStoreVersionLocalizations = appStoreVersionLocalizations;
+            RetentionMessageVersions = retentionMessageVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
+            RetentionMessageVersions as object ??
             AppStoreVersionLocalizations as object ??
             AppStoreVersionExperimentTreatmentLocalizations as object ??
             AppEventLocalizations as object ??
@@ -417,7 +480,8 @@ namespace AppStoreConnect
             AppCustomProductPageLocalizations?.ToString() ??
             AppEventLocalizations?.ToString() ??
             AppStoreVersionExperimentTreatmentLocalizations?.ToString() ??
-            AppStoreVersionLocalizations?.ToString()
+            AppStoreVersionLocalizations?.ToString() ??
+            RetentionMessageVersions?.ToString()
             ;
 
         /// <summary>
@@ -425,7 +489,7 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageLocalizations && !IsAppEventLocalizations && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations || !IsAppAssetLibraryImages && IsAppAssetLibraryVideos && !IsAppCustomProductPageLocalizations && !IsAppEventLocalizations && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && IsAppCustomProductPageLocalizations && !IsAppEventLocalizations && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageLocalizations && IsAppEventLocalizations && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageLocalizations && !IsAppEventLocalizations && IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageLocalizations && !IsAppEventLocalizations && !IsAppStoreVersionExperimentTreatmentLocalizations && IsAppStoreVersionLocalizations;
+            return IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageLocalizations && !IsAppEventLocalizations && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations && !IsRetentionMessageVersions || !IsAppAssetLibraryImages && IsAppAssetLibraryVideos && !IsAppCustomProductPageLocalizations && !IsAppEventLocalizations && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations && !IsRetentionMessageVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && IsAppCustomProductPageLocalizations && !IsAppEventLocalizations && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations && !IsRetentionMessageVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageLocalizations && IsAppEventLocalizations && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations && !IsRetentionMessageVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageLocalizations && !IsAppEventLocalizations && IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations && !IsRetentionMessageVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageLocalizations && !IsAppEventLocalizations && !IsAppStoreVersionExperimentTreatmentLocalizations && IsAppStoreVersionLocalizations && !IsRetentionMessageVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageLocalizations && !IsAppEventLocalizations && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations && IsRetentionMessageVersions;
         }
 
         /// <summary>
@@ -438,6 +502,7 @@ namespace AppStoreConnect
             global::System.Func<global::AppStoreConnect.AppEventLocalization, TResult>? appEventLocalizations = null,
             global::System.Func<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization, TResult>? appStoreVersionExperimentTreatmentLocalizations = null,
             global::System.Func<global::AppStoreConnect.AppStoreVersionLocalization, TResult>? appStoreVersionLocalizations = null,
+            global::System.Func<global::AppStoreConnect.RetentionMessageVersion, TResult>? retentionMessageVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -469,6 +534,10 @@ namespace AppStoreConnect
             {
                 return appStoreVersionLocalizations(__value5);
             }
+            else if (RetentionMessageVersions is { } __value6 && retentionMessageVersions != null)
+            {
+                return retentionMessageVersions(__value6);
+            }
 
             return default(TResult);
         }
@@ -488,6 +557,8 @@ namespace AppStoreConnect
             global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization>? appStoreVersionExperimentTreatmentLocalizations = null,
 
             global::System.Action<global::AppStoreConnect.AppStoreVersionLocalization>? appStoreVersionLocalizations = null,
+
+            global::System.Action<global::AppStoreConnect.RetentionMessageVersion>? retentionMessageVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -518,6 +589,10 @@ namespace AppStoreConnect
             else if (AppStoreVersionLocalizations is { } __value5)
             {
                 appStoreVersionLocalizations?.Invoke(__value5);
+            }
+            else if (RetentionMessageVersions is { } __value6)
+            {
+                retentionMessageVersions?.Invoke(__value6);
             }
         }
 
@@ -531,6 +606,7 @@ namespace AppStoreConnect
             global::System.Action<global::AppStoreConnect.AppEventLocalization>? appEventLocalizations = null,
             global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization>? appStoreVersionExperimentTreatmentLocalizations = null,
             global::System.Action<global::AppStoreConnect.AppStoreVersionLocalization>? appStoreVersionLocalizations = null,
+            global::System.Action<global::AppStoreConnect.RetentionMessageVersion>? retentionMessageVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -561,6 +637,10 @@ namespace AppStoreConnect
             else if (AppStoreVersionLocalizations is { } __value5)
             {
                 appStoreVersionLocalizations?.Invoke(__value5);
+            }
+            else if (RetentionMessageVersions is { } __value6)
+            {
+                retentionMessageVersions?.Invoke(__value6);
             }
         }
 
@@ -583,6 +663,8 @@ namespace AppStoreConnect
                 typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization),
                 AppStoreVersionLocalizations,
                 typeof(global::AppStoreConnect.AppStoreVersionLocalization),
+                RetentionMessageVersions,
+                typeof(global::AppStoreConnect.RetentionMessageVersion),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -604,7 +686,8 @@ namespace AppStoreConnect
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageLocalization?>.Default.Equals(AppCustomProductPageLocalizations, other.AppCustomProductPageLocalizations) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEventLocalization?>.Default.Equals(AppEventLocalizations, other.AppEventLocalizations) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization?>.Default.Equals(AppStoreVersionExperimentTreatmentLocalizations, other.AppStoreVersionExperimentTreatmentLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionLocalization?>.Default.Equals(AppStoreVersionLocalizations, other.AppStoreVersionLocalizations)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionLocalization?>.Default.Equals(AppStoreVersionLocalizations, other.AppStoreVersionLocalizations) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RetentionMessageVersion?>.Default.Equals(RetentionMessageVersions, other.RetentionMessageVersions)
                 ;
         }
 

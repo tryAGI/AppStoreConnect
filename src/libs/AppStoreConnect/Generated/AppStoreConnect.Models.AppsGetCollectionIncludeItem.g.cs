@@ -99,6 +99,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessages,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewSubmissions,
         /// <summary>
         ///
@@ -144,6 +148,7 @@ namespace AppStoreConnect
                 AppsGetCollectionIncludeItem.InAppPurchasesV2 => "inAppPurchasesV2",
                 AppsGetCollectionIncludeItem.PreReleaseVersions => "preReleaseVersions",
                 AppsGetCollectionIncludeItem.PromotedPurchases => "promotedPurchases",
+                AppsGetCollectionIncludeItem.RetentionMessages => "retentionMessages",
                 AppsGetCollectionIncludeItem.ReviewSubmissions => "reviewSubmissions",
                 AppsGetCollectionIncludeItem.SubscriptionGracePeriod => "subscriptionGracePeriod",
                 AppsGetCollectionIncludeItem.SubscriptionGroups => "subscriptionGroups",
@@ -179,6 +184,7 @@ namespace AppStoreConnect
                 "inAppPurchasesV2" => AppsGetCollectionIncludeItem.InAppPurchasesV2,
                 "preReleaseVersions" => AppsGetCollectionIncludeItem.PreReleaseVersions,
                 "promotedPurchases" => AppsGetCollectionIncludeItem.PromotedPurchases,
+                "retentionMessages" => AppsGetCollectionIncludeItem.RetentionMessages,
                 "reviewSubmissions" => AppsGetCollectionIncludeItem.ReviewSubmissions,
                 "subscriptionGracePeriod" => AppsGetCollectionIncludeItem.SubscriptionGracePeriod,
                 "subscriptionGroups" => AppsGetCollectionIncludeItem.SubscriptionGroups,

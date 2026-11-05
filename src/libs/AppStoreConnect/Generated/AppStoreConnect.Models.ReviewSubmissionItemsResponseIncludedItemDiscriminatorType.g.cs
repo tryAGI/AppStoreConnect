@@ -63,6 +63,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessageVersions,
+        /// <summary>
+        ///
+        /// </summary>
         SubscriptionGroupVersions,
         /// <summary>
         ///
@@ -95,6 +99,7 @@ namespace AppStoreConnect
                 ReviewSubmissionItemsResponseIncludedItemDiscriminatorType.GameCenterLeaderboardSetVersions => "gameCenterLeaderboardSetVersions",
                 ReviewSubmissionItemsResponseIncludedItemDiscriminatorType.GameCenterLeaderboardVersions => "gameCenterLeaderboardVersions",
                 ReviewSubmissionItemsResponseIncludedItemDiscriminatorType.InAppPurchaseVersions => "inAppPurchaseVersions",
+                ReviewSubmissionItemsResponseIncludedItemDiscriminatorType.RetentionMessageVersions => "retentionMessageVersions",
                 ReviewSubmissionItemsResponseIncludedItemDiscriminatorType.SubscriptionGroupVersions => "subscriptionGroupVersions",
                 ReviewSubmissionItemsResponseIncludedItemDiscriminatorType.SubscriptionVersions => "subscriptionVersions",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -120,6 +125,7 @@ namespace AppStoreConnect
                 "gameCenterLeaderboardSetVersions" => ReviewSubmissionItemsResponseIncludedItemDiscriminatorType.GameCenterLeaderboardSetVersions,
                 "gameCenterLeaderboardVersions" => ReviewSubmissionItemsResponseIncludedItemDiscriminatorType.GameCenterLeaderboardVersions,
                 "inAppPurchaseVersions" => ReviewSubmissionItemsResponseIncludedItemDiscriminatorType.InAppPurchaseVersions,
+                "retentionMessageVersions" => ReviewSubmissionItemsResponseIncludedItemDiscriminatorType.RetentionMessageVersions,
                 "subscriptionGroupVersions" => ReviewSubmissionItemsResponseIncludedItemDiscriminatorType.SubscriptionGroupVersions,
                 "subscriptionVersions" => ReviewSubmissionItemsResponseIncludedItemDiscriminatorType.SubscriptionVersions,
                 _ => null,

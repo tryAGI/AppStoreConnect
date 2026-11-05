@@ -35,6 +35,7 @@ namespace AppStoreConnect
         /// <param name="fieldsEndUserLicenseAgreements"></param>
         /// <param name="fieldsInAppPurchases"></param>
         /// <param name="fieldsSubscriptionGroups"></param>
+        /// <param name="fieldsRetentionMessages"></param>
         /// <param name="fieldsGameCenterEnabledVersions"></param>
         /// <param name="fieldsAppCustomProductPages"></param>
         /// <param name="fieldsPromotedPurchases"></param>
@@ -62,6 +63,7 @@ namespace AppStoreConnect
         /// <param name="limitInAppPurchasesV2"></param>
         /// <param name="limitPreReleaseVersions"></param>
         /// <param name="limitPromotedPurchases"></param>
+        /// <param name="limitRetentionMessages"></param>
         /// <param name="limitReviewSubmissions"></param>
         /// <param name="limitSubscriptionGroups"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -96,6 +98,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppsGetCollectionFieldsEndUserLicenseAgreement>? fieldsEndUserLicenseAgreements = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppsGetCollectionFieldsInAppPurchase>? fieldsInAppPurchases = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppsGetCollectionFieldsSubscriptionGroup>? fieldsSubscriptionGroups = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppsGetCollectionFieldsRetentionMessage>? fieldsRetentionMessages = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppsGetCollectionFieldsGameCenterEnabledVersion>? fieldsGameCenterEnabledVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppsGetCollectionFieldsAppCustomProductPage>? fieldsAppCustomProductPages = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppsGetCollectionFieldsPromotedPurchase>? fieldsPromotedPurchases = default,
@@ -123,6 +126,7 @@ namespace AppStoreConnect
             int? limitInAppPurchasesV2 = default,
             int? limitPreReleaseVersions = default,
             int? limitPromotedPurchases = default,
+            int? limitRetentionMessages = default,
             int? limitReviewSubmissions = default,
             int? limitSubscriptionGroups = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
@@ -158,6 +162,7 @@ namespace AppStoreConnect
         /// <param name="fieldsEndUserLicenseAgreements"></param>
         /// <param name="fieldsInAppPurchases"></param>
         /// <param name="fieldsSubscriptionGroups"></param>
+        /// <param name="fieldsRetentionMessages"></param>
         /// <param name="fieldsGameCenterEnabledVersions"></param>
         /// <param name="fieldsAppCustomProductPages"></param>
         /// <param name="fieldsPromotedPurchases"></param>
@@ -185,6 +190,7 @@ namespace AppStoreConnect
         /// <param name="limitInAppPurchasesV2"></param>
         /// <param name="limitPreReleaseVersions"></param>
         /// <param name="limitPromotedPurchases"></param>
+        /// <param name="limitRetentionMessages"></param>
         /// <param name="limitReviewSubmissions"></param>
         /// <param name="limitSubscriptionGroups"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
@@ -219,6 +225,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppsGetCollectionFieldsEndUserLicenseAgreement>? fieldsEndUserLicenseAgreements = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppsGetCollectionFieldsInAppPurchase>? fieldsInAppPurchases = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppsGetCollectionFieldsSubscriptionGroup>? fieldsSubscriptionGroups = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppsGetCollectionFieldsRetentionMessage>? fieldsRetentionMessages = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppsGetCollectionFieldsGameCenterEnabledVersion>? fieldsGameCenterEnabledVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppsGetCollectionFieldsAppCustomProductPage>? fieldsAppCustomProductPages = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppsGetCollectionFieldsPromotedPurchase>? fieldsPromotedPurchases = default,
@@ -246,6 +253,7 @@ namespace AppStoreConnect
             int? limitInAppPurchasesV2 = default,
             int? limitPreReleaseVersions = default,
             int? limitPromotedPurchases = default,
+            int? limitRetentionMessages = default,
             int? limitReviewSubmissions = default,
             int? limitSubscriptionGroups = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,

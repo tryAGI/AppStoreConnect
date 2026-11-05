@@ -75,6 +75,18 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessage,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionMessageOffers,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionOffers,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewNote,
         /// <summary>
         ///
@@ -130,6 +142,9 @@ namespace AppStoreConnect
                 SubscriptionLocalizationsGetInstanceFieldsSubscription.ProductId => "productId",
                 SubscriptionLocalizationsGetInstanceFieldsSubscription.PromotedPurchase => "promotedPurchase",
                 SubscriptionLocalizationsGetInstanceFieldsSubscription.PromotionalOffers => "promotionalOffers",
+                SubscriptionLocalizationsGetInstanceFieldsSubscription.RetentionMessage => "retentionMessage",
+                SubscriptionLocalizationsGetInstanceFieldsSubscription.RetentionMessageOffers => "retentionMessageOffers",
+                SubscriptionLocalizationsGetInstanceFieldsSubscription.RetentionOffers => "retentionOffers",
                 SubscriptionLocalizationsGetInstanceFieldsSubscription.ReviewNote => "reviewNote",
                 SubscriptionLocalizationsGetInstanceFieldsSubscription.State => "state",
                 SubscriptionLocalizationsGetInstanceFieldsSubscription.SubscriptionAvailability => "subscriptionAvailability",
@@ -163,6 +178,9 @@ namespace AppStoreConnect
                 "productId" => SubscriptionLocalizationsGetInstanceFieldsSubscription.ProductId,
                 "promotedPurchase" => SubscriptionLocalizationsGetInstanceFieldsSubscription.PromotedPurchase,
                 "promotionalOffers" => SubscriptionLocalizationsGetInstanceFieldsSubscription.PromotionalOffers,
+                "retentionMessage" => SubscriptionLocalizationsGetInstanceFieldsSubscription.RetentionMessage,
+                "retentionMessageOffers" => SubscriptionLocalizationsGetInstanceFieldsSubscription.RetentionMessageOffers,
+                "retentionOffers" => SubscriptionLocalizationsGetInstanceFieldsSubscription.RetentionOffers,
                 "reviewNote" => SubscriptionLocalizationsGetInstanceFieldsSubscription.ReviewNote,
                 "state" => SubscriptionLocalizationsGetInstanceFieldsSubscription.State,
                 "subscriptionAvailability" => SubscriptionLocalizationsGetInstanceFieldsSubscription.SubscriptionAvailability,

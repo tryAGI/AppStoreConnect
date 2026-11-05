@@ -1,0 +1,45 @@
+
+#nullable enable
+
+namespace AppStoreConnect
+{
+    /// <summary>
+    ///
+    /// </summary>
+    public enum RetentionMessageLocalizationUpdateRequestDataType
+    {
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionMessageLocalizations,
+    }
+
+    /// <summary>
+    /// Enum extensions to do fast conversions without the reflection.
+    /// </summary>
+    public static class RetentionMessageLocalizationUpdateRequestDataTypeExtensions
+    {
+        /// <summary>
+        /// Converts an enum to a string.
+        /// </summary>
+        public static string ToValueString(this RetentionMessageLocalizationUpdateRequestDataType value)
+        {
+            return value switch
+            {
+                RetentionMessageLocalizationUpdateRequestDataType.RetentionMessageLocalizations => "retentionMessageLocalizations",
+                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
+            };
+        }
+        /// <summary>
+        /// Converts an string to a enum.
+        /// </summary>
+        public static RetentionMessageLocalizationUpdateRequestDataType? ToEnum(string value)
+        {
+            return value switch
+            {
+                "retentionMessageLocalizations" => RetentionMessageLocalizationUpdateRequestDataType.RetentionMessageLocalizations,
+                _ => null,
+            };
+        }
+    }
+}

@@ -67,6 +67,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessageVersion,
+        /// <summary>
+        ///
+        /// </summary>
         State,
         /// <summary>
         ///
@@ -104,6 +108,7 @@ namespace AppStoreConnect
                 ReviewSubmissionsGetCollectionFieldsReviewSubmissionItem.GameCenterLeaderboardSetVersion => "gameCenterLeaderboardSetVersion",
                 ReviewSubmissionsGetCollectionFieldsReviewSubmissionItem.GameCenterLeaderboardVersion => "gameCenterLeaderboardVersion",
                 ReviewSubmissionsGetCollectionFieldsReviewSubmissionItem.InAppPurchaseVersion => "inAppPurchaseVersion",
+                ReviewSubmissionsGetCollectionFieldsReviewSubmissionItem.RetentionMessageVersion => "retentionMessageVersion",
                 ReviewSubmissionsGetCollectionFieldsReviewSubmissionItem.State => "state",
                 ReviewSubmissionsGetCollectionFieldsReviewSubmissionItem.SubscriptionGroupVersion => "subscriptionGroupVersion",
                 ReviewSubmissionsGetCollectionFieldsReviewSubmissionItem.SubscriptionVersion => "subscriptionVersion",
@@ -131,6 +136,7 @@ namespace AppStoreConnect
                 "gameCenterLeaderboardSetVersion" => ReviewSubmissionsGetCollectionFieldsReviewSubmissionItem.GameCenterLeaderboardSetVersion,
                 "gameCenterLeaderboardVersion" => ReviewSubmissionsGetCollectionFieldsReviewSubmissionItem.GameCenterLeaderboardVersion,
                 "inAppPurchaseVersion" => ReviewSubmissionsGetCollectionFieldsReviewSubmissionItem.InAppPurchaseVersion,
+                "retentionMessageVersion" => ReviewSubmissionsGetCollectionFieldsReviewSubmissionItem.RetentionMessageVersion,
                 "state" => ReviewSubmissionsGetCollectionFieldsReviewSubmissionItem.State,
                 "subscriptionGroupVersion" => ReviewSubmissionsGetCollectionFieldsReviewSubmissionItem.SubscriptionGroupVersion,
                 "subscriptionVersion" => ReviewSubmissionsGetCollectionFieldsReviewSubmissionItem.SubscriptionVersion,

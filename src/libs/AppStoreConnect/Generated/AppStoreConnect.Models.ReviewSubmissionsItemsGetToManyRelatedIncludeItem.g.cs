@@ -67,6 +67,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessageVersion,
+        /// <summary>
+        ///
+        /// </summary>
         SubscriptionGroupVersion,
         /// <summary>
         ///
@@ -100,6 +104,7 @@ namespace AppStoreConnect
                 ReviewSubmissionsItemsGetToManyRelatedIncludeItem.GameCenterLeaderboardSetVersion => "gameCenterLeaderboardSetVersion",
                 ReviewSubmissionsItemsGetToManyRelatedIncludeItem.GameCenterLeaderboardVersion => "gameCenterLeaderboardVersion",
                 ReviewSubmissionsItemsGetToManyRelatedIncludeItem.InAppPurchaseVersion => "inAppPurchaseVersion",
+                ReviewSubmissionsItemsGetToManyRelatedIncludeItem.RetentionMessageVersion => "retentionMessageVersion",
                 ReviewSubmissionsItemsGetToManyRelatedIncludeItem.SubscriptionGroupVersion => "subscriptionGroupVersion",
                 ReviewSubmissionsItemsGetToManyRelatedIncludeItem.SubscriptionVersion => "subscriptionVersion",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -126,6 +131,7 @@ namespace AppStoreConnect
                 "gameCenterLeaderboardSetVersion" => ReviewSubmissionsItemsGetToManyRelatedIncludeItem.GameCenterLeaderboardSetVersion,
                 "gameCenterLeaderboardVersion" => ReviewSubmissionsItemsGetToManyRelatedIncludeItem.GameCenterLeaderboardVersion,
                 "inAppPurchaseVersion" => ReviewSubmissionsItemsGetToManyRelatedIncludeItem.InAppPurchaseVersion,
+                "retentionMessageVersion" => ReviewSubmissionsItemsGetToManyRelatedIncludeItem.RetentionMessageVersion,
                 "subscriptionGroupVersion" => ReviewSubmissionsItemsGetToManyRelatedIncludeItem.SubscriptionGroupVersion,
                 "subscriptionVersion" => ReviewSubmissionsItemsGetToManyRelatedIncludeItem.SubscriptionVersion,
                 _ => null,

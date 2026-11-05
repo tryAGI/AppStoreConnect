@@ -21,6 +21,8 @@ namespace AppStoreConnect
         /// <param name="fieldsSubscriptionImages"></param>
         /// <param name="fieldsSubscriptionPlanAvailabilities"></param>
         /// <param name="fieldsSubscriptionVersions"></param>
+        /// <param name="fieldsRetentionOffers"></param>
+        /// <param name="fieldsRetentionMessages"></param>
         /// <param name="include"></param>
         /// <param name="limitImages"></param>
         /// <param name="limitIntroductoryOffers"></param>
@@ -28,6 +30,8 @@ namespace AppStoreConnect
         /// <param name="limitPlanAvailabilities"></param>
         /// <param name="limitPrices"></param>
         /// <param name="limitPromotionalOffers"></param>
+        /// <param name="limitRetentionMessageOffers"></param>
+        /// <param name="limitRetentionOffers"></param>
         /// <param name="limitSubscriptionLocalizations"></param>
         /// <param name="limitVersions"></param>
         /// <param name="limitWinBackOffers"></param>
@@ -51,6 +55,8 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsGetInstanceFieldsSubscriptionImage>? fieldsSubscriptionImages = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsGetInstanceFieldsSubscriptionPlanAvailabilitie>? fieldsSubscriptionPlanAvailabilities = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsGetInstanceFieldsSubscriptionVersion>? fieldsSubscriptionVersions = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsGetInstanceFieldsRetentionOffer>? fieldsRetentionOffers = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsGetInstanceFieldsRetentionMessage>? fieldsRetentionMessages = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsGetInstanceIncludeItem>? include = default,
             int? limitImages = default,
             int? limitIntroductoryOffers = default,
@@ -58,6 +64,8 @@ namespace AppStoreConnect
             int? limitPlanAvailabilities = default,
             int? limitPrices = default,
             int? limitPromotionalOffers = default,
+            int? limitRetentionMessageOffers = default,
+            int? limitRetentionOffers = default,
             int? limitSubscriptionLocalizations = default,
             int? limitVersions = default,
             int? limitWinBackOffers = default,
@@ -80,6 +88,8 @@ namespace AppStoreConnect
         /// <param name="fieldsSubscriptionImages"></param>
         /// <param name="fieldsSubscriptionPlanAvailabilities"></param>
         /// <param name="fieldsSubscriptionVersions"></param>
+        /// <param name="fieldsRetentionOffers"></param>
+        /// <param name="fieldsRetentionMessages"></param>
         /// <param name="include"></param>
         /// <param name="limitImages"></param>
         /// <param name="limitIntroductoryOffers"></param>
@@ -87,6 +97,8 @@ namespace AppStoreConnect
         /// <param name="limitPlanAvailabilities"></param>
         /// <param name="limitPrices"></param>
         /// <param name="limitPromotionalOffers"></param>
+        /// <param name="limitRetentionMessageOffers"></param>
+        /// <param name="limitRetentionOffers"></param>
         /// <param name="limitSubscriptionLocalizations"></param>
         /// <param name="limitVersions"></param>
         /// <param name="limitWinBackOffers"></param>
@@ -110,6 +122,8 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsGetInstanceFieldsSubscriptionImage>? fieldsSubscriptionImages = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsGetInstanceFieldsSubscriptionPlanAvailabilitie>? fieldsSubscriptionPlanAvailabilities = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsGetInstanceFieldsSubscriptionVersion>? fieldsSubscriptionVersions = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsGetInstanceFieldsRetentionOffer>? fieldsRetentionOffers = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsGetInstanceFieldsRetentionMessage>? fieldsRetentionMessages = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsGetInstanceIncludeItem>? include = default,
             int? limitImages = default,
             int? limitIntroductoryOffers = default,
@@ -117,6 +131,8 @@ namespace AppStoreConnect
             int? limitPlanAvailabilities = default,
             int? limitPrices = default,
             int? limitPromotionalOffers = default,
+            int? limitRetentionMessageOffers = default,
+            int? limitRetentionOffers = default,
             int? limitSubscriptionLocalizations = default,
             int? limitVersions = default,
             int? limitWinBackOffers = default,

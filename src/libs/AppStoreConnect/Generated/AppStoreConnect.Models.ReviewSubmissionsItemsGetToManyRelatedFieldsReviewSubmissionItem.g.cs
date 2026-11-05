@@ -67,6 +67,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessageVersion,
+        /// <summary>
+        ///
+        /// </summary>
         State,
         /// <summary>
         ///
@@ -104,6 +108,7 @@ namespace AppStoreConnect
                 ReviewSubmissionsItemsGetToManyRelatedFieldsReviewSubmissionItem.GameCenterLeaderboardSetVersion => "gameCenterLeaderboardSetVersion",
                 ReviewSubmissionsItemsGetToManyRelatedFieldsReviewSubmissionItem.GameCenterLeaderboardVersion => "gameCenterLeaderboardVersion",
                 ReviewSubmissionsItemsGetToManyRelatedFieldsReviewSubmissionItem.InAppPurchaseVersion => "inAppPurchaseVersion",
+                ReviewSubmissionsItemsGetToManyRelatedFieldsReviewSubmissionItem.RetentionMessageVersion => "retentionMessageVersion",
                 ReviewSubmissionsItemsGetToManyRelatedFieldsReviewSubmissionItem.State => "state",
                 ReviewSubmissionsItemsGetToManyRelatedFieldsReviewSubmissionItem.SubscriptionGroupVersion => "subscriptionGroupVersion",
                 ReviewSubmissionsItemsGetToManyRelatedFieldsReviewSubmissionItem.SubscriptionVersion => "subscriptionVersion",
@@ -131,6 +136,7 @@ namespace AppStoreConnect
                 "gameCenterLeaderboardSetVersion" => ReviewSubmissionsItemsGetToManyRelatedFieldsReviewSubmissionItem.GameCenterLeaderboardSetVersion,
                 "gameCenterLeaderboardVersion" => ReviewSubmissionsItemsGetToManyRelatedFieldsReviewSubmissionItem.GameCenterLeaderboardVersion,
                 "inAppPurchaseVersion" => ReviewSubmissionsItemsGetToManyRelatedFieldsReviewSubmissionItem.InAppPurchaseVersion,
+                "retentionMessageVersion" => ReviewSubmissionsItemsGetToManyRelatedFieldsReviewSubmissionItem.RetentionMessageVersion,
                 "state" => ReviewSubmissionsItemsGetToManyRelatedFieldsReviewSubmissionItem.State,
                 "subscriptionGroupVersion" => ReviewSubmissionsItemsGetToManyRelatedFieldsReviewSubmissionItem.SubscriptionGroupVersion,
                 "subscriptionVersion" => ReviewSubmissionsItemsGetToManyRelatedFieldsReviewSubmissionItem.SubscriptionVersion,

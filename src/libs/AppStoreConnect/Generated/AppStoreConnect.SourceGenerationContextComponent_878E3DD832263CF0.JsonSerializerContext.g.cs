@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.DeliveryFileUploadOperation))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0273.Create_DeliveryFileUploadOperation(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0275.Create_DeliveryFileUploadOperation(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -96,6 +96,24 @@ namespace AppStoreConnect
         public global::AppStoreConnect.SubscriptionRelationshipsVersions? Versions { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("retentionOffers")]
+        public global::AppStoreConnect.SubscriptionRelationshipsRetentionOffers? RetentionOffers { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("retentionMessage")]
+        public global::AppStoreConnect.SubscriptionRelationshipsRetentionMessage? RetentionMessage { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("retentionMessageOffers")]
+        public global::AppStoreConnect.SubscriptionRelationshipsRetentionMessageOffers? RetentionMessageOffers { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -117,6 +135,9 @@ namespace AppStoreConnect
         /// <param name="images"></param>
         /// <param name="planAvailabilities"></param>
         /// <param name="versions"></param>
+        /// <param name="retentionOffers"></param>
+        /// <param name="retentionMessage"></param>
+        /// <param name="retentionMessageOffers"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -133,7 +154,10 @@ namespace AppStoreConnect
             global::AppStoreConnect.SubscriptionRelationshipsWinBackOffers? winBackOffers,
             global::AppStoreConnect.SubscriptionRelationshipsImages? images,
             global::AppStoreConnect.SubscriptionRelationshipsPlanAvailabilities? planAvailabilities,
-            global::AppStoreConnect.SubscriptionRelationshipsVersions? versions)
+            global::AppStoreConnect.SubscriptionRelationshipsVersions? versions,
+            global::AppStoreConnect.SubscriptionRelationshipsRetentionOffers? retentionOffers,
+            global::AppStoreConnect.SubscriptionRelationshipsRetentionMessage? retentionMessage,
+            global::AppStoreConnect.SubscriptionRelationshipsRetentionMessageOffers? retentionMessageOffers)
         {
             this.SubscriptionLocalizations = subscriptionLocalizations;
             this.AppStoreReviewScreenshot = appStoreReviewScreenshot;
@@ -148,6 +172,9 @@ namespace AppStoreConnect
             this.Images = images;
             this.PlanAvailabilities = planAvailabilities;
             this.Versions = versions;
+            this.RetentionOffers = retentionOffers;
+            this.RetentionMessage = retentionMessage;
+            this.RetentionMessageOffers = retentionMessageOffers;
         }
 
         /// <summary>

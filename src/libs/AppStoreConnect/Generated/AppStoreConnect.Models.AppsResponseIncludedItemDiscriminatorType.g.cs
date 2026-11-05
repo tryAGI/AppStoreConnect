@@ -95,6 +95,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessages,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewSubmissions,
         /// <summary>
         ///
@@ -139,6 +143,7 @@ namespace AppStoreConnect
                 AppsResponseIncludedItemDiscriminatorType.InAppPurchases => "inAppPurchases",
                 AppsResponseIncludedItemDiscriminatorType.PreReleaseVersions => "preReleaseVersions",
                 AppsResponseIncludedItemDiscriminatorType.PromotedPurchases => "promotedPurchases",
+                AppsResponseIncludedItemDiscriminatorType.RetentionMessages => "retentionMessages",
                 AppsResponseIncludedItemDiscriminatorType.ReviewSubmissions => "reviewSubmissions",
                 AppsResponseIncludedItemDiscriminatorType.SubscriptionGracePeriods => "subscriptionGracePeriods",
                 AppsResponseIncludedItemDiscriminatorType.SubscriptionGroups => "subscriptionGroups",
@@ -173,6 +178,7 @@ namespace AppStoreConnect
                 "inAppPurchases" => AppsResponseIncludedItemDiscriminatorType.InAppPurchases,
                 "preReleaseVersions" => AppsResponseIncludedItemDiscriminatorType.PreReleaseVersions,
                 "promotedPurchases" => AppsResponseIncludedItemDiscriminatorType.PromotedPurchases,
+                "retentionMessages" => AppsResponseIncludedItemDiscriminatorType.RetentionMessages,
                 "reviewSubmissions" => AppsResponseIncludedItemDiscriminatorType.ReviewSubmissions,
                 "subscriptionGracePeriods" => AppsResponseIncludedItemDiscriminatorType.SubscriptionGracePeriods,
                 "subscriptionGroups" => AppsResponseIncludedItemDiscriminatorType.SubscriptionGroups,

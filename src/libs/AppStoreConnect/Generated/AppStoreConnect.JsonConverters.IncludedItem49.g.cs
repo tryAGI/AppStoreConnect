@@ -169,6 +169,13 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.PromotedPurchase)}");
                 promotedPurchases = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
+            global::AppStoreConnect.RetentionMessage? retentionMessages = default;
+            if (discriminator?.Type == global::AppStoreConnect.AppResponseIncludedItemDiscriminatorType.RetentionMessages)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.RetentionMessage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.RetentionMessage> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.RetentionMessage)}");
+                retentionMessages = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
             global::AppStoreConnect.ReviewSubmission? reviewSubmissions = default;
             if (discriminator?.Type == global::AppStoreConnect.AppResponseIncludedItemDiscriminatorType.ReviewSubmissions)
             {
@@ -234,6 +241,8 @@ namespace AppStoreConnect.JsonConverters
                 preReleaseVersions,
 
                 promotedPurchases,
+
+                retentionMessages,
 
                 reviewSubmissions,
 
@@ -380,6 +389,12 @@ namespace AppStoreConnect.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.PromotedPurchase), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.PromotedPurchase?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.PromotedPurchase).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickPromotedPurchases(), typeInfo);
+            }
+            else if (value.IsRetentionMessages)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.RetentionMessage), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.RetentionMessage?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.RetentionMessage).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickRetentionMessages(), typeInfo);
             }
             else if (value.IsReviewSubmissions)
             {

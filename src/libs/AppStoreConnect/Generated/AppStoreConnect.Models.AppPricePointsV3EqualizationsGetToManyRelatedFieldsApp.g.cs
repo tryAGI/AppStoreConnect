@@ -195,6 +195,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessages,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewSubmissions,
         /// <summary>
         ///
@@ -296,6 +300,7 @@ namespace AppStoreConnect
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.PrimaryLocale => "primaryLocale",
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.PromotedPurchases => "promotedPurchases",
+                AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.RetentionMessages => "retentionMessages",
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.ReviewSubmissions => "reviewSubmissions",
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.SearchKeywords => "searchKeywords",
                 AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.Sku => "sku",
@@ -363,6 +368,7 @@ namespace AppStoreConnect
                 "preReleaseVersions" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.PreReleaseVersions,
                 "primaryLocale" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.PrimaryLocale,
                 "promotedPurchases" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.PromotedPurchases,
+                "retentionMessages" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.RetentionMessages,
                 "reviewSubmissions" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.ReviewSubmissions,
                 "searchKeywords" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.SearchKeywords,
                 "sku" => AppPricePointsV3EqualizationsGetToManyRelatedFieldsApp.Sku,

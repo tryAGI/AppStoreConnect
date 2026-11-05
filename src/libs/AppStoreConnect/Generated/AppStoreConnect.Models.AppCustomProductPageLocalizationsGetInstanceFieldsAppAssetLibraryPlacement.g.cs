@@ -51,6 +51,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessageVersion,
+        /// <summary>
+        ///
+        /// </summary>
         State,
         /// <summary>
         ///
@@ -84,6 +88,7 @@ namespace AppStoreConnect
                 AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.MediaType => "mediaType",
                 AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.PlacementGroup => "placementGroup",
                 AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.PlacementType => "placementType",
+                AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.RetentionMessageVersion => "retentionMessageVersion",
                 AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.State => "state",
                 AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.StateDetails => "stateDetails",
                 AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.Video => "video",
@@ -107,6 +112,7 @@ namespace AppStoreConnect
                 "mediaType" => AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.MediaType,
                 "placementGroup" => AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.PlacementGroup,
                 "placementType" => AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.PlacementType,
+                "retentionMessageVersion" => AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.RetentionMessageVersion,
                 "state" => AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.State,
                 "stateDetails" => AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.StateDetails,
                 "video" => AppCustomProductPageLocalizationsGetInstanceFieldsAppAssetLibraryPlacement.Video,
