@@ -25,6 +25,8 @@ namespace AppStoreConnect
         /// <param name="fieldsSubscriptionImages"></param>
         /// <param name="fieldsSubscriptionPlanAvailabilities"></param>
         /// <param name="fieldsSubscriptionVersions"></param>
+        /// <param name="fieldsRetentionOffers"></param>
+        /// <param name="fieldsRetentionMessages"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
         /// <param name="limitSubscriptionLocalizations"></param>
@@ -36,6 +38,8 @@ namespace AppStoreConnect
         /// <param name="limitImages"></param>
         /// <param name="limitPlanAvailabilities"></param>
         /// <param name="limitVersions"></param>
+        /// <param name="limitRetentionOffers"></param>
+        /// <param name="limitRetentionMessageOffers"></param>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -60,6 +64,8 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionGroupsSubscriptionsGetToManyRelatedFieldsSubscriptionImage>? fieldsSubscriptionImages = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionGroupsSubscriptionsGetToManyRelatedFieldsSubscriptionPlanAvailabilitie>? fieldsSubscriptionPlanAvailabilities = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionGroupsSubscriptionsGetToManyRelatedFieldsSubscriptionVersion>? fieldsSubscriptionVersions = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionGroupsSubscriptionsGetToManyRelatedFieldsRetentionOffer>? fieldsRetentionOffers = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionGroupsSubscriptionsGetToManyRelatedFieldsRetentionMessage>? fieldsRetentionMessages = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem>? include = default,
             int? limitSubscriptionLocalizations = default,
@@ -71,6 +77,8 @@ namespace AppStoreConnect
             int? limitImages = default,
             int? limitPlanAvailabilities = default,
             int? limitVersions = default,
+            int? limitRetentionOffers = default,
+            int? limitRetentionMessageOffers = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -94,6 +102,8 @@ namespace AppStoreConnect
         /// <param name="fieldsSubscriptionImages"></param>
         /// <param name="fieldsSubscriptionPlanAvailabilities"></param>
         /// <param name="fieldsSubscriptionVersions"></param>
+        /// <param name="fieldsRetentionOffers"></param>
+        /// <param name="fieldsRetentionMessages"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
         /// <param name="limitSubscriptionLocalizations"></param>
@@ -105,6 +115,8 @@ namespace AppStoreConnect
         /// <param name="limitImages"></param>
         /// <param name="limitPlanAvailabilities"></param>
         /// <param name="limitVersions"></param>
+        /// <param name="limitRetentionOffers"></param>
+        /// <param name="limitRetentionMessageOffers"></param>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -129,6 +141,8 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionGroupsSubscriptionsGetToManyRelatedFieldsSubscriptionImage>? fieldsSubscriptionImages = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionGroupsSubscriptionsGetToManyRelatedFieldsSubscriptionPlanAvailabilitie>? fieldsSubscriptionPlanAvailabilities = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionGroupsSubscriptionsGetToManyRelatedFieldsSubscriptionVersion>? fieldsSubscriptionVersions = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionGroupsSubscriptionsGetToManyRelatedFieldsRetentionOffer>? fieldsRetentionOffers = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionGroupsSubscriptionsGetToManyRelatedFieldsRetentionMessage>? fieldsRetentionMessages = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem>? include = default,
             int? limitSubscriptionLocalizations = default,
@@ -140,6 +154,8 @@ namespace AppStoreConnect
             int? limitImages = default,
             int? limitPlanAvailabilities = default,
             int? limitVersions = default,
+            int? limitRetentionOffers = default,
+            int? limitRetentionMessageOffers = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

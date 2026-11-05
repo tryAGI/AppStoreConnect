@@ -31,6 +31,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessageVersion,
+        /// <summary>
+        ///
+        /// </summary>
         Video,
     }
 
@@ -51,6 +55,7 @@ namespace AppStoreConnect
                 AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem.AppStoreVersionExperimentTreatmentLocalization => "appStoreVersionExperimentTreatmentLocalization",
                 AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem.AppStoreVersionLocalization => "appStoreVersionLocalization",
                 AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem.Image => "image",
+                AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem.RetentionMessageVersion => "retentionMessageVersion",
                 AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem.Video => "video",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -67,6 +72,7 @@ namespace AppStoreConnect
                 "appStoreVersionExperimentTreatmentLocalization" => AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem.AppStoreVersionExperimentTreatmentLocalization,
                 "appStoreVersionLocalization" => AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem.AppStoreVersionLocalization,
                 "image" => AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem.Image,
+                "retentionMessageVersion" => AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem.RetentionMessageVersion,
                 "video" => AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem.Video,
                 _ => null,
             };

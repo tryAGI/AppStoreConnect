@@ -75,6 +75,18 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessage,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionMessageOffers,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionOffers,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewNote,
         /// <summary>
         ///
@@ -130,6 +142,9 @@ namespace AppStoreConnect
                 AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.ProductId => "productId",
                 AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.PromotedPurchase => "promotedPurchase",
                 AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.PromotionalOffers => "promotionalOffers",
+                AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.RetentionMessage => "retentionMessage",
+                AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.RetentionMessageOffers => "retentionMessageOffers",
+                AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.RetentionOffers => "retentionOffers",
                 AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.ReviewNote => "reviewNote",
                 AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.State => "state",
                 AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.SubscriptionAvailability => "subscriptionAvailability",
@@ -163,6 +178,9 @@ namespace AppStoreConnect
                 "productId" => AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.ProductId,
                 "promotedPurchase" => AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.PromotedPurchase,
                 "promotionalOffers" => AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.PromotionalOffers,
+                "retentionMessage" => AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.RetentionMessage,
+                "retentionMessageOffers" => AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.RetentionMessageOffers,
+                "retentionOffers" => AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.RetentionOffers,
                 "reviewNote" => AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.ReviewNote,
                 "state" => AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.State,
                 "subscriptionAvailability" => AppsSubscriptionGroupsGetToManyRelatedFieldsSubscription.SubscriptionAvailability,

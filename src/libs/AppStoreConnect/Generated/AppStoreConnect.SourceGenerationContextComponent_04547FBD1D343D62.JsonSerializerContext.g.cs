@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.AppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacement?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0495.Create_NullableAppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacement2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0497.Create_NullableAppAssetLibrariesImagesGetToManyRelatedFieldsAppAssetLibraryPlacement2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

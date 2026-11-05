@@ -31,6 +31,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessageVersion,
+        /// <summary>
+        ///
+        /// </summary>
         Video,
     }
 
@@ -51,6 +55,7 @@ namespace AppStoreConnect
                 AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedIncludeItem.AppStoreVersionExperimentTreatmentLocalization => "appStoreVersionExperimentTreatmentLocalization",
                 AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedIncludeItem.AppStoreVersionLocalization => "appStoreVersionLocalization",
                 AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedIncludeItem.Image => "image",
+                AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedIncludeItem.RetentionMessageVersion => "retentionMessageVersion",
                 AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedIncludeItem.Video => "video",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -67,6 +72,7 @@ namespace AppStoreConnect
                 "appStoreVersionExperimentTreatmentLocalization" => AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedIncludeItem.AppStoreVersionExperimentTreatmentLocalization,
                 "appStoreVersionLocalization" => AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedIncludeItem.AppStoreVersionLocalization,
                 "image" => AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedIncludeItem.Image,
+                "retentionMessageVersion" => AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedIncludeItem.RetentionMessageVersion,
                 "video" => AppStoreVersionExperimentTreatmentLocalizationsPlacementsGetToManyRelatedIncludeItem.Video,
                 _ => null,
             };

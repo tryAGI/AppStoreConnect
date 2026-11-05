@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedIncludeItem?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0510.Create_NullableAppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedIncludeItem2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0512.Create_NullableAppClipDefaultExperienceLocalizationsAppClipHeaderImageGetToOneRelatedIncludeItem2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

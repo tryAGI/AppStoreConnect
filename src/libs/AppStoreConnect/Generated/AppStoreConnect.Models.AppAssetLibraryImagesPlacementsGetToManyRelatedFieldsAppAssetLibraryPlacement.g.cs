@@ -51,6 +51,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessageVersion,
+        /// <summary>
+        ///
+        /// </summary>
         State,
         /// <summary>
         ///
@@ -84,6 +88,7 @@ namespace AppStoreConnect
                 AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement.MediaType => "mediaType",
                 AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement.PlacementGroup => "placementGroup",
                 AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement.PlacementType => "placementType",
+                AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement.RetentionMessageVersion => "retentionMessageVersion",
                 AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement.State => "state",
                 AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement.StateDetails => "stateDetails",
                 AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement.Video => "video",
@@ -107,6 +112,7 @@ namespace AppStoreConnect
                 "mediaType" => AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement.MediaType,
                 "placementGroup" => AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement.PlacementGroup,
                 "placementType" => AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement.PlacementType,
+                "retentionMessageVersion" => AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement.RetentionMessageVersion,
                 "state" => AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement.State,
                 "stateDetails" => AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement.StateDetails,
                 "video" => AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppAssetLibraryPlacement.Video,

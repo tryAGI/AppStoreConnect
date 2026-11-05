@@ -9,7 +9,7 @@ namespace AppStoreConnect
         internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::AppStoreConnect.SourceGenerationContextMetadataScope>[] {
-                    static () => global::AppStoreConnect.SourceGenerationContextComponent_511F9C8E579DD88F.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_62E25919EE6D0733.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_9F3C8468FF8EA6E1.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_A45484D1048F5D26.MetadataScope,
+                    static () => global::AppStoreConnect.SourceGenerationContextComponent_511F9C8E579DD88F.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_9F3C8468FF8EA6E1.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_A45484D1048F5D26.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_DF4E9A60DAABD8E1.MetadataScope,
                 }, ContributeConverters);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 
@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SubscriptionVersionsResponse))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1249.Create_SubscriptionVersionsResponse(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1290.Create_SubscriptionVersionsResponse(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

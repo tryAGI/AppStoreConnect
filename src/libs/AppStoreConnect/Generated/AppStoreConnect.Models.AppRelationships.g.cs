@@ -140,6 +140,12 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("retentionMessages")]
+        public global::AppStoreConnect.AppRelationshipsRetentionMessages? RetentionMessages { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gameCenterEnabledVersions")]
         public global::AppStoreConnect.AppRelationshipsGameCenterEnabledVersions? GameCenterEnabledVersions { get; set; }
 
@@ -310,6 +316,7 @@ namespace AppStoreConnect
         /// <param name="appPriceSchedule"></param>
         /// <param name="appAvailabilityV2"></param>
         /// <param name="subscriptionGroups"></param>
+        /// <param name="retentionMessages"></param>
         /// <param name="gameCenterEnabledVersions"></param>
         /// <param name="performanceOverviews"></param>
         /// <param name="perfPowerMetrics"></param>
@@ -358,6 +365,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.AppRelationshipsAppPriceSchedule? appPriceSchedule,
             global::AppStoreConnect.AppRelationshipsAppAvailabilityV2? appAvailabilityV2,
             global::AppStoreConnect.AppRelationshipsSubscriptionGroups? subscriptionGroups,
+            global::AppStoreConnect.AppRelationshipsRetentionMessages? retentionMessages,
             global::AppStoreConnect.AppRelationshipsGameCenterEnabledVersions? gameCenterEnabledVersions,
             global::AppStoreConnect.AppRelationshipsPerformanceOverviews? performanceOverviews,
             global::AppStoreConnect.AppRelationshipsPerfPowerMetrics? perfPowerMetrics,
@@ -403,6 +411,7 @@ namespace AppStoreConnect
             this.AppPriceSchedule = appPriceSchedule;
             this.AppAvailabilityV2 = appAvailabilityV2;
             this.SubscriptionGroups = subscriptionGroups;
+            this.RetentionMessages = retentionMessages;
             this.GameCenterEnabledVersions = gameCenterEnabledVersions;
             this.PerformanceOverviews = performanceOverviews;
             this.PerfPowerMetrics = perfPowerMetrics;

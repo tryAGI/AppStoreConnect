@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BackgroundAssetVersionRelationshipsAppStoreRelease))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0186.Create_BackgroundAssetVersionRelationshipsAppStoreRelease(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0188.Create_BackgroundAssetVersionRelationshipsAppStoreRelease(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

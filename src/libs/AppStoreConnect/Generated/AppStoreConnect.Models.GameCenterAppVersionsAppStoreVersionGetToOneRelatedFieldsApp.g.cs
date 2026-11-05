@@ -195,6 +195,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessages,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewSubmissions,
         /// <summary>
         ///
@@ -296,6 +300,7 @@ namespace AppStoreConnect
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.PrimaryLocale => "primaryLocale",
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.PromotedPurchases => "promotedPurchases",
+                GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.RetentionMessages => "retentionMessages",
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.ReviewSubmissions => "reviewSubmissions",
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.SearchKeywords => "searchKeywords",
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.Sku => "sku",
@@ -363,6 +368,7 @@ namespace AppStoreConnect
                 "preReleaseVersions" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.PreReleaseVersions,
                 "primaryLocale" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.PrimaryLocale,
                 "promotedPurchases" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.PromotedPurchases,
+                "retentionMessages" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.RetentionMessages,
                 "reviewSubmissions" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.ReviewSubmissions,
                 "searchKeywords" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.SearchKeywords,
                 "sku" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.Sku,

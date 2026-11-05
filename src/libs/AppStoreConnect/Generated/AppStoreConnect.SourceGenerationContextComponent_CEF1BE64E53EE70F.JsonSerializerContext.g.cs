@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.AppInfosSecondarySubcategoryOneGetToOneRelatedFieldsAppCategorie?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0531.Create_NullableAppInfosSecondarySubcategoryOneGetToOneRelatedFieldsAppCategorie2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0534.Create_NullableAppInfosSecondarySubcategoryOneGetToOneRelatedFieldsAppCategorie2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

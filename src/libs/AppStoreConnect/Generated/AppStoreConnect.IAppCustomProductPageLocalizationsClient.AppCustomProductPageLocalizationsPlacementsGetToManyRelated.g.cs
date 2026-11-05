@@ -24,6 +24,7 @@ namespace AppStoreConnect
         /// <param name="fieldsAppStoreVersionLocalizations"></param>
         /// <param name="fieldsAppCustomProductPageLocalizations"></param>
         /// <param name="fieldsAppStoreVersionExperimentTreatmentLocalizations"></param>
+        /// <param name="fieldsRetentionMessageVersions"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
         /// <param name="id"></param>
@@ -49,6 +50,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization>? fieldsAppStoreVersionLocalizations = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization>? fieldsAppCustomProductPageLocalizations = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization>? fieldsAppStoreVersionExperimentTreatmentLocalizations = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsRetentionMessageVersion>? fieldsRetentionMessageVersions = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem>? include = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
@@ -73,6 +75,7 @@ namespace AppStoreConnect
         /// <param name="fieldsAppStoreVersionLocalizations"></param>
         /// <param name="fieldsAppCustomProductPageLocalizations"></param>
         /// <param name="fieldsAppStoreVersionExperimentTreatmentLocalizations"></param>
+        /// <param name="fieldsRetentionMessageVersions"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
         /// <param name="id"></param>
@@ -98,6 +101,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization>? fieldsAppStoreVersionLocalizations = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization>? fieldsAppCustomProductPageLocalizations = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization>? fieldsAppStoreVersionExperimentTreatmentLocalizations = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedFieldsRetentionMessageVersion>? fieldsRetentionMessageVersions = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppCustomProductPageLocalizationsPlacementsGetToManyRelatedIncludeItem>? include = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,

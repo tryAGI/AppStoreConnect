@@ -9,7 +9,7 @@ namespace AppStoreConnect
         internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::AppStoreConnect.SourceGenerationContextMetadataScope>[] {
-                    static () => global::AppStoreConnect.SourceGenerationContextComponent_39082F5D28239AA4.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_511F9C8E579DD88F.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_A45484D1048F5D26.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_AF4B8CA12D56062D.MetadataScope,
+                    static () => global::AppStoreConnect.SourceGenerationContextComponent_39082F5D28239AA4.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_511F9C8E579DD88F.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_6D4EB503F38E8DE2.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_A45484D1048F5D26.MetadataScope,
                 }, ContributeConverters);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 
@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ReviewSubmissionItemsResponse))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0789.Create_ReviewSubmissionItemsResponse(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0813.Create_ReviewSubmissionItemsResponse(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

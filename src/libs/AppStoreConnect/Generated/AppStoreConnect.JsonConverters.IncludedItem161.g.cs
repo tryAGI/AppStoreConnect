@@ -18,30 +18,30 @@ namespace AppStoreConnect.JsonConverters
 
 
             var readerCopy = reader;
-            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.ScmRepositoryResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.ScmRepositoryResponseIncludedItemDiscriminator> ??
-                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.ScmRepositoryResponseIncludedItemDiscriminator)}");
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.RetentionOffersResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.RetentionOffersResponseIncludedItemDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.RetentionOffersResponseIncludedItemDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::AppStoreConnect.ScmGitReference? scmGitReferences = default;
-            if (discriminator?.Type == global::AppStoreConnect.ScmRepositoryResponseIncludedItemDiscriminatorType.ScmGitReferences)
+            global::AppStoreConnect.RetentionOfferPrice? retentionOfferPrices = default;
+            if (discriminator?.Type == global::AppStoreConnect.RetentionOffersResponseIncludedItemDiscriminatorType.RetentionOfferPrices)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.ScmGitReference), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.ScmGitReference> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.ScmGitReference)}");
-                scmGitReferences = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.RetentionOfferPrice), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.RetentionOfferPrice> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.RetentionOfferPrice)}");
+                retentionOfferPrices = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.ScmProvider? scmProviders = default;
-            if (discriminator?.Type == global::AppStoreConnect.ScmRepositoryResponseIncludedItemDiscriminatorType.ScmProviders)
+            global::AppStoreConnect.Subscription? subscriptions = default;
+            if (discriminator?.Type == global::AppStoreConnect.RetentionOffersResponseIncludedItemDiscriminatorType.Subscriptions)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.ScmProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.ScmProvider> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.ScmProvider)}");
-                scmProviders = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Subscription), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Subscription> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.Subscription)}");
+                subscriptions = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::AppStoreConnect.IncludedItem161(
                 discriminator?.Type,
-                scmGitReferences,
+                retentionOfferPrices,
 
-                scmProviders
+                subscriptions
                 );
 
             return __value;
@@ -57,17 +57,17 @@ namespace AppStoreConnect.JsonConverters
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
             typeInfoResolver = global::AppStoreConnect.AutoSDKJsonMetadataCachedResolver.Instance;
 
-            if (value.IsScmGitReferences)
+            if (value.IsRetentionOfferPrices)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.ScmGitReference), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.ScmGitReference?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.ScmGitReference).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickScmGitReferences(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.RetentionOfferPrice), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.RetentionOfferPrice?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.RetentionOfferPrice).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickRetentionOfferPrices(), typeInfo);
             }
-            else if (value.IsScmProviders)
+            else if (value.IsSubscriptions)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.ScmProvider), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.ScmProvider?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.ScmProvider).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickScmProviders(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Subscription), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Subscription?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Subscription).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSubscriptions(), typeInfo);
             }
         }
     }

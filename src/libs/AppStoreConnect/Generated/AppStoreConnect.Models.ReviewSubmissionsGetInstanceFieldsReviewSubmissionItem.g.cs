@@ -67,6 +67,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessageVersion,
+        /// <summary>
+        ///
+        /// </summary>
         State,
         /// <summary>
         ///
@@ -104,6 +108,7 @@ namespace AppStoreConnect
                 ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.GameCenterLeaderboardSetVersion => "gameCenterLeaderboardSetVersion",
                 ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.GameCenterLeaderboardVersion => "gameCenterLeaderboardVersion",
                 ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.InAppPurchaseVersion => "inAppPurchaseVersion",
+                ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.RetentionMessageVersion => "retentionMessageVersion",
                 ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.State => "state",
                 ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.SubscriptionGroupVersion => "subscriptionGroupVersion",
                 ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.SubscriptionVersion => "subscriptionVersion",
@@ -131,6 +136,7 @@ namespace AppStoreConnect
                 "gameCenterLeaderboardSetVersion" => ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.GameCenterLeaderboardSetVersion,
                 "gameCenterLeaderboardVersion" => ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.GameCenterLeaderboardVersion,
                 "inAppPurchaseVersion" => ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.InAppPurchaseVersion,
+                "retentionMessageVersion" => ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.RetentionMessageVersion,
                 "state" => ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.State,
                 "subscriptionGroupVersion" => ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.SubscriptionGroupVersion,
                 "subscriptionVersion" => ReviewSubmissionsGetInstanceFieldsReviewSubmissionItem.SubscriptionVersion,

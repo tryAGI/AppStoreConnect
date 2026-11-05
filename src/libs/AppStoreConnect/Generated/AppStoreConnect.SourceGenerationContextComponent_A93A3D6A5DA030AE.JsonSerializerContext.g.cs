@@ -9,7 +9,7 @@ namespace AppStoreConnect
         internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::AppStoreConnect.SourceGenerationContextMetadataScope>[] {
-                    static () => global::AppStoreConnect.SourceGenerationContextComponent_2D52DF2375548317.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_511F9C8E579DD88F.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_54001EB3E0A642C8.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_A45484D1048F5D26.MetadataScope,
+                    static () => global::AppStoreConnect.SourceGenerationContextComponent_234D9A9FDF0EF909.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_511F9C8E579DD88F.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_54001EB3E0A642C8.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_A45484D1048F5D26.MetadataScope,
                 }, ContributeConverters);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 
@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ScmRepositoriesResponse))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0800.Create_ScmRepositoriesResponse(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0824.Create_ScmRepositoriesResponse(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

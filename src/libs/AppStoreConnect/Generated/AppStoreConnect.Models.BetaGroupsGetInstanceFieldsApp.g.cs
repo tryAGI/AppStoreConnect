@@ -195,6 +195,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessages,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewSubmissions,
         /// <summary>
         ///
@@ -296,6 +300,7 @@ namespace AppStoreConnect
                 BetaGroupsGetInstanceFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 BetaGroupsGetInstanceFieldsApp.PrimaryLocale => "primaryLocale",
                 BetaGroupsGetInstanceFieldsApp.PromotedPurchases => "promotedPurchases",
+                BetaGroupsGetInstanceFieldsApp.RetentionMessages => "retentionMessages",
                 BetaGroupsGetInstanceFieldsApp.ReviewSubmissions => "reviewSubmissions",
                 BetaGroupsGetInstanceFieldsApp.SearchKeywords => "searchKeywords",
                 BetaGroupsGetInstanceFieldsApp.Sku => "sku",
@@ -363,6 +368,7 @@ namespace AppStoreConnect
                 "preReleaseVersions" => BetaGroupsGetInstanceFieldsApp.PreReleaseVersions,
                 "primaryLocale" => BetaGroupsGetInstanceFieldsApp.PrimaryLocale,
                 "promotedPurchases" => BetaGroupsGetInstanceFieldsApp.PromotedPurchases,
+                "retentionMessages" => BetaGroupsGetInstanceFieldsApp.RetentionMessages,
                 "reviewSubmissions" => BetaGroupsGetInstanceFieldsApp.ReviewSubmissions,
                 "searchKeywords" => BetaGroupsGetInstanceFieldsApp.SearchKeywords,
                 "sku" => BetaGroupsGetInstanceFieldsApp.Sku,

@@ -63,6 +63,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessageVersions,
+        /// <summary>
+        ///
+        /// </summary>
         SubscriptionGroupVersions,
         /// <summary>
         ///
@@ -95,6 +99,7 @@ namespace AppStoreConnect
                 ReviewSubmissionItemResponseIncludedItemDiscriminatorType.GameCenterLeaderboardSetVersions => "gameCenterLeaderboardSetVersions",
                 ReviewSubmissionItemResponseIncludedItemDiscriminatorType.GameCenterLeaderboardVersions => "gameCenterLeaderboardVersions",
                 ReviewSubmissionItemResponseIncludedItemDiscriminatorType.InAppPurchaseVersions => "inAppPurchaseVersions",
+                ReviewSubmissionItemResponseIncludedItemDiscriminatorType.RetentionMessageVersions => "retentionMessageVersions",
                 ReviewSubmissionItemResponseIncludedItemDiscriminatorType.SubscriptionGroupVersions => "subscriptionGroupVersions",
                 ReviewSubmissionItemResponseIncludedItemDiscriminatorType.SubscriptionVersions => "subscriptionVersions",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
@@ -120,6 +125,7 @@ namespace AppStoreConnect
                 "gameCenterLeaderboardSetVersions" => ReviewSubmissionItemResponseIncludedItemDiscriminatorType.GameCenterLeaderboardSetVersions,
                 "gameCenterLeaderboardVersions" => ReviewSubmissionItemResponseIncludedItemDiscriminatorType.GameCenterLeaderboardVersions,
                 "inAppPurchaseVersions" => ReviewSubmissionItemResponseIncludedItemDiscriminatorType.InAppPurchaseVersions,
+                "retentionMessageVersions" => ReviewSubmissionItemResponseIncludedItemDiscriminatorType.RetentionMessageVersions,
                 "subscriptionGroupVersions" => ReviewSubmissionItemResponseIncludedItemDiscriminatorType.SubscriptionGroupVersions,
                 "subscriptionVersions" => ReviewSubmissionItemResponseIncludedItemDiscriminatorType.SubscriptionVersions,
                 _ => null,

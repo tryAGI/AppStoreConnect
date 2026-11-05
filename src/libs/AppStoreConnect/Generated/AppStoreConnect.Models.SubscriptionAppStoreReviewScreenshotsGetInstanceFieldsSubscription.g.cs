@@ -75,6 +75,18 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessage,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionMessageOffers,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionOffers,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewNote,
         /// <summary>
         ///
@@ -130,6 +142,9 @@ namespace AppStoreConnect
                 SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.ProductId => "productId",
                 SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.PromotedPurchase => "promotedPurchase",
                 SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.PromotionalOffers => "promotionalOffers",
+                SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.RetentionMessage => "retentionMessage",
+                SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.RetentionMessageOffers => "retentionMessageOffers",
+                SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.RetentionOffers => "retentionOffers",
                 SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.ReviewNote => "reviewNote",
                 SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.State => "state",
                 SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.SubscriptionAvailability => "subscriptionAvailability",
@@ -163,6 +178,9 @@ namespace AppStoreConnect
                 "productId" => SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.ProductId,
                 "promotedPurchase" => SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.PromotedPurchase,
                 "promotionalOffers" => SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.PromotionalOffers,
+                "retentionMessage" => SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.RetentionMessage,
+                "retentionMessageOffers" => SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.RetentionMessageOffers,
+                "retentionOffers" => SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.RetentionOffers,
                 "reviewNote" => SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.ReviewNote,
                 "state" => SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.State,
                 "subscriptionAvailability" => SubscriptionAppStoreReviewScreenshotsGetInstanceFieldsSubscription.SubscriptionAvailability,

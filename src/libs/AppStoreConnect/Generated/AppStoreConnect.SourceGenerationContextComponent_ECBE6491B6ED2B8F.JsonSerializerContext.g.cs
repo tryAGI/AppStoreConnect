@@ -30,7 +30,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppAssetLibraryVideoWaitingForReviewAttributesVariant2))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0036.Create_AppAssetLibraryVideoWaitingForReviewAttributesVariant2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0037.Create_AppAssetLibraryVideoWaitingForReviewAttributesVariant2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

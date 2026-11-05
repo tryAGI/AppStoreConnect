@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppClipAdvancedExperienceLanguage))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0046.Create_AppClipAdvancedExperienceLanguage2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0047.Create_AppClipAdvancedExperienceLanguage2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppClipAdvancedExperienceLanguage?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0507.Create_NullableAppClipAdvancedExperienceLanguage2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0509.Create_NullableAppClipAdvancedExperienceLanguage2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -195,6 +195,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessages,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewSubmissions,
         /// <summary>
         ///
@@ -296,6 +300,7 @@ namespace AppStoreConnect
                 AppsAppCustomProductPagesGetToManyRelatedFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 AppsAppCustomProductPagesGetToManyRelatedFieldsApp.PrimaryLocale => "primaryLocale",
                 AppsAppCustomProductPagesGetToManyRelatedFieldsApp.PromotedPurchases => "promotedPurchases",
+                AppsAppCustomProductPagesGetToManyRelatedFieldsApp.RetentionMessages => "retentionMessages",
                 AppsAppCustomProductPagesGetToManyRelatedFieldsApp.ReviewSubmissions => "reviewSubmissions",
                 AppsAppCustomProductPagesGetToManyRelatedFieldsApp.SearchKeywords => "searchKeywords",
                 AppsAppCustomProductPagesGetToManyRelatedFieldsApp.Sku => "sku",
@@ -363,6 +368,7 @@ namespace AppStoreConnect
                 "preReleaseVersions" => AppsAppCustomProductPagesGetToManyRelatedFieldsApp.PreReleaseVersions,
                 "primaryLocale" => AppsAppCustomProductPagesGetToManyRelatedFieldsApp.PrimaryLocale,
                 "promotedPurchases" => AppsAppCustomProductPagesGetToManyRelatedFieldsApp.PromotedPurchases,
+                "retentionMessages" => AppsAppCustomProductPagesGetToManyRelatedFieldsApp.RetentionMessages,
                 "reviewSubmissions" => AppsAppCustomProductPagesGetToManyRelatedFieldsApp.ReviewSubmissions,
                 "searchKeywords" => AppsAppCustomProductPagesGetToManyRelatedFieldsApp.SearchKeywords,
                 "sku" => AppsAppCustomProductPagesGetToManyRelatedFieldsApp.Sku,

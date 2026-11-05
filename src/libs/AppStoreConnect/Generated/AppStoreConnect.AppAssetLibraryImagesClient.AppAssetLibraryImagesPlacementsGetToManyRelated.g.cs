@@ -44,6 +44,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization>? fieldsAppStoreVersionLocalizations,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization>? fieldsAppCustomProductPageLocalizations,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization>? fieldsAppStoreVersionExperimentTreatmentLocalizations,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsRetentionMessageVersion>? fieldsRetentionMessageVersions,
             ref int? limit,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedIncludeItem>? include,
             ref string id);
@@ -67,6 +68,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization>? fieldsAppStoreVersionLocalizations,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization>? fieldsAppCustomProductPageLocalizations,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization>? fieldsAppStoreVersionExperimentTreatmentLocalizations,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsRetentionMessageVersion>? fieldsRetentionMessageVersions,
             int? limit,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedIncludeItem>? include,
             string id);
@@ -99,6 +101,7 @@ namespace AppStoreConnect
         /// <param name="fieldsAppStoreVersionLocalizations"></param>
         /// <param name="fieldsAppCustomProductPageLocalizations"></param>
         /// <param name="fieldsAppStoreVersionExperimentTreatmentLocalizations"></param>
+        /// <param name="fieldsRetentionMessageVersions"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
         /// <param name="id"></param>
@@ -124,6 +127,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization>? fieldsAppStoreVersionLocalizations = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization>? fieldsAppCustomProductPageLocalizations = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization>? fieldsAppStoreVersionExperimentTreatmentLocalizations = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsRetentionMessageVersion>? fieldsRetentionMessageVersions = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedIncludeItem>? include = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
@@ -148,6 +152,7 @@ namespace AppStoreConnect
                 fieldsAppStoreVersionLocalizations: fieldsAppStoreVersionLocalizations,
                 fieldsAppCustomProductPageLocalizations: fieldsAppCustomProductPageLocalizations,
                 fieldsAppStoreVersionExperimentTreatmentLocalizations: fieldsAppStoreVersionExperimentTreatmentLocalizations,
+                fieldsRetentionMessageVersions: fieldsRetentionMessageVersions,
                 limit: limit,
                 include: include,
                 requestOptions: requestOptions,
@@ -176,6 +181,7 @@ namespace AppStoreConnect
         /// <param name="fieldsAppStoreVersionLocalizations"></param>
         /// <param name="fieldsAppCustomProductPageLocalizations"></param>
         /// <param name="fieldsAppStoreVersionExperimentTreatmentLocalizations"></param>
+        /// <param name="fieldsRetentionMessageVersions"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
         /// <param name="id"></param>
@@ -201,6 +207,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionLocalization>? fieldsAppStoreVersionLocalizations = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppCustomProductPageLocalization>? fieldsAppCustomProductPageLocalizations = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsAppStoreVersionExperimentTreatmentLocalization>? fieldsAppStoreVersionExperimentTreatmentLocalizations = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedFieldsRetentionMessageVersion>? fieldsRetentionMessageVersions = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryImagesPlacementsGetToManyRelatedIncludeItem>? include = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
@@ -229,6 +236,7 @@ namespace AppStoreConnect
                 fieldsAppStoreVersionLocalizations: fieldsAppStoreVersionLocalizations,
                 fieldsAppCustomProductPageLocalizations: fieldsAppCustomProductPageLocalizations,
                 fieldsAppStoreVersionExperimentTreatmentLocalizations: fieldsAppStoreVersionExperimentTreatmentLocalizations,
+                fieldsRetentionMessageVersions: fieldsRetentionMessageVersions,
                 limit: ref limit,
                 include: include,
                 id: ref id);
@@ -277,6 +285,7 @@ namespace AppStoreConnect
                                 .AddOptionalParameter("fields[appStoreVersionLocalizations]", fieldsAppStoreVersionLocalizations, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("fields[appCustomProductPageLocalizations]", fieldsAppCustomProductPageLocalizations, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("fields[appStoreVersionExperimentTreatmentLocalizations]", fieldsAppStoreVersionExperimentTreatmentLocalizations, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
+                                .AddOptionalParameter("fields[retentionMessageVersions]", fieldsRetentionMessageVersions, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("limit", limit?.ToString())
                                 .AddOptionalParameter("include", include, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 ;
@@ -337,6 +346,7 @@ namespace AppStoreConnect
                     fieldsAppStoreVersionLocalizations: fieldsAppStoreVersionLocalizations,
                     fieldsAppCustomProductPageLocalizations: fieldsAppCustomProductPageLocalizations,
                     fieldsAppStoreVersionExperimentTreatmentLocalizations: fieldsAppStoreVersionExperimentTreatmentLocalizations,
+                    fieldsRetentionMessageVersions: fieldsRetentionMessageVersions,
                     limit: limit,
                     include: include,
                     id: id);

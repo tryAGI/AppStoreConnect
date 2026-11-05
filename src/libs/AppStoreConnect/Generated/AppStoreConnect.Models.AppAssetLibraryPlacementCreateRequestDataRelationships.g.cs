@@ -45,6 +45,12 @@ namespace AppStoreConnect
         public global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentLocalization? AppStoreVersionExperimentTreatmentLocalization { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("retentionMessageVersion")]
+        public global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsRetentionMessageVersion? RetentionMessageVersion { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -59,6 +65,7 @@ namespace AppStoreConnect
         /// <param name="appStoreVersionLocalization"></param>
         /// <param name="appCustomProductPageLocalization"></param>
         /// <param name="appStoreVersionExperimentTreatmentLocalization"></param>
+        /// <param name="retentionMessageVersion"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -68,7 +75,8 @@ namespace AppStoreConnect
             global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppEventLocalization? appEventLocalization,
             global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppStoreVersionLocalization? appStoreVersionLocalization,
             global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppCustomProductPageLocalization? appCustomProductPageLocalization,
-            global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentLocalization? appStoreVersionExperimentTreatmentLocalization)
+            global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsAppStoreVersionExperimentTreatmentLocalization? appStoreVersionExperimentTreatmentLocalization,
+            global::AppStoreConnect.AppAssetLibraryPlacementCreateRequestDataRelationshipsRetentionMessageVersion? retentionMessageVersion)
         {
             this.Image = image;
             this.Video = video;
@@ -76,6 +84,7 @@ namespace AppStoreConnect
             this.AppStoreVersionLocalization = appStoreVersionLocalization;
             this.AppCustomProductPageLocalization = appCustomProductPageLocalization;
             this.AppStoreVersionExperimentTreatmentLocalization = appStoreVersionExperimentTreatmentLocalization;
+            this.RetentionMessageVersion = retentionMessageVersion;
         }
 
         /// <summary>

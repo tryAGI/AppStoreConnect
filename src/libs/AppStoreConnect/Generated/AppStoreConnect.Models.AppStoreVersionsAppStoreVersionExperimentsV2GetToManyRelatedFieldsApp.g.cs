@@ -195,6 +195,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessages,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewSubmissions,
         /// <summary>
         ///
@@ -296,6 +300,7 @@ namespace AppStoreConnect
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.PrimaryLocale => "primaryLocale",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.PromotedPurchases => "promotedPurchases",
+                AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.RetentionMessages => "retentionMessages",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.ReviewSubmissions => "reviewSubmissions",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.SearchKeywords => "searchKeywords",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.Sku => "sku",
@@ -363,6 +368,7 @@ namespace AppStoreConnect
                 "preReleaseVersions" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.PreReleaseVersions,
                 "primaryLocale" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.PrimaryLocale,
                 "promotedPurchases" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.PromotedPurchases,
+                "retentionMessages" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.RetentionMessages,
                 "reviewSubmissions" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.ReviewSubmissions,
                 "searchKeywords" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.SearchKeywords,
                 "sku" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.Sku,

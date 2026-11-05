@@ -75,6 +75,18 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessage,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionMessageOffers,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionOffers,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewNote,
         /// <summary>
         ///
@@ -130,6 +142,9 @@ namespace AppStoreConnect
                 InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.ProductId => "productId",
                 InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.PromotedPurchase => "promotedPurchase",
                 InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.PromotionalOffers => "promotionalOffers",
+                InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.RetentionMessage => "retentionMessage",
+                InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.RetentionMessageOffers => "retentionMessageOffers",
+                InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.RetentionOffers => "retentionOffers",
                 InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.ReviewNote => "reviewNote",
                 InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.State => "state",
                 InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.SubscriptionAvailability => "subscriptionAvailability",
@@ -163,6 +178,9 @@ namespace AppStoreConnect
                 "productId" => InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.ProductId,
                 "promotedPurchase" => InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.PromotedPurchase,
                 "promotionalOffers" => InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.PromotionalOffers,
+                "retentionMessage" => InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.RetentionMessage,
+                "retentionMessageOffers" => InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.RetentionMessageOffers,
+                "retentionOffers" => InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.RetentionOffers,
                 "reviewNote" => InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.ReviewNote,
                 "state" => InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.State,
                 "subscriptionAvailability" => InAppPurchasesV2PromotedPurchaseGetToOneRelatedFieldsSubscription.SubscriptionAvailability,

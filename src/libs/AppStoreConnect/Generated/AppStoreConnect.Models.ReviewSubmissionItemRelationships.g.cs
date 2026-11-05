@@ -105,6 +105,12 @@ namespace AppStoreConnect
         public global::AppStoreConnect.ReviewSubmissionItemRelationshipsSubscriptionGroupVersion? SubscriptionGroupVersion { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("retentionMessageVersion")]
+        public global::AppStoreConnect.ReviewSubmissionItemRelationshipsRetentionMessageVersion? RetentionMessageVersion { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -129,6 +135,7 @@ namespace AppStoreConnect
         /// <param name="inAppPurchaseVersion"></param>
         /// <param name="subscriptionVersion"></param>
         /// <param name="subscriptionGroupVersion"></param>
+        /// <param name="retentionMessageVersion"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -148,7 +155,8 @@ namespace AppStoreConnect
             global::AppStoreConnect.ReviewSubmissionItemRelationshipsGameCenterLeaderboardVersion? gameCenterLeaderboardVersion,
             global::AppStoreConnect.ReviewSubmissionItemRelationshipsInAppPurchaseVersion? inAppPurchaseVersion,
             global::AppStoreConnect.ReviewSubmissionItemRelationshipsSubscriptionVersion? subscriptionVersion,
-            global::AppStoreConnect.ReviewSubmissionItemRelationshipsSubscriptionGroupVersion? subscriptionGroupVersion)
+            global::AppStoreConnect.ReviewSubmissionItemRelationshipsSubscriptionGroupVersion? subscriptionGroupVersion,
+            global::AppStoreConnect.ReviewSubmissionItemRelationshipsRetentionMessageVersion? retentionMessageVersion)
         {
             this.AppStoreVersion = appStoreVersion;
             this.AppCustomProductPageVersion = appCustomProductPageVersion;
@@ -166,6 +174,7 @@ namespace AppStoreConnect
             this.InAppPurchaseVersion = inAppPurchaseVersion;
             this.SubscriptionVersion = subscriptionVersion;
             this.SubscriptionGroupVersion = subscriptionGroupVersion;
+            this.RetentionMessageVersion = retentionMessageVersion;
         }
 
         /// <summary>

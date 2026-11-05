@@ -195,6 +195,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessages,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewSubmissions,
         /// <summary>
         ///
@@ -296,6 +300,7 @@ namespace AppStoreConnect
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.PrimaryLocale => "primaryLocale",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.PromotedPurchases => "promotedPurchases",
+                AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.RetentionMessages => "retentionMessages",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.ReviewSubmissions => "reviewSubmissions",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.SearchKeywords => "searchKeywords",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.Sku => "sku",
@@ -363,6 +368,7 @@ namespace AppStoreConnect
                 "preReleaseVersions" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.PreReleaseVersions,
                 "primaryLocale" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.PrimaryLocale,
                 "promotedPurchases" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.PromotedPurchases,
+                "retentionMessages" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.RetentionMessages,
                 "reviewSubmissions" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.ReviewSubmissions,
                 "searchKeywords" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.SearchKeywords,
                 "sku" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.Sku,

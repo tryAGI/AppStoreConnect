@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.ActorsGetInstanceFieldsActor?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0487.Create_NullableActorsGetInstanceFieldsActor2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0490.Create_NullableActorsGetInstanceFieldsActor2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

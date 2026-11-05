@@ -195,6 +195,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessages,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewSubmissions,
         /// <summary>
         ///
@@ -296,6 +300,7 @@ namespace AppStoreConnect
                 AppsAppPriceScheduleGetToOneRelatedFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 AppsAppPriceScheduleGetToOneRelatedFieldsApp.PrimaryLocale => "primaryLocale",
                 AppsAppPriceScheduleGetToOneRelatedFieldsApp.PromotedPurchases => "promotedPurchases",
+                AppsAppPriceScheduleGetToOneRelatedFieldsApp.RetentionMessages => "retentionMessages",
                 AppsAppPriceScheduleGetToOneRelatedFieldsApp.ReviewSubmissions => "reviewSubmissions",
                 AppsAppPriceScheduleGetToOneRelatedFieldsApp.SearchKeywords => "searchKeywords",
                 AppsAppPriceScheduleGetToOneRelatedFieldsApp.Sku => "sku",
@@ -363,6 +368,7 @@ namespace AppStoreConnect
                 "preReleaseVersions" => AppsAppPriceScheduleGetToOneRelatedFieldsApp.PreReleaseVersions,
                 "primaryLocale" => AppsAppPriceScheduleGetToOneRelatedFieldsApp.PrimaryLocale,
                 "promotedPurchases" => AppsAppPriceScheduleGetToOneRelatedFieldsApp.PromotedPurchases,
+                "retentionMessages" => AppsAppPriceScheduleGetToOneRelatedFieldsApp.RetentionMessages,
                 "reviewSubmissions" => AppsAppPriceScheduleGetToOneRelatedFieldsApp.ReviewSubmissions,
                 "searchKeywords" => AppsAppPriceScheduleGetToOneRelatedFieldsApp.SearchKeywords,
                 "sku" => AppsAppPriceScheduleGetToOneRelatedFieldsApp.Sku,

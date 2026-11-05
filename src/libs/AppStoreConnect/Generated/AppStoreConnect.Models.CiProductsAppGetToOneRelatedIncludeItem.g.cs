@@ -99,6 +99,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessages,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewSubmissions,
         /// <summary>
         ///
@@ -144,6 +148,7 @@ namespace AppStoreConnect
                 CiProductsAppGetToOneRelatedIncludeItem.InAppPurchasesV2 => "inAppPurchasesV2",
                 CiProductsAppGetToOneRelatedIncludeItem.PreReleaseVersions => "preReleaseVersions",
                 CiProductsAppGetToOneRelatedIncludeItem.PromotedPurchases => "promotedPurchases",
+                CiProductsAppGetToOneRelatedIncludeItem.RetentionMessages => "retentionMessages",
                 CiProductsAppGetToOneRelatedIncludeItem.ReviewSubmissions => "reviewSubmissions",
                 CiProductsAppGetToOneRelatedIncludeItem.SubscriptionGracePeriod => "subscriptionGracePeriod",
                 CiProductsAppGetToOneRelatedIncludeItem.SubscriptionGroups => "subscriptionGroups",
@@ -179,6 +184,7 @@ namespace AppStoreConnect
                 "inAppPurchasesV2" => CiProductsAppGetToOneRelatedIncludeItem.InAppPurchasesV2,
                 "preReleaseVersions" => CiProductsAppGetToOneRelatedIncludeItem.PreReleaseVersions,
                 "promotedPurchases" => CiProductsAppGetToOneRelatedIncludeItem.PromotedPurchases,
+                "retentionMessages" => CiProductsAppGetToOneRelatedIncludeItem.RetentionMessages,
                 "reviewSubmissions" => CiProductsAppGetToOneRelatedIncludeItem.ReviewSubmissions,
                 "subscriptionGracePeriod" => CiProductsAppGetToOneRelatedIncludeItem.SubscriptionGracePeriod,
                 "subscriptionGroups" => CiProductsAppGetToOneRelatedIncludeItem.SubscriptionGroups,

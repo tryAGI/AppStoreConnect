@@ -195,6 +195,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessages,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewSubmissions,
         /// <summary>
         ///
@@ -296,6 +300,7 @@ namespace AppStoreConnect
                 CiBuildRunsBuildsGetToManyRelatedFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 CiBuildRunsBuildsGetToManyRelatedFieldsApp.PrimaryLocale => "primaryLocale",
                 CiBuildRunsBuildsGetToManyRelatedFieldsApp.PromotedPurchases => "promotedPurchases",
+                CiBuildRunsBuildsGetToManyRelatedFieldsApp.RetentionMessages => "retentionMessages",
                 CiBuildRunsBuildsGetToManyRelatedFieldsApp.ReviewSubmissions => "reviewSubmissions",
                 CiBuildRunsBuildsGetToManyRelatedFieldsApp.SearchKeywords => "searchKeywords",
                 CiBuildRunsBuildsGetToManyRelatedFieldsApp.Sku => "sku",
@@ -363,6 +368,7 @@ namespace AppStoreConnect
                 "preReleaseVersions" => CiBuildRunsBuildsGetToManyRelatedFieldsApp.PreReleaseVersions,
                 "primaryLocale" => CiBuildRunsBuildsGetToManyRelatedFieldsApp.PrimaryLocale,
                 "promotedPurchases" => CiBuildRunsBuildsGetToManyRelatedFieldsApp.PromotedPurchases,
+                "retentionMessages" => CiBuildRunsBuildsGetToManyRelatedFieldsApp.RetentionMessages,
                 "reviewSubmissions" => CiBuildRunsBuildsGetToManyRelatedFieldsApp.ReviewSubmissions,
                 "searchKeywords" => CiBuildRunsBuildsGetToManyRelatedFieldsApp.SearchKeywords,
                 "sku" => CiBuildRunsBuildsGetToManyRelatedFieldsApp.Sku,

@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.AppAssetLibraryImageReadyForReviewAttributes?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0497.Create_NullableAppAssetLibraryImageReadyForReviewAttributes2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0499.Create_NullableAppAssetLibraryImageReadyForReviewAttributes2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

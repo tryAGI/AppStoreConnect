@@ -43,6 +43,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsInAppPurchaseVersion>? fieldsInAppPurchaseVersions,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsSubscriptionVersion>? fieldsSubscriptionVersions,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsSubscriptionGroupVersion>? fieldsSubscriptionGroupVersions,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsRetentionMessageVersion>? fieldsRetentionMessageVersions,
             ref int? limit,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedIncludeItem>? include,
             ref string id);
@@ -65,6 +66,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsInAppPurchaseVersion>? fieldsInAppPurchaseVersions,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsSubscriptionVersion>? fieldsSubscriptionVersions,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsSubscriptionGroupVersion>? fieldsSubscriptionGroupVersions,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsRetentionMessageVersion>? fieldsRetentionMessageVersions,
             int? limit,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedIncludeItem>? include,
             string id);
@@ -96,6 +98,7 @@ namespace AppStoreConnect
         /// <param name="fieldsInAppPurchaseVersions"></param>
         /// <param name="fieldsSubscriptionVersions"></param>
         /// <param name="fieldsSubscriptionGroupVersions"></param>
+        /// <param name="fieldsRetentionMessageVersions"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
         /// <param name="id"></param>
@@ -120,6 +123,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsInAppPurchaseVersion>? fieldsInAppPurchaseVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsSubscriptionVersion>? fieldsSubscriptionVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsSubscriptionGroupVersion>? fieldsSubscriptionGroupVersions = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsRetentionMessageVersion>? fieldsRetentionMessageVersions = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedIncludeItem>? include = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
@@ -143,6 +147,7 @@ namespace AppStoreConnect
                 fieldsInAppPurchaseVersions: fieldsInAppPurchaseVersions,
                 fieldsSubscriptionVersions: fieldsSubscriptionVersions,
                 fieldsSubscriptionGroupVersions: fieldsSubscriptionGroupVersions,
+                fieldsRetentionMessageVersions: fieldsRetentionMessageVersions,
                 limit: limit,
                 include: include,
                 requestOptions: requestOptions,
@@ -170,6 +175,7 @@ namespace AppStoreConnect
         /// <param name="fieldsInAppPurchaseVersions"></param>
         /// <param name="fieldsSubscriptionVersions"></param>
         /// <param name="fieldsSubscriptionGroupVersions"></param>
+        /// <param name="fieldsRetentionMessageVersions"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
         /// <param name="id"></param>
@@ -194,6 +200,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsInAppPurchaseVersion>? fieldsInAppPurchaseVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsSubscriptionVersion>? fieldsSubscriptionVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsSubscriptionGroupVersion>? fieldsSubscriptionGroupVersions = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsRetentionMessageVersion>? fieldsRetentionMessageVersions = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedIncludeItem>? include = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
@@ -221,6 +228,7 @@ namespace AppStoreConnect
                 fieldsInAppPurchaseVersions: fieldsInAppPurchaseVersions,
                 fieldsSubscriptionVersions: fieldsSubscriptionVersions,
                 fieldsSubscriptionGroupVersions: fieldsSubscriptionGroupVersions,
+                fieldsRetentionMessageVersions: fieldsRetentionMessageVersions,
                 limit: ref limit,
                 include: include,
                 id: ref id);
@@ -268,6 +276,7 @@ namespace AppStoreConnect
                                 .AddOptionalParameter("fields[inAppPurchaseVersions]", fieldsInAppPurchaseVersions, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("fields[subscriptionVersions]", fieldsSubscriptionVersions, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("fields[subscriptionGroupVersions]", fieldsSubscriptionGroupVersions, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
+                                .AddOptionalParameter("fields[retentionMessageVersions]", fieldsRetentionMessageVersions, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 .AddOptionalParameter("limit", limit?.ToString())
                                 .AddOptionalParameter("include", include, selector: static x => x.ToValueString(), delimiter: ",", explode: false)
                                 ;
@@ -327,6 +336,7 @@ namespace AppStoreConnect
                     fieldsInAppPurchaseVersions: fieldsInAppPurchaseVersions,
                     fieldsSubscriptionVersions: fieldsSubscriptionVersions,
                     fieldsSubscriptionGroupVersions: fieldsSubscriptionGroupVersions,
+                    fieldsRetentionMessageVersions: fieldsRetentionMessageVersions,
                     limit: limit,
                     include: include,
                     id: id);

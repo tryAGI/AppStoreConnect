@@ -64,6 +64,13 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.AppStoreVersionLocalization)}");
                 appStoreVersionLocalizations = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
+            global::AppStoreConnect.RetentionMessageVersion? retentionMessageVersions = default;
+            if (discriminator?.Type == global::AppStoreConnect.AppAssetLibraryPlacementResponseIncludedItemDiscriminatorType.RetentionMessageVersions)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.RetentionMessageVersion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.RetentionMessageVersion> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.RetentionMessageVersion)}");
+                retentionMessageVersions = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
 
             var __value = new global::AppStoreConnect.IncludedItem4(
                 discriminator?.Type,
@@ -77,7 +84,9 @@ namespace AppStoreConnect.JsonConverters
 
                 appStoreVersionExperimentTreatmentLocalizations,
 
-                appStoreVersionLocalizations
+                appStoreVersionLocalizations,
+
+                retentionMessageVersions
                 );
 
             return __value;
@@ -128,6 +137,12 @@ namespace AppStoreConnect.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.AppStoreVersionLocalization), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.AppStoreVersionLocalization?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.AppStoreVersionLocalization).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickAppStoreVersionLocalizations(), typeInfo);
+            }
+            else if (value.IsRetentionMessageVersions)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.RetentionMessageVersion), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.RetentionMessageVersion?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.RetentionMessageVersion).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickRetentionMessageVersions(), typeInfo);
             }
         }
     }

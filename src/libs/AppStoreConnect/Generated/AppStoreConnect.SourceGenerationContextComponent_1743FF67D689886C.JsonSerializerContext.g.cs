@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideV2?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0489.Create_NullableAgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideV22(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0491.Create_NullableAgeRatingDeclarationUpdateRequestDataAttributesAgeRatingOverrideV22(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

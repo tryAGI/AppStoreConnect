@@ -75,6 +75,18 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessage,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionMessageOffers,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionOffers,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewNote,
         /// <summary>
         ///
@@ -130,6 +142,9 @@ namespace AppStoreConnect
                 PromotedPurchasesGetInstanceFieldsSubscription.ProductId => "productId",
                 PromotedPurchasesGetInstanceFieldsSubscription.PromotedPurchase => "promotedPurchase",
                 PromotedPurchasesGetInstanceFieldsSubscription.PromotionalOffers => "promotionalOffers",
+                PromotedPurchasesGetInstanceFieldsSubscription.RetentionMessage => "retentionMessage",
+                PromotedPurchasesGetInstanceFieldsSubscription.RetentionMessageOffers => "retentionMessageOffers",
+                PromotedPurchasesGetInstanceFieldsSubscription.RetentionOffers => "retentionOffers",
                 PromotedPurchasesGetInstanceFieldsSubscription.ReviewNote => "reviewNote",
                 PromotedPurchasesGetInstanceFieldsSubscription.State => "state",
                 PromotedPurchasesGetInstanceFieldsSubscription.SubscriptionAvailability => "subscriptionAvailability",
@@ -163,6 +178,9 @@ namespace AppStoreConnect
                 "productId" => PromotedPurchasesGetInstanceFieldsSubscription.ProductId,
                 "promotedPurchase" => PromotedPurchasesGetInstanceFieldsSubscription.PromotedPurchase,
                 "promotionalOffers" => PromotedPurchasesGetInstanceFieldsSubscription.PromotionalOffers,
+                "retentionMessage" => PromotedPurchasesGetInstanceFieldsSubscription.RetentionMessage,
+                "retentionMessageOffers" => PromotedPurchasesGetInstanceFieldsSubscription.RetentionMessageOffers,
+                "retentionOffers" => PromotedPurchasesGetInstanceFieldsSubscription.RetentionOffers,
                 "reviewNote" => PromotedPurchasesGetInstanceFieldsSubscription.ReviewNote,
                 "state" => PromotedPurchasesGetInstanceFieldsSubscription.State,
                 "subscriptionAvailability" => PromotedPurchasesGetInstanceFieldsSubscription.SubscriptionAvailability,

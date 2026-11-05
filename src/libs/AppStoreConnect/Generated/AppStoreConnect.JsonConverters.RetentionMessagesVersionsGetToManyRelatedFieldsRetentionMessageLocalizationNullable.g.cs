@@ -1,0 +1,60 @@
+#nullable enable
+
+namespace AppStoreConnect.JsonConverters
+{
+    /// <inheritdoc />
+    public sealed class RetentionMessagesVersionsGetToManyRelatedFieldsRetentionMessageLocalizationNullableJsonConverter : global::System.Text.Json.Serialization.JsonConverter<global::AppStoreConnect.RetentionMessagesVersionsGetToManyRelatedFieldsRetentionMessageLocalization?>
+    {
+        /// <inheritdoc />
+        public override global::AppStoreConnect.RetentionMessagesVersionsGetToManyRelatedFieldsRetentionMessageLocalization? Read(
+            ref global::System.Text.Json.Utf8JsonReader reader,
+            global::System.Type typeToConvert,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            switch (reader.TokenType)
+            {
+                case global::System.Text.Json.JsonTokenType.String:
+                {
+                    var stringValue = reader.GetString();
+                    if (stringValue != null)
+                    {
+                        return global::AppStoreConnect.RetentionMessagesVersionsGetToManyRelatedFieldsRetentionMessageLocalizationExtensions.ToEnum(stringValue);
+                    }
+
+                    break;
+                }
+                case global::System.Text.Json.JsonTokenType.Number:
+                {
+                    var numValue = reader.GetInt32();
+                    return (global::AppStoreConnect.RetentionMessagesVersionsGetToManyRelatedFieldsRetentionMessageLocalization)numValue;
+                }
+                case global::System.Text.Json.JsonTokenType.Null:
+                {
+                    return default(global::AppStoreConnect.RetentionMessagesVersionsGetToManyRelatedFieldsRetentionMessageLocalization?);
+                }
+                default:
+                    throw new global::System.ArgumentOutOfRangeException(nameof(reader));
+            }
+
+            return default;
+        }
+
+        /// <inheritdoc />
+        public override void Write(
+            global::System.Text.Json.Utf8JsonWriter writer,
+            global::AppStoreConnect.RetentionMessagesVersionsGetToManyRelatedFieldsRetentionMessageLocalization? value,
+            global::System.Text.Json.JsonSerializerOptions options)
+        {
+            writer = writer ?? throw new global::System.ArgumentNullException(nameof(writer));
+
+            if (value == null)
+            {
+                writer.WriteNullValue();
+            }
+            else
+            {
+                writer.WriteStringValue(global::AppStoreConnect.RetentionMessagesVersionsGetToManyRelatedFieldsRetentionMessageLocalizationExtensions.ToValueString(value.Value));
+            }
+        }
+    }
+}

@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CiBuildRunAttributesSourceCommit))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0249.Create_CiBuildRunAttributesSourceCommit(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0251.Create_CiBuildRunAttributesSourceCommit(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

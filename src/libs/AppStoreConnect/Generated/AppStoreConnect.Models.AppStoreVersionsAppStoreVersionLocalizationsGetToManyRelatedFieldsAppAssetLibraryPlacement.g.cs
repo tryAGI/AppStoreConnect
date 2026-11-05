@@ -51,6 +51,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessageVersion,
+        /// <summary>
+        ///
+        /// </summary>
         State,
         /// <summary>
         ///
@@ -84,6 +88,7 @@ namespace AppStoreConnect
                 AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement.MediaType => "mediaType",
                 AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement.PlacementGroup => "placementGroup",
                 AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement.PlacementType => "placementType",
+                AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement.RetentionMessageVersion => "retentionMessageVersion",
                 AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement.State => "state",
                 AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement.StateDetails => "stateDetails",
                 AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement.Video => "video",
@@ -107,6 +112,7 @@ namespace AppStoreConnect
                 "mediaType" => AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement.MediaType,
                 "placementGroup" => AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement.PlacementGroup,
                 "placementType" => AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement.PlacementType,
+                "retentionMessageVersion" => AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement.RetentionMessageVersion,
                 "state" => AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement.State,
                 "stateDetails" => AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement.StateDetails,
                 "video" => AppStoreVersionsAppStoreVersionLocalizationsGetToManyRelatedFieldsAppAssetLibraryPlacement.Video,

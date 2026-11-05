@@ -47,6 +47,18 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessage,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionMessageOffers,
+        /// <summary>
+        ///
+        /// </summary>
+        RetentionOffers,
+        /// <summary>
+        ///
+        /// </summary>
         SubscriptionAvailability,
         /// <summary>
         ///
@@ -83,6 +95,9 @@ namespace AppStoreConnect
                 SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.Prices => "prices",
                 SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.PromotedPurchase => "promotedPurchase",
                 SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.PromotionalOffers => "promotionalOffers",
+                SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.RetentionMessage => "retentionMessage",
+                SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.RetentionMessageOffers => "retentionMessageOffers",
+                SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.RetentionOffers => "retentionOffers",
                 SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.SubscriptionAvailability => "subscriptionAvailability",
                 SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.SubscriptionLocalizations => "subscriptionLocalizations",
                 SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.Versions => "versions",
@@ -106,6 +121,9 @@ namespace AppStoreConnect
                 "prices" => SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.Prices,
                 "promotedPurchase" => SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.PromotedPurchase,
                 "promotionalOffers" => SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.PromotionalOffers,
+                "retentionMessage" => SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.RetentionMessage,
+                "retentionMessageOffers" => SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.RetentionMessageOffers,
+                "retentionOffers" => SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.RetentionOffers,
                 "subscriptionAvailability" => SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.SubscriptionAvailability,
                 "subscriptionLocalizations" => SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.SubscriptionLocalizations,
                 "versions" => SubscriptionGroupsSubscriptionsGetToManyRelatedIncludeItem.Versions,

@@ -195,6 +195,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessages,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewSubmissions,
         /// <summary>
         ///
@@ -296,6 +300,7 @@ namespace AppStoreConnect
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.PrimaryLocale => "primaryLocale",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.PromotedPurchases => "promotedPurchases",
+                GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.RetentionMessages => "retentionMessages",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.ReviewSubmissions => "reviewSubmissions",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.SearchKeywords => "searchKeywords",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.Sku => "sku",
@@ -363,6 +368,7 @@ namespace AppStoreConnect
                 "preReleaseVersions" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.PreReleaseVersions,
                 "primaryLocale" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.PrimaryLocale,
                 "promotedPurchases" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.PromotedPurchases,
+                "retentionMessages" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.RetentionMessages,
                 "reviewSubmissions" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.ReviewSubmissions,
                 "searchKeywords" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.SearchKeywords,
                 "sku" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.Sku,

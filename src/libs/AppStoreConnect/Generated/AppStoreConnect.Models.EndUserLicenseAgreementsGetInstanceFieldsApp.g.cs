@@ -195,6 +195,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        RetentionMessages,
+        /// <summary>
+        ///
+        /// </summary>
         ReviewSubmissions,
         /// <summary>
         ///
@@ -296,6 +300,7 @@ namespace AppStoreConnect
                 EndUserLicenseAgreementsGetInstanceFieldsApp.PreReleaseVersions => "preReleaseVersions",
                 EndUserLicenseAgreementsGetInstanceFieldsApp.PrimaryLocale => "primaryLocale",
                 EndUserLicenseAgreementsGetInstanceFieldsApp.PromotedPurchases => "promotedPurchases",
+                EndUserLicenseAgreementsGetInstanceFieldsApp.RetentionMessages => "retentionMessages",
                 EndUserLicenseAgreementsGetInstanceFieldsApp.ReviewSubmissions => "reviewSubmissions",
                 EndUserLicenseAgreementsGetInstanceFieldsApp.SearchKeywords => "searchKeywords",
                 EndUserLicenseAgreementsGetInstanceFieldsApp.Sku => "sku",
@@ -363,6 +368,7 @@ namespace AppStoreConnect
                 "preReleaseVersions" => EndUserLicenseAgreementsGetInstanceFieldsApp.PreReleaseVersions,
                 "primaryLocale" => EndUserLicenseAgreementsGetInstanceFieldsApp.PrimaryLocale,
                 "promotedPurchases" => EndUserLicenseAgreementsGetInstanceFieldsApp.PromotedPurchases,
+                "retentionMessages" => EndUserLicenseAgreementsGetInstanceFieldsApp.RetentionMessages,
                 "reviewSubmissions" => EndUserLicenseAgreementsGetInstanceFieldsApp.ReviewSubmissions,
                 "searchKeywords" => EndUserLicenseAgreementsGetInstanceFieldsApp.SearchKeywords,
                 "sku" => EndUserLicenseAgreementsGetInstanceFieldsApp.Sku,

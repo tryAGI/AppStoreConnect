@@ -23,6 +23,7 @@ namespace AppStoreConnect
         /// <param name="fieldsEndUserLicenseAgreements"></param>
         /// <param name="fieldsInAppPurchases"></param>
         /// <param name="fieldsSubscriptionGroups"></param>
+        /// <param name="fieldsRetentionMessages"></param>
         /// <param name="fieldsGameCenterEnabledVersions"></param>
         /// <param name="fieldsAppCustomProductPages"></param>
         /// <param name="fieldsPromotedPurchases"></param>
@@ -43,6 +44,7 @@ namespace AppStoreConnect
         /// <param name="limitAppClips"></param>
         /// <param name="limitInAppPurchases"></param>
         /// <param name="limitSubscriptionGroups"></param>
+        /// <param name="limitRetentionMessages"></param>
         /// <param name="limitGameCenterEnabledVersions"></param>
         /// <param name="limitAppCustomProductPages"></param>
         /// <param name="limitInAppPurchasesV2"></param>
@@ -73,6 +75,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsEndUserLicenseAgreement>? fieldsEndUserLicenseAgreements = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsInAppPurchase>? fieldsInAppPurchases = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsSubscriptionGroup>? fieldsSubscriptionGroups = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsRetentionMessage>? fieldsRetentionMessages = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsGameCenterEnabledVersion>? fieldsGameCenterEnabledVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsAppCustomProductPage>? fieldsAppCustomProductPages = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsPromotedPurchase>? fieldsPromotedPurchases = default,
@@ -93,6 +96,7 @@ namespace AppStoreConnect
             int? limitAppClips = default,
             int? limitInAppPurchases = default,
             int? limitSubscriptionGroups = default,
+            int? limitRetentionMessages = default,
             int? limitGameCenterEnabledVersions = default,
             int? limitAppCustomProductPages = default,
             int? limitInAppPurchasesV2 = default,
@@ -122,6 +126,7 @@ namespace AppStoreConnect
         /// <param name="fieldsEndUserLicenseAgreements"></param>
         /// <param name="fieldsInAppPurchases"></param>
         /// <param name="fieldsSubscriptionGroups"></param>
+        /// <param name="fieldsRetentionMessages"></param>
         /// <param name="fieldsGameCenterEnabledVersions"></param>
         /// <param name="fieldsAppCustomProductPages"></param>
         /// <param name="fieldsPromotedPurchases"></param>
@@ -142,6 +147,7 @@ namespace AppStoreConnect
         /// <param name="limitAppClips"></param>
         /// <param name="limitInAppPurchases"></param>
         /// <param name="limitSubscriptionGroups"></param>
+        /// <param name="limitRetentionMessages"></param>
         /// <param name="limitGameCenterEnabledVersions"></param>
         /// <param name="limitAppCustomProductPages"></param>
         /// <param name="limitInAppPurchasesV2"></param>
@@ -172,6 +178,7 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsEndUserLicenseAgreement>? fieldsEndUserLicenseAgreements = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsInAppPurchase>? fieldsInAppPurchases = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsSubscriptionGroup>? fieldsSubscriptionGroups = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsRetentionMessage>? fieldsRetentionMessages = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsGameCenterEnabledVersion>? fieldsGameCenterEnabledVersions = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsAppCustomProductPage>? fieldsAppCustomProductPages = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsPromotedPurchase>? fieldsPromotedPurchases = default,
@@ -192,6 +199,7 @@ namespace AppStoreConnect
             int? limitAppClips = default,
             int? limitInAppPurchases = default,
             int? limitSubscriptionGroups = default,
+            int? limitRetentionMessages = default,
             int? limitGameCenterEnabledVersions = default,
             int? limitAppCustomProductPages = default,
             int? limitInAppPurchasesV2 = default,
