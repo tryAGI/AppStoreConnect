@@ -12,284 +12,284 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppInfoResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.CiWorkflowsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AgeRatingDeclaration? AgeRatingDeclarations { get; init; }
+        public global::AppStoreConnect.CiMacOsVersion? CiMacOsVersions { get; init; }
 #else
-        public global::AppStoreConnect.AgeRatingDeclaration? AgeRatingDeclarations { get; }
+        public global::AppStoreConnect.CiMacOsVersion? CiMacOsVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgeRatingDeclarations))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CiMacOsVersions))]
 #endif
-        public bool IsAgeRatingDeclarations => AgeRatingDeclarations != null;
+        public bool IsCiMacOsVersions => CiMacOsVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgeRatingDeclarations(
+        public bool TryPickCiMacOsVersions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AgeRatingDeclaration? value)
+            out global::AppStoreConnect.CiMacOsVersion? value)
         {
-            value = AgeRatingDeclarations;
-            return IsAgeRatingDeclarations;
+            value = CiMacOsVersions;
+            return IsCiMacOsVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AgeRatingDeclaration PickAgeRatingDeclarations() => AgeRatingDeclarations is { } value
+        public global::AppStoreConnect.CiMacOsVersion PickCiMacOsVersions() => CiMacOsVersions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgeRatingDeclarations' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CiMacOsVersions' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppCategory? AppCategories { get; init; }
+        public global::AppStoreConnect.CiProduct? CiProducts { get; init; }
 #else
-        public global::AppStoreConnect.AppCategory? AppCategories { get; }
+        public global::AppStoreConnect.CiProduct? CiProducts { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCategories))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CiProducts))]
 #endif
-        public bool IsAppCategories => AppCategories != null;
+        public bool IsCiProducts => CiProducts != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppCategories(
+        public bool TryPickCiProducts(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppCategory? value)
+            out global::AppStoreConnect.CiProduct? value)
         {
-            value = AppCategories;
-            return IsAppCategories;
+            value = CiProducts;
+            return IsCiProducts;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCategory PickAppCategories() => AppCategories is { } value
+        public global::AppStoreConnect.CiProduct PickCiProducts() => CiProducts is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCategories' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CiProducts' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppInfoLocalization? AppInfoLocalizations { get; init; }
+        public global::AppStoreConnect.CiXcodeVersion? CiXcodeVersions { get; init; }
 #else
-        public global::AppStoreConnect.AppInfoLocalization? AppInfoLocalizations { get; }
+        public global::AppStoreConnect.CiXcodeVersion? CiXcodeVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppInfoLocalizations))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CiXcodeVersions))]
 #endif
-        public bool IsAppInfoLocalizations => AppInfoLocalizations != null;
+        public bool IsCiXcodeVersions => CiXcodeVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppInfoLocalizations(
+        public bool TryPickCiXcodeVersions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppInfoLocalization? value)
+            out global::AppStoreConnect.CiXcodeVersion? value)
         {
-            value = AppInfoLocalizations;
-            return IsAppInfoLocalizations;
+            value = CiXcodeVersions;
+            return IsCiXcodeVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppInfoLocalization PickAppInfoLocalizations() => AppInfoLocalizations is { } value
+        public global::AppStoreConnect.CiXcodeVersion PickCiXcodeVersions() => CiXcodeVersions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppInfoLocalizations' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CiXcodeVersions' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.App? Apps { get; init; }
+        public global::AppStoreConnect.ScmRepository? ScmRepositories { get; init; }
 #else
-        public global::AppStoreConnect.App? Apps { get; }
+        public global::AppStoreConnect.ScmRepository? ScmRepositories { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmRepositories))]
 #endif
-        public bool IsApps => Apps != null;
+        public bool IsScmRepositories => ScmRepositories != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickApps(
+        public bool TryPickScmRepositories(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.App? value)
+            out global::AppStoreConnect.ScmRepository? value)
         {
-            value = Apps;
-            return IsApps;
+            value = ScmRepositories;
+            return IsScmRepositories;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickApps() => Apps is { } value
+        public global::AppStoreConnect.ScmRepository PickScmRepositories() => ScmRepositories is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScmRepositories' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem25(global::AppStoreConnect.AgeRatingDeclaration value) => new IncludedItem25((global::AppStoreConnect.AgeRatingDeclaration?)value);
+        public static implicit operator IncludedItem25(global::AppStoreConnect.CiMacOsVersion value) => new IncludedItem25((global::AppStoreConnect.CiMacOsVersion?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AgeRatingDeclaration?(IncludedItem25 @this) => @this.AgeRatingDeclarations;
+        public static implicit operator global::AppStoreConnect.CiMacOsVersion?(IncludedItem25 @this) => @this.CiMacOsVersions;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem25(global::AppStoreConnect.AgeRatingDeclaration? value)
+        public IncludedItem25(global::AppStoreConnect.CiMacOsVersion? value)
         {
-            AgeRatingDeclarations = value;
+            CiMacOsVersions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem25 FromAgeRatingDeclarations(global::AppStoreConnect.AgeRatingDeclaration? value) => new IncludedItem25(value);
+        public static IncludedItem25 FromCiMacOsVersions(global::AppStoreConnect.CiMacOsVersion? value) => new IncludedItem25(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem25(global::AppStoreConnect.AppCategory value) => new IncludedItem25((global::AppStoreConnect.AppCategory?)value);
+        public static implicit operator IncludedItem25(global::AppStoreConnect.CiProduct value) => new IncludedItem25((global::AppStoreConnect.CiProduct?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppCategory?(IncludedItem25 @this) => @this.AppCategories;
+        public static implicit operator global::AppStoreConnect.CiProduct?(IncludedItem25 @this) => @this.CiProducts;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem25(global::AppStoreConnect.AppCategory? value)
+        public IncludedItem25(global::AppStoreConnect.CiProduct? value)
         {
-            AppCategories = value;
+            CiProducts = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem25 FromAppCategories(global::AppStoreConnect.AppCategory? value) => new IncludedItem25(value);
+        public static IncludedItem25 FromCiProducts(global::AppStoreConnect.CiProduct? value) => new IncludedItem25(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem25(global::AppStoreConnect.AppInfoLocalization value) => new IncludedItem25((global::AppStoreConnect.AppInfoLocalization?)value);
+        public static implicit operator IncludedItem25(global::AppStoreConnect.CiXcodeVersion value) => new IncludedItem25((global::AppStoreConnect.CiXcodeVersion?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppInfoLocalization?(IncludedItem25 @this) => @this.AppInfoLocalizations;
+        public static implicit operator global::AppStoreConnect.CiXcodeVersion?(IncludedItem25 @this) => @this.CiXcodeVersions;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem25(global::AppStoreConnect.AppInfoLocalization? value)
+        public IncludedItem25(global::AppStoreConnect.CiXcodeVersion? value)
         {
-            AppInfoLocalizations = value;
+            CiXcodeVersions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem25 FromAppInfoLocalizations(global::AppStoreConnect.AppInfoLocalization? value) => new IncludedItem25(value);
+        public static IncludedItem25 FromCiXcodeVersions(global::AppStoreConnect.CiXcodeVersion? value) => new IncludedItem25(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem25(global::AppStoreConnect.App value) => new IncludedItem25((global::AppStoreConnect.App?)value);
+        public static implicit operator IncludedItem25(global::AppStoreConnect.ScmRepository value) => new IncludedItem25((global::AppStoreConnect.ScmRepository?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.App?(IncludedItem25 @this) => @this.Apps;
+        public static implicit operator global::AppStoreConnect.ScmRepository?(IncludedItem25 @this) => @this.ScmRepositories;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem25(global::AppStoreConnect.App? value)
+        public IncludedItem25(global::AppStoreConnect.ScmRepository? value)
         {
-            Apps = value;
+            ScmRepositories = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem25 FromApps(global::AppStoreConnect.App? value) => new IncludedItem25(value);
+        public static IncludedItem25 FromScmRepositories(global::AppStoreConnect.ScmRepository? value) => new IncludedItem25(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem25(
-            global::AppStoreConnect.AppInfoResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AgeRatingDeclaration? ageRatingDeclarations,
-            global::AppStoreConnect.AppCategory? appCategories,
-            global::AppStoreConnect.AppInfoLocalization? appInfoLocalizations,
-            global::AppStoreConnect.App? apps
+            global::AppStoreConnect.CiWorkflowsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.CiMacOsVersion? ciMacOsVersions,
+            global::AppStoreConnect.CiProduct? ciProducts,
+            global::AppStoreConnect.CiXcodeVersion? ciXcodeVersions,
+            global::AppStoreConnect.ScmRepository? scmRepositories
             )
         {
             Type = type;
 
-            AgeRatingDeclarations = ageRatingDeclarations;
-            AppCategories = appCategories;
-            AppInfoLocalizations = appInfoLocalizations;
-            Apps = apps;
+            CiMacOsVersions = ciMacOsVersions;
+            CiProducts = ciProducts;
+            CiXcodeVersions = ciXcodeVersions;
+            ScmRepositories = scmRepositories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Apps as object ??
-            AppInfoLocalizations as object ??
-            AppCategories as object ??
-            AgeRatingDeclarations as object
+            ScmRepositories as object ??
+            CiXcodeVersions as object ??
+            CiProducts as object ??
+            CiMacOsVersions as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AgeRatingDeclarations?.ToString() ??
-            AppCategories?.ToString() ??
-            AppInfoLocalizations?.ToString() ??
-            Apps?.ToString()
+            CiMacOsVersions?.ToString() ??
+            CiProducts?.ToString() ??
+            CiXcodeVersions?.ToString() ??
+            ScmRepositories?.ToString()
             ;
 
         /// <summary>
@@ -297,17 +297,17 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAgeRatingDeclarations && !IsAppCategories && !IsAppInfoLocalizations && !IsApps || !IsAgeRatingDeclarations && IsAppCategories && !IsAppInfoLocalizations && !IsApps || !IsAgeRatingDeclarations && !IsAppCategories && IsAppInfoLocalizations && !IsApps || !IsAgeRatingDeclarations && !IsAppCategories && !IsAppInfoLocalizations && IsApps;
+            return IsCiMacOsVersions && !IsCiProducts && !IsCiXcodeVersions && !IsScmRepositories || !IsCiMacOsVersions && IsCiProducts && !IsCiXcodeVersions && !IsScmRepositories || !IsCiMacOsVersions && !IsCiProducts && IsCiXcodeVersions && !IsScmRepositories || !IsCiMacOsVersions && !IsCiProducts && !IsCiXcodeVersions && IsScmRepositories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AgeRatingDeclaration, TResult>? ageRatingDeclarations = null,
-            global::System.Func<global::AppStoreConnect.AppCategory, TResult>? appCategories = null,
-            global::System.Func<global::AppStoreConnect.AppInfoLocalization, TResult>? appInfoLocalizations = null,
-            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
+            global::System.Func<global::AppStoreConnect.CiMacOsVersion, TResult>? ciMacOsVersions = null,
+            global::System.Func<global::AppStoreConnect.CiProduct, TResult>? ciProducts = null,
+            global::System.Func<global::AppStoreConnect.CiXcodeVersion, TResult>? ciXcodeVersions = null,
+            global::System.Func<global::AppStoreConnect.ScmRepository, TResult>? scmRepositories = null,
             bool validate = true)
         {
             if (validate)
@@ -315,21 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AgeRatingDeclarations is { } __value0 && ageRatingDeclarations != null)
+            if (CiMacOsVersions is { } __value0 && ciMacOsVersions != null)
             {
-                return ageRatingDeclarations(__value0);
+                return ciMacOsVersions(__value0);
             }
-            else if (AppCategories is { } __value1 && appCategories != null)
+            else if (CiProducts is { } __value1 && ciProducts != null)
             {
-                return appCategories(__value1);
+                return ciProducts(__value1);
             }
-            else if (AppInfoLocalizations is { } __value2 && appInfoLocalizations != null)
+            else if (CiXcodeVersions is { } __value2 && ciXcodeVersions != null)
             {
-                return appInfoLocalizations(__value2);
+                return ciXcodeVersions(__value2);
             }
-            else if (Apps is { } __value3 && apps != null)
+            else if (ScmRepositories is { } __value3 && scmRepositories != null)
             {
-                return apps(__value3);
+                return scmRepositories(__value3);
             }
 
             return default(TResult);
@@ -339,13 +339,13 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AgeRatingDeclaration>? ageRatingDeclarations = null,
+            global::System.Action<global::AppStoreConnect.CiMacOsVersion>? ciMacOsVersions = null,
 
-            global::System.Action<global::AppStoreConnect.AppCategory>? appCategories = null,
+            global::System.Action<global::AppStoreConnect.CiProduct>? ciProducts = null,
 
-            global::System.Action<global::AppStoreConnect.AppInfoLocalization>? appInfoLocalizations = null,
+            global::System.Action<global::AppStoreConnect.CiXcodeVersion>? ciXcodeVersions = null,
 
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.ScmRepository>? scmRepositories = null,
             bool validate = true)
         {
             if (validate)
@@ -353,21 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AgeRatingDeclarations is { } __value0)
+            if (CiMacOsVersions is { } __value0)
             {
-                ageRatingDeclarations?.Invoke(__value0);
+                ciMacOsVersions?.Invoke(__value0);
             }
-            else if (AppCategories is { } __value1)
+            else if (CiProducts is { } __value1)
             {
-                appCategories?.Invoke(__value1);
+                ciProducts?.Invoke(__value1);
             }
-            else if (AppInfoLocalizations is { } __value2)
+            else if (CiXcodeVersions is { } __value2)
             {
-                appInfoLocalizations?.Invoke(__value2);
+                ciXcodeVersions?.Invoke(__value2);
             }
-            else if (Apps is { } __value3)
+            else if (ScmRepositories is { } __value3)
             {
-                apps?.Invoke(__value3);
+                scmRepositories?.Invoke(__value3);
             }
         }
 
@@ -375,10 +375,10 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AgeRatingDeclaration>? ageRatingDeclarations = null,
-            global::System.Action<global::AppStoreConnect.AppCategory>? appCategories = null,
-            global::System.Action<global::AppStoreConnect.AppInfoLocalization>? appInfoLocalizations = null,
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.CiMacOsVersion>? ciMacOsVersions = null,
+            global::System.Action<global::AppStoreConnect.CiProduct>? ciProducts = null,
+            global::System.Action<global::AppStoreConnect.CiXcodeVersion>? ciXcodeVersions = null,
+            global::System.Action<global::AppStoreConnect.ScmRepository>? scmRepositories = null,
             bool validate = true)
         {
             if (validate)
@@ -386,21 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AgeRatingDeclarations is { } __value0)
+            if (CiMacOsVersions is { } __value0)
             {
-                ageRatingDeclarations?.Invoke(__value0);
+                ciMacOsVersions?.Invoke(__value0);
             }
-            else if (AppCategories is { } __value1)
+            else if (CiProducts is { } __value1)
             {
-                appCategories?.Invoke(__value1);
+                ciProducts?.Invoke(__value1);
             }
-            else if (AppInfoLocalizations is { } __value2)
+            else if (CiXcodeVersions is { } __value2)
             {
-                appInfoLocalizations?.Invoke(__value2);
+                ciXcodeVersions?.Invoke(__value2);
             }
-            else if (Apps is { } __value3)
+            else if (ScmRepositories is { } __value3)
             {
-                apps?.Invoke(__value3);
+                scmRepositories?.Invoke(__value3);
             }
         }
 
@@ -411,14 +411,14 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AgeRatingDeclarations,
-                typeof(global::AppStoreConnect.AgeRatingDeclaration),
-                AppCategories,
-                typeof(global::AppStoreConnect.AppCategory),
-                AppInfoLocalizations,
-                typeof(global::AppStoreConnect.AppInfoLocalization),
-                Apps,
-                typeof(global::AppStoreConnect.App),
+                CiMacOsVersions,
+                typeof(global::AppStoreConnect.CiMacOsVersion),
+                CiProducts,
+                typeof(global::AppStoreConnect.CiProduct),
+                CiXcodeVersions,
+                typeof(global::AppStoreConnect.CiXcodeVersion),
+                ScmRepositories,
+                typeof(global::AppStoreConnect.ScmRepository),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -435,10 +435,10 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem25 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AgeRatingDeclaration?>.Default.Equals(AgeRatingDeclarations, other.AgeRatingDeclarations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCategory?>.Default.Equals(AppCategories, other.AppCategories) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppInfoLocalization?>.Default.Equals(AppInfoLocalizations, other.AppInfoLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CiMacOsVersion?>.Default.Equals(CiMacOsVersions, other.CiMacOsVersions) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CiProduct?>.Default.Equals(CiProducts, other.CiProducts) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CiXcodeVersion?>.Default.Equals(CiXcodeVersions, other.CiXcodeVersions) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmRepository?>.Default.Equals(ScmRepositories, other.ScmRepositories)
                 ;
         }
 

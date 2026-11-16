@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.XcodeOverviewCategorieSectionDatasetPointPercentageBreakdown))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1311.Create_XcodeOverviewCategorieSectionDatasetPointPercentageBreakdown(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1310.Create_XcodeOverviewCategorieSectionDatasetPointPercentageBreakdown(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

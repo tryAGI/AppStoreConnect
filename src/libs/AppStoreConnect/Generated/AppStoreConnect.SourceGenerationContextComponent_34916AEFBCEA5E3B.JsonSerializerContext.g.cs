@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.AppsWebhooksGetToManyRelatedFieldsWebhook>))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0907.Create_SourceGenerationContextMetadataType_34916AEFBCEA5E3B(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0906.Create_SourceGenerationContextMetadataType_34916AEFBCEA5E3B(options);
                 }
                 if (type == typeof(global::System.Collections.Generic.List<global::AppStoreConnect.AppsWebhooksGetToManyRelatedFieldsWebhook>))
                 {

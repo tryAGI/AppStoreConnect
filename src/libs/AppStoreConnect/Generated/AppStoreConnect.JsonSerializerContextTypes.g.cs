@@ -558,11 +558,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem>? Type130 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem182>? Type130 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem? Type131 { get; set; }
+        public global::AppStoreConnect.IncludedItem182? Type131 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -582,11 +582,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem2>? Type136 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem178>? Type136 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem2? Type137 { get; set; }
+        public global::AppStoreConnect.IncludedItem178? Type137 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1262,7 +1262,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppAssetLibraryPlacementType? Type306 { get; set; }
+        public global::AppStoreConnect.AppAssetLibraryPlacementType2? Type306 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1274,7 +1274,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppAssetLibraryPlacementType2? Type309 { get; set; }
+        public global::AppStoreConnect.AppAssetLibraryPlacementType? Type309 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1410,11 +1410,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem3>? Type343 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem110>? Type343 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem3? Type344 { get; set; }
+        public global::AppStoreConnect.IncludedItem110? Type344 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1454,11 +1454,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem4>? Type354 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem101>? Type354 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem4? Type355 { get; set; }
+        public global::AppStoreConnect.IncludedItem101? Type355 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -1682,7 +1682,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementType2>? Type411 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementType>? Type411 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2290,11 +2290,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem5>? Type563 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem120>? Type563 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem5? Type564 { get; set; }
+        public global::AppStoreConnect.IncludedItem120? Type564 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2314,11 +2314,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem6>? Type569 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem111>? Type569 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem6? Type570 { get; set; }
+        public global::AppStoreConnect.IncludedItem111? Type570 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2678,11 +2678,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem7>? Type660 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem179>? Type660 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem7? Type661 { get; set; }
+        public global::AppStoreConnect.IncludedItem179? Type661 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2702,11 +2702,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem8>? Type666 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem174>? Type666 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem8? Type667 { get; set; }
+        public global::AppStoreConnect.IncludedItem174? Type667 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2834,11 +2834,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem9>? Type699 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem112>? Type699 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem9? Type700 { get; set; }
+        public global::AppStoreConnect.IncludedItem112? Type700 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -2858,11 +2858,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem10>? Type705 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem102>? Type705 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem10? Type706 { get; set; }
+        public global::AppStoreConnect.IncludedItem102? Type706 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -3118,11 +3118,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem11>? Type770 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem8>? Type770 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem11? Type771 { get; set; }
+        public global::AppStoreConnect.IncludedItem8? Type771 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -3142,11 +3142,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem12>? Type776 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem5>? Type776 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem12? Type777 { get; set; }
+        public global::AppStoreConnect.IncludedItem5? Type777 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -3298,11 +3298,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem13>? Type815 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem161>? Type815 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem13? Type816 { get; set; }
+        public global::AppStoreConnect.IncludedItem161? Type816 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -3334,11 +3334,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem14>? Type824 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem156>? Type824 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem14? Type825 { get; set; }
+        public global::AppStoreConnect.IncludedItem156? Type825 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -3510,11 +3510,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem15>? Type868 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem133>? Type868 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem15? Type869 { get; set; }
+        public global::AppStoreConnect.IncludedItem133? Type869 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -3534,11 +3534,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem16>? Type874 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem126>? Type874 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem16? Type875 { get; set; }
+        public global::AppStoreConnect.IncludedItem126? Type875 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -3662,11 +3662,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem17>? Type906 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem81>? Type906 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem17? Type907 { get; set; }
+        public global::AppStoreConnect.IncludedItem81? Type907 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -3682,11 +3682,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem18>? Type911 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem71>? Type911 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem18? Type912 { get; set; }
+        public global::AppStoreConnect.IncludedItem71? Type912 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -3926,11 +3926,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem20>? Type972 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem114>? Type972 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem20? Type973 { get; set; }
+        public global::AppStoreConnect.IncludedItem114? Type973 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -3950,11 +3950,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem21>? Type978 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem103>? Type978 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem21? Type979 { get; set; }
+        public global::AppStoreConnect.IncludedItem103? Type979 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -4078,11 +4078,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem22>? Type1010 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem82>? Type1010 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem22? Type1011 { get; set; }
+        public global::AppStoreConnect.IncludedItem82? Type1011 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -4110,11 +4110,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem23>? Type1018 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem72>? Type1018 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem23? Type1019 { get; set; }
+        public global::AppStoreConnect.IncludedItem72? Type1019 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -4786,11 +4786,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem24>? Type1187 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem9>? Type1187 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem24? Type1188 { get; set; }
+        public global::AppStoreConnect.IncludedItem9? Type1188 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -4806,11 +4806,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem25>? Type1192 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem6>? Type1192 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem25? Type1193 { get; set; }
+        public global::AppStoreConnect.IncludedItem6? Type1193 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -4998,11 +4998,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem26>? Type1240 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem32>? Type1240 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem26? Type1241 { get; set; }
+        public global::AppStoreConnect.IncludedItem32? Type1241 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5022,11 +5022,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem27>? Type1246 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem29>? Type1246 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem27? Type1247 { get; set; }
+        public global::AppStoreConnect.IncludedItem29? Type1247 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5230,11 +5230,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem28>? Type1298 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem43>? Type1298 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem28? Type1299 { get; set; }
+        public global::AppStoreConnect.IncludedItem43? Type1299 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5254,11 +5254,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem29>? Type1304 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem35>? Type1304 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem29? Type1305 { get; set; }
+        public global::AppStoreConnect.IncludedItem35? Type1305 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5342,11 +5342,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem30>? Type1326 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem44>? Type1326 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem30? Type1327 { get; set; }
+        public global::AppStoreConnect.IncludedItem44? Type1327 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5502,11 +5502,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem32>? Type1366 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem21>? Type1366 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem32? Type1367 { get; set; }
+        public global::AppStoreConnect.IncludedItem21? Type1367 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5594,11 +5594,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem33>? Type1389 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem54>? Type1389 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem33? Type1390 { get; set; }
+        public global::AppStoreConnect.IncludedItem54? Type1390 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5618,11 +5618,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem34>? Type1395 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem45>? Type1395 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem34? Type1396 { get; set; }
+        public global::AppStoreConnect.IncludedItem45? Type1396 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -5914,11 +5914,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem35>? Type1469 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem73>? Type1469 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem35? Type1470 { get; set; }
+        public global::AppStoreConnect.IncludedItem73? Type1470 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -6058,11 +6058,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem36>? Type1505 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem188>? Type1505 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem36? Type1506 { get; set; }
+        public global::AppStoreConnect.IncludedItem188? Type1506 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -6082,11 +6082,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem37>? Type1511 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem187>? Type1511 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem37? Type1512 { get; set; }
+        public global::AppStoreConnect.IncludedItem187? Type1512 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -6198,11 +6198,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem38>? Type1540 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem171>? Type1540 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem38? Type1541 { get; set; }
+        public global::AppStoreConnect.IncludedItem171? Type1541 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -6222,11 +6222,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem39>? Type1546 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem166>? Type1546 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem39? Type1547 { get; set; }
+        public global::AppStoreConnect.IncludedItem166? Type1547 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -6382,11 +6382,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem40>? Type1586 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem134>? Type1586 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem40? Type1587 { get; set; }
+        public global::AppStoreConnect.IncludedItem134? Type1587 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -6402,11 +6402,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem41>? Type1591 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem127>? Type1591 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem41? Type1592 { get; set; }
+        public global::AppStoreConnect.IncludedItem127? Type1592 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -6518,11 +6518,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem42>? Type1620 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem121>? Type1620 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem42? Type1621 { get; set; }
+        public global::AppStoreConnect.IncludedItem121? Type1621 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -6538,11 +6538,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem43>? Type1625 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem115>? Type1625 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem43? Type1626 { get; set; }
+        public global::AppStoreConnect.IncludedItem115? Type1626 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -6698,11 +6698,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem44>? Type1665 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem135>? Type1665 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem44? Type1666 { get; set; }
+        public global::AppStoreConnect.IncludedItem135? Type1666 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -6718,11 +6718,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem45>? Type1670 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem128>? Type1670 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem45? Type1671 { get; set; }
+        public global::AppStoreConnect.IncludedItem128? Type1671 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -7206,11 +7206,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem47>? Type1792 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem36>? Type1792 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem47? Type1793 { get; set; }
+        public global::AppStoreConnect.IncludedItem36? Type1793 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -7902,11 +7902,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem48>? Type1966 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem2>? Type1966 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem48? Type1967 { get; set; }
+        public global::AppStoreConnect.IncludedItem2? Type1967 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -7986,11 +7986,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem49>? Type1987 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem>? Type1987 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem49? Type1988 { get; set; }
+        public global::AppStoreConnect.IncludedItem? Type1988 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -8326,11 +8326,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem50>? Type2072 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem95>? Type2072 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem50? Type2073 { get; set; }
+        public global::AppStoreConnect.IncludedItem95? Type2073 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -8350,11 +8350,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem51>? Type2078 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem90>? Type2078 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem51? Type2079 { get; set; }
+        public global::AppStoreConnect.IncludedItem90? Type2079 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -8466,11 +8466,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem52>? Type2107 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem47>? Type2107 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem52? Type2108 { get; set; }
+        public global::AppStoreConnect.IncludedItem47? Type2108 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -8486,11 +8486,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem53>? Type2112 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem37>? Type2112 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem53? Type2113 { get; set; }
+        public global::AppStoreConnect.IncludedItem37? Type2113 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -9130,11 +9130,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem54>? Type2273 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem136>? Type2273 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem54? Type2274 { get; set; }
+        public global::AppStoreConnect.IncludedItem136? Type2274 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -9154,11 +9154,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem55>? Type2279 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem129>? Type2279 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem55? Type2280 { get; set; }
+        public global::AppStoreConnect.IncludedItem129? Type2280 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -9226,11 +9226,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem56>? Type2297 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem162>? Type2297 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem56? Type2298 { get; set; }
+        public global::AppStoreConnect.IncludedItem162? Type2298 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -9246,11 +9246,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem57>? Type2302 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem157>? Type2302 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem57? Type2303 { get; set; }
+        public global::AppStoreConnect.IncludedItem157? Type2303 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -9342,11 +9342,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem58>? Type2326 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem15>? Type2326 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem58? Type2327 { get; set; }
+        public global::AppStoreConnect.IncludedItem15? Type2327 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -9366,11 +9366,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem59>? Type2332 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem12>? Type2332 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem59? Type2333 { get; set; }
+        public global::AppStoreConnect.IncludedItem12? Type2333 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -9766,11 +9766,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem60>? Type2432 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem22>? Type2432 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem60? Type2433 { get; set; }
+        public global::AppStoreConnect.IncludedItem22? Type2433 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -9786,11 +9786,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem61>? Type2437 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem16>? Type2437 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem61? Type2438 { get; set; }
+        public global::AppStoreConnect.IncludedItem16? Type2438 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -9982,7 +9982,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BuildBundleType? Type2486 { get; set; }
+        public global::AppStoreConnect.BuildBundleType2? Type2486 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -9990,7 +9990,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BuildBundleType2? Type2488 { get; set; }
+        public global::AppStoreConnect.BuildBundleType? Type2488 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -10254,11 +10254,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem62>? Type2554 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem27>? Type2554 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem62? Type2555 { get; set; }
+        public global::AppStoreConnect.IncludedItem27? Type2555 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -10274,11 +10274,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem63>? Type2559 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem23>? Type2559 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem63? Type2560 { get; set; }
+        public global::AppStoreConnect.IncludedItem23? Type2560 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -10518,11 +10518,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem64>? Type2620 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem4>? Type2620 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem64? Type2621 { get; set; }
+        public global::AppStoreConnect.IncludedItem4? Type2621 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -10538,11 +10538,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem65>? Type2625 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem3>? Type2625 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem65? Type2626 { get; set; }
+        public global::AppStoreConnect.IncludedItem3? Type2626 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -10742,11 +10742,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem66>? Type2676 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem13>? Type2676 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem66? Type2677 { get; set; }
+        public global::AppStoreConnect.IncludedItem13? Type2677 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -10766,11 +10766,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem67>? Type2682 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem10>? Type2682 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem67? Type2683 { get; set; }
+        public global::AppStoreConnect.IncludedItem10? Type2683 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -10818,7 +10818,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CertificateType? Type2695 { get; set; }
+        public global::AppStoreConnect.CertificateType2? Type2695 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -10826,7 +10826,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CertificateType2? Type2697 { get; set; }
+        public global::AppStoreConnect.CertificateType? Type2697 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -11146,11 +11146,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem68>? Type2777 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem24>? Type2777 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem68? Type2778 { get; set; }
+        public global::AppStoreConnect.IncludedItem24? Type2778 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -11178,11 +11178,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem69>? Type2785 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem17>? Type2785 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem69? Type2786 { get; set; }
+        public global::AppStoreConnect.IncludedItem17? Type2786 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -11422,11 +11422,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem70>? Type2846 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem18>? Type2846 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem70? Type2847 { get; set; }
+        public global::AppStoreConnect.IncludedItem18? Type2847 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -11446,11 +11446,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem71>? Type2852 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem14>? Type2852 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem71? Type2853 { get; set; }
+        public global::AppStoreConnect.IncludedItem14? Type2853 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -11606,11 +11606,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem72>? Type2892 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem25>? Type2892 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem72? Type2893 { get; set; }
+        public global::AppStoreConnect.IncludedItem25? Type2893 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -11626,11 +11626,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem73>? Type2897 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem19>? Type2897 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem73? Type2898 { get; set; }
+        public global::AppStoreConnect.IncludedItem19? Type2898 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -11966,11 +11966,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem74>? Type2982 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem38>? Type2982 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem74? Type2983 { get; set; }
+        public global::AppStoreConnect.IncludedItem38? Type2983 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -11986,11 +11986,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem75>? Type2987 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem33>? Type2987 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem75? Type2988 { get; set; }
+        public global::AppStoreConnect.IncludedItem33? Type2988 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -12202,11 +12202,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem76>? Type3041 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem96>? Type3041 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem76? Type3042 { get; set; }
+        public global::AppStoreConnect.IncludedItem96? Type3042 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -12518,11 +12518,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem77>? Type3120 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem175>? Type3120 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem77? Type3121 { get; set; }
+        public global::AppStoreConnect.IncludedItem175? Type3121 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -12542,11 +12542,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem78>? Type3126 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem172>? Type3126 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem78? Type3127 { get; set; }
+        public global::AppStoreConnect.IncludedItem172? Type3127 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -12646,11 +12646,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem79>? Type3152 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem167>? Type3152 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem79? Type3153 { get; set; }
+        public global::AppStoreConnect.IncludedItem167? Type3153 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -12670,11 +12670,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem80>? Type3158 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem163>? Type3158 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem80? Type3159 { get; set; }
+        public global::AppStoreConnect.IncludedItem163? Type3159 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -12782,11 +12782,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem81>? Type3186 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem141>? Type3186 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem81? Type3187 { get; set; }
+        public global::AppStoreConnect.IncludedItem141? Type3187 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -12802,11 +12802,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem82>? Type3191 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem137>? Type3191 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem82? Type3192 { get; set; }
+        public global::AppStoreConnect.IncludedItem137? Type3192 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -12934,11 +12934,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem83>? Type3224 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem150>? Type3224 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem83? Type3225 { get; set; }
+        public global::AppStoreConnect.IncludedItem150? Type3225 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -12958,11 +12958,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem84>? Type3230 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem146>? Type3230 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem84? Type3231 { get; set; }
+        public global::AppStoreConnect.IncludedItem146? Type3231 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -13074,11 +13074,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem85>? Type3259 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem104>? Type3259 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem85? Type3260 { get; set; }
+        public global::AppStoreConnect.IncludedItem104? Type3260 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -13102,11 +13102,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem86>? Type3266 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem97>? Type3266 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem86? Type3267 { get; set; }
+        public global::AppStoreConnect.IncludedItem97? Type3267 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -13298,11 +13298,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem87>? Type3315 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem91>? Type3315 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem87? Type3316 { get; set; }
+        public global::AppStoreConnect.IncludedItem91? Type3316 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -13318,11 +13318,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem88>? Type3320 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem84>? Type3320 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem88? Type3321 { get; set; }
+        public global::AppStoreConnect.IncludedItem84? Type3321 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -13522,11 +13522,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem89>? Type3371 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem74>? Type3371 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem89? Type3372 { get; set; }
+        public global::AppStoreConnect.IncludedItem74? Type3372 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -13550,11 +13550,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem90>? Type3378 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem63>? Type3378 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem90? Type3379 { get; set; }
+        public global::AppStoreConnect.IncludedItem63? Type3379 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -13782,11 +13782,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem91>? Type3436 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem151>? Type3436 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem91? Type3437 { get; set; }
+        public global::AppStoreConnect.IncludedItem151? Type3437 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -13802,11 +13802,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem92>? Type3441 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem147>? Type3441 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem92? Type3442 { get; set; }
+        public global::AppStoreConnect.IncludedItem147? Type3442 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -14042,11 +14042,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem93>? Type3501 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem122>? Type3501 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem93? Type3502 { get; set; }
+        public global::AppStoreConnect.IncludedItem122? Type3502 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -14062,11 +14062,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem94>? Type3506 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem116>? Type3506 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem94? Type3507 { get; set; }
+        public global::AppStoreConnect.IncludedItem116? Type3507 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -14174,11 +14174,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem95>? Type3534 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem85>? Type3534 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem95? Type3535 { get; set; }
+        public global::AppStoreConnect.IncludedItem85? Type3535 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -14194,11 +14194,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem96>? Type3539 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem75>? Type3539 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem96? Type3540 { get; set; }
+        public global::AppStoreConnect.IncludedItem75? Type3540 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -14378,11 +14378,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem97>? Type3585 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem158>? Type3585 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem97? Type3586 { get; set; }
+        public global::AppStoreConnect.IncludedItem158? Type3586 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -14402,11 +14402,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem98>? Type3591 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem152>? Type3591 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem98? Type3592 { get; set; }
+        public global::AppStoreConnect.IncludedItem152? Type3592 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -14642,11 +14642,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem99>? Type3651 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem130>? Type3651 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem99? Type3652 { get; set; }
+        public global::AppStoreConnect.IncludedItem130? Type3652 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -14666,11 +14666,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem100>? Type3657 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem123>? Type3657 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem100? Type3658 { get; set; }
+        public global::AppStoreConnect.IncludedItem123? Type3658 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -14798,11 +14798,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem101>? Type3690 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem76>? Type3690 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem101? Type3691 { get; set; }
+        public global::AppStoreConnect.IncludedItem76? Type3691 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -14818,11 +14818,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem102>? Type3695 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem68>? Type3695 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem102? Type3696 { get; set; }
+        public global::AppStoreConnect.IncludedItem68? Type3696 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -15346,11 +15346,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem103>? Type3827 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem55>? Type3827 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem103? Type3828 { get; set; }
+        public global::AppStoreConnect.IncludedItem55? Type3828 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -15378,11 +15378,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem104>? Type3835 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem48>? Type3835 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem104? Type3836 { get; set; }
+        public global::AppStoreConnect.IncludedItem48? Type3836 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -15554,11 +15554,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem105>? Type3879 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem117>? Type3879 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem105? Type3880 { get; set; }
+        public global::AppStoreConnect.IncludedItem117? Type3880 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -15734,11 +15734,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem106>? Type3924 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem49>? Type3924 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem106? Type3925 { get; set; }
+        public global::AppStoreConnect.IncludedItem49? Type3925 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -15754,11 +15754,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem107>? Type3929 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem39>? Type3929 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem107? Type3930 { get; set; }
+        public global::AppStoreConnect.IncludedItem39? Type3930 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -16054,11 +16054,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem108>? Type4004 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem168>? Type4004 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem108? Type4005 { get; set; }
+        public global::AppStoreConnect.IncludedItem168? Type4005 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -16074,11 +16074,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem109>? Type4009 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem164>? Type4009 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem109? Type4010 { get; set; }
+        public global::AppStoreConnect.IncludedItem164? Type4010 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -16178,11 +16178,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem110>? Type4035 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem176>? Type4035 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem110? Type4036 { get; set; }
+        public global::AppStoreConnect.IncludedItem176? Type4036 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -16202,11 +16202,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem111>? Type4041 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem173>? Type4041 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem111? Type4042 { get; set; }
+        public global::AppStoreConnect.IncludedItem173? Type4042 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -16310,11 +16310,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem112>? Type4068 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem142>? Type4068 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem112? Type4069 { get; set; }
+        public global::AppStoreConnect.IncludedItem142? Type4069 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -16330,11 +16330,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem113>? Type4073 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem138>? Type4073 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem113? Type4074 { get; set; }
+        public global::AppStoreConnect.IncludedItem138? Type4074 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -16602,11 +16602,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem114>? Type4141 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem180>? Type4141 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem114? Type4142 { get; set; }
+        public global::AppStoreConnect.IncludedItem180? Type4142 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -16622,11 +16622,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem115>? Type4146 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem177>? Type4146 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem115? Type4147 { get; set; }
+        public global::AppStoreConnect.IncludedItem177? Type4147 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -16726,11 +16726,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem116>? Type4172 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem184>? Type4172 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem116? Type4173 { get; set; }
+        public global::AppStoreConnect.IncludedItem184? Type4173 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -16750,11 +16750,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem117>? Type4178 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem183>? Type4178 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem117? Type4179 { get; set; }
+        public global::AppStoreConnect.IncludedItem183? Type4179 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -16862,11 +16862,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem118>? Type4206 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem186>? Type4206 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem118? Type4207 { get; set; }
+        public global::AppStoreConnect.IncludedItem186? Type4207 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -16882,11 +16882,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem119>? Type4211 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem185>? Type4211 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem119? Type4212 { get; set; }
+        public global::AppStoreConnect.IncludedItem185? Type4212 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -17002,11 +17002,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem120>? Type4241 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem159>? Type4241 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem120? Type4242 { get; set; }
+        public global::AppStoreConnect.IncludedItem159? Type4242 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -17022,11 +17022,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem121>? Type4246 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem153>? Type4246 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem121? Type4247 { get; set; }
+        public global::AppStoreConnect.IncludedItem153? Type4247 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -17150,11 +17150,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem122>? Type4278 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem169>? Type4278 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem122? Type4279 { get; set; }
+        public global::AppStoreConnect.IncludedItem169? Type4279 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -17174,11 +17174,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem123>? Type4284 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem165>? Type4284 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem123? Type4285 { get; set; }
+        public global::AppStoreConnect.IncludedItem165? Type4285 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -17294,11 +17294,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem124>? Type4314 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem131>? Type4314 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem124? Type4315 { get; set; }
+        public global::AppStoreConnect.IncludedItem131? Type4315 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -17318,11 +17318,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem125>? Type4320 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem124>? Type4320 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem125? Type4321 { get; set; }
+        public global::AppStoreConnect.IncludedItem124? Type4321 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -17534,11 +17534,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem126>? Type4374 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem118>? Type4374 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem126? Type4375 { get; set; }
+        public global::AppStoreConnect.IncludedItem118? Type4375 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -17554,11 +17554,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem127>? Type4379 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem105>? Type4379 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem127? Type4380 { get; set; }
+        public global::AppStoreConnect.IncludedItem105? Type4380 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -17718,11 +17718,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem128>? Type4420 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem154>? Type4420 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem128? Type4421 { get; set; }
+        public global::AppStoreConnect.IncludedItem154? Type4421 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -17738,11 +17738,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem129>? Type4425 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem148>? Type4425 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem129? Type4426 { get; set; }
+        public global::AppStoreConnect.IncludedItem148? Type4426 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -17922,11 +17922,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem130>? Type4471 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem92>? Type4471 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem130? Type4472 { get; set; }
+        public global::AppStoreConnect.IncludedItem92? Type4472 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -17942,11 +17942,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem131>? Type4476 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem86>? Type4476 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem131? Type4477 { get; set; }
+        public global::AppStoreConnect.IncludedItem86? Type4477 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -18174,11 +18174,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem132>? Type4534 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem106>? Type4534 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem132? Type4535 { get; set; }
+        public global::AppStoreConnect.IncludedItem106? Type4535 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -18194,11 +18194,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem133>? Type4539 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem98>? Type4539 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem133? Type4540 { get; set; }
+        public global::AppStoreConnect.IncludedItem98? Type4540 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -18514,11 +18514,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem134>? Type4619 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem160>? Type4619 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem134? Type4620 { get; set; }
+        public global::AppStoreConnect.IncludedItem160? Type4620 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -18662,11 +18662,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem136>? Type4656 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem143>? Type4656 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem136? Type4657 { get; set; }
+        public global::AppStoreConnect.IncludedItem143? Type4657 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -18690,11 +18690,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem137>? Type4663 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem139>? Type4663 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem137? Type4664 { get; set; }
+        public global::AppStoreConnect.IncludedItem139? Type4664 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -19882,11 +19882,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem138>? Type4961 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem99>? Type4961 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem138? Type4962 { get; set; }
+        public global::AppStoreConnect.IncludedItem99? Type4962 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -19906,11 +19906,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem139>? Type4967 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem93>? Type4967 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem139? Type4968 { get; set; }
+        public global::AppStoreConnect.IncludedItem93? Type4968 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -20074,11 +20074,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem140>? Type5009 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem107>? Type5009 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem140? Type5010 { get; set; }
+        public global::AppStoreConnect.IncludedItem107? Type5010 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -20190,11 +20190,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem141>? Type5038 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem125>? Type5038 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem141? Type5039 { get; set; }
+        public global::AppStoreConnect.IncludedItem125? Type5039 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -20358,11 +20358,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem143>? Type5080 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem69>? Type5080 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem143? Type5081 { get; set; }
+        public global::AppStoreConnect.IncludedItem69? Type5081 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -20506,11 +20506,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem144>? Type5117 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem87>? Type5117 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem144? Type5118 { get; set; }
+        public global::AppStoreConnect.IncludedItem87? Type5118 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -20526,11 +20526,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem145>? Type5122 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem77>? Type5122 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem145? Type5123 { get; set; }
+        public global::AppStoreConnect.IncludedItem77? Type5123 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -20570,7 +20570,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseType? Type5133 { get; set; }
+        public global::AppStoreConnect.InAppPurchaseType2? Type5133 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -20626,7 +20626,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseType2? Type5147 { get; set; }
+        public global::AppStoreConnect.InAppPurchaseType? Type5147 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -20782,11 +20782,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem146>? Type5186 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem50>? Type5186 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem146? Type5187 { get; set; }
+        public global::AppStoreConnect.IncludedItem50? Type5187 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -20802,11 +20802,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem147>? Type5191 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem40>? Type5191 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem147? Type5192 { get; set; }
+        public global::AppStoreConnect.IncludedItem40? Type5192 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -21182,11 +21182,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem148>? Type5286 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem26>? Type5286 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem148? Type5287 { get; set; }
+        public global::AppStoreConnect.IncludedItem26? Type5287 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -21202,11 +21202,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem149>? Type5291 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem20>? Type5291 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem149? Type5292 { get; set; }
+        public global::AppStoreConnect.IncludedItem20? Type5292 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -21510,11 +21510,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem150>? Type5368 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem64>? Type5368 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem150? Type5369 { get; set; }
+        public global::AppStoreConnect.IncludedItem64? Type5369 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -21530,11 +21530,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem151>? Type5373 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem56>? Type5373 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem151? Type5374 { get; set; }
+        public global::AppStoreConnect.IncludedItem56? Type5374 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -21618,11 +21618,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem152>? Type5395 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem11>? Type5395 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem152? Type5396 { get; set; }
+        public global::AppStoreConnect.IncludedItem11? Type5396 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -21638,11 +21638,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem153>? Type5400 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem7>? Type5400 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem153? Type5401 { get; set; }
+        public global::AppStoreConnect.IncludedItem7? Type5401 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -21770,11 +21770,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem154>? Type5433 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem57>? Type5433 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem154? Type5434 { get; set; }
+        public global::AppStoreConnect.IncludedItem57? Type5434 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -21794,11 +21794,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem155>? Type5439 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem51>? Type5439 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem155? Type5440 { get; set; }
+        public global::AppStoreConnect.IncludedItem51? Type5440 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -22034,11 +22034,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem156>? Type5499 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem108>? Type5499 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem156? Type5500 { get; set; }
+        public global::AppStoreConnect.IncludedItem108? Type5500 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -22054,11 +22054,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem157>? Type5504 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem100>? Type5504 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem157? Type5505 { get; set; }
+        public global::AppStoreConnect.IncludedItem100? Type5505 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -22162,11 +22162,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem158>? Type5531 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem58>? Type5531 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem158? Type5532 { get; set; }
+        public global::AppStoreConnect.IncludedItem58? Type5532 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -22182,11 +22182,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem159>? Type5536 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem52>? Type5536 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem159? Type5537 { get; set; }
+        public global::AppStoreConnect.IncludedItem52? Type5537 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -22282,11 +22282,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem160>? Type5561 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem78>? Type5561 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem160? Type5562 { get; set; }
+        public global::AppStoreConnect.IncludedItem78? Type5562 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -22366,11 +22366,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem161>? Type5582 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem41>? Type5582 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem161? Type5583 { get; set; }
+        public global::AppStoreConnect.IncludedItem41? Type5583 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -22386,11 +22386,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem162>? Type5587 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem34>? Type5587 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem162? Type5588 { get; set; }
+        public global::AppStoreConnect.IncludedItem34? Type5588 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -22702,11 +22702,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem163>? Type5666 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem88>? Type5666 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem163? Type5667 { get; set; }
+        public global::AppStoreConnect.IncludedItem88? Type5667 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -22730,11 +22730,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem164>? Type5673 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem79>? Type5673 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem164? Type5674 { get; set; }
+        public global::AppStoreConnect.IncludedItem79? Type5674 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -23082,11 +23082,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem165>? Type5761 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem59>? Type5761 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem165? Type5762 { get; set; }
+        public global::AppStoreConnect.IncludedItem59? Type5762 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -23102,11 +23102,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem166>? Type5766 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem53>? Type5766 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem166? Type5767 { get; set; }
+        public global::AppStoreConnect.IncludedItem53? Type5767 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -23382,7 +23382,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmProviderType? Type5836 { get; set; }
+        public global::AppStoreConnect.ScmProviderType2? Type5836 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -23390,7 +23390,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmProviderType2? Type5838 { get; set; }
+        public global::AppStoreConnect.ScmProviderType? Type5838 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -23498,11 +23498,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem167>? Type5865 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem42>? Type5865 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem167? Type5866 { get; set; }
+        public global::AppStoreConnect.IncludedItem42? Type5866 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -23518,11 +23518,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem168>? Type5870 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem30>? Type5870 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem168? Type5871 { get; set; }
+        public global::AppStoreConnect.IncludedItem30? Type5871 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -24018,11 +24018,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem169>? Type5995 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem119>? Type5995 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem169? Type5996 { get; set; }
+        public global::AppStoreConnect.IncludedItem119? Type5996 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -24038,11 +24038,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem170>? Type6000 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem109>? Type6000 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem170? Type6001 { get; set; }
+        public global::AppStoreConnect.IncludedItem109? Type6001 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -24146,11 +24146,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem171>? Type6027 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem65>? Type6027 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem171? Type6028 { get; set; }
+        public global::AppStoreConnect.IncludedItem65? Type6028 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -24166,11 +24166,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem172>? Type6032 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem60>? Type6032 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem172? Type6033 { get; set; }
+        public global::AppStoreConnect.IncludedItem60? Type6033 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -24506,11 +24506,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem173>? Type6117 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem149>? Type6117 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem173? Type6118 { get; set; }
+        public global::AppStoreConnect.IncludedItem149? Type6118 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -24526,11 +24526,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem174>? Type6122 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem144>? Type6122 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem174? Type6123 { get; set; }
+        public global::AppStoreConnect.IncludedItem144? Type6123 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -25082,11 +25082,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem175>? Type6261 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem132>? Type6261 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem175? Type6262 { get; set; }
+        public global::AppStoreConnect.IncludedItem132? Type6262 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -25186,11 +25186,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem176>? Type6287 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem94>? Type6287 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem176? Type6288 { get; set; }
+        public global::AppStoreConnect.IncludedItem94? Type6288 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -25206,11 +25206,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem177>? Type6292 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem89>? Type6292 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem177? Type6293 { get; set; }
+        public global::AppStoreConnect.IncludedItem89? Type6293 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -25566,11 +25566,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem178>? Type6382 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem66>? Type6382 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem178? Type6383 { get; set; }
+        public global::AppStoreConnect.IncludedItem66? Type6383 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -25586,11 +25586,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem179>? Type6387 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem61>? Type6387 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem179? Type6388 { get; set; }
+        public global::AppStoreConnect.IncludedItem61? Type6388 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -25738,11 +25738,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem180>? Type6425 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem170>? Type6425 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem180? Type6426 { get; set; }
+        public global::AppStoreConnect.IncludedItem170? Type6426 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -25850,11 +25850,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem181>? Type6453 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem145>? Type6453 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem181? Type6454 { get; set; }
+        public global::AppStoreConnect.IncludedItem145? Type6454 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -25870,11 +25870,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem182>? Type6458 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem140>? Type6458 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem182? Type6459 { get; set; }
+        public global::AppStoreConnect.IncludedItem140? Type6459 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -26102,11 +26102,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem183>? Type6516 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem80>? Type6516 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem183? Type6517 { get; set; }
+        public global::AppStoreConnect.IncludedItem80? Type6517 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -26122,11 +26122,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem184>? Type6521 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem70>? Type6521 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem184? Type6522 { get; set; }
+        public global::AppStoreConnect.IncludedItem70? Type6522 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -26442,11 +26442,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem185>? Type6601 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem31>? Type6601 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem185? Type6602 { get; set; }
+        public global::AppStoreConnect.IncludedItem31? Type6602 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -26466,11 +26466,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem186>? Type6607 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem28>? Type6607 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem186? Type6608 { get; set; }
+        public global::AppStoreConnect.IncludedItem28? Type6608 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -27022,7 +27022,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.WebhookEventType? Type6746 { get; set; }
+        public global::AppStoreConnect.WebhookEventType2? Type6746 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -27030,7 +27030,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.WebhookEventType2? Type6748 { get; set; }
+        public global::AppStoreConnect.WebhookEventType? Type6748 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -27086,7 +27086,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.WebhookEventType2>? Type6762 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.WebhookEventType>? Type6762 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -27222,11 +27222,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem188>? Type6796 { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.IncludedItem67>? Type6796 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.IncludedItem188? Type6797 { get; set; }
+        public global::AppStoreConnect.IncludedItem67? Type6797 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -51623,11 +51623,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem>? ListType9 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem182>? ListType9 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem2>? ListType10 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem178>? ListType10 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -51695,11 +51695,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem3>? ListType27 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem110>? ListType27 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem4>? ListType28 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem101>? ListType28 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -51723,7 +51723,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibraryPlacementType2>? ListType34 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.AppAssetLibraryPlacementType>? ListType34 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -51803,11 +51803,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem5>? ListType54 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem120>? ListType54 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem6>? ListType55 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem111>? ListType55 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -51831,11 +51831,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem7>? ListType61 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem179>? ListType61 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem8>? ListType62 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem174>? ListType62 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -51843,11 +51843,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem9>? ListType64 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem112>? ListType64 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem10>? ListType65 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem102>? ListType65 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -51863,11 +51863,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem11>? ListType69 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem8>? ListType69 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem12>? ListType70 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem5>? ListType70 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -51895,11 +51895,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem13>? ListType77 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem161>? ListType77 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem14>? ListType78 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem156>? ListType78 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -51919,11 +51919,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem15>? ListType83 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem133>? ListType83 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem16>? ListType84 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem126>? ListType84 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -51939,11 +51939,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem17>? ListType88 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem81>? ListType88 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem18>? ListType89 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem71>? ListType89 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -51963,11 +51963,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem20>? ListType94 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem114>? ListType94 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem21>? ListType95 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem103>? ListType95 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -51987,11 +51987,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem22>? ListType100 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem82>? ListType100 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem23>? ListType101 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem72>? ListType101 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52043,11 +52043,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem24>? ListType114 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem9>? ListType114 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem25>? ListType115 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem6>? ListType115 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52063,11 +52063,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem26>? ListType119 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem32>? ListType119 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem27>? ListType120 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem29>? ListType120 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52079,11 +52079,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem28>? ListType123 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem43>? ListType123 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem29>? ListType124 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem35>? ListType124 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52095,7 +52095,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem30>? ListType127 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem44>? ListType127 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52111,7 +52111,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem32>? ListType131 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem21>? ListType131 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52123,11 +52123,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem33>? ListType134 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem54>? ListType134 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem34>? ListType135 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem45>? ListType135 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52147,7 +52147,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem35>? ListType140 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem73>? ListType140 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52167,11 +52167,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem36>? ListType145 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem188>? ListType145 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem37>? ListType146 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem187>? ListType146 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52187,11 +52187,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem38>? ListType150 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem171>? ListType150 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem39>? ListType151 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem166>? ListType151 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52207,11 +52207,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem40>? ListType155 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem134>? ListType155 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem41>? ListType156 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem127>? ListType156 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52223,11 +52223,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem42>? ListType159 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem121>? ListType159 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem43>? ListType160 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem115>? ListType160 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52251,11 +52251,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem44>? ListType166 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem135>? ListType166 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem45>? ListType167 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem128>? ListType167 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52283,7 +52283,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem47>? ListType174 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem36>? ListType174 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52383,11 +52383,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem48>? ListType199 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem2>? ListType199 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem49>? ListType200 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem>? ListType200 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52403,11 +52403,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem50>? ListType204 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem95>? ListType204 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem51>? ListType205 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem90>? ListType205 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52415,11 +52415,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem52>? ListType207 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem47>? ListType207 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem53>? ListType208 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem37>? ListType208 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52467,11 +52467,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem54>? ListType220 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem136>? ListType220 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem55>? ListType221 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem129>? ListType221 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52483,11 +52483,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem56>? ListType224 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem162>? ListType224 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem57>? ListType225 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem157>? ListType225 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52503,11 +52503,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem58>? ListType229 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem15>? ListType229 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem59>? ListType230 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem12>? ListType230 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52555,11 +52555,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem60>? ListType242 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem22>? ListType242 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem61>? ListType243 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem16>? ListType243 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52599,11 +52599,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem62>? ListType253 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem27>? ListType253 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem63>? ListType254 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem23>? ListType254 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52627,11 +52627,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem64>? ListType260 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem4>? ListType260 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem65>? ListType261 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem3>? ListType261 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52655,11 +52655,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem66>? ListType267 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem13>? ListType267 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem67>? ListType268 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem10>? ListType268 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52687,11 +52687,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem68>? ListType275 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem24>? ListType275 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem69>? ListType276 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem17>? ListType276 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52719,11 +52719,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem70>? ListType283 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem18>? ListType283 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem71>? ListType284 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem14>? ListType284 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52743,11 +52743,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem72>? ListType289 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem25>? ListType289 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem73>? ListType290 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem19>? ListType290 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52771,11 +52771,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem74>? ListType296 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem38>? ListType296 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem75>? ListType297 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem33>? ListType297 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52795,7 +52795,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem76>? ListType302 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem96>? ListType302 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52815,19 +52815,19 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem77>? ListType307 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem175>? ListType307 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem78>? ListType308 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem172>? ListType308 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem79>? ListType309 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem167>? ListType309 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem80>? ListType310 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem163>? ListType310 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52835,11 +52835,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem81>? ListType312 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem141>? ListType312 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem82>? ListType313 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem137>? ListType313 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52851,11 +52851,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem83>? ListType316 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem150>? ListType316 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem84>? ListType317 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem146>? ListType317 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52867,11 +52867,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem85>? ListType320 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem104>? ListType320 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem86>? ListType321 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem97>? ListType321 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52895,11 +52895,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem87>? ListType327 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem91>? ListType327 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem88>? ListType328 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem84>? ListType328 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52927,11 +52927,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem89>? ListType335 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem74>? ListType335 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem90>? ListType336 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem63>? ListType336 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52947,11 +52947,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem91>? ListType340 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem151>? ListType340 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem92>? ListType341 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem147>? ListType341 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52971,11 +52971,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem93>? ListType346 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem122>? ListType346 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem94>? ListType347 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem116>? ListType347 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52987,11 +52987,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem95>? ListType350 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem85>? ListType350 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem96>? ListType351 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem75>? ListType351 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -52999,11 +52999,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem97>? ListType353 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem158>? ListType353 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem98>? ListType354 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem152>? ListType354 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53023,11 +53023,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem99>? ListType359 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem130>? ListType359 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem100>? ListType360 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem123>? ListType360 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53039,11 +53039,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem101>? ListType363 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem76>? ListType363 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem102>? ListType364 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem68>? ListType364 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53123,11 +53123,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem103>? ListType384 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem55>? ListType384 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem104>? ListType385 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem48>? ListType385 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53139,7 +53139,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem105>? ListType388 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem117>? ListType388 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53183,11 +53183,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem106>? ListType399 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem49>? ListType399 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem107>? ListType400 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem39>? ListType400 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53199,19 +53199,19 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem108>? ListType403 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem168>? ListType403 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem109>? ListType404 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem164>? ListType404 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem110>? ListType405 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem176>? ListType405 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem111>? ListType406 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem173>? ListType406 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53219,11 +53219,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem112>? ListType408 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem142>? ListType408 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem113>? ListType409 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem138>? ListType409 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53235,19 +53235,19 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem114>? ListType412 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem180>? ListType412 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem115>? ListType413 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem177>? ListType413 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem116>? ListType414 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem184>? ListType414 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem117>? ListType415 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem183>? ListType415 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53255,11 +53255,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem118>? ListType417 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem186>? ListType417 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem119>? ListType418 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem185>? ListType418 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53267,11 +53267,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem120>? ListType420 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem159>? ListType420 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem121>? ListType421 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem153>? ListType421 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53283,11 +53283,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem122>? ListType424 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem169>? ListType424 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem123>? ListType425 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem165>? ListType425 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53303,11 +53303,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem124>? ListType429 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem131>? ListType429 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem125>? ListType430 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem124>? ListType430 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53339,11 +53339,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem126>? ListType438 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem118>? ListType438 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem127>? ListType439 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem105>? ListType439 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53359,11 +53359,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem128>? ListType443 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem154>? ListType443 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem129>? ListType444 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem148>? ListType444 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53383,11 +53383,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem130>? ListType449 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem92>? ListType449 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem131>? ListType450 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem86>? ListType450 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53407,11 +53407,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem132>? ListType455 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem106>? ListType455 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem133>? ListType456 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem98>? ListType456 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53447,7 +53447,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem134>? ListType465 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem160>? ListType465 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53471,11 +53471,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem136>? ListType471 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem143>? ListType471 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem137>? ListType472 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem139>? ListType472 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53559,11 +53559,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem138>? ListType493 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem99>? ListType493 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem139>? ListType494 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem93>? ListType494 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53583,7 +53583,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem140>? ListType499 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem107>? ListType499 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53599,7 +53599,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem141>? ListType503 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem125>? ListType503 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53615,7 +53615,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem143>? ListType507 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem69>? ListType507 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53627,11 +53627,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem144>? ListType510 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem87>? ListType510 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem145>? ListType511 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem77>? ListType511 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53663,11 +53663,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem146>? ListType519 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem50>? ListType519 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem147>? ListType520 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem40>? ListType520 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53703,11 +53703,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem148>? ListType529 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem26>? ListType529 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem149>? ListType530 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem20>? ListType530 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53747,11 +53747,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem150>? ListType540 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem64>? ListType540 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem151>? ListType541 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem56>? ListType541 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53767,11 +53767,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem152>? ListType545 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem11>? ListType545 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem153>? ListType546 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem7>? ListType546 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53787,11 +53787,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem154>? ListType550 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem57>? ListType550 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem155>? ListType551 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem51>? ListType551 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53807,11 +53807,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem156>? ListType555 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem108>? ListType555 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem157>? ListType556 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem100>? ListType556 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53827,11 +53827,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem158>? ListType560 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem58>? ListType560 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem159>? ListType561 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem52>? ListType561 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53839,7 +53839,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem160>? ListType563 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem78>? ListType563 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53851,11 +53851,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem161>? ListType566 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem41>? ListType566 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem162>? ListType567 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem34>? ListType567 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53871,11 +53871,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem163>? ListType571 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem88>? ListType571 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem164>? ListType572 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem79>? ListType572 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53887,11 +53887,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem165>? ListType575 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem59>? ListType575 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem166>? ListType576 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem53>? ListType576 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53919,11 +53919,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem167>? ListType583 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem42>? ListType583 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem168>? ListType584 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem30>? ListType584 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53959,11 +53959,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem169>? ListType593 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem119>? ListType593 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem170>? ListType594 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem109>? ListType594 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53979,11 +53979,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem171>? ListType598 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem65>? ListType598 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem172>? ListType599 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem60>? ListType599 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -53999,11 +53999,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem173>? ListType603 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem149>? ListType603 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem174>? ListType604 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem144>? ListType604 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -54039,7 +54039,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem175>? ListType613 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem132>? ListType613 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -54059,11 +54059,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem176>? ListType618 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem94>? ListType618 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem177>? ListType619 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem89>? ListType619 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -54099,11 +54099,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem178>? ListType628 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem66>? ListType628 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem179>? ListType629 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem61>? ListType629 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -54111,7 +54111,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem180>? ListType631 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem170>? ListType631 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -54127,11 +54127,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem181>? ListType635 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem145>? ListType635 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem182>? ListType636 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem140>? ListType636 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -54155,11 +54155,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem183>? ListType642 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem80>? ListType642 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem184>? ListType643 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem70>? ListType643 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -54211,11 +54211,11 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem185>? ListType656 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem31>? ListType656 { get; set; }
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem186>? ListType657 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem28>? ListType657 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -54283,7 +54283,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.WebhookEventType2>? ListType674 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.WebhookEventType>? ListType674 { get; set; }
         /// <summary>
         ///
         /// </summary>
@@ -54295,7 +54295,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem188>? ListType677 { get; set; }
+        public global::System.Collections.Generic.List<global::AppStoreConnect.IncludedItem67>? ListType677 { get; set; }
         /// <summary>
         ///
         /// </summary>

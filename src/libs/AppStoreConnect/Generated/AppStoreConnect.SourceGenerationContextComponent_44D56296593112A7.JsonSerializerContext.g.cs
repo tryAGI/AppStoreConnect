@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CiActionTestConfigurationKind))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0248.Create_CiActionTestConfigurationKind2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0247.Create_CiActionTestConfigurationKind2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.CiActionTestConfigurationKind?))
                 {

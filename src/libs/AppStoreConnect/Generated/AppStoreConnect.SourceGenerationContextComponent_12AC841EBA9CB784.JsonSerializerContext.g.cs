@@ -9,7 +9,7 @@ namespace AppStoreConnect
         internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::AppStoreConnect.SourceGenerationContextMetadataScope>[] {
-                    static () => global::AppStoreConnect.SourceGenerationContextComponent_3E8029DAA5CDAF85.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_66B3C750A8DE3360.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_82EBF41229562BB4.MetadataScope,
+                    static () => global::AppStoreConnect.SourceGenerationContextComponent_034C032D10E5431C.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_25FC324682221F11.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_6F56DD464FB198A2.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_76F894C37BACBA43.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_7FB102C74A9083DC.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_854566A3BFC08432.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_A33EEFBFB9D9F2BB.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_DF727927E08FE852.MetadataScope,
                 }, ContributeConverters);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 
@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.IncludedItem110?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0712.Create_NullableIncludedItem1102(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0711.Create_NullableIncludedItem1102(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

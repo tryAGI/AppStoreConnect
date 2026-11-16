@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppsBetaAppLocalizationsGetToManyRelatedFieldsBetaAppLocalization))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0170.Create_AppsBetaAppLocalizationsGetToManyRelatedFieldsBetaAppLocalization2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0169.Create_AppsBetaAppLocalizationsGetToManyRelatedFieldsBetaAppLocalization2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppsBetaAppLocalizationsGetToManyRelatedFieldsBetaAppLocalization?))
                 {

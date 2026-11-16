@@ -12,44 +12,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppClipResponseIncludedItemDiscriminatorType? Type { get; }
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppClipDefaultExperience? AppClipDefaultExperiences { get; init; }
-#else
-        public global::AppStoreConnect.AppClipDefaultExperience? AppClipDefaultExperiences { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppClipDefaultExperiences))]
-#endif
-        public bool IsAppClipDefaultExperiences => AppClipDefaultExperiences != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppClipDefaultExperiences(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppClipDefaultExperience? value)
-        {
-            value = AppClipDefaultExperiences;
-            return IsAppClipDefaultExperiences;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.AppClipDefaultExperience PickAppClipDefaultExperiences() => AppClipDefaultExperiences is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipDefaultExperiences' but the value was {ToString()}.");
+        public global::AppStoreConnect.BetaGroupResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
@@ -87,29 +50,117 @@ namespace AppStoreConnect
         public global::AppStoreConnect.App PickApps() => Apps is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem12(global::AppStoreConnect.AppClipDefaultExperience value) => new IncludedItem12((global::AppStoreConnect.AppClipDefaultExperience?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppClipDefaultExperience?(IncludedItem12 @this) => @this.AppClipDefaultExperiences;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.BetaRecruitmentCriterion? BetaRecruitmentCriteria { get; init; }
+#else
+        public global::AppStoreConnect.BetaRecruitmentCriterion? BetaRecruitmentCriteria { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem12(global::AppStoreConnect.AppClipDefaultExperience? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaRecruitmentCriteria))]
+#endif
+        public bool IsBetaRecruitmentCriteria => BetaRecruitmentCriteria != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickBetaRecruitmentCriteria(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.BetaRecruitmentCriterion? value)
         {
-            AppClipDefaultExperiences = value;
+            value = BetaRecruitmentCriteria;
+            return IsBetaRecruitmentCriteria;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem12 FromAppClipDefaultExperiences(global::AppStoreConnect.AppClipDefaultExperience? value) => new IncludedItem12(value);
+        public global::AppStoreConnect.BetaRecruitmentCriterion PickBetaRecruitmentCriteria() => BetaRecruitmentCriteria is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaRecruitmentCriteria' but the value was {ToString()}.");
 
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.BetaTester? BetaTesters { get; init; }
+#else
+        public global::AppStoreConnect.BetaTester? BetaTesters { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaTesters))]
+#endif
+        public bool IsBetaTesters => BetaTesters != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickBetaTesters(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.BetaTester? value)
+        {
+            value = BetaTesters;
+            return IsBetaTesters;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::AppStoreConnect.BetaTester PickBetaTesters() => BetaTesters is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaTesters' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.Build? Builds { get; init; }
+#else
+        public global::AppStoreConnect.Build? Builds { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
+#endif
+        public bool IsBuilds => Builds != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickBuilds(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.Build? value)
+        {
+            value = Builds;
+            return IsBuilds;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -136,32 +187,109 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        public static implicit operator IncludedItem12(global::AppStoreConnect.BetaRecruitmentCriterion value) => new IncludedItem12((global::AppStoreConnect.BetaRecruitmentCriterion?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.BetaRecruitmentCriterion?(IncludedItem12 @this) => @this.BetaRecruitmentCriteria;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem12(global::AppStoreConnect.BetaRecruitmentCriterion? value)
+        {
+            BetaRecruitmentCriteria = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem12 FromBetaRecruitmentCriteria(global::AppStoreConnect.BetaRecruitmentCriterion? value) => new IncludedItem12(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem12(global::AppStoreConnect.BetaTester value) => new IncludedItem12((global::AppStoreConnect.BetaTester?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.BetaTester?(IncludedItem12 @this) => @this.BetaTesters;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem12(global::AppStoreConnect.BetaTester? value)
+        {
+            BetaTesters = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem12 FromBetaTesters(global::AppStoreConnect.BetaTester? value) => new IncludedItem12(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem12(global::AppStoreConnect.Build value) => new IncludedItem12((global::AppStoreConnect.Build?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.Build?(IncludedItem12 @this) => @this.Builds;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem12(global::AppStoreConnect.Build? value)
+        {
+            Builds = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem12 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem12(value);
+
+        /// <summary>
+        ///
+        /// </summary>
         public IncludedItem12(
-            global::AppStoreConnect.AppClipResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppClipDefaultExperience? appClipDefaultExperiences,
-            global::AppStoreConnect.App? apps
+            global::AppStoreConnect.BetaGroupResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.App? apps,
+            global::AppStoreConnect.BetaRecruitmentCriterion? betaRecruitmentCriteria,
+            global::AppStoreConnect.BetaTester? betaTesters,
+            global::AppStoreConnect.Build? builds
             )
         {
             Type = type;
 
-            AppClipDefaultExperiences = appClipDefaultExperiences;
             Apps = apps;
+            BetaRecruitmentCriteria = betaRecruitmentCriteria;
+            BetaTesters = betaTesters;
+            Builds = builds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Apps as object ??
-            AppClipDefaultExperiences as object
+            Builds as object ??
+            BetaTesters as object ??
+            BetaRecruitmentCriteria as object ??
+            Apps as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppClipDefaultExperiences?.ToString() ??
-            Apps?.ToString()
+            Apps?.ToString() ??
+            BetaRecruitmentCriteria?.ToString() ??
+            BetaTesters?.ToString() ??
+            Builds?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +297,17 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppClipDefaultExperiences && !IsApps || !IsAppClipDefaultExperiences && IsApps;
+            return IsApps && !IsBetaRecruitmentCriteria && !IsBetaTesters && !IsBuilds || !IsApps && IsBetaRecruitmentCriteria && !IsBetaTesters && !IsBuilds || !IsApps && !IsBetaRecruitmentCriteria && IsBetaTesters && !IsBuilds || !IsApps && !IsBetaRecruitmentCriteria && !IsBetaTesters && IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppClipDefaultExperience, TResult>? appClipDefaultExperiences = null,
             global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
+            global::System.Func<global::AppStoreConnect.BetaRecruitmentCriterion, TResult>? betaRecruitmentCriteria = null,
+            global::System.Func<global::AppStoreConnect.BetaTester, TResult>? betaTesters = null,
+            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppClipDefaultExperiences is { } __value0 && appClipDefaultExperiences != null)
+            if (Apps is { } __value0 && apps != null)
             {
-                return appClipDefaultExperiences(__value0);
+                return apps(__value0);
             }
-            else if (Apps is { } __value1 && apps != null)
+            else if (BetaRecruitmentCriteria is { } __value1 && betaRecruitmentCriteria != null)
             {
-                return apps(__value1);
+                return betaRecruitmentCriteria(__value1);
+            }
+            else if (BetaTesters is { } __value2 && betaTesters != null)
+            {
+                return betaTesters(__value2);
+            }
+            else if (Builds is { } __value3 && builds != null)
+            {
+                return builds(__value3);
             }
 
             return default(TResult);
@@ -201,9 +339,13 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppClipDefaultExperience>? appClipDefaultExperiences = null,
-
             global::System.Action<global::AppStoreConnect.App>? apps = null,
+
+            global::System.Action<global::AppStoreConnect.BetaRecruitmentCriterion>? betaRecruitmentCriteria = null,
+
+            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
+
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppClipDefaultExperiences is { } __value0)
+            if (Apps is { } __value0)
             {
-                appClipDefaultExperiences?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (Apps is { } __value1)
+            else if (BetaRecruitmentCriteria is { } __value1)
             {
-                apps?.Invoke(__value1);
+                betaRecruitmentCriteria?.Invoke(__value1);
+            }
+            else if (BetaTesters is { } __value2)
+            {
+                betaTesters?.Invoke(__value2);
+            }
+            else if (Builds is { } __value3)
+            {
+                builds?.Invoke(__value3);
             }
         }
 
@@ -225,8 +375,10 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppClipDefaultExperience>? appClipDefaultExperiences = null,
             global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.BetaRecruitmentCriterion>? betaRecruitmentCriteria = null,
+            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppClipDefaultExperiences is { } __value0)
+            if (Apps is { } __value0)
             {
-                appClipDefaultExperiences?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (Apps is { } __value1)
+            else if (BetaRecruitmentCriteria is { } __value1)
             {
-                apps?.Invoke(__value1);
+                betaRecruitmentCriteria?.Invoke(__value1);
+            }
+            else if (BetaTesters is { } __value2)
+            {
+                betaTesters?.Invoke(__value2);
+            }
+            else if (Builds is { } __value3)
+            {
+                builds?.Invoke(__value3);
             }
         }
 
@@ -251,10 +411,14 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppClipDefaultExperiences,
-                typeof(global::AppStoreConnect.AppClipDefaultExperience),
                 Apps,
                 typeof(global::AppStoreConnect.App),
+                BetaRecruitmentCriteria,
+                typeof(global::AppStoreConnect.BetaRecruitmentCriterion),
+                BetaTesters,
+                typeof(global::AppStoreConnect.BetaTester),
+                Builds,
+                typeof(global::AppStoreConnect.Build),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +435,10 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem12 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppClipDefaultExperience?>.Default.Equals(AppClipDefaultExperiences, other.AppClipDefaultExperiences) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaRecruitmentCriterion?>.Default.Equals(BetaRecruitmentCriteria, other.BetaRecruitmentCriteria) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaTester?>.Default.Equals(BetaTesters, other.BetaTesters) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
                 ;
         }
 

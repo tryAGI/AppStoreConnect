@@ -12,220 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEncryptionDeclarationResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppPricesV2ResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppEncryptionDeclarationDocument? AppEncryptionDeclarationDocuments { get; init; }
+        public global::AppStoreConnect.AppPricePointV3? AppPricePoints { get; init; }
 #else
-        public global::AppStoreConnect.AppEncryptionDeclarationDocument? AppEncryptionDeclarationDocuments { get; }
+        public global::AppStoreConnect.AppPricePointV3? AppPricePoints { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEncryptionDeclarationDocuments))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppPricePoints))]
 #endif
-        public bool IsAppEncryptionDeclarationDocuments => AppEncryptionDeclarationDocuments != null;
+        public bool IsAppPricePoints => AppPricePoints != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppEncryptionDeclarationDocuments(
+        public bool TryPickAppPricePoints(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppEncryptionDeclarationDocument? value)
+            out global::AppStoreConnect.AppPricePointV3? value)
         {
-            value = AppEncryptionDeclarationDocuments;
-            return IsAppEncryptionDeclarationDocuments;
+            value = AppPricePoints;
+            return IsAppPricePoints;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEncryptionDeclarationDocument PickAppEncryptionDeclarationDocuments() => AppEncryptionDeclarationDocuments is { } value
+        public global::AppStoreConnect.AppPricePointV3 PickAppPricePoints() => AppPricePoints is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEncryptionDeclarationDocuments' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppPricePoints' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.App? Apps { get; init; }
+        public global::AppStoreConnect.Territory? Territories { get; init; }
 #else
-        public global::AppStoreConnect.App? Apps { get; }
+        public global::AppStoreConnect.Territory? Territories { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Territories))]
 #endif
-        public bool IsApps => Apps != null;
+        public bool IsTerritories => Territories != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickApps(
+        public bool TryPickTerritories(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.App? value)
+            out global::AppStoreConnect.Territory? value)
         {
-            value = Apps;
-            return IsApps;
+            value = Territories;
+            return IsTerritories;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickApps() => Apps is { } value
+        public global::AppStoreConnect.Territory PickTerritories() => Territories is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Territories' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem21(global::AppStoreConnect.AppPricePointV3 value) => new IncludedItem21((global::AppStoreConnect.AppPricePointV3?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Build? Builds { get; init; }
-#else
-        public global::AppStoreConnect.Build? Builds { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.AppPricePointV3?(IncludedItem21 @this) => @this.AppPricePoints;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
-#endif
-        public bool IsBuilds => Builds != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickBuilds(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.Build? value)
+        public IncludedItem21(global::AppStoreConnect.AppPricePointV3? value)
         {
-            value = Builds;
-            return IsBuilds;
+            AppPricePoints = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem21(global::AppStoreConnect.AppEncryptionDeclarationDocument value) => new IncludedItem21((global::AppStoreConnect.AppEncryptionDeclarationDocument?)value);
+        public static IncludedItem21 FromAppPricePoints(global::AppStoreConnect.AppPricePointV3? value) => new IncludedItem21(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppEncryptionDeclarationDocument?(IncludedItem21 @this) => @this.AppEncryptionDeclarationDocuments;
+        public static implicit operator IncludedItem21(global::AppStoreConnect.Territory value) => new IncludedItem21((global::AppStoreConnect.Territory?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem21(global::AppStoreConnect.AppEncryptionDeclarationDocument? value)
+        public static implicit operator global::AppStoreConnect.Territory?(IncludedItem21 @this) => @this.Territories;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem21(global::AppStoreConnect.Territory? value)
         {
-            AppEncryptionDeclarationDocuments = value;
+            Territories = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem21 FromAppEncryptionDeclarationDocuments(global::AppStoreConnect.AppEncryptionDeclarationDocument? value) => new IncludedItem21(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem21(global::AppStoreConnect.App value) => new IncludedItem21((global::AppStoreConnect.App?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.App?(IncludedItem21 @this) => @this.Apps;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem21(global::AppStoreConnect.App? value)
-        {
-            Apps = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem21 FromApps(global::AppStoreConnect.App? value) => new IncludedItem21(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem21(global::AppStoreConnect.Build value) => new IncludedItem21((global::AppStoreConnect.Build?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.Build?(IncludedItem21 @this) => @this.Builds;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem21(global::AppStoreConnect.Build? value)
-        {
-            Builds = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem21 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem21(value);
+        public static IncludedItem21 FromTerritories(global::AppStoreConnect.Territory? value) => new IncludedItem21(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem21(
-            global::AppStoreConnect.AppEncryptionDeclarationResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppEncryptionDeclarationDocument? appEncryptionDeclarationDocuments,
-            global::AppStoreConnect.App? apps,
-            global::AppStoreConnect.Build? builds
+            global::AppStoreConnect.AppPricesV2ResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppPricePointV3? appPricePoints,
+            global::AppStoreConnect.Territory? territories
             )
         {
             Type = type;
 
-            AppEncryptionDeclarationDocuments = appEncryptionDeclarationDocuments;
-            Apps = apps;
-            Builds = builds;
+            AppPricePoints = appPricePoints;
+            Territories = territories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Builds as object ??
-            Apps as object ??
-            AppEncryptionDeclarationDocuments as object
+            Territories as object ??
+            AppPricePoints as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppEncryptionDeclarationDocuments?.ToString() ??
-            Apps?.ToString() ??
-            Builds?.ToString()
+            AppPricePoints?.ToString() ??
+            Territories?.ToString()
             ;
 
         /// <summary>
@@ -233,16 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppEncryptionDeclarationDocuments && !IsApps && !IsBuilds || !IsAppEncryptionDeclarationDocuments && IsApps && !IsBuilds || !IsAppEncryptionDeclarationDocuments && !IsApps && IsBuilds;
+            return IsAppPricePoints && !IsTerritories || !IsAppPricePoints && IsTerritories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppEncryptionDeclarationDocument, TResult>? appEncryptionDeclarationDocuments = null,
-            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
-            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
+            global::System.Func<global::AppStoreConnect.AppPricePointV3, TResult>? appPricePoints = null,
+            global::System.Func<global::AppStoreConnect.Territory, TResult>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -250,17 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppEncryptionDeclarationDocuments is { } __value0 && appEncryptionDeclarationDocuments != null)
+            if (AppPricePoints is { } __value0 && appPricePoints != null)
             {
-                return appEncryptionDeclarationDocuments(__value0);
+                return appPricePoints(__value0);
             }
-            else if (Apps is { } __value1 && apps != null)
+            else if (Territories is { } __value1 && territories != null)
             {
-                return apps(__value1);
-            }
-            else if (Builds is { } __value2 && builds != null)
-            {
-                return builds(__value2);
+                return territories(__value1);
             }
 
             return default(TResult);
@@ -270,11 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppEncryptionDeclarationDocument>? appEncryptionDeclarationDocuments = null,
+            global::System.Action<global::AppStoreConnect.AppPricePointV3>? appPricePoints = null,
 
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
-
-            global::System.Action<global::AppStoreConnect.Build>? builds = null,
+            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -282,17 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppEncryptionDeclarationDocuments is { } __value0)
+            if (AppPricePoints is { } __value0)
             {
-                appEncryptionDeclarationDocuments?.Invoke(__value0);
+                appPricePoints?.Invoke(__value0);
             }
-            else if (Apps is { } __value1)
+            else if (Territories is { } __value1)
             {
-                apps?.Invoke(__value1);
-            }
-            else if (Builds is { } __value2)
-            {
-                builds?.Invoke(__value2);
+                territories?.Invoke(__value1);
             }
         }
 
@@ -300,9 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppEncryptionDeclarationDocument>? appEncryptionDeclarationDocuments = null,
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
-            global::System.Action<global::AppStoreConnect.Build>? builds = null,
+            global::System.Action<global::AppStoreConnect.AppPricePointV3>? appPricePoints = null,
+            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -310,17 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppEncryptionDeclarationDocuments is { } __value0)
+            if (AppPricePoints is { } __value0)
             {
-                appEncryptionDeclarationDocuments?.Invoke(__value0);
+                appPricePoints?.Invoke(__value0);
             }
-            else if (Apps is { } __value1)
+            else if (Territories is { } __value1)
             {
-                apps?.Invoke(__value1);
-            }
-            else if (Builds is { } __value2)
-            {
-                builds?.Invoke(__value2);
+                territories?.Invoke(__value1);
             }
         }
 
@@ -331,12 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppEncryptionDeclarationDocuments,
-                typeof(global::AppStoreConnect.AppEncryptionDeclarationDocument),
-                Apps,
-                typeof(global::AppStoreConnect.App),
-                Builds,
-                typeof(global::AppStoreConnect.Build),
+                AppPricePoints,
+                typeof(global::AppStoreConnect.AppPricePointV3),
+                Territories,
+                typeof(global::AppStoreConnect.Territory),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -353,9 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem21 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEncryptionDeclarationDocument?>.Default.Equals(AppEncryptionDeclarationDocuments, other.AppEncryptionDeclarationDocuments) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppPricePointV3?>.Default.Equals(AppPricePoints, other.AppPricePoints) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Territory?>.Default.Equals(Territories, other.Territories)
                 ;
         }
 

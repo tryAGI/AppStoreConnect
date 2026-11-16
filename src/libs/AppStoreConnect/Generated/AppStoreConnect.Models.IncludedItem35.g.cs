@@ -12,156 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreReviewDetailResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppPricePointV3ResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreReviewAttachment? AppStoreReviewAttachments { get; init; }
+        public global::AppStoreConnect.App? Apps { get; init; }
 #else
-        public global::AppStoreConnect.AppStoreReviewAttachment? AppStoreReviewAttachments { get; }
+        public global::AppStoreConnect.App? Apps { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreReviewAttachments))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
 #endif
-        public bool IsAppStoreReviewAttachments => AppStoreReviewAttachments != null;
+        public bool IsApps => Apps != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreReviewAttachments(
+        public bool TryPickApps(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppStoreReviewAttachment? value)
+            out global::AppStoreConnect.App? value)
         {
-            value = AppStoreReviewAttachments;
-            return IsAppStoreReviewAttachments;
+            value = Apps;
+            return IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreReviewAttachment PickAppStoreReviewAttachments() => AppStoreReviewAttachments is { } value
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreReviewAttachments' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; init; }
+        public global::AppStoreConnect.Territory? Territories { get; init; }
 #else
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; }
+        public global::AppStoreConnect.Territory? Territories { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Territories))]
 #endif
-        public bool IsAppStoreVersions => AppStoreVersions != null;
+        public bool IsTerritories => Territories != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreVersions(
+        public bool TryPickTerritories(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppStoreVersion? value)
+            out global::AppStoreConnect.Territory? value)
         {
-            value = AppStoreVersions;
-            return IsAppStoreVersions;
+            value = Territories;
+            return IsTerritories;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => AppStoreVersions is { } value
+        public global::AppStoreConnect.Territory PickTerritories() => Territories is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Territories' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem35(global::AppStoreConnect.AppStoreReviewAttachment value) => new IncludedItem35((global::AppStoreConnect.AppStoreReviewAttachment?)value);
+        public static implicit operator IncludedItem35(global::AppStoreConnect.App value) => new IncludedItem35((global::AppStoreConnect.App?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreReviewAttachment?(IncludedItem35 @this) => @this.AppStoreReviewAttachments;
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem35 @this) => @this.Apps;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem35(global::AppStoreConnect.AppStoreReviewAttachment? value)
+        public IncludedItem35(global::AppStoreConnect.App? value)
         {
-            AppStoreReviewAttachments = value;
+            Apps = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem35 FromAppStoreReviewAttachments(global::AppStoreConnect.AppStoreReviewAttachment? value) => new IncludedItem35(value);
+        public static IncludedItem35 FromApps(global::AppStoreConnect.App? value) => new IncludedItem35(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem35(global::AppStoreConnect.AppStoreVersion value) => new IncludedItem35((global::AppStoreConnect.AppStoreVersion?)value);
+        public static implicit operator IncludedItem35(global::AppStoreConnect.Territory value) => new IncludedItem35((global::AppStoreConnect.Territory?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem35 @this) => @this.AppStoreVersions;
+        public static implicit operator global::AppStoreConnect.Territory?(IncludedItem35 @this) => @this.Territories;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem35(global::AppStoreConnect.AppStoreVersion? value)
+        public IncludedItem35(global::AppStoreConnect.Territory? value)
         {
-            AppStoreVersions = value;
+            Territories = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem35 FromAppStoreVersions(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem35(value);
+        public static IncludedItem35 FromTerritories(global::AppStoreConnect.Territory? value) => new IncludedItem35(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem35(
-            global::AppStoreConnect.AppStoreReviewDetailResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppStoreReviewAttachment? appStoreReviewAttachments,
-            global::AppStoreConnect.AppStoreVersion? appStoreVersions
+            global::AppStoreConnect.AppPricePointV3ResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.App? apps,
+            global::AppStoreConnect.Territory? territories
             )
         {
             Type = type;
 
-            AppStoreReviewAttachments = appStoreReviewAttachments;
-            AppStoreVersions = appStoreVersions;
+            Apps = apps;
+            Territories = territories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            AppStoreVersions as object ??
-            AppStoreReviewAttachments as object
+            Territories as object ??
+            Apps as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppStoreReviewAttachments?.ToString() ??
-            AppStoreVersions?.ToString()
+            Apps?.ToString() ??
+            Territories?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppStoreReviewAttachments && !IsAppStoreVersions || !IsAppStoreReviewAttachments && IsAppStoreVersions;
+            return IsApps && !IsTerritories || !IsApps && IsTerritories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppStoreReviewAttachment, TResult>? appStoreReviewAttachments = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersions = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
+            global::System.Func<global::AppStoreConnect.Territory, TResult>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppStoreReviewAttachments is { } __value0 && appStoreReviewAttachments != null)
+            if (Apps is { } __value0 && apps != null)
             {
-                return appStoreReviewAttachments(__value0);
+                return apps(__value0);
             }
-            else if (AppStoreVersions is { } __value1 && appStoreVersions != null)
+            else if (Territories is { } __value1 && territories != null)
             {
-                return appStoreVersions(__value1);
+                return territories(__value1);
             }
 
             return default(TResult);
@@ -201,9 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppStoreReviewAttachment>? appStoreReviewAttachments = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
 
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
+            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppStoreReviewAttachments is { } __value0)
+            if (Apps is { } __value0)
             {
-                appStoreReviewAttachments?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (AppStoreVersions is { } __value1)
+            else if (Territories is { } __value1)
             {
-                appStoreVersions?.Invoke(__value1);
+                territories?.Invoke(__value1);
             }
         }
 
@@ -225,8 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppStoreReviewAttachment>? appStoreReviewAttachments = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppStoreReviewAttachments is { } __value0)
+            if (Apps is { } __value0)
             {
-                appStoreReviewAttachments?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (AppStoreVersions is { } __value1)
+            else if (Territories is { } __value1)
             {
-                appStoreVersions?.Invoke(__value1);
+                territories?.Invoke(__value1);
             }
         }
 
@@ -251,10 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppStoreReviewAttachments,
-                typeof(global::AppStoreConnect.AppStoreReviewAttachment),
-                AppStoreVersions,
-                typeof(global::AppStoreConnect.AppStoreVersion),
+                Apps,
+                typeof(global::AppStoreConnect.App),
+                Territories,
+                typeof(global::AppStoreConnect.Territory),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem35 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreReviewAttachment?>.Default.Equals(AppStoreReviewAttachments, other.AppStoreReviewAttachments) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions, other.AppStoreVersions)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Territory?>.Default.Equals(Territories, other.Territories)
                 ;
         }
 

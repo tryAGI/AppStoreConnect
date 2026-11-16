@@ -12,284 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaGroupsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.RetentionMessagesResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.App? Apps { get; init; }
+        public global::AppStoreConnect.RetentionMessageVersion? RetentionMessageVersions { get; init; }
 #else
-        public global::AppStoreConnect.App? Apps { get; }
+        public global::AppStoreConnect.RetentionMessageVersion? RetentionMessageVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RetentionMessageVersions))]
 #endif
-        public bool IsApps => Apps != null;
+        public bool IsRetentionMessageVersions => RetentionMessageVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickApps(
+        public bool TryPickRetentionMessageVersions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.App? value)
+            out global::AppStoreConnect.RetentionMessageVersion? value)
         {
-            value = Apps;
-            return IsApps;
+            value = RetentionMessageVersions;
+            return IsRetentionMessageVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickApps() => Apps is { } value
+        public global::AppStoreConnect.RetentionMessageVersion PickRetentionMessageVersions() => RetentionMessageVersions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RetentionMessageVersions' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BetaRecruitmentCriterion? BetaRecruitmentCriteria { get; init; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
 #else
-        public global::AppStoreConnect.BetaRecruitmentCriterion? BetaRecruitmentCriteria { get; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaRecruitmentCriteria))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
 #endif
-        public bool IsBetaRecruitmentCriteria => BetaRecruitmentCriteria != null;
+        public bool IsSubscriptions => Subscriptions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBetaRecruitmentCriteria(
+        public bool TryPickSubscriptions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BetaRecruitmentCriterion? value)
+            out global::AppStoreConnect.Subscription? value)
         {
-            value = BetaRecruitmentCriteria;
-            return IsBetaRecruitmentCriteria;
+            value = Subscriptions;
+            return IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaRecruitmentCriterion PickBetaRecruitmentCriteria() => BetaRecruitmentCriteria is { } value
+        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaRecruitmentCriteria' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem58(global::AppStoreConnect.RetentionMessageVersion value) => new IncludedItem58((global::AppStoreConnect.RetentionMessageVersion?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BetaTester? BetaTesters { get; init; }
-#else
-        public global::AppStoreConnect.BetaTester? BetaTesters { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.RetentionMessageVersion?(IncludedItem58 @this) => @this.RetentionMessageVersions;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaTesters))]
-#endif
-        public bool IsBetaTesters => BetaTesters != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickBetaTesters(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.BetaTester? value)
+        public IncludedItem58(global::AppStoreConnect.RetentionMessageVersion? value)
         {
-            value = BetaTesters;
-            return IsBetaTesters;
+            RetentionMessageVersions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaTester PickBetaTesters() => BetaTesters is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaTesters' but the value was {ToString()}.");
+        public static IncludedItem58 FromRetentionMessageVersions(global::AppStoreConnect.RetentionMessageVersion? value) => new IncludedItem58(value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Build? Builds { get; init; }
-#else
-        public global::AppStoreConnect.Build? Builds { get; }
-#endif
+        public static implicit operator IncludedItem58(global::AppStoreConnect.Subscription value) => new IncludedItem58((global::AppStoreConnect.Subscription?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
-#endif
-        public bool IsBuilds => Builds != null;
+        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem58 @this) => @this.Subscriptions;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBuilds(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.Build? value)
+        public IncludedItem58(global::AppStoreConnect.Subscription? value)
         {
-            value = Builds;
-            return IsBuilds;
+            Subscriptions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem58(global::AppStoreConnect.App value) => new IncludedItem58((global::AppStoreConnect.App?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.App?(IncludedItem58 @this) => @this.Apps;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem58(global::AppStoreConnect.App? value)
-        {
-            Apps = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem58 FromApps(global::AppStoreConnect.App? value) => new IncludedItem58(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem58(global::AppStoreConnect.BetaRecruitmentCriterion value) => new IncludedItem58((global::AppStoreConnect.BetaRecruitmentCriterion?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.BetaRecruitmentCriterion?(IncludedItem58 @this) => @this.BetaRecruitmentCriteria;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem58(global::AppStoreConnect.BetaRecruitmentCriterion? value)
-        {
-            BetaRecruitmentCriteria = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem58 FromBetaRecruitmentCriteria(global::AppStoreConnect.BetaRecruitmentCriterion? value) => new IncludedItem58(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem58(global::AppStoreConnect.BetaTester value) => new IncludedItem58((global::AppStoreConnect.BetaTester?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.BetaTester?(IncludedItem58 @this) => @this.BetaTesters;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem58(global::AppStoreConnect.BetaTester? value)
-        {
-            BetaTesters = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem58 FromBetaTesters(global::AppStoreConnect.BetaTester? value) => new IncludedItem58(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem58(global::AppStoreConnect.Build value) => new IncludedItem58((global::AppStoreConnect.Build?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.Build?(IncludedItem58 @this) => @this.Builds;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem58(global::AppStoreConnect.Build? value)
-        {
-            Builds = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem58 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem58(value);
+        public static IncludedItem58 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem58(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem58(
-            global::AppStoreConnect.BetaGroupsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.App? apps,
-            global::AppStoreConnect.BetaRecruitmentCriterion? betaRecruitmentCriteria,
-            global::AppStoreConnect.BetaTester? betaTesters,
-            global::AppStoreConnect.Build? builds
+            global::AppStoreConnect.RetentionMessagesResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.RetentionMessageVersion? retentionMessageVersions,
+            global::AppStoreConnect.Subscription? subscriptions
             )
         {
             Type = type;
 
-            Apps = apps;
-            BetaRecruitmentCriteria = betaRecruitmentCriteria;
-            BetaTesters = betaTesters;
-            Builds = builds;
+            RetentionMessageVersions = retentionMessageVersions;
+            Subscriptions = subscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Builds as object ??
-            BetaTesters as object ??
-            BetaRecruitmentCriteria as object ??
-            Apps as object
+            Subscriptions as object ??
+            RetentionMessageVersions as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            Apps?.ToString() ??
-            BetaRecruitmentCriteria?.ToString() ??
-            BetaTesters?.ToString() ??
-            Builds?.ToString()
+            RetentionMessageVersions?.ToString() ??
+            Subscriptions?.ToString()
             ;
 
         /// <summary>
@@ -297,17 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsApps && !IsBetaRecruitmentCriteria && !IsBetaTesters && !IsBuilds || !IsApps && IsBetaRecruitmentCriteria && !IsBetaTesters && !IsBuilds || !IsApps && !IsBetaRecruitmentCriteria && IsBetaTesters && !IsBuilds || !IsApps && !IsBetaRecruitmentCriteria && !IsBetaTesters && IsBuilds;
+            return IsRetentionMessageVersions && !IsSubscriptions || !IsRetentionMessageVersions && IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
-            global::System.Func<global::AppStoreConnect.BetaRecruitmentCriterion, TResult>? betaRecruitmentCriteria = null,
-            global::System.Func<global::AppStoreConnect.BetaTester, TResult>? betaTesters = null,
-            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
+            global::System.Func<global::AppStoreConnect.RetentionMessageVersion, TResult>? retentionMessageVersions = null,
+            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -315,21 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0 && apps != null)
+            if (RetentionMessageVersions is { } __value0 && retentionMessageVersions != null)
             {
-                return apps(__value0);
+                return retentionMessageVersions(__value0);
             }
-            else if (BetaRecruitmentCriteria is { } __value1 && betaRecruitmentCriteria != null)
+            else if (Subscriptions is { } __value1 && subscriptions != null)
             {
-                return betaRecruitmentCriteria(__value1);
-            }
-            else if (BetaTesters is { } __value2 && betaTesters != null)
-            {
-                return betaTesters(__value2);
-            }
-            else if (Builds is { } __value3 && builds != null)
-            {
-                return builds(__value3);
+                return subscriptions(__value1);
             }
 
             return default(TResult);
@@ -339,13 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.RetentionMessageVersion>? retentionMessageVersions = null,
 
-            global::System.Action<global::AppStoreConnect.BetaRecruitmentCriterion>? betaRecruitmentCriteria = null,
-
-            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
-
-            global::System.Action<global::AppStoreConnect.Build>? builds = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -353,21 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0)
+            if (RetentionMessageVersions is { } __value0)
             {
-                apps?.Invoke(__value0);
+                retentionMessageVersions?.Invoke(__value0);
             }
-            else if (BetaRecruitmentCriteria is { } __value1)
+            else if (Subscriptions is { } __value1)
             {
-                betaRecruitmentCriteria?.Invoke(__value1);
-            }
-            else if (BetaTesters is { } __value2)
-            {
-                betaTesters?.Invoke(__value2);
-            }
-            else if (Builds is { } __value3)
-            {
-                builds?.Invoke(__value3);
+                subscriptions?.Invoke(__value1);
             }
         }
 
@@ -375,10 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
-            global::System.Action<global::AppStoreConnect.BetaRecruitmentCriterion>? betaRecruitmentCriteria = null,
-            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
-            global::System.Action<global::AppStoreConnect.Build>? builds = null,
+            global::System.Action<global::AppStoreConnect.RetentionMessageVersion>? retentionMessageVersions = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -386,21 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0)
+            if (RetentionMessageVersions is { } __value0)
             {
-                apps?.Invoke(__value0);
+                retentionMessageVersions?.Invoke(__value0);
             }
-            else if (BetaRecruitmentCriteria is { } __value1)
+            else if (Subscriptions is { } __value1)
             {
-                betaRecruitmentCriteria?.Invoke(__value1);
-            }
-            else if (BetaTesters is { } __value2)
-            {
-                betaTesters?.Invoke(__value2);
-            }
-            else if (Builds is { } __value3)
-            {
-                builds?.Invoke(__value3);
+                subscriptions?.Invoke(__value1);
             }
         }
 
@@ -411,14 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                Apps,
-                typeof(global::AppStoreConnect.App),
-                BetaRecruitmentCriteria,
-                typeof(global::AppStoreConnect.BetaRecruitmentCriterion),
-                BetaTesters,
-                typeof(global::AppStoreConnect.BetaTester),
-                Builds,
-                typeof(global::AppStoreConnect.Build),
+                RetentionMessageVersions,
+                typeof(global::AppStoreConnect.RetentionMessageVersion),
+                Subscriptions,
+                typeof(global::AppStoreConnect.Subscription),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -435,10 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem58 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaRecruitmentCriterion?>.Default.Equals(BetaRecruitmentCriteria, other.BetaRecruitmentCriteria) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaTester?>.Default.Equals(BetaTesters, other.BetaTesters) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RetentionMessageVersion?>.Default.Equals(RetentionMessageVersions, other.RetentionMessageVersions) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions)
                 ;
         }
 

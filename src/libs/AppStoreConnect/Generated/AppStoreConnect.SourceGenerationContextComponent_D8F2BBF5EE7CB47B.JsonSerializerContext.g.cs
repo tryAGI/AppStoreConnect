@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.BetaAppClipInvocationsGetInstanceFieldsBetaAppClipInvocation?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0583.Create_NullableBetaAppClipInvocationsGetInstanceFieldsBetaAppClipInvocation2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0582.Create_NullableBetaAppClipInvocationsGetInstanceFieldsBetaAppClipInvocation2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

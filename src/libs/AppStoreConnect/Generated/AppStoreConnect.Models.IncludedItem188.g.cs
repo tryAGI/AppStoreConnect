@@ -12,156 +12,284 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.WinBackOfferPricesResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionPricePoint? SubscriptionPricePoints { get; init; }
+        public global::AppStoreConnect.AppAssetLibraryPlacement? AppAssetLibraryPlacements { get; init; }
 #else
-        public global::AppStoreConnect.SubscriptionPricePoint? SubscriptionPricePoints { get; }
+        public global::AppStoreConnect.AppAssetLibraryPlacement? AppAssetLibraryPlacements { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionPricePoints))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppAssetLibraryPlacements))]
 #endif
-        public bool IsSubscriptionPricePoints => SubscriptionPricePoints != null;
+        public bool IsAppAssetLibraryPlacements => AppAssetLibraryPlacements != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptionPricePoints(
+        public bool TryPickAppAssetLibraryPlacements(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.SubscriptionPricePoint? value)
+            out global::AppStoreConnect.AppAssetLibraryPlacement? value)
         {
-            value = SubscriptionPricePoints;
-            return IsSubscriptionPricePoints;
+            value = AppAssetLibraryPlacements;
+            return IsAppAssetLibraryPlacements;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionPricePoint PickSubscriptionPricePoints() => SubscriptionPricePoints is { } value
+        public global::AppStoreConnect.AppAssetLibraryPlacement PickAppAssetLibraryPlacements() => AppAssetLibraryPlacements is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPricePoints' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppAssetLibraryPlacements' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Territory? Territories { get; init; }
+        public global::AppStoreConnect.AppPreviewSet? AppPreviewSets { get; init; }
 #else
-        public global::AppStoreConnect.Territory? Territories { get; }
+        public global::AppStoreConnect.AppPreviewSet? AppPreviewSets { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Territories))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppPreviewSets))]
 #endif
-        public bool IsTerritories => Territories != null;
+        public bool IsAppPreviewSets => AppPreviewSets != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickTerritories(
+        public bool TryPickAppPreviewSets(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.Territory? value)
+            out global::AppStoreConnect.AppPreviewSet? value)
         {
-            value = Territories;
-            return IsTerritories;
+            value = AppPreviewSets;
+            return IsAppPreviewSets;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Territory PickTerritories() => Territories is { } value
+        public global::AppStoreConnect.AppPreviewSet PickAppPreviewSets() => AppPreviewSets is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Territories' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem188(global::AppStoreConnect.SubscriptionPricePoint value) => new IncludedItem188((global::AppStoreConnect.SubscriptionPricePoint?)value);
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppPreviewSets' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionPricePoint?(IncludedItem188 @this) => @this.SubscriptionPricePoints;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AppScreenshotSet? AppScreenshotSets { get; init; }
+#else
+        public global::AppStoreConnect.AppScreenshotSet? AppScreenshotSets { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem188(global::AppStoreConnect.SubscriptionPricePoint? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppScreenshotSets))]
+#endif
+        public bool IsAppScreenshotSets => AppScreenshotSets != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAppScreenshotSets(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppScreenshotSet? value)
         {
-            SubscriptionPricePoints = value;
+            value = AppScreenshotSets;
+            return IsAppScreenshotSets;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem188 FromSubscriptionPricePoints(global::AppStoreConnect.SubscriptionPricePoint? value) => new IncludedItem188(value);
+        public global::AppStoreConnect.AppScreenshotSet PickAppScreenshotSets() => AppScreenshotSets is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppScreenshotSets' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem188(global::AppStoreConnect.Territory value) => new IncludedItem188((global::AppStoreConnect.Territory?)value);
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatment? AppStoreVersionExperimentTreatments { get; init; }
+#else
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatment? AppStoreVersionExperimentTreatments { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.Territory?(IncludedItem188 @this) => @this.Territories;
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperimentTreatments))]
+#endif
+        public bool IsAppStoreVersionExperimentTreatments => AppStoreVersionExperimentTreatments != null;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem188(global::AppStoreConnect.Territory? value)
+        public bool TryPickAppStoreVersionExperimentTreatments(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppStoreVersionExperimentTreatment? value)
         {
-            Territories = value;
+            value = AppStoreVersionExperimentTreatments;
+            return IsAppStoreVersionExperimentTreatments;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem188 FromTerritories(global::AppStoreConnect.Territory? value) => new IncludedItem188(value);
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatment PickAppStoreVersionExperimentTreatments() => AppStoreVersionExperimentTreatments is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatments' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem188(global::AppStoreConnect.AppAssetLibraryPlacement value) => new IncludedItem188((global::AppStoreConnect.AppAssetLibraryPlacement?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppAssetLibraryPlacement?(IncludedItem188 @this) => @this.AppAssetLibraryPlacements;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem188(global::AppStoreConnect.AppAssetLibraryPlacement? value)
+        {
+            AppAssetLibraryPlacements = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem188 FromAppAssetLibraryPlacements(global::AppStoreConnect.AppAssetLibraryPlacement? value) => new IncludedItem188(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem188(global::AppStoreConnect.AppPreviewSet value) => new IncludedItem188((global::AppStoreConnect.AppPreviewSet?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppPreviewSet?(IncludedItem188 @this) => @this.AppPreviewSets;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem188(global::AppStoreConnect.AppPreviewSet? value)
+        {
+            AppPreviewSets = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem188 FromAppPreviewSets(global::AppStoreConnect.AppPreviewSet? value) => new IncludedItem188(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem188(global::AppStoreConnect.AppScreenshotSet value) => new IncludedItem188((global::AppStoreConnect.AppScreenshotSet?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppScreenshotSet?(IncludedItem188 @this) => @this.AppScreenshotSets;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem188(global::AppStoreConnect.AppScreenshotSet? value)
+        {
+            AppScreenshotSets = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem188 FromAppScreenshotSets(global::AppStoreConnect.AppScreenshotSet? value) => new IncludedItem188(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem188(global::AppStoreConnect.AppStoreVersionExperimentTreatment value) => new IncludedItem188((global::AppStoreConnect.AppStoreVersionExperimentTreatment?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppStoreVersionExperimentTreatment?(IncludedItem188 @this) => @this.AppStoreVersionExperimentTreatments;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem188(global::AppStoreConnect.AppStoreVersionExperimentTreatment? value)
+        {
+            AppStoreVersionExperimentTreatments = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem188 FromAppStoreVersionExperimentTreatments(global::AppStoreConnect.AppStoreVersionExperimentTreatment? value) => new IncludedItem188(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem188(
-            global::AppStoreConnect.WinBackOfferPricesResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.SubscriptionPricePoint? subscriptionPricePoints,
-            global::AppStoreConnect.Territory? territories
+            global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalizationsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppAssetLibraryPlacement? appAssetLibraryPlacements,
+            global::AppStoreConnect.AppPreviewSet? appPreviewSets,
+            global::AppStoreConnect.AppScreenshotSet? appScreenshotSets,
+            global::AppStoreConnect.AppStoreVersionExperimentTreatment? appStoreVersionExperimentTreatments
             )
         {
             Type = type;
 
-            SubscriptionPricePoints = subscriptionPricePoints;
-            Territories = territories;
+            AppAssetLibraryPlacements = appAssetLibraryPlacements;
+            AppPreviewSets = appPreviewSets;
+            AppScreenshotSets = appScreenshotSets;
+            AppStoreVersionExperimentTreatments = appStoreVersionExperimentTreatments;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Territories as object ??
-            SubscriptionPricePoints as object
+            AppStoreVersionExperimentTreatments as object ??
+            AppScreenshotSets as object ??
+            AppPreviewSets as object ??
+            AppAssetLibraryPlacements as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            SubscriptionPricePoints?.ToString() ??
-            Territories?.ToString()
+            AppAssetLibraryPlacements?.ToString() ??
+            AppPreviewSets?.ToString() ??
+            AppScreenshotSets?.ToString() ??
+            AppStoreVersionExperimentTreatments?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +297,17 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsSubscriptionPricePoints && !IsTerritories || !IsSubscriptionPricePoints && IsTerritories;
+            return IsAppAssetLibraryPlacements && !IsAppPreviewSets && !IsAppScreenshotSets && !IsAppStoreVersionExperimentTreatments || !IsAppAssetLibraryPlacements && IsAppPreviewSets && !IsAppScreenshotSets && !IsAppStoreVersionExperimentTreatments || !IsAppAssetLibraryPlacements && !IsAppPreviewSets && IsAppScreenshotSets && !IsAppStoreVersionExperimentTreatments || !IsAppAssetLibraryPlacements && !IsAppPreviewSets && !IsAppScreenshotSets && IsAppStoreVersionExperimentTreatments;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.SubscriptionPricePoint, TResult>? subscriptionPricePoints = null,
-            global::System.Func<global::AppStoreConnect.Territory, TResult>? territories = null,
+            global::System.Func<global::AppStoreConnect.AppAssetLibraryPlacement, TResult>? appAssetLibraryPlacements = null,
+            global::System.Func<global::AppStoreConnect.AppPreviewSet, TResult>? appPreviewSets = null,
+            global::System.Func<global::AppStoreConnect.AppScreenshotSet, TResult>? appScreenshotSets = null,
+            global::System.Func<global::AppStoreConnect.AppStoreVersionExperimentTreatment, TResult>? appStoreVersionExperimentTreatments = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPricePoints is { } __value0 && subscriptionPricePoints != null)
+            if (AppAssetLibraryPlacements is { } __value0 && appAssetLibraryPlacements != null)
             {
-                return subscriptionPricePoints(__value0);
+                return appAssetLibraryPlacements(__value0);
             }
-            else if (Territories is { } __value1 && territories != null)
+            else if (AppPreviewSets is { } __value1 && appPreviewSets != null)
             {
-                return territories(__value1);
+                return appPreviewSets(__value1);
+            }
+            else if (AppScreenshotSets is { } __value2 && appScreenshotSets != null)
+            {
+                return appScreenshotSets(__value2);
+            }
+            else if (AppStoreVersionExperimentTreatments is { } __value3 && appStoreVersionExperimentTreatments != null)
+            {
+                return appStoreVersionExperimentTreatments(__value3);
             }
 
             return default(TResult);
@@ -201,9 +339,13 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.SubscriptionPricePoint>? subscriptionPricePoints = null,
+            global::System.Action<global::AppStoreConnect.AppAssetLibraryPlacement>? appAssetLibraryPlacements = null,
 
-            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
+            global::System.Action<global::AppStoreConnect.AppPreviewSet>? appPreviewSets = null,
+
+            global::System.Action<global::AppStoreConnect.AppScreenshotSet>? appScreenshotSets = null,
+
+            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatment>? appStoreVersionExperimentTreatments = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPricePoints is { } __value0)
+            if (AppAssetLibraryPlacements is { } __value0)
             {
-                subscriptionPricePoints?.Invoke(__value0);
+                appAssetLibraryPlacements?.Invoke(__value0);
             }
-            else if (Territories is { } __value1)
+            else if (AppPreviewSets is { } __value1)
             {
-                territories?.Invoke(__value1);
+                appPreviewSets?.Invoke(__value1);
+            }
+            else if (AppScreenshotSets is { } __value2)
+            {
+                appScreenshotSets?.Invoke(__value2);
+            }
+            else if (AppStoreVersionExperimentTreatments is { } __value3)
+            {
+                appStoreVersionExperimentTreatments?.Invoke(__value3);
             }
         }
 
@@ -225,8 +375,10 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.SubscriptionPricePoint>? subscriptionPricePoints = null,
-            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
+            global::System.Action<global::AppStoreConnect.AppAssetLibraryPlacement>? appAssetLibraryPlacements = null,
+            global::System.Action<global::AppStoreConnect.AppPreviewSet>? appPreviewSets = null,
+            global::System.Action<global::AppStoreConnect.AppScreenshotSet>? appScreenshotSets = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatment>? appStoreVersionExperimentTreatments = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPricePoints is { } __value0)
+            if (AppAssetLibraryPlacements is { } __value0)
             {
-                subscriptionPricePoints?.Invoke(__value0);
+                appAssetLibraryPlacements?.Invoke(__value0);
             }
-            else if (Territories is { } __value1)
+            else if (AppPreviewSets is { } __value1)
             {
-                territories?.Invoke(__value1);
+                appPreviewSets?.Invoke(__value1);
+            }
+            else if (AppScreenshotSets is { } __value2)
+            {
+                appScreenshotSets?.Invoke(__value2);
+            }
+            else if (AppStoreVersionExperimentTreatments is { } __value3)
+            {
+                appStoreVersionExperimentTreatments?.Invoke(__value3);
             }
         }
 
@@ -251,10 +411,14 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                SubscriptionPricePoints,
-                typeof(global::AppStoreConnect.SubscriptionPricePoint),
-                Territories,
-                typeof(global::AppStoreConnect.Territory),
+                AppAssetLibraryPlacements,
+                typeof(global::AppStoreConnect.AppAssetLibraryPlacement),
+                AppPreviewSets,
+                typeof(global::AppStoreConnect.AppPreviewSet),
+                AppScreenshotSets,
+                typeof(global::AppStoreConnect.AppScreenshotSet),
+                AppStoreVersionExperimentTreatments,
+                typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatment),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +435,10 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem188 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionPricePoint?>.Default.Equals(SubscriptionPricePoints, other.SubscriptionPricePoints) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Territory?>.Default.Equals(Territories, other.Territories)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppAssetLibraryPlacement?>.Default.Equals(AppAssetLibraryPlacements, other.AppAssetLibraryPlacements) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppPreviewSet?>.Default.Equals(AppPreviewSets, other.AppPreviewSets) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppScreenshotSet?>.Default.Equals(AppScreenshotSets, other.AppScreenshotSets) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperimentTreatment?>.Default.Equals(AppStoreVersionExperimentTreatments, other.AppStoreVersionExperimentTreatments)
                 ;
         }
 

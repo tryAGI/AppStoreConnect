@@ -12,8 +12,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.ScmProviderTypeJsonConverter))]
-        public global::AppStoreConnect.ScmProviderType Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.ScmProviderType2JsonConverter))]
+        public global::AppStoreConnect.ScmProviderType2 Type { get; set; }
 
         /// <summary>
         ///
@@ -59,7 +59,7 @@ namespace AppStoreConnect
 #endif
         public ScmProvider(
             string id,
-            global::AppStoreConnect.ScmProviderType type,
+            global::AppStoreConnect.ScmProviderType2 type,
             global::AppStoreConnect.ScmProviderAttributes? attributes,
             global::AppStoreConnect.ScmProviderRelationships? relationships,
             global::AppStoreConnect.ResourceLinks? links)

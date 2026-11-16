@@ -18,57 +18,30 @@ namespace AppStoreConnect.JsonConverters
 
 
             var readerCopy = reader;
-            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAssetVersionResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BackgroundAssetVersionResponseIncludedItemDiscriminator> ??
-                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BackgroundAssetVersionResponseIncludedItemDiscriminator)}");
+            var discriminatorTypeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.PromotedPurchaseResponseIncludedItemDiscriminator), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.PromotedPurchaseResponseIncludedItemDiscriminator> ??
+                            throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.PromotedPurchaseResponseIncludedItemDiscriminator)}");
             var discriminator = global::System.Text.Json.JsonSerializer.Deserialize(ref readerCopy, discriminatorTypeInfo);
 
-            global::AppStoreConnect.BackgroundAssetUploadFile? backgroundAssetUploadFiles = default;
-            if (discriminator?.Type == global::AppStoreConnect.BackgroundAssetVersionResponseIncludedItemDiscriminatorType.BackgroundAssetUploadFiles)
+            global::AppStoreConnect.InAppPurchaseV2? inAppPurchases = default;
+            if (discriminator?.Type == global::AppStoreConnect.PromotedPurchaseResponseIncludedItemDiscriminatorType.InAppPurchases)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAssetUploadFile), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BackgroundAssetUploadFile> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BackgroundAssetUploadFile)}");
-                backgroundAssetUploadFiles = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseV2> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.InAppPurchaseV2)}");
+                inAppPurchases = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
-            global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? backgroundAssetVersionAppStoreReleases = default;
-            if (discriminator?.Type == global::AppStoreConnect.BackgroundAssetVersionResponseIncludedItemDiscriminatorType.BackgroundAssetVersionAppStoreReleases)
+            global::AppStoreConnect.Subscription? subscriptions = default;
+            if (discriminator?.Type == global::AppStoreConnect.PromotedPurchaseResponseIncludedItemDiscriminatorType.Subscriptions)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease)}");
-                backgroundAssetVersionAppStoreReleases = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
-            }
-            global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease? backgroundAssetVersionExternalBetaReleases = default;
-            if (discriminator?.Type == global::AppStoreConnect.BackgroundAssetVersionResponseIncludedItemDiscriminatorType.BackgroundAssetVersionExternalBetaReleases)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease)}");
-                backgroundAssetVersionExternalBetaReleases = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
-            }
-            global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease? backgroundAssetVersionInternalBetaReleases = default;
-            if (discriminator?.Type == global::AppStoreConnect.BackgroundAssetVersionResponseIncludedItemDiscriminatorType.BackgroundAssetVersionInternalBetaReleases)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease)}");
-                backgroundAssetVersionInternalBetaReleases = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
-            }
-            global::AppStoreConnect.BackgroundAsset? backgroundAssets = default;
-            if (discriminator?.Type == global::AppStoreConnect.BackgroundAssetVersionResponseIncludedItemDiscriminatorType.BackgroundAssets)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAsset), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BackgroundAsset> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.BackgroundAsset)}");
-                backgroundAssets = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Subscription), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Subscription> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.Subscription)}");
+                subscriptions = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
 
             var __value = new global::AppStoreConnect.IncludedItem51(
                 discriminator?.Type,
-                backgroundAssetUploadFiles,
+                inAppPurchases,
 
-                backgroundAssetVersionAppStoreReleases,
-
-                backgroundAssetVersionExternalBetaReleases,
-
-                backgroundAssetVersionInternalBetaReleases,
-
-                backgroundAssets
+                subscriptions
                 );
 
             return __value;
@@ -84,35 +57,17 @@ namespace AppStoreConnect.JsonConverters
             var typeInfoResolver = options.TypeInfoResolver ?? throw new global::System.InvalidOperationException("TypeInfoResolver is not set.");
             typeInfoResolver = global::AppStoreConnect.AutoSDKJsonMetadataCachedResolver.Instance;
 
-            if (value.IsBackgroundAssetUploadFiles)
+            if (value.IsInAppPurchases)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAssetUploadFile), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BackgroundAssetUploadFile?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BackgroundAssetUploadFile).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBackgroundAssetUploadFiles(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.InAppPurchaseV2), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.InAppPurchaseV2?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.InAppPurchaseV2).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickInAppPurchases(), typeInfo);
             }
-            else if (value.IsBackgroundAssetVersionAppStoreReleases)
+            else if (value.IsSubscriptions)
             {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBackgroundAssetVersionAppStoreReleases(), typeInfo);
-            }
-            else if (value.IsBackgroundAssetVersionExternalBetaReleases)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBackgroundAssetVersionExternalBetaReleases(), typeInfo);
-            }
-            else if (value.IsBackgroundAssetVersionInternalBetaReleases)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBackgroundAssetVersionInternalBetaReleases(), typeInfo);
-            }
-            else if (value.IsBackgroundAssets)
-            {
-                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.BackgroundAsset), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.BackgroundAsset?> ??
-                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.BackgroundAsset).Name}");
-                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickBackgroundAssets(), typeInfo);
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.Subscription), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.Subscription?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.Subscription).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSubscriptions(), typeInfo);
             }
         }
     }

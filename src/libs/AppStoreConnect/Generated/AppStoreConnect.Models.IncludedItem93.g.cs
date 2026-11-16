@@ -12,284 +12,220 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterActivityVersionsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.InAppPurchaseOfferCodeResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterActivity? GameCenterActivities { get; init; }
+        public global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode? InAppPurchaseOfferCodeCustomCodes { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterActivity? GameCenterActivities { get; }
+        public global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode? InAppPurchaseOfferCodeCustomCodes { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterActivities))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseOfferCodeCustomCodes))]
 #endif
-        public bool IsGameCenterActivities => GameCenterActivities != null;
+        public bool IsInAppPurchaseOfferCodeCustomCodes => InAppPurchaseOfferCodeCustomCodes != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterActivities(
+        public bool TryPickInAppPurchaseOfferCodeCustomCodes(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterActivity? value)
+            out global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode? value)
         {
-            value = GameCenterActivities;
-            return IsGameCenterActivities;
+            value = InAppPurchaseOfferCodeCustomCodes;
+            return IsInAppPurchaseOfferCodeCustomCodes;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterActivity PickGameCenterActivities() => GameCenterActivities is { } value
+        public global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode PickInAppPurchaseOfferCodeCustomCodes() => InAppPurchaseOfferCodeCustomCodes is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterActivities' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseOfferCodeCustomCodes' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterActivityImage? GameCenterActivityImages { get; init; }
+        public global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode? InAppPurchaseOfferCodeOneTimeUseCodes { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterActivityImage? GameCenterActivityImages { get; }
+        public global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode? InAppPurchaseOfferCodeOneTimeUseCodes { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterActivityImages))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseOfferCodeOneTimeUseCodes))]
 #endif
-        public bool IsGameCenterActivityImages => GameCenterActivityImages != null;
+        public bool IsInAppPurchaseOfferCodeOneTimeUseCodes => InAppPurchaseOfferCodeOneTimeUseCodes != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterActivityImages(
+        public bool TryPickInAppPurchaseOfferCodeOneTimeUseCodes(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterActivityImage? value)
+            out global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode? value)
         {
-            value = GameCenterActivityImages;
-            return IsGameCenterActivityImages;
+            value = InAppPurchaseOfferCodeOneTimeUseCodes;
+            return IsInAppPurchaseOfferCodeOneTimeUseCodes;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterActivityImage PickGameCenterActivityImages() => GameCenterActivityImages is { } value
+        public global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode PickInAppPurchaseOfferCodeOneTimeUseCodes() => InAppPurchaseOfferCodeOneTimeUseCodes is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterActivityImages' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseOfferCodeOneTimeUseCodes' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterActivityLocalization? GameCenterActivityLocalizations { get; init; }
+        public global::AppStoreConnect.InAppPurchaseOfferPrice? InAppPurchaseOfferPrices { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterActivityLocalization? GameCenterActivityLocalizations { get; }
+        public global::AppStoreConnect.InAppPurchaseOfferPrice? InAppPurchaseOfferPrices { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterActivityLocalizations))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseOfferPrices))]
 #endif
-        public bool IsGameCenterActivityLocalizations => GameCenterActivityLocalizations != null;
+        public bool IsInAppPurchaseOfferPrices => InAppPurchaseOfferPrices != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterActivityLocalizations(
+        public bool TryPickInAppPurchaseOfferPrices(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterActivityLocalization? value)
+            out global::AppStoreConnect.InAppPurchaseOfferPrice? value)
         {
-            value = GameCenterActivityLocalizations;
-            return IsGameCenterActivityLocalizations;
+            value = InAppPurchaseOfferPrices;
+            return IsInAppPurchaseOfferPrices;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterActivityLocalization PickGameCenterActivityLocalizations() => GameCenterActivityLocalizations is { } value
+        public global::AppStoreConnect.InAppPurchaseOfferPrice PickInAppPurchaseOfferPrices() => InAppPurchaseOfferPrices is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterActivityLocalizations' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseOfferPrices' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem93(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode value) => new IncludedItem93((global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterActivityVersionRelease? GameCenterActivityVersionReleases { get; init; }
-#else
-        public global::AppStoreConnect.GameCenterActivityVersionRelease? GameCenterActivityVersionReleases { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode?(IncludedItem93 @this) => @this.InAppPurchaseOfferCodeCustomCodes;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterActivityVersionReleases))]
-#endif
-        public bool IsGameCenterActivityVersionReleases => GameCenterActivityVersionReleases != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickGameCenterActivityVersionReleases(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.GameCenterActivityVersionRelease? value)
+        public IncludedItem93(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode? value)
         {
-            value = GameCenterActivityVersionReleases;
-            return IsGameCenterActivityVersionReleases;
+            InAppPurchaseOfferCodeCustomCodes = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterActivityVersionRelease PickGameCenterActivityVersionReleases() => GameCenterActivityVersionReleases is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterActivityVersionReleases' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem93(global::AppStoreConnect.GameCenterActivity value) => new IncludedItem93((global::AppStoreConnect.GameCenterActivity?)value);
+        public static IncludedItem93 FromInAppPurchaseOfferCodeCustomCodes(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode? value) => new IncludedItem93(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterActivity?(IncludedItem93 @this) => @this.GameCenterActivities;
+        public static implicit operator IncludedItem93(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode value) => new IncludedItem93((global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem93(global::AppStoreConnect.GameCenterActivity? value)
+        public static implicit operator global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode?(IncludedItem93 @this) => @this.InAppPurchaseOfferCodeOneTimeUseCodes;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem93(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode? value)
         {
-            GameCenterActivities = value;
+            InAppPurchaseOfferCodeOneTimeUseCodes = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem93 FromGameCenterActivities(global::AppStoreConnect.GameCenterActivity? value) => new IncludedItem93(value);
+        public static IncludedItem93 FromInAppPurchaseOfferCodeOneTimeUseCodes(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode? value) => new IncludedItem93(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem93(global::AppStoreConnect.GameCenterActivityImage value) => new IncludedItem93((global::AppStoreConnect.GameCenterActivityImage?)value);
+        public static implicit operator IncludedItem93(global::AppStoreConnect.InAppPurchaseOfferPrice value) => new IncludedItem93((global::AppStoreConnect.InAppPurchaseOfferPrice?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterActivityImage?(IncludedItem93 @this) => @this.GameCenterActivityImages;
+        public static implicit operator global::AppStoreConnect.InAppPurchaseOfferPrice?(IncludedItem93 @this) => @this.InAppPurchaseOfferPrices;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem93(global::AppStoreConnect.GameCenterActivityImage? value)
+        public IncludedItem93(global::AppStoreConnect.InAppPurchaseOfferPrice? value)
         {
-            GameCenterActivityImages = value;
+            InAppPurchaseOfferPrices = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem93 FromGameCenterActivityImages(global::AppStoreConnect.GameCenterActivityImage? value) => new IncludedItem93(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem93(global::AppStoreConnect.GameCenterActivityLocalization value) => new IncludedItem93((global::AppStoreConnect.GameCenterActivityLocalization?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterActivityLocalization?(IncludedItem93 @this) => @this.GameCenterActivityLocalizations;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem93(global::AppStoreConnect.GameCenterActivityLocalization? value)
-        {
-            GameCenterActivityLocalizations = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem93 FromGameCenterActivityLocalizations(global::AppStoreConnect.GameCenterActivityLocalization? value) => new IncludedItem93(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem93(global::AppStoreConnect.GameCenterActivityVersionRelease value) => new IncludedItem93((global::AppStoreConnect.GameCenterActivityVersionRelease?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterActivityVersionRelease?(IncludedItem93 @this) => @this.GameCenterActivityVersionReleases;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem93(global::AppStoreConnect.GameCenterActivityVersionRelease? value)
-        {
-            GameCenterActivityVersionReleases = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem93 FromGameCenterActivityVersionReleases(global::AppStoreConnect.GameCenterActivityVersionRelease? value) => new IncludedItem93(value);
+        public static IncludedItem93 FromInAppPurchaseOfferPrices(global::AppStoreConnect.InAppPurchaseOfferPrice? value) => new IncludedItem93(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem93(
-            global::AppStoreConnect.GameCenterActivityVersionsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.GameCenterActivity? gameCenterActivities,
-            global::AppStoreConnect.GameCenterActivityImage? gameCenterActivityImages,
-            global::AppStoreConnect.GameCenterActivityLocalization? gameCenterActivityLocalizations,
-            global::AppStoreConnect.GameCenterActivityVersionRelease? gameCenterActivityVersionReleases
+            global::AppStoreConnect.InAppPurchaseOfferCodeResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode? inAppPurchaseOfferCodeCustomCodes,
+            global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode? inAppPurchaseOfferCodeOneTimeUseCodes,
+            global::AppStoreConnect.InAppPurchaseOfferPrice? inAppPurchaseOfferPrices
             )
         {
             Type = type;
 
-            GameCenterActivities = gameCenterActivities;
-            GameCenterActivityImages = gameCenterActivityImages;
-            GameCenterActivityLocalizations = gameCenterActivityLocalizations;
-            GameCenterActivityVersionReleases = gameCenterActivityVersionReleases;
+            InAppPurchaseOfferCodeCustomCodes = inAppPurchaseOfferCodeCustomCodes;
+            InAppPurchaseOfferCodeOneTimeUseCodes = inAppPurchaseOfferCodeOneTimeUseCodes;
+            InAppPurchaseOfferPrices = inAppPurchaseOfferPrices;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            GameCenterActivityVersionReleases as object ??
-            GameCenterActivityLocalizations as object ??
-            GameCenterActivityImages as object ??
-            GameCenterActivities as object
+            InAppPurchaseOfferPrices as object ??
+            InAppPurchaseOfferCodeOneTimeUseCodes as object ??
+            InAppPurchaseOfferCodeCustomCodes as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            GameCenterActivities?.ToString() ??
-            GameCenterActivityImages?.ToString() ??
-            GameCenterActivityLocalizations?.ToString() ??
-            GameCenterActivityVersionReleases?.ToString()
+            InAppPurchaseOfferCodeCustomCodes?.ToString() ??
+            InAppPurchaseOfferCodeOneTimeUseCodes?.ToString() ??
+            InAppPurchaseOfferPrices?.ToString()
             ;
 
         /// <summary>
@@ -297,17 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsGameCenterActivities && !IsGameCenterActivityImages && !IsGameCenterActivityLocalizations && !IsGameCenterActivityVersionReleases || !IsGameCenterActivities && IsGameCenterActivityImages && !IsGameCenterActivityLocalizations && !IsGameCenterActivityVersionReleases || !IsGameCenterActivities && !IsGameCenterActivityImages && IsGameCenterActivityLocalizations && !IsGameCenterActivityVersionReleases || !IsGameCenterActivities && !IsGameCenterActivityImages && !IsGameCenterActivityLocalizations && IsGameCenterActivityVersionReleases;
+            return IsInAppPurchaseOfferCodeCustomCodes && !IsInAppPurchaseOfferCodeOneTimeUseCodes && !IsInAppPurchaseOfferPrices || !IsInAppPurchaseOfferCodeCustomCodes && IsInAppPurchaseOfferCodeOneTimeUseCodes && !IsInAppPurchaseOfferPrices || !IsInAppPurchaseOfferCodeCustomCodes && !IsInAppPurchaseOfferCodeOneTimeUseCodes && IsInAppPurchaseOfferPrices;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.GameCenterActivity, TResult>? gameCenterActivities = null,
-            global::System.Func<global::AppStoreConnect.GameCenterActivityImage, TResult>? gameCenterActivityImages = null,
-            global::System.Func<global::AppStoreConnect.GameCenterActivityLocalization, TResult>? gameCenterActivityLocalizations = null,
-            global::System.Func<global::AppStoreConnect.GameCenterActivityVersionRelease, TResult>? gameCenterActivityVersionReleases = null,
+            global::System.Func<global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode, TResult>? inAppPurchaseOfferCodeCustomCodes = null,
+            global::System.Func<global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode, TResult>? inAppPurchaseOfferCodeOneTimeUseCodes = null,
+            global::System.Func<global::AppStoreConnect.InAppPurchaseOfferPrice, TResult>? inAppPurchaseOfferPrices = null,
             bool validate = true)
         {
             if (validate)
@@ -315,21 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterActivities is { } __value0 && gameCenterActivities != null)
+            if (InAppPurchaseOfferCodeCustomCodes is { } __value0 && inAppPurchaseOfferCodeCustomCodes != null)
             {
-                return gameCenterActivities(__value0);
+                return inAppPurchaseOfferCodeCustomCodes(__value0);
             }
-            else if (GameCenterActivityImages is { } __value1 && gameCenterActivityImages != null)
+            else if (InAppPurchaseOfferCodeOneTimeUseCodes is { } __value1 && inAppPurchaseOfferCodeOneTimeUseCodes != null)
             {
-                return gameCenterActivityImages(__value1);
+                return inAppPurchaseOfferCodeOneTimeUseCodes(__value1);
             }
-            else if (GameCenterActivityLocalizations is { } __value2 && gameCenterActivityLocalizations != null)
+            else if (InAppPurchaseOfferPrices is { } __value2 && inAppPurchaseOfferPrices != null)
             {
-                return gameCenterActivityLocalizations(__value2);
-            }
-            else if (GameCenterActivityVersionReleases is { } __value3 && gameCenterActivityVersionReleases != null)
-            {
-                return gameCenterActivityVersionReleases(__value3);
+                return inAppPurchaseOfferPrices(__value2);
             }
 
             return default(TResult);
@@ -339,13 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.GameCenterActivity>? gameCenterActivities = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode>? inAppPurchaseOfferCodeCustomCodes = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterActivityImage>? gameCenterActivityImages = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode>? inAppPurchaseOfferCodeOneTimeUseCodes = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterActivityLocalization>? gameCenterActivityLocalizations = null,
-
-            global::System.Action<global::AppStoreConnect.GameCenterActivityVersionRelease>? gameCenterActivityVersionReleases = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseOfferPrice>? inAppPurchaseOfferPrices = null,
             bool validate = true)
         {
             if (validate)
@@ -353,21 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterActivities is { } __value0)
+            if (InAppPurchaseOfferCodeCustomCodes is { } __value0)
             {
-                gameCenterActivities?.Invoke(__value0);
+                inAppPurchaseOfferCodeCustomCodes?.Invoke(__value0);
             }
-            else if (GameCenterActivityImages is { } __value1)
+            else if (InAppPurchaseOfferCodeOneTimeUseCodes is { } __value1)
             {
-                gameCenterActivityImages?.Invoke(__value1);
+                inAppPurchaseOfferCodeOneTimeUseCodes?.Invoke(__value1);
             }
-            else if (GameCenterActivityLocalizations is { } __value2)
+            else if (InAppPurchaseOfferPrices is { } __value2)
             {
-                gameCenterActivityLocalizations?.Invoke(__value2);
-            }
-            else if (GameCenterActivityVersionReleases is { } __value3)
-            {
-                gameCenterActivityVersionReleases?.Invoke(__value3);
+                inAppPurchaseOfferPrices?.Invoke(__value2);
             }
         }
 
@@ -375,10 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.GameCenterActivity>? gameCenterActivities = null,
-            global::System.Action<global::AppStoreConnect.GameCenterActivityImage>? gameCenterActivityImages = null,
-            global::System.Action<global::AppStoreConnect.GameCenterActivityLocalization>? gameCenterActivityLocalizations = null,
-            global::System.Action<global::AppStoreConnect.GameCenterActivityVersionRelease>? gameCenterActivityVersionReleases = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode>? inAppPurchaseOfferCodeCustomCodes = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode>? inAppPurchaseOfferCodeOneTimeUseCodes = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseOfferPrice>? inAppPurchaseOfferPrices = null,
             bool validate = true)
         {
             if (validate)
@@ -386,21 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterActivities is { } __value0)
+            if (InAppPurchaseOfferCodeCustomCodes is { } __value0)
             {
-                gameCenterActivities?.Invoke(__value0);
+                inAppPurchaseOfferCodeCustomCodes?.Invoke(__value0);
             }
-            else if (GameCenterActivityImages is { } __value1)
+            else if (InAppPurchaseOfferCodeOneTimeUseCodes is { } __value1)
             {
-                gameCenterActivityImages?.Invoke(__value1);
+                inAppPurchaseOfferCodeOneTimeUseCodes?.Invoke(__value1);
             }
-            else if (GameCenterActivityLocalizations is { } __value2)
+            else if (InAppPurchaseOfferPrices is { } __value2)
             {
-                gameCenterActivityLocalizations?.Invoke(__value2);
-            }
-            else if (GameCenterActivityVersionReleases is { } __value3)
-            {
-                gameCenterActivityVersionReleases?.Invoke(__value3);
+                inAppPurchaseOfferPrices?.Invoke(__value2);
             }
         }
 
@@ -411,14 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                GameCenterActivities,
-                typeof(global::AppStoreConnect.GameCenterActivity),
-                GameCenterActivityImages,
-                typeof(global::AppStoreConnect.GameCenterActivityImage),
-                GameCenterActivityLocalizations,
-                typeof(global::AppStoreConnect.GameCenterActivityLocalization),
-                GameCenterActivityVersionReleases,
-                typeof(global::AppStoreConnect.GameCenterActivityVersionRelease),
+                InAppPurchaseOfferCodeCustomCodes,
+                typeof(global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode),
+                InAppPurchaseOfferCodeOneTimeUseCodes,
+                typeof(global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode),
+                InAppPurchaseOfferPrices,
+                typeof(global::AppStoreConnect.InAppPurchaseOfferPrice),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -435,10 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem93 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterActivity?>.Default.Equals(GameCenterActivities, other.GameCenterActivities) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterActivityImage?>.Default.Equals(GameCenterActivityImages, other.GameCenterActivityImages) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterActivityLocalization?>.Default.Equals(GameCenterActivityLocalizations, other.GameCenterActivityLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterActivityVersionRelease?>.Default.Equals(GameCenterActivityVersionReleases, other.GameCenterActivityVersionReleases)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseOfferCodeCustomCode?>.Default.Equals(InAppPurchaseOfferCodeCustomCodes, other.InAppPurchaseOfferCodeCustomCodes) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseOfferCodeOneTimeUseCode?>.Default.Equals(InAppPurchaseOfferCodeOneTimeUseCodes, other.InAppPurchaseOfferCodeOneTimeUseCodes) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseOfferPrice?>.Default.Equals(InAppPurchaseOfferPrices, other.InAppPurchaseOfferPrices)
                 ;
         }
 

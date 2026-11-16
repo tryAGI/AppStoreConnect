@@ -12,156 +12,220 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAchievementLocalizationResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.SubscriptionVersionsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterAchievementImage? GameCenterAchievementImages { get; init; }
+        public global::AppStoreConnect.SubscriptionImageV2? SubscriptionImages { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterAchievementImage? GameCenterAchievementImages { get; }
+        public global::AppStoreConnect.SubscriptionImageV2? SubscriptionImages { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterAchievementImages))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionImages))]
 #endif
-        public bool IsGameCenterAchievementImages => GameCenterAchievementImages != null;
+        public bool IsSubscriptionImages => SubscriptionImages != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterAchievementImages(
+        public bool TryPickSubscriptionImages(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterAchievementImage? value)
+            out global::AppStoreConnect.SubscriptionImageV2? value)
         {
-            value = GameCenterAchievementImages;
-            return IsGameCenterAchievementImages;
+            value = SubscriptionImages;
+            return IsSubscriptionImages;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAchievementImage PickGameCenterAchievementImages() => GameCenterAchievementImages is { } value
+        public global::AppStoreConnect.SubscriptionImageV2 PickSubscriptionImages() => SubscriptionImages is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAchievementImages' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionImages' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterAchievement? GameCenterAchievements { get; init; }
+        public global::AppStoreConnect.SubscriptionLocalizationV2? SubscriptionLocalizations { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterAchievement? GameCenterAchievements { get; }
+        public global::AppStoreConnect.SubscriptionLocalizationV2? SubscriptionLocalizations { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterAchievements))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionLocalizations))]
 #endif
-        public bool IsGameCenterAchievements => GameCenterAchievements != null;
+        public bool IsSubscriptionLocalizations => SubscriptionLocalizations != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterAchievements(
+        public bool TryPickSubscriptionLocalizations(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterAchievement? value)
+            out global::AppStoreConnect.SubscriptionLocalizationV2? value)
         {
-            value = GameCenterAchievements;
-            return IsGameCenterAchievements;
+            value = SubscriptionLocalizations;
+            return IsSubscriptionLocalizations;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAchievement PickGameCenterAchievements() => GameCenterAchievements is { } value
+        public global::AppStoreConnect.SubscriptionLocalizationV2 PickSubscriptionLocalizations() => SubscriptionLocalizations is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAchievements' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem80(global::AppStoreConnect.GameCenterAchievementImage value) => new IncludedItem80((global::AppStoreConnect.GameCenterAchievementImage?)value);
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionLocalizations' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterAchievementImage?(IncludedItem80 @this) => @this.GameCenterAchievementImages;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
+#else
+        public global::AppStoreConnect.Subscription? Subscriptions { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem80(global::AppStoreConnect.GameCenterAchievementImage? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
+#endif
+        public bool IsSubscriptions => Subscriptions != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickSubscriptions(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.Subscription? value)
         {
-            GameCenterAchievementImages = value;
+            value = Subscriptions;
+            return IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem80 FromGameCenterAchievementImages(global::AppStoreConnect.GameCenterAchievementImage? value) => new IncludedItem80(value);
+        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem80(global::AppStoreConnect.SubscriptionImageV2 value) => new IncludedItem80((global::AppStoreConnect.SubscriptionImageV2?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem80(global::AppStoreConnect.GameCenterAchievement value) => new IncludedItem80((global::AppStoreConnect.GameCenterAchievement?)value);
+        public static implicit operator global::AppStoreConnect.SubscriptionImageV2?(IncludedItem80 @this) => @this.SubscriptionImages;
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterAchievement?(IncludedItem80 @this) => @this.GameCenterAchievements;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem80(global::AppStoreConnect.GameCenterAchievement? value)
+        public IncludedItem80(global::AppStoreConnect.SubscriptionImageV2? value)
         {
-            GameCenterAchievements = value;
+            SubscriptionImages = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem80 FromGameCenterAchievements(global::AppStoreConnect.GameCenterAchievement? value) => new IncludedItem80(value);
+        public static IncludedItem80 FromSubscriptionImages(global::AppStoreConnect.SubscriptionImageV2? value) => new IncludedItem80(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem80(global::AppStoreConnect.SubscriptionLocalizationV2 value) => new IncludedItem80((global::AppStoreConnect.SubscriptionLocalizationV2?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.SubscriptionLocalizationV2?(IncludedItem80 @this) => @this.SubscriptionLocalizations;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem80(global::AppStoreConnect.SubscriptionLocalizationV2? value)
+        {
+            SubscriptionLocalizations = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem80 FromSubscriptionLocalizations(global::AppStoreConnect.SubscriptionLocalizationV2? value) => new IncludedItem80(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem80(global::AppStoreConnect.Subscription value) => new IncludedItem80((global::AppStoreConnect.Subscription?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem80 @this) => @this.Subscriptions;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem80(global::AppStoreConnect.Subscription? value)
+        {
+            Subscriptions = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem80 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem80(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem80(
-            global::AppStoreConnect.GameCenterAchievementLocalizationResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.GameCenterAchievementImage? gameCenterAchievementImages,
-            global::AppStoreConnect.GameCenterAchievement? gameCenterAchievements
+            global::AppStoreConnect.SubscriptionVersionsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.SubscriptionImageV2? subscriptionImages,
+            global::AppStoreConnect.SubscriptionLocalizationV2? subscriptionLocalizations,
+            global::AppStoreConnect.Subscription? subscriptions
             )
         {
             Type = type;
 
-            GameCenterAchievementImages = gameCenterAchievementImages;
-            GameCenterAchievements = gameCenterAchievements;
+            SubscriptionImages = subscriptionImages;
+            SubscriptionLocalizations = subscriptionLocalizations;
+            Subscriptions = subscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            GameCenterAchievements as object ??
-            GameCenterAchievementImages as object
+            Subscriptions as object ??
+            SubscriptionLocalizations as object ??
+            SubscriptionImages as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            GameCenterAchievementImages?.ToString() ??
-            GameCenterAchievements?.ToString()
+            SubscriptionImages?.ToString() ??
+            SubscriptionLocalizations?.ToString() ??
+            Subscriptions?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsGameCenterAchievementImages && !IsGameCenterAchievements || !IsGameCenterAchievementImages && IsGameCenterAchievements;
+            return IsSubscriptionImages && !IsSubscriptionLocalizations && !IsSubscriptions || !IsSubscriptionImages && IsSubscriptionLocalizations && !IsSubscriptions || !IsSubscriptionImages && !IsSubscriptionLocalizations && IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.GameCenterAchievementImage, TResult>? gameCenterAchievementImages = null,
-            global::System.Func<global::AppStoreConnect.GameCenterAchievement, TResult>? gameCenterAchievements = null,
+            global::System.Func<global::AppStoreConnect.SubscriptionImageV2, TResult>? subscriptionImages = null,
+            global::System.Func<global::AppStoreConnect.SubscriptionLocalizationV2, TResult>? subscriptionLocalizations = null,
+            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterAchievementImages is { } __value0 && gameCenterAchievementImages != null)
+            if (SubscriptionImages is { } __value0 && subscriptionImages != null)
             {
-                return gameCenterAchievementImages(__value0);
+                return subscriptionImages(__value0);
             }
-            else if (GameCenterAchievements is { } __value1 && gameCenterAchievements != null)
+            else if (SubscriptionLocalizations is { } __value1 && subscriptionLocalizations != null)
             {
-                return gameCenterAchievements(__value1);
+                return subscriptionLocalizations(__value1);
+            }
+            else if (Subscriptions is { } __value2 && subscriptions != null)
+            {
+                return subscriptions(__value2);
             }
 
             return default(TResult);
@@ -201,9 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.GameCenterAchievementImage>? gameCenterAchievementImages = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionImageV2>? subscriptionImages = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterAchievement>? gameCenterAchievements = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionLocalizationV2>? subscriptionLocalizations = null,
+
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterAchievementImages is { } __value0)
+            if (SubscriptionImages is { } __value0)
             {
-                gameCenterAchievementImages?.Invoke(__value0);
+                subscriptionImages?.Invoke(__value0);
             }
-            else if (GameCenterAchievements is { } __value1)
+            else if (SubscriptionLocalizations is { } __value1)
             {
-                gameCenterAchievements?.Invoke(__value1);
+                subscriptionLocalizations?.Invoke(__value1);
+            }
+            else if (Subscriptions is { } __value2)
+            {
+                subscriptions?.Invoke(__value2);
             }
         }
 
@@ -225,8 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.GameCenterAchievementImage>? gameCenterAchievementImages = null,
-            global::System.Action<global::AppStoreConnect.GameCenterAchievement>? gameCenterAchievements = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionImageV2>? subscriptionImages = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionLocalizationV2>? subscriptionLocalizations = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterAchievementImages is { } __value0)
+            if (SubscriptionImages is { } __value0)
             {
-                gameCenterAchievementImages?.Invoke(__value0);
+                subscriptionImages?.Invoke(__value0);
             }
-            else if (GameCenterAchievements is { } __value1)
+            else if (SubscriptionLocalizations is { } __value1)
             {
-                gameCenterAchievements?.Invoke(__value1);
+                subscriptionLocalizations?.Invoke(__value1);
+            }
+            else if (Subscriptions is { } __value2)
+            {
+                subscriptions?.Invoke(__value2);
             }
         }
 
@@ -251,10 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                GameCenterAchievementImages,
-                typeof(global::AppStoreConnect.GameCenterAchievementImage),
-                GameCenterAchievements,
-                typeof(global::AppStoreConnect.GameCenterAchievement),
+                SubscriptionImages,
+                typeof(global::AppStoreConnect.SubscriptionImageV2),
+                SubscriptionLocalizations,
+                typeof(global::AppStoreConnect.SubscriptionLocalizationV2),
+                Subscriptions,
+                typeof(global::AppStoreConnect.Subscription),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem80 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterAchievementImage?>.Default.Equals(GameCenterAchievementImages, other.GameCenterAchievementImages) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterAchievement?>.Default.Equals(GameCenterAchievements, other.GameCenterAchievements)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionImageV2?>.Default.Equals(SubscriptionImages, other.SubscriptionImages) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionLocalizationV2?>.Default.Equals(SubscriptionLocalizations, other.SubscriptionLocalizations) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions)
                 ;
         }
 

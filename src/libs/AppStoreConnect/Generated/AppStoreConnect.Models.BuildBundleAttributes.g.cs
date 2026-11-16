@@ -18,8 +18,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("bundleType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.BuildBundleType2JsonConverter))]
-        public global::AppStoreConnect.BuildBundleType2? BundleType { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.BuildBundleTypeJsonConverter))]
+        public global::AppStoreConnect.BuildBundleType? BundleType { get; set; }
 
         /// <summary>
         ///
@@ -163,7 +163,7 @@ namespace AppStoreConnect
 #endif
         public BuildBundleAttributes(
             string? bundleId,
-            global::AppStoreConnect.BuildBundleType2? bundleType,
+            global::AppStoreConnect.BuildBundleType? bundleType,
             string? sdkBuild,
             string? platformBuild,
             string? fileName,

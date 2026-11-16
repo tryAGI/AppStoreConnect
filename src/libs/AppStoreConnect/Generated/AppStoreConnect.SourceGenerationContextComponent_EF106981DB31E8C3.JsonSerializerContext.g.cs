@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.DevicesGetCollectionFilterStatu?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0623.Create_NullableDevicesGetCollectionFilterStatu2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0622.Create_NullableDevicesGetCollectionFilterStatu2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

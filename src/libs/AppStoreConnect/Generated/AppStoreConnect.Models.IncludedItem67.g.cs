@@ -12,220 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BundleIdResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.WinBackOfferPricesResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.App? Apps { get; init; }
+        public global::AppStoreConnect.SubscriptionPricePoint? SubscriptionPricePoints { get; init; }
 #else
-        public global::AppStoreConnect.App? Apps { get; }
+        public global::AppStoreConnect.SubscriptionPricePoint? SubscriptionPricePoints { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionPricePoints))]
 #endif
-        public bool IsApps => Apps != null;
+        public bool IsSubscriptionPricePoints => SubscriptionPricePoints != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickApps(
+        public bool TryPickSubscriptionPricePoints(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.App? value)
+            out global::AppStoreConnect.SubscriptionPricePoint? value)
         {
-            value = Apps;
-            return IsApps;
+            value = SubscriptionPricePoints;
+            return IsSubscriptionPricePoints;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickApps() => Apps is { } value
+        public global::AppStoreConnect.SubscriptionPricePoint PickSubscriptionPricePoints() => SubscriptionPricePoints is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPricePoints' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BundleIdCapability? BundleIdCapabilities { get; init; }
+        public global::AppStoreConnect.Territory? Territories { get; init; }
 #else
-        public global::AppStoreConnect.BundleIdCapability? BundleIdCapabilities { get; }
+        public global::AppStoreConnect.Territory? Territories { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BundleIdCapabilities))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Territories))]
 #endif
-        public bool IsBundleIdCapabilities => BundleIdCapabilities != null;
+        public bool IsTerritories => Territories != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBundleIdCapabilities(
+        public bool TryPickTerritories(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BundleIdCapability? value)
+            out global::AppStoreConnect.Territory? value)
         {
-            value = BundleIdCapabilities;
-            return IsBundleIdCapabilities;
+            value = Territories;
+            return IsTerritories;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BundleIdCapability PickBundleIdCapabilities() => BundleIdCapabilities is { } value
+        public global::AppStoreConnect.Territory PickTerritories() => Territories is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BundleIdCapabilities' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Territories' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem67(global::AppStoreConnect.SubscriptionPricePoint value) => new IncludedItem67((global::AppStoreConnect.SubscriptionPricePoint?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Profile? Profiles { get; init; }
-#else
-        public global::AppStoreConnect.Profile? Profiles { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.SubscriptionPricePoint?(IncludedItem67 @this) => @this.SubscriptionPricePoints;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Profiles))]
-#endif
-        public bool IsProfiles => Profiles != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickProfiles(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.Profile? value)
+        public IncludedItem67(global::AppStoreConnect.SubscriptionPricePoint? value)
         {
-            value = Profiles;
-            return IsProfiles;
+            SubscriptionPricePoints = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Profile PickProfiles() => Profiles is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Profiles' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem67(global::AppStoreConnect.App value) => new IncludedItem67((global::AppStoreConnect.App?)value);
+        public static IncludedItem67 FromSubscriptionPricePoints(global::AppStoreConnect.SubscriptionPricePoint? value) => new IncludedItem67(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.App?(IncludedItem67 @this) => @this.Apps;
+        public static implicit operator IncludedItem67(global::AppStoreConnect.Territory value) => new IncludedItem67((global::AppStoreConnect.Territory?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem67(global::AppStoreConnect.App? value)
+        public static implicit operator global::AppStoreConnect.Territory?(IncludedItem67 @this) => @this.Territories;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem67(global::AppStoreConnect.Territory? value)
         {
-            Apps = value;
+            Territories = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem67 FromApps(global::AppStoreConnect.App? value) => new IncludedItem67(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem67(global::AppStoreConnect.BundleIdCapability value) => new IncludedItem67((global::AppStoreConnect.BundleIdCapability?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.BundleIdCapability?(IncludedItem67 @this) => @this.BundleIdCapabilities;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem67(global::AppStoreConnect.BundleIdCapability? value)
-        {
-            BundleIdCapabilities = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem67 FromBundleIdCapabilities(global::AppStoreConnect.BundleIdCapability? value) => new IncludedItem67(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem67(global::AppStoreConnect.Profile value) => new IncludedItem67((global::AppStoreConnect.Profile?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.Profile?(IncludedItem67 @this) => @this.Profiles;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem67(global::AppStoreConnect.Profile? value)
-        {
-            Profiles = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem67 FromProfiles(global::AppStoreConnect.Profile? value) => new IncludedItem67(value);
+        public static IncludedItem67 FromTerritories(global::AppStoreConnect.Territory? value) => new IncludedItem67(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem67(
-            global::AppStoreConnect.BundleIdResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.App? apps,
-            global::AppStoreConnect.BundleIdCapability? bundleIdCapabilities,
-            global::AppStoreConnect.Profile? profiles
+            global::AppStoreConnect.WinBackOfferPricesResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.SubscriptionPricePoint? subscriptionPricePoints,
+            global::AppStoreConnect.Territory? territories
             )
         {
             Type = type;
 
-            Apps = apps;
-            BundleIdCapabilities = bundleIdCapabilities;
-            Profiles = profiles;
+            SubscriptionPricePoints = subscriptionPricePoints;
+            Territories = territories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Profiles as object ??
-            BundleIdCapabilities as object ??
-            Apps as object
+            Territories as object ??
+            SubscriptionPricePoints as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            Apps?.ToString() ??
-            BundleIdCapabilities?.ToString() ??
-            Profiles?.ToString()
+            SubscriptionPricePoints?.ToString() ??
+            Territories?.ToString()
             ;
 
         /// <summary>
@@ -233,16 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsApps && !IsBundleIdCapabilities && !IsProfiles || !IsApps && IsBundleIdCapabilities && !IsProfiles || !IsApps && !IsBundleIdCapabilities && IsProfiles;
+            return IsSubscriptionPricePoints && !IsTerritories || !IsSubscriptionPricePoints && IsTerritories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
-            global::System.Func<global::AppStoreConnect.BundleIdCapability, TResult>? bundleIdCapabilities = null,
-            global::System.Func<global::AppStoreConnect.Profile, TResult>? profiles = null,
+            global::System.Func<global::AppStoreConnect.SubscriptionPricePoint, TResult>? subscriptionPricePoints = null,
+            global::System.Func<global::AppStoreConnect.Territory, TResult>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -250,17 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0 && apps != null)
+            if (SubscriptionPricePoints is { } __value0 && subscriptionPricePoints != null)
             {
-                return apps(__value0);
+                return subscriptionPricePoints(__value0);
             }
-            else if (BundleIdCapabilities is { } __value1 && bundleIdCapabilities != null)
+            else if (Territories is { } __value1 && territories != null)
             {
-                return bundleIdCapabilities(__value1);
-            }
-            else if (Profiles is { } __value2 && profiles != null)
-            {
-                return profiles(__value2);
+                return territories(__value1);
             }
 
             return default(TResult);
@@ -270,11 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionPricePoint>? subscriptionPricePoints = null,
 
-            global::System.Action<global::AppStoreConnect.BundleIdCapability>? bundleIdCapabilities = null,
-
-            global::System.Action<global::AppStoreConnect.Profile>? profiles = null,
+            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -282,17 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0)
+            if (SubscriptionPricePoints is { } __value0)
             {
-                apps?.Invoke(__value0);
+                subscriptionPricePoints?.Invoke(__value0);
             }
-            else if (BundleIdCapabilities is { } __value1)
+            else if (Territories is { } __value1)
             {
-                bundleIdCapabilities?.Invoke(__value1);
-            }
-            else if (Profiles is { } __value2)
-            {
-                profiles?.Invoke(__value2);
+                territories?.Invoke(__value1);
             }
         }
 
@@ -300,9 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
-            global::System.Action<global::AppStoreConnect.BundleIdCapability>? bundleIdCapabilities = null,
-            global::System.Action<global::AppStoreConnect.Profile>? profiles = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionPricePoint>? subscriptionPricePoints = null,
+            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -310,17 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0)
+            if (SubscriptionPricePoints is { } __value0)
             {
-                apps?.Invoke(__value0);
+                subscriptionPricePoints?.Invoke(__value0);
             }
-            else if (BundleIdCapabilities is { } __value1)
+            else if (Territories is { } __value1)
             {
-                bundleIdCapabilities?.Invoke(__value1);
-            }
-            else if (Profiles is { } __value2)
-            {
-                profiles?.Invoke(__value2);
+                territories?.Invoke(__value1);
             }
         }
 
@@ -331,12 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                Apps,
-                typeof(global::AppStoreConnect.App),
-                BundleIdCapabilities,
-                typeof(global::AppStoreConnect.BundleIdCapability),
-                Profiles,
-                typeof(global::AppStoreConnect.Profile),
+                SubscriptionPricePoints,
+                typeof(global::AppStoreConnect.SubscriptionPricePoint),
+                Territories,
+                typeof(global::AppStoreConnect.Territory),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -353,9 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem67 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BundleIdCapability?>.Default.Equals(BundleIdCapabilities, other.BundleIdCapabilities) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Profile?>.Default.Equals(Profiles, other.Profiles)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionPricePoint?>.Default.Equals(SubscriptionPricePoints, other.SubscriptionPricePoints) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Territory?>.Default.Equals(Territories, other.Territories)
                 ;
         }
 

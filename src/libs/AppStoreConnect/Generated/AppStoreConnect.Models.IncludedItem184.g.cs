@@ -12,220 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionVersionResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetLocalizationsV2ResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionImageV2? SubscriptionImages { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetImageV2? GameCenterLeaderboardSetImages { get; init; }
 #else
-        public global::AppStoreConnect.SubscriptionImageV2? SubscriptionImages { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetImageV2? GameCenterLeaderboardSetImages { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionImages))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSetImages))]
 #endif
-        public bool IsSubscriptionImages => SubscriptionImages != null;
+        public bool IsGameCenterLeaderboardSetImages => GameCenterLeaderboardSetImages != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptionImages(
+        public bool TryPickGameCenterLeaderboardSetImages(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.SubscriptionImageV2? value)
+            out global::AppStoreConnect.GameCenterLeaderboardSetImageV2? value)
         {
-            value = SubscriptionImages;
-            return IsSubscriptionImages;
+            value = GameCenterLeaderboardSetImages;
+            return IsGameCenterLeaderboardSetImages;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionImageV2 PickSubscriptionImages() => SubscriptionImages is { } value
+        public global::AppStoreConnect.GameCenterLeaderboardSetImageV2 PickGameCenterLeaderboardSetImages() => GameCenterLeaderboardSetImages is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionImages' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSetImages' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionLocalizationV2? SubscriptionLocalizations { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetVersionV2? GameCenterLeaderboardSetVersions { get; init; }
 #else
-        public global::AppStoreConnect.SubscriptionLocalizationV2? SubscriptionLocalizations { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetVersionV2? GameCenterLeaderboardSetVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionLocalizations))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSetVersions))]
 #endif
-        public bool IsSubscriptionLocalizations => SubscriptionLocalizations != null;
+        public bool IsGameCenterLeaderboardSetVersions => GameCenterLeaderboardSetVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptionLocalizations(
+        public bool TryPickGameCenterLeaderboardSetVersions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.SubscriptionLocalizationV2? value)
+            out global::AppStoreConnect.GameCenterLeaderboardSetVersionV2? value)
         {
-            value = SubscriptionLocalizations;
-            return IsSubscriptionLocalizations;
+            value = GameCenterLeaderboardSetVersions;
+            return IsGameCenterLeaderboardSetVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionLocalizationV2 PickSubscriptionLocalizations() => SubscriptionLocalizations is { } value
+        public global::AppStoreConnect.GameCenterLeaderboardSetVersionV2 PickGameCenterLeaderboardSetVersions() => GameCenterLeaderboardSetVersions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionLocalizations' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSetVersions' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem184(global::AppStoreConnect.GameCenterLeaderboardSetImageV2 value) => new IncludedItem184((global::AppStoreConnect.GameCenterLeaderboardSetImageV2?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
-#else
-        public global::AppStoreConnect.Subscription? Subscriptions { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSetImageV2?(IncludedItem184 @this) => @this.GameCenterLeaderboardSetImages;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
-#endif
-        public bool IsSubscriptions => Subscriptions != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickSubscriptions(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.Subscription? value)
+        public IncludedItem184(global::AppStoreConnect.GameCenterLeaderboardSetImageV2? value)
         {
-            value = Subscriptions;
-            return IsSubscriptions;
+            GameCenterLeaderboardSetImages = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem184(global::AppStoreConnect.SubscriptionImageV2 value) => new IncludedItem184((global::AppStoreConnect.SubscriptionImageV2?)value);
+        public static IncludedItem184 FromGameCenterLeaderboardSetImages(global::AppStoreConnect.GameCenterLeaderboardSetImageV2? value) => new IncludedItem184(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionImageV2?(IncludedItem184 @this) => @this.SubscriptionImages;
+        public static implicit operator IncludedItem184(global::AppStoreConnect.GameCenterLeaderboardSetVersionV2 value) => new IncludedItem184((global::AppStoreConnect.GameCenterLeaderboardSetVersionV2?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem184(global::AppStoreConnect.SubscriptionImageV2? value)
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSetVersionV2?(IncludedItem184 @this) => @this.GameCenterLeaderboardSetVersions;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem184(global::AppStoreConnect.GameCenterLeaderboardSetVersionV2? value)
         {
-            SubscriptionImages = value;
+            GameCenterLeaderboardSetVersions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem184 FromSubscriptionImages(global::AppStoreConnect.SubscriptionImageV2? value) => new IncludedItem184(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem184(global::AppStoreConnect.SubscriptionLocalizationV2 value) => new IncludedItem184((global::AppStoreConnect.SubscriptionLocalizationV2?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionLocalizationV2?(IncludedItem184 @this) => @this.SubscriptionLocalizations;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem184(global::AppStoreConnect.SubscriptionLocalizationV2? value)
-        {
-            SubscriptionLocalizations = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem184 FromSubscriptionLocalizations(global::AppStoreConnect.SubscriptionLocalizationV2? value) => new IncludedItem184(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem184(global::AppStoreConnect.Subscription value) => new IncludedItem184((global::AppStoreConnect.Subscription?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem184 @this) => @this.Subscriptions;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem184(global::AppStoreConnect.Subscription? value)
-        {
-            Subscriptions = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem184 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem184(value);
+        public static IncludedItem184 FromGameCenterLeaderboardSetVersions(global::AppStoreConnect.GameCenterLeaderboardSetVersionV2? value) => new IncludedItem184(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem184(
-            global::AppStoreConnect.SubscriptionVersionResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.SubscriptionImageV2? subscriptionImages,
-            global::AppStoreConnect.SubscriptionLocalizationV2? subscriptionLocalizations,
-            global::AppStoreConnect.Subscription? subscriptions
+            global::AppStoreConnect.GameCenterLeaderboardSetLocalizationsV2ResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.GameCenterLeaderboardSetImageV2? gameCenterLeaderboardSetImages,
+            global::AppStoreConnect.GameCenterLeaderboardSetVersionV2? gameCenterLeaderboardSetVersions
             )
         {
             Type = type;
 
-            SubscriptionImages = subscriptionImages;
-            SubscriptionLocalizations = subscriptionLocalizations;
-            Subscriptions = subscriptions;
+            GameCenterLeaderboardSetImages = gameCenterLeaderboardSetImages;
+            GameCenterLeaderboardSetVersions = gameCenterLeaderboardSetVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Subscriptions as object ??
-            SubscriptionLocalizations as object ??
-            SubscriptionImages as object
+            GameCenterLeaderboardSetVersions as object ??
+            GameCenterLeaderboardSetImages as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            SubscriptionImages?.ToString() ??
-            SubscriptionLocalizations?.ToString() ??
-            Subscriptions?.ToString()
+            GameCenterLeaderboardSetImages?.ToString() ??
+            GameCenterLeaderboardSetVersions?.ToString()
             ;
 
         /// <summary>
@@ -233,16 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsSubscriptionImages && !IsSubscriptionLocalizations && !IsSubscriptions || !IsSubscriptionImages && IsSubscriptionLocalizations && !IsSubscriptions || !IsSubscriptionImages && !IsSubscriptionLocalizations && IsSubscriptions;
+            return IsGameCenterLeaderboardSetImages && !IsGameCenterLeaderboardSetVersions || !IsGameCenterLeaderboardSetImages && IsGameCenterLeaderboardSetVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.SubscriptionImageV2, TResult>? subscriptionImages = null,
-            global::System.Func<global::AppStoreConnect.SubscriptionLocalizationV2, TResult>? subscriptionLocalizations = null,
-            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSetImageV2, TResult>? gameCenterLeaderboardSetImages = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSetVersionV2, TResult>? gameCenterLeaderboardSetVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -250,17 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionImages is { } __value0 && subscriptionImages != null)
+            if (GameCenterLeaderboardSetImages is { } __value0 && gameCenterLeaderboardSetImages != null)
             {
-                return subscriptionImages(__value0);
+                return gameCenterLeaderboardSetImages(__value0);
             }
-            else if (SubscriptionLocalizations is { } __value1 && subscriptionLocalizations != null)
+            else if (GameCenterLeaderboardSetVersions is { } __value1 && gameCenterLeaderboardSetVersions != null)
             {
-                return subscriptionLocalizations(__value1);
-            }
-            else if (Subscriptions is { } __value2 && subscriptions != null)
-            {
-                return subscriptions(__value2);
+                return gameCenterLeaderboardSetVersions(__value1);
             }
 
             return default(TResult);
@@ -270,11 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.SubscriptionImageV2>? subscriptionImages = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetImageV2>? gameCenterLeaderboardSetImages = null,
 
-            global::System.Action<global::AppStoreConnect.SubscriptionLocalizationV2>? subscriptionLocalizations = null,
-
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetVersionV2>? gameCenterLeaderboardSetVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -282,17 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionImages is { } __value0)
+            if (GameCenterLeaderboardSetImages is { } __value0)
             {
-                subscriptionImages?.Invoke(__value0);
+                gameCenterLeaderboardSetImages?.Invoke(__value0);
             }
-            else if (SubscriptionLocalizations is { } __value1)
+            else if (GameCenterLeaderboardSetVersions is { } __value1)
             {
-                subscriptionLocalizations?.Invoke(__value1);
-            }
-            else if (Subscriptions is { } __value2)
-            {
-                subscriptions?.Invoke(__value2);
+                gameCenterLeaderboardSetVersions?.Invoke(__value1);
             }
         }
 
@@ -300,9 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.SubscriptionImageV2>? subscriptionImages = null,
-            global::System.Action<global::AppStoreConnect.SubscriptionLocalizationV2>? subscriptionLocalizations = null,
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetImageV2>? gameCenterLeaderboardSetImages = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetVersionV2>? gameCenterLeaderboardSetVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -310,17 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionImages is { } __value0)
+            if (GameCenterLeaderboardSetImages is { } __value0)
             {
-                subscriptionImages?.Invoke(__value0);
+                gameCenterLeaderboardSetImages?.Invoke(__value0);
             }
-            else if (SubscriptionLocalizations is { } __value1)
+            else if (GameCenterLeaderboardSetVersions is { } __value1)
             {
-                subscriptionLocalizations?.Invoke(__value1);
-            }
-            else if (Subscriptions is { } __value2)
-            {
-                subscriptions?.Invoke(__value2);
+                gameCenterLeaderboardSetVersions?.Invoke(__value1);
             }
         }
 
@@ -331,12 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                SubscriptionImages,
-                typeof(global::AppStoreConnect.SubscriptionImageV2),
-                SubscriptionLocalizations,
-                typeof(global::AppStoreConnect.SubscriptionLocalizationV2),
-                Subscriptions,
-                typeof(global::AppStoreConnect.Subscription),
+                GameCenterLeaderboardSetImages,
+                typeof(global::AppStoreConnect.GameCenterLeaderboardSetImageV2),
+                GameCenterLeaderboardSetVersions,
+                typeof(global::AppStoreConnect.GameCenterLeaderboardSetVersionV2),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -353,9 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem184 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionImageV2?>.Default.Equals(SubscriptionImages, other.SubscriptionImages) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionLocalizationV2?>.Default.Equals(SubscriptionLocalizations, other.SubscriptionLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSetImageV2?>.Default.Equals(GameCenterLeaderboardSetImages, other.GameCenterLeaderboardSetImages) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSetVersionV2?>.Default.Equals(GameCenterLeaderboardSetVersions, other.GameCenterLeaderboardSetVersions)
                 ;
         }
 

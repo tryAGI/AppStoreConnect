@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppPriceV2InlineCreateRelationshipsAppPricePointDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0113.Create_AppPriceV2InlineCreateRelationshipsAppPricePointDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0112.Create_AppPriceV2InlineCreateRelationshipsAppPricePointDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppPriceV2InlineCreateRelationshipsAppPricePointDataType?))
                 {

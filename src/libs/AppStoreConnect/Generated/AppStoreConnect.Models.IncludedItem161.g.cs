@@ -12,156 +12,348 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.RetentionOffersResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppCustomProductPageLocalizationsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.RetentionOfferPrice? RetentionOfferPrices { get; init; }
+        public global::AppStoreConnect.AppAssetLibraryPlacement? AppAssetLibraryPlacements { get; init; }
 #else
-        public global::AppStoreConnect.RetentionOfferPrice? RetentionOfferPrices { get; }
+        public global::AppStoreConnect.AppAssetLibraryPlacement? AppAssetLibraryPlacements { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RetentionOfferPrices))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppAssetLibraryPlacements))]
 #endif
-        public bool IsRetentionOfferPrices => RetentionOfferPrices != null;
+        public bool IsAppAssetLibraryPlacements => AppAssetLibraryPlacements != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickRetentionOfferPrices(
+        public bool TryPickAppAssetLibraryPlacements(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.RetentionOfferPrice? value)
+            out global::AppStoreConnect.AppAssetLibraryPlacement? value)
         {
-            value = RetentionOfferPrices;
-            return IsRetentionOfferPrices;
+            value = AppAssetLibraryPlacements;
+            return IsAppAssetLibraryPlacements;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.RetentionOfferPrice PickRetentionOfferPrices() => RetentionOfferPrices is { } value
+        public global::AppStoreConnect.AppAssetLibraryPlacement PickAppAssetLibraryPlacements() => AppAssetLibraryPlacements is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'RetentionOfferPrices' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppAssetLibraryPlacements' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
+        public global::AppStoreConnect.AppCustomProductPageVersion? AppCustomProductPageVersions { get; init; }
 #else
-        public global::AppStoreConnect.Subscription? Subscriptions { get; }
+        public global::AppStoreConnect.AppCustomProductPageVersion? AppCustomProductPageVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageVersions))]
 #endif
-        public bool IsSubscriptions => Subscriptions != null;
+        public bool IsAppCustomProductPageVersions => AppCustomProductPageVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptions(
+        public bool TryPickAppCustomProductPageVersions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.Subscription? value)
+            out global::AppStoreConnect.AppCustomProductPageVersion? value)
         {
-            value = Subscriptions;
-            return IsSubscriptions;
+            value = AppCustomProductPageVersions;
+            return IsAppCustomProductPageVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
+        public global::AppStoreConnect.AppCustomProductPageVersion PickAppCustomProductPageVersions() => AppCustomProductPageVersions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem161(global::AppStoreConnect.RetentionOfferPrice value) => new IncludedItem161((global::AppStoreConnect.RetentionOfferPrice?)value);
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageVersions' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.RetentionOfferPrice?(IncludedItem161 @this) => @this.RetentionOfferPrices;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AppKeyword? AppKeywords { get; init; }
+#else
+        public global::AppStoreConnect.AppKeyword? AppKeywords { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem161(global::AppStoreConnect.RetentionOfferPrice? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppKeywords))]
+#endif
+        public bool IsAppKeywords => AppKeywords != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAppKeywords(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppKeyword? value)
         {
-            RetentionOfferPrices = value;
+            value = AppKeywords;
+            return IsAppKeywords;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem161 FromRetentionOfferPrices(global::AppStoreConnect.RetentionOfferPrice? value) => new IncludedItem161(value);
+        public global::AppStoreConnect.AppKeyword PickAppKeywords() => AppKeywords is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppKeywords' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem161(global::AppStoreConnect.Subscription value) => new IncludedItem161((global::AppStoreConnect.Subscription?)value);
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AppPreviewSet? AppPreviewSets { get; init; }
+#else
+        public global::AppStoreConnect.AppPreviewSet? AppPreviewSets { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem161 @this) => @this.Subscriptions;
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppPreviewSets))]
+#endif
+        public bool IsAppPreviewSets => AppPreviewSets != null;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem161(global::AppStoreConnect.Subscription? value)
+        public bool TryPickAppPreviewSets(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppPreviewSet? value)
         {
-            Subscriptions = value;
+            value = AppPreviewSets;
+            return IsAppPreviewSets;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem161 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem161(value);
+        public global::AppStoreConnect.AppPreviewSet PickAppPreviewSets() => AppPreviewSets is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppPreviewSets' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AppScreenshotSet? AppScreenshotSets { get; init; }
+#else
+        public global::AppStoreConnect.AppScreenshotSet? AppScreenshotSets { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppScreenshotSets))]
+#endif
+        public bool IsAppScreenshotSets => AppScreenshotSets != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAppScreenshotSets(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppScreenshotSet? value)
+        {
+            value = AppScreenshotSets;
+            return IsAppScreenshotSets;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::AppStoreConnect.AppScreenshotSet PickAppScreenshotSets() => AppScreenshotSets is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppScreenshotSets' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem161(global::AppStoreConnect.AppAssetLibraryPlacement value) => new IncludedItem161((global::AppStoreConnect.AppAssetLibraryPlacement?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppAssetLibraryPlacement?(IncludedItem161 @this) => @this.AppAssetLibraryPlacements;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem161(global::AppStoreConnect.AppAssetLibraryPlacement? value)
+        {
+            AppAssetLibraryPlacements = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem161 FromAppAssetLibraryPlacements(global::AppStoreConnect.AppAssetLibraryPlacement? value) => new IncludedItem161(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem161(global::AppStoreConnect.AppCustomProductPageVersion value) => new IncludedItem161((global::AppStoreConnect.AppCustomProductPageVersion?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppCustomProductPageVersion?(IncludedItem161 @this) => @this.AppCustomProductPageVersions;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem161(global::AppStoreConnect.AppCustomProductPageVersion? value)
+        {
+            AppCustomProductPageVersions = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem161 FromAppCustomProductPageVersions(global::AppStoreConnect.AppCustomProductPageVersion? value) => new IncludedItem161(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem161(global::AppStoreConnect.AppKeyword value) => new IncludedItem161((global::AppStoreConnect.AppKeyword?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppKeyword?(IncludedItem161 @this) => @this.AppKeywords;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem161(global::AppStoreConnect.AppKeyword? value)
+        {
+            AppKeywords = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem161 FromAppKeywords(global::AppStoreConnect.AppKeyword? value) => new IncludedItem161(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem161(global::AppStoreConnect.AppPreviewSet value) => new IncludedItem161((global::AppStoreConnect.AppPreviewSet?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppPreviewSet?(IncludedItem161 @this) => @this.AppPreviewSets;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem161(global::AppStoreConnect.AppPreviewSet? value)
+        {
+            AppPreviewSets = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem161 FromAppPreviewSets(global::AppStoreConnect.AppPreviewSet? value) => new IncludedItem161(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem161(global::AppStoreConnect.AppScreenshotSet value) => new IncludedItem161((global::AppStoreConnect.AppScreenshotSet?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppScreenshotSet?(IncludedItem161 @this) => @this.AppScreenshotSets;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem161(global::AppStoreConnect.AppScreenshotSet? value)
+        {
+            AppScreenshotSets = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem161 FromAppScreenshotSets(global::AppStoreConnect.AppScreenshotSet? value) => new IncludedItem161(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem161(
-            global::AppStoreConnect.RetentionOffersResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.RetentionOfferPrice? retentionOfferPrices,
-            global::AppStoreConnect.Subscription? subscriptions
+            global::AppStoreConnect.AppCustomProductPageLocalizationsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppAssetLibraryPlacement? appAssetLibraryPlacements,
+            global::AppStoreConnect.AppCustomProductPageVersion? appCustomProductPageVersions,
+            global::AppStoreConnect.AppKeyword? appKeywords,
+            global::AppStoreConnect.AppPreviewSet? appPreviewSets,
+            global::AppStoreConnect.AppScreenshotSet? appScreenshotSets
             )
         {
             Type = type;
 
-            RetentionOfferPrices = retentionOfferPrices;
-            Subscriptions = subscriptions;
+            AppAssetLibraryPlacements = appAssetLibraryPlacements;
+            AppCustomProductPageVersions = appCustomProductPageVersions;
+            AppKeywords = appKeywords;
+            AppPreviewSets = appPreviewSets;
+            AppScreenshotSets = appScreenshotSets;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Subscriptions as object ??
-            RetentionOfferPrices as object
+            AppScreenshotSets as object ??
+            AppPreviewSets as object ??
+            AppKeywords as object ??
+            AppCustomProductPageVersions as object ??
+            AppAssetLibraryPlacements as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            RetentionOfferPrices?.ToString() ??
-            Subscriptions?.ToString()
+            AppAssetLibraryPlacements?.ToString() ??
+            AppCustomProductPageVersions?.ToString() ??
+            AppKeywords?.ToString() ??
+            AppPreviewSets?.ToString() ??
+            AppScreenshotSets?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +361,18 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsRetentionOfferPrices && !IsSubscriptions || !IsRetentionOfferPrices && IsSubscriptions;
+            return IsAppAssetLibraryPlacements && !IsAppCustomProductPageVersions && !IsAppKeywords && !IsAppPreviewSets && !IsAppScreenshotSets || !IsAppAssetLibraryPlacements && IsAppCustomProductPageVersions && !IsAppKeywords && !IsAppPreviewSets && !IsAppScreenshotSets || !IsAppAssetLibraryPlacements && !IsAppCustomProductPageVersions && IsAppKeywords && !IsAppPreviewSets && !IsAppScreenshotSets || !IsAppAssetLibraryPlacements && !IsAppCustomProductPageVersions && !IsAppKeywords && IsAppPreviewSets && !IsAppScreenshotSets || !IsAppAssetLibraryPlacements && !IsAppCustomProductPageVersions && !IsAppKeywords && !IsAppPreviewSets && IsAppScreenshotSets;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.RetentionOfferPrice, TResult>? retentionOfferPrices = null,
-            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
+            global::System.Func<global::AppStoreConnect.AppAssetLibraryPlacement, TResult>? appAssetLibraryPlacements = null,
+            global::System.Func<global::AppStoreConnect.AppCustomProductPageVersion, TResult>? appCustomProductPageVersions = null,
+            global::System.Func<global::AppStoreConnect.AppKeyword, TResult>? appKeywords = null,
+            global::System.Func<global::AppStoreConnect.AppPreviewSet, TResult>? appPreviewSets = null,
+            global::System.Func<global::AppStoreConnect.AppScreenshotSet, TResult>? appScreenshotSets = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +380,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (RetentionOfferPrices is { } __value0 && retentionOfferPrices != null)
+            if (AppAssetLibraryPlacements is { } __value0 && appAssetLibraryPlacements != null)
             {
-                return retentionOfferPrices(__value0);
+                return appAssetLibraryPlacements(__value0);
             }
-            else if (Subscriptions is { } __value1 && subscriptions != null)
+            else if (AppCustomProductPageVersions is { } __value1 && appCustomProductPageVersions != null)
             {
-                return subscriptions(__value1);
+                return appCustomProductPageVersions(__value1);
+            }
+            else if (AppKeywords is { } __value2 && appKeywords != null)
+            {
+                return appKeywords(__value2);
+            }
+            else if (AppPreviewSets is { } __value3 && appPreviewSets != null)
+            {
+                return appPreviewSets(__value3);
+            }
+            else if (AppScreenshotSets is { } __value4 && appScreenshotSets != null)
+            {
+                return appScreenshotSets(__value4);
             }
 
             return default(TResult);
@@ -201,9 +408,15 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.RetentionOfferPrice>? retentionOfferPrices = null,
+            global::System.Action<global::AppStoreConnect.AppAssetLibraryPlacement>? appAssetLibraryPlacements = null,
 
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
+            global::System.Action<global::AppStoreConnect.AppCustomProductPageVersion>? appCustomProductPageVersions = null,
+
+            global::System.Action<global::AppStoreConnect.AppKeyword>? appKeywords = null,
+
+            global::System.Action<global::AppStoreConnect.AppPreviewSet>? appPreviewSets = null,
+
+            global::System.Action<global::AppStoreConnect.AppScreenshotSet>? appScreenshotSets = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +424,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (RetentionOfferPrices is { } __value0)
+            if (AppAssetLibraryPlacements is { } __value0)
             {
-                retentionOfferPrices?.Invoke(__value0);
+                appAssetLibraryPlacements?.Invoke(__value0);
             }
-            else if (Subscriptions is { } __value1)
+            else if (AppCustomProductPageVersions is { } __value1)
             {
-                subscriptions?.Invoke(__value1);
+                appCustomProductPageVersions?.Invoke(__value1);
+            }
+            else if (AppKeywords is { } __value2)
+            {
+                appKeywords?.Invoke(__value2);
+            }
+            else if (AppPreviewSets is { } __value3)
+            {
+                appPreviewSets?.Invoke(__value3);
+            }
+            else if (AppScreenshotSets is { } __value4)
+            {
+                appScreenshotSets?.Invoke(__value4);
             }
         }
 
@@ -225,8 +450,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.RetentionOfferPrice>? retentionOfferPrices = null,
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
+            global::System.Action<global::AppStoreConnect.AppAssetLibraryPlacement>? appAssetLibraryPlacements = null,
+            global::System.Action<global::AppStoreConnect.AppCustomProductPageVersion>? appCustomProductPageVersions = null,
+            global::System.Action<global::AppStoreConnect.AppKeyword>? appKeywords = null,
+            global::System.Action<global::AppStoreConnect.AppPreviewSet>? appPreviewSets = null,
+            global::System.Action<global::AppStoreConnect.AppScreenshotSet>? appScreenshotSets = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +462,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (RetentionOfferPrices is { } __value0)
+            if (AppAssetLibraryPlacements is { } __value0)
             {
-                retentionOfferPrices?.Invoke(__value0);
+                appAssetLibraryPlacements?.Invoke(__value0);
             }
-            else if (Subscriptions is { } __value1)
+            else if (AppCustomProductPageVersions is { } __value1)
             {
-                subscriptions?.Invoke(__value1);
+                appCustomProductPageVersions?.Invoke(__value1);
+            }
+            else if (AppKeywords is { } __value2)
+            {
+                appKeywords?.Invoke(__value2);
+            }
+            else if (AppPreviewSets is { } __value3)
+            {
+                appPreviewSets?.Invoke(__value3);
+            }
+            else if (AppScreenshotSets is { } __value4)
+            {
+                appScreenshotSets?.Invoke(__value4);
             }
         }
 
@@ -251,10 +491,16 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                RetentionOfferPrices,
-                typeof(global::AppStoreConnect.RetentionOfferPrice),
-                Subscriptions,
-                typeof(global::AppStoreConnect.Subscription),
+                AppAssetLibraryPlacements,
+                typeof(global::AppStoreConnect.AppAssetLibraryPlacement),
+                AppCustomProductPageVersions,
+                typeof(global::AppStoreConnect.AppCustomProductPageVersion),
+                AppKeywords,
+                typeof(global::AppStoreConnect.AppKeyword),
+                AppPreviewSets,
+                typeof(global::AppStoreConnect.AppPreviewSet),
+                AppScreenshotSets,
+                typeof(global::AppStoreConnect.AppScreenshotSet),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +517,11 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem161 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RetentionOfferPrice?>.Default.Equals(RetentionOfferPrices, other.RetentionOfferPrices) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppAssetLibraryPlacement?>.Default.Equals(AppAssetLibraryPlacements, other.AppAssetLibraryPlacements) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageVersion?>.Default.Equals(AppCustomProductPageVersions, other.AppCustomProductPageVersions) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppKeyword?>.Default.Equals(AppKeywords, other.AppKeywords) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppPreviewSet?>.Default.Equals(AppPreviewSets, other.AppPreviewSets) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppScreenshotSet?>.Default.Equals(AppScreenshotSets, other.AppScreenshotSets)
                 ;
         }
 

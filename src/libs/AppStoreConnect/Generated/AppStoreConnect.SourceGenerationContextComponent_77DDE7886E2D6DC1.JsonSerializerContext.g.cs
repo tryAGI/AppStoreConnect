@@ -9,7 +9,7 @@ namespace AppStoreConnect
         internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::AppStoreConnect.SourceGenerationContextMetadataScope>[] {
-                    static () => global::AppStoreConnect.SourceGenerationContextComponent_97D140A7AE1AA859.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_A00D0B125B294A10.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_A425E458A5AF994D.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_CA22712778B0EFF3.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_EFA7D4EC86AB6E9B.MetadataScope,
+                    static () => global::AppStoreConnect.SourceGenerationContextComponent_2202F852DBA5360E.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_4AACB3A6DFB946A8.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_59A28F0A28EF1613.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_D2E52CB26B00881D.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_EBF9D85E752E6B29.MetadataScope,
                 }, ContributeConverters);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 
@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.IncludedItem25))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0475.Create_IncludedItem252(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0474.Create_IncludedItem252(options);
                 }
                 if (type == typeof(global::AppStoreConnect.IncludedItem25?))
                 {

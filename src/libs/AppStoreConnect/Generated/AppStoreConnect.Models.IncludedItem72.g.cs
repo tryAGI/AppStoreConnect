@@ -12,284 +12,284 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CiWorkflowsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppEventLocalizationResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.CiMacOsVersion? CiMacOsVersions { get; init; }
+        public global::AppStoreConnect.AppAssetLibraryPlacement? AppAssetLibraryPlacements { get; init; }
 #else
-        public global::AppStoreConnect.CiMacOsVersion? CiMacOsVersions { get; }
+        public global::AppStoreConnect.AppAssetLibraryPlacement? AppAssetLibraryPlacements { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CiMacOsVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppAssetLibraryPlacements))]
 #endif
-        public bool IsCiMacOsVersions => CiMacOsVersions != null;
+        public bool IsAppAssetLibraryPlacements => AppAssetLibraryPlacements != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickCiMacOsVersions(
+        public bool TryPickAppAssetLibraryPlacements(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.CiMacOsVersion? value)
+            out global::AppStoreConnect.AppAssetLibraryPlacement? value)
         {
-            value = CiMacOsVersions;
-            return IsCiMacOsVersions;
+            value = AppAssetLibraryPlacements;
+            return IsAppAssetLibraryPlacements;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CiMacOsVersion PickCiMacOsVersions() => CiMacOsVersions is { } value
+        public global::AppStoreConnect.AppAssetLibraryPlacement PickAppAssetLibraryPlacements() => AppAssetLibraryPlacements is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'CiMacOsVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppAssetLibraryPlacements' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.CiProduct? CiProducts { get; init; }
+        public global::AppStoreConnect.AppEventScreenshot? AppEventScreenshots { get; init; }
 #else
-        public global::AppStoreConnect.CiProduct? CiProducts { get; }
+        public global::AppStoreConnect.AppEventScreenshot? AppEventScreenshots { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CiProducts))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEventScreenshots))]
 #endif
-        public bool IsCiProducts => CiProducts != null;
+        public bool IsAppEventScreenshots => AppEventScreenshots != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickCiProducts(
+        public bool TryPickAppEventScreenshots(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.CiProduct? value)
+            out global::AppStoreConnect.AppEventScreenshot? value)
         {
-            value = CiProducts;
-            return IsCiProducts;
+            value = AppEventScreenshots;
+            return IsAppEventScreenshots;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CiProduct PickCiProducts() => CiProducts is { } value
+        public global::AppStoreConnect.AppEventScreenshot PickAppEventScreenshots() => AppEventScreenshots is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'CiProducts' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEventScreenshots' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.CiXcodeVersion? CiXcodeVersions { get; init; }
+        public global::AppStoreConnect.AppEventVideoClip? AppEventVideoClips { get; init; }
 #else
-        public global::AppStoreConnect.CiXcodeVersion? CiXcodeVersions { get; }
+        public global::AppStoreConnect.AppEventVideoClip? AppEventVideoClips { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CiXcodeVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEventVideoClips))]
 #endif
-        public bool IsCiXcodeVersions => CiXcodeVersions != null;
+        public bool IsAppEventVideoClips => AppEventVideoClips != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickCiXcodeVersions(
+        public bool TryPickAppEventVideoClips(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.CiXcodeVersion? value)
+            out global::AppStoreConnect.AppEventVideoClip? value)
         {
-            value = CiXcodeVersions;
-            return IsCiXcodeVersions;
+            value = AppEventVideoClips;
+            return IsAppEventVideoClips;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CiXcodeVersion PickCiXcodeVersions() => CiXcodeVersions is { } value
+        public global::AppStoreConnect.AppEventVideoClip PickAppEventVideoClips() => AppEventVideoClips is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'CiXcodeVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEventVideoClips' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.ScmRepository? ScmRepositories { get; init; }
+        public global::AppStoreConnect.AppEvent? AppEvents { get; init; }
 #else
-        public global::AppStoreConnect.ScmRepository? ScmRepositories { get; }
+        public global::AppStoreConnect.AppEvent? AppEvents { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmRepositories))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEvents))]
 #endif
-        public bool IsScmRepositories => ScmRepositories != null;
+        public bool IsAppEvents => AppEvents != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickScmRepositories(
+        public bool TryPickAppEvents(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.ScmRepository? value)
+            out global::AppStoreConnect.AppEvent? value)
         {
-            value = ScmRepositories;
-            return IsScmRepositories;
+            value = AppEvents;
+            return IsAppEvents;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmRepository PickScmRepositories() => ScmRepositories is { } value
+        public global::AppStoreConnect.AppEvent PickAppEvents() => AppEvents is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'ScmRepositories' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEvents' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem72(global::AppStoreConnect.CiMacOsVersion value) => new IncludedItem72((global::AppStoreConnect.CiMacOsVersion?)value);
+        public static implicit operator IncludedItem72(global::AppStoreConnect.AppAssetLibraryPlacement value) => new IncludedItem72((global::AppStoreConnect.AppAssetLibraryPlacement?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.CiMacOsVersion?(IncludedItem72 @this) => @this.CiMacOsVersions;
+        public static implicit operator global::AppStoreConnect.AppAssetLibraryPlacement?(IncludedItem72 @this) => @this.AppAssetLibraryPlacements;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem72(global::AppStoreConnect.CiMacOsVersion? value)
+        public IncludedItem72(global::AppStoreConnect.AppAssetLibraryPlacement? value)
         {
-            CiMacOsVersions = value;
+            AppAssetLibraryPlacements = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem72 FromCiMacOsVersions(global::AppStoreConnect.CiMacOsVersion? value) => new IncludedItem72(value);
+        public static IncludedItem72 FromAppAssetLibraryPlacements(global::AppStoreConnect.AppAssetLibraryPlacement? value) => new IncludedItem72(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem72(global::AppStoreConnect.CiProduct value) => new IncludedItem72((global::AppStoreConnect.CiProduct?)value);
+        public static implicit operator IncludedItem72(global::AppStoreConnect.AppEventScreenshot value) => new IncludedItem72((global::AppStoreConnect.AppEventScreenshot?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.CiProduct?(IncludedItem72 @this) => @this.CiProducts;
+        public static implicit operator global::AppStoreConnect.AppEventScreenshot?(IncludedItem72 @this) => @this.AppEventScreenshots;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem72(global::AppStoreConnect.CiProduct? value)
+        public IncludedItem72(global::AppStoreConnect.AppEventScreenshot? value)
         {
-            CiProducts = value;
+            AppEventScreenshots = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem72 FromCiProducts(global::AppStoreConnect.CiProduct? value) => new IncludedItem72(value);
+        public static IncludedItem72 FromAppEventScreenshots(global::AppStoreConnect.AppEventScreenshot? value) => new IncludedItem72(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem72(global::AppStoreConnect.CiXcodeVersion value) => new IncludedItem72((global::AppStoreConnect.CiXcodeVersion?)value);
+        public static implicit operator IncludedItem72(global::AppStoreConnect.AppEventVideoClip value) => new IncludedItem72((global::AppStoreConnect.AppEventVideoClip?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.CiXcodeVersion?(IncludedItem72 @this) => @this.CiXcodeVersions;
+        public static implicit operator global::AppStoreConnect.AppEventVideoClip?(IncludedItem72 @this) => @this.AppEventVideoClips;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem72(global::AppStoreConnect.CiXcodeVersion? value)
+        public IncludedItem72(global::AppStoreConnect.AppEventVideoClip? value)
         {
-            CiXcodeVersions = value;
+            AppEventVideoClips = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem72 FromCiXcodeVersions(global::AppStoreConnect.CiXcodeVersion? value) => new IncludedItem72(value);
+        public static IncludedItem72 FromAppEventVideoClips(global::AppStoreConnect.AppEventVideoClip? value) => new IncludedItem72(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem72(global::AppStoreConnect.ScmRepository value) => new IncludedItem72((global::AppStoreConnect.ScmRepository?)value);
+        public static implicit operator IncludedItem72(global::AppStoreConnect.AppEvent value) => new IncludedItem72((global::AppStoreConnect.AppEvent?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.ScmRepository?(IncludedItem72 @this) => @this.ScmRepositories;
+        public static implicit operator global::AppStoreConnect.AppEvent?(IncludedItem72 @this) => @this.AppEvents;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem72(global::AppStoreConnect.ScmRepository? value)
+        public IncludedItem72(global::AppStoreConnect.AppEvent? value)
         {
-            ScmRepositories = value;
+            AppEvents = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem72 FromScmRepositories(global::AppStoreConnect.ScmRepository? value) => new IncludedItem72(value);
+        public static IncludedItem72 FromAppEvents(global::AppStoreConnect.AppEvent? value) => new IncludedItem72(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem72(
-            global::AppStoreConnect.CiWorkflowsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.CiMacOsVersion? ciMacOsVersions,
-            global::AppStoreConnect.CiProduct? ciProducts,
-            global::AppStoreConnect.CiXcodeVersion? ciXcodeVersions,
-            global::AppStoreConnect.ScmRepository? scmRepositories
+            global::AppStoreConnect.AppEventLocalizationResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppAssetLibraryPlacement? appAssetLibraryPlacements,
+            global::AppStoreConnect.AppEventScreenshot? appEventScreenshots,
+            global::AppStoreConnect.AppEventVideoClip? appEventVideoClips,
+            global::AppStoreConnect.AppEvent? appEvents
             )
         {
             Type = type;
 
-            CiMacOsVersions = ciMacOsVersions;
-            CiProducts = ciProducts;
-            CiXcodeVersions = ciXcodeVersions;
-            ScmRepositories = scmRepositories;
+            AppAssetLibraryPlacements = appAssetLibraryPlacements;
+            AppEventScreenshots = appEventScreenshots;
+            AppEventVideoClips = appEventVideoClips;
+            AppEvents = appEvents;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            ScmRepositories as object ??
-            CiXcodeVersions as object ??
-            CiProducts as object ??
-            CiMacOsVersions as object
+            AppEvents as object ??
+            AppEventVideoClips as object ??
+            AppEventScreenshots as object ??
+            AppAssetLibraryPlacements as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            CiMacOsVersions?.ToString() ??
-            CiProducts?.ToString() ??
-            CiXcodeVersions?.ToString() ??
-            ScmRepositories?.ToString()
+            AppAssetLibraryPlacements?.ToString() ??
+            AppEventScreenshots?.ToString() ??
+            AppEventVideoClips?.ToString() ??
+            AppEvents?.ToString()
             ;
 
         /// <summary>
@@ -297,17 +297,17 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsCiMacOsVersions && !IsCiProducts && !IsCiXcodeVersions && !IsScmRepositories || !IsCiMacOsVersions && IsCiProducts && !IsCiXcodeVersions && !IsScmRepositories || !IsCiMacOsVersions && !IsCiProducts && IsCiXcodeVersions && !IsScmRepositories || !IsCiMacOsVersions && !IsCiProducts && !IsCiXcodeVersions && IsScmRepositories;
+            return IsAppAssetLibraryPlacements && !IsAppEventScreenshots && !IsAppEventVideoClips && !IsAppEvents || !IsAppAssetLibraryPlacements && IsAppEventScreenshots && !IsAppEventVideoClips && !IsAppEvents || !IsAppAssetLibraryPlacements && !IsAppEventScreenshots && IsAppEventVideoClips && !IsAppEvents || !IsAppAssetLibraryPlacements && !IsAppEventScreenshots && !IsAppEventVideoClips && IsAppEvents;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.CiMacOsVersion, TResult>? ciMacOsVersions = null,
-            global::System.Func<global::AppStoreConnect.CiProduct, TResult>? ciProducts = null,
-            global::System.Func<global::AppStoreConnect.CiXcodeVersion, TResult>? ciXcodeVersions = null,
-            global::System.Func<global::AppStoreConnect.ScmRepository, TResult>? scmRepositories = null,
+            global::System.Func<global::AppStoreConnect.AppAssetLibraryPlacement, TResult>? appAssetLibraryPlacements = null,
+            global::System.Func<global::AppStoreConnect.AppEventScreenshot, TResult>? appEventScreenshots = null,
+            global::System.Func<global::AppStoreConnect.AppEventVideoClip, TResult>? appEventVideoClips = null,
+            global::System.Func<global::AppStoreConnect.AppEvent, TResult>? appEvents = null,
             bool validate = true)
         {
             if (validate)
@@ -315,21 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (CiMacOsVersions is { } __value0 && ciMacOsVersions != null)
+            if (AppAssetLibraryPlacements is { } __value0 && appAssetLibraryPlacements != null)
             {
-                return ciMacOsVersions(__value0);
+                return appAssetLibraryPlacements(__value0);
             }
-            else if (CiProducts is { } __value1 && ciProducts != null)
+            else if (AppEventScreenshots is { } __value1 && appEventScreenshots != null)
             {
-                return ciProducts(__value1);
+                return appEventScreenshots(__value1);
             }
-            else if (CiXcodeVersions is { } __value2 && ciXcodeVersions != null)
+            else if (AppEventVideoClips is { } __value2 && appEventVideoClips != null)
             {
-                return ciXcodeVersions(__value2);
+                return appEventVideoClips(__value2);
             }
-            else if (ScmRepositories is { } __value3 && scmRepositories != null)
+            else if (AppEvents is { } __value3 && appEvents != null)
             {
-                return scmRepositories(__value3);
+                return appEvents(__value3);
             }
 
             return default(TResult);
@@ -339,13 +339,13 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.CiMacOsVersion>? ciMacOsVersions = null,
+            global::System.Action<global::AppStoreConnect.AppAssetLibraryPlacement>? appAssetLibraryPlacements = null,
 
-            global::System.Action<global::AppStoreConnect.CiProduct>? ciProducts = null,
+            global::System.Action<global::AppStoreConnect.AppEventScreenshot>? appEventScreenshots = null,
 
-            global::System.Action<global::AppStoreConnect.CiXcodeVersion>? ciXcodeVersions = null,
+            global::System.Action<global::AppStoreConnect.AppEventVideoClip>? appEventVideoClips = null,
 
-            global::System.Action<global::AppStoreConnect.ScmRepository>? scmRepositories = null,
+            global::System.Action<global::AppStoreConnect.AppEvent>? appEvents = null,
             bool validate = true)
         {
             if (validate)
@@ -353,21 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (CiMacOsVersions is { } __value0)
+            if (AppAssetLibraryPlacements is { } __value0)
             {
-                ciMacOsVersions?.Invoke(__value0);
+                appAssetLibraryPlacements?.Invoke(__value0);
             }
-            else if (CiProducts is { } __value1)
+            else if (AppEventScreenshots is { } __value1)
             {
-                ciProducts?.Invoke(__value1);
+                appEventScreenshots?.Invoke(__value1);
             }
-            else if (CiXcodeVersions is { } __value2)
+            else if (AppEventVideoClips is { } __value2)
             {
-                ciXcodeVersions?.Invoke(__value2);
+                appEventVideoClips?.Invoke(__value2);
             }
-            else if (ScmRepositories is { } __value3)
+            else if (AppEvents is { } __value3)
             {
-                scmRepositories?.Invoke(__value3);
+                appEvents?.Invoke(__value3);
             }
         }
 
@@ -375,10 +375,10 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.CiMacOsVersion>? ciMacOsVersions = null,
-            global::System.Action<global::AppStoreConnect.CiProduct>? ciProducts = null,
-            global::System.Action<global::AppStoreConnect.CiXcodeVersion>? ciXcodeVersions = null,
-            global::System.Action<global::AppStoreConnect.ScmRepository>? scmRepositories = null,
+            global::System.Action<global::AppStoreConnect.AppAssetLibraryPlacement>? appAssetLibraryPlacements = null,
+            global::System.Action<global::AppStoreConnect.AppEventScreenshot>? appEventScreenshots = null,
+            global::System.Action<global::AppStoreConnect.AppEventVideoClip>? appEventVideoClips = null,
+            global::System.Action<global::AppStoreConnect.AppEvent>? appEvents = null,
             bool validate = true)
         {
             if (validate)
@@ -386,21 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (CiMacOsVersions is { } __value0)
+            if (AppAssetLibraryPlacements is { } __value0)
             {
-                ciMacOsVersions?.Invoke(__value0);
+                appAssetLibraryPlacements?.Invoke(__value0);
             }
-            else if (CiProducts is { } __value1)
+            else if (AppEventScreenshots is { } __value1)
             {
-                ciProducts?.Invoke(__value1);
+                appEventScreenshots?.Invoke(__value1);
             }
-            else if (CiXcodeVersions is { } __value2)
+            else if (AppEventVideoClips is { } __value2)
             {
-                ciXcodeVersions?.Invoke(__value2);
+                appEventVideoClips?.Invoke(__value2);
             }
-            else if (ScmRepositories is { } __value3)
+            else if (AppEvents is { } __value3)
             {
-                scmRepositories?.Invoke(__value3);
+                appEvents?.Invoke(__value3);
             }
         }
 
@@ -411,14 +411,14 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                CiMacOsVersions,
-                typeof(global::AppStoreConnect.CiMacOsVersion),
-                CiProducts,
-                typeof(global::AppStoreConnect.CiProduct),
-                CiXcodeVersions,
-                typeof(global::AppStoreConnect.CiXcodeVersion),
-                ScmRepositories,
-                typeof(global::AppStoreConnect.ScmRepository),
+                AppAssetLibraryPlacements,
+                typeof(global::AppStoreConnect.AppAssetLibraryPlacement),
+                AppEventScreenshots,
+                typeof(global::AppStoreConnect.AppEventScreenshot),
+                AppEventVideoClips,
+                typeof(global::AppStoreConnect.AppEventVideoClip),
+                AppEvents,
+                typeof(global::AppStoreConnect.AppEvent),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -435,10 +435,10 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem72 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CiMacOsVersion?>.Default.Equals(CiMacOsVersions, other.CiMacOsVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CiProduct?>.Default.Equals(CiProducts, other.CiProducts) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CiXcodeVersion?>.Default.Equals(CiXcodeVersions, other.CiXcodeVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmRepository?>.Default.Equals(ScmRepositories, other.ScmRepositories)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppAssetLibraryPlacement?>.Default.Equals(AppAssetLibraryPlacements, other.AppAssetLibraryPlacements) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEventScreenshot?>.Default.Equals(AppEventScreenshots, other.AppEventScreenshots) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEventVideoClip?>.Default.Equals(AppEventVideoClips, other.AppEventVideoClips) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEvent?>.Default.Equals(AppEvents, other.AppEvents)
                 ;
         }
 

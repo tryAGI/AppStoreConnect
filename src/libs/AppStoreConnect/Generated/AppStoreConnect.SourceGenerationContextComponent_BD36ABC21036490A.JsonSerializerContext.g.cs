@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BetaGroupsGetCollectionSortItem))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0210.Create_BetaGroupsGetCollectionSortItem2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0209.Create_BetaGroupsGetCollectionSortItem2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.BetaGroupsGetCollectionSortItem?))
                 {

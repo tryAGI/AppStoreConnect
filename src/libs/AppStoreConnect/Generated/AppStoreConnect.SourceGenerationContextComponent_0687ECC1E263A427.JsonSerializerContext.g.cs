@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.TerritoriesGetCollectionFieldsTerritorie))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1296.Create_TerritoriesGetCollectionFieldsTerritorie2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1295.Create_TerritoriesGetCollectionFieldsTerritorie2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.TerritoriesGetCollectionFieldsTerritorie?))
                 {

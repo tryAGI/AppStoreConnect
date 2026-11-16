@@ -9,7 +9,7 @@ namespace AppStoreConnect
         internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::AppStoreConnect.SourceGenerationContextMetadataScope>[] {
-                    static () => global::AppStoreConnect.SourceGenerationContextComponent_2FA3057EDF976744.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_B267C9C11D35F665.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_B74392AFE644F072.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_EAA16D821FB0A0B1.MetadataScope,
+                    static () => global::AppStoreConnect.SourceGenerationContextComponent_2FA3057EDF976744.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_7998A81E9D013F60.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_B267C9C11D35F665.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_EAA16D821FB0A0B1.MetadataScope,
                 }, ContributeConverters);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 
@@ -32,7 +32,7 @@ namespace AppStoreConnect
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::AppStoreConnect.InAppPurchase))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0432.Create_InAppPurchase(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0431.Create_InAppPurchase(options);
                 }
                 #pragma warning restore CS0618
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;

@@ -12,7 +12,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboardSetsV2ResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetV2ResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
@@ -257,7 +257,7 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public IncludedItem124(
-            global::AppStoreConnect.GameCenterLeaderboardSetsV2ResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.GameCenterLeaderboardSetV2ResponseIncludedItemDiscriminatorType? type,
             global::AppStoreConnect.GameCenterDetail? gameCenterDetails,
             global::AppStoreConnect.GameCenterGroup? gameCenterGroups,
             global::AppStoreConnect.GameCenterLeaderboardSetVersionV2? gameCenterLeaderboardSetVersions,

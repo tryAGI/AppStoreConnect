@@ -12,156 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.PromotedPurchasesResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardVersionsV2ResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.InAppPurchaseV2? InAppPurchases { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboardLocalizationV2? GameCenterLeaderboardLocalizations { get; init; }
 #else
-        public global::AppStoreConnect.InAppPurchaseV2? InAppPurchases { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardLocalizationV2? GameCenterLeaderboardLocalizations { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchases))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardLocalizations))]
 #endif
-        public bool IsInAppPurchases => InAppPurchases != null;
+        public bool IsGameCenterLeaderboardLocalizations => GameCenterLeaderboardLocalizations != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickInAppPurchases(
+        public bool TryPickGameCenterLeaderboardLocalizations(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.InAppPurchaseV2? value)
+            out global::AppStoreConnect.GameCenterLeaderboardLocalizationV2? value)
         {
-            value = InAppPurchases;
-            return IsInAppPurchases;
+            value = GameCenterLeaderboardLocalizations;
+            return IsGameCenterLeaderboardLocalizations;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseV2 PickInAppPurchases() => InAppPurchases is { } value
+        public global::AppStoreConnect.GameCenterLeaderboardLocalizationV2 PickGameCenterLeaderboardLocalizations() => GameCenterLeaderboardLocalizations is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchases' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardLocalizations' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboardV2? GameCenterLeaderboards { get; init; }
 #else
-        public global::AppStoreConnect.Subscription? Subscriptions { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardV2? GameCenterLeaderboards { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboards))]
 #endif
-        public bool IsSubscriptions => Subscriptions != null;
+        public bool IsGameCenterLeaderboards => GameCenterLeaderboards != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptions(
+        public bool TryPickGameCenterLeaderboards(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.Subscription? value)
+            out global::AppStoreConnect.GameCenterLeaderboardV2? value)
         {
-            value = Subscriptions;
-            return IsSubscriptions;
+            value = GameCenterLeaderboards;
+            return IsGameCenterLeaderboards;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
+        public global::AppStoreConnect.GameCenterLeaderboardV2 PickGameCenterLeaderboards() => GameCenterLeaderboards is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboards' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem154(global::AppStoreConnect.InAppPurchaseV2 value) => new IncludedItem154((global::AppStoreConnect.InAppPurchaseV2?)value);
+        public static implicit operator IncludedItem154(global::AppStoreConnect.GameCenterLeaderboardLocalizationV2 value) => new IncludedItem154((global::AppStoreConnect.GameCenterLeaderboardLocalizationV2?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.InAppPurchaseV2?(IncludedItem154 @this) => @this.InAppPurchases;
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardLocalizationV2?(IncludedItem154 @this) => @this.GameCenterLeaderboardLocalizations;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem154(global::AppStoreConnect.InAppPurchaseV2? value)
+        public IncludedItem154(global::AppStoreConnect.GameCenterLeaderboardLocalizationV2? value)
         {
-            InAppPurchases = value;
+            GameCenterLeaderboardLocalizations = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem154 FromInAppPurchases(global::AppStoreConnect.InAppPurchaseV2? value) => new IncludedItem154(value);
+        public static IncludedItem154 FromGameCenterLeaderboardLocalizations(global::AppStoreConnect.GameCenterLeaderboardLocalizationV2? value) => new IncludedItem154(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem154(global::AppStoreConnect.Subscription value) => new IncludedItem154((global::AppStoreConnect.Subscription?)value);
+        public static implicit operator IncludedItem154(global::AppStoreConnect.GameCenterLeaderboardV2 value) => new IncludedItem154((global::AppStoreConnect.GameCenterLeaderboardV2?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem154 @this) => @this.Subscriptions;
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardV2?(IncludedItem154 @this) => @this.GameCenterLeaderboards;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem154(global::AppStoreConnect.Subscription? value)
+        public IncludedItem154(global::AppStoreConnect.GameCenterLeaderboardV2? value)
         {
-            Subscriptions = value;
+            GameCenterLeaderboards = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem154 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem154(value);
+        public static IncludedItem154 FromGameCenterLeaderboards(global::AppStoreConnect.GameCenterLeaderboardV2? value) => new IncludedItem154(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem154(
-            global::AppStoreConnect.PromotedPurchasesResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.InAppPurchaseV2? inAppPurchases,
-            global::AppStoreConnect.Subscription? subscriptions
+            global::AppStoreConnect.GameCenterLeaderboardVersionsV2ResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.GameCenterLeaderboardLocalizationV2? gameCenterLeaderboardLocalizations,
+            global::AppStoreConnect.GameCenterLeaderboardV2? gameCenterLeaderboards
             )
         {
             Type = type;
 
-            InAppPurchases = inAppPurchases;
-            Subscriptions = subscriptions;
+            GameCenterLeaderboardLocalizations = gameCenterLeaderboardLocalizations;
+            GameCenterLeaderboards = gameCenterLeaderboards;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Subscriptions as object ??
-            InAppPurchases as object
+            GameCenterLeaderboards as object ??
+            GameCenterLeaderboardLocalizations as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            InAppPurchases?.ToString() ??
-            Subscriptions?.ToString()
+            GameCenterLeaderboardLocalizations?.ToString() ??
+            GameCenterLeaderboards?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsInAppPurchases && !IsSubscriptions || !IsInAppPurchases && IsSubscriptions;
+            return IsGameCenterLeaderboardLocalizations && !IsGameCenterLeaderboards || !IsGameCenterLeaderboardLocalizations && IsGameCenterLeaderboards;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.InAppPurchaseV2, TResult>? inAppPurchases = null,
-            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardLocalizationV2, TResult>? gameCenterLeaderboardLocalizations = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardV2, TResult>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (InAppPurchases is { } __value0 && inAppPurchases != null)
+            if (GameCenterLeaderboardLocalizations is { } __value0 && gameCenterLeaderboardLocalizations != null)
             {
-                return inAppPurchases(__value0);
+                return gameCenterLeaderboardLocalizations(__value0);
             }
-            else if (Subscriptions is { } __value1 && subscriptions != null)
+            else if (GameCenterLeaderboards is { } __value1 && gameCenterLeaderboards != null)
             {
-                return subscriptions(__value1);
+                return gameCenterLeaderboards(__value1);
             }
 
             return default(TResult);
@@ -201,9 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.InAppPurchaseV2>? inAppPurchases = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardLocalizationV2>? gameCenterLeaderboardLocalizations = null,
 
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardV2>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (InAppPurchases is { } __value0)
+            if (GameCenterLeaderboardLocalizations is { } __value0)
             {
-                inAppPurchases?.Invoke(__value0);
+                gameCenterLeaderboardLocalizations?.Invoke(__value0);
             }
-            else if (Subscriptions is { } __value1)
+            else if (GameCenterLeaderboards is { } __value1)
             {
-                subscriptions?.Invoke(__value1);
+                gameCenterLeaderboards?.Invoke(__value1);
             }
         }
 
@@ -225,8 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.InAppPurchaseV2>? inAppPurchases = null,
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardLocalizationV2>? gameCenterLeaderboardLocalizations = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardV2>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (InAppPurchases is { } __value0)
+            if (GameCenterLeaderboardLocalizations is { } __value0)
             {
-                inAppPurchases?.Invoke(__value0);
+                gameCenterLeaderboardLocalizations?.Invoke(__value0);
             }
-            else if (Subscriptions is { } __value1)
+            else if (GameCenterLeaderboards is { } __value1)
             {
-                subscriptions?.Invoke(__value1);
+                gameCenterLeaderboards?.Invoke(__value1);
             }
         }
 
@@ -251,10 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                InAppPurchases,
-                typeof(global::AppStoreConnect.InAppPurchaseV2),
-                Subscriptions,
-                typeof(global::AppStoreConnect.Subscription),
+                GameCenterLeaderboardLocalizations,
+                typeof(global::AppStoreConnect.GameCenterLeaderboardLocalizationV2),
+                GameCenterLeaderboards,
+                typeof(global::AppStoreConnect.GameCenterLeaderboardV2),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem154 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseV2?>.Default.Equals(InAppPurchases, other.InAppPurchases) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardLocalizationV2?>.Default.Equals(GameCenterLeaderboardLocalizations, other.GameCenterLeaderboardLocalizations) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardV2?>.Default.Equals(GameCenterLeaderboards, other.GameCenterLeaderboards)
                 ;
         }
 

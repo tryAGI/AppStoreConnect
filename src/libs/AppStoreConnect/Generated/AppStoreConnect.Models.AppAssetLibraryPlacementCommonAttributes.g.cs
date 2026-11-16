@@ -19,8 +19,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("placementType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementType2JsonConverter))]
-        public global::AppStoreConnect.AppAssetLibraryPlacementType2? PlacementType { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementTypeJsonConverter))]
+        public global::AppStoreConnect.AppAssetLibraryPlacementType? PlacementType { get; set; }
 
         /// <summary>
         ///
@@ -74,7 +74,7 @@ namespace AppStoreConnect
 #endif
         public AppAssetLibraryPlacementCommonAttributes(
             global::AppStoreConnect.AppAssetLibraryMediaType? mediaType,
-            global::AppStoreConnect.AppAssetLibraryPlacementType2? placementType,
+            global::AppStoreConnect.AppAssetLibraryPlacementType? placementType,
             string? placementGroup,
             global::System.DateTime? createdDate,
             global::System.DateTime? lastModifiedDate,

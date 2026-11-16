@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CiWorkflowRelationshipsXcodeVersionDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0268.Create_CiWorkflowRelationshipsXcodeVersionDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0267.Create_CiWorkflowRelationshipsXcodeVersionDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.CiWorkflowRelationshipsXcodeVersionDataType?))
                 {

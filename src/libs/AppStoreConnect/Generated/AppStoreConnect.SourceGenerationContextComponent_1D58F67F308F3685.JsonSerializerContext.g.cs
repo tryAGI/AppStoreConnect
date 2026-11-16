@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.EndUserLicenseAgreementType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0281.Create_EndUserLicenseAgreementType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0280.Create_EndUserLicenseAgreementType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.EndUserLicenseAgreementType?))
                 {

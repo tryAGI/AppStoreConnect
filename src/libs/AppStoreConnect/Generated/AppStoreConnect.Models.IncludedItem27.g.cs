@@ -12,284 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppPreviewSetResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.BuildUploadsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations { get; init; }
+        public global::AppStoreConnect.BuildUploadFile? BuildUploadFiles { get; init; }
 #else
-        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations { get; }
+        public global::AppStoreConnect.BuildUploadFile? BuildUploadFiles { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageLocalizations))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BuildUploadFiles))]
 #endif
-        public bool IsAppCustomProductPageLocalizations => AppCustomProductPageLocalizations != null;
+        public bool IsBuildUploadFiles => BuildUploadFiles != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppCustomProductPageLocalizations(
+        public bool TryPickBuildUploadFiles(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppCustomProductPageLocalization? value)
+            out global::AppStoreConnect.BuildUploadFile? value)
         {
-            value = AppCustomProductPageLocalizations;
-            return IsAppCustomProductPageLocalizations;
+            value = BuildUploadFiles;
+            return IsBuildUploadFiles;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCustomProductPageLocalization PickAppCustomProductPageLocalizations() => AppCustomProductPageLocalizations is { } value
+        public global::AppStoreConnect.BuildUploadFile PickBuildUploadFiles() => BuildUploadFiles is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageLocalizations' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BuildUploadFiles' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppPreview? AppPreviews { get; init; }
+        public global::AppStoreConnect.Build? Builds { get; init; }
 #else
-        public global::AppStoreConnect.AppPreview? AppPreviews { get; }
+        public global::AppStoreConnect.Build? Builds { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppPreviews))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
 #endif
-        public bool IsAppPreviews => AppPreviews != null;
+        public bool IsBuilds => Builds != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppPreviews(
+        public bool TryPickBuilds(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppPreview? value)
+            out global::AppStoreConnect.Build? value)
         {
-            value = AppPreviews;
-            return IsAppPreviews;
+            value = Builds;
+            return IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppPreview PickAppPreviews() => AppPreviews is { } value
+        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppPreviews' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem27(global::AppStoreConnect.BuildUploadFile value) => new IncludedItem27((global::AppStoreConnect.BuildUploadFile?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? AppStoreVersionExperimentTreatmentLocalizations { get; init; }
-#else
-        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? AppStoreVersionExperimentTreatmentLocalizations { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.BuildUploadFile?(IncludedItem27 @this) => @this.BuildUploadFiles;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperimentTreatmentLocalizations))]
-#endif
-        public bool IsAppStoreVersionExperimentTreatmentLocalizations => AppStoreVersionExperimentTreatmentLocalizations != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppStoreVersionExperimentTreatmentLocalizations(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? value)
+        public IncludedItem27(global::AppStoreConnect.BuildUploadFile? value)
         {
-            value = AppStoreVersionExperimentTreatmentLocalizations;
-            return IsAppStoreVersionExperimentTreatmentLocalizations;
+            BuildUploadFiles = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization PickAppStoreVersionExperimentTreatmentLocalizations() => AppStoreVersionExperimentTreatmentLocalizations is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatmentLocalizations' but the value was {ToString()}.");
+        public static IncludedItem27 FromBuildUploadFiles(global::AppStoreConnect.BuildUploadFile? value) => new IncludedItem27(value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersionLocalization? AppStoreVersionLocalizations { get; init; }
-#else
-        public global::AppStoreConnect.AppStoreVersionLocalization? AppStoreVersionLocalizations { get; }
-#endif
+        public static implicit operator IncludedItem27(global::AppStoreConnect.Build value) => new IncludedItem27((global::AppStoreConnect.Build?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionLocalizations))]
-#endif
-        public bool IsAppStoreVersionLocalizations => AppStoreVersionLocalizations != null;
+        public static implicit operator global::AppStoreConnect.Build?(IncludedItem27 @this) => @this.Builds;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreVersionLocalizations(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppStoreVersionLocalization? value)
+        public IncludedItem27(global::AppStoreConnect.Build? value)
         {
-            value = AppStoreVersionLocalizations;
-            return IsAppStoreVersionLocalizations;
+            Builds = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionLocalization PickAppStoreVersionLocalizations() => AppStoreVersionLocalizations is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionLocalizations' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem27(global::AppStoreConnect.AppCustomProductPageLocalization value) => new IncludedItem27((global::AppStoreConnect.AppCustomProductPageLocalization?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppCustomProductPageLocalization?(IncludedItem27 @this) => @this.AppCustomProductPageLocalizations;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem27(global::AppStoreConnect.AppCustomProductPageLocalization? value)
-        {
-            AppCustomProductPageLocalizations = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem27 FromAppCustomProductPageLocalizations(global::AppStoreConnect.AppCustomProductPageLocalization? value) => new IncludedItem27(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem27(global::AppStoreConnect.AppPreview value) => new IncludedItem27((global::AppStoreConnect.AppPreview?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppPreview?(IncludedItem27 @this) => @this.AppPreviews;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem27(global::AppStoreConnect.AppPreview? value)
-        {
-            AppPreviews = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem27 FromAppPreviews(global::AppStoreConnect.AppPreview? value) => new IncludedItem27(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem27(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization value) => new IncludedItem27((global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization?(IncludedItem27 @this) => @this.AppStoreVersionExperimentTreatmentLocalizations;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem27(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? value)
-        {
-            AppStoreVersionExperimentTreatmentLocalizations = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem27 FromAppStoreVersionExperimentTreatmentLocalizations(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? value) => new IncludedItem27(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem27(global::AppStoreConnect.AppStoreVersionLocalization value) => new IncludedItem27((global::AppStoreConnect.AppStoreVersionLocalization?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersionLocalization?(IncludedItem27 @this) => @this.AppStoreVersionLocalizations;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem27(global::AppStoreConnect.AppStoreVersionLocalization? value)
-        {
-            AppStoreVersionLocalizations = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem27 FromAppStoreVersionLocalizations(global::AppStoreConnect.AppStoreVersionLocalization? value) => new IncludedItem27(value);
+        public static IncludedItem27 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem27(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem27(
-            global::AppStoreConnect.AppPreviewSetResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppCustomProductPageLocalization? appCustomProductPageLocalizations,
-            global::AppStoreConnect.AppPreview? appPreviews,
-            global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? appStoreVersionExperimentTreatmentLocalizations,
-            global::AppStoreConnect.AppStoreVersionLocalization? appStoreVersionLocalizations
+            global::AppStoreConnect.BuildUploadsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.BuildUploadFile? buildUploadFiles,
+            global::AppStoreConnect.Build? builds
             )
         {
             Type = type;
 
-            AppCustomProductPageLocalizations = appCustomProductPageLocalizations;
-            AppPreviews = appPreviews;
-            AppStoreVersionExperimentTreatmentLocalizations = appStoreVersionExperimentTreatmentLocalizations;
-            AppStoreVersionLocalizations = appStoreVersionLocalizations;
+            BuildUploadFiles = buildUploadFiles;
+            Builds = builds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            AppStoreVersionLocalizations as object ??
-            AppStoreVersionExperimentTreatmentLocalizations as object ??
-            AppPreviews as object ??
-            AppCustomProductPageLocalizations as object
+            Builds as object ??
+            BuildUploadFiles as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppCustomProductPageLocalizations?.ToString() ??
-            AppPreviews?.ToString() ??
-            AppStoreVersionExperimentTreatmentLocalizations?.ToString() ??
-            AppStoreVersionLocalizations?.ToString()
+            BuildUploadFiles?.ToString() ??
+            Builds?.ToString()
             ;
 
         /// <summary>
@@ -297,17 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppCustomProductPageLocalizations && !IsAppPreviews && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations || !IsAppCustomProductPageLocalizations && IsAppPreviews && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations || !IsAppCustomProductPageLocalizations && !IsAppPreviews && IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations || !IsAppCustomProductPageLocalizations && !IsAppPreviews && !IsAppStoreVersionExperimentTreatmentLocalizations && IsAppStoreVersionLocalizations;
+            return IsBuildUploadFiles && !IsBuilds || !IsBuildUploadFiles && IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppCustomProductPageLocalization, TResult>? appCustomProductPageLocalizations = null,
-            global::System.Func<global::AppStoreConnect.AppPreview, TResult>? appPreviews = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization, TResult>? appStoreVersionExperimentTreatmentLocalizations = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersionLocalization, TResult>? appStoreVersionLocalizations = null,
+            global::System.Func<global::AppStoreConnect.BuildUploadFile, TResult>? buildUploadFiles = null,
+            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -315,21 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations is { } __value0 && appCustomProductPageLocalizations != null)
+            if (BuildUploadFiles is { } __value0 && buildUploadFiles != null)
             {
-                return appCustomProductPageLocalizations(__value0);
+                return buildUploadFiles(__value0);
             }
-            else if (AppPreviews is { } __value1 && appPreviews != null)
+            else if (Builds is { } __value1 && builds != null)
             {
-                return appPreviews(__value1);
-            }
-            else if (AppStoreVersionExperimentTreatmentLocalizations is { } __value2 && appStoreVersionExperimentTreatmentLocalizations != null)
-            {
-                return appStoreVersionExperimentTreatmentLocalizations(__value2);
-            }
-            else if (AppStoreVersionLocalizations is { } __value3 && appStoreVersionLocalizations != null)
-            {
-                return appStoreVersionLocalizations(__value3);
+                return builds(__value1);
             }
 
             return default(TResult);
@@ -339,13 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations = null,
+            global::System.Action<global::AppStoreConnect.BuildUploadFile>? buildUploadFiles = null,
 
-            global::System.Action<global::AppStoreConnect.AppPreview>? appPreviews = null,
-
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization>? appStoreVersionExperimentTreatmentLocalizations = null,
-
-            global::System.Action<global::AppStoreConnect.AppStoreVersionLocalization>? appStoreVersionLocalizations = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -353,21 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations is { } __value0)
+            if (BuildUploadFiles is { } __value0)
             {
-                appCustomProductPageLocalizations?.Invoke(__value0);
+                buildUploadFiles?.Invoke(__value0);
             }
-            else if (AppPreviews is { } __value1)
+            else if (Builds is { } __value1)
             {
-                appPreviews?.Invoke(__value1);
-            }
-            else if (AppStoreVersionExperimentTreatmentLocalizations is { } __value2)
-            {
-                appStoreVersionExperimentTreatmentLocalizations?.Invoke(__value2);
-            }
-            else if (AppStoreVersionLocalizations is { } __value3)
-            {
-                appStoreVersionLocalizations?.Invoke(__value3);
+                builds?.Invoke(__value1);
             }
         }
 
@@ -375,10 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations = null,
-            global::System.Action<global::AppStoreConnect.AppPreview>? appPreviews = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization>? appStoreVersionExperimentTreatmentLocalizations = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersionLocalization>? appStoreVersionLocalizations = null,
+            global::System.Action<global::AppStoreConnect.BuildUploadFile>? buildUploadFiles = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -386,21 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations is { } __value0)
+            if (BuildUploadFiles is { } __value0)
             {
-                appCustomProductPageLocalizations?.Invoke(__value0);
+                buildUploadFiles?.Invoke(__value0);
             }
-            else if (AppPreviews is { } __value1)
+            else if (Builds is { } __value1)
             {
-                appPreviews?.Invoke(__value1);
-            }
-            else if (AppStoreVersionExperimentTreatmentLocalizations is { } __value2)
-            {
-                appStoreVersionExperimentTreatmentLocalizations?.Invoke(__value2);
-            }
-            else if (AppStoreVersionLocalizations is { } __value3)
-            {
-                appStoreVersionLocalizations?.Invoke(__value3);
+                builds?.Invoke(__value1);
             }
         }
 
@@ -411,14 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppCustomProductPageLocalizations,
-                typeof(global::AppStoreConnect.AppCustomProductPageLocalization),
-                AppPreviews,
-                typeof(global::AppStoreConnect.AppPreview),
-                AppStoreVersionExperimentTreatmentLocalizations,
-                typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization),
-                AppStoreVersionLocalizations,
-                typeof(global::AppStoreConnect.AppStoreVersionLocalization),
+                BuildUploadFiles,
+                typeof(global::AppStoreConnect.BuildUploadFile),
+                Builds,
+                typeof(global::AppStoreConnect.Build),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -435,10 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem27 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageLocalization?>.Default.Equals(AppCustomProductPageLocalizations, other.AppCustomProductPageLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppPreview?>.Default.Equals(AppPreviews, other.AppPreviews) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization?>.Default.Equals(AppStoreVersionExperimentTreatmentLocalizations, other.AppStoreVersionExperimentTreatmentLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionLocalization?>.Default.Equals(AppStoreVersionLocalizations, other.AppStoreVersionLocalizations)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BuildUploadFile?>.Default.Equals(BuildUploadFiles, other.BuildUploadFiles) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
                 ;
         }
 

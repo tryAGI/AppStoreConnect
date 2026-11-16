@@ -12,8 +12,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.WebhookEventTypeJsonConverter))]
-        public global::AppStoreConnect.WebhookEventType Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.WebhookEventType2JsonConverter))]
+        public global::AppStoreConnect.WebhookEventType2 Type { get; set; }
 
         /// <summary>
         ///
@@ -52,7 +52,7 @@ namespace AppStoreConnect
 #endif
         public WebhookEvent(
             string id,
-            global::AppStoreConnect.WebhookEventType type,
+            global::AppStoreConnect.WebhookEventType2 type,
             global::AppStoreConnect.WebhookEventAttributes? attributes,
             global::AppStoreConnect.ResourceLinks? links)
         {

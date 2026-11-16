@@ -11,15 +11,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        App,
-        /// <summary>
-        ///
-        /// </summary>
-        AppClip,
-        /// <summary>
-        ///
-        /// </summary>
-        WatchApp,
+        BuildBundles,
     }
 
     /// <summary>
@@ -34,9 +26,7 @@ namespace AppStoreConnect
         {
             return value switch
             {
-                BuildBundleType2.App => "APP",
-                BuildBundleType2.AppClip => "APP_CLIP",
-                BuildBundleType2.WatchApp => "WATCH_APP",
+                BuildBundleType2.BuildBundles => "buildBundles",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -47,9 +37,7 @@ namespace AppStoreConnect
         {
             return value switch
             {
-                "APP" => BuildBundleType2.App,
-                "APP_CLIP" => BuildBundleType2.AppClip,
-                "WATCH_APP" => BuildBundleType2.WatchApp,
+                "buildBundles" => BuildBundleType2.BuildBundles,
                 _ => null,
             };
         }

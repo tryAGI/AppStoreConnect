@@ -12,348 +12,220 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCustomProductPageLocalizationResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.CiProductResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppAssetLibraryPlacement? AppAssetLibraryPlacements { get; init; }
+        public global::AppStoreConnect.App? Apps { get; init; }
 #else
-        public global::AppStoreConnect.AppAssetLibraryPlacement? AppAssetLibraryPlacements { get; }
+        public global::AppStoreConnect.App? Apps { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppAssetLibraryPlacements))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
 #endif
-        public bool IsAppAssetLibraryPlacements => AppAssetLibraryPlacements != null;
+        public bool IsApps => Apps != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppAssetLibraryPlacements(
+        public bool TryPickApps(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppAssetLibraryPlacement? value)
+            out global::AppStoreConnect.App? value)
         {
-            value = AppAssetLibraryPlacements;
-            return IsAppAssetLibraryPlacements;
+            value = Apps;
+            return IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppAssetLibraryPlacement PickAppAssetLibraryPlacements() => AppAssetLibraryPlacements is { } value
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppAssetLibraryPlacements' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppCustomProductPageVersion? AppCustomProductPageVersions { get; init; }
+        public global::AppStoreConnect.BundleId? BundleIds { get; init; }
 #else
-        public global::AppStoreConnect.AppCustomProductPageVersion? AppCustomProductPageVersions { get; }
+        public global::AppStoreConnect.BundleId? BundleIds { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BundleIds))]
 #endif
-        public bool IsAppCustomProductPageVersions => AppCustomProductPageVersions != null;
+        public bool IsBundleIds => BundleIds != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppCustomProductPageVersions(
+        public bool TryPickBundleIds(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppCustomProductPageVersion? value)
+            out global::AppStoreConnect.BundleId? value)
         {
-            value = AppCustomProductPageVersions;
-            return IsAppCustomProductPageVersions;
+            value = BundleIds;
+            return IsBundleIds;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCustomProductPageVersion PickAppCustomProductPageVersions() => AppCustomProductPageVersions is { } value
+        public global::AppStoreConnect.BundleId PickBundleIds() => BundleIds is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BundleIds' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppKeyword? AppKeywords { get; init; }
+        public global::AppStoreConnect.ScmRepository? ScmRepositories { get; init; }
 #else
-        public global::AppStoreConnect.AppKeyword? AppKeywords { get; }
+        public global::AppStoreConnect.ScmRepository? ScmRepositories { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppKeywords))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmRepositories))]
 #endif
-        public bool IsAppKeywords => AppKeywords != null;
+        public bool IsScmRepositories => ScmRepositories != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppKeywords(
+        public bool TryPickScmRepositories(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppKeyword? value)
+            out global::AppStoreConnect.ScmRepository? value)
         {
-            value = AppKeywords;
-            return IsAppKeywords;
+            value = ScmRepositories;
+            return IsScmRepositories;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppKeyword PickAppKeywords() => AppKeywords is { } value
+        public global::AppStoreConnect.ScmRepository PickScmRepositories() => ScmRepositories is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppKeywords' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScmRepositories' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem14(global::AppStoreConnect.App value) => new IncludedItem14((global::AppStoreConnect.App?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppPreviewSet? AppPreviewSets { get; init; }
-#else
-        public global::AppStoreConnect.AppPreviewSet? AppPreviewSets { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem14 @this) => @this.Apps;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppPreviewSets))]
-#endif
-        public bool IsAppPreviewSets => AppPreviewSets != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppPreviewSets(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppPreviewSet? value)
+        public IncludedItem14(global::AppStoreConnect.App? value)
         {
-            value = AppPreviewSets;
-            return IsAppPreviewSets;
+            Apps = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppPreviewSet PickAppPreviewSets() => AppPreviewSets is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppPreviewSets' but the value was {ToString()}.");
+        public static IncludedItem14 FromApps(global::AppStoreConnect.App? value) => new IncludedItem14(value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppScreenshotSet? AppScreenshotSets { get; init; }
-#else
-        public global::AppStoreConnect.AppScreenshotSet? AppScreenshotSets { get; }
-#endif
+        public static implicit operator IncludedItem14(global::AppStoreConnect.BundleId value) => new IncludedItem14((global::AppStoreConnect.BundleId?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppScreenshotSets))]
-#endif
-        public bool IsAppScreenshotSets => AppScreenshotSets != null;
+        public static implicit operator global::AppStoreConnect.BundleId?(IncludedItem14 @this) => @this.BundleIds;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppScreenshotSets(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppScreenshotSet? value)
+        public IncludedItem14(global::AppStoreConnect.BundleId? value)
         {
-            value = AppScreenshotSets;
-            return IsAppScreenshotSets;
+            BundleIds = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppScreenshotSet PickAppScreenshotSets() => AppScreenshotSets is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppScreenshotSets' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem14(global::AppStoreConnect.AppAssetLibraryPlacement value) => new IncludedItem14((global::AppStoreConnect.AppAssetLibraryPlacement?)value);
+        public static IncludedItem14 FromBundleIds(global::AppStoreConnect.BundleId? value) => new IncludedItem14(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppAssetLibraryPlacement?(IncludedItem14 @this) => @this.AppAssetLibraryPlacements;
+        public static implicit operator IncludedItem14(global::AppStoreConnect.ScmRepository value) => new IncludedItem14((global::AppStoreConnect.ScmRepository?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem14(global::AppStoreConnect.AppAssetLibraryPlacement? value)
+        public static implicit operator global::AppStoreConnect.ScmRepository?(IncludedItem14 @this) => @this.ScmRepositories;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem14(global::AppStoreConnect.ScmRepository? value)
         {
-            AppAssetLibraryPlacements = value;
+            ScmRepositories = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem14 FromAppAssetLibraryPlacements(global::AppStoreConnect.AppAssetLibraryPlacement? value) => new IncludedItem14(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem14(global::AppStoreConnect.AppCustomProductPageVersion value) => new IncludedItem14((global::AppStoreConnect.AppCustomProductPageVersion?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppCustomProductPageVersion?(IncludedItem14 @this) => @this.AppCustomProductPageVersions;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem14(global::AppStoreConnect.AppCustomProductPageVersion? value)
-        {
-            AppCustomProductPageVersions = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem14 FromAppCustomProductPageVersions(global::AppStoreConnect.AppCustomProductPageVersion? value) => new IncludedItem14(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem14(global::AppStoreConnect.AppKeyword value) => new IncludedItem14((global::AppStoreConnect.AppKeyword?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppKeyword?(IncludedItem14 @this) => @this.AppKeywords;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem14(global::AppStoreConnect.AppKeyword? value)
-        {
-            AppKeywords = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem14 FromAppKeywords(global::AppStoreConnect.AppKeyword? value) => new IncludedItem14(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem14(global::AppStoreConnect.AppPreviewSet value) => new IncludedItem14((global::AppStoreConnect.AppPreviewSet?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppPreviewSet?(IncludedItem14 @this) => @this.AppPreviewSets;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem14(global::AppStoreConnect.AppPreviewSet? value)
-        {
-            AppPreviewSets = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem14 FromAppPreviewSets(global::AppStoreConnect.AppPreviewSet? value) => new IncludedItem14(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem14(global::AppStoreConnect.AppScreenshotSet value) => new IncludedItem14((global::AppStoreConnect.AppScreenshotSet?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppScreenshotSet?(IncludedItem14 @this) => @this.AppScreenshotSets;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem14(global::AppStoreConnect.AppScreenshotSet? value)
-        {
-            AppScreenshotSets = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem14 FromAppScreenshotSets(global::AppStoreConnect.AppScreenshotSet? value) => new IncludedItem14(value);
+        public static IncludedItem14 FromScmRepositories(global::AppStoreConnect.ScmRepository? value) => new IncludedItem14(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem14(
-            global::AppStoreConnect.AppCustomProductPageLocalizationResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppAssetLibraryPlacement? appAssetLibraryPlacements,
-            global::AppStoreConnect.AppCustomProductPageVersion? appCustomProductPageVersions,
-            global::AppStoreConnect.AppKeyword? appKeywords,
-            global::AppStoreConnect.AppPreviewSet? appPreviewSets,
-            global::AppStoreConnect.AppScreenshotSet? appScreenshotSets
+            global::AppStoreConnect.CiProductResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.App? apps,
+            global::AppStoreConnect.BundleId? bundleIds,
+            global::AppStoreConnect.ScmRepository? scmRepositories
             )
         {
             Type = type;
 
-            AppAssetLibraryPlacements = appAssetLibraryPlacements;
-            AppCustomProductPageVersions = appCustomProductPageVersions;
-            AppKeywords = appKeywords;
-            AppPreviewSets = appPreviewSets;
-            AppScreenshotSets = appScreenshotSets;
+            Apps = apps;
+            BundleIds = bundleIds;
+            ScmRepositories = scmRepositories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            AppScreenshotSets as object ??
-            AppPreviewSets as object ??
-            AppKeywords as object ??
-            AppCustomProductPageVersions as object ??
-            AppAssetLibraryPlacements as object
+            ScmRepositories as object ??
+            BundleIds as object ??
+            Apps as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppAssetLibraryPlacements?.ToString() ??
-            AppCustomProductPageVersions?.ToString() ??
-            AppKeywords?.ToString() ??
-            AppPreviewSets?.ToString() ??
-            AppScreenshotSets?.ToString()
+            Apps?.ToString() ??
+            BundleIds?.ToString() ??
+            ScmRepositories?.ToString()
             ;
 
         /// <summary>
@@ -361,18 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppAssetLibraryPlacements && !IsAppCustomProductPageVersions && !IsAppKeywords && !IsAppPreviewSets && !IsAppScreenshotSets || !IsAppAssetLibraryPlacements && IsAppCustomProductPageVersions && !IsAppKeywords && !IsAppPreviewSets && !IsAppScreenshotSets || !IsAppAssetLibraryPlacements && !IsAppCustomProductPageVersions && IsAppKeywords && !IsAppPreviewSets && !IsAppScreenshotSets || !IsAppAssetLibraryPlacements && !IsAppCustomProductPageVersions && !IsAppKeywords && IsAppPreviewSets && !IsAppScreenshotSets || !IsAppAssetLibraryPlacements && !IsAppCustomProductPageVersions && !IsAppKeywords && !IsAppPreviewSets && IsAppScreenshotSets;
+            return IsApps && !IsBundleIds && !IsScmRepositories || !IsApps && IsBundleIds && !IsScmRepositories || !IsApps && !IsBundleIds && IsScmRepositories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppAssetLibraryPlacement, TResult>? appAssetLibraryPlacements = null,
-            global::System.Func<global::AppStoreConnect.AppCustomProductPageVersion, TResult>? appCustomProductPageVersions = null,
-            global::System.Func<global::AppStoreConnect.AppKeyword, TResult>? appKeywords = null,
-            global::System.Func<global::AppStoreConnect.AppPreviewSet, TResult>? appPreviewSets = null,
-            global::System.Func<global::AppStoreConnect.AppScreenshotSet, TResult>? appScreenshotSets = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
+            global::System.Func<global::AppStoreConnect.BundleId, TResult>? bundleIds = null,
+            global::System.Func<global::AppStoreConnect.ScmRepository, TResult>? scmRepositories = null,
             bool validate = true)
         {
             if (validate)
@@ -380,25 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppAssetLibraryPlacements is { } __value0 && appAssetLibraryPlacements != null)
+            if (Apps is { } __value0 && apps != null)
             {
-                return appAssetLibraryPlacements(__value0);
+                return apps(__value0);
             }
-            else if (AppCustomProductPageVersions is { } __value1 && appCustomProductPageVersions != null)
+            else if (BundleIds is { } __value1 && bundleIds != null)
             {
-                return appCustomProductPageVersions(__value1);
+                return bundleIds(__value1);
             }
-            else if (AppKeywords is { } __value2 && appKeywords != null)
+            else if (ScmRepositories is { } __value2 && scmRepositories != null)
             {
-                return appKeywords(__value2);
-            }
-            else if (AppPreviewSets is { } __value3 && appPreviewSets != null)
-            {
-                return appPreviewSets(__value3);
-            }
-            else if (AppScreenshotSets is { } __value4 && appScreenshotSets != null)
-            {
-                return appScreenshotSets(__value4);
+                return scmRepositories(__value2);
             }
 
             return default(TResult);
@@ -408,15 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppAssetLibraryPlacement>? appAssetLibraryPlacements = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
 
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageVersion>? appCustomProductPageVersions = null,
+            global::System.Action<global::AppStoreConnect.BundleId>? bundleIds = null,
 
-            global::System.Action<global::AppStoreConnect.AppKeyword>? appKeywords = null,
-
-            global::System.Action<global::AppStoreConnect.AppPreviewSet>? appPreviewSets = null,
-
-            global::System.Action<global::AppStoreConnect.AppScreenshotSet>? appScreenshotSets = null,
+            global::System.Action<global::AppStoreConnect.ScmRepository>? scmRepositories = null,
             bool validate = true)
         {
             if (validate)
@@ -424,25 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppAssetLibraryPlacements is { } __value0)
+            if (Apps is { } __value0)
             {
-                appAssetLibraryPlacements?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (AppCustomProductPageVersions is { } __value1)
+            else if (BundleIds is { } __value1)
             {
-                appCustomProductPageVersions?.Invoke(__value1);
+                bundleIds?.Invoke(__value1);
             }
-            else if (AppKeywords is { } __value2)
+            else if (ScmRepositories is { } __value2)
             {
-                appKeywords?.Invoke(__value2);
-            }
-            else if (AppPreviewSets is { } __value3)
-            {
-                appPreviewSets?.Invoke(__value3);
-            }
-            else if (AppScreenshotSets is { } __value4)
-            {
-                appScreenshotSets?.Invoke(__value4);
+                scmRepositories?.Invoke(__value2);
             }
         }
 
@@ -450,11 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppAssetLibraryPlacement>? appAssetLibraryPlacements = null,
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageVersion>? appCustomProductPageVersions = null,
-            global::System.Action<global::AppStoreConnect.AppKeyword>? appKeywords = null,
-            global::System.Action<global::AppStoreConnect.AppPreviewSet>? appPreviewSets = null,
-            global::System.Action<global::AppStoreConnect.AppScreenshotSet>? appScreenshotSets = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.BundleId>? bundleIds = null,
+            global::System.Action<global::AppStoreConnect.ScmRepository>? scmRepositories = null,
             bool validate = true)
         {
             if (validate)
@@ -462,25 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppAssetLibraryPlacements is { } __value0)
+            if (Apps is { } __value0)
             {
-                appAssetLibraryPlacements?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (AppCustomProductPageVersions is { } __value1)
+            else if (BundleIds is { } __value1)
             {
-                appCustomProductPageVersions?.Invoke(__value1);
+                bundleIds?.Invoke(__value1);
             }
-            else if (AppKeywords is { } __value2)
+            else if (ScmRepositories is { } __value2)
             {
-                appKeywords?.Invoke(__value2);
-            }
-            else if (AppPreviewSets is { } __value3)
-            {
-                appPreviewSets?.Invoke(__value3);
-            }
-            else if (AppScreenshotSets is { } __value4)
-            {
-                appScreenshotSets?.Invoke(__value4);
+                scmRepositories?.Invoke(__value2);
             }
         }
 
@@ -491,16 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppAssetLibraryPlacements,
-                typeof(global::AppStoreConnect.AppAssetLibraryPlacement),
-                AppCustomProductPageVersions,
-                typeof(global::AppStoreConnect.AppCustomProductPageVersion),
-                AppKeywords,
-                typeof(global::AppStoreConnect.AppKeyword),
-                AppPreviewSets,
-                typeof(global::AppStoreConnect.AppPreviewSet),
-                AppScreenshotSets,
-                typeof(global::AppStoreConnect.AppScreenshotSet),
+                Apps,
+                typeof(global::AppStoreConnect.App),
+                BundleIds,
+                typeof(global::AppStoreConnect.BundleId),
+                ScmRepositories,
+                typeof(global::AppStoreConnect.ScmRepository),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -517,11 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem14 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppAssetLibraryPlacement?>.Default.Equals(AppAssetLibraryPlacements, other.AppAssetLibraryPlacements) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageVersion?>.Default.Equals(AppCustomProductPageVersions, other.AppCustomProductPageVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppKeyword?>.Default.Equals(AppKeywords, other.AppKeywords) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppPreviewSet?>.Default.Equals(AppPreviewSets, other.AppPreviewSets) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppScreenshotSet?>.Default.Equals(AppScreenshotSets, other.AppScreenshotSets)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BundleId?>.Default.Equals(BundleIds, other.BundleIds) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmRepository?>.Default.Equals(ScmRepositories, other.ScmRepositories)
                 ;
         }
 

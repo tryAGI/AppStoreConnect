@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.WinBackOfferUpdateRequestDataAttributesPromotionIntent))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1309.Create_WinBackOfferUpdateRequestDataAttributesPromotionIntent2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1308.Create_WinBackOfferUpdateRequestDataAttributesPromotionIntent2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.WinBackOfferUpdateRequestDataAttributesPromotionIntent?))
                 {

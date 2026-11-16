@@ -30,7 +30,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(long))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0480.Create_Int64(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0479.Create_Int64(options);
                 }
                 if (type == typeof(long?))
                 {

@@ -12,220 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.RetentionMessageVersionResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.BetaFeedbackScreenshotSubmissionResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppAssetLibraryPlacement? AppAssetLibraryPlacements { get; init; }
+        public global::AppStoreConnect.BetaTester? BetaTesters { get; init; }
 #else
-        public global::AppStoreConnect.AppAssetLibraryPlacement? AppAssetLibraryPlacements { get; }
+        public global::AppStoreConnect.BetaTester? BetaTesters { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppAssetLibraryPlacements))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaTesters))]
 #endif
-        public bool IsAppAssetLibraryPlacements => AppAssetLibraryPlacements != null;
+        public bool IsBetaTesters => BetaTesters != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppAssetLibraryPlacements(
+        public bool TryPickBetaTesters(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppAssetLibraryPlacement? value)
+            out global::AppStoreConnect.BetaTester? value)
         {
-            value = AppAssetLibraryPlacements;
-            return IsAppAssetLibraryPlacements;
+            value = BetaTesters;
+            return IsBetaTesters;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppAssetLibraryPlacement PickAppAssetLibraryPlacements() => AppAssetLibraryPlacements is { } value
+        public global::AppStoreConnect.BetaTester PickBetaTesters() => BetaTesters is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppAssetLibraryPlacements' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaTesters' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.RetentionMessageLocalization? RetentionMessageLocalizations { get; init; }
+        public global::AppStoreConnect.Build? Builds { get; init; }
 #else
-        public global::AppStoreConnect.RetentionMessageLocalization? RetentionMessageLocalizations { get; }
+        public global::AppStoreConnect.Build? Builds { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RetentionMessageLocalizations))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
 #endif
-        public bool IsRetentionMessageLocalizations => RetentionMessageLocalizations != null;
+        public bool IsBuilds => Builds != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickRetentionMessageLocalizations(
+        public bool TryPickBuilds(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.RetentionMessageLocalization? value)
+            out global::AppStoreConnect.Build? value)
         {
-            value = RetentionMessageLocalizations;
-            return IsRetentionMessageLocalizations;
+            value = Builds;
+            return IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.RetentionMessageLocalization PickRetentionMessageLocalizations() => RetentionMessageLocalizations is { } value
+        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'RetentionMessageLocalizations' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem157(global::AppStoreConnect.BetaTester value) => new IncludedItem157((global::AppStoreConnect.BetaTester?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.RetentionMessage? RetentionMessages { get; init; }
-#else
-        public global::AppStoreConnect.RetentionMessage? RetentionMessages { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.BetaTester?(IncludedItem157 @this) => @this.BetaTesters;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RetentionMessages))]
-#endif
-        public bool IsRetentionMessages => RetentionMessages != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickRetentionMessages(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.RetentionMessage? value)
+        public IncludedItem157(global::AppStoreConnect.BetaTester? value)
         {
-            value = RetentionMessages;
-            return IsRetentionMessages;
+            BetaTesters = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.RetentionMessage PickRetentionMessages() => RetentionMessages is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'RetentionMessages' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem157(global::AppStoreConnect.AppAssetLibraryPlacement value) => new IncludedItem157((global::AppStoreConnect.AppAssetLibraryPlacement?)value);
+        public static IncludedItem157 FromBetaTesters(global::AppStoreConnect.BetaTester? value) => new IncludedItem157(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppAssetLibraryPlacement?(IncludedItem157 @this) => @this.AppAssetLibraryPlacements;
+        public static implicit operator IncludedItem157(global::AppStoreConnect.Build value) => new IncludedItem157((global::AppStoreConnect.Build?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem157(global::AppStoreConnect.AppAssetLibraryPlacement? value)
+        public static implicit operator global::AppStoreConnect.Build?(IncludedItem157 @this) => @this.Builds;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem157(global::AppStoreConnect.Build? value)
         {
-            AppAssetLibraryPlacements = value;
+            Builds = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem157 FromAppAssetLibraryPlacements(global::AppStoreConnect.AppAssetLibraryPlacement? value) => new IncludedItem157(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem157(global::AppStoreConnect.RetentionMessageLocalization value) => new IncludedItem157((global::AppStoreConnect.RetentionMessageLocalization?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.RetentionMessageLocalization?(IncludedItem157 @this) => @this.RetentionMessageLocalizations;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem157(global::AppStoreConnect.RetentionMessageLocalization? value)
-        {
-            RetentionMessageLocalizations = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem157 FromRetentionMessageLocalizations(global::AppStoreConnect.RetentionMessageLocalization? value) => new IncludedItem157(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem157(global::AppStoreConnect.RetentionMessage value) => new IncludedItem157((global::AppStoreConnect.RetentionMessage?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.RetentionMessage?(IncludedItem157 @this) => @this.RetentionMessages;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem157(global::AppStoreConnect.RetentionMessage? value)
-        {
-            RetentionMessages = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem157 FromRetentionMessages(global::AppStoreConnect.RetentionMessage? value) => new IncludedItem157(value);
+        public static IncludedItem157 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem157(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem157(
-            global::AppStoreConnect.RetentionMessageVersionResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppAssetLibraryPlacement? appAssetLibraryPlacements,
-            global::AppStoreConnect.RetentionMessageLocalization? retentionMessageLocalizations,
-            global::AppStoreConnect.RetentionMessage? retentionMessages
+            global::AppStoreConnect.BetaFeedbackScreenshotSubmissionResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.BetaTester? betaTesters,
+            global::AppStoreConnect.Build? builds
             )
         {
             Type = type;
 
-            AppAssetLibraryPlacements = appAssetLibraryPlacements;
-            RetentionMessageLocalizations = retentionMessageLocalizations;
-            RetentionMessages = retentionMessages;
+            BetaTesters = betaTesters;
+            Builds = builds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            RetentionMessages as object ??
-            RetentionMessageLocalizations as object ??
-            AppAssetLibraryPlacements as object
+            Builds as object ??
+            BetaTesters as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppAssetLibraryPlacements?.ToString() ??
-            RetentionMessageLocalizations?.ToString() ??
-            RetentionMessages?.ToString()
+            BetaTesters?.ToString() ??
+            Builds?.ToString()
             ;
 
         /// <summary>
@@ -233,16 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppAssetLibraryPlacements && !IsRetentionMessageLocalizations && !IsRetentionMessages || !IsAppAssetLibraryPlacements && IsRetentionMessageLocalizations && !IsRetentionMessages || !IsAppAssetLibraryPlacements && !IsRetentionMessageLocalizations && IsRetentionMessages;
+            return IsBetaTesters && !IsBuilds || !IsBetaTesters && IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppAssetLibraryPlacement, TResult>? appAssetLibraryPlacements = null,
-            global::System.Func<global::AppStoreConnect.RetentionMessageLocalization, TResult>? retentionMessageLocalizations = null,
-            global::System.Func<global::AppStoreConnect.RetentionMessage, TResult>? retentionMessages = null,
+            global::System.Func<global::AppStoreConnect.BetaTester, TResult>? betaTesters = null,
+            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -250,17 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppAssetLibraryPlacements is { } __value0 && appAssetLibraryPlacements != null)
+            if (BetaTesters is { } __value0 && betaTesters != null)
             {
-                return appAssetLibraryPlacements(__value0);
+                return betaTesters(__value0);
             }
-            else if (RetentionMessageLocalizations is { } __value1 && retentionMessageLocalizations != null)
+            else if (Builds is { } __value1 && builds != null)
             {
-                return retentionMessageLocalizations(__value1);
-            }
-            else if (RetentionMessages is { } __value2 && retentionMessages != null)
-            {
-                return retentionMessages(__value2);
+                return builds(__value1);
             }
 
             return default(TResult);
@@ -270,11 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppAssetLibraryPlacement>? appAssetLibraryPlacements = null,
+            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
 
-            global::System.Action<global::AppStoreConnect.RetentionMessageLocalization>? retentionMessageLocalizations = null,
-
-            global::System.Action<global::AppStoreConnect.RetentionMessage>? retentionMessages = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -282,17 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppAssetLibraryPlacements is { } __value0)
+            if (BetaTesters is { } __value0)
             {
-                appAssetLibraryPlacements?.Invoke(__value0);
+                betaTesters?.Invoke(__value0);
             }
-            else if (RetentionMessageLocalizations is { } __value1)
+            else if (Builds is { } __value1)
             {
-                retentionMessageLocalizations?.Invoke(__value1);
-            }
-            else if (RetentionMessages is { } __value2)
-            {
-                retentionMessages?.Invoke(__value2);
+                builds?.Invoke(__value1);
             }
         }
 
@@ -300,9 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppAssetLibraryPlacement>? appAssetLibraryPlacements = null,
-            global::System.Action<global::AppStoreConnect.RetentionMessageLocalization>? retentionMessageLocalizations = null,
-            global::System.Action<global::AppStoreConnect.RetentionMessage>? retentionMessages = null,
+            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -310,17 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppAssetLibraryPlacements is { } __value0)
+            if (BetaTesters is { } __value0)
             {
-                appAssetLibraryPlacements?.Invoke(__value0);
+                betaTesters?.Invoke(__value0);
             }
-            else if (RetentionMessageLocalizations is { } __value1)
+            else if (Builds is { } __value1)
             {
-                retentionMessageLocalizations?.Invoke(__value1);
-            }
-            else if (RetentionMessages is { } __value2)
-            {
-                retentionMessages?.Invoke(__value2);
+                builds?.Invoke(__value1);
             }
         }
 
@@ -331,12 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppAssetLibraryPlacements,
-                typeof(global::AppStoreConnect.AppAssetLibraryPlacement),
-                RetentionMessageLocalizations,
-                typeof(global::AppStoreConnect.RetentionMessageLocalization),
-                RetentionMessages,
-                typeof(global::AppStoreConnect.RetentionMessage),
+                BetaTesters,
+                typeof(global::AppStoreConnect.BetaTester),
+                Builds,
+                typeof(global::AppStoreConnect.Build),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -353,9 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem157 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppAssetLibraryPlacement?>.Default.Equals(AppAssetLibraryPlacements, other.AppAssetLibraryPlacements) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RetentionMessageLocalization?>.Default.Equals(RetentionMessageLocalizations, other.RetentionMessageLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RetentionMessage?>.Default.Equals(RetentionMessages, other.RetentionMessages)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaTester?>.Default.Equals(BetaTesters, other.BetaTesters) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
                 ;
         }
 

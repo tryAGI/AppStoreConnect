@@ -12,156 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaFeedbackScreenshotSubmissionResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.PromotedPurchasesResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BetaTester? BetaTesters { get; init; }
+        public global::AppStoreConnect.InAppPurchaseV2? InAppPurchases { get; init; }
 #else
-        public global::AppStoreConnect.BetaTester? BetaTesters { get; }
+        public global::AppStoreConnect.InAppPurchaseV2? InAppPurchases { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaTesters))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchases))]
 #endif
-        public bool IsBetaTesters => BetaTesters != null;
+        public bool IsInAppPurchases => InAppPurchases != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBetaTesters(
+        public bool TryPickInAppPurchases(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BetaTester? value)
+            out global::AppStoreConnect.InAppPurchaseV2? value)
         {
-            value = BetaTesters;
-            return IsBetaTesters;
+            value = InAppPurchases;
+            return IsInAppPurchases;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaTester PickBetaTesters() => BetaTesters is { } value
+        public global::AppStoreConnect.InAppPurchaseV2 PickInAppPurchases() => InAppPurchases is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaTesters' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchases' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Build? Builds { get; init; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
 #else
-        public global::AppStoreConnect.Build? Builds { get; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
 #endif
-        public bool IsBuilds => Builds != null;
+        public bool IsSubscriptions => Subscriptions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBuilds(
+        public bool TryPickSubscriptions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.Build? value)
+            out global::AppStoreConnect.Subscription? value)
         {
-            value = Builds;
-            return IsBuilds;
+            value = Subscriptions;
+            return IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
+        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem57(global::AppStoreConnect.BetaTester value) => new IncludedItem57((global::AppStoreConnect.BetaTester?)value);
+        public static implicit operator IncludedItem57(global::AppStoreConnect.InAppPurchaseV2 value) => new IncludedItem57((global::AppStoreConnect.InAppPurchaseV2?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BetaTester?(IncludedItem57 @this) => @this.BetaTesters;
+        public static implicit operator global::AppStoreConnect.InAppPurchaseV2?(IncludedItem57 @this) => @this.InAppPurchases;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem57(global::AppStoreConnect.BetaTester? value)
+        public IncludedItem57(global::AppStoreConnect.InAppPurchaseV2? value)
         {
-            BetaTesters = value;
+            InAppPurchases = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem57 FromBetaTesters(global::AppStoreConnect.BetaTester? value) => new IncludedItem57(value);
+        public static IncludedItem57 FromInAppPurchases(global::AppStoreConnect.InAppPurchaseV2? value) => new IncludedItem57(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem57(global::AppStoreConnect.Build value) => new IncludedItem57((global::AppStoreConnect.Build?)value);
+        public static implicit operator IncludedItem57(global::AppStoreConnect.Subscription value) => new IncludedItem57((global::AppStoreConnect.Subscription?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.Build?(IncludedItem57 @this) => @this.Builds;
+        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem57 @this) => @this.Subscriptions;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem57(global::AppStoreConnect.Build? value)
+        public IncludedItem57(global::AppStoreConnect.Subscription? value)
         {
-            Builds = value;
+            Subscriptions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem57 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem57(value);
+        public static IncludedItem57 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem57(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem57(
-            global::AppStoreConnect.BetaFeedbackScreenshotSubmissionResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.BetaTester? betaTesters,
-            global::AppStoreConnect.Build? builds
+            global::AppStoreConnect.PromotedPurchasesResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.InAppPurchaseV2? inAppPurchases,
+            global::AppStoreConnect.Subscription? subscriptions
             )
         {
             Type = type;
 
-            BetaTesters = betaTesters;
-            Builds = builds;
+            InAppPurchases = inAppPurchases;
+            Subscriptions = subscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Builds as object ??
-            BetaTesters as object
+            Subscriptions as object ??
+            InAppPurchases as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            BetaTesters?.ToString() ??
-            Builds?.ToString()
+            InAppPurchases?.ToString() ??
+            Subscriptions?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsBetaTesters && !IsBuilds || !IsBetaTesters && IsBuilds;
+            return IsInAppPurchases && !IsSubscriptions || !IsInAppPurchases && IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.BetaTester, TResult>? betaTesters = null,
-            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
+            global::System.Func<global::AppStoreConnect.InAppPurchaseV2, TResult>? inAppPurchases = null,
+            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (BetaTesters is { } __value0 && betaTesters != null)
+            if (InAppPurchases is { } __value0 && inAppPurchases != null)
             {
-                return betaTesters(__value0);
+                return inAppPurchases(__value0);
             }
-            else if (Builds is { } __value1 && builds != null)
+            else if (Subscriptions is { } __value1 && subscriptions != null)
             {
-                return builds(__value1);
+                return subscriptions(__value1);
             }
 
             return default(TResult);
@@ -201,9 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseV2>? inAppPurchases = null,
 
-            global::System.Action<global::AppStoreConnect.Build>? builds = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (BetaTesters is { } __value0)
+            if (InAppPurchases is { } __value0)
             {
-                betaTesters?.Invoke(__value0);
+                inAppPurchases?.Invoke(__value0);
             }
-            else if (Builds is { } __value1)
+            else if (Subscriptions is { } __value1)
             {
-                builds?.Invoke(__value1);
+                subscriptions?.Invoke(__value1);
             }
         }
 
@@ -225,8 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
-            global::System.Action<global::AppStoreConnect.Build>? builds = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseV2>? inAppPurchases = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (BetaTesters is { } __value0)
+            if (InAppPurchases is { } __value0)
             {
-                betaTesters?.Invoke(__value0);
+                inAppPurchases?.Invoke(__value0);
             }
-            else if (Builds is { } __value1)
+            else if (Subscriptions is { } __value1)
             {
-                builds?.Invoke(__value1);
+                subscriptions?.Invoke(__value1);
             }
         }
 
@@ -251,10 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                BetaTesters,
-                typeof(global::AppStoreConnect.BetaTester),
-                Builds,
-                typeof(global::AppStoreConnect.Build),
+                InAppPurchases,
+                typeof(global::AppStoreConnect.InAppPurchaseV2),
+                Subscriptions,
+                typeof(global::AppStoreConnect.Subscription),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem57 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaTester?>.Default.Equals(BetaTesters, other.BetaTesters) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseV2?>.Default.Equals(InAppPurchases, other.InAppPurchases) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions)
                 ;
         }
 

@@ -24,8 +24,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("inAppPurchaseType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.InAppPurchaseType2JsonConverter))]
-        public global::AppStoreConnect.InAppPurchaseType2? InAppPurchaseType { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.InAppPurchaseTypeJsonConverter))]
+        public global::AppStoreConnect.InAppPurchaseType? InAppPurchaseType { get; set; }
 
         /// <summary>
         ///
@@ -74,7 +74,7 @@ namespace AppStoreConnect
         public InAppPurchaseV2Attributes(
             string? name,
             string? productId,
-            global::AppStoreConnect.InAppPurchaseType2? inAppPurchaseType,
+            global::AppStoreConnect.InAppPurchaseType? inAppPurchaseType,
             global::AppStoreConnect.InAppPurchaseState? state,
             string? reviewNote,
             bool? familySharable,

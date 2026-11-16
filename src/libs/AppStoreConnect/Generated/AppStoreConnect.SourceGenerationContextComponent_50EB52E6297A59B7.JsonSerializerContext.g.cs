@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppKeywordType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0101.Create_AppKeywordType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0100.Create_AppKeywordType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppKeywordType?))
                 {

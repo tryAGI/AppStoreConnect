@@ -12,156 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.RetentionMessageResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetReleasesResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.RetentionMessageVersion? RetentionMessageVersions { get; init; }
+        public global::AppStoreConnect.GameCenterDetail? GameCenterDetails { get; init; }
 #else
-        public global::AppStoreConnect.RetentionMessageVersion? RetentionMessageVersions { get; }
+        public global::AppStoreConnect.GameCenterDetail? GameCenterDetails { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RetentionMessageVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterDetails))]
 #endif
-        public bool IsRetentionMessageVersions => RetentionMessageVersions != null;
+        public bool IsGameCenterDetails => GameCenterDetails != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickRetentionMessageVersions(
+        public bool TryPickGameCenterDetails(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.RetentionMessageVersion? value)
+            out global::AppStoreConnect.GameCenterDetail? value)
         {
-            value = RetentionMessageVersions;
-            return IsRetentionMessageVersions;
+            value = GameCenterDetails;
+            return IsGameCenterDetails;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.RetentionMessageVersion PickRetentionMessageVersions() => RetentionMessageVersions is { } value
+        public global::AppStoreConnect.GameCenterDetail PickGameCenterDetails() => GameCenterDetails is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'RetentionMessageVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterDetails' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboardSet? GameCenterLeaderboardSets { get; init; }
 #else
-        public global::AppStoreConnect.Subscription? Subscriptions { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSet? GameCenterLeaderboardSets { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSets))]
 #endif
-        public bool IsSubscriptions => Subscriptions != null;
+        public bool IsGameCenterLeaderboardSets => GameCenterLeaderboardSets != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptions(
+        public bool TryPickGameCenterLeaderboardSets(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.Subscription? value)
+            out global::AppStoreConnect.GameCenterLeaderboardSet? value)
         {
-            value = Subscriptions;
-            return IsSubscriptions;
+            value = GameCenterLeaderboardSets;
+            return IsGameCenterLeaderboardSets;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
+        public global::AppStoreConnect.GameCenterLeaderboardSet PickGameCenterLeaderboardSets() => GameCenterLeaderboardSets is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSets' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem159(global::AppStoreConnect.RetentionMessageVersion value) => new IncludedItem159((global::AppStoreConnect.RetentionMessageVersion?)value);
+        public static implicit operator IncludedItem159(global::AppStoreConnect.GameCenterDetail value) => new IncludedItem159((global::AppStoreConnect.GameCenterDetail?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.RetentionMessageVersion?(IncludedItem159 @this) => @this.RetentionMessageVersions;
+        public static implicit operator global::AppStoreConnect.GameCenterDetail?(IncludedItem159 @this) => @this.GameCenterDetails;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem159(global::AppStoreConnect.RetentionMessageVersion? value)
+        public IncludedItem159(global::AppStoreConnect.GameCenterDetail? value)
         {
-            RetentionMessageVersions = value;
+            GameCenterDetails = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem159 FromRetentionMessageVersions(global::AppStoreConnect.RetentionMessageVersion? value) => new IncludedItem159(value);
+        public static IncludedItem159 FromGameCenterDetails(global::AppStoreConnect.GameCenterDetail? value) => new IncludedItem159(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem159(global::AppStoreConnect.Subscription value) => new IncludedItem159((global::AppStoreConnect.Subscription?)value);
+        public static implicit operator IncludedItem159(global::AppStoreConnect.GameCenterLeaderboardSet value) => new IncludedItem159((global::AppStoreConnect.GameCenterLeaderboardSet?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem159 @this) => @this.Subscriptions;
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSet?(IncludedItem159 @this) => @this.GameCenterLeaderboardSets;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem159(global::AppStoreConnect.Subscription? value)
+        public IncludedItem159(global::AppStoreConnect.GameCenterLeaderboardSet? value)
         {
-            Subscriptions = value;
+            GameCenterLeaderboardSets = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem159 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem159(value);
+        public static IncludedItem159 FromGameCenterLeaderboardSets(global::AppStoreConnect.GameCenterLeaderboardSet? value) => new IncludedItem159(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem159(
-            global::AppStoreConnect.RetentionMessageResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.RetentionMessageVersion? retentionMessageVersions,
-            global::AppStoreConnect.Subscription? subscriptions
+            global::AppStoreConnect.GameCenterLeaderboardSetReleasesResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.GameCenterDetail? gameCenterDetails,
+            global::AppStoreConnect.GameCenterLeaderboardSet? gameCenterLeaderboardSets
             )
         {
             Type = type;
 
-            RetentionMessageVersions = retentionMessageVersions;
-            Subscriptions = subscriptions;
+            GameCenterDetails = gameCenterDetails;
+            GameCenterLeaderboardSets = gameCenterLeaderboardSets;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Subscriptions as object ??
-            RetentionMessageVersions as object
+            GameCenterLeaderboardSets as object ??
+            GameCenterDetails as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            RetentionMessageVersions?.ToString() ??
-            Subscriptions?.ToString()
+            GameCenterDetails?.ToString() ??
+            GameCenterLeaderboardSets?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsRetentionMessageVersions && !IsSubscriptions || !IsRetentionMessageVersions && IsSubscriptions;
+            return IsGameCenterDetails && !IsGameCenterLeaderboardSets || !IsGameCenterDetails && IsGameCenterLeaderboardSets;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.RetentionMessageVersion, TResult>? retentionMessageVersions = null,
-            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
+            global::System.Func<global::AppStoreConnect.GameCenterDetail, TResult>? gameCenterDetails = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSet, TResult>? gameCenterLeaderboardSets = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (RetentionMessageVersions is { } __value0 && retentionMessageVersions != null)
+            if (GameCenterDetails is { } __value0 && gameCenterDetails != null)
             {
-                return retentionMessageVersions(__value0);
+                return gameCenterDetails(__value0);
             }
-            else if (Subscriptions is { } __value1 && subscriptions != null)
+            else if (GameCenterLeaderboardSets is { } __value1 && gameCenterLeaderboardSets != null)
             {
-                return subscriptions(__value1);
+                return gameCenterLeaderboardSets(__value1);
             }
 
             return default(TResult);
@@ -201,9 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.RetentionMessageVersion>? retentionMessageVersions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterDetail>? gameCenterDetails = null,
 
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSet>? gameCenterLeaderboardSets = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (RetentionMessageVersions is { } __value0)
+            if (GameCenterDetails is { } __value0)
             {
-                retentionMessageVersions?.Invoke(__value0);
+                gameCenterDetails?.Invoke(__value0);
             }
-            else if (Subscriptions is { } __value1)
+            else if (GameCenterLeaderboardSets is { } __value1)
             {
-                subscriptions?.Invoke(__value1);
+                gameCenterLeaderboardSets?.Invoke(__value1);
             }
         }
 
@@ -225,8 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.RetentionMessageVersion>? retentionMessageVersions = null,
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterDetail>? gameCenterDetails = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSet>? gameCenterLeaderboardSets = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (RetentionMessageVersions is { } __value0)
+            if (GameCenterDetails is { } __value0)
             {
-                retentionMessageVersions?.Invoke(__value0);
+                gameCenterDetails?.Invoke(__value0);
             }
-            else if (Subscriptions is { } __value1)
+            else if (GameCenterLeaderboardSets is { } __value1)
             {
-                subscriptions?.Invoke(__value1);
+                gameCenterLeaderboardSets?.Invoke(__value1);
             }
         }
 
@@ -251,10 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                RetentionMessageVersions,
-                typeof(global::AppStoreConnect.RetentionMessageVersion),
-                Subscriptions,
-                typeof(global::AppStoreConnect.Subscription),
+                GameCenterDetails,
+                typeof(global::AppStoreConnect.GameCenterDetail),
+                GameCenterLeaderboardSets,
+                typeof(global::AppStoreConnect.GameCenterLeaderboardSet),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem159 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RetentionMessageVersion?>.Default.Equals(RetentionMessageVersions, other.RetentionMessageVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterDetail?>.Default.Equals(GameCenterDetails, other.GameCenterDetails) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSet?>.Default.Equals(GameCenterLeaderboardSets, other.GameCenterLeaderboardSets)
                 ;
         }
 

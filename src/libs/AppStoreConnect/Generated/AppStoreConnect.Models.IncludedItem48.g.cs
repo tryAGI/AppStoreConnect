@@ -12,266 +12,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppsResponseIncludedItemDiscriminatorType? Type { get; }
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AndroidToIosAppMappingDetail? AndroidToIosAppMappingDetails { get; init; }
-#else
-        public global::AppStoreConnect.AndroidToIosAppMappingDetail? AndroidToIosAppMappingDetails { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AndroidToIosAppMappingDetails))]
-#endif
-        public bool IsAndroidToIosAppMappingDetails => AndroidToIosAppMappingDetails != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAndroidToIosAppMappingDetails(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AndroidToIosAppMappingDetail? value)
-        {
-            value = AndroidToIosAppMappingDetails;
-            return IsAndroidToIosAppMappingDetails;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.AndroidToIosAppMappingDetail PickAndroidToIosAppMappingDetails() => AndroidToIosAppMappingDetails is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AndroidToIosAppMappingDetails' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppClip? AppClips { get; init; }
-#else
-        public global::AppStoreConnect.AppClip? AppClips { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppClips))]
-#endif
-        public bool IsAppClips => AppClips != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppClips(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppClip? value)
-        {
-            value = AppClips;
-            return IsAppClips;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.AppClip PickAppClips() => AppClips is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppClips' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppCustomProductPage? AppCustomProductPages { get; init; }
-#else
-        public global::AppStoreConnect.AppCustomProductPage? AppCustomProductPages { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPages))]
-#endif
-        public bool IsAppCustomProductPages => AppCustomProductPages != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppCustomProductPages(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppCustomProductPage? value)
-        {
-            value = AppCustomProductPages;
-            return IsAppCustomProductPages;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.AppCustomProductPage PickAppCustomProductPages() => AppCustomProductPages is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPages' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppEncryptionDeclaration? AppEncryptionDeclarations { get; init; }
-#else
-        public global::AppStoreConnect.AppEncryptionDeclaration? AppEncryptionDeclarations { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEncryptionDeclarations))]
-#endif
-        public bool IsAppEncryptionDeclarations => AppEncryptionDeclarations != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppEncryptionDeclarations(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppEncryptionDeclaration? value)
-        {
-            value = AppEncryptionDeclarations;
-            return IsAppEncryptionDeclarations;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.AppEncryptionDeclaration PickAppEncryptionDeclarations() => AppEncryptionDeclarations is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEncryptionDeclarations' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppEvent? AppEvents { get; init; }
-#else
-        public global::AppStoreConnect.AppEvent? AppEvents { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEvents))]
-#endif
-        public bool IsAppEvents => AppEvents != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppEvents(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppEvent? value)
-        {
-            value = AppEvents;
-            return IsAppEvents;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.AppEvent PickAppEvents() => AppEvents is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEvents' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppInfo? AppInfos { get; init; }
-#else
-        public global::AppStoreConnect.AppInfo? AppInfos { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppInfos))]
-#endif
-        public bool IsAppInfos => AppInfos != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppInfos(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppInfo? value)
-        {
-            value = AppInfos;
-            return IsAppInfos;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.AppInfo PickAppInfos() => AppInfos is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppInfos' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersionExperimentV2? AppStoreVersionExperiments { get; init; }
-#else
-        public global::AppStoreConnect.AppStoreVersionExperimentV2? AppStoreVersionExperiments { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperiments))]
-#endif
-        public bool IsAppStoreVersionExperiments => AppStoreVersionExperiments != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppStoreVersionExperiments(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppStoreVersionExperimentV2? value)
-        {
-            value = AppStoreVersionExperiments;
-            return IsAppStoreVersionExperiments;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.AppStoreVersionExperimentV2 PickAppStoreVersionExperiments() => AppStoreVersionExperiments is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperiments' but the value was {ToString()}.");
+        public global::AppStoreConnect.GameCenterDetailResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
@@ -314,791 +55,482 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BetaAppLocalization? BetaAppLocalizations { get; init; }
+        public global::AppStoreConnect.App? Apps { get; init; }
 #else
-        public global::AppStoreConnect.BetaAppLocalization? BetaAppLocalizations { get; }
+        public global::AppStoreConnect.App? Apps { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaAppLocalizations))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
 #endif
-        public bool IsBetaAppLocalizations => BetaAppLocalizations != null;
+        public bool IsApps => Apps != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBetaAppLocalizations(
+        public bool TryPickApps(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BetaAppLocalization? value)
+            out global::AppStoreConnect.App? value)
         {
-            value = BetaAppLocalizations;
-            return IsBetaAppLocalizations;
+            value = Apps;
+            return IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaAppLocalization PickBetaAppLocalizations() => BetaAppLocalizations is { } value
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaAppLocalizations' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BetaAppReviewDetail? BetaAppReviewDetails { get; init; }
+        public global::AppStoreConnect.GameCenterAchievementRelease? GameCenterAchievementReleases { get; init; }
 #else
-        public global::AppStoreConnect.BetaAppReviewDetail? BetaAppReviewDetails { get; }
+        public global::AppStoreConnect.GameCenterAchievementRelease? GameCenterAchievementReleases { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaAppReviewDetails))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterAchievementReleases))]
 #endif
-        public bool IsBetaAppReviewDetails => BetaAppReviewDetails != null;
+        public bool IsGameCenterAchievementReleases => GameCenterAchievementReleases != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBetaAppReviewDetails(
+        public bool TryPickGameCenterAchievementReleases(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BetaAppReviewDetail? value)
+            out global::AppStoreConnect.GameCenterAchievementRelease? value)
         {
-            value = BetaAppReviewDetails;
-            return IsBetaAppReviewDetails;
+            value = GameCenterAchievementReleases;
+            return IsGameCenterAchievementReleases;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaAppReviewDetail PickBetaAppReviewDetails() => BetaAppReviewDetails is { } value
+        public global::AppStoreConnect.GameCenterAchievementRelease PickGameCenterAchievementReleases() => GameCenterAchievementReleases is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaAppReviewDetails' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAchievementReleases' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BetaGroup? BetaGroups { get; init; }
+        public global::AppStoreConnect.GameCenterAchievement? GameCenterAchievements { get; init; }
 #else
-        public global::AppStoreConnect.BetaGroup? BetaGroups { get; }
+        public global::AppStoreConnect.GameCenterAchievement? GameCenterAchievements { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaGroups))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterAchievements))]
 #endif
-        public bool IsBetaGroups => BetaGroups != null;
+        public bool IsGameCenterAchievements => GameCenterAchievements != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBetaGroups(
+        public bool TryPickGameCenterAchievements(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BetaGroup? value)
+            out global::AppStoreConnect.GameCenterAchievement? value)
         {
-            value = BetaGroups;
-            return IsBetaGroups;
+            value = GameCenterAchievements;
+            return IsGameCenterAchievements;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaGroup PickBetaGroups() => BetaGroups is { } value
+        public global::AppStoreConnect.GameCenterAchievement PickGameCenterAchievements() => GameCenterAchievements is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaGroups' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAchievements' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BetaLicenseAgreement? BetaLicenseAgreements { get; init; }
+        public global::AppStoreConnect.GameCenterActivity? GameCenterActivities { get; init; }
 #else
-        public global::AppStoreConnect.BetaLicenseAgreement? BetaLicenseAgreements { get; }
+        public global::AppStoreConnect.GameCenterActivity? GameCenterActivities { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaLicenseAgreements))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterActivities))]
 #endif
-        public bool IsBetaLicenseAgreements => BetaLicenseAgreements != null;
+        public bool IsGameCenterActivities => GameCenterActivities != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBetaLicenseAgreements(
+        public bool TryPickGameCenterActivities(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BetaLicenseAgreement? value)
+            out global::AppStoreConnect.GameCenterActivity? value)
         {
-            value = BetaLicenseAgreements;
-            return IsBetaLicenseAgreements;
+            value = GameCenterActivities;
+            return IsGameCenterActivities;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaLicenseAgreement PickBetaLicenseAgreements() => BetaLicenseAgreements is { } value
+        public global::AppStoreConnect.GameCenterActivity PickGameCenterActivities() => GameCenterActivities is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaLicenseAgreements' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterActivities' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BuildIcon? BuildIcons { get; init; }
+        public global::AppStoreConnect.GameCenterActivityVersionRelease? GameCenterActivityVersionReleases { get; init; }
 #else
-        public global::AppStoreConnect.BuildIcon? BuildIcons { get; }
+        public global::AppStoreConnect.GameCenterActivityVersionRelease? GameCenterActivityVersionReleases { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BuildIcons))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterActivityVersionReleases))]
 #endif
-        public bool IsBuildIcons => BuildIcons != null;
+        public bool IsGameCenterActivityVersionReleases => GameCenterActivityVersionReleases != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBuildIcons(
+        public bool TryPickGameCenterActivityVersionReleases(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BuildIcon? value)
+            out global::AppStoreConnect.GameCenterActivityVersionRelease? value)
         {
-            value = BuildIcons;
-            return IsBuildIcons;
+            value = GameCenterActivityVersionReleases;
+            return IsGameCenterActivityVersionReleases;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BuildIcon PickBuildIcons() => BuildIcons is { } value
+        public global::AppStoreConnect.GameCenterActivityVersionRelease PickGameCenterActivityVersionReleases() => GameCenterActivityVersionReleases is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BuildIcons' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterActivityVersionReleases' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Build? Builds { get; init; }
+        public global::AppStoreConnect.GameCenterAppVersion? GameCenterAppVersions { get; init; }
 #else
-        public global::AppStoreConnect.Build? Builds { get; }
+        public global::AppStoreConnect.GameCenterAppVersion? GameCenterAppVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterAppVersions))]
 #endif
-        public bool IsBuilds => Builds != null;
+        public bool IsGameCenterAppVersions => GameCenterAppVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBuilds(
+        public bool TryPickGameCenterAppVersions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.Build? value)
+            out global::AppStoreConnect.GameCenterAppVersion? value)
         {
-            value = Builds;
-            return IsBuilds;
+            value = GameCenterAppVersions;
+            return IsGameCenterAppVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
+        public global::AppStoreConnect.GameCenterAppVersion PickGameCenterAppVersions() => GameCenterAppVersions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAppVersions' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.CiProduct? CiProducts { get; init; }
+        public global::AppStoreConnect.GameCenterChallengeVersionRelease? GameCenterChallengeVersionReleases { get; init; }
 #else
-        public global::AppStoreConnect.CiProduct? CiProducts { get; }
+        public global::AppStoreConnect.GameCenterChallengeVersionRelease? GameCenterChallengeVersionReleases { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CiProducts))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterChallengeVersionReleases))]
 #endif
-        public bool IsCiProducts => CiProducts != null;
+        public bool IsGameCenterChallengeVersionReleases => GameCenterChallengeVersionReleases != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickCiProducts(
+        public bool TryPickGameCenterChallengeVersionReleases(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.CiProduct? value)
+            out global::AppStoreConnect.GameCenterChallengeVersionRelease? value)
         {
-            value = CiProducts;
-            return IsCiProducts;
+            value = GameCenterChallengeVersionReleases;
+            return IsGameCenterChallengeVersionReleases;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CiProduct PickCiProducts() => CiProducts is { } value
+        public global::AppStoreConnect.GameCenterChallengeVersionRelease PickGameCenterChallengeVersionReleases() => GameCenterChallengeVersionReleases is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'CiProducts' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterChallengeVersionReleases' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.EndUserLicenseAgreement? EndUserLicenseAgreements { get; init; }
+        public global::AppStoreConnect.GameCenterChallenge? GameCenterChallenges { get; init; }
 #else
-        public global::AppStoreConnect.EndUserLicenseAgreement? EndUserLicenseAgreements { get; }
+        public global::AppStoreConnect.GameCenterChallenge? GameCenterChallenges { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(EndUserLicenseAgreements))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterChallenges))]
 #endif
-        public bool IsEndUserLicenseAgreements => EndUserLicenseAgreements != null;
+        public bool IsGameCenterChallenges => GameCenterChallenges != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickEndUserLicenseAgreements(
+        public bool TryPickGameCenterChallenges(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.EndUserLicenseAgreement? value)
+            out global::AppStoreConnect.GameCenterChallenge? value)
         {
-            value = EndUserLicenseAgreements;
-            return IsEndUserLicenseAgreements;
+            value = GameCenterChallenges;
+            return IsGameCenterChallenges;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.EndUserLicenseAgreement PickEndUserLicenseAgreements() => EndUserLicenseAgreements is { } value
+        public global::AppStoreConnect.GameCenterChallenge PickGameCenterChallenges() => GameCenterChallenges is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'EndUserLicenseAgreements' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterChallenges' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterDetail? GameCenterDetails { get; init; }
+        public global::AppStoreConnect.GameCenterGroup? GameCenterGroups { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterDetail? GameCenterDetails { get; }
+        public global::AppStoreConnect.GameCenterGroup? GameCenterGroups { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterDetails))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterGroups))]
 #endif
-        public bool IsGameCenterDetails => GameCenterDetails != null;
+        public bool IsGameCenterGroups => GameCenterGroups != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterDetails(
+        public bool TryPickGameCenterGroups(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterDetail? value)
+            out global::AppStoreConnect.GameCenterGroup? value)
         {
-            value = GameCenterDetails;
-            return IsGameCenterDetails;
+            value = GameCenterGroups;
+            return IsGameCenterGroups;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterDetail PickGameCenterDetails() => GameCenterDetails is { } value
+        public global::AppStoreConnect.GameCenterGroup PickGameCenterGroups() => GameCenterGroups is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterDetails' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterGroups' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterEnabledVersion? GameCenterEnabledVersions { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboardRelease? GameCenterLeaderboardReleases { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterEnabledVersion? GameCenterEnabledVersions { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardRelease? GameCenterLeaderboardReleases { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterEnabledVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardReleases))]
 #endif
-        public bool IsGameCenterEnabledVersions => GameCenterEnabledVersions != null;
+        public bool IsGameCenterLeaderboardReleases => GameCenterLeaderboardReleases != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterEnabledVersions(
+        public bool TryPickGameCenterLeaderboardReleases(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterEnabledVersion? value)
+            out global::AppStoreConnect.GameCenterLeaderboardRelease? value)
         {
-            value = GameCenterEnabledVersions;
-            return IsGameCenterEnabledVersions;
+            value = GameCenterLeaderboardReleases;
+            return IsGameCenterLeaderboardReleases;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterEnabledVersion PickGameCenterEnabledVersions() => GameCenterEnabledVersions is { } value
+        public global::AppStoreConnect.GameCenterLeaderboardRelease PickGameCenterLeaderboardReleases() => GameCenterLeaderboardReleases is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterEnabledVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardReleases' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.InAppPurchase? InAppPurchases { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetRelease? GameCenterLeaderboardSetReleases { get; init; }
 #else
-        public global::AppStoreConnect.InAppPurchase? InAppPurchases { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetRelease? GameCenterLeaderboardSetReleases { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchases))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSetReleases))]
 #endif
-        public bool IsInAppPurchases => InAppPurchases != null;
+        public bool IsGameCenterLeaderboardSetReleases => GameCenterLeaderboardSetReleases != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickInAppPurchases(
+        public bool TryPickGameCenterLeaderboardSetReleases(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.InAppPurchase? value)
+            out global::AppStoreConnect.GameCenterLeaderboardSetRelease? value)
         {
-            value = InAppPurchases;
-            return IsInAppPurchases;
+            value = GameCenterLeaderboardSetReleases;
+            return IsGameCenterLeaderboardSetReleases;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchase PickInAppPurchases() => InAppPurchases is { } value
+        public global::AppStoreConnect.GameCenterLeaderboardSetRelease PickGameCenterLeaderboardSetReleases() => GameCenterLeaderboardSetReleases is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchases' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSetReleases' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.PrereleaseVersion? PreReleaseVersions { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboardSet? GameCenterLeaderboardSets { get; init; }
 #else
-        public global::AppStoreConnect.PrereleaseVersion? PreReleaseVersions { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSet? GameCenterLeaderboardSets { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PreReleaseVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSets))]
 #endif
-        public bool IsPreReleaseVersions => PreReleaseVersions != null;
+        public bool IsGameCenterLeaderboardSets => GameCenterLeaderboardSets != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickPreReleaseVersions(
+        public bool TryPickGameCenterLeaderboardSets(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.PrereleaseVersion? value)
+            out global::AppStoreConnect.GameCenterLeaderboardSet? value)
         {
-            value = PreReleaseVersions;
-            return IsPreReleaseVersions;
+            value = GameCenterLeaderboardSets;
+            return IsGameCenterLeaderboardSets;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.PrereleaseVersion PickPreReleaseVersions() => PreReleaseVersions is { } value
+        public global::AppStoreConnect.GameCenterLeaderboardSet PickGameCenterLeaderboardSets() => GameCenterLeaderboardSets is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'PreReleaseVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSets' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.PromotedPurchase? PromotedPurchases { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboard? GameCenterLeaderboards { get; init; }
 #else
-        public global::AppStoreConnect.PromotedPurchase? PromotedPurchases { get; }
+        public global::AppStoreConnect.GameCenterLeaderboard? GameCenterLeaderboards { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PromotedPurchases))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboards))]
 #endif
-        public bool IsPromotedPurchases => PromotedPurchases != null;
+        public bool IsGameCenterLeaderboards => GameCenterLeaderboards != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickPromotedPurchases(
+        public bool TryPickGameCenterLeaderboards(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.PromotedPurchase? value)
+            out global::AppStoreConnect.GameCenterLeaderboard? value)
         {
-            value = PromotedPurchases;
-            return IsPromotedPurchases;
+            value = GameCenterLeaderboards;
+            return IsGameCenterLeaderboards;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.PromotedPurchase PickPromotedPurchases() => PromotedPurchases is { } value
+        public global::AppStoreConnect.GameCenterLeaderboard PickGameCenterLeaderboards() => GameCenterLeaderboards is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'PromotedPurchases' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.RetentionMessage? RetentionMessages { get; init; }
-#else
-        public global::AppStoreConnect.RetentionMessage? RetentionMessages { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RetentionMessages))]
-#endif
-        public bool IsRetentionMessages => RetentionMessages != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickRetentionMessages(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.RetentionMessage? value)
-        {
-            value = RetentionMessages;
-            return IsRetentionMessages;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.RetentionMessage PickRetentionMessages() => RetentionMessages is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'RetentionMessages' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.ReviewSubmission? ReviewSubmissions { get; init; }
-#else
-        public global::AppStoreConnect.ReviewSubmission? ReviewSubmissions { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ReviewSubmissions))]
-#endif
-        public bool IsReviewSubmissions => ReviewSubmissions != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickReviewSubmissions(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.ReviewSubmission? value)
-        {
-            value = ReviewSubmissions;
-            return IsReviewSubmissions;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.ReviewSubmission PickReviewSubmissions() => ReviewSubmissions is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'ReviewSubmissions' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionGracePeriod? SubscriptionGracePeriods { get; init; }
-#else
-        public global::AppStoreConnect.SubscriptionGracePeriod? SubscriptionGracePeriods { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionGracePeriods))]
-#endif
-        public bool IsSubscriptionGracePeriods => SubscriptionGracePeriods != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickSubscriptionGracePeriods(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.SubscriptionGracePeriod? value)
-        {
-            value = SubscriptionGracePeriods;
-            return IsSubscriptionGracePeriods;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.SubscriptionGracePeriod PickSubscriptionGracePeriods() => SubscriptionGracePeriods is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionGracePeriods' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionGroup? SubscriptionGroups { get; init; }
-#else
-        public global::AppStoreConnect.SubscriptionGroup? SubscriptionGroups { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionGroups))]
-#endif
-        public bool IsSubscriptionGroups => SubscriptionGroups != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickSubscriptionGroups(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.SubscriptionGroup? value)
-        {
-            value = SubscriptionGroups;
-            return IsSubscriptionGroups;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.SubscriptionGroup PickSubscriptionGroups() => SubscriptionGroups is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionGroups' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.AndroidToIosAppMappingDetail value) => new IncludedItem48((global::AppStoreConnect.AndroidToIosAppMappingDetail?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AndroidToIosAppMappingDetail?(IncludedItem48 @this) => @this.AndroidToIosAppMappingDetails;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem48(global::AppStoreConnect.AndroidToIosAppMappingDetail? value)
-        {
-            AndroidToIosAppMappingDetails = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem48 FromAndroidToIosAppMappingDetails(global::AppStoreConnect.AndroidToIosAppMappingDetail? value) => new IncludedItem48(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.AppClip value) => new IncludedItem48((global::AppStoreConnect.AppClip?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppClip?(IncludedItem48 @this) => @this.AppClips;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem48(global::AppStoreConnect.AppClip? value)
-        {
-            AppClips = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem48 FromAppClips(global::AppStoreConnect.AppClip? value) => new IncludedItem48(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.AppCustomProductPage value) => new IncludedItem48((global::AppStoreConnect.AppCustomProductPage?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppCustomProductPage?(IncludedItem48 @this) => @this.AppCustomProductPages;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem48(global::AppStoreConnect.AppCustomProductPage? value)
-        {
-            AppCustomProductPages = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem48 FromAppCustomProductPages(global::AppStoreConnect.AppCustomProductPage? value) => new IncludedItem48(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.AppEncryptionDeclaration value) => new IncludedItem48((global::AppStoreConnect.AppEncryptionDeclaration?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppEncryptionDeclaration?(IncludedItem48 @this) => @this.AppEncryptionDeclarations;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem48(global::AppStoreConnect.AppEncryptionDeclaration? value)
-        {
-            AppEncryptionDeclarations = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem48 FromAppEncryptionDeclarations(global::AppStoreConnect.AppEncryptionDeclaration? value) => new IncludedItem48(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.AppEvent value) => new IncludedItem48((global::AppStoreConnect.AppEvent?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppEvent?(IncludedItem48 @this) => @this.AppEvents;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem48(global::AppStoreConnect.AppEvent? value)
-        {
-            AppEvents = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem48 FromAppEvents(global::AppStoreConnect.AppEvent? value) => new IncludedItem48(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.AppInfo value) => new IncludedItem48((global::AppStoreConnect.AppInfo?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppInfo?(IncludedItem48 @this) => @this.AppInfos;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem48(global::AppStoreConnect.AppInfo? value)
-        {
-            AppInfos = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem48 FromAppInfos(global::AppStoreConnect.AppInfo? value) => new IncludedItem48(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.AppStoreVersionExperimentV2 value) => new IncludedItem48((global::AppStoreConnect.AppStoreVersionExperimentV2?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersionExperimentV2?(IncludedItem48 @this) => @this.AppStoreVersionExperiments;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem48(global::AppStoreConnect.AppStoreVersionExperimentV2? value)
-        {
-            AppStoreVersionExperiments = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem48 FromAppStoreVersionExperiments(global::AppStoreConnect.AppStoreVersionExperimentV2? value) => new IncludedItem48(value);
-
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboards' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -1125,515 +557,379 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.BetaAppLocalization value) => new IncludedItem48((global::AppStoreConnect.BetaAppLocalization?)value);
+        public static implicit operator IncludedItem48(global::AppStoreConnect.App value) => new IncludedItem48((global::AppStoreConnect.App?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BetaAppLocalization?(IncludedItem48 @this) => @this.BetaAppLocalizations;
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem48 @this) => @this.Apps;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem48(global::AppStoreConnect.BetaAppLocalization? value)
+        public IncludedItem48(global::AppStoreConnect.App? value)
         {
-            BetaAppLocalizations = value;
+            Apps = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem48 FromBetaAppLocalizations(global::AppStoreConnect.BetaAppLocalization? value) => new IncludedItem48(value);
+        public static IncludedItem48 FromApps(global::AppStoreConnect.App? value) => new IncludedItem48(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.BetaAppReviewDetail value) => new IncludedItem48((global::AppStoreConnect.BetaAppReviewDetail?)value);
+        public static implicit operator IncludedItem48(global::AppStoreConnect.GameCenterAchievementRelease value) => new IncludedItem48((global::AppStoreConnect.GameCenterAchievementRelease?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BetaAppReviewDetail?(IncludedItem48 @this) => @this.BetaAppReviewDetails;
+        public static implicit operator global::AppStoreConnect.GameCenterAchievementRelease?(IncludedItem48 @this) => @this.GameCenterAchievementReleases;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem48(global::AppStoreConnect.BetaAppReviewDetail? value)
+        public IncludedItem48(global::AppStoreConnect.GameCenterAchievementRelease? value)
         {
-            BetaAppReviewDetails = value;
+            GameCenterAchievementReleases = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem48 FromBetaAppReviewDetails(global::AppStoreConnect.BetaAppReviewDetail? value) => new IncludedItem48(value);
+        public static IncludedItem48 FromGameCenterAchievementReleases(global::AppStoreConnect.GameCenterAchievementRelease? value) => new IncludedItem48(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.BetaGroup value) => new IncludedItem48((global::AppStoreConnect.BetaGroup?)value);
+        public static implicit operator IncludedItem48(global::AppStoreConnect.GameCenterAchievement value) => new IncludedItem48((global::AppStoreConnect.GameCenterAchievement?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BetaGroup?(IncludedItem48 @this) => @this.BetaGroups;
+        public static implicit operator global::AppStoreConnect.GameCenterAchievement?(IncludedItem48 @this) => @this.GameCenterAchievements;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem48(global::AppStoreConnect.BetaGroup? value)
+        public IncludedItem48(global::AppStoreConnect.GameCenterAchievement? value)
         {
-            BetaGroups = value;
+            GameCenterAchievements = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem48 FromBetaGroups(global::AppStoreConnect.BetaGroup? value) => new IncludedItem48(value);
+        public static IncludedItem48 FromGameCenterAchievements(global::AppStoreConnect.GameCenterAchievement? value) => new IncludedItem48(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.BetaLicenseAgreement value) => new IncludedItem48((global::AppStoreConnect.BetaLicenseAgreement?)value);
+        public static implicit operator IncludedItem48(global::AppStoreConnect.GameCenterActivity value) => new IncludedItem48((global::AppStoreConnect.GameCenterActivity?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BetaLicenseAgreement?(IncludedItem48 @this) => @this.BetaLicenseAgreements;
+        public static implicit operator global::AppStoreConnect.GameCenterActivity?(IncludedItem48 @this) => @this.GameCenterActivities;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem48(global::AppStoreConnect.BetaLicenseAgreement? value)
+        public IncludedItem48(global::AppStoreConnect.GameCenterActivity? value)
         {
-            BetaLicenseAgreements = value;
+            GameCenterActivities = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem48 FromBetaLicenseAgreements(global::AppStoreConnect.BetaLicenseAgreement? value) => new IncludedItem48(value);
+        public static IncludedItem48 FromGameCenterActivities(global::AppStoreConnect.GameCenterActivity? value) => new IncludedItem48(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.BuildIcon value) => new IncludedItem48((global::AppStoreConnect.BuildIcon?)value);
+        public static implicit operator IncludedItem48(global::AppStoreConnect.GameCenterActivityVersionRelease value) => new IncludedItem48((global::AppStoreConnect.GameCenterActivityVersionRelease?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BuildIcon?(IncludedItem48 @this) => @this.BuildIcons;
+        public static implicit operator global::AppStoreConnect.GameCenterActivityVersionRelease?(IncludedItem48 @this) => @this.GameCenterActivityVersionReleases;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem48(global::AppStoreConnect.BuildIcon? value)
+        public IncludedItem48(global::AppStoreConnect.GameCenterActivityVersionRelease? value)
         {
-            BuildIcons = value;
+            GameCenterActivityVersionReleases = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem48 FromBuildIcons(global::AppStoreConnect.BuildIcon? value) => new IncludedItem48(value);
+        public static IncludedItem48 FromGameCenterActivityVersionReleases(global::AppStoreConnect.GameCenterActivityVersionRelease? value) => new IncludedItem48(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.Build value) => new IncludedItem48((global::AppStoreConnect.Build?)value);
+        public static implicit operator IncludedItem48(global::AppStoreConnect.GameCenterAppVersion value) => new IncludedItem48((global::AppStoreConnect.GameCenterAppVersion?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.Build?(IncludedItem48 @this) => @this.Builds;
+        public static implicit operator global::AppStoreConnect.GameCenterAppVersion?(IncludedItem48 @this) => @this.GameCenterAppVersions;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem48(global::AppStoreConnect.Build? value)
+        public IncludedItem48(global::AppStoreConnect.GameCenterAppVersion? value)
         {
-            Builds = value;
+            GameCenterAppVersions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem48 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem48(value);
+        public static IncludedItem48 FromGameCenterAppVersions(global::AppStoreConnect.GameCenterAppVersion? value) => new IncludedItem48(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.CiProduct value) => new IncludedItem48((global::AppStoreConnect.CiProduct?)value);
+        public static implicit operator IncludedItem48(global::AppStoreConnect.GameCenterChallengeVersionRelease value) => new IncludedItem48((global::AppStoreConnect.GameCenterChallengeVersionRelease?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.CiProduct?(IncludedItem48 @this) => @this.CiProducts;
+        public static implicit operator global::AppStoreConnect.GameCenterChallengeVersionRelease?(IncludedItem48 @this) => @this.GameCenterChallengeVersionReleases;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem48(global::AppStoreConnect.CiProduct? value)
+        public IncludedItem48(global::AppStoreConnect.GameCenterChallengeVersionRelease? value)
         {
-            CiProducts = value;
+            GameCenterChallengeVersionReleases = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem48 FromCiProducts(global::AppStoreConnect.CiProduct? value) => new IncludedItem48(value);
+        public static IncludedItem48 FromGameCenterChallengeVersionReleases(global::AppStoreConnect.GameCenterChallengeVersionRelease? value) => new IncludedItem48(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.EndUserLicenseAgreement value) => new IncludedItem48((global::AppStoreConnect.EndUserLicenseAgreement?)value);
+        public static implicit operator IncludedItem48(global::AppStoreConnect.GameCenterChallenge value) => new IncludedItem48((global::AppStoreConnect.GameCenterChallenge?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.EndUserLicenseAgreement?(IncludedItem48 @this) => @this.EndUserLicenseAgreements;
+        public static implicit operator global::AppStoreConnect.GameCenterChallenge?(IncludedItem48 @this) => @this.GameCenterChallenges;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem48(global::AppStoreConnect.EndUserLicenseAgreement? value)
+        public IncludedItem48(global::AppStoreConnect.GameCenterChallenge? value)
         {
-            EndUserLicenseAgreements = value;
+            GameCenterChallenges = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem48 FromEndUserLicenseAgreements(global::AppStoreConnect.EndUserLicenseAgreement? value) => new IncludedItem48(value);
+        public static IncludedItem48 FromGameCenterChallenges(global::AppStoreConnect.GameCenterChallenge? value) => new IncludedItem48(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.GameCenterDetail value) => new IncludedItem48((global::AppStoreConnect.GameCenterDetail?)value);
+        public static implicit operator IncludedItem48(global::AppStoreConnect.GameCenterGroup value) => new IncludedItem48((global::AppStoreConnect.GameCenterGroup?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterDetail?(IncludedItem48 @this) => @this.GameCenterDetails;
+        public static implicit operator global::AppStoreConnect.GameCenterGroup?(IncludedItem48 @this) => @this.GameCenterGroups;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem48(global::AppStoreConnect.GameCenterDetail? value)
+        public IncludedItem48(global::AppStoreConnect.GameCenterGroup? value)
         {
-            GameCenterDetails = value;
+            GameCenterGroups = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem48 FromGameCenterDetails(global::AppStoreConnect.GameCenterDetail? value) => new IncludedItem48(value);
+        public static IncludedItem48 FromGameCenterGroups(global::AppStoreConnect.GameCenterGroup? value) => new IncludedItem48(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.GameCenterEnabledVersion value) => new IncludedItem48((global::AppStoreConnect.GameCenterEnabledVersion?)value);
+        public static implicit operator IncludedItem48(global::AppStoreConnect.GameCenterLeaderboardRelease value) => new IncludedItem48((global::AppStoreConnect.GameCenterLeaderboardRelease?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterEnabledVersion?(IncludedItem48 @this) => @this.GameCenterEnabledVersions;
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardRelease?(IncludedItem48 @this) => @this.GameCenterLeaderboardReleases;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem48(global::AppStoreConnect.GameCenterEnabledVersion? value)
+        public IncludedItem48(global::AppStoreConnect.GameCenterLeaderboardRelease? value)
         {
-            GameCenterEnabledVersions = value;
+            GameCenterLeaderboardReleases = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem48 FromGameCenterEnabledVersions(global::AppStoreConnect.GameCenterEnabledVersion? value) => new IncludedItem48(value);
+        public static IncludedItem48 FromGameCenterLeaderboardReleases(global::AppStoreConnect.GameCenterLeaderboardRelease? value) => new IncludedItem48(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.InAppPurchase value) => new IncludedItem48((global::AppStoreConnect.InAppPurchase?)value);
+        public static implicit operator IncludedItem48(global::AppStoreConnect.GameCenterLeaderboardSetRelease value) => new IncludedItem48((global::AppStoreConnect.GameCenterLeaderboardSetRelease?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.InAppPurchase?(IncludedItem48 @this) => @this.InAppPurchases;
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSetRelease?(IncludedItem48 @this) => @this.GameCenterLeaderboardSetReleases;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem48(global::AppStoreConnect.InAppPurchase? value)
+        public IncludedItem48(global::AppStoreConnect.GameCenterLeaderboardSetRelease? value)
         {
-            InAppPurchases = value;
+            GameCenterLeaderboardSetReleases = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem48 FromInAppPurchases(global::AppStoreConnect.InAppPurchase? value) => new IncludedItem48(value);
+        public static IncludedItem48 FromGameCenterLeaderboardSetReleases(global::AppStoreConnect.GameCenterLeaderboardSetRelease? value) => new IncludedItem48(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.PrereleaseVersion value) => new IncludedItem48((global::AppStoreConnect.PrereleaseVersion?)value);
+        public static implicit operator IncludedItem48(global::AppStoreConnect.GameCenterLeaderboardSet value) => new IncludedItem48((global::AppStoreConnect.GameCenterLeaderboardSet?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.PrereleaseVersion?(IncludedItem48 @this) => @this.PreReleaseVersions;
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSet?(IncludedItem48 @this) => @this.GameCenterLeaderboardSets;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem48(global::AppStoreConnect.PrereleaseVersion? value)
+        public IncludedItem48(global::AppStoreConnect.GameCenterLeaderboardSet? value)
         {
-            PreReleaseVersions = value;
+            GameCenterLeaderboardSets = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem48 FromPreReleaseVersions(global::AppStoreConnect.PrereleaseVersion? value) => new IncludedItem48(value);
+        public static IncludedItem48 FromGameCenterLeaderboardSets(global::AppStoreConnect.GameCenterLeaderboardSet? value) => new IncludedItem48(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.PromotedPurchase value) => new IncludedItem48((global::AppStoreConnect.PromotedPurchase?)value);
+        public static implicit operator IncludedItem48(global::AppStoreConnect.GameCenterLeaderboard value) => new IncludedItem48((global::AppStoreConnect.GameCenterLeaderboard?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.PromotedPurchase?(IncludedItem48 @this) => @this.PromotedPurchases;
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboard?(IncludedItem48 @this) => @this.GameCenterLeaderboards;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem48(global::AppStoreConnect.PromotedPurchase? value)
+        public IncludedItem48(global::AppStoreConnect.GameCenterLeaderboard? value)
         {
-            PromotedPurchases = value;
+            GameCenterLeaderboards = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem48 FromPromotedPurchases(global::AppStoreConnect.PromotedPurchase? value) => new IncludedItem48(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.RetentionMessage value) => new IncludedItem48((global::AppStoreConnect.RetentionMessage?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.RetentionMessage?(IncludedItem48 @this) => @this.RetentionMessages;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem48(global::AppStoreConnect.RetentionMessage? value)
-        {
-            RetentionMessages = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem48 FromRetentionMessages(global::AppStoreConnect.RetentionMessage? value) => new IncludedItem48(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.ReviewSubmission value) => new IncludedItem48((global::AppStoreConnect.ReviewSubmission?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.ReviewSubmission?(IncludedItem48 @this) => @this.ReviewSubmissions;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem48(global::AppStoreConnect.ReviewSubmission? value)
-        {
-            ReviewSubmissions = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem48 FromReviewSubmissions(global::AppStoreConnect.ReviewSubmission? value) => new IncludedItem48(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.SubscriptionGracePeriod value) => new IncludedItem48((global::AppStoreConnect.SubscriptionGracePeriod?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionGracePeriod?(IncludedItem48 @this) => @this.SubscriptionGracePeriods;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem48(global::AppStoreConnect.SubscriptionGracePeriod? value)
-        {
-            SubscriptionGracePeriods = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem48 FromSubscriptionGracePeriods(global::AppStoreConnect.SubscriptionGracePeriod? value) => new IncludedItem48(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem48(global::AppStoreConnect.SubscriptionGroup value) => new IncludedItem48((global::AppStoreConnect.SubscriptionGroup?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionGroup?(IncludedItem48 @this) => @this.SubscriptionGroups;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem48(global::AppStoreConnect.SubscriptionGroup? value)
-        {
-            SubscriptionGroups = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem48 FromSubscriptionGroups(global::AppStoreConnect.SubscriptionGroup? value) => new IncludedItem48(value);
+        public static IncludedItem48 FromGameCenterLeaderboards(global::AppStoreConnect.GameCenterLeaderboard? value) => new IncludedItem48(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem48(
-            global::AppStoreConnect.AppsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AndroidToIosAppMappingDetail? androidToIosAppMappingDetails,
-            global::AppStoreConnect.AppClip? appClips,
-            global::AppStoreConnect.AppCustomProductPage? appCustomProductPages,
-            global::AppStoreConnect.AppEncryptionDeclaration? appEncryptionDeclarations,
-            global::AppStoreConnect.AppEvent? appEvents,
-            global::AppStoreConnect.AppInfo? appInfos,
-            global::AppStoreConnect.AppStoreVersionExperimentV2? appStoreVersionExperiments,
+            global::AppStoreConnect.GameCenterDetailResponseIncludedItemDiscriminatorType? type,
             global::AppStoreConnect.AppStoreVersion? appStoreVersions,
-            global::AppStoreConnect.BetaAppLocalization? betaAppLocalizations,
-            global::AppStoreConnect.BetaAppReviewDetail? betaAppReviewDetails,
-            global::AppStoreConnect.BetaGroup? betaGroups,
-            global::AppStoreConnect.BetaLicenseAgreement? betaLicenseAgreements,
-            global::AppStoreConnect.BuildIcon? buildIcons,
-            global::AppStoreConnect.Build? builds,
-            global::AppStoreConnect.CiProduct? ciProducts,
-            global::AppStoreConnect.EndUserLicenseAgreement? endUserLicenseAgreements,
-            global::AppStoreConnect.GameCenterDetail? gameCenterDetails,
-            global::AppStoreConnect.GameCenterEnabledVersion? gameCenterEnabledVersions,
-            global::AppStoreConnect.InAppPurchase? inAppPurchases,
-            global::AppStoreConnect.PrereleaseVersion? preReleaseVersions,
-            global::AppStoreConnect.PromotedPurchase? promotedPurchases,
-            global::AppStoreConnect.RetentionMessage? retentionMessages,
-            global::AppStoreConnect.ReviewSubmission? reviewSubmissions,
-            global::AppStoreConnect.SubscriptionGracePeriod? subscriptionGracePeriods,
-            global::AppStoreConnect.SubscriptionGroup? subscriptionGroups
+            global::AppStoreConnect.App? apps,
+            global::AppStoreConnect.GameCenterAchievementRelease? gameCenterAchievementReleases,
+            global::AppStoreConnect.GameCenterAchievement? gameCenterAchievements,
+            global::AppStoreConnect.GameCenterActivity? gameCenterActivities,
+            global::AppStoreConnect.GameCenterActivityVersionRelease? gameCenterActivityVersionReleases,
+            global::AppStoreConnect.GameCenterAppVersion? gameCenterAppVersions,
+            global::AppStoreConnect.GameCenterChallengeVersionRelease? gameCenterChallengeVersionReleases,
+            global::AppStoreConnect.GameCenterChallenge? gameCenterChallenges,
+            global::AppStoreConnect.GameCenterGroup? gameCenterGroups,
+            global::AppStoreConnect.GameCenterLeaderboardRelease? gameCenterLeaderboardReleases,
+            global::AppStoreConnect.GameCenterLeaderboardSetRelease? gameCenterLeaderboardSetReleases,
+            global::AppStoreConnect.GameCenterLeaderboardSet? gameCenterLeaderboardSets,
+            global::AppStoreConnect.GameCenterLeaderboard? gameCenterLeaderboards
             )
         {
             Type = type;
 
-            AndroidToIosAppMappingDetails = androidToIosAppMappingDetails;
-            AppClips = appClips;
-            AppCustomProductPages = appCustomProductPages;
-            AppEncryptionDeclarations = appEncryptionDeclarations;
-            AppEvents = appEvents;
-            AppInfos = appInfos;
-            AppStoreVersionExperiments = appStoreVersionExperiments;
             AppStoreVersions = appStoreVersions;
-            BetaAppLocalizations = betaAppLocalizations;
-            BetaAppReviewDetails = betaAppReviewDetails;
-            BetaGroups = betaGroups;
-            BetaLicenseAgreements = betaLicenseAgreements;
-            BuildIcons = buildIcons;
-            Builds = builds;
-            CiProducts = ciProducts;
-            EndUserLicenseAgreements = endUserLicenseAgreements;
-            GameCenterDetails = gameCenterDetails;
-            GameCenterEnabledVersions = gameCenterEnabledVersions;
-            InAppPurchases = inAppPurchases;
-            PreReleaseVersions = preReleaseVersions;
-            PromotedPurchases = promotedPurchases;
-            RetentionMessages = retentionMessages;
-            ReviewSubmissions = reviewSubmissions;
-            SubscriptionGracePeriods = subscriptionGracePeriods;
-            SubscriptionGroups = subscriptionGroups;
+            Apps = apps;
+            GameCenterAchievementReleases = gameCenterAchievementReleases;
+            GameCenterAchievements = gameCenterAchievements;
+            GameCenterActivities = gameCenterActivities;
+            GameCenterActivityVersionReleases = gameCenterActivityVersionReleases;
+            GameCenterAppVersions = gameCenterAppVersions;
+            GameCenterChallengeVersionReleases = gameCenterChallengeVersionReleases;
+            GameCenterChallenges = gameCenterChallenges;
+            GameCenterGroups = gameCenterGroups;
+            GameCenterLeaderboardReleases = gameCenterLeaderboardReleases;
+            GameCenterLeaderboardSetReleases = gameCenterLeaderboardSetReleases;
+            GameCenterLeaderboardSets = gameCenterLeaderboardSets;
+            GameCenterLeaderboards = gameCenterLeaderboards;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            SubscriptionGroups as object ??
-            SubscriptionGracePeriods as object ??
-            ReviewSubmissions as object ??
-            RetentionMessages as object ??
-            PromotedPurchases as object ??
-            PreReleaseVersions as object ??
-            InAppPurchases as object ??
-            GameCenterEnabledVersions as object ??
-            GameCenterDetails as object ??
-            EndUserLicenseAgreements as object ??
-            CiProducts as object ??
-            Builds as object ??
-            BuildIcons as object ??
-            BetaLicenseAgreements as object ??
-            BetaGroups as object ??
-            BetaAppReviewDetails as object ??
-            BetaAppLocalizations as object ??
-            AppStoreVersions as object ??
-            AppStoreVersionExperiments as object ??
-            AppInfos as object ??
-            AppEvents as object ??
-            AppEncryptionDeclarations as object ??
-            AppCustomProductPages as object ??
-            AppClips as object ??
-            AndroidToIosAppMappingDetails as object
+            GameCenterLeaderboards as object ??
+            GameCenterLeaderboardSets as object ??
+            GameCenterLeaderboardSetReleases as object ??
+            GameCenterLeaderboardReleases as object ??
+            GameCenterGroups as object ??
+            GameCenterChallenges as object ??
+            GameCenterChallengeVersionReleases as object ??
+            GameCenterAppVersions as object ??
+            GameCenterActivityVersionReleases as object ??
+            GameCenterActivities as object ??
+            GameCenterAchievements as object ??
+            GameCenterAchievementReleases as object ??
+            Apps as object ??
+            AppStoreVersions as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AndroidToIosAppMappingDetails?.ToString() ??
-            AppClips?.ToString() ??
-            AppCustomProductPages?.ToString() ??
-            AppEncryptionDeclarations?.ToString() ??
-            AppEvents?.ToString() ??
-            AppInfos?.ToString() ??
-            AppStoreVersionExperiments?.ToString() ??
             AppStoreVersions?.ToString() ??
-            BetaAppLocalizations?.ToString() ??
-            BetaAppReviewDetails?.ToString() ??
-            BetaGroups?.ToString() ??
-            BetaLicenseAgreements?.ToString() ??
-            BuildIcons?.ToString() ??
-            Builds?.ToString() ??
-            CiProducts?.ToString() ??
-            EndUserLicenseAgreements?.ToString() ??
-            GameCenterDetails?.ToString() ??
-            GameCenterEnabledVersions?.ToString() ??
-            InAppPurchases?.ToString() ??
-            PreReleaseVersions?.ToString() ??
-            PromotedPurchases?.ToString() ??
-            RetentionMessages?.ToString() ??
-            ReviewSubmissions?.ToString() ??
-            SubscriptionGracePeriods?.ToString() ??
-            SubscriptionGroups?.ToString()
+            Apps?.ToString() ??
+            GameCenterAchievementReleases?.ToString() ??
+            GameCenterAchievements?.ToString() ??
+            GameCenterActivities?.ToString() ??
+            GameCenterActivityVersionReleases?.ToString() ??
+            GameCenterAppVersions?.ToString() ??
+            GameCenterChallengeVersionReleases?.ToString() ??
+            GameCenterChallenges?.ToString() ??
+            GameCenterGroups?.ToString() ??
+            GameCenterLeaderboardReleases?.ToString() ??
+            GameCenterLeaderboardSetReleases?.ToString() ??
+            GameCenterLeaderboardSets?.ToString() ??
+            GameCenterLeaderboards?.ToString()
             ;
 
         /// <summary>
@@ -1641,38 +937,27 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && IsReviewSubmissions && !IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && IsSubscriptionGracePeriods && !IsSubscriptionGroups || !IsAndroidToIosAppMappingDetails && !IsAppClips && !IsAppCustomProductPages && !IsAppEncryptionDeclarations && !IsAppEvents && !IsAppInfos && !IsAppStoreVersionExperiments && !IsAppStoreVersions && !IsBetaAppLocalizations && !IsBetaAppReviewDetails && !IsBetaGroups && !IsBetaLicenseAgreements && !IsBuildIcons && !IsBuilds && !IsCiProducts && !IsEndUserLicenseAgreements && !IsGameCenterDetails && !IsGameCenterEnabledVersions && !IsInAppPurchases && !IsPreReleaseVersions && !IsPromotedPurchases && !IsRetentionMessages && !IsReviewSubmissions && !IsSubscriptionGracePeriods && IsSubscriptionGroups;
+            return IsAppStoreVersions && !IsApps && !IsGameCenterAchievementReleases && !IsGameCenterAchievements && !IsGameCenterActivities && !IsGameCenterActivityVersionReleases && !IsGameCenterAppVersions && !IsGameCenterChallengeVersionReleases && !IsGameCenterChallenges && !IsGameCenterGroups && !IsGameCenterLeaderboardReleases && !IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets && !IsGameCenterLeaderboards || !IsAppStoreVersions && IsApps && !IsGameCenterAchievementReleases && !IsGameCenterAchievements && !IsGameCenterActivities && !IsGameCenterActivityVersionReleases && !IsGameCenterAppVersions && !IsGameCenterChallengeVersionReleases && !IsGameCenterChallenges && !IsGameCenterGroups && !IsGameCenterLeaderboardReleases && !IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets && !IsGameCenterLeaderboards || !IsAppStoreVersions && !IsApps && IsGameCenterAchievementReleases && !IsGameCenterAchievements && !IsGameCenterActivities && !IsGameCenterActivityVersionReleases && !IsGameCenterAppVersions && !IsGameCenterChallengeVersionReleases && !IsGameCenterChallenges && !IsGameCenterGroups && !IsGameCenterLeaderboardReleases && !IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets && !IsGameCenterLeaderboards || !IsAppStoreVersions && !IsApps && !IsGameCenterAchievementReleases && IsGameCenterAchievements && !IsGameCenterActivities && !IsGameCenterActivityVersionReleases && !IsGameCenterAppVersions && !IsGameCenterChallengeVersionReleases && !IsGameCenterChallenges && !IsGameCenterGroups && !IsGameCenterLeaderboardReleases && !IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets && !IsGameCenterLeaderboards || !IsAppStoreVersions && !IsApps && !IsGameCenterAchievementReleases && !IsGameCenterAchievements && IsGameCenterActivities && !IsGameCenterActivityVersionReleases && !IsGameCenterAppVersions && !IsGameCenterChallengeVersionReleases && !IsGameCenterChallenges && !IsGameCenterGroups && !IsGameCenterLeaderboardReleases && !IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets && !IsGameCenterLeaderboards || !IsAppStoreVersions && !IsApps && !IsGameCenterAchievementReleases && !IsGameCenterAchievements && !IsGameCenterActivities && IsGameCenterActivityVersionReleases && !IsGameCenterAppVersions && !IsGameCenterChallengeVersionReleases && !IsGameCenterChallenges && !IsGameCenterGroups && !IsGameCenterLeaderboardReleases && !IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets && !IsGameCenterLeaderboards || !IsAppStoreVersions && !IsApps && !IsGameCenterAchievementReleases && !IsGameCenterAchievements && !IsGameCenterActivities && !IsGameCenterActivityVersionReleases && IsGameCenterAppVersions && !IsGameCenterChallengeVersionReleases && !IsGameCenterChallenges && !IsGameCenterGroups && !IsGameCenterLeaderboardReleases && !IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets && !IsGameCenterLeaderboards || !IsAppStoreVersions && !IsApps && !IsGameCenterAchievementReleases && !IsGameCenterAchievements && !IsGameCenterActivities && !IsGameCenterActivityVersionReleases && !IsGameCenterAppVersions && IsGameCenterChallengeVersionReleases && !IsGameCenterChallenges && !IsGameCenterGroups && !IsGameCenterLeaderboardReleases && !IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets && !IsGameCenterLeaderboards || !IsAppStoreVersions && !IsApps && !IsGameCenterAchievementReleases && !IsGameCenterAchievements && !IsGameCenterActivities && !IsGameCenterActivityVersionReleases && !IsGameCenterAppVersions && !IsGameCenterChallengeVersionReleases && IsGameCenterChallenges && !IsGameCenterGroups && !IsGameCenterLeaderboardReleases && !IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets && !IsGameCenterLeaderboards || !IsAppStoreVersions && !IsApps && !IsGameCenterAchievementReleases && !IsGameCenterAchievements && !IsGameCenterActivities && !IsGameCenterActivityVersionReleases && !IsGameCenterAppVersions && !IsGameCenterChallengeVersionReleases && !IsGameCenterChallenges && IsGameCenterGroups && !IsGameCenterLeaderboardReleases && !IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets && !IsGameCenterLeaderboards || !IsAppStoreVersions && !IsApps && !IsGameCenterAchievementReleases && !IsGameCenterAchievements && !IsGameCenterActivities && !IsGameCenterActivityVersionReleases && !IsGameCenterAppVersions && !IsGameCenterChallengeVersionReleases && !IsGameCenterChallenges && !IsGameCenterGroups && IsGameCenterLeaderboardReleases && !IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets && !IsGameCenterLeaderboards || !IsAppStoreVersions && !IsApps && !IsGameCenterAchievementReleases && !IsGameCenterAchievements && !IsGameCenterActivities && !IsGameCenterActivityVersionReleases && !IsGameCenterAppVersions && !IsGameCenterChallengeVersionReleases && !IsGameCenterChallenges && !IsGameCenterGroups && !IsGameCenterLeaderboardReleases && IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets && !IsGameCenterLeaderboards || !IsAppStoreVersions && !IsApps && !IsGameCenterAchievementReleases && !IsGameCenterAchievements && !IsGameCenterActivities && !IsGameCenterActivityVersionReleases && !IsGameCenterAppVersions && !IsGameCenterChallengeVersionReleases && !IsGameCenterChallenges && !IsGameCenterGroups && !IsGameCenterLeaderboardReleases && !IsGameCenterLeaderboardSetReleases && IsGameCenterLeaderboardSets && !IsGameCenterLeaderboards || !IsAppStoreVersions && !IsApps && !IsGameCenterAchievementReleases && !IsGameCenterAchievements && !IsGameCenterActivities && !IsGameCenterActivityVersionReleases && !IsGameCenterAppVersions && !IsGameCenterChallengeVersionReleases && !IsGameCenterChallenges && !IsGameCenterGroups && !IsGameCenterLeaderboardReleases && !IsGameCenterLeaderboardSetReleases && !IsGameCenterLeaderboardSets && IsGameCenterLeaderboards;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AndroidToIosAppMappingDetail, TResult>? androidToIosAppMappingDetails = null,
-            global::System.Func<global::AppStoreConnect.AppClip, TResult>? appClips = null,
-            global::System.Func<global::AppStoreConnect.AppCustomProductPage, TResult>? appCustomProductPages = null,
-            global::System.Func<global::AppStoreConnect.AppEncryptionDeclaration, TResult>? appEncryptionDeclarations = null,
-            global::System.Func<global::AppStoreConnect.AppEvent, TResult>? appEvents = null,
-            global::System.Func<global::AppStoreConnect.AppInfo, TResult>? appInfos = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersionExperimentV2, TResult>? appStoreVersionExperiments = null,
             global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersions = null,
-            global::System.Func<global::AppStoreConnect.BetaAppLocalization, TResult>? betaAppLocalizations = null,
-            global::System.Func<global::AppStoreConnect.BetaAppReviewDetail, TResult>? betaAppReviewDetails = null,
-            global::System.Func<global::AppStoreConnect.BetaGroup, TResult>? betaGroups = null,
-            global::System.Func<global::AppStoreConnect.BetaLicenseAgreement, TResult>? betaLicenseAgreements = null,
-            global::System.Func<global::AppStoreConnect.BuildIcon, TResult>? buildIcons = null,
-            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
-            global::System.Func<global::AppStoreConnect.CiProduct, TResult>? ciProducts = null,
-            global::System.Func<global::AppStoreConnect.EndUserLicenseAgreement, TResult>? endUserLicenseAgreements = null,
-            global::System.Func<global::AppStoreConnect.GameCenterDetail, TResult>? gameCenterDetails = null,
-            global::System.Func<global::AppStoreConnect.GameCenterEnabledVersion, TResult>? gameCenterEnabledVersions = null,
-            global::System.Func<global::AppStoreConnect.InAppPurchase, TResult>? inAppPurchases = null,
-            global::System.Func<global::AppStoreConnect.PrereleaseVersion, TResult>? preReleaseVersions = null,
-            global::System.Func<global::AppStoreConnect.PromotedPurchase, TResult>? promotedPurchases = null,
-            global::System.Func<global::AppStoreConnect.RetentionMessage, TResult>? retentionMessages = null,
-            global::System.Func<global::AppStoreConnect.ReviewSubmission, TResult>? reviewSubmissions = null,
-            global::System.Func<global::AppStoreConnect.SubscriptionGracePeriod, TResult>? subscriptionGracePeriods = null,
-            global::System.Func<global::AppStoreConnect.SubscriptionGroup, TResult>? subscriptionGroups = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
+            global::System.Func<global::AppStoreConnect.GameCenterAchievementRelease, TResult>? gameCenterAchievementReleases = null,
+            global::System.Func<global::AppStoreConnect.GameCenterAchievement, TResult>? gameCenterAchievements = null,
+            global::System.Func<global::AppStoreConnect.GameCenterActivity, TResult>? gameCenterActivities = null,
+            global::System.Func<global::AppStoreConnect.GameCenterActivityVersionRelease, TResult>? gameCenterActivityVersionReleases = null,
+            global::System.Func<global::AppStoreConnect.GameCenterAppVersion, TResult>? gameCenterAppVersions = null,
+            global::System.Func<global::AppStoreConnect.GameCenterChallengeVersionRelease, TResult>? gameCenterChallengeVersionReleases = null,
+            global::System.Func<global::AppStoreConnect.GameCenterChallenge, TResult>? gameCenterChallenges = null,
+            global::System.Func<global::AppStoreConnect.GameCenterGroup, TResult>? gameCenterGroups = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardRelease, TResult>? gameCenterLeaderboardReleases = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSetRelease, TResult>? gameCenterLeaderboardSetReleases = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSet, TResult>? gameCenterLeaderboardSets = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboard, TResult>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -1680,105 +965,61 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AndroidToIosAppMappingDetails is { } __value0 && androidToIosAppMappingDetails != null)
+            if (AppStoreVersions is { } __value0 && appStoreVersions != null)
             {
-                return androidToIosAppMappingDetails(__value0);
+                return appStoreVersions(__value0);
             }
-            else if (AppClips is { } __value1 && appClips != null)
+            else if (Apps is { } __value1 && apps != null)
             {
-                return appClips(__value1);
+                return apps(__value1);
             }
-            else if (AppCustomProductPages is { } __value2 && appCustomProductPages != null)
+            else if (GameCenterAchievementReleases is { } __value2 && gameCenterAchievementReleases != null)
             {
-                return appCustomProductPages(__value2);
+                return gameCenterAchievementReleases(__value2);
             }
-            else if (AppEncryptionDeclarations is { } __value3 && appEncryptionDeclarations != null)
+            else if (GameCenterAchievements is { } __value3 && gameCenterAchievements != null)
             {
-                return appEncryptionDeclarations(__value3);
+                return gameCenterAchievements(__value3);
             }
-            else if (AppEvents is { } __value4 && appEvents != null)
+            else if (GameCenterActivities is { } __value4 && gameCenterActivities != null)
             {
-                return appEvents(__value4);
+                return gameCenterActivities(__value4);
             }
-            else if (AppInfos is { } __value5 && appInfos != null)
+            else if (GameCenterActivityVersionReleases is { } __value5 && gameCenterActivityVersionReleases != null)
             {
-                return appInfos(__value5);
+                return gameCenterActivityVersionReleases(__value5);
             }
-            else if (AppStoreVersionExperiments is { } __value6 && appStoreVersionExperiments != null)
+            else if (GameCenterAppVersions is { } __value6 && gameCenterAppVersions != null)
             {
-                return appStoreVersionExperiments(__value6);
+                return gameCenterAppVersions(__value6);
             }
-            else if (AppStoreVersions is { } __value7 && appStoreVersions != null)
+            else if (GameCenterChallengeVersionReleases is { } __value7 && gameCenterChallengeVersionReleases != null)
             {
-                return appStoreVersions(__value7);
+                return gameCenterChallengeVersionReleases(__value7);
             }
-            else if (BetaAppLocalizations is { } __value8 && betaAppLocalizations != null)
+            else if (GameCenterChallenges is { } __value8 && gameCenterChallenges != null)
             {
-                return betaAppLocalizations(__value8);
+                return gameCenterChallenges(__value8);
             }
-            else if (BetaAppReviewDetails is { } __value9 && betaAppReviewDetails != null)
+            else if (GameCenterGroups is { } __value9 && gameCenterGroups != null)
             {
-                return betaAppReviewDetails(__value9);
+                return gameCenterGroups(__value9);
             }
-            else if (BetaGroups is { } __value10 && betaGroups != null)
+            else if (GameCenterLeaderboardReleases is { } __value10 && gameCenterLeaderboardReleases != null)
             {
-                return betaGroups(__value10);
+                return gameCenterLeaderboardReleases(__value10);
             }
-            else if (BetaLicenseAgreements is { } __value11 && betaLicenseAgreements != null)
+            else if (GameCenterLeaderboardSetReleases is { } __value11 && gameCenterLeaderboardSetReleases != null)
             {
-                return betaLicenseAgreements(__value11);
+                return gameCenterLeaderboardSetReleases(__value11);
             }
-            else if (BuildIcons is { } __value12 && buildIcons != null)
+            else if (GameCenterLeaderboardSets is { } __value12 && gameCenterLeaderboardSets != null)
             {
-                return buildIcons(__value12);
+                return gameCenterLeaderboardSets(__value12);
             }
-            else if (Builds is { } __value13 && builds != null)
+            else if (GameCenterLeaderboards is { } __value13 && gameCenterLeaderboards != null)
             {
-                return builds(__value13);
-            }
-            else if (CiProducts is { } __value14 && ciProducts != null)
-            {
-                return ciProducts(__value14);
-            }
-            else if (EndUserLicenseAgreements is { } __value15 && endUserLicenseAgreements != null)
-            {
-                return endUserLicenseAgreements(__value15);
-            }
-            else if (GameCenterDetails is { } __value16 && gameCenterDetails != null)
-            {
-                return gameCenterDetails(__value16);
-            }
-            else if (GameCenterEnabledVersions is { } __value17 && gameCenterEnabledVersions != null)
-            {
-                return gameCenterEnabledVersions(__value17);
-            }
-            else if (InAppPurchases is { } __value18 && inAppPurchases != null)
-            {
-                return inAppPurchases(__value18);
-            }
-            else if (PreReleaseVersions is { } __value19 && preReleaseVersions != null)
-            {
-                return preReleaseVersions(__value19);
-            }
-            else if (PromotedPurchases is { } __value20 && promotedPurchases != null)
-            {
-                return promotedPurchases(__value20);
-            }
-            else if (RetentionMessages is { } __value21 && retentionMessages != null)
-            {
-                return retentionMessages(__value21);
-            }
-            else if (ReviewSubmissions is { } __value22 && reviewSubmissions != null)
-            {
-                return reviewSubmissions(__value22);
-            }
-            else if (SubscriptionGracePeriods is { } __value23 && subscriptionGracePeriods != null)
-            {
-                return subscriptionGracePeriods(__value23);
-            }
-            else if (SubscriptionGroups is { } __value24 && subscriptionGroups != null)
-            {
-                return subscriptionGroups(__value24);
+                return gameCenterLeaderboards(__value13);
             }
 
             return default(TResult);
@@ -1788,55 +1029,33 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AndroidToIosAppMappingDetail>? androidToIosAppMappingDetails = null,
-
-            global::System.Action<global::AppStoreConnect.AppClip>? appClips = null,
-
-            global::System.Action<global::AppStoreConnect.AppCustomProductPage>? appCustomProductPages = null,
-
-            global::System.Action<global::AppStoreConnect.AppEncryptionDeclaration>? appEncryptionDeclarations = null,
-
-            global::System.Action<global::AppStoreConnect.AppEvent>? appEvents = null,
-
-            global::System.Action<global::AppStoreConnect.AppInfo>? appInfos = null,
-
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentV2>? appStoreVersionExperiments = null,
-
             global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
 
-            global::System.Action<global::AppStoreConnect.BetaAppLocalization>? betaAppLocalizations = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
 
-            global::System.Action<global::AppStoreConnect.BetaAppReviewDetail>? betaAppReviewDetails = null,
+            global::System.Action<global::AppStoreConnect.GameCenterAchievementRelease>? gameCenterAchievementReleases = null,
 
-            global::System.Action<global::AppStoreConnect.BetaGroup>? betaGroups = null,
+            global::System.Action<global::AppStoreConnect.GameCenterAchievement>? gameCenterAchievements = null,
 
-            global::System.Action<global::AppStoreConnect.BetaLicenseAgreement>? betaLicenseAgreements = null,
+            global::System.Action<global::AppStoreConnect.GameCenterActivity>? gameCenterActivities = null,
 
-            global::System.Action<global::AppStoreConnect.BuildIcon>? buildIcons = null,
+            global::System.Action<global::AppStoreConnect.GameCenterActivityVersionRelease>? gameCenterActivityVersionReleases = null,
 
-            global::System.Action<global::AppStoreConnect.Build>? builds = null,
+            global::System.Action<global::AppStoreConnect.GameCenterAppVersion>? gameCenterAppVersions = null,
 
-            global::System.Action<global::AppStoreConnect.CiProduct>? ciProducts = null,
+            global::System.Action<global::AppStoreConnect.GameCenterChallengeVersionRelease>? gameCenterChallengeVersionReleases = null,
 
-            global::System.Action<global::AppStoreConnect.EndUserLicenseAgreement>? endUserLicenseAgreements = null,
+            global::System.Action<global::AppStoreConnect.GameCenterChallenge>? gameCenterChallenges = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterDetail>? gameCenterDetails = null,
+            global::System.Action<global::AppStoreConnect.GameCenterGroup>? gameCenterGroups = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterEnabledVersion>? gameCenterEnabledVersions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardRelease>? gameCenterLeaderboardReleases = null,
 
-            global::System.Action<global::AppStoreConnect.InAppPurchase>? inAppPurchases = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetRelease>? gameCenterLeaderboardSetReleases = null,
 
-            global::System.Action<global::AppStoreConnect.PrereleaseVersion>? preReleaseVersions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSet>? gameCenterLeaderboardSets = null,
 
-            global::System.Action<global::AppStoreConnect.PromotedPurchase>? promotedPurchases = null,
-
-            global::System.Action<global::AppStoreConnect.RetentionMessage>? retentionMessages = null,
-
-            global::System.Action<global::AppStoreConnect.ReviewSubmission>? reviewSubmissions = null,
-
-            global::System.Action<global::AppStoreConnect.SubscriptionGracePeriod>? subscriptionGracePeriods = null,
-
-            global::System.Action<global::AppStoreConnect.SubscriptionGroup>? subscriptionGroups = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboard>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -1844,105 +1063,61 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AndroidToIosAppMappingDetails is { } __value0)
+            if (AppStoreVersions is { } __value0)
             {
-                androidToIosAppMappingDetails?.Invoke(__value0);
+                appStoreVersions?.Invoke(__value0);
             }
-            else if (AppClips is { } __value1)
+            else if (Apps is { } __value1)
             {
-                appClips?.Invoke(__value1);
+                apps?.Invoke(__value1);
             }
-            else if (AppCustomProductPages is { } __value2)
+            else if (GameCenterAchievementReleases is { } __value2)
             {
-                appCustomProductPages?.Invoke(__value2);
+                gameCenterAchievementReleases?.Invoke(__value2);
             }
-            else if (AppEncryptionDeclarations is { } __value3)
+            else if (GameCenterAchievements is { } __value3)
             {
-                appEncryptionDeclarations?.Invoke(__value3);
+                gameCenterAchievements?.Invoke(__value3);
             }
-            else if (AppEvents is { } __value4)
+            else if (GameCenterActivities is { } __value4)
             {
-                appEvents?.Invoke(__value4);
+                gameCenterActivities?.Invoke(__value4);
             }
-            else if (AppInfos is { } __value5)
+            else if (GameCenterActivityVersionReleases is { } __value5)
             {
-                appInfos?.Invoke(__value5);
+                gameCenterActivityVersionReleases?.Invoke(__value5);
             }
-            else if (AppStoreVersionExperiments is { } __value6)
+            else if (GameCenterAppVersions is { } __value6)
             {
-                appStoreVersionExperiments?.Invoke(__value6);
+                gameCenterAppVersions?.Invoke(__value6);
             }
-            else if (AppStoreVersions is { } __value7)
+            else if (GameCenterChallengeVersionReleases is { } __value7)
             {
-                appStoreVersions?.Invoke(__value7);
+                gameCenterChallengeVersionReleases?.Invoke(__value7);
             }
-            else if (BetaAppLocalizations is { } __value8)
+            else if (GameCenterChallenges is { } __value8)
             {
-                betaAppLocalizations?.Invoke(__value8);
+                gameCenterChallenges?.Invoke(__value8);
             }
-            else if (BetaAppReviewDetails is { } __value9)
+            else if (GameCenterGroups is { } __value9)
             {
-                betaAppReviewDetails?.Invoke(__value9);
+                gameCenterGroups?.Invoke(__value9);
             }
-            else if (BetaGroups is { } __value10)
+            else if (GameCenterLeaderboardReleases is { } __value10)
             {
-                betaGroups?.Invoke(__value10);
+                gameCenterLeaderboardReleases?.Invoke(__value10);
             }
-            else if (BetaLicenseAgreements is { } __value11)
+            else if (GameCenterLeaderboardSetReleases is { } __value11)
             {
-                betaLicenseAgreements?.Invoke(__value11);
+                gameCenterLeaderboardSetReleases?.Invoke(__value11);
             }
-            else if (BuildIcons is { } __value12)
+            else if (GameCenterLeaderboardSets is { } __value12)
             {
-                buildIcons?.Invoke(__value12);
+                gameCenterLeaderboardSets?.Invoke(__value12);
             }
-            else if (Builds is { } __value13)
+            else if (GameCenterLeaderboards is { } __value13)
             {
-                builds?.Invoke(__value13);
-            }
-            else if (CiProducts is { } __value14)
-            {
-                ciProducts?.Invoke(__value14);
-            }
-            else if (EndUserLicenseAgreements is { } __value15)
-            {
-                endUserLicenseAgreements?.Invoke(__value15);
-            }
-            else if (GameCenterDetails is { } __value16)
-            {
-                gameCenterDetails?.Invoke(__value16);
-            }
-            else if (GameCenterEnabledVersions is { } __value17)
-            {
-                gameCenterEnabledVersions?.Invoke(__value17);
-            }
-            else if (InAppPurchases is { } __value18)
-            {
-                inAppPurchases?.Invoke(__value18);
-            }
-            else if (PreReleaseVersions is { } __value19)
-            {
-                preReleaseVersions?.Invoke(__value19);
-            }
-            else if (PromotedPurchases is { } __value20)
-            {
-                promotedPurchases?.Invoke(__value20);
-            }
-            else if (RetentionMessages is { } __value21)
-            {
-                retentionMessages?.Invoke(__value21);
-            }
-            else if (ReviewSubmissions is { } __value22)
-            {
-                reviewSubmissions?.Invoke(__value22);
-            }
-            else if (SubscriptionGracePeriods is { } __value23)
-            {
-                subscriptionGracePeriods?.Invoke(__value23);
-            }
-            else if (SubscriptionGroups is { } __value24)
-            {
-                subscriptionGroups?.Invoke(__value24);
+                gameCenterLeaderboards?.Invoke(__value13);
             }
         }
 
@@ -1950,31 +1125,20 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AndroidToIosAppMappingDetail>? androidToIosAppMappingDetails = null,
-            global::System.Action<global::AppStoreConnect.AppClip>? appClips = null,
-            global::System.Action<global::AppStoreConnect.AppCustomProductPage>? appCustomProductPages = null,
-            global::System.Action<global::AppStoreConnect.AppEncryptionDeclaration>? appEncryptionDeclarations = null,
-            global::System.Action<global::AppStoreConnect.AppEvent>? appEvents = null,
-            global::System.Action<global::AppStoreConnect.AppInfo>? appInfos = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentV2>? appStoreVersionExperiments = null,
             global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
-            global::System.Action<global::AppStoreConnect.BetaAppLocalization>? betaAppLocalizations = null,
-            global::System.Action<global::AppStoreConnect.BetaAppReviewDetail>? betaAppReviewDetails = null,
-            global::System.Action<global::AppStoreConnect.BetaGroup>? betaGroups = null,
-            global::System.Action<global::AppStoreConnect.BetaLicenseAgreement>? betaLicenseAgreements = null,
-            global::System.Action<global::AppStoreConnect.BuildIcon>? buildIcons = null,
-            global::System.Action<global::AppStoreConnect.Build>? builds = null,
-            global::System.Action<global::AppStoreConnect.CiProduct>? ciProducts = null,
-            global::System.Action<global::AppStoreConnect.EndUserLicenseAgreement>? endUserLicenseAgreements = null,
-            global::System.Action<global::AppStoreConnect.GameCenterDetail>? gameCenterDetails = null,
-            global::System.Action<global::AppStoreConnect.GameCenterEnabledVersion>? gameCenterEnabledVersions = null,
-            global::System.Action<global::AppStoreConnect.InAppPurchase>? inAppPurchases = null,
-            global::System.Action<global::AppStoreConnect.PrereleaseVersion>? preReleaseVersions = null,
-            global::System.Action<global::AppStoreConnect.PromotedPurchase>? promotedPurchases = null,
-            global::System.Action<global::AppStoreConnect.RetentionMessage>? retentionMessages = null,
-            global::System.Action<global::AppStoreConnect.ReviewSubmission>? reviewSubmissions = null,
-            global::System.Action<global::AppStoreConnect.SubscriptionGracePeriod>? subscriptionGracePeriods = null,
-            global::System.Action<global::AppStoreConnect.SubscriptionGroup>? subscriptionGroups = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.GameCenterAchievementRelease>? gameCenterAchievementReleases = null,
+            global::System.Action<global::AppStoreConnect.GameCenterAchievement>? gameCenterAchievements = null,
+            global::System.Action<global::AppStoreConnect.GameCenterActivity>? gameCenterActivities = null,
+            global::System.Action<global::AppStoreConnect.GameCenterActivityVersionRelease>? gameCenterActivityVersionReleases = null,
+            global::System.Action<global::AppStoreConnect.GameCenterAppVersion>? gameCenterAppVersions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterChallengeVersionRelease>? gameCenterChallengeVersionReleases = null,
+            global::System.Action<global::AppStoreConnect.GameCenterChallenge>? gameCenterChallenges = null,
+            global::System.Action<global::AppStoreConnect.GameCenterGroup>? gameCenterGroups = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardRelease>? gameCenterLeaderboardReleases = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetRelease>? gameCenterLeaderboardSetReleases = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSet>? gameCenterLeaderboardSets = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboard>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -1982,105 +1146,61 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AndroidToIosAppMappingDetails is { } __value0)
+            if (AppStoreVersions is { } __value0)
             {
-                androidToIosAppMappingDetails?.Invoke(__value0);
+                appStoreVersions?.Invoke(__value0);
             }
-            else if (AppClips is { } __value1)
+            else if (Apps is { } __value1)
             {
-                appClips?.Invoke(__value1);
+                apps?.Invoke(__value1);
             }
-            else if (AppCustomProductPages is { } __value2)
+            else if (GameCenterAchievementReleases is { } __value2)
             {
-                appCustomProductPages?.Invoke(__value2);
+                gameCenterAchievementReleases?.Invoke(__value2);
             }
-            else if (AppEncryptionDeclarations is { } __value3)
+            else if (GameCenterAchievements is { } __value3)
             {
-                appEncryptionDeclarations?.Invoke(__value3);
+                gameCenterAchievements?.Invoke(__value3);
             }
-            else if (AppEvents is { } __value4)
+            else if (GameCenterActivities is { } __value4)
             {
-                appEvents?.Invoke(__value4);
+                gameCenterActivities?.Invoke(__value4);
             }
-            else if (AppInfos is { } __value5)
+            else if (GameCenterActivityVersionReleases is { } __value5)
             {
-                appInfos?.Invoke(__value5);
+                gameCenterActivityVersionReleases?.Invoke(__value5);
             }
-            else if (AppStoreVersionExperiments is { } __value6)
+            else if (GameCenterAppVersions is { } __value6)
             {
-                appStoreVersionExperiments?.Invoke(__value6);
+                gameCenterAppVersions?.Invoke(__value6);
             }
-            else if (AppStoreVersions is { } __value7)
+            else if (GameCenterChallengeVersionReleases is { } __value7)
             {
-                appStoreVersions?.Invoke(__value7);
+                gameCenterChallengeVersionReleases?.Invoke(__value7);
             }
-            else if (BetaAppLocalizations is { } __value8)
+            else if (GameCenterChallenges is { } __value8)
             {
-                betaAppLocalizations?.Invoke(__value8);
+                gameCenterChallenges?.Invoke(__value8);
             }
-            else if (BetaAppReviewDetails is { } __value9)
+            else if (GameCenterGroups is { } __value9)
             {
-                betaAppReviewDetails?.Invoke(__value9);
+                gameCenterGroups?.Invoke(__value9);
             }
-            else if (BetaGroups is { } __value10)
+            else if (GameCenterLeaderboardReleases is { } __value10)
             {
-                betaGroups?.Invoke(__value10);
+                gameCenterLeaderboardReleases?.Invoke(__value10);
             }
-            else if (BetaLicenseAgreements is { } __value11)
+            else if (GameCenterLeaderboardSetReleases is { } __value11)
             {
-                betaLicenseAgreements?.Invoke(__value11);
+                gameCenterLeaderboardSetReleases?.Invoke(__value11);
             }
-            else if (BuildIcons is { } __value12)
+            else if (GameCenterLeaderboardSets is { } __value12)
             {
-                buildIcons?.Invoke(__value12);
+                gameCenterLeaderboardSets?.Invoke(__value12);
             }
-            else if (Builds is { } __value13)
+            else if (GameCenterLeaderboards is { } __value13)
             {
-                builds?.Invoke(__value13);
-            }
-            else if (CiProducts is { } __value14)
-            {
-                ciProducts?.Invoke(__value14);
-            }
-            else if (EndUserLicenseAgreements is { } __value15)
-            {
-                endUserLicenseAgreements?.Invoke(__value15);
-            }
-            else if (GameCenterDetails is { } __value16)
-            {
-                gameCenterDetails?.Invoke(__value16);
-            }
-            else if (GameCenterEnabledVersions is { } __value17)
-            {
-                gameCenterEnabledVersions?.Invoke(__value17);
-            }
-            else if (InAppPurchases is { } __value18)
-            {
-                inAppPurchases?.Invoke(__value18);
-            }
-            else if (PreReleaseVersions is { } __value19)
-            {
-                preReleaseVersions?.Invoke(__value19);
-            }
-            else if (PromotedPurchases is { } __value20)
-            {
-                promotedPurchases?.Invoke(__value20);
-            }
-            else if (RetentionMessages is { } __value21)
-            {
-                retentionMessages?.Invoke(__value21);
-            }
-            else if (ReviewSubmissions is { } __value22)
-            {
-                reviewSubmissions?.Invoke(__value22);
-            }
-            else if (SubscriptionGracePeriods is { } __value23)
-            {
-                subscriptionGracePeriods?.Invoke(__value23);
-            }
-            else if (SubscriptionGroups is { } __value24)
-            {
-                subscriptionGroups?.Invoke(__value24);
+                gameCenterLeaderboards?.Invoke(__value13);
             }
         }
 
@@ -2091,56 +1211,34 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AndroidToIosAppMappingDetails,
-                typeof(global::AppStoreConnect.AndroidToIosAppMappingDetail),
-                AppClips,
-                typeof(global::AppStoreConnect.AppClip),
-                AppCustomProductPages,
-                typeof(global::AppStoreConnect.AppCustomProductPage),
-                AppEncryptionDeclarations,
-                typeof(global::AppStoreConnect.AppEncryptionDeclaration),
-                AppEvents,
-                typeof(global::AppStoreConnect.AppEvent),
-                AppInfos,
-                typeof(global::AppStoreConnect.AppInfo),
-                AppStoreVersionExperiments,
-                typeof(global::AppStoreConnect.AppStoreVersionExperimentV2),
                 AppStoreVersions,
                 typeof(global::AppStoreConnect.AppStoreVersion),
-                BetaAppLocalizations,
-                typeof(global::AppStoreConnect.BetaAppLocalization),
-                BetaAppReviewDetails,
-                typeof(global::AppStoreConnect.BetaAppReviewDetail),
-                BetaGroups,
-                typeof(global::AppStoreConnect.BetaGroup),
-                BetaLicenseAgreements,
-                typeof(global::AppStoreConnect.BetaLicenseAgreement),
-                BuildIcons,
-                typeof(global::AppStoreConnect.BuildIcon),
-                Builds,
-                typeof(global::AppStoreConnect.Build),
-                CiProducts,
-                typeof(global::AppStoreConnect.CiProduct),
-                EndUserLicenseAgreements,
-                typeof(global::AppStoreConnect.EndUserLicenseAgreement),
-                GameCenterDetails,
-                typeof(global::AppStoreConnect.GameCenterDetail),
-                GameCenterEnabledVersions,
-                typeof(global::AppStoreConnect.GameCenterEnabledVersion),
-                InAppPurchases,
-                typeof(global::AppStoreConnect.InAppPurchase),
-                PreReleaseVersions,
-                typeof(global::AppStoreConnect.PrereleaseVersion),
-                PromotedPurchases,
-                typeof(global::AppStoreConnect.PromotedPurchase),
-                RetentionMessages,
-                typeof(global::AppStoreConnect.RetentionMessage),
-                ReviewSubmissions,
-                typeof(global::AppStoreConnect.ReviewSubmission),
-                SubscriptionGracePeriods,
-                typeof(global::AppStoreConnect.SubscriptionGracePeriod),
-                SubscriptionGroups,
-                typeof(global::AppStoreConnect.SubscriptionGroup),
+                Apps,
+                typeof(global::AppStoreConnect.App),
+                GameCenterAchievementReleases,
+                typeof(global::AppStoreConnect.GameCenterAchievementRelease),
+                GameCenterAchievements,
+                typeof(global::AppStoreConnect.GameCenterAchievement),
+                GameCenterActivities,
+                typeof(global::AppStoreConnect.GameCenterActivity),
+                GameCenterActivityVersionReleases,
+                typeof(global::AppStoreConnect.GameCenterActivityVersionRelease),
+                GameCenterAppVersions,
+                typeof(global::AppStoreConnect.GameCenterAppVersion),
+                GameCenterChallengeVersionReleases,
+                typeof(global::AppStoreConnect.GameCenterChallengeVersionRelease),
+                GameCenterChallenges,
+                typeof(global::AppStoreConnect.GameCenterChallenge),
+                GameCenterGroups,
+                typeof(global::AppStoreConnect.GameCenterGroup),
+                GameCenterLeaderboardReleases,
+                typeof(global::AppStoreConnect.GameCenterLeaderboardRelease),
+                GameCenterLeaderboardSetReleases,
+                typeof(global::AppStoreConnect.GameCenterLeaderboardSetRelease),
+                GameCenterLeaderboardSets,
+                typeof(global::AppStoreConnect.GameCenterLeaderboardSet),
+                GameCenterLeaderboards,
+                typeof(global::AppStoreConnect.GameCenterLeaderboard),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -2157,31 +1255,20 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem48 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AndroidToIosAppMappingDetail?>.Default.Equals(AndroidToIosAppMappingDetails, other.AndroidToIosAppMappingDetails) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppClip?>.Default.Equals(AppClips, other.AppClips) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPage?>.Default.Equals(AppCustomProductPages, other.AppCustomProductPages) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEncryptionDeclaration?>.Default.Equals(AppEncryptionDeclarations, other.AppEncryptionDeclarations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEvent?>.Default.Equals(AppEvents, other.AppEvents) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppInfo?>.Default.Equals(AppInfos, other.AppInfos) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperimentV2?>.Default.Equals(AppStoreVersionExperiments, other.AppStoreVersionExperiments) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions, other.AppStoreVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaAppLocalization?>.Default.Equals(BetaAppLocalizations, other.BetaAppLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaAppReviewDetail?>.Default.Equals(BetaAppReviewDetails, other.BetaAppReviewDetails) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaGroup?>.Default.Equals(BetaGroups, other.BetaGroups) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaLicenseAgreement?>.Default.Equals(BetaLicenseAgreements, other.BetaLicenseAgreements) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BuildIcon?>.Default.Equals(BuildIcons, other.BuildIcons) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CiProduct?>.Default.Equals(CiProducts, other.CiProducts) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.EndUserLicenseAgreement?>.Default.Equals(EndUserLicenseAgreements, other.EndUserLicenseAgreements) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterDetail?>.Default.Equals(GameCenterDetails, other.GameCenterDetails) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterEnabledVersion?>.Default.Equals(GameCenterEnabledVersions, other.GameCenterEnabledVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchase?>.Default.Equals(InAppPurchases, other.InAppPurchases) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.PrereleaseVersion?>.Default.Equals(PreReleaseVersions, other.PreReleaseVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.PromotedPurchase?>.Default.Equals(PromotedPurchases, other.PromotedPurchases) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RetentionMessage?>.Default.Equals(RetentionMessages, other.RetentionMessages) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ReviewSubmission?>.Default.Equals(ReviewSubmissions, other.ReviewSubmissions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionGracePeriod?>.Default.Equals(SubscriptionGracePeriods, other.SubscriptionGracePeriods) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionGroup?>.Default.Equals(SubscriptionGroups, other.SubscriptionGroups)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterAchievementRelease?>.Default.Equals(GameCenterAchievementReleases, other.GameCenterAchievementReleases) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterAchievement?>.Default.Equals(GameCenterAchievements, other.GameCenterAchievements) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterActivity?>.Default.Equals(GameCenterActivities, other.GameCenterActivities) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterActivityVersionRelease?>.Default.Equals(GameCenterActivityVersionReleases, other.GameCenterActivityVersionReleases) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterAppVersion?>.Default.Equals(GameCenterAppVersions, other.GameCenterAppVersions) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterChallengeVersionRelease?>.Default.Equals(GameCenterChallengeVersionReleases, other.GameCenterChallengeVersionReleases) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterChallenge?>.Default.Equals(GameCenterChallenges, other.GameCenterChallenges) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterGroup?>.Default.Equals(GameCenterGroups, other.GameCenterGroups) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardRelease?>.Default.Equals(GameCenterLeaderboardReleases, other.GameCenterLeaderboardReleases) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSetRelease?>.Default.Equals(GameCenterLeaderboardSetReleases, other.GameCenterLeaderboardSetReleases) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSet?>.Default.Equals(GameCenterLeaderboardSets, other.GameCenterLeaderboardSets) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboard?>.Default.Equals(GameCenterLeaderboards, other.GameCenterLeaderboards)
                 ;
         }
 

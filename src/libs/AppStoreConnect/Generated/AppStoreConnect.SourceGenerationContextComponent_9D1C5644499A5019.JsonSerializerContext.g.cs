@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.TerritoryAvailabilityAttributesContentStatuse))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1297.Create_TerritoryAvailabilityAttributesContentStatuse2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1296.Create_TerritoryAvailabilityAttributesContentStatuse2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.TerritoryAvailabilityAttributesContentStatuse?))
                 {

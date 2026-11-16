@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.DiagnosticSignatureLogsLinkagesResponseDataItemType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0278.Create_DiagnosticSignatureLogsLinkagesResponseDataItemType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0277.Create_DiagnosticSignatureLogsLinkagesResponseDataItemType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.DiagnosticSignatureLogsLinkagesResponseDataItemType?))
                 {

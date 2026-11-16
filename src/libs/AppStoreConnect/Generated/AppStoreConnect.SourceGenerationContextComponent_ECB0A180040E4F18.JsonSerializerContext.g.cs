@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.DiagnosticSignature>))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1203.Create_SourceGenerationContextMetadataType_ECB0A180040E4F18(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1202.Create_SourceGenerationContextMetadataType_ECB0A180040E4F18(options);
                 }
                 if (type == typeof(global::System.Collections.Generic.List<global::AppStoreConnect.DiagnosticSignature>))
                 {

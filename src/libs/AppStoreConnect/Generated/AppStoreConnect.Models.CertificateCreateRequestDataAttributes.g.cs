@@ -19,9 +19,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("certificateType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.CertificateType2JsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.CertificateTypeJsonConverter))]
         [global::System.Text.Json.Serialization.JsonRequired]
-        public required global::AppStoreConnect.CertificateType2 CertificateType { get; set; }
+        public required global::AppStoreConnect.CertificateType CertificateType { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -39,7 +39,7 @@ namespace AppStoreConnect
 #endif
         public CertificateCreateRequestDataAttributes(
             string csrContent,
-            global::AppStoreConnect.CertificateType2 certificateType)
+            global::AppStoreConnect.CertificateType certificateType)
         {
             this.CsrContent = csrContent ?? throw new global::System.ArgumentNullException(nameof(csrContent));
             this.CertificateType = certificateType;

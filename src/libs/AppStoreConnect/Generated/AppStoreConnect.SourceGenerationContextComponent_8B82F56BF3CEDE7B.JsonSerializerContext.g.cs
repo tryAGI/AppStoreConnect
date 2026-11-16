@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppScreenshotCreateRequestDataRelationshipsAppScreenshotSetDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0121.Create_AppScreenshotCreateRequestDataRelationshipsAppScreenshotSetDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0120.Create_AppScreenshotCreateRequestDataRelationshipsAppScreenshotSetDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppScreenshotCreateRequestDataRelationshipsAppScreenshotSetDataType?))
                 {

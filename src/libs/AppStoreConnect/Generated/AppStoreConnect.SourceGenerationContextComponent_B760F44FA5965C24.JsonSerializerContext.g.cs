@@ -30,7 +30,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(bool))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0220.Create_Boolean(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0219.Create_Boolean(options);
                 }
                 if (type == typeof(bool?))
                 {

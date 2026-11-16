@@ -12,988 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.PromotedPurchase? PromotedPurchases { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboardSet? GameCenterLeaderboardSets { get; init; }
 #else
-        public global::AppStoreConnect.PromotedPurchase? PromotedPurchases { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSet? GameCenterLeaderboardSets { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PromotedPurchases))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSets))]
 #endif
-        public bool IsPromotedPurchases => PromotedPurchases != null;
+        public bool IsGameCenterLeaderboardSets => GameCenterLeaderboardSets != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickPromotedPurchases(
+        public bool TryPickGameCenterLeaderboardSets(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.PromotedPurchase? value)
+            out global::AppStoreConnect.GameCenterLeaderboardSet? value)
         {
-            value = PromotedPurchases;
-            return IsPromotedPurchases;
+            value = GameCenterLeaderboardSets;
+            return IsGameCenterLeaderboardSets;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.PromotedPurchase PickPromotedPurchases() => PromotedPurchases is { } value
+        public global::AppStoreConnect.GameCenterLeaderboardSet PickGameCenterLeaderboardSets() => GameCenterLeaderboardSets is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'PromotedPurchases' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSets' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.RetentionMessage? RetentionMessages { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboard? GameCenterLeaderboards { get; init; }
 #else
-        public global::AppStoreConnect.RetentionMessage? RetentionMessages { get; }
+        public global::AppStoreConnect.GameCenterLeaderboard? GameCenterLeaderboards { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RetentionMessages))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboards))]
 #endif
-        public bool IsRetentionMessages => RetentionMessages != null;
+        public bool IsGameCenterLeaderboards => GameCenterLeaderboards != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickRetentionMessages(
+        public bool TryPickGameCenterLeaderboards(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.RetentionMessage? value)
+            out global::AppStoreConnect.GameCenterLeaderboard? value)
         {
-            value = RetentionMessages;
-            return IsRetentionMessages;
+            value = GameCenterLeaderboards;
+            return IsGameCenterLeaderboards;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.RetentionMessage PickRetentionMessages() => RetentionMessages is { } value
+        public global::AppStoreConnect.GameCenterLeaderboard PickGameCenterLeaderboards() => GameCenterLeaderboards is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'RetentionMessages' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboards' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem185(global::AppStoreConnect.GameCenterLeaderboardSet value) => new IncludedItem185((global::AppStoreConnect.GameCenterLeaderboardSet?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.RetentionOffer? RetentionOffers { get; init; }
-#else
-        public global::AppStoreConnect.RetentionOffer? RetentionOffers { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSet?(IncludedItem185 @this) => @this.GameCenterLeaderboardSets;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RetentionOffers))]
-#endif
-        public bool IsRetentionOffers => RetentionOffers != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickRetentionOffers(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.RetentionOffer? value)
+        public IncludedItem185(global::AppStoreConnect.GameCenterLeaderboardSet? value)
         {
-            value = RetentionOffers;
-            return IsRetentionOffers;
+            GameCenterLeaderboardSets = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.RetentionOffer PickRetentionOffers() => RetentionOffers is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'RetentionOffers' but the value was {ToString()}.");
+        public static IncludedItem185 FromGameCenterLeaderboardSets(global::AppStoreConnect.GameCenterLeaderboardSet? value) => new IncludedItem185(value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot? SubscriptionAppStoreReviewScreenshots { get; init; }
-#else
-        public global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot? SubscriptionAppStoreReviewScreenshots { get; }
-#endif
+        public static implicit operator IncludedItem185(global::AppStoreConnect.GameCenterLeaderboard value) => new IncludedItem185((global::AppStoreConnect.GameCenterLeaderboard?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionAppStoreReviewScreenshots))]
-#endif
-        public bool IsSubscriptionAppStoreReviewScreenshots => SubscriptionAppStoreReviewScreenshots != null;
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboard?(IncludedItem185 @this) => @this.GameCenterLeaderboards;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptionAppStoreReviewScreenshots(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot? value)
+        public IncludedItem185(global::AppStoreConnect.GameCenterLeaderboard? value)
         {
-            value = SubscriptionAppStoreReviewScreenshots;
-            return IsSubscriptionAppStoreReviewScreenshots;
+            GameCenterLeaderboards = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot PickSubscriptionAppStoreReviewScreenshots() => SubscriptionAppStoreReviewScreenshots is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionAppStoreReviewScreenshots' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionAvailability? SubscriptionAvailabilities { get; init; }
-#else
-        public global::AppStoreConnect.SubscriptionAvailability? SubscriptionAvailabilities { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionAvailabilities))]
-#endif
-        public bool IsSubscriptionAvailabilities => SubscriptionAvailabilities != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickSubscriptionAvailabilities(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.SubscriptionAvailability? value)
-        {
-            value = SubscriptionAvailabilities;
-            return IsSubscriptionAvailabilities;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.SubscriptionAvailability PickSubscriptionAvailabilities() => SubscriptionAvailabilities is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionAvailabilities' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionGroup? SubscriptionGroups { get; init; }
-#else
-        public global::AppStoreConnect.SubscriptionGroup? SubscriptionGroups { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionGroups))]
-#endif
-        public bool IsSubscriptionGroups => SubscriptionGroups != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickSubscriptionGroups(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.SubscriptionGroup? value)
-        {
-            value = SubscriptionGroups;
-            return IsSubscriptionGroups;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.SubscriptionGroup PickSubscriptionGroups() => SubscriptionGroups is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionGroups' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionImage? SubscriptionImages { get; init; }
-#else
-        public global::AppStoreConnect.SubscriptionImage? SubscriptionImages { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionImages))]
-#endif
-        public bool IsSubscriptionImages => SubscriptionImages != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickSubscriptionImages(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.SubscriptionImage? value)
-        {
-            value = SubscriptionImages;
-            return IsSubscriptionImages;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.SubscriptionImage PickSubscriptionImages() => SubscriptionImages is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionImages' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionIntroductoryOffer? SubscriptionIntroductoryOffers { get; init; }
-#else
-        public global::AppStoreConnect.SubscriptionIntroductoryOffer? SubscriptionIntroductoryOffers { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionIntroductoryOffers))]
-#endif
-        public bool IsSubscriptionIntroductoryOffers => SubscriptionIntroductoryOffers != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickSubscriptionIntroductoryOffers(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.SubscriptionIntroductoryOffer? value)
-        {
-            value = SubscriptionIntroductoryOffers;
-            return IsSubscriptionIntroductoryOffers;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.SubscriptionIntroductoryOffer PickSubscriptionIntroductoryOffers() => SubscriptionIntroductoryOffers is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionIntroductoryOffers' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionLocalization? SubscriptionLocalizations { get; init; }
-#else
-        public global::AppStoreConnect.SubscriptionLocalization? SubscriptionLocalizations { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionLocalizations))]
-#endif
-        public bool IsSubscriptionLocalizations => SubscriptionLocalizations != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickSubscriptionLocalizations(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.SubscriptionLocalization? value)
-        {
-            value = SubscriptionLocalizations;
-            return IsSubscriptionLocalizations;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.SubscriptionLocalization PickSubscriptionLocalizations() => SubscriptionLocalizations is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionLocalizations' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionOfferCode? SubscriptionOfferCodes { get; init; }
-#else
-        public global::AppStoreConnect.SubscriptionOfferCode? SubscriptionOfferCodes { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionOfferCodes))]
-#endif
-        public bool IsSubscriptionOfferCodes => SubscriptionOfferCodes != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickSubscriptionOfferCodes(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.SubscriptionOfferCode? value)
-        {
-            value = SubscriptionOfferCodes;
-            return IsSubscriptionOfferCodes;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.SubscriptionOfferCode PickSubscriptionOfferCodes() => SubscriptionOfferCodes is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionOfferCodes' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionPlanAvailability? SubscriptionPlanAvailabilities { get; init; }
-#else
-        public global::AppStoreConnect.SubscriptionPlanAvailability? SubscriptionPlanAvailabilities { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionPlanAvailabilities))]
-#endif
-        public bool IsSubscriptionPlanAvailabilities => SubscriptionPlanAvailabilities != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickSubscriptionPlanAvailabilities(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.SubscriptionPlanAvailability? value)
-        {
-            value = SubscriptionPlanAvailabilities;
-            return IsSubscriptionPlanAvailabilities;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.SubscriptionPlanAvailability PickSubscriptionPlanAvailabilities() => SubscriptionPlanAvailabilities is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPlanAvailabilities' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionPrice? SubscriptionPrices { get; init; }
-#else
-        public global::AppStoreConnect.SubscriptionPrice? SubscriptionPrices { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionPrices))]
-#endif
-        public bool IsSubscriptionPrices => SubscriptionPrices != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickSubscriptionPrices(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.SubscriptionPrice? value)
-        {
-            value = SubscriptionPrices;
-            return IsSubscriptionPrices;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.SubscriptionPrice PickSubscriptionPrices() => SubscriptionPrices is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPrices' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionPromotionalOffer? SubscriptionPromotionalOffers { get; init; }
-#else
-        public global::AppStoreConnect.SubscriptionPromotionalOffer? SubscriptionPromotionalOffers { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionPromotionalOffers))]
-#endif
-        public bool IsSubscriptionPromotionalOffers => SubscriptionPromotionalOffers != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickSubscriptionPromotionalOffers(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.SubscriptionPromotionalOffer? value)
-        {
-            value = SubscriptionPromotionalOffers;
-            return IsSubscriptionPromotionalOffers;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.SubscriptionPromotionalOffer PickSubscriptionPromotionalOffers() => SubscriptionPromotionalOffers is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPromotionalOffers' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionVersion? SubscriptionVersions { get; init; }
-#else
-        public global::AppStoreConnect.SubscriptionVersion? SubscriptionVersions { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionVersions))]
-#endif
-        public bool IsSubscriptionVersions => SubscriptionVersions != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickSubscriptionVersions(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.SubscriptionVersion? value)
-        {
-            value = SubscriptionVersions;
-            return IsSubscriptionVersions;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.SubscriptionVersion PickSubscriptionVersions() => SubscriptionVersions is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionVersions' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.WinBackOffer? WinBackOffers { get; init; }
-#else
-        public global::AppStoreConnect.WinBackOffer? WinBackOffers { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(WinBackOffers))]
-#endif
-        public bool IsWinBackOffers => WinBackOffers != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickWinBackOffers(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.WinBackOffer? value)
-        {
-            value = WinBackOffers;
-            return IsWinBackOffers;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.WinBackOffer PickWinBackOffers() => WinBackOffers is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'WinBackOffers' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem185(global::AppStoreConnect.PromotedPurchase value) => new IncludedItem185((global::AppStoreConnect.PromotedPurchase?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.PromotedPurchase?(IncludedItem185 @this) => @this.PromotedPurchases;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem185(global::AppStoreConnect.PromotedPurchase? value)
-        {
-            PromotedPurchases = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem185 FromPromotedPurchases(global::AppStoreConnect.PromotedPurchase? value) => new IncludedItem185(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem185(global::AppStoreConnect.RetentionMessage value) => new IncludedItem185((global::AppStoreConnect.RetentionMessage?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.RetentionMessage?(IncludedItem185 @this) => @this.RetentionMessages;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem185(global::AppStoreConnect.RetentionMessage? value)
-        {
-            RetentionMessages = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem185 FromRetentionMessages(global::AppStoreConnect.RetentionMessage? value) => new IncludedItem185(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem185(global::AppStoreConnect.RetentionOffer value) => new IncludedItem185((global::AppStoreConnect.RetentionOffer?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.RetentionOffer?(IncludedItem185 @this) => @this.RetentionOffers;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem185(global::AppStoreConnect.RetentionOffer? value)
-        {
-            RetentionOffers = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem185 FromRetentionOffers(global::AppStoreConnect.RetentionOffer? value) => new IncludedItem185(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem185(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot value) => new IncludedItem185((global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot?(IncludedItem185 @this) => @this.SubscriptionAppStoreReviewScreenshots;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem185(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot? value)
-        {
-            SubscriptionAppStoreReviewScreenshots = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem185 FromSubscriptionAppStoreReviewScreenshots(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot? value) => new IncludedItem185(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem185(global::AppStoreConnect.SubscriptionAvailability value) => new IncludedItem185((global::AppStoreConnect.SubscriptionAvailability?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionAvailability?(IncludedItem185 @this) => @this.SubscriptionAvailabilities;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem185(global::AppStoreConnect.SubscriptionAvailability? value)
-        {
-            SubscriptionAvailabilities = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem185 FromSubscriptionAvailabilities(global::AppStoreConnect.SubscriptionAvailability? value) => new IncludedItem185(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem185(global::AppStoreConnect.SubscriptionGroup value) => new IncludedItem185((global::AppStoreConnect.SubscriptionGroup?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionGroup?(IncludedItem185 @this) => @this.SubscriptionGroups;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem185(global::AppStoreConnect.SubscriptionGroup? value)
-        {
-            SubscriptionGroups = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem185 FromSubscriptionGroups(global::AppStoreConnect.SubscriptionGroup? value) => new IncludedItem185(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem185(global::AppStoreConnect.SubscriptionImage value) => new IncludedItem185((global::AppStoreConnect.SubscriptionImage?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionImage?(IncludedItem185 @this) => @this.SubscriptionImages;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem185(global::AppStoreConnect.SubscriptionImage? value)
-        {
-            SubscriptionImages = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem185 FromSubscriptionImages(global::AppStoreConnect.SubscriptionImage? value) => new IncludedItem185(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem185(global::AppStoreConnect.SubscriptionIntroductoryOffer value) => new IncludedItem185((global::AppStoreConnect.SubscriptionIntroductoryOffer?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionIntroductoryOffer?(IncludedItem185 @this) => @this.SubscriptionIntroductoryOffers;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem185(global::AppStoreConnect.SubscriptionIntroductoryOffer? value)
-        {
-            SubscriptionIntroductoryOffers = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem185 FromSubscriptionIntroductoryOffers(global::AppStoreConnect.SubscriptionIntroductoryOffer? value) => new IncludedItem185(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem185(global::AppStoreConnect.SubscriptionLocalization value) => new IncludedItem185((global::AppStoreConnect.SubscriptionLocalization?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionLocalization?(IncludedItem185 @this) => @this.SubscriptionLocalizations;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem185(global::AppStoreConnect.SubscriptionLocalization? value)
-        {
-            SubscriptionLocalizations = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem185 FromSubscriptionLocalizations(global::AppStoreConnect.SubscriptionLocalization? value) => new IncludedItem185(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem185(global::AppStoreConnect.SubscriptionOfferCode value) => new IncludedItem185((global::AppStoreConnect.SubscriptionOfferCode?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionOfferCode?(IncludedItem185 @this) => @this.SubscriptionOfferCodes;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem185(global::AppStoreConnect.SubscriptionOfferCode? value)
-        {
-            SubscriptionOfferCodes = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem185 FromSubscriptionOfferCodes(global::AppStoreConnect.SubscriptionOfferCode? value) => new IncludedItem185(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem185(global::AppStoreConnect.SubscriptionPlanAvailability value) => new IncludedItem185((global::AppStoreConnect.SubscriptionPlanAvailability?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionPlanAvailability?(IncludedItem185 @this) => @this.SubscriptionPlanAvailabilities;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem185(global::AppStoreConnect.SubscriptionPlanAvailability? value)
-        {
-            SubscriptionPlanAvailabilities = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem185 FromSubscriptionPlanAvailabilities(global::AppStoreConnect.SubscriptionPlanAvailability? value) => new IncludedItem185(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem185(global::AppStoreConnect.SubscriptionPrice value) => new IncludedItem185((global::AppStoreConnect.SubscriptionPrice?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionPrice?(IncludedItem185 @this) => @this.SubscriptionPrices;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem185(global::AppStoreConnect.SubscriptionPrice? value)
-        {
-            SubscriptionPrices = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem185 FromSubscriptionPrices(global::AppStoreConnect.SubscriptionPrice? value) => new IncludedItem185(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem185(global::AppStoreConnect.SubscriptionPromotionalOffer value) => new IncludedItem185((global::AppStoreConnect.SubscriptionPromotionalOffer?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionPromotionalOffer?(IncludedItem185 @this) => @this.SubscriptionPromotionalOffers;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem185(global::AppStoreConnect.SubscriptionPromotionalOffer? value)
-        {
-            SubscriptionPromotionalOffers = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem185 FromSubscriptionPromotionalOffers(global::AppStoreConnect.SubscriptionPromotionalOffer? value) => new IncludedItem185(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem185(global::AppStoreConnect.SubscriptionVersion value) => new IncludedItem185((global::AppStoreConnect.SubscriptionVersion?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionVersion?(IncludedItem185 @this) => @this.SubscriptionVersions;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem185(global::AppStoreConnect.SubscriptionVersion? value)
-        {
-            SubscriptionVersions = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem185 FromSubscriptionVersions(global::AppStoreConnect.SubscriptionVersion? value) => new IncludedItem185(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem185(global::AppStoreConnect.WinBackOffer value) => new IncludedItem185((global::AppStoreConnect.WinBackOffer?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.WinBackOffer?(IncludedItem185 @this) => @this.WinBackOffers;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem185(global::AppStoreConnect.WinBackOffer? value)
-        {
-            WinBackOffers = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem185 FromWinBackOffers(global::AppStoreConnect.WinBackOffer? value) => new IncludedItem185(value);
+        public static IncludedItem185 FromGameCenterLeaderboards(global::AppStoreConnect.GameCenterLeaderboard? value) => new IncludedItem185(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem185(
-            global::AppStoreConnect.SubscriptionsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.PromotedPurchase? promotedPurchases,
-            global::AppStoreConnect.RetentionMessage? retentionMessages,
-            global::AppStoreConnect.RetentionOffer? retentionOffers,
-            global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot? subscriptionAppStoreReviewScreenshots,
-            global::AppStoreConnect.SubscriptionAvailability? subscriptionAvailabilities,
-            global::AppStoreConnect.SubscriptionGroup? subscriptionGroups,
-            global::AppStoreConnect.SubscriptionImage? subscriptionImages,
-            global::AppStoreConnect.SubscriptionIntroductoryOffer? subscriptionIntroductoryOffers,
-            global::AppStoreConnect.SubscriptionLocalization? subscriptionLocalizations,
-            global::AppStoreConnect.SubscriptionOfferCode? subscriptionOfferCodes,
-            global::AppStoreConnect.SubscriptionPlanAvailability? subscriptionPlanAvailabilities,
-            global::AppStoreConnect.SubscriptionPrice? subscriptionPrices,
-            global::AppStoreConnect.SubscriptionPromotionalOffer? subscriptionPromotionalOffers,
-            global::AppStoreConnect.SubscriptionVersion? subscriptionVersions,
-            global::AppStoreConnect.WinBackOffer? winBackOffers
+            global::AppStoreConnect.GameCenterLeaderboardSetMemberLocalizationResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.GameCenterLeaderboardSet? gameCenterLeaderboardSets,
+            global::AppStoreConnect.GameCenterLeaderboard? gameCenterLeaderboards
             )
         {
             Type = type;
 
-            PromotedPurchases = promotedPurchases;
-            RetentionMessages = retentionMessages;
-            RetentionOffers = retentionOffers;
-            SubscriptionAppStoreReviewScreenshots = subscriptionAppStoreReviewScreenshots;
-            SubscriptionAvailabilities = subscriptionAvailabilities;
-            SubscriptionGroups = subscriptionGroups;
-            SubscriptionImages = subscriptionImages;
-            SubscriptionIntroductoryOffers = subscriptionIntroductoryOffers;
-            SubscriptionLocalizations = subscriptionLocalizations;
-            SubscriptionOfferCodes = subscriptionOfferCodes;
-            SubscriptionPlanAvailabilities = subscriptionPlanAvailabilities;
-            SubscriptionPrices = subscriptionPrices;
-            SubscriptionPromotionalOffers = subscriptionPromotionalOffers;
-            SubscriptionVersions = subscriptionVersions;
-            WinBackOffers = winBackOffers;
+            GameCenterLeaderboardSets = gameCenterLeaderboardSets;
+            GameCenterLeaderboards = gameCenterLeaderboards;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            WinBackOffers as object ??
-            SubscriptionVersions as object ??
-            SubscriptionPromotionalOffers as object ??
-            SubscriptionPrices as object ??
-            SubscriptionPlanAvailabilities as object ??
-            SubscriptionOfferCodes as object ??
-            SubscriptionLocalizations as object ??
-            SubscriptionIntroductoryOffers as object ??
-            SubscriptionImages as object ??
-            SubscriptionGroups as object ??
-            SubscriptionAvailabilities as object ??
-            SubscriptionAppStoreReviewScreenshots as object ??
-            RetentionOffers as object ??
-            RetentionMessages as object ??
-            PromotedPurchases as object
+            GameCenterLeaderboards as object ??
+            GameCenterLeaderboardSets as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            PromotedPurchases?.ToString() ??
-            RetentionMessages?.ToString() ??
-            RetentionOffers?.ToString() ??
-            SubscriptionAppStoreReviewScreenshots?.ToString() ??
-            SubscriptionAvailabilities?.ToString() ??
-            SubscriptionGroups?.ToString() ??
-            SubscriptionImages?.ToString() ??
-            SubscriptionIntroductoryOffers?.ToString() ??
-            SubscriptionLocalizations?.ToString() ??
-            SubscriptionOfferCodes?.ToString() ??
-            SubscriptionPlanAvailabilities?.ToString() ??
-            SubscriptionPrices?.ToString() ??
-            SubscriptionPromotionalOffers?.ToString() ??
-            SubscriptionVersions?.ToString() ??
-            WinBackOffers?.ToString()
+            GameCenterLeaderboardSets?.ToString() ??
+            GameCenterLeaderboards?.ToString()
             ;
 
         /// <summary>
@@ -1001,28 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && IsWinBackOffers;
+            return IsGameCenterLeaderboardSets && !IsGameCenterLeaderboards || !IsGameCenterLeaderboardSets && IsGameCenterLeaderboards;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.PromotedPurchase, TResult>? promotedPurchases = null,
-            global::System.Func<global::AppStoreConnect.RetentionMessage, TResult>? retentionMessages = null,
-            global::System.Func<global::AppStoreConnect.RetentionOffer, TResult>? retentionOffers = null,
-            global::System.Func<global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot, TResult>? subscriptionAppStoreReviewScreenshots = null,
-            global::System.Func<global::AppStoreConnect.SubscriptionAvailability, TResult>? subscriptionAvailabilities = null,
-            global::System.Func<global::AppStoreConnect.SubscriptionGroup, TResult>? subscriptionGroups = null,
-            global::System.Func<global::AppStoreConnect.SubscriptionImage, TResult>? subscriptionImages = null,
-            global::System.Func<global::AppStoreConnect.SubscriptionIntroductoryOffer, TResult>? subscriptionIntroductoryOffers = null,
-            global::System.Func<global::AppStoreConnect.SubscriptionLocalization, TResult>? subscriptionLocalizations = null,
-            global::System.Func<global::AppStoreConnect.SubscriptionOfferCode, TResult>? subscriptionOfferCodes = null,
-            global::System.Func<global::AppStoreConnect.SubscriptionPlanAvailability, TResult>? subscriptionPlanAvailabilities = null,
-            global::System.Func<global::AppStoreConnect.SubscriptionPrice, TResult>? subscriptionPrices = null,
-            global::System.Func<global::AppStoreConnect.SubscriptionPromotionalOffer, TResult>? subscriptionPromotionalOffers = null,
-            global::System.Func<global::AppStoreConnect.SubscriptionVersion, TResult>? subscriptionVersions = null,
-            global::System.Func<global::AppStoreConnect.WinBackOffer, TResult>? winBackOffers = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSet, TResult>? gameCenterLeaderboardSets = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboard, TResult>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -1030,65 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (PromotedPurchases is { } __value0 && promotedPurchases != null)
+            if (GameCenterLeaderboardSets is { } __value0 && gameCenterLeaderboardSets != null)
             {
-                return promotedPurchases(__value0);
+                return gameCenterLeaderboardSets(__value0);
             }
-            else if (RetentionMessages is { } __value1 && retentionMessages != null)
+            else if (GameCenterLeaderboards is { } __value1 && gameCenterLeaderboards != null)
             {
-                return retentionMessages(__value1);
-            }
-            else if (RetentionOffers is { } __value2 && retentionOffers != null)
-            {
-                return retentionOffers(__value2);
-            }
-            else if (SubscriptionAppStoreReviewScreenshots is { } __value3 && subscriptionAppStoreReviewScreenshots != null)
-            {
-                return subscriptionAppStoreReviewScreenshots(__value3);
-            }
-            else if (SubscriptionAvailabilities is { } __value4 && subscriptionAvailabilities != null)
-            {
-                return subscriptionAvailabilities(__value4);
-            }
-            else if (SubscriptionGroups is { } __value5 && subscriptionGroups != null)
-            {
-                return subscriptionGroups(__value5);
-            }
-            else if (SubscriptionImages is { } __value6 && subscriptionImages != null)
-            {
-                return subscriptionImages(__value6);
-            }
-            else if (SubscriptionIntroductoryOffers is { } __value7 && subscriptionIntroductoryOffers != null)
-            {
-                return subscriptionIntroductoryOffers(__value7);
-            }
-            else if (SubscriptionLocalizations is { } __value8 && subscriptionLocalizations != null)
-            {
-                return subscriptionLocalizations(__value8);
-            }
-            else if (SubscriptionOfferCodes is { } __value9 && subscriptionOfferCodes != null)
-            {
-                return subscriptionOfferCodes(__value9);
-            }
-            else if (SubscriptionPlanAvailabilities is { } __value10 && subscriptionPlanAvailabilities != null)
-            {
-                return subscriptionPlanAvailabilities(__value10);
-            }
-            else if (SubscriptionPrices is { } __value11 && subscriptionPrices != null)
-            {
-                return subscriptionPrices(__value11);
-            }
-            else if (SubscriptionPromotionalOffers is { } __value12 && subscriptionPromotionalOffers != null)
-            {
-                return subscriptionPromotionalOffers(__value12);
-            }
-            else if (SubscriptionVersions is { } __value13 && subscriptionVersions != null)
-            {
-                return subscriptionVersions(__value13);
-            }
-            else if (WinBackOffers is { } __value14 && winBackOffers != null)
-            {
-                return winBackOffers(__value14);
+                return gameCenterLeaderboards(__value1);
             }
 
             return default(TResult);
@@ -1098,35 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.PromotedPurchase>? promotedPurchases = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSet>? gameCenterLeaderboardSets = null,
 
-            global::System.Action<global::AppStoreConnect.RetentionMessage>? retentionMessages = null,
-
-            global::System.Action<global::AppStoreConnect.RetentionOffer>? retentionOffers = null,
-
-            global::System.Action<global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot>? subscriptionAppStoreReviewScreenshots = null,
-
-            global::System.Action<global::AppStoreConnect.SubscriptionAvailability>? subscriptionAvailabilities = null,
-
-            global::System.Action<global::AppStoreConnect.SubscriptionGroup>? subscriptionGroups = null,
-
-            global::System.Action<global::AppStoreConnect.SubscriptionImage>? subscriptionImages = null,
-
-            global::System.Action<global::AppStoreConnect.SubscriptionIntroductoryOffer>? subscriptionIntroductoryOffers = null,
-
-            global::System.Action<global::AppStoreConnect.SubscriptionLocalization>? subscriptionLocalizations = null,
-
-            global::System.Action<global::AppStoreConnect.SubscriptionOfferCode>? subscriptionOfferCodes = null,
-
-            global::System.Action<global::AppStoreConnect.SubscriptionPlanAvailability>? subscriptionPlanAvailabilities = null,
-
-            global::System.Action<global::AppStoreConnect.SubscriptionPrice>? subscriptionPrices = null,
-
-            global::System.Action<global::AppStoreConnect.SubscriptionPromotionalOffer>? subscriptionPromotionalOffers = null,
-
-            global::System.Action<global::AppStoreConnect.SubscriptionVersion>? subscriptionVersions = null,
-
-            global::System.Action<global::AppStoreConnect.WinBackOffer>? winBackOffers = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboard>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -1134,65 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (PromotedPurchases is { } __value0)
+            if (GameCenterLeaderboardSets is { } __value0)
             {
-                promotedPurchases?.Invoke(__value0);
+                gameCenterLeaderboardSets?.Invoke(__value0);
             }
-            else if (RetentionMessages is { } __value1)
+            else if (GameCenterLeaderboards is { } __value1)
             {
-                retentionMessages?.Invoke(__value1);
-            }
-            else if (RetentionOffers is { } __value2)
-            {
-                retentionOffers?.Invoke(__value2);
-            }
-            else if (SubscriptionAppStoreReviewScreenshots is { } __value3)
-            {
-                subscriptionAppStoreReviewScreenshots?.Invoke(__value3);
-            }
-            else if (SubscriptionAvailabilities is { } __value4)
-            {
-                subscriptionAvailabilities?.Invoke(__value4);
-            }
-            else if (SubscriptionGroups is { } __value5)
-            {
-                subscriptionGroups?.Invoke(__value5);
-            }
-            else if (SubscriptionImages is { } __value6)
-            {
-                subscriptionImages?.Invoke(__value6);
-            }
-            else if (SubscriptionIntroductoryOffers is { } __value7)
-            {
-                subscriptionIntroductoryOffers?.Invoke(__value7);
-            }
-            else if (SubscriptionLocalizations is { } __value8)
-            {
-                subscriptionLocalizations?.Invoke(__value8);
-            }
-            else if (SubscriptionOfferCodes is { } __value9)
-            {
-                subscriptionOfferCodes?.Invoke(__value9);
-            }
-            else if (SubscriptionPlanAvailabilities is { } __value10)
-            {
-                subscriptionPlanAvailabilities?.Invoke(__value10);
-            }
-            else if (SubscriptionPrices is { } __value11)
-            {
-                subscriptionPrices?.Invoke(__value11);
-            }
-            else if (SubscriptionPromotionalOffers is { } __value12)
-            {
-                subscriptionPromotionalOffers?.Invoke(__value12);
-            }
-            else if (SubscriptionVersions is { } __value13)
-            {
-                subscriptionVersions?.Invoke(__value13);
-            }
-            else if (WinBackOffers is { } __value14)
-            {
-                winBackOffers?.Invoke(__value14);
+                gameCenterLeaderboards?.Invoke(__value1);
             }
         }
 
@@ -1200,21 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.PromotedPurchase>? promotedPurchases = null,
-            global::System.Action<global::AppStoreConnect.RetentionMessage>? retentionMessages = null,
-            global::System.Action<global::AppStoreConnect.RetentionOffer>? retentionOffers = null,
-            global::System.Action<global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot>? subscriptionAppStoreReviewScreenshots = null,
-            global::System.Action<global::AppStoreConnect.SubscriptionAvailability>? subscriptionAvailabilities = null,
-            global::System.Action<global::AppStoreConnect.SubscriptionGroup>? subscriptionGroups = null,
-            global::System.Action<global::AppStoreConnect.SubscriptionImage>? subscriptionImages = null,
-            global::System.Action<global::AppStoreConnect.SubscriptionIntroductoryOffer>? subscriptionIntroductoryOffers = null,
-            global::System.Action<global::AppStoreConnect.SubscriptionLocalization>? subscriptionLocalizations = null,
-            global::System.Action<global::AppStoreConnect.SubscriptionOfferCode>? subscriptionOfferCodes = null,
-            global::System.Action<global::AppStoreConnect.SubscriptionPlanAvailability>? subscriptionPlanAvailabilities = null,
-            global::System.Action<global::AppStoreConnect.SubscriptionPrice>? subscriptionPrices = null,
-            global::System.Action<global::AppStoreConnect.SubscriptionPromotionalOffer>? subscriptionPromotionalOffers = null,
-            global::System.Action<global::AppStoreConnect.SubscriptionVersion>? subscriptionVersions = null,
-            global::System.Action<global::AppStoreConnect.WinBackOffer>? winBackOffers = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSet>? gameCenterLeaderboardSets = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboard>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -1222,65 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (PromotedPurchases is { } __value0)
+            if (GameCenterLeaderboardSets is { } __value0)
             {
-                promotedPurchases?.Invoke(__value0);
+                gameCenterLeaderboardSets?.Invoke(__value0);
             }
-            else if (RetentionMessages is { } __value1)
+            else if (GameCenterLeaderboards is { } __value1)
             {
-                retentionMessages?.Invoke(__value1);
-            }
-            else if (RetentionOffers is { } __value2)
-            {
-                retentionOffers?.Invoke(__value2);
-            }
-            else if (SubscriptionAppStoreReviewScreenshots is { } __value3)
-            {
-                subscriptionAppStoreReviewScreenshots?.Invoke(__value3);
-            }
-            else if (SubscriptionAvailabilities is { } __value4)
-            {
-                subscriptionAvailabilities?.Invoke(__value4);
-            }
-            else if (SubscriptionGroups is { } __value5)
-            {
-                subscriptionGroups?.Invoke(__value5);
-            }
-            else if (SubscriptionImages is { } __value6)
-            {
-                subscriptionImages?.Invoke(__value6);
-            }
-            else if (SubscriptionIntroductoryOffers is { } __value7)
-            {
-                subscriptionIntroductoryOffers?.Invoke(__value7);
-            }
-            else if (SubscriptionLocalizations is { } __value8)
-            {
-                subscriptionLocalizations?.Invoke(__value8);
-            }
-            else if (SubscriptionOfferCodes is { } __value9)
-            {
-                subscriptionOfferCodes?.Invoke(__value9);
-            }
-            else if (SubscriptionPlanAvailabilities is { } __value10)
-            {
-                subscriptionPlanAvailabilities?.Invoke(__value10);
-            }
-            else if (SubscriptionPrices is { } __value11)
-            {
-                subscriptionPrices?.Invoke(__value11);
-            }
-            else if (SubscriptionPromotionalOffers is { } __value12)
-            {
-                subscriptionPromotionalOffers?.Invoke(__value12);
-            }
-            else if (SubscriptionVersions is { } __value13)
-            {
-                subscriptionVersions?.Invoke(__value13);
-            }
-            else if (WinBackOffers is { } __value14)
-            {
-                winBackOffers?.Invoke(__value14);
+                gameCenterLeaderboards?.Invoke(__value1);
             }
         }
 
@@ -1291,36 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                PromotedPurchases,
-                typeof(global::AppStoreConnect.PromotedPurchase),
-                RetentionMessages,
-                typeof(global::AppStoreConnect.RetentionMessage),
-                RetentionOffers,
-                typeof(global::AppStoreConnect.RetentionOffer),
-                SubscriptionAppStoreReviewScreenshots,
-                typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot),
-                SubscriptionAvailabilities,
-                typeof(global::AppStoreConnect.SubscriptionAvailability),
-                SubscriptionGroups,
-                typeof(global::AppStoreConnect.SubscriptionGroup),
-                SubscriptionImages,
-                typeof(global::AppStoreConnect.SubscriptionImage),
-                SubscriptionIntroductoryOffers,
-                typeof(global::AppStoreConnect.SubscriptionIntroductoryOffer),
-                SubscriptionLocalizations,
-                typeof(global::AppStoreConnect.SubscriptionLocalization),
-                SubscriptionOfferCodes,
-                typeof(global::AppStoreConnect.SubscriptionOfferCode),
-                SubscriptionPlanAvailabilities,
-                typeof(global::AppStoreConnect.SubscriptionPlanAvailability),
-                SubscriptionPrices,
-                typeof(global::AppStoreConnect.SubscriptionPrice),
-                SubscriptionPromotionalOffers,
-                typeof(global::AppStoreConnect.SubscriptionPromotionalOffer),
-                SubscriptionVersions,
-                typeof(global::AppStoreConnect.SubscriptionVersion),
-                WinBackOffers,
-                typeof(global::AppStoreConnect.WinBackOffer),
+                GameCenterLeaderboardSets,
+                typeof(global::AppStoreConnect.GameCenterLeaderboardSet),
+                GameCenterLeaderboards,
+                typeof(global::AppStoreConnect.GameCenterLeaderboard),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -1337,21 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem185 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.PromotedPurchase?>.Default.Equals(PromotedPurchases, other.PromotedPurchases) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RetentionMessage?>.Default.Equals(RetentionMessages, other.RetentionMessages) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RetentionOffer?>.Default.Equals(RetentionOffers, other.RetentionOffers) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionAppStoreReviewScreenshot?>.Default.Equals(SubscriptionAppStoreReviewScreenshots, other.SubscriptionAppStoreReviewScreenshots) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionAvailability?>.Default.Equals(SubscriptionAvailabilities, other.SubscriptionAvailabilities) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionGroup?>.Default.Equals(SubscriptionGroups, other.SubscriptionGroups) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionImage?>.Default.Equals(SubscriptionImages, other.SubscriptionImages) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionIntroductoryOffer?>.Default.Equals(SubscriptionIntroductoryOffers, other.SubscriptionIntroductoryOffers) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionLocalization?>.Default.Equals(SubscriptionLocalizations, other.SubscriptionLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionOfferCode?>.Default.Equals(SubscriptionOfferCodes, other.SubscriptionOfferCodes) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionPlanAvailability?>.Default.Equals(SubscriptionPlanAvailabilities, other.SubscriptionPlanAvailabilities) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionPrice?>.Default.Equals(SubscriptionPrices, other.SubscriptionPrices) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionPromotionalOffer?>.Default.Equals(SubscriptionPromotionalOffers, other.SubscriptionPromotionalOffers) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionVersion?>.Default.Equals(SubscriptionVersions, other.SubscriptionVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.WinBackOffer?>.Default.Equals(WinBackOffers, other.WinBackOffers)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSet?>.Default.Equals(GameCenterLeaderboardSets, other.GameCenterLeaderboardSets) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboard?>.Default.Equals(GameCenterLeaderboards, other.GameCenterLeaderboards)
                 ;
         }
 

@@ -12,348 +12,348 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterActivityResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.BackgroundAssetVersionResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterAchievement? GameCenterAchievements { get; init; }
+        public global::AppStoreConnect.BackgroundAssetUploadFile? BackgroundAssetUploadFiles { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterAchievement? GameCenterAchievements { get; }
+        public global::AppStoreConnect.BackgroundAssetUploadFile? BackgroundAssetUploadFiles { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterAchievements))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BackgroundAssetUploadFiles))]
 #endif
-        public bool IsGameCenterAchievements => GameCenterAchievements != null;
+        public bool IsBackgroundAssetUploadFiles => BackgroundAssetUploadFiles != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterAchievements(
+        public bool TryPickBackgroundAssetUploadFiles(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterAchievement? value)
+            out global::AppStoreConnect.BackgroundAssetUploadFile? value)
         {
-            value = GameCenterAchievements;
-            return IsGameCenterAchievements;
+            value = BackgroundAssetUploadFiles;
+            return IsBackgroundAssetUploadFiles;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAchievement PickGameCenterAchievements() => GameCenterAchievements is { } value
+        public global::AppStoreConnect.BackgroundAssetUploadFile PickBackgroundAssetUploadFiles() => BackgroundAssetUploadFiles is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAchievements' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetUploadFiles' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterActivityVersion? GameCenterActivityVersions { get; init; }
+        public global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? BackgroundAssetVersionAppStoreReleases { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterActivityVersion? GameCenterActivityVersions { get; }
+        public global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? BackgroundAssetVersionAppStoreReleases { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterActivityVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BackgroundAssetVersionAppStoreReleases))]
 #endif
-        public bool IsGameCenterActivityVersions => GameCenterActivityVersions != null;
+        public bool IsBackgroundAssetVersionAppStoreReleases => BackgroundAssetVersionAppStoreReleases != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterActivityVersions(
+        public bool TryPickBackgroundAssetVersionAppStoreReleases(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterActivityVersion? value)
+            out global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? value)
         {
-            value = GameCenterActivityVersions;
-            return IsGameCenterActivityVersions;
+            value = BackgroundAssetVersionAppStoreReleases;
+            return IsBackgroundAssetVersionAppStoreReleases;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterActivityVersion PickGameCenterActivityVersions() => GameCenterActivityVersions is { } value
+        public global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease PickBackgroundAssetVersionAppStoreReleases() => BackgroundAssetVersionAppStoreReleases is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterActivityVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetVersionAppStoreReleases' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterDetail? GameCenterDetails { get; init; }
+        public global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease? BackgroundAssetVersionExternalBetaReleases { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterDetail? GameCenterDetails { get; }
+        public global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease? BackgroundAssetVersionExternalBetaReleases { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterDetails))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BackgroundAssetVersionExternalBetaReleases))]
 #endif
-        public bool IsGameCenterDetails => GameCenterDetails != null;
+        public bool IsBackgroundAssetVersionExternalBetaReleases => BackgroundAssetVersionExternalBetaReleases != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterDetails(
+        public bool TryPickBackgroundAssetVersionExternalBetaReleases(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterDetail? value)
+            out global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease? value)
         {
-            value = GameCenterDetails;
-            return IsGameCenterDetails;
+            value = BackgroundAssetVersionExternalBetaReleases;
+            return IsBackgroundAssetVersionExternalBetaReleases;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterDetail PickGameCenterDetails() => GameCenterDetails is { } value
+        public global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease PickBackgroundAssetVersionExternalBetaReleases() => BackgroundAssetVersionExternalBetaReleases is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterDetails' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetVersionExternalBetaReleases' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterGroup? GameCenterGroups { get; init; }
+        public global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease? BackgroundAssetVersionInternalBetaReleases { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterGroup? GameCenterGroups { get; }
+        public global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease? BackgroundAssetVersionInternalBetaReleases { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterGroups))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BackgroundAssetVersionInternalBetaReleases))]
 #endif
-        public bool IsGameCenterGroups => GameCenterGroups != null;
+        public bool IsBackgroundAssetVersionInternalBetaReleases => BackgroundAssetVersionInternalBetaReleases != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterGroups(
+        public bool TryPickBackgroundAssetVersionInternalBetaReleases(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterGroup? value)
+            out global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease? value)
         {
-            value = GameCenterGroups;
-            return IsGameCenterGroups;
+            value = BackgroundAssetVersionInternalBetaReleases;
+            return IsBackgroundAssetVersionInternalBetaReleases;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterGroup PickGameCenterGroups() => GameCenterGroups is { } value
+        public global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease PickBackgroundAssetVersionInternalBetaReleases() => BackgroundAssetVersionInternalBetaReleases is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterGroups' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetVersionInternalBetaReleases' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterLeaderboard? GameCenterLeaderboards { get; init; }
+        public global::AppStoreConnect.BackgroundAsset? BackgroundAssets { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterLeaderboard? GameCenterLeaderboards { get; }
+        public global::AppStoreConnect.BackgroundAsset? BackgroundAssets { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboards))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BackgroundAssets))]
 #endif
-        public bool IsGameCenterLeaderboards => GameCenterLeaderboards != null;
+        public bool IsBackgroundAssets => BackgroundAssets != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterLeaderboards(
+        public bool TryPickBackgroundAssets(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterLeaderboard? value)
+            out global::AppStoreConnect.BackgroundAsset? value)
         {
-            value = GameCenterLeaderboards;
-            return IsGameCenterLeaderboards;
+            value = BackgroundAssets;
+            return IsBackgroundAssets;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboard PickGameCenterLeaderboards() => GameCenterLeaderboards is { } value
+        public global::AppStoreConnect.BackgroundAsset PickBackgroundAssets() => BackgroundAssets is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboards' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssets' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem90(global::AppStoreConnect.GameCenterAchievement value) => new IncludedItem90((global::AppStoreConnect.GameCenterAchievement?)value);
+        public static implicit operator IncludedItem90(global::AppStoreConnect.BackgroundAssetUploadFile value) => new IncludedItem90((global::AppStoreConnect.BackgroundAssetUploadFile?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterAchievement?(IncludedItem90 @this) => @this.GameCenterAchievements;
+        public static implicit operator global::AppStoreConnect.BackgroundAssetUploadFile?(IncludedItem90 @this) => @this.BackgroundAssetUploadFiles;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem90(global::AppStoreConnect.GameCenterAchievement? value)
+        public IncludedItem90(global::AppStoreConnect.BackgroundAssetUploadFile? value)
         {
-            GameCenterAchievements = value;
+            BackgroundAssetUploadFiles = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem90 FromGameCenterAchievements(global::AppStoreConnect.GameCenterAchievement? value) => new IncludedItem90(value);
+        public static IncludedItem90 FromBackgroundAssetUploadFiles(global::AppStoreConnect.BackgroundAssetUploadFile? value) => new IncludedItem90(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem90(global::AppStoreConnect.GameCenterActivityVersion value) => new IncludedItem90((global::AppStoreConnect.GameCenterActivityVersion?)value);
+        public static implicit operator IncludedItem90(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease value) => new IncludedItem90((global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterActivityVersion?(IncludedItem90 @this) => @this.GameCenterActivityVersions;
+        public static implicit operator global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease?(IncludedItem90 @this) => @this.BackgroundAssetVersionAppStoreReleases;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem90(global::AppStoreConnect.GameCenterActivityVersion? value)
+        public IncludedItem90(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? value)
         {
-            GameCenterActivityVersions = value;
+            BackgroundAssetVersionAppStoreReleases = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem90 FromGameCenterActivityVersions(global::AppStoreConnect.GameCenterActivityVersion? value) => new IncludedItem90(value);
+        public static IncludedItem90 FromBackgroundAssetVersionAppStoreReleases(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? value) => new IncludedItem90(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem90(global::AppStoreConnect.GameCenterDetail value) => new IncludedItem90((global::AppStoreConnect.GameCenterDetail?)value);
+        public static implicit operator IncludedItem90(global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease value) => new IncludedItem90((global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterDetail?(IncludedItem90 @this) => @this.GameCenterDetails;
+        public static implicit operator global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease?(IncludedItem90 @this) => @this.BackgroundAssetVersionExternalBetaReleases;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem90(global::AppStoreConnect.GameCenterDetail? value)
+        public IncludedItem90(global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease? value)
         {
-            GameCenterDetails = value;
+            BackgroundAssetVersionExternalBetaReleases = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem90 FromGameCenterDetails(global::AppStoreConnect.GameCenterDetail? value) => new IncludedItem90(value);
+        public static IncludedItem90 FromBackgroundAssetVersionExternalBetaReleases(global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease? value) => new IncludedItem90(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem90(global::AppStoreConnect.GameCenterGroup value) => new IncludedItem90((global::AppStoreConnect.GameCenterGroup?)value);
+        public static implicit operator IncludedItem90(global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease value) => new IncludedItem90((global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterGroup?(IncludedItem90 @this) => @this.GameCenterGroups;
+        public static implicit operator global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease?(IncludedItem90 @this) => @this.BackgroundAssetVersionInternalBetaReleases;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem90(global::AppStoreConnect.GameCenterGroup? value)
+        public IncludedItem90(global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease? value)
         {
-            GameCenterGroups = value;
+            BackgroundAssetVersionInternalBetaReleases = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem90 FromGameCenterGroups(global::AppStoreConnect.GameCenterGroup? value) => new IncludedItem90(value);
+        public static IncludedItem90 FromBackgroundAssetVersionInternalBetaReleases(global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease? value) => new IncludedItem90(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem90(global::AppStoreConnect.GameCenterLeaderboard value) => new IncludedItem90((global::AppStoreConnect.GameCenterLeaderboard?)value);
+        public static implicit operator IncludedItem90(global::AppStoreConnect.BackgroundAsset value) => new IncludedItem90((global::AppStoreConnect.BackgroundAsset?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterLeaderboard?(IncludedItem90 @this) => @this.GameCenterLeaderboards;
+        public static implicit operator global::AppStoreConnect.BackgroundAsset?(IncludedItem90 @this) => @this.BackgroundAssets;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem90(global::AppStoreConnect.GameCenterLeaderboard? value)
+        public IncludedItem90(global::AppStoreConnect.BackgroundAsset? value)
         {
-            GameCenterLeaderboards = value;
+            BackgroundAssets = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem90 FromGameCenterLeaderboards(global::AppStoreConnect.GameCenterLeaderboard? value) => new IncludedItem90(value);
+        public static IncludedItem90 FromBackgroundAssets(global::AppStoreConnect.BackgroundAsset? value) => new IncludedItem90(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem90(
-            global::AppStoreConnect.GameCenterActivityResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.GameCenterAchievement? gameCenterAchievements,
-            global::AppStoreConnect.GameCenterActivityVersion? gameCenterActivityVersions,
-            global::AppStoreConnect.GameCenterDetail? gameCenterDetails,
-            global::AppStoreConnect.GameCenterGroup? gameCenterGroups,
-            global::AppStoreConnect.GameCenterLeaderboard? gameCenterLeaderboards
+            global::AppStoreConnect.BackgroundAssetVersionResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.BackgroundAssetUploadFile? backgroundAssetUploadFiles,
+            global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? backgroundAssetVersionAppStoreReleases,
+            global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease? backgroundAssetVersionExternalBetaReleases,
+            global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease? backgroundAssetVersionInternalBetaReleases,
+            global::AppStoreConnect.BackgroundAsset? backgroundAssets
             )
         {
             Type = type;
 
-            GameCenterAchievements = gameCenterAchievements;
-            GameCenterActivityVersions = gameCenterActivityVersions;
-            GameCenterDetails = gameCenterDetails;
-            GameCenterGroups = gameCenterGroups;
-            GameCenterLeaderboards = gameCenterLeaderboards;
+            BackgroundAssetUploadFiles = backgroundAssetUploadFiles;
+            BackgroundAssetVersionAppStoreReleases = backgroundAssetVersionAppStoreReleases;
+            BackgroundAssetVersionExternalBetaReleases = backgroundAssetVersionExternalBetaReleases;
+            BackgroundAssetVersionInternalBetaReleases = backgroundAssetVersionInternalBetaReleases;
+            BackgroundAssets = backgroundAssets;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            GameCenterLeaderboards as object ??
-            GameCenterGroups as object ??
-            GameCenterDetails as object ??
-            GameCenterActivityVersions as object ??
-            GameCenterAchievements as object
+            BackgroundAssets as object ??
+            BackgroundAssetVersionInternalBetaReleases as object ??
+            BackgroundAssetVersionExternalBetaReleases as object ??
+            BackgroundAssetVersionAppStoreReleases as object ??
+            BackgroundAssetUploadFiles as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            GameCenterAchievements?.ToString() ??
-            GameCenterActivityVersions?.ToString() ??
-            GameCenterDetails?.ToString() ??
-            GameCenterGroups?.ToString() ??
-            GameCenterLeaderboards?.ToString()
+            BackgroundAssetUploadFiles?.ToString() ??
+            BackgroundAssetVersionAppStoreReleases?.ToString() ??
+            BackgroundAssetVersionExternalBetaReleases?.ToString() ??
+            BackgroundAssetVersionInternalBetaReleases?.ToString() ??
+            BackgroundAssets?.ToString()
             ;
 
         /// <summary>
@@ -361,18 +361,18 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsGameCenterAchievements && !IsGameCenterActivityVersions && !IsGameCenterDetails && !IsGameCenterGroups && !IsGameCenterLeaderboards || !IsGameCenterAchievements && IsGameCenterActivityVersions && !IsGameCenterDetails && !IsGameCenterGroups && !IsGameCenterLeaderboards || !IsGameCenterAchievements && !IsGameCenterActivityVersions && IsGameCenterDetails && !IsGameCenterGroups && !IsGameCenterLeaderboards || !IsGameCenterAchievements && !IsGameCenterActivityVersions && !IsGameCenterDetails && IsGameCenterGroups && !IsGameCenterLeaderboards || !IsGameCenterAchievements && !IsGameCenterActivityVersions && !IsGameCenterDetails && !IsGameCenterGroups && IsGameCenterLeaderboards;
+            return IsBackgroundAssetUploadFiles && !IsBackgroundAssetVersionAppStoreReleases && !IsBackgroundAssetVersionExternalBetaReleases && !IsBackgroundAssetVersionInternalBetaReleases && !IsBackgroundAssets || !IsBackgroundAssetUploadFiles && IsBackgroundAssetVersionAppStoreReleases && !IsBackgroundAssetVersionExternalBetaReleases && !IsBackgroundAssetVersionInternalBetaReleases && !IsBackgroundAssets || !IsBackgroundAssetUploadFiles && !IsBackgroundAssetVersionAppStoreReleases && IsBackgroundAssetVersionExternalBetaReleases && !IsBackgroundAssetVersionInternalBetaReleases && !IsBackgroundAssets || !IsBackgroundAssetUploadFiles && !IsBackgroundAssetVersionAppStoreReleases && !IsBackgroundAssetVersionExternalBetaReleases && IsBackgroundAssetVersionInternalBetaReleases && !IsBackgroundAssets || !IsBackgroundAssetUploadFiles && !IsBackgroundAssetVersionAppStoreReleases && !IsBackgroundAssetVersionExternalBetaReleases && !IsBackgroundAssetVersionInternalBetaReleases && IsBackgroundAssets;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.GameCenterAchievement, TResult>? gameCenterAchievements = null,
-            global::System.Func<global::AppStoreConnect.GameCenterActivityVersion, TResult>? gameCenterActivityVersions = null,
-            global::System.Func<global::AppStoreConnect.GameCenterDetail, TResult>? gameCenterDetails = null,
-            global::System.Func<global::AppStoreConnect.GameCenterGroup, TResult>? gameCenterGroups = null,
-            global::System.Func<global::AppStoreConnect.GameCenterLeaderboard, TResult>? gameCenterLeaderboards = null,
+            global::System.Func<global::AppStoreConnect.BackgroundAssetUploadFile, TResult>? backgroundAssetUploadFiles = null,
+            global::System.Func<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease, TResult>? backgroundAssetVersionAppStoreReleases = null,
+            global::System.Func<global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease, TResult>? backgroundAssetVersionExternalBetaReleases = null,
+            global::System.Func<global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease, TResult>? backgroundAssetVersionInternalBetaReleases = null,
+            global::System.Func<global::AppStoreConnect.BackgroundAsset, TResult>? backgroundAssets = null,
             bool validate = true)
         {
             if (validate)
@@ -380,25 +380,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterAchievements is { } __value0 && gameCenterAchievements != null)
+            if (BackgroundAssetUploadFiles is { } __value0 && backgroundAssetUploadFiles != null)
             {
-                return gameCenterAchievements(__value0);
+                return backgroundAssetUploadFiles(__value0);
             }
-            else if (GameCenterActivityVersions is { } __value1 && gameCenterActivityVersions != null)
+            else if (BackgroundAssetVersionAppStoreReleases is { } __value1 && backgroundAssetVersionAppStoreReleases != null)
             {
-                return gameCenterActivityVersions(__value1);
+                return backgroundAssetVersionAppStoreReleases(__value1);
             }
-            else if (GameCenterDetails is { } __value2 && gameCenterDetails != null)
+            else if (BackgroundAssetVersionExternalBetaReleases is { } __value2 && backgroundAssetVersionExternalBetaReleases != null)
             {
-                return gameCenterDetails(__value2);
+                return backgroundAssetVersionExternalBetaReleases(__value2);
             }
-            else if (GameCenterGroups is { } __value3 && gameCenterGroups != null)
+            else if (BackgroundAssetVersionInternalBetaReleases is { } __value3 && backgroundAssetVersionInternalBetaReleases != null)
             {
-                return gameCenterGroups(__value3);
+                return backgroundAssetVersionInternalBetaReleases(__value3);
             }
-            else if (GameCenterLeaderboards is { } __value4 && gameCenterLeaderboards != null)
+            else if (BackgroundAssets is { } __value4 && backgroundAssets != null)
             {
-                return gameCenterLeaderboards(__value4);
+                return backgroundAssets(__value4);
             }
 
             return default(TResult);
@@ -408,15 +408,15 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.GameCenterAchievement>? gameCenterAchievements = null,
+            global::System.Action<global::AppStoreConnect.BackgroundAssetUploadFile>? backgroundAssetUploadFiles = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterActivityVersion>? gameCenterActivityVersions = null,
+            global::System.Action<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease>? backgroundAssetVersionAppStoreReleases = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterDetail>? gameCenterDetails = null,
+            global::System.Action<global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease>? backgroundAssetVersionExternalBetaReleases = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterGroup>? gameCenterGroups = null,
+            global::System.Action<global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease>? backgroundAssetVersionInternalBetaReleases = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboard>? gameCenterLeaderboards = null,
+            global::System.Action<global::AppStoreConnect.BackgroundAsset>? backgroundAssets = null,
             bool validate = true)
         {
             if (validate)
@@ -424,25 +424,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterAchievements is { } __value0)
+            if (BackgroundAssetUploadFiles is { } __value0)
             {
-                gameCenterAchievements?.Invoke(__value0);
+                backgroundAssetUploadFiles?.Invoke(__value0);
             }
-            else if (GameCenterActivityVersions is { } __value1)
+            else if (BackgroundAssetVersionAppStoreReleases is { } __value1)
             {
-                gameCenterActivityVersions?.Invoke(__value1);
+                backgroundAssetVersionAppStoreReleases?.Invoke(__value1);
             }
-            else if (GameCenterDetails is { } __value2)
+            else if (BackgroundAssetVersionExternalBetaReleases is { } __value2)
             {
-                gameCenterDetails?.Invoke(__value2);
+                backgroundAssetVersionExternalBetaReleases?.Invoke(__value2);
             }
-            else if (GameCenterGroups is { } __value3)
+            else if (BackgroundAssetVersionInternalBetaReleases is { } __value3)
             {
-                gameCenterGroups?.Invoke(__value3);
+                backgroundAssetVersionInternalBetaReleases?.Invoke(__value3);
             }
-            else if (GameCenterLeaderboards is { } __value4)
+            else if (BackgroundAssets is { } __value4)
             {
-                gameCenterLeaderboards?.Invoke(__value4);
+                backgroundAssets?.Invoke(__value4);
             }
         }
 
@@ -450,11 +450,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.GameCenterAchievement>? gameCenterAchievements = null,
-            global::System.Action<global::AppStoreConnect.GameCenterActivityVersion>? gameCenterActivityVersions = null,
-            global::System.Action<global::AppStoreConnect.GameCenterDetail>? gameCenterDetails = null,
-            global::System.Action<global::AppStoreConnect.GameCenterGroup>? gameCenterGroups = null,
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboard>? gameCenterLeaderboards = null,
+            global::System.Action<global::AppStoreConnect.BackgroundAssetUploadFile>? backgroundAssetUploadFiles = null,
+            global::System.Action<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease>? backgroundAssetVersionAppStoreReleases = null,
+            global::System.Action<global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease>? backgroundAssetVersionExternalBetaReleases = null,
+            global::System.Action<global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease>? backgroundAssetVersionInternalBetaReleases = null,
+            global::System.Action<global::AppStoreConnect.BackgroundAsset>? backgroundAssets = null,
             bool validate = true)
         {
             if (validate)
@@ -462,25 +462,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterAchievements is { } __value0)
+            if (BackgroundAssetUploadFiles is { } __value0)
             {
-                gameCenterAchievements?.Invoke(__value0);
+                backgroundAssetUploadFiles?.Invoke(__value0);
             }
-            else if (GameCenterActivityVersions is { } __value1)
+            else if (BackgroundAssetVersionAppStoreReleases is { } __value1)
             {
-                gameCenterActivityVersions?.Invoke(__value1);
+                backgroundAssetVersionAppStoreReleases?.Invoke(__value1);
             }
-            else if (GameCenterDetails is { } __value2)
+            else if (BackgroundAssetVersionExternalBetaReleases is { } __value2)
             {
-                gameCenterDetails?.Invoke(__value2);
+                backgroundAssetVersionExternalBetaReleases?.Invoke(__value2);
             }
-            else if (GameCenterGroups is { } __value3)
+            else if (BackgroundAssetVersionInternalBetaReleases is { } __value3)
             {
-                gameCenterGroups?.Invoke(__value3);
+                backgroundAssetVersionInternalBetaReleases?.Invoke(__value3);
             }
-            else if (GameCenterLeaderboards is { } __value4)
+            else if (BackgroundAssets is { } __value4)
             {
-                gameCenterLeaderboards?.Invoke(__value4);
+                backgroundAssets?.Invoke(__value4);
             }
         }
 
@@ -491,16 +491,16 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                GameCenterAchievements,
-                typeof(global::AppStoreConnect.GameCenterAchievement),
-                GameCenterActivityVersions,
-                typeof(global::AppStoreConnect.GameCenterActivityVersion),
-                GameCenterDetails,
-                typeof(global::AppStoreConnect.GameCenterDetail),
-                GameCenterGroups,
-                typeof(global::AppStoreConnect.GameCenterGroup),
-                GameCenterLeaderboards,
-                typeof(global::AppStoreConnect.GameCenterLeaderboard),
+                BackgroundAssetUploadFiles,
+                typeof(global::AppStoreConnect.BackgroundAssetUploadFile),
+                BackgroundAssetVersionAppStoreReleases,
+                typeof(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease),
+                BackgroundAssetVersionExternalBetaReleases,
+                typeof(global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease),
+                BackgroundAssetVersionInternalBetaReleases,
+                typeof(global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease),
+                BackgroundAssets,
+                typeof(global::AppStoreConnect.BackgroundAsset),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -517,11 +517,11 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem90 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterAchievement?>.Default.Equals(GameCenterAchievements, other.GameCenterAchievements) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterActivityVersion?>.Default.Equals(GameCenterActivityVersions, other.GameCenterActivityVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterDetail?>.Default.Equals(GameCenterDetails, other.GameCenterDetails) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterGroup?>.Default.Equals(GameCenterGroups, other.GameCenterGroups) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboard?>.Default.Equals(GameCenterLeaderboards, other.GameCenterLeaderboards)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAssetUploadFile?>.Default.Equals(BackgroundAssetUploadFiles, other.BackgroundAssetUploadFiles) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease?>.Default.Equals(BackgroundAssetVersionAppStoreReleases, other.BackgroundAssetVersionAppStoreReleases) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease?>.Default.Equals(BackgroundAssetVersionExternalBetaReleases, other.BackgroundAssetVersionExternalBetaReleases) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease?>.Default.Equals(BackgroundAssetVersionInternalBetaReleases, other.BackgroundAssetVersionInternalBetaReleases) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAsset?>.Default.Equals(BackgroundAssets, other.BackgroundAssets)
                 ;
         }
 

@@ -9,7 +9,7 @@ namespace AppStoreConnect
         internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::AppStoreConnect.SourceGenerationContextMetadataScope>[] {
-                    static () => global::AppStoreConnect.SourceGenerationContextComponent_1D4A167C40408872.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_5B1153695911883A.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_BE30880E1EB889F2.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_D8159C17E0F56FB3.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_E4BE24ADB8268907.MetadataScope,
+                    static () => global::AppStoreConnect.SourceGenerationContextComponent_97D140A7AE1AA859.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_A425E458A5AF994D.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_C53C49D7254A03F8.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_CA22712778B0EFF3.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_EFA7D4EC86AB6E9B.MetadataScope,
                 }, ContributeConverters);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 
@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.IncludedItem9?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0722.Create_NullableIncludedItem92_3(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0721.Create_NullableIncludedItem92_3(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

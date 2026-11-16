@@ -12,284 +12,220 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEventLocalizationsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.BetaTestersResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppAssetLibraryPlacement? AppAssetLibraryPlacements { get; init; }
+        public global::AppStoreConnect.App? Apps { get; init; }
 #else
-        public global::AppStoreConnect.AppAssetLibraryPlacement? AppAssetLibraryPlacements { get; }
+        public global::AppStoreConnect.App? Apps { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppAssetLibraryPlacements))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
 #endif
-        public bool IsAppAssetLibraryPlacements => AppAssetLibraryPlacements != null;
+        public bool IsApps => Apps != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppAssetLibraryPlacements(
+        public bool TryPickApps(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppAssetLibraryPlacement? value)
+            out global::AppStoreConnect.App? value)
         {
-            value = AppAssetLibraryPlacements;
-            return IsAppAssetLibraryPlacements;
+            value = Apps;
+            return IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppAssetLibraryPlacement PickAppAssetLibraryPlacements() => AppAssetLibraryPlacements is { } value
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppAssetLibraryPlacements' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppEventScreenshot? AppEventScreenshots { get; init; }
+        public global::AppStoreConnect.BetaGroup? BetaGroups { get; init; }
 #else
-        public global::AppStoreConnect.AppEventScreenshot? AppEventScreenshots { get; }
+        public global::AppStoreConnect.BetaGroup? BetaGroups { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEventScreenshots))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaGroups))]
 #endif
-        public bool IsAppEventScreenshots => AppEventScreenshots != null;
+        public bool IsBetaGroups => BetaGroups != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppEventScreenshots(
+        public bool TryPickBetaGroups(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppEventScreenshot? value)
+            out global::AppStoreConnect.BetaGroup? value)
         {
-            value = AppEventScreenshots;
-            return IsAppEventScreenshots;
+            value = BetaGroups;
+            return IsBetaGroups;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEventScreenshot PickAppEventScreenshots() => AppEventScreenshots is { } value
+        public global::AppStoreConnect.BetaGroup PickBetaGroups() => BetaGroups is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEventScreenshots' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaGroups' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppEventVideoClip? AppEventVideoClips { get; init; }
+        public global::AppStoreConnect.Build? Builds { get; init; }
 #else
-        public global::AppStoreConnect.AppEventVideoClip? AppEventVideoClips { get; }
+        public global::AppStoreConnect.Build? Builds { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEventVideoClips))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
 #endif
-        public bool IsAppEventVideoClips => AppEventVideoClips != null;
+        public bool IsBuilds => Builds != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppEventVideoClips(
+        public bool TryPickBuilds(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppEventVideoClip? value)
+            out global::AppStoreConnect.Build? value)
         {
-            value = AppEventVideoClips;
-            return IsAppEventVideoClips;
+            value = Builds;
+            return IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEventVideoClip PickAppEventVideoClips() => AppEventVideoClips is { } value
+        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEventVideoClips' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem22(global::AppStoreConnect.App value) => new IncludedItem22((global::AppStoreConnect.App?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppEvent? AppEvents { get; init; }
-#else
-        public global::AppStoreConnect.AppEvent? AppEvents { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem22 @this) => @this.Apps;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEvents))]
-#endif
-        public bool IsAppEvents => AppEvents != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppEvents(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppEvent? value)
+        public IncludedItem22(global::AppStoreConnect.App? value)
         {
-            value = AppEvents;
-            return IsAppEvents;
+            Apps = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppEvent PickAppEvents() => AppEvents is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEvents' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem22(global::AppStoreConnect.AppAssetLibraryPlacement value) => new IncludedItem22((global::AppStoreConnect.AppAssetLibraryPlacement?)value);
+        public static IncludedItem22 FromApps(global::AppStoreConnect.App? value) => new IncludedItem22(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppAssetLibraryPlacement?(IncludedItem22 @this) => @this.AppAssetLibraryPlacements;
+        public static implicit operator IncludedItem22(global::AppStoreConnect.BetaGroup value) => new IncludedItem22((global::AppStoreConnect.BetaGroup?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem22(global::AppStoreConnect.AppAssetLibraryPlacement? value)
+        public static implicit operator global::AppStoreConnect.BetaGroup?(IncludedItem22 @this) => @this.BetaGroups;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem22(global::AppStoreConnect.BetaGroup? value)
         {
-            AppAssetLibraryPlacements = value;
+            BetaGroups = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem22 FromAppAssetLibraryPlacements(global::AppStoreConnect.AppAssetLibraryPlacement? value) => new IncludedItem22(value);
+        public static IncludedItem22 FromBetaGroups(global::AppStoreConnect.BetaGroup? value) => new IncludedItem22(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem22(global::AppStoreConnect.AppEventScreenshot value) => new IncludedItem22((global::AppStoreConnect.AppEventScreenshot?)value);
+        public static implicit operator IncludedItem22(global::AppStoreConnect.Build value) => new IncludedItem22((global::AppStoreConnect.Build?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppEventScreenshot?(IncludedItem22 @this) => @this.AppEventScreenshots;
+        public static implicit operator global::AppStoreConnect.Build?(IncludedItem22 @this) => @this.Builds;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem22(global::AppStoreConnect.AppEventScreenshot? value)
+        public IncludedItem22(global::AppStoreConnect.Build? value)
         {
-            AppEventScreenshots = value;
+            Builds = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem22 FromAppEventScreenshots(global::AppStoreConnect.AppEventScreenshot? value) => new IncludedItem22(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem22(global::AppStoreConnect.AppEventVideoClip value) => new IncludedItem22((global::AppStoreConnect.AppEventVideoClip?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppEventVideoClip?(IncludedItem22 @this) => @this.AppEventVideoClips;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem22(global::AppStoreConnect.AppEventVideoClip? value)
-        {
-            AppEventVideoClips = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem22 FromAppEventVideoClips(global::AppStoreConnect.AppEventVideoClip? value) => new IncludedItem22(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem22(global::AppStoreConnect.AppEvent value) => new IncludedItem22((global::AppStoreConnect.AppEvent?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppEvent?(IncludedItem22 @this) => @this.AppEvents;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem22(global::AppStoreConnect.AppEvent? value)
-        {
-            AppEvents = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem22 FromAppEvents(global::AppStoreConnect.AppEvent? value) => new IncludedItem22(value);
+        public static IncludedItem22 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem22(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem22(
-            global::AppStoreConnect.AppEventLocalizationsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppAssetLibraryPlacement? appAssetLibraryPlacements,
-            global::AppStoreConnect.AppEventScreenshot? appEventScreenshots,
-            global::AppStoreConnect.AppEventVideoClip? appEventVideoClips,
-            global::AppStoreConnect.AppEvent? appEvents
+            global::AppStoreConnect.BetaTestersResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.App? apps,
+            global::AppStoreConnect.BetaGroup? betaGroups,
+            global::AppStoreConnect.Build? builds
             )
         {
             Type = type;
 
-            AppAssetLibraryPlacements = appAssetLibraryPlacements;
-            AppEventScreenshots = appEventScreenshots;
-            AppEventVideoClips = appEventVideoClips;
-            AppEvents = appEvents;
+            Apps = apps;
+            BetaGroups = betaGroups;
+            Builds = builds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            AppEvents as object ??
-            AppEventVideoClips as object ??
-            AppEventScreenshots as object ??
-            AppAssetLibraryPlacements as object
+            Builds as object ??
+            BetaGroups as object ??
+            Apps as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppAssetLibraryPlacements?.ToString() ??
-            AppEventScreenshots?.ToString() ??
-            AppEventVideoClips?.ToString() ??
-            AppEvents?.ToString()
+            Apps?.ToString() ??
+            BetaGroups?.ToString() ??
+            Builds?.ToString()
             ;
 
         /// <summary>
@@ -297,17 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppAssetLibraryPlacements && !IsAppEventScreenshots && !IsAppEventVideoClips && !IsAppEvents || !IsAppAssetLibraryPlacements && IsAppEventScreenshots && !IsAppEventVideoClips && !IsAppEvents || !IsAppAssetLibraryPlacements && !IsAppEventScreenshots && IsAppEventVideoClips && !IsAppEvents || !IsAppAssetLibraryPlacements && !IsAppEventScreenshots && !IsAppEventVideoClips && IsAppEvents;
+            return IsApps && !IsBetaGroups && !IsBuilds || !IsApps && IsBetaGroups && !IsBuilds || !IsApps && !IsBetaGroups && IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppAssetLibraryPlacement, TResult>? appAssetLibraryPlacements = null,
-            global::System.Func<global::AppStoreConnect.AppEventScreenshot, TResult>? appEventScreenshots = null,
-            global::System.Func<global::AppStoreConnect.AppEventVideoClip, TResult>? appEventVideoClips = null,
-            global::System.Func<global::AppStoreConnect.AppEvent, TResult>? appEvents = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
+            global::System.Func<global::AppStoreConnect.BetaGroup, TResult>? betaGroups = null,
+            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -315,21 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppAssetLibraryPlacements is { } __value0 && appAssetLibraryPlacements != null)
+            if (Apps is { } __value0 && apps != null)
             {
-                return appAssetLibraryPlacements(__value0);
+                return apps(__value0);
             }
-            else if (AppEventScreenshots is { } __value1 && appEventScreenshots != null)
+            else if (BetaGroups is { } __value1 && betaGroups != null)
             {
-                return appEventScreenshots(__value1);
+                return betaGroups(__value1);
             }
-            else if (AppEventVideoClips is { } __value2 && appEventVideoClips != null)
+            else if (Builds is { } __value2 && builds != null)
             {
-                return appEventVideoClips(__value2);
-            }
-            else if (AppEvents is { } __value3 && appEvents != null)
-            {
-                return appEvents(__value3);
+                return builds(__value2);
             }
 
             return default(TResult);
@@ -339,13 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppAssetLibraryPlacement>? appAssetLibraryPlacements = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
 
-            global::System.Action<global::AppStoreConnect.AppEventScreenshot>? appEventScreenshots = null,
+            global::System.Action<global::AppStoreConnect.BetaGroup>? betaGroups = null,
 
-            global::System.Action<global::AppStoreConnect.AppEventVideoClip>? appEventVideoClips = null,
-
-            global::System.Action<global::AppStoreConnect.AppEvent>? appEvents = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -353,21 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppAssetLibraryPlacements is { } __value0)
+            if (Apps is { } __value0)
             {
-                appAssetLibraryPlacements?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (AppEventScreenshots is { } __value1)
+            else if (BetaGroups is { } __value1)
             {
-                appEventScreenshots?.Invoke(__value1);
+                betaGroups?.Invoke(__value1);
             }
-            else if (AppEventVideoClips is { } __value2)
+            else if (Builds is { } __value2)
             {
-                appEventVideoClips?.Invoke(__value2);
-            }
-            else if (AppEvents is { } __value3)
-            {
-                appEvents?.Invoke(__value3);
+                builds?.Invoke(__value2);
             }
         }
 
@@ -375,10 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppAssetLibraryPlacement>? appAssetLibraryPlacements = null,
-            global::System.Action<global::AppStoreConnect.AppEventScreenshot>? appEventScreenshots = null,
-            global::System.Action<global::AppStoreConnect.AppEventVideoClip>? appEventVideoClips = null,
-            global::System.Action<global::AppStoreConnect.AppEvent>? appEvents = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.BetaGroup>? betaGroups = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -386,21 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppAssetLibraryPlacements is { } __value0)
+            if (Apps is { } __value0)
             {
-                appAssetLibraryPlacements?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (AppEventScreenshots is { } __value1)
+            else if (BetaGroups is { } __value1)
             {
-                appEventScreenshots?.Invoke(__value1);
+                betaGroups?.Invoke(__value1);
             }
-            else if (AppEventVideoClips is { } __value2)
+            else if (Builds is { } __value2)
             {
-                appEventVideoClips?.Invoke(__value2);
-            }
-            else if (AppEvents is { } __value3)
-            {
-                appEvents?.Invoke(__value3);
+                builds?.Invoke(__value2);
             }
         }
 
@@ -411,14 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppAssetLibraryPlacements,
-                typeof(global::AppStoreConnect.AppAssetLibraryPlacement),
-                AppEventScreenshots,
-                typeof(global::AppStoreConnect.AppEventScreenshot),
-                AppEventVideoClips,
-                typeof(global::AppStoreConnect.AppEventVideoClip),
-                AppEvents,
-                typeof(global::AppStoreConnect.AppEvent),
+                Apps,
+                typeof(global::AppStoreConnect.App),
+                BetaGroups,
+                typeof(global::AppStoreConnect.BetaGroup),
+                Builds,
+                typeof(global::AppStoreConnect.Build),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -435,10 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem22 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppAssetLibraryPlacement?>.Default.Equals(AppAssetLibraryPlacements, other.AppAssetLibraryPlacements) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEventScreenshot?>.Default.Equals(AppEventScreenshots, other.AppEventScreenshots) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEventVideoClip?>.Default.Equals(AppEventVideoClips, other.AppEventVideoClips) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEvent?>.Default.Equals(AppEvents, other.AppEvents)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaGroup?>.Default.Equals(BetaGroups, other.BetaGroups) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
                 ;
         }
 

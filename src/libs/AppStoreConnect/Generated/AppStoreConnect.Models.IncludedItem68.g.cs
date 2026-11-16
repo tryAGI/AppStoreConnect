@@ -12,348 +12,284 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CiBuildRunsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.GameCenterChallengeResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Build? Builds { get; init; }
+        public global::AppStoreConnect.GameCenterChallengeVersion? GameCenterChallengeVersions { get; init; }
 #else
-        public global::AppStoreConnect.Build? Builds { get; }
+        public global::AppStoreConnect.GameCenterChallengeVersion? GameCenterChallengeVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterChallengeVersions))]
 #endif
-        public bool IsBuilds => Builds != null;
+        public bool IsGameCenterChallengeVersions => GameCenterChallengeVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBuilds(
+        public bool TryPickGameCenterChallengeVersions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.Build? value)
+            out global::AppStoreConnect.GameCenterChallengeVersion? value)
         {
-            value = Builds;
-            return IsBuilds;
+            value = GameCenterChallengeVersions;
+            return IsGameCenterChallengeVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
+        public global::AppStoreConnect.GameCenterChallengeVersion PickGameCenterChallengeVersions() => GameCenterChallengeVersions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterChallengeVersions' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.CiProduct? CiProducts { get; init; }
+        public global::AppStoreConnect.GameCenterDetail? GameCenterDetails { get; init; }
 #else
-        public global::AppStoreConnect.CiProduct? CiProducts { get; }
+        public global::AppStoreConnect.GameCenterDetail? GameCenterDetails { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CiProducts))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterDetails))]
 #endif
-        public bool IsCiProducts => CiProducts != null;
+        public bool IsGameCenterDetails => GameCenterDetails != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickCiProducts(
+        public bool TryPickGameCenterDetails(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.CiProduct? value)
+            out global::AppStoreConnect.GameCenterDetail? value)
         {
-            value = CiProducts;
-            return IsCiProducts;
+            value = GameCenterDetails;
+            return IsGameCenterDetails;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CiProduct PickCiProducts() => CiProducts is { } value
+        public global::AppStoreConnect.GameCenterDetail PickGameCenterDetails() => GameCenterDetails is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'CiProducts' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterDetails' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.CiWorkflow? CiWorkflows { get; init; }
+        public global::AppStoreConnect.GameCenterGroup? GameCenterGroups { get; init; }
 #else
-        public global::AppStoreConnect.CiWorkflow? CiWorkflows { get; }
+        public global::AppStoreConnect.GameCenterGroup? GameCenterGroups { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CiWorkflows))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterGroups))]
 #endif
-        public bool IsCiWorkflows => CiWorkflows != null;
+        public bool IsGameCenterGroups => GameCenterGroups != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickCiWorkflows(
+        public bool TryPickGameCenterGroups(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.CiWorkflow? value)
+            out global::AppStoreConnect.GameCenterGroup? value)
         {
-            value = CiWorkflows;
-            return IsCiWorkflows;
+            value = GameCenterGroups;
+            return IsGameCenterGroups;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CiWorkflow PickCiWorkflows() => CiWorkflows is { } value
+        public global::AppStoreConnect.GameCenterGroup PickGameCenterGroups() => GameCenterGroups is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'CiWorkflows' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterGroups' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.ScmGitReference? ScmGitReferences { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboard? GameCenterLeaderboards { get; init; }
 #else
-        public global::AppStoreConnect.ScmGitReference? ScmGitReferences { get; }
+        public global::AppStoreConnect.GameCenterLeaderboard? GameCenterLeaderboards { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmGitReferences))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboards))]
 #endif
-        public bool IsScmGitReferences => ScmGitReferences != null;
+        public bool IsGameCenterLeaderboards => GameCenterLeaderboards != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickScmGitReferences(
+        public bool TryPickGameCenterLeaderboards(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.ScmGitReference? value)
+            out global::AppStoreConnect.GameCenterLeaderboard? value)
         {
-            value = ScmGitReferences;
-            return IsScmGitReferences;
+            value = GameCenterLeaderboards;
+            return IsGameCenterLeaderboards;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmGitReference PickScmGitReferences() => ScmGitReferences is { } value
+        public global::AppStoreConnect.GameCenterLeaderboard PickGameCenterLeaderboards() => GameCenterLeaderboards is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'ScmGitReferences' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboards' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem68(global::AppStoreConnect.GameCenterChallengeVersion value) => new IncludedItem68((global::AppStoreConnect.GameCenterChallengeVersion?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.ScmPullRequest? ScmPullRequests { get; init; }
-#else
-        public global::AppStoreConnect.ScmPullRequest? ScmPullRequests { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.GameCenterChallengeVersion?(IncludedItem68 @this) => @this.GameCenterChallengeVersions;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmPullRequests))]
-#endif
-        public bool IsScmPullRequests => ScmPullRequests != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickScmPullRequests(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.ScmPullRequest? value)
+        public IncludedItem68(global::AppStoreConnect.GameCenterChallengeVersion? value)
         {
-            value = ScmPullRequests;
-            return IsScmPullRequests;
+            GameCenterChallengeVersions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmPullRequest PickScmPullRequests() => ScmPullRequests is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'ScmPullRequests' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem68(global::AppStoreConnect.Build value) => new IncludedItem68((global::AppStoreConnect.Build?)value);
+        public static IncludedItem68 FromGameCenterChallengeVersions(global::AppStoreConnect.GameCenterChallengeVersion? value) => new IncludedItem68(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.Build?(IncludedItem68 @this) => @this.Builds;
+        public static implicit operator IncludedItem68(global::AppStoreConnect.GameCenterDetail value) => new IncludedItem68((global::AppStoreConnect.GameCenterDetail?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem68(global::AppStoreConnect.Build? value)
+        public static implicit operator global::AppStoreConnect.GameCenterDetail?(IncludedItem68 @this) => @this.GameCenterDetails;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem68(global::AppStoreConnect.GameCenterDetail? value)
         {
-            Builds = value;
+            GameCenterDetails = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem68 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem68(value);
+        public static IncludedItem68 FromGameCenterDetails(global::AppStoreConnect.GameCenterDetail? value) => new IncludedItem68(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem68(global::AppStoreConnect.CiProduct value) => new IncludedItem68((global::AppStoreConnect.CiProduct?)value);
+        public static implicit operator IncludedItem68(global::AppStoreConnect.GameCenterGroup value) => new IncludedItem68((global::AppStoreConnect.GameCenterGroup?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.CiProduct?(IncludedItem68 @this) => @this.CiProducts;
+        public static implicit operator global::AppStoreConnect.GameCenterGroup?(IncludedItem68 @this) => @this.GameCenterGroups;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem68(global::AppStoreConnect.CiProduct? value)
+        public IncludedItem68(global::AppStoreConnect.GameCenterGroup? value)
         {
-            CiProducts = value;
+            GameCenterGroups = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem68 FromCiProducts(global::AppStoreConnect.CiProduct? value) => new IncludedItem68(value);
+        public static IncludedItem68 FromGameCenterGroups(global::AppStoreConnect.GameCenterGroup? value) => new IncludedItem68(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem68(global::AppStoreConnect.CiWorkflow value) => new IncludedItem68((global::AppStoreConnect.CiWorkflow?)value);
+        public static implicit operator IncludedItem68(global::AppStoreConnect.GameCenterLeaderboard value) => new IncludedItem68((global::AppStoreConnect.GameCenterLeaderboard?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.CiWorkflow?(IncludedItem68 @this) => @this.CiWorkflows;
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboard?(IncludedItem68 @this) => @this.GameCenterLeaderboards;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem68(global::AppStoreConnect.CiWorkflow? value)
+        public IncludedItem68(global::AppStoreConnect.GameCenterLeaderboard? value)
         {
-            CiWorkflows = value;
+            GameCenterLeaderboards = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem68 FromCiWorkflows(global::AppStoreConnect.CiWorkflow? value) => new IncludedItem68(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem68(global::AppStoreConnect.ScmGitReference value) => new IncludedItem68((global::AppStoreConnect.ScmGitReference?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.ScmGitReference?(IncludedItem68 @this) => @this.ScmGitReferences;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem68(global::AppStoreConnect.ScmGitReference? value)
-        {
-            ScmGitReferences = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem68 FromScmGitReferences(global::AppStoreConnect.ScmGitReference? value) => new IncludedItem68(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem68(global::AppStoreConnect.ScmPullRequest value) => new IncludedItem68((global::AppStoreConnect.ScmPullRequest?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.ScmPullRequest?(IncludedItem68 @this) => @this.ScmPullRequests;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem68(global::AppStoreConnect.ScmPullRequest? value)
-        {
-            ScmPullRequests = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem68 FromScmPullRequests(global::AppStoreConnect.ScmPullRequest? value) => new IncludedItem68(value);
+        public static IncludedItem68 FromGameCenterLeaderboards(global::AppStoreConnect.GameCenterLeaderboard? value) => new IncludedItem68(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem68(
-            global::AppStoreConnect.CiBuildRunsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.Build? builds,
-            global::AppStoreConnect.CiProduct? ciProducts,
-            global::AppStoreConnect.CiWorkflow? ciWorkflows,
-            global::AppStoreConnect.ScmGitReference? scmGitReferences,
-            global::AppStoreConnect.ScmPullRequest? scmPullRequests
+            global::AppStoreConnect.GameCenterChallengeResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.GameCenterChallengeVersion? gameCenterChallengeVersions,
+            global::AppStoreConnect.GameCenterDetail? gameCenterDetails,
+            global::AppStoreConnect.GameCenterGroup? gameCenterGroups,
+            global::AppStoreConnect.GameCenterLeaderboard? gameCenterLeaderboards
             )
         {
             Type = type;
 
-            Builds = builds;
-            CiProducts = ciProducts;
-            CiWorkflows = ciWorkflows;
-            ScmGitReferences = scmGitReferences;
-            ScmPullRequests = scmPullRequests;
+            GameCenterChallengeVersions = gameCenterChallengeVersions;
+            GameCenterDetails = gameCenterDetails;
+            GameCenterGroups = gameCenterGroups;
+            GameCenterLeaderboards = gameCenterLeaderboards;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            ScmPullRequests as object ??
-            ScmGitReferences as object ??
-            CiWorkflows as object ??
-            CiProducts as object ??
-            Builds as object
+            GameCenterLeaderboards as object ??
+            GameCenterGroups as object ??
+            GameCenterDetails as object ??
+            GameCenterChallengeVersions as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            Builds?.ToString() ??
-            CiProducts?.ToString() ??
-            CiWorkflows?.ToString() ??
-            ScmGitReferences?.ToString() ??
-            ScmPullRequests?.ToString()
+            GameCenterChallengeVersions?.ToString() ??
+            GameCenterDetails?.ToString() ??
+            GameCenterGroups?.ToString() ??
+            GameCenterLeaderboards?.ToString()
             ;
 
         /// <summary>
@@ -361,18 +297,17 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsBuilds && !IsCiProducts && !IsCiWorkflows && !IsScmGitReferences && !IsScmPullRequests || !IsBuilds && IsCiProducts && !IsCiWorkflows && !IsScmGitReferences && !IsScmPullRequests || !IsBuilds && !IsCiProducts && IsCiWorkflows && !IsScmGitReferences && !IsScmPullRequests || !IsBuilds && !IsCiProducts && !IsCiWorkflows && IsScmGitReferences && !IsScmPullRequests || !IsBuilds && !IsCiProducts && !IsCiWorkflows && !IsScmGitReferences && IsScmPullRequests;
+            return IsGameCenterChallengeVersions && !IsGameCenterDetails && !IsGameCenterGroups && !IsGameCenterLeaderboards || !IsGameCenterChallengeVersions && IsGameCenterDetails && !IsGameCenterGroups && !IsGameCenterLeaderboards || !IsGameCenterChallengeVersions && !IsGameCenterDetails && IsGameCenterGroups && !IsGameCenterLeaderboards || !IsGameCenterChallengeVersions && !IsGameCenterDetails && !IsGameCenterGroups && IsGameCenterLeaderboards;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
-            global::System.Func<global::AppStoreConnect.CiProduct, TResult>? ciProducts = null,
-            global::System.Func<global::AppStoreConnect.CiWorkflow, TResult>? ciWorkflows = null,
-            global::System.Func<global::AppStoreConnect.ScmGitReference, TResult>? scmGitReferences = null,
-            global::System.Func<global::AppStoreConnect.ScmPullRequest, TResult>? scmPullRequests = null,
+            global::System.Func<global::AppStoreConnect.GameCenterChallengeVersion, TResult>? gameCenterChallengeVersions = null,
+            global::System.Func<global::AppStoreConnect.GameCenterDetail, TResult>? gameCenterDetails = null,
+            global::System.Func<global::AppStoreConnect.GameCenterGroup, TResult>? gameCenterGroups = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboard, TResult>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -380,25 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Builds is { } __value0 && builds != null)
+            if (GameCenterChallengeVersions is { } __value0 && gameCenterChallengeVersions != null)
             {
-                return builds(__value0);
+                return gameCenterChallengeVersions(__value0);
             }
-            else if (CiProducts is { } __value1 && ciProducts != null)
+            else if (GameCenterDetails is { } __value1 && gameCenterDetails != null)
             {
-                return ciProducts(__value1);
+                return gameCenterDetails(__value1);
             }
-            else if (CiWorkflows is { } __value2 && ciWorkflows != null)
+            else if (GameCenterGroups is { } __value2 && gameCenterGroups != null)
             {
-                return ciWorkflows(__value2);
+                return gameCenterGroups(__value2);
             }
-            else if (ScmGitReferences is { } __value3 && scmGitReferences != null)
+            else if (GameCenterLeaderboards is { } __value3 && gameCenterLeaderboards != null)
             {
-                return scmGitReferences(__value3);
-            }
-            else if (ScmPullRequests is { } __value4 && scmPullRequests != null)
-            {
-                return scmPullRequests(__value4);
+                return gameCenterLeaderboards(__value3);
             }
 
             return default(TResult);
@@ -408,15 +339,13 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.Build>? builds = null,
+            global::System.Action<global::AppStoreConnect.GameCenterChallengeVersion>? gameCenterChallengeVersions = null,
 
-            global::System.Action<global::AppStoreConnect.CiProduct>? ciProducts = null,
+            global::System.Action<global::AppStoreConnect.GameCenterDetail>? gameCenterDetails = null,
 
-            global::System.Action<global::AppStoreConnect.CiWorkflow>? ciWorkflows = null,
+            global::System.Action<global::AppStoreConnect.GameCenterGroup>? gameCenterGroups = null,
 
-            global::System.Action<global::AppStoreConnect.ScmGitReference>? scmGitReferences = null,
-
-            global::System.Action<global::AppStoreConnect.ScmPullRequest>? scmPullRequests = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboard>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -424,25 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Builds is { } __value0)
+            if (GameCenterChallengeVersions is { } __value0)
             {
-                builds?.Invoke(__value0);
+                gameCenterChallengeVersions?.Invoke(__value0);
             }
-            else if (CiProducts is { } __value1)
+            else if (GameCenterDetails is { } __value1)
             {
-                ciProducts?.Invoke(__value1);
+                gameCenterDetails?.Invoke(__value1);
             }
-            else if (CiWorkflows is { } __value2)
+            else if (GameCenterGroups is { } __value2)
             {
-                ciWorkflows?.Invoke(__value2);
+                gameCenterGroups?.Invoke(__value2);
             }
-            else if (ScmGitReferences is { } __value3)
+            else if (GameCenterLeaderboards is { } __value3)
             {
-                scmGitReferences?.Invoke(__value3);
-            }
-            else if (ScmPullRequests is { } __value4)
-            {
-                scmPullRequests?.Invoke(__value4);
+                gameCenterLeaderboards?.Invoke(__value3);
             }
         }
 
@@ -450,11 +375,10 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.Build>? builds = null,
-            global::System.Action<global::AppStoreConnect.CiProduct>? ciProducts = null,
-            global::System.Action<global::AppStoreConnect.CiWorkflow>? ciWorkflows = null,
-            global::System.Action<global::AppStoreConnect.ScmGitReference>? scmGitReferences = null,
-            global::System.Action<global::AppStoreConnect.ScmPullRequest>? scmPullRequests = null,
+            global::System.Action<global::AppStoreConnect.GameCenterChallengeVersion>? gameCenterChallengeVersions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterDetail>? gameCenterDetails = null,
+            global::System.Action<global::AppStoreConnect.GameCenterGroup>? gameCenterGroups = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboard>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -462,25 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Builds is { } __value0)
+            if (GameCenterChallengeVersions is { } __value0)
             {
-                builds?.Invoke(__value0);
+                gameCenterChallengeVersions?.Invoke(__value0);
             }
-            else if (CiProducts is { } __value1)
+            else if (GameCenterDetails is { } __value1)
             {
-                ciProducts?.Invoke(__value1);
+                gameCenterDetails?.Invoke(__value1);
             }
-            else if (CiWorkflows is { } __value2)
+            else if (GameCenterGroups is { } __value2)
             {
-                ciWorkflows?.Invoke(__value2);
+                gameCenterGroups?.Invoke(__value2);
             }
-            else if (ScmGitReferences is { } __value3)
+            else if (GameCenterLeaderboards is { } __value3)
             {
-                scmGitReferences?.Invoke(__value3);
-            }
-            else if (ScmPullRequests is { } __value4)
-            {
-                scmPullRequests?.Invoke(__value4);
+                gameCenterLeaderboards?.Invoke(__value3);
             }
         }
 
@@ -491,16 +411,14 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                Builds,
-                typeof(global::AppStoreConnect.Build),
-                CiProducts,
-                typeof(global::AppStoreConnect.CiProduct),
-                CiWorkflows,
-                typeof(global::AppStoreConnect.CiWorkflow),
-                ScmGitReferences,
-                typeof(global::AppStoreConnect.ScmGitReference),
-                ScmPullRequests,
-                typeof(global::AppStoreConnect.ScmPullRequest),
+                GameCenterChallengeVersions,
+                typeof(global::AppStoreConnect.GameCenterChallengeVersion),
+                GameCenterDetails,
+                typeof(global::AppStoreConnect.GameCenterDetail),
+                GameCenterGroups,
+                typeof(global::AppStoreConnect.GameCenterGroup),
+                GameCenterLeaderboards,
+                typeof(global::AppStoreConnect.GameCenterLeaderboard),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -517,11 +435,10 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem68 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CiProduct?>.Default.Equals(CiProducts, other.CiProducts) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CiWorkflow?>.Default.Equals(CiWorkflows, other.CiWorkflows) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmGitReference?>.Default.Equals(ScmGitReferences, other.ScmGitReferences) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmPullRequest?>.Default.Equals(ScmPullRequests, other.ScmPullRequests)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterChallengeVersion?>.Default.Equals(GameCenterChallengeVersions, other.GameCenterChallengeVersions) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterDetail?>.Default.Equals(GameCenterDetails, other.GameCenterDetails) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterGroup?>.Default.Equals(GameCenterGroups, other.GameCenterGroups) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboard?>.Default.Equals(GameCenterLeaderboards, other.GameCenterLeaderboards)
                 ;
         }
 

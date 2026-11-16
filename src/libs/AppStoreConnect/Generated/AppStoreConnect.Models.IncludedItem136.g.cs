@@ -12,220 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterMatchmakingRuleSetsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.BetaFeedbackCrashSubmissionsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterMatchmakingQueue? GameCenterMatchmakingQueues { get; init; }
+        public global::AppStoreConnect.BetaTester? BetaTesters { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterMatchmakingQueue? GameCenterMatchmakingQueues { get; }
+        public global::AppStoreConnect.BetaTester? BetaTesters { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterMatchmakingQueues))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaTesters))]
 #endif
-        public bool IsGameCenterMatchmakingQueues => GameCenterMatchmakingQueues != null;
+        public bool IsBetaTesters => BetaTesters != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterMatchmakingQueues(
+        public bool TryPickBetaTesters(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterMatchmakingQueue? value)
+            out global::AppStoreConnect.BetaTester? value)
         {
-            value = GameCenterMatchmakingQueues;
-            return IsGameCenterMatchmakingQueues;
+            value = BetaTesters;
+            return IsBetaTesters;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterMatchmakingQueue PickGameCenterMatchmakingQueues() => GameCenterMatchmakingQueues is { } value
+        public global::AppStoreConnect.BetaTester PickBetaTesters() => BetaTesters is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterMatchmakingQueues' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaTesters' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterMatchmakingRule? GameCenterMatchmakingRules { get; init; }
+        public global::AppStoreConnect.Build? Builds { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterMatchmakingRule? GameCenterMatchmakingRules { get; }
+        public global::AppStoreConnect.Build? Builds { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterMatchmakingRules))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
 #endif
-        public bool IsGameCenterMatchmakingRules => GameCenterMatchmakingRules != null;
+        public bool IsBuilds => Builds != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterMatchmakingRules(
+        public bool TryPickBuilds(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterMatchmakingRule? value)
+            out global::AppStoreConnect.Build? value)
         {
-            value = GameCenterMatchmakingRules;
-            return IsGameCenterMatchmakingRules;
+            value = Builds;
+            return IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterMatchmakingRule PickGameCenterMatchmakingRules() => GameCenterMatchmakingRules is { } value
+        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterMatchmakingRules' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem136(global::AppStoreConnect.BetaTester value) => new IncludedItem136((global::AppStoreConnect.BetaTester?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterMatchmakingTeam? GameCenterMatchmakingTeams { get; init; }
-#else
-        public global::AppStoreConnect.GameCenterMatchmakingTeam? GameCenterMatchmakingTeams { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.BetaTester?(IncludedItem136 @this) => @this.BetaTesters;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterMatchmakingTeams))]
-#endif
-        public bool IsGameCenterMatchmakingTeams => GameCenterMatchmakingTeams != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickGameCenterMatchmakingTeams(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.GameCenterMatchmakingTeam? value)
+        public IncludedItem136(global::AppStoreConnect.BetaTester? value)
         {
-            value = GameCenterMatchmakingTeams;
-            return IsGameCenterMatchmakingTeams;
+            BetaTesters = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterMatchmakingTeam PickGameCenterMatchmakingTeams() => GameCenterMatchmakingTeams is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterMatchmakingTeams' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem136(global::AppStoreConnect.GameCenterMatchmakingQueue value) => new IncludedItem136((global::AppStoreConnect.GameCenterMatchmakingQueue?)value);
+        public static IncludedItem136 FromBetaTesters(global::AppStoreConnect.BetaTester? value) => new IncludedItem136(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterMatchmakingQueue?(IncludedItem136 @this) => @this.GameCenterMatchmakingQueues;
+        public static implicit operator IncludedItem136(global::AppStoreConnect.Build value) => new IncludedItem136((global::AppStoreConnect.Build?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem136(global::AppStoreConnect.GameCenterMatchmakingQueue? value)
+        public static implicit operator global::AppStoreConnect.Build?(IncludedItem136 @this) => @this.Builds;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem136(global::AppStoreConnect.Build? value)
         {
-            GameCenterMatchmakingQueues = value;
+            Builds = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem136 FromGameCenterMatchmakingQueues(global::AppStoreConnect.GameCenterMatchmakingQueue? value) => new IncludedItem136(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem136(global::AppStoreConnect.GameCenterMatchmakingRule value) => new IncludedItem136((global::AppStoreConnect.GameCenterMatchmakingRule?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterMatchmakingRule?(IncludedItem136 @this) => @this.GameCenterMatchmakingRules;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem136(global::AppStoreConnect.GameCenterMatchmakingRule? value)
-        {
-            GameCenterMatchmakingRules = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem136 FromGameCenterMatchmakingRules(global::AppStoreConnect.GameCenterMatchmakingRule? value) => new IncludedItem136(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem136(global::AppStoreConnect.GameCenterMatchmakingTeam value) => new IncludedItem136((global::AppStoreConnect.GameCenterMatchmakingTeam?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterMatchmakingTeam?(IncludedItem136 @this) => @this.GameCenterMatchmakingTeams;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem136(global::AppStoreConnect.GameCenterMatchmakingTeam? value)
-        {
-            GameCenterMatchmakingTeams = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem136 FromGameCenterMatchmakingTeams(global::AppStoreConnect.GameCenterMatchmakingTeam? value) => new IncludedItem136(value);
+        public static IncludedItem136 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem136(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem136(
-            global::AppStoreConnect.GameCenterMatchmakingRuleSetsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.GameCenterMatchmakingQueue? gameCenterMatchmakingQueues,
-            global::AppStoreConnect.GameCenterMatchmakingRule? gameCenterMatchmakingRules,
-            global::AppStoreConnect.GameCenterMatchmakingTeam? gameCenterMatchmakingTeams
+            global::AppStoreConnect.BetaFeedbackCrashSubmissionsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.BetaTester? betaTesters,
+            global::AppStoreConnect.Build? builds
             )
         {
             Type = type;
 
-            GameCenterMatchmakingQueues = gameCenterMatchmakingQueues;
-            GameCenterMatchmakingRules = gameCenterMatchmakingRules;
-            GameCenterMatchmakingTeams = gameCenterMatchmakingTeams;
+            BetaTesters = betaTesters;
+            Builds = builds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            GameCenterMatchmakingTeams as object ??
-            GameCenterMatchmakingRules as object ??
-            GameCenterMatchmakingQueues as object
+            Builds as object ??
+            BetaTesters as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            GameCenterMatchmakingQueues?.ToString() ??
-            GameCenterMatchmakingRules?.ToString() ??
-            GameCenterMatchmakingTeams?.ToString()
+            BetaTesters?.ToString() ??
+            Builds?.ToString()
             ;
 
         /// <summary>
@@ -233,16 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsGameCenterMatchmakingQueues && !IsGameCenterMatchmakingRules && !IsGameCenterMatchmakingTeams || !IsGameCenterMatchmakingQueues && IsGameCenterMatchmakingRules && !IsGameCenterMatchmakingTeams || !IsGameCenterMatchmakingQueues && !IsGameCenterMatchmakingRules && IsGameCenterMatchmakingTeams;
+            return IsBetaTesters && !IsBuilds || !IsBetaTesters && IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.GameCenterMatchmakingQueue, TResult>? gameCenterMatchmakingQueues = null,
-            global::System.Func<global::AppStoreConnect.GameCenterMatchmakingRule, TResult>? gameCenterMatchmakingRules = null,
-            global::System.Func<global::AppStoreConnect.GameCenterMatchmakingTeam, TResult>? gameCenterMatchmakingTeams = null,
+            global::System.Func<global::AppStoreConnect.BetaTester, TResult>? betaTesters = null,
+            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -250,17 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterMatchmakingQueues is { } __value0 && gameCenterMatchmakingQueues != null)
+            if (BetaTesters is { } __value0 && betaTesters != null)
             {
-                return gameCenterMatchmakingQueues(__value0);
+                return betaTesters(__value0);
             }
-            else if (GameCenterMatchmakingRules is { } __value1 && gameCenterMatchmakingRules != null)
+            else if (Builds is { } __value1 && builds != null)
             {
-                return gameCenterMatchmakingRules(__value1);
-            }
-            else if (GameCenterMatchmakingTeams is { } __value2 && gameCenterMatchmakingTeams != null)
-            {
-                return gameCenterMatchmakingTeams(__value2);
+                return builds(__value1);
             }
 
             return default(TResult);
@@ -270,11 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingQueue>? gameCenterMatchmakingQueues = null,
+            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingRule>? gameCenterMatchmakingRules = null,
-
-            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingTeam>? gameCenterMatchmakingTeams = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -282,17 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterMatchmakingQueues is { } __value0)
+            if (BetaTesters is { } __value0)
             {
-                gameCenterMatchmakingQueues?.Invoke(__value0);
+                betaTesters?.Invoke(__value0);
             }
-            else if (GameCenterMatchmakingRules is { } __value1)
+            else if (Builds is { } __value1)
             {
-                gameCenterMatchmakingRules?.Invoke(__value1);
-            }
-            else if (GameCenterMatchmakingTeams is { } __value2)
-            {
-                gameCenterMatchmakingTeams?.Invoke(__value2);
+                builds?.Invoke(__value1);
             }
         }
 
@@ -300,9 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingQueue>? gameCenterMatchmakingQueues = null,
-            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingRule>? gameCenterMatchmakingRules = null,
-            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingTeam>? gameCenterMatchmakingTeams = null,
+            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -310,17 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterMatchmakingQueues is { } __value0)
+            if (BetaTesters is { } __value0)
             {
-                gameCenterMatchmakingQueues?.Invoke(__value0);
+                betaTesters?.Invoke(__value0);
             }
-            else if (GameCenterMatchmakingRules is { } __value1)
+            else if (Builds is { } __value1)
             {
-                gameCenterMatchmakingRules?.Invoke(__value1);
-            }
-            else if (GameCenterMatchmakingTeams is { } __value2)
-            {
-                gameCenterMatchmakingTeams?.Invoke(__value2);
+                builds?.Invoke(__value1);
             }
         }
 
@@ -331,12 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                GameCenterMatchmakingQueues,
-                typeof(global::AppStoreConnect.GameCenterMatchmakingQueue),
-                GameCenterMatchmakingRules,
-                typeof(global::AppStoreConnect.GameCenterMatchmakingRule),
-                GameCenterMatchmakingTeams,
-                typeof(global::AppStoreConnect.GameCenterMatchmakingTeam),
+                BetaTesters,
+                typeof(global::AppStoreConnect.BetaTester),
+                Builds,
+                typeof(global::AppStoreConnect.Build),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -353,9 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem136 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterMatchmakingQueue?>.Default.Equals(GameCenterMatchmakingQueues, other.GameCenterMatchmakingQueues) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterMatchmakingRule?>.Default.Equals(GameCenterMatchmakingRules, other.GameCenterMatchmakingRules) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterMatchmakingTeam?>.Default.Equals(GameCenterMatchmakingTeams, other.GameCenterMatchmakingTeams)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaTester?>.Default.Equals(BetaTesters, other.BetaTesters) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
                 ;
         }
 

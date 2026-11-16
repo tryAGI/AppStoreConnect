@@ -12,156 +12,220 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionPromotionalOfferResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AlternativeDistributionPackageVersionsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionPromotionalOfferPrice? SubscriptionPromotionalOfferPrices { get; init; }
+        public global::AppStoreConnect.AlternativeDistributionPackageDelta? AlternativeDistributionPackageDeltas { get; init; }
 #else
-        public global::AppStoreConnect.SubscriptionPromotionalOfferPrice? SubscriptionPromotionalOfferPrices { get; }
+        public global::AppStoreConnect.AlternativeDistributionPackageDelta? AlternativeDistributionPackageDeltas { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionPromotionalOfferPrices))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AlternativeDistributionPackageDeltas))]
 #endif
-        public bool IsSubscriptionPromotionalOfferPrices => SubscriptionPromotionalOfferPrices != null;
+        public bool IsAlternativeDistributionPackageDeltas => AlternativeDistributionPackageDeltas != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptionPromotionalOfferPrices(
+        public bool TryPickAlternativeDistributionPackageDeltas(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.SubscriptionPromotionalOfferPrice? value)
+            out global::AppStoreConnect.AlternativeDistributionPackageDelta? value)
         {
-            value = SubscriptionPromotionalOfferPrices;
-            return IsSubscriptionPromotionalOfferPrices;
+            value = AlternativeDistributionPackageDeltas;
+            return IsAlternativeDistributionPackageDeltas;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionPromotionalOfferPrice PickSubscriptionPromotionalOfferPrices() => SubscriptionPromotionalOfferPrices is { } value
+        public global::AppStoreConnect.AlternativeDistributionPackageDelta PickAlternativeDistributionPackageDeltas() => AlternativeDistributionPackageDeltas is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPromotionalOfferPrices' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AlternativeDistributionPackageDeltas' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
+        public global::AppStoreConnect.AlternativeDistributionPackageVariant? AlternativeDistributionPackageVariants { get; init; }
 #else
-        public global::AppStoreConnect.Subscription? Subscriptions { get; }
+        public global::AppStoreConnect.AlternativeDistributionPackageVariant? AlternativeDistributionPackageVariants { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AlternativeDistributionPackageVariants))]
 #endif
-        public bool IsSubscriptions => Subscriptions != null;
+        public bool IsAlternativeDistributionPackageVariants => AlternativeDistributionPackageVariants != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptions(
+        public bool TryPickAlternativeDistributionPackageVariants(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.Subscription? value)
+            out global::AppStoreConnect.AlternativeDistributionPackageVariant? value)
         {
-            value = Subscriptions;
-            return IsSubscriptions;
+            value = AlternativeDistributionPackageVariants;
+            return IsAlternativeDistributionPackageVariants;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
+        public global::AppStoreConnect.AlternativeDistributionPackageVariant PickAlternativeDistributionPackageVariants() => AlternativeDistributionPackageVariants is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem182(global::AppStoreConnect.SubscriptionPromotionalOfferPrice value) => new IncludedItem182((global::AppStoreConnect.SubscriptionPromotionalOfferPrice?)value);
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AlternativeDistributionPackageVariants' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionPromotionalOfferPrice?(IncludedItem182 @this) => @this.SubscriptionPromotionalOfferPrices;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AlternativeDistributionPackage? AlternativeDistributionPackages { get; init; }
+#else
+        public global::AppStoreConnect.AlternativeDistributionPackage? AlternativeDistributionPackages { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem182(global::AppStoreConnect.SubscriptionPromotionalOfferPrice? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AlternativeDistributionPackages))]
+#endif
+        public bool IsAlternativeDistributionPackages => AlternativeDistributionPackages != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAlternativeDistributionPackages(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AlternativeDistributionPackage? value)
         {
-            SubscriptionPromotionalOfferPrices = value;
+            value = AlternativeDistributionPackages;
+            return IsAlternativeDistributionPackages;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem182 FromSubscriptionPromotionalOfferPrices(global::AppStoreConnect.SubscriptionPromotionalOfferPrice? value) => new IncludedItem182(value);
+        public global::AppStoreConnect.AlternativeDistributionPackage PickAlternativeDistributionPackages() => AlternativeDistributionPackages is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AlternativeDistributionPackages' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem182(global::AppStoreConnect.AlternativeDistributionPackageDelta value) => new IncludedItem182((global::AppStoreConnect.AlternativeDistributionPackageDelta?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem182(global::AppStoreConnect.Subscription value) => new IncludedItem182((global::AppStoreConnect.Subscription?)value);
+        public static implicit operator global::AppStoreConnect.AlternativeDistributionPackageDelta?(IncludedItem182 @this) => @this.AlternativeDistributionPackageDeltas;
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem182 @this) => @this.Subscriptions;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem182(global::AppStoreConnect.Subscription? value)
+        public IncludedItem182(global::AppStoreConnect.AlternativeDistributionPackageDelta? value)
         {
-            Subscriptions = value;
+            AlternativeDistributionPackageDeltas = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem182 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem182(value);
+        public static IncludedItem182 FromAlternativeDistributionPackageDeltas(global::AppStoreConnect.AlternativeDistributionPackageDelta? value) => new IncludedItem182(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem182(global::AppStoreConnect.AlternativeDistributionPackageVariant value) => new IncludedItem182((global::AppStoreConnect.AlternativeDistributionPackageVariant?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AlternativeDistributionPackageVariant?(IncludedItem182 @this) => @this.AlternativeDistributionPackageVariants;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem182(global::AppStoreConnect.AlternativeDistributionPackageVariant? value)
+        {
+            AlternativeDistributionPackageVariants = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem182 FromAlternativeDistributionPackageVariants(global::AppStoreConnect.AlternativeDistributionPackageVariant? value) => new IncludedItem182(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem182(global::AppStoreConnect.AlternativeDistributionPackage value) => new IncludedItem182((global::AppStoreConnect.AlternativeDistributionPackage?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AlternativeDistributionPackage?(IncludedItem182 @this) => @this.AlternativeDistributionPackages;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem182(global::AppStoreConnect.AlternativeDistributionPackage? value)
+        {
+            AlternativeDistributionPackages = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem182 FromAlternativeDistributionPackages(global::AppStoreConnect.AlternativeDistributionPackage? value) => new IncludedItem182(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem182(
-            global::AppStoreConnect.SubscriptionPromotionalOfferResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.SubscriptionPromotionalOfferPrice? subscriptionPromotionalOfferPrices,
-            global::AppStoreConnect.Subscription? subscriptions
+            global::AppStoreConnect.AlternativeDistributionPackageVersionsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AlternativeDistributionPackageDelta? alternativeDistributionPackageDeltas,
+            global::AppStoreConnect.AlternativeDistributionPackageVariant? alternativeDistributionPackageVariants,
+            global::AppStoreConnect.AlternativeDistributionPackage? alternativeDistributionPackages
             )
         {
             Type = type;
 
-            SubscriptionPromotionalOfferPrices = subscriptionPromotionalOfferPrices;
-            Subscriptions = subscriptions;
+            AlternativeDistributionPackageDeltas = alternativeDistributionPackageDeltas;
+            AlternativeDistributionPackageVariants = alternativeDistributionPackageVariants;
+            AlternativeDistributionPackages = alternativeDistributionPackages;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Subscriptions as object ??
-            SubscriptionPromotionalOfferPrices as object
+            AlternativeDistributionPackages as object ??
+            AlternativeDistributionPackageVariants as object ??
+            AlternativeDistributionPackageDeltas as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            SubscriptionPromotionalOfferPrices?.ToString() ??
-            Subscriptions?.ToString()
+            AlternativeDistributionPackageDeltas?.ToString() ??
+            AlternativeDistributionPackageVariants?.ToString() ??
+            AlternativeDistributionPackages?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsSubscriptionPromotionalOfferPrices && !IsSubscriptions || !IsSubscriptionPromotionalOfferPrices && IsSubscriptions;
+            return IsAlternativeDistributionPackageDeltas && !IsAlternativeDistributionPackageVariants && !IsAlternativeDistributionPackages || !IsAlternativeDistributionPackageDeltas && IsAlternativeDistributionPackageVariants && !IsAlternativeDistributionPackages || !IsAlternativeDistributionPackageDeltas && !IsAlternativeDistributionPackageVariants && IsAlternativeDistributionPackages;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.SubscriptionPromotionalOfferPrice, TResult>? subscriptionPromotionalOfferPrices = null,
-            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
+            global::System.Func<global::AppStoreConnect.AlternativeDistributionPackageDelta, TResult>? alternativeDistributionPackageDeltas = null,
+            global::System.Func<global::AppStoreConnect.AlternativeDistributionPackageVariant, TResult>? alternativeDistributionPackageVariants = null,
+            global::System.Func<global::AppStoreConnect.AlternativeDistributionPackage, TResult>? alternativeDistributionPackages = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPromotionalOfferPrices is { } __value0 && subscriptionPromotionalOfferPrices != null)
+            if (AlternativeDistributionPackageDeltas is { } __value0 && alternativeDistributionPackageDeltas != null)
             {
-                return subscriptionPromotionalOfferPrices(__value0);
+                return alternativeDistributionPackageDeltas(__value0);
             }
-            else if (Subscriptions is { } __value1 && subscriptions != null)
+            else if (AlternativeDistributionPackageVariants is { } __value1 && alternativeDistributionPackageVariants != null)
             {
-                return subscriptions(__value1);
+                return alternativeDistributionPackageVariants(__value1);
+            }
+            else if (AlternativeDistributionPackages is { } __value2 && alternativeDistributionPackages != null)
+            {
+                return alternativeDistributionPackages(__value2);
             }
 
             return default(TResult);
@@ -201,9 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.SubscriptionPromotionalOfferPrice>? subscriptionPromotionalOfferPrices = null,
+            global::System.Action<global::AppStoreConnect.AlternativeDistributionPackageDelta>? alternativeDistributionPackageDeltas = null,
 
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
+            global::System.Action<global::AppStoreConnect.AlternativeDistributionPackageVariant>? alternativeDistributionPackageVariants = null,
+
+            global::System.Action<global::AppStoreConnect.AlternativeDistributionPackage>? alternativeDistributionPackages = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPromotionalOfferPrices is { } __value0)
+            if (AlternativeDistributionPackageDeltas is { } __value0)
             {
-                subscriptionPromotionalOfferPrices?.Invoke(__value0);
+                alternativeDistributionPackageDeltas?.Invoke(__value0);
             }
-            else if (Subscriptions is { } __value1)
+            else if (AlternativeDistributionPackageVariants is { } __value1)
             {
-                subscriptions?.Invoke(__value1);
+                alternativeDistributionPackageVariants?.Invoke(__value1);
+            }
+            else if (AlternativeDistributionPackages is { } __value2)
+            {
+                alternativeDistributionPackages?.Invoke(__value2);
             }
         }
 
@@ -225,8 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.SubscriptionPromotionalOfferPrice>? subscriptionPromotionalOfferPrices = null,
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
+            global::System.Action<global::AppStoreConnect.AlternativeDistributionPackageDelta>? alternativeDistributionPackageDeltas = null,
+            global::System.Action<global::AppStoreConnect.AlternativeDistributionPackageVariant>? alternativeDistributionPackageVariants = null,
+            global::System.Action<global::AppStoreConnect.AlternativeDistributionPackage>? alternativeDistributionPackages = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPromotionalOfferPrices is { } __value0)
+            if (AlternativeDistributionPackageDeltas is { } __value0)
             {
-                subscriptionPromotionalOfferPrices?.Invoke(__value0);
+                alternativeDistributionPackageDeltas?.Invoke(__value0);
             }
-            else if (Subscriptions is { } __value1)
+            else if (AlternativeDistributionPackageVariants is { } __value1)
             {
-                subscriptions?.Invoke(__value1);
+                alternativeDistributionPackageVariants?.Invoke(__value1);
+            }
+            else if (AlternativeDistributionPackages is { } __value2)
+            {
+                alternativeDistributionPackages?.Invoke(__value2);
             }
         }
 
@@ -251,10 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                SubscriptionPromotionalOfferPrices,
-                typeof(global::AppStoreConnect.SubscriptionPromotionalOfferPrice),
-                Subscriptions,
-                typeof(global::AppStoreConnect.Subscription),
+                AlternativeDistributionPackageDeltas,
+                typeof(global::AppStoreConnect.AlternativeDistributionPackageDelta),
+                AlternativeDistributionPackageVariants,
+                typeof(global::AppStoreConnect.AlternativeDistributionPackageVariant),
+                AlternativeDistributionPackages,
+                typeof(global::AppStoreConnect.AlternativeDistributionPackage),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem182 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionPromotionalOfferPrice?>.Default.Equals(SubscriptionPromotionalOfferPrices, other.SubscriptionPromotionalOfferPrices) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AlternativeDistributionPackageDelta?>.Default.Equals(AlternativeDistributionPackageDeltas, other.AlternativeDistributionPackageDeltas) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AlternativeDistributionPackageVariant?>.Default.Equals(AlternativeDistributionPackageVariants, other.AlternativeDistributionPackageVariants) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AlternativeDistributionPackage?>.Default.Equals(AlternativeDistributionPackages, other.AlternativeDistributionPackages)
                 ;
         }
 

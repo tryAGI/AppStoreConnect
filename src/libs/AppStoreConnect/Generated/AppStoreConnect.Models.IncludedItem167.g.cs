@@ -12,156 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmRepositoriesResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.GameCenterAchievementLocalizationsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.ScmGitReference? ScmGitReferences { get; init; }
+        public global::AppStoreConnect.GameCenterAchievementImage? GameCenterAchievementImages { get; init; }
 #else
-        public global::AppStoreConnect.ScmGitReference? ScmGitReferences { get; }
+        public global::AppStoreConnect.GameCenterAchievementImage? GameCenterAchievementImages { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmGitReferences))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterAchievementImages))]
 #endif
-        public bool IsScmGitReferences => ScmGitReferences != null;
+        public bool IsGameCenterAchievementImages => GameCenterAchievementImages != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickScmGitReferences(
+        public bool TryPickGameCenterAchievementImages(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.ScmGitReference? value)
+            out global::AppStoreConnect.GameCenterAchievementImage? value)
         {
-            value = ScmGitReferences;
-            return IsScmGitReferences;
+            value = GameCenterAchievementImages;
+            return IsGameCenterAchievementImages;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmGitReference PickScmGitReferences() => ScmGitReferences is { } value
+        public global::AppStoreConnect.GameCenterAchievementImage PickGameCenterAchievementImages() => GameCenterAchievementImages is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'ScmGitReferences' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAchievementImages' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.ScmProvider? ScmProviders { get; init; }
+        public global::AppStoreConnect.GameCenterAchievement? GameCenterAchievements { get; init; }
 #else
-        public global::AppStoreConnect.ScmProvider? ScmProviders { get; }
+        public global::AppStoreConnect.GameCenterAchievement? GameCenterAchievements { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmProviders))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterAchievements))]
 #endif
-        public bool IsScmProviders => ScmProviders != null;
+        public bool IsGameCenterAchievements => GameCenterAchievements != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickScmProviders(
+        public bool TryPickGameCenterAchievements(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.ScmProvider? value)
+            out global::AppStoreConnect.GameCenterAchievement? value)
         {
-            value = ScmProviders;
-            return IsScmProviders;
+            value = GameCenterAchievements;
+            return IsGameCenterAchievements;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmProvider PickScmProviders() => ScmProviders is { } value
+        public global::AppStoreConnect.GameCenterAchievement PickGameCenterAchievements() => GameCenterAchievements is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'ScmProviders' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAchievements' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem167(global::AppStoreConnect.ScmGitReference value) => new IncludedItem167((global::AppStoreConnect.ScmGitReference?)value);
+        public static implicit operator IncludedItem167(global::AppStoreConnect.GameCenterAchievementImage value) => new IncludedItem167((global::AppStoreConnect.GameCenterAchievementImage?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.ScmGitReference?(IncludedItem167 @this) => @this.ScmGitReferences;
+        public static implicit operator global::AppStoreConnect.GameCenterAchievementImage?(IncludedItem167 @this) => @this.GameCenterAchievementImages;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem167(global::AppStoreConnect.ScmGitReference? value)
+        public IncludedItem167(global::AppStoreConnect.GameCenterAchievementImage? value)
         {
-            ScmGitReferences = value;
+            GameCenterAchievementImages = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem167 FromScmGitReferences(global::AppStoreConnect.ScmGitReference? value) => new IncludedItem167(value);
+        public static IncludedItem167 FromGameCenterAchievementImages(global::AppStoreConnect.GameCenterAchievementImage? value) => new IncludedItem167(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem167(global::AppStoreConnect.ScmProvider value) => new IncludedItem167((global::AppStoreConnect.ScmProvider?)value);
+        public static implicit operator IncludedItem167(global::AppStoreConnect.GameCenterAchievement value) => new IncludedItem167((global::AppStoreConnect.GameCenterAchievement?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.ScmProvider?(IncludedItem167 @this) => @this.ScmProviders;
+        public static implicit operator global::AppStoreConnect.GameCenterAchievement?(IncludedItem167 @this) => @this.GameCenterAchievements;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem167(global::AppStoreConnect.ScmProvider? value)
+        public IncludedItem167(global::AppStoreConnect.GameCenterAchievement? value)
         {
-            ScmProviders = value;
+            GameCenterAchievements = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem167 FromScmProviders(global::AppStoreConnect.ScmProvider? value) => new IncludedItem167(value);
+        public static IncludedItem167 FromGameCenterAchievements(global::AppStoreConnect.GameCenterAchievement? value) => new IncludedItem167(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem167(
-            global::AppStoreConnect.ScmRepositoriesResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.ScmGitReference? scmGitReferences,
-            global::AppStoreConnect.ScmProvider? scmProviders
+            global::AppStoreConnect.GameCenterAchievementLocalizationsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.GameCenterAchievementImage? gameCenterAchievementImages,
+            global::AppStoreConnect.GameCenterAchievement? gameCenterAchievements
             )
         {
             Type = type;
 
-            ScmGitReferences = scmGitReferences;
-            ScmProviders = scmProviders;
+            GameCenterAchievementImages = gameCenterAchievementImages;
+            GameCenterAchievements = gameCenterAchievements;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            ScmProviders as object ??
-            ScmGitReferences as object
+            GameCenterAchievements as object ??
+            GameCenterAchievementImages as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            ScmGitReferences?.ToString() ??
-            ScmProviders?.ToString()
+            GameCenterAchievementImages?.ToString() ??
+            GameCenterAchievements?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsScmGitReferences && !IsScmProviders || !IsScmGitReferences && IsScmProviders;
+            return IsGameCenterAchievementImages && !IsGameCenterAchievements || !IsGameCenterAchievementImages && IsGameCenterAchievements;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.ScmGitReference, TResult>? scmGitReferences = null,
-            global::System.Func<global::AppStoreConnect.ScmProvider, TResult>? scmProviders = null,
+            global::System.Func<global::AppStoreConnect.GameCenterAchievementImage, TResult>? gameCenterAchievementImages = null,
+            global::System.Func<global::AppStoreConnect.GameCenterAchievement, TResult>? gameCenterAchievements = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (ScmGitReferences is { } __value0 && scmGitReferences != null)
+            if (GameCenterAchievementImages is { } __value0 && gameCenterAchievementImages != null)
             {
-                return scmGitReferences(__value0);
+                return gameCenterAchievementImages(__value0);
             }
-            else if (ScmProviders is { } __value1 && scmProviders != null)
+            else if (GameCenterAchievements is { } __value1 && gameCenterAchievements != null)
             {
-                return scmProviders(__value1);
+                return gameCenterAchievements(__value1);
             }
 
             return default(TResult);
@@ -201,9 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.ScmGitReference>? scmGitReferences = null,
+            global::System.Action<global::AppStoreConnect.GameCenterAchievementImage>? gameCenterAchievementImages = null,
 
-            global::System.Action<global::AppStoreConnect.ScmProvider>? scmProviders = null,
+            global::System.Action<global::AppStoreConnect.GameCenterAchievement>? gameCenterAchievements = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (ScmGitReferences is { } __value0)
+            if (GameCenterAchievementImages is { } __value0)
             {
-                scmGitReferences?.Invoke(__value0);
+                gameCenterAchievementImages?.Invoke(__value0);
             }
-            else if (ScmProviders is { } __value1)
+            else if (GameCenterAchievements is { } __value1)
             {
-                scmProviders?.Invoke(__value1);
+                gameCenterAchievements?.Invoke(__value1);
             }
         }
 
@@ -225,8 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.ScmGitReference>? scmGitReferences = null,
-            global::System.Action<global::AppStoreConnect.ScmProvider>? scmProviders = null,
+            global::System.Action<global::AppStoreConnect.GameCenterAchievementImage>? gameCenterAchievementImages = null,
+            global::System.Action<global::AppStoreConnect.GameCenterAchievement>? gameCenterAchievements = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (ScmGitReferences is { } __value0)
+            if (GameCenterAchievementImages is { } __value0)
             {
-                scmGitReferences?.Invoke(__value0);
+                gameCenterAchievementImages?.Invoke(__value0);
             }
-            else if (ScmProviders is { } __value1)
+            else if (GameCenterAchievements is { } __value1)
             {
-                scmProviders?.Invoke(__value1);
+                gameCenterAchievements?.Invoke(__value1);
             }
         }
 
@@ -251,10 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                ScmGitReferences,
-                typeof(global::AppStoreConnect.ScmGitReference),
-                ScmProviders,
-                typeof(global::AppStoreConnect.ScmProvider),
+                GameCenterAchievementImages,
+                typeof(global::AppStoreConnect.GameCenterAchievementImage),
+                GameCenterAchievements,
+                typeof(global::AppStoreConnect.GameCenterAchievement),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem167 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmGitReference?>.Default.Equals(ScmGitReferences, other.ScmGitReferences) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmProvider?>.Default.Equals(ScmProviders, other.ScmProviders)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterAchievementImage?>.Default.Equals(GameCenterAchievementImages, other.GameCenterAchievementImages) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterAchievement?>.Default.Equals(GameCenterAchievements, other.GameCenterAchievements)
                 ;
         }
 

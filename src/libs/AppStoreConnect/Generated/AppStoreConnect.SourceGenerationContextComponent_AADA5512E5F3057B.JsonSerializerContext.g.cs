@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.WebhookPingCreateRequestDataRelationshipsWebhookDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1305.Create_WebhookPingCreateRequestDataRelationshipsWebhookDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1304.Create_WebhookPingCreateRequestDataRelationshipsWebhookDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.WebhookPingCreateRequestDataRelationshipsWebhookDataType?))
                 {

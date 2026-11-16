@@ -18,7 +18,7 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("eventTypes")]
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.WebhookEventType2>? EventTypes { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.WebhookEventType>? EventTypes { get; set; }
 
         /// <summary>
         ///
@@ -57,7 +57,7 @@ namespace AppStoreConnect
 #endif
         public WebhookUpdateRequestDataAttributes(
             bool? enabled,
-            global::System.Collections.Generic.IList<global::AppStoreConnect.WebhookEventType2>? eventTypes,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.WebhookEventType>? eventTypes,
             string? name,
             string? secret,
             string? url)

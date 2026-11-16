@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.NominationUpdateRequestDataRelationshipsRelatedAppsDataItemType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0488.Create_NominationUpdateRequestDataRelationshipsRelatedAppsDataItemType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0487.Create_NominationUpdateRequestDataRelationshipsRelatedAppsDataItemType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.NominationUpdateRequestDataRelationshipsRelatedAppsDataItemType?))
                 {

@@ -12,220 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseVersionResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.SubscriptionPromotionalOffersResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.InAppPurchaseImageV2? InAppPurchaseImages { get; init; }
+        public global::AppStoreConnect.SubscriptionPromotionalOfferPrice? SubscriptionPromotionalOfferPrices { get; init; }
 #else
-        public global::AppStoreConnect.InAppPurchaseImageV2? InAppPurchaseImages { get; }
+        public global::AppStoreConnect.SubscriptionPromotionalOfferPrice? SubscriptionPromotionalOfferPrices { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseImages))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionPromotionalOfferPrices))]
 #endif
-        public bool IsInAppPurchaseImages => InAppPurchaseImages != null;
+        public bool IsSubscriptionPromotionalOfferPrices => SubscriptionPromotionalOfferPrices != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickInAppPurchaseImages(
+        public bool TryPickSubscriptionPromotionalOfferPrices(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.InAppPurchaseImageV2? value)
+            out global::AppStoreConnect.SubscriptionPromotionalOfferPrice? value)
         {
-            value = InAppPurchaseImages;
-            return IsInAppPurchaseImages;
+            value = SubscriptionPromotionalOfferPrices;
+            return IsSubscriptionPromotionalOfferPrices;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseImageV2 PickInAppPurchaseImages() => InAppPurchaseImages is { } value
+        public global::AppStoreConnect.SubscriptionPromotionalOfferPrice PickSubscriptionPromotionalOfferPrices() => SubscriptionPromotionalOfferPrices is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseImages' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPromotionalOfferPrices' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.InAppPurchaseLocalizationV2? InAppPurchaseLocalizations { get; init; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
 #else
-        public global::AppStoreConnect.InAppPurchaseLocalizationV2? InAppPurchaseLocalizations { get; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseLocalizations))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
 #endif
-        public bool IsInAppPurchaseLocalizations => InAppPurchaseLocalizations != null;
+        public bool IsSubscriptions => Subscriptions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickInAppPurchaseLocalizations(
+        public bool TryPickSubscriptions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.InAppPurchaseLocalizationV2? value)
+            out global::AppStoreConnect.Subscription? value)
         {
-            value = InAppPurchaseLocalizations;
-            return IsInAppPurchaseLocalizations;
+            value = Subscriptions;
+            return IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseLocalizationV2 PickInAppPurchaseLocalizations() => InAppPurchaseLocalizations is { } value
+        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseLocalizations' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem145(global::AppStoreConnect.SubscriptionPromotionalOfferPrice value) => new IncludedItem145((global::AppStoreConnect.SubscriptionPromotionalOfferPrice?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.InAppPurchaseV2? InAppPurchases { get; init; }
-#else
-        public global::AppStoreConnect.InAppPurchaseV2? InAppPurchases { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.SubscriptionPromotionalOfferPrice?(IncludedItem145 @this) => @this.SubscriptionPromotionalOfferPrices;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchases))]
-#endif
-        public bool IsInAppPurchases => InAppPurchases != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickInAppPurchases(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.InAppPurchaseV2? value)
+        public IncludedItem145(global::AppStoreConnect.SubscriptionPromotionalOfferPrice? value)
         {
-            value = InAppPurchases;
-            return IsInAppPurchases;
+            SubscriptionPromotionalOfferPrices = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseV2 PickInAppPurchases() => InAppPurchases is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchases' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem145(global::AppStoreConnect.InAppPurchaseImageV2 value) => new IncludedItem145((global::AppStoreConnect.InAppPurchaseImageV2?)value);
+        public static IncludedItem145 FromSubscriptionPromotionalOfferPrices(global::AppStoreConnect.SubscriptionPromotionalOfferPrice? value) => new IncludedItem145(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.InAppPurchaseImageV2?(IncludedItem145 @this) => @this.InAppPurchaseImages;
+        public static implicit operator IncludedItem145(global::AppStoreConnect.Subscription value) => new IncludedItem145((global::AppStoreConnect.Subscription?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem145(global::AppStoreConnect.InAppPurchaseImageV2? value)
+        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem145 @this) => @this.Subscriptions;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem145(global::AppStoreConnect.Subscription? value)
         {
-            InAppPurchaseImages = value;
+            Subscriptions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem145 FromInAppPurchaseImages(global::AppStoreConnect.InAppPurchaseImageV2? value) => new IncludedItem145(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem145(global::AppStoreConnect.InAppPurchaseLocalizationV2 value) => new IncludedItem145((global::AppStoreConnect.InAppPurchaseLocalizationV2?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.InAppPurchaseLocalizationV2?(IncludedItem145 @this) => @this.InAppPurchaseLocalizations;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem145(global::AppStoreConnect.InAppPurchaseLocalizationV2? value)
-        {
-            InAppPurchaseLocalizations = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem145 FromInAppPurchaseLocalizations(global::AppStoreConnect.InAppPurchaseLocalizationV2? value) => new IncludedItem145(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem145(global::AppStoreConnect.InAppPurchaseV2 value) => new IncludedItem145((global::AppStoreConnect.InAppPurchaseV2?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.InAppPurchaseV2?(IncludedItem145 @this) => @this.InAppPurchases;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem145(global::AppStoreConnect.InAppPurchaseV2? value)
-        {
-            InAppPurchases = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem145 FromInAppPurchases(global::AppStoreConnect.InAppPurchaseV2? value) => new IncludedItem145(value);
+        public static IncludedItem145 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem145(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem145(
-            global::AppStoreConnect.InAppPurchaseVersionResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.InAppPurchaseImageV2? inAppPurchaseImages,
-            global::AppStoreConnect.InAppPurchaseLocalizationV2? inAppPurchaseLocalizations,
-            global::AppStoreConnect.InAppPurchaseV2? inAppPurchases
+            global::AppStoreConnect.SubscriptionPromotionalOffersResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.SubscriptionPromotionalOfferPrice? subscriptionPromotionalOfferPrices,
+            global::AppStoreConnect.Subscription? subscriptions
             )
         {
             Type = type;
 
-            InAppPurchaseImages = inAppPurchaseImages;
-            InAppPurchaseLocalizations = inAppPurchaseLocalizations;
-            InAppPurchases = inAppPurchases;
+            SubscriptionPromotionalOfferPrices = subscriptionPromotionalOfferPrices;
+            Subscriptions = subscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            InAppPurchases as object ??
-            InAppPurchaseLocalizations as object ??
-            InAppPurchaseImages as object
+            Subscriptions as object ??
+            SubscriptionPromotionalOfferPrices as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            InAppPurchaseImages?.ToString() ??
-            InAppPurchaseLocalizations?.ToString() ??
-            InAppPurchases?.ToString()
+            SubscriptionPromotionalOfferPrices?.ToString() ??
+            Subscriptions?.ToString()
             ;
 
         /// <summary>
@@ -233,16 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsInAppPurchaseImages && !IsInAppPurchaseLocalizations && !IsInAppPurchases || !IsInAppPurchaseImages && IsInAppPurchaseLocalizations && !IsInAppPurchases || !IsInAppPurchaseImages && !IsInAppPurchaseLocalizations && IsInAppPurchases;
+            return IsSubscriptionPromotionalOfferPrices && !IsSubscriptions || !IsSubscriptionPromotionalOfferPrices && IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.InAppPurchaseImageV2, TResult>? inAppPurchaseImages = null,
-            global::System.Func<global::AppStoreConnect.InAppPurchaseLocalizationV2, TResult>? inAppPurchaseLocalizations = null,
-            global::System.Func<global::AppStoreConnect.InAppPurchaseV2, TResult>? inAppPurchases = null,
+            global::System.Func<global::AppStoreConnect.SubscriptionPromotionalOfferPrice, TResult>? subscriptionPromotionalOfferPrices = null,
+            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -250,17 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (InAppPurchaseImages is { } __value0 && inAppPurchaseImages != null)
+            if (SubscriptionPromotionalOfferPrices is { } __value0 && subscriptionPromotionalOfferPrices != null)
             {
-                return inAppPurchaseImages(__value0);
+                return subscriptionPromotionalOfferPrices(__value0);
             }
-            else if (InAppPurchaseLocalizations is { } __value1 && inAppPurchaseLocalizations != null)
+            else if (Subscriptions is { } __value1 && subscriptions != null)
             {
-                return inAppPurchaseLocalizations(__value1);
-            }
-            else if (InAppPurchases is { } __value2 && inAppPurchases != null)
-            {
-                return inAppPurchases(__value2);
+                return subscriptions(__value1);
             }
 
             return default(TResult);
@@ -270,11 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.InAppPurchaseImageV2>? inAppPurchaseImages = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionPromotionalOfferPrice>? subscriptionPromotionalOfferPrices = null,
 
-            global::System.Action<global::AppStoreConnect.InAppPurchaseLocalizationV2>? inAppPurchaseLocalizations = null,
-
-            global::System.Action<global::AppStoreConnect.InAppPurchaseV2>? inAppPurchases = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -282,17 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (InAppPurchaseImages is { } __value0)
+            if (SubscriptionPromotionalOfferPrices is { } __value0)
             {
-                inAppPurchaseImages?.Invoke(__value0);
+                subscriptionPromotionalOfferPrices?.Invoke(__value0);
             }
-            else if (InAppPurchaseLocalizations is { } __value1)
+            else if (Subscriptions is { } __value1)
             {
-                inAppPurchaseLocalizations?.Invoke(__value1);
-            }
-            else if (InAppPurchases is { } __value2)
-            {
-                inAppPurchases?.Invoke(__value2);
+                subscriptions?.Invoke(__value1);
             }
         }
 
@@ -300,9 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.InAppPurchaseImageV2>? inAppPurchaseImages = null,
-            global::System.Action<global::AppStoreConnect.InAppPurchaseLocalizationV2>? inAppPurchaseLocalizations = null,
-            global::System.Action<global::AppStoreConnect.InAppPurchaseV2>? inAppPurchases = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionPromotionalOfferPrice>? subscriptionPromotionalOfferPrices = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -310,17 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (InAppPurchaseImages is { } __value0)
+            if (SubscriptionPromotionalOfferPrices is { } __value0)
             {
-                inAppPurchaseImages?.Invoke(__value0);
+                subscriptionPromotionalOfferPrices?.Invoke(__value0);
             }
-            else if (InAppPurchaseLocalizations is { } __value1)
+            else if (Subscriptions is { } __value1)
             {
-                inAppPurchaseLocalizations?.Invoke(__value1);
-            }
-            else if (InAppPurchases is { } __value2)
-            {
-                inAppPurchases?.Invoke(__value2);
+                subscriptions?.Invoke(__value1);
             }
         }
 
@@ -331,12 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                InAppPurchaseImages,
-                typeof(global::AppStoreConnect.InAppPurchaseImageV2),
-                InAppPurchaseLocalizations,
-                typeof(global::AppStoreConnect.InAppPurchaseLocalizationV2),
-                InAppPurchases,
-                typeof(global::AppStoreConnect.InAppPurchaseV2),
+                SubscriptionPromotionalOfferPrices,
+                typeof(global::AppStoreConnect.SubscriptionPromotionalOfferPrice),
+                Subscriptions,
+                typeof(global::AppStoreConnect.Subscription),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -353,9 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem145 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseImageV2?>.Default.Equals(InAppPurchaseImages, other.InAppPurchaseImages) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseLocalizationV2?>.Default.Equals(InAppPurchaseLocalizations, other.InAppPurchaseLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseV2?>.Default.Equals(InAppPurchases, other.InAppPurchases)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionPromotionalOfferPrice?>.Default.Equals(SubscriptionPromotionalOfferPrices, other.SubscriptionPromotionalOfferPrices) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions)
                 ;
         }
 

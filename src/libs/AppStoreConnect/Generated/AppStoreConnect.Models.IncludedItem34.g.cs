@@ -12,284 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppScreenshotSetResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.RetentionOfferResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations { get; init; }
+        public global::AppStoreConnect.RetentionOfferPrice? RetentionOfferPrices { get; init; }
 #else
-        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations { get; }
+        public global::AppStoreConnect.RetentionOfferPrice? RetentionOfferPrices { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageLocalizations))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RetentionOfferPrices))]
 #endif
-        public bool IsAppCustomProductPageLocalizations => AppCustomProductPageLocalizations != null;
+        public bool IsRetentionOfferPrices => RetentionOfferPrices != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppCustomProductPageLocalizations(
+        public bool TryPickRetentionOfferPrices(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppCustomProductPageLocalization? value)
+            out global::AppStoreConnect.RetentionOfferPrice? value)
         {
-            value = AppCustomProductPageLocalizations;
-            return IsAppCustomProductPageLocalizations;
+            value = RetentionOfferPrices;
+            return IsRetentionOfferPrices;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCustomProductPageLocalization PickAppCustomProductPageLocalizations() => AppCustomProductPageLocalizations is { } value
+        public global::AppStoreConnect.RetentionOfferPrice PickRetentionOfferPrices() => RetentionOfferPrices is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageLocalizations' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RetentionOfferPrices' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppScreenshot? AppScreenshots { get; init; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
 #else
-        public global::AppStoreConnect.AppScreenshot? AppScreenshots { get; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppScreenshots))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
 #endif
-        public bool IsAppScreenshots => AppScreenshots != null;
+        public bool IsSubscriptions => Subscriptions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppScreenshots(
+        public bool TryPickSubscriptions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppScreenshot? value)
+            out global::AppStoreConnect.Subscription? value)
         {
-            value = AppScreenshots;
-            return IsAppScreenshots;
+            value = Subscriptions;
+            return IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppScreenshot PickAppScreenshots() => AppScreenshots is { } value
+        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppScreenshots' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem34(global::AppStoreConnect.RetentionOfferPrice value) => new IncludedItem34((global::AppStoreConnect.RetentionOfferPrice?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? AppStoreVersionExperimentTreatmentLocalizations { get; init; }
-#else
-        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? AppStoreVersionExperimentTreatmentLocalizations { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.RetentionOfferPrice?(IncludedItem34 @this) => @this.RetentionOfferPrices;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperimentTreatmentLocalizations))]
-#endif
-        public bool IsAppStoreVersionExperimentTreatmentLocalizations => AppStoreVersionExperimentTreatmentLocalizations != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppStoreVersionExperimentTreatmentLocalizations(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? value)
+        public IncludedItem34(global::AppStoreConnect.RetentionOfferPrice? value)
         {
-            value = AppStoreVersionExperimentTreatmentLocalizations;
-            return IsAppStoreVersionExperimentTreatmentLocalizations;
+            RetentionOfferPrices = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization PickAppStoreVersionExperimentTreatmentLocalizations() => AppStoreVersionExperimentTreatmentLocalizations is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatmentLocalizations' but the value was {ToString()}.");
+        public static IncludedItem34 FromRetentionOfferPrices(global::AppStoreConnect.RetentionOfferPrice? value) => new IncludedItem34(value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersionLocalization? AppStoreVersionLocalizations { get; init; }
-#else
-        public global::AppStoreConnect.AppStoreVersionLocalization? AppStoreVersionLocalizations { get; }
-#endif
+        public static implicit operator IncludedItem34(global::AppStoreConnect.Subscription value) => new IncludedItem34((global::AppStoreConnect.Subscription?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionLocalizations))]
-#endif
-        public bool IsAppStoreVersionLocalizations => AppStoreVersionLocalizations != null;
+        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem34 @this) => @this.Subscriptions;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreVersionLocalizations(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppStoreVersionLocalization? value)
+        public IncludedItem34(global::AppStoreConnect.Subscription? value)
         {
-            value = AppStoreVersionLocalizations;
-            return IsAppStoreVersionLocalizations;
+            Subscriptions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionLocalization PickAppStoreVersionLocalizations() => AppStoreVersionLocalizations is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionLocalizations' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem34(global::AppStoreConnect.AppCustomProductPageLocalization value) => new IncludedItem34((global::AppStoreConnect.AppCustomProductPageLocalization?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppCustomProductPageLocalization?(IncludedItem34 @this) => @this.AppCustomProductPageLocalizations;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem34(global::AppStoreConnect.AppCustomProductPageLocalization? value)
-        {
-            AppCustomProductPageLocalizations = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem34 FromAppCustomProductPageLocalizations(global::AppStoreConnect.AppCustomProductPageLocalization? value) => new IncludedItem34(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem34(global::AppStoreConnect.AppScreenshot value) => new IncludedItem34((global::AppStoreConnect.AppScreenshot?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppScreenshot?(IncludedItem34 @this) => @this.AppScreenshots;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem34(global::AppStoreConnect.AppScreenshot? value)
-        {
-            AppScreenshots = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem34 FromAppScreenshots(global::AppStoreConnect.AppScreenshot? value) => new IncludedItem34(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem34(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization value) => new IncludedItem34((global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization?(IncludedItem34 @this) => @this.AppStoreVersionExperimentTreatmentLocalizations;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem34(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? value)
-        {
-            AppStoreVersionExperimentTreatmentLocalizations = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem34 FromAppStoreVersionExperimentTreatmentLocalizations(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? value) => new IncludedItem34(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem34(global::AppStoreConnect.AppStoreVersionLocalization value) => new IncludedItem34((global::AppStoreConnect.AppStoreVersionLocalization?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersionLocalization?(IncludedItem34 @this) => @this.AppStoreVersionLocalizations;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem34(global::AppStoreConnect.AppStoreVersionLocalization? value)
-        {
-            AppStoreVersionLocalizations = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem34 FromAppStoreVersionLocalizations(global::AppStoreConnect.AppStoreVersionLocalization? value) => new IncludedItem34(value);
+        public static IncludedItem34 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem34(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem34(
-            global::AppStoreConnect.AppScreenshotSetResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppCustomProductPageLocalization? appCustomProductPageLocalizations,
-            global::AppStoreConnect.AppScreenshot? appScreenshots,
-            global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? appStoreVersionExperimentTreatmentLocalizations,
-            global::AppStoreConnect.AppStoreVersionLocalization? appStoreVersionLocalizations
+            global::AppStoreConnect.RetentionOfferResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.RetentionOfferPrice? retentionOfferPrices,
+            global::AppStoreConnect.Subscription? subscriptions
             )
         {
             Type = type;
 
-            AppCustomProductPageLocalizations = appCustomProductPageLocalizations;
-            AppScreenshots = appScreenshots;
-            AppStoreVersionExperimentTreatmentLocalizations = appStoreVersionExperimentTreatmentLocalizations;
-            AppStoreVersionLocalizations = appStoreVersionLocalizations;
+            RetentionOfferPrices = retentionOfferPrices;
+            Subscriptions = subscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            AppStoreVersionLocalizations as object ??
-            AppStoreVersionExperimentTreatmentLocalizations as object ??
-            AppScreenshots as object ??
-            AppCustomProductPageLocalizations as object
+            Subscriptions as object ??
+            RetentionOfferPrices as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppCustomProductPageLocalizations?.ToString() ??
-            AppScreenshots?.ToString() ??
-            AppStoreVersionExperimentTreatmentLocalizations?.ToString() ??
-            AppStoreVersionLocalizations?.ToString()
+            RetentionOfferPrices?.ToString() ??
+            Subscriptions?.ToString()
             ;
 
         /// <summary>
@@ -297,17 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppCustomProductPageLocalizations && !IsAppScreenshots && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations || !IsAppCustomProductPageLocalizations && IsAppScreenshots && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations || !IsAppCustomProductPageLocalizations && !IsAppScreenshots && IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations || !IsAppCustomProductPageLocalizations && !IsAppScreenshots && !IsAppStoreVersionExperimentTreatmentLocalizations && IsAppStoreVersionLocalizations;
+            return IsRetentionOfferPrices && !IsSubscriptions || !IsRetentionOfferPrices && IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppCustomProductPageLocalization, TResult>? appCustomProductPageLocalizations = null,
-            global::System.Func<global::AppStoreConnect.AppScreenshot, TResult>? appScreenshots = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization, TResult>? appStoreVersionExperimentTreatmentLocalizations = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersionLocalization, TResult>? appStoreVersionLocalizations = null,
+            global::System.Func<global::AppStoreConnect.RetentionOfferPrice, TResult>? retentionOfferPrices = null,
+            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -315,21 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations is { } __value0 && appCustomProductPageLocalizations != null)
+            if (RetentionOfferPrices is { } __value0 && retentionOfferPrices != null)
             {
-                return appCustomProductPageLocalizations(__value0);
+                return retentionOfferPrices(__value0);
             }
-            else if (AppScreenshots is { } __value1 && appScreenshots != null)
+            else if (Subscriptions is { } __value1 && subscriptions != null)
             {
-                return appScreenshots(__value1);
-            }
-            else if (AppStoreVersionExperimentTreatmentLocalizations is { } __value2 && appStoreVersionExperimentTreatmentLocalizations != null)
-            {
-                return appStoreVersionExperimentTreatmentLocalizations(__value2);
-            }
-            else if (AppStoreVersionLocalizations is { } __value3 && appStoreVersionLocalizations != null)
-            {
-                return appStoreVersionLocalizations(__value3);
+                return subscriptions(__value1);
             }
 
             return default(TResult);
@@ -339,13 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations = null,
+            global::System.Action<global::AppStoreConnect.RetentionOfferPrice>? retentionOfferPrices = null,
 
-            global::System.Action<global::AppStoreConnect.AppScreenshot>? appScreenshots = null,
-
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization>? appStoreVersionExperimentTreatmentLocalizations = null,
-
-            global::System.Action<global::AppStoreConnect.AppStoreVersionLocalization>? appStoreVersionLocalizations = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -353,21 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations is { } __value0)
+            if (RetentionOfferPrices is { } __value0)
             {
-                appCustomProductPageLocalizations?.Invoke(__value0);
+                retentionOfferPrices?.Invoke(__value0);
             }
-            else if (AppScreenshots is { } __value1)
+            else if (Subscriptions is { } __value1)
             {
-                appScreenshots?.Invoke(__value1);
-            }
-            else if (AppStoreVersionExperimentTreatmentLocalizations is { } __value2)
-            {
-                appStoreVersionExperimentTreatmentLocalizations?.Invoke(__value2);
-            }
-            else if (AppStoreVersionLocalizations is { } __value3)
-            {
-                appStoreVersionLocalizations?.Invoke(__value3);
+                subscriptions?.Invoke(__value1);
             }
         }
 
@@ -375,10 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations = null,
-            global::System.Action<global::AppStoreConnect.AppScreenshot>? appScreenshots = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization>? appStoreVersionExperimentTreatmentLocalizations = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersionLocalization>? appStoreVersionLocalizations = null,
+            global::System.Action<global::AppStoreConnect.RetentionOfferPrice>? retentionOfferPrices = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -386,21 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations is { } __value0)
+            if (RetentionOfferPrices is { } __value0)
             {
-                appCustomProductPageLocalizations?.Invoke(__value0);
+                retentionOfferPrices?.Invoke(__value0);
             }
-            else if (AppScreenshots is { } __value1)
+            else if (Subscriptions is { } __value1)
             {
-                appScreenshots?.Invoke(__value1);
-            }
-            else if (AppStoreVersionExperimentTreatmentLocalizations is { } __value2)
-            {
-                appStoreVersionExperimentTreatmentLocalizations?.Invoke(__value2);
-            }
-            else if (AppStoreVersionLocalizations is { } __value3)
-            {
-                appStoreVersionLocalizations?.Invoke(__value3);
+                subscriptions?.Invoke(__value1);
             }
         }
 
@@ -411,14 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppCustomProductPageLocalizations,
-                typeof(global::AppStoreConnect.AppCustomProductPageLocalization),
-                AppScreenshots,
-                typeof(global::AppStoreConnect.AppScreenshot),
-                AppStoreVersionExperimentTreatmentLocalizations,
-                typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization),
-                AppStoreVersionLocalizations,
-                typeof(global::AppStoreConnect.AppStoreVersionLocalization),
+                RetentionOfferPrices,
+                typeof(global::AppStoreConnect.RetentionOfferPrice),
+                Subscriptions,
+                typeof(global::AppStoreConnect.Subscription),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -435,10 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem34 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageLocalization?>.Default.Equals(AppCustomProductPageLocalizations, other.AppCustomProductPageLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppScreenshot?>.Default.Equals(AppScreenshots, other.AppScreenshots) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization?>.Default.Equals(AppStoreVersionExperimentTreatmentLocalizations, other.AppStoreVersionExperimentTreatmentLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionLocalization?>.Default.Equals(AppStoreVersionLocalizations, other.AppStoreVersionLocalizations)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RetentionOfferPrice?>.Default.Equals(RetentionOfferPrices, other.RetentionOfferPrices) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions)
                 ;
         }
 

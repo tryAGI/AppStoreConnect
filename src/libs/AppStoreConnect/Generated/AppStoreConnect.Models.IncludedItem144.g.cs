@@ -12,220 +12,220 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseVersionsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.SubscriptionIntroductoryOfferResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.InAppPurchaseImageV2? InAppPurchaseImages { get; init; }
+        public global::AppStoreConnect.SubscriptionPricePoint? SubscriptionPricePoints { get; init; }
 #else
-        public global::AppStoreConnect.InAppPurchaseImageV2? InAppPurchaseImages { get; }
+        public global::AppStoreConnect.SubscriptionPricePoint? SubscriptionPricePoints { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseImages))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionPricePoints))]
 #endif
-        public bool IsInAppPurchaseImages => InAppPurchaseImages != null;
+        public bool IsSubscriptionPricePoints => SubscriptionPricePoints != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickInAppPurchaseImages(
+        public bool TryPickSubscriptionPricePoints(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.InAppPurchaseImageV2? value)
+            out global::AppStoreConnect.SubscriptionPricePoint? value)
         {
-            value = InAppPurchaseImages;
-            return IsInAppPurchaseImages;
+            value = SubscriptionPricePoints;
+            return IsSubscriptionPricePoints;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseImageV2 PickInAppPurchaseImages() => InAppPurchaseImages is { } value
+        public global::AppStoreConnect.SubscriptionPricePoint PickSubscriptionPricePoints() => SubscriptionPricePoints is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseImages' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPricePoints' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.InAppPurchaseLocalizationV2? InAppPurchaseLocalizations { get; init; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
 #else
-        public global::AppStoreConnect.InAppPurchaseLocalizationV2? InAppPurchaseLocalizations { get; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseLocalizations))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
 #endif
-        public bool IsInAppPurchaseLocalizations => InAppPurchaseLocalizations != null;
+        public bool IsSubscriptions => Subscriptions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickInAppPurchaseLocalizations(
+        public bool TryPickSubscriptions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.InAppPurchaseLocalizationV2? value)
+            out global::AppStoreConnect.Subscription? value)
         {
-            value = InAppPurchaseLocalizations;
-            return IsInAppPurchaseLocalizations;
+            value = Subscriptions;
+            return IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseLocalizationV2 PickInAppPurchaseLocalizations() => InAppPurchaseLocalizations is { } value
+        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseLocalizations' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.InAppPurchaseV2? InAppPurchases { get; init; }
+        public global::AppStoreConnect.Territory? Territories { get; init; }
 #else
-        public global::AppStoreConnect.InAppPurchaseV2? InAppPurchases { get; }
+        public global::AppStoreConnect.Territory? Territories { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchases))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Territories))]
 #endif
-        public bool IsInAppPurchases => InAppPurchases != null;
+        public bool IsTerritories => Territories != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickInAppPurchases(
+        public bool TryPickTerritories(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.InAppPurchaseV2? value)
+            out global::AppStoreConnect.Territory? value)
         {
-            value = InAppPurchases;
-            return IsInAppPurchases;
+            value = Territories;
+            return IsTerritories;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.InAppPurchaseV2 PickInAppPurchases() => InAppPurchases is { } value
+        public global::AppStoreConnect.Territory PickTerritories() => Territories is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchases' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Territories' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem144(global::AppStoreConnect.InAppPurchaseImageV2 value) => new IncludedItem144((global::AppStoreConnect.InAppPurchaseImageV2?)value);
+        public static implicit operator IncludedItem144(global::AppStoreConnect.SubscriptionPricePoint value) => new IncludedItem144((global::AppStoreConnect.SubscriptionPricePoint?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.InAppPurchaseImageV2?(IncludedItem144 @this) => @this.InAppPurchaseImages;
+        public static implicit operator global::AppStoreConnect.SubscriptionPricePoint?(IncludedItem144 @this) => @this.SubscriptionPricePoints;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem144(global::AppStoreConnect.InAppPurchaseImageV2? value)
+        public IncludedItem144(global::AppStoreConnect.SubscriptionPricePoint? value)
         {
-            InAppPurchaseImages = value;
+            SubscriptionPricePoints = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem144 FromInAppPurchaseImages(global::AppStoreConnect.InAppPurchaseImageV2? value) => new IncludedItem144(value);
+        public static IncludedItem144 FromSubscriptionPricePoints(global::AppStoreConnect.SubscriptionPricePoint? value) => new IncludedItem144(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem144(global::AppStoreConnect.InAppPurchaseLocalizationV2 value) => new IncludedItem144((global::AppStoreConnect.InAppPurchaseLocalizationV2?)value);
+        public static implicit operator IncludedItem144(global::AppStoreConnect.Subscription value) => new IncludedItem144((global::AppStoreConnect.Subscription?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.InAppPurchaseLocalizationV2?(IncludedItem144 @this) => @this.InAppPurchaseLocalizations;
+        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem144 @this) => @this.Subscriptions;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem144(global::AppStoreConnect.InAppPurchaseLocalizationV2? value)
+        public IncludedItem144(global::AppStoreConnect.Subscription? value)
         {
-            InAppPurchaseLocalizations = value;
+            Subscriptions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem144 FromInAppPurchaseLocalizations(global::AppStoreConnect.InAppPurchaseLocalizationV2? value) => new IncludedItem144(value);
+        public static IncludedItem144 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem144(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem144(global::AppStoreConnect.InAppPurchaseV2 value) => new IncludedItem144((global::AppStoreConnect.InAppPurchaseV2?)value);
+        public static implicit operator IncludedItem144(global::AppStoreConnect.Territory value) => new IncludedItem144((global::AppStoreConnect.Territory?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.InAppPurchaseV2?(IncludedItem144 @this) => @this.InAppPurchases;
+        public static implicit operator global::AppStoreConnect.Territory?(IncludedItem144 @this) => @this.Territories;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem144(global::AppStoreConnect.InAppPurchaseV2? value)
+        public IncludedItem144(global::AppStoreConnect.Territory? value)
         {
-            InAppPurchases = value;
+            Territories = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem144 FromInAppPurchases(global::AppStoreConnect.InAppPurchaseV2? value) => new IncludedItem144(value);
+        public static IncludedItem144 FromTerritories(global::AppStoreConnect.Territory? value) => new IncludedItem144(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem144(
-            global::AppStoreConnect.InAppPurchaseVersionsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.InAppPurchaseImageV2? inAppPurchaseImages,
-            global::AppStoreConnect.InAppPurchaseLocalizationV2? inAppPurchaseLocalizations,
-            global::AppStoreConnect.InAppPurchaseV2? inAppPurchases
+            global::AppStoreConnect.SubscriptionIntroductoryOfferResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.SubscriptionPricePoint? subscriptionPricePoints,
+            global::AppStoreConnect.Subscription? subscriptions,
+            global::AppStoreConnect.Territory? territories
             )
         {
             Type = type;
 
-            InAppPurchaseImages = inAppPurchaseImages;
-            InAppPurchaseLocalizations = inAppPurchaseLocalizations;
-            InAppPurchases = inAppPurchases;
+            SubscriptionPricePoints = subscriptionPricePoints;
+            Subscriptions = subscriptions;
+            Territories = territories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            InAppPurchases as object ??
-            InAppPurchaseLocalizations as object ??
-            InAppPurchaseImages as object
+            Territories as object ??
+            Subscriptions as object ??
+            SubscriptionPricePoints as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            InAppPurchaseImages?.ToString() ??
-            InAppPurchaseLocalizations?.ToString() ??
-            InAppPurchases?.ToString()
+            SubscriptionPricePoints?.ToString() ??
+            Subscriptions?.ToString() ??
+            Territories?.ToString()
             ;
 
         /// <summary>
@@ -233,16 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsInAppPurchaseImages && !IsInAppPurchaseLocalizations && !IsInAppPurchases || !IsInAppPurchaseImages && IsInAppPurchaseLocalizations && !IsInAppPurchases || !IsInAppPurchaseImages && !IsInAppPurchaseLocalizations && IsInAppPurchases;
+            return IsSubscriptionPricePoints && !IsSubscriptions && !IsTerritories || !IsSubscriptionPricePoints && IsSubscriptions && !IsTerritories || !IsSubscriptionPricePoints && !IsSubscriptions && IsTerritories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.InAppPurchaseImageV2, TResult>? inAppPurchaseImages = null,
-            global::System.Func<global::AppStoreConnect.InAppPurchaseLocalizationV2, TResult>? inAppPurchaseLocalizations = null,
-            global::System.Func<global::AppStoreConnect.InAppPurchaseV2, TResult>? inAppPurchases = null,
+            global::System.Func<global::AppStoreConnect.SubscriptionPricePoint, TResult>? subscriptionPricePoints = null,
+            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
+            global::System.Func<global::AppStoreConnect.Territory, TResult>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (InAppPurchaseImages is { } __value0 && inAppPurchaseImages != null)
+            if (SubscriptionPricePoints is { } __value0 && subscriptionPricePoints != null)
             {
-                return inAppPurchaseImages(__value0);
+                return subscriptionPricePoints(__value0);
             }
-            else if (InAppPurchaseLocalizations is { } __value1 && inAppPurchaseLocalizations != null)
+            else if (Subscriptions is { } __value1 && subscriptions != null)
             {
-                return inAppPurchaseLocalizations(__value1);
+                return subscriptions(__value1);
             }
-            else if (InAppPurchases is { } __value2 && inAppPurchases != null)
+            else if (Territories is { } __value2 && territories != null)
             {
-                return inAppPurchases(__value2);
+                return territories(__value2);
             }
 
             return default(TResult);
@@ -270,11 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.InAppPurchaseImageV2>? inAppPurchaseImages = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionPricePoint>? subscriptionPricePoints = null,
 
-            global::System.Action<global::AppStoreConnect.InAppPurchaseLocalizationV2>? inAppPurchaseLocalizations = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
 
-            global::System.Action<global::AppStoreConnect.InAppPurchaseV2>? inAppPurchases = null,
+            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (InAppPurchaseImages is { } __value0)
+            if (SubscriptionPricePoints is { } __value0)
             {
-                inAppPurchaseImages?.Invoke(__value0);
+                subscriptionPricePoints?.Invoke(__value0);
             }
-            else if (InAppPurchaseLocalizations is { } __value1)
+            else if (Subscriptions is { } __value1)
             {
-                inAppPurchaseLocalizations?.Invoke(__value1);
+                subscriptions?.Invoke(__value1);
             }
-            else if (InAppPurchases is { } __value2)
+            else if (Territories is { } __value2)
             {
-                inAppPurchases?.Invoke(__value2);
+                territories?.Invoke(__value2);
             }
         }
 
@@ -300,9 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.InAppPurchaseImageV2>? inAppPurchaseImages = null,
-            global::System.Action<global::AppStoreConnect.InAppPurchaseLocalizationV2>? inAppPurchaseLocalizations = null,
-            global::System.Action<global::AppStoreConnect.InAppPurchaseV2>? inAppPurchases = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionPricePoint>? subscriptionPricePoints = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
+            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (InAppPurchaseImages is { } __value0)
+            if (SubscriptionPricePoints is { } __value0)
             {
-                inAppPurchaseImages?.Invoke(__value0);
+                subscriptionPricePoints?.Invoke(__value0);
             }
-            else if (InAppPurchaseLocalizations is { } __value1)
+            else if (Subscriptions is { } __value1)
             {
-                inAppPurchaseLocalizations?.Invoke(__value1);
+                subscriptions?.Invoke(__value1);
             }
-            else if (InAppPurchases is { } __value2)
+            else if (Territories is { } __value2)
             {
-                inAppPurchases?.Invoke(__value2);
+                territories?.Invoke(__value2);
             }
         }
 
@@ -331,12 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                InAppPurchaseImages,
-                typeof(global::AppStoreConnect.InAppPurchaseImageV2),
-                InAppPurchaseLocalizations,
-                typeof(global::AppStoreConnect.InAppPurchaseLocalizationV2),
-                InAppPurchases,
-                typeof(global::AppStoreConnect.InAppPurchaseV2),
+                SubscriptionPricePoints,
+                typeof(global::AppStoreConnect.SubscriptionPricePoint),
+                Subscriptions,
+                typeof(global::AppStoreConnect.Subscription),
+                Territories,
+                typeof(global::AppStoreConnect.Territory),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -353,9 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem144 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseImageV2?>.Default.Equals(InAppPurchaseImages, other.InAppPurchaseImages) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseLocalizationV2?>.Default.Equals(InAppPurchaseLocalizations, other.InAppPurchaseLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseV2?>.Default.Equals(InAppPurchases, other.InAppPurchases)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionPricePoint?>.Default.Equals(SubscriptionPricePoints, other.SubscriptionPricePoints) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Territory?>.Default.Equals(Territories, other.Territories)
                 ;
         }
 

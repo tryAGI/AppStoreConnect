@@ -12,284 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppScreenshotSetsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.CustomerReviewResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations { get; init; }
+        public global::AppStoreConnect.CustomerReviewResponseV1? CustomerReviewResponses { get; init; }
 #else
-        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations { get; }
+        public global::AppStoreConnect.CustomerReviewResponseV1? CustomerReviewResponses { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageLocalizations))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CustomerReviewResponses))]
 #endif
-        public bool IsAppCustomProductPageLocalizations => AppCustomProductPageLocalizations != null;
+        public bool IsCustomerReviewResponses => CustomerReviewResponses != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppCustomProductPageLocalizations(
+        public bool TryPickCustomerReviewResponses(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppCustomProductPageLocalization? value)
+            out global::AppStoreConnect.CustomerReviewResponseV1? value)
         {
-            value = AppCustomProductPageLocalizations;
-            return IsAppCustomProductPageLocalizations;
+            value = CustomerReviewResponses;
+            return IsCustomerReviewResponses;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCustomProductPageLocalization PickAppCustomProductPageLocalizations() => AppCustomProductPageLocalizations is { } value
+        public global::AppStoreConnect.CustomerReviewResponseV1 PickCustomerReviewResponses() => CustomerReviewResponses is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageLocalizations' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CustomerReviewResponses' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppScreenshot? AppScreenshots { get; init; }
+        public global::AppStoreConnect.Territory? Territories { get; init; }
 #else
-        public global::AppStoreConnect.AppScreenshot? AppScreenshots { get; }
+        public global::AppStoreConnect.Territory? Territories { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppScreenshots))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Territories))]
 #endif
-        public bool IsAppScreenshots => AppScreenshots != null;
+        public bool IsTerritories => Territories != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppScreenshots(
+        public bool TryPickTerritories(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppScreenshot? value)
+            out global::AppStoreConnect.Territory? value)
         {
-            value = AppScreenshots;
-            return IsAppScreenshots;
+            value = Territories;
+            return IsTerritories;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppScreenshot PickAppScreenshots() => AppScreenshots is { } value
+        public global::AppStoreConnect.Territory PickTerritories() => Territories is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppScreenshots' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Territories' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem33(global::AppStoreConnect.CustomerReviewResponseV1 value) => new IncludedItem33((global::AppStoreConnect.CustomerReviewResponseV1?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? AppStoreVersionExperimentTreatmentLocalizations { get; init; }
-#else
-        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? AppStoreVersionExperimentTreatmentLocalizations { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.CustomerReviewResponseV1?(IncludedItem33 @this) => @this.CustomerReviewResponses;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperimentTreatmentLocalizations))]
-#endif
-        public bool IsAppStoreVersionExperimentTreatmentLocalizations => AppStoreVersionExperimentTreatmentLocalizations != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppStoreVersionExperimentTreatmentLocalizations(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? value)
+        public IncludedItem33(global::AppStoreConnect.CustomerReviewResponseV1? value)
         {
-            value = AppStoreVersionExperimentTreatmentLocalizations;
-            return IsAppStoreVersionExperimentTreatmentLocalizations;
+            CustomerReviewResponses = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization PickAppStoreVersionExperimentTreatmentLocalizations() => AppStoreVersionExperimentTreatmentLocalizations is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatmentLocalizations' but the value was {ToString()}.");
+        public static IncludedItem33 FromCustomerReviewResponses(global::AppStoreConnect.CustomerReviewResponseV1? value) => new IncludedItem33(value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersionLocalization? AppStoreVersionLocalizations { get; init; }
-#else
-        public global::AppStoreConnect.AppStoreVersionLocalization? AppStoreVersionLocalizations { get; }
-#endif
+        public static implicit operator IncludedItem33(global::AppStoreConnect.Territory value) => new IncludedItem33((global::AppStoreConnect.Territory?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionLocalizations))]
-#endif
-        public bool IsAppStoreVersionLocalizations => AppStoreVersionLocalizations != null;
+        public static implicit operator global::AppStoreConnect.Territory?(IncludedItem33 @this) => @this.Territories;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreVersionLocalizations(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppStoreVersionLocalization? value)
+        public IncludedItem33(global::AppStoreConnect.Territory? value)
         {
-            value = AppStoreVersionLocalizations;
-            return IsAppStoreVersionLocalizations;
+            Territories = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionLocalization PickAppStoreVersionLocalizations() => AppStoreVersionLocalizations is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionLocalizations' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem33(global::AppStoreConnect.AppCustomProductPageLocalization value) => new IncludedItem33((global::AppStoreConnect.AppCustomProductPageLocalization?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppCustomProductPageLocalization?(IncludedItem33 @this) => @this.AppCustomProductPageLocalizations;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem33(global::AppStoreConnect.AppCustomProductPageLocalization? value)
-        {
-            AppCustomProductPageLocalizations = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem33 FromAppCustomProductPageLocalizations(global::AppStoreConnect.AppCustomProductPageLocalization? value) => new IncludedItem33(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem33(global::AppStoreConnect.AppScreenshot value) => new IncludedItem33((global::AppStoreConnect.AppScreenshot?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppScreenshot?(IncludedItem33 @this) => @this.AppScreenshots;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem33(global::AppStoreConnect.AppScreenshot? value)
-        {
-            AppScreenshots = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem33 FromAppScreenshots(global::AppStoreConnect.AppScreenshot? value) => new IncludedItem33(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem33(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization value) => new IncludedItem33((global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization?(IncludedItem33 @this) => @this.AppStoreVersionExperimentTreatmentLocalizations;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem33(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? value)
-        {
-            AppStoreVersionExperimentTreatmentLocalizations = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem33 FromAppStoreVersionExperimentTreatmentLocalizations(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? value) => new IncludedItem33(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem33(global::AppStoreConnect.AppStoreVersionLocalization value) => new IncludedItem33((global::AppStoreConnect.AppStoreVersionLocalization?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersionLocalization?(IncludedItem33 @this) => @this.AppStoreVersionLocalizations;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem33(global::AppStoreConnect.AppStoreVersionLocalization? value)
-        {
-            AppStoreVersionLocalizations = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem33 FromAppStoreVersionLocalizations(global::AppStoreConnect.AppStoreVersionLocalization? value) => new IncludedItem33(value);
+        public static IncludedItem33 FromTerritories(global::AppStoreConnect.Territory? value) => new IncludedItem33(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem33(
-            global::AppStoreConnect.AppScreenshotSetsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppCustomProductPageLocalization? appCustomProductPageLocalizations,
-            global::AppStoreConnect.AppScreenshot? appScreenshots,
-            global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? appStoreVersionExperimentTreatmentLocalizations,
-            global::AppStoreConnect.AppStoreVersionLocalization? appStoreVersionLocalizations
+            global::AppStoreConnect.CustomerReviewResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.CustomerReviewResponseV1? customerReviewResponses,
+            global::AppStoreConnect.Territory? territories
             )
         {
             Type = type;
 
-            AppCustomProductPageLocalizations = appCustomProductPageLocalizations;
-            AppScreenshots = appScreenshots;
-            AppStoreVersionExperimentTreatmentLocalizations = appStoreVersionExperimentTreatmentLocalizations;
-            AppStoreVersionLocalizations = appStoreVersionLocalizations;
+            CustomerReviewResponses = customerReviewResponses;
+            Territories = territories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            AppStoreVersionLocalizations as object ??
-            AppStoreVersionExperimentTreatmentLocalizations as object ??
-            AppScreenshots as object ??
-            AppCustomProductPageLocalizations as object
+            Territories as object ??
+            CustomerReviewResponses as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppCustomProductPageLocalizations?.ToString() ??
-            AppScreenshots?.ToString() ??
-            AppStoreVersionExperimentTreatmentLocalizations?.ToString() ??
-            AppStoreVersionLocalizations?.ToString()
+            CustomerReviewResponses?.ToString() ??
+            Territories?.ToString()
             ;
 
         /// <summary>
@@ -297,17 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppCustomProductPageLocalizations && !IsAppScreenshots && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations || !IsAppCustomProductPageLocalizations && IsAppScreenshots && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations || !IsAppCustomProductPageLocalizations && !IsAppScreenshots && IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations || !IsAppCustomProductPageLocalizations && !IsAppScreenshots && !IsAppStoreVersionExperimentTreatmentLocalizations && IsAppStoreVersionLocalizations;
+            return IsCustomerReviewResponses && !IsTerritories || !IsCustomerReviewResponses && IsTerritories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppCustomProductPageLocalization, TResult>? appCustomProductPageLocalizations = null,
-            global::System.Func<global::AppStoreConnect.AppScreenshot, TResult>? appScreenshots = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization, TResult>? appStoreVersionExperimentTreatmentLocalizations = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersionLocalization, TResult>? appStoreVersionLocalizations = null,
+            global::System.Func<global::AppStoreConnect.CustomerReviewResponseV1, TResult>? customerReviewResponses = null,
+            global::System.Func<global::AppStoreConnect.Territory, TResult>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -315,21 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations is { } __value0 && appCustomProductPageLocalizations != null)
+            if (CustomerReviewResponses is { } __value0 && customerReviewResponses != null)
             {
-                return appCustomProductPageLocalizations(__value0);
+                return customerReviewResponses(__value0);
             }
-            else if (AppScreenshots is { } __value1 && appScreenshots != null)
+            else if (Territories is { } __value1 && territories != null)
             {
-                return appScreenshots(__value1);
-            }
-            else if (AppStoreVersionExperimentTreatmentLocalizations is { } __value2 && appStoreVersionExperimentTreatmentLocalizations != null)
-            {
-                return appStoreVersionExperimentTreatmentLocalizations(__value2);
-            }
-            else if (AppStoreVersionLocalizations is { } __value3 && appStoreVersionLocalizations != null)
-            {
-                return appStoreVersionLocalizations(__value3);
+                return territories(__value1);
             }
 
             return default(TResult);
@@ -339,13 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations = null,
+            global::System.Action<global::AppStoreConnect.CustomerReviewResponseV1>? customerReviewResponses = null,
 
-            global::System.Action<global::AppStoreConnect.AppScreenshot>? appScreenshots = null,
-
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization>? appStoreVersionExperimentTreatmentLocalizations = null,
-
-            global::System.Action<global::AppStoreConnect.AppStoreVersionLocalization>? appStoreVersionLocalizations = null,
+            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -353,21 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations is { } __value0)
+            if (CustomerReviewResponses is { } __value0)
             {
-                appCustomProductPageLocalizations?.Invoke(__value0);
+                customerReviewResponses?.Invoke(__value0);
             }
-            else if (AppScreenshots is { } __value1)
+            else if (Territories is { } __value1)
             {
-                appScreenshots?.Invoke(__value1);
-            }
-            else if (AppStoreVersionExperimentTreatmentLocalizations is { } __value2)
-            {
-                appStoreVersionExperimentTreatmentLocalizations?.Invoke(__value2);
-            }
-            else if (AppStoreVersionLocalizations is { } __value3)
-            {
-                appStoreVersionLocalizations?.Invoke(__value3);
+                territories?.Invoke(__value1);
             }
         }
 
@@ -375,10 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations = null,
-            global::System.Action<global::AppStoreConnect.AppScreenshot>? appScreenshots = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization>? appStoreVersionExperimentTreatmentLocalizations = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersionLocalization>? appStoreVersionLocalizations = null,
+            global::System.Action<global::AppStoreConnect.CustomerReviewResponseV1>? customerReviewResponses = null,
+            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -386,21 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations is { } __value0)
+            if (CustomerReviewResponses is { } __value0)
             {
-                appCustomProductPageLocalizations?.Invoke(__value0);
+                customerReviewResponses?.Invoke(__value0);
             }
-            else if (AppScreenshots is { } __value1)
+            else if (Territories is { } __value1)
             {
-                appScreenshots?.Invoke(__value1);
-            }
-            else if (AppStoreVersionExperimentTreatmentLocalizations is { } __value2)
-            {
-                appStoreVersionExperimentTreatmentLocalizations?.Invoke(__value2);
-            }
-            else if (AppStoreVersionLocalizations is { } __value3)
-            {
-                appStoreVersionLocalizations?.Invoke(__value3);
+                territories?.Invoke(__value1);
             }
         }
 
@@ -411,14 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppCustomProductPageLocalizations,
-                typeof(global::AppStoreConnect.AppCustomProductPageLocalization),
-                AppScreenshots,
-                typeof(global::AppStoreConnect.AppScreenshot),
-                AppStoreVersionExperimentTreatmentLocalizations,
-                typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization),
-                AppStoreVersionLocalizations,
-                typeof(global::AppStoreConnect.AppStoreVersionLocalization),
+                CustomerReviewResponses,
+                typeof(global::AppStoreConnect.CustomerReviewResponseV1),
+                Territories,
+                typeof(global::AppStoreConnect.Territory),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -435,10 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem33 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageLocalization?>.Default.Equals(AppCustomProductPageLocalizations, other.AppCustomProductPageLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppScreenshot?>.Default.Equals(AppScreenshots, other.AppScreenshots) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization?>.Default.Equals(AppStoreVersionExperimentTreatmentLocalizations, other.AppStoreVersionExperimentTreatmentLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionLocalization?>.Default.Equals(AppStoreVersionLocalizations, other.AppStoreVersionLocalizations)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CustomerReviewResponseV1?>.Default.Equals(CustomerReviewResponses, other.CustomerReviewResponses) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Territory?>.Default.Equals(Territories, other.Territories)
                 ;
         }
 

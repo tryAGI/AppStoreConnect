@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ChecksumAlgorithm))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0247.Create_ChecksumAlgorithm2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0246.Create_ChecksumAlgorithm2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.ChecksumAlgorithm?))
                 {

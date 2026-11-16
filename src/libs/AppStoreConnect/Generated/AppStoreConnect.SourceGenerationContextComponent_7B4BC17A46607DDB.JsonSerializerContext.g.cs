@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.MetricsInsightPopulation>))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1015.Create_SourceGenerationContextMetadataType_7B4BC17A46607DDB(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1014.Create_SourceGenerationContextMetadataType_7B4BC17A46607DDB(options);
                 }
                 if (type == typeof(global::System.Collections.Generic.List<global::AppStoreConnect.MetricsInsightPopulation>))
                 {

@@ -12,284 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ReviewSubmissionsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetVersionV2ResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Actor? Actors { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2? GameCenterLeaderboardSetLocalizations { get; init; }
 #else
-        public global::AppStoreConnect.Actor? Actors { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2? GameCenterLeaderboardSetLocalizations { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Actors))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSetLocalizations))]
 #endif
-        public bool IsActors => Actors != null;
+        public bool IsGameCenterLeaderboardSetLocalizations => GameCenterLeaderboardSetLocalizations != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickActors(
+        public bool TryPickGameCenterLeaderboardSetLocalizations(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.Actor? value)
+            out global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2? value)
         {
-            value = Actors;
-            return IsActors;
+            value = GameCenterLeaderboardSetLocalizations;
+            return IsGameCenterLeaderboardSetLocalizations;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Actor PickActors() => Actors is { } value
+        public global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2 PickGameCenterLeaderboardSetLocalizations() => GameCenterLeaderboardSetLocalizations is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Actors' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSetLocalizations' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetV2? GameCenterLeaderboardSets { get; init; }
 #else
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetV2? GameCenterLeaderboardSets { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSets))]
 #endif
-        public bool IsAppStoreVersions => AppStoreVersions != null;
+        public bool IsGameCenterLeaderboardSets => GameCenterLeaderboardSets != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreVersions(
+        public bool TryPickGameCenterLeaderboardSets(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppStoreVersion? value)
+            out global::AppStoreConnect.GameCenterLeaderboardSetV2? value)
         {
-            value = AppStoreVersions;
-            return IsAppStoreVersions;
+            value = GameCenterLeaderboardSets;
+            return IsGameCenterLeaderboardSets;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => AppStoreVersions is { } value
+        public global::AppStoreConnect.GameCenterLeaderboardSetV2 PickGameCenterLeaderboardSets() => GameCenterLeaderboardSets is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSets' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem165(global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2 value) => new IncludedItem165((global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.App? Apps { get; init; }
-#else
-        public global::AppStoreConnect.App? Apps { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2?(IncludedItem165 @this) => @this.GameCenterLeaderboardSetLocalizations;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
-#endif
-        public bool IsApps => Apps != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickApps(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.App? value)
+        public IncludedItem165(global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2? value)
         {
-            value = Apps;
-            return IsApps;
+            GameCenterLeaderboardSetLocalizations = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickApps() => Apps is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
+        public static IncludedItem165 FromGameCenterLeaderboardSetLocalizations(global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2? value) => new IncludedItem165(value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.ReviewSubmissionItem? ReviewSubmissionItems { get; init; }
-#else
-        public global::AppStoreConnect.ReviewSubmissionItem? ReviewSubmissionItems { get; }
-#endif
+        public static implicit operator IncludedItem165(global::AppStoreConnect.GameCenterLeaderboardSetV2 value) => new IncludedItem165((global::AppStoreConnect.GameCenterLeaderboardSetV2?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ReviewSubmissionItems))]
-#endif
-        public bool IsReviewSubmissionItems => ReviewSubmissionItems != null;
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSetV2?(IncludedItem165 @this) => @this.GameCenterLeaderboardSets;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickReviewSubmissionItems(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.ReviewSubmissionItem? value)
+        public IncludedItem165(global::AppStoreConnect.GameCenterLeaderboardSetV2? value)
         {
-            value = ReviewSubmissionItems;
-            return IsReviewSubmissionItems;
+            GameCenterLeaderboardSets = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ReviewSubmissionItem PickReviewSubmissionItems() => ReviewSubmissionItems is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'ReviewSubmissionItems' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem165(global::AppStoreConnect.Actor value) => new IncludedItem165((global::AppStoreConnect.Actor?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.Actor?(IncludedItem165 @this) => @this.Actors;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem165(global::AppStoreConnect.Actor? value)
-        {
-            Actors = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem165 FromActors(global::AppStoreConnect.Actor? value) => new IncludedItem165(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem165(global::AppStoreConnect.AppStoreVersion value) => new IncludedItem165((global::AppStoreConnect.AppStoreVersion?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem165 @this) => @this.AppStoreVersions;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem165(global::AppStoreConnect.AppStoreVersion? value)
-        {
-            AppStoreVersions = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem165 FromAppStoreVersions(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem165(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem165(global::AppStoreConnect.App value) => new IncludedItem165((global::AppStoreConnect.App?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.App?(IncludedItem165 @this) => @this.Apps;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem165(global::AppStoreConnect.App? value)
-        {
-            Apps = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem165 FromApps(global::AppStoreConnect.App? value) => new IncludedItem165(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem165(global::AppStoreConnect.ReviewSubmissionItem value) => new IncludedItem165((global::AppStoreConnect.ReviewSubmissionItem?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.ReviewSubmissionItem?(IncludedItem165 @this) => @this.ReviewSubmissionItems;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem165(global::AppStoreConnect.ReviewSubmissionItem? value)
-        {
-            ReviewSubmissionItems = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem165 FromReviewSubmissionItems(global::AppStoreConnect.ReviewSubmissionItem? value) => new IncludedItem165(value);
+        public static IncludedItem165 FromGameCenterLeaderboardSets(global::AppStoreConnect.GameCenterLeaderboardSetV2? value) => new IncludedItem165(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem165(
-            global::AppStoreConnect.ReviewSubmissionsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.Actor? actors,
-            global::AppStoreConnect.AppStoreVersion? appStoreVersions,
-            global::AppStoreConnect.App? apps,
-            global::AppStoreConnect.ReviewSubmissionItem? reviewSubmissionItems
+            global::AppStoreConnect.GameCenterLeaderboardSetVersionV2ResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2? gameCenterLeaderboardSetLocalizations,
+            global::AppStoreConnect.GameCenterLeaderboardSetV2? gameCenterLeaderboardSets
             )
         {
             Type = type;
 
-            Actors = actors;
-            AppStoreVersions = appStoreVersions;
-            Apps = apps;
-            ReviewSubmissionItems = reviewSubmissionItems;
+            GameCenterLeaderboardSetLocalizations = gameCenterLeaderboardSetLocalizations;
+            GameCenterLeaderboardSets = gameCenterLeaderboardSets;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            ReviewSubmissionItems as object ??
-            Apps as object ??
-            AppStoreVersions as object ??
-            Actors as object
+            GameCenterLeaderboardSets as object ??
+            GameCenterLeaderboardSetLocalizations as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            Actors?.ToString() ??
-            AppStoreVersions?.ToString() ??
-            Apps?.ToString() ??
-            ReviewSubmissionItems?.ToString()
+            GameCenterLeaderboardSetLocalizations?.ToString() ??
+            GameCenterLeaderboardSets?.ToString()
             ;
 
         /// <summary>
@@ -297,17 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsActors && !IsAppStoreVersions && !IsApps && !IsReviewSubmissionItems || !IsActors && IsAppStoreVersions && !IsApps && !IsReviewSubmissionItems || !IsActors && !IsAppStoreVersions && IsApps && !IsReviewSubmissionItems || !IsActors && !IsAppStoreVersions && !IsApps && IsReviewSubmissionItems;
+            return IsGameCenterLeaderboardSetLocalizations && !IsGameCenterLeaderboardSets || !IsGameCenterLeaderboardSetLocalizations && IsGameCenterLeaderboardSets;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.Actor, TResult>? actors = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersions = null,
-            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
-            global::System.Func<global::AppStoreConnect.ReviewSubmissionItem, TResult>? reviewSubmissionItems = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2, TResult>? gameCenterLeaderboardSetLocalizations = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSetV2, TResult>? gameCenterLeaderboardSets = null,
             bool validate = true)
         {
             if (validate)
@@ -315,21 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Actors is { } __value0 && actors != null)
+            if (GameCenterLeaderboardSetLocalizations is { } __value0 && gameCenterLeaderboardSetLocalizations != null)
             {
-                return actors(__value0);
+                return gameCenterLeaderboardSetLocalizations(__value0);
             }
-            else if (AppStoreVersions is { } __value1 && appStoreVersions != null)
+            else if (GameCenterLeaderboardSets is { } __value1 && gameCenterLeaderboardSets != null)
             {
-                return appStoreVersions(__value1);
-            }
-            else if (Apps is { } __value2 && apps != null)
-            {
-                return apps(__value2);
-            }
-            else if (ReviewSubmissionItems is { } __value3 && reviewSubmissionItems != null)
-            {
-                return reviewSubmissionItems(__value3);
+                return gameCenterLeaderboardSets(__value1);
             }
 
             return default(TResult);
@@ -339,13 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.Actor>? actors = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2>? gameCenterLeaderboardSetLocalizations = null,
 
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
-
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
-
-            global::System.Action<global::AppStoreConnect.ReviewSubmissionItem>? reviewSubmissionItems = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetV2>? gameCenterLeaderboardSets = null,
             bool validate = true)
         {
             if (validate)
@@ -353,21 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Actors is { } __value0)
+            if (GameCenterLeaderboardSetLocalizations is { } __value0)
             {
-                actors?.Invoke(__value0);
+                gameCenterLeaderboardSetLocalizations?.Invoke(__value0);
             }
-            else if (AppStoreVersions is { } __value1)
+            else if (GameCenterLeaderboardSets is { } __value1)
             {
-                appStoreVersions?.Invoke(__value1);
-            }
-            else if (Apps is { } __value2)
-            {
-                apps?.Invoke(__value2);
-            }
-            else if (ReviewSubmissionItems is { } __value3)
-            {
-                reviewSubmissionItems?.Invoke(__value3);
+                gameCenterLeaderboardSets?.Invoke(__value1);
             }
         }
 
@@ -375,10 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.Actor>? actors = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
-            global::System.Action<global::AppStoreConnect.ReviewSubmissionItem>? reviewSubmissionItems = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2>? gameCenterLeaderboardSetLocalizations = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetV2>? gameCenterLeaderboardSets = null,
             bool validate = true)
         {
             if (validate)
@@ -386,21 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Actors is { } __value0)
+            if (GameCenterLeaderboardSetLocalizations is { } __value0)
             {
-                actors?.Invoke(__value0);
+                gameCenterLeaderboardSetLocalizations?.Invoke(__value0);
             }
-            else if (AppStoreVersions is { } __value1)
+            else if (GameCenterLeaderboardSets is { } __value1)
             {
-                appStoreVersions?.Invoke(__value1);
-            }
-            else if (Apps is { } __value2)
-            {
-                apps?.Invoke(__value2);
-            }
-            else if (ReviewSubmissionItems is { } __value3)
-            {
-                reviewSubmissionItems?.Invoke(__value3);
+                gameCenterLeaderboardSets?.Invoke(__value1);
             }
         }
 
@@ -411,14 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                Actors,
-                typeof(global::AppStoreConnect.Actor),
-                AppStoreVersions,
-                typeof(global::AppStoreConnect.AppStoreVersion),
-                Apps,
-                typeof(global::AppStoreConnect.App),
-                ReviewSubmissionItems,
-                typeof(global::AppStoreConnect.ReviewSubmissionItem),
+                GameCenterLeaderboardSetLocalizations,
+                typeof(global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2),
+                GameCenterLeaderboardSets,
+                typeof(global::AppStoreConnect.GameCenterLeaderboardSetV2),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -435,10 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem165 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Actor?>.Default.Equals(Actors, other.Actors) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions, other.AppStoreVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ReviewSubmissionItem?>.Default.Equals(ReviewSubmissionItems, other.ReviewSubmissionItems)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSetLocalizationV2?>.Default.Equals(GameCenterLeaderboardSetLocalizations, other.GameCenterLeaderboardSetLocalizations) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSetV2?>.Default.Equals(GameCenterLeaderboardSets, other.GameCenterLeaderboardSets)
                 ;
         }
 

@@ -12,7 +12,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppClipsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
@@ -55,38 +55,38 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppClipHeaderImage? AppClipHeaderImages { get; init; }
+        public global::AppStoreConnect.App? Apps { get; init; }
 #else
-        public global::AppStoreConnect.AppClipHeaderImage? AppClipHeaderImages { get; }
+        public global::AppStoreConnect.App? Apps { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppClipHeaderImages))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
 #endif
-        public bool IsAppClipHeaderImages => AppClipHeaderImages != null;
+        public bool IsApps => Apps != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppClipHeaderImages(
+        public bool TryPickApps(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppClipHeaderImage? value)
+            out global::AppStoreConnect.App? value)
         {
-            value = AppClipHeaderImages;
-            return IsAppClipHeaderImages;
+            value = Apps;
+            return IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppClipHeaderImage PickAppClipHeaderImages() => AppClipHeaderImages is { } value
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipHeaderImages' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -113,46 +113,46 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem8(global::AppStoreConnect.AppClipHeaderImage value) => new IncludedItem8((global::AppStoreConnect.AppClipHeaderImage?)value);
+        public static implicit operator IncludedItem8(global::AppStoreConnect.App value) => new IncludedItem8((global::AppStoreConnect.App?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppClipHeaderImage?(IncludedItem8 @this) => @this.AppClipHeaderImages;
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem8 @this) => @this.Apps;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem8(global::AppStoreConnect.AppClipHeaderImage? value)
+        public IncludedItem8(global::AppStoreConnect.App? value)
         {
-            AppClipHeaderImages = value;
+            Apps = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem8 FromAppClipHeaderImages(global::AppStoreConnect.AppClipHeaderImage? value) => new IncludedItem8(value);
+        public static IncludedItem8 FromApps(global::AppStoreConnect.App? value) => new IncludedItem8(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem8(
-            global::AppStoreConnect.AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppClipsResponseIncludedItemDiscriminatorType? type,
             global::AppStoreConnect.AppClipDefaultExperience? appClipDefaultExperiences,
-            global::AppStoreConnect.AppClipHeaderImage? appClipHeaderImages
+            global::AppStoreConnect.App? apps
             )
         {
             Type = type;
 
             AppClipDefaultExperiences = appClipDefaultExperiences;
-            AppClipHeaderImages = appClipHeaderImages;
+            Apps = apps;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            AppClipHeaderImages as object ??
+            Apps as object ??
             AppClipDefaultExperiences as object
             ;
 
@@ -161,7 +161,7 @@ namespace AppStoreConnect
         /// </summary>
         public override string? ToString() =>
             AppClipDefaultExperiences?.ToString() ??
-            AppClipHeaderImages?.ToString()
+            Apps?.ToString()
             ;
 
         /// <summary>
@@ -169,7 +169,7 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppClipDefaultExperiences && !IsAppClipHeaderImages || !IsAppClipDefaultExperiences && IsAppClipHeaderImages;
+            return IsAppClipDefaultExperiences && !IsApps || !IsAppClipDefaultExperiences && IsApps;
         }
 
         /// <summary>
@@ -177,7 +177,7 @@ namespace AppStoreConnect
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.AppClipDefaultExperience, TResult>? appClipDefaultExperiences = null,
-            global::System.Func<global::AppStoreConnect.AppClipHeaderImage, TResult>? appClipHeaderImages = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
             bool validate = true)
         {
             if (validate)
@@ -189,9 +189,9 @@ namespace AppStoreConnect
             {
                 return appClipDefaultExperiences(__value0);
             }
-            else if (AppClipHeaderImages is { } __value1 && appClipHeaderImages != null)
+            else if (Apps is { } __value1 && apps != null)
             {
-                return appClipHeaderImages(__value1);
+                return apps(__value1);
             }
 
             return default(TResult);
@@ -203,7 +203,7 @@ namespace AppStoreConnect
         public void Match(
             global::System.Action<global::AppStoreConnect.AppClipDefaultExperience>? appClipDefaultExperiences = null,
 
-            global::System.Action<global::AppStoreConnect.AppClipHeaderImage>? appClipHeaderImages = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
             bool validate = true)
         {
             if (validate)
@@ -215,9 +215,9 @@ namespace AppStoreConnect
             {
                 appClipDefaultExperiences?.Invoke(__value0);
             }
-            else if (AppClipHeaderImages is { } __value1)
+            else if (Apps is { } __value1)
             {
-                appClipHeaderImages?.Invoke(__value1);
+                apps?.Invoke(__value1);
             }
         }
 
@@ -226,7 +226,7 @@ namespace AppStoreConnect
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.AppClipDefaultExperience>? appClipDefaultExperiences = null,
-            global::System.Action<global::AppStoreConnect.AppClipHeaderImage>? appClipHeaderImages = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
             bool validate = true)
         {
             if (validate)
@@ -238,9 +238,9 @@ namespace AppStoreConnect
             {
                 appClipDefaultExperiences?.Invoke(__value0);
             }
-            else if (AppClipHeaderImages is { } __value1)
+            else if (Apps is { } __value1)
             {
-                appClipHeaderImages?.Invoke(__value1);
+                apps?.Invoke(__value1);
             }
         }
 
@@ -253,8 +253,8 @@ namespace AppStoreConnect
             {
                 AppClipDefaultExperiences,
                 typeof(global::AppStoreConnect.AppClipDefaultExperience),
-                AppClipHeaderImages,
-                typeof(global::AppStoreConnect.AppClipHeaderImage),
+                Apps,
+                typeof(global::AppStoreConnect.App),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -272,7 +272,7 @@ namespace AppStoreConnect
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppClipDefaultExperience?>.Default.Equals(AppClipDefaultExperiences, other.AppClipDefaultExperiences) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppClipHeaderImage?>.Default.Equals(AppClipHeaderImages, other.AppClipHeaderImages)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps)
                 ;
         }
 

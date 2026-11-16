@@ -12,156 +12,284 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAchievementReleaseResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppEventLocalizationsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterAchievement? GameCenterAchievements { get; init; }
+        public global::AppStoreConnect.AppAssetLibraryPlacement? AppAssetLibraryPlacements { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterAchievement? GameCenterAchievements { get; }
+        public global::AppStoreConnect.AppAssetLibraryPlacement? AppAssetLibraryPlacements { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterAchievements))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppAssetLibraryPlacements))]
 #endif
-        public bool IsGameCenterAchievements => GameCenterAchievements != null;
+        public bool IsAppAssetLibraryPlacements => AppAssetLibraryPlacements != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterAchievements(
+        public bool TryPickAppAssetLibraryPlacements(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterAchievement? value)
+            out global::AppStoreConnect.AppAssetLibraryPlacement? value)
         {
-            value = GameCenterAchievements;
-            return IsGameCenterAchievements;
+            value = AppAssetLibraryPlacements;
+            return IsAppAssetLibraryPlacements;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAchievement PickGameCenterAchievements() => GameCenterAchievements is { } value
+        public global::AppStoreConnect.AppAssetLibraryPlacement PickAppAssetLibraryPlacements() => AppAssetLibraryPlacements is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAchievements' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppAssetLibraryPlacements' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterDetail? GameCenterDetails { get; init; }
+        public global::AppStoreConnect.AppEventScreenshot? AppEventScreenshots { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterDetail? GameCenterDetails { get; }
+        public global::AppStoreConnect.AppEventScreenshot? AppEventScreenshots { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterDetails))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEventScreenshots))]
 #endif
-        public bool IsGameCenterDetails => GameCenterDetails != null;
+        public bool IsAppEventScreenshots => AppEventScreenshots != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterDetails(
+        public bool TryPickAppEventScreenshots(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterDetail? value)
+            out global::AppStoreConnect.AppEventScreenshot? value)
         {
-            value = GameCenterDetails;
-            return IsGameCenterDetails;
+            value = AppEventScreenshots;
+            return IsAppEventScreenshots;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterDetail PickGameCenterDetails() => GameCenterDetails is { } value
+        public global::AppStoreConnect.AppEventScreenshot PickAppEventScreenshots() => AppEventScreenshots is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterDetails' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem82(global::AppStoreConnect.GameCenterAchievement value) => new IncludedItem82((global::AppStoreConnect.GameCenterAchievement?)value);
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEventScreenshots' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterAchievement?(IncludedItem82 @this) => @this.GameCenterAchievements;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AppEventVideoClip? AppEventVideoClips { get; init; }
+#else
+        public global::AppStoreConnect.AppEventVideoClip? AppEventVideoClips { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem82(global::AppStoreConnect.GameCenterAchievement? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEventVideoClips))]
+#endif
+        public bool IsAppEventVideoClips => AppEventVideoClips != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAppEventVideoClips(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppEventVideoClip? value)
         {
-            GameCenterAchievements = value;
+            value = AppEventVideoClips;
+            return IsAppEventVideoClips;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem82 FromGameCenterAchievements(global::AppStoreConnect.GameCenterAchievement? value) => new IncludedItem82(value);
+        public global::AppStoreConnect.AppEventVideoClip PickAppEventVideoClips() => AppEventVideoClips is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEventVideoClips' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem82(global::AppStoreConnect.GameCenterDetail value) => new IncludedItem82((global::AppStoreConnect.GameCenterDetail?)value);
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AppEvent? AppEvents { get; init; }
+#else
+        public global::AppStoreConnect.AppEvent? AppEvents { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterDetail?(IncludedItem82 @this) => @this.GameCenterDetails;
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEvents))]
+#endif
+        public bool IsAppEvents => AppEvents != null;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem82(global::AppStoreConnect.GameCenterDetail? value)
+        public bool TryPickAppEvents(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppEvent? value)
         {
-            GameCenterDetails = value;
+            value = AppEvents;
+            return IsAppEvents;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem82 FromGameCenterDetails(global::AppStoreConnect.GameCenterDetail? value) => new IncludedItem82(value);
+        public global::AppStoreConnect.AppEvent PickAppEvents() => AppEvents is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEvents' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem82(global::AppStoreConnect.AppAssetLibraryPlacement value) => new IncludedItem82((global::AppStoreConnect.AppAssetLibraryPlacement?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppAssetLibraryPlacement?(IncludedItem82 @this) => @this.AppAssetLibraryPlacements;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem82(global::AppStoreConnect.AppAssetLibraryPlacement? value)
+        {
+            AppAssetLibraryPlacements = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem82 FromAppAssetLibraryPlacements(global::AppStoreConnect.AppAssetLibraryPlacement? value) => new IncludedItem82(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem82(global::AppStoreConnect.AppEventScreenshot value) => new IncludedItem82((global::AppStoreConnect.AppEventScreenshot?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppEventScreenshot?(IncludedItem82 @this) => @this.AppEventScreenshots;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem82(global::AppStoreConnect.AppEventScreenshot? value)
+        {
+            AppEventScreenshots = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem82 FromAppEventScreenshots(global::AppStoreConnect.AppEventScreenshot? value) => new IncludedItem82(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem82(global::AppStoreConnect.AppEventVideoClip value) => new IncludedItem82((global::AppStoreConnect.AppEventVideoClip?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppEventVideoClip?(IncludedItem82 @this) => @this.AppEventVideoClips;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem82(global::AppStoreConnect.AppEventVideoClip? value)
+        {
+            AppEventVideoClips = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem82 FromAppEventVideoClips(global::AppStoreConnect.AppEventVideoClip? value) => new IncludedItem82(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem82(global::AppStoreConnect.AppEvent value) => new IncludedItem82((global::AppStoreConnect.AppEvent?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppEvent?(IncludedItem82 @this) => @this.AppEvents;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem82(global::AppStoreConnect.AppEvent? value)
+        {
+            AppEvents = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem82 FromAppEvents(global::AppStoreConnect.AppEvent? value) => new IncludedItem82(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem82(
-            global::AppStoreConnect.GameCenterAchievementReleaseResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.GameCenterAchievement? gameCenterAchievements,
-            global::AppStoreConnect.GameCenterDetail? gameCenterDetails
+            global::AppStoreConnect.AppEventLocalizationsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppAssetLibraryPlacement? appAssetLibraryPlacements,
+            global::AppStoreConnect.AppEventScreenshot? appEventScreenshots,
+            global::AppStoreConnect.AppEventVideoClip? appEventVideoClips,
+            global::AppStoreConnect.AppEvent? appEvents
             )
         {
             Type = type;
 
-            GameCenterAchievements = gameCenterAchievements;
-            GameCenterDetails = gameCenterDetails;
+            AppAssetLibraryPlacements = appAssetLibraryPlacements;
+            AppEventScreenshots = appEventScreenshots;
+            AppEventVideoClips = appEventVideoClips;
+            AppEvents = appEvents;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            GameCenterDetails as object ??
-            GameCenterAchievements as object
+            AppEvents as object ??
+            AppEventVideoClips as object ??
+            AppEventScreenshots as object ??
+            AppAssetLibraryPlacements as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            GameCenterAchievements?.ToString() ??
-            GameCenterDetails?.ToString()
+            AppAssetLibraryPlacements?.ToString() ??
+            AppEventScreenshots?.ToString() ??
+            AppEventVideoClips?.ToString() ??
+            AppEvents?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +297,17 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsGameCenterAchievements && !IsGameCenterDetails || !IsGameCenterAchievements && IsGameCenterDetails;
+            return IsAppAssetLibraryPlacements && !IsAppEventScreenshots && !IsAppEventVideoClips && !IsAppEvents || !IsAppAssetLibraryPlacements && IsAppEventScreenshots && !IsAppEventVideoClips && !IsAppEvents || !IsAppAssetLibraryPlacements && !IsAppEventScreenshots && IsAppEventVideoClips && !IsAppEvents || !IsAppAssetLibraryPlacements && !IsAppEventScreenshots && !IsAppEventVideoClips && IsAppEvents;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.GameCenterAchievement, TResult>? gameCenterAchievements = null,
-            global::System.Func<global::AppStoreConnect.GameCenterDetail, TResult>? gameCenterDetails = null,
+            global::System.Func<global::AppStoreConnect.AppAssetLibraryPlacement, TResult>? appAssetLibraryPlacements = null,
+            global::System.Func<global::AppStoreConnect.AppEventScreenshot, TResult>? appEventScreenshots = null,
+            global::System.Func<global::AppStoreConnect.AppEventVideoClip, TResult>? appEventVideoClips = null,
+            global::System.Func<global::AppStoreConnect.AppEvent, TResult>? appEvents = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterAchievements is { } __value0 && gameCenterAchievements != null)
+            if (AppAssetLibraryPlacements is { } __value0 && appAssetLibraryPlacements != null)
             {
-                return gameCenterAchievements(__value0);
+                return appAssetLibraryPlacements(__value0);
             }
-            else if (GameCenterDetails is { } __value1 && gameCenterDetails != null)
+            else if (AppEventScreenshots is { } __value1 && appEventScreenshots != null)
             {
-                return gameCenterDetails(__value1);
+                return appEventScreenshots(__value1);
+            }
+            else if (AppEventVideoClips is { } __value2 && appEventVideoClips != null)
+            {
+                return appEventVideoClips(__value2);
+            }
+            else if (AppEvents is { } __value3 && appEvents != null)
+            {
+                return appEvents(__value3);
             }
 
             return default(TResult);
@@ -201,9 +339,13 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.GameCenterAchievement>? gameCenterAchievements = null,
+            global::System.Action<global::AppStoreConnect.AppAssetLibraryPlacement>? appAssetLibraryPlacements = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterDetail>? gameCenterDetails = null,
+            global::System.Action<global::AppStoreConnect.AppEventScreenshot>? appEventScreenshots = null,
+
+            global::System.Action<global::AppStoreConnect.AppEventVideoClip>? appEventVideoClips = null,
+
+            global::System.Action<global::AppStoreConnect.AppEvent>? appEvents = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterAchievements is { } __value0)
+            if (AppAssetLibraryPlacements is { } __value0)
             {
-                gameCenterAchievements?.Invoke(__value0);
+                appAssetLibraryPlacements?.Invoke(__value0);
             }
-            else if (GameCenterDetails is { } __value1)
+            else if (AppEventScreenshots is { } __value1)
             {
-                gameCenterDetails?.Invoke(__value1);
+                appEventScreenshots?.Invoke(__value1);
+            }
+            else if (AppEventVideoClips is { } __value2)
+            {
+                appEventVideoClips?.Invoke(__value2);
+            }
+            else if (AppEvents is { } __value3)
+            {
+                appEvents?.Invoke(__value3);
             }
         }
 
@@ -225,8 +375,10 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.GameCenterAchievement>? gameCenterAchievements = null,
-            global::System.Action<global::AppStoreConnect.GameCenterDetail>? gameCenterDetails = null,
+            global::System.Action<global::AppStoreConnect.AppAssetLibraryPlacement>? appAssetLibraryPlacements = null,
+            global::System.Action<global::AppStoreConnect.AppEventScreenshot>? appEventScreenshots = null,
+            global::System.Action<global::AppStoreConnect.AppEventVideoClip>? appEventVideoClips = null,
+            global::System.Action<global::AppStoreConnect.AppEvent>? appEvents = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterAchievements is { } __value0)
+            if (AppAssetLibraryPlacements is { } __value0)
             {
-                gameCenterAchievements?.Invoke(__value0);
+                appAssetLibraryPlacements?.Invoke(__value0);
             }
-            else if (GameCenterDetails is { } __value1)
+            else if (AppEventScreenshots is { } __value1)
             {
-                gameCenterDetails?.Invoke(__value1);
+                appEventScreenshots?.Invoke(__value1);
+            }
+            else if (AppEventVideoClips is { } __value2)
+            {
+                appEventVideoClips?.Invoke(__value2);
+            }
+            else if (AppEvents is { } __value3)
+            {
+                appEvents?.Invoke(__value3);
             }
         }
 
@@ -251,10 +411,14 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                GameCenterAchievements,
-                typeof(global::AppStoreConnect.GameCenterAchievement),
-                GameCenterDetails,
-                typeof(global::AppStoreConnect.GameCenterDetail),
+                AppAssetLibraryPlacements,
+                typeof(global::AppStoreConnect.AppAssetLibraryPlacement),
+                AppEventScreenshots,
+                typeof(global::AppStoreConnect.AppEventScreenshot),
+                AppEventVideoClips,
+                typeof(global::AppStoreConnect.AppEventVideoClip),
+                AppEvents,
+                typeof(global::AppStoreConnect.AppEvent),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +435,10 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem82 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterAchievement?>.Default.Equals(GameCenterAchievements, other.GameCenterAchievements) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterDetail?>.Default.Equals(GameCenterDetails, other.GameCenterDetails)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppAssetLibraryPlacement?>.Default.Equals(AppAssetLibraryPlacements, other.AppAssetLibraryPlacements) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEventScreenshot?>.Default.Equals(AppEventScreenshots, other.AppEventScreenshots) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEventVideoClip?>.Default.Equals(AppEventVideoClips, other.AppEventVideoClips) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEvent?>.Default.Equals(AppEvents, other.AppEvents)
                 ;
         }
 

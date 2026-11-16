@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CertificateType2))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0246.Create_CertificateType22(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0245.Create_CertificateType22(options);
                 }
                 if (type == typeof(global::AppStoreConnect.CertificateType2?))
                 {

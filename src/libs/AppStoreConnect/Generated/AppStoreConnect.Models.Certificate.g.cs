@@ -12,8 +12,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.CertificateTypeJsonConverter))]
-        public global::AppStoreConnect.CertificateType Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.CertificateType2JsonConverter))]
+        public global::AppStoreConnect.CertificateType2 Type { get; set; }
 
         /// <summary>
         ///
@@ -59,7 +59,7 @@ namespace AppStoreConnect
 #endif
         public Certificate(
             string id,
-            global::AppStoreConnect.CertificateType type,
+            global::AppStoreConnect.CertificateType2 type,
             global::AppStoreConnect.CertificateAttributes? attributes,
             global::AppStoreConnect.CertificateRelationships? relationships,
             global::AppStoreConnect.ResourceLinks? links)

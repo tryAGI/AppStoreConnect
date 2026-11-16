@@ -6,40 +6,58 @@ namespace AppStoreConnect
     /// <summary>
     ///
     /// </summary>
-    public enum ScmProviderType
+    public sealed partial class ScmProviderType
     {
         /// <summary>
         ///
         /// </summary>
-        ScmProviders,
-    }
+        [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.ScmProviderTypeKindJsonConverter))]
+        public global::AppStoreConnect.ScmProviderTypeKind? Kind { get; set; }
 
-    /// <summary>
-    /// Enum extensions to do fast conversions without the reflection.
-    /// </summary>
-    public static class ScmProviderTypeExtensions
-    {
         /// <summary>
-        /// Converts an enum to a string.
+        ///
         /// </summary>
-        public static string ToValueString(this ScmProviderType value)
-        {
-            return value switch
-            {
-                ScmProviderType.ScmProviders => "scmProviders",
-                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
-            };
-        }
+        [global::System.Text.Json.Serialization.JsonPropertyName("displayName")]
+        public string? DisplayName { get; set; }
+
         /// <summary>
-        /// Converts an string to a enum.
+        ///
         /// </summary>
-        public static ScmProviderType? ToEnum(string value)
+        [global::System.Text.Json.Serialization.JsonPropertyName("isOnPremise")]
+        public bool? IsOnPremise { get; set; }
+
+        /// <summary>
+        /// Additional properties that are not explicitly defined in the schema
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonExtensionData]
+        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ScmProviderType" /> class.
+        /// </summary>
+        /// <param name="kind"></param>
+        /// <param name="displayName"></param>
+        /// <param name="isOnPremise"></param>
+#if NET7_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
+#endif
+        public ScmProviderType(
+            global::AppStoreConnect.ScmProviderTypeKind? kind,
+            string? displayName,
+            bool? isOnPremise)
         {
-            return value switch
-            {
-                "scmProviders" => ScmProviderType.ScmProviders,
-                _ => null,
-            };
+            this.Kind = kind;
+            this.DisplayName = displayName;
+            this.IsOnPremise = isOnPremise;
         }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ScmProviderType" /> class.
+        /// </summary>
+        public ScmProviderType()
+        {
+        }
+
     }
 }

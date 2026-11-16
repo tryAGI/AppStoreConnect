@@ -12,156 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BackgroundAssetsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.RetentionMessageResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.App? Apps { get; init; }
+        public global::AppStoreConnect.RetentionMessageVersion? RetentionMessageVersions { get; init; }
 #else
-        public global::AppStoreConnect.App? Apps { get; }
+        public global::AppStoreConnect.RetentionMessageVersion? RetentionMessageVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RetentionMessageVersions))]
 #endif
-        public bool IsApps => Apps != null;
+        public bool IsRetentionMessageVersions => RetentionMessageVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickApps(
+        public bool TryPickRetentionMessageVersions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.App? value)
+            out global::AppStoreConnect.RetentionMessageVersion? value)
         {
-            value = Apps;
-            return IsApps;
+            value = RetentionMessageVersions;
+            return IsRetentionMessageVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickApps() => Apps is { } value
+        public global::AppStoreConnect.RetentionMessageVersion PickRetentionMessageVersions() => RetentionMessageVersions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RetentionMessageVersions' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BackgroundAssetVersion? BackgroundAssetVersions { get; init; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
 #else
-        public global::AppStoreConnect.BackgroundAssetVersion? BackgroundAssetVersions { get; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BackgroundAssetVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
 #endif
-        public bool IsBackgroundAssetVersions => BackgroundAssetVersions != null;
+        public bool IsSubscriptions => Subscriptions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBackgroundAssetVersions(
+        public bool TryPickSubscriptions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BackgroundAssetVersion? value)
+            out global::AppStoreConnect.Subscription? value)
         {
-            value = BackgroundAssetVersions;
-            return IsBackgroundAssetVersions;
+            value = Subscriptions;
+            return IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BackgroundAssetVersion PickBackgroundAssetVersions() => BackgroundAssetVersions is { } value
+        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem52(global::AppStoreConnect.App value) => new IncludedItem52((global::AppStoreConnect.App?)value);
+        public static implicit operator IncludedItem52(global::AppStoreConnect.RetentionMessageVersion value) => new IncludedItem52((global::AppStoreConnect.RetentionMessageVersion?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.App?(IncludedItem52 @this) => @this.Apps;
+        public static implicit operator global::AppStoreConnect.RetentionMessageVersion?(IncludedItem52 @this) => @this.RetentionMessageVersions;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem52(global::AppStoreConnect.App? value)
+        public IncludedItem52(global::AppStoreConnect.RetentionMessageVersion? value)
         {
-            Apps = value;
+            RetentionMessageVersions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem52 FromApps(global::AppStoreConnect.App? value) => new IncludedItem52(value);
+        public static IncludedItem52 FromRetentionMessageVersions(global::AppStoreConnect.RetentionMessageVersion? value) => new IncludedItem52(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem52(global::AppStoreConnect.BackgroundAssetVersion value) => new IncludedItem52((global::AppStoreConnect.BackgroundAssetVersion?)value);
+        public static implicit operator IncludedItem52(global::AppStoreConnect.Subscription value) => new IncludedItem52((global::AppStoreConnect.Subscription?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BackgroundAssetVersion?(IncludedItem52 @this) => @this.BackgroundAssetVersions;
+        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem52 @this) => @this.Subscriptions;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem52(global::AppStoreConnect.BackgroundAssetVersion? value)
+        public IncludedItem52(global::AppStoreConnect.Subscription? value)
         {
-            BackgroundAssetVersions = value;
+            Subscriptions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem52 FromBackgroundAssetVersions(global::AppStoreConnect.BackgroundAssetVersion? value) => new IncludedItem52(value);
+        public static IncludedItem52 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem52(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem52(
-            global::AppStoreConnect.BackgroundAssetsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.App? apps,
-            global::AppStoreConnect.BackgroundAssetVersion? backgroundAssetVersions
+            global::AppStoreConnect.RetentionMessageResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.RetentionMessageVersion? retentionMessageVersions,
+            global::AppStoreConnect.Subscription? subscriptions
             )
         {
             Type = type;
 
-            Apps = apps;
-            BackgroundAssetVersions = backgroundAssetVersions;
+            RetentionMessageVersions = retentionMessageVersions;
+            Subscriptions = subscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            BackgroundAssetVersions as object ??
-            Apps as object
+            Subscriptions as object ??
+            RetentionMessageVersions as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            Apps?.ToString() ??
-            BackgroundAssetVersions?.ToString()
+            RetentionMessageVersions?.ToString() ??
+            Subscriptions?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsApps && !IsBackgroundAssetVersions || !IsApps && IsBackgroundAssetVersions;
+            return IsRetentionMessageVersions && !IsSubscriptions || !IsRetentionMessageVersions && IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
-            global::System.Func<global::AppStoreConnect.BackgroundAssetVersion, TResult>? backgroundAssetVersions = null,
+            global::System.Func<global::AppStoreConnect.RetentionMessageVersion, TResult>? retentionMessageVersions = null,
+            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0 && apps != null)
+            if (RetentionMessageVersions is { } __value0 && retentionMessageVersions != null)
             {
-                return apps(__value0);
+                return retentionMessageVersions(__value0);
             }
-            else if (BackgroundAssetVersions is { } __value1 && backgroundAssetVersions != null)
+            else if (Subscriptions is { } __value1 && subscriptions != null)
             {
-                return backgroundAssetVersions(__value1);
+                return subscriptions(__value1);
             }
 
             return default(TResult);
@@ -201,9 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.RetentionMessageVersion>? retentionMessageVersions = null,
 
-            global::System.Action<global::AppStoreConnect.BackgroundAssetVersion>? backgroundAssetVersions = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0)
+            if (RetentionMessageVersions is { } __value0)
             {
-                apps?.Invoke(__value0);
+                retentionMessageVersions?.Invoke(__value0);
             }
-            else if (BackgroundAssetVersions is { } __value1)
+            else if (Subscriptions is { } __value1)
             {
-                backgroundAssetVersions?.Invoke(__value1);
+                subscriptions?.Invoke(__value1);
             }
         }
 
@@ -225,8 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
-            global::System.Action<global::AppStoreConnect.BackgroundAssetVersion>? backgroundAssetVersions = null,
+            global::System.Action<global::AppStoreConnect.RetentionMessageVersion>? retentionMessageVersions = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0)
+            if (RetentionMessageVersions is { } __value0)
             {
-                apps?.Invoke(__value0);
+                retentionMessageVersions?.Invoke(__value0);
             }
-            else if (BackgroundAssetVersions is { } __value1)
+            else if (Subscriptions is { } __value1)
             {
-                backgroundAssetVersions?.Invoke(__value1);
+                subscriptions?.Invoke(__value1);
             }
         }
 
@@ -251,10 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                Apps,
-                typeof(global::AppStoreConnect.App),
-                BackgroundAssetVersions,
-                typeof(global::AppStoreConnect.BackgroundAssetVersion),
+                RetentionMessageVersions,
+                typeof(global::AppStoreConnect.RetentionMessageVersion),
+                Subscriptions,
+                typeof(global::AppStoreConnect.Subscription),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem52 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAssetVersion?>.Default.Equals(BackgroundAssetVersions, other.BackgroundAssetVersions)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RetentionMessageVersion?>.Default.Equals(RetentionMessageVersions, other.RetentionMessageVersions) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions)
                 ;
         }
 

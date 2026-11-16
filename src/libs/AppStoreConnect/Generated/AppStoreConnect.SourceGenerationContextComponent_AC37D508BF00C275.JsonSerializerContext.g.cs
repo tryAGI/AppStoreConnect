@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BrazilAgeRating))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0220.Create_BrazilAgeRating2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0219.Create_BrazilAgeRating2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.BrazilAgeRating?))
                 {

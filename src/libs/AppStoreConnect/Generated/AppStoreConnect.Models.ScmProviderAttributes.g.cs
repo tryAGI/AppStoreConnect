@@ -12,7 +12,7 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("scmProviderType")]
-        public global::AppStoreConnect.ScmProviderType2? ScmProviderType { get; set; }
+        public global::AppStoreConnect.ScmProviderType? ScmProviderType { get; set; }
 
         /// <summary>
         ///
@@ -35,7 +35,7 @@ namespace AppStoreConnect
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public ScmProviderAttributes(
-            global::AppStoreConnect.ScmProviderType2? scmProviderType,
+            global::AppStoreConnect.ScmProviderType? scmProviderType,
             string? url)
         {
             this.ScmProviderType = scmProviderType;
