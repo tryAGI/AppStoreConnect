@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0157.Create_AppStoreVersionReleaseRequestType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0156.Create_AppStoreVersionReleaseRequestType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppStoreVersionReleaseRequestType?))
                 {

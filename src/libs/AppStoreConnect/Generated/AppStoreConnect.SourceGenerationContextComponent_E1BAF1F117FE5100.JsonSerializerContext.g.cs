@@ -9,7 +9,7 @@ namespace AppStoreConnect
         internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::AppStoreConnect.SourceGenerationContextMetadataScope>[] {
-                    static () => global::AppStoreConnect.SourceGenerationContextComponent_2925E1687C5C1D98.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_B267C9C11D35F665.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_B54CAE09EA7102C5.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_D9CE95D3D58F50B9.MetadataScope,
+                    static () => global::AppStoreConnect.SourceGenerationContextComponent_473287F8298DBA71.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_B267C9C11D35F665.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_B54CAE09EA7102C5.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_D9CE95D3D58F50B9.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_EFB640C9C897DDFE.MetadataScope,
                 }, ContributeConverters);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 
@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ScmProvider))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0821.Create_ScmProvider(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0820.Create_ScmProvider(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

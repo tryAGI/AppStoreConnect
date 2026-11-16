@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CiIssueType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0257.Create_CiIssueType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0256.Create_CiIssueType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.CiIssueType?))
                 {

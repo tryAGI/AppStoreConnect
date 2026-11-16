@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.MerchantIdType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0483.Create_MerchantIdType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0482.Create_MerchantIdType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.MerchantIdType?))
                 {

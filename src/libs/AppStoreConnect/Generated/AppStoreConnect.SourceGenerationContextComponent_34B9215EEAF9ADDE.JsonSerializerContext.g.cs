@@ -9,7 +9,7 @@ namespace AppStoreConnect
         internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::AppStoreConnect.SourceGenerationContextMetadataScope>[] {
-                    static () => global::AppStoreConnect.SourceGenerationContextComponent_849D9B77BC8AFA20.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_B3F482B5334BFB9D.MetadataScope,
+                    static () => global::AppStoreConnect.SourceGenerationContextComponent_1D2A496156E30D60.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_849D9B77BC8AFA20.MetadataScope,
                 }, ContributeConverters);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 

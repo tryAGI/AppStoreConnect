@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.GameCenterMatchmakingTestRequestType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0430.Create_GameCenterMatchmakingTestRequestType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0429.Create_GameCenterMatchmakingTestRequestType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.GameCenterMatchmakingTestRequestType?))
                 {

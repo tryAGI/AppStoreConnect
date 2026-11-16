@@ -12,156 +12,220 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboardSetReleasesResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppClipAdvancedExperiencesResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterDetail? GameCenterDetails { get; init; }
+        public global::AppStoreConnect.AppClipAdvancedExperienceImage? AppClipAdvancedExperienceImages { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterDetail? GameCenterDetails { get; }
+        public global::AppStoreConnect.AppClipAdvancedExperienceImage? AppClipAdvancedExperienceImages { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterDetails))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppClipAdvancedExperienceImages))]
 #endif
-        public bool IsGameCenterDetails => GameCenterDetails != null;
+        public bool IsAppClipAdvancedExperienceImages => AppClipAdvancedExperienceImages != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterDetails(
+        public bool TryPickAppClipAdvancedExperienceImages(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterDetail? value)
+            out global::AppStoreConnect.AppClipAdvancedExperienceImage? value)
         {
-            value = GameCenterDetails;
-            return IsGameCenterDetails;
+            value = AppClipAdvancedExperienceImages;
+            return IsAppClipAdvancedExperienceImages;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterDetail PickGameCenterDetails() => GameCenterDetails is { } value
+        public global::AppStoreConnect.AppClipAdvancedExperienceImage PickAppClipAdvancedExperienceImages() => AppClipAdvancedExperienceImages is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterDetails' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipAdvancedExperienceImages' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterLeaderboardSet? GameCenterLeaderboardSets { get; init; }
+        public global::AppStoreConnect.AppClipAdvancedExperienceLocalization? AppClipAdvancedExperienceLocalizations { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterLeaderboardSet? GameCenterLeaderboardSets { get; }
+        public global::AppStoreConnect.AppClipAdvancedExperienceLocalization? AppClipAdvancedExperienceLocalizations { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSets))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppClipAdvancedExperienceLocalizations))]
 #endif
-        public bool IsGameCenterLeaderboardSets => GameCenterLeaderboardSets != null;
+        public bool IsAppClipAdvancedExperienceLocalizations => AppClipAdvancedExperienceLocalizations != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterLeaderboardSets(
+        public bool TryPickAppClipAdvancedExperienceLocalizations(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterLeaderboardSet? value)
+            out global::AppStoreConnect.AppClipAdvancedExperienceLocalization? value)
         {
-            value = GameCenterLeaderboardSets;
-            return IsGameCenterLeaderboardSets;
+            value = AppClipAdvancedExperienceLocalizations;
+            return IsAppClipAdvancedExperienceLocalizations;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboardSet PickGameCenterLeaderboardSets() => GameCenterLeaderboardSets is { } value
+        public global::AppStoreConnect.AppClipAdvancedExperienceLocalization PickAppClipAdvancedExperienceLocalizations() => AppClipAdvancedExperienceLocalizations is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSets' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem120(global::AppStoreConnect.GameCenterDetail value) => new IncludedItem120((global::AppStoreConnect.GameCenterDetail?)value);
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipAdvancedExperienceLocalizations' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterDetail?(IncludedItem120 @this) => @this.GameCenterDetails;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AppClip? AppClips { get; init; }
+#else
+        public global::AppStoreConnect.AppClip? AppClips { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem120(global::AppStoreConnect.GameCenterDetail? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppClips))]
+#endif
+        public bool IsAppClips => AppClips != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAppClips(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppClip? value)
         {
-            GameCenterDetails = value;
+            value = AppClips;
+            return IsAppClips;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem120 FromGameCenterDetails(global::AppStoreConnect.GameCenterDetail? value) => new IncludedItem120(value);
+        public global::AppStoreConnect.AppClip PickAppClips() => AppClips is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppClips' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem120(global::AppStoreConnect.AppClipAdvancedExperienceImage value) => new IncludedItem120((global::AppStoreConnect.AppClipAdvancedExperienceImage?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem120(global::AppStoreConnect.GameCenterLeaderboardSet value) => new IncludedItem120((global::AppStoreConnect.GameCenterLeaderboardSet?)value);
+        public static implicit operator global::AppStoreConnect.AppClipAdvancedExperienceImage?(IncludedItem120 @this) => @this.AppClipAdvancedExperienceImages;
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSet?(IncludedItem120 @this) => @this.GameCenterLeaderboardSets;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem120(global::AppStoreConnect.GameCenterLeaderboardSet? value)
+        public IncludedItem120(global::AppStoreConnect.AppClipAdvancedExperienceImage? value)
         {
-            GameCenterLeaderboardSets = value;
+            AppClipAdvancedExperienceImages = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem120 FromGameCenterLeaderboardSets(global::AppStoreConnect.GameCenterLeaderboardSet? value) => new IncludedItem120(value);
+        public static IncludedItem120 FromAppClipAdvancedExperienceImages(global::AppStoreConnect.AppClipAdvancedExperienceImage? value) => new IncludedItem120(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem120(global::AppStoreConnect.AppClipAdvancedExperienceLocalization value) => new IncludedItem120((global::AppStoreConnect.AppClipAdvancedExperienceLocalization?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppClipAdvancedExperienceLocalization?(IncludedItem120 @this) => @this.AppClipAdvancedExperienceLocalizations;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem120(global::AppStoreConnect.AppClipAdvancedExperienceLocalization? value)
+        {
+            AppClipAdvancedExperienceLocalizations = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem120 FromAppClipAdvancedExperienceLocalizations(global::AppStoreConnect.AppClipAdvancedExperienceLocalization? value) => new IncludedItem120(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem120(global::AppStoreConnect.AppClip value) => new IncludedItem120((global::AppStoreConnect.AppClip?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppClip?(IncludedItem120 @this) => @this.AppClips;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem120(global::AppStoreConnect.AppClip? value)
+        {
+            AppClips = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem120 FromAppClips(global::AppStoreConnect.AppClip? value) => new IncludedItem120(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem120(
-            global::AppStoreConnect.GameCenterLeaderboardSetReleasesResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.GameCenterDetail? gameCenterDetails,
-            global::AppStoreConnect.GameCenterLeaderboardSet? gameCenterLeaderboardSets
+            global::AppStoreConnect.AppClipAdvancedExperiencesResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppClipAdvancedExperienceImage? appClipAdvancedExperienceImages,
+            global::AppStoreConnect.AppClipAdvancedExperienceLocalization? appClipAdvancedExperienceLocalizations,
+            global::AppStoreConnect.AppClip? appClips
             )
         {
             Type = type;
 
-            GameCenterDetails = gameCenterDetails;
-            GameCenterLeaderboardSets = gameCenterLeaderboardSets;
+            AppClipAdvancedExperienceImages = appClipAdvancedExperienceImages;
+            AppClipAdvancedExperienceLocalizations = appClipAdvancedExperienceLocalizations;
+            AppClips = appClips;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            GameCenterLeaderboardSets as object ??
-            GameCenterDetails as object
+            AppClips as object ??
+            AppClipAdvancedExperienceLocalizations as object ??
+            AppClipAdvancedExperienceImages as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            GameCenterDetails?.ToString() ??
-            GameCenterLeaderboardSets?.ToString()
+            AppClipAdvancedExperienceImages?.ToString() ??
+            AppClipAdvancedExperienceLocalizations?.ToString() ??
+            AppClips?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsGameCenterDetails && !IsGameCenterLeaderboardSets || !IsGameCenterDetails && IsGameCenterLeaderboardSets;
+            return IsAppClipAdvancedExperienceImages && !IsAppClipAdvancedExperienceLocalizations && !IsAppClips || !IsAppClipAdvancedExperienceImages && IsAppClipAdvancedExperienceLocalizations && !IsAppClips || !IsAppClipAdvancedExperienceImages && !IsAppClipAdvancedExperienceLocalizations && IsAppClips;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.GameCenterDetail, TResult>? gameCenterDetails = null,
-            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSet, TResult>? gameCenterLeaderboardSets = null,
+            global::System.Func<global::AppStoreConnect.AppClipAdvancedExperienceImage, TResult>? appClipAdvancedExperienceImages = null,
+            global::System.Func<global::AppStoreConnect.AppClipAdvancedExperienceLocalization, TResult>? appClipAdvancedExperienceLocalizations = null,
+            global::System.Func<global::AppStoreConnect.AppClip, TResult>? appClips = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterDetails is { } __value0 && gameCenterDetails != null)
+            if (AppClipAdvancedExperienceImages is { } __value0 && appClipAdvancedExperienceImages != null)
             {
-                return gameCenterDetails(__value0);
+                return appClipAdvancedExperienceImages(__value0);
             }
-            else if (GameCenterLeaderboardSets is { } __value1 && gameCenterLeaderboardSets != null)
+            else if (AppClipAdvancedExperienceLocalizations is { } __value1 && appClipAdvancedExperienceLocalizations != null)
             {
-                return gameCenterLeaderboardSets(__value1);
+                return appClipAdvancedExperienceLocalizations(__value1);
+            }
+            else if (AppClips is { } __value2 && appClips != null)
+            {
+                return appClips(__value2);
             }
 
             return default(TResult);
@@ -201,9 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.GameCenterDetail>? gameCenterDetails = null,
+            global::System.Action<global::AppStoreConnect.AppClipAdvancedExperienceImage>? appClipAdvancedExperienceImages = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSet>? gameCenterLeaderboardSets = null,
+            global::System.Action<global::AppStoreConnect.AppClipAdvancedExperienceLocalization>? appClipAdvancedExperienceLocalizations = null,
+
+            global::System.Action<global::AppStoreConnect.AppClip>? appClips = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterDetails is { } __value0)
+            if (AppClipAdvancedExperienceImages is { } __value0)
             {
-                gameCenterDetails?.Invoke(__value0);
+                appClipAdvancedExperienceImages?.Invoke(__value0);
             }
-            else if (GameCenterLeaderboardSets is { } __value1)
+            else if (AppClipAdvancedExperienceLocalizations is { } __value1)
             {
-                gameCenterLeaderboardSets?.Invoke(__value1);
+                appClipAdvancedExperienceLocalizations?.Invoke(__value1);
+            }
+            else if (AppClips is { } __value2)
+            {
+                appClips?.Invoke(__value2);
             }
         }
 
@@ -225,8 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.GameCenterDetail>? gameCenterDetails = null,
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSet>? gameCenterLeaderboardSets = null,
+            global::System.Action<global::AppStoreConnect.AppClipAdvancedExperienceImage>? appClipAdvancedExperienceImages = null,
+            global::System.Action<global::AppStoreConnect.AppClipAdvancedExperienceLocalization>? appClipAdvancedExperienceLocalizations = null,
+            global::System.Action<global::AppStoreConnect.AppClip>? appClips = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterDetails is { } __value0)
+            if (AppClipAdvancedExperienceImages is { } __value0)
             {
-                gameCenterDetails?.Invoke(__value0);
+                appClipAdvancedExperienceImages?.Invoke(__value0);
             }
-            else if (GameCenterLeaderboardSets is { } __value1)
+            else if (AppClipAdvancedExperienceLocalizations is { } __value1)
             {
-                gameCenterLeaderboardSets?.Invoke(__value1);
+                appClipAdvancedExperienceLocalizations?.Invoke(__value1);
+            }
+            else if (AppClips is { } __value2)
+            {
+                appClips?.Invoke(__value2);
             }
         }
 
@@ -251,10 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                GameCenterDetails,
-                typeof(global::AppStoreConnect.GameCenterDetail),
-                GameCenterLeaderboardSets,
-                typeof(global::AppStoreConnect.GameCenterLeaderboardSet),
+                AppClipAdvancedExperienceImages,
+                typeof(global::AppStoreConnect.AppClipAdvancedExperienceImage),
+                AppClipAdvancedExperienceLocalizations,
+                typeof(global::AppStoreConnect.AppClipAdvancedExperienceLocalization),
+                AppClips,
+                typeof(global::AppStoreConnect.AppClip),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem120 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterDetail?>.Default.Equals(GameCenterDetails, other.GameCenterDetails) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSet?>.Default.Equals(GameCenterLeaderboardSets, other.GameCenterLeaderboardSets)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppClipAdvancedExperienceImage?>.Default.Equals(AppClipAdvancedExperienceImages, other.AppClipAdvancedExperienceImages) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppClipAdvancedExperienceLocalization?>.Default.Equals(AppClipAdvancedExperienceLocalizations, other.AppClipAdvancedExperienceLocalizations) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppClip?>.Default.Equals(AppClips, other.AppClips)
                 ;
         }
 

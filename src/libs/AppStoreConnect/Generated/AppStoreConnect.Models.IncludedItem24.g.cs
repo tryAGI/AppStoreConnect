@@ -12,284 +12,348 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppInfosResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.CiBuildRunsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AgeRatingDeclaration? AgeRatingDeclarations { get; init; }
+        public global::AppStoreConnect.Build? Builds { get; init; }
 #else
-        public global::AppStoreConnect.AgeRatingDeclaration? AgeRatingDeclarations { get; }
+        public global::AppStoreConnect.Build? Builds { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AgeRatingDeclarations))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
 #endif
-        public bool IsAgeRatingDeclarations => AgeRatingDeclarations != null;
+        public bool IsBuilds => Builds != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAgeRatingDeclarations(
+        public bool TryPickBuilds(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AgeRatingDeclaration? value)
+            out global::AppStoreConnect.Build? value)
         {
-            value = AgeRatingDeclarations;
-            return IsAgeRatingDeclarations;
+            value = Builds;
+            return IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AgeRatingDeclaration PickAgeRatingDeclarations() => AgeRatingDeclarations is { } value
+        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AgeRatingDeclarations' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppCategory? AppCategories { get; init; }
+        public global::AppStoreConnect.CiProduct? CiProducts { get; init; }
 #else
-        public global::AppStoreConnect.AppCategory? AppCategories { get; }
+        public global::AppStoreConnect.CiProduct? CiProducts { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCategories))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CiProducts))]
 #endif
-        public bool IsAppCategories => AppCategories != null;
+        public bool IsCiProducts => CiProducts != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppCategories(
+        public bool TryPickCiProducts(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppCategory? value)
+            out global::AppStoreConnect.CiProduct? value)
         {
-            value = AppCategories;
-            return IsAppCategories;
+            value = CiProducts;
+            return IsCiProducts;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCategory PickAppCategories() => AppCategories is { } value
+        public global::AppStoreConnect.CiProduct PickCiProducts() => CiProducts is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCategories' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CiProducts' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppInfoLocalization? AppInfoLocalizations { get; init; }
+        public global::AppStoreConnect.CiWorkflow? CiWorkflows { get; init; }
 #else
-        public global::AppStoreConnect.AppInfoLocalization? AppInfoLocalizations { get; }
+        public global::AppStoreConnect.CiWorkflow? CiWorkflows { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppInfoLocalizations))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(CiWorkflows))]
 #endif
-        public bool IsAppInfoLocalizations => AppInfoLocalizations != null;
+        public bool IsCiWorkflows => CiWorkflows != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppInfoLocalizations(
+        public bool TryPickCiWorkflows(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppInfoLocalization? value)
+            out global::AppStoreConnect.CiWorkflow? value)
         {
-            value = AppInfoLocalizations;
-            return IsAppInfoLocalizations;
+            value = CiWorkflows;
+            return IsCiWorkflows;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppInfoLocalization PickAppInfoLocalizations() => AppInfoLocalizations is { } value
+        public global::AppStoreConnect.CiWorkflow PickCiWorkflows() => CiWorkflows is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppInfoLocalizations' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'CiWorkflows' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.App? Apps { get; init; }
+        public global::AppStoreConnect.ScmGitReference? ScmGitReferences { get; init; }
 #else
-        public global::AppStoreConnect.App? Apps { get; }
+        public global::AppStoreConnect.ScmGitReference? ScmGitReferences { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmGitReferences))]
 #endif
-        public bool IsApps => Apps != null;
+        public bool IsScmGitReferences => ScmGitReferences != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickApps(
+        public bool TryPickScmGitReferences(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.App? value)
+            out global::AppStoreConnect.ScmGitReference? value)
         {
-            value = Apps;
-            return IsApps;
+            value = ScmGitReferences;
+            return IsScmGitReferences;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickApps() => Apps is { } value
+        public global::AppStoreConnect.ScmGitReference PickScmGitReferences() => ScmGitReferences is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem24(global::AppStoreConnect.AgeRatingDeclaration value) => new IncludedItem24((global::AppStoreConnect.AgeRatingDeclaration?)value);
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScmGitReferences' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AgeRatingDeclaration?(IncludedItem24 @this) => @this.AgeRatingDeclarations;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.ScmPullRequest? ScmPullRequests { get; init; }
+#else
+        public global::AppStoreConnect.ScmPullRequest? ScmPullRequests { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem24(global::AppStoreConnect.AgeRatingDeclaration? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmPullRequests))]
+#endif
+        public bool IsScmPullRequests => ScmPullRequests != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickScmPullRequests(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.ScmPullRequest? value)
         {
-            AgeRatingDeclarations = value;
+            value = ScmPullRequests;
+            return IsScmPullRequests;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem24 FromAgeRatingDeclarations(global::AppStoreConnect.AgeRatingDeclaration? value) => new IncludedItem24(value);
+        public global::AppStoreConnect.ScmPullRequest PickScmPullRequests() => ScmPullRequests is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScmPullRequests' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem24(global::AppStoreConnect.Build value) => new IncludedItem24((global::AppStoreConnect.Build?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem24(global::AppStoreConnect.AppCategory value) => new IncludedItem24((global::AppStoreConnect.AppCategory?)value);
+        public static implicit operator global::AppStoreConnect.Build?(IncludedItem24 @this) => @this.Builds;
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppCategory?(IncludedItem24 @this) => @this.AppCategories;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem24(global::AppStoreConnect.AppCategory? value)
+        public IncludedItem24(global::AppStoreConnect.Build? value)
         {
-            AppCategories = value;
+            Builds = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem24 FromAppCategories(global::AppStoreConnect.AppCategory? value) => new IncludedItem24(value);
+        public static IncludedItem24 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem24(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem24(global::AppStoreConnect.AppInfoLocalization value) => new IncludedItem24((global::AppStoreConnect.AppInfoLocalization?)value);
+        public static implicit operator IncludedItem24(global::AppStoreConnect.CiProduct value) => new IncludedItem24((global::AppStoreConnect.CiProduct?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppInfoLocalization?(IncludedItem24 @this) => @this.AppInfoLocalizations;
+        public static implicit operator global::AppStoreConnect.CiProduct?(IncludedItem24 @this) => @this.CiProducts;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem24(global::AppStoreConnect.AppInfoLocalization? value)
+        public IncludedItem24(global::AppStoreConnect.CiProduct? value)
         {
-            AppInfoLocalizations = value;
+            CiProducts = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem24 FromAppInfoLocalizations(global::AppStoreConnect.AppInfoLocalization? value) => new IncludedItem24(value);
+        public static IncludedItem24 FromCiProducts(global::AppStoreConnect.CiProduct? value) => new IncludedItem24(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem24(global::AppStoreConnect.App value) => new IncludedItem24((global::AppStoreConnect.App?)value);
+        public static implicit operator IncludedItem24(global::AppStoreConnect.CiWorkflow value) => new IncludedItem24((global::AppStoreConnect.CiWorkflow?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.App?(IncludedItem24 @this) => @this.Apps;
+        public static implicit operator global::AppStoreConnect.CiWorkflow?(IncludedItem24 @this) => @this.CiWorkflows;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem24(global::AppStoreConnect.App? value)
+        public IncludedItem24(global::AppStoreConnect.CiWorkflow? value)
         {
-            Apps = value;
+            CiWorkflows = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem24 FromApps(global::AppStoreConnect.App? value) => new IncludedItem24(value);
+        public static IncludedItem24 FromCiWorkflows(global::AppStoreConnect.CiWorkflow? value) => new IncludedItem24(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem24(global::AppStoreConnect.ScmGitReference value) => new IncludedItem24((global::AppStoreConnect.ScmGitReference?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.ScmGitReference?(IncludedItem24 @this) => @this.ScmGitReferences;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem24(global::AppStoreConnect.ScmGitReference? value)
+        {
+            ScmGitReferences = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem24 FromScmGitReferences(global::AppStoreConnect.ScmGitReference? value) => new IncludedItem24(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem24(global::AppStoreConnect.ScmPullRequest value) => new IncludedItem24((global::AppStoreConnect.ScmPullRequest?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.ScmPullRequest?(IncludedItem24 @this) => @this.ScmPullRequests;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem24(global::AppStoreConnect.ScmPullRequest? value)
+        {
+            ScmPullRequests = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem24 FromScmPullRequests(global::AppStoreConnect.ScmPullRequest? value) => new IncludedItem24(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem24(
-            global::AppStoreConnect.AppInfosResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AgeRatingDeclaration? ageRatingDeclarations,
-            global::AppStoreConnect.AppCategory? appCategories,
-            global::AppStoreConnect.AppInfoLocalization? appInfoLocalizations,
-            global::AppStoreConnect.App? apps
+            global::AppStoreConnect.CiBuildRunsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.Build? builds,
+            global::AppStoreConnect.CiProduct? ciProducts,
+            global::AppStoreConnect.CiWorkflow? ciWorkflows,
+            global::AppStoreConnect.ScmGitReference? scmGitReferences,
+            global::AppStoreConnect.ScmPullRequest? scmPullRequests
             )
         {
             Type = type;
 
-            AgeRatingDeclarations = ageRatingDeclarations;
-            AppCategories = appCategories;
-            AppInfoLocalizations = appInfoLocalizations;
-            Apps = apps;
+            Builds = builds;
+            CiProducts = ciProducts;
+            CiWorkflows = ciWorkflows;
+            ScmGitReferences = scmGitReferences;
+            ScmPullRequests = scmPullRequests;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Apps as object ??
-            AppInfoLocalizations as object ??
-            AppCategories as object ??
-            AgeRatingDeclarations as object
+            ScmPullRequests as object ??
+            ScmGitReferences as object ??
+            CiWorkflows as object ??
+            CiProducts as object ??
+            Builds as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AgeRatingDeclarations?.ToString() ??
-            AppCategories?.ToString() ??
-            AppInfoLocalizations?.ToString() ??
-            Apps?.ToString()
+            Builds?.ToString() ??
+            CiProducts?.ToString() ??
+            CiWorkflows?.ToString() ??
+            ScmGitReferences?.ToString() ??
+            ScmPullRequests?.ToString()
             ;
 
         /// <summary>
@@ -297,17 +361,18 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAgeRatingDeclarations && !IsAppCategories && !IsAppInfoLocalizations && !IsApps || !IsAgeRatingDeclarations && IsAppCategories && !IsAppInfoLocalizations && !IsApps || !IsAgeRatingDeclarations && !IsAppCategories && IsAppInfoLocalizations && !IsApps || !IsAgeRatingDeclarations && !IsAppCategories && !IsAppInfoLocalizations && IsApps;
+            return IsBuilds && !IsCiProducts && !IsCiWorkflows && !IsScmGitReferences && !IsScmPullRequests || !IsBuilds && IsCiProducts && !IsCiWorkflows && !IsScmGitReferences && !IsScmPullRequests || !IsBuilds && !IsCiProducts && IsCiWorkflows && !IsScmGitReferences && !IsScmPullRequests || !IsBuilds && !IsCiProducts && !IsCiWorkflows && IsScmGitReferences && !IsScmPullRequests || !IsBuilds && !IsCiProducts && !IsCiWorkflows && !IsScmGitReferences && IsScmPullRequests;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AgeRatingDeclaration, TResult>? ageRatingDeclarations = null,
-            global::System.Func<global::AppStoreConnect.AppCategory, TResult>? appCategories = null,
-            global::System.Func<global::AppStoreConnect.AppInfoLocalization, TResult>? appInfoLocalizations = null,
-            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
+            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
+            global::System.Func<global::AppStoreConnect.CiProduct, TResult>? ciProducts = null,
+            global::System.Func<global::AppStoreConnect.CiWorkflow, TResult>? ciWorkflows = null,
+            global::System.Func<global::AppStoreConnect.ScmGitReference, TResult>? scmGitReferences = null,
+            global::System.Func<global::AppStoreConnect.ScmPullRequest, TResult>? scmPullRequests = null,
             bool validate = true)
         {
             if (validate)
@@ -315,21 +380,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AgeRatingDeclarations is { } __value0 && ageRatingDeclarations != null)
+            if (Builds is { } __value0 && builds != null)
             {
-                return ageRatingDeclarations(__value0);
+                return builds(__value0);
             }
-            else if (AppCategories is { } __value1 && appCategories != null)
+            else if (CiProducts is { } __value1 && ciProducts != null)
             {
-                return appCategories(__value1);
+                return ciProducts(__value1);
             }
-            else if (AppInfoLocalizations is { } __value2 && appInfoLocalizations != null)
+            else if (CiWorkflows is { } __value2 && ciWorkflows != null)
             {
-                return appInfoLocalizations(__value2);
+                return ciWorkflows(__value2);
             }
-            else if (Apps is { } __value3 && apps != null)
+            else if (ScmGitReferences is { } __value3 && scmGitReferences != null)
             {
-                return apps(__value3);
+                return scmGitReferences(__value3);
+            }
+            else if (ScmPullRequests is { } __value4 && scmPullRequests != null)
+            {
+                return scmPullRequests(__value4);
             }
 
             return default(TResult);
@@ -339,13 +408,15 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AgeRatingDeclaration>? ageRatingDeclarations = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
 
-            global::System.Action<global::AppStoreConnect.AppCategory>? appCategories = null,
+            global::System.Action<global::AppStoreConnect.CiProduct>? ciProducts = null,
 
-            global::System.Action<global::AppStoreConnect.AppInfoLocalization>? appInfoLocalizations = null,
+            global::System.Action<global::AppStoreConnect.CiWorkflow>? ciWorkflows = null,
 
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.ScmGitReference>? scmGitReferences = null,
+
+            global::System.Action<global::AppStoreConnect.ScmPullRequest>? scmPullRequests = null,
             bool validate = true)
         {
             if (validate)
@@ -353,21 +424,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AgeRatingDeclarations is { } __value0)
+            if (Builds is { } __value0)
             {
-                ageRatingDeclarations?.Invoke(__value0);
+                builds?.Invoke(__value0);
             }
-            else if (AppCategories is { } __value1)
+            else if (CiProducts is { } __value1)
             {
-                appCategories?.Invoke(__value1);
+                ciProducts?.Invoke(__value1);
             }
-            else if (AppInfoLocalizations is { } __value2)
+            else if (CiWorkflows is { } __value2)
             {
-                appInfoLocalizations?.Invoke(__value2);
+                ciWorkflows?.Invoke(__value2);
             }
-            else if (Apps is { } __value3)
+            else if (ScmGitReferences is { } __value3)
             {
-                apps?.Invoke(__value3);
+                scmGitReferences?.Invoke(__value3);
+            }
+            else if (ScmPullRequests is { } __value4)
+            {
+                scmPullRequests?.Invoke(__value4);
             }
         }
 
@@ -375,10 +450,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AgeRatingDeclaration>? ageRatingDeclarations = null,
-            global::System.Action<global::AppStoreConnect.AppCategory>? appCategories = null,
-            global::System.Action<global::AppStoreConnect.AppInfoLocalization>? appInfoLocalizations = null,
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
+            global::System.Action<global::AppStoreConnect.CiProduct>? ciProducts = null,
+            global::System.Action<global::AppStoreConnect.CiWorkflow>? ciWorkflows = null,
+            global::System.Action<global::AppStoreConnect.ScmGitReference>? scmGitReferences = null,
+            global::System.Action<global::AppStoreConnect.ScmPullRequest>? scmPullRequests = null,
             bool validate = true)
         {
             if (validate)
@@ -386,21 +462,25 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AgeRatingDeclarations is { } __value0)
+            if (Builds is { } __value0)
             {
-                ageRatingDeclarations?.Invoke(__value0);
+                builds?.Invoke(__value0);
             }
-            else if (AppCategories is { } __value1)
+            else if (CiProducts is { } __value1)
             {
-                appCategories?.Invoke(__value1);
+                ciProducts?.Invoke(__value1);
             }
-            else if (AppInfoLocalizations is { } __value2)
+            else if (CiWorkflows is { } __value2)
             {
-                appInfoLocalizations?.Invoke(__value2);
+                ciWorkflows?.Invoke(__value2);
             }
-            else if (Apps is { } __value3)
+            else if (ScmGitReferences is { } __value3)
             {
-                apps?.Invoke(__value3);
+                scmGitReferences?.Invoke(__value3);
+            }
+            else if (ScmPullRequests is { } __value4)
+            {
+                scmPullRequests?.Invoke(__value4);
             }
         }
 
@@ -411,14 +491,16 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AgeRatingDeclarations,
-                typeof(global::AppStoreConnect.AgeRatingDeclaration),
-                AppCategories,
-                typeof(global::AppStoreConnect.AppCategory),
-                AppInfoLocalizations,
-                typeof(global::AppStoreConnect.AppInfoLocalization),
-                Apps,
-                typeof(global::AppStoreConnect.App),
+                Builds,
+                typeof(global::AppStoreConnect.Build),
+                CiProducts,
+                typeof(global::AppStoreConnect.CiProduct),
+                CiWorkflows,
+                typeof(global::AppStoreConnect.CiWorkflow),
+                ScmGitReferences,
+                typeof(global::AppStoreConnect.ScmGitReference),
+                ScmPullRequests,
+                typeof(global::AppStoreConnect.ScmPullRequest),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -435,10 +517,11 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem24 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AgeRatingDeclaration?>.Default.Equals(AgeRatingDeclarations, other.AgeRatingDeclarations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCategory?>.Default.Equals(AppCategories, other.AppCategories) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppInfoLocalization?>.Default.Equals(AppInfoLocalizations, other.AppInfoLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CiProduct?>.Default.Equals(CiProducts, other.CiProducts) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.CiWorkflow?>.Default.Equals(CiWorkflows, other.CiWorkflows) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmGitReference?>.Default.Equals(ScmGitReferences, other.ScmGitReferences) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmPullRequest?>.Default.Equals(ScmPullRequests, other.ScmPullRequests)
                 ;
         }
 

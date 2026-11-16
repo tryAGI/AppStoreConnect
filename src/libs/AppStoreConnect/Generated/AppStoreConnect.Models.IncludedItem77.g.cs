@@ -12,156 +12,220 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAchievementLocalizationsV2ResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.InAppPurchaseVersionResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterAchievementImageV2? GameCenterAchievementImages { get; init; }
+        public global::AppStoreConnect.InAppPurchaseImageV2? InAppPurchaseImages { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterAchievementImageV2? GameCenterAchievementImages { get; }
+        public global::AppStoreConnect.InAppPurchaseImageV2? InAppPurchaseImages { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterAchievementImages))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseImages))]
 #endif
-        public bool IsGameCenterAchievementImages => GameCenterAchievementImages != null;
+        public bool IsInAppPurchaseImages => InAppPurchaseImages != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterAchievementImages(
+        public bool TryPickInAppPurchaseImages(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterAchievementImageV2? value)
+            out global::AppStoreConnect.InAppPurchaseImageV2? value)
         {
-            value = GameCenterAchievementImages;
-            return IsGameCenterAchievementImages;
+            value = InAppPurchaseImages;
+            return IsInAppPurchaseImages;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAchievementImageV2 PickGameCenterAchievementImages() => GameCenterAchievementImages is { } value
+        public global::AppStoreConnect.InAppPurchaseImageV2 PickInAppPurchaseImages() => InAppPurchaseImages is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAchievementImages' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseImages' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterAchievementVersionV2? GameCenterAchievementVersions { get; init; }
+        public global::AppStoreConnect.InAppPurchaseLocalizationV2? InAppPurchaseLocalizations { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterAchievementVersionV2? GameCenterAchievementVersions { get; }
+        public global::AppStoreConnect.InAppPurchaseLocalizationV2? InAppPurchaseLocalizations { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterAchievementVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseLocalizations))]
 #endif
-        public bool IsGameCenterAchievementVersions => GameCenterAchievementVersions != null;
+        public bool IsInAppPurchaseLocalizations => InAppPurchaseLocalizations != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterAchievementVersions(
+        public bool TryPickInAppPurchaseLocalizations(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterAchievementVersionV2? value)
+            out global::AppStoreConnect.InAppPurchaseLocalizationV2? value)
         {
-            value = GameCenterAchievementVersions;
-            return IsGameCenterAchievementVersions;
+            value = InAppPurchaseLocalizations;
+            return IsInAppPurchaseLocalizations;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAchievementVersionV2 PickGameCenterAchievementVersions() => GameCenterAchievementVersions is { } value
+        public global::AppStoreConnect.InAppPurchaseLocalizationV2 PickInAppPurchaseLocalizations() => InAppPurchaseLocalizations is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAchievementVersions' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem77(global::AppStoreConnect.GameCenterAchievementImageV2 value) => new IncludedItem77((global::AppStoreConnect.GameCenterAchievementImageV2?)value);
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseLocalizations' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterAchievementImageV2?(IncludedItem77 @this) => @this.GameCenterAchievementImages;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.InAppPurchaseV2? InAppPurchases { get; init; }
+#else
+        public global::AppStoreConnect.InAppPurchaseV2? InAppPurchases { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem77(global::AppStoreConnect.GameCenterAchievementImageV2? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchases))]
+#endif
+        public bool IsInAppPurchases => InAppPurchases != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickInAppPurchases(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.InAppPurchaseV2? value)
         {
-            GameCenterAchievementImages = value;
+            value = InAppPurchases;
+            return IsInAppPurchases;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem77 FromGameCenterAchievementImages(global::AppStoreConnect.GameCenterAchievementImageV2? value) => new IncludedItem77(value);
+        public global::AppStoreConnect.InAppPurchaseV2 PickInAppPurchases() => InAppPurchases is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchases' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem77(global::AppStoreConnect.InAppPurchaseImageV2 value) => new IncludedItem77((global::AppStoreConnect.InAppPurchaseImageV2?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem77(global::AppStoreConnect.GameCenterAchievementVersionV2 value) => new IncludedItem77((global::AppStoreConnect.GameCenterAchievementVersionV2?)value);
+        public static implicit operator global::AppStoreConnect.InAppPurchaseImageV2?(IncludedItem77 @this) => @this.InAppPurchaseImages;
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterAchievementVersionV2?(IncludedItem77 @this) => @this.GameCenterAchievementVersions;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem77(global::AppStoreConnect.GameCenterAchievementVersionV2? value)
+        public IncludedItem77(global::AppStoreConnect.InAppPurchaseImageV2? value)
         {
-            GameCenterAchievementVersions = value;
+            InAppPurchaseImages = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem77 FromGameCenterAchievementVersions(global::AppStoreConnect.GameCenterAchievementVersionV2? value) => new IncludedItem77(value);
+        public static IncludedItem77 FromInAppPurchaseImages(global::AppStoreConnect.InAppPurchaseImageV2? value) => new IncludedItem77(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem77(global::AppStoreConnect.InAppPurchaseLocalizationV2 value) => new IncludedItem77((global::AppStoreConnect.InAppPurchaseLocalizationV2?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.InAppPurchaseLocalizationV2?(IncludedItem77 @this) => @this.InAppPurchaseLocalizations;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem77(global::AppStoreConnect.InAppPurchaseLocalizationV2? value)
+        {
+            InAppPurchaseLocalizations = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem77 FromInAppPurchaseLocalizations(global::AppStoreConnect.InAppPurchaseLocalizationV2? value) => new IncludedItem77(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem77(global::AppStoreConnect.InAppPurchaseV2 value) => new IncludedItem77((global::AppStoreConnect.InAppPurchaseV2?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.InAppPurchaseV2?(IncludedItem77 @this) => @this.InAppPurchases;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem77(global::AppStoreConnect.InAppPurchaseV2? value)
+        {
+            InAppPurchases = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem77 FromInAppPurchases(global::AppStoreConnect.InAppPurchaseV2? value) => new IncludedItem77(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem77(
-            global::AppStoreConnect.GameCenterAchievementLocalizationsV2ResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.GameCenterAchievementImageV2? gameCenterAchievementImages,
-            global::AppStoreConnect.GameCenterAchievementVersionV2? gameCenterAchievementVersions
+            global::AppStoreConnect.InAppPurchaseVersionResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.InAppPurchaseImageV2? inAppPurchaseImages,
+            global::AppStoreConnect.InAppPurchaseLocalizationV2? inAppPurchaseLocalizations,
+            global::AppStoreConnect.InAppPurchaseV2? inAppPurchases
             )
         {
             Type = type;
 
-            GameCenterAchievementImages = gameCenterAchievementImages;
-            GameCenterAchievementVersions = gameCenterAchievementVersions;
+            InAppPurchaseImages = inAppPurchaseImages;
+            InAppPurchaseLocalizations = inAppPurchaseLocalizations;
+            InAppPurchases = inAppPurchases;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            GameCenterAchievementVersions as object ??
-            GameCenterAchievementImages as object
+            InAppPurchases as object ??
+            InAppPurchaseLocalizations as object ??
+            InAppPurchaseImages as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            GameCenterAchievementImages?.ToString() ??
-            GameCenterAchievementVersions?.ToString()
+            InAppPurchaseImages?.ToString() ??
+            InAppPurchaseLocalizations?.ToString() ??
+            InAppPurchases?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsGameCenterAchievementImages && !IsGameCenterAchievementVersions || !IsGameCenterAchievementImages && IsGameCenterAchievementVersions;
+            return IsInAppPurchaseImages && !IsInAppPurchaseLocalizations && !IsInAppPurchases || !IsInAppPurchaseImages && IsInAppPurchaseLocalizations && !IsInAppPurchases || !IsInAppPurchaseImages && !IsInAppPurchaseLocalizations && IsInAppPurchases;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.GameCenterAchievementImageV2, TResult>? gameCenterAchievementImages = null,
-            global::System.Func<global::AppStoreConnect.GameCenterAchievementVersionV2, TResult>? gameCenterAchievementVersions = null,
+            global::System.Func<global::AppStoreConnect.InAppPurchaseImageV2, TResult>? inAppPurchaseImages = null,
+            global::System.Func<global::AppStoreConnect.InAppPurchaseLocalizationV2, TResult>? inAppPurchaseLocalizations = null,
+            global::System.Func<global::AppStoreConnect.InAppPurchaseV2, TResult>? inAppPurchases = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterAchievementImages is { } __value0 && gameCenterAchievementImages != null)
+            if (InAppPurchaseImages is { } __value0 && inAppPurchaseImages != null)
             {
-                return gameCenterAchievementImages(__value0);
+                return inAppPurchaseImages(__value0);
             }
-            else if (GameCenterAchievementVersions is { } __value1 && gameCenterAchievementVersions != null)
+            else if (InAppPurchaseLocalizations is { } __value1 && inAppPurchaseLocalizations != null)
             {
-                return gameCenterAchievementVersions(__value1);
+                return inAppPurchaseLocalizations(__value1);
+            }
+            else if (InAppPurchases is { } __value2 && inAppPurchases != null)
+            {
+                return inAppPurchases(__value2);
             }
 
             return default(TResult);
@@ -201,9 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.GameCenterAchievementImageV2>? gameCenterAchievementImages = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseImageV2>? inAppPurchaseImages = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterAchievementVersionV2>? gameCenterAchievementVersions = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseLocalizationV2>? inAppPurchaseLocalizations = null,
+
+            global::System.Action<global::AppStoreConnect.InAppPurchaseV2>? inAppPurchases = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterAchievementImages is { } __value0)
+            if (InAppPurchaseImages is { } __value0)
             {
-                gameCenterAchievementImages?.Invoke(__value0);
+                inAppPurchaseImages?.Invoke(__value0);
             }
-            else if (GameCenterAchievementVersions is { } __value1)
+            else if (InAppPurchaseLocalizations is { } __value1)
             {
-                gameCenterAchievementVersions?.Invoke(__value1);
+                inAppPurchaseLocalizations?.Invoke(__value1);
+            }
+            else if (InAppPurchases is { } __value2)
+            {
+                inAppPurchases?.Invoke(__value2);
             }
         }
 
@@ -225,8 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.GameCenterAchievementImageV2>? gameCenterAchievementImages = null,
-            global::System.Action<global::AppStoreConnect.GameCenterAchievementVersionV2>? gameCenterAchievementVersions = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseImageV2>? inAppPurchaseImages = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseLocalizationV2>? inAppPurchaseLocalizations = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseV2>? inAppPurchases = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterAchievementImages is { } __value0)
+            if (InAppPurchaseImages is { } __value0)
             {
-                gameCenterAchievementImages?.Invoke(__value0);
+                inAppPurchaseImages?.Invoke(__value0);
             }
-            else if (GameCenterAchievementVersions is { } __value1)
+            else if (InAppPurchaseLocalizations is { } __value1)
             {
-                gameCenterAchievementVersions?.Invoke(__value1);
+                inAppPurchaseLocalizations?.Invoke(__value1);
+            }
+            else if (InAppPurchases is { } __value2)
+            {
+                inAppPurchases?.Invoke(__value2);
             }
         }
 
@@ -251,10 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                GameCenterAchievementImages,
-                typeof(global::AppStoreConnect.GameCenterAchievementImageV2),
-                GameCenterAchievementVersions,
-                typeof(global::AppStoreConnect.GameCenterAchievementVersionV2),
+                InAppPurchaseImages,
+                typeof(global::AppStoreConnect.InAppPurchaseImageV2),
+                InAppPurchaseLocalizations,
+                typeof(global::AppStoreConnect.InAppPurchaseLocalizationV2),
+                InAppPurchases,
+                typeof(global::AppStoreConnect.InAppPurchaseV2),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem77 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterAchievementImageV2?>.Default.Equals(GameCenterAchievementImages, other.GameCenterAchievementImages) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterAchievementVersionV2?>.Default.Equals(GameCenterAchievementVersions, other.GameCenterAchievementVersions)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseImageV2?>.Default.Equals(InAppPurchaseImages, other.InAppPurchaseImages) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseLocalizationV2?>.Default.Equals(InAppPurchaseLocalizations, other.InAppPurchaseLocalizations) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseV2?>.Default.Equals(InAppPurchases, other.InAppPurchases)
                 ;
         }
 

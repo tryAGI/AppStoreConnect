@@ -13,9 +13,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.InAppPurchaseTypeJsonConverter))]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.InAppPurchaseType2JsonConverter))]
         [global::System.Obsolete("This property marked as deprecated.")]
-        public global::AppStoreConnect.InAppPurchaseType Type { get; set; }
+        public global::AppStoreConnect.InAppPurchaseType2 Type { get; set; }
 
         /// <summary>
         ///
@@ -65,7 +65,7 @@ namespace AppStoreConnect
 #endif
         public InAppPurchase(
             string id,
-            global::AppStoreConnect.InAppPurchaseType type,
+            global::AppStoreConnect.InAppPurchaseType2 type,
             global::AppStoreConnect.InAppPurchaseAttributes? attributes,
             global::AppStoreConnect.InAppPurchaseRelationships? relationships,
             global::AppStoreConnect.ResourceLinks? links)

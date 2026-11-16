@@ -12,7 +12,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.RetentionMessageVersionsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppCustomProductPageLocalizationResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
@@ -55,75 +55,149 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.RetentionMessageLocalization? RetentionMessageLocalizations { get; init; }
+        public global::AppStoreConnect.AppCustomProductPageVersion? AppCustomProductPageVersions { get; init; }
 #else
-        public global::AppStoreConnect.RetentionMessageLocalization? RetentionMessageLocalizations { get; }
+        public global::AppStoreConnect.AppCustomProductPageVersion? AppCustomProductPageVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RetentionMessageLocalizations))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageVersions))]
 #endif
-        public bool IsRetentionMessageLocalizations => RetentionMessageLocalizations != null;
+        public bool IsAppCustomProductPageVersions => AppCustomProductPageVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickRetentionMessageLocalizations(
+        public bool TryPickAppCustomProductPageVersions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.RetentionMessageLocalization? value)
+            out global::AppStoreConnect.AppCustomProductPageVersion? value)
         {
-            value = RetentionMessageLocalizations;
-            return IsRetentionMessageLocalizations;
+            value = AppCustomProductPageVersions;
+            return IsAppCustomProductPageVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.RetentionMessageLocalization PickRetentionMessageLocalizations() => RetentionMessageLocalizations is { } value
+        public global::AppStoreConnect.AppCustomProductPageVersion PickAppCustomProductPageVersions() => AppCustomProductPageVersions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'RetentionMessageLocalizations' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageVersions' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.RetentionMessage? RetentionMessages { get; init; }
+        public global::AppStoreConnect.AppKeyword? AppKeywords { get; init; }
 #else
-        public global::AppStoreConnect.RetentionMessage? RetentionMessages { get; }
+        public global::AppStoreConnect.AppKeyword? AppKeywords { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RetentionMessages))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppKeywords))]
 #endif
-        public bool IsRetentionMessages => RetentionMessages != null;
+        public bool IsAppKeywords => AppKeywords != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickRetentionMessages(
+        public bool TryPickAppKeywords(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.RetentionMessage? value)
+            out global::AppStoreConnect.AppKeyword? value)
         {
-            value = RetentionMessages;
-            return IsRetentionMessages;
+            value = AppKeywords;
+            return IsAppKeywords;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.RetentionMessage PickRetentionMessages() => RetentionMessages is { } value
+        public global::AppStoreConnect.AppKeyword PickAppKeywords() => AppKeywords is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'RetentionMessages' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppKeywords' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AppPreviewSet? AppPreviewSets { get; init; }
+#else
+        public global::AppStoreConnect.AppPreviewSet? AppPreviewSets { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppPreviewSets))]
+#endif
+        public bool IsAppPreviewSets => AppPreviewSets != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAppPreviewSets(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppPreviewSet? value)
+        {
+            value = AppPreviewSets;
+            return IsAppPreviewSets;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::AppStoreConnect.AppPreviewSet PickAppPreviewSets() => AppPreviewSets is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppPreviewSets' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AppScreenshotSet? AppScreenshotSets { get; init; }
+#else
+        public global::AppStoreConnect.AppScreenshotSet? AppScreenshotSets { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppScreenshotSets))]
+#endif
+        public bool IsAppScreenshotSets => AppScreenshotSets != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAppScreenshotSets(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppScreenshotSet? value)
+        {
+            value = AppScreenshotSets;
+            return IsAppScreenshotSets;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::AppStoreConnect.AppScreenshotSet PickAppScreenshotSets() => AppScreenshotSets is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppScreenshotSets' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -150,72 +224,124 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem156(global::AppStoreConnect.RetentionMessageLocalization value) => new IncludedItem156((global::AppStoreConnect.RetentionMessageLocalization?)value);
+        public static implicit operator IncludedItem156(global::AppStoreConnect.AppCustomProductPageVersion value) => new IncludedItem156((global::AppStoreConnect.AppCustomProductPageVersion?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.RetentionMessageLocalization?(IncludedItem156 @this) => @this.RetentionMessageLocalizations;
+        public static implicit operator global::AppStoreConnect.AppCustomProductPageVersion?(IncludedItem156 @this) => @this.AppCustomProductPageVersions;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem156(global::AppStoreConnect.RetentionMessageLocalization? value)
+        public IncludedItem156(global::AppStoreConnect.AppCustomProductPageVersion? value)
         {
-            RetentionMessageLocalizations = value;
+            AppCustomProductPageVersions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem156 FromRetentionMessageLocalizations(global::AppStoreConnect.RetentionMessageLocalization? value) => new IncludedItem156(value);
+        public static IncludedItem156 FromAppCustomProductPageVersions(global::AppStoreConnect.AppCustomProductPageVersion? value) => new IncludedItem156(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem156(global::AppStoreConnect.RetentionMessage value) => new IncludedItem156((global::AppStoreConnect.RetentionMessage?)value);
+        public static implicit operator IncludedItem156(global::AppStoreConnect.AppKeyword value) => new IncludedItem156((global::AppStoreConnect.AppKeyword?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.RetentionMessage?(IncludedItem156 @this) => @this.RetentionMessages;
+        public static implicit operator global::AppStoreConnect.AppKeyword?(IncludedItem156 @this) => @this.AppKeywords;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem156(global::AppStoreConnect.RetentionMessage? value)
+        public IncludedItem156(global::AppStoreConnect.AppKeyword? value)
         {
-            RetentionMessages = value;
+            AppKeywords = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem156 FromRetentionMessages(global::AppStoreConnect.RetentionMessage? value) => new IncludedItem156(value);
+        public static IncludedItem156 FromAppKeywords(global::AppStoreConnect.AppKeyword? value) => new IncludedItem156(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem156(global::AppStoreConnect.AppPreviewSet value) => new IncludedItem156((global::AppStoreConnect.AppPreviewSet?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppPreviewSet?(IncludedItem156 @this) => @this.AppPreviewSets;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem156(global::AppStoreConnect.AppPreviewSet? value)
+        {
+            AppPreviewSets = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem156 FromAppPreviewSets(global::AppStoreConnect.AppPreviewSet? value) => new IncludedItem156(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem156(global::AppStoreConnect.AppScreenshotSet value) => new IncludedItem156((global::AppStoreConnect.AppScreenshotSet?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppScreenshotSet?(IncludedItem156 @this) => @this.AppScreenshotSets;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem156(global::AppStoreConnect.AppScreenshotSet? value)
+        {
+            AppScreenshotSets = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem156 FromAppScreenshotSets(global::AppStoreConnect.AppScreenshotSet? value) => new IncludedItem156(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem156(
-            global::AppStoreConnect.RetentionMessageVersionsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppCustomProductPageLocalizationResponseIncludedItemDiscriminatorType? type,
             global::AppStoreConnect.AppAssetLibraryPlacement? appAssetLibraryPlacements,
-            global::AppStoreConnect.RetentionMessageLocalization? retentionMessageLocalizations,
-            global::AppStoreConnect.RetentionMessage? retentionMessages
+            global::AppStoreConnect.AppCustomProductPageVersion? appCustomProductPageVersions,
+            global::AppStoreConnect.AppKeyword? appKeywords,
+            global::AppStoreConnect.AppPreviewSet? appPreviewSets,
+            global::AppStoreConnect.AppScreenshotSet? appScreenshotSets
             )
         {
             Type = type;
 
             AppAssetLibraryPlacements = appAssetLibraryPlacements;
-            RetentionMessageLocalizations = retentionMessageLocalizations;
-            RetentionMessages = retentionMessages;
+            AppCustomProductPageVersions = appCustomProductPageVersions;
+            AppKeywords = appKeywords;
+            AppPreviewSets = appPreviewSets;
+            AppScreenshotSets = appScreenshotSets;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            RetentionMessages as object ??
-            RetentionMessageLocalizations as object ??
+            AppScreenshotSets as object ??
+            AppPreviewSets as object ??
+            AppKeywords as object ??
+            AppCustomProductPageVersions as object ??
             AppAssetLibraryPlacements as object
             ;
 
@@ -224,8 +350,10 @@ namespace AppStoreConnect
         /// </summary>
         public override string? ToString() =>
             AppAssetLibraryPlacements?.ToString() ??
-            RetentionMessageLocalizations?.ToString() ??
-            RetentionMessages?.ToString()
+            AppCustomProductPageVersions?.ToString() ??
+            AppKeywords?.ToString() ??
+            AppPreviewSets?.ToString() ??
+            AppScreenshotSets?.ToString()
             ;
 
         /// <summary>
@@ -233,7 +361,7 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppAssetLibraryPlacements && !IsRetentionMessageLocalizations && !IsRetentionMessages || !IsAppAssetLibraryPlacements && IsRetentionMessageLocalizations && !IsRetentionMessages || !IsAppAssetLibraryPlacements && !IsRetentionMessageLocalizations && IsRetentionMessages;
+            return IsAppAssetLibraryPlacements && !IsAppCustomProductPageVersions && !IsAppKeywords && !IsAppPreviewSets && !IsAppScreenshotSets || !IsAppAssetLibraryPlacements && IsAppCustomProductPageVersions && !IsAppKeywords && !IsAppPreviewSets && !IsAppScreenshotSets || !IsAppAssetLibraryPlacements && !IsAppCustomProductPageVersions && IsAppKeywords && !IsAppPreviewSets && !IsAppScreenshotSets || !IsAppAssetLibraryPlacements && !IsAppCustomProductPageVersions && !IsAppKeywords && IsAppPreviewSets && !IsAppScreenshotSets || !IsAppAssetLibraryPlacements && !IsAppCustomProductPageVersions && !IsAppKeywords && !IsAppPreviewSets && IsAppScreenshotSets;
         }
 
         /// <summary>
@@ -241,8 +369,10 @@ namespace AppStoreConnect
         /// </summary>
         public TResult? Match<TResult>(
             global::System.Func<global::AppStoreConnect.AppAssetLibraryPlacement, TResult>? appAssetLibraryPlacements = null,
-            global::System.Func<global::AppStoreConnect.RetentionMessageLocalization, TResult>? retentionMessageLocalizations = null,
-            global::System.Func<global::AppStoreConnect.RetentionMessage, TResult>? retentionMessages = null,
+            global::System.Func<global::AppStoreConnect.AppCustomProductPageVersion, TResult>? appCustomProductPageVersions = null,
+            global::System.Func<global::AppStoreConnect.AppKeyword, TResult>? appKeywords = null,
+            global::System.Func<global::AppStoreConnect.AppPreviewSet, TResult>? appPreviewSets = null,
+            global::System.Func<global::AppStoreConnect.AppScreenshotSet, TResult>? appScreenshotSets = null,
             bool validate = true)
         {
             if (validate)
@@ -254,13 +384,21 @@ namespace AppStoreConnect
             {
                 return appAssetLibraryPlacements(__value0);
             }
-            else if (RetentionMessageLocalizations is { } __value1 && retentionMessageLocalizations != null)
+            else if (AppCustomProductPageVersions is { } __value1 && appCustomProductPageVersions != null)
             {
-                return retentionMessageLocalizations(__value1);
+                return appCustomProductPageVersions(__value1);
             }
-            else if (RetentionMessages is { } __value2 && retentionMessages != null)
+            else if (AppKeywords is { } __value2 && appKeywords != null)
             {
-                return retentionMessages(__value2);
+                return appKeywords(__value2);
+            }
+            else if (AppPreviewSets is { } __value3 && appPreviewSets != null)
+            {
+                return appPreviewSets(__value3);
+            }
+            else if (AppScreenshotSets is { } __value4 && appScreenshotSets != null)
+            {
+                return appScreenshotSets(__value4);
             }
 
             return default(TResult);
@@ -272,9 +410,13 @@ namespace AppStoreConnect
         public void Match(
             global::System.Action<global::AppStoreConnect.AppAssetLibraryPlacement>? appAssetLibraryPlacements = null,
 
-            global::System.Action<global::AppStoreConnect.RetentionMessageLocalization>? retentionMessageLocalizations = null,
+            global::System.Action<global::AppStoreConnect.AppCustomProductPageVersion>? appCustomProductPageVersions = null,
 
-            global::System.Action<global::AppStoreConnect.RetentionMessage>? retentionMessages = null,
+            global::System.Action<global::AppStoreConnect.AppKeyword>? appKeywords = null,
+
+            global::System.Action<global::AppStoreConnect.AppPreviewSet>? appPreviewSets = null,
+
+            global::System.Action<global::AppStoreConnect.AppScreenshotSet>? appScreenshotSets = null,
             bool validate = true)
         {
             if (validate)
@@ -286,13 +428,21 @@ namespace AppStoreConnect
             {
                 appAssetLibraryPlacements?.Invoke(__value0);
             }
-            else if (RetentionMessageLocalizations is { } __value1)
+            else if (AppCustomProductPageVersions is { } __value1)
             {
-                retentionMessageLocalizations?.Invoke(__value1);
+                appCustomProductPageVersions?.Invoke(__value1);
             }
-            else if (RetentionMessages is { } __value2)
+            else if (AppKeywords is { } __value2)
             {
-                retentionMessages?.Invoke(__value2);
+                appKeywords?.Invoke(__value2);
+            }
+            else if (AppPreviewSets is { } __value3)
+            {
+                appPreviewSets?.Invoke(__value3);
+            }
+            else if (AppScreenshotSets is { } __value4)
+            {
+                appScreenshotSets?.Invoke(__value4);
             }
         }
 
@@ -301,8 +451,10 @@ namespace AppStoreConnect
         /// </summary>
         public void Switch(
             global::System.Action<global::AppStoreConnect.AppAssetLibraryPlacement>? appAssetLibraryPlacements = null,
-            global::System.Action<global::AppStoreConnect.RetentionMessageLocalization>? retentionMessageLocalizations = null,
-            global::System.Action<global::AppStoreConnect.RetentionMessage>? retentionMessages = null,
+            global::System.Action<global::AppStoreConnect.AppCustomProductPageVersion>? appCustomProductPageVersions = null,
+            global::System.Action<global::AppStoreConnect.AppKeyword>? appKeywords = null,
+            global::System.Action<global::AppStoreConnect.AppPreviewSet>? appPreviewSets = null,
+            global::System.Action<global::AppStoreConnect.AppScreenshotSet>? appScreenshotSets = null,
             bool validate = true)
         {
             if (validate)
@@ -314,13 +466,21 @@ namespace AppStoreConnect
             {
                 appAssetLibraryPlacements?.Invoke(__value0);
             }
-            else if (RetentionMessageLocalizations is { } __value1)
+            else if (AppCustomProductPageVersions is { } __value1)
             {
-                retentionMessageLocalizations?.Invoke(__value1);
+                appCustomProductPageVersions?.Invoke(__value1);
             }
-            else if (RetentionMessages is { } __value2)
+            else if (AppKeywords is { } __value2)
             {
-                retentionMessages?.Invoke(__value2);
+                appKeywords?.Invoke(__value2);
+            }
+            else if (AppPreviewSets is { } __value3)
+            {
+                appPreviewSets?.Invoke(__value3);
+            }
+            else if (AppScreenshotSets is { } __value4)
+            {
+                appScreenshotSets?.Invoke(__value4);
             }
         }
 
@@ -333,10 +493,14 @@ namespace AppStoreConnect
             {
                 AppAssetLibraryPlacements,
                 typeof(global::AppStoreConnect.AppAssetLibraryPlacement),
-                RetentionMessageLocalizations,
-                typeof(global::AppStoreConnect.RetentionMessageLocalization),
-                RetentionMessages,
-                typeof(global::AppStoreConnect.RetentionMessage),
+                AppCustomProductPageVersions,
+                typeof(global::AppStoreConnect.AppCustomProductPageVersion),
+                AppKeywords,
+                typeof(global::AppStoreConnect.AppKeyword),
+                AppPreviewSets,
+                typeof(global::AppStoreConnect.AppPreviewSet),
+                AppScreenshotSets,
+                typeof(global::AppStoreConnect.AppScreenshotSet),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -354,8 +518,10 @@ namespace AppStoreConnect
         {
             return
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppAssetLibraryPlacement?>.Default.Equals(AppAssetLibraryPlacements, other.AppAssetLibraryPlacements) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RetentionMessageLocalization?>.Default.Equals(RetentionMessageLocalizations, other.RetentionMessageLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RetentionMessage?>.Default.Equals(RetentionMessages, other.RetentionMessages)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageVersion?>.Default.Equals(AppCustomProductPageVersions, other.AppCustomProductPageVersions) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppKeyword?>.Default.Equals(AppKeywords, other.AppKeywords) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppPreviewSet?>.Default.Equals(AppPreviewSets, other.AppPreviewSets) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppScreenshotSet?>.Default.Equals(AppScreenshotSets, other.AppScreenshotSets)
                 ;
         }
 

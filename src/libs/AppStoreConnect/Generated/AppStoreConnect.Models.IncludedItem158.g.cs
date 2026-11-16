@@ -12,156 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.RetentionMessagesResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.GameCenterChallengeLocalizationsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.RetentionMessageVersion? RetentionMessageVersions { get; init; }
+        public global::AppStoreConnect.GameCenterChallengeImage? GameCenterChallengeImages { get; init; }
 #else
-        public global::AppStoreConnect.RetentionMessageVersion? RetentionMessageVersions { get; }
+        public global::AppStoreConnect.GameCenterChallengeImage? GameCenterChallengeImages { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RetentionMessageVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterChallengeImages))]
 #endif
-        public bool IsRetentionMessageVersions => RetentionMessageVersions != null;
+        public bool IsGameCenterChallengeImages => GameCenterChallengeImages != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickRetentionMessageVersions(
+        public bool TryPickGameCenterChallengeImages(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.RetentionMessageVersion? value)
+            out global::AppStoreConnect.GameCenterChallengeImage? value)
         {
-            value = RetentionMessageVersions;
-            return IsRetentionMessageVersions;
+            value = GameCenterChallengeImages;
+            return IsGameCenterChallengeImages;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.RetentionMessageVersion PickRetentionMessageVersions() => RetentionMessageVersions is { } value
+        public global::AppStoreConnect.GameCenterChallengeImage PickGameCenterChallengeImages() => GameCenterChallengeImages is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'RetentionMessageVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterChallengeImages' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
+        public global::AppStoreConnect.GameCenterChallengeVersion? GameCenterChallengeVersions { get; init; }
 #else
-        public global::AppStoreConnect.Subscription? Subscriptions { get; }
+        public global::AppStoreConnect.GameCenterChallengeVersion? GameCenterChallengeVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterChallengeVersions))]
 #endif
-        public bool IsSubscriptions => Subscriptions != null;
+        public bool IsGameCenterChallengeVersions => GameCenterChallengeVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptions(
+        public bool TryPickGameCenterChallengeVersions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.Subscription? value)
+            out global::AppStoreConnect.GameCenterChallengeVersion? value)
         {
-            value = Subscriptions;
-            return IsSubscriptions;
+            value = GameCenterChallengeVersions;
+            return IsGameCenterChallengeVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
+        public global::AppStoreConnect.GameCenterChallengeVersion PickGameCenterChallengeVersions() => GameCenterChallengeVersions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterChallengeVersions' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem158(global::AppStoreConnect.RetentionMessageVersion value) => new IncludedItem158((global::AppStoreConnect.RetentionMessageVersion?)value);
+        public static implicit operator IncludedItem158(global::AppStoreConnect.GameCenterChallengeImage value) => new IncludedItem158((global::AppStoreConnect.GameCenterChallengeImage?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.RetentionMessageVersion?(IncludedItem158 @this) => @this.RetentionMessageVersions;
+        public static implicit operator global::AppStoreConnect.GameCenterChallengeImage?(IncludedItem158 @this) => @this.GameCenterChallengeImages;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem158(global::AppStoreConnect.RetentionMessageVersion? value)
+        public IncludedItem158(global::AppStoreConnect.GameCenterChallengeImage? value)
         {
-            RetentionMessageVersions = value;
+            GameCenterChallengeImages = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem158 FromRetentionMessageVersions(global::AppStoreConnect.RetentionMessageVersion? value) => new IncludedItem158(value);
+        public static IncludedItem158 FromGameCenterChallengeImages(global::AppStoreConnect.GameCenterChallengeImage? value) => new IncludedItem158(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem158(global::AppStoreConnect.Subscription value) => new IncludedItem158((global::AppStoreConnect.Subscription?)value);
+        public static implicit operator IncludedItem158(global::AppStoreConnect.GameCenterChallengeVersion value) => new IncludedItem158((global::AppStoreConnect.GameCenterChallengeVersion?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem158 @this) => @this.Subscriptions;
+        public static implicit operator global::AppStoreConnect.GameCenterChallengeVersion?(IncludedItem158 @this) => @this.GameCenterChallengeVersions;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem158(global::AppStoreConnect.Subscription? value)
+        public IncludedItem158(global::AppStoreConnect.GameCenterChallengeVersion? value)
         {
-            Subscriptions = value;
+            GameCenterChallengeVersions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem158 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem158(value);
+        public static IncludedItem158 FromGameCenterChallengeVersions(global::AppStoreConnect.GameCenterChallengeVersion? value) => new IncludedItem158(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem158(
-            global::AppStoreConnect.RetentionMessagesResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.RetentionMessageVersion? retentionMessageVersions,
-            global::AppStoreConnect.Subscription? subscriptions
+            global::AppStoreConnect.GameCenterChallengeLocalizationsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.GameCenterChallengeImage? gameCenterChallengeImages,
+            global::AppStoreConnect.GameCenterChallengeVersion? gameCenterChallengeVersions
             )
         {
             Type = type;
 
-            RetentionMessageVersions = retentionMessageVersions;
-            Subscriptions = subscriptions;
+            GameCenterChallengeImages = gameCenterChallengeImages;
+            GameCenterChallengeVersions = gameCenterChallengeVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Subscriptions as object ??
-            RetentionMessageVersions as object
+            GameCenterChallengeVersions as object ??
+            GameCenterChallengeImages as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            RetentionMessageVersions?.ToString() ??
-            Subscriptions?.ToString()
+            GameCenterChallengeImages?.ToString() ??
+            GameCenterChallengeVersions?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsRetentionMessageVersions && !IsSubscriptions || !IsRetentionMessageVersions && IsSubscriptions;
+            return IsGameCenterChallengeImages && !IsGameCenterChallengeVersions || !IsGameCenterChallengeImages && IsGameCenterChallengeVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.RetentionMessageVersion, TResult>? retentionMessageVersions = null,
-            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
+            global::System.Func<global::AppStoreConnect.GameCenterChallengeImage, TResult>? gameCenterChallengeImages = null,
+            global::System.Func<global::AppStoreConnect.GameCenterChallengeVersion, TResult>? gameCenterChallengeVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (RetentionMessageVersions is { } __value0 && retentionMessageVersions != null)
+            if (GameCenterChallengeImages is { } __value0 && gameCenterChallengeImages != null)
             {
-                return retentionMessageVersions(__value0);
+                return gameCenterChallengeImages(__value0);
             }
-            else if (Subscriptions is { } __value1 && subscriptions != null)
+            else if (GameCenterChallengeVersions is { } __value1 && gameCenterChallengeVersions != null)
             {
-                return subscriptions(__value1);
+                return gameCenterChallengeVersions(__value1);
             }
 
             return default(TResult);
@@ -201,9 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.RetentionMessageVersion>? retentionMessageVersions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterChallengeImage>? gameCenterChallengeImages = null,
 
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterChallengeVersion>? gameCenterChallengeVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (RetentionMessageVersions is { } __value0)
+            if (GameCenterChallengeImages is { } __value0)
             {
-                retentionMessageVersions?.Invoke(__value0);
+                gameCenterChallengeImages?.Invoke(__value0);
             }
-            else if (Subscriptions is { } __value1)
+            else if (GameCenterChallengeVersions is { } __value1)
             {
-                subscriptions?.Invoke(__value1);
+                gameCenterChallengeVersions?.Invoke(__value1);
             }
         }
 
@@ -225,8 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.RetentionMessageVersion>? retentionMessageVersions = null,
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterChallengeImage>? gameCenterChallengeImages = null,
+            global::System.Action<global::AppStoreConnect.GameCenterChallengeVersion>? gameCenterChallengeVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (RetentionMessageVersions is { } __value0)
+            if (GameCenterChallengeImages is { } __value0)
             {
-                retentionMessageVersions?.Invoke(__value0);
+                gameCenterChallengeImages?.Invoke(__value0);
             }
-            else if (Subscriptions is { } __value1)
+            else if (GameCenterChallengeVersions is { } __value1)
             {
-                subscriptions?.Invoke(__value1);
+                gameCenterChallengeVersions?.Invoke(__value1);
             }
         }
 
@@ -251,10 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                RetentionMessageVersions,
-                typeof(global::AppStoreConnect.RetentionMessageVersion),
-                Subscriptions,
-                typeof(global::AppStoreConnect.Subscription),
+                GameCenterChallengeImages,
+                typeof(global::AppStoreConnect.GameCenterChallengeImage),
+                GameCenterChallengeVersions,
+                typeof(global::AppStoreConnect.GameCenterChallengeVersion),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem158 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RetentionMessageVersion?>.Default.Equals(RetentionMessageVersions, other.RetentionMessageVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterChallengeImage?>.Default.Equals(GameCenterChallengeImages, other.GameCenterChallengeImages) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterChallengeVersion?>.Default.Equals(GameCenterChallengeVersions, other.GameCenterChallengeVersions)
                 ;
         }
 

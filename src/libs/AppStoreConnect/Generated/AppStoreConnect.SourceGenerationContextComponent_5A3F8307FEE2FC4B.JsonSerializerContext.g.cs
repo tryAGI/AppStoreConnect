@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppsAccessibilityDeclarationsGetToManyRelatedFieldsAccessibilityDeclaration))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0165.Create_AppsAccessibilityDeclarationsGetToManyRelatedFieldsAccessibilityDeclaration2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0164.Create_AppsAccessibilityDeclarationsGetToManyRelatedFieldsAccessibilityDeclaration2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppsAccessibilityDeclarationsGetToManyRelatedFieldsAccessibilityDeclaration?))
                 {

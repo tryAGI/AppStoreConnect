@@ -12,156 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmRepositoryResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardLocalizationsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.ScmGitReference? ScmGitReferences { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboardImage? GameCenterLeaderboardImages { get; init; }
 #else
-        public global::AppStoreConnect.ScmGitReference? ScmGitReferences { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardImage? GameCenterLeaderboardImages { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmGitReferences))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardImages))]
 #endif
-        public bool IsScmGitReferences => ScmGitReferences != null;
+        public bool IsGameCenterLeaderboardImages => GameCenterLeaderboardImages != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickScmGitReferences(
+        public bool TryPickGameCenterLeaderboardImages(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.ScmGitReference? value)
+            out global::AppStoreConnect.GameCenterLeaderboardImage? value)
         {
-            value = ScmGitReferences;
-            return IsScmGitReferences;
+            value = GameCenterLeaderboardImages;
+            return IsGameCenterLeaderboardImages;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmGitReference PickScmGitReferences() => ScmGitReferences is { } value
+        public global::AppStoreConnect.GameCenterLeaderboardImage PickGameCenterLeaderboardImages() => GameCenterLeaderboardImages is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'ScmGitReferences' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardImages' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.ScmProvider? ScmProviders { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboard? GameCenterLeaderboards { get; init; }
 #else
-        public global::AppStoreConnect.ScmProvider? ScmProviders { get; }
+        public global::AppStoreConnect.GameCenterLeaderboard? GameCenterLeaderboards { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmProviders))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboards))]
 #endif
-        public bool IsScmProviders => ScmProviders != null;
+        public bool IsGameCenterLeaderboards => GameCenterLeaderboards != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickScmProviders(
+        public bool TryPickGameCenterLeaderboards(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.ScmProvider? value)
+            out global::AppStoreConnect.GameCenterLeaderboard? value)
         {
-            value = ScmProviders;
-            return IsScmProviders;
+            value = GameCenterLeaderboards;
+            return IsGameCenterLeaderboards;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmProvider PickScmProviders() => ScmProviders is { } value
+        public global::AppStoreConnect.GameCenterLeaderboard PickGameCenterLeaderboards() => GameCenterLeaderboards is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'ScmProviders' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboards' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem168(global::AppStoreConnect.ScmGitReference value) => new IncludedItem168((global::AppStoreConnect.ScmGitReference?)value);
+        public static implicit operator IncludedItem168(global::AppStoreConnect.GameCenterLeaderboardImage value) => new IncludedItem168((global::AppStoreConnect.GameCenterLeaderboardImage?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.ScmGitReference?(IncludedItem168 @this) => @this.ScmGitReferences;
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardImage?(IncludedItem168 @this) => @this.GameCenterLeaderboardImages;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem168(global::AppStoreConnect.ScmGitReference? value)
+        public IncludedItem168(global::AppStoreConnect.GameCenterLeaderboardImage? value)
         {
-            ScmGitReferences = value;
+            GameCenterLeaderboardImages = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem168 FromScmGitReferences(global::AppStoreConnect.ScmGitReference? value) => new IncludedItem168(value);
+        public static IncludedItem168 FromGameCenterLeaderboardImages(global::AppStoreConnect.GameCenterLeaderboardImage? value) => new IncludedItem168(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem168(global::AppStoreConnect.ScmProvider value) => new IncludedItem168((global::AppStoreConnect.ScmProvider?)value);
+        public static implicit operator IncludedItem168(global::AppStoreConnect.GameCenterLeaderboard value) => new IncludedItem168((global::AppStoreConnect.GameCenterLeaderboard?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.ScmProvider?(IncludedItem168 @this) => @this.ScmProviders;
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboard?(IncludedItem168 @this) => @this.GameCenterLeaderboards;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem168(global::AppStoreConnect.ScmProvider? value)
+        public IncludedItem168(global::AppStoreConnect.GameCenterLeaderboard? value)
         {
-            ScmProviders = value;
+            GameCenterLeaderboards = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem168 FromScmProviders(global::AppStoreConnect.ScmProvider? value) => new IncludedItem168(value);
+        public static IncludedItem168 FromGameCenterLeaderboards(global::AppStoreConnect.GameCenterLeaderboard? value) => new IncludedItem168(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem168(
-            global::AppStoreConnect.ScmRepositoryResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.ScmGitReference? scmGitReferences,
-            global::AppStoreConnect.ScmProvider? scmProviders
+            global::AppStoreConnect.GameCenterLeaderboardLocalizationsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.GameCenterLeaderboardImage? gameCenterLeaderboardImages,
+            global::AppStoreConnect.GameCenterLeaderboard? gameCenterLeaderboards
             )
         {
             Type = type;
 
-            ScmGitReferences = scmGitReferences;
-            ScmProviders = scmProviders;
+            GameCenterLeaderboardImages = gameCenterLeaderboardImages;
+            GameCenterLeaderboards = gameCenterLeaderboards;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            ScmProviders as object ??
-            ScmGitReferences as object
+            GameCenterLeaderboards as object ??
+            GameCenterLeaderboardImages as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            ScmGitReferences?.ToString() ??
-            ScmProviders?.ToString()
+            GameCenterLeaderboardImages?.ToString() ??
+            GameCenterLeaderboards?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsScmGitReferences && !IsScmProviders || !IsScmGitReferences && IsScmProviders;
+            return IsGameCenterLeaderboardImages && !IsGameCenterLeaderboards || !IsGameCenterLeaderboardImages && IsGameCenterLeaderboards;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.ScmGitReference, TResult>? scmGitReferences = null,
-            global::System.Func<global::AppStoreConnect.ScmProvider, TResult>? scmProviders = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardImage, TResult>? gameCenterLeaderboardImages = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboard, TResult>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (ScmGitReferences is { } __value0 && scmGitReferences != null)
+            if (GameCenterLeaderboardImages is { } __value0 && gameCenterLeaderboardImages != null)
             {
-                return scmGitReferences(__value0);
+                return gameCenterLeaderboardImages(__value0);
             }
-            else if (ScmProviders is { } __value1 && scmProviders != null)
+            else if (GameCenterLeaderboards is { } __value1 && gameCenterLeaderboards != null)
             {
-                return scmProviders(__value1);
+                return gameCenterLeaderboards(__value1);
             }
 
             return default(TResult);
@@ -201,9 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.ScmGitReference>? scmGitReferences = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardImage>? gameCenterLeaderboardImages = null,
 
-            global::System.Action<global::AppStoreConnect.ScmProvider>? scmProviders = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboard>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (ScmGitReferences is { } __value0)
+            if (GameCenterLeaderboardImages is { } __value0)
             {
-                scmGitReferences?.Invoke(__value0);
+                gameCenterLeaderboardImages?.Invoke(__value0);
             }
-            else if (ScmProviders is { } __value1)
+            else if (GameCenterLeaderboards is { } __value1)
             {
-                scmProviders?.Invoke(__value1);
+                gameCenterLeaderboards?.Invoke(__value1);
             }
         }
 
@@ -225,8 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.ScmGitReference>? scmGitReferences = null,
-            global::System.Action<global::AppStoreConnect.ScmProvider>? scmProviders = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardImage>? gameCenterLeaderboardImages = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboard>? gameCenterLeaderboards = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (ScmGitReferences is { } __value0)
+            if (GameCenterLeaderboardImages is { } __value0)
             {
-                scmGitReferences?.Invoke(__value0);
+                gameCenterLeaderboardImages?.Invoke(__value0);
             }
-            else if (ScmProviders is { } __value1)
+            else if (GameCenterLeaderboards is { } __value1)
             {
-                scmProviders?.Invoke(__value1);
+                gameCenterLeaderboards?.Invoke(__value1);
             }
         }
 
@@ -251,10 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                ScmGitReferences,
-                typeof(global::AppStoreConnect.ScmGitReference),
-                ScmProviders,
-                typeof(global::AppStoreConnect.ScmProvider),
+                GameCenterLeaderboardImages,
+                typeof(global::AppStoreConnect.GameCenterLeaderboardImage),
+                GameCenterLeaderboards,
+                typeof(global::AppStoreConnect.GameCenterLeaderboard),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem168 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmGitReference?>.Default.Equals(ScmGitReferences, other.ScmGitReferences) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmProvider?>.Default.Equals(ScmProviders, other.ScmProviders)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardImage?>.Default.Equals(GameCenterLeaderboardImages, other.GameCenterLeaderboardImages) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboard?>.Default.Equals(GameCenterLeaderboards, other.GameCenterLeaderboards)
                 ;
         }
 

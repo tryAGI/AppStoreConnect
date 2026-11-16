@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppMediaVideoStateState))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0102.Create_AppMediaVideoStateState2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0101.Create_AppMediaVideoStateState2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppMediaVideoStateState?))
                 {

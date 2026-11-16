@@ -12,44 +12,44 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaFeedbackScreenshotSubmissionsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.PrereleaseVersionResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BetaTester? BetaTesters { get; init; }
+        public global::AppStoreConnect.App? Apps { get; init; }
 #else
-        public global::AppStoreConnect.BetaTester? BetaTesters { get; }
+        public global::AppStoreConnect.App? Apps { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaTesters))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
 #endif
-        public bool IsBetaTesters => BetaTesters != null;
+        public bool IsApps => Apps != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBetaTesters(
+        public bool TryPickApps(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BetaTester? value)
+            out global::AppStoreConnect.App? value)
         {
-            value = BetaTesters;
-            return IsBetaTesters;
+            value = Apps;
+            return IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaTester PickBetaTesters() => BetaTesters is { } value
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaTesters' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -90,25 +90,25 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem56(global::AppStoreConnect.BetaTester value) => new IncludedItem56((global::AppStoreConnect.BetaTester?)value);
+        public static implicit operator IncludedItem56(global::AppStoreConnect.App value) => new IncludedItem56((global::AppStoreConnect.App?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BetaTester?(IncludedItem56 @this) => @this.BetaTesters;
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem56 @this) => @this.Apps;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem56(global::AppStoreConnect.BetaTester? value)
+        public IncludedItem56(global::AppStoreConnect.App? value)
         {
-            BetaTesters = value;
+            Apps = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem56 FromBetaTesters(global::AppStoreConnect.BetaTester? value) => new IncludedItem56(value);
+        public static IncludedItem56 FromApps(global::AppStoreConnect.App? value) => new IncludedItem56(value);
 
         /// <summary>
         ///
@@ -137,14 +137,14 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public IncludedItem56(
-            global::AppStoreConnect.BetaFeedbackScreenshotSubmissionsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.BetaTester? betaTesters,
+            global::AppStoreConnect.PrereleaseVersionResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.App? apps,
             global::AppStoreConnect.Build? builds
             )
         {
             Type = type;
 
-            BetaTesters = betaTesters;
+            Apps = apps;
             Builds = builds;
         }
 
@@ -153,14 +153,14 @@ namespace AppStoreConnect
         /// </summary>
         public object? Object =>
             Builds as object ??
-            BetaTesters as object
+            Apps as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            BetaTesters?.ToString() ??
+            Apps?.ToString() ??
             Builds?.ToString()
             ;
 
@@ -169,14 +169,14 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsBetaTesters && !IsBuilds || !IsBetaTesters && IsBuilds;
+            return IsApps && !IsBuilds || !IsApps && IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.BetaTester, TResult>? betaTesters = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
             global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
             bool validate = true)
         {
@@ -185,9 +185,9 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (BetaTesters is { } __value0 && betaTesters != null)
+            if (Apps is { } __value0 && apps != null)
             {
-                return betaTesters(__value0);
+                return apps(__value0);
             }
             else if (Builds is { } __value1 && builds != null)
             {
@@ -201,7 +201,7 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
 
             global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
@@ -211,9 +211,9 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (BetaTesters is { } __value0)
+            if (Apps is { } __value0)
             {
-                betaTesters?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
             else if (Builds is { } __value1)
             {
@@ -225,7 +225,7 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
             global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
@@ -234,9 +234,9 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (BetaTesters is { } __value0)
+            if (Apps is { } __value0)
             {
-                betaTesters?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
             else if (Builds is { } __value1)
             {
@@ -251,8 +251,8 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                BetaTesters,
-                typeof(global::AppStoreConnect.BetaTester),
+                Apps,
+                typeof(global::AppStoreConnect.App),
                 Builds,
                 typeof(global::AppStoreConnect.Build),
             };
@@ -271,7 +271,7 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem56 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaTester?>.Default.Equals(BetaTesters, other.BetaTesters) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
                 ;
         }

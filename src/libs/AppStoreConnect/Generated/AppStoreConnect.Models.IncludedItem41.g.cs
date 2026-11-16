@@ -12,220 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionExperimentV2ResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.RetentionOffersResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersionExperimentTreatment? AppStoreVersionExperimentTreatments { get; init; }
+        public global::AppStoreConnect.RetentionOfferPrice? RetentionOfferPrices { get; init; }
 #else
-        public global::AppStoreConnect.AppStoreVersionExperimentTreatment? AppStoreVersionExperimentTreatments { get; }
+        public global::AppStoreConnect.RetentionOfferPrice? RetentionOfferPrices { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperimentTreatments))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RetentionOfferPrices))]
 #endif
-        public bool IsAppStoreVersionExperimentTreatments => AppStoreVersionExperimentTreatments != null;
+        public bool IsRetentionOfferPrices => RetentionOfferPrices != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreVersionExperimentTreatments(
+        public bool TryPickRetentionOfferPrices(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppStoreVersionExperimentTreatment? value)
+            out global::AppStoreConnect.RetentionOfferPrice? value)
         {
-            value = AppStoreVersionExperimentTreatments;
-            return IsAppStoreVersionExperimentTreatments;
+            value = RetentionOfferPrices;
+            return IsRetentionOfferPrices;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersionExperimentTreatment PickAppStoreVersionExperimentTreatments() => AppStoreVersionExperimentTreatments is { } value
+        public global::AppStoreConnect.RetentionOfferPrice PickRetentionOfferPrices() => RetentionOfferPrices is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatments' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RetentionOfferPrices' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; init; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
 #else
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
 #endif
-        public bool IsAppStoreVersions => AppStoreVersions != null;
+        public bool IsSubscriptions => Subscriptions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreVersions(
+        public bool TryPickSubscriptions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppStoreVersion? value)
+            out global::AppStoreConnect.Subscription? value)
         {
-            value = AppStoreVersions;
-            return IsAppStoreVersions;
+            value = Subscriptions;
+            return IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => AppStoreVersions is { } value
+        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem41(global::AppStoreConnect.RetentionOfferPrice value) => new IncludedItem41((global::AppStoreConnect.RetentionOfferPrice?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.App? Apps { get; init; }
-#else
-        public global::AppStoreConnect.App? Apps { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.RetentionOfferPrice?(IncludedItem41 @this) => @this.RetentionOfferPrices;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
-#endif
-        public bool IsApps => Apps != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickApps(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.App? value)
+        public IncludedItem41(global::AppStoreConnect.RetentionOfferPrice? value)
         {
-            value = Apps;
-            return IsApps;
+            RetentionOfferPrices = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickApps() => Apps is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem41(global::AppStoreConnect.AppStoreVersionExperimentTreatment value) => new IncludedItem41((global::AppStoreConnect.AppStoreVersionExperimentTreatment?)value);
+        public static IncludedItem41 FromRetentionOfferPrices(global::AppStoreConnect.RetentionOfferPrice? value) => new IncludedItem41(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersionExperimentTreatment?(IncludedItem41 @this) => @this.AppStoreVersionExperimentTreatments;
+        public static implicit operator IncludedItem41(global::AppStoreConnect.Subscription value) => new IncludedItem41((global::AppStoreConnect.Subscription?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem41(global::AppStoreConnect.AppStoreVersionExperimentTreatment? value)
+        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem41 @this) => @this.Subscriptions;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem41(global::AppStoreConnect.Subscription? value)
         {
-            AppStoreVersionExperimentTreatments = value;
+            Subscriptions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem41 FromAppStoreVersionExperimentTreatments(global::AppStoreConnect.AppStoreVersionExperimentTreatment? value) => new IncludedItem41(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem41(global::AppStoreConnect.AppStoreVersion value) => new IncludedItem41((global::AppStoreConnect.AppStoreVersion?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem41 @this) => @this.AppStoreVersions;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem41(global::AppStoreConnect.AppStoreVersion? value)
-        {
-            AppStoreVersions = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem41 FromAppStoreVersions(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem41(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem41(global::AppStoreConnect.App value) => new IncludedItem41((global::AppStoreConnect.App?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.App?(IncludedItem41 @this) => @this.Apps;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem41(global::AppStoreConnect.App? value)
-        {
-            Apps = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem41 FromApps(global::AppStoreConnect.App? value) => new IncludedItem41(value);
+        public static IncludedItem41 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem41(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem41(
-            global::AppStoreConnect.AppStoreVersionExperimentV2ResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppStoreVersionExperimentTreatment? appStoreVersionExperimentTreatments,
-            global::AppStoreConnect.AppStoreVersion? appStoreVersions,
-            global::AppStoreConnect.App? apps
+            global::AppStoreConnect.RetentionOffersResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.RetentionOfferPrice? retentionOfferPrices,
+            global::AppStoreConnect.Subscription? subscriptions
             )
         {
             Type = type;
 
-            AppStoreVersionExperimentTreatments = appStoreVersionExperimentTreatments;
-            AppStoreVersions = appStoreVersions;
-            Apps = apps;
+            RetentionOfferPrices = retentionOfferPrices;
+            Subscriptions = subscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Apps as object ??
-            AppStoreVersions as object ??
-            AppStoreVersionExperimentTreatments as object
+            Subscriptions as object ??
+            RetentionOfferPrices as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppStoreVersionExperimentTreatments?.ToString() ??
-            AppStoreVersions?.ToString() ??
-            Apps?.ToString()
+            RetentionOfferPrices?.ToString() ??
+            Subscriptions?.ToString()
             ;
 
         /// <summary>
@@ -233,16 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppStoreVersionExperimentTreatments && !IsAppStoreVersions && !IsApps || !IsAppStoreVersionExperimentTreatments && IsAppStoreVersions && !IsApps || !IsAppStoreVersionExperimentTreatments && !IsAppStoreVersions && IsApps;
+            return IsRetentionOfferPrices && !IsSubscriptions || !IsRetentionOfferPrices && IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppStoreVersionExperimentTreatment, TResult>? appStoreVersionExperimentTreatments = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersions = null,
-            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
+            global::System.Func<global::AppStoreConnect.RetentionOfferPrice, TResult>? retentionOfferPrices = null,
+            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -250,17 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppStoreVersionExperimentTreatments is { } __value0 && appStoreVersionExperimentTreatments != null)
+            if (RetentionOfferPrices is { } __value0 && retentionOfferPrices != null)
             {
-                return appStoreVersionExperimentTreatments(__value0);
+                return retentionOfferPrices(__value0);
             }
-            else if (AppStoreVersions is { } __value1 && appStoreVersions != null)
+            else if (Subscriptions is { } __value1 && subscriptions != null)
             {
-                return appStoreVersions(__value1);
-            }
-            else if (Apps is { } __value2 && apps != null)
-            {
-                return apps(__value2);
+                return subscriptions(__value1);
             }
 
             return default(TResult);
@@ -270,11 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatment>? appStoreVersionExperimentTreatments = null,
+            global::System.Action<global::AppStoreConnect.RetentionOfferPrice>? retentionOfferPrices = null,
 
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
-
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -282,17 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppStoreVersionExperimentTreatments is { } __value0)
+            if (RetentionOfferPrices is { } __value0)
             {
-                appStoreVersionExperimentTreatments?.Invoke(__value0);
+                retentionOfferPrices?.Invoke(__value0);
             }
-            else if (AppStoreVersions is { } __value1)
+            else if (Subscriptions is { } __value1)
             {
-                appStoreVersions?.Invoke(__value1);
-            }
-            else if (Apps is { } __value2)
-            {
-                apps?.Invoke(__value2);
+                subscriptions?.Invoke(__value1);
             }
         }
 
@@ -300,9 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatment>? appStoreVersionExperimentTreatments = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.RetentionOfferPrice>? retentionOfferPrices = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -310,17 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppStoreVersionExperimentTreatments is { } __value0)
+            if (RetentionOfferPrices is { } __value0)
             {
-                appStoreVersionExperimentTreatments?.Invoke(__value0);
+                retentionOfferPrices?.Invoke(__value0);
             }
-            else if (AppStoreVersions is { } __value1)
+            else if (Subscriptions is { } __value1)
             {
-                appStoreVersions?.Invoke(__value1);
-            }
-            else if (Apps is { } __value2)
-            {
-                apps?.Invoke(__value2);
+                subscriptions?.Invoke(__value1);
             }
         }
 
@@ -331,12 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppStoreVersionExperimentTreatments,
-                typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatment),
-                AppStoreVersions,
-                typeof(global::AppStoreConnect.AppStoreVersion),
-                Apps,
-                typeof(global::AppStoreConnect.App),
+                RetentionOfferPrices,
+                typeof(global::AppStoreConnect.RetentionOfferPrice),
+                Subscriptions,
+                typeof(global::AppStoreConnect.Subscription),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -353,9 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem41 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperimentTreatment?>.Default.Equals(AppStoreVersionExperimentTreatments, other.AppStoreVersionExperimentTreatments) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions, other.AppStoreVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RetentionOfferPrice?>.Default.Equals(RetentionOfferPrices, other.RetentionOfferPrices) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions)
                 ;
         }
 

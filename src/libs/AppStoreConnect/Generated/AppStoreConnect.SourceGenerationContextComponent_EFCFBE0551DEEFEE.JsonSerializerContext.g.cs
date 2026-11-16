@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BuildBundleRelationshipsAppClipDomainDebugStatusDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0226.Create_BuildBundleRelationshipsAppClipDomainDebugStatusDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0225.Create_BuildBundleRelationshipsAppClipDomainDebugStatusDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.BuildBundleRelationshipsAppClipDomainDebugStatusDataType?))
                 {

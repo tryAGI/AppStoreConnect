@@ -12,220 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionIntroductoryOfferResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionPricePoint? SubscriptionPricePoints { get; init; }
+        public global::AppStoreConnect.AppClipDefaultExperience? AppClipDefaultExperiences { get; init; }
 #else
-        public global::AppStoreConnect.SubscriptionPricePoint? SubscriptionPricePoints { get; }
+        public global::AppStoreConnect.AppClipDefaultExperience? AppClipDefaultExperiences { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionPricePoints))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppClipDefaultExperiences))]
 #endif
-        public bool IsSubscriptionPricePoints => SubscriptionPricePoints != null;
+        public bool IsAppClipDefaultExperiences => AppClipDefaultExperiences != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptionPricePoints(
+        public bool TryPickAppClipDefaultExperiences(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.SubscriptionPricePoint? value)
+            out global::AppStoreConnect.AppClipDefaultExperience? value)
         {
-            value = SubscriptionPricePoints;
-            return IsSubscriptionPricePoints;
+            value = AppClipDefaultExperiences;
+            return IsAppClipDefaultExperiences;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionPricePoint PickSubscriptionPricePoints() => SubscriptionPricePoints is { } value
+        public global::AppStoreConnect.AppClipDefaultExperience PickAppClipDefaultExperiences() => AppClipDefaultExperiences is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPricePoints' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipDefaultExperiences' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
+        public global::AppStoreConnect.AppClipHeaderImage? AppClipHeaderImages { get; init; }
 #else
-        public global::AppStoreConnect.Subscription? Subscriptions { get; }
+        public global::AppStoreConnect.AppClipHeaderImage? AppClipHeaderImages { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppClipHeaderImages))]
 #endif
-        public bool IsSubscriptions => Subscriptions != null;
+        public bool IsAppClipHeaderImages => AppClipHeaderImages != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptions(
+        public bool TryPickAppClipHeaderImages(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.Subscription? value)
+            out global::AppStoreConnect.AppClipHeaderImage? value)
         {
-            value = Subscriptions;
-            return IsSubscriptions;
+            value = AppClipHeaderImages;
+            return IsAppClipHeaderImages;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
+        public global::AppStoreConnect.AppClipHeaderImage PickAppClipHeaderImages() => AppClipHeaderImages is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppClipHeaderImages' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem174(global::AppStoreConnect.AppClipDefaultExperience value) => new IncludedItem174((global::AppStoreConnect.AppClipDefaultExperience?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Territory? Territories { get; init; }
-#else
-        public global::AppStoreConnect.Territory? Territories { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.AppClipDefaultExperience?(IncludedItem174 @this) => @this.AppClipDefaultExperiences;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Territories))]
-#endif
-        public bool IsTerritories => Territories != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickTerritories(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.Territory? value)
+        public IncludedItem174(global::AppStoreConnect.AppClipDefaultExperience? value)
         {
-            value = Territories;
-            return IsTerritories;
+            AppClipDefaultExperiences = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Territory PickTerritories() => Territories is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Territories' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem174(global::AppStoreConnect.SubscriptionPricePoint value) => new IncludedItem174((global::AppStoreConnect.SubscriptionPricePoint?)value);
+        public static IncludedItem174 FromAppClipDefaultExperiences(global::AppStoreConnect.AppClipDefaultExperience? value) => new IncludedItem174(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionPricePoint?(IncludedItem174 @this) => @this.SubscriptionPricePoints;
+        public static implicit operator IncludedItem174(global::AppStoreConnect.AppClipHeaderImage value) => new IncludedItem174((global::AppStoreConnect.AppClipHeaderImage?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem174(global::AppStoreConnect.SubscriptionPricePoint? value)
+        public static implicit operator global::AppStoreConnect.AppClipHeaderImage?(IncludedItem174 @this) => @this.AppClipHeaderImages;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem174(global::AppStoreConnect.AppClipHeaderImage? value)
         {
-            SubscriptionPricePoints = value;
+            AppClipHeaderImages = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem174 FromSubscriptionPricePoints(global::AppStoreConnect.SubscriptionPricePoint? value) => new IncludedItem174(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem174(global::AppStoreConnect.Subscription value) => new IncludedItem174((global::AppStoreConnect.Subscription?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem174 @this) => @this.Subscriptions;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem174(global::AppStoreConnect.Subscription? value)
-        {
-            Subscriptions = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem174 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem174(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem174(global::AppStoreConnect.Territory value) => new IncludedItem174((global::AppStoreConnect.Territory?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.Territory?(IncludedItem174 @this) => @this.Territories;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem174(global::AppStoreConnect.Territory? value)
-        {
-            Territories = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem174 FromTerritories(global::AppStoreConnect.Territory? value) => new IncludedItem174(value);
+        public static IncludedItem174 FromAppClipHeaderImages(global::AppStoreConnect.AppClipHeaderImage? value) => new IncludedItem174(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem174(
-            global::AppStoreConnect.SubscriptionIntroductoryOfferResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.SubscriptionPricePoint? subscriptionPricePoints,
-            global::AppStoreConnect.Subscription? subscriptions,
-            global::AppStoreConnect.Territory? territories
+            global::AppStoreConnect.AppClipDefaultExperienceLocalizationResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppClipDefaultExperience? appClipDefaultExperiences,
+            global::AppStoreConnect.AppClipHeaderImage? appClipHeaderImages
             )
         {
             Type = type;
 
-            SubscriptionPricePoints = subscriptionPricePoints;
-            Subscriptions = subscriptions;
-            Territories = territories;
+            AppClipDefaultExperiences = appClipDefaultExperiences;
+            AppClipHeaderImages = appClipHeaderImages;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Territories as object ??
-            Subscriptions as object ??
-            SubscriptionPricePoints as object
+            AppClipHeaderImages as object ??
+            AppClipDefaultExperiences as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            SubscriptionPricePoints?.ToString() ??
-            Subscriptions?.ToString() ??
-            Territories?.ToString()
+            AppClipDefaultExperiences?.ToString() ??
+            AppClipHeaderImages?.ToString()
             ;
 
         /// <summary>
@@ -233,16 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsSubscriptionPricePoints && !IsSubscriptions && !IsTerritories || !IsSubscriptionPricePoints && IsSubscriptions && !IsTerritories || !IsSubscriptionPricePoints && !IsSubscriptions && IsTerritories;
+            return IsAppClipDefaultExperiences && !IsAppClipHeaderImages || !IsAppClipDefaultExperiences && IsAppClipHeaderImages;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.SubscriptionPricePoint, TResult>? subscriptionPricePoints = null,
-            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
-            global::System.Func<global::AppStoreConnect.Territory, TResult>? territories = null,
+            global::System.Func<global::AppStoreConnect.AppClipDefaultExperience, TResult>? appClipDefaultExperiences = null,
+            global::System.Func<global::AppStoreConnect.AppClipHeaderImage, TResult>? appClipHeaderImages = null,
             bool validate = true)
         {
             if (validate)
@@ -250,17 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPricePoints is { } __value0 && subscriptionPricePoints != null)
+            if (AppClipDefaultExperiences is { } __value0 && appClipDefaultExperiences != null)
             {
-                return subscriptionPricePoints(__value0);
+                return appClipDefaultExperiences(__value0);
             }
-            else if (Subscriptions is { } __value1 && subscriptions != null)
+            else if (AppClipHeaderImages is { } __value1 && appClipHeaderImages != null)
             {
-                return subscriptions(__value1);
-            }
-            else if (Territories is { } __value2 && territories != null)
-            {
-                return territories(__value2);
+                return appClipHeaderImages(__value1);
             }
 
             return default(TResult);
@@ -270,11 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.SubscriptionPricePoint>? subscriptionPricePoints = null,
+            global::System.Action<global::AppStoreConnect.AppClipDefaultExperience>? appClipDefaultExperiences = null,
 
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
-
-            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
+            global::System.Action<global::AppStoreConnect.AppClipHeaderImage>? appClipHeaderImages = null,
             bool validate = true)
         {
             if (validate)
@@ -282,17 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPricePoints is { } __value0)
+            if (AppClipDefaultExperiences is { } __value0)
             {
-                subscriptionPricePoints?.Invoke(__value0);
+                appClipDefaultExperiences?.Invoke(__value0);
             }
-            else if (Subscriptions is { } __value1)
+            else if (AppClipHeaderImages is { } __value1)
             {
-                subscriptions?.Invoke(__value1);
-            }
-            else if (Territories is { } __value2)
-            {
-                territories?.Invoke(__value2);
+                appClipHeaderImages?.Invoke(__value1);
             }
         }
 
@@ -300,9 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.SubscriptionPricePoint>? subscriptionPricePoints = null,
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
-            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
+            global::System.Action<global::AppStoreConnect.AppClipDefaultExperience>? appClipDefaultExperiences = null,
+            global::System.Action<global::AppStoreConnect.AppClipHeaderImage>? appClipHeaderImages = null,
             bool validate = true)
         {
             if (validate)
@@ -310,17 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPricePoints is { } __value0)
+            if (AppClipDefaultExperiences is { } __value0)
             {
-                subscriptionPricePoints?.Invoke(__value0);
+                appClipDefaultExperiences?.Invoke(__value0);
             }
-            else if (Subscriptions is { } __value1)
+            else if (AppClipHeaderImages is { } __value1)
             {
-                subscriptions?.Invoke(__value1);
-            }
-            else if (Territories is { } __value2)
-            {
-                territories?.Invoke(__value2);
+                appClipHeaderImages?.Invoke(__value1);
             }
         }
 
@@ -331,12 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                SubscriptionPricePoints,
-                typeof(global::AppStoreConnect.SubscriptionPricePoint),
-                Subscriptions,
-                typeof(global::AppStoreConnect.Subscription),
-                Territories,
-                typeof(global::AppStoreConnect.Territory),
+                AppClipDefaultExperiences,
+                typeof(global::AppStoreConnect.AppClipDefaultExperience),
+                AppClipHeaderImages,
+                typeof(global::AppStoreConnect.AppClipHeaderImage),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -353,9 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem174 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionPricePoint?>.Default.Equals(SubscriptionPricePoints, other.SubscriptionPricePoints) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Territory?>.Default.Equals(Territories, other.Territories)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppClipDefaultExperience?>.Default.Equals(AppClipDefaultExperiences, other.AppClipDefaultExperiences) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppClipHeaderImage?>.Default.Equals(AppClipHeaderImages, other.AppClipHeaderImages)
                 ;
         }
 

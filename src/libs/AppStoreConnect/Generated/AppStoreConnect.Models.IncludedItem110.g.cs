@@ -12,156 +12,476 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboardLocalizationsV2ResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppAssetLibraryPlacementsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterLeaderboardImageV2? GameCenterLeaderboardImages { get; init; }
+        public global::AppStoreConnect.AppAssetLibraryImage? AppAssetLibraryImages { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterLeaderboardImageV2? GameCenterLeaderboardImages { get; }
+        public global::AppStoreConnect.AppAssetLibraryImage? AppAssetLibraryImages { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardImages))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppAssetLibraryImages))]
 #endif
-        public bool IsGameCenterLeaderboardImages => GameCenterLeaderboardImages != null;
+        public bool IsAppAssetLibraryImages => AppAssetLibraryImages != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterLeaderboardImages(
+        public bool TryPickAppAssetLibraryImages(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterLeaderboardImageV2? value)
+            out global::AppStoreConnect.AppAssetLibraryImage? value)
         {
-            value = GameCenterLeaderboardImages;
-            return IsGameCenterLeaderboardImages;
+            value = AppAssetLibraryImages;
+            return IsAppAssetLibraryImages;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboardImageV2 PickGameCenterLeaderboardImages() => GameCenterLeaderboardImages is { } value
+        public global::AppStoreConnect.AppAssetLibraryImage PickAppAssetLibraryImages() => AppAssetLibraryImages is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardImages' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppAssetLibraryImages' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterLeaderboardVersionV2? GameCenterLeaderboardVersions { get; init; }
+        public global::AppStoreConnect.AppAssetLibraryVideo? AppAssetLibraryVideos { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterLeaderboardVersionV2? GameCenterLeaderboardVersions { get; }
+        public global::AppStoreConnect.AppAssetLibraryVideo? AppAssetLibraryVideos { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppAssetLibraryVideos))]
 #endif
-        public bool IsGameCenterLeaderboardVersions => GameCenterLeaderboardVersions != null;
+        public bool IsAppAssetLibraryVideos => AppAssetLibraryVideos != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterLeaderboardVersions(
+        public bool TryPickAppAssetLibraryVideos(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterLeaderboardVersionV2? value)
+            out global::AppStoreConnect.AppAssetLibraryVideo? value)
         {
-            value = GameCenterLeaderboardVersions;
-            return IsGameCenterLeaderboardVersions;
+            value = AppAssetLibraryVideos;
+            return IsAppAssetLibraryVideos;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboardVersionV2 PickGameCenterLeaderboardVersions() => GameCenterLeaderboardVersions is { } value
+        public global::AppStoreConnect.AppAssetLibraryVideo PickAppAssetLibraryVideos() => AppAssetLibraryVideos is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardVersions' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem110(global::AppStoreConnect.GameCenterLeaderboardImageV2 value) => new IncludedItem110((global::AppStoreConnect.GameCenterLeaderboardImageV2?)value);
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppAssetLibraryVideos' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardImageV2?(IncludedItem110 @this) => @this.GameCenterLeaderboardImages;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations { get; init; }
+#else
+        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem110(global::AppStoreConnect.GameCenterLeaderboardImageV2? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageLocalizations))]
+#endif
+        public bool IsAppCustomProductPageLocalizations => AppCustomProductPageLocalizations != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAppCustomProductPageLocalizations(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppCustomProductPageLocalization? value)
         {
-            GameCenterLeaderboardImages = value;
+            value = AppCustomProductPageLocalizations;
+            return IsAppCustomProductPageLocalizations;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem110 FromGameCenterLeaderboardImages(global::AppStoreConnect.GameCenterLeaderboardImageV2? value) => new IncludedItem110(value);
+        public global::AppStoreConnect.AppCustomProductPageLocalization PickAppCustomProductPageLocalizations() => AppCustomProductPageLocalizations is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageLocalizations' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem110(global::AppStoreConnect.GameCenterLeaderboardVersionV2 value) => new IncludedItem110((global::AppStoreConnect.GameCenterLeaderboardVersionV2?)value);
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AppEventLocalization? AppEventLocalizations { get; init; }
+#else
+        public global::AppStoreConnect.AppEventLocalization? AppEventLocalizations { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardVersionV2?(IncludedItem110 @this) => @this.GameCenterLeaderboardVersions;
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEventLocalizations))]
+#endif
+        public bool IsAppEventLocalizations => AppEventLocalizations != null;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem110(global::AppStoreConnect.GameCenterLeaderboardVersionV2? value)
+        public bool TryPickAppEventLocalizations(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppEventLocalization? value)
         {
-            GameCenterLeaderboardVersions = value;
+            value = AppEventLocalizations;
+            return IsAppEventLocalizations;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem110 FromGameCenterLeaderboardVersions(global::AppStoreConnect.GameCenterLeaderboardVersionV2? value) => new IncludedItem110(value);
+        public global::AppStoreConnect.AppEventLocalization PickAppEventLocalizations() => AppEventLocalizations is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEventLocalizations' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? AppStoreVersionExperimentTreatmentLocalizations { get; init; }
+#else
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? AppStoreVersionExperimentTreatmentLocalizations { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperimentTreatmentLocalizations))]
+#endif
+        public bool IsAppStoreVersionExperimentTreatmentLocalizations => AppStoreVersionExperimentTreatmentLocalizations != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAppStoreVersionExperimentTreatmentLocalizations(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? value)
+        {
+            value = AppStoreVersionExperimentTreatmentLocalizations;
+            return IsAppStoreVersionExperimentTreatmentLocalizations;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization PickAppStoreVersionExperimentTreatmentLocalizations() => AppStoreVersionExperimentTreatmentLocalizations is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatmentLocalizations' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AppStoreVersionLocalization? AppStoreVersionLocalizations { get; init; }
+#else
+        public global::AppStoreConnect.AppStoreVersionLocalization? AppStoreVersionLocalizations { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionLocalizations))]
+#endif
+        public bool IsAppStoreVersionLocalizations => AppStoreVersionLocalizations != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAppStoreVersionLocalizations(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppStoreVersionLocalization? value)
+        {
+            value = AppStoreVersionLocalizations;
+            return IsAppStoreVersionLocalizations;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::AppStoreConnect.AppStoreVersionLocalization PickAppStoreVersionLocalizations() => AppStoreVersionLocalizations is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionLocalizations' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.RetentionMessageVersion? RetentionMessageVersions { get; init; }
+#else
+        public global::AppStoreConnect.RetentionMessageVersion? RetentionMessageVersions { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(RetentionMessageVersions))]
+#endif
+        public bool IsRetentionMessageVersions => RetentionMessageVersions != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickRetentionMessageVersions(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.RetentionMessageVersion? value)
+        {
+            value = RetentionMessageVersions;
+            return IsRetentionMessageVersions;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::AppStoreConnect.RetentionMessageVersion PickRetentionMessageVersions() => RetentionMessageVersions is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'RetentionMessageVersions' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem110(global::AppStoreConnect.AppAssetLibraryImage value) => new IncludedItem110((global::AppStoreConnect.AppAssetLibraryImage?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppAssetLibraryImage?(IncludedItem110 @this) => @this.AppAssetLibraryImages;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem110(global::AppStoreConnect.AppAssetLibraryImage? value)
+        {
+            AppAssetLibraryImages = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem110 FromAppAssetLibraryImages(global::AppStoreConnect.AppAssetLibraryImage? value) => new IncludedItem110(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem110(global::AppStoreConnect.AppAssetLibraryVideo value) => new IncludedItem110((global::AppStoreConnect.AppAssetLibraryVideo?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppAssetLibraryVideo?(IncludedItem110 @this) => @this.AppAssetLibraryVideos;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem110(global::AppStoreConnect.AppAssetLibraryVideo? value)
+        {
+            AppAssetLibraryVideos = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem110 FromAppAssetLibraryVideos(global::AppStoreConnect.AppAssetLibraryVideo? value) => new IncludedItem110(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem110(global::AppStoreConnect.AppCustomProductPageLocalization value) => new IncludedItem110((global::AppStoreConnect.AppCustomProductPageLocalization?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppCustomProductPageLocalization?(IncludedItem110 @this) => @this.AppCustomProductPageLocalizations;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem110(global::AppStoreConnect.AppCustomProductPageLocalization? value)
+        {
+            AppCustomProductPageLocalizations = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem110 FromAppCustomProductPageLocalizations(global::AppStoreConnect.AppCustomProductPageLocalization? value) => new IncludedItem110(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem110(global::AppStoreConnect.AppEventLocalization value) => new IncludedItem110((global::AppStoreConnect.AppEventLocalization?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppEventLocalization?(IncludedItem110 @this) => @this.AppEventLocalizations;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem110(global::AppStoreConnect.AppEventLocalization? value)
+        {
+            AppEventLocalizations = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem110 FromAppEventLocalizations(global::AppStoreConnect.AppEventLocalization? value) => new IncludedItem110(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem110(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization value) => new IncludedItem110((global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization?(IncludedItem110 @this) => @this.AppStoreVersionExperimentTreatmentLocalizations;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem110(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? value)
+        {
+            AppStoreVersionExperimentTreatmentLocalizations = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem110 FromAppStoreVersionExperimentTreatmentLocalizations(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? value) => new IncludedItem110(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem110(global::AppStoreConnect.AppStoreVersionLocalization value) => new IncludedItem110((global::AppStoreConnect.AppStoreVersionLocalization?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppStoreVersionLocalization?(IncludedItem110 @this) => @this.AppStoreVersionLocalizations;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem110(global::AppStoreConnect.AppStoreVersionLocalization? value)
+        {
+            AppStoreVersionLocalizations = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem110 FromAppStoreVersionLocalizations(global::AppStoreConnect.AppStoreVersionLocalization? value) => new IncludedItem110(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem110(global::AppStoreConnect.RetentionMessageVersion value) => new IncludedItem110((global::AppStoreConnect.RetentionMessageVersion?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.RetentionMessageVersion?(IncludedItem110 @this) => @this.RetentionMessageVersions;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem110(global::AppStoreConnect.RetentionMessageVersion? value)
+        {
+            RetentionMessageVersions = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem110 FromRetentionMessageVersions(global::AppStoreConnect.RetentionMessageVersion? value) => new IncludedItem110(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem110(
-            global::AppStoreConnect.GameCenterLeaderboardLocalizationsV2ResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.GameCenterLeaderboardImageV2? gameCenterLeaderboardImages,
-            global::AppStoreConnect.GameCenterLeaderboardVersionV2? gameCenterLeaderboardVersions
+            global::AppStoreConnect.AppAssetLibraryPlacementsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppAssetLibraryImage? appAssetLibraryImages,
+            global::AppStoreConnect.AppAssetLibraryVideo? appAssetLibraryVideos,
+            global::AppStoreConnect.AppCustomProductPageLocalization? appCustomProductPageLocalizations,
+            global::AppStoreConnect.AppEventLocalization? appEventLocalizations,
+            global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization? appStoreVersionExperimentTreatmentLocalizations,
+            global::AppStoreConnect.AppStoreVersionLocalization? appStoreVersionLocalizations,
+            global::AppStoreConnect.RetentionMessageVersion? retentionMessageVersions
             )
         {
             Type = type;
 
-            GameCenterLeaderboardImages = gameCenterLeaderboardImages;
-            GameCenterLeaderboardVersions = gameCenterLeaderboardVersions;
+            AppAssetLibraryImages = appAssetLibraryImages;
+            AppAssetLibraryVideos = appAssetLibraryVideos;
+            AppCustomProductPageLocalizations = appCustomProductPageLocalizations;
+            AppEventLocalizations = appEventLocalizations;
+            AppStoreVersionExperimentTreatmentLocalizations = appStoreVersionExperimentTreatmentLocalizations;
+            AppStoreVersionLocalizations = appStoreVersionLocalizations;
+            RetentionMessageVersions = retentionMessageVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            GameCenterLeaderboardVersions as object ??
-            GameCenterLeaderboardImages as object
+            RetentionMessageVersions as object ??
+            AppStoreVersionLocalizations as object ??
+            AppStoreVersionExperimentTreatmentLocalizations as object ??
+            AppEventLocalizations as object ??
+            AppCustomProductPageLocalizations as object ??
+            AppAssetLibraryVideos as object ??
+            AppAssetLibraryImages as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            GameCenterLeaderboardImages?.ToString() ??
-            GameCenterLeaderboardVersions?.ToString()
+            AppAssetLibraryImages?.ToString() ??
+            AppAssetLibraryVideos?.ToString() ??
+            AppCustomProductPageLocalizations?.ToString() ??
+            AppEventLocalizations?.ToString() ??
+            AppStoreVersionExperimentTreatmentLocalizations?.ToString() ??
+            AppStoreVersionLocalizations?.ToString() ??
+            RetentionMessageVersions?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +489,20 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsGameCenterLeaderboardImages && !IsGameCenterLeaderboardVersions || !IsGameCenterLeaderboardImages && IsGameCenterLeaderboardVersions;
+            return IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageLocalizations && !IsAppEventLocalizations && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations && !IsRetentionMessageVersions || !IsAppAssetLibraryImages && IsAppAssetLibraryVideos && !IsAppCustomProductPageLocalizations && !IsAppEventLocalizations && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations && !IsRetentionMessageVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && IsAppCustomProductPageLocalizations && !IsAppEventLocalizations && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations && !IsRetentionMessageVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageLocalizations && IsAppEventLocalizations && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations && !IsRetentionMessageVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageLocalizations && !IsAppEventLocalizations && IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations && !IsRetentionMessageVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageLocalizations && !IsAppEventLocalizations && !IsAppStoreVersionExperimentTreatmentLocalizations && IsAppStoreVersionLocalizations && !IsRetentionMessageVersions || !IsAppAssetLibraryImages && !IsAppAssetLibraryVideos && !IsAppCustomProductPageLocalizations && !IsAppEventLocalizations && !IsAppStoreVersionExperimentTreatmentLocalizations && !IsAppStoreVersionLocalizations && IsRetentionMessageVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardImageV2, TResult>? gameCenterLeaderboardImages = null,
-            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardVersionV2, TResult>? gameCenterLeaderboardVersions = null,
+            global::System.Func<global::AppStoreConnect.AppAssetLibraryImage, TResult>? appAssetLibraryImages = null,
+            global::System.Func<global::AppStoreConnect.AppAssetLibraryVideo, TResult>? appAssetLibraryVideos = null,
+            global::System.Func<global::AppStoreConnect.AppCustomProductPageLocalization, TResult>? appCustomProductPageLocalizations = null,
+            global::System.Func<global::AppStoreConnect.AppEventLocalization, TResult>? appEventLocalizations = null,
+            global::System.Func<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization, TResult>? appStoreVersionExperimentTreatmentLocalizations = null,
+            global::System.Func<global::AppStoreConnect.AppStoreVersionLocalization, TResult>? appStoreVersionLocalizations = null,
+            global::System.Func<global::AppStoreConnect.RetentionMessageVersion, TResult>? retentionMessageVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +510,33 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterLeaderboardImages is { } __value0 && gameCenterLeaderboardImages != null)
+            if (AppAssetLibraryImages is { } __value0 && appAssetLibraryImages != null)
             {
-                return gameCenterLeaderboardImages(__value0);
+                return appAssetLibraryImages(__value0);
             }
-            else if (GameCenterLeaderboardVersions is { } __value1 && gameCenterLeaderboardVersions != null)
+            else if (AppAssetLibraryVideos is { } __value1 && appAssetLibraryVideos != null)
             {
-                return gameCenterLeaderboardVersions(__value1);
+                return appAssetLibraryVideos(__value1);
+            }
+            else if (AppCustomProductPageLocalizations is { } __value2 && appCustomProductPageLocalizations != null)
+            {
+                return appCustomProductPageLocalizations(__value2);
+            }
+            else if (AppEventLocalizations is { } __value3 && appEventLocalizations != null)
+            {
+                return appEventLocalizations(__value3);
+            }
+            else if (AppStoreVersionExperimentTreatmentLocalizations is { } __value4 && appStoreVersionExperimentTreatmentLocalizations != null)
+            {
+                return appStoreVersionExperimentTreatmentLocalizations(__value4);
+            }
+            else if (AppStoreVersionLocalizations is { } __value5 && appStoreVersionLocalizations != null)
+            {
+                return appStoreVersionLocalizations(__value5);
+            }
+            else if (RetentionMessageVersions is { } __value6 && retentionMessageVersions != null)
+            {
+                return retentionMessageVersions(__value6);
             }
 
             return default(TResult);
@@ -201,9 +546,19 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardImageV2>? gameCenterLeaderboardImages = null,
+            global::System.Action<global::AppStoreConnect.AppAssetLibraryImage>? appAssetLibraryImages = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardVersionV2>? gameCenterLeaderboardVersions = null,
+            global::System.Action<global::AppStoreConnect.AppAssetLibraryVideo>? appAssetLibraryVideos = null,
+
+            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations = null,
+
+            global::System.Action<global::AppStoreConnect.AppEventLocalization>? appEventLocalizations = null,
+
+            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization>? appStoreVersionExperimentTreatmentLocalizations = null,
+
+            global::System.Action<global::AppStoreConnect.AppStoreVersionLocalization>? appStoreVersionLocalizations = null,
+
+            global::System.Action<global::AppStoreConnect.RetentionMessageVersion>? retentionMessageVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +566,33 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterLeaderboardImages is { } __value0)
+            if (AppAssetLibraryImages is { } __value0)
             {
-                gameCenterLeaderboardImages?.Invoke(__value0);
+                appAssetLibraryImages?.Invoke(__value0);
             }
-            else if (GameCenterLeaderboardVersions is { } __value1)
+            else if (AppAssetLibraryVideos is { } __value1)
             {
-                gameCenterLeaderboardVersions?.Invoke(__value1);
+                appAssetLibraryVideos?.Invoke(__value1);
+            }
+            else if (AppCustomProductPageLocalizations is { } __value2)
+            {
+                appCustomProductPageLocalizations?.Invoke(__value2);
+            }
+            else if (AppEventLocalizations is { } __value3)
+            {
+                appEventLocalizations?.Invoke(__value3);
+            }
+            else if (AppStoreVersionExperimentTreatmentLocalizations is { } __value4)
+            {
+                appStoreVersionExperimentTreatmentLocalizations?.Invoke(__value4);
+            }
+            else if (AppStoreVersionLocalizations is { } __value5)
+            {
+                appStoreVersionLocalizations?.Invoke(__value5);
+            }
+            else if (RetentionMessageVersions is { } __value6)
+            {
+                retentionMessageVersions?.Invoke(__value6);
             }
         }
 
@@ -225,8 +600,13 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardImageV2>? gameCenterLeaderboardImages = null,
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardVersionV2>? gameCenterLeaderboardVersions = null,
+            global::System.Action<global::AppStoreConnect.AppAssetLibraryImage>? appAssetLibraryImages = null,
+            global::System.Action<global::AppStoreConnect.AppAssetLibraryVideo>? appAssetLibraryVideos = null,
+            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations = null,
+            global::System.Action<global::AppStoreConnect.AppEventLocalization>? appEventLocalizations = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization>? appStoreVersionExperimentTreatmentLocalizations = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersionLocalization>? appStoreVersionLocalizations = null,
+            global::System.Action<global::AppStoreConnect.RetentionMessageVersion>? retentionMessageVersions = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +614,33 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterLeaderboardImages is { } __value0)
+            if (AppAssetLibraryImages is { } __value0)
             {
-                gameCenterLeaderboardImages?.Invoke(__value0);
+                appAssetLibraryImages?.Invoke(__value0);
             }
-            else if (GameCenterLeaderboardVersions is { } __value1)
+            else if (AppAssetLibraryVideos is { } __value1)
             {
-                gameCenterLeaderboardVersions?.Invoke(__value1);
+                appAssetLibraryVideos?.Invoke(__value1);
+            }
+            else if (AppCustomProductPageLocalizations is { } __value2)
+            {
+                appCustomProductPageLocalizations?.Invoke(__value2);
+            }
+            else if (AppEventLocalizations is { } __value3)
+            {
+                appEventLocalizations?.Invoke(__value3);
+            }
+            else if (AppStoreVersionExperimentTreatmentLocalizations is { } __value4)
+            {
+                appStoreVersionExperimentTreatmentLocalizations?.Invoke(__value4);
+            }
+            else if (AppStoreVersionLocalizations is { } __value5)
+            {
+                appStoreVersionLocalizations?.Invoke(__value5);
+            }
+            else if (RetentionMessageVersions is { } __value6)
+            {
+                retentionMessageVersions?.Invoke(__value6);
             }
         }
 
@@ -251,10 +651,20 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                GameCenterLeaderboardImages,
-                typeof(global::AppStoreConnect.GameCenterLeaderboardImageV2),
-                GameCenterLeaderboardVersions,
-                typeof(global::AppStoreConnect.GameCenterLeaderboardVersionV2),
+                AppAssetLibraryImages,
+                typeof(global::AppStoreConnect.AppAssetLibraryImage),
+                AppAssetLibraryVideos,
+                typeof(global::AppStoreConnect.AppAssetLibraryVideo),
+                AppCustomProductPageLocalizations,
+                typeof(global::AppStoreConnect.AppCustomProductPageLocalization),
+                AppEventLocalizations,
+                typeof(global::AppStoreConnect.AppEventLocalization),
+                AppStoreVersionExperimentTreatmentLocalizations,
+                typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization),
+                AppStoreVersionLocalizations,
+                typeof(global::AppStoreConnect.AppStoreVersionLocalization),
+                RetentionMessageVersions,
+                typeof(global::AppStoreConnect.RetentionMessageVersion),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +681,13 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem110 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardImageV2?>.Default.Equals(GameCenterLeaderboardImages, other.GameCenterLeaderboardImages) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardVersionV2?>.Default.Equals(GameCenterLeaderboardVersions, other.GameCenterLeaderboardVersions)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppAssetLibraryImage?>.Default.Equals(AppAssetLibraryImages, other.AppAssetLibraryImages) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppAssetLibraryVideo?>.Default.Equals(AppAssetLibraryVideos, other.AppAssetLibraryVideos) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageLocalization?>.Default.Equals(AppCustomProductPageLocalizations, other.AppCustomProductPageLocalizations) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEventLocalization?>.Default.Equals(AppEventLocalizations, other.AppEventLocalizations) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperimentTreatmentLocalization?>.Default.Equals(AppStoreVersionExperimentTreatmentLocalizations, other.AppStoreVersionExperimentTreatmentLocalizations) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionLocalization?>.Default.Equals(AppStoreVersionLocalizations, other.AppStoreVersionLocalizations) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.RetentionMessageVersion?>.Default.Equals(RetentionMessageVersions, other.RetentionMessageVersions)
                 ;
         }
 

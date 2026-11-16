@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.DiagnosticInsightDirection))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0277.Create_DiagnosticInsightDirection2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0276.Create_DiagnosticInsightDirection2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.DiagnosticInsightDirection?))
                 {

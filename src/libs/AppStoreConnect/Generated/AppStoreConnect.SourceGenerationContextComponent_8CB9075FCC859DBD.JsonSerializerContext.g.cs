@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.WinBackOffersGetInstanceFieldsWinBackOfferPrice))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1309.Create_WinBackOffersGetInstanceFieldsWinBackOfferPrice2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1308.Create_WinBackOffersGetInstanceFieldsWinBackOfferPrice2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.WinBackOffersGetInstanceFieldsWinBackOfferPrice?))
                 {

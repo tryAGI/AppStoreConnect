@@ -12,8 +12,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("type")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementTypeJsonConverter))]
-        public global::AppStoreConnect.AppAssetLibraryPlacementType Type { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AppAssetLibraryPlacementType2JsonConverter))]
+        public global::AppStoreConnect.AppAssetLibraryPlacementType2 Type { get; set; }
 
         /// <summary>
         ///
@@ -60,7 +60,7 @@ namespace AppStoreConnect
 #endif
         public AppAssetLibraryPlacement(
             string id,
-            global::AppStoreConnect.AppAssetLibraryPlacementType type,
+            global::AppStoreConnect.AppAssetLibraryPlacementType2 type,
             global::AppStoreConnect.AppAssetLibraryPlacementAttributes? attributes,
             global::AppStoreConnect.Relationships? relationships,
             global::AppStoreConnect.ResourceLinks? links)

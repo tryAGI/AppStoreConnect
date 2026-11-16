@@ -12,156 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAppVersionResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.EndUserLicenseAgreementResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; init; }
+        public global::AppStoreConnect.App? Apps { get; init; }
 #else
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; }
+        public global::AppStoreConnect.App? Apps { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
 #endif
-        public bool IsAppStoreVersions => AppStoreVersions != null;
+        public bool IsApps => Apps != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppStoreVersions(
+        public bool TryPickApps(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppStoreVersion? value)
+            out global::AppStoreConnect.App? value)
         {
-            value = AppStoreVersions;
-            return IsAppStoreVersions;
+            value = Apps;
+            return IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => AppStoreVersions is { } value
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterAppVersion? GameCenterAppVersions { get; init; }
+        public global::AppStoreConnect.Territory? Territories { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterAppVersion? GameCenterAppVersions { get; }
+        public global::AppStoreConnect.Territory? Territories { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterAppVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Territories))]
 #endif
-        public bool IsGameCenterAppVersions => GameCenterAppVersions != null;
+        public bool IsTerritories => Territories != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterAppVersions(
+        public bool TryPickTerritories(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterAppVersion? value)
+            out global::AppStoreConnect.Territory? value)
         {
-            value = GameCenterAppVersions;
-            return IsGameCenterAppVersions;
+            value = Territories;
+            return IsTerritories;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAppVersion PickGameCenterAppVersions() => GameCenterAppVersions is { } value
+        public global::AppStoreConnect.Territory PickTerritories() => Territories is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAppVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Territories' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem96(global::AppStoreConnect.AppStoreVersion value) => new IncludedItem96((global::AppStoreConnect.AppStoreVersion?)value);
+        public static implicit operator IncludedItem96(global::AppStoreConnect.App value) => new IncludedItem96((global::AppStoreConnect.App?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem96 @this) => @this.AppStoreVersions;
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem96 @this) => @this.Apps;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem96(global::AppStoreConnect.AppStoreVersion? value)
+        public IncludedItem96(global::AppStoreConnect.App? value)
         {
-            AppStoreVersions = value;
+            Apps = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem96 FromAppStoreVersions(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem96(value);
+        public static IncludedItem96 FromApps(global::AppStoreConnect.App? value) => new IncludedItem96(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem96(global::AppStoreConnect.GameCenterAppVersion value) => new IncludedItem96((global::AppStoreConnect.GameCenterAppVersion?)value);
+        public static implicit operator IncludedItem96(global::AppStoreConnect.Territory value) => new IncludedItem96((global::AppStoreConnect.Territory?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterAppVersion?(IncludedItem96 @this) => @this.GameCenterAppVersions;
+        public static implicit operator global::AppStoreConnect.Territory?(IncludedItem96 @this) => @this.Territories;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem96(global::AppStoreConnect.GameCenterAppVersion? value)
+        public IncludedItem96(global::AppStoreConnect.Territory? value)
         {
-            GameCenterAppVersions = value;
+            Territories = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem96 FromGameCenterAppVersions(global::AppStoreConnect.GameCenterAppVersion? value) => new IncludedItem96(value);
+        public static IncludedItem96 FromTerritories(global::AppStoreConnect.Territory? value) => new IncludedItem96(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem96(
-            global::AppStoreConnect.GameCenterAppVersionResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppStoreVersion? appStoreVersions,
-            global::AppStoreConnect.GameCenterAppVersion? gameCenterAppVersions
+            global::AppStoreConnect.EndUserLicenseAgreementResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.App? apps,
+            global::AppStoreConnect.Territory? territories
             )
         {
             Type = type;
 
-            AppStoreVersions = appStoreVersions;
-            GameCenterAppVersions = gameCenterAppVersions;
+            Apps = apps;
+            Territories = territories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            GameCenterAppVersions as object ??
-            AppStoreVersions as object
+            Territories as object ??
+            Apps as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppStoreVersions?.ToString() ??
-            GameCenterAppVersions?.ToString()
+            Apps?.ToString() ??
+            Territories?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppStoreVersions && !IsGameCenterAppVersions || !IsAppStoreVersions && IsGameCenterAppVersions;
+            return IsApps && !IsTerritories || !IsApps && IsTerritories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersions = null,
-            global::System.Func<global::AppStoreConnect.GameCenterAppVersion, TResult>? gameCenterAppVersions = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
+            global::System.Func<global::AppStoreConnect.Territory, TResult>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppStoreVersions is { } __value0 && appStoreVersions != null)
+            if (Apps is { } __value0 && apps != null)
             {
-                return appStoreVersions(__value0);
+                return apps(__value0);
             }
-            else if (GameCenterAppVersions is { } __value1 && gameCenterAppVersions != null)
+            else if (Territories is { } __value1 && territories != null)
             {
-                return gameCenterAppVersions(__value1);
+                return territories(__value1);
             }
 
             return default(TResult);
@@ -201,9 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterAppVersion>? gameCenterAppVersions = null,
+            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppStoreVersions is { } __value0)
+            if (Apps is { } __value0)
             {
-                appStoreVersions?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (GameCenterAppVersions is { } __value1)
+            else if (Territories is { } __value1)
             {
-                gameCenterAppVersions?.Invoke(__value1);
+                territories?.Invoke(__value1);
             }
         }
 
@@ -225,8 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
-            global::System.Action<global::AppStoreConnect.GameCenterAppVersion>? gameCenterAppVersions = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppStoreVersions is { } __value0)
+            if (Apps is { } __value0)
             {
-                appStoreVersions?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (GameCenterAppVersions is { } __value1)
+            else if (Territories is { } __value1)
             {
-                gameCenterAppVersions?.Invoke(__value1);
+                territories?.Invoke(__value1);
             }
         }
 
@@ -251,10 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppStoreVersions,
-                typeof(global::AppStoreConnect.AppStoreVersion),
-                GameCenterAppVersions,
-                typeof(global::AppStoreConnect.GameCenterAppVersion),
+                Apps,
+                typeof(global::AppStoreConnect.App),
+                Territories,
+                typeof(global::AppStoreConnect.Territory),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem96 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions, other.AppStoreVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterAppVersion?>.Default.Equals(GameCenterAppVersions, other.GameCenterAppVersions)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Territory?>.Default.Equals(Territories, other.Territories)
                 ;
         }
 

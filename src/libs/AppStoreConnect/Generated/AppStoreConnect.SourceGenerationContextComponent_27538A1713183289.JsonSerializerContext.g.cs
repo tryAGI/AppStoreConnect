@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppAvailabilityV2Type))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0040.Create_AppAvailabilityV2Type2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0039.Create_AppAvailabilityV2Type2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppAvailabilityV2Type?))
                 {

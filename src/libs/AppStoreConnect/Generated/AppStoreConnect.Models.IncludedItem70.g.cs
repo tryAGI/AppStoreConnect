@@ -12,220 +12,220 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.CiProductsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.SubscriptionVersionResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.App? Apps { get; init; }
+        public global::AppStoreConnect.SubscriptionImageV2? SubscriptionImages { get; init; }
 #else
-        public global::AppStoreConnect.App? Apps { get; }
+        public global::AppStoreConnect.SubscriptionImageV2? SubscriptionImages { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionImages))]
 #endif
-        public bool IsApps => Apps != null;
+        public bool IsSubscriptionImages => SubscriptionImages != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickApps(
+        public bool TryPickSubscriptionImages(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.App? value)
+            out global::AppStoreConnect.SubscriptionImageV2? value)
         {
-            value = Apps;
-            return IsApps;
+            value = SubscriptionImages;
+            return IsSubscriptionImages;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.App PickApps() => Apps is { } value
+        public global::AppStoreConnect.SubscriptionImageV2 PickSubscriptionImages() => SubscriptionImages is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionImages' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BundleId? BundleIds { get; init; }
+        public global::AppStoreConnect.SubscriptionLocalizationV2? SubscriptionLocalizations { get; init; }
 #else
-        public global::AppStoreConnect.BundleId? BundleIds { get; }
+        public global::AppStoreConnect.SubscriptionLocalizationV2? SubscriptionLocalizations { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BundleIds))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionLocalizations))]
 #endif
-        public bool IsBundleIds => BundleIds != null;
+        public bool IsSubscriptionLocalizations => SubscriptionLocalizations != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBundleIds(
+        public bool TryPickSubscriptionLocalizations(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BundleId? value)
+            out global::AppStoreConnect.SubscriptionLocalizationV2? value)
         {
-            value = BundleIds;
-            return IsBundleIds;
+            value = SubscriptionLocalizations;
+            return IsSubscriptionLocalizations;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BundleId PickBundleIds() => BundleIds is { } value
+        public global::AppStoreConnect.SubscriptionLocalizationV2 PickSubscriptionLocalizations() => SubscriptionLocalizations is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BundleIds' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionLocalizations' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.ScmRepository? ScmRepositories { get; init; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
 #else
-        public global::AppStoreConnect.ScmRepository? ScmRepositories { get; }
+        public global::AppStoreConnect.Subscription? Subscriptions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmRepositories))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
 #endif
-        public bool IsScmRepositories => ScmRepositories != null;
+        public bool IsSubscriptions => Subscriptions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickScmRepositories(
+        public bool TryPickSubscriptions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.ScmRepository? value)
+            out global::AppStoreConnect.Subscription? value)
         {
-            value = ScmRepositories;
-            return IsScmRepositories;
+            value = Subscriptions;
+            return IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.ScmRepository PickScmRepositories() => ScmRepositories is { } value
+        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'ScmRepositories' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem70(global::AppStoreConnect.App value) => new IncludedItem70((global::AppStoreConnect.App?)value);
+        public static implicit operator IncludedItem70(global::AppStoreConnect.SubscriptionImageV2 value) => new IncludedItem70((global::AppStoreConnect.SubscriptionImageV2?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.App?(IncludedItem70 @this) => @this.Apps;
+        public static implicit operator global::AppStoreConnect.SubscriptionImageV2?(IncludedItem70 @this) => @this.SubscriptionImages;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem70(global::AppStoreConnect.App? value)
+        public IncludedItem70(global::AppStoreConnect.SubscriptionImageV2? value)
         {
-            Apps = value;
+            SubscriptionImages = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem70 FromApps(global::AppStoreConnect.App? value) => new IncludedItem70(value);
+        public static IncludedItem70 FromSubscriptionImages(global::AppStoreConnect.SubscriptionImageV2? value) => new IncludedItem70(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem70(global::AppStoreConnect.BundleId value) => new IncludedItem70((global::AppStoreConnect.BundleId?)value);
+        public static implicit operator IncludedItem70(global::AppStoreConnect.SubscriptionLocalizationV2 value) => new IncludedItem70((global::AppStoreConnect.SubscriptionLocalizationV2?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BundleId?(IncludedItem70 @this) => @this.BundleIds;
+        public static implicit operator global::AppStoreConnect.SubscriptionLocalizationV2?(IncludedItem70 @this) => @this.SubscriptionLocalizations;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem70(global::AppStoreConnect.BundleId? value)
+        public IncludedItem70(global::AppStoreConnect.SubscriptionLocalizationV2? value)
         {
-            BundleIds = value;
+            SubscriptionLocalizations = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem70 FromBundleIds(global::AppStoreConnect.BundleId? value) => new IncludedItem70(value);
+        public static IncludedItem70 FromSubscriptionLocalizations(global::AppStoreConnect.SubscriptionLocalizationV2? value) => new IncludedItem70(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem70(global::AppStoreConnect.ScmRepository value) => new IncludedItem70((global::AppStoreConnect.ScmRepository?)value);
+        public static implicit operator IncludedItem70(global::AppStoreConnect.Subscription value) => new IncludedItem70((global::AppStoreConnect.Subscription?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.ScmRepository?(IncludedItem70 @this) => @this.ScmRepositories;
+        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem70 @this) => @this.Subscriptions;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem70(global::AppStoreConnect.ScmRepository? value)
+        public IncludedItem70(global::AppStoreConnect.Subscription? value)
         {
-            ScmRepositories = value;
+            Subscriptions = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem70 FromScmRepositories(global::AppStoreConnect.ScmRepository? value) => new IncludedItem70(value);
+        public static IncludedItem70 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem70(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem70(
-            global::AppStoreConnect.CiProductsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.App? apps,
-            global::AppStoreConnect.BundleId? bundleIds,
-            global::AppStoreConnect.ScmRepository? scmRepositories
+            global::AppStoreConnect.SubscriptionVersionResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.SubscriptionImageV2? subscriptionImages,
+            global::AppStoreConnect.SubscriptionLocalizationV2? subscriptionLocalizations,
+            global::AppStoreConnect.Subscription? subscriptions
             )
         {
             Type = type;
 
-            Apps = apps;
-            BundleIds = bundleIds;
-            ScmRepositories = scmRepositories;
+            SubscriptionImages = subscriptionImages;
+            SubscriptionLocalizations = subscriptionLocalizations;
+            Subscriptions = subscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            ScmRepositories as object ??
-            BundleIds as object ??
-            Apps as object
+            Subscriptions as object ??
+            SubscriptionLocalizations as object ??
+            SubscriptionImages as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            Apps?.ToString() ??
-            BundleIds?.ToString() ??
-            ScmRepositories?.ToString()
+            SubscriptionImages?.ToString() ??
+            SubscriptionLocalizations?.ToString() ??
+            Subscriptions?.ToString()
             ;
 
         /// <summary>
@@ -233,16 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsApps && !IsBundleIds && !IsScmRepositories || !IsApps && IsBundleIds && !IsScmRepositories || !IsApps && !IsBundleIds && IsScmRepositories;
+            return IsSubscriptionImages && !IsSubscriptionLocalizations && !IsSubscriptions || !IsSubscriptionImages && IsSubscriptionLocalizations && !IsSubscriptions || !IsSubscriptionImages && !IsSubscriptionLocalizations && IsSubscriptions;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
-            global::System.Func<global::AppStoreConnect.BundleId, TResult>? bundleIds = null,
-            global::System.Func<global::AppStoreConnect.ScmRepository, TResult>? scmRepositories = null,
+            global::System.Func<global::AppStoreConnect.SubscriptionImageV2, TResult>? subscriptionImages = null,
+            global::System.Func<global::AppStoreConnect.SubscriptionLocalizationV2, TResult>? subscriptionLocalizations = null,
+            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0 && apps != null)
+            if (SubscriptionImages is { } __value0 && subscriptionImages != null)
             {
-                return apps(__value0);
+                return subscriptionImages(__value0);
             }
-            else if (BundleIds is { } __value1 && bundleIds != null)
+            else if (SubscriptionLocalizations is { } __value1 && subscriptionLocalizations != null)
             {
-                return bundleIds(__value1);
+                return subscriptionLocalizations(__value1);
             }
-            else if (ScmRepositories is { } __value2 && scmRepositories != null)
+            else if (Subscriptions is { } __value2 && subscriptions != null)
             {
-                return scmRepositories(__value2);
+                return subscriptions(__value2);
             }
 
             return default(TResult);
@@ -270,11 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionImageV2>? subscriptionImages = null,
 
-            global::System.Action<global::AppStoreConnect.BundleId>? bundleIds = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionLocalizationV2>? subscriptionLocalizations = null,
 
-            global::System.Action<global::AppStoreConnect.ScmRepository>? scmRepositories = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0)
+            if (SubscriptionImages is { } __value0)
             {
-                apps?.Invoke(__value0);
+                subscriptionImages?.Invoke(__value0);
             }
-            else if (BundleIds is { } __value1)
+            else if (SubscriptionLocalizations is { } __value1)
             {
-                bundleIds?.Invoke(__value1);
+                subscriptionLocalizations?.Invoke(__value1);
             }
-            else if (ScmRepositories is { } __value2)
+            else if (Subscriptions is { } __value2)
             {
-                scmRepositories?.Invoke(__value2);
+                subscriptions?.Invoke(__value2);
             }
         }
 
@@ -300,9 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.App>? apps = null,
-            global::System.Action<global::AppStoreConnect.BundleId>? bundleIds = null,
-            global::System.Action<global::AppStoreConnect.ScmRepository>? scmRepositories = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionImageV2>? subscriptionImages = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionLocalizationV2>? subscriptionLocalizations = null,
+            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
             bool validate = true)
         {
             if (validate)
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0)
+            if (SubscriptionImages is { } __value0)
             {
-                apps?.Invoke(__value0);
+                subscriptionImages?.Invoke(__value0);
             }
-            else if (BundleIds is { } __value1)
+            else if (SubscriptionLocalizations is { } __value1)
             {
-                bundleIds?.Invoke(__value1);
+                subscriptionLocalizations?.Invoke(__value1);
             }
-            else if (ScmRepositories is { } __value2)
+            else if (Subscriptions is { } __value2)
             {
-                scmRepositories?.Invoke(__value2);
+                subscriptions?.Invoke(__value2);
             }
         }
 
@@ -331,12 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                Apps,
-                typeof(global::AppStoreConnect.App),
-                BundleIds,
-                typeof(global::AppStoreConnect.BundleId),
-                ScmRepositories,
-                typeof(global::AppStoreConnect.ScmRepository),
+                SubscriptionImages,
+                typeof(global::AppStoreConnect.SubscriptionImageV2),
+                SubscriptionLocalizations,
+                typeof(global::AppStoreConnect.SubscriptionLocalizationV2),
+                Subscriptions,
+                typeof(global::AppStoreConnect.Subscription),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -353,9 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem70 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BundleId?>.Default.Equals(BundleIds, other.BundleIds) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmRepository?>.Default.Equals(ScmRepositories, other.ScmRepositories)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionImageV2?>.Default.Equals(SubscriptionImages, other.SubscriptionImages) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionLocalizationV2?>.Default.Equals(SubscriptionLocalizations, other.SubscriptionLocalizations) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions)
                 ;
         }
 

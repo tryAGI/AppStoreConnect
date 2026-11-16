@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.WebhooksGetInstanceIncludeItem))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1306.Create_WebhooksGetInstanceIncludeItem2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1305.Create_WebhooksGetInstanceIncludeItem2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.WebhooksGetInstanceIncludeItem?))
                 {

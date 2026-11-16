@@ -12,284 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionOfferCodeResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetLocalizationResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionOfferCodeCustomCode? SubscriptionOfferCodeCustomCodes { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetImage? GameCenterLeaderboardSetImages { get; init; }
 #else
-        public global::AppStoreConnect.SubscriptionOfferCodeCustomCode? SubscriptionOfferCodeCustomCodes { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSetImage? GameCenterLeaderboardSetImages { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionOfferCodeCustomCodes))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSetImages))]
 #endif
-        public bool IsSubscriptionOfferCodeCustomCodes => SubscriptionOfferCodeCustomCodes != null;
+        public bool IsGameCenterLeaderboardSetImages => GameCenterLeaderboardSetImages != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptionOfferCodeCustomCodes(
+        public bool TryPickGameCenterLeaderboardSetImages(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.SubscriptionOfferCodeCustomCode? value)
+            out global::AppStoreConnect.GameCenterLeaderboardSetImage? value)
         {
-            value = SubscriptionOfferCodeCustomCodes;
-            return IsSubscriptionOfferCodeCustomCodes;
+            value = GameCenterLeaderboardSetImages;
+            return IsGameCenterLeaderboardSetImages;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionOfferCodeCustomCode PickSubscriptionOfferCodeCustomCodes() => SubscriptionOfferCodeCustomCodes is { } value
+        public global::AppStoreConnect.GameCenterLeaderboardSetImage PickGameCenterLeaderboardSetImages() => GameCenterLeaderboardSetImages is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionOfferCodeCustomCodes' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSetImages' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode? SubscriptionOfferCodeOneTimeUseCodes { get; init; }
+        public global::AppStoreConnect.GameCenterLeaderboardSet? GameCenterLeaderboardSets { get; init; }
 #else
-        public global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode? SubscriptionOfferCodeOneTimeUseCodes { get; }
+        public global::AppStoreConnect.GameCenterLeaderboardSet? GameCenterLeaderboardSets { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionOfferCodeOneTimeUseCodes))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSets))]
 #endif
-        public bool IsSubscriptionOfferCodeOneTimeUseCodes => SubscriptionOfferCodeOneTimeUseCodes != null;
+        public bool IsGameCenterLeaderboardSets => GameCenterLeaderboardSets != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptionOfferCodeOneTimeUseCodes(
+        public bool TryPickGameCenterLeaderboardSets(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode? value)
+            out global::AppStoreConnect.GameCenterLeaderboardSet? value)
         {
-            value = SubscriptionOfferCodeOneTimeUseCodes;
-            return IsSubscriptionOfferCodeOneTimeUseCodes;
+            value = GameCenterLeaderboardSets;
+            return IsGameCenterLeaderboardSets;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode PickSubscriptionOfferCodeOneTimeUseCodes() => SubscriptionOfferCodeOneTimeUseCodes is { } value
+        public global::AppStoreConnect.GameCenterLeaderboardSet PickGameCenterLeaderboardSets() => GameCenterLeaderboardSets is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionOfferCodeOneTimeUseCodes' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSets' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem177(global::AppStoreConnect.GameCenterLeaderboardSetImage value) => new IncludedItem177((global::AppStoreConnect.GameCenterLeaderboardSetImage?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionOfferCodePrice? SubscriptionOfferCodePrices { get; init; }
-#else
-        public global::AppStoreConnect.SubscriptionOfferCodePrice? SubscriptionOfferCodePrices { get; }
-#endif
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSetImage?(IncludedItem177 @this) => @this.GameCenterLeaderboardSetImages;
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionOfferCodePrices))]
-#endif
-        public bool IsSubscriptionOfferCodePrices => SubscriptionOfferCodePrices != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickSubscriptionOfferCodePrices(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.SubscriptionOfferCodePrice? value)
+        public IncludedItem177(global::AppStoreConnect.GameCenterLeaderboardSetImage? value)
         {
-            value = SubscriptionOfferCodePrices;
-            return IsSubscriptionOfferCodePrices;
+            GameCenterLeaderboardSetImages = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionOfferCodePrice PickSubscriptionOfferCodePrices() => SubscriptionOfferCodePrices is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionOfferCodePrices' but the value was {ToString()}.");
+        public static IncludedItem177 FromGameCenterLeaderboardSetImages(global::AppStoreConnect.GameCenterLeaderboardSetImage? value) => new IncludedItem177(value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Subscription? Subscriptions { get; init; }
-#else
-        public global::AppStoreConnect.Subscription? Subscriptions { get; }
-#endif
+        public static implicit operator IncludedItem177(global::AppStoreConnect.GameCenterLeaderboardSet value) => new IncludedItem177((global::AppStoreConnect.GameCenterLeaderboardSet?)value);
 
         /// <summary>
         ///
         /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Subscriptions))]
-#endif
-        public bool IsSubscriptions => Subscriptions != null;
+        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSet?(IncludedItem177 @this) => @this.GameCenterLeaderboardSets;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptions(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.Subscription? value)
+        public IncludedItem177(global::AppStoreConnect.GameCenterLeaderboardSet? value)
         {
-            value = Subscriptions;
-            return IsSubscriptions;
+            GameCenterLeaderboardSets = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Subscription PickSubscriptions() => Subscriptions is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Subscriptions' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem177(global::AppStoreConnect.SubscriptionOfferCodeCustomCode value) => new IncludedItem177((global::AppStoreConnect.SubscriptionOfferCodeCustomCode?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionOfferCodeCustomCode?(IncludedItem177 @this) => @this.SubscriptionOfferCodeCustomCodes;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem177(global::AppStoreConnect.SubscriptionOfferCodeCustomCode? value)
-        {
-            SubscriptionOfferCodeCustomCodes = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem177 FromSubscriptionOfferCodeCustomCodes(global::AppStoreConnect.SubscriptionOfferCodeCustomCode? value) => new IncludedItem177(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem177(global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode value) => new IncludedItem177((global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode?(IncludedItem177 @this) => @this.SubscriptionOfferCodeOneTimeUseCodes;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem177(global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode? value)
-        {
-            SubscriptionOfferCodeOneTimeUseCodes = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem177 FromSubscriptionOfferCodeOneTimeUseCodes(global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode? value) => new IncludedItem177(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem177(global::AppStoreConnect.SubscriptionOfferCodePrice value) => new IncludedItem177((global::AppStoreConnect.SubscriptionOfferCodePrice?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionOfferCodePrice?(IncludedItem177 @this) => @this.SubscriptionOfferCodePrices;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem177(global::AppStoreConnect.SubscriptionOfferCodePrice? value)
-        {
-            SubscriptionOfferCodePrices = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem177 FromSubscriptionOfferCodePrices(global::AppStoreConnect.SubscriptionOfferCodePrice? value) => new IncludedItem177(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem177(global::AppStoreConnect.Subscription value) => new IncludedItem177((global::AppStoreConnect.Subscription?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.Subscription?(IncludedItem177 @this) => @this.Subscriptions;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem177(global::AppStoreConnect.Subscription? value)
-        {
-            Subscriptions = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem177 FromSubscriptions(global::AppStoreConnect.Subscription? value) => new IncludedItem177(value);
+        public static IncludedItem177 FromGameCenterLeaderboardSets(global::AppStoreConnect.GameCenterLeaderboardSet? value) => new IncludedItem177(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem177(
-            global::AppStoreConnect.SubscriptionOfferCodeResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.SubscriptionOfferCodeCustomCode? subscriptionOfferCodeCustomCodes,
-            global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode? subscriptionOfferCodeOneTimeUseCodes,
-            global::AppStoreConnect.SubscriptionOfferCodePrice? subscriptionOfferCodePrices,
-            global::AppStoreConnect.Subscription? subscriptions
+            global::AppStoreConnect.GameCenterLeaderboardSetLocalizationResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.GameCenterLeaderboardSetImage? gameCenterLeaderboardSetImages,
+            global::AppStoreConnect.GameCenterLeaderboardSet? gameCenterLeaderboardSets
             )
         {
             Type = type;
 
-            SubscriptionOfferCodeCustomCodes = subscriptionOfferCodeCustomCodes;
-            SubscriptionOfferCodeOneTimeUseCodes = subscriptionOfferCodeOneTimeUseCodes;
-            SubscriptionOfferCodePrices = subscriptionOfferCodePrices;
-            Subscriptions = subscriptions;
+            GameCenterLeaderboardSetImages = gameCenterLeaderboardSetImages;
+            GameCenterLeaderboardSets = gameCenterLeaderboardSets;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Subscriptions as object ??
-            SubscriptionOfferCodePrices as object ??
-            SubscriptionOfferCodeOneTimeUseCodes as object ??
-            SubscriptionOfferCodeCustomCodes as object
+            GameCenterLeaderboardSets as object ??
+            GameCenterLeaderboardSetImages as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            SubscriptionOfferCodeCustomCodes?.ToString() ??
-            SubscriptionOfferCodeOneTimeUseCodes?.ToString() ??
-            SubscriptionOfferCodePrices?.ToString() ??
-            Subscriptions?.ToString()
+            GameCenterLeaderboardSetImages?.ToString() ??
+            GameCenterLeaderboardSets?.ToString()
             ;
 
         /// <summary>
@@ -297,17 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsSubscriptionOfferCodeCustomCodes && !IsSubscriptionOfferCodeOneTimeUseCodes && !IsSubscriptionOfferCodePrices && !IsSubscriptions || !IsSubscriptionOfferCodeCustomCodes && IsSubscriptionOfferCodeOneTimeUseCodes && !IsSubscriptionOfferCodePrices && !IsSubscriptions || !IsSubscriptionOfferCodeCustomCodes && !IsSubscriptionOfferCodeOneTimeUseCodes && IsSubscriptionOfferCodePrices && !IsSubscriptions || !IsSubscriptionOfferCodeCustomCodes && !IsSubscriptionOfferCodeOneTimeUseCodes && !IsSubscriptionOfferCodePrices && IsSubscriptions;
+            return IsGameCenterLeaderboardSetImages && !IsGameCenterLeaderboardSets || !IsGameCenterLeaderboardSetImages && IsGameCenterLeaderboardSets;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.SubscriptionOfferCodeCustomCode, TResult>? subscriptionOfferCodeCustomCodes = null,
-            global::System.Func<global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode, TResult>? subscriptionOfferCodeOneTimeUseCodes = null,
-            global::System.Func<global::AppStoreConnect.SubscriptionOfferCodePrice, TResult>? subscriptionOfferCodePrices = null,
-            global::System.Func<global::AppStoreConnect.Subscription, TResult>? subscriptions = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSetImage, TResult>? gameCenterLeaderboardSetImages = null,
+            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSet, TResult>? gameCenterLeaderboardSets = null,
             bool validate = true)
         {
             if (validate)
@@ -315,21 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionOfferCodeCustomCodes is { } __value0 && subscriptionOfferCodeCustomCodes != null)
+            if (GameCenterLeaderboardSetImages is { } __value0 && gameCenterLeaderboardSetImages != null)
             {
-                return subscriptionOfferCodeCustomCodes(__value0);
+                return gameCenterLeaderboardSetImages(__value0);
             }
-            else if (SubscriptionOfferCodeOneTimeUseCodes is { } __value1 && subscriptionOfferCodeOneTimeUseCodes != null)
+            else if (GameCenterLeaderboardSets is { } __value1 && gameCenterLeaderboardSets != null)
             {
-                return subscriptionOfferCodeOneTimeUseCodes(__value1);
-            }
-            else if (SubscriptionOfferCodePrices is { } __value2 && subscriptionOfferCodePrices != null)
-            {
-                return subscriptionOfferCodePrices(__value2);
-            }
-            else if (Subscriptions is { } __value3 && subscriptions != null)
-            {
-                return subscriptions(__value3);
+                return gameCenterLeaderboardSets(__value1);
             }
 
             return default(TResult);
@@ -339,13 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.SubscriptionOfferCodeCustomCode>? subscriptionOfferCodeCustomCodes = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetImage>? gameCenterLeaderboardSetImages = null,
 
-            global::System.Action<global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode>? subscriptionOfferCodeOneTimeUseCodes = null,
-
-            global::System.Action<global::AppStoreConnect.SubscriptionOfferCodePrice>? subscriptionOfferCodePrices = null,
-
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSet>? gameCenterLeaderboardSets = null,
             bool validate = true)
         {
             if (validate)
@@ -353,21 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionOfferCodeCustomCodes is { } __value0)
+            if (GameCenterLeaderboardSetImages is { } __value0)
             {
-                subscriptionOfferCodeCustomCodes?.Invoke(__value0);
+                gameCenterLeaderboardSetImages?.Invoke(__value0);
             }
-            else if (SubscriptionOfferCodeOneTimeUseCodes is { } __value1)
+            else if (GameCenterLeaderboardSets is { } __value1)
             {
-                subscriptionOfferCodeOneTimeUseCodes?.Invoke(__value1);
-            }
-            else if (SubscriptionOfferCodePrices is { } __value2)
-            {
-                subscriptionOfferCodePrices?.Invoke(__value2);
-            }
-            else if (Subscriptions is { } __value3)
-            {
-                subscriptions?.Invoke(__value3);
+                gameCenterLeaderboardSets?.Invoke(__value1);
             }
         }
 
@@ -375,10 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.SubscriptionOfferCodeCustomCode>? subscriptionOfferCodeCustomCodes = null,
-            global::System.Action<global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode>? subscriptionOfferCodeOneTimeUseCodes = null,
-            global::System.Action<global::AppStoreConnect.SubscriptionOfferCodePrice>? subscriptionOfferCodePrices = null,
-            global::System.Action<global::AppStoreConnect.Subscription>? subscriptions = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetImage>? gameCenterLeaderboardSetImages = null,
+            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSet>? gameCenterLeaderboardSets = null,
             bool validate = true)
         {
             if (validate)
@@ -386,21 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionOfferCodeCustomCodes is { } __value0)
+            if (GameCenterLeaderboardSetImages is { } __value0)
             {
-                subscriptionOfferCodeCustomCodes?.Invoke(__value0);
+                gameCenterLeaderboardSetImages?.Invoke(__value0);
             }
-            else if (SubscriptionOfferCodeOneTimeUseCodes is { } __value1)
+            else if (GameCenterLeaderboardSets is { } __value1)
             {
-                subscriptionOfferCodeOneTimeUseCodes?.Invoke(__value1);
-            }
-            else if (SubscriptionOfferCodePrices is { } __value2)
-            {
-                subscriptionOfferCodePrices?.Invoke(__value2);
-            }
-            else if (Subscriptions is { } __value3)
-            {
-                subscriptions?.Invoke(__value3);
+                gameCenterLeaderboardSets?.Invoke(__value1);
             }
         }
 
@@ -411,14 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                SubscriptionOfferCodeCustomCodes,
-                typeof(global::AppStoreConnect.SubscriptionOfferCodeCustomCode),
-                SubscriptionOfferCodeOneTimeUseCodes,
-                typeof(global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode),
-                SubscriptionOfferCodePrices,
-                typeof(global::AppStoreConnect.SubscriptionOfferCodePrice),
-                Subscriptions,
-                typeof(global::AppStoreConnect.Subscription),
+                GameCenterLeaderboardSetImages,
+                typeof(global::AppStoreConnect.GameCenterLeaderboardSetImage),
+                GameCenterLeaderboardSets,
+                typeof(global::AppStoreConnect.GameCenterLeaderboardSet),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -435,10 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem177 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionOfferCodeCustomCode?>.Default.Equals(SubscriptionOfferCodeCustomCodes, other.SubscriptionOfferCodeCustomCodes) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionOfferCodeOneTimeUseCode?>.Default.Equals(SubscriptionOfferCodeOneTimeUseCodes, other.SubscriptionOfferCodeOneTimeUseCodes) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionOfferCodePrice?>.Default.Equals(SubscriptionOfferCodePrices, other.SubscriptionOfferCodePrices) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Subscription?>.Default.Equals(Subscriptions, other.Subscriptions)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSetImage?>.Default.Equals(GameCenterLeaderboardSetImages, other.GameCenterLeaderboardSetImages) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSet?>.Default.Equals(GameCenterLeaderboardSets, other.GameCenterLeaderboardSets)
                 ;
         }
 

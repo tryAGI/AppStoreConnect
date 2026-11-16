@@ -36,7 +36,7 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("compatiblePlacementTypes")]
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementType2>? CompatiblePlacementTypes { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementType>? CompatiblePlacementTypes { get; set; }
 
         /// <summary>
         ///
@@ -109,7 +109,7 @@ namespace AppStoreConnect
             string? shortName,
             global::AppStoreConnect.AppAssetLibraryRefDatumAttributesVideoSpecDimensions? dimensions,
             string? aspectRatio,
-            global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementType2>? compatiblePlacementTypes,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryPlacementType>? compatiblePlacementTypes,
             global::System.Collections.Generic.IList<global::AppStoreConnect.AppAssetLibraryRefDatumAttributesVideoSpecFrameRate>? frameRates,
             global::AppStoreConnect.AppAssetLibraryRefDatumAttributesVideoSpecDuration? duration,
             bool? audioRequired,

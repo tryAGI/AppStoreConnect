@@ -34,7 +34,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(double?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0624.Create_NullableDouble(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0623.Create_NullableDouble(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

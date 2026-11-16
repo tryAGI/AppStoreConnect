@@ -12,156 +12,220 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCustomProductPageVersionResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.BetaTesterResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations { get; init; }
+        public global::AppStoreConnect.App? Apps { get; init; }
 #else
-        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations { get; }
+        public global::AppStoreConnect.App? Apps { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageLocalizations))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
 #endif
-        public bool IsAppCustomProductPageLocalizations => AppCustomProductPageLocalizations != null;
+        public bool IsApps => Apps != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppCustomProductPageLocalizations(
+        public bool TryPickApps(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppCustomProductPageLocalization? value)
+            out global::AppStoreConnect.App? value)
         {
-            value = AppCustomProductPageLocalizations;
-            return IsAppCustomProductPageLocalizations;
+            value = Apps;
+            return IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCustomProductPageLocalization PickAppCustomProductPageLocalizations() => AppCustomProductPageLocalizations is { } value
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageLocalizations' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppCustomProductPage? AppCustomProductPages { get; init; }
+        public global::AppStoreConnect.BetaGroup? BetaGroups { get; init; }
 #else
-        public global::AppStoreConnect.AppCustomProductPage? AppCustomProductPages { get; }
+        public global::AppStoreConnect.BetaGroup? BetaGroups { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPages))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaGroups))]
 #endif
-        public bool IsAppCustomProductPages => AppCustomProductPages != null;
+        public bool IsBetaGroups => BetaGroups != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickAppCustomProductPages(
+        public bool TryPickBetaGroups(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.AppCustomProductPage? value)
+            out global::AppStoreConnect.BetaGroup? value)
         {
-            value = AppCustomProductPages;
-            return IsAppCustomProductPages;
+            value = BetaGroups;
+            return IsBetaGroups;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCustomProductPage PickAppCustomProductPages() => AppCustomProductPages is { } value
+        public global::AppStoreConnect.BetaGroup PickBetaGroups() => BetaGroups is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPages' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem16(global::AppStoreConnect.AppCustomProductPageLocalization value) => new IncludedItem16((global::AppStoreConnect.AppCustomProductPageLocalization?)value);
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaGroups' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppCustomProductPageLocalization?(IncludedItem16 @this) => @this.AppCustomProductPageLocalizations;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.Build? Builds { get; init; }
+#else
+        public global::AppStoreConnect.Build? Builds { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem16(global::AppStoreConnect.AppCustomProductPageLocalization? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
+#endif
+        public bool IsBuilds => Builds != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickBuilds(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.Build? value)
         {
-            AppCustomProductPageLocalizations = value;
+            value = Builds;
+            return IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem16 FromAppCustomProductPageLocalizations(global::AppStoreConnect.AppCustomProductPageLocalization? value) => new IncludedItem16(value);
+        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem16(global::AppStoreConnect.App value) => new IncludedItem16((global::AppStoreConnect.App?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem16(global::AppStoreConnect.AppCustomProductPage value) => new IncludedItem16((global::AppStoreConnect.AppCustomProductPage?)value);
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem16 @this) => @this.Apps;
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppCustomProductPage?(IncludedItem16 @this) => @this.AppCustomProductPages;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem16(global::AppStoreConnect.AppCustomProductPage? value)
+        public IncludedItem16(global::AppStoreConnect.App? value)
         {
-            AppCustomProductPages = value;
+            Apps = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem16 FromAppCustomProductPages(global::AppStoreConnect.AppCustomProductPage? value) => new IncludedItem16(value);
+        public static IncludedItem16 FromApps(global::AppStoreConnect.App? value) => new IncludedItem16(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem16(global::AppStoreConnect.BetaGroup value) => new IncludedItem16((global::AppStoreConnect.BetaGroup?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.BetaGroup?(IncludedItem16 @this) => @this.BetaGroups;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem16(global::AppStoreConnect.BetaGroup? value)
+        {
+            BetaGroups = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem16 FromBetaGroups(global::AppStoreConnect.BetaGroup? value) => new IncludedItem16(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem16(global::AppStoreConnect.Build value) => new IncludedItem16((global::AppStoreConnect.Build?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.Build?(IncludedItem16 @this) => @this.Builds;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem16(global::AppStoreConnect.Build? value)
+        {
+            Builds = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem16 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem16(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem16(
-            global::AppStoreConnect.AppCustomProductPageVersionResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppCustomProductPageLocalization? appCustomProductPageLocalizations,
-            global::AppStoreConnect.AppCustomProductPage? appCustomProductPages
+            global::AppStoreConnect.BetaTesterResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.App? apps,
+            global::AppStoreConnect.BetaGroup? betaGroups,
+            global::AppStoreConnect.Build? builds
             )
         {
             Type = type;
 
-            AppCustomProductPageLocalizations = appCustomProductPageLocalizations;
-            AppCustomProductPages = appCustomProductPages;
+            Apps = apps;
+            BetaGroups = betaGroups;
+            Builds = builds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            AppCustomProductPages as object ??
-            AppCustomProductPageLocalizations as object
+            Builds as object ??
+            BetaGroups as object ??
+            Apps as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppCustomProductPageLocalizations?.ToString() ??
-            AppCustomProductPages?.ToString()
+            Apps?.ToString() ??
+            BetaGroups?.ToString() ??
+            Builds?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppCustomProductPageLocalizations && !IsAppCustomProductPages || !IsAppCustomProductPageLocalizations && IsAppCustomProductPages;
+            return IsApps && !IsBetaGroups && !IsBuilds || !IsApps && IsBetaGroups && !IsBuilds || !IsApps && !IsBetaGroups && IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppCustomProductPageLocalization, TResult>? appCustomProductPageLocalizations = null,
-            global::System.Func<global::AppStoreConnect.AppCustomProductPage, TResult>? appCustomProductPages = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
+            global::System.Func<global::AppStoreConnect.BetaGroup, TResult>? betaGroups = null,
+            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations is { } __value0 && appCustomProductPageLocalizations != null)
+            if (Apps is { } __value0 && apps != null)
             {
-                return appCustomProductPageLocalizations(__value0);
+                return apps(__value0);
             }
-            else if (AppCustomProductPages is { } __value1 && appCustomProductPages != null)
+            else if (BetaGroups is { } __value1 && betaGroups != null)
             {
-                return appCustomProductPages(__value1);
+                return betaGroups(__value1);
+            }
+            else if (Builds is { } __value2 && builds != null)
+            {
+                return builds(__value2);
             }
 
             return default(TResult);
@@ -201,9 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
 
-            global::System.Action<global::AppStoreConnect.AppCustomProductPage>? appCustomProductPages = null,
+            global::System.Action<global::AppStoreConnect.BetaGroup>? betaGroups = null,
+
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations is { } __value0)
+            if (Apps is { } __value0)
             {
-                appCustomProductPageLocalizations?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (AppCustomProductPages is { } __value1)
+            else if (BetaGroups is { } __value1)
             {
-                appCustomProductPages?.Invoke(__value1);
+                betaGroups?.Invoke(__value1);
+            }
+            else if (Builds is { } __value2)
+            {
+                builds?.Invoke(__value2);
             }
         }
 
@@ -225,8 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations = null,
-            global::System.Action<global::AppStoreConnect.AppCustomProductPage>? appCustomProductPages = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.BetaGroup>? betaGroups = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations is { } __value0)
+            if (Apps is { } __value0)
             {
-                appCustomProductPageLocalizations?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (AppCustomProductPages is { } __value1)
+            else if (BetaGroups is { } __value1)
             {
-                appCustomProductPages?.Invoke(__value1);
+                betaGroups?.Invoke(__value1);
+            }
+            else if (Builds is { } __value2)
+            {
+                builds?.Invoke(__value2);
             }
         }
 
@@ -251,10 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppCustomProductPageLocalizations,
-                typeof(global::AppStoreConnect.AppCustomProductPageLocalization),
-                AppCustomProductPages,
-                typeof(global::AppStoreConnect.AppCustomProductPage),
+                Apps,
+                typeof(global::AppStoreConnect.App),
+                BetaGroups,
+                typeof(global::AppStoreConnect.BetaGroup),
+                Builds,
+                typeof(global::AppStoreConnect.Build),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem16 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageLocalization?>.Default.Equals(AppCustomProductPageLocalizations, other.AppCustomProductPageLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPage?>.Default.Equals(AppCustomProductPages, other.AppCustomProductPages)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaGroup?>.Default.Equals(BetaGroups, other.BetaGroups) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
                 ;
         }
 

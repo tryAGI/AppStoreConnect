@@ -9,7 +9,7 @@ namespace AppStoreConnect
         internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::AppStoreConnect.SourceGenerationContextMetadataScope>[] {
-                    static () => global::AppStoreConnect.SourceGenerationContextComponent_794F2E9945322A17.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_9D422E6C8A6F770A.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_C794C710692D3CC5.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_DDC1985AA1614C4E.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_E4470052301C060F.MetadataScope,
+                    static () => global::AppStoreConnect.SourceGenerationContextComponent_04C800BBA933AFAC.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_8F75E0B0FDF5619B.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_BBCA12E34AD06736.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_C54F5033EFF64625.MetadataScope,
                 }, ContributeConverters);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 
@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.IncludedItem99))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0480.Create_IncludedItem992(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0479.Create_IncludedItem992(options);
                 }
                 if (type == typeof(global::AppStoreConnect.IncludedItem99?))
                 {

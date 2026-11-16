@@ -6,58 +6,40 @@ namespace AppStoreConnect
     /// <summary>
     ///
     /// </summary>
-    public sealed partial class ScmProviderType2
+    public enum ScmProviderType2
     {
         /// <summary>
         ///
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("kind")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.ScmProviderTypeKindJsonConverter))]
-        public global::AppStoreConnect.ScmProviderTypeKind? Kind { get; set; }
+        ScmProviders,
+    }
 
+    /// <summary>
+    /// Enum extensions to do fast conversions without the reflection.
+    /// </summary>
+    public static class ScmProviderType2Extensions
+    {
         /// <summary>
-        ///
+        /// Converts an enum to a string.
         /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("displayName")]
-        public string? DisplayName { get; set; }
-
-        /// <summary>
-        ///
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonPropertyName("isOnPremise")]
-        public bool? IsOnPremise { get; set; }
-
-        /// <summary>
-        /// Additional properties that are not explicitly defined in the schema
-        /// </summary>
-        [global::System.Text.Json.Serialization.JsonExtensionData]
-        public global::System.Collections.Generic.IDictionary<string, object> AdditionalProperties { get; set; } = new global::System.Collections.Generic.Dictionary<string, object>();
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ScmProviderType2" /> class.
-        /// </summary>
-        /// <param name="kind"></param>
-        /// <param name="displayName"></param>
-        /// <param name="isOnPremise"></param>
-#if NET7_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
-#endif
-        public ScmProviderType2(
-            global::AppStoreConnect.ScmProviderTypeKind? kind,
-            string? displayName,
-            bool? isOnPremise)
+        public static string ToValueString(this ScmProviderType2 value)
         {
-            this.Kind = kind;
-            this.DisplayName = displayName;
-            this.IsOnPremise = isOnPremise;
+            return value switch
+            {
+                ScmProviderType2.ScmProviders => "scmProviders",
+                _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
+            };
         }
-
         /// <summary>
-        /// Initializes a new instance of the <see cref="ScmProviderType2" /> class.
+        /// Converts an string to a enum.
         /// </summary>
-        public ScmProviderType2()
+        public static ScmProviderType2? ToEnum(string value)
         {
+            return value switch
+            {
+                "scmProviders" => ScmProviderType2.ScmProviders,
+                _ => null,
+            };
         }
-
     }
 }

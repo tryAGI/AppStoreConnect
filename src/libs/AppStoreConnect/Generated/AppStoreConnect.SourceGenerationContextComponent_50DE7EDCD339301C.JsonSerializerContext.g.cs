@@ -9,7 +9,7 @@ namespace AppStoreConnect
         internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::AppStoreConnect.SourceGenerationContextMetadataScope>[] {
-                    static () => global::AppStoreConnect.SourceGenerationContextComponent_26E86BC21D263C29.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_965998FFE74D1AC4.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_A1D75377E7BE7D31.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_BCE8FC7B6AC6D97E.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_CB39F89D889A41DC.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_EBACA0DF211A5A41.MetadataScope,
+                    static () => global::AppStoreConnect.SourceGenerationContextComponent_02DDD8522424A084.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_0868E8DB075C5D05.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_35A1DE2E87CDDBE7.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_595179A08F051FF1.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_62FC50089768F020.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_8125841DDD09F437.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_87E9B8D02DD7F6AD.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_AAAB2170A1C08AD4.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_B2CF4E9BBA7E2F4F.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_B4A436D81C5ACC35.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_C86F6A55DBB6848E.MetadataScope,
                 }, ContributeConverters);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 
@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.IncludedItem50?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0719.Create_NullableIncludedItem502(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0718.Create_NullableIncludedItem502(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

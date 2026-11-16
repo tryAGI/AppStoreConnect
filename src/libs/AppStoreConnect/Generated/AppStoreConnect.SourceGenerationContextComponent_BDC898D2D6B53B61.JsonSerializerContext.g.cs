@@ -9,7 +9,7 @@ namespace AppStoreConnect
         internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::AppStoreConnect.SourceGenerationContextMetadataScope>[] {
-                    static () => global::AppStoreConnect.SourceGenerationContextComponent_10E7EE248C21898F.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_B3F482B5334BFB9D.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_C65AE8656E4CF30F.MetadataScope,
+                    static () => global::AppStoreConnect.SourceGenerationContextComponent_10E7EE248C21898F.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_1D2A496156E30D60.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_C65AE8656E4CF30F.MetadataScope,
                 }, ContributeConverters);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 
@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppAssetLibraryRefDatumAttributesPlacementType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0033.Create_AppAssetLibraryRefDatumAttributesPlacementType(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0032.Create_AppAssetLibraryRefDatumAttributesPlacementType(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

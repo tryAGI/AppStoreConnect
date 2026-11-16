@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppClipAdvancedExperienceImagesGetInstanceFieldsAppClipAdvancedExperienceImage))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0047.Create_AppClipAdvancedExperienceImagesGetInstanceFieldsAppClipAdvancedExperienceImage2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0046.Create_AppClipAdvancedExperienceImagesGetInstanceFieldsAppClipAdvancedExperienceImage2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppClipAdvancedExperienceImagesGetInstanceFieldsAppClipAdvancedExperienceImage?))
                 {

@@ -17,23 +17,23 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(object))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0781.Create_Object(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0780.Create_Object(options);
                 }
                 if (type == typeof(bool))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0220.Create_Boolean(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0219.Create_Boolean(options);
                 }
                 if (type == typeof(byte))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0244.Create_Byte(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0243.Create_Byte(options);
                 }
                 if (type == typeof(int))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0480.Create_Int32(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0479.Create_Int32(options);
                 }
                 if (type == typeof(long))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0480.Create_Int64(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0479.Create_Int64(options);
                 }
                 if (type == typeof(double))
                 {
@@ -41,11 +41,11 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(byte[]))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0244.Create_ByteArray(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0243.Create_ByteArray(options);
                 }
                 if (type == typeof(global::System.DateTime))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0275.Create_DateTime(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0274.Create_DateTime(options);
                 }
                 if (type == typeof(global::System.Text.Json.JsonElement))
                 {
@@ -53,7 +53,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::System.Text.Json.JsonElement?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0723.Create_NullableJsonElement(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0722.Create_NullableJsonElement(options);
                 }
                 if (type == typeof(global::System.Collections.Generic.Dictionary<string, string>))
                 {
@@ -65,11 +65,11 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::System.Collections.Generic.IDictionary<string, object>))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0996.Create_SourceGenerationContextMetadataType_7024F6984ED20EB8(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0995.Create_SourceGenerationContextMetadataType_7024F6984ED20EB8(options);
                 }
                 if (type == typeof(global::System.Collections.Generic.List<object>))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1053.Create_SourceGenerationContextMetadataType_92E1ACA86984772C(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1052.Create_SourceGenerationContextMetadataType_92E1ACA86984772C(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

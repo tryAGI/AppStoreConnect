@@ -12,156 +12,220 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboardSetLocalizationsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppEncryptionDeclarationsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterLeaderboardSetImage? GameCenterLeaderboardSetImages { get; init; }
+        public global::AppStoreConnect.AppEncryptionDeclarationDocument? AppEncryptionDeclarationDocuments { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterLeaderboardSetImage? GameCenterLeaderboardSetImages { get; }
+        public global::AppStoreConnect.AppEncryptionDeclarationDocument? AppEncryptionDeclarationDocuments { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSetImages))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEncryptionDeclarationDocuments))]
 #endif
-        public bool IsGameCenterLeaderboardSetImages => GameCenterLeaderboardSetImages != null;
+        public bool IsAppEncryptionDeclarationDocuments => AppEncryptionDeclarationDocuments != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterLeaderboardSetImages(
+        public bool TryPickAppEncryptionDeclarationDocuments(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterLeaderboardSetImage? value)
+            out global::AppStoreConnect.AppEncryptionDeclarationDocument? value)
         {
-            value = GameCenterLeaderboardSetImages;
-            return IsGameCenterLeaderboardSetImages;
+            value = AppEncryptionDeclarationDocuments;
+            return IsAppEncryptionDeclarationDocuments;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboardSetImage PickGameCenterLeaderboardSetImages() => GameCenterLeaderboardSetImages is { } value
+        public global::AppStoreConnect.AppEncryptionDeclarationDocument PickAppEncryptionDeclarationDocuments() => AppEncryptionDeclarationDocuments is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSetImages' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEncryptionDeclarationDocuments' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterLeaderboardSet? GameCenterLeaderboardSets { get; init; }
+        public global::AppStoreConnect.App? Apps { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterLeaderboardSet? GameCenterLeaderboardSets { get; }
+        public global::AppStoreConnect.App? Apps { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterLeaderboardSets))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
 #endif
-        public bool IsGameCenterLeaderboardSets => GameCenterLeaderboardSets != null;
+        public bool IsApps => Apps != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterLeaderboardSets(
+        public bool TryPickApps(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterLeaderboardSet? value)
+            out global::AppStoreConnect.App? value)
         {
-            value = GameCenterLeaderboardSets;
-            return IsGameCenterLeaderboardSets;
+            value = Apps;
+            return IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterLeaderboardSet PickGameCenterLeaderboardSets() => GameCenterLeaderboardSets is { } value
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterLeaderboardSets' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem114(global::AppStoreConnect.GameCenterLeaderboardSetImage value) => new IncludedItem114((global::AppStoreConnect.GameCenterLeaderboardSetImage?)value);
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSetImage?(IncludedItem114 @this) => @this.GameCenterLeaderboardSetImages;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.Build? Builds { get; init; }
+#else
+        public global::AppStoreConnect.Build? Builds { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem114(global::AppStoreConnect.GameCenterLeaderboardSetImage? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
+#endif
+        public bool IsBuilds => Builds != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickBuilds(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.Build? value)
         {
-            GameCenterLeaderboardSetImages = value;
+            value = Builds;
+            return IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem114 FromGameCenterLeaderboardSetImages(global::AppStoreConnect.GameCenterLeaderboardSetImage? value) => new IncludedItem114(value);
+        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem114(global::AppStoreConnect.AppEncryptionDeclarationDocument value) => new IncludedItem114((global::AppStoreConnect.AppEncryptionDeclarationDocument?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem114(global::AppStoreConnect.GameCenterLeaderboardSet value) => new IncludedItem114((global::AppStoreConnect.GameCenterLeaderboardSet?)value);
+        public static implicit operator global::AppStoreConnect.AppEncryptionDeclarationDocument?(IncludedItem114 @this) => @this.AppEncryptionDeclarationDocuments;
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterLeaderboardSet?(IncludedItem114 @this) => @this.GameCenterLeaderboardSets;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem114(global::AppStoreConnect.GameCenterLeaderboardSet? value)
+        public IncludedItem114(global::AppStoreConnect.AppEncryptionDeclarationDocument? value)
         {
-            GameCenterLeaderboardSets = value;
+            AppEncryptionDeclarationDocuments = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem114 FromGameCenterLeaderboardSets(global::AppStoreConnect.GameCenterLeaderboardSet? value) => new IncludedItem114(value);
+        public static IncludedItem114 FromAppEncryptionDeclarationDocuments(global::AppStoreConnect.AppEncryptionDeclarationDocument? value) => new IncludedItem114(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem114(global::AppStoreConnect.App value) => new IncludedItem114((global::AppStoreConnect.App?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem114 @this) => @this.Apps;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem114(global::AppStoreConnect.App? value)
+        {
+            Apps = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem114 FromApps(global::AppStoreConnect.App? value) => new IncludedItem114(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem114(global::AppStoreConnect.Build value) => new IncludedItem114((global::AppStoreConnect.Build?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.Build?(IncludedItem114 @this) => @this.Builds;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem114(global::AppStoreConnect.Build? value)
+        {
+            Builds = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem114 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem114(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem114(
-            global::AppStoreConnect.GameCenterLeaderboardSetLocalizationsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.GameCenterLeaderboardSetImage? gameCenterLeaderboardSetImages,
-            global::AppStoreConnect.GameCenterLeaderboardSet? gameCenterLeaderboardSets
+            global::AppStoreConnect.AppEncryptionDeclarationsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppEncryptionDeclarationDocument? appEncryptionDeclarationDocuments,
+            global::AppStoreConnect.App? apps,
+            global::AppStoreConnect.Build? builds
             )
         {
             Type = type;
 
-            GameCenterLeaderboardSetImages = gameCenterLeaderboardSetImages;
-            GameCenterLeaderboardSets = gameCenterLeaderboardSets;
+            AppEncryptionDeclarationDocuments = appEncryptionDeclarationDocuments;
+            Apps = apps;
+            Builds = builds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            GameCenterLeaderboardSets as object ??
-            GameCenterLeaderboardSetImages as object
+            Builds as object ??
+            Apps as object ??
+            AppEncryptionDeclarationDocuments as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            GameCenterLeaderboardSetImages?.ToString() ??
-            GameCenterLeaderboardSets?.ToString()
+            AppEncryptionDeclarationDocuments?.ToString() ??
+            Apps?.ToString() ??
+            Builds?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsGameCenterLeaderboardSetImages && !IsGameCenterLeaderboardSets || !IsGameCenterLeaderboardSetImages && IsGameCenterLeaderboardSets;
+            return IsAppEncryptionDeclarationDocuments && !IsApps && !IsBuilds || !IsAppEncryptionDeclarationDocuments && IsApps && !IsBuilds || !IsAppEncryptionDeclarationDocuments && !IsApps && IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSetImage, TResult>? gameCenterLeaderboardSetImages = null,
-            global::System.Func<global::AppStoreConnect.GameCenterLeaderboardSet, TResult>? gameCenterLeaderboardSets = null,
+            global::System.Func<global::AppStoreConnect.AppEncryptionDeclarationDocument, TResult>? appEncryptionDeclarationDocuments = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
+            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterLeaderboardSetImages is { } __value0 && gameCenterLeaderboardSetImages != null)
+            if (AppEncryptionDeclarationDocuments is { } __value0 && appEncryptionDeclarationDocuments != null)
             {
-                return gameCenterLeaderboardSetImages(__value0);
+                return appEncryptionDeclarationDocuments(__value0);
             }
-            else if (GameCenterLeaderboardSets is { } __value1 && gameCenterLeaderboardSets != null)
+            else if (Apps is { } __value1 && apps != null)
             {
-                return gameCenterLeaderboardSets(__value1);
+                return apps(__value1);
+            }
+            else if (Builds is { } __value2 && builds != null)
+            {
+                return builds(__value2);
             }
 
             return default(TResult);
@@ -201,9 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetImage>? gameCenterLeaderboardSetImages = null,
+            global::System.Action<global::AppStoreConnect.AppEncryptionDeclarationDocument>? appEncryptionDeclarationDocuments = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSet>? gameCenterLeaderboardSets = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
+
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterLeaderboardSetImages is { } __value0)
+            if (AppEncryptionDeclarationDocuments is { } __value0)
             {
-                gameCenterLeaderboardSetImages?.Invoke(__value0);
+                appEncryptionDeclarationDocuments?.Invoke(__value0);
             }
-            else if (GameCenterLeaderboardSets is { } __value1)
+            else if (Apps is { } __value1)
             {
-                gameCenterLeaderboardSets?.Invoke(__value1);
+                apps?.Invoke(__value1);
+            }
+            else if (Builds is { } __value2)
+            {
+                builds?.Invoke(__value2);
             }
         }
 
@@ -225,8 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSetImage>? gameCenterLeaderboardSetImages = null,
-            global::System.Action<global::AppStoreConnect.GameCenterLeaderboardSet>? gameCenterLeaderboardSets = null,
+            global::System.Action<global::AppStoreConnect.AppEncryptionDeclarationDocument>? appEncryptionDeclarationDocuments = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterLeaderboardSetImages is { } __value0)
+            if (AppEncryptionDeclarationDocuments is { } __value0)
             {
-                gameCenterLeaderboardSetImages?.Invoke(__value0);
+                appEncryptionDeclarationDocuments?.Invoke(__value0);
             }
-            else if (GameCenterLeaderboardSets is { } __value1)
+            else if (Apps is { } __value1)
             {
-                gameCenterLeaderboardSets?.Invoke(__value1);
+                apps?.Invoke(__value1);
+            }
+            else if (Builds is { } __value2)
+            {
+                builds?.Invoke(__value2);
             }
         }
 
@@ -251,10 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                GameCenterLeaderboardSetImages,
-                typeof(global::AppStoreConnect.GameCenterLeaderboardSetImage),
-                GameCenterLeaderboardSets,
-                typeof(global::AppStoreConnect.GameCenterLeaderboardSet),
+                AppEncryptionDeclarationDocuments,
+                typeof(global::AppStoreConnect.AppEncryptionDeclarationDocument),
+                Apps,
+                typeof(global::AppStoreConnect.App),
+                Builds,
+                typeof(global::AppStoreConnect.Build),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem114 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSetImage?>.Default.Equals(GameCenterLeaderboardSetImages, other.GameCenterLeaderboardSetImages) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterLeaderboardSet?>.Default.Equals(GameCenterLeaderboardSets, other.GameCenterLeaderboardSets)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEncryptionDeclarationDocument?>.Default.Equals(AppEncryptionDeclarationDocuments, other.AppEncryptionDeclarationDocuments) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
                 ;
         }
 

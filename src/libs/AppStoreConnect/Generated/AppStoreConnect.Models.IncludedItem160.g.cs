@@ -12,156 +12,156 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.RetentionOfferPricesResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.GameCenterMatchmakingRuleSetTestResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.SubscriptionPricePoint? SubscriptionPricePoints { get; init; }
+        public global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty? GameCenterMatchmakingTestPlayerProperties { get; init; }
 #else
-        public global::AppStoreConnect.SubscriptionPricePoint? SubscriptionPricePoints { get; }
+        public global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty? GameCenterMatchmakingTestPlayerProperties { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionPricePoints))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterMatchmakingTestPlayerProperties))]
 #endif
-        public bool IsSubscriptionPricePoints => SubscriptionPricePoints != null;
+        public bool IsGameCenterMatchmakingTestPlayerProperties => GameCenterMatchmakingTestPlayerProperties != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickSubscriptionPricePoints(
+        public bool TryPickGameCenterMatchmakingTestPlayerProperties(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.SubscriptionPricePoint? value)
+            out global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty? value)
         {
-            value = SubscriptionPricePoints;
-            return IsSubscriptionPricePoints;
+            value = GameCenterMatchmakingTestPlayerProperties;
+            return IsGameCenterMatchmakingTestPlayerProperties;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.SubscriptionPricePoint PickSubscriptionPricePoints() => SubscriptionPricePoints is { } value
+        public global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty PickGameCenterMatchmakingTestPlayerProperties() => GameCenterMatchmakingTestPlayerProperties is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPricePoints' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterMatchmakingTestPlayerProperties' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.Territory? Territories { get; init; }
+        public global::AppStoreConnect.GameCenterMatchmakingTestRequest? GameCenterMatchmakingTestRequests { get; init; }
 #else
-        public global::AppStoreConnect.Territory? Territories { get; }
+        public global::AppStoreConnect.GameCenterMatchmakingTestRequest? GameCenterMatchmakingTestRequests { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Territories))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterMatchmakingTestRequests))]
 #endif
-        public bool IsTerritories => Territories != null;
+        public bool IsGameCenterMatchmakingTestRequests => GameCenterMatchmakingTestRequests != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickTerritories(
+        public bool TryPickGameCenterMatchmakingTestRequests(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.Territory? value)
+            out global::AppStoreConnect.GameCenterMatchmakingTestRequest? value)
         {
-            value = Territories;
-            return IsTerritories;
+            value = GameCenterMatchmakingTestRequests;
+            return IsGameCenterMatchmakingTestRequests;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.Territory PickTerritories() => Territories is { } value
+        public global::AppStoreConnect.GameCenterMatchmakingTestRequest PickGameCenterMatchmakingTestRequests() => GameCenterMatchmakingTestRequests is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'Territories' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterMatchmakingTestRequests' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem160(global::AppStoreConnect.SubscriptionPricePoint value) => new IncludedItem160((global::AppStoreConnect.SubscriptionPricePoint?)value);
+        public static implicit operator IncludedItem160(global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty value) => new IncludedItem160((global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.SubscriptionPricePoint?(IncludedItem160 @this) => @this.SubscriptionPricePoints;
+        public static implicit operator global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty?(IncludedItem160 @this) => @this.GameCenterMatchmakingTestPlayerProperties;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem160(global::AppStoreConnect.SubscriptionPricePoint? value)
+        public IncludedItem160(global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty? value)
         {
-            SubscriptionPricePoints = value;
+            GameCenterMatchmakingTestPlayerProperties = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem160 FromSubscriptionPricePoints(global::AppStoreConnect.SubscriptionPricePoint? value) => new IncludedItem160(value);
+        public static IncludedItem160 FromGameCenterMatchmakingTestPlayerProperties(global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty? value) => new IncludedItem160(value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem160(global::AppStoreConnect.Territory value) => new IncludedItem160((global::AppStoreConnect.Territory?)value);
+        public static implicit operator IncludedItem160(global::AppStoreConnect.GameCenterMatchmakingTestRequest value) => new IncludedItem160((global::AppStoreConnect.GameCenterMatchmakingTestRequest?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.Territory?(IncludedItem160 @this) => @this.Territories;
+        public static implicit operator global::AppStoreConnect.GameCenterMatchmakingTestRequest?(IncludedItem160 @this) => @this.GameCenterMatchmakingTestRequests;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem160(global::AppStoreConnect.Territory? value)
+        public IncludedItem160(global::AppStoreConnect.GameCenterMatchmakingTestRequest? value)
         {
-            Territories = value;
+            GameCenterMatchmakingTestRequests = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem160 FromTerritories(global::AppStoreConnect.Territory? value) => new IncludedItem160(value);
+        public static IncludedItem160 FromGameCenterMatchmakingTestRequests(global::AppStoreConnect.GameCenterMatchmakingTestRequest? value) => new IncludedItem160(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem160(
-            global::AppStoreConnect.RetentionOfferPricesResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.SubscriptionPricePoint? subscriptionPricePoints,
-            global::AppStoreConnect.Territory? territories
+            global::AppStoreConnect.GameCenterMatchmakingRuleSetTestResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty? gameCenterMatchmakingTestPlayerProperties,
+            global::AppStoreConnect.GameCenterMatchmakingTestRequest? gameCenterMatchmakingTestRequests
             )
         {
             Type = type;
 
-            SubscriptionPricePoints = subscriptionPricePoints;
-            Territories = territories;
+            GameCenterMatchmakingTestPlayerProperties = gameCenterMatchmakingTestPlayerProperties;
+            GameCenterMatchmakingTestRequests = gameCenterMatchmakingTestRequests;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Territories as object ??
-            SubscriptionPricePoints as object
+            GameCenterMatchmakingTestRequests as object ??
+            GameCenterMatchmakingTestPlayerProperties as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            SubscriptionPricePoints?.ToString() ??
-            Territories?.ToString()
+            GameCenterMatchmakingTestPlayerProperties?.ToString() ??
+            GameCenterMatchmakingTestRequests?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsSubscriptionPricePoints && !IsTerritories || !IsSubscriptionPricePoints && IsTerritories;
+            return IsGameCenterMatchmakingTestPlayerProperties && !IsGameCenterMatchmakingTestRequests || !IsGameCenterMatchmakingTestPlayerProperties && IsGameCenterMatchmakingTestRequests;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.SubscriptionPricePoint, TResult>? subscriptionPricePoints = null,
-            global::System.Func<global::AppStoreConnect.Territory, TResult>? territories = null,
+            global::System.Func<global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty, TResult>? gameCenterMatchmakingTestPlayerProperties = null,
+            global::System.Func<global::AppStoreConnect.GameCenterMatchmakingTestRequest, TResult>? gameCenterMatchmakingTestRequests = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPricePoints is { } __value0 && subscriptionPricePoints != null)
+            if (GameCenterMatchmakingTestPlayerProperties is { } __value0 && gameCenterMatchmakingTestPlayerProperties != null)
             {
-                return subscriptionPricePoints(__value0);
+                return gameCenterMatchmakingTestPlayerProperties(__value0);
             }
-            else if (Territories is { } __value1 && territories != null)
+            else if (GameCenterMatchmakingTestRequests is { } __value1 && gameCenterMatchmakingTestRequests != null)
             {
-                return territories(__value1);
+                return gameCenterMatchmakingTestRequests(__value1);
             }
 
             return default(TResult);
@@ -201,9 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.SubscriptionPricePoint>? subscriptionPricePoints = null,
+            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty>? gameCenterMatchmakingTestPlayerProperties = null,
 
-            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
+            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingTestRequest>? gameCenterMatchmakingTestRequests = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPricePoints is { } __value0)
+            if (GameCenterMatchmakingTestPlayerProperties is { } __value0)
             {
-                subscriptionPricePoints?.Invoke(__value0);
+                gameCenterMatchmakingTestPlayerProperties?.Invoke(__value0);
             }
-            else if (Territories is { } __value1)
+            else if (GameCenterMatchmakingTestRequests is { } __value1)
             {
-                territories?.Invoke(__value1);
+                gameCenterMatchmakingTestRequests?.Invoke(__value1);
             }
         }
 
@@ -225,8 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.SubscriptionPricePoint>? subscriptionPricePoints = null,
-            global::System.Action<global::AppStoreConnect.Territory>? territories = null,
+            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty>? gameCenterMatchmakingTestPlayerProperties = null,
+            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingTestRequest>? gameCenterMatchmakingTestRequests = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (SubscriptionPricePoints is { } __value0)
+            if (GameCenterMatchmakingTestPlayerProperties is { } __value0)
             {
-                subscriptionPricePoints?.Invoke(__value0);
+                gameCenterMatchmakingTestPlayerProperties?.Invoke(__value0);
             }
-            else if (Territories is { } __value1)
+            else if (GameCenterMatchmakingTestRequests is { } __value1)
             {
-                territories?.Invoke(__value1);
+                gameCenterMatchmakingTestRequests?.Invoke(__value1);
             }
         }
 
@@ -251,10 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                SubscriptionPricePoints,
-                typeof(global::AppStoreConnect.SubscriptionPricePoint),
-                Territories,
-                typeof(global::AppStoreConnect.Territory),
+                GameCenterMatchmakingTestPlayerProperties,
+                typeof(global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty),
+                GameCenterMatchmakingTestRequests,
+                typeof(global::AppStoreConnect.GameCenterMatchmakingTestRequest),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem160 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionPricePoint?>.Default.Equals(SubscriptionPricePoints, other.SubscriptionPricePoints) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Territory?>.Default.Equals(Territories, other.Territories)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty?>.Default.Equals(GameCenterMatchmakingTestPlayerProperties, other.GameCenterMatchmakingTestPlayerProperties) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterMatchmakingTestRequest?>.Default.Equals(GameCenterMatchmakingTestRequests, other.GameCenterMatchmakingTestRequests)
                 ;
         }
 

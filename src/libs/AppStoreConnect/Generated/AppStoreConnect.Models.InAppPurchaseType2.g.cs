@@ -11,15 +11,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        Consumable,
-        /// <summary>
-        ///
-        /// </summary>
-        NonConsumable,
-        /// <summary>
-        ///
-        /// </summary>
-        NonRenewingSubscription,
+        InAppPurchases,
     }
 
     /// <summary>
@@ -34,9 +26,7 @@ namespace AppStoreConnect
         {
             return value switch
             {
-                InAppPurchaseType2.Consumable => "CONSUMABLE",
-                InAppPurchaseType2.NonConsumable => "NON_CONSUMABLE",
-                InAppPurchaseType2.NonRenewingSubscription => "NON_RENEWING_SUBSCRIPTION",
+                InAppPurchaseType2.InAppPurchases => "inAppPurchases",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
         }
@@ -47,9 +37,7 @@ namespace AppStoreConnect
         {
             return value switch
             {
-                "CONSUMABLE" => InAppPurchaseType2.Consumable,
-                "NON_CONSUMABLE" => InAppPurchaseType2.NonConsumable,
-                "NON_RENEWING_SUBSCRIPTION" => InAppPurchaseType2.NonRenewingSubscription,
+                "inAppPurchases" => InAppPurchaseType2.InAppPurchases,
                 _ => null,
             };
         }

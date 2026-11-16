@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppAssetLibraryRefDataGetInstanceFieldsAppAssetLibraryRefDataItem))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0032.Create_AppAssetLibraryRefDataGetInstanceFieldsAppAssetLibraryRefDataItem2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0031.Create_AppAssetLibraryRefDataGetInstanceFieldsAppAssetLibraryRefDataItem2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppAssetLibraryRefDataGetInstanceFieldsAppAssetLibraryRefDataItem?))
                 {

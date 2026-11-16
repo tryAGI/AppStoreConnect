@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppEventsGetInstanceFieldsAppEvent))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0091.Create_AppEventsGetInstanceFieldsAppEvent2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0090.Create_AppEventsGetInstanceFieldsAppEvent2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppEventsGetInstanceFieldsAppEvent?))
                 {

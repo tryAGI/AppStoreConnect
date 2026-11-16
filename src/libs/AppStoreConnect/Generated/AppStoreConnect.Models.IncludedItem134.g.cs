@@ -12,156 +12,220 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterMatchmakingRuleSetTestResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppStoreVersionExperimentsV2ResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty? GameCenterMatchmakingTestPlayerProperties { get; init; }
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatment? AppStoreVersionExperimentTreatments { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty? GameCenterMatchmakingTestPlayerProperties { get; }
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatment? AppStoreVersionExperimentTreatments { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterMatchmakingTestPlayerProperties))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersionExperimentTreatments))]
 #endif
-        public bool IsGameCenterMatchmakingTestPlayerProperties => GameCenterMatchmakingTestPlayerProperties != null;
+        public bool IsAppStoreVersionExperimentTreatments => AppStoreVersionExperimentTreatments != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterMatchmakingTestPlayerProperties(
+        public bool TryPickAppStoreVersionExperimentTreatments(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty? value)
+            out global::AppStoreConnect.AppStoreVersionExperimentTreatment? value)
         {
-            value = GameCenterMatchmakingTestPlayerProperties;
-            return IsGameCenterMatchmakingTestPlayerProperties;
+            value = AppStoreVersionExperimentTreatments;
+            return IsAppStoreVersionExperimentTreatments;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty PickGameCenterMatchmakingTestPlayerProperties() => GameCenterMatchmakingTestPlayerProperties is { } value
+        public global::AppStoreConnect.AppStoreVersionExperimentTreatment PickAppStoreVersionExperimentTreatments() => AppStoreVersionExperimentTreatments is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterMatchmakingTestPlayerProperties' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersionExperimentTreatments' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterMatchmakingTestRequest? GameCenterMatchmakingTestRequests { get; init; }
+        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterMatchmakingTestRequest? GameCenterMatchmakingTestRequests { get; }
+        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterMatchmakingTestRequests))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions))]
 #endif
-        public bool IsGameCenterMatchmakingTestRequests => GameCenterMatchmakingTestRequests != null;
+        public bool IsAppStoreVersions => AppStoreVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterMatchmakingTestRequests(
+        public bool TryPickAppStoreVersions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterMatchmakingTestRequest? value)
+            out global::AppStoreConnect.AppStoreVersion? value)
         {
-            value = GameCenterMatchmakingTestRequests;
-            return IsGameCenterMatchmakingTestRequests;
+            value = AppStoreVersions;
+            return IsAppStoreVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterMatchmakingTestRequest PickGameCenterMatchmakingTestRequests() => GameCenterMatchmakingTestRequests is { } value
+        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => AppStoreVersions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterMatchmakingTestRequests' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem134(global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty value) => new IncludedItem134((global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty?)value);
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty?(IncludedItem134 @this) => @this.GameCenterMatchmakingTestPlayerProperties;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.App? Apps { get; init; }
+#else
+        public global::AppStoreConnect.App? Apps { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem134(global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
+#endif
+        public bool IsApps => Apps != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickApps(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.App? value)
         {
-            GameCenterMatchmakingTestPlayerProperties = value;
+            value = Apps;
+            return IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem134 FromGameCenterMatchmakingTestPlayerProperties(global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty? value) => new IncludedItem134(value);
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem134(global::AppStoreConnect.AppStoreVersionExperimentTreatment value) => new IncludedItem134((global::AppStoreConnect.AppStoreVersionExperimentTreatment?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem134(global::AppStoreConnect.GameCenterMatchmakingTestRequest value) => new IncludedItem134((global::AppStoreConnect.GameCenterMatchmakingTestRequest?)value);
+        public static implicit operator global::AppStoreConnect.AppStoreVersionExperimentTreatment?(IncludedItem134 @this) => @this.AppStoreVersionExperimentTreatments;
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterMatchmakingTestRequest?(IncludedItem134 @this) => @this.GameCenterMatchmakingTestRequests;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem134(global::AppStoreConnect.GameCenterMatchmakingTestRequest? value)
+        public IncludedItem134(global::AppStoreConnect.AppStoreVersionExperimentTreatment? value)
         {
-            GameCenterMatchmakingTestRequests = value;
+            AppStoreVersionExperimentTreatments = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem134 FromGameCenterMatchmakingTestRequests(global::AppStoreConnect.GameCenterMatchmakingTestRequest? value) => new IncludedItem134(value);
+        public static IncludedItem134 FromAppStoreVersionExperimentTreatments(global::AppStoreConnect.AppStoreVersionExperimentTreatment? value) => new IncludedItem134(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem134(global::AppStoreConnect.AppStoreVersion value) => new IncludedItem134((global::AppStoreConnect.AppStoreVersion?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem134 @this) => @this.AppStoreVersions;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem134(global::AppStoreConnect.AppStoreVersion? value)
+        {
+            AppStoreVersions = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem134 FromAppStoreVersions(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem134(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem134(global::AppStoreConnect.App value) => new IncludedItem134((global::AppStoreConnect.App?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem134 @this) => @this.Apps;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem134(global::AppStoreConnect.App? value)
+        {
+            Apps = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem134 FromApps(global::AppStoreConnect.App? value) => new IncludedItem134(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem134(
-            global::AppStoreConnect.GameCenterMatchmakingRuleSetTestResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty? gameCenterMatchmakingTestPlayerProperties,
-            global::AppStoreConnect.GameCenterMatchmakingTestRequest? gameCenterMatchmakingTestRequests
+            global::AppStoreConnect.AppStoreVersionExperimentsV2ResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppStoreVersionExperimentTreatment? appStoreVersionExperimentTreatments,
+            global::AppStoreConnect.AppStoreVersion? appStoreVersions,
+            global::AppStoreConnect.App? apps
             )
         {
             Type = type;
 
-            GameCenterMatchmakingTestPlayerProperties = gameCenterMatchmakingTestPlayerProperties;
-            GameCenterMatchmakingTestRequests = gameCenterMatchmakingTestRequests;
+            AppStoreVersionExperimentTreatments = appStoreVersionExperimentTreatments;
+            AppStoreVersions = appStoreVersions;
+            Apps = apps;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            GameCenterMatchmakingTestRequests as object ??
-            GameCenterMatchmakingTestPlayerProperties as object
+            Apps as object ??
+            AppStoreVersions as object ??
+            AppStoreVersionExperimentTreatments as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            GameCenterMatchmakingTestPlayerProperties?.ToString() ??
-            GameCenterMatchmakingTestRequests?.ToString()
+            AppStoreVersionExperimentTreatments?.ToString() ??
+            AppStoreVersions?.ToString() ??
+            Apps?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsGameCenterMatchmakingTestPlayerProperties && !IsGameCenterMatchmakingTestRequests || !IsGameCenterMatchmakingTestPlayerProperties && IsGameCenterMatchmakingTestRequests;
+            return IsAppStoreVersionExperimentTreatments && !IsAppStoreVersions && !IsApps || !IsAppStoreVersionExperimentTreatments && IsAppStoreVersions && !IsApps || !IsAppStoreVersionExperimentTreatments && !IsAppStoreVersions && IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty, TResult>? gameCenterMatchmakingTestPlayerProperties = null,
-            global::System.Func<global::AppStoreConnect.GameCenterMatchmakingTestRequest, TResult>? gameCenterMatchmakingTestRequests = null,
+            global::System.Func<global::AppStoreConnect.AppStoreVersionExperimentTreatment, TResult>? appStoreVersionExperimentTreatments = null,
+            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersions = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterMatchmakingTestPlayerProperties is { } __value0 && gameCenterMatchmakingTestPlayerProperties != null)
+            if (AppStoreVersionExperimentTreatments is { } __value0 && appStoreVersionExperimentTreatments != null)
             {
-                return gameCenterMatchmakingTestPlayerProperties(__value0);
+                return appStoreVersionExperimentTreatments(__value0);
             }
-            else if (GameCenterMatchmakingTestRequests is { } __value1 && gameCenterMatchmakingTestRequests != null)
+            else if (AppStoreVersions is { } __value1 && appStoreVersions != null)
             {
-                return gameCenterMatchmakingTestRequests(__value1);
+                return appStoreVersions(__value1);
+            }
+            else if (Apps is { } __value2 && apps != null)
+            {
+                return apps(__value2);
             }
 
             return default(TResult);
@@ -201,9 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty>? gameCenterMatchmakingTestPlayerProperties = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatment>? appStoreVersionExperimentTreatments = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingTestRequest>? gameCenterMatchmakingTestRequests = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
+
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterMatchmakingTestPlayerProperties is { } __value0)
+            if (AppStoreVersionExperimentTreatments is { } __value0)
             {
-                gameCenterMatchmakingTestPlayerProperties?.Invoke(__value0);
+                appStoreVersionExperimentTreatments?.Invoke(__value0);
             }
-            else if (GameCenterMatchmakingTestRequests is { } __value1)
+            else if (AppStoreVersions is { } __value1)
             {
-                gameCenterMatchmakingTestRequests?.Invoke(__value1);
+                appStoreVersions?.Invoke(__value1);
+            }
+            else if (Apps is { } __value2)
+            {
+                apps?.Invoke(__value2);
             }
         }
 
@@ -225,8 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty>? gameCenterMatchmakingTestPlayerProperties = null,
-            global::System.Action<global::AppStoreConnect.GameCenterMatchmakingTestRequest>? gameCenterMatchmakingTestRequests = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersionExperimentTreatment>? appStoreVersionExperimentTreatments = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterMatchmakingTestPlayerProperties is { } __value0)
+            if (AppStoreVersionExperimentTreatments is { } __value0)
             {
-                gameCenterMatchmakingTestPlayerProperties?.Invoke(__value0);
+                appStoreVersionExperimentTreatments?.Invoke(__value0);
             }
-            else if (GameCenterMatchmakingTestRequests is { } __value1)
+            else if (AppStoreVersions is { } __value1)
             {
-                gameCenterMatchmakingTestRequests?.Invoke(__value1);
+                appStoreVersions?.Invoke(__value1);
+            }
+            else if (Apps is { } __value2)
+            {
+                apps?.Invoke(__value2);
             }
         }
 
@@ -251,10 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                GameCenterMatchmakingTestPlayerProperties,
-                typeof(global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty),
-                GameCenterMatchmakingTestRequests,
-                typeof(global::AppStoreConnect.GameCenterMatchmakingTestRequest),
+                AppStoreVersionExperimentTreatments,
+                typeof(global::AppStoreConnect.AppStoreVersionExperimentTreatment),
+                AppStoreVersions,
+                typeof(global::AppStoreConnect.AppStoreVersion),
+                Apps,
+                typeof(global::AppStoreConnect.App),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem134 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterMatchmakingTestPlayerProperty?>.Default.Equals(GameCenterMatchmakingTestPlayerProperties, other.GameCenterMatchmakingTestPlayerProperties) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterMatchmakingTestRequest?>.Default.Equals(GameCenterMatchmakingTestRequests, other.GameCenterMatchmakingTestRequests)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersionExperimentTreatment?>.Default.Equals(AppStoreVersionExperimentTreatments, other.AppStoreVersionExperimentTreatments) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions, other.AppStoreVersions) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps)
                 ;
         }
 

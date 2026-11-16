@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.GameCenterScoreModerationType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0431.Create_GameCenterScoreModerationType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0430.Create_GameCenterScoreModerationType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.GameCenterScoreModerationType?))
                 {

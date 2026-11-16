@@ -12,7 +12,81 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BackgroundAssetResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.ReviewSubmissionResponseIncludedItemDiscriminatorType? Type { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.Actor? Actors { get; init; }
+#else
+        public global::AppStoreConnect.Actor? Actors { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Actors))]
+#endif
+        public bool IsActors => Actors != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickActors(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.Actor? value)
+        {
+            value = Actors;
+            return IsActors;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::AppStoreConnect.Actor PickActors() => Actors is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Actors' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; init; }
+#else
+        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions))]
+#endif
+        public bool IsAppStoreVersions => AppStoreVersions != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickAppStoreVersions(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.AppStoreVersion? value)
+        {
+            value = AppStoreVersions;
+            return IsAppStoreVersions;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => AppStoreVersions is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
 
         /// <summary>
         ///
@@ -55,38 +129,84 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BackgroundAssetVersion? BackgroundAssetVersions { get; init; }
+        public global::AppStoreConnect.ReviewSubmissionItem? ReviewSubmissionItems { get; init; }
 #else
-        public global::AppStoreConnect.BackgroundAssetVersion? BackgroundAssetVersions { get; }
+        public global::AppStoreConnect.ReviewSubmissionItem? ReviewSubmissionItems { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BackgroundAssetVersions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ReviewSubmissionItems))]
 #endif
-        public bool IsBackgroundAssetVersions => BackgroundAssetVersions != null;
+        public bool IsReviewSubmissionItems => ReviewSubmissionItems != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBackgroundAssetVersions(
+        public bool TryPickReviewSubmissionItems(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BackgroundAssetVersion? value)
+            out global::AppStoreConnect.ReviewSubmissionItem? value)
         {
-            value = BackgroundAssetVersions;
-            return IsBackgroundAssetVersions;
+            value = ReviewSubmissionItems;
+            return IsReviewSubmissionItems;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BackgroundAssetVersion PickBackgroundAssetVersions() => BackgroundAssetVersions is { } value
+        public global::AppStoreConnect.ReviewSubmissionItem PickReviewSubmissionItems() => ReviewSubmissionItems is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetVersions' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ReviewSubmissionItems' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem53(global::AppStoreConnect.Actor value) => new IncludedItem53((global::AppStoreConnect.Actor?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.Actor?(IncludedItem53 @this) => @this.Actors;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem53(global::AppStoreConnect.Actor? value)
+        {
+            Actors = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem53 FromActors(global::AppStoreConnect.Actor? value) => new IncludedItem53(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem53(global::AppStoreConnect.AppStoreVersion value) => new IncludedItem53((global::AppStoreConnect.AppStoreVersion?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem53 @this) => @this.AppStoreVersions;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem53(global::AppStoreConnect.AppStoreVersion? value)
+        {
+            AppStoreVersions = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem53 FromAppStoreVersions(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem53(value);
+
         /// <summary>
         ///
         /// </summary>
@@ -113,55 +233,63 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem53(global::AppStoreConnect.BackgroundAssetVersion value) => new IncludedItem53((global::AppStoreConnect.BackgroundAssetVersion?)value);
+        public static implicit operator IncludedItem53(global::AppStoreConnect.ReviewSubmissionItem value) => new IncludedItem53((global::AppStoreConnect.ReviewSubmissionItem?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BackgroundAssetVersion?(IncludedItem53 @this) => @this.BackgroundAssetVersions;
+        public static implicit operator global::AppStoreConnect.ReviewSubmissionItem?(IncludedItem53 @this) => @this.ReviewSubmissionItems;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem53(global::AppStoreConnect.BackgroundAssetVersion? value)
+        public IncludedItem53(global::AppStoreConnect.ReviewSubmissionItem? value)
         {
-            BackgroundAssetVersions = value;
+            ReviewSubmissionItems = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem53 FromBackgroundAssetVersions(global::AppStoreConnect.BackgroundAssetVersion? value) => new IncludedItem53(value);
+        public static IncludedItem53 FromReviewSubmissionItems(global::AppStoreConnect.ReviewSubmissionItem? value) => new IncludedItem53(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem53(
-            global::AppStoreConnect.BackgroundAssetResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.ReviewSubmissionResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.Actor? actors,
+            global::AppStoreConnect.AppStoreVersion? appStoreVersions,
             global::AppStoreConnect.App? apps,
-            global::AppStoreConnect.BackgroundAssetVersion? backgroundAssetVersions
+            global::AppStoreConnect.ReviewSubmissionItem? reviewSubmissionItems
             )
         {
             Type = type;
 
+            Actors = actors;
+            AppStoreVersions = appStoreVersions;
             Apps = apps;
-            BackgroundAssetVersions = backgroundAssetVersions;
+            ReviewSubmissionItems = reviewSubmissionItems;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            BackgroundAssetVersions as object ??
-            Apps as object
+            ReviewSubmissionItems as object ??
+            Apps as object ??
+            AppStoreVersions as object ??
+            Actors as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
+            Actors?.ToString() ??
+            AppStoreVersions?.ToString() ??
             Apps?.ToString() ??
-            BackgroundAssetVersions?.ToString()
+            ReviewSubmissionItems?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +297,17 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsApps && !IsBackgroundAssetVersions || !IsApps && IsBackgroundAssetVersions;
+            return IsActors && !IsAppStoreVersions && !IsApps && !IsReviewSubmissionItems || !IsActors && IsAppStoreVersions && !IsApps && !IsReviewSubmissionItems || !IsActors && !IsAppStoreVersions && IsApps && !IsReviewSubmissionItems || !IsActors && !IsAppStoreVersions && !IsApps && IsReviewSubmissionItems;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
+            global::System.Func<global::AppStoreConnect.Actor, TResult>? actors = null,
+            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersions = null,
             global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
-            global::System.Func<global::AppStoreConnect.BackgroundAssetVersion, TResult>? backgroundAssetVersions = null,
+            global::System.Func<global::AppStoreConnect.ReviewSubmissionItem, TResult>? reviewSubmissionItems = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +315,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0 && apps != null)
+            if (Actors is { } __value0 && actors != null)
             {
-                return apps(__value0);
+                return actors(__value0);
             }
-            else if (BackgroundAssetVersions is { } __value1 && backgroundAssetVersions != null)
+            else if (AppStoreVersions is { } __value1 && appStoreVersions != null)
             {
-                return backgroundAssetVersions(__value1);
+                return appStoreVersions(__value1);
+            }
+            else if (Apps is { } __value2 && apps != null)
+            {
+                return apps(__value2);
+            }
+            else if (ReviewSubmissionItems is { } __value3 && reviewSubmissionItems != null)
+            {
+                return reviewSubmissionItems(__value3);
             }
 
             return default(TResult);
@@ -201,9 +339,13 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
+            global::System.Action<global::AppStoreConnect.Actor>? actors = null,
+
+            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
+
             global::System.Action<global::AppStoreConnect.App>? apps = null,
 
-            global::System.Action<global::AppStoreConnect.BackgroundAssetVersion>? backgroundAssetVersions = null,
+            global::System.Action<global::AppStoreConnect.ReviewSubmissionItem>? reviewSubmissionItems = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +353,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0)
+            if (Actors is { } __value0)
             {
-                apps?.Invoke(__value0);
+                actors?.Invoke(__value0);
             }
-            else if (BackgroundAssetVersions is { } __value1)
+            else if (AppStoreVersions is { } __value1)
             {
-                backgroundAssetVersions?.Invoke(__value1);
+                appStoreVersions?.Invoke(__value1);
+            }
+            else if (Apps is { } __value2)
+            {
+                apps?.Invoke(__value2);
+            }
+            else if (ReviewSubmissionItems is { } __value3)
+            {
+                reviewSubmissionItems?.Invoke(__value3);
             }
         }
 
@@ -225,8 +375,10 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
+            global::System.Action<global::AppStoreConnect.Actor>? actors = null,
+            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
             global::System.Action<global::AppStoreConnect.App>? apps = null,
-            global::System.Action<global::AppStoreConnect.BackgroundAssetVersion>? backgroundAssetVersions = null,
+            global::System.Action<global::AppStoreConnect.ReviewSubmissionItem>? reviewSubmissionItems = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +386,21 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (Apps is { } __value0)
+            if (Actors is { } __value0)
             {
-                apps?.Invoke(__value0);
+                actors?.Invoke(__value0);
             }
-            else if (BackgroundAssetVersions is { } __value1)
+            else if (AppStoreVersions is { } __value1)
             {
-                backgroundAssetVersions?.Invoke(__value1);
+                appStoreVersions?.Invoke(__value1);
+            }
+            else if (Apps is { } __value2)
+            {
+                apps?.Invoke(__value2);
+            }
+            else if (ReviewSubmissionItems is { } __value3)
+            {
+                reviewSubmissionItems?.Invoke(__value3);
             }
         }
 
@@ -251,10 +411,14 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
+                Actors,
+                typeof(global::AppStoreConnect.Actor),
+                AppStoreVersions,
+                typeof(global::AppStoreConnect.AppStoreVersion),
                 Apps,
                 typeof(global::AppStoreConnect.App),
-                BackgroundAssetVersions,
-                typeof(global::AppStoreConnect.BackgroundAssetVersion),
+                ReviewSubmissionItems,
+                typeof(global::AppStoreConnect.ReviewSubmissionItem),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +435,10 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem53 other)
         {
             return
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Actor?>.Default.Equals(Actors, other.Actors) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions, other.AppStoreVersions) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAssetVersion?>.Default.Equals(BackgroundAssetVersions, other.BackgroundAssetVersions)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ReviewSubmissionItem?>.Default.Equals(ReviewSubmissionItems, other.ReviewSubmissionItems)
                 ;
         }
 

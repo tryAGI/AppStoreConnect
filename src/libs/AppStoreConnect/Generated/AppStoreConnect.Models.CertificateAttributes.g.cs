@@ -18,8 +18,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("certificateType")]
-        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.CertificateType2JsonConverter))]
-        public global::AppStoreConnect.CertificateType2? CertificateType { get; set; }
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.CertificateTypeJsonConverter))]
+        public global::AppStoreConnect.CertificateType? CertificateType { get; set; }
 
         /// <summary>
         ///
@@ -80,7 +80,7 @@ namespace AppStoreConnect
 #endif
         public CertificateAttributes(
             string? name,
-            global::AppStoreConnect.CertificateType2? certificateType,
+            global::AppStoreConnect.CertificateType? certificateType,
             string? displayName,
             string? serialNumber,
             global::AppStoreConnect.BundleIdPlatform? platform,

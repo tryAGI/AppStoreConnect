@@ -12,348 +12,668 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BackgroundAssetVersionsResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.InAppPurchasesV2ResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BackgroundAssetUploadFile? BackgroundAssetUploadFiles { get; init; }
+        public global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot? InAppPurchaseAppStoreReviewScreenshots { get; init; }
 #else
-        public global::AppStoreConnect.BackgroundAssetUploadFile? BackgroundAssetUploadFiles { get; }
+        public global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot? InAppPurchaseAppStoreReviewScreenshots { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BackgroundAssetUploadFiles))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseAppStoreReviewScreenshots))]
 #endif
-        public bool IsBackgroundAssetUploadFiles => BackgroundAssetUploadFiles != null;
+        public bool IsInAppPurchaseAppStoreReviewScreenshots => InAppPurchaseAppStoreReviewScreenshots != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBackgroundAssetUploadFiles(
+        public bool TryPickInAppPurchaseAppStoreReviewScreenshots(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BackgroundAssetUploadFile? value)
+            out global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot? value)
         {
-            value = BackgroundAssetUploadFiles;
-            return IsBackgroundAssetUploadFiles;
+            value = InAppPurchaseAppStoreReviewScreenshots;
+            return IsInAppPurchaseAppStoreReviewScreenshots;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BackgroundAssetUploadFile PickBackgroundAssetUploadFiles() => BackgroundAssetUploadFiles is { } value
+        public global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot PickInAppPurchaseAppStoreReviewScreenshots() => InAppPurchaseAppStoreReviewScreenshots is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetUploadFiles' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseAppStoreReviewScreenshots' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? BackgroundAssetVersionAppStoreReleases { get; init; }
+        public global::AppStoreConnect.InAppPurchaseAvailability? InAppPurchaseAvailabilities { get; init; }
 #else
-        public global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? BackgroundAssetVersionAppStoreReleases { get; }
+        public global::AppStoreConnect.InAppPurchaseAvailability? InAppPurchaseAvailabilities { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BackgroundAssetVersionAppStoreReleases))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseAvailabilities))]
 #endif
-        public bool IsBackgroundAssetVersionAppStoreReleases => BackgroundAssetVersionAppStoreReleases != null;
+        public bool IsInAppPurchaseAvailabilities => InAppPurchaseAvailabilities != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBackgroundAssetVersionAppStoreReleases(
+        public bool TryPickInAppPurchaseAvailabilities(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? value)
+            out global::AppStoreConnect.InAppPurchaseAvailability? value)
         {
-            value = BackgroundAssetVersionAppStoreReleases;
-            return IsBackgroundAssetVersionAppStoreReleases;
+            value = InAppPurchaseAvailabilities;
+            return IsInAppPurchaseAvailabilities;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease PickBackgroundAssetVersionAppStoreReleases() => BackgroundAssetVersionAppStoreReleases is { } value
+        public global::AppStoreConnect.InAppPurchaseAvailability PickInAppPurchaseAvailabilities() => InAppPurchaseAvailabilities is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetVersionAppStoreReleases' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseAvailabilities' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease? BackgroundAssetVersionExternalBetaReleases { get; init; }
+        public global::AppStoreConnect.InAppPurchaseContent? InAppPurchaseContents { get; init; }
 #else
-        public global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease? BackgroundAssetVersionExternalBetaReleases { get; }
+        public global::AppStoreConnect.InAppPurchaseContent? InAppPurchaseContents { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BackgroundAssetVersionExternalBetaReleases))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseContents))]
 #endif
-        public bool IsBackgroundAssetVersionExternalBetaReleases => BackgroundAssetVersionExternalBetaReleases != null;
+        public bool IsInAppPurchaseContents => InAppPurchaseContents != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBackgroundAssetVersionExternalBetaReleases(
+        public bool TryPickInAppPurchaseContents(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease? value)
+            out global::AppStoreConnect.InAppPurchaseContent? value)
         {
-            value = BackgroundAssetVersionExternalBetaReleases;
-            return IsBackgroundAssetVersionExternalBetaReleases;
+            value = InAppPurchaseContents;
+            return IsInAppPurchaseContents;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease PickBackgroundAssetVersionExternalBetaReleases() => BackgroundAssetVersionExternalBetaReleases is { } value
+        public global::AppStoreConnect.InAppPurchaseContent PickInAppPurchaseContents() => InAppPurchaseContents is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetVersionExternalBetaReleases' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseContents' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease? BackgroundAssetVersionInternalBetaReleases { get; init; }
+        public global::AppStoreConnect.InAppPurchaseImage? InAppPurchaseImages { get; init; }
 #else
-        public global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease? BackgroundAssetVersionInternalBetaReleases { get; }
+        public global::AppStoreConnect.InAppPurchaseImage? InAppPurchaseImages { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BackgroundAssetVersionInternalBetaReleases))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseImages))]
 #endif
-        public bool IsBackgroundAssetVersionInternalBetaReleases => BackgroundAssetVersionInternalBetaReleases != null;
+        public bool IsInAppPurchaseImages => InAppPurchaseImages != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBackgroundAssetVersionInternalBetaReleases(
+        public bool TryPickInAppPurchaseImages(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease? value)
+            out global::AppStoreConnect.InAppPurchaseImage? value)
         {
-            value = BackgroundAssetVersionInternalBetaReleases;
-            return IsBackgroundAssetVersionInternalBetaReleases;
+            value = InAppPurchaseImages;
+            return IsInAppPurchaseImages;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease PickBackgroundAssetVersionInternalBetaReleases() => BackgroundAssetVersionInternalBetaReleases is { } value
+        public global::AppStoreConnect.InAppPurchaseImage PickInAppPurchaseImages() => InAppPurchaseImages is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssetVersionInternalBetaReleases' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseImages' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BackgroundAsset? BackgroundAssets { get; init; }
+        public global::AppStoreConnect.InAppPurchaseLocalization? InAppPurchaseLocalizations { get; init; }
 #else
-        public global::AppStoreConnect.BackgroundAsset? BackgroundAssets { get; }
+        public global::AppStoreConnect.InAppPurchaseLocalization? InAppPurchaseLocalizations { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BackgroundAssets))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseLocalizations))]
 #endif
-        public bool IsBackgroundAssets => BackgroundAssets != null;
+        public bool IsInAppPurchaseLocalizations => InAppPurchaseLocalizations != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBackgroundAssets(
+        public bool TryPickInAppPurchaseLocalizations(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BackgroundAsset? value)
+            out global::AppStoreConnect.InAppPurchaseLocalization? value)
         {
-            value = BackgroundAssets;
-            return IsBackgroundAssets;
+            value = InAppPurchaseLocalizations;
+            return IsInAppPurchaseLocalizations;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BackgroundAsset PickBackgroundAssets() => BackgroundAssets is { } value
+        public global::AppStoreConnect.InAppPurchaseLocalization PickInAppPurchaseLocalizations() => InAppPurchaseLocalizations is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BackgroundAssets' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem50(global::AppStoreConnect.BackgroundAssetUploadFile value) => new IncludedItem50((global::AppStoreConnect.BackgroundAssetUploadFile?)value);
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseLocalizations' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BackgroundAssetUploadFile?(IncludedItem50 @this) => @this.BackgroundAssetUploadFiles;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.InAppPurchaseOfferCode? InAppPurchaseOfferCodes { get; init; }
+#else
+        public global::AppStoreConnect.InAppPurchaseOfferCode? InAppPurchaseOfferCodes { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem50(global::AppStoreConnect.BackgroundAssetUploadFile? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseOfferCodes))]
+#endif
+        public bool IsInAppPurchaseOfferCodes => InAppPurchaseOfferCodes != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickInAppPurchaseOfferCodes(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.InAppPurchaseOfferCode? value)
         {
-            BackgroundAssetUploadFiles = value;
+            value = InAppPurchaseOfferCodes;
+            return IsInAppPurchaseOfferCodes;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem50 FromBackgroundAssetUploadFiles(global::AppStoreConnect.BackgroundAssetUploadFile? value) => new IncludedItem50(value);
+        public global::AppStoreConnect.InAppPurchaseOfferCode PickInAppPurchaseOfferCodes() => InAppPurchaseOfferCodes is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseOfferCodes' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem50(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease value) => new IncludedItem50((global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease?)value);
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.InAppPurchasePricePoint? InAppPurchasePricePoints { get; init; }
+#else
+        public global::AppStoreConnect.InAppPurchasePricePoint? InAppPurchasePricePoints { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease?(IncludedItem50 @this) => @this.BackgroundAssetVersionAppStoreReleases;
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchasePricePoints))]
+#endif
+        public bool IsInAppPurchasePricePoints => InAppPurchasePricePoints != null;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem50(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? value)
+        public bool TryPickInAppPurchasePricePoints(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.InAppPurchasePricePoint? value)
         {
-            BackgroundAssetVersionAppStoreReleases = value;
+            value = InAppPurchasePricePoints;
+            return IsInAppPurchasePricePoints;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem50 FromBackgroundAssetVersionAppStoreReleases(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? value) => new IncludedItem50(value);
+        public global::AppStoreConnect.InAppPurchasePricePoint PickInAppPurchasePricePoints() => InAppPurchasePricePoints is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchasePricePoints' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem50(global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease value) => new IncludedItem50((global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease?)value);
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.InAppPurchasePriceSchedule? InAppPurchasePriceSchedules { get; init; }
+#else
+        public global::AppStoreConnect.InAppPurchasePriceSchedule? InAppPurchasePriceSchedules { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease?(IncludedItem50 @this) => @this.BackgroundAssetVersionExternalBetaReleases;
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchasePriceSchedules))]
+#endif
+        public bool IsInAppPurchasePriceSchedules => InAppPurchasePriceSchedules != null;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem50(global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease? value)
+        public bool TryPickInAppPurchasePriceSchedules(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.InAppPurchasePriceSchedule? value)
         {
-            BackgroundAssetVersionExternalBetaReleases = value;
+            value = InAppPurchasePriceSchedules;
+            return IsInAppPurchasePriceSchedules;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem50 FromBackgroundAssetVersionExternalBetaReleases(global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease? value) => new IncludedItem50(value);
+        public global::AppStoreConnect.InAppPurchasePriceSchedule PickInAppPurchasePriceSchedules() => InAppPurchasePriceSchedules is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchasePriceSchedules' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem50(global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease value) => new IncludedItem50((global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease?)value);
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.InAppPurchaseVersion? InAppPurchaseVersions { get; init; }
+#else
+        public global::AppStoreConnect.InAppPurchaseVersion? InAppPurchaseVersions { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease?(IncludedItem50 @this) => @this.BackgroundAssetVersionInternalBetaReleases;
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(InAppPurchaseVersions))]
+#endif
+        public bool IsInAppPurchaseVersions => InAppPurchaseVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem50(global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease? value)
+        public bool TryPickInAppPurchaseVersions(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.InAppPurchaseVersion? value)
         {
-            BackgroundAssetVersionInternalBetaReleases = value;
+            value = InAppPurchaseVersions;
+            return IsInAppPurchaseVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem50 FromBackgroundAssetVersionInternalBetaReleases(global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease? value) => new IncludedItem50(value);
+        public global::AppStoreConnect.InAppPurchaseVersion PickInAppPurchaseVersions() => InAppPurchaseVersions is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'InAppPurchaseVersions' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem50(global::AppStoreConnect.BackgroundAsset value) => new IncludedItem50((global::AppStoreConnect.BackgroundAsset?)value);
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.PromotedPurchase? PromotedPurchases { get; init; }
+#else
+        public global::AppStoreConnect.PromotedPurchase? PromotedPurchases { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BackgroundAsset?(IncludedItem50 @this) => @this.BackgroundAssets;
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PromotedPurchases))]
+#endif
+        public bool IsPromotedPurchases => PromotedPurchases != null;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem50(global::AppStoreConnect.BackgroundAsset? value)
+        public bool TryPickPromotedPurchases(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.PromotedPurchase? value)
         {
-            BackgroundAssets = value;
+            value = PromotedPurchases;
+            return IsPromotedPurchases;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem50 FromBackgroundAssets(global::AppStoreConnect.BackgroundAsset? value) => new IncludedItem50(value);
+        public global::AppStoreConnect.PromotedPurchase PickPromotedPurchases() => PromotedPurchases is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'PromotedPurchases' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem50(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot value) => new IncludedItem50((global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot?(IncludedItem50 @this) => @this.InAppPurchaseAppStoreReviewScreenshots;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem50(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot? value)
+        {
+            InAppPurchaseAppStoreReviewScreenshots = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem50 FromInAppPurchaseAppStoreReviewScreenshots(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot? value) => new IncludedItem50(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem50(global::AppStoreConnect.InAppPurchaseAvailability value) => new IncludedItem50((global::AppStoreConnect.InAppPurchaseAvailability?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.InAppPurchaseAvailability?(IncludedItem50 @this) => @this.InAppPurchaseAvailabilities;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem50(global::AppStoreConnect.InAppPurchaseAvailability? value)
+        {
+            InAppPurchaseAvailabilities = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem50 FromInAppPurchaseAvailabilities(global::AppStoreConnect.InAppPurchaseAvailability? value) => new IncludedItem50(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem50(global::AppStoreConnect.InAppPurchaseContent value) => new IncludedItem50((global::AppStoreConnect.InAppPurchaseContent?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.InAppPurchaseContent?(IncludedItem50 @this) => @this.InAppPurchaseContents;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem50(global::AppStoreConnect.InAppPurchaseContent? value)
+        {
+            InAppPurchaseContents = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem50 FromInAppPurchaseContents(global::AppStoreConnect.InAppPurchaseContent? value) => new IncludedItem50(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem50(global::AppStoreConnect.InAppPurchaseImage value) => new IncludedItem50((global::AppStoreConnect.InAppPurchaseImage?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.InAppPurchaseImage?(IncludedItem50 @this) => @this.InAppPurchaseImages;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem50(global::AppStoreConnect.InAppPurchaseImage? value)
+        {
+            InAppPurchaseImages = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem50 FromInAppPurchaseImages(global::AppStoreConnect.InAppPurchaseImage? value) => new IncludedItem50(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem50(global::AppStoreConnect.InAppPurchaseLocalization value) => new IncludedItem50((global::AppStoreConnect.InAppPurchaseLocalization?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.InAppPurchaseLocalization?(IncludedItem50 @this) => @this.InAppPurchaseLocalizations;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem50(global::AppStoreConnect.InAppPurchaseLocalization? value)
+        {
+            InAppPurchaseLocalizations = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem50 FromInAppPurchaseLocalizations(global::AppStoreConnect.InAppPurchaseLocalization? value) => new IncludedItem50(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem50(global::AppStoreConnect.InAppPurchaseOfferCode value) => new IncludedItem50((global::AppStoreConnect.InAppPurchaseOfferCode?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.InAppPurchaseOfferCode?(IncludedItem50 @this) => @this.InAppPurchaseOfferCodes;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem50(global::AppStoreConnect.InAppPurchaseOfferCode? value)
+        {
+            InAppPurchaseOfferCodes = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem50 FromInAppPurchaseOfferCodes(global::AppStoreConnect.InAppPurchaseOfferCode? value) => new IncludedItem50(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem50(global::AppStoreConnect.InAppPurchasePricePoint value) => new IncludedItem50((global::AppStoreConnect.InAppPurchasePricePoint?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.InAppPurchasePricePoint?(IncludedItem50 @this) => @this.InAppPurchasePricePoints;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem50(global::AppStoreConnect.InAppPurchasePricePoint? value)
+        {
+            InAppPurchasePricePoints = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem50 FromInAppPurchasePricePoints(global::AppStoreConnect.InAppPurchasePricePoint? value) => new IncludedItem50(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem50(global::AppStoreConnect.InAppPurchasePriceSchedule value) => new IncludedItem50((global::AppStoreConnect.InAppPurchasePriceSchedule?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.InAppPurchasePriceSchedule?(IncludedItem50 @this) => @this.InAppPurchasePriceSchedules;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem50(global::AppStoreConnect.InAppPurchasePriceSchedule? value)
+        {
+            InAppPurchasePriceSchedules = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem50 FromInAppPurchasePriceSchedules(global::AppStoreConnect.InAppPurchasePriceSchedule? value) => new IncludedItem50(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem50(global::AppStoreConnect.InAppPurchaseVersion value) => new IncludedItem50((global::AppStoreConnect.InAppPurchaseVersion?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.InAppPurchaseVersion?(IncludedItem50 @this) => @this.InAppPurchaseVersions;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem50(global::AppStoreConnect.InAppPurchaseVersion? value)
+        {
+            InAppPurchaseVersions = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem50 FromInAppPurchaseVersions(global::AppStoreConnect.InAppPurchaseVersion? value) => new IncludedItem50(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem50(global::AppStoreConnect.PromotedPurchase value) => new IncludedItem50((global::AppStoreConnect.PromotedPurchase?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.PromotedPurchase?(IncludedItem50 @this) => @this.PromotedPurchases;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem50(global::AppStoreConnect.PromotedPurchase? value)
+        {
+            PromotedPurchases = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem50 FromPromotedPurchases(global::AppStoreConnect.PromotedPurchase? value) => new IncludedItem50(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem50(
-            global::AppStoreConnect.BackgroundAssetVersionsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.BackgroundAssetUploadFile? backgroundAssetUploadFiles,
-            global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease? backgroundAssetVersionAppStoreReleases,
-            global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease? backgroundAssetVersionExternalBetaReleases,
-            global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease? backgroundAssetVersionInternalBetaReleases,
-            global::AppStoreConnect.BackgroundAsset? backgroundAssets
+            global::AppStoreConnect.InAppPurchasesV2ResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot? inAppPurchaseAppStoreReviewScreenshots,
+            global::AppStoreConnect.InAppPurchaseAvailability? inAppPurchaseAvailabilities,
+            global::AppStoreConnect.InAppPurchaseContent? inAppPurchaseContents,
+            global::AppStoreConnect.InAppPurchaseImage? inAppPurchaseImages,
+            global::AppStoreConnect.InAppPurchaseLocalization? inAppPurchaseLocalizations,
+            global::AppStoreConnect.InAppPurchaseOfferCode? inAppPurchaseOfferCodes,
+            global::AppStoreConnect.InAppPurchasePricePoint? inAppPurchasePricePoints,
+            global::AppStoreConnect.InAppPurchasePriceSchedule? inAppPurchasePriceSchedules,
+            global::AppStoreConnect.InAppPurchaseVersion? inAppPurchaseVersions,
+            global::AppStoreConnect.PromotedPurchase? promotedPurchases
             )
         {
             Type = type;
 
-            BackgroundAssetUploadFiles = backgroundAssetUploadFiles;
-            BackgroundAssetVersionAppStoreReleases = backgroundAssetVersionAppStoreReleases;
-            BackgroundAssetVersionExternalBetaReleases = backgroundAssetVersionExternalBetaReleases;
-            BackgroundAssetVersionInternalBetaReleases = backgroundAssetVersionInternalBetaReleases;
-            BackgroundAssets = backgroundAssets;
+            InAppPurchaseAppStoreReviewScreenshots = inAppPurchaseAppStoreReviewScreenshots;
+            InAppPurchaseAvailabilities = inAppPurchaseAvailabilities;
+            InAppPurchaseContents = inAppPurchaseContents;
+            InAppPurchaseImages = inAppPurchaseImages;
+            InAppPurchaseLocalizations = inAppPurchaseLocalizations;
+            InAppPurchaseOfferCodes = inAppPurchaseOfferCodes;
+            InAppPurchasePricePoints = inAppPurchasePricePoints;
+            InAppPurchasePriceSchedules = inAppPurchasePriceSchedules;
+            InAppPurchaseVersions = inAppPurchaseVersions;
+            PromotedPurchases = promotedPurchases;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            BackgroundAssets as object ??
-            BackgroundAssetVersionInternalBetaReleases as object ??
-            BackgroundAssetVersionExternalBetaReleases as object ??
-            BackgroundAssetVersionAppStoreReleases as object ??
-            BackgroundAssetUploadFiles as object
+            PromotedPurchases as object ??
+            InAppPurchaseVersions as object ??
+            InAppPurchasePriceSchedules as object ??
+            InAppPurchasePricePoints as object ??
+            InAppPurchaseOfferCodes as object ??
+            InAppPurchaseLocalizations as object ??
+            InAppPurchaseImages as object ??
+            InAppPurchaseContents as object ??
+            InAppPurchaseAvailabilities as object ??
+            InAppPurchaseAppStoreReviewScreenshots as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            BackgroundAssetUploadFiles?.ToString() ??
-            BackgroundAssetVersionAppStoreReleases?.ToString() ??
-            BackgroundAssetVersionExternalBetaReleases?.ToString() ??
-            BackgroundAssetVersionInternalBetaReleases?.ToString() ??
-            BackgroundAssets?.ToString()
+            InAppPurchaseAppStoreReviewScreenshots?.ToString() ??
+            InAppPurchaseAvailabilities?.ToString() ??
+            InAppPurchaseContents?.ToString() ??
+            InAppPurchaseImages?.ToString() ??
+            InAppPurchaseLocalizations?.ToString() ??
+            InAppPurchaseOfferCodes?.ToString() ??
+            InAppPurchasePricePoints?.ToString() ??
+            InAppPurchasePriceSchedules?.ToString() ??
+            InAppPurchaseVersions?.ToString() ??
+            PromotedPurchases?.ToString()
             ;
 
         /// <summary>
@@ -361,18 +681,23 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsBackgroundAssetUploadFiles && !IsBackgroundAssetVersionAppStoreReleases && !IsBackgroundAssetVersionExternalBetaReleases && !IsBackgroundAssetVersionInternalBetaReleases && !IsBackgroundAssets || !IsBackgroundAssetUploadFiles && IsBackgroundAssetVersionAppStoreReleases && !IsBackgroundAssetVersionExternalBetaReleases && !IsBackgroundAssetVersionInternalBetaReleases && !IsBackgroundAssets || !IsBackgroundAssetUploadFiles && !IsBackgroundAssetVersionAppStoreReleases && IsBackgroundAssetVersionExternalBetaReleases && !IsBackgroundAssetVersionInternalBetaReleases && !IsBackgroundAssets || !IsBackgroundAssetUploadFiles && !IsBackgroundAssetVersionAppStoreReleases && !IsBackgroundAssetVersionExternalBetaReleases && IsBackgroundAssetVersionInternalBetaReleases && !IsBackgroundAssets || !IsBackgroundAssetUploadFiles && !IsBackgroundAssetVersionAppStoreReleases && !IsBackgroundAssetVersionExternalBetaReleases && !IsBackgroundAssetVersionInternalBetaReleases && IsBackgroundAssets;
+            return IsInAppPurchaseAppStoreReviewScreenshots && !IsInAppPurchaseAvailabilities && !IsInAppPurchaseContents && !IsInAppPurchaseImages && !IsInAppPurchaseLocalizations && !IsInAppPurchaseOfferCodes && !IsInAppPurchasePricePoints && !IsInAppPurchasePriceSchedules && !IsInAppPurchaseVersions && !IsPromotedPurchases || !IsInAppPurchaseAppStoreReviewScreenshots && IsInAppPurchaseAvailabilities && !IsInAppPurchaseContents && !IsInAppPurchaseImages && !IsInAppPurchaseLocalizations && !IsInAppPurchaseOfferCodes && !IsInAppPurchasePricePoints && !IsInAppPurchasePriceSchedules && !IsInAppPurchaseVersions && !IsPromotedPurchases || !IsInAppPurchaseAppStoreReviewScreenshots && !IsInAppPurchaseAvailabilities && IsInAppPurchaseContents && !IsInAppPurchaseImages && !IsInAppPurchaseLocalizations && !IsInAppPurchaseOfferCodes && !IsInAppPurchasePricePoints && !IsInAppPurchasePriceSchedules && !IsInAppPurchaseVersions && !IsPromotedPurchases || !IsInAppPurchaseAppStoreReviewScreenshots && !IsInAppPurchaseAvailabilities && !IsInAppPurchaseContents && IsInAppPurchaseImages && !IsInAppPurchaseLocalizations && !IsInAppPurchaseOfferCodes && !IsInAppPurchasePricePoints && !IsInAppPurchasePriceSchedules && !IsInAppPurchaseVersions && !IsPromotedPurchases || !IsInAppPurchaseAppStoreReviewScreenshots && !IsInAppPurchaseAvailabilities && !IsInAppPurchaseContents && !IsInAppPurchaseImages && IsInAppPurchaseLocalizations && !IsInAppPurchaseOfferCodes && !IsInAppPurchasePricePoints && !IsInAppPurchasePriceSchedules && !IsInAppPurchaseVersions && !IsPromotedPurchases || !IsInAppPurchaseAppStoreReviewScreenshots && !IsInAppPurchaseAvailabilities && !IsInAppPurchaseContents && !IsInAppPurchaseImages && !IsInAppPurchaseLocalizations && IsInAppPurchaseOfferCodes && !IsInAppPurchasePricePoints && !IsInAppPurchasePriceSchedules && !IsInAppPurchaseVersions && !IsPromotedPurchases || !IsInAppPurchaseAppStoreReviewScreenshots && !IsInAppPurchaseAvailabilities && !IsInAppPurchaseContents && !IsInAppPurchaseImages && !IsInAppPurchaseLocalizations && !IsInAppPurchaseOfferCodes && IsInAppPurchasePricePoints && !IsInAppPurchasePriceSchedules && !IsInAppPurchaseVersions && !IsPromotedPurchases || !IsInAppPurchaseAppStoreReviewScreenshots && !IsInAppPurchaseAvailabilities && !IsInAppPurchaseContents && !IsInAppPurchaseImages && !IsInAppPurchaseLocalizations && !IsInAppPurchaseOfferCodes && !IsInAppPurchasePricePoints && IsInAppPurchasePriceSchedules && !IsInAppPurchaseVersions && !IsPromotedPurchases || !IsInAppPurchaseAppStoreReviewScreenshots && !IsInAppPurchaseAvailabilities && !IsInAppPurchaseContents && !IsInAppPurchaseImages && !IsInAppPurchaseLocalizations && !IsInAppPurchaseOfferCodes && !IsInAppPurchasePricePoints && !IsInAppPurchasePriceSchedules && IsInAppPurchaseVersions && !IsPromotedPurchases || !IsInAppPurchaseAppStoreReviewScreenshots && !IsInAppPurchaseAvailabilities && !IsInAppPurchaseContents && !IsInAppPurchaseImages && !IsInAppPurchaseLocalizations && !IsInAppPurchaseOfferCodes && !IsInAppPurchasePricePoints && !IsInAppPurchasePriceSchedules && !IsInAppPurchaseVersions && IsPromotedPurchases;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.BackgroundAssetUploadFile, TResult>? backgroundAssetUploadFiles = null,
-            global::System.Func<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease, TResult>? backgroundAssetVersionAppStoreReleases = null,
-            global::System.Func<global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease, TResult>? backgroundAssetVersionExternalBetaReleases = null,
-            global::System.Func<global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease, TResult>? backgroundAssetVersionInternalBetaReleases = null,
-            global::System.Func<global::AppStoreConnect.BackgroundAsset, TResult>? backgroundAssets = null,
+            global::System.Func<global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot, TResult>? inAppPurchaseAppStoreReviewScreenshots = null,
+            global::System.Func<global::AppStoreConnect.InAppPurchaseAvailability, TResult>? inAppPurchaseAvailabilities = null,
+            global::System.Func<global::AppStoreConnect.InAppPurchaseContent, TResult>? inAppPurchaseContents = null,
+            global::System.Func<global::AppStoreConnect.InAppPurchaseImage, TResult>? inAppPurchaseImages = null,
+            global::System.Func<global::AppStoreConnect.InAppPurchaseLocalization, TResult>? inAppPurchaseLocalizations = null,
+            global::System.Func<global::AppStoreConnect.InAppPurchaseOfferCode, TResult>? inAppPurchaseOfferCodes = null,
+            global::System.Func<global::AppStoreConnect.InAppPurchasePricePoint, TResult>? inAppPurchasePricePoints = null,
+            global::System.Func<global::AppStoreConnect.InAppPurchasePriceSchedule, TResult>? inAppPurchasePriceSchedules = null,
+            global::System.Func<global::AppStoreConnect.InAppPurchaseVersion, TResult>? inAppPurchaseVersions = null,
+            global::System.Func<global::AppStoreConnect.PromotedPurchase, TResult>? promotedPurchases = null,
             bool validate = true)
         {
             if (validate)
@@ -380,25 +705,45 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (BackgroundAssetUploadFiles is { } __value0 && backgroundAssetUploadFiles != null)
+            if (InAppPurchaseAppStoreReviewScreenshots is { } __value0 && inAppPurchaseAppStoreReviewScreenshots != null)
             {
-                return backgroundAssetUploadFiles(__value0);
+                return inAppPurchaseAppStoreReviewScreenshots(__value0);
             }
-            else if (BackgroundAssetVersionAppStoreReleases is { } __value1 && backgroundAssetVersionAppStoreReleases != null)
+            else if (InAppPurchaseAvailabilities is { } __value1 && inAppPurchaseAvailabilities != null)
             {
-                return backgroundAssetVersionAppStoreReleases(__value1);
+                return inAppPurchaseAvailabilities(__value1);
             }
-            else if (BackgroundAssetVersionExternalBetaReleases is { } __value2 && backgroundAssetVersionExternalBetaReleases != null)
+            else if (InAppPurchaseContents is { } __value2 && inAppPurchaseContents != null)
             {
-                return backgroundAssetVersionExternalBetaReleases(__value2);
+                return inAppPurchaseContents(__value2);
             }
-            else if (BackgroundAssetVersionInternalBetaReleases is { } __value3 && backgroundAssetVersionInternalBetaReleases != null)
+            else if (InAppPurchaseImages is { } __value3 && inAppPurchaseImages != null)
             {
-                return backgroundAssetVersionInternalBetaReleases(__value3);
+                return inAppPurchaseImages(__value3);
             }
-            else if (BackgroundAssets is { } __value4 && backgroundAssets != null)
+            else if (InAppPurchaseLocalizations is { } __value4 && inAppPurchaseLocalizations != null)
             {
-                return backgroundAssets(__value4);
+                return inAppPurchaseLocalizations(__value4);
+            }
+            else if (InAppPurchaseOfferCodes is { } __value5 && inAppPurchaseOfferCodes != null)
+            {
+                return inAppPurchaseOfferCodes(__value5);
+            }
+            else if (InAppPurchasePricePoints is { } __value6 && inAppPurchasePricePoints != null)
+            {
+                return inAppPurchasePricePoints(__value6);
+            }
+            else if (InAppPurchasePriceSchedules is { } __value7 && inAppPurchasePriceSchedules != null)
+            {
+                return inAppPurchasePriceSchedules(__value7);
+            }
+            else if (InAppPurchaseVersions is { } __value8 && inAppPurchaseVersions != null)
+            {
+                return inAppPurchaseVersions(__value8);
+            }
+            else if (PromotedPurchases is { } __value9 && promotedPurchases != null)
+            {
+                return promotedPurchases(__value9);
             }
 
             return default(TResult);
@@ -408,15 +753,25 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.BackgroundAssetUploadFile>? backgroundAssetUploadFiles = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot>? inAppPurchaseAppStoreReviewScreenshots = null,
 
-            global::System.Action<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease>? backgroundAssetVersionAppStoreReleases = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseAvailability>? inAppPurchaseAvailabilities = null,
 
-            global::System.Action<global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease>? backgroundAssetVersionExternalBetaReleases = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseContent>? inAppPurchaseContents = null,
 
-            global::System.Action<global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease>? backgroundAssetVersionInternalBetaReleases = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseImage>? inAppPurchaseImages = null,
 
-            global::System.Action<global::AppStoreConnect.BackgroundAsset>? backgroundAssets = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseLocalization>? inAppPurchaseLocalizations = null,
+
+            global::System.Action<global::AppStoreConnect.InAppPurchaseOfferCode>? inAppPurchaseOfferCodes = null,
+
+            global::System.Action<global::AppStoreConnect.InAppPurchasePricePoint>? inAppPurchasePricePoints = null,
+
+            global::System.Action<global::AppStoreConnect.InAppPurchasePriceSchedule>? inAppPurchasePriceSchedules = null,
+
+            global::System.Action<global::AppStoreConnect.InAppPurchaseVersion>? inAppPurchaseVersions = null,
+
+            global::System.Action<global::AppStoreConnect.PromotedPurchase>? promotedPurchases = null,
             bool validate = true)
         {
             if (validate)
@@ -424,25 +779,45 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (BackgroundAssetUploadFiles is { } __value0)
+            if (InAppPurchaseAppStoreReviewScreenshots is { } __value0)
             {
-                backgroundAssetUploadFiles?.Invoke(__value0);
+                inAppPurchaseAppStoreReviewScreenshots?.Invoke(__value0);
             }
-            else if (BackgroundAssetVersionAppStoreReleases is { } __value1)
+            else if (InAppPurchaseAvailabilities is { } __value1)
             {
-                backgroundAssetVersionAppStoreReleases?.Invoke(__value1);
+                inAppPurchaseAvailabilities?.Invoke(__value1);
             }
-            else if (BackgroundAssetVersionExternalBetaReleases is { } __value2)
+            else if (InAppPurchaseContents is { } __value2)
             {
-                backgroundAssetVersionExternalBetaReleases?.Invoke(__value2);
+                inAppPurchaseContents?.Invoke(__value2);
             }
-            else if (BackgroundAssetVersionInternalBetaReleases is { } __value3)
+            else if (InAppPurchaseImages is { } __value3)
             {
-                backgroundAssetVersionInternalBetaReleases?.Invoke(__value3);
+                inAppPurchaseImages?.Invoke(__value3);
             }
-            else if (BackgroundAssets is { } __value4)
+            else if (InAppPurchaseLocalizations is { } __value4)
             {
-                backgroundAssets?.Invoke(__value4);
+                inAppPurchaseLocalizations?.Invoke(__value4);
+            }
+            else if (InAppPurchaseOfferCodes is { } __value5)
+            {
+                inAppPurchaseOfferCodes?.Invoke(__value5);
+            }
+            else if (InAppPurchasePricePoints is { } __value6)
+            {
+                inAppPurchasePricePoints?.Invoke(__value6);
+            }
+            else if (InAppPurchasePriceSchedules is { } __value7)
+            {
+                inAppPurchasePriceSchedules?.Invoke(__value7);
+            }
+            else if (InAppPurchaseVersions is { } __value8)
+            {
+                inAppPurchaseVersions?.Invoke(__value8);
+            }
+            else if (PromotedPurchases is { } __value9)
+            {
+                promotedPurchases?.Invoke(__value9);
             }
         }
 
@@ -450,11 +825,16 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.BackgroundAssetUploadFile>? backgroundAssetUploadFiles = null,
-            global::System.Action<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease>? backgroundAssetVersionAppStoreReleases = null,
-            global::System.Action<global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease>? backgroundAssetVersionExternalBetaReleases = null,
-            global::System.Action<global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease>? backgroundAssetVersionInternalBetaReleases = null,
-            global::System.Action<global::AppStoreConnect.BackgroundAsset>? backgroundAssets = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot>? inAppPurchaseAppStoreReviewScreenshots = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseAvailability>? inAppPurchaseAvailabilities = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseContent>? inAppPurchaseContents = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseImage>? inAppPurchaseImages = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseLocalization>? inAppPurchaseLocalizations = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseOfferCode>? inAppPurchaseOfferCodes = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchasePricePoint>? inAppPurchasePricePoints = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchasePriceSchedule>? inAppPurchasePriceSchedules = null,
+            global::System.Action<global::AppStoreConnect.InAppPurchaseVersion>? inAppPurchaseVersions = null,
+            global::System.Action<global::AppStoreConnect.PromotedPurchase>? promotedPurchases = null,
             bool validate = true)
         {
             if (validate)
@@ -462,25 +842,45 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (BackgroundAssetUploadFiles is { } __value0)
+            if (InAppPurchaseAppStoreReviewScreenshots is { } __value0)
             {
-                backgroundAssetUploadFiles?.Invoke(__value0);
+                inAppPurchaseAppStoreReviewScreenshots?.Invoke(__value0);
             }
-            else if (BackgroundAssetVersionAppStoreReleases is { } __value1)
+            else if (InAppPurchaseAvailabilities is { } __value1)
             {
-                backgroundAssetVersionAppStoreReleases?.Invoke(__value1);
+                inAppPurchaseAvailabilities?.Invoke(__value1);
             }
-            else if (BackgroundAssetVersionExternalBetaReleases is { } __value2)
+            else if (InAppPurchaseContents is { } __value2)
             {
-                backgroundAssetVersionExternalBetaReleases?.Invoke(__value2);
+                inAppPurchaseContents?.Invoke(__value2);
             }
-            else if (BackgroundAssetVersionInternalBetaReleases is { } __value3)
+            else if (InAppPurchaseImages is { } __value3)
             {
-                backgroundAssetVersionInternalBetaReleases?.Invoke(__value3);
+                inAppPurchaseImages?.Invoke(__value3);
             }
-            else if (BackgroundAssets is { } __value4)
+            else if (InAppPurchaseLocalizations is { } __value4)
             {
-                backgroundAssets?.Invoke(__value4);
+                inAppPurchaseLocalizations?.Invoke(__value4);
+            }
+            else if (InAppPurchaseOfferCodes is { } __value5)
+            {
+                inAppPurchaseOfferCodes?.Invoke(__value5);
+            }
+            else if (InAppPurchasePricePoints is { } __value6)
+            {
+                inAppPurchasePricePoints?.Invoke(__value6);
+            }
+            else if (InAppPurchasePriceSchedules is { } __value7)
+            {
+                inAppPurchasePriceSchedules?.Invoke(__value7);
+            }
+            else if (InAppPurchaseVersions is { } __value8)
+            {
+                inAppPurchaseVersions?.Invoke(__value8);
+            }
+            else if (PromotedPurchases is { } __value9)
+            {
+                promotedPurchases?.Invoke(__value9);
             }
         }
 
@@ -491,16 +891,26 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                BackgroundAssetUploadFiles,
-                typeof(global::AppStoreConnect.BackgroundAssetUploadFile),
-                BackgroundAssetVersionAppStoreReleases,
-                typeof(global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease),
-                BackgroundAssetVersionExternalBetaReleases,
-                typeof(global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease),
-                BackgroundAssetVersionInternalBetaReleases,
-                typeof(global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease),
-                BackgroundAssets,
-                typeof(global::AppStoreConnect.BackgroundAsset),
+                InAppPurchaseAppStoreReviewScreenshots,
+                typeof(global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot),
+                InAppPurchaseAvailabilities,
+                typeof(global::AppStoreConnect.InAppPurchaseAvailability),
+                InAppPurchaseContents,
+                typeof(global::AppStoreConnect.InAppPurchaseContent),
+                InAppPurchaseImages,
+                typeof(global::AppStoreConnect.InAppPurchaseImage),
+                InAppPurchaseLocalizations,
+                typeof(global::AppStoreConnect.InAppPurchaseLocalization),
+                InAppPurchaseOfferCodes,
+                typeof(global::AppStoreConnect.InAppPurchaseOfferCode),
+                InAppPurchasePricePoints,
+                typeof(global::AppStoreConnect.InAppPurchasePricePoint),
+                InAppPurchasePriceSchedules,
+                typeof(global::AppStoreConnect.InAppPurchasePriceSchedule),
+                InAppPurchaseVersions,
+                typeof(global::AppStoreConnect.InAppPurchaseVersion),
+                PromotedPurchases,
+                typeof(global::AppStoreConnect.PromotedPurchase),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -517,11 +927,16 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem50 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAssetUploadFile?>.Default.Equals(BackgroundAssetUploadFiles, other.BackgroundAssetUploadFiles) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAssetVersionAppStoreRelease?>.Default.Equals(BackgroundAssetVersionAppStoreReleases, other.BackgroundAssetVersionAppStoreReleases) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAssetVersionExternalBetaRelease?>.Default.Equals(BackgroundAssetVersionExternalBetaReleases, other.BackgroundAssetVersionExternalBetaReleases) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAssetVersionInternalBetaRelease?>.Default.Equals(BackgroundAssetVersionInternalBetaReleases, other.BackgroundAssetVersionInternalBetaReleases) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BackgroundAsset?>.Default.Equals(BackgroundAssets, other.BackgroundAssets)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseAppStoreReviewScreenshot?>.Default.Equals(InAppPurchaseAppStoreReviewScreenshots, other.InAppPurchaseAppStoreReviewScreenshots) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseAvailability?>.Default.Equals(InAppPurchaseAvailabilities, other.InAppPurchaseAvailabilities) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseContent?>.Default.Equals(InAppPurchaseContents, other.InAppPurchaseContents) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseImage?>.Default.Equals(InAppPurchaseImages, other.InAppPurchaseImages) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseLocalization?>.Default.Equals(InAppPurchaseLocalizations, other.InAppPurchaseLocalizations) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseOfferCode?>.Default.Equals(InAppPurchaseOfferCodes, other.InAppPurchaseOfferCodes) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchasePricePoint?>.Default.Equals(InAppPurchasePricePoints, other.InAppPurchasePricePoints) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchasePriceSchedule?>.Default.Equals(InAppPurchasePriceSchedules, other.InAppPurchasePriceSchedules) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.InAppPurchaseVersion?>.Default.Equals(InAppPurchaseVersions, other.InAppPurchaseVersions) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.PromotedPurchase?>.Default.Equals(PromotedPurchases, other.PromotedPurchases)
                 ;
         }
 

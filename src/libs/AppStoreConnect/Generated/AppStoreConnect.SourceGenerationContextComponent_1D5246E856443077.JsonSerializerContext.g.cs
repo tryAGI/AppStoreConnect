@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppCategoriesGetCollectionFilterPlatform))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0042.Create_AppCategoriesGetCollectionFilterPlatform2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0041.Create_AppCategoriesGetCollectionFilterPlatform2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppCategoriesGetCollectionFilterPlatform?))
                 {

@@ -12,156 +12,220 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAchievementReleasesResponseIncludedItemDiscriminatorType? Type { get; }
+        public global::AppStoreConnect.AppCustomProductPagesResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterAchievement? GameCenterAchievements { get; init; }
+        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterAchievement? GameCenterAchievements { get; }
+        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterAchievements))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageLocalizations))]
 #endif
-        public bool IsGameCenterAchievements => GameCenterAchievements != null;
+        public bool IsAppCustomProductPageLocalizations => AppCustomProductPageLocalizations != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterAchievements(
+        public bool TryPickAppCustomProductPageLocalizations(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterAchievement? value)
+            out global::AppStoreConnect.AppCustomProductPageLocalization? value)
         {
-            value = GameCenterAchievements;
-            return IsGameCenterAchievements;
+            value = AppCustomProductPageLocalizations;
+            return IsAppCustomProductPageLocalizations;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterAchievement PickGameCenterAchievements() => GameCenterAchievements is { } value
+        public global::AppStoreConnect.AppCustomProductPageLocalization PickAppCustomProductPageLocalizations() => AppCustomProductPageLocalizations is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterAchievements' but the value was {ToString()}.");
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageLocalizations' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.GameCenterDetail? GameCenterDetails { get; init; }
+        public global::AppStoreConnect.AppCustomProductPageVersion? AppCustomProductPageVersions { get; init; }
 #else
-        public global::AppStoreConnect.GameCenterDetail? GameCenterDetails { get; }
+        public global::AppStoreConnect.AppCustomProductPageVersion? AppCustomProductPageVersions { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(GameCenterDetails))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageVersions))]
 #endif
-        public bool IsGameCenterDetails => GameCenterDetails != null;
+        public bool IsAppCustomProductPageVersions => AppCustomProductPageVersions != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickGameCenterDetails(
+        public bool TryPickAppCustomProductPageVersions(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.GameCenterDetail? value)
+            out global::AppStoreConnect.AppCustomProductPageVersion? value)
         {
-            value = GameCenterDetails;
-            return IsGameCenterDetails;
+            value = AppCustomProductPageVersions;
+            return IsAppCustomProductPageVersions;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.GameCenterDetail PickGameCenterDetails() => GameCenterDetails is { } value
+        public global::AppStoreConnect.AppCustomProductPageVersion PickAppCustomProductPageVersions() => AppCustomProductPageVersions is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'GameCenterDetails' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem81(global::AppStoreConnect.GameCenterAchievement value) => new IncludedItem81((global::AppStoreConnect.GameCenterAchievement?)value);
+            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageVersions' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterAchievement?(IncludedItem81 @this) => @this.GameCenterAchievements;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.App? Apps { get; init; }
+#else
+        public global::AppStoreConnect.App? Apps { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem81(global::AppStoreConnect.GameCenterAchievement? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Apps))]
+#endif
+        public bool IsApps => Apps != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickApps(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.App? value)
         {
-            GameCenterAchievements = value;
+            value = Apps;
+            return IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem81 FromGameCenterAchievements(global::AppStoreConnect.GameCenterAchievement? value) => new IncludedItem81(value);
+        public global::AppStoreConnect.App PickApps() => Apps is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem81(global::AppStoreConnect.AppCustomProductPageLocalization value) => new IncludedItem81((global::AppStoreConnect.AppCustomProductPageLocalization?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem81(global::AppStoreConnect.GameCenterDetail value) => new IncludedItem81((global::AppStoreConnect.GameCenterDetail?)value);
+        public static implicit operator global::AppStoreConnect.AppCustomProductPageLocalization?(IncludedItem81 @this) => @this.AppCustomProductPageLocalizations;
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.GameCenterDetail?(IncludedItem81 @this) => @this.GameCenterDetails;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem81(global::AppStoreConnect.GameCenterDetail? value)
+        public IncludedItem81(global::AppStoreConnect.AppCustomProductPageLocalization? value)
         {
-            GameCenterDetails = value;
+            AppCustomProductPageLocalizations = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem81 FromGameCenterDetails(global::AppStoreConnect.GameCenterDetail? value) => new IncludedItem81(value);
+        public static IncludedItem81 FromAppCustomProductPageLocalizations(global::AppStoreConnect.AppCustomProductPageLocalization? value) => new IncludedItem81(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem81(global::AppStoreConnect.AppCustomProductPageVersion value) => new IncludedItem81((global::AppStoreConnect.AppCustomProductPageVersion?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.AppCustomProductPageVersion?(IncludedItem81 @this) => @this.AppCustomProductPageVersions;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem81(global::AppStoreConnect.AppCustomProductPageVersion? value)
+        {
+            AppCustomProductPageVersions = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem81 FromAppCustomProductPageVersions(global::AppStoreConnect.AppCustomProductPageVersion? value) => new IncludedItem81(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem81(global::AppStoreConnect.App value) => new IncludedItem81((global::AppStoreConnect.App?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.App?(IncludedItem81 @this) => @this.Apps;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem81(global::AppStoreConnect.App? value)
+        {
+            Apps = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem81 FromApps(global::AppStoreConnect.App? value) => new IncludedItem81(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem81(
-            global::AppStoreConnect.GameCenterAchievementReleasesResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.GameCenterAchievement? gameCenterAchievements,
-            global::AppStoreConnect.GameCenterDetail? gameCenterDetails
+            global::AppStoreConnect.AppCustomProductPagesResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.AppCustomProductPageLocalization? appCustomProductPageLocalizations,
+            global::AppStoreConnect.AppCustomProductPageVersion? appCustomProductPageVersions,
+            global::AppStoreConnect.App? apps
             )
         {
             Type = type;
 
-            GameCenterAchievements = gameCenterAchievements;
-            GameCenterDetails = gameCenterDetails;
+            AppCustomProductPageLocalizations = appCustomProductPageLocalizations;
+            AppCustomProductPageVersions = appCustomProductPageVersions;
+            Apps = apps;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            GameCenterDetails as object ??
-            GameCenterAchievements as object
+            Apps as object ??
+            AppCustomProductPageVersions as object ??
+            AppCustomProductPageLocalizations as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            GameCenterAchievements?.ToString() ??
-            GameCenterDetails?.ToString()
+            AppCustomProductPageLocalizations?.ToString() ??
+            AppCustomProductPageVersions?.ToString() ??
+            Apps?.ToString()
             ;
 
         /// <summary>
@@ -169,15 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsGameCenterAchievements && !IsGameCenterDetails || !IsGameCenterAchievements && IsGameCenterDetails;
+            return IsAppCustomProductPageLocalizations && !IsAppCustomProductPageVersions && !IsApps || !IsAppCustomProductPageLocalizations && IsAppCustomProductPageVersions && !IsApps || !IsAppCustomProductPageLocalizations && !IsAppCustomProductPageVersions && IsApps;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.GameCenterAchievement, TResult>? gameCenterAchievements = null,
-            global::System.Func<global::AppStoreConnect.GameCenterDetail, TResult>? gameCenterDetails = null,
+            global::System.Func<global::AppStoreConnect.AppCustomProductPageLocalization, TResult>? appCustomProductPageLocalizations = null,
+            global::System.Func<global::AppStoreConnect.AppCustomProductPageVersion, TResult>? appCustomProductPageVersions = null,
+            global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
             bool validate = true)
         {
             if (validate)
@@ -185,13 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterAchievements is { } __value0 && gameCenterAchievements != null)
+            if (AppCustomProductPageLocalizations is { } __value0 && appCustomProductPageLocalizations != null)
             {
-                return gameCenterAchievements(__value0);
+                return appCustomProductPageLocalizations(__value0);
             }
-            else if (GameCenterDetails is { } __value1 && gameCenterDetails != null)
+            else if (AppCustomProductPageVersions is { } __value1 && appCustomProductPageVersions != null)
             {
-                return gameCenterDetails(__value1);
+                return appCustomProductPageVersions(__value1);
+            }
+            else if (Apps is { } __value2 && apps != null)
+            {
+                return apps(__value2);
             }
 
             return default(TResult);
@@ -201,9 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.GameCenterAchievement>? gameCenterAchievements = null,
+            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations = null,
 
-            global::System.Action<global::AppStoreConnect.GameCenterDetail>? gameCenterDetails = null,
+            global::System.Action<global::AppStoreConnect.AppCustomProductPageVersion>? appCustomProductPageVersions = null,
+
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
             bool validate = true)
         {
             if (validate)
@@ -211,13 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterAchievements is { } __value0)
+            if (AppCustomProductPageLocalizations is { } __value0)
             {
-                gameCenterAchievements?.Invoke(__value0);
+                appCustomProductPageLocalizations?.Invoke(__value0);
             }
-            else if (GameCenterDetails is { } __value1)
+            else if (AppCustomProductPageVersions is { } __value1)
             {
-                gameCenterDetails?.Invoke(__value1);
+                appCustomProductPageVersions?.Invoke(__value1);
+            }
+            else if (Apps is { } __value2)
+            {
+                apps?.Invoke(__value2);
             }
         }
 
@@ -225,8 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.GameCenterAchievement>? gameCenterAchievements = null,
-            global::System.Action<global::AppStoreConnect.GameCenterDetail>? gameCenterDetails = null,
+            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations = null,
+            global::System.Action<global::AppStoreConnect.AppCustomProductPageVersion>? appCustomProductPageVersions = null,
+            global::System.Action<global::AppStoreConnect.App>? apps = null,
             bool validate = true)
         {
             if (validate)
@@ -234,13 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (GameCenterAchievements is { } __value0)
+            if (AppCustomProductPageLocalizations is { } __value0)
             {
-                gameCenterAchievements?.Invoke(__value0);
+                appCustomProductPageLocalizations?.Invoke(__value0);
             }
-            else if (GameCenterDetails is { } __value1)
+            else if (AppCustomProductPageVersions is { } __value1)
             {
-                gameCenterDetails?.Invoke(__value1);
+                appCustomProductPageVersions?.Invoke(__value1);
+            }
+            else if (Apps is { } __value2)
+            {
+                apps?.Invoke(__value2);
             }
         }
 
@@ -251,10 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                GameCenterAchievements,
-                typeof(global::AppStoreConnect.GameCenterAchievement),
-                GameCenterDetails,
-                typeof(global::AppStoreConnect.GameCenterDetail),
+                AppCustomProductPageLocalizations,
+                typeof(global::AppStoreConnect.AppCustomProductPageLocalization),
+                AppCustomProductPageVersions,
+                typeof(global::AppStoreConnect.AppCustomProductPageVersion),
+                Apps,
+                typeof(global::AppStoreConnect.App),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -271,8 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem81 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterAchievement?>.Default.Equals(GameCenterAchievements, other.GameCenterAchievements) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.GameCenterDetail?>.Default.Equals(GameCenterDetails, other.GameCenterDetails)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageLocalization?>.Default.Equals(AppCustomProductPageLocalizations, other.AppCustomProductPageLocalizations) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageVersion?>.Default.Equals(AppCustomProductPageVersions, other.AppCustomProductPageVersions) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps)
                 ;
         }
 

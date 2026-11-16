@@ -12,81 +12,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.AppCustomProductPageResponseIncludedItemDiscriminatorType? Type { get; }
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations { get; init; }
-#else
-        public global::AppStoreConnect.AppCustomProductPageLocalization? AppCustomProductPageLocalizations { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageLocalizations))]
-#endif
-        public bool IsAppCustomProductPageLocalizations => AppCustomProductPageLocalizations != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppCustomProductPageLocalizations(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppCustomProductPageLocalization? value)
-        {
-            value = AppCustomProductPageLocalizations;
-            return IsAppCustomProductPageLocalizations;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.AppCustomProductPageLocalization PickAppCustomProductPageLocalizations() => AppCustomProductPageLocalizations is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageLocalizations' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppCustomProductPageVersion? AppCustomProductPageVersions { get; init; }
-#else
-        public global::AppStoreConnect.AppCustomProductPageVersion? AppCustomProductPageVersions { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppCustomProductPageVersions))]
-#endif
-        public bool IsAppCustomProductPageVersions => AppCustomProductPageVersions != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppCustomProductPageVersions(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppCustomProductPageVersion? value)
-        {
-            value = AppCustomProductPageVersions;
-            return IsAppCustomProductPageVersions;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.AppCustomProductPageVersion PickAppCustomProductPageVersions() => AppCustomProductPageVersions is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppCustomProductPageVersions' but the value was {ToString()}.");
+        public global::AppStoreConnect.CiProductsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
@@ -124,52 +50,80 @@ namespace AppStoreConnect
         public global::AppStoreConnect.App PickApps() => Apps is { } value
             ? value
             : throw new global::System.InvalidOperationException($"Expected union variant 'Apps' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem18(global::AppStoreConnect.AppCustomProductPageLocalization value) => new IncludedItem18((global::AppStoreConnect.AppCustomProductPageLocalization?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppCustomProductPageLocalization?(IncludedItem18 @this) => @this.AppCustomProductPageLocalizations;
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.BundleId? BundleIds { get; init; }
+#else
+        public global::AppStoreConnect.BundleId? BundleIds { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem18(global::AppStoreConnect.AppCustomProductPageLocalization? value)
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BundleIds))]
+#endif
+        public bool IsBundleIds => BundleIds != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickBundleIds(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.BundleId? value)
         {
-            AppCustomProductPageLocalizations = value;
+            value = BundleIds;
+            return IsBundleIds;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem18 FromAppCustomProductPageLocalizations(global::AppStoreConnect.AppCustomProductPageLocalization? value) => new IncludedItem18(value);
+        public global::AppStoreConnect.BundleId PickBundleIds() => BundleIds is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'BundleIds' but the value was {ToString()}.");
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem18(global::AppStoreConnect.AppCustomProductPageVersion value) => new IncludedItem18((global::AppStoreConnect.AppCustomProductPageVersion?)value);
+#if NET6_0_OR_GREATER
+        public global::AppStoreConnect.ScmRepository? ScmRepositories { get; init; }
+#else
+        public global::AppStoreConnect.ScmRepository? ScmRepositories { get; }
+#endif
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.AppCustomProductPageVersion?(IncludedItem18 @this) => @this.AppCustomProductPageVersions;
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(ScmRepositories))]
+#endif
+        public bool IsScmRepositories => ScmRepositories != null;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem18(global::AppStoreConnect.AppCustomProductPageVersion? value)
+        public bool TryPickScmRepositories(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.ScmRepository? value)
         {
-            AppCustomProductPageVersions = value;
+            value = ScmRepositories;
+            return IsScmRepositories;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem18 FromAppCustomProductPageVersions(global::AppStoreConnect.AppCustomProductPageVersion? value) => new IncludedItem18(value);
-
+        public global::AppStoreConnect.ScmRepository PickScmRepositories() => ScmRepositories is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'ScmRepositories' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -196,36 +150,82 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        public static implicit operator IncludedItem18(global::AppStoreConnect.BundleId value) => new IncludedItem18((global::AppStoreConnect.BundleId?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.BundleId?(IncludedItem18 @this) => @this.BundleIds;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem18(global::AppStoreConnect.BundleId? value)
+        {
+            BundleIds = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem18 FromBundleIds(global::AppStoreConnect.BundleId? value) => new IncludedItem18(value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator IncludedItem18(global::AppStoreConnect.ScmRepository value) => new IncludedItem18((global::AppStoreConnect.ScmRepository?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.ScmRepository?(IncludedItem18 @this) => @this.ScmRepositories;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem18(global::AppStoreConnect.ScmRepository? value)
+        {
+            ScmRepositories = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem18 FromScmRepositories(global::AppStoreConnect.ScmRepository? value) => new IncludedItem18(value);
+
+        /// <summary>
+        ///
+        /// </summary>
         public IncludedItem18(
-            global::AppStoreConnect.AppCustomProductPageResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppCustomProductPageLocalization? appCustomProductPageLocalizations,
-            global::AppStoreConnect.AppCustomProductPageVersion? appCustomProductPageVersions,
-            global::AppStoreConnect.App? apps
+            global::AppStoreConnect.CiProductsResponseIncludedItemDiscriminatorType? type,
+            global::AppStoreConnect.App? apps,
+            global::AppStoreConnect.BundleId? bundleIds,
+            global::AppStoreConnect.ScmRepository? scmRepositories
             )
         {
             Type = type;
 
-            AppCustomProductPageLocalizations = appCustomProductPageLocalizations;
-            AppCustomProductPageVersions = appCustomProductPageVersions;
             Apps = apps;
+            BundleIds = bundleIds;
+            ScmRepositories = scmRepositories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            Apps as object ??
-            AppCustomProductPageVersions as object ??
-            AppCustomProductPageLocalizations as object
+            ScmRepositories as object ??
+            BundleIds as object ??
+            Apps as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppCustomProductPageLocalizations?.ToString() ??
-            AppCustomProductPageVersions?.ToString() ??
-            Apps?.ToString()
+            Apps?.ToString() ??
+            BundleIds?.ToString() ??
+            ScmRepositories?.ToString()
             ;
 
         /// <summary>
@@ -233,16 +233,16 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppCustomProductPageLocalizations && !IsAppCustomProductPageVersions && !IsApps || !IsAppCustomProductPageLocalizations && IsAppCustomProductPageVersions && !IsApps || !IsAppCustomProductPageLocalizations && !IsAppCustomProductPageVersions && IsApps;
+            return IsApps && !IsBundleIds && !IsScmRepositories || !IsApps && IsBundleIds && !IsScmRepositories || !IsApps && !IsBundleIds && IsScmRepositories;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppCustomProductPageLocalization, TResult>? appCustomProductPageLocalizations = null,
-            global::System.Func<global::AppStoreConnect.AppCustomProductPageVersion, TResult>? appCustomProductPageVersions = null,
             global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
+            global::System.Func<global::AppStoreConnect.BundleId, TResult>? bundleIds = null,
+            global::System.Func<global::AppStoreConnect.ScmRepository, TResult>? scmRepositories = null,
             bool validate = true)
         {
             if (validate)
@@ -250,17 +250,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations is { } __value0 && appCustomProductPageLocalizations != null)
+            if (Apps is { } __value0 && apps != null)
             {
-                return appCustomProductPageLocalizations(__value0);
+                return apps(__value0);
             }
-            else if (AppCustomProductPageVersions is { } __value1 && appCustomProductPageVersions != null)
+            else if (BundleIds is { } __value1 && bundleIds != null)
             {
-                return appCustomProductPageVersions(__value1);
+                return bundleIds(__value1);
             }
-            else if (Apps is { } __value2 && apps != null)
+            else if (ScmRepositories is { } __value2 && scmRepositories != null)
             {
-                return apps(__value2);
+                return scmRepositories(__value2);
             }
 
             return default(TResult);
@@ -270,11 +270,11 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations = null,
-
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageVersion>? appCustomProductPageVersions = null,
-
             global::System.Action<global::AppStoreConnect.App>? apps = null,
+
+            global::System.Action<global::AppStoreConnect.BundleId>? bundleIds = null,
+
+            global::System.Action<global::AppStoreConnect.ScmRepository>? scmRepositories = null,
             bool validate = true)
         {
             if (validate)
@@ -282,17 +282,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations is { } __value0)
+            if (Apps is { } __value0)
             {
-                appCustomProductPageLocalizations?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (AppCustomProductPageVersions is { } __value1)
+            else if (BundleIds is { } __value1)
             {
-                appCustomProductPageVersions?.Invoke(__value1);
+                bundleIds?.Invoke(__value1);
             }
-            else if (Apps is { } __value2)
+            else if (ScmRepositories is { } __value2)
             {
-                apps?.Invoke(__value2);
+                scmRepositories?.Invoke(__value2);
             }
         }
 
@@ -300,9 +300,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageLocalization>? appCustomProductPageLocalizations = null,
-            global::System.Action<global::AppStoreConnect.AppCustomProductPageVersion>? appCustomProductPageVersions = null,
             global::System.Action<global::AppStoreConnect.App>? apps = null,
+            global::System.Action<global::AppStoreConnect.BundleId>? bundleIds = null,
+            global::System.Action<global::AppStoreConnect.ScmRepository>? scmRepositories = null,
             bool validate = true)
         {
             if (validate)
@@ -310,17 +310,17 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppCustomProductPageLocalizations is { } __value0)
+            if (Apps is { } __value0)
             {
-                appCustomProductPageLocalizations?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (AppCustomProductPageVersions is { } __value1)
+            else if (BundleIds is { } __value1)
             {
-                appCustomProductPageVersions?.Invoke(__value1);
+                bundleIds?.Invoke(__value1);
             }
-            else if (Apps is { } __value2)
+            else if (ScmRepositories is { } __value2)
             {
-                apps?.Invoke(__value2);
+                scmRepositories?.Invoke(__value2);
             }
         }
 
@@ -331,12 +331,12 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppCustomProductPageLocalizations,
-                typeof(global::AppStoreConnect.AppCustomProductPageLocalization),
-                AppCustomProductPageVersions,
-                typeof(global::AppStoreConnect.AppCustomProductPageVersion),
                 Apps,
                 typeof(global::AppStoreConnect.App),
+                BundleIds,
+                typeof(global::AppStoreConnect.BundleId),
+                ScmRepositories,
+                typeof(global::AppStoreConnect.ScmRepository),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -353,9 +353,9 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem18 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageLocalization?>.Default.Equals(AppCustomProductPageLocalizations, other.AppCustomProductPageLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppCustomProductPageVersion?>.Default.Equals(AppCustomProductPageVersions, other.AppCustomProductPageVersions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BundleId?>.Default.Equals(BundleIds, other.BundleIds) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.ScmRepository?>.Default.Equals(ScmRepositories, other.ScmRepositories)
                 ;
         }
 

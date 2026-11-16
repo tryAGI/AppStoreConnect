@@ -12,81 +12,7 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BuildsResponseIncludedItemDiscriminatorType? Type { get; }
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppEncryptionDeclaration? AppEncryptionDeclarations { get; init; }
-#else
-        public global::AppStoreConnect.AppEncryptionDeclaration? AppEncryptionDeclarations { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppEncryptionDeclarations))]
-#endif
-        public bool IsAppEncryptionDeclarations => AppEncryptionDeclarations != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppEncryptionDeclarations(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppEncryptionDeclaration? value)
-        {
-            value = AppEncryptionDeclarations;
-            return IsAppEncryptionDeclarations;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.AppEncryptionDeclaration PickAppEncryptionDeclarations() => AppEncryptionDeclarations is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppEncryptionDeclarations' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; init; }
-#else
-        public global::AppStoreConnect.AppStoreVersion? AppStoreVersions { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(AppStoreVersions))]
-#endif
-        public bool IsAppStoreVersions => AppStoreVersions != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickAppStoreVersions(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.AppStoreVersion? value)
-        {
-            value = AppStoreVersions;
-            return IsAppStoreVersions;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.AppStoreVersion PickAppStoreVersions() => AppStoreVersions is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'AppStoreVersions' but the value was {ToString()}.");
+        public global::AppStoreConnect.PreReleaseVersionsResponseIncludedItemDiscriminatorType? Type { get; }
 
         /// <summary>
         ///
@@ -129,380 +55,38 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BetaAppReviewSubmission? BetaAppReviewSubmissions { get; init; }
+        public global::AppStoreConnect.Build? Builds { get; init; }
 #else
-        public global::AppStoreConnect.BetaAppReviewSubmission? BetaAppReviewSubmissions { get; }
+        public global::AppStoreConnect.Build? Builds { get; }
 #endif
 
         /// <summary>
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaAppReviewSubmissions))]
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(Builds))]
 #endif
-        public bool IsBetaAppReviewSubmissions => BetaAppReviewSubmissions != null;
+        public bool IsBuilds => Builds != null;
 
         /// <summary>
         ///
         /// </summary>
-        public bool TryPickBetaAppReviewSubmissions(
+        public bool TryPickBuilds(
 #if NET6_0_OR_GREATER
             [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
 #endif
-            out global::AppStoreConnect.BetaAppReviewSubmission? value)
+            out global::AppStoreConnect.Build? value)
         {
-            value = BetaAppReviewSubmissions;
-            return IsBetaAppReviewSubmissions;
+            value = Builds;
+            return IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public global::AppStoreConnect.BetaAppReviewSubmission PickBetaAppReviewSubmissions() => BetaAppReviewSubmissions is { } value
+        public global::AppStoreConnect.Build PickBuilds() => Builds is { } value
             ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaAppReviewSubmissions' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BetaBuildLocalization? BetaBuildLocalizations { get; init; }
-#else
-        public global::AppStoreConnect.BetaBuildLocalization? BetaBuildLocalizations { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaBuildLocalizations))]
-#endif
-        public bool IsBetaBuildLocalizations => BetaBuildLocalizations != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickBetaBuildLocalizations(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.BetaBuildLocalization? value)
-        {
-            value = BetaBuildLocalizations;
-            return IsBetaBuildLocalizations;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.BetaBuildLocalization PickBetaBuildLocalizations() => BetaBuildLocalizations is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaBuildLocalizations' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BetaGroup? BetaGroups { get; init; }
-#else
-        public global::AppStoreConnect.BetaGroup? BetaGroups { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaGroups))]
-#endif
-        public bool IsBetaGroups => BetaGroups != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickBetaGroups(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.BetaGroup? value)
-        {
-            value = BetaGroups;
-            return IsBetaGroups;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.BetaGroup PickBetaGroups() => BetaGroups is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaGroups' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BetaTester? BetaTesters { get; init; }
-#else
-        public global::AppStoreConnect.BetaTester? BetaTesters { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BetaTesters))]
-#endif
-        public bool IsBetaTesters => BetaTesters != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickBetaTesters(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.BetaTester? value)
-        {
-            value = BetaTesters;
-            return IsBetaTesters;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.BetaTester PickBetaTesters() => BetaTesters is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BetaTesters' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BuildBetaDetail? BuildBetaDetails { get; init; }
-#else
-        public global::AppStoreConnect.BuildBetaDetail? BuildBetaDetails { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BuildBetaDetails))]
-#endif
-        public bool IsBuildBetaDetails => BuildBetaDetails != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickBuildBetaDetails(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.BuildBetaDetail? value)
-        {
-            value = BuildBetaDetails;
-            return IsBuildBetaDetails;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.BuildBetaDetail PickBuildBetaDetails() => BuildBetaDetails is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BuildBetaDetails' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BuildBundle? BuildBundles { get; init; }
-#else
-        public global::AppStoreConnect.BuildBundle? BuildBundles { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BuildBundles))]
-#endif
-        public bool IsBuildBundles => BuildBundles != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickBuildBundles(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.BuildBundle? value)
-        {
-            value = BuildBundles;
-            return IsBuildBundles;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.BuildBundle PickBuildBundles() => BuildBundles is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BuildBundles' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BuildIcon? BuildIcons { get; init; }
-#else
-        public global::AppStoreConnect.BuildIcon? BuildIcons { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BuildIcons))]
-#endif
-        public bool IsBuildIcons => BuildIcons != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickBuildIcons(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.BuildIcon? value)
-        {
-            value = BuildIcons;
-            return IsBuildIcons;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.BuildIcon PickBuildIcons() => BuildIcons is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BuildIcons' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.BuildUpload? BuildUploads { get; init; }
-#else
-        public global::AppStoreConnect.BuildUpload? BuildUploads { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(BuildUploads))]
-#endif
-        public bool IsBuildUploads => BuildUploads != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickBuildUploads(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.BuildUpload? value)
-        {
-            value = BuildUploads;
-            return IsBuildUploads;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.BuildUpload PickBuildUploads() => BuildUploads is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'BuildUploads' but the value was {ToString()}.");
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        public global::AppStoreConnect.PrereleaseVersion? PreReleaseVersions { get; init; }
-#else
-        public global::AppStoreConnect.PrereleaseVersion? PreReleaseVersions { get; }
-#endif
-
-        /// <summary>
-        ///
-        /// </summary>
-#if NET6_0_OR_GREATER
-        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(PreReleaseVersions))]
-#endif
-        public bool IsPreReleaseVersions => PreReleaseVersions != null;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public bool TryPickPreReleaseVersions(
-#if NET6_0_OR_GREATER
-            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
-#endif
-            out global::AppStoreConnect.PrereleaseVersion? value)
-        {
-            value = PreReleaseVersions;
-            return IsPreReleaseVersions;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public global::AppStoreConnect.PrereleaseVersion PickPreReleaseVersions() => PreReleaseVersions is { } value
-            ? value
-            : throw new global::System.InvalidOperationException($"Expected union variant 'PreReleaseVersions' but the value was {ToString()}.");
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem64(global::AppStoreConnect.AppEncryptionDeclaration value) => new IncludedItem64((global::AppStoreConnect.AppEncryptionDeclaration?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppEncryptionDeclaration?(IncludedItem64 @this) => @this.AppEncryptionDeclarations;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem64(global::AppStoreConnect.AppEncryptionDeclaration? value)
-        {
-            AppEncryptionDeclarations = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem64 FromAppEncryptionDeclarations(global::AppStoreConnect.AppEncryptionDeclaration? value) => new IncludedItem64(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem64(global::AppStoreConnect.AppStoreVersion value) => new IncludedItem64((global::AppStoreConnect.AppStoreVersion?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.AppStoreVersion?(IncludedItem64 @this) => @this.AppStoreVersions;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem64(global::AppStoreConnect.AppStoreVersion? value)
-        {
-            AppStoreVersions = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem64 FromAppStoreVersions(global::AppStoreConnect.AppStoreVersion? value) => new IncludedItem64(value);
-
+            : throw new global::System.InvalidOperationException($"Expected union variant 'Builds' but the value was {ToString()}.");
         /// <summary>
         ///
         /// </summary>
@@ -529,279 +113,55 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator IncludedItem64(global::AppStoreConnect.BetaAppReviewSubmission value) => new IncludedItem64((global::AppStoreConnect.BetaAppReviewSubmission?)value);
+        public static implicit operator IncludedItem64(global::AppStoreConnect.Build value) => new IncludedItem64((global::AppStoreConnect.Build?)value);
 
         /// <summary>
         ///
         /// </summary>
-        public static implicit operator global::AppStoreConnect.BetaAppReviewSubmission?(IncludedItem64 @this) => @this.BetaAppReviewSubmissions;
+        public static implicit operator global::AppStoreConnect.Build?(IncludedItem64 @this) => @this.Builds;
 
         /// <summary>
         ///
         /// </summary>
-        public IncludedItem64(global::AppStoreConnect.BetaAppReviewSubmission? value)
+        public IncludedItem64(global::AppStoreConnect.Build? value)
         {
-            BetaAppReviewSubmissions = value;
+            Builds = value;
         }
 
         /// <summary>
         ///
         /// </summary>
-        public static IncludedItem64 FromBetaAppReviewSubmissions(global::AppStoreConnect.BetaAppReviewSubmission? value) => new IncludedItem64(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem64(global::AppStoreConnect.BetaBuildLocalization value) => new IncludedItem64((global::AppStoreConnect.BetaBuildLocalization?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.BetaBuildLocalization?(IncludedItem64 @this) => @this.BetaBuildLocalizations;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem64(global::AppStoreConnect.BetaBuildLocalization? value)
-        {
-            BetaBuildLocalizations = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem64 FromBetaBuildLocalizations(global::AppStoreConnect.BetaBuildLocalization? value) => new IncludedItem64(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem64(global::AppStoreConnect.BetaGroup value) => new IncludedItem64((global::AppStoreConnect.BetaGroup?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.BetaGroup?(IncludedItem64 @this) => @this.BetaGroups;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem64(global::AppStoreConnect.BetaGroup? value)
-        {
-            BetaGroups = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem64 FromBetaGroups(global::AppStoreConnect.BetaGroup? value) => new IncludedItem64(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem64(global::AppStoreConnect.BetaTester value) => new IncludedItem64((global::AppStoreConnect.BetaTester?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.BetaTester?(IncludedItem64 @this) => @this.BetaTesters;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem64(global::AppStoreConnect.BetaTester? value)
-        {
-            BetaTesters = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem64 FromBetaTesters(global::AppStoreConnect.BetaTester? value) => new IncludedItem64(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem64(global::AppStoreConnect.BuildBetaDetail value) => new IncludedItem64((global::AppStoreConnect.BuildBetaDetail?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.BuildBetaDetail?(IncludedItem64 @this) => @this.BuildBetaDetails;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem64(global::AppStoreConnect.BuildBetaDetail? value)
-        {
-            BuildBetaDetails = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem64 FromBuildBetaDetails(global::AppStoreConnect.BuildBetaDetail? value) => new IncludedItem64(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem64(global::AppStoreConnect.BuildBundle value) => new IncludedItem64((global::AppStoreConnect.BuildBundle?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.BuildBundle?(IncludedItem64 @this) => @this.BuildBundles;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem64(global::AppStoreConnect.BuildBundle? value)
-        {
-            BuildBundles = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem64 FromBuildBundles(global::AppStoreConnect.BuildBundle? value) => new IncludedItem64(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem64(global::AppStoreConnect.BuildIcon value) => new IncludedItem64((global::AppStoreConnect.BuildIcon?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.BuildIcon?(IncludedItem64 @this) => @this.BuildIcons;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem64(global::AppStoreConnect.BuildIcon? value)
-        {
-            BuildIcons = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem64 FromBuildIcons(global::AppStoreConnect.BuildIcon? value) => new IncludedItem64(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem64(global::AppStoreConnect.BuildUpload value) => new IncludedItem64((global::AppStoreConnect.BuildUpload?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.BuildUpload?(IncludedItem64 @this) => @this.BuildUploads;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem64(global::AppStoreConnect.BuildUpload? value)
-        {
-            BuildUploads = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem64 FromBuildUploads(global::AppStoreConnect.BuildUpload? value) => new IncludedItem64(value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator IncludedItem64(global::AppStoreConnect.PrereleaseVersion value) => new IncludedItem64((global::AppStoreConnect.PrereleaseVersion?)value);
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static implicit operator global::AppStoreConnect.PrereleaseVersion?(IncludedItem64 @this) => @this.PreReleaseVersions;
-
-        /// <summary>
-        ///
-        /// </summary>
-        public IncludedItem64(global::AppStoreConnect.PrereleaseVersion? value)
-        {
-            PreReleaseVersions = value;
-        }
-
-        /// <summary>
-        ///
-        /// </summary>
-        public static IncludedItem64 FromPreReleaseVersions(global::AppStoreConnect.PrereleaseVersion? value) => new IncludedItem64(value);
+        public static IncludedItem64 FromBuilds(global::AppStoreConnect.Build? value) => new IncludedItem64(value);
 
         /// <summary>
         ///
         /// </summary>
         public IncludedItem64(
-            global::AppStoreConnect.BuildsResponseIncludedItemDiscriminatorType? type,
-            global::AppStoreConnect.AppEncryptionDeclaration? appEncryptionDeclarations,
-            global::AppStoreConnect.AppStoreVersion? appStoreVersions,
+            global::AppStoreConnect.PreReleaseVersionsResponseIncludedItemDiscriminatorType? type,
             global::AppStoreConnect.App? apps,
-            global::AppStoreConnect.BetaAppReviewSubmission? betaAppReviewSubmissions,
-            global::AppStoreConnect.BetaBuildLocalization? betaBuildLocalizations,
-            global::AppStoreConnect.BetaGroup? betaGroups,
-            global::AppStoreConnect.BetaTester? betaTesters,
-            global::AppStoreConnect.BuildBetaDetail? buildBetaDetails,
-            global::AppStoreConnect.BuildBundle? buildBundles,
-            global::AppStoreConnect.BuildIcon? buildIcons,
-            global::AppStoreConnect.BuildUpload? buildUploads,
-            global::AppStoreConnect.PrereleaseVersion? preReleaseVersions
+            global::AppStoreConnect.Build? builds
             )
         {
             Type = type;
 
-            AppEncryptionDeclarations = appEncryptionDeclarations;
-            AppStoreVersions = appStoreVersions;
             Apps = apps;
-            BetaAppReviewSubmissions = betaAppReviewSubmissions;
-            BetaBuildLocalizations = betaBuildLocalizations;
-            BetaGroups = betaGroups;
-            BetaTesters = betaTesters;
-            BuildBetaDetails = buildBetaDetails;
-            BuildBundles = buildBundles;
-            BuildIcons = buildIcons;
-            BuildUploads = buildUploads;
-            PreReleaseVersions = preReleaseVersions;
+            Builds = builds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public object? Object =>
-            PreReleaseVersions as object ??
-            BuildUploads as object ??
-            BuildIcons as object ??
-            BuildBundles as object ??
-            BuildBetaDetails as object ??
-            BetaTesters as object ??
-            BetaGroups as object ??
-            BetaBuildLocalizations as object ??
-            BetaAppReviewSubmissions as object ??
-            Apps as object ??
-            AppStoreVersions as object ??
-            AppEncryptionDeclarations as object
+            Builds as object ??
+            Apps as object
             ;
 
         /// <summary>
         ///
         /// </summary>
         public override string? ToString() =>
-            AppEncryptionDeclarations?.ToString() ??
-            AppStoreVersions?.ToString() ??
             Apps?.ToString() ??
-            BetaAppReviewSubmissions?.ToString() ??
-            BetaBuildLocalizations?.ToString() ??
-            BetaGroups?.ToString() ??
-            BetaTesters?.ToString() ??
-            BuildBetaDetails?.ToString() ??
-            BuildBundles?.ToString() ??
-            BuildIcons?.ToString() ??
-            BuildUploads?.ToString() ??
-            PreReleaseVersions?.ToString()
+            Builds?.ToString()
             ;
 
         /// <summary>
@@ -809,25 +169,15 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsAppEncryptionDeclarations && !IsAppStoreVersions && !IsApps && !IsBetaAppReviewSubmissions && !IsBetaBuildLocalizations && !IsBetaGroups && !IsBetaTesters && !IsBuildBetaDetails && !IsBuildBundles && !IsBuildIcons && !IsBuildUploads && !IsPreReleaseVersions || !IsAppEncryptionDeclarations && IsAppStoreVersions && !IsApps && !IsBetaAppReviewSubmissions && !IsBetaBuildLocalizations && !IsBetaGroups && !IsBetaTesters && !IsBuildBetaDetails && !IsBuildBundles && !IsBuildIcons && !IsBuildUploads && !IsPreReleaseVersions || !IsAppEncryptionDeclarations && !IsAppStoreVersions && IsApps && !IsBetaAppReviewSubmissions && !IsBetaBuildLocalizations && !IsBetaGroups && !IsBetaTesters && !IsBuildBetaDetails && !IsBuildBundles && !IsBuildIcons && !IsBuildUploads && !IsPreReleaseVersions || !IsAppEncryptionDeclarations && !IsAppStoreVersions && !IsApps && IsBetaAppReviewSubmissions && !IsBetaBuildLocalizations && !IsBetaGroups && !IsBetaTesters && !IsBuildBetaDetails && !IsBuildBundles && !IsBuildIcons && !IsBuildUploads && !IsPreReleaseVersions || !IsAppEncryptionDeclarations && !IsAppStoreVersions && !IsApps && !IsBetaAppReviewSubmissions && IsBetaBuildLocalizations && !IsBetaGroups && !IsBetaTesters && !IsBuildBetaDetails && !IsBuildBundles && !IsBuildIcons && !IsBuildUploads && !IsPreReleaseVersions || !IsAppEncryptionDeclarations && !IsAppStoreVersions && !IsApps && !IsBetaAppReviewSubmissions && !IsBetaBuildLocalizations && IsBetaGroups && !IsBetaTesters && !IsBuildBetaDetails && !IsBuildBundles && !IsBuildIcons && !IsBuildUploads && !IsPreReleaseVersions || !IsAppEncryptionDeclarations && !IsAppStoreVersions && !IsApps && !IsBetaAppReviewSubmissions && !IsBetaBuildLocalizations && !IsBetaGroups && IsBetaTesters && !IsBuildBetaDetails && !IsBuildBundles && !IsBuildIcons && !IsBuildUploads && !IsPreReleaseVersions || !IsAppEncryptionDeclarations && !IsAppStoreVersions && !IsApps && !IsBetaAppReviewSubmissions && !IsBetaBuildLocalizations && !IsBetaGroups && !IsBetaTesters && IsBuildBetaDetails && !IsBuildBundles && !IsBuildIcons && !IsBuildUploads && !IsPreReleaseVersions || !IsAppEncryptionDeclarations && !IsAppStoreVersions && !IsApps && !IsBetaAppReviewSubmissions && !IsBetaBuildLocalizations && !IsBetaGroups && !IsBetaTesters && !IsBuildBetaDetails && IsBuildBundles && !IsBuildIcons && !IsBuildUploads && !IsPreReleaseVersions || !IsAppEncryptionDeclarations && !IsAppStoreVersions && !IsApps && !IsBetaAppReviewSubmissions && !IsBetaBuildLocalizations && !IsBetaGroups && !IsBetaTesters && !IsBuildBetaDetails && !IsBuildBundles && IsBuildIcons && !IsBuildUploads && !IsPreReleaseVersions || !IsAppEncryptionDeclarations && !IsAppStoreVersions && !IsApps && !IsBetaAppReviewSubmissions && !IsBetaBuildLocalizations && !IsBetaGroups && !IsBetaTesters && !IsBuildBetaDetails && !IsBuildBundles && !IsBuildIcons && IsBuildUploads && !IsPreReleaseVersions || !IsAppEncryptionDeclarations && !IsAppStoreVersions && !IsApps && !IsBetaAppReviewSubmissions && !IsBetaBuildLocalizations && !IsBetaGroups && !IsBetaTesters && !IsBuildBetaDetails && !IsBuildBundles && !IsBuildIcons && !IsBuildUploads && IsPreReleaseVersions;
+            return IsApps && !IsBuilds || !IsApps && IsBuilds;
         }
 
         /// <summary>
         ///
         /// </summary>
         public TResult? Match<TResult>(
-            global::System.Func<global::AppStoreConnect.AppEncryptionDeclaration, TResult>? appEncryptionDeclarations = null,
-            global::System.Func<global::AppStoreConnect.AppStoreVersion, TResult>? appStoreVersions = null,
             global::System.Func<global::AppStoreConnect.App, TResult>? apps = null,
-            global::System.Func<global::AppStoreConnect.BetaAppReviewSubmission, TResult>? betaAppReviewSubmissions = null,
-            global::System.Func<global::AppStoreConnect.BetaBuildLocalization, TResult>? betaBuildLocalizations = null,
-            global::System.Func<global::AppStoreConnect.BetaGroup, TResult>? betaGroups = null,
-            global::System.Func<global::AppStoreConnect.BetaTester, TResult>? betaTesters = null,
-            global::System.Func<global::AppStoreConnect.BuildBetaDetail, TResult>? buildBetaDetails = null,
-            global::System.Func<global::AppStoreConnect.BuildBundle, TResult>? buildBundles = null,
-            global::System.Func<global::AppStoreConnect.BuildIcon, TResult>? buildIcons = null,
-            global::System.Func<global::AppStoreConnect.BuildUpload, TResult>? buildUploads = null,
-            global::System.Func<global::AppStoreConnect.PrereleaseVersion, TResult>? preReleaseVersions = null,
+            global::System.Func<global::AppStoreConnect.Build, TResult>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -835,53 +185,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppEncryptionDeclarations is { } __value0 && appEncryptionDeclarations != null)
+            if (Apps is { } __value0 && apps != null)
             {
-                return appEncryptionDeclarations(__value0);
+                return apps(__value0);
             }
-            else if (AppStoreVersions is { } __value1 && appStoreVersions != null)
+            else if (Builds is { } __value1 && builds != null)
             {
-                return appStoreVersions(__value1);
-            }
-            else if (Apps is { } __value2 && apps != null)
-            {
-                return apps(__value2);
-            }
-            else if (BetaAppReviewSubmissions is { } __value3 && betaAppReviewSubmissions != null)
-            {
-                return betaAppReviewSubmissions(__value3);
-            }
-            else if (BetaBuildLocalizations is { } __value4 && betaBuildLocalizations != null)
-            {
-                return betaBuildLocalizations(__value4);
-            }
-            else if (BetaGroups is { } __value5 && betaGroups != null)
-            {
-                return betaGroups(__value5);
-            }
-            else if (BetaTesters is { } __value6 && betaTesters != null)
-            {
-                return betaTesters(__value6);
-            }
-            else if (BuildBetaDetails is { } __value7 && buildBetaDetails != null)
-            {
-                return buildBetaDetails(__value7);
-            }
-            else if (BuildBundles is { } __value8 && buildBundles != null)
-            {
-                return buildBundles(__value8);
-            }
-            else if (BuildIcons is { } __value9 && buildIcons != null)
-            {
-                return buildIcons(__value9);
-            }
-            else if (BuildUploads is { } __value10 && buildUploads != null)
-            {
-                return buildUploads(__value10);
-            }
-            else if (PreReleaseVersions is { } __value11 && preReleaseVersions != null)
-            {
-                return preReleaseVersions(__value11);
+                return builds(__value1);
             }
 
             return default(TResult);
@@ -891,29 +201,9 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Match(
-            global::System.Action<global::AppStoreConnect.AppEncryptionDeclaration>? appEncryptionDeclarations = null,
-
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
-
             global::System.Action<global::AppStoreConnect.App>? apps = null,
 
-            global::System.Action<global::AppStoreConnect.BetaAppReviewSubmission>? betaAppReviewSubmissions = null,
-
-            global::System.Action<global::AppStoreConnect.BetaBuildLocalization>? betaBuildLocalizations = null,
-
-            global::System.Action<global::AppStoreConnect.BetaGroup>? betaGroups = null,
-
-            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
-
-            global::System.Action<global::AppStoreConnect.BuildBetaDetail>? buildBetaDetails = null,
-
-            global::System.Action<global::AppStoreConnect.BuildBundle>? buildBundles = null,
-
-            global::System.Action<global::AppStoreConnect.BuildIcon>? buildIcons = null,
-
-            global::System.Action<global::AppStoreConnect.BuildUpload>? buildUploads = null,
-
-            global::System.Action<global::AppStoreConnect.PrereleaseVersion>? preReleaseVersions = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -921,53 +211,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppEncryptionDeclarations is { } __value0)
+            if (Apps is { } __value0)
             {
-                appEncryptionDeclarations?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (AppStoreVersions is { } __value1)
+            else if (Builds is { } __value1)
             {
-                appStoreVersions?.Invoke(__value1);
-            }
-            else if (Apps is { } __value2)
-            {
-                apps?.Invoke(__value2);
-            }
-            else if (BetaAppReviewSubmissions is { } __value3)
-            {
-                betaAppReviewSubmissions?.Invoke(__value3);
-            }
-            else if (BetaBuildLocalizations is { } __value4)
-            {
-                betaBuildLocalizations?.Invoke(__value4);
-            }
-            else if (BetaGroups is { } __value5)
-            {
-                betaGroups?.Invoke(__value5);
-            }
-            else if (BetaTesters is { } __value6)
-            {
-                betaTesters?.Invoke(__value6);
-            }
-            else if (BuildBetaDetails is { } __value7)
-            {
-                buildBetaDetails?.Invoke(__value7);
-            }
-            else if (BuildBundles is { } __value8)
-            {
-                buildBundles?.Invoke(__value8);
-            }
-            else if (BuildIcons is { } __value9)
-            {
-                buildIcons?.Invoke(__value9);
-            }
-            else if (BuildUploads is { } __value10)
-            {
-                buildUploads?.Invoke(__value10);
-            }
-            else if (PreReleaseVersions is { } __value11)
-            {
-                preReleaseVersions?.Invoke(__value11);
+                builds?.Invoke(__value1);
             }
         }
 
@@ -975,18 +225,8 @@ namespace AppStoreConnect
         ///
         /// </summary>
         public void Switch(
-            global::System.Action<global::AppStoreConnect.AppEncryptionDeclaration>? appEncryptionDeclarations = null,
-            global::System.Action<global::AppStoreConnect.AppStoreVersion>? appStoreVersions = null,
             global::System.Action<global::AppStoreConnect.App>? apps = null,
-            global::System.Action<global::AppStoreConnect.BetaAppReviewSubmission>? betaAppReviewSubmissions = null,
-            global::System.Action<global::AppStoreConnect.BetaBuildLocalization>? betaBuildLocalizations = null,
-            global::System.Action<global::AppStoreConnect.BetaGroup>? betaGroups = null,
-            global::System.Action<global::AppStoreConnect.BetaTester>? betaTesters = null,
-            global::System.Action<global::AppStoreConnect.BuildBetaDetail>? buildBetaDetails = null,
-            global::System.Action<global::AppStoreConnect.BuildBundle>? buildBundles = null,
-            global::System.Action<global::AppStoreConnect.BuildIcon>? buildIcons = null,
-            global::System.Action<global::AppStoreConnect.BuildUpload>? buildUploads = null,
-            global::System.Action<global::AppStoreConnect.PrereleaseVersion>? preReleaseVersions = null,
+            global::System.Action<global::AppStoreConnect.Build>? builds = null,
             bool validate = true)
         {
             if (validate)
@@ -994,53 +234,13 @@ namespace AppStoreConnect
                 Validate();
             }
 
-            if (AppEncryptionDeclarations is { } __value0)
+            if (Apps is { } __value0)
             {
-                appEncryptionDeclarations?.Invoke(__value0);
+                apps?.Invoke(__value0);
             }
-            else if (AppStoreVersions is { } __value1)
+            else if (Builds is { } __value1)
             {
-                appStoreVersions?.Invoke(__value1);
-            }
-            else if (Apps is { } __value2)
-            {
-                apps?.Invoke(__value2);
-            }
-            else if (BetaAppReviewSubmissions is { } __value3)
-            {
-                betaAppReviewSubmissions?.Invoke(__value3);
-            }
-            else if (BetaBuildLocalizations is { } __value4)
-            {
-                betaBuildLocalizations?.Invoke(__value4);
-            }
-            else if (BetaGroups is { } __value5)
-            {
-                betaGroups?.Invoke(__value5);
-            }
-            else if (BetaTesters is { } __value6)
-            {
-                betaTesters?.Invoke(__value6);
-            }
-            else if (BuildBetaDetails is { } __value7)
-            {
-                buildBetaDetails?.Invoke(__value7);
-            }
-            else if (BuildBundles is { } __value8)
-            {
-                buildBundles?.Invoke(__value8);
-            }
-            else if (BuildIcons is { } __value9)
-            {
-                buildIcons?.Invoke(__value9);
-            }
-            else if (BuildUploads is { } __value10)
-            {
-                buildUploads?.Invoke(__value10);
-            }
-            else if (PreReleaseVersions is { } __value11)
-            {
-                preReleaseVersions?.Invoke(__value11);
+                builds?.Invoke(__value1);
             }
         }
 
@@ -1051,30 +251,10 @@ namespace AppStoreConnect
         {
             var fields = new object?[]
             {
-                AppEncryptionDeclarations,
-                typeof(global::AppStoreConnect.AppEncryptionDeclaration),
-                AppStoreVersions,
-                typeof(global::AppStoreConnect.AppStoreVersion),
                 Apps,
                 typeof(global::AppStoreConnect.App),
-                BetaAppReviewSubmissions,
-                typeof(global::AppStoreConnect.BetaAppReviewSubmission),
-                BetaBuildLocalizations,
-                typeof(global::AppStoreConnect.BetaBuildLocalization),
-                BetaGroups,
-                typeof(global::AppStoreConnect.BetaGroup),
-                BetaTesters,
-                typeof(global::AppStoreConnect.BetaTester),
-                BuildBetaDetails,
-                typeof(global::AppStoreConnect.BuildBetaDetail),
-                BuildBundles,
-                typeof(global::AppStoreConnect.BuildBundle),
-                BuildIcons,
-                typeof(global::AppStoreConnect.BuildIcon),
-                BuildUploads,
-                typeof(global::AppStoreConnect.BuildUpload),
-                PreReleaseVersions,
-                typeof(global::AppStoreConnect.PrereleaseVersion),
+                Builds,
+                typeof(global::AppStoreConnect.Build),
             };
             const int offset = unchecked((int)2166136261);
             const int prime = 16777619;
@@ -1091,18 +271,8 @@ namespace AppStoreConnect
         public bool Equals(IncludedItem64 other)
         {
             return
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppEncryptionDeclaration?>.Default.Equals(AppEncryptionDeclarations, other.AppEncryptionDeclarations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.AppStoreVersion?>.Default.Equals(AppStoreVersions, other.AppStoreVersions) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.App?>.Default.Equals(Apps, other.Apps) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaAppReviewSubmission?>.Default.Equals(BetaAppReviewSubmissions, other.BetaAppReviewSubmissions) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaBuildLocalization?>.Default.Equals(BetaBuildLocalizations, other.BetaBuildLocalizations) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaGroup?>.Default.Equals(BetaGroups, other.BetaGroups) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BetaTester?>.Default.Equals(BetaTesters, other.BetaTesters) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BuildBetaDetail?>.Default.Equals(BuildBetaDetails, other.BuildBetaDetails) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BuildBundle?>.Default.Equals(BuildBundles, other.BuildBundles) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BuildIcon?>.Default.Equals(BuildIcons, other.BuildIcons) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.BuildUpload?>.Default.Equals(BuildUploads, other.BuildUploads) &&
-                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.PrereleaseVersion?>.Default.Equals(PreReleaseVersions, other.PreReleaseVersions)
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.Build?>.Default.Equals(Builds, other.Builds)
                 ;
         }
 
