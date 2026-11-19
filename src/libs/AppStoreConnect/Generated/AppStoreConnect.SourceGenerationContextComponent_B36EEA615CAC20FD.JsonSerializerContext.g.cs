@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.MarketplaceSearchDetailType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0480.Create_MarketplaceSearchDetailType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0481.Create_MarketplaceSearchDetailType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.MarketplaceSearchDetailType?))
                 {

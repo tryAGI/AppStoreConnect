@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppPriceScheduleManualPricesLinkagesResponseDataItemType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0109.Create_AppPriceScheduleManualPricesLinkagesResponseDataItemType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0110.Create_AppPriceScheduleManualPricesLinkagesResponseDataItemType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppPriceScheduleManualPricesLinkagesResponseDataItemType?))
                 {

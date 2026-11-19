@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppClipAdvancedExperienceCreateRequestDataAttributesPlaceMapAction))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0044.Create_AppClipAdvancedExperienceCreateRequestDataAttributesPlaceMapAction2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0045.Create_AppClipAdvancedExperienceCreateRequestDataAttributesPlaceMapAction2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppClipAdvancedExperienceCreateRequestDataAttributesPlaceMapAction?))
                 {

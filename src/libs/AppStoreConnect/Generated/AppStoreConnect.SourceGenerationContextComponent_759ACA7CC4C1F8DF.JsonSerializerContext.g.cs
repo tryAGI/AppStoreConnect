@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ScmRepositoriesGitReferencesGetToManyRelatedFieldsScmRepositorie))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0823.Create_ScmRepositoriesGitReferencesGetToManyRelatedFieldsScmRepositorie2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0825.Create_ScmRepositoriesGitReferencesGetToManyRelatedFieldsScmRepositorie2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.ScmRepositoriesGitReferencesGetToManyRelatedFieldsScmRepositorie?))
                 {

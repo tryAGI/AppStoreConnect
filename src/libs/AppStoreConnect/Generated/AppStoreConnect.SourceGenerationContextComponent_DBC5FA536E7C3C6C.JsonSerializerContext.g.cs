@@ -33,7 +33,7 @@ namespace AppStoreConnect
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::AppStoreConnect.SubscriptionAvailabilityAvailableTerritoriesLinkagesResponseDataItemType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1235.Create_SubscriptionAvailabilityAvailableTerritoriesLinkagesResponseDataItemType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1240.Create_SubscriptionAvailabilityAvailableTerritoriesLinkagesResponseDataItemType2(options);
                 }
                 #pragma warning restore CS0618
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.

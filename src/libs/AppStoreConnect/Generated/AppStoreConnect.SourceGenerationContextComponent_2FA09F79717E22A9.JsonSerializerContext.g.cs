@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.RetentionMessagesSubscriptionsGetToManyRelatedFilterStateItem))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0800.Create_RetentionMessagesSubscriptionsGetToManyRelatedFilterStateItem2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0802.Create_RetentionMessagesSubscriptionsGetToManyRelatedFilterStateItem2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.RetentionMessagesSubscriptionsGetToManyRelatedFilterStateItem?))
                 {

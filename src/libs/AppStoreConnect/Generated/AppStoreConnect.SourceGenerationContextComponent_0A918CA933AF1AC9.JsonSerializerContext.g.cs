@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.PassTypeIdsCertificatesGetToManyRelatedSortItem))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0782.Create_PassTypeIdsCertificatesGetToManyRelatedSortItem2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0784.Create_PassTypeIdsCertificatesGetToManyRelatedSortItem2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.PassTypeIdsCertificatesGetToManyRelatedSortItem?))
                 {

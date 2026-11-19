@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppInfoSecondaryCategoryLinkageResponseDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0096.Create_AppInfoSecondaryCategoryLinkageResponseDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0097.Create_AppInfoSecondaryCategoryLinkageResponseDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppInfoSecondaryCategoryLinkageResponseDataType?))
                 {

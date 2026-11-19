@@ -55,6 +55,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        SubscriptionPriceTiers,
+        /// <summary>
+        ///
+        /// </summary>
         SubscriptionPrices,
         /// <summary>
         ///
@@ -93,6 +97,7 @@ namespace AppStoreConnect
                 SubscriptionsResponseIncludedItemDiscriminatorType.SubscriptionLocalizations => "subscriptionLocalizations",
                 SubscriptionsResponseIncludedItemDiscriminatorType.SubscriptionOfferCodes => "subscriptionOfferCodes",
                 SubscriptionsResponseIncludedItemDiscriminatorType.SubscriptionPlanAvailabilities => "subscriptionPlanAvailabilities",
+                SubscriptionsResponseIncludedItemDiscriminatorType.SubscriptionPriceTiers => "subscriptionPriceTiers",
                 SubscriptionsResponseIncludedItemDiscriminatorType.SubscriptionPrices => "subscriptionPrices",
                 SubscriptionsResponseIncludedItemDiscriminatorType.SubscriptionPromotionalOffers => "subscriptionPromotionalOffers",
                 SubscriptionsResponseIncludedItemDiscriminatorType.SubscriptionVersions => "subscriptionVersions",
@@ -118,6 +123,7 @@ namespace AppStoreConnect
                 "subscriptionLocalizations" => SubscriptionsResponseIncludedItemDiscriminatorType.SubscriptionLocalizations,
                 "subscriptionOfferCodes" => SubscriptionsResponseIncludedItemDiscriminatorType.SubscriptionOfferCodes,
                 "subscriptionPlanAvailabilities" => SubscriptionsResponseIncludedItemDiscriminatorType.SubscriptionPlanAvailabilities,
+                "subscriptionPriceTiers" => SubscriptionsResponseIncludedItemDiscriminatorType.SubscriptionPriceTiers,
                 "subscriptionPrices" => SubscriptionsResponseIncludedItemDiscriminatorType.SubscriptionPrices,
                 "subscriptionPromotionalOffers" => SubscriptionsResponseIncludedItemDiscriminatorType.SubscriptionPromotionalOffers,
                 "subscriptionVersions" => SubscriptionsResponseIncludedItemDiscriminatorType.SubscriptionVersions,

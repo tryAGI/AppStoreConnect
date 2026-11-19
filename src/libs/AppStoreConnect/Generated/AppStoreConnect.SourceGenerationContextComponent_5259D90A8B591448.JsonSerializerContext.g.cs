@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.GameCenterDetailsGetInstanceFieldsGameCenterAppVersion?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0655.Create_NullableGameCenterDetailsGetInstanceFieldsGameCenterAppVersion2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0656.Create_NullableGameCenterDetailsGetInstanceFieldsGameCenterAppVersion2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

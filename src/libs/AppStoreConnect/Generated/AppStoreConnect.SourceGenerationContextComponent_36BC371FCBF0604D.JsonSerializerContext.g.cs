@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.PerfPowerMetricAttributesPlatform))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0783.Create_PerfPowerMetricAttributesPlatform2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0785.Create_PerfPowerMetricAttributesPlatform2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.PerfPowerMetricAttributesPlatform?))
                 {

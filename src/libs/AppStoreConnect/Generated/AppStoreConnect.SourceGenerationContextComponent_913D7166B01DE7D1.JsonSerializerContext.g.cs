@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.PerformanceOverviewType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0783.Create_PerformanceOverviewType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0785.Create_PerformanceOverviewType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.PerformanceOverviewType?))
                 {

@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ScmRepositoryPullRequestsLinkagesResponseDataItemType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0824.Create_ScmRepositoryPullRequestsLinkagesResponseDataItemType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0826.Create_ScmRepositoryPullRequestsLinkagesResponseDataItemType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.ScmRepositoryPullRequestsLinkagesResponseDataItemType?))
                 {

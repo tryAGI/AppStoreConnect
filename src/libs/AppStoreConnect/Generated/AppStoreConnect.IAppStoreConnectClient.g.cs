@@ -967,7 +967,22 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        public SubscriptionPriceChangePreviewsClient SubscriptionPriceChangePreviews { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
         public SubscriptionPricePointsClient SubscriptionPricePoints { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public SubscriptionPriceTierEqualizationsClient SubscriptionPriceTierEqualizations { get; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public SubscriptionPriceTiersClient SubscriptionPriceTiers { get; }
 
         /// <summary>
         ///

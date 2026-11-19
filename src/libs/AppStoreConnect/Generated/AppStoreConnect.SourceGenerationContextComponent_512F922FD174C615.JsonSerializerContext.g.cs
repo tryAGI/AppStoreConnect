@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.RetentionMessageVersionLocalizationsLinkagesResponseDataItemType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0796.Create_RetentionMessageVersionLocalizationsLinkagesResponseDataItemType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0798.Create_RetentionMessageVersionLocalizationsLinkagesResponseDataItemType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.RetentionMessageVersionLocalizationsLinkagesResponseDataItemType?))
                 {

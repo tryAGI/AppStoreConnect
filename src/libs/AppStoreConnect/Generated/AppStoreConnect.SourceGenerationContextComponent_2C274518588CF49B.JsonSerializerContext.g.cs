@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SubscriptionGroupsSubscriptionsGetToManyRelatedFieldsSubscriptionGroup))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1247.Create_SubscriptionGroupsSubscriptionsGetToManyRelatedFieldsSubscriptionGroup2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1252.Create_SubscriptionGroupsSubscriptionsGetToManyRelatedFieldsSubscriptionGroup2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.SubscriptionGroupsSubscriptionsGetToManyRelatedFieldsSubscriptionGroup?))
                 {

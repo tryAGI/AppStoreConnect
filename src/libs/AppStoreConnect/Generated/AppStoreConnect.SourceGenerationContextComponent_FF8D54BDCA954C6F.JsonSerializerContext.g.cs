@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CiXcodeVersionsGetCollectionFieldsCiMacOsVersion))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0270.Create_CiXcodeVersionsGetCollectionFieldsCiMacOsVersion2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0271.Create_CiXcodeVersionsGetCollectionFieldsCiMacOsVersion2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.CiXcodeVersionsGetCollectionFieldsCiMacOsVersion?))
                 {

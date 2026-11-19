@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.AppsGetCollectionFieldsBetaAppLocalization?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0570.Create_NullableAppsGetCollectionFieldsBetaAppLocalization2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0571.Create_NullableAppsGetCollectionFieldsBetaAppLocalization2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

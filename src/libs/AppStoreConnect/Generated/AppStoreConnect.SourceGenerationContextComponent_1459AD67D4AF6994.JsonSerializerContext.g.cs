@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.OfferCodeEnvironment))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0780.Create_OfferCodeEnvironment2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0782.Create_OfferCodeEnvironment2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.OfferCodeEnvironment?))
                 {

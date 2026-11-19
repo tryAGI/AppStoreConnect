@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.AppPriceSchedulesManualPricesGetToManyRelatedFieldsAppPricePoint?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0538.Create_NullableAppPriceSchedulesManualPricesGetToManyRelatedFieldsAppPricePoint2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0539.Create_NullableAppPriceSchedulesManualPricesGetToManyRelatedFieldsAppPricePoint2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

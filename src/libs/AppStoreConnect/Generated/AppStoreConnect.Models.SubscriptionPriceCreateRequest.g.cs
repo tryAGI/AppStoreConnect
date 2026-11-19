@@ -16,6 +16,12 @@ namespace AppStoreConnect
         public required global::AppStoreConnect.SubscriptionPriceCreateRequestData Data { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("included")]
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionPriceTierInlineCreate>? Included { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -25,13 +31,16 @@ namespace AppStoreConnect
         /// Initializes a new instance of the <see cref="SubscriptionPriceCreateRequest" /> class.
         /// </summary>
         /// <param name="data"></param>
+        /// <param name="included"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SubscriptionPriceCreateRequest(
-            global::AppStoreConnect.SubscriptionPriceCreateRequestData data)
+            global::AppStoreConnect.SubscriptionPriceCreateRequestData data,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionPriceTierInlineCreate>? included)
         {
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
+            this.Included = included;
         }
 
         /// <summary>

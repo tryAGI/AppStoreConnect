@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.CustomerReviewResponseV1AttributesState?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0620.Create_NullableCustomerReviewResponseV1AttributesState2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0621.Create_NullableCustomerReviewResponseV1AttributesState2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

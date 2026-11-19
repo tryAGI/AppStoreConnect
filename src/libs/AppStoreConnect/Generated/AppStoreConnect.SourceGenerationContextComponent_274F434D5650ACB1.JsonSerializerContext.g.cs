@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ReviewSubmissionResponseIncludedItemDiscriminator))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0814.Create_ReviewSubmissionResponseIncludedItemDiscriminator(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0816.Create_ReviewSubmissionResponseIncludedItemDiscriminator(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

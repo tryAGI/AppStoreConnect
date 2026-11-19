@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsAndroidToIosAppMappingDetail?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0613.Create_NullableCiProductsAppGetToOneRelatedFieldsAndroidToIosAppMappingDetail2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0614.Create_NullableCiProductsAppGetToOneRelatedFieldsAndroidToIosAppMappingDetail2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

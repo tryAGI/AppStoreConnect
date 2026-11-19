@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SandboxTesterV2UpdateRequestDataAttributesSubscriptionRenewalRate))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0819.Create_SandboxTesterV2UpdateRequestDataAttributesSubscriptionRenewalRate2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0821.Create_SandboxTesterV2UpdateRequestDataAttributesSubscriptionRenewalRate2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.SandboxTesterV2UpdateRequestDataAttributesSubscriptionRenewalRate?))
                 {

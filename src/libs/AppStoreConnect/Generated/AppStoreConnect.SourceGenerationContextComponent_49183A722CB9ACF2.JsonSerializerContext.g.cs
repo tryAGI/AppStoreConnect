@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.TerritoryAvailabilityUpdateRequest))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1297.Create_TerritoryAvailabilityUpdateRequest(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1306.Create_TerritoryAvailabilityUpdateRequest(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

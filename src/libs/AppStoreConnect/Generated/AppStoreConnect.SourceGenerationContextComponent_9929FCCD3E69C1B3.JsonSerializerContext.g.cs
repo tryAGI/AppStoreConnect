@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BuildRelationshipsBuildUploadDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0229.Create_BuildRelationshipsBuildUploadDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0230.Create_BuildRelationshipsBuildUploadDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.BuildRelationshipsBuildUploadDataType?))
                 {

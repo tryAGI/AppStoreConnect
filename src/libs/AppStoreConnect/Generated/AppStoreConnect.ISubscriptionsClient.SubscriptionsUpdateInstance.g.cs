@@ -44,7 +44,7 @@ namespace AppStoreConnect
         global::System.Threading.Tasks.Task<global::AppStoreConnect.SubscriptionResponse> SubscriptionsUpdateInstanceAsync(
             string id,
             global::AppStoreConnect.SubscriptionUpdateRequestData data,
-            global::System.Collections.Generic.IList<global::AppStoreConnect.OneOf<global::AppStoreConnect.SubscriptionPromotionalOfferInlineCreate, global::AppStoreConnect.SubscriptionPriceInlineCreate, global::AppStoreConnect.SubscriptionIntroductoryOfferInlineCreate>>? included = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.OneOf<global::AppStoreConnect.SubscriptionPriceTierInlineCreate, global::AppStoreConnect.SubscriptionPromotionalOfferInlineCreate, global::AppStoreConnect.SubscriptionPriceInlineCreate, global::AppStoreConnect.SubscriptionIntroductoryOfferInlineCreate>>? included = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

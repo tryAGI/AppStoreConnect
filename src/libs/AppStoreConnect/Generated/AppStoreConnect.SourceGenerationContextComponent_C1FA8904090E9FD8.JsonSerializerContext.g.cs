@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppsAppCustomProductPagesGetToManyRelatedFieldsAppCustomProductPage))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0165.Create_AppsAppCustomProductPagesGetToManyRelatedFieldsAppCustomProductPage2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0166.Create_AppsAppCustomProductPagesGetToManyRelatedFieldsAppCustomProductPage2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppsAppCustomProductPagesGetToManyRelatedFieldsAppCustomProductPage?))
                 {

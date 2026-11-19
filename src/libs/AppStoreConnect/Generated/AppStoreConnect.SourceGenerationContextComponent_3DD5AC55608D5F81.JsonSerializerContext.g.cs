@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.AppsBackgroundAssetsGetToManyRelatedFieldsBackgroundAsset?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0565.Create_NullableAppsBackgroundAssetsGetToManyRelatedFieldsBackgroundAsset2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0566.Create_NullableAppsBackgroundAssetsGetToManyRelatedFieldsBackgroundAsset2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

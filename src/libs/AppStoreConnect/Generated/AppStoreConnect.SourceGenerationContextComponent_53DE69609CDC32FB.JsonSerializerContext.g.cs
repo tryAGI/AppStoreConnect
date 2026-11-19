@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.PagingInformationPaging))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0780.Create_PagingInformationPaging(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0782.Create_PagingInformationPaging(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

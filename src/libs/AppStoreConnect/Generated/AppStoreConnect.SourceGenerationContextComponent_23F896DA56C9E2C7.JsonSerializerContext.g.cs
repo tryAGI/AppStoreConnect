@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.PromotedPurchasesGetInstanceIncludeItem))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0792.Create_PromotedPurchasesGetInstanceIncludeItem2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0794.Create_PromotedPurchasesGetInstanceIncludeItem2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.PromotedPurchasesGetInstanceIncludeItem?))
                 {

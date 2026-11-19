@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.BuildBundleFileSizeType?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0595.Create_NullableBuildBundleFileSizeType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0596.Create_NullableBuildBundleFileSizeType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

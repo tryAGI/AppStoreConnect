@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ProfilesGetCollectionFieldsProfile))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0789.Create_ProfilesGetCollectionFieldsProfile2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0791.Create_ProfilesGetCollectionFieldsProfile2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.ProfilesGetCollectionFieldsProfile?))
                 {

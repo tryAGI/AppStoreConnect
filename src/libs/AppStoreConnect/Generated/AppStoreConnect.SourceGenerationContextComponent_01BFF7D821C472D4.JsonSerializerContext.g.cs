@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BundleIdsGetCollectionFieldsBundleId))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0242.Create_BundleIdsGetCollectionFieldsBundleId2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0243.Create_BundleIdsGetCollectionFieldsBundleId2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.BundleIdsGetCollectionFieldsBundleId?))
                 {

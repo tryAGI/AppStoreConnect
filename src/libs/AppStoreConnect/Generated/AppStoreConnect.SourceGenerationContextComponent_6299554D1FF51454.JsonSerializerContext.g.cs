@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SubscriptionAttributesMultiSeatStatus))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1235.Create_SubscriptionAttributesMultiSeatStatus2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1239.Create_SubscriptionAttributesMultiSeatStatus2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.SubscriptionAttributesMultiSeatStatus?))
                 {

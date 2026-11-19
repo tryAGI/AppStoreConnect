@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.AppScreenshotType?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0542.Create_NullableAppScreenshotType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0543.Create_NullableAppScreenshotType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

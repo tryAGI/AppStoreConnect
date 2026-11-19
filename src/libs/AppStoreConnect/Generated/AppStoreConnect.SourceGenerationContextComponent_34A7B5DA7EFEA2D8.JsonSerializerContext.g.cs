@@ -31,11 +31,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::System.Collections.Generic.IList<global::AppStoreConnect.GameCenterDetailsGetInstanceFieldsGameCenterAchievementRelease>))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0906.Create_SourceGenerationContextMetadataType_34A7B5DA7EFEA2D8(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0908.Create_SourceGenerationContextMetadataType_34A7B5DA7EFEA2D8(options);
                 }
                 if (type == typeof(global::System.Collections.Generic.List<global::AppStoreConnect.GameCenterDetailsGetInstanceFieldsGameCenterAchievementRelease>))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0921.Create_SourceGenerationContextMetadataType_3D9047100B841B60(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0923.Create_SourceGenerationContextMetadataType_3D9047100B841B60(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

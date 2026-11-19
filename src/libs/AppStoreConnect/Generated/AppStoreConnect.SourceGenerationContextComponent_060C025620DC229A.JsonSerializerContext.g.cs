@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ScmProvidersGetInstanceFieldsScmProvider))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0821.Create_ScmProvidersGetInstanceFieldsScmProvider2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0823.Create_ScmProvidersGetInstanceFieldsScmProvider2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.ScmProvidersGetInstanceFieldsScmProvider?))
                 {

@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SubscriptionPlanType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1269.Create_SubscriptionPlanType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1274.Create_SubscriptionPlanType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.SubscriptionPlanType?))
                 {

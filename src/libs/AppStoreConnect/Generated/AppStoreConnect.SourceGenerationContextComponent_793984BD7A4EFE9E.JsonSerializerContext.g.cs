@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BackgroundAssetsVersionsGetToManyRelatedFieldsBackgroundAssetVersionInternalBetaRelease))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0190.Create_BackgroundAssetsVersionsGetToManyRelatedFieldsBackgroundAssetVersionInternalBetaRelease2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0191.Create_BackgroundAssetsVersionsGetToManyRelatedFieldsBackgroundAssetVersionInternalBetaRelease2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.BackgroundAssetsVersionsGetToManyRelatedFieldsBackgroundAssetVersionInternalBetaRelease?))
                 {

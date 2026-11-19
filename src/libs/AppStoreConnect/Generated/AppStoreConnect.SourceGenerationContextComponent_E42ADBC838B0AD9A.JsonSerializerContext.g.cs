@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.CiWorkflowsBuildRunsGetToManyRelatedFieldsBuild?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0618.Create_NullableCiWorkflowsBuildRunsGetToManyRelatedFieldsBuild2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0619.Create_NullableCiWorkflowsBuildRunsGetToManyRelatedFieldsBuild2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -1705,7 +1705,34 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        public SubscriptionPriceChangePreviewsClient SubscriptionPriceChangePreviews => new SubscriptionPriceChangePreviewsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
+        ///
+        /// </summary>
         public SubscriptionPricePointsClient SubscriptionPricePoints => new SubscriptionPricePointsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
+        ///
+        /// </summary>
+        public SubscriptionPriceTierEqualizationsClient SubscriptionPriceTierEqualizations => new SubscriptionPriceTierEqualizationsClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
+        {
+            ReadResponseAsString = ReadResponseAsString,
+            JsonSerializerContextProvider = JsonSerializerContextProvider,
+        };
+
+        /// <summary>
+        ///
+        /// </summary>
+        public SubscriptionPriceTiersClient SubscriptionPriceTiers => new SubscriptionPriceTiersClient(HttpClient, baseUri: null, authorizations: Authorizations, options: Options)
         {
             ReadResponseAsString = ReadResponseAsString,
             JsonSerializerContextProvider = JsonSerializerContextProvider,

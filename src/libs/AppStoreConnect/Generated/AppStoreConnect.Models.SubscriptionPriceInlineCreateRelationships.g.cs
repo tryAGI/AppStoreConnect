@@ -27,6 +27,12 @@ namespace AppStoreConnect
         public global::AppStoreConnect.SubscriptionPriceInlineCreateRelationshipsSubscriptionPricePoint? SubscriptionPricePoint { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("additionalPriceTiers")]
+        public global::AppStoreConnect.SubscriptionPriceInlineCreateRelationshipsAdditionalPriceTiers? AdditionalPriceTiers { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -38,17 +44,20 @@ namespace AppStoreConnect
         /// <param name="subscription"></param>
         /// <param name="territory"></param>
         /// <param name="subscriptionPricePoint"></param>
+        /// <param name="additionalPriceTiers"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SubscriptionPriceInlineCreateRelationships(
             global::AppStoreConnect.SubscriptionPriceInlineCreateRelationshipsSubscription? subscription,
             global::AppStoreConnect.SubscriptionPriceInlineCreateRelationshipsTerritory? territory,
-            global::AppStoreConnect.SubscriptionPriceInlineCreateRelationshipsSubscriptionPricePoint? subscriptionPricePoint)
+            global::AppStoreConnect.SubscriptionPriceInlineCreateRelationshipsSubscriptionPricePoint? subscriptionPricePoint,
+            global::AppStoreConnect.SubscriptionPriceInlineCreateRelationshipsAdditionalPriceTiers? additionalPriceTiers)
         {
             this.Subscription = subscription;
             this.Territory = territory;
             this.SubscriptionPricePoint = subscriptionPricePoint;
+            this.AdditionalPriceTiers = additionalPriceTiers;
         }
 
         /// <summary>

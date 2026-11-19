@@ -155,6 +155,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        GroupPurchaseInvitationMode,
+        /// <summary>
+        ///
+        /// </summary>
         InAppPurchases,
         /// <summary>
         ///
@@ -290,6 +294,7 @@ namespace AppStoreConnect
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.EndUserLicenseAgreement => "endUserLicenseAgreement",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.GameCenterDetail => "gameCenterDetail",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.GameCenterEnabledVersions => "gameCenterEnabledVersions",
+                AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.GroupPurchaseInvitationMode => "groupPurchaseInvitationMode",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.InAppPurchases => "inAppPurchases",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.InAppPurchasesV2 => "inAppPurchasesV2",
                 AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.IsOrEverWasMadeForKids => "isOrEverWasMadeForKids",
@@ -358,6 +363,7 @@ namespace AppStoreConnect
                 "endUserLicenseAgreement" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.EndUserLicenseAgreement,
                 "gameCenterDetail" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.GameCenterDetail,
                 "gameCenterEnabledVersions" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.GameCenterEnabledVersions,
+                "groupPurchaseInvitationMode" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.GroupPurchaseInvitationMode,
                 "inAppPurchases" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.InAppPurchases,
                 "inAppPurchasesV2" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.InAppPurchasesV2,
                 "isOrEverWasMadeForKids" => AppClipDefaultExperiencesReleaseWithAppStoreVersionGetToOneRelatedFieldsApp.IsOrEverWasMadeForKids,

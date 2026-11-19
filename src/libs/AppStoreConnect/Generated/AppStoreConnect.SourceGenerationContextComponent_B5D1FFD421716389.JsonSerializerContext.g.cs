@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppStoreVersionCreateRequestDataRelationshipsAppStoreVersionLocalizationsDataItemType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0131.Create_AppStoreVersionCreateRequestDataRelationshipsAppStoreVersionLocalizationsDataItemType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0132.Create_AppStoreVersionCreateRequestDataRelationshipsAppStoreVersionLocalizationsDataItemType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppStoreVersionCreateRequestDataRelationshipsAppStoreVersionLocalizationsDataItemType?))
                 {

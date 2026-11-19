@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.GameCenterActivityVersionInlineCreateType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0312.Create_GameCenterActivityVersionInlineCreateType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0313.Create_GameCenterActivityVersionInlineCreateType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.GameCenterActivityVersionInlineCreateType?))
                 {

@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.AppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseVersion?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0574.Create_NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseVersion2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0575.Create_NullableAppsInAppPurchasesV2GetToManyRelatedFieldsInAppPurchaseVersion2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

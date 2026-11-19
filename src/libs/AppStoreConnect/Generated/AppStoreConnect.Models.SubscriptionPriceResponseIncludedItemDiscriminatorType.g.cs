@@ -15,6 +15,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        SubscriptionPriceTiers,
+        /// <summary>
+        ///
+        /// </summary>
         Territories,
     }
 
@@ -31,6 +35,7 @@ namespace AppStoreConnect
             return value switch
             {
                 SubscriptionPriceResponseIncludedItemDiscriminatorType.SubscriptionPricePoints => "subscriptionPricePoints",
+                SubscriptionPriceResponseIncludedItemDiscriminatorType.SubscriptionPriceTiers => "subscriptionPriceTiers",
                 SubscriptionPriceResponseIncludedItemDiscriminatorType.Territories => "territories",
                 _ => throw new global::System.ArgumentOutOfRangeException(nameof(value), value, null),
             };
@@ -43,6 +48,7 @@ namespace AppStoreConnect
             return value switch
             {
                 "subscriptionPricePoints" => SubscriptionPriceResponseIncludedItemDiscriminatorType.SubscriptionPricePoints,
+                "subscriptionPriceTiers" => SubscriptionPriceResponseIncludedItemDiscriminatorType.SubscriptionPriceTiers,
                 "territories" => SubscriptionPriceResponseIncludedItemDiscriminatorType.Territories,
                 _ => null,
             };

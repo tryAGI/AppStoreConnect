@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppEventScreenshotType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0087.Create_AppEventScreenshotType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0088.Create_AppEventScreenshotType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppEventScreenshotType?))
                 {

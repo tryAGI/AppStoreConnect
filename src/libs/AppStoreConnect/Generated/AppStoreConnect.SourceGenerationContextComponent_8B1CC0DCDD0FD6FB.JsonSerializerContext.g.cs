@@ -32,11 +32,11 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CiFilesAndFoldersRuleMode))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0255.Create_CiFilesAndFoldersRuleMode2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0256.Create_CiFilesAndFoldersRuleMode2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.CiFilesAndFoldersRuleMode?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0611.Create_NullableCiFilesAndFoldersRuleMode2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0612.Create_NullableCiFilesAndFoldersRuleMode2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

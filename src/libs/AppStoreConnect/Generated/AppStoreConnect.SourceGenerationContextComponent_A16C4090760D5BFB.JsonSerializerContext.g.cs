@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BuildBetaDetailsBuildGetToOneRelatedFieldsApp))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0221.Create_BuildBetaDetailsBuildGetToOneRelatedFieldsApp2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0222.Create_BuildBetaDetailsBuildGetToOneRelatedFieldsApp2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.BuildBetaDetailsBuildGetToOneRelatedFieldsApp?))
                 {

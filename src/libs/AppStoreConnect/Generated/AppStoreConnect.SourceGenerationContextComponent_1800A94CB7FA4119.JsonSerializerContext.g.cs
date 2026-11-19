@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppsGameCenterDetailGetToOneRelatedFieldsGameCenterAchievement))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0172.Create_AppsGameCenterDetailGetToOneRelatedFieldsGameCenterAchievement2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0173.Create_AppsGameCenterDetailGetToOneRelatedFieldsGameCenterAchievement2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppsGameCenterDetailGetToOneRelatedFieldsGameCenterAchievement?))
                 {

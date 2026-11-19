@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.MerchantIdsGetInstanceIncludeItem))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0483.Create_MerchantIdsGetInstanceIncludeItem2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0484.Create_MerchantIdsGetInstanceIncludeItem2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.MerchantIdsGetInstanceIncludeItem?))
                 {

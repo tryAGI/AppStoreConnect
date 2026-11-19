@@ -55,6 +55,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        SubscriptionPriceTiers,
+        /// <summary>
+        ///
+        /// </summary>
         SubscriptionPrices,
         /// <summary>
         ///
@@ -93,6 +97,7 @@ namespace AppStoreConnect
                 SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionLocalizations => "subscriptionLocalizations",
                 SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionOfferCodes => "subscriptionOfferCodes",
                 SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionPlanAvailabilities => "subscriptionPlanAvailabilities",
+                SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionPriceTiers => "subscriptionPriceTiers",
                 SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionPrices => "subscriptionPrices",
                 SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionPromotionalOffers => "subscriptionPromotionalOffers",
                 SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionVersions => "subscriptionVersions",
@@ -118,6 +123,7 @@ namespace AppStoreConnect
                 "subscriptionLocalizations" => SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionLocalizations,
                 "subscriptionOfferCodes" => SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionOfferCodes,
                 "subscriptionPlanAvailabilities" => SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionPlanAvailabilities,
+                "subscriptionPriceTiers" => SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionPriceTiers,
                 "subscriptionPrices" => SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionPrices,
                 "subscriptionPromotionalOffers" => SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionPromotionalOffers,
                 "subscriptionVersions" => SubscriptionResponseIncludedItemDiscriminatorType.SubscriptionVersions,

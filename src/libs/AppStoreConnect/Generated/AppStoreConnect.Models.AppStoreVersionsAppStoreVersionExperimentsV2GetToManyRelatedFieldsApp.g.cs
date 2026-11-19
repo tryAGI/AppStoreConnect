@@ -155,6 +155,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        GroupPurchaseInvitationMode,
+        /// <summary>
+        ///
+        /// </summary>
         InAppPurchases,
         /// <summary>
         ///
@@ -290,6 +294,7 @@ namespace AppStoreConnect
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.EndUserLicenseAgreement => "endUserLicenseAgreement",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.GameCenterDetail => "gameCenterDetail",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.GameCenterEnabledVersions => "gameCenterEnabledVersions",
+                AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.GroupPurchaseInvitationMode => "groupPurchaseInvitationMode",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.InAppPurchases => "inAppPurchases",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.InAppPurchasesV2 => "inAppPurchasesV2",
                 AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.IsOrEverWasMadeForKids => "isOrEverWasMadeForKids",
@@ -358,6 +363,7 @@ namespace AppStoreConnect
                 "endUserLicenseAgreement" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.EndUserLicenseAgreement,
                 "gameCenterDetail" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.GameCenterDetail,
                 "gameCenterEnabledVersions" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.GameCenterEnabledVersions,
+                "groupPurchaseInvitationMode" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.GroupPurchaseInvitationMode,
                 "inAppPurchases" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.InAppPurchases,
                 "inAppPurchasesV2" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.InAppPurchasesV2,
                 "isOrEverWasMadeForKids" => AppStoreVersionsAppStoreVersionExperimentsV2GetToManyRelatedFieldsApp.IsOrEverWasMadeForKids,

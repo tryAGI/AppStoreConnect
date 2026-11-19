@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.GameCenterChallengesVersionsGetToManyRelatedFieldsGameCenterChallengeImage))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0332.Create_GameCenterChallengesVersionsGetToManyRelatedFieldsGameCenterChallengeImage2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0333.Create_GameCenterChallengesVersionsGetToManyRelatedFieldsGameCenterChallengeImage2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.GameCenterChallengesVersionsGetToManyRelatedFieldsGameCenterChallengeImage?))
                 {

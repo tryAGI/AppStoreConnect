@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.PreReleaseVersionsGetCollectionFieldsApp))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0783.Create_PreReleaseVersionsGetCollectionFieldsApp2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0785.Create_PreReleaseVersionsGetCollectionFieldsApp2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.PreReleaseVersionsGetCollectionFieldsApp?))
                 {

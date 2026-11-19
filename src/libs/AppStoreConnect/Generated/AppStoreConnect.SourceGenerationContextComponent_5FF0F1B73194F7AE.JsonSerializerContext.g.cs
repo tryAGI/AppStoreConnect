@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.DevicesGetInstanceFieldsDevice?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0622.Create_NullableDevicesGetInstanceFieldsDevice2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0623.Create_NullableDevicesGetInstanceFieldsDevice2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);
