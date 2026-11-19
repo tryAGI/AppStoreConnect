@@ -33,6 +33,12 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("datingAndRelationships")]
+        public bool? DatingAndRelationships { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("gambling")]
         public bool? Gambling { get; set; }
 
@@ -114,6 +120,12 @@ namespace AppStoreConnect
         [global::System.Text.Json.Serialization.JsonPropertyName("sexualContentOrNudity")]
         [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentOrNudityJsonConverter))]
         public global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentOrNudity? SexualContentOrNudity { get; set; }
+
+        /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("sharedLocation")]
+        public bool? SharedLocation { get; set; }
 
         /// <summary>
         ///
@@ -220,6 +232,7 @@ namespace AppStoreConnect
         /// <param name="advertising"></param>
         /// <param name="alcoholTobaccoOrDrugUseOrReferences"></param>
         /// <param name="contests"></param>
+        /// <param name="datingAndRelationships"></param>
         /// <param name="gambling"></param>
         /// <param name="gamblingSimulated"></param>
         /// <param name="gunsOrOtherWeapons"></param>
@@ -233,6 +246,7 @@ namespace AppStoreConnect
         /// <param name="ageAssurance"></param>
         /// <param name="sexualContentGraphicAndNudity"></param>
         /// <param name="sexualContentOrNudity"></param>
+        /// <param name="sharedLocation"></param>
         /// <param name="socialMedia"></param>
         /// <param name="socialMediaAgeRestricted"></param>
         /// <param name="horrorOrFearThemes"></param>
@@ -253,6 +267,7 @@ namespace AppStoreConnect
             bool? advertising,
             global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesAlcoholTobaccoOrDrugUseOrReferences? alcoholTobaccoOrDrugUseOrReferences,
             global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesContests? contests,
+            bool? datingAndRelationships,
             bool? gambling,
             global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesGamblingSimulated? gamblingSimulated,
             global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesGunsOrOtherWeapons? gunsOrOtherWeapons,
@@ -266,6 +281,7 @@ namespace AppStoreConnect
             bool? ageAssurance,
             global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentGraphicAndNudity? sexualContentGraphicAndNudity,
             global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesSexualContentOrNudity? sexualContentOrNudity,
+            bool? sharedLocation,
             bool? socialMedia,
             bool? socialMediaAgeRestricted,
             global::AppStoreConnect.AgeRatingDeclarationUpdateRequestDataAttributesHorrorOrFearThemes? horrorOrFearThemes,
@@ -283,6 +299,7 @@ namespace AppStoreConnect
             this.Advertising = advertising;
             this.AlcoholTobaccoOrDrugUseOrReferences = alcoholTobaccoOrDrugUseOrReferences;
             this.Contests = contests;
+            this.DatingAndRelationships = datingAndRelationships;
             this.Gambling = gambling;
             this.GamblingSimulated = gamblingSimulated;
             this.GunsOrOtherWeapons = gunsOrOtherWeapons;
@@ -296,6 +313,7 @@ namespace AppStoreConnect
             this.AgeAssurance = ageAssurance;
             this.SexualContentGraphicAndNudity = sexualContentGraphicAndNudity;
             this.SexualContentOrNudity = sexualContentOrNudity;
+            this.SharedLocation = sharedLocation;
             this.SocialMedia = socialMedia;
             this.SocialMediaAgeRestricted = socialMediaAgeRestricted;
             this.HorrorOrFearThemes = horrorOrFearThemes;

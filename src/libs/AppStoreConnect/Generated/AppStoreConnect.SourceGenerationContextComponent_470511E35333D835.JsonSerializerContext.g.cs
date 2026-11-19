@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppPreviewRelationshipsAppPreviewSetDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0102.Create_AppPreviewRelationshipsAppPreviewSetDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0103.Create_AppPreviewRelationshipsAppPreviewSetDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppPreviewRelationshipsAppPreviewSetDataType?))
                 {

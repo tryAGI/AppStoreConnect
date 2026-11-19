@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ProfileBundleIdLinkageResponseDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0786.Create_ProfileBundleIdLinkageResponseDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0788.Create_ProfileBundleIdLinkageResponseDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.ProfileBundleIdLinkageResponseDataType?))
                 {

@@ -9,7 +9,7 @@ namespace AppStoreConnect
         internal static readonly global::AppStoreConnect.SourceGenerationContextMetadataScope MetadataScope = new(
                 new SharedMetadataResolver(),
                 new global::System.Func<global::AppStoreConnect.SourceGenerationContextMetadataScope>[] {
-                    static () => global::AppStoreConnect.SourceGenerationContextComponent_11807B2FC9BFFAAC.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_4E8378D165E1A3C4.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_5DBF3454935D8FDC.MetadataScope,
+                    static () => global::AppStoreConnect.SourceGenerationContextComponent_11807B2FC9BFFAAC.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_4E8378D165E1A3C4.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_5DBF3454935D8FDC.MetadataScope,                    static () => global::AppStoreConnect.SourceGenerationContextComponent_DDDBE9CE2709EEC4.MetadataScope,
                 }, ContributeConverters);
         internal static global::System.Text.Json.Serialization.JsonSerializerContext Default => MetadataScope.Default;
 
@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SubscriptionPriceCreateRequestDataRelationships))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1270.Create_SubscriptionPriceCreateRequestDataRelationships(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1275.Create_SubscriptionPriceCreateRequestDataRelationships(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

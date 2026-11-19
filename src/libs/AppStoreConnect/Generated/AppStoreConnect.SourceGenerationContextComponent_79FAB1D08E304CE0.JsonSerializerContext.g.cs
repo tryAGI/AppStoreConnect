@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.AppClipHeaderImageCreateRequestDataType?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0514.Create_NullableAppClipHeaderImageCreateRequestDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0515.Create_NullableAppClipHeaderImageCreateRequestDataType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

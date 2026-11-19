@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BackgroundAssetVersionExternalBetaReleasesGetInstanceIncludeItem))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0186.Create_BackgroundAssetVersionExternalBetaReleasesGetInstanceIncludeItem2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0187.Create_BackgroundAssetVersionExternalBetaReleasesGetInstanceIncludeItem2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.BackgroundAssetVersionExternalBetaReleasesGetInstanceIncludeItem?))
                 {

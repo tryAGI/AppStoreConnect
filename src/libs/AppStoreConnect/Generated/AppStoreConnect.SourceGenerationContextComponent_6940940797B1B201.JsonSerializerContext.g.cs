@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppsGetCollectionFilterReviewSubmissionsPlatformItem))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0175.Create_AppsGetCollectionFilterReviewSubmissionsPlatformItem2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0176.Create_AppsGetCollectionFilterReviewSubmissionsPlatformItem2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppsGetCollectionFilterReviewSubmissionsPlatformItem?))
                 {

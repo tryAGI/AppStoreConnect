@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ReviewSubmissionItemCreateRequestDataRelationshipsGameCenterLeaderboardVersionData))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0808.Create_ReviewSubmissionItemCreateRequestDataRelationshipsGameCenterLeaderboardVersionData(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0810.Create_ReviewSubmissionItemCreateRequestDataRelationshipsGameCenterLeaderboardVersionData(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -155,6 +155,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        GroupPurchaseInvitationMode,
+        /// <summary>
+        ///
+        /// </summary>
         InAppPurchases,
         /// <summary>
         ///
@@ -290,6 +294,7 @@ namespace AppStoreConnect
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.EndUserLicenseAgreement => "endUserLicenseAgreement",
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.GameCenterDetail => "gameCenterDetail",
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.GameCenterEnabledVersions => "gameCenterEnabledVersions",
+                GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.GroupPurchaseInvitationMode => "groupPurchaseInvitationMode",
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.InAppPurchases => "inAppPurchases",
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.InAppPurchasesV2 => "inAppPurchasesV2",
                 GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.IsOrEverWasMadeForKids => "isOrEverWasMadeForKids",
@@ -358,6 +363,7 @@ namespace AppStoreConnect
                 "endUserLicenseAgreement" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.EndUserLicenseAgreement,
                 "gameCenterDetail" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.GameCenterDetail,
                 "gameCenterEnabledVersions" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.GameCenterEnabledVersions,
+                "groupPurchaseInvitationMode" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.GroupPurchaseInvitationMode,
                 "inAppPurchases" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.InAppPurchases,
                 "inAppPurchasesV2" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.InAppPurchasesV2,
                 "isOrEverWasMadeForKids" => GameCenterAppVersionsAppStoreVersionGetToOneRelatedFieldsApp.IsOrEverWasMadeForKids,

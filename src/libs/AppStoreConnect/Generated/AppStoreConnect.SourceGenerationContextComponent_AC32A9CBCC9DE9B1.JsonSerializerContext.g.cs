@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.EndUserLicenseAgreementCreateRequestDataType?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0623.Create_NullableEndUserLicenseAgreementCreateRequestDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0624.Create_NullableEndUserLicenseAgreementCreateRequestDataType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

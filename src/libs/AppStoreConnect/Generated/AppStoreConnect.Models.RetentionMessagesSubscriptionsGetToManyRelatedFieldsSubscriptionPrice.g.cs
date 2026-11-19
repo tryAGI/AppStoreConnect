@@ -11,6 +11,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        AdditionalPriceTiers,
+        /// <summary>
+        ///
+        /// </summary>
         PlanType,
         /// <summary>
         ///
@@ -42,6 +46,7 @@ namespace AppStoreConnect
         {
             return value switch
             {
+                RetentionMessagesSubscriptionsGetToManyRelatedFieldsSubscriptionPrice.AdditionalPriceTiers => "additionalPriceTiers",
                 RetentionMessagesSubscriptionsGetToManyRelatedFieldsSubscriptionPrice.PlanType => "planType",
                 RetentionMessagesSubscriptionsGetToManyRelatedFieldsSubscriptionPrice.Preserved => "preserved",
                 RetentionMessagesSubscriptionsGetToManyRelatedFieldsSubscriptionPrice.StartDate => "startDate",
@@ -57,6 +62,7 @@ namespace AppStoreConnect
         {
             return value switch
             {
+                "additionalPriceTiers" => RetentionMessagesSubscriptionsGetToManyRelatedFieldsSubscriptionPrice.AdditionalPriceTiers,
                 "planType" => RetentionMessagesSubscriptionsGetToManyRelatedFieldsSubscriptionPrice.PlanType,
                 "preserved" => RetentionMessagesSubscriptionsGetToManyRelatedFieldsSubscriptionPrice.Preserved,
                 "startDate" => RetentionMessagesSubscriptionsGetToManyRelatedFieldsSubscriptionPrice.StartDate,

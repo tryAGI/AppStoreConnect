@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.InternalBetaState))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0479.Create_InternalBetaState2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0480.Create_InternalBetaState2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.InternalBetaState?))
                 {

@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SubscriptionImageV2Type))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1250.Create_SubscriptionImageV2Type2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1255.Create_SubscriptionImageV2Type2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.SubscriptionImageV2Type?))
                 {

@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SubscriptionGracePeriodType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1238.Create_SubscriptionGracePeriodType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1242.Create_SubscriptionGracePeriodType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.SubscriptionGracePeriodType?))
                 {

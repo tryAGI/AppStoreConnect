@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BuildAppEncryptionDeclarationLinkageResponseDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0219.Create_BuildAppEncryptionDeclarationLinkageResponseDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0220.Create_BuildAppEncryptionDeclarationLinkageResponseDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.BuildAppEncryptionDeclarationLinkageResponseDataType?))
                 {

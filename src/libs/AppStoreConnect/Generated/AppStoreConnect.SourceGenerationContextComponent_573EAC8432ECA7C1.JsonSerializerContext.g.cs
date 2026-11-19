@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.RetentionOfferUpdateRequestDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0804.Create_RetentionOfferUpdateRequestDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0806.Create_RetentionOfferUpdateRequestDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.RetentionOfferUpdateRequestDataType?))
                 {

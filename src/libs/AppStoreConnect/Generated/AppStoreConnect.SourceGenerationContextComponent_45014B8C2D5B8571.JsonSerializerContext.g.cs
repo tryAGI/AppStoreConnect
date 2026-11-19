@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SubscriptionPlanAvailabilityAvailableTerritoriesLinkagesRequestDataItem))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1267.Create_SubscriptionPlanAvailabilityAvailableTerritoriesLinkagesRequestDataItem(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1272.Create_SubscriptionPlanAvailabilityAvailableTerritoriesLinkagesRequestDataItem(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

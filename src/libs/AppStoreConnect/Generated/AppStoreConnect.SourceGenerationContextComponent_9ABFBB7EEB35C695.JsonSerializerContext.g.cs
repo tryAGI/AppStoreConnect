@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.BuildUploadFileType?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0598.Create_NullableBuildUploadFileType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0599.Create_NullableBuildUploadFileType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

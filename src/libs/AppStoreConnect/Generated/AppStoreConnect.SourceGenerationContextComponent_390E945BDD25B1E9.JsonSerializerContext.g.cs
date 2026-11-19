@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BetaAppClipInvocationType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0193.Create_BetaAppClipInvocationType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0194.Create_BetaAppClipInvocationType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.BetaAppClipInvocationType?))
                 {

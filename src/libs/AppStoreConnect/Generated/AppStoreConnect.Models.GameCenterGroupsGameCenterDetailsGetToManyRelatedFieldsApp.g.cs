@@ -155,6 +155,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        GroupPurchaseInvitationMode,
+        /// <summary>
+        ///
+        /// </summary>
         InAppPurchases,
         /// <summary>
         ///
@@ -290,6 +294,7 @@ namespace AppStoreConnect
                 GameCenterGroupsGameCenterDetailsGetToManyRelatedFieldsApp.EndUserLicenseAgreement => "endUserLicenseAgreement",
                 GameCenterGroupsGameCenterDetailsGetToManyRelatedFieldsApp.GameCenterDetail => "gameCenterDetail",
                 GameCenterGroupsGameCenterDetailsGetToManyRelatedFieldsApp.GameCenterEnabledVersions => "gameCenterEnabledVersions",
+                GameCenterGroupsGameCenterDetailsGetToManyRelatedFieldsApp.GroupPurchaseInvitationMode => "groupPurchaseInvitationMode",
                 GameCenterGroupsGameCenterDetailsGetToManyRelatedFieldsApp.InAppPurchases => "inAppPurchases",
                 GameCenterGroupsGameCenterDetailsGetToManyRelatedFieldsApp.InAppPurchasesV2 => "inAppPurchasesV2",
                 GameCenterGroupsGameCenterDetailsGetToManyRelatedFieldsApp.IsOrEverWasMadeForKids => "isOrEverWasMadeForKids",
@@ -358,6 +363,7 @@ namespace AppStoreConnect
                 "endUserLicenseAgreement" => GameCenterGroupsGameCenterDetailsGetToManyRelatedFieldsApp.EndUserLicenseAgreement,
                 "gameCenterDetail" => GameCenterGroupsGameCenterDetailsGetToManyRelatedFieldsApp.GameCenterDetail,
                 "gameCenterEnabledVersions" => GameCenterGroupsGameCenterDetailsGetToManyRelatedFieldsApp.GameCenterEnabledVersions,
+                "groupPurchaseInvitationMode" => GameCenterGroupsGameCenterDetailsGetToManyRelatedFieldsApp.GroupPurchaseInvitationMode,
                 "inAppPurchases" => GameCenterGroupsGameCenterDetailsGetToManyRelatedFieldsApp.InAppPurchases,
                 "inAppPurchasesV2" => GameCenterGroupsGameCenterDetailsGetToManyRelatedFieldsApp.InAppPurchasesV2,
                 "isOrEverWasMadeForKids" => GameCenterGroupsGameCenterDetailsGetToManyRelatedFieldsApp.IsOrEverWasMadeForKids,

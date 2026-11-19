@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.GameCenterChallengeImageUpdateRequestDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0322.Create_GameCenterChallengeImageUpdateRequestDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0323.Create_GameCenterChallengeImageUpdateRequestDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.GameCenterChallengeImageUpdateRequestDataType?))
                 {

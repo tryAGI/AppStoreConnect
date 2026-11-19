@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppClipAdvancedExperienceType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0047.Create_AppClipAdvancedExperienceType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0048.Create_AppClipAdvancedExperienceType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppClipAdvancedExperienceType?))
                 {

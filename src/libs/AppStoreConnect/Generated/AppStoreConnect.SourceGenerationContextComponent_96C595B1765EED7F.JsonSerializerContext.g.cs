@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.GameCenterGroupsResponseIncludedItemDiscriminatorType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0363.Create_GameCenterGroupsResponseIncludedItemDiscriminatorType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0364.Create_GameCenterGroupsResponseIncludedItemDiscriminatorType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.GameCenterGroupsResponseIncludedItemDiscriminatorType?))
                 {

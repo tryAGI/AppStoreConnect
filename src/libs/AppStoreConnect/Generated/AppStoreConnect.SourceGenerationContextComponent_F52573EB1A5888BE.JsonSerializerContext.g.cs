@@ -33,7 +33,7 @@ namespace AppStoreConnect
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.
                 if (type == typeof(global::AppStoreConnect.GameCenterDetailLeaderboardReleasesLinkagesResponseDataItemType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0337.Create_GameCenterDetailLeaderboardReleasesLinkagesResponseDataItemType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0338.Create_GameCenterDetailLeaderboardReleasesLinkagesResponseDataItemType2(options);
                 }
                 #pragma warning restore CS0618
                 #pragma warning disable CS0618 // Metadata references a deprecated API model.

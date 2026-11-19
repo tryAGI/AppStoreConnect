@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.PassTypeIdUpdateRequestDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0782.Create_PassTypeIdUpdateRequestDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0784.Create_PassTypeIdUpdateRequestDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.PassTypeIdUpdateRequestDataType?))
                 {

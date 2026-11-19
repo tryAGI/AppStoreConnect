@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ScmPullRequest))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0821.Create_ScmPullRequest(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0823.Create_ScmPullRequest(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

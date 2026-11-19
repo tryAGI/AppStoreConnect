@@ -29,6 +29,12 @@ namespace AppStoreConnect
         public required global::AppStoreConnect.SubscriptionPriceCreateRequestDataRelationshipsSubscriptionPricePoint SubscriptionPricePoint { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("additionalPriceTiers")]
+        public global::AppStoreConnect.SubscriptionPriceCreateRequestDataRelationshipsAdditionalPriceTiers? AdditionalPriceTiers { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -40,17 +46,20 @@ namespace AppStoreConnect
         /// <param name="subscription"></param>
         /// <param name="subscriptionPricePoint"></param>
         /// <param name="territory"></param>
+        /// <param name="additionalPriceTiers"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
         public SubscriptionPriceCreateRequestDataRelationships(
             global::AppStoreConnect.SubscriptionPriceCreateRequestDataRelationshipsSubscription subscription,
             global::AppStoreConnect.SubscriptionPriceCreateRequestDataRelationshipsSubscriptionPricePoint subscriptionPricePoint,
-            global::AppStoreConnect.SubscriptionPriceCreateRequestDataRelationshipsTerritory? territory)
+            global::AppStoreConnect.SubscriptionPriceCreateRequestDataRelationshipsTerritory? territory,
+            global::AppStoreConnect.SubscriptionPriceCreateRequestDataRelationshipsAdditionalPriceTiers? additionalPriceTiers)
         {
             this.Subscription = subscription ?? throw new global::System.ArgumentNullException(nameof(subscription));
             this.Territory = territory;
             this.SubscriptionPricePoint = subscriptionPricePoint ?? throw new global::System.ArgumentNullException(nameof(subscriptionPricePoint));
+            this.AdditionalPriceTiers = additionalPriceTiers;
         }
 
         /// <summary>

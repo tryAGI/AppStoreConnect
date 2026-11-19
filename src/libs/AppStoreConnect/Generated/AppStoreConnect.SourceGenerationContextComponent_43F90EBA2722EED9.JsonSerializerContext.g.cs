@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsGameCenterLeaderboardVersion))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0816.Create_ReviewSubmissionsItemsGetToManyRelatedFieldsGameCenterLeaderboardVersion2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0818.Create_ReviewSubmissionsItemsGetToManyRelatedFieldsGameCenterLeaderboardVersion2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.ReviewSubmissionsItemsGetToManyRelatedFieldsGameCenterLeaderboardVersion?))
                 {

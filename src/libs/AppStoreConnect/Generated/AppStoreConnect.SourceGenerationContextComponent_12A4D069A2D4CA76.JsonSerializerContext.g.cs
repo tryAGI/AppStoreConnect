@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.BackgroundAssetCreateRequestDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0181.Create_BackgroundAssetCreateRequestDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0182.Create_BackgroundAssetCreateRequestDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.BackgroundAssetCreateRequestDataType?))
                 {

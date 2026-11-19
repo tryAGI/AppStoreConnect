@@ -425,6 +425,43 @@ namespace AppStoreConnect
         ///
         /// </summary>
 #if NET6_0_OR_GREATER
+        public global::AppStoreConnect.SubscriptionPriceTier? SubscriptionPriceTiers { get; init; }
+#else
+        public global::AppStoreConnect.SubscriptionPriceTier? SubscriptionPriceTiers { get; }
+#endif
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
+        [global::System.Diagnostics.CodeAnalysis.MemberNotNullWhen(true, nameof(SubscriptionPriceTiers))]
+#endif
+        public bool IsSubscriptionPriceTiers => SubscriptionPriceTiers != null;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public bool TryPickSubscriptionPriceTiers(
+#if NET6_0_OR_GREATER
+            [global::System.Diagnostics.CodeAnalysis.NotNullWhen(true)]
+#endif
+            out global::AppStoreConnect.SubscriptionPriceTier? value)
+        {
+            value = SubscriptionPriceTiers;
+            return IsSubscriptionPriceTiers;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public global::AppStoreConnect.SubscriptionPriceTier PickSubscriptionPriceTiers() => SubscriptionPriceTiers is { } value
+            ? value
+            : throw new global::System.InvalidOperationException($"Expected union variant 'SubscriptionPriceTiers' but the value was {ToString()}.");
+
+        /// <summary>
+        ///
+        /// </summary>
+#if NET6_0_OR_GREATER
         public global::AppStoreConnect.SubscriptionPrice? SubscriptionPrices { get; init; }
 #else
         public global::AppStoreConnect.SubscriptionPrice? SubscriptionPrices { get; }
@@ -824,6 +861,29 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        public static implicit operator IncludedItem31(global::AppStoreConnect.SubscriptionPriceTier value) => new IncludedItem31((global::AppStoreConnect.SubscriptionPriceTier?)value);
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static implicit operator global::AppStoreConnect.SubscriptionPriceTier?(IncludedItem31 @this) => @this.SubscriptionPriceTiers;
+
+        /// <summary>
+        ///
+        /// </summary>
+        public IncludedItem31(global::AppStoreConnect.SubscriptionPriceTier? value)
+        {
+            SubscriptionPriceTiers = value;
+        }
+
+        /// <summary>
+        ///
+        /// </summary>
+        public static IncludedItem31 FromSubscriptionPriceTiers(global::AppStoreConnect.SubscriptionPriceTier? value) => new IncludedItem31(value);
+
+        /// <summary>
+        ///
+        /// </summary>
         public static implicit operator IncludedItem31(global::AppStoreConnect.SubscriptionPrice value) => new IncludedItem31((global::AppStoreConnect.SubscriptionPrice?)value);
 
         /// <summary>
@@ -929,6 +989,7 @@ namespace AppStoreConnect
             global::AppStoreConnect.SubscriptionLocalization? subscriptionLocalizations,
             global::AppStoreConnect.SubscriptionOfferCode? subscriptionOfferCodes,
             global::AppStoreConnect.SubscriptionPlanAvailability? subscriptionPlanAvailabilities,
+            global::AppStoreConnect.SubscriptionPriceTier? subscriptionPriceTiers,
             global::AppStoreConnect.SubscriptionPrice? subscriptionPrices,
             global::AppStoreConnect.SubscriptionPromotionalOffer? subscriptionPromotionalOffers,
             global::AppStoreConnect.SubscriptionVersion? subscriptionVersions,
@@ -948,6 +1009,7 @@ namespace AppStoreConnect
             SubscriptionLocalizations = subscriptionLocalizations;
             SubscriptionOfferCodes = subscriptionOfferCodes;
             SubscriptionPlanAvailabilities = subscriptionPlanAvailabilities;
+            SubscriptionPriceTiers = subscriptionPriceTiers;
             SubscriptionPrices = subscriptionPrices;
             SubscriptionPromotionalOffers = subscriptionPromotionalOffers;
             SubscriptionVersions = subscriptionVersions;
@@ -962,6 +1024,7 @@ namespace AppStoreConnect
             SubscriptionVersions as object ??
             SubscriptionPromotionalOffers as object ??
             SubscriptionPrices as object ??
+            SubscriptionPriceTiers as object ??
             SubscriptionPlanAvailabilities as object ??
             SubscriptionOfferCodes as object ??
             SubscriptionLocalizations as object ??
@@ -990,6 +1053,7 @@ namespace AppStoreConnect
             SubscriptionLocalizations?.ToString() ??
             SubscriptionOfferCodes?.ToString() ??
             SubscriptionPlanAvailabilities?.ToString() ??
+            SubscriptionPriceTiers?.ToString() ??
             SubscriptionPrices?.ToString() ??
             SubscriptionPromotionalOffers?.ToString() ??
             SubscriptionVersions?.ToString() ??
@@ -1001,7 +1065,7 @@ namespace AppStoreConnect
         /// </summary>
         public bool Validate()
         {
-            return IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && IsWinBackOffers;
+            return IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPriceTiers && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPriceTiers && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPriceTiers && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPriceTiers && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPriceTiers && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPriceTiers && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPriceTiers && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPriceTiers && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPriceTiers && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPriceTiers && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && IsSubscriptionPlanAvailabilities && !IsSubscriptionPriceTiers && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && IsSubscriptionPriceTiers && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPriceTiers && IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPriceTiers && !IsSubscriptionPrices && IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPriceTiers && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && IsSubscriptionVersions && !IsWinBackOffers || !IsPromotedPurchases && !IsRetentionMessages && !IsRetentionOffers && !IsSubscriptionAppStoreReviewScreenshots && !IsSubscriptionAvailabilities && !IsSubscriptionGroups && !IsSubscriptionImages && !IsSubscriptionIntroductoryOffers && !IsSubscriptionLocalizations && !IsSubscriptionOfferCodes && !IsSubscriptionPlanAvailabilities && !IsSubscriptionPriceTiers && !IsSubscriptionPrices && !IsSubscriptionPromotionalOffers && !IsSubscriptionVersions && IsWinBackOffers;
         }
 
         /// <summary>
@@ -1019,6 +1083,7 @@ namespace AppStoreConnect
             global::System.Func<global::AppStoreConnect.SubscriptionLocalization, TResult>? subscriptionLocalizations = null,
             global::System.Func<global::AppStoreConnect.SubscriptionOfferCode, TResult>? subscriptionOfferCodes = null,
             global::System.Func<global::AppStoreConnect.SubscriptionPlanAvailability, TResult>? subscriptionPlanAvailabilities = null,
+            global::System.Func<global::AppStoreConnect.SubscriptionPriceTier, TResult>? subscriptionPriceTiers = null,
             global::System.Func<global::AppStoreConnect.SubscriptionPrice, TResult>? subscriptionPrices = null,
             global::System.Func<global::AppStoreConnect.SubscriptionPromotionalOffer, TResult>? subscriptionPromotionalOffers = null,
             global::System.Func<global::AppStoreConnect.SubscriptionVersion, TResult>? subscriptionVersions = null,
@@ -1074,21 +1139,25 @@ namespace AppStoreConnect
             {
                 return subscriptionPlanAvailabilities(__value10);
             }
-            else if (SubscriptionPrices is { } __value11 && subscriptionPrices != null)
+            else if (SubscriptionPriceTiers is { } __value11 && subscriptionPriceTiers != null)
             {
-                return subscriptionPrices(__value11);
+                return subscriptionPriceTiers(__value11);
             }
-            else if (SubscriptionPromotionalOffers is { } __value12 && subscriptionPromotionalOffers != null)
+            else if (SubscriptionPrices is { } __value12 && subscriptionPrices != null)
             {
-                return subscriptionPromotionalOffers(__value12);
+                return subscriptionPrices(__value12);
             }
-            else if (SubscriptionVersions is { } __value13 && subscriptionVersions != null)
+            else if (SubscriptionPromotionalOffers is { } __value13 && subscriptionPromotionalOffers != null)
             {
-                return subscriptionVersions(__value13);
+                return subscriptionPromotionalOffers(__value13);
             }
-            else if (WinBackOffers is { } __value14 && winBackOffers != null)
+            else if (SubscriptionVersions is { } __value14 && subscriptionVersions != null)
             {
-                return winBackOffers(__value14);
+                return subscriptionVersions(__value14);
+            }
+            else if (WinBackOffers is { } __value15 && winBackOffers != null)
+            {
+                return winBackOffers(__value15);
             }
 
             return default(TResult);
@@ -1120,6 +1189,8 @@ namespace AppStoreConnect
 
             global::System.Action<global::AppStoreConnect.SubscriptionPlanAvailability>? subscriptionPlanAvailabilities = null,
 
+            global::System.Action<global::AppStoreConnect.SubscriptionPriceTier>? subscriptionPriceTiers = null,
+
             global::System.Action<global::AppStoreConnect.SubscriptionPrice>? subscriptionPrices = null,
 
             global::System.Action<global::AppStoreConnect.SubscriptionPromotionalOffer>? subscriptionPromotionalOffers = null,
@@ -1178,21 +1249,25 @@ namespace AppStoreConnect
             {
                 subscriptionPlanAvailabilities?.Invoke(__value10);
             }
-            else if (SubscriptionPrices is { } __value11)
+            else if (SubscriptionPriceTiers is { } __value11)
             {
-                subscriptionPrices?.Invoke(__value11);
+                subscriptionPriceTiers?.Invoke(__value11);
             }
-            else if (SubscriptionPromotionalOffers is { } __value12)
+            else if (SubscriptionPrices is { } __value12)
             {
-                subscriptionPromotionalOffers?.Invoke(__value12);
+                subscriptionPrices?.Invoke(__value12);
             }
-            else if (SubscriptionVersions is { } __value13)
+            else if (SubscriptionPromotionalOffers is { } __value13)
             {
-                subscriptionVersions?.Invoke(__value13);
+                subscriptionPromotionalOffers?.Invoke(__value13);
             }
-            else if (WinBackOffers is { } __value14)
+            else if (SubscriptionVersions is { } __value14)
             {
-                winBackOffers?.Invoke(__value14);
+                subscriptionVersions?.Invoke(__value14);
+            }
+            else if (WinBackOffers is { } __value15)
+            {
+                winBackOffers?.Invoke(__value15);
             }
         }
 
@@ -1211,6 +1286,7 @@ namespace AppStoreConnect
             global::System.Action<global::AppStoreConnect.SubscriptionLocalization>? subscriptionLocalizations = null,
             global::System.Action<global::AppStoreConnect.SubscriptionOfferCode>? subscriptionOfferCodes = null,
             global::System.Action<global::AppStoreConnect.SubscriptionPlanAvailability>? subscriptionPlanAvailabilities = null,
+            global::System.Action<global::AppStoreConnect.SubscriptionPriceTier>? subscriptionPriceTiers = null,
             global::System.Action<global::AppStoreConnect.SubscriptionPrice>? subscriptionPrices = null,
             global::System.Action<global::AppStoreConnect.SubscriptionPromotionalOffer>? subscriptionPromotionalOffers = null,
             global::System.Action<global::AppStoreConnect.SubscriptionVersion>? subscriptionVersions = null,
@@ -1266,21 +1342,25 @@ namespace AppStoreConnect
             {
                 subscriptionPlanAvailabilities?.Invoke(__value10);
             }
-            else if (SubscriptionPrices is { } __value11)
+            else if (SubscriptionPriceTiers is { } __value11)
             {
-                subscriptionPrices?.Invoke(__value11);
+                subscriptionPriceTiers?.Invoke(__value11);
             }
-            else if (SubscriptionPromotionalOffers is { } __value12)
+            else if (SubscriptionPrices is { } __value12)
             {
-                subscriptionPromotionalOffers?.Invoke(__value12);
+                subscriptionPrices?.Invoke(__value12);
             }
-            else if (SubscriptionVersions is { } __value13)
+            else if (SubscriptionPromotionalOffers is { } __value13)
             {
-                subscriptionVersions?.Invoke(__value13);
+                subscriptionPromotionalOffers?.Invoke(__value13);
             }
-            else if (WinBackOffers is { } __value14)
+            else if (SubscriptionVersions is { } __value14)
             {
-                winBackOffers?.Invoke(__value14);
+                subscriptionVersions?.Invoke(__value14);
+            }
+            else if (WinBackOffers is { } __value15)
+            {
+                winBackOffers?.Invoke(__value15);
             }
         }
 
@@ -1313,6 +1393,8 @@ namespace AppStoreConnect
                 typeof(global::AppStoreConnect.SubscriptionOfferCode),
                 SubscriptionPlanAvailabilities,
                 typeof(global::AppStoreConnect.SubscriptionPlanAvailability),
+                SubscriptionPriceTiers,
+                typeof(global::AppStoreConnect.SubscriptionPriceTier),
                 SubscriptionPrices,
                 typeof(global::AppStoreConnect.SubscriptionPrice),
                 SubscriptionPromotionalOffers,
@@ -1348,6 +1430,7 @@ namespace AppStoreConnect
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionLocalization?>.Default.Equals(SubscriptionLocalizations, other.SubscriptionLocalizations) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionOfferCode?>.Default.Equals(SubscriptionOfferCodes, other.SubscriptionOfferCodes) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionPlanAvailability?>.Default.Equals(SubscriptionPlanAvailabilities, other.SubscriptionPlanAvailabilities) &&
+                global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionPriceTier?>.Default.Equals(SubscriptionPriceTiers, other.SubscriptionPriceTiers) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionPrice?>.Default.Equals(SubscriptionPrices, other.SubscriptionPrices) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionPromotionalOffer?>.Default.Equals(SubscriptionPromotionalOffers, other.SubscriptionPromotionalOffers) &&
                 global::System.Collections.Generic.EqualityComparer<global::AppStoreConnect.SubscriptionVersion?>.Default.Equals(SubscriptionVersions, other.SubscriptionVersions) &&

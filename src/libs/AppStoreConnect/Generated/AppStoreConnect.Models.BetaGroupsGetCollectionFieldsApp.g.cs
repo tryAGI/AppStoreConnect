@@ -155,6 +155,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        GroupPurchaseInvitationMode,
+        /// <summary>
+        ///
+        /// </summary>
         InAppPurchases,
         /// <summary>
         ///
@@ -290,6 +294,7 @@ namespace AppStoreConnect
                 BetaGroupsGetCollectionFieldsApp.EndUserLicenseAgreement => "endUserLicenseAgreement",
                 BetaGroupsGetCollectionFieldsApp.GameCenterDetail => "gameCenterDetail",
                 BetaGroupsGetCollectionFieldsApp.GameCenterEnabledVersions => "gameCenterEnabledVersions",
+                BetaGroupsGetCollectionFieldsApp.GroupPurchaseInvitationMode => "groupPurchaseInvitationMode",
                 BetaGroupsGetCollectionFieldsApp.InAppPurchases => "inAppPurchases",
                 BetaGroupsGetCollectionFieldsApp.InAppPurchasesV2 => "inAppPurchasesV2",
                 BetaGroupsGetCollectionFieldsApp.IsOrEverWasMadeForKids => "isOrEverWasMadeForKids",
@@ -358,6 +363,7 @@ namespace AppStoreConnect
                 "endUserLicenseAgreement" => BetaGroupsGetCollectionFieldsApp.EndUserLicenseAgreement,
                 "gameCenterDetail" => BetaGroupsGetCollectionFieldsApp.GameCenterDetail,
                 "gameCenterEnabledVersions" => BetaGroupsGetCollectionFieldsApp.GameCenterEnabledVersions,
+                "groupPurchaseInvitationMode" => BetaGroupsGetCollectionFieldsApp.GroupPurchaseInvitationMode,
                 "inAppPurchases" => BetaGroupsGetCollectionFieldsApp.InAppPurchases,
                 "inAppPurchasesV2" => BetaGroupsGetCollectionFieldsApp.InAppPurchasesV2,
                 "isOrEverWasMadeForKids" => BetaGroupsGetCollectionFieldsApp.IsOrEverWasMadeForKids,

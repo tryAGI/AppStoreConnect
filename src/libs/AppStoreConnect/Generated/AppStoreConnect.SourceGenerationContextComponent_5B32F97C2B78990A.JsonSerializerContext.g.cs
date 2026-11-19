@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SubscriptionGroupUpdateRequestDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1244.Create_SubscriptionGroupUpdateRequestDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1248.Create_SubscriptionGroupUpdateRequestDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.SubscriptionGroupUpdateRequestDataType?))
                 {

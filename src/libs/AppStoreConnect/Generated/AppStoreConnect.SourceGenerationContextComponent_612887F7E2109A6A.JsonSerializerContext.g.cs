@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ProfileCreateRequestDataRelationshipsCertificatesDataItemType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0787.Create_ProfileCreateRequestDataRelationshipsCertificatesDataItemType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0789.Create_ProfileCreateRequestDataRelationshipsCertificatesDataItemType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.ProfileCreateRequestDataRelationshipsCertificatesDataItemType?))
                 {

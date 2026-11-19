@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppsBetaTesterUsagesGetMetricsPeriod))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0170.Create_AppsBetaTesterUsagesGetMetricsPeriod2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0171.Create_AppsBetaTesterUsagesGetMetricsPeriod2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppsBetaTesterUsagesGetMetricsPeriod?))
                 {

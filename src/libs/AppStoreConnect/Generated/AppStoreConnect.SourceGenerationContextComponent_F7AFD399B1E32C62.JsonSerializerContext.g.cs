@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.GameCenterMatchmakingQueueSizesV1MetricResponseDataItemGranularity?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0688.Create_NullableGameCenterMatchmakingQueueSizesV1MetricResponseDataItemGranularity2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0689.Create_NullableGameCenterMatchmakingQueueSizesV1MetricResponseDataItemGranularity2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

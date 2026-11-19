@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SalesReportsGetCollectionFilterReportTypeItem))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0818.Create_SalesReportsGetCollectionFilterReportTypeItem2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0820.Create_SalesReportsGetCollectionFilterReportTypeItem2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.SalesReportsGetCollectionFilterReportTypeItem?))
                 {

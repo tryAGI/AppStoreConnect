@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsRetentionMessage))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0261.Create_CiProductsAppGetToOneRelatedFieldsRetentionMessage2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0262.Create_CiProductsAppGetToOneRelatedFieldsRetentionMessage2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.CiProductsAppGetToOneRelatedFieldsRetentionMessage?))
                 {

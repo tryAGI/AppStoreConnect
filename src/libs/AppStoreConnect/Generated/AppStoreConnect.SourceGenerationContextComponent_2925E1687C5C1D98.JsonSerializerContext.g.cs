@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ScmProviderType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0821.Create_ScmProviderType(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0823.Create_ScmProviderType(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

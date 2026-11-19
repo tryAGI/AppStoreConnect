@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppScreenshotSet))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0069.Create_AppCustomProductPageLocalizationsGetInstanceFieldsAppScreenshotSet2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0070.Create_AppCustomProductPageLocalizationsGetInstanceFieldsAppScreenshotSet2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationsGetInstanceFieldsAppScreenshotSet?))
                 {

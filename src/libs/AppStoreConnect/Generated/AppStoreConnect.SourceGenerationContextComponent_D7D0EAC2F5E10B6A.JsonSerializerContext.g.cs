@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0065.Create_AppCustomProductPageLocalizationCreateRequestDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0066.Create_AppCustomProductPageLocalizationCreateRequestDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppCustomProductPageLocalizationCreateRequestDataType?))
                 {

@@ -155,6 +155,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        GroupPurchaseInvitationMode,
+        /// <summary>
+        ///
+        /// </summary>
         InAppPurchases,
         /// <summary>
         ///
@@ -290,6 +294,7 @@ namespace AppStoreConnect
                 AppEncryptionDeclarationsGetCollectionFieldsApp.EndUserLicenseAgreement => "endUserLicenseAgreement",
                 AppEncryptionDeclarationsGetCollectionFieldsApp.GameCenterDetail => "gameCenterDetail",
                 AppEncryptionDeclarationsGetCollectionFieldsApp.GameCenterEnabledVersions => "gameCenterEnabledVersions",
+                AppEncryptionDeclarationsGetCollectionFieldsApp.GroupPurchaseInvitationMode => "groupPurchaseInvitationMode",
                 AppEncryptionDeclarationsGetCollectionFieldsApp.InAppPurchases => "inAppPurchases",
                 AppEncryptionDeclarationsGetCollectionFieldsApp.InAppPurchasesV2 => "inAppPurchasesV2",
                 AppEncryptionDeclarationsGetCollectionFieldsApp.IsOrEverWasMadeForKids => "isOrEverWasMadeForKids",
@@ -358,6 +363,7 @@ namespace AppStoreConnect
                 "endUserLicenseAgreement" => AppEncryptionDeclarationsGetCollectionFieldsApp.EndUserLicenseAgreement,
                 "gameCenterDetail" => AppEncryptionDeclarationsGetCollectionFieldsApp.GameCenterDetail,
                 "gameCenterEnabledVersions" => AppEncryptionDeclarationsGetCollectionFieldsApp.GameCenterEnabledVersions,
+                "groupPurchaseInvitationMode" => AppEncryptionDeclarationsGetCollectionFieldsApp.GroupPurchaseInvitationMode,
                 "inAppPurchases" => AppEncryptionDeclarationsGetCollectionFieldsApp.InAppPurchases,
                 "inAppPurchasesV2" => AppEncryptionDeclarationsGetCollectionFieldsApp.InAppPurchasesV2,
                 "isOrEverWasMadeForKids" => AppEncryptionDeclarationsGetCollectionFieldsApp.IsOrEverWasMadeForKids,

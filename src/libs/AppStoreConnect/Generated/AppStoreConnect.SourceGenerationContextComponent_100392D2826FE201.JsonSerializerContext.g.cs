@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.BetaTesterInvitationType?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0591.Create_NullableBetaTesterInvitationType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0592.Create_NullableBetaTesterInvitationType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

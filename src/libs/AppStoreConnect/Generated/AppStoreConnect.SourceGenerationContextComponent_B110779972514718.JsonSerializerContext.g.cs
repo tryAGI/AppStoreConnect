@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SubscriptionPromotionalOfferInlineCreateAttributes))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1275.Create_SubscriptionPromotionalOfferInlineCreateAttributes(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1284.Create_SubscriptionPromotionalOfferInlineCreateAttributes(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

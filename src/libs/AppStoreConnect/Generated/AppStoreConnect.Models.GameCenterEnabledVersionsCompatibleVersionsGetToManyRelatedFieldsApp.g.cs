@@ -155,6 +155,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        GroupPurchaseInvitationMode,
+        /// <summary>
+        ///
+        /// </summary>
         InAppPurchases,
         /// <summary>
         ///
@@ -290,6 +294,7 @@ namespace AppStoreConnect
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.EndUserLicenseAgreement => "endUserLicenseAgreement",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.GameCenterDetail => "gameCenterDetail",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.GameCenterEnabledVersions => "gameCenterEnabledVersions",
+                GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.GroupPurchaseInvitationMode => "groupPurchaseInvitationMode",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.InAppPurchases => "inAppPurchases",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.InAppPurchasesV2 => "inAppPurchasesV2",
                 GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.IsOrEverWasMadeForKids => "isOrEverWasMadeForKids",
@@ -358,6 +363,7 @@ namespace AppStoreConnect
                 "endUserLicenseAgreement" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.EndUserLicenseAgreement,
                 "gameCenterDetail" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.GameCenterDetail,
                 "gameCenterEnabledVersions" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.GameCenterEnabledVersions,
+                "groupPurchaseInvitationMode" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.GroupPurchaseInvitationMode,
                 "inAppPurchases" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.InAppPurchases,
                 "inAppPurchasesV2" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.InAppPurchasesV2,
                 "isOrEverWasMadeForKids" => GameCenterEnabledVersionsCompatibleVersionsGetToManyRelatedFieldsApp.IsOrEverWasMadeForKids,

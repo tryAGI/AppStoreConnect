@@ -19,7 +19,7 @@ namespace AppStoreConnect
         ///
         /// </summary>
         [global::System.Text.Json.Serialization.JsonPropertyName("included")]
-        public global::System.Collections.Generic.IList<global::AppStoreConnect.OneOf<global::AppStoreConnect.SubscriptionPromotionalOfferInlineCreate, global::AppStoreConnect.SubscriptionPriceInlineCreate, global::AppStoreConnect.SubscriptionIntroductoryOfferInlineCreate>>? Included { get; set; }
+        public global::System.Collections.Generic.IList<global::AppStoreConnect.OneOf<global::AppStoreConnect.SubscriptionPriceTierInlineCreate, global::AppStoreConnect.SubscriptionPromotionalOfferInlineCreate, global::AppStoreConnect.SubscriptionPriceInlineCreate, global::AppStoreConnect.SubscriptionIntroductoryOfferInlineCreate>>? Included { get; set; }
 
         /// <summary>
         /// Additional properties that are not explicitly defined in the schema
@@ -37,7 +37,7 @@ namespace AppStoreConnect
 #endif
         public SubscriptionUpdateRequest(
             global::AppStoreConnect.SubscriptionUpdateRequestData data,
-            global::System.Collections.Generic.IList<global::AppStoreConnect.OneOf<global::AppStoreConnect.SubscriptionPromotionalOfferInlineCreate, global::AppStoreConnect.SubscriptionPriceInlineCreate, global::AppStoreConnect.SubscriptionIntroductoryOfferInlineCreate>>? included)
+            global::System.Collections.Generic.IList<global::AppStoreConnect.OneOf<global::AppStoreConnect.SubscriptionPriceTierInlineCreate, global::AppStoreConnect.SubscriptionPromotionalOfferInlineCreate, global::AppStoreConnect.SubscriptionPriceInlineCreate, global::AppStoreConnect.SubscriptionIntroductoryOfferInlineCreate>>? included)
         {
             this.Data = data ?? throw new global::System.ArgumentNullException(nameof(data));
             this.Included = included;

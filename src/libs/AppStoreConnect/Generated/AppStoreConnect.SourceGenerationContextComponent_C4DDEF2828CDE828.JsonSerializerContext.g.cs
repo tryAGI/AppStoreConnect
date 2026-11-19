@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.WebhookDeliveriesLinkagesResponse))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1302.Create_WebhookDeliveriesLinkagesResponse(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1311.Create_WebhookDeliveriesLinkagesResponse(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppClipDefaultExperiencesAppClipDefaultExperienceLocalizationsGetToManyRelatedFieldsAppClipDefaultExperienceLocalization))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0057.Create_AppClipDefaultExperiencesAppClipDefaultExperienceLocalizationsGetToManyRelatedFieldsAppClipDefaultExper_cf75596fc7fbe1a6(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0058.Create_AppClipDefaultExperiencesAppClipDefaultExperienceLocalizationsGetToManyRelatedFieldsAppClipDefaultExper_cf75596fc7fbe1a6(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppClipDefaultExperiencesAppClipDefaultExperienceLocalizationsGetToManyRelatedFieldsAppClipDefaultExperienceLocalization?))
                 {

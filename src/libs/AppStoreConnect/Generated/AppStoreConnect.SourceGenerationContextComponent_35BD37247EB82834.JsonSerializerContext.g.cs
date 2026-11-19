@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceData))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0053.Create_AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceData(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0054.Create_AppClipDefaultExperienceLocalizationCreateRequestDataRelationshipsAppClipDefaultExperienceData(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

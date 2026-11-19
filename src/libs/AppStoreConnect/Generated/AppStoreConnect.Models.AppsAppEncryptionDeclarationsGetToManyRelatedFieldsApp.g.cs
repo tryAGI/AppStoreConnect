@@ -155,6 +155,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        GroupPurchaseInvitationMode,
+        /// <summary>
+        ///
+        /// </summary>
         InAppPurchases,
         /// <summary>
         ///
@@ -290,6 +294,7 @@ namespace AppStoreConnect
                 AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.EndUserLicenseAgreement => "endUserLicenseAgreement",
                 AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.GameCenterDetail => "gameCenterDetail",
                 AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.GameCenterEnabledVersions => "gameCenterEnabledVersions",
+                AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.GroupPurchaseInvitationMode => "groupPurchaseInvitationMode",
                 AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.InAppPurchases => "inAppPurchases",
                 AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.InAppPurchasesV2 => "inAppPurchasesV2",
                 AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.IsOrEverWasMadeForKids => "isOrEverWasMadeForKids",
@@ -358,6 +363,7 @@ namespace AppStoreConnect
                 "endUserLicenseAgreement" => AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.EndUserLicenseAgreement,
                 "gameCenterDetail" => AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.GameCenterDetail,
                 "gameCenterEnabledVersions" => AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.GameCenterEnabledVersions,
+                "groupPurchaseInvitationMode" => AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.GroupPurchaseInvitationMode,
                 "inAppPurchases" => AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.InAppPurchases,
                 "inAppPurchasesV2" => AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.InAppPurchasesV2,
                 "isOrEverWasMadeForKids" => AppsAppEncryptionDeclarationsGetToManyRelatedFieldsApp.IsOrEverWasMadeForKids,

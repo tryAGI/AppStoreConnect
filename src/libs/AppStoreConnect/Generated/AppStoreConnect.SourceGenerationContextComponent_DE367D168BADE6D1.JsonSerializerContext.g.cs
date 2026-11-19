@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.EndUserLicenseAgreementUpdateRequestDataRelationshipsTerritoriesDataItemType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0280.Create_EndUserLicenseAgreementUpdateRequestDataRelationshipsTerritoriesDataItemType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0281.Create_EndUserLicenseAgreementUpdateRequestDataRelationshipsTerritoriesDataItemType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.EndUserLicenseAgreementUpdateRequestDataRelationshipsTerritoriesDataItemType?))
                 {

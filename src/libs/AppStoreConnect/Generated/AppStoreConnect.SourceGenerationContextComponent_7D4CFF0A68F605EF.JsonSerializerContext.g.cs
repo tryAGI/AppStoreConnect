@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.RetentionMessageVersionsPlacementGetToOneRelatedFieldsAppAssetLibraryVideo))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0798.Create_RetentionMessageVersionsPlacementGetToOneRelatedFieldsAppAssetLibraryVideo2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0800.Create_RetentionMessageVersionsPlacementGetToOneRelatedFieldsAppAssetLibraryVideo2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.RetentionMessageVersionsPlacementGetToOneRelatedFieldsAppAssetLibraryVideo?))
                 {

@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.CiGitRefKind?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0611.Create_NullableCiGitRefKind2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0612.Create_NullableCiGitRefKind2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

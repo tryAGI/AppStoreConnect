@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppStoreVersionPromotionType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0153.Create_AppStoreVersionPromotionType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0154.Create_AppStoreVersionPromotionType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppStoreVersionPromotionType?))
                 {

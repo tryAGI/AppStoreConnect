@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SubscriptionOfferCodePriceRelationshipsSubscriptionPricePointDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1263.Create_SubscriptionOfferCodePriceRelationshipsSubscriptionPricePointDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1268.Create_SubscriptionOfferCodePriceRelationshipsSubscriptionPricePointDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.SubscriptionOfferCodePriceRelationshipsSubscriptionPricePointDataType?))
                 {

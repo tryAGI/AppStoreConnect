@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.AppCategoryType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0042.Create_AppCategoryType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0043.Create_AppCategoryType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.AppCategoryType?))
                 {

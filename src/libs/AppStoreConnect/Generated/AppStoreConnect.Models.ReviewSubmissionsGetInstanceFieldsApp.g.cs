@@ -155,6 +155,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        GroupPurchaseInvitationMode,
+        /// <summary>
+        ///
+        /// </summary>
         InAppPurchases,
         /// <summary>
         ///
@@ -290,6 +294,7 @@ namespace AppStoreConnect
                 ReviewSubmissionsGetInstanceFieldsApp.EndUserLicenseAgreement => "endUserLicenseAgreement",
                 ReviewSubmissionsGetInstanceFieldsApp.GameCenterDetail => "gameCenterDetail",
                 ReviewSubmissionsGetInstanceFieldsApp.GameCenterEnabledVersions => "gameCenterEnabledVersions",
+                ReviewSubmissionsGetInstanceFieldsApp.GroupPurchaseInvitationMode => "groupPurchaseInvitationMode",
                 ReviewSubmissionsGetInstanceFieldsApp.InAppPurchases => "inAppPurchases",
                 ReviewSubmissionsGetInstanceFieldsApp.InAppPurchasesV2 => "inAppPurchasesV2",
                 ReviewSubmissionsGetInstanceFieldsApp.IsOrEverWasMadeForKids => "isOrEverWasMadeForKids",
@@ -358,6 +363,7 @@ namespace AppStoreConnect
                 "endUserLicenseAgreement" => ReviewSubmissionsGetInstanceFieldsApp.EndUserLicenseAgreement,
                 "gameCenterDetail" => ReviewSubmissionsGetInstanceFieldsApp.GameCenterDetail,
                 "gameCenterEnabledVersions" => ReviewSubmissionsGetInstanceFieldsApp.GameCenterEnabledVersions,
+                "groupPurchaseInvitationMode" => ReviewSubmissionsGetInstanceFieldsApp.GroupPurchaseInvitationMode,
                 "inAppPurchases" => ReviewSubmissionsGetInstanceFieldsApp.InAppPurchases,
                 "inAppPurchasesV2" => ReviewSubmissionsGetInstanceFieldsApp.InAppPurchasesV2,
                 "isOrEverWasMadeForKids" => ReviewSubmissionsGetInstanceFieldsApp.IsOrEverWasMadeForKids,

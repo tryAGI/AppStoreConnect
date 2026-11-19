@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1234.Create_SubscriptionAppStoreReviewScreenshotType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1239.Create_SubscriptionAppStoreReviewScreenshotType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.SubscriptionAppStoreReviewScreenshotType?))
                 {

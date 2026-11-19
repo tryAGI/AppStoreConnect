@@ -13,8 +13,10 @@ namespace AppStoreConnect
         /// <param name="fieldsSubscriptionPrices"></param>
         /// <param name="fieldsTerritories"></param>
         /// <param name="fieldsSubscriptionPricePoints"></param>
+        /// <param name="fieldsSubscriptionPriceTiers"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
+        /// <param name="limitAdditionalPriceTiers"></param>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -27,8 +29,10 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsPricesGetToManyRelatedFieldsSubscriptionPrice>? fieldsSubscriptionPrices = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsPricesGetToManyRelatedFieldsTerritorie>? fieldsTerritories = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsPricesGetToManyRelatedFieldsSubscriptionPricePoint>? fieldsSubscriptionPricePoints = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsPricesGetToManyRelatedFieldsSubscriptionPriceTier>? fieldsSubscriptionPriceTiers = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsPricesGetToManyRelatedIncludeItem>? include = default,
+            int? limitAdditionalPriceTiers = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
         /// <summary>
@@ -40,8 +44,10 @@ namespace AppStoreConnect
         /// <param name="fieldsSubscriptionPrices"></param>
         /// <param name="fieldsTerritories"></param>
         /// <param name="fieldsSubscriptionPricePoints"></param>
+        /// <param name="fieldsSubscriptionPriceTiers"></param>
         /// <param name="limit"></param>
         /// <param name="include"></param>
+        /// <param name="limitAdditionalPriceTiers"></param>
         /// <param name="id"></param>
         /// <param name="requestOptions">Per-request overrides such as headers, query parameters, timeout, retries, and response buffering.</param>
         /// <param name="cancellationToken">The token to cancel the operation with</param>
@@ -54,8 +60,10 @@ namespace AppStoreConnect
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsPricesGetToManyRelatedFieldsSubscriptionPrice>? fieldsSubscriptionPrices = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsPricesGetToManyRelatedFieldsTerritorie>? fieldsTerritories = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsPricesGetToManyRelatedFieldsSubscriptionPricePoint>? fieldsSubscriptionPricePoints = default,
+            global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsPricesGetToManyRelatedFieldsSubscriptionPriceTier>? fieldsSubscriptionPriceTiers = default,
             int? limit = default,
             global::System.Collections.Generic.IList<global::AppStoreConnect.SubscriptionsPricesGetToManyRelatedIncludeItem>? include = default,
+            int? limitAdditionalPriceTiers = default,
             global::AppStoreConnect.AutoSDKRequestOptions? requestOptions = default,
             global::System.Threading.CancellationToken cancellationToken = default);
     }

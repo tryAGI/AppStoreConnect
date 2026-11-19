@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.AppInfosGetInstanceFieldsAppInfoLocalization?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0532.Create_NullableAppInfosGetInstanceFieldsAppInfoLocalization2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0533.Create_NullableAppInfosGetInstanceFieldsAppInfoLocalization2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

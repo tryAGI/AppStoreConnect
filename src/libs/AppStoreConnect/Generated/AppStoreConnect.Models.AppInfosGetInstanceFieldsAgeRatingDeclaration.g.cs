@@ -35,6 +35,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        DatingAndRelationships,
+        /// <summary>
+        ///
+        /// </summary>
         DeveloperAgeRatingInfoUrl,
         /// <summary>
         ///
@@ -103,6 +107,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        SharedLocation,
+        /// <summary>
+        ///
+        /// </summary>
         SocialMedia,
         /// <summary>
         ///
@@ -148,6 +156,7 @@ namespace AppStoreConnect
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.AgeRatingOverrideV2 => "ageRatingOverrideV2",
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.AlcoholTobaccoOrDrugUseOrReferences => "alcoholTobaccoOrDrugUseOrReferences",
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.Contests => "contests",
+                AppInfosGetInstanceFieldsAgeRatingDeclaration.DatingAndRelationships => "datingAndRelationships",
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.DeveloperAgeRatingInfoUrl => "developerAgeRatingInfoUrl",
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.Gambling => "gambling",
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.GamblingSimulated => "gamblingSimulated",
@@ -165,6 +174,7 @@ namespace AppStoreConnect
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.ProfanityOrCrudeHumor => "profanityOrCrudeHumor",
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.SexualContentGraphicAndNudity => "sexualContentGraphicAndNudity",
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.SexualContentOrNudity => "sexualContentOrNudity",
+                AppInfosGetInstanceFieldsAgeRatingDeclaration.SharedLocation => "sharedLocation",
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.SocialMedia => "socialMedia",
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.SocialMediaAgeRestricted => "socialMediaAgeRestricted",
                 AppInfosGetInstanceFieldsAgeRatingDeclaration.UnrestrictedWebAccess => "unrestrictedWebAccess",
@@ -188,6 +198,7 @@ namespace AppStoreConnect
                 "ageRatingOverrideV2" => AppInfosGetInstanceFieldsAgeRatingDeclaration.AgeRatingOverrideV2,
                 "alcoholTobaccoOrDrugUseOrReferences" => AppInfosGetInstanceFieldsAgeRatingDeclaration.AlcoholTobaccoOrDrugUseOrReferences,
                 "contests" => AppInfosGetInstanceFieldsAgeRatingDeclaration.Contests,
+                "datingAndRelationships" => AppInfosGetInstanceFieldsAgeRatingDeclaration.DatingAndRelationships,
                 "developerAgeRatingInfoUrl" => AppInfosGetInstanceFieldsAgeRatingDeclaration.DeveloperAgeRatingInfoUrl,
                 "gambling" => AppInfosGetInstanceFieldsAgeRatingDeclaration.Gambling,
                 "gamblingSimulated" => AppInfosGetInstanceFieldsAgeRatingDeclaration.GamblingSimulated,
@@ -205,6 +216,7 @@ namespace AppStoreConnect
                 "profanityOrCrudeHumor" => AppInfosGetInstanceFieldsAgeRatingDeclaration.ProfanityOrCrudeHumor,
                 "sexualContentGraphicAndNudity" => AppInfosGetInstanceFieldsAgeRatingDeclaration.SexualContentGraphicAndNudity,
                 "sexualContentOrNudity" => AppInfosGetInstanceFieldsAgeRatingDeclaration.SexualContentOrNudity,
+                "sharedLocation" => AppInfosGetInstanceFieldsAgeRatingDeclaration.SharedLocation,
                 "socialMedia" => AppInfosGetInstanceFieldsAgeRatingDeclaration.SocialMedia,
                 "socialMediaAgeRestricted" => AppInfosGetInstanceFieldsAgeRatingDeclaration.SocialMediaAgeRestricted,
                 "unrestrictedWebAccess" => AppInfosGetInstanceFieldsAgeRatingDeclaration.UnrestrictedWebAccess,

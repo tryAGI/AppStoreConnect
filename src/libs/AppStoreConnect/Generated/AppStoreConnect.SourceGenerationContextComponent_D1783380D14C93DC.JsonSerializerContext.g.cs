@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.RetentionOffersPricesGetToManyRelatedFieldsRetentionOfferPrice))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0804.Create_RetentionOffersPricesGetToManyRelatedFieldsRetentionOfferPrice2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0806.Create_RetentionOffersPricesGetToManyRelatedFieldsRetentionOfferPrice2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.RetentionOffersPricesGetToManyRelatedFieldsRetentionOfferPrice?))
                 {

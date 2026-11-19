@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.AppStoreVersionPromotionCreateRequestDataRelationshipsAppStoreVersionDataType?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0554.Create_NullableAppStoreVersionPromotionCreateRequestDataRelationshipsAppStoreVersionDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0555.Create_NullableAppStoreVersionPromotionCreateRequestDataRelationshipsAppStoreVersionDataType2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

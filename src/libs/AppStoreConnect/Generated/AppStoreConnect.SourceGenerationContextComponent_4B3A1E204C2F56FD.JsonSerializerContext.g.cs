@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.AppPricePointsV3EqualizationsGetToManyRelatedFieldsTerritorie?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0536.Create_NullableAppPricePointsV3EqualizationsGetToManyRelatedFieldsTerritorie2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0537.Create_NullableAppPricePointsV3EqualizationsGetToManyRelatedFieldsTerritorie2(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

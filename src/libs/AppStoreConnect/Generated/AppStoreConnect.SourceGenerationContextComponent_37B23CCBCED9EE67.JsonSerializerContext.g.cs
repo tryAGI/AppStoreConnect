@@ -31,7 +31,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.WinBackOfferAttributes))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1305.Create_WinBackOfferAttributes(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch1315.Create_WinBackOfferAttributes(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

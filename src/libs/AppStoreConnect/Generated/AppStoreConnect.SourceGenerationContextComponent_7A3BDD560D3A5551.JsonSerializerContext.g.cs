@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.PromotedPurchaseCreateRequestDataRelationshipsInAppPurchaseV2DataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0790.Create_PromotedPurchaseCreateRequestDataRelationshipsInAppPurchaseV2DataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0792.Create_PromotedPurchaseCreateRequestDataRelationshipsInAppPurchaseV2DataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.PromotedPurchaseCreateRequestDataRelationshipsInAppPurchaseV2DataType?))
                 {

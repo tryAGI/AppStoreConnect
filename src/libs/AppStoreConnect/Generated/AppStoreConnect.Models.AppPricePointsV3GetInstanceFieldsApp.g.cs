@@ -155,6 +155,10 @@ namespace AppStoreConnect
         /// <summary>
         ///
         /// </summary>
+        GroupPurchaseInvitationMode,
+        /// <summary>
+        ///
+        /// </summary>
         InAppPurchases,
         /// <summary>
         ///
@@ -290,6 +294,7 @@ namespace AppStoreConnect
                 AppPricePointsV3GetInstanceFieldsApp.EndUserLicenseAgreement => "endUserLicenseAgreement",
                 AppPricePointsV3GetInstanceFieldsApp.GameCenterDetail => "gameCenterDetail",
                 AppPricePointsV3GetInstanceFieldsApp.GameCenterEnabledVersions => "gameCenterEnabledVersions",
+                AppPricePointsV3GetInstanceFieldsApp.GroupPurchaseInvitationMode => "groupPurchaseInvitationMode",
                 AppPricePointsV3GetInstanceFieldsApp.InAppPurchases => "inAppPurchases",
                 AppPricePointsV3GetInstanceFieldsApp.InAppPurchasesV2 => "inAppPurchasesV2",
                 AppPricePointsV3GetInstanceFieldsApp.IsOrEverWasMadeForKids => "isOrEverWasMadeForKids",
@@ -358,6 +363,7 @@ namespace AppStoreConnect
                 "endUserLicenseAgreement" => AppPricePointsV3GetInstanceFieldsApp.EndUserLicenseAgreement,
                 "gameCenterDetail" => AppPricePointsV3GetInstanceFieldsApp.GameCenterDetail,
                 "gameCenterEnabledVersions" => AppPricePointsV3GetInstanceFieldsApp.GameCenterEnabledVersions,
+                "groupPurchaseInvitationMode" => AppPricePointsV3GetInstanceFieldsApp.GroupPurchaseInvitationMode,
                 "inAppPurchases" => AppPricePointsV3GetInstanceFieldsApp.InAppPurchases,
                 "inAppPurchasesV2" => AppPricePointsV3GetInstanceFieldsApp.InAppPurchasesV2,
                 "isOrEverWasMadeForKids" => AppPricePointsV3GetInstanceFieldsApp.IsOrEverWasMadeForKids,

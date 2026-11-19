@@ -66,6 +66,13 @@ namespace AppStoreConnect
         public bool? StreamlinedPurchasingEnabled { get; set; }
 
         /// <summary>
+        ///
+        /// </summary>
+        [global::System.Text.Json.Serialization.JsonPropertyName("groupPurchaseInvitationMode")]
+        [global::System.Text.Json.Serialization.JsonConverter(typeof(global::AppStoreConnect.JsonConverters.AppUpdateRequestDataAttributesGroupPurchaseInvitationModeJsonConverter))]
+        public global::AppStoreConnect.AppUpdateRequestDataAttributesGroupPurchaseInvitationMode? GroupPurchaseInvitationMode { get; set; }
+
+        /// <summary>
         /// Additional properties that are not explicitly defined in the schema
         /// </summary>
         [global::System.Text.Json.Serialization.JsonExtensionData]
@@ -83,6 +90,7 @@ namespace AppStoreConnect
         /// <param name="subscriptionStatusUrlVersionForSandbox"></param>
         /// <param name="contentRightsDeclaration"></param>
         /// <param name="streamlinedPurchasingEnabled"></param>
+        /// <param name="groupPurchaseInvitationMode"></param>
 #if NET7_0_OR_GREATER
         [global::System.Diagnostics.CodeAnalysis.SetsRequiredMembers]
 #endif
@@ -95,7 +103,8 @@ namespace AppStoreConnect
             string? subscriptionStatusUrlForSandbox,
             global::AppStoreConnect.SubscriptionStatusUrlVersion? subscriptionStatusUrlVersionForSandbox,
             global::AppStoreConnect.AppUpdateRequestDataAttributesContentRightsDeclaration? contentRightsDeclaration,
-            bool? streamlinedPurchasingEnabled)
+            bool? streamlinedPurchasingEnabled,
+            global::AppStoreConnect.AppUpdateRequestDataAttributesGroupPurchaseInvitationMode? groupPurchaseInvitationMode)
         {
             this.AccessibilityUrl = accessibilityUrl;
             this.BundleId = bundleId;
@@ -106,6 +115,7 @@ namespace AppStoreConnect
             this.SubscriptionStatusUrlVersionForSandbox = subscriptionStatusUrlVersionForSandbox;
             this.ContentRightsDeclaration = contentRightsDeclaration;
             this.StreamlinedPurchasingEnabled = streamlinedPurchasingEnabled;
+            this.GroupPurchaseInvitationMode = groupPurchaseInvitationMode;
         }
 
         /// <summary>

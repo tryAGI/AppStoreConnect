@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.CiBuildRunRelationshipsProductDataType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0252.Create_CiBuildRunRelationshipsProductDataType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0253.Create_CiBuildRunRelationshipsProductDataType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.CiBuildRunRelationshipsProductDataType?))
                 {

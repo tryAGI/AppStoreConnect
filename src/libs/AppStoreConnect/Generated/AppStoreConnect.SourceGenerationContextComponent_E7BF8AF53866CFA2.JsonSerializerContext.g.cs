@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.RoutingAppCoveragesGetInstanceFieldsAppStoreVersion))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0818.Create_RoutingAppCoveragesGetInstanceFieldsAppStoreVersion2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0820.Create_RoutingAppCoveragesGetInstanceFieldsAppStoreVersion2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.RoutingAppCoveragesGetInstanceFieldsAppStoreVersion?))
                 {

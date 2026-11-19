@@ -36,7 +36,7 @@ namespace AppStoreConnect
                 }
                 if (type == typeof(global::AppStoreConnect.IncludedItem64?))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0719.Create_NullableIncludedItem642(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0720.Create_NullableIncludedItem642(options);
                 }
                 global::System.Text.Json.Serialization.Metadata.JsonTypeInfo? additional = null;
                 ResolveAdditionalTypeInfo(type, options, ref additional);

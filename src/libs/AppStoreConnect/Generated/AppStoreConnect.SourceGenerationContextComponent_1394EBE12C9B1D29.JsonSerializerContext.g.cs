@@ -32,7 +32,7 @@ namespace AppStoreConnect
             {
                 if (type == typeof(global::AppStoreConnect.ReviewSubmissionRelationshipsItemsDataItemType))
                 {
-                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0813.Create_ReviewSubmissionRelationshipsItemsDataItemType2(options);
+                    return global::AppStoreConnect.SourceGenerationContextMetadata0FactoryBatch0815.Create_ReviewSubmissionRelationshipsItemsDataItemType2(options);
                 }
                 if (type == typeof(global::AppStoreConnect.ReviewSubmissionRelationshipsItemsDataItemType?))
                 {

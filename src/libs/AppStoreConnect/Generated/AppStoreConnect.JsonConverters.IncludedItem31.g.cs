@@ -99,6 +99,13 @@ namespace AppStoreConnect.JsonConverters
                                throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.SubscriptionPlanAvailability)}");
                 subscriptionPlanAvailabilities = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
             }
+            global::AppStoreConnect.SubscriptionPriceTier? subscriptionPriceTiers = default;
+            if (discriminator?.Type == global::AppStoreConnect.SubscriptionsResponseIncludedItemDiscriminatorType.SubscriptionPriceTiers)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionPriceTier), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.SubscriptionPriceTier> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {nameof(global::AppStoreConnect.SubscriptionPriceTier)}");
+                subscriptionPriceTiers = global::System.Text.Json.JsonSerializer.Deserialize(ref reader, typeInfo);
+            }
             global::AppStoreConnect.SubscriptionPrice? subscriptionPrices = default;
             if (discriminator?.Type == global::AppStoreConnect.SubscriptionsResponseIncludedItemDiscriminatorType.SubscriptionPrices)
             {
@@ -151,6 +158,8 @@ namespace AppStoreConnect.JsonConverters
                 subscriptionOfferCodes,
 
                 subscriptionPlanAvailabilities,
+
+                subscriptionPriceTiers,
 
                 subscriptionPrices,
 
@@ -239,6 +248,12 @@ namespace AppStoreConnect.JsonConverters
                 var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionPlanAvailability), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.SubscriptionPlanAvailability?> ??
                                throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.SubscriptionPlanAvailability).Name}");
                 global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSubscriptionPlanAvailabilities(), typeInfo);
+            }
+            else if (value.IsSubscriptionPriceTiers)
+            {
+                var typeInfo = typeInfoResolver.GetTypeInfo(typeof(global::AppStoreConnect.SubscriptionPriceTier), options) as global::System.Text.Json.Serialization.Metadata.JsonTypeInfo<global::AppStoreConnect.SubscriptionPriceTier?> ??
+                               throw new global::System.InvalidOperationException($"Cannot get type info for {typeof(global::AppStoreConnect.SubscriptionPriceTier).Name}");
+                global::System.Text.Json.JsonSerializer.Serialize(writer, value.PickSubscriptionPriceTiers(), typeInfo);
             }
             else if (value.IsSubscriptionPrices)
             {
